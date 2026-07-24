@@ -1,0 +1,15 @@
+name = "ipnetinfo"
+version = "1.95"
+description = "Easily find all available information about IP address."
+homepage = "https://www.nirsoft.net/utils/ipnetinfo.html"
+license = "Freeware"
+kind = "app"
+bin = ["ipnetinfo.exe"]
+persist = ["ipnetinfo_lng.ini", "ipnetinfo.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ipnetinfo.zip"
+sha256 = "f3db23a0e915f490a00b8d241bc8f2524c67ebafb37b6d28939cb7bba11ea399"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ipnetinfo.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

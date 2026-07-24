@@ -1,0 +1,15 @@
+name = "clipboardic"
+version = "1.20"
+description = "Small and simple clipboard manager."
+homepage = "https://www.nirsoft.net/utils/clipboardic.html"
+license = "Freeware"
+kind = "app"
+bin = ["Clipboardic.exe"]
+persist = ["clipboardic_lng.ini", "clipboardic.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/clipboardic.zip"
+sha256 = "113b14dcd431a292d7a511e8e6e9919602995ca653b212b0b496761872b1a9dc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/clipboardic.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

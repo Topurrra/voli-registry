@@ -1,0 +1,15 @@
+name = "runasdate"
+version = "1.41"
+description = "Run a program with the specified date."
+homepage = "https://www.nirsoft.net/utils/run_as_date.html"
+license = "Freeware"
+kind = "app"
+bin = ["RunAsDate.exe"]
+persist = ["runasdate_lng.ini", "runasdate.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/runasdate-x64.zip"
+sha256 = "647ea1883269a8478a4c84cd33f4b8a6f1dab0aa2bf3703e7f344827fc8a3d9e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/runasdate.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

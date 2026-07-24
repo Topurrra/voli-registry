@@ -1,0 +1,15 @@
+name = "openwithview"
+version = "1.11"
+description = "Disable/enable items in the  'Open With'  dialog-box of Windows."
+homepage = "https://www.nirsoft.net/utils/open_with_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["OpenWithView.exe"]
+persist = ["openwithview_lng.ini", "openwithview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/openwithview.zip"
+sha256 = "91c6bc5be89d52329882f85637e63e35c20efb5c289d9f83c9083e72cab7192e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/openwithview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "previousfilesrecovery"
+version = "1.10"
+description = "find and recovery files from Windows shadow copies"
+homepage = "https://www.nirsoft.net/utils/previous_files_recovery.html"
+license = "Freeware"
+kind = "app"
+bin = ["PreviousFilesRecovery.exe"]
+persist = ["previousfilesrecovery_lng.ini", "previousfilesrecovery.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/previousfilesrecovery-x64.zip"
+sha256 = "5eaff225d06abafc8528bde9ed6b6576b9bcd4229471df9bcc2daf986caa276f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/previousfilesrecovery.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

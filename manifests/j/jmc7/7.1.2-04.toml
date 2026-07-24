@@ -1,0 +1,11 @@
+name = "jmc7"
+version = "7.1.2-04"
+description = "JDK Mission Control"
+homepage = "https://openjdk.java.net/projects/jmc/"
+license = "UPL-1.0"
+kind = "app"
+persist = ["configuration"]
+
+[source.x64]
+url = "https://download.java.net/java/GA/jmc7/04/binaries/jmc-7.1.2_windows-x64.zip"
+sha256 = "b2dc4cc3e0b32dfcda0e71136452ccd39a3a076dd66c2b7824be0d52bc7c852e"

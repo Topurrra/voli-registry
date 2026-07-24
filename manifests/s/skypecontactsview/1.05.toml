@@ -1,0 +1,15 @@
+name = "skypecontactsview"
+version = "1.05"
+description = "Displays the list of Skype contacts stored in the local database file of Skype."
+homepage = "https://www.nirsoft.net/utils/skype_contacts_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SkypeContactsView.exe"]
+persist = ["skypecontactsview_lng.ini", "skypecontactsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/skypecontactsview.zip"
+sha256 = "03a920762ff09cf20b5328e2f6700089b0dfef1bf893d3a14c6868c041943120"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/skypecontactsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

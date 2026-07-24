@@ -1,0 +1,15 @@
+name = "vncpassview"
+version = "1.05"
+description = "Recover the passwords stored by the VNC tool."
+homepage = "https://www.nirsoft.net/utils/vnc_password.html"
+license = "Freeware"
+kind = "app"
+bin = ["VNCPassView.exe"]
+persist = ["vncpassview_lng.ini", "vncpassview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/vncpassview.zip"
+sha256 = "a598f49d5b6c06097550952aef7260f226227cf64a982c8fedb605f8f30039b4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/vncpassview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

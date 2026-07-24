@@ -1,0 +1,15 @@
+name = "htmldocedit"
+version = "1.02"
+description = "Simple HTML designer/editor"
+homepage = "https://www.nirsoft.net/utils/html_doc_edit.html"
+license = "Freeware"
+kind = "app"
+bin = ["HtmlDocEdit.exe"]
+persist = ["htmldocedit_lng.ini", "htmldocedit.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/htmldocedit.zip"
+sha256 = "eed77808621fa1331ba194b1593bc18ec7a1628601282ff0a5163b02ce945cde"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/htmldocedit.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "netresview"
+version = "1.27"
+description = "displays the list of all network resources  on your LAN."
+homepage = "https://www.nirsoft.net/utils/netresview.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetResView.exe"]
+persist = ["netresview_lng.ini", "netresview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/netresview.zip"
+sha256 = "84ce97effb45314d315ab221482ccbf7237f6942f0c4fac0d3b52fec22c28c15"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/netresview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

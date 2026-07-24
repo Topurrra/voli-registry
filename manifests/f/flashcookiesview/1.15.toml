@@ -1,0 +1,15 @@
+name = "flashcookiesview"
+version = "1.15"
+description = "View Flash cookies stored in your computer."
+homepage = "https://www.nirsoft.net/utils/flash_cookies_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FlashCookiesView.exe"]
+persist = ["flashcookiesview_lng.ini", "flashcookiesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/flashcookiesview.zip"
+sha256 = "a8217a04b664d055cd137620f8f7585d2dd0c326cf90d4a01383b9e5f154b86e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/flashcookiesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

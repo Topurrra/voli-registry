@@ -1,0 +1,15 @@
+name = "chromecookiesview"
+version = "1.85"
+description = "Alternative to the standard internal cookies viewer of Google Chrome"
+homepage = "https://www.nirsoft.net/utils/chrome_cookies_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ChromeCookiesView.exe"]
+persist = ["chromecookiesview_lng.ini", "chromecookiesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/chromecookiesview-x64.zip"
+sha256 = "e509a62ce5d5cdd8fb854939792aa8d9fd4aa9b6083d2968e2cf877dbdecfe48"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/chromecookiesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

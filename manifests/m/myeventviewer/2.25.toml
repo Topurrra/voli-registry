@@ -1,0 +1,15 @@
+name = "myeventviewer"
+version = "2.25"
+description = "MyEventViewer is a simple alternative to the standard event viewer of Windows."
+homepage = "https://www.nirsoft.net/utils/my_event_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["MyEventViewer.exe"]
+persist = ["myeventviewer_lng.ini", "myeventviewer.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/myeventviewer-x64.zip"
+sha256 = "d1e94d89f2831c76d46bb0b80e4248df82244b021950769bffab9cba0054ecfc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/myeventviewer.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

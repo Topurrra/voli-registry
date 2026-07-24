@@ -1,0 +1,15 @@
+name = "seqdownload"
+version = "1.26"
+description = "Download sequence of images from the Web, and create animation from them."
+homepage = "https://www.nirsoft.net/utils/seqdownload.html"
+license = "Freeware"
+kind = "app"
+bin = ["SeqDownload.exe"]
+persist = ["seqdownload_lng.ini", "seqdownload.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/seqdownload.zip"
+sha256 = "8af4d24f6d3d47c3b75a4a2e0385259049b22e8a1aac5ea688b5e4e6d11bfc33"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/seqdownload.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

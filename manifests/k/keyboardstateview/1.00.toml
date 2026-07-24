@@ -1,0 +1,15 @@
+name = "keyboardstateview"
+version = "1.00"
+description = "Shows the  current state and virtual key code of every key you press."
+homepage = "https://www.nirsoft.net/utils/keyboard_state_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["KeyboardStateView.exe"]
+persist = ["keyboardstateview_lng.ini", "keyboardstateview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/keyboardstateview.zip"
+sha256 = "b8ea99128e5ec854f3ce2596177687538f8d2b802943f35a223795d9452a0cd5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/keyboardstateview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

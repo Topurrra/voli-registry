@@ -1,0 +1,15 @@
+name = "iecv"
+version = "1.79"
+description = "Displays the cookies that Internet Explorer stores on your computer"
+homepage = "https://www.nirsoft.net/utils/iecookies.html"
+license = "Freeware"
+kind = "app"
+bin = ["iecv.exe"]
+persist = ["iecv_lng.ini", "iecv.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/iecv.zip"
+sha256 = "b6d781e15cafd41e059e1f524996192af5321d9f262a3c5f44ea8cd4fb290baf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/iecv.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

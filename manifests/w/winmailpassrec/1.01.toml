@@ -1,0 +1,15 @@
+name = "winmailpassrec"
+version = "1.01"
+description = "Password Recovery For Windows Mail App of Windows 10 and Windows 11"
+homepage = "https://www.nirsoft.net/utils/windows_mail_password_recovery.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinMailPassRec.exe"]
+persist = ["winmailpassrec_lng.ini", "winmailpassrec.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winmailpassrec-x64.zip"
+sha256 = "7ac8f27af8da718b6ac0955a1cf28e322b7645248d7a92110b5066191fa03fb9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winmailpassrec.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

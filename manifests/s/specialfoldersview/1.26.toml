@@ -1,0 +1,15 @@
+name = "specialfoldersview"
+version = "1.26"
+description = "Easily jump to special folders in your system."
+homepage = "https://www.nirsoft.net/utils/special_folders_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SpecialFoldersView.exe"]
+persist = ["specialfoldersview_lng.ini", "specialfoldersview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/specialfoldersview-x64.zip"
+sha256 = "deb2a260bd6f9f284e3fe7d0b26e08265029404d2b7525e41455556bd383deed"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/specialfoldersview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

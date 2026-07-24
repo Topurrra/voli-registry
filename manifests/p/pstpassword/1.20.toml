@@ -1,0 +1,15 @@
+name = "pstpassword"
+version = "1.20"
+description = "Recover lost password of Outlook PST file."
+homepage = "https://www.nirsoft.net/utils/pst_password.html"
+license = "Freeware"
+kind = "app"
+bin = ["PstPassword.exe"]
+persist = ["pstpassword_lng.ini", "pstpassword.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/pstpassword.zip"
+sha256 = "3e8e3636e7f3bffaad2367237ba0bc94ec3d2f5585726b28c14ccc10a51aa135"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/pstpassword.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

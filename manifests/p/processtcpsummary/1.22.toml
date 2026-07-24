@@ -1,0 +1,15 @@
+name = "processtcpsummary"
+version = "1.22"
+description = "Displays TCP connections summary"
+homepage = "https://www.nirsoft.net/utils/process_tcp_summary.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProcessTCPSummary.exe"]
+persist = ["processtcpsummary_lng.ini", "processtcpsummary.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/processtcpsummary-x64.zip"
+sha256 = "ac5ea280464bb3c715b12ce9ac69a996af8b79871e1fece3bd856b47aa51635f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/processtcpsummary.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "appaudioconfig"
+version = "1.16"
+description = "View/change audio settings of applications"
+homepage = "https://www.nirsoft.net/utils/app_audio_config.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppAudioConfig.exe"]
+persist = ["appaudioconfig_lng.ini", "appaudioconfig.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appaudioconfig-x64.zip"
+sha256 = "8d0408cdcfc324b8c3bb5443d7690f083b16e2f478b75bac2e73a508dbad7c14"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appaudioconfig.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

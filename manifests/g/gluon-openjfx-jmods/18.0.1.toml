@@ -1,0 +1,16 @@
+name = "gluon-openjfx-jmods"
+version = "18.0.1"
+description = "OpenJFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java."
+homepage = "https://openjfx.io/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download2.gluonhq.com/openjfx/18.0.1/openjfx-18.0.1_windows-x64_bin-jmods.zip"
+sha256 = "4b09cc85e2f9bc2343bc59b1b81e37b6db419321defd75cbbdae66bd0d1b328c"
+
+[env]
+PATH_TO_FX_MODS = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"([\\\\d.]+).*?\\\"#latest\\\"\",\"url\":\"https://gluonhq.com/wp-content/uploads/custom-css-js/119502.js\"}"

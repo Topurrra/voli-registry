@@ -1,0 +1,15 @@
+name = "svcl"
+version = "1.28"
+description = "Sound volume command-line tool for Windows"
+homepage = "https://www.nirsoft.net/utils/sound_volume_command_line.html"
+license = "Freeware"
+kind = "app"
+bin = ["svcl.exe"]
+persist = ["svcl_lng.ini", "svcl.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/svcl-x64.zip"
+sha256 = "7ba008e9ece8b3eda323ef01711e4647eb7f40b28dc25f98b2ed6a738810bfcd"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/svcl.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

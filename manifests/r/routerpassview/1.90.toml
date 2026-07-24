@@ -1,0 +1,15 @@
+name = "routerpassview"
+version = "1.90"
+description = "Recover passwords from router config file."
+homepage = "https://www.nirsoft.net/utils/router_password_recovery.html"
+license = "Freeware"
+kind = "app"
+bin = ["RouterPassView.exe"]
+persist = ["routerpassview_lng.ini", "routerpassview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/routerpassview.zip"
+sha256 = "0d68fb19ca14c8200f9015703f728628bc3dd3b76614b709d1da5821fceb4aba"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/routerpassview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

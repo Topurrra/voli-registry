@@ -1,0 +1,15 @@
+name = "ipneighborsview"
+version = "1.03"
+description = "View the IP neighbor table on Windows 10/8/7/Vista"
+homepage = "https://www.nirsoft.net/utils/ip_neighbor_table_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["IPNeighborsView.exe"]
+persist = ["ipneighborsview_lng.ini", "ipneighborsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ipneighborsview.zip"
+sha256 = "7aa6ba923d090d1e0a168ef9af74ffb9bed4f9395331435be56ffc50ab42d81c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ipneighborsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

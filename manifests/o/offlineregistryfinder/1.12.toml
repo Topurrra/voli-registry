@@ -1,0 +1,15 @@
+name = "offlineregistryfinder"
+version = "1.12"
+description = "Find data in external Registry files"
+homepage = "https://www.nirsoft.net/utils/offline_registry_finder.html"
+license = "Freeware"
+kind = "app"
+bin = ["OfflineRegistryFinder.exe"]
+persist = ["offlineregistryfinder_lng.ini", "offlineregistryfinder.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/offlineregistryfinder-x64.zip"
+sha256 = "9193fb22afe0a12d256a799f880e6c782ae2acdd1eb2edb77c53e6e60ef84272"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/offlineregistryfinder.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

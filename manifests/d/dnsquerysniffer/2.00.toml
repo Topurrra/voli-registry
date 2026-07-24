@@ -1,0 +1,15 @@
+name = "dnsquerysniffer"
+version = "2.00"
+description = "Network sniffer utility that shows the DNS queries sent on your system. "
+homepage = "https://www.nirsoft.net/utils/dns_query_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["DNSQuerySniffer.exe"]
+persist = ["dnsquerysniffer_lng.ini", "dnsquerysniffer.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/dnsquerysniffer-x64.zip"
+sha256 = "f410d3213f04d2a67d45d6aa3453254be4cab02fc24b1e9eee1ad5d53e43120b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dnsquerysniffer.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "livecontactsview"
+version = "1.27"
+description = "View the details of all contacts in your Windows Live Messenger."
+homepage = "https://www.nirsoft.net/utils/live_messenger_contacts.html"
+license = "Freeware"
+kind = "app"
+bin = ["LiveContactsView.exe"]
+persist = ["livecontactsview_lng.ini", "livecontactsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/livecontactsview.zip"
+sha256 = "f6aeebe65211ec2eeead867286187ab08cbf7aa06f7de23c7dcb9aa4e17c7b0f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/livecontactsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

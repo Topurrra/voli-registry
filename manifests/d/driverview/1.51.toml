@@ -1,0 +1,15 @@
+name = "driverview"
+version = "1.51"
+description = "Displays the list of all device drivers currently loaded on your system."
+homepage = "https://www.nirsoft.net/utils/driverview.html"
+license = "Freeware"
+kind = "app"
+bin = ["DriverView.exe"]
+persist = ["driverview_lng.ini", "driverview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/driverview-x64.zip"
+sha256 = "8998e99e733bf112decf3a9c6954d86787d5a76f8347ffa50caf55cd7df9b4fe"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/driverview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

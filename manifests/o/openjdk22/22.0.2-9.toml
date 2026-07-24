@@ -1,0 +1,17 @@
+name = "openjdk22"
+version = "22.0.2-9"
+description = "Official production-ready open-source builds of OpenJDK 22"
+homepage = "https://jdk.java.net/22"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download.java.net/java/GA/jdk22.0.2/c9ecb94cd31b495da20a27d4581645e8/9/GPL/openjdk-22.0.2_windows-x64_bin.zip"
+sha256 = "f2a9b9ab944e71a64637fcdc6b13a1188cf02d4eb9ecf71dc927e98b3e45f5dc"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"re\":\"https://download\\\\.java\\\\.net/java/(?<type>GA)/(?<path>jdk(?<major>22(?:\\\\.[\\\\d]+)*)/[^/]+/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>22(?:\\\\.[\\\\d]+)*)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin\\\\.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/archive/\"}"

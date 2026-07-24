@@ -1,0 +1,15 @@
+name = "loadeddllsview"
+version = "1.06"
+description = "Displays all DLL files loaded on your system."
+homepage = "https://www.nirsoft.net/utils/loaded_dll_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["LoadedDllsView.exe"]
+persist = ["loadeddllsview_lng.ini", "loadeddllsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/loadeddllsview-x64.zip"
+sha256 = "3b32d100852bae8e90cafd80f6e114e9b5baad3c1090a862395aa1053b784f63"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/loadeddllsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

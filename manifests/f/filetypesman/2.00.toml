@@ -1,0 +1,15 @@
+name = "filetypesman"
+version = "2.00"
+description = "Alternative to the 'File Types' manager of Windows."
+homepage = "https://www.nirsoft.net/utils/file_types_manager.html"
+license = "Freeware"
+kind = "app"
+bin = ["FileTypesMan.exe"]
+persist = ["filetypesman_lng.ini", "filetypesman.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/filetypesman-x64.zip"
+sha256 = "05f9d35dd1f44be6162def173d4e8bc4e55389d618b5349599bfa5a5bb1a7ea4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/filetypesman.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

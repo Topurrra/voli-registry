@@ -1,0 +1,15 @@
+name = "outlookaddressbookview"
+version = "2.46"
+description = "Displays the details of all recipients stored in the address books of Outlook"
+homepage = "https://www.nirsoft.net/utils/outlook_address_book_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["OutlookAddressBookView.exe"]
+persist = ["outlookaddressbookview_lng.ini", "outlookaddressbookview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip"
+sha256 = "8badcf4004e17f3978a279e51c4179f0f6a0657e424f39cb713e99f8ccc3a13f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/outlookaddressbookview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

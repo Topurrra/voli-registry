@@ -1,0 +1,15 @@
+name = "whatinstartup"
+version = "1.35"
+description = "disable/enable/delete programs that are loaded at Windows startup."
+homepage = "https://www.nirsoft.net/utils/what_run_in_startup.html"
+license = "Freeware"
+kind = "app"
+bin = ["WhatInStartup.exe"]
+persist = ["whatinstartup_lng.ini", "whatinstartup.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/whatinstartup-x64.zip"
+sha256 = "9a50776456f79c08d9de06862beb3531d8e4f90062ae54f2b2d700aa4338a330"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/whatinstartup.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "bulletspassview"
+version = "1.32"
+description = "Reveals the passwords stored behind the bullets."
+homepage = "https://www.nirsoft.net/utils/bullets_password_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BulletsPassView.exe"]
+persist = ["bulletspassview_lng.ini", "bulletspassview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bulletspassview-x64.zip"
+sha256 = "7a811e7e8124ead14240c03e76d824adfadef7eead5b1d207e79ac7f14b59e09"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bulletspassview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

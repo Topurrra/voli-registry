@@ -1,0 +1,15 @@
+name = "volumouse"
+version = "2.21"
+description = "Adjust the volume of your speaker with the wheel of your mouse."
+homepage = "https://www.nirsoft.net/utils/volumouse.html"
+license = "Freeware"
+kind = "app"
+bin = ["volumouse.exe"]
+persist = ["volumouse_lng.ini", "volumouse.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/volumouse-x64.zip"
+sha256 = "0bc74782ac47d251a2d8fd2f1d093c78c53d382d8b3828f904b18496b8fb0988"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/volumouse.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

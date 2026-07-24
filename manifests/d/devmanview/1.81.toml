@@ -1,0 +1,15 @@
+name = "devmanview"
+version = "1.81"
+description = "Alternative to the standard Device Manager of Windows."
+homepage = "https://www.nirsoft.net/utils/device_manager_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["DevManView.exe"]
+persist = ["devmanview_lng.ini", "devmanview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/devmanview-x64.zip"
+sha256 = "929bdcaeb09218dd528a27bfdef5f72e013f77b41c80e08a1f0f278cc782cf3f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/devmanview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,17 @@
+name = "sapmachine18-jdk"
+version = "18.0.2.1"
+description = "SapMachine 17: An OpenJDK release maintained and supported by SAP"
+homepage = "https://sap.github.io/SapMachine/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/SAP/SapMachine/releases/download//sapmachine-18.0.2.1/sapmachine-jdk-18.0.2.1_windows-x64_bin.zip"
+sha256 = "03db06ccccc69d519367fb1bf8142f7f447c7e955ddf9eba0b76a84c8469585d"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.assets.18.releases[0].jdk.windows-x64\",\"regex\":\"(?<sap>/sapmachine-(?:[\\\\d.]+)(?:\\\\%2B|\\\\+)?(?:[\\\\d]*)/sapmachine-jdk-(?<version>[\\\\d.]+)(?:(?<dash>-)(?<ea>ea)\\\\.(?<build>[\\\\d]+))?_windows-x64_bin).zip\",\"replace\":\"${version}${dash}${build}${dash}${ea}\",\"url\":\"https://sap.github.io/SapMachine/assets/data/sapmachine_releases.json\"}"

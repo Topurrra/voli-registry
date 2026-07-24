@@ -1,0 +1,16 @@
+name = "gluon-openjfx-sdk"
+version = "18.0.1"
+description = "OpenJFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java."
+homepage = "https://openjfx.io/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download2.gluonhq.com/openjfx/18.0.1/openjfx-18.0.1_windows-x64_bin-sdk.zip"
+sha256 = "07841e6fdf33adc9e9ea95829fdb39f09b7e483d8cd8a29ace474961bc676272"
+
+[env]
+PATH_TO_FX = "{dir}\\lib"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"([\\\\d.]+).*?\\\"#latest\\\"\",\"url\":\"https://gluonhq.com/wp-content/uploads/custom-css-js/119502.js\"}"

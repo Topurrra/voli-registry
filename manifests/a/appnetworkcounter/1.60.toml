@@ -1,0 +1,15 @@
+name = "appnetworkcounter"
+version = "1.60"
+description = "Displays number of TCP/UDP bytes and packets sent/received by every application"
+homepage = "https://www.nirsoft.net/utils/app_network_counter.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppNetworkCounter.exe"]
+persist = ["appnetworkcounter_lng.ini", "appnetworkcounter.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appnetworkcounter-x64.zip"
+sha256 = "950d2dccb7939543b383f9e9dc479593e016ce2d412c2c6b78df268d3feaa7ec"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appnetworkcounter.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

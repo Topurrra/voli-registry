@@ -1,0 +1,15 @@
+name = "sysexp"
+version = "1.77"
+description = "Grab the data stored in list-views, tree-views, list boxes, and combo boxes."
+homepage = "https://www.nirsoft.net/utils/sysexp.html"
+license = "Freeware"
+kind = "app"
+bin = ["sysexp.exe"]
+persist = ["sysexp_lng.ini", "sysexp.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/sysexp-x64.zip"
+sha256 = "cd808bccb6388b38b9e5a7f1eec92ff8fe90cc23683d8fa98fe19e5132c62e54"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/sysexp.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

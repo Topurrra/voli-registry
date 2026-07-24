@@ -1,0 +1,15 @@
+name = "lostmypassword"
+version = "1.02"
+description = "Password recovery tool for Windows"
+homepage = "https://www.nirsoft.net/utils/lost_my_password.html"
+license = "Freeware"
+kind = "app"
+bin = ["LostMyPassword.exe"]
+persist = ["lostmypassword_lng.ini", "lostmypassword.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/lostmypassword-x64.zip"
+sha256 = "2aca07dd686f756127278fc49c08c931f6c3ed250c3c45dad0bd46a2cc6d4e5b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/lostmypassword.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

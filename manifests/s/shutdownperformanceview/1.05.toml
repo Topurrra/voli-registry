@@ -1,0 +1,15 @@
+name = "shutdownperformanceview"
+version = "1.05"
+description = "Displays the performance information of Windows shutdown process"
+homepage = "https://www.nirsoft.net/utils/shutdown_performance_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ShutdownPerformanceView.exe"]
+persist = ["shutdownperformanceview_lng.ini", "shutdownperformanceview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/shutdownperformanceview.zip"
+sha256 = "a05d6429fdd93862169dee2cf7e35c975aff10736e97a6bc4524237a05b2ab13"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/shutdownperformanceview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

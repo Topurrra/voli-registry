@@ -1,0 +1,15 @@
+name = "passrec"
+version = "3.65"
+description = "Password Recovery package for Windows."
+homepage = "https://www.nirsoft.net/password_recovery_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["mspass.exe"]
+persist = ["passrec_lng.ini", "passrec.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/passrecpk.zip"
+sha256 = "c44fb578120a569fb1d49303b7984610169af62ee52cd54df6089f8e3bfe6c24"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/passrec.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

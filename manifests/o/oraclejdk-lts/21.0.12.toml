@@ -1,0 +1,17 @@
+name = "oraclejdk-lts"
+version = "21.0.12"
+description = "Oracle Java Platform, Standard Edition Development Kit (JDK)"
+homepage = "https://www.oracle.com/java/technologies/downloads/#java21"
+license = "https://www.oracle.com/downloads/licenses/no-fee-license.html"
+kind = "app"
+
+[source.x64]
+url = "https://download.oracle.com/java/21/archive/jdk-21.0.12_windows-x64_bin.zip"
+sha256 = "167af6612931baf82d1e55dd81444b94fcae68dffa73055946843c11cd2a37e5"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"<li>JDK ([\\\\d.]+)\",\"url\":\"https://www.oracle.com/java/technologies/javase/21u-relnotes.html\",\"useragent\":\"curl/7\"}"

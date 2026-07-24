@@ -1,0 +1,18 @@
+name = "graalvm22-jdk11"
+version = "22.3.3"
+description = "High-performance, embeddable, polyglot Virtual Machine for JVM-langs (Java, Scala, Kotlin), JavaScript/NodeJS, Python, Ruby, R, and LLVM-langs (C, C++, Rust)"
+homepage = "https://www.graalvm.org/"
+license = "GPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.3/graalvm-ce-java11-windows-amd64-22.3.3.zip"
+sha256 = "9188b040653cd6ba6ebb6b618852e76bf789aa8491f6f9467f9a9962fb161a83"
+
+[env]
+PATH = "{dir}\\bin"
+GRAALVM_HOME = "{dir}"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.[?(@.name =~ /^vm-22[\\\\d.]+$/)].name\",\"regex\":\"vm-([\\\\d.]+)\",\"url\":\"https://api.github.com/repos/graalvm/graalvm-ce-builds/tags?per_page=200&page=1\"}"

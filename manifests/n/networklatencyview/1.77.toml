@@ -1,0 +1,15 @@
+name = "networklatencyview"
+version = "1.77"
+description = "Calculates the network latency (in milliseconds) for every new TCP connection."
+homepage = "https://www.nirsoft.net/utils/network_latency_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetworkLatencyView.exe"]
+persist = ["networklatencyview_lng.ini", "networklatencyview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/networklatencyview-x64.zip"
+sha256 = "fff3f6eb5438e632cc0b832b1c16f4bfe05b4d0d8ff2bfa26c37b96b8d6f82a4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networklatencyview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "gacview"
+version = "1.11"
+description = "Alternative to the standard .NET assembly viewer on Windows Explorer."
+homepage = "https://www.nirsoft.net/dot_net_tools/gac_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["gacview.exe"]
+persist = ["gacview_lng.ini", "gacview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/dot_net_tools/gacview.zip"
+sha256 = "f8f6b2033681aee70136ca8880197b84b08e119da0518625b42ec38ec6380045"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/gacview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "rtmpdumphelper"
+version = "1.22"
+description = "Download RTMP streams in conjunction with RTMPDump toolkit."
+homepage = "https://www.nirsoft.net/utils/rtmp_dump_helper.html"
+license = "Freeware"
+kind = "app"
+bin = ["RTMPDumpHelper.exe"]
+persist = ["rtmpdumphelper_lng.ini", "rtmpdumphelper.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/rtmpdumphelper-x64.zip"
+sha256 = "205fd770852aee82f2db75e982f2ec3491c2f53f0c9f0285b478e92718da5a61"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/rtmpdumphelper.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

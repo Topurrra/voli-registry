@@ -1,0 +1,15 @@
+name = "foldertimeupdate"
+version = "1.75"
+description = "Updates the 'Modified Time' of folders."
+homepage = "https://www.nirsoft.net/utils/folder_time_update.html"
+license = "Freeware"
+kind = "app"
+bin = ["FolderTimeUpdate.exe"]
+persist = ["foldertimeupdate_lng.ini", "foldertimeupdate.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/foldertimeupdate-x64.zip"
+sha256 = "b15f751ea1f784726291cf84b22e04391ca28808320863ea393d5e5a1f55ba07"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/foldertimeupdate.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

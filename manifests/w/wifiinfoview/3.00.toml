@@ -1,0 +1,15 @@
+name = "wifiinfoview"
+version = "3.00"
+description = "Displays extensive information about wireless networks in your area."
+homepage = "https://www.nirsoft.net/utils/wifi_information_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WifiInfoView.exe"]
+persist = ["wifiinfoview_lng.ini", "wifiinfoview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wifiinfoview-x64.zip"
+sha256 = "9264a6ef47b882fa67b9431f6410c62be091524c39877a09cf6744dea8d8a988"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wifiinfoview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

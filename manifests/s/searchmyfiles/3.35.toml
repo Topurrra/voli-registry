@@ -1,0 +1,15 @@
+name = "searchmyfiles"
+version = "3.35"
+description = "Alternative to the standard \"Search For Files And Folders\" module of Windows."
+homepage = "https://www.nirsoft.net/utils/search_my_files.html"
+license = "Freeware"
+kind = "app"
+bin = ["SearchMyFiles.exe"]
+persist = ["searchmyfiles_lng.ini", "searchmyfiles.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
+sha256 = "f29ea7c66c8ed2af1069ec6209b587fde6205244df9c91cde8aa8e30db97f81a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/searchmyfiles.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

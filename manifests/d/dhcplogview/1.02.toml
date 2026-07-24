@@ -1,0 +1,15 @@
+name = "dhcplogview"
+version = "1.02"
+description = "Displays DHCP requests sent by every device connect to your network."
+homepage = "https://www.nirsoft.net/utils/dhcp_log_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["DHCPLogView.exe"]
+persist = ["dhcplogview_lng.ini", "dhcplogview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/dhcplogview-x64.zip"
+sha256 = "036787e69819a84d980381406e098c449c2c9bc86ccc014a28f3265b070f3435"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dhcplogview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

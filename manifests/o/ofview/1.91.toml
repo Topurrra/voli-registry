@@ -1,0 +1,15 @@
+name = "ofview"
+version = "1.91"
+description = "Displays the list of all opened files on your system."
+homepage = "https://www.nirsoft.net/utils/opened_files_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["OpenedFilesView.exe"]
+persist = ["ofview_lng.ini", "ofview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ofview-x64.zip"
+sha256 = "8d7f840ee5182ac8ab2011b93a8d961bbbcb67b6ed74e217e68547eb17411a7b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ofview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

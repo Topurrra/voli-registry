@@ -1,0 +1,15 @@
+name = "smsniff"
+version = "2.30"
+description = "Captures TCP/IP packets and view the captured data as sequence of conversations."
+homepage = "https://www.nirsoft.net/utils/smsniff.html"
+license = "Freeware"
+kind = "app"
+bin = ["smsniff.exe"]
+persist = ["smsniff_lng.ini", "smsniff.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/smsniff-x64.zip"
+sha256 = "a8f5a31305c2265bf0c9734d58104845f2cae28a08698aa3c89517adc8c55fd9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/smsniff.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

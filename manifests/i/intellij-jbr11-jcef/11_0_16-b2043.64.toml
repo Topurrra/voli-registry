@@ -1,0 +1,17 @@
+name = "intellij-jbr11-jcef"
+version = "11_0_16-b2043.64"
+description = "A fork of OpenJDK that includes a number enhancements in font rendering, HiDPI support, ligatures, performance improvements, and bugfixes. These are mainly for running IntelliJ Platform-based products"
+homepage = "https://github.com/JetBrains/JetBrainsRuntime"
+license = "GPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-11_0_16-windows-x64-b2043.64.tar.gz"
+sha256 = "4e23c52a5a23dba1cf9e2ea980d1ce31f2f34f39404eb4e5689359dfa9f28269"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "JetBrains/JetBrainsRuntime" }

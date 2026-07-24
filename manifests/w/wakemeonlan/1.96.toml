@@ -1,0 +1,15 @@
+name = "wakemeonlan"
+version = "1.96"
+description = "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet"
+homepage = "https://www.nirsoft.net/utils/wake_on_lan.html"
+license = "Freeware"
+kind = "app"
+bin = ["WakeMeOnLan.exe"]
+persist = ["wakemeonlan_lng.ini", "wakemeonlan.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wakemeonlan-x64.zip"
+sha256 = "f1464495cf425910f735c3d1267993283a369d884eee4df4dff4944f5a459a8c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wakemeonlan.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "progtools"
+version = "1.27"
+description = "Small utilities package that can be used by programmers for debugging."
+homepage = "https://www.nirsoft.net/programmer_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["dllexp.exe"]
+persist = ["progtools_lng.ini", "progtools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/progtools.zip"
+sha256 = "01e4fc83ad6a997facb3d19068ee1fde965bce78ebba7cb892de51d224355f49"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/progtools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

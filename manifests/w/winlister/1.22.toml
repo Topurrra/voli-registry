@@ -1,0 +1,15 @@
+name = "winlister"
+version = "1.22"
+description = "This utility displays the list of opened windows on your system. "
+homepage = "https://www.nirsoft.net/utils/winlister.html"
+license = "Freeware"
+kind = "app"
+bin = ["winlister.exe"]
+persist = ["winlister_lng.ini", "winlister.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winlister-x64.zip"
+sha256 = "2a07bb34147dea6ca6fbf2be6004ece72cc9ce308f29f86fa2e2d5842b7e997c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winlister.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

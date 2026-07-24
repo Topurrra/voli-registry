@@ -1,0 +1,15 @@
+name = "livetcpudpwatch"
+version = "1.57"
+description = "Displays live information about all TCP and UDP activity on your system."
+homepage = "https://www.nirsoft.net/utils/live_tcp_udp_watch.html"
+license = "Freeware"
+kind = "app"
+bin = ["LiveTcpUdpWatch.exe"]
+persist = ["livetcpudpwatch_lng.ini", "livetcpudpwatch.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/livetcpudpwatch-x64.zip"
+sha256 = "57d726ed6f6f5965bd7d1add775d5a6f2d7ee029e7be4cb6a700cccaa5f441ae"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/livetcpudpwatch.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

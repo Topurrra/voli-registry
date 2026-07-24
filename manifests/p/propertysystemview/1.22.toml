@@ -1,0 +1,15 @@
+name = "propertysystemview"
+version = "1.22"
+description = "View/edit file properties"
+homepage = "https://www.nirsoft.net/utils/windows_property_system_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["PropertySystemView.exe"]
+persist = ["propertysystemview_lng.ini", "propertysystemview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/propertysystemview-x64.zip"
+sha256 = "cecbde04bdab3a644f1a543416515a291aa91833551d43317e64d40e5e944fcf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/propertysystemview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

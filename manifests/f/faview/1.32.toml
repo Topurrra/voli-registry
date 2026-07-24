@@ -1,0 +1,15 @@
+name = "faview"
+version = "1.32"
+description = "displays the list of all your Favorties/bookmarks in a single page."
+homepage = "https://www.nirsoft.net/utils/faview.html"
+license = "Freeware"
+kind = "app"
+bin = ["faview.exe"]
+persist = ["faview_lng.ini", "faview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/faview.zip"
+sha256 = "60f94079be9f34247c424e5512ea42f8633df694d6b7c9cfd38fd5fe863b19c3"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/faview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

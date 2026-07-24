@@ -1,0 +1,15 @@
+name = "rdpv"
+version = "1.01"
+description = "Reveals the password stored by Microsoft Remote Desktop utility."
+homepage = "https://www.nirsoft.net/utils/remote_desktop_password.html"
+license = "Freeware"
+kind = "app"
+bin = ["rdpv.exe"]
+persist = ["rdpv_lng.ini", "rdpv.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/rdpv.zip"
+sha256 = "528de69797c36423a1e6b64fa8b1825f354e6707f2ca3760d81a9f58d69d58bb"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/rdpv.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

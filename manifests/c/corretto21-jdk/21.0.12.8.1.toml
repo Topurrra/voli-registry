@@ -1,0 +1,17 @@
+name = "corretto21-jdk"
+version = "21.0.12.8.1"
+description = "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK)"
+homepage = "https://aws.amazon.com/corretto/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://corretto.aws/downloads/resources/21.0.12.8.1/amazon-corretto-21.0.12.8.1-windows-x64-jdk.zip"
+sha256 = "de9ad88fb2575a1aff4715b192014ba31edd6e411d243371f377cff0560e34bc"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.windows.x64.jdk.21.zip.resource\",\"regex\":\"/([\\\\d.]+)/\",\"url\":\"https://github.com/corretto/corretto-downloads/raw/main/latest_links/indexmap_with_checksum.json\"}"

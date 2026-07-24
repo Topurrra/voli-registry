@@ -1,0 +1,15 @@
+name = "countrytraceroute"
+version = "1.51"
+description = "Fast Traceroute utility with IP country information."
+homepage = "https://www.nirsoft.net/utils/country_traceroute.html"
+license = "Freeware"
+kind = "app"
+bin = ["CountryTraceRoute.exe"]
+persist = ["countrytraceroute_lng.ini", "countrytraceroute.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/countrytraceroute.zip"
+sha256 = "40b8e91890563b035b6aac5d53751663098bce1baeea068c30202eb2794664ce"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/countrytraceroute.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

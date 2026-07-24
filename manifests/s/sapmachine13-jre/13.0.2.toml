@@ -1,0 +1,14 @@
+name = "sapmachine13-jre"
+version = "13.0.2"
+description = "SapMachine 13: An OpenJDK release maintained and supported by SAP"
+homepage = "https://sap.github.io/SapMachine/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/SAP/SapMachine/releases/download//sapmachine-13.0.2/sapmachine-jre-13.0.2_windows-x64_bin.zip"
+sha256 = "b57c18f51a0ab7e34b6f42f9c27c4471af31186774480b468701e594493fae0b"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"

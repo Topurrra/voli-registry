@@ -1,0 +1,15 @@
+name = "simplecodegenerator"
+version = "1.17"
+description = "QR Code Generator for Windows"
+homepage = "https://www.nirsoft.net/utils/qr_code_generator.html"
+license = "Freeware"
+kind = "app"
+bin = ["SimpleCodeGenerator.exe"]
+persist = ["simplecodegenerator_lng.ini", "simplecodegenerator.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/simplecodegenerator.zip"
+sha256 = "9f6f64eea77ef96910f610a21d8c43077af996a18af272323da2d97a104f581f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/simplecodegenerator.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

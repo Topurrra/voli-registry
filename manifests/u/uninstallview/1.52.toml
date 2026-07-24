@@ -1,0 +1,15 @@
+name = "uninstallview"
+version = "1.52"
+description = "Shows installed programs on your system and allows you to uninstall them."
+homepage = "https://www.nirsoft.net/utils/uninstall_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["UninstallView.exe"]
+persist = ["uninstallview_lng.ini", "uninstallview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/uninstallview-x64.zip"
+sha256 = "9d6835be4d7afccafd7a7ce945b057537dfe3e638f4f52f0fe359b1bd7aa8836"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/uninstallview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

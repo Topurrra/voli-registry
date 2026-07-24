@@ -1,0 +1,15 @@
+name = "hashmyfiles"
+version = "2.51"
+description = "Calculate the MD5/SHA1 hashes of your files"
+homepage = "https://www.nirsoft.net/utils/hash_my_files.html"
+license = "Freeware"
+kind = "app"
+bin = ["HashMyFiles.exe"]
+persist = ["hashmyfiles_lng.ini", "hashmyfiles.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/hashmyfiles-x64.zip"
+sha256 = "f567354f05c447adc72120b6062c52052a876780e446a4c4ed7590c41833e6a4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/hashmyfiles.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

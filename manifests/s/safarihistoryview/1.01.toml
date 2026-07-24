@@ -1,0 +1,15 @@
+name = "safarihistoryview"
+version = "1.01"
+description = "History viewer for Safari Web browser"
+homepage = "https://www.nirsoft.net/utils/safari_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SafariHistoryView.exe"]
+persist = ["safarihistoryview_lng.ini", "safarihistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/safarihistoryview.zip"
+sha256 = "6b467088a046c2428fad1a7a78395622f6e23798c87186220fee04fbec0f488c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/safarihistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

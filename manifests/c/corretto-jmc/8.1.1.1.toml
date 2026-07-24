@@ -1,0 +1,14 @@
+name = "corretto-jmc"
+version = "8.1.1.1"
+description = "JDK Mission Control for Corretto"
+homepage = "https://github.com/corretto/corretto-jmc"
+license = "UPL-1.0"
+kind = "app"
+persist = ["configuration"]
+
+[source.x64]
+url = "https://corretto.aws/downloads/resources/jmc/8.1.1.1/amazon-corretto-jmc-8.1.1.1-windows-x64.zip"
+sha256 = "4ffc544b48a9a885d6d85b342ca18b26612ec4b9ee12f9f6db5c860156290608"
+
+[autoupdate]
+checkver = { github = "corretto/corretto-jmc" }

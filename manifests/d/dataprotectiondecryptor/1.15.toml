@@ -1,0 +1,15 @@
+name = "dataprotectiondecryptor"
+version = "1.15"
+description = "Decrypt DPAPI-encrypted data of Windows."
+homepage = "https://www.nirsoft.net/utils/dpapi_data_decryptor.html"
+license = "Freeware"
+kind = "app"
+bin = ["DataProtectionDecryptor.exe"]
+persist = ["dataprotectiondecryptor_lng.ini", "dataprotectiondecryptor.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/dataprotectiondecryptor-x64.zip"
+sha256 = "dc4b1d575aac86aec5212e8b893baaf04294f5717403df9d608665e9a81228dd"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dataprotectiondecryptor.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

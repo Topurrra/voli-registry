@@ -1,0 +1,15 @@
+name = "graalvm20-jdk8"
+version = "20.3.3"
+description = "High-performance, embeddable, polyglot Virtual Machine for JVM-langs (Java, Scala, Kotlin), JavaScript/NodeJS, Python, Ruby, R, and LLVM-langs (C, C++, Rust)"
+homepage = "https://www.graalvm.org/"
+license = "GPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.3.3/graalvm-ce-java8-windows-amd64-20.3.3.zip"
+sha256 = "d09f75c5b24d89dfd7e4ccd0a79db77a35f402fdf25589ba8c0a7d7a217d0322"
+
+[env]
+PATH = "{dir}\\bin"
+GRAALVM_HOME = "{dir}"
+JAVA_HOME = "{dir}"

@@ -1,0 +1,15 @@
+name = "domainlookuptools"
+version = "1.56"
+description = "Package of domain/ip address  lookup tools for Windows"
+homepage = "https://www.nirsoft.net/domain_lookup_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["DomainHostingView.exe"]
+persist = ["domainlookuptools_lng.ini", "domainlookuptools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/domainlookuptools.zip"
+sha256 = "fa0f4ee8ccf056d28416b8e0d003dcf61b77f54427228c86e7f058cc2292a431"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/domainlookuptools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

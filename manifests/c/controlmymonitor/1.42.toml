@@ -1,0 +1,15 @@
+name = "controlmymonitor"
+version = "1.42"
+description = "View and modify the settings of your monitor."
+homepage = "https://www.nirsoft.net/utils/control_my_monitor.html"
+license = "Freeware"
+kind = "app"
+bin = ["ControlMyMonitor.exe"]
+persist = ["controlmymonitor_lng.ini", "controlmymonitor.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/controlmymonitor.zip"
+sha256 = "da90da11e6acaaeb85df42ad9a15d15422418a8d6900fa1069004aae505c8628"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/controlmymonitor.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

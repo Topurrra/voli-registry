@@ -1,0 +1,15 @@
+name = "securitysoftview"
+version = "1.00"
+description = "Displays the list of AntiVirus/AntiSpyware/ Firewall programs on your system."
+homepage = "https://www.nirsoft.net/utils/security_software_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SecuritySoftView.exe"]
+persist = ["securitysoftview_lng.ini", "securitysoftview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/securitysoftview.zip"
+sha256 = "399ab8d877ec11fce4647e9111988d25af512116747ebb0fddf797fa16d4295b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/securitysoftview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

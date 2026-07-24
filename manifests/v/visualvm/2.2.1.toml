@@ -1,0 +1,14 @@
+name = "visualvm"
+version = "2.2.1"
+homepage = "https://visualvm.github.io/"
+license = "https://visualvm.github.io/gplv2+ce.html"
+kind = "app"
+extract_dir = "visualvm_221"
+bin = [{ name = "visualvm", path = "bin\\visualvm.exe" }]
+
+[source.x64]
+url = "https://github.com/oracle/visualvm/releases/download/2.2.1/visualvm_221.zip"
+sha256 = "6884c908c9e10a959dea8e7b168b496515c0310d6b86a35ce96b8197231f4ef3"
+
+[autoupdate]
+checkver = { github = "oracle/visualvm" }

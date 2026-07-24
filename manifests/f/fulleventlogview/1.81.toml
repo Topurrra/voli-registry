@@ -1,0 +1,15 @@
+name = "fulleventlogview"
+version = "1.81"
+description = "Event log viewer for Windows 10/8/7/Vista."
+homepage = "https://www.nirsoft.net/utils/full_event_log_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FullEventLogView.exe"]
+persist = ["fulleventlogview_lng.ini", "fulleventlogview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fulleventlogview-x64.zip"
+sha256 = "dd67610f19a4fffe77460f55ebb318523cc8bcbcb8fc3d462ee0dffab4ba1d95"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fulleventlogview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

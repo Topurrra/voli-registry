@@ -1,0 +1,15 @@
+name = "firmwaretablesview"
+version = "1.02"
+description = "Displays a list of firmware tables (ACPI, SMBIOS) stored on your system."
+homepage = "https://www.nirsoft.net/utils/firmware_tables_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FirmwareTablesView.exe"]
+persist = ["firmwaretablesview_lng.ini", "firmwaretablesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/firmwaretablesview-x64.zip"
+sha256 = "dc5db8daf90d6b678566557dccaa3e0c7b863f659cb65ab84f78560ea148f47f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/firmwaretablesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

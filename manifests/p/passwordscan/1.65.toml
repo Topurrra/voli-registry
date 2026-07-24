@@ -1,0 +1,15 @@
+name = "passwordscan"
+version = "1.65"
+description = "Displays security information about passwords stored in your system."
+homepage = "https://www.nirsoft.net/utils/password_security_scanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["PasswordScan.exe"]
+persist = ["passwordscan_lng.ini", "passwordscan.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/passwordscan-x64.zip"
+sha256 = "05ef2d450d2c20e559e3c3ffb8b8992fced4fd71a674af85738e4ce2931774e6"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/passwordscan.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

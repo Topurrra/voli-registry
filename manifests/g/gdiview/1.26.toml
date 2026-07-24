@@ -1,0 +1,15 @@
+name = "gdiview"
+version = "1.26"
+description = "Displays the list of GDI handles opened by every process"
+homepage = "https://www.nirsoft.net/utils/gdi_handles.html"
+license = "Freeware"
+kind = "app"
+bin = ["GDIView.exe"]
+persist = ["gdiview_lng.ini", "gdiview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/gdiview-x64.zip"
+sha256 = "45aeca625ed56662df1d52cca0f1b6e4ecd373b58ce8dcf07106f07f8dbc63e4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/gdiview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

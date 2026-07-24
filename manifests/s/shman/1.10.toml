@@ -1,0 +1,15 @@
+name = "shman"
+version = "1.10"
+description = "Lists all shortcuts on your desktop/start menu."
+homepage = "https://www.nirsoft.net/utils/shman.html"
+license = "Freeware"
+kind = "app"
+bin = ["shman.exe"]
+persist = ["shman_lng.ini", "shman.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/shman-x64.zip"
+sha256 = "66708b64b360b9bb8e14ce0088c4203436988286ab7f16de3046efd7883e967d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/shman.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

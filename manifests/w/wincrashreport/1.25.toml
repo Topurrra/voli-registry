@@ -1,0 +1,15 @@
+name = "wincrashreport"
+version = "1.25"
+description = "Displays a report about crashed Windows application."
+homepage = "https://www.nirsoft.net/utils/application_crash_report.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinCrashReport.exe"]
+persist = ["wincrashreport_lng.ini", "wincrashreport.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wincrashreport-x64.zip"
+sha256 = "54d9495cc620de5eb96166763d7c5ee9d6106a9fd244ab7f5b478135c38c1028"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wincrashreport.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "multimonitortool"
+version = "2.25"
+description = "Enable,disable,and set the primary monitor in Multi-Monitor system."
+homepage = "https://www.nirsoft.net/utils/multi_monitor_tool.html"
+license = "Freeware"
+kind = "app"
+bin = ["MultiMonitorTool.exe"]
+persist = ["multimonitortool_lng.ini", "multimonitortool.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/multimonitortool-x64.zip"
+sha256 = "9227764723f4b011f066a88b36b5a64bf81c9e3fa044356e877820319efe1c58"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/multimonitortool.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

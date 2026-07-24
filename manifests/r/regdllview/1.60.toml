@@ -1,0 +1,15 @@
+name = "regdllview"
+version = "1.60"
+description = "RegDllView is a small utility that displays the list of all registered files."
+homepage = "https://www.nirsoft.net/utils/registered_dll_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["RegDllView.exe"]
+persist = ["regdllview_lng.ini", "regdllview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/regdllview-x64.zip"
+sha256 = "1fbc281eb30a7af5886adfd480d96bcd0a46489709f60d0092bd26d7908b5cea"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/regdllview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

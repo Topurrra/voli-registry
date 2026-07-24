@@ -1,0 +1,15 @@
+name = "windefthreatsview"
+version = "1.15"
+description = "View Windows Defender threats of local and remote computer"
+homepage = "https://www.nirsoft.net/utils/windows_defender_threats_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinDefThreatsView.exe"]
+persist = ["windefthreatsview_lng.ini", "windefthreatsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/windefthreatsview-x64.zip"
+sha256 = "b6bfa9bec0c6b5bfec8404fbd4dbb95c34ac618fd6a21c5f3292c053673fb1e1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/windefthreatsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

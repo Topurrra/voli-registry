@@ -1,0 +1,15 @@
+name = "regfileexport"
+version = "1.11"
+description = "Export offline Registry file to .reg file"
+homepage = "https://www.nirsoft.net/utils/registry_file_offline_export.html"
+license = "Freeware"
+kind = "app"
+bin = ["RegFileExport.exe"]
+persist = ["regfileexport_lng.ini", "regfileexport.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/regfileexport.zip"
+sha256 = "de7282d7d8646ffa212bf2a11b7f537fd3d0febb0b5679bb724a1ca2b946ecd0"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/regfileexport.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

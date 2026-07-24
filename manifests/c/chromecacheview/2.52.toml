@@ -1,0 +1,15 @@
+name = "chromecacheview"
+version = "2.52"
+description = "Chrome Browser Cache Viewer"
+homepage = "https://www.nirsoft.net/utils/chrome_cache_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ChromeCacheView.exe"]
+persist = ["chromecacheview_lng.ini", "chromecacheview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/chromecacheview.zip"
+sha256 = "ea9fa922eaad76d5eb1cc27d75066945a635ec01e3e7317980120f11a65b0303"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/chromecacheview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

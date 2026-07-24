@@ -1,0 +1,15 @@
+name = "browserautofillview"
+version = "1.00"
+description = "View form autofill text stored by Chrome and Firefox Web browsers"
+homepage = "https://www.nirsoft.net/utils/web_browser_autofill_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BrowserAutoFillView.exe"]
+persist = ["browserautofillview_lng.ini", "browserautofillview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/browserautofillview-x64.zip"
+sha256 = "a83f797048c638ec816d15057074aaf25e681bb4cb6cb6aa191e110fec6c4343"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/browserautofillview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

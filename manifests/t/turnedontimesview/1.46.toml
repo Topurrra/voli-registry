@@ -1,0 +1,15 @@
+name = "turnedontimesview"
+version = "1.46"
+description = "View the time/date ranges that your computer was turned on."
+homepage = "https://www.nirsoft.net/utils/computer_turned_on_times.html"
+license = "Freeware"
+kind = "app"
+bin = ["TurnedOnTimesView.exe"]
+persist = ["turnedontimesview_lng.ini", "turnedontimesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/turnedontimesview.zip"
+sha256 = "1a1c1e6ed4583acb7b0a8960b34f37797fed81fe65dab1c33d1353e3923a9c4e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/turnedontimesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

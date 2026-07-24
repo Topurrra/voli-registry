@@ -1,0 +1,15 @@
+name = "installedcodec"
+version = "1.30"
+description = "List Codec drivers and DirectShow filters installed on your system."
+homepage = "https://www.nirsoft.net/utils/installed_codec.html"
+license = "Freeware"
+kind = "app"
+bin = ["InstalledCodec.exe"]
+persist = ["installedcodec_lng.ini", "installedcodec.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/installedcodec-x64.zip"
+sha256 = "08105602e668c073fccb58d1c4a93f2eb84c8b564eaf0fe716792f7f200f64ee"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/installedcodec.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

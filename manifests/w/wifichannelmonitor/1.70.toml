@@ -1,0 +1,15 @@
+name = "wifichannelmonitor"
+version = "1.70"
+description = "Captures wifi traffic in monitor mode and displays AP/clients information."
+homepage = "https://www.nirsoft.net/utils/wifi_channel_monitor.html"
+license = "Freeware"
+kind = "app"
+bin = ["WifiChannelMonitor.exe"]
+persist = ["wifichannelmonitor_lng.ini", "wifichannelmonitor.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wifichannelmonitor-x64.zip"
+sha256 = "76ee98c28823b02c2edb28c8b04b2692b98d5df4c1f460a4cf35a049117ca31f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wifichannelmonitor.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

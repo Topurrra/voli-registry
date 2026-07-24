@@ -1,0 +1,15 @@
+name = "appcompatibilityview"
+version = "1.10"
+description = "List of all programs that run with different compatibility setting"
+homepage = "https://www.nirsoft.net/utils/app_compatibility_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppCompatibilityView.exe"]
+persist = ["appcompatibilityview_lng.ini", "appcompatibilityview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appcompatibilityview-x64.zip"
+sha256 = "4e4eca33cbd493e7e78b18a4bc59d7bfd77629b030a770d832befe5d782bcb4e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appcompatibilityview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

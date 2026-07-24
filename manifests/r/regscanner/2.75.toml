@@ -1,0 +1,15 @@
+name = "regscanner"
+version = "2.75"
+description = "Scan and find values in the Registry"
+homepage = "https://www.nirsoft.net/utils/regscanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["RegScanner.exe"]
+persist = ["regscanner_lng.ini", "regscanner.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/regscanner-x64.zip"
+sha256 = "c3ab15e7a60d86ffb125d3099191eab3e635b48bc6746e62fbfb0debbbb55d54"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/regscanner.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

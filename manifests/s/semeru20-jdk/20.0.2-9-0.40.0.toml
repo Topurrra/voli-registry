@@ -1,0 +1,17 @@
+name = "semeru20-jdk"
+version = "20.0.2-9-0.40.0"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru20-binaries/releases/download/jdk-20.0.2+9_openj9-0.40.0/ibm-semeru-open-jdk_x64_windows_20.0.2_9_openj9-0.40.0.zip"
+sha256 = "6c0ac5ff340c03fc0888dcda535c9d32b50faed211f2c80f0c38dff6a969b07a"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru20-binaries" }

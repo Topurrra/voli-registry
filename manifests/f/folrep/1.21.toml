@@ -1,0 +1,15 @@
+name = "folrep"
+version = "1.21"
+description = "Scans your disk, and displays a report about each folder."
+homepage = "https://www.nirsoft.net/utils/folrep.html"
+license = "Freeware"
+kind = "app"
+bin = ["folrep.exe"]
+persist = ["folrep_lng.ini", "folrep.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/folrep.zip"
+sha256 = "82a662e081f86fee20ae390ab83d05ed5a0290a83ba0aaf0c2e50c46bf4e1fdb"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/folrep.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

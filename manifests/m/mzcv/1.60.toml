@@ -1,0 +1,15 @@
+name = "mzcv"
+version = "1.60"
+description = "alternative to the standard 'Cookie Manager' provided by  Firefox and Mozilla."
+homepage = "https://www.nirsoft.net/utils/mzcv.html"
+license = "Freeware"
+kind = "app"
+bin = ["mzcv.exe"]
+persist = ["mzcv_lng.ini", "mzcv.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mzcv-x64.zip"
+sha256 = "cace36a7ea185c8a675356f6e3eeb5b1d466666f7853aa9813df486c5178cbdf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mzcv.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

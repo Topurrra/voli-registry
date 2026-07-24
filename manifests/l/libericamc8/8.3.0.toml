@@ -1,0 +1,14 @@
+name = "libericamc8"
+version = "8.3.0"
+description = "Liberica Mission Control"
+homepage = "https://bell-sw.com/lmc/"
+license = "UPL-1.0"
+kind = "app"
+persist = ["configuration"]
+
+[source.x64]
+url = "https://download.bell-sw.com/lmc/8.3.0/bellsoft-lmc8.3.0-windows-amd64.zip"
+sha256 = "e75484aec26f468155ed6e64055a79829c39e67eb2719a5052011110de4e5b75"
+
+[autoupdate]
+checkver = "bellsoft-lmc([\\d.]+)-windows-amd64.zip"

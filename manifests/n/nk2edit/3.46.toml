@@ -1,0 +1,15 @@
+name = "nk2edit"
+version = "3.46"
+description = "Full NK2 (AutoComplete) editor for Microsoft Outlook"
+homepage = "https://www.nirsoft.net/utils/outlook_nk2_edit.html"
+license = "Freeware"
+kind = "app"
+bin = ["NK2Edit.exe"]
+persist = ["nk2edit_lng.ini", "nk2edit.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/nk2edit-x64.zip"
+sha256 = "5ae99230e797e50e017af8a7f71f95b545addafa147042f44ba18f7082b13dc6"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/nk2edit.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

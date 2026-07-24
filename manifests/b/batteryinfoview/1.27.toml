@@ -1,0 +1,15 @@
+name = "batteryinfoview"
+version = "1.27"
+description = "Displays battery information on laptops and netbooks."
+homepage = "https://www.nirsoft.net/utils/battery_information_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BatteryInfoView.exe"]
+persist = ["batteryinfoview_lng.ini", "batteryinfoview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/batteryinfoview-x64.zip"
+sha256 = "a01a2dfae2b136ade4efe88b36993256b6121db0f797a827c2b8eea16105246f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/batteryinfoview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

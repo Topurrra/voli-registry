@@ -1,0 +1,15 @@
+name = "fbcacheview"
+version = "1.24"
+description = "Shows Facebook images stored in the cache of your Web browser."
+homepage = "https://www.nirsoft.net/utils/facebook_cache_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["FBCacheView.exe"]
+persist = ["fbcacheview_lng.ini", "fbcacheview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fbcacheview.zip"
+sha256 = "1d4ec412d7c2eefe312674120f1c29b133be0de7246d15d5853cba294086b447"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fbcacheview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

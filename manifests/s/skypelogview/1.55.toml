@@ -1,0 +1,15 @@
+name = "skypelogview"
+version = "1.55"
+description = "View log files created by Skype"
+homepage = "https://www.nirsoft.net/utils/skype_log_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SkypeLogView.exe"]
+persist = ["skypelogview_lng.ini", "skypelogview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/skypelogview.zip"
+sha256 = "3358e8e5e1a4eaa8ad022f91ae15160e20937e57099e09a3d078bb78dfa3379c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/skypelogview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

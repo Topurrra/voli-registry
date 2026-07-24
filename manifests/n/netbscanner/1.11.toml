@@ -1,0 +1,15 @@
+name = "netbscanner"
+version = "1.11"
+description = "Scans all computers in the IP addresses range you choose, using NetBIOS protocol"
+homepage = "https://www.nirsoft.net/utils/netbios_scanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetBScanner.exe"]
+persist = ["netbscanner_lng.ini", "netbscanner.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/netbscanner.zip"
+sha256 = "f4970e58d94ef7112924b16ae81187e18d9bad26d407e9b6a37172c5d5973c3c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/netbscanner.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

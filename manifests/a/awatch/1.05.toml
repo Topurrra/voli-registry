@@ -1,0 +1,15 @@
+name = "awatch"
+version = "1.05"
+description = "displays useful information about your network adapters."
+homepage = "https://www.nirsoft.net/utils/awatch.html"
+license = "Freeware"
+kind = "app"
+bin = ["awatch.exe"]
+persist = ["awatch_lng.ini", "awatch.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/awatch.zip"
+sha256 = "cc059ac00160b4bb3a2f6ad1c34017b8d938dfdd85152c137ddffecc7f203d0d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/awatch.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

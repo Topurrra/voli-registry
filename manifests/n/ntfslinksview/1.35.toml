@@ -1,0 +1,15 @@
+name = "ntfslinksview"
+version = "1.35"
+description = "View the list of NTFS symbolic links/junctions in selected folder."
+homepage = "https://www.nirsoft.net/utils/ntfs_links_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["NTFSLinksView.exe"]
+persist = ["ntfslinksview_lng.ini", "ntfslinksview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ntfslinksview-x64.zip"
+sha256 = "d3184683dc1116a38bb4c632d1883e48850883b1300c2144c96eedca48679aad"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ntfslinksview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

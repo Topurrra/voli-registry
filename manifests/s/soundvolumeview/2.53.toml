@@ -1,0 +1,15 @@
+name = "soundvolumeview"
+version = "2.53"
+description = "View/change sound levels & save/load sound level profiles on Windows Vista/7/8"
+homepage = "https://www.nirsoft.net/utils/sound_volume_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SoundVolumeView.exe"]
+persist = ["soundvolumeview_lng.ini", "soundvolumeview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/soundvolumeview-x64.zip"
+sha256 = "ee2c45553fb9fb31b71db88b537c18e25c1a387a4a9009d081bdb38265c68e1f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/soundvolumeview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

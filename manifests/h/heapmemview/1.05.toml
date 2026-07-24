@@ -1,0 +1,15 @@
+name = "heapmemview"
+version = "1.05"
+description = "View the content of all memory blocks allocated in the heap."
+homepage = "https://www.nirsoft.net/utils/heap_memory_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["HeapMemView.exe"]
+persist = ["heapmemview_lng.ini", "heapmemview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/heapmemview-x64.zip"
+sha256 = "0c6e818a2291efaa168fae84956e4d1d25c37fd48d1aedf74eb85c66e36e5010"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/heapmemview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

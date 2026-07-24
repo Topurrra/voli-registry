@@ -1,0 +1,15 @@
+name = "systools"
+version = "5.65"
+description = "Package of system tools for Windows"
+homepage = "https://www.nirsoft.net/system_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProduKey.exe"]
+persist = ["systools_lng.ini", "systools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/systools.zip"
+sha256 = "b87c9f80360792b78a7ac75cad9e232b00e28b3092c6ae29a44ccee8f1d27864"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/systools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

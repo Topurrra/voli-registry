@@ -1,0 +1,15 @@
+name = "lsasecretsdump"
+version = "1.21"
+description = "Dump the LSA secrets from the Registry."
+homepage = "https://www.nirsoft.net/utils/lsa_secrets_dump.html"
+license = "Freeware"
+kind = "app"
+bin = ["LSASecretsDump.exe"]
+persist = ["lsasecretsdump_lng.ini", "lsasecretsdump.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/lsasecretsdump-x64.zip"
+sha256 = "8d097c09a665fc846cc9389830994a94eaf73ec85c4b8500cfba59113cb20f24"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/lsasecretsdump.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "driveletterview"
+version = "1.50"
+description = "View and change drive letter assignments "
+homepage = "https://www.nirsoft.net/utils/drive_letter_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["DriveLetterView.exe"]
+persist = ["driveletterview_lng.ini", "driveletterview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/driveletterview-x64.zip"
+sha256 = "90024847ab711553046263bbe06acb99f31916a5c47e0e3858533c5310083d16"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/driveletterview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

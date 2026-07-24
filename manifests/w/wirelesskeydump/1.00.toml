@@ -1,0 +1,15 @@
+name = "wirelesskeydump"
+version = "1.00"
+description = "dumps the list of all wireless keys stored by Windows"
+homepage = "https://www.nirsoft.net/utils/wireless_key_dump.html"
+license = "Freeware"
+kind = "app"
+bin = ["WirelessKeyDump.exe"]
+persist = ["wirelesskeydump_lng.ini", "wirelesskeydump.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wirelesskeydump-x64.zip"
+sha256 = "886e8883927701dbd8b043092011608a0ec7f8e0055d1378ef1174548ef2050c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wirelesskeydump.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

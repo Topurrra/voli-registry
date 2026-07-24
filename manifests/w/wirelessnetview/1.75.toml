@@ -1,0 +1,15 @@
+name = "wirelessnetview"
+version = "1.75"
+description = "Monitor the activity of wireless networks around you."
+homepage = "https://www.nirsoft.net/utils/wireless_network_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WirelessNetView.exe"]
+persist = ["wirelessnetview_lng.ini", "wirelessnetview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wirelessnetview.zip"
+sha256 = "d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wirelessnetview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,16 @@
+name = "gluon-openjfx-monocle-sdk"
+version = "18"
+description = "OpenJFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java."
+homepage = "https://openjfx.io/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download2.gluonhq.com/openjfx/18/openjfx-18_monocle-windows-x64_bin-sdk.zip"
+sha256 = "b1d28be51757841314deb42602e248766e6edff4a8db06987d9fe5bf853f752d"
+
+[env]
+PATH_TO_FX = "{dir}\\lib"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"([\\\\d.]+).*?\\\"#latest\\\"\",\"url\":\"https://gluonhq.com/wp-content/uploads/custom-css-js/119502.js\"}"

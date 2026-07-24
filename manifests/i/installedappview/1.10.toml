@@ -1,0 +1,15 @@
+name = "installedappview"
+version = "1.10"
+description = "View installed Windows 10 apps"
+homepage = "https://www.nirsoft.net/utils/installed_app_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["InstalledAppView.exe"]
+persist = ["installedappview_lng.ini", "installedappview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/installedappview-x64.zip"
+sha256 = "0c78244ec5bc54cc11e3a284f70f23d370b80e153055dc70f2907223a2231357"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/installedappview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

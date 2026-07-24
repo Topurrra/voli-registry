@@ -1,0 +1,15 @@
+name = "processactivityview"
+version = "1.16"
+description = "Show the file activity for selected process."
+homepage = "https://www.nirsoft.net/utils/process_activity_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProcessActivityView.exe"]
+persist = ["processactivityview_lng.ini", "processactivityview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/processactivityview-x64.zip"
+sha256 = "8106a45c132361f03aed73c75b6ff42a0f2918cf78db5c5f339d2780681064e7"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/processactivityview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

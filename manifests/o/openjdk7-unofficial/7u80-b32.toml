@@ -1,0 +1,15 @@
+name = "openjdk7-unofficial"
+version = "7u80-b32"
+description = "OpenJDK 7 Unofficial build"
+homepage = "https://bitbucket.org/alexkasko/openjdk-unofficial-builds"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "openjdk-1.7.0-u80-unofficial-windows-amd64-image"
+
+[source.x64]
+url = "https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openjdk-1.7.0-u80-unofficial-windows-amd64-image.zip"
+sha256 = "1b835601f4ae689b9271040713b01d6bdd186c6a57bb4a7c47e1f7244d5ac928"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"

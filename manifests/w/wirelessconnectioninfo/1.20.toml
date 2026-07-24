@@ -1,0 +1,15 @@
+name = "wirelessconnectioninfo"
+version = "1.20"
+description = "Displays general information and statistics about the active wifi connection."
+homepage = "https://www.nirsoft.net/utils/wireless_connection_information.html"
+license = "Freeware"
+kind = "app"
+bin = ["WirelessConnectionInfo.exe"]
+persist = ["wirelessconnectioninfo_lng.ini", "wirelessconnectioninfo.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wirelessconnectioninfo.zip"
+sha256 = "126aba538a639046e949ad2a4c7228c7365aa17c90a7f71d1ae2f8a9cfbfec92"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wirelessconnectioninfo.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

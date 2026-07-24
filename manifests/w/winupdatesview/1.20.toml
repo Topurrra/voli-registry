@@ -1,0 +1,15 @@
+name = "winupdatesview"
+version = "1.20"
+description = "Displays the history of Windows updates for your system."
+homepage = "https://www.nirsoft.net/utils/windows_updates_history_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinUpdatesView.exe"]
+persist = ["winupdatesview_lng.ini", "winupdatesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winupdatesview-x64.zip"
+sha256 = "69ff663ee603ac8c5ad50750297c54678a73cdbf08d9bf589da3be39a445d728"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winupdatesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

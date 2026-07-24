@@ -1,0 +1,15 @@
+name = "outlookstatview"
+version = "2.32"
+description = "Display a general statistics of your Outlook emails."
+homepage = "https://www.nirsoft.net/utils/outlook_statistics.html"
+license = "Freeware"
+kind = "app"
+bin = ["OutlookStatView.exe"]
+persist = ["outlookstatview_lng.ini", "outlookstatview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/outlookstatview-x64.zip"
+sha256 = "c8bd0273ea57195f2d6888c4f4ee5eb265373fd16288be50593294cc0345f87e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/outlookstatview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

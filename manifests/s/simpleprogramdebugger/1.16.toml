@@ -1,0 +1,15 @@
+name = "simpleprogramdebugger"
+version = "1.16"
+description = "Displays debugging events of a running program."
+homepage = "https://www.nirsoft.net/utils/simple_program_debugger.html"
+license = "Freeware"
+kind = "app"
+bin = ["SimpleProgramDebugger.exe"]
+persist = ["simpleprogramdebugger_lng.ini", "simpleprogramdebugger.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip"
+sha256 = "0487e3e2a8af213fdaf0202d8fb7dbdf6776f703e6b70e43f2f311694c7aa91b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/simpleprogramdebugger.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

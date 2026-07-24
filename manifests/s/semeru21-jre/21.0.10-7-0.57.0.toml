@@ -1,0 +1,17 @@
+name = "semeru21-jre"
+version = "21.0.10-7-0.57.0"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.10%2B7_openj9-0.57.0/ibm-semeru-open-jre_x64_windows_21.0.10_7_openj9-0.57.0.zip"
+sha256 = "7951cd9326c03d6319d8e04cc74d1b13a0f035fb7fe56a774fe8bc19319ab060"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru21-binaries" }

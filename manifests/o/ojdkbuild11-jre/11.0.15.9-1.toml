@@ -1,0 +1,18 @@
+name = "ojdkbuild11-jre"
+version = "11.0.15.9-1"
+description = "OpenJDK 11 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-11-openjdk-jre-11.0.15.9-1.windows.ojdkbuild.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-11-openjdk-11.0.15.9-1/java-11-openjdk-jre-11.0.15.9-1.windows.ojdkbuild.x86_64.zip"
+sha256 = "1c96985af108c8f0fc398552dbc37c4ab4760d27e4045bb7e6e5118242076d14"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ojdkbuild/ojdkbuild" }

@@ -1,0 +1,15 @@
+name = "mweather"
+version = "1.79"
+description = "Decode METAR weather reports, and display them in a simple weather report table."
+homepage = "https://www.nirsoft.net/utils/mweather.html"
+license = "Freeware"
+kind = "app"
+bin = ["mweather.exe"]
+persist = ["mweather_lng.ini", "mweather.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mweather.zip"
+sha256 = "e4d2fe1b3ec9b5661ca6e5053e77e8ef9364ecba57aa7d9f39ee3e4325b799f2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mweather.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

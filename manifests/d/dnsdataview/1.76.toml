@@ -1,0 +1,15 @@
+name = "dnsdataview"
+version = "1.76"
+description = "Retrieve the DNS records (MX, NS, A, SOA) of the specified domains. "
+homepage = "https://www.nirsoft.net/utils/dns_records_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["DNSDataView.exe"]
+persist = ["dnsdataview_lng.ini", "dnsdataview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/dnsdataview.zip"
+sha256 = "2b7168de8e9e968668e8579f45a910bd6f6c63372911800f885bad4b91901f7c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dnsdataview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

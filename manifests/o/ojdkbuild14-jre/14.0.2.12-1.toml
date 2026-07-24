@@ -1,0 +1,18 @@
+name = "ojdkbuild14-jre"
+version = "14.0.2.12-1"
+description = "OpenJDK 14 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-14-openjdk-jre-14.0.2.12-1.windows.ojdkbuild.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-14-openjdk-14.0.2.12-1/java-14-openjdk-jre-14.0.2.12-1.windows.ojdkbuild.x86_64.zip"
+sha256 = "b484416ca87dc722766faec4583a7a5936d3e4583ef71d9c7c483ff08fcaa822"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ojdkbuild/ojdkbuild" }

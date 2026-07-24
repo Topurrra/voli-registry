@@ -1,0 +1,17 @@
+name = "openjdk19"
+version = "19.0.2-7"
+description = "Official production-ready open-source builds of OpenJDK 19"
+homepage = "https://jdk.java.net/19"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_windows-x64_bin.zip"
+sha256 = "9f70eba3f2631674a2d7d3aa01150d697f68be16ad76662ff948d7fe1b4985d8"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"name\\\":\\\"jdk-(?<version>19\\\\.[\\\\d.]+)\\\\+(?<build>\\\\d+)\\\"\",\"replace\":\"${version}-${build}\",\"url\":\"https://api.github.com/repos/openjdk/jdk19u/tags?per_page=100\"}"

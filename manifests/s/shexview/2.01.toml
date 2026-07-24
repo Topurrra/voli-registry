@@ -1,0 +1,15 @@
+name = "shexview"
+version = "2.01"
+description = "Displays the details of shell extensions installed on your computer."
+homepage = "https://www.nirsoft.net/utils/shexview.html"
+license = "Freeware"
+kind = "app"
+bin = ["shexview.exe"]
+persist = ["shexview_lng.ini", "shexview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/shexview-x64.zip"
+sha256 = "73248fb48ee6387cadbd6bdde5265cbef465cea7fca8f3b72eac5c408f4e7ccb"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/shexview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

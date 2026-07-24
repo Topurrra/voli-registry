@@ -1,0 +1,15 @@
+name = "sniffpass"
+version = "1.13"
+description = "capture the passwords that pass through your network adapter."
+homepage = "https://www.nirsoft.net/utils/password_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["SniffPass.exe"]
+persist = ["sniffpass_lng.ini", "sniffpass.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/sniffpass-x64.zip"
+sha256 = "4a9e41fe097d31dd6f65490c2c09d2a0ea5d700e1acb33d39a1b31cb75611cac"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/sniffpass.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

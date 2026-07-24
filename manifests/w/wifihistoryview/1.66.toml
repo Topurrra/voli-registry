@@ -1,0 +1,15 @@
+name = "wifihistoryview"
+version = "1.66"
+description = "Displays the history of connections to wireless networks on your computer. "
+homepage = "https://www.nirsoft.net/utils/wifi_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WifiHistoryView.exe"]
+persist = ["wifihistoryview_lng.ini", "wifihistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wifihistoryview.zip"
+sha256 = "557c371d1ceb3ed0a83c35952a86ea38ed128a36ae8e1d0bddeb3dabc34366be"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wifihistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

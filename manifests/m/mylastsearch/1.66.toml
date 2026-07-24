@@ -1,0 +1,15 @@
+name = "mylastsearch"
+version = "1.66"
+description = "View your latest searches with Google, Yahoo, and MSN"
+homepage = "https://www.nirsoft.net/utils/my_last_search.html"
+license = "Freeware"
+kind = "app"
+bin = ["MyLastSearch.exe"]
+persist = ["mylastsearch_lng.ini", "mylastsearch.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mylastsearch.zip"
+sha256 = "2286f8ec71f37215c58c7d2dfbc6eb6871ae9db39de029e082f4b296e93c4b75"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mylastsearch.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

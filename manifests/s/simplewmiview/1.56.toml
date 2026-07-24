@@ -1,0 +1,15 @@
+name = "simplewmiview"
+version = "1.56"
+description = "Displays the result of WMI queries in a simple table"
+homepage = "https://www.nirsoft.net/utils/simple_wmi_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SimpleWMIView.exe"]
+persist = ["simplewmiview_lng.ini", "simplewmiview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/simplewmiview-x64.zip"
+sha256 = "f808463ba8568f0ae5ff8aa0389a037d951a566aa6e312b1e95afed438949f88"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/simplewmiview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

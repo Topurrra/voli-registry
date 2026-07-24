@@ -1,0 +1,15 @@
+name = "bluetoothcl"
+version = "1.07"
+description = "Show bluetooth devices  list"
+homepage = "https://www.nirsoft.net/utils/bluetoothcl.html"
+license = "Freeware"
+kind = "app"
+bin = ["BluetoothCL.exe"]
+persist = ["bluetoothcl_lng.ini", "bluetoothcl.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bluetoothcl.zip"
+sha256 = "025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bluetoothcl.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

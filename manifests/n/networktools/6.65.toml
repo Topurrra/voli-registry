@@ -1,0 +1,15 @@
+name = "networktools"
+version = "6.65"
+description = "Package of network monitoring tools for Windows"
+homepage = "https://www.nirsoft.net/network_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["cports.exe"]
+persist = ["networktools_lng.ini", "networktools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/networktools.zip"
+sha256 = "0b16e4d07f51bd56bf19f73362ae93156fbf0c650ec1fb79eff517d07f876035"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networktools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

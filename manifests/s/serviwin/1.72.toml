@@ -1,0 +1,15 @@
+name = "serviwin"
+version = "1.72"
+description = "displays the list of installed drivers and services on your system."
+homepage = "https://www.nirsoft.net/utils/serviwin.html"
+license = "Freeware"
+kind = "app"
+bin = ["serviwin.exe"]
+persist = ["serviwin_lng.ini", "serviwin.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/serviwin-x64.zip"
+sha256 = "c0bd7a8667086f00f484a0ac6982b5cf23ac5f0bb8538a1bb6dbfce86c2cbbae"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/serviwin.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

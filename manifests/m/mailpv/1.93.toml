@@ -1,0 +1,15 @@
+name = "mailpv"
+version = "1.93"
+description = "Recovers email passwords"
+homepage = "https://www.nirsoft.net/utils/mailpv.html"
+license = "Freeware"
+kind = "app"
+bin = ["mailpv.exe"]
+persist = ["mailpv_lng.ini", "mailpv.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/mailpv.zip"
+sha256 = "7fb70bd1ef0ae9a8c0797af41c95962aba75fb7b5055136f73ef5a08b6bb956c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mailpv.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "produkey"
+version = "1.97"
+description = "Displays the CD-Keys of MS-Office/Windows installed on your computer."
+homepage = "https://www.nirsoft.net/utils/product_cd_key_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProduKey.exe"]
+persist = ["produkey_lng.ini", "produkey.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/produkey-x64.zip"
+sha256 = "e4604e0ee680370448c6a832856dff4a0255ca763672825a7a67a2a4662b9909"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/produkey.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

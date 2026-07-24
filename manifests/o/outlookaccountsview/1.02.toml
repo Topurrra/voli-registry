@@ -1,0 +1,15 @@
+name = "outlookaccountsview"
+version = "1.02"
+description = "View POP3/IMAP/SMTP passwords and account settings of Outlook"
+homepage = "https://www.nirsoft.net/utils/outlook_accounts_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["OutlookAccountsView.exe"]
+persist = ["outlookaccountsview_lng.ini", "outlookaccountsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/outlookaccountsview-x64.zip"
+sha256 = "daeeb3457233036b7bf8663ee30709ccda480ad31b7f9b88ec10c49ae3421e17"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/outlookaccountsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

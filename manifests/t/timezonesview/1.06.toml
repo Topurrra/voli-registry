@@ -1,0 +1,15 @@
+name = "timezonesview"
+version = "1.06"
+description = "Displays all world time zones."
+homepage = "https://www.nirsoft.net/utils/time_zones_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["TimeZonesView.exe"]
+persist = ["timezonesview_lng.ini", "timezonesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/timezonesview.zip"
+sha256 = "9f3b5abef89b03e291816a51efa96090f31a047e25a2751bd565598717207571"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/timezonesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

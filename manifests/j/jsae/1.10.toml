@@ -1,0 +1,15 @@
+name = "jsae"
+version = "1.10"
+description = "Creates Javascript animation  from image files on your local drive."
+homepage = "https://www.nirsoft.net/utils/jsae.html"
+license = "Freeware"
+kind = "app"
+bin = ["jsae.exe"]
+persist = ["jsae_lng.ini", "jsae.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/jsae.zip"
+sha256 = "2b6e1be03a3b897f25bbc4249e0b39efe368e47ad63d8909c2aaaecfc1f082e1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/jsae.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

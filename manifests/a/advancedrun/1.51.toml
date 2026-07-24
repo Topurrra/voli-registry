@@ -1,0 +1,15 @@
+name = "advancedrun"
+version = "1.51"
+description = "Run a program with different settings that you choose."
+homepage = "https://www.nirsoft.net/utils/advanced_run.html"
+license = "Freeware"
+kind = "app"
+bin = ["AdvancedRun.exe"]
+persist = ["advancedrun_lng.ini", "advancedrun.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/advancedrun-x64.zip"
+sha256 = "a05825b22d78807ca5a6fdfcedaf326297d3102756fdaa58e9c0a52aab7091d2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/advancedrun.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

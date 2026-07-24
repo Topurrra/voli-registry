@@ -1,0 +1,15 @@
+name = "browsertools"
+version = "3.95"
+description = "Package of Web browser tools for Windows"
+homepage = "https://www.nirsoft.net/web_browser_tools.html"
+license = "Freeware"
+kind = "app"
+bin = ["MozillaHistoryView.exe"]
+persist = ["browsertools_lng.ini", "browsertools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/brtools.zip"
+sha256 = "37feea1fa7af631d6ff273920bea0af5cf930325c00af079ac9d9c5202a4ee4c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/browsertools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

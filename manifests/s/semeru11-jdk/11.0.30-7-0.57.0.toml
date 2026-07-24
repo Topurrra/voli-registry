@@ -1,0 +1,17 @@
+name = "semeru11-jdk"
+version = "11.0.30-7-0.57.0"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.30%2B7_openj9-0.57.0/ibm-semeru-open-jdk_x64_windows_11.0.30_7_openj9-0.57.0.zip"
+sha256 = "24222e054fc8b42830b60d2c34205e340274efcbb6ed7df7c468aad9287648c6"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru11-binaries" }

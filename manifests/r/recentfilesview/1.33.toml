@@ -1,0 +1,15 @@
+name = "recentfilesview"
+version = "1.33"
+description = "Display the list of recently opened files"
+homepage = "https://www.nirsoft.net/utils/recent_files_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["RecentFilesView.exe"]
+persist = ["recentfilesview_lng.ini", "recentfilesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/recentfilesview.zip"
+sha256 = "6920cc0165fcffa1a009c663c3dce7c84a62ca0e4b73d9d86dc9cc0dc39dca61"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/recentfilesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

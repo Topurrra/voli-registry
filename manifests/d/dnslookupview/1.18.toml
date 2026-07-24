@@ -1,0 +1,15 @@
+name = "dnslookupview"
+version = "1.18"
+description = "DNS Lookup Viewer for Windows 11/10"
+homepage = "https://www.nirsoft.net/utils/dns_lookup_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["DNSLookupView.exe"]
+persist = ["dnslookupview_lng.ini", "dnslookupview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/dnslookupview.zip"
+sha256 = "4a111f348a2f0b5efe88f0cdf407b39fde34d14d726cec33642f57d7f70c29c9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dnslookupview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

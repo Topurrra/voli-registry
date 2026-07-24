@@ -1,0 +1,15 @@
+name = "jrview"
+version = "1.00"
+description = "Displays the installed Java Runtime  Environments."
+homepage = "https://www.nirsoft.net/utils/jrview.html"
+license = "Freeware"
+kind = "app"
+bin = ["jrview.exe"]
+persist = ["jrview_lng.ini", "jrview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/jrview.zip"
+sha256 = "ef9bbfbd17b7b9c7215b54b86597c5e345b44904d1ab7b55d1081796453619a1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/jrview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

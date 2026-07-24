@@ -1,0 +1,15 @@
+name = "addrview"
+version = "1.01"
+description = "Extract URL addresses from HTML pages."
+homepage = "https://www.nirsoft.net/utils/addrview.html"
+license = "Freeware"
+kind = "app"
+bin = ["AddrView.exe"]
+persist = ["addrview_lng.ini", "addrview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/addrview.zip"
+sha256 = "806883045b6b510625d05ae965222b80c451a0b18ce30343ec9607cca10d4017"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/addrview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "shadowcopyview"
+version = "1.16"
+description = "View shadow copies on your system"
+homepage = "https://www.nirsoft.net/utils/shadow_copy_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ShadowCopyView.exe"]
+persist = ["shadowcopyview_lng.ini", "shadowcopyview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/shadowcopyview-x64.zip"
+sha256 = "55c72769e4e13b9a712cf8a7a7ea74eb25014af2ef6598513bc1429ea0746f3d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/shadowcopyview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

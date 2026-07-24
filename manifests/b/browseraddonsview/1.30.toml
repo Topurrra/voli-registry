@@ -1,0 +1,15 @@
+name = "browseraddonsview"
+version = "1.30"
+description = "Displays the details of all Web browser addons/plugins installed in your system."
+homepage = "https://www.nirsoft.net/utils/web_browser_addons_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BrowserAddonsView.exe"]
+persist = ["browseraddonsview_lng.ini", "browseraddonsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/browseraddonsview-x64.zip"
+sha256 = "904e2de667963c3a91a9d935c2fa9ff864490b53beed042a4439499a89e673f2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/browseraddonsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

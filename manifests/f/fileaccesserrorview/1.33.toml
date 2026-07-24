@@ -1,0 +1,15 @@
+name = "fileaccesserrorview"
+version = "1.33"
+description = "Displays file access error information"
+homepage = "https://www.nirsoft.net/utils/file_access_error_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FileAccessErrorView.exe"]
+persist = ["fileaccesserrorview_lng.ini", "fileaccesserrorview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip"
+sha256 = "82e4b7b048f9745d928831a17e2b0a1c70894ac462e36c586ddacda57b7a9e5a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fileaccesserrorview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

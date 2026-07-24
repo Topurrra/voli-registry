@@ -1,0 +1,15 @@
+name = "batteryhistoryview"
+version = "1.06"
+description = "Displays battery history information on Windows 11/10."
+homepage = "https://www.nirsoft.net/utils/battery_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BatteryHistoryView.exe"]
+persist = ["batteryhistoryview_lng.ini", "batteryhistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/batteryhistoryview.zip"
+sha256 = "20b32fd07d1e687e1de064c73a102bd77e7356e12c4539b07442e4447fa78474"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/batteryhistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

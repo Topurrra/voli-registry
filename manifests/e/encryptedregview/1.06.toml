@@ -1,0 +1,15 @@
+name = "encryptedregview"
+version = "1.06"
+description = "Scans the Registry and  decrypts the data encrypted with  DPAPI."
+homepage = "https://www.nirsoft.net/utils/encrypted_registry_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["EncryptedRegView.exe"]
+persist = ["encryptedregview_lng.ini", "encryptedregview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/encryptedregview-x64.zip"
+sha256 = "85bb0d5f934c097c0b9f572265b6e5ebd53740e9481e6d6d466d581e34b5f6ea"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/encryptedregview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

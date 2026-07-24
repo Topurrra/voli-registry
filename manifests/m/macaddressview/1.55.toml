@@ -1,0 +1,15 @@
+name = "macaddressview"
+version = "1.55"
+description = "MAC address lookup tool"
+homepage = "https://www.nirsoft.net/utils/mac_address_lookup_find.html"
+license = "Freeware"
+kind = "app"
+bin = ["MACAddressView.exe"]
+persist = ["macaddressview_lng.ini", "macaddressview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/macaddressview.zip"
+sha256 = "03adf69e54ea51830ee0d81da0384c6a0829fac22e24a0e293553f4d668071e1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/macaddressview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

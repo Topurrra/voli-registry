@@ -1,0 +1,15 @@
+name = "bluetoothleview"
+version = "1.03"
+description = "Monitors the activity of Bluetooth Low Energy devices around you."
+homepage = "https://www.nirsoft.net/utils/bluetooth_low_energy_scanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["BluetoothLEView.exe"]
+persist = ["bluetoothleview_lng.ini", "bluetoothleview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bluetoothleview-x64.zip"
+sha256 = "186f833f73237265a509380edf13fbb96d433563233b675360b84082fffeee9e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bluetoothleview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

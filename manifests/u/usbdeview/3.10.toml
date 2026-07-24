@@ -1,0 +1,15 @@
+name = "usbdeview"
+version = "3.10"
+description = "Lists all installed USB devices that you previously used."
+homepage = "https://www.nirsoft.net/utils/usb_devices_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["USBDeview.exe"]
+persist = ["usbdeview_lng.ini", "usbdeview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/usbdeview-x64.zip"
+sha256 = "7eb383f7fbdde8b48ecba07cd97adda515e8ffc04839b0427cc89ced893c161b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/usbdeview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

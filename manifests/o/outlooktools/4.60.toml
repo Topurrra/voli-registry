@@ -1,0 +1,15 @@
+name = "outlooktools"
+version = "4.60"
+description = "5 Tools for Microsoft Outlook"
+homepage = "https://www.nirsoft.net/outlook_office_software.html"
+license = "Freeware"
+kind = "app"
+bin = ["nk2edit.exe"]
+persist = ["outlooktools_lng.ini", "outlooktools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/outlooktools.zip"
+sha256 = "c6b48b1a9e1a09042fb61c52ac5bb4498232674a09b272ff16b7f43716a22354"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/outlooktools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

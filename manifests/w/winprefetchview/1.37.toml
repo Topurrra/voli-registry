@@ -1,0 +1,15 @@
+name = "winprefetchview"
+version = "1.37"
+description = "View the Prefetch files (.pf) stored in your system."
+homepage = "https://www.nirsoft.net/utils/win_prefetch_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinPrefetchView.exe"]
+persist = ["winprefetchview_lng.ini", "winprefetchview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winprefetchview-x64.zip"
+sha256 = "a266a6750ab1b3078168b9b306befa9ad5a3069340e87fe0de609f417f0f1f18"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winprefetchview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

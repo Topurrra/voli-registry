@@ -1,0 +1,15 @@
+name = "bluetoothview"
+version = "1.70"
+description = "Monitors the activity of Bluetooth devices around you."
+homepage = "https://www.nirsoft.net/utils/bluetooth_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["BluetoothView.exe"]
+persist = ["bluetoothview_lng.ini", "bluetoothview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bluetoothview.zip"
+sha256 = "a2b9b7c2863daebebab66b8a5f95d0fd2cc5d3cf3d990b118b0f6f6c7e504d1d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bluetoothview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

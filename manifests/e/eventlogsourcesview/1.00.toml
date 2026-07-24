@@ -1,0 +1,15 @@
+name = "eventlogsourcesview"
+version = "1.00"
+description = "Displays the list of all event log sources installed on your system. "
+homepage = "https://www.nirsoft.net/utils/event_log_sources_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["EventLogSourcesView.exe"]
+persist = ["eventlogsourcesview_lng.ini", "eventlogsourcesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/eventlogsourcesview-x64.zip"
+sha256 = "23e2dcb254e88307457ce81782666c25a84b4e1e2659d0a2e573d69992530dbc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/eventlogsourcesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

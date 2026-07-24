@@ -1,0 +1,15 @@
+name = "installeddriverslist"
+version = "1.06"
+description = "Lists all device drivers that are currently installed on your system."
+homepage = "https://www.nirsoft.net/utils/installed_drivers_list.html"
+license = "Freeware"
+kind = "app"
+bin = ["InstalledDriversList.exe"]
+persist = ["installeddriverslist_lng.ini", "installeddriverslist.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/installeddriverslist-x64.zip"
+sha256 = "eca552a91ddf8bf115090ddb9e97bb8e81910e7f5e30b239ca5f0cd2b8605183"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/installeddriverslist.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

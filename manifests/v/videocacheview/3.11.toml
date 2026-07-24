@@ -1,0 +1,15 @@
+name = "videocacheview"
+version = "3.11"
+description = "Extract Web site video files from the cache of your Web browser"
+homepage = "https://www.nirsoft.net/utils/video_cache_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["VideoCacheView.exe"]
+persist = ["videocacheview_lng.ini", "videocacheview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/videocacheview-x64.zip"
+sha256 = "5441ee47081c0d91a2bdc4781b54e0d896fa093b443a065255e2c47f4c1ef446"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/videocacheview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

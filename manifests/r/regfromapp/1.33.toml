@@ -1,0 +1,15 @@
+name = "regfromapp"
+version = "1.33"
+description = "Creates .reg file according to Registry changes made by application."
+homepage = "https://www.nirsoft.net/utils/reg_file_from_application.html"
+license = "Freeware"
+kind = "app"
+bin = ["RegFromApp.exe"]
+persist = ["regfromapp_lng.ini", "regfromapp.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/regfromapp-x64.zip"
+sha256 = "558ea21f9f63ef12d712228856cafd22f7b83640912cce4701406073ab53c7de"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/regfromapp.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

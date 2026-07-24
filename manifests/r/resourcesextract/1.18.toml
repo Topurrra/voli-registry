@@ -1,0 +1,15 @@
+name = "resourcesextract"
+version = "1.18"
+description = "Extract resources from dll/ocx/exe files."
+homepage = "https://www.nirsoft.net/utils/resources_extract.html"
+license = "Freeware"
+kind = "app"
+bin = ["ResourcesExtract.exe"]
+persist = ["resourcesextract_lng.ini", "resourcesextract.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/resourcesextract-x64.zip"
+sha256 = "c68e2ebda348d67bbf92d45fb423038e9413e24b531fc5c50aa663b17dbccbb5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/resourcesextract.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

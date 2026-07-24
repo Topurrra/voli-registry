@@ -1,0 +1,15 @@
+name = "allthreadsview"
+version = "1.00"
+description = "Displays a list of all running threads in Windows"
+homepage = "https://www.nirsoft.net/utils/all_threads_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["AllThreadsView.exe"]
+persist = ["allthreadsview_lng.ini", "allthreadsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/allthreadsview-x64.zip"
+sha256 = "10ec8f2781aef3f94c73cb1d4f0c6a6d39d6dc394c216a85e0b9e722ca60d6cf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/allthreadsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

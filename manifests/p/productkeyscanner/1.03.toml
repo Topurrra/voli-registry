@@ -1,0 +1,15 @@
+name = "productkeyscanner"
+version = "1.03"
+description = "Find product keys stored in the Registry of Windows Operating system"
+homepage = "https://www.nirsoft.net/utils/product_key_scanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProductKeyScanner.exe"]
+persist = ["productkeyscanner_lng.ini", "productkeyscanner.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/productkeyscanner-x64.zip"
+sha256 = "f4443c66013a202bace3e7dc046ba75fd9c93264474e97fff30af276c6383e68"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/productkeyscanner.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

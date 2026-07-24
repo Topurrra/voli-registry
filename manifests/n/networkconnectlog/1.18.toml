@@ -1,0 +1,15 @@
+name = "networkconnectlog"
+version = "1.18"
+description = "Shows a log of connected/disconnected computers on your network."
+homepage = "https://www.nirsoft.net/utils/network_connect_log.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetworkConnectLog.exe"]
+persist = ["networkconnectlog_lng.ini", "networkconnectlog.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/networkconnectlog.zip"
+sha256 = "c5ac0898eeebf8279de4414363a21d19fe73183de3a4786ffcfe1a6dbc648af4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networkconnectlog.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

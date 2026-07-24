@@ -1,0 +1,18 @@
+name = "ojdkbuild8-jre"
+version = "1.8.0.332-1.b09"
+description = "OpenJDK 8 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-1.8.0-openjdk-jre-1.8.0.332-1.b09.ojdkbuild.windows.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-1.8.0.332-1.b09/java-1.8.0-openjdk-jre-1.8.0.332-1.b09.ojdkbuild.windows.x86_64.zip"
+sha256 = "d23f45fe6c56a604bd9c9ef552c8cc5fa9e03d7c6b84dc00e84b5fb17c6f58cf"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ojdkbuild/ojdkbuild" }

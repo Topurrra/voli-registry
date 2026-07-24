@@ -1,0 +1,22 @@
+name = "intellij-jbr21-sdk"
+version = "21.0.11-b1163.116"
+description = "A fork of OpenJDK that includes a number enhancements in font rendering, HiDPI support, ligatures, performance improvements, and bugfixes. These are mainly for running IntelliJ Platform-based products"
+homepage = "https://github.com/JetBrains/JetBrainsRuntime"
+license = "GPL-2.0"
+kind = "app"
+extract_dir = "jbrsdk-21.0.11-windows-x64-b1163.116"
+
+[source.x64]
+url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-windows-x64-b1163.116.tar.gz"
+sha512 = "a792e735ac542c3cc02207f01d16cf983a569db752a27a6533763fa5ea17ed73eaa9a5e7bb011d652313248ca45cdeebacbc678cb95777f2d99e284b5c3a2264"
+
+[source.arm64]
+url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-windows-aarch64-b1163.116.tar.gz"
+sha512 = "b8d2614264e7e5865f33ecef2ffa0a5fdbce53fba1a206b128610e88c01e27f38dac7367d27458b607e5a7283b4f833524b30044c98a7062b43120d4c0c97f6f"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "JetBrains/JetBrainsRuntime" }

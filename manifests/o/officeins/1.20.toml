@@ -1,0 +1,15 @@
+name = "officeins"
+version = "1.20"
+description = "displays the details of all installed Microsoft Office add-ins on your computer."
+homepage = "https://www.nirsoft.net/utils/officeins.html"
+license = "Freeware"
+kind = "app"
+bin = ["OfficeIns.exe"]
+persist = ["officeins_lng.ini", "officeins.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/officeins-x64.zip"
+sha256 = "ea1d9741db87493decdc5981a4347217a9b767ed454f362aa331f6022e39c4a2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/officeins.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

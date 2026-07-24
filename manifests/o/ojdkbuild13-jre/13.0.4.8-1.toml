@@ -1,0 +1,18 @@
+name = "ojdkbuild13-jre"
+version = "13.0.4.8-1"
+description = "OpenJDK 13 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-13-openjdk-jre-13.0.4.8-1.windows.ojdkbuild.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-13-openjdk-13.0.4.8-1/java-13-openjdk-jre-13.0.4.8-1.windows.ojdkbuild.x86_64.zip"
+sha256 = "e09ffa485dbf7b18bd6721ad17757e03d619087ce22920b81bd1aaa5be9b7671"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ojdkbuild/ojdkbuild" }

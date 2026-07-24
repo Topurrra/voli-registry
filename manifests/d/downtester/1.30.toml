@@ -1,0 +1,15 @@
+name = "downtester"
+version = "1.30"
+description = "Test your Internet download speed."
+homepage = "https://www.nirsoft.net/utils/download_speed_tester.html"
+license = "Freeware"
+kind = "app"
+bin = ["DownTester.exe"]
+persist = ["downtester_lng.ini", "downtester.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/downtester.zip"
+sha256 = "15d6a3ecea7ab676769042cfdb3cbbea197f81be63aec409e792dd2258642fe2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/downtester.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

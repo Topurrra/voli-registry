@@ -1,0 +1,18 @@
+name = "intellij-jbr11-sdk"
+version = "11_0_16-b2043.64"
+description = "A fork of OpenJDK that includes a number enhancements in font rendering, HiDPI support, ligatures, performance improvements, and bugfixes. These are mainly for running IntelliJ Platform-based products"
+homepage = "https://github.com/JetBrains/JetBrainsRuntime"
+license = "GPL-2.0"
+kind = "app"
+extract_dir = "jbrsdk_nomod"
+
+[source.x64]
+url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_nomod-11_0_16-windows-x64-b2043.64.tar.gz"
+sha256 = "88213eb14ba1c1f6dee1ebb7bb7221d8940d3168630345929c8a5b9b7a87e9e3"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "JetBrains/JetBrainsRuntime" }

@@ -1,0 +1,18 @@
+name = "ojdkbuild12"
+version = "12.0.2.9-1"
+description = "OpenJDK 12 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-12-openjdk-12.0.2.9-1.windows.ojdkbuild.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-12-openjdk-12.0.2.9-1/java-12-openjdk-12.0.2.9-1.windows.ojdkbuild.x86_64.zip"
+sha256 = "513e5b8f70cbc43e478aaaa1a1334b5148195521163f9bc4a30a6a4005f65705"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ojdkbuild/ojdkbuild" }

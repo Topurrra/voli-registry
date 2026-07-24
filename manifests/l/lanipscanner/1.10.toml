@@ -1,0 +1,15 @@
+name = "lanipscanner"
+version = "1.10"
+description = "Local network scanner for Windows"
+homepage = "https://www.nirsoft.net/utils/lan_ip_scanner.html"
+license = "Freeware"
+kind = "app"
+bin = ["LANIPScanner.exe"]
+persist = ["lanipscanner_lng.ini", "lanipscanner.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/lanipscanner.zip"
+sha256 = "606a7becaf52d599205bf9837b1b2296f61e8a5cf17a4a16a06dfc939dc80b98"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/lanipscanner.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

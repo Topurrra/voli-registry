@@ -1,0 +1,15 @@
+name = "monitorinfoview"
+version = "1.25"
+description = "displays essential information about your monitor."
+homepage = "https://www.nirsoft.net/utils/monitor_info_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["MonitorInfoView.exe"]
+persist = ["monitorinfoview_lng.ini", "monitorinfoview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/monitorinfoview.zip"
+sha256 = "c5dafc3524ec161889ae39d158cef53ef66fa6b51b5f95248d5a7dab3bae9b2c"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/monitorinfoview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

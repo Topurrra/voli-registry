@@ -1,0 +1,15 @@
+name = "installedpackagesview"
+version = "1.10"
+description = "Displays installed MSI packages on your system."
+homepage = "https://www.nirsoft.net/utils/installed_packages_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["InstalledPackagesView.exe"]
+persist = ["installedpackagesview_lng.ini", "installedpackagesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/installedpackagesview-x64.zip"
+sha256 = "b9c0d20ae266cf625ccd6e041b33552587f8f590cf40a2ff1a2b0d2a1a873a24"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/installedpackagesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

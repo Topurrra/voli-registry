@@ -1,0 +1,15 @@
+name = "networktrafficview"
+version = "2.52"
+description = "Displays network traffic statistics on your network adapter"
+homepage = "https://www.nirsoft.net/utils/network_traffic_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetworkTrafficView.exe"]
+persist = ["networktrafficview_lng.ini", "networktrafficview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/networktrafficview-x64.zip"
+sha256 = "8a579e6e48a589e96f9803913b792af69079f5b825206a9d4821f7294df02ba5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networktrafficview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

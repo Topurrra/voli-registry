@@ -1,0 +1,15 @@
+name = "bluescreenview"
+version = "1.55"
+description = "Show information about blue screen crashes occurred in your system."
+homepage = "https://www.nirsoft.net/utils/blue_screen_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BlueScreenView.exe"]
+persist = ["bluescreenview_lng.ini", "bluescreenview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bluescreenview-x64.zip"
+sha256 = "df57d4c9418dd2771035f2f7b70952caeb20d2269af683a0ab0665125c821479"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bluescreenview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

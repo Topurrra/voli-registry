@@ -1,0 +1,15 @@
+name = "winsockservicesview"
+version = "1.00"
+description = "View/Disable/Enable Winsock service providers installed on your system."
+homepage = "https://www.nirsoft.net/utils/winsock_service_providers.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinsockServicesView.exe"]
+persist = ["winsockservicesview_lng.ini", "winsockservicesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winsockservicesview.zip"
+sha256 = "135131357d35cd429bc9a06408b810082e1db3ec910f3314e3c5377142d219b9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winsockservicesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

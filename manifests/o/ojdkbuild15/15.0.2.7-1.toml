@@ -1,0 +1,15 @@
+name = "ojdkbuild15"
+version = "15.0.2.7-1"
+description = "OpenJDK 14 binaries built using source code from the CentOS project"
+homepage = "https://github.com/ojdkbuild/ojdkbuild"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "java-15-openjdk-15.0.2.7-1.windows.ojdkbuild.x86_64"
+
+[source.x64]
+url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-15-openjdk-15.0.2.7-1/java-15-openjdk-15.0.2.7-1.windows.ojdkbuild.x86_64.zip"
+sha256 = "7ff9bed3077830572706c62288ad14a18b7aaca849c36198f4191b40ec44f36d"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"

@@ -1,0 +1,15 @@
+name = "iconsext"
+version = "1.47"
+description = "Extract icons and cursors from executbale files (EXE, DLL, OCX, CPL,  etc.)"
+homepage = "https://www.nirsoft.net/utils/iconsext.html"
+license = "Freeware"
+kind = "app"
+bin = ["iconsext.exe"]
+persist = ["iconsext_lng.ini", "iconsext.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/iconsext.zip"
+sha256 = "97582531dd0176e312f3a8b101e50d02224970aec5030f0e0ff2ac767f572981"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/iconsext.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

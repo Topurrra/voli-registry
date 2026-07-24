@@ -1,0 +1,15 @@
+name = "fastresolver"
+version = "1.26"
+description = "Resolves multiple host names into IP addresses/MAC Addresses and vice versa. "
+homepage = "https://www.nirsoft.net/utils/fastresolver.html"
+license = "Freeware"
+kind = "app"
+bin = ["FastResolver.exe"]
+persist = ["fastresolver_lng.ini", "fastresolver.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fastresolver.zip"
+sha256 = "476a8e2d01b271f5b774904805b3419d58ac593bd0332e019d992eff95143212"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fastresolver.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

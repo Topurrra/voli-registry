@@ -1,0 +1,15 @@
+name = "nk2view"
+version = "1.43"
+description = "View the content of Outlook AutoComplete .NK2 file."
+homepage = "https://www.nirsoft.net/utils/outlook_nk2_autocomplete.html"
+license = "Freeware"
+kind = "app"
+bin = ["nk2view.exe"]
+persist = ["nk2view_lng.ini", "nk2view.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/nk2view.zip"
+sha256 = "03b80609afa79346e7a198beb5ec2f703cc5b698d09087403c51ccf022296d68"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/nk2view.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

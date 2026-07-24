@@ -1,0 +1,17 @@
+name = "semeru8-jre"
+version = "8u482-b08-0.57.0"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u482-b08_openj9-0.57.0/ibm-semeru-open-jre_x64_windows_8u482b08_openj9-0.57.0.zip"
+sha256 = "343888485c7683312b0aa34ddb2ef288a5bdf29846d0c73aa6b863c05e24e01a"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru8-binaries" }

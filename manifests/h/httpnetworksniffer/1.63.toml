@@ -1,0 +1,15 @@
+name = "httpnetworksniffer"
+version = "1.63"
+description = "Captures and displays HTTP requests/responses."
+homepage = "https://www.nirsoft.net/utils/http_network_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["HTTPNetworkSniffer.exe"]
+persist = ["httpnetworksniffer_lng.ini", "httpnetworksniffer.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/httpnetworksniffer-x64.zip"
+sha256 = "aeb5ccbe089ecc1b136c0ef12ae325f91d4aefd240a48eecfbd76bee7a670f08"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/httpnetworksniffer.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

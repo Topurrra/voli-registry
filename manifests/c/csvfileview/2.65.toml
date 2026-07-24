@@ -1,0 +1,15 @@
+name = "csvfileview"
+version = "2.65"
+description = "CSV/Tab-delimited file viewer and converter"
+homepage = "https://www.nirsoft.net/utils/csv_file_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["CSVFileView.exe"]
+persist = ["csvfileview_lng.ini", "csvfileview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/csvfileview-x64.zip"
+sha256 = "8238202604b78569b22b6745034c17a98531bbfa2f1959cdc5433adc83045aea"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/csvfileview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

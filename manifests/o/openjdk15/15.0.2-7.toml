@@ -1,0 +1,14 @@
+name = "openjdk15"
+version = "15.0.2-7"
+description = "Official production-ready open-source builds of OpenJDK 15"
+homepage = "https://jdk.java.net/15"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_windows-x64_bin.zip"
+sha256 = "ecbe7f32bc6bff2b6c8e9b68f19cbf4ddf54a492c918ba471f32d645cf1c5cf4"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"

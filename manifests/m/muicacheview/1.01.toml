@@ -1,0 +1,15 @@
+name = "muicacheview"
+version = "1.01"
+description = "Edit/delete MUICache items in your system"
+homepage = "https://www.nirsoft.net/utils/muicache_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["MUICacheView.exe"]
+persist = ["muicacheview_lng.ini", "muicacheview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/muicacheview.zip"
+sha256 = "d22499c5ad2fba84f9f82a3a0c05cc085321b5502968699a831aa96afaf669a0"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/muicacheview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

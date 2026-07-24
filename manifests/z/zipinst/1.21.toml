@@ -1,0 +1,15 @@
+name = "zipinst"
+version = "1.21"
+description = "Install applications that do not provide an installation module."
+homepage = "https://www.nirsoft.net/utils/zipinst.html"
+license = "Freeware"
+kind = "app"
+bin = ["zipinst.exe"]
+persist = ["zipinst_lng.ini", "zipinst.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/zipinst.zip"
+sha256 = "5f086a0dc689217026f06111327ae5a7d9baaa250322b84ff9dda2c74f3de788"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/zipinst.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

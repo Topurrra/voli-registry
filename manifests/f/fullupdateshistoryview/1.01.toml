@@ -1,0 +1,15 @@
+name = "fullupdateshistoryview"
+version = "1.01"
+description = "Displays the history of Windows 11 updates on your system. "
+homepage = "https://www.nirsoft.net/utils/full_updates_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FullUpdatesHistoryView.exe"]
+persist = ["fullupdateshistoryview_lng.ini", "fullupdateshistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fullupdateshistoryview.zip"
+sha256 = "4a4dd6acbf6a5fc722bcbde76163cd007a8d3d0b1ec3521c72b104fd934ca7d8"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fullupdateshistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

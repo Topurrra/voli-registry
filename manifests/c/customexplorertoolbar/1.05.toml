@@ -1,0 +1,15 @@
+name = "customexplorertoolbar"
+version = "1.05"
+description = "Add Copy/Cut/Paste buttons to the Explorer toolbar of Windows 7."
+homepage = "https://www.nirsoft.net/utils/custom_explorer_toolbar.html"
+license = "Freeware"
+kind = "app"
+bin = ["CustomExplorerToolbar.exe"]
+persist = ["customexplorertoolbar_lng.ini", "customexplorertoolbar.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/customexplorertoolbar.zip"
+sha256 = "80fff8da356ad971108847f122f821a2e9b2dd098a4b906c74b94f2be24d337e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/customexplorertoolbar.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "credentialsfileview"
+version = "1.12"
+description = "Decrypts Credentials files of Windows."
+homepage = "https://www.nirsoft.net/utils/credentials_file_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["CredentialsFileView.exe"]
+persist = ["credentialsfileview_lng.ini", "credentialsfileview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/toolsdownload/credentialsfileview-x64.zip"
+sha256 = "b5ca584efa62dead9de9ba28b7be87c7d810c4063af5e7e14312474e0ae29bb0"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/credentialsfileview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

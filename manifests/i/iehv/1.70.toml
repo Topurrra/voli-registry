@@ -1,0 +1,15 @@
+name = "iehv"
+version = "1.70"
+description = "Displays the list of Web sites that you visited with IE Web browser."
+homepage = "https://www.nirsoft.net/utils/iehv.html"
+license = "Freeware"
+kind = "app"
+bin = ["iehv.exe"]
+persist = ["iehv_lng.ini", "iehv.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/iehv.zip"
+sha256 = "7bdab7e43af86d5f8e43854a290073033b2b97c83f0d240a526660f643c94351"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/iehv.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

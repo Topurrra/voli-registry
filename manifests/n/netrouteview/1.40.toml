@@ -1,0 +1,15 @@
+name = "netrouteview"
+version = "1.40"
+description = "GUI alternative to the standard route utility of Windows."
+homepage = "https://www.nirsoft.net/utils/network_route_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetRouteView.exe"]
+persist = ["netrouteview_lng.ini", "netrouteview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/netrouteview.zip"
+sha256 = "266d4972ef251f950d63f3c5491da99dffceb3c505f7d8118fc9eccdb476101a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/netrouteview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

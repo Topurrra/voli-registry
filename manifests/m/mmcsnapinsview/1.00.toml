@@ -1,0 +1,15 @@
+name = "mmcsnapinsview"
+version = "1.00"
+description = "Displays the details of all MMC snap-ins installed on your system."
+homepage = "https://www.nirsoft.net/utils/mmc_snapins_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["MMCSnapInsView.exe"]
+persist = ["mmcsnapinsview_lng.ini", "mmcsnapinsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mmcsnapinsview-x64.zip"
+sha256 = "2e90f5d55b8bbd92248b75b2fcefc78405347ba6978dac80a337cec487fcf1c4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mmcsnapinsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

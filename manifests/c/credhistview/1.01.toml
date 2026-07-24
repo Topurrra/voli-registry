@@ -1,0 +1,15 @@
+name = "credhistview"
+version = "1.01"
+description = "Decrypt the CREDHIST file of Windows"
+homepage = "https://www.nirsoft.net/utils/credhist_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["CredHistView.exe"]
+persist = ["credhistview_lng.ini", "credhistview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/credhistview.zip"
+sha256 = "aba457a4db13fe592a075d617859b2655c09a8c7a842d5c0870987b5e001d2fa"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/credhistview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "fileactivitywatch"
+version = "1.70"
+description = "Displays information about read/write/delete operations on your system."
+homepage = "https://www.nirsoft.net/utils/file_activity_watch.html"
+license = "Freeware"
+kind = "app"
+bin = ["FileActivityWatch.exe"]
+persist = ["fileactivitywatch_lng.ini", "fileactivitywatch.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/fileactivitywatch-x64.zip"
+sha256 = "325a472199d0fbcfaf558349c1a3fd18942109ad989bd7dbab654ff93e05b723"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/fileactivitywatch.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

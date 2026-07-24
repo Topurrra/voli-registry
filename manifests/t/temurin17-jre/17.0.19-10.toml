@@ -1,0 +1,17 @@
+name = "temurin17-jre"
+version = "17.0.19-10"
+description = "Eclipse Temurin is a runtime provided by Eclipse Adoptium for general use across the Java ecosystem"
+homepage = "https://adoptium.net"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19+10/OpenJDK17U-jre_x64_windows_hotspot_17.0.19_10.zip"
+sha256 = "79a598e1fbb4e16582d92c4ee22280a3c4d72fd52606e1e46b1223c0fe53b0da"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?<ver>.*?) https://github.com/(?<link>.*?)/tag/(?<tag>.*?) (?<name>(?<prefix>OpenJDK[\\\\dU]*-[dejkr]{3})_x64_(?<suffix>.*))\",\"replace\":\"${ver}\",\"script\":[\"$ver = (json_path $page $..version_data.semver).replace('+', '-')\",\"$link = (json_path $page $..release_link).replace('%2B', '+')\",\"$name = json_path $page $..binaries[0].package.name\",\"Write-Output \\\"$ver $link $name\\\"\"],\"url\":\"https://api.adoptium.net/v3/assets/feature_releases/17/ga?jvm_impl=hotspot&heap_size=normal&os=windows&architecture=x64&image_type=jre&project=jdk&vendor=eclipse&page_size=1&sort_order=DESC\"}"

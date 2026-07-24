@@ -1,0 +1,15 @@
+name = "guipropview"
+version = "1.31"
+description = "Displays extensive information about all windows currently opened on your system"
+homepage = "https://www.nirsoft.net/utils/gui_prop_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["GUIPropView.exe"]
+persist = ["guipropview_lng.ini", "guipropview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/guipropview-x64.zip"
+sha256 = "148912164f976bb2be2eecef1d31df3eb83239b947488894ffcdbb8c1572a385"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/guipropview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

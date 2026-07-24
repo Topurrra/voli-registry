@@ -1,0 +1,15 @@
+name = "whoiscl"
+version = "1.90"
+description = "Get WHOIS information about a registered domain from command-line."
+homepage = "https://www.nirsoft.net/utils/whoiscl.html"
+license = "Freeware"
+kind = "app"
+bin = ["WhoisCL.exe"]
+persist = ["whoiscl_lng.ini", "whoiscl.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/whoiscl.zip"
+sha256 = "cb042f522ca674288655739db24b389defac0d2f05bd5d7e915aefd3068e4d85"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/whoiscl.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "managewirelessnetworks"
+version = "1.17"
+description = " Alternative tool to the standard 'Manage Wireless Networks' of Windows "
+homepage = "https://www.nirsoft.net/utils/manage_wireless_networks.html"
+license = "Freeware"
+kind = "app"
+bin = ["ManageWirelessNetworks.exe"]
+persist = ["managewirelessnetworks_lng.ini", "managewirelessnetworks.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/managewirelessnetworks.zip"
+sha256 = "b5b5600c1a5be08abbe01fe868b7036627b35000da0d9e01e58ac1881daa98cc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/managewirelessnetworks.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

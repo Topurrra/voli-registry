@@ -1,0 +1,17 @@
+name = "semeru22-jdk"
+version = "22.0.2-9-0.46.1"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru22-binaries/releases/download/jdk-22.0.2+9_openj9-0.46.1/ibm-semeru-open-jdk_x64_windows_22.0.2_9_openj9-0.46.1.zip"
+sha256 = "2441fc58f68a276a68f99a86f2798d25b9fe8216778bddc81928af77d3dfc400"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru22-binaries" }

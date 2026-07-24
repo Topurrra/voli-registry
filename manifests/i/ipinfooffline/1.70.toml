@@ -1,0 +1,15 @@
+name = "ipinfooffline"
+version = "1.70"
+description = "view country information about IP addresses."
+homepage = "https://www.nirsoft.net/utils/ip_country_info_offline.html"
+license = "Freeware"
+kind = "app"
+bin = ["IPInfoOffline.exe"]
+persist = ["ipinfooffline_lng.ini", "ipinfooffline.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ipinfooffline.zip"
+sha256 = "a9a19a6a0230df524481cb28dbb44d9668ae847d4de38bbd1487a12fa20dceca"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ipinfooffline.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

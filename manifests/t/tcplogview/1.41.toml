@@ -1,0 +1,15 @@
+name = "tcplogview"
+version = "1.41"
+description = "Monitors the opened TCP connections on your system."
+homepage = "https://www.nirsoft.net/utils/tcp_log_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["TcpLogView.exe"]
+persist = ["tcplogview_lng.ini", "tcplogview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/tcplogview-x64.zip"
+sha256 = "abc91007f3403a4053d84b269b6f8a82487488b7cfacdbaa575b257a4fc29897"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/tcplogview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

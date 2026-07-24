@@ -1,0 +1,15 @@
+name = "webbrowserbookmarksview"
+version = "1.13"
+description = "View all bookmarks of Chrome and Firefox Web browsers."
+homepage = "https://www.nirsoft.net/utils/web_browser_bookmarks_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WebBrowserBookmarksView.exe"]
+persist = ["webbrowserbookmarksview_lng.ini", "webbrowserbookmarksview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/webbrowserbookmarksview.zip"
+sha256 = "51bd399158538dd118a9498d9e79a1844d5ddccea538fc1077e4dc1a3fb8e0e3"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/webbrowserbookmarksview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

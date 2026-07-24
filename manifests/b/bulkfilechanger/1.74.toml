@@ -1,0 +1,15 @@
+name = "bulkfilechanger"
+version = "1.74"
+description = "Change date/time/attributes of multiple files."
+homepage = "https://www.nirsoft.net/utils/bulk_file_changer.html"
+license = "Freeware"
+kind = "app"
+bin = ["BulkFileChanger.exe"]
+persist = ["bulkfilechanger_lng.ini", "bulkfilechanger.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bulkfilechanger-x64.zip"
+sha256 = "ab56a28cd346205f1cc2b5e8630afa2347d59cddf17137dc9209918493ace35e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bulkfilechanger.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

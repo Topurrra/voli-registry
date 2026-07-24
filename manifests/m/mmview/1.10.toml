@@ -1,0 +1,15 @@
+name = "mmview"
+version = "1.10"
+description = "Lists the installed Codec, and allows you to disable/enable them."
+homepage = "https://www.nirsoft.net/utils/mmview.html"
+license = "Freeware"
+kind = "app"
+bin = ["mmview.exe"]
+persist = ["mmview_lng.ini", "mmview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mmview.zip"
+sha256 = "8dfcf804a9fe9c0e07893ececb083459c24d64ed7c9d9d35ac40e60d4f55bebe"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mmview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

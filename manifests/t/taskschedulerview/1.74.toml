@@ -1,0 +1,15 @@
+name = "taskschedulerview"
+version = "1.74"
+description = "View/Disable/Enable tasks from the Task Scheduler of Windows."
+homepage = "https://www.nirsoft.net/utils/task_scheduler_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["TaskSchedulerView.exe"]
+persist = ["taskschedulerview_lng.ini", "taskschedulerview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/taskschedulerview-x64.zip"
+sha256 = "862ac1c228283ee9d1ec9c73c35a743a870955c0e12935a0ceb4ff02913ef11a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/taskschedulerview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

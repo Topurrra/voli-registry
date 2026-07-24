@@ -1,0 +1,15 @@
+name = "folderchangesview"
+version = "2.37"
+description = "Monitor folder/drive changes."
+homepage = "https://www.nirsoft.net/utils/folder_changes_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FolderChangesView.exe"]
+persist = ["folderchangesview_lng.ini", "folderchangesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/folderchangesview.zip"
+sha256 = "1d15dbed619efa0ea1faaf523717dd79c076abf62055e5d4d08474c89dc9d305"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/folderchangesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "esedatabaseview"
+version = "1.79"
+description = "View the content of ESE database files (.edb files)"
+homepage = "https://www.nirsoft.net/utils/ese_database_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ESEDatabaseView.exe"]
+persist = ["esedatabaseview_lng.ini", "esedatabaseview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/esedatabaseview.zip"
+sha256 = "b636cf5e3edaa26ead244f58c4ae372c9a28a505d17a0a3a6ed4dce41bac3abf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/esedatabaseview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

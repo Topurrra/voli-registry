@@ -1,0 +1,15 @@
+name = "eventlogchannelsview"
+version = "1.38"
+description = "View,Disable,Enable Event Log Channels."
+homepage = "https://www.nirsoft.net/utils/event_log_channels_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["EventLogChannelsView.exe"]
+persist = ["eventlogchannelsview_lng.ini", "eventlogchannelsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/eventlogchannelsview-x64.zip"
+sha256 = "3184c7908f713a62db795d81920d874cbcccfd13a28dd7c49815793c0d4a72c0"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/eventlogchannelsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

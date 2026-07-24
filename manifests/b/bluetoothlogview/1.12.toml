@@ -1,0 +1,15 @@
+name = "bluetoothlogview"
+version = "1.12"
+description = "Creates a log of Bluetooth activity in your area."
+homepage = "https://www.nirsoft.net/utils/bluetooth_log_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BluetoothLogView.exe"]
+persist = ["bluetoothlogview_lng.ini", "bluetoothlogview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bluetoothlogview.zip"
+sha256 = "baaf54b422aa8a5c5dd6a21e842f40c04186fd5a33bf6c126538009ffc3f31c9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bluetoothlogview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

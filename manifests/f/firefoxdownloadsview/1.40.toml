@@ -1,0 +1,15 @@
+name = "firefoxdownloadsview"
+version = "1.40"
+description = "Displayed the list of downloaded files in Firefox"
+homepage = "https://www.nirsoft.net/utils/firefox_downloads_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["FirefoxDownloadsView.exe"]
+persist = ["firefoxdownloadsview_lng.ini", "firefoxdownloadsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/firefoxdownloadsview.zip"
+sha256 = "5bdb9f62367b5be0069545177beb443b7cbc8f22f0382c997a635e1719139afc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/firefoxdownloadsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

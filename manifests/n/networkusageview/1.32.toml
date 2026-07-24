@@ -1,0 +1,15 @@
+name = "networkusageview"
+version = "1.32"
+description = "Displays network usage information for Windows 8 and Windows 10"
+homepage = "https://www.nirsoft.net/utils/network_usage_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetworkUsageView.exe"]
+persist = ["networkusageview_lng.ini", "networkusageview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/networkusageview-x64.zip"
+sha256 = "2372c1e333767cd2501b994405063c37ee815d7fa7d03c66f847cdf7382817ac"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networkusageview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,17 @@
+name = "semeru19-jre"
+version = "19.0.2-7-0.37.0"
+description = "The IBM Semeru Runtimes are free production-ready binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM"
+homepage = "https://developer.ibm.com/languages/java/semeru-runtimes/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0,EPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ibmruntimes/semeru19-binaries/releases/download/jdk-19.0.2+7_openj9-0.37.0/ibm-semeru-open-jre_x64_windows_19.0.2_7_openj9-0.37.0.zip"
+sha256 = "98921e9f206f35d08a846099596f69adf586fafe8a407266f4ba30483255301e"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ibmruntimes/semeru19-binaries" }

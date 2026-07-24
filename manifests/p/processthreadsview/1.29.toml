@@ -1,0 +1,15 @@
+name = "processthreadsview"
+version = "1.29"
+description = "Displays extensive information about all threads of the process that you choose."
+homepage = "https://www.nirsoft.net/utils/process_threads_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ProcessThreadsView.exe"]
+persist = ["processthreadsview_lng.ini", "processthreadsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/processthreadsview-x64.zip"
+sha256 = "95a18efb40b06d3ba3dfcd78066aed517e042e598413cc7e660332920fdb6fa5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/processthreadsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

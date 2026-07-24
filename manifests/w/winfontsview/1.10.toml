@@ -1,0 +1,15 @@
+name = "winfontsview"
+version = "1.10"
+description = "Display sample of all fonts installed on your system."
+homepage = "https://www.nirsoft.net/utils/windows_fonts_viewer.html"
+license = "Freeware"
+kind = "app"
+bin = ["WinFontsView.exe"]
+persist = ["winfontsview_lng.ini", "winfontsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/winfontsview.zip"
+sha256 = "1752867afb28afbeec8a48135db1e1fbbd1e4a638ddea5fa4ad1fd487d108de2"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/winfontsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

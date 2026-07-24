@@ -1,0 +1,15 @@
+name = "runtimeclassesview"
+version = "1.00"
+description = "Displays the list of Windows Runtime (WinRT) classes"
+homepage = "https://www.nirsoft.net/utils/runtime_classes_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["RuntimeClassesView.exe"]
+persist = ["runtimeclassesview_lng.ini", "runtimeclassesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/runtimeclassesview.zip"
+sha256 = "490144a2ca73a4bbc5bf46eb0c806c4131c64eafaaf18fe45d134e31d59a5823"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/runtimeclassesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

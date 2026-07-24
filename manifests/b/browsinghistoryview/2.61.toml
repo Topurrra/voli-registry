@@ -1,0 +1,15 @@
+name = "browsinghistoryview"
+version = "2.61"
+description = "View browsing history of popular Web browsers "
+homepage = "https://www.nirsoft.net/utils/browsing_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BrowsingHistoryView.exe"]
+persist = ["browsinghistoryview_lng.ini", "browsinghistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip"
+sha256 = "455e7f71bf08a09dfbfd0068b8c37afec0bc956e6177089bbf60d58cb90c8911"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/browsinghistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

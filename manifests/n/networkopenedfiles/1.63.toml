@@ -1,0 +1,15 @@
+name = "networkopenedfiles"
+version = "1.63"
+description = "Displays the files that are currently opened by other computers on your network."
+homepage = "https://www.nirsoft.net/utils/network_opened_files.html"
+license = "Freeware"
+kind = "app"
+bin = ["NetworkOpenedFiles.exe"]
+persist = ["networkopenedfiles_lng.ini", "networkopenedfiles.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip"
+sha256 = "e22f44333cc0c29741392545f122035fac2e502e6b398ec4b3b903c1117c0d0a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/networkopenedfiles.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

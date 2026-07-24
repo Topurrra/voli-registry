@@ -1,0 +1,15 @@
+name = "mozillahistoryview"
+version = "1.70"
+description = "Displays the list of visited Web sites in Firefox/Mozilla/Netscape Web browsers."
+homepage = "https://www.nirsoft.net/utils/mozilla_history_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["MozillaHistoryView.exe"]
+persist = ["mozillahistoryview_lng.ini", "mozillahistoryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mozillahistoryview-x64.zip"
+sha256 = "072e31cdfda76fa68d16d408343aa8ba5eb48a41785cd3393d9066a20c7a24ec"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mozillahistoryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

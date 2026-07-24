@@ -1,0 +1,15 @@
+name = "urlprotocolview"
+version = "1.15"
+description = "View/disable/enable the URL protocols installed on your system"
+homepage = "https://www.nirsoft.net/utils/url_protocol_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["URLProtocolView.exe"]
+persist = ["urlprotocolview_lng.ini", "urlprotocolview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/urlprotocolview.zip"
+sha256 = "17e9df993efdb66ed3e301fb69e531974f09a0ad3212efe88ac4331e40508873"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/urlprotocolview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

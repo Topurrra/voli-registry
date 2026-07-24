@@ -1,0 +1,15 @@
+name = "iedesignmode"
+version = "1.00"
+description = "Switch the active Internet Explorer window to design mode. "
+homepage = "https://www.nirsoft.net/utils/ie_design_mode.html"
+license = "Freeware"
+kind = "app"
+bin = ["IEDesignMode.exe"]
+persist = ["iedesignmode_lng.ini", "iedesignmode.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/iedesignmode.zip"
+sha256 = "e2dc751ee453c5c135fd845e86e375c3e9d8842d9e30e5ad20e82af30297c3dc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/iedesignmode.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

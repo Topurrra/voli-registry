@@ -1,0 +1,15 @@
+name = "wifidiagnosticsview"
+version = "1.08"
+description = "Wifi diagnostics tool for Windows"
+homepage = "https://www.nirsoft.net/utils/wifi_diagnostics_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["WifiDiagnosticsView.exe"]
+persist = ["wifidiagnosticsview_lng.ini", "wifidiagnosticsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/wifidiagnosticsview.zip"
+sha256 = "9a42dee7c41a9c23fe7e3db9eb52c7757ae95a22a53cdfd6d993baa6c273e2c9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/wifidiagnosticsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

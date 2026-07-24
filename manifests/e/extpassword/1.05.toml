@@ -1,0 +1,15 @@
+name = "extpassword"
+version = "1.05"
+description = "External Drive Password Recovery"
+homepage = "https://www.nirsoft.net/utils/external_drive_password_recovery.html"
+license = "Freeware"
+kind = "app"
+bin = ["ExtPassword.exe"]
+persist = ["extpassword_lng.ini", "extpassword.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/extpassword.zip"
+sha256 = "aaf1a6478f2fb346e769e8e0831eecd96cc83c11271d84879795df610f975541"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/extpassword.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

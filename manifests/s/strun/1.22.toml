@@ -1,0 +1,15 @@
+name = "strun"
+version = "1.22"
+description = "Displays the list of all applications that are loaded on startup."
+homepage = "https://www.nirsoft.net/utils/strun.html"
+license = "Freeware"
+kind = "app"
+bin = ["strun.exe"]
+persist = ["strun_lng.ini", "strun.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/strun.zip"
+sha256 = "bb4b5eca060e4f7db632b224e971d8a7237e379946c512468ade37ba9eed17a6"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/strun.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

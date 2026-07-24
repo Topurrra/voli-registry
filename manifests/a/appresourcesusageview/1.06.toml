@@ -1,0 +1,15 @@
+name = "appresourcesusageview"
+version = "1.06"
+description = "View application resources usage information of Windows 10/11 "
+homepage = "https://www.nirsoft.net/utils/app_resources_usage_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppResourcesUsageView.exe"]
+persist = ["appresourcesusageview_lng.ini", "appresourcesusageview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appresourcesusageview.zip"
+sha256 = "716f2ca8beb5b075ac0d146e38822acaddad19d861210c39ad6c404729a0e709"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appresourcesusageview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "pinginfoview"
+version = "3.25"
+description = "ping multiple host names and IP addresses."
+homepage = "https://www.nirsoft.net/utils/multiple_ping_tool.html"
+license = "Freeware"
+kind = "app"
+bin = ["PingInfoView.exe"]
+persist = ["pinginfoview_lng.ini", "pinginfoview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/pinginfoview.zip"
+sha256 = "1175cee5a78f8c91555fa8285db2cbc30b064a65c08e1aa10d4832e2f8d0a1b4"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/pinginfoview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

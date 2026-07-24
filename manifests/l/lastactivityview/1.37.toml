@@ -1,0 +1,15 @@
+name = "lastactivityview"
+version = "1.37"
+description = "View the latest computer activity."
+homepage = "https://www.nirsoft.net/utils/computer_activity_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["LastActivityView.exe"]
+persist = ["lastactivityview_lng.ini", "lastactivityview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/lastactivityview.zip"
+sha256 = "09976fd76ae40a608f424655cda82b2be77c426c88ea95af78378b47630397bf"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/lastactivityview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

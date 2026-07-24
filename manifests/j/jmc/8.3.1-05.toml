@@ -1,0 +1,14 @@
+name = "jmc"
+version = "8.3.1-05"
+description = "JDK Mission Control"
+homepage = "https://openjdk.java.net/projects/jmc/"
+license = "UPL-1.0"
+kind = "app"
+persist = ["configuration"]
+
+[source.x64]
+url = "https://download.java.net/java/GA/jmc8/05/binaries/jmc-8.3.1_windows-x64.zip"
+sha256 = "d924640fefbde15a30481141e94285f38e1183c01953d1d568ea3de248254b9d"
+
+[autoupdate]
+checkver = "{\"re\":\"/(?<type>early_access|GA)/(?<path>jmc(?<major>[\\\\d.]+)(?:.*)?/(?<build>[\\\\d]+)(?:/GPL|/binaries|/UPL)?)/(?<file>jmc-(?<version>[\\\\d.]+)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64(?:_bin)?\\\\.(?:zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/jmc/8/\"}"

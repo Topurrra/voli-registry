@@ -1,0 +1,15 @@
+name = "webcacheimageinfo"
+version = "1.36"
+description = "Shows EXIF information of the images stored in Web browser cache."
+homepage = "https://www.nirsoft.net/utils/web_cache_image_info.html"
+license = "Freeware"
+kind = "app"
+bin = ["WebCacheImageInfo.exe"]
+persist = ["webcacheimageinfo_lng.ini", "webcacheimageinfo.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/webcacheimageinfo.zip"
+sha256 = "6d1c7903a265bcc12d463acd1974b90d5b46e30093f19e18ef4d4544e1cdd2d5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/webcacheimageinfo.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

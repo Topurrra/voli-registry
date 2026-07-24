@@ -1,0 +1,15 @@
+name = "runfromprocess"
+version = "1.07"
+description = "Run a program from another process that you choose."
+homepage = "https://www.nirsoft.net/utils/run_from_process.html"
+license = "Freeware"
+kind = "app"
+bin = ["RunFromProcess.exe"]
+persist = ["runfromprocess_lng.ini", "runfromprocess.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/runfromprocess.zip"
+sha256 = "1dfe0d12e325480bd65f06a802abc8bb6b6877eba2d442171614c66e271fc0b5"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/runfromprocess.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

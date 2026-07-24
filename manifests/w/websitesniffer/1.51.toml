@@ -1,0 +1,15 @@
+name = "websitesniffer"
+version = "1.51"
+description = "Capture Web site files and save them on your hard drive."
+homepage = "https://www.nirsoft.net/utils/web_site_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["WebSiteSniffer.exe"]
+persist = ["websitesniffer_lng.ini", "websitesniffer.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/websitesniffer-x64.zip"
+sha256 = "da76a2e30e3f1167c6effc51b76eae7b8795068479c379d00994d2554b6aae86"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/websitesniffer.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

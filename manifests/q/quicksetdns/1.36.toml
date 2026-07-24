@@ -1,0 +1,15 @@
+name = "quicksetdns"
+version = "1.36"
+description = "Change the DNS servers that are used for your Internet connection."
+homepage = "https://www.nirsoft.net/utils/quick_set_dns.html"
+license = "Freeware"
+kind = "app"
+bin = ["QuickSetDNS.exe"]
+persist = ["quicksetdns_lng.ini", "quicksetdns.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/quicksetdns.zip"
+sha256 = "187ad7ee48ce5542b888a2da78ffadba7aa3c1898582541811021f2339f9faf6"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/quicksetdns.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

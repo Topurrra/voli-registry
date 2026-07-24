@@ -1,0 +1,15 @@
+name = "pocketasterisk"
+version = "1.00"
+description = "Reveals the passwords stored behind the asterisks ('***')"
+homepage = "https://www.nirsoft.net/pocket_pc/pocket_asterisk.html"
+license = "Freeware"
+kind = "app"
+bin = ["PocketAsterisk.exe"]
+persist = ["pocketasterisk_lng.ini", "pocketasterisk.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/pocket_pc/pocketasterisk.zip"
+sha256 = "823acbc7958014ec2999b5b61408f0415a90d428707fe158b3f14db6f8612ebd"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/pocketasterisk.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

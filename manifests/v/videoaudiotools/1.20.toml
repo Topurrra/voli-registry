@@ -1,0 +1,15 @@
+name = "videoaudiotools"
+version = "1.20"
+description = "A package of 6 tools for Windows related to video/audio."
+homepage = "None"
+license = "Freeware"
+kind = "app"
+bin = ["SoundVolumeView.exe"]
+persist = ["videoaudiotools_lng.ini", "videoaudiotools.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/packages/videoaudiotools.zip"
+sha256 = "41bcb507be074e22d0d6f9c04aa40136c141ef7e59d3c778668f85566df3be38"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/videoaudiotools.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

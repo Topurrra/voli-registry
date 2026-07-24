@@ -1,0 +1,15 @@
+name = "alternatestreamview"
+version = "1.58"
+description = "Find all hidden alternate streams stored in the file system."
+homepage = "https://www.nirsoft.net/utils/alternate_data_streams.html"
+license = "Freeware"
+kind = "app"
+bin = ["AlternateStreamView.exe"]
+persist = ["alternatestreamview_lng.ini", "alternatestreamview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/alternatestreamview-x64.zip"
+sha256 = "ad1f0edb2202ec1a736d9266b18b241eac5542c350578a3a8cdb4dd8b14ff37d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/alternatestreamview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

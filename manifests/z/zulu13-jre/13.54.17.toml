@@ -1,0 +1,18 @@
+name = "zulu13-jre"
+version = "13.54.17"
+description = "Zulu is certified build of OpenJDK"
+homepage = "https://www.azul.com/products/zulu-community/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "zulu13.54.17-ca-jre13.0.14-win_x64"
+
+[source.x64]
+url = "https://cdn.azul.com/zulu/bin/zulu13.54.17-ca-jre13.0.14-win_x64.zip"
+sha256 = "dd0b7d976f7865ad7bbfbf20650f8cb01860066b779838d8f6938427c02a8fb9"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$..download_url\",\"regex\":\"(?<name>zulu(?<version>[\\\\d.]+)-ca-jre(?<java>[\\\\d.]+)-win)_x64.zip\",\"replace\":\"${version}\",\"url\":\"https://api.azul.com/metadata/v1/zulu/packages/?java_version=13&os=windows&arch=x64&archive_type=zip&java_package_type=jre&javafx_bundled=false&crac_supported=false&release_type=PSU&latest=true&include_fields=sha256_hash&page_size=1\"}"

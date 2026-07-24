@@ -1,0 +1,15 @@
+name = "handlecountersview"
+version = "1.19"
+description = "Shows handle counter for every process"
+homepage = "https://www.nirsoft.net/utils/handle_counters_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["HandleCountersView.exe"]
+persist = ["handlecountersview_lng.ini", "handlecountersview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/handlecountersview-x64.zip"
+sha256 = "3a199e445825c35af9d3f36047f5e4edfb1567072f892b4b62bedcc3b99b957d"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/handlecountersview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

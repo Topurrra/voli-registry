@@ -1,0 +1,15 @@
+name = "appreadwritecounter"
+version = "1.45"
+description = "Displays read/write operations of every application running on your system."
+homepage = "https://www.nirsoft.net/utils/app_read_write_counter.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppReadWriteCounter.exe"]
+persist = ["appreadwritecounter_lng.ini", "appreadwritecounter.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip"
+sha256 = "154781dceed4b2fd195775d7dbcfc7be42cb4ed1f335d3e2daba09d25a8974d3"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appreadwritecounter.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

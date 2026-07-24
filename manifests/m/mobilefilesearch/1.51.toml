@@ -1,0 +1,15 @@
+name = "mobilefilesearch"
+version = "1.51"
+description = "Search files inside a mobile device plugged to the USB port on your computer"
+homepage = "https://www.nirsoft.net/utils/mobile_device_file_search.html"
+license = "Freeware"
+kind = "app"
+bin = ["MobileFileSearch.exe"]
+persist = ["mobilefilesearch_lng.ini", "mobilefilesearch.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/mobilefilesearch-x64.zip"
+sha256 = "df3fcf22d51831a84e160fab15f5aa31b0064c25f41d50bee7e28738612248a6"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/mobilefilesearch.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "whoistd"
+version = "2.46"
+description = "Get information about a registered domain from WHOIS server."
+homepage = "https://www.nirsoft.net/utils/whois_this_domain.html"
+license = "Freeware"
+kind = "app"
+bin = ["whoistd.exe"]
+persist = ["whoistd_lng.ini", "whoistd.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/whoistd.zip"
+sha256 = "c24d09c7bfb6ba9008ea38bc09b0e4f30b9c55b27708c54724cf7343b76c46cc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/whoistd.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

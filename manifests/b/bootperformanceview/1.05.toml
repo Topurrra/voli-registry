@@ -1,0 +1,15 @@
+name = "bootperformanceview"
+version = "1.05"
+description = "Displays the performance information of the boot process on  Windows 11/10/8/7"
+homepage = "https://www.nirsoft.net/utils/boot_performance_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["BootPerformanceView.exe"]
+persist = ["bootperformanceview_lng.ini", "bootperformanceview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/bootperformanceview.zip"
+sha256 = "8816698bb642e420031703c4af8878e16e415cfe2924f622a87aca87cca2a148"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/bootperformanceview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

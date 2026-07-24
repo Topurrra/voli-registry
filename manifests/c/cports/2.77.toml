@@ -1,0 +1,15 @@
+name = "cports"
+version = "2.77"
+description = "Displays the list of all currently opened TCP/UDP ports on your computer."
+homepage = "https://www.nirsoft.net/utils/cports.html"
+license = "Freeware"
+kind = "app"
+bin = ["cports.exe"]
+persist = ["cports_lng.ini", "cports.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/cports-x64.zip"
+sha256 = "59bddcf0f8fea3a3b72f2b4178b25820733ba56ec523fbab7aec4d0bc6d59c53"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/cports.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

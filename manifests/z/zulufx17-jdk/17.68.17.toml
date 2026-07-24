@@ -1,0 +1,18 @@
+name = "zulufx17-jdk"
+version = "17.68.17"
+description = "Open Source Builds of Zulu With OpenJFX"
+homepage = "https://www.azul.com/products/zulu-community/zulufx/"
+license = "GPL-2.0-only WITH Classpath-exception-2.0"
+kind = "app"
+extract_dir = "zulu17.68.17-ca-fx-jdk17.0.20-win_x64"
+
+[source.x64]
+url = "https://cdn.azul.com/zulu/bin/zulu17.68.17-ca-fx-jdk17.0.20-win_x64.zip"
+sha256 = "377860628ae3f08837f035e206c88e24a4a87152236f33cab6e4afe0b5045cf7"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$..download_url\",\"regex\":\"(?<name>zulu(?<version>[\\\\d.]+)-ca-fx-jdk(?<java>[\\\\d.]+)-win)_x64.zip\",\"replace\":\"${version}\",\"url\":\"https://api.azul.com/metadata/v1/zulu/packages/?java_version=17&os=windows&arch=x64&archive_type=zip&java_package_type=jdk&javafx_bundled=true&crac_supported=false&release_type=PSU&latest=true&include_fields=sha256_hash&page_size=1\"}"

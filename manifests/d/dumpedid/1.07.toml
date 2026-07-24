@@ -1,0 +1,15 @@
+name = "dumpedid"
+version = "1.07"
+description = "Dump EDID information into the console window."
+homepage = "https://www.nirsoft.net/utils/dump_edid.html"
+license = "Freeware"
+kind = "app"
+bin = ["DumpEDID.exe"]
+persist = ["dumpedid_lng.ini", "dumpedid.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/dumpedid.zip"
+sha256 = "1773478ecec2d0e7dcb8d41dd3dd1353e26446a4a798ab294a1ce652a9b84609"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/dumpedid.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

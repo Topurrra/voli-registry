@@ -1,0 +1,15 @@
+name = "offlineregistryview"
+version = "1.05"
+description = "View offline Registry files"
+homepage = "https://www.nirsoft.net/utils/offline_registry_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["OfflineRegistryView.exe"]
+persist = ["offlineregistryview_lng.ini", "offlineregistryview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/offlineregistryview-x64.zip"
+sha256 = "7c336d12f7479cc68a2bf2a4f47ae00c858daa9cf300c56440b06c0293241ac1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/offlineregistryview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

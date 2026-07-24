@@ -1,0 +1,15 @@
+name = "userassistview"
+version = "1.02"
+description = "This utility decrypt and displays the list of all UserAssist entries"
+homepage = "https://www.nirsoft.net/utils/userassist_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["UserAssistView.exe"]
+persist = ["userassistview_lng.ini", "userassistview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/userassistview.zip"
+sha256 = "11b75025ac99ad31fa2c27b91ebbdb891fced36ff8b2567b0b76146af88d57d9"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/userassistview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

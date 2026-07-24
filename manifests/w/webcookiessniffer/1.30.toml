@@ -1,0 +1,15 @@
+name = "webcookiessniffer"
+version = "1.30"
+description = "Captures Web site cookies and displays them in a simple table"
+homepage = "https://www.nirsoft.net/utils/web_cookies_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["WebCookiesSniffer.exe"]
+persist = ["webcookiessniffer_lng.ini", "webcookiessniffer.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/webcookiessniffer-x64.zip"
+sha256 = "b9893bfc930ee68088f60e3235fe734adf8459031cb7bc33112a150ed28b97c1"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/webcookiessniffer.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

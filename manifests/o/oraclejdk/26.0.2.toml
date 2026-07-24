@@ -1,0 +1,17 @@
+name = "oraclejdk"
+version = "26.0.2"
+description = "Oracle Java Platform, Standard Edition Development Kit (JDK)"
+homepage = "https://www.oracle.com/java/"
+license = "https://www.oracle.com/downloads/licenses/no-fee-license.html"
+kind = "app"
+
+[source.x64]
+url = "https://download.oracle.com/java/26/archive/jdk-26.0.2_windows-x64_bin.zip"
+sha256 = "530c20885a96d97c5f982a96e2d9e6aa41956c414b4a7398c49df7fe3192e62d"
+
+[env]
+PATH = "{dir}\\bin"
+JAVA_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"Java SE Development Kit ([\\\\d.]+) downloads\",\"url\":\"https://www.oracle.com/java/technologies/downloads/\",\"useragent\":\"curl/7\"}"

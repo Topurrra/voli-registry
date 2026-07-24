@@ -1,0 +1,15 @@
+name = "appcrashview"
+version = "1.35"
+description = "Displays the details of all application crashes occurred in your system. "
+homepage = "https://www.nirsoft.net/utils/app_crash_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["AppCrashView.exe"]
+persist = ["appcrashview_lng.ini", "appcrashview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/appcrashview.zip"
+sha256 = "76eca5db923e938504d525b8b48a64ab4ad375ced896665dbc543960b07c6054"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/appcrashview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "safaricacheview"
+version = "1.11"
+description = "Cache viewer/extractor for Safari Web browser"
+homepage = "https://www.nirsoft.net/utils/safari_cache_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["SafariCacheView.exe"]
+persist = ["safaricacheview_lng.ini", "safaricacheview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/safaricacheview.zip"
+sha256 = "f4fb700d4aab6c28d96d247f7824446081903f8d502c2948f530f71ab600bd3e"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/safaricacheview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

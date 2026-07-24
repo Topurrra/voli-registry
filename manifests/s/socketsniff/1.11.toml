@@ -1,0 +1,15 @@
+name = "socketsniff"
+version = "1.11"
+description = "Watch the Windows Sockets (WinSock) activity of the selected process."
+homepage = "https://www.nirsoft.net/utils/socket_sniffer.html"
+license = "Freeware"
+kind = "app"
+bin = ["SocketSniff.exe"]
+persist = ["socketsniff_lng.ini", "socketsniff.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/socketsniff.zip"
+sha256 = "2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/socketsniff.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "shellbagsview"
+version = "1.35"
+description = "Displays the list of all folder settings saved by Windows. "
+homepage = "https://www.nirsoft.net/utils/shell_bags_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["ShellBagsView.exe"]
+persist = ["shellbagsview_lng.ini", "shellbagsview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/shellbagsview.zip"
+sha256 = "d667323a180c19a6ea83e10fdbe4f34d30d66863015099bbae0575a1b851b4da"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/shellbagsview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

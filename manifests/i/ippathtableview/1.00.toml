@@ -1,0 +1,15 @@
+name = "ippathtableview"
+version = "1.00"
+description = " IP Path Table Viewer"
+homepage = "https://www.nirsoft.net/utils/ip_path_table_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["IPPathTableView.exe"]
+persist = ["ippathtableview_lng.ini", "ippathtableview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/ippathtableview.zip"
+sha256 = "99100f18750f661692c3e2767539f89ab9ded4ecb96ca6cbeae5513f6fb33f2b"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/ippathtableview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

@@ -1,0 +1,15 @@
+name = "siteshoter"
+version = "1.42"
+description = "Save a screenshot of any Web page into a file."
+homepage = "https://www.nirsoft.net/utils/web_site_screenshot.html"
+license = "Freeware"
+kind = "app"
+bin = ["SiteShoter.exe"]
+persist = ["siteshoter_lng.ini", "siteshoter.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/siteshoter.zip"
+sha256 = "72cc2633ebc81a5c6a79e7543c2da9b1e56e901c7d2c9e688d582a630838d2cc"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/siteshoter.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

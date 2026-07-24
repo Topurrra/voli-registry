@@ -1,0 +1,15 @@
+name = "edgecookiesview"
+version = "1.17"
+description = "Display cookies from new versions of MS-Edge"
+homepage = "https://www.nirsoft.net/utils/edge_cookies_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["EdgeCookiesView.exe"]
+persist = ["edgecookiesview_lng.ini", "edgecookiesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/edgecookiesview.zip"
+sha256 = "2ffad52588c2373f6bf4f6da662af3ed577e00d78260036b5ef87f7e7e5b5c65"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/edgecookiesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

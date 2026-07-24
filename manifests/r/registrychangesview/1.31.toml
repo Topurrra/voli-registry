@@ -1,0 +1,15 @@
+name = "registrychangesview"
+version = "1.31"
+description = "Compares 2 snapshots of Windows Registry."
+homepage = "https://www.nirsoft.net/utils/registry_changes_view.html"
+license = "Freeware"
+kind = "app"
+bin = ["RegistryChangesView.exe"]
+persist = ["registrychangesview_lng.ini", "registrychangesview.cfg"]
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/registrychangesview-x64.zip"
+sha256 = "618ecaf84b559991cf08b90e1b66c13474517b931d09250f66bbbd96c393340a"
+
+[autoupdate]
+checkver = "{\"url\":\"https://www.nirsoft.net/pad/registrychangesview.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"

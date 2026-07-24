@@ -1,0 +1,89 @@
+# voli-registry
+
+The package catalog for **[Voli](https://github.com/Topurrra/voli)** — a fast,
+honest, no-admin package manager for Windows.
+
+Each package version is a single declarative TOML manifest. CI compiles every
+manifest into a signed SQLite snapshot (`index.sqlite`) that the `voli` client
+downloads, verifies, and searches offline. **No manifest can execute a script**
+— the schema cannot express one. That is the security moat versus Scoop/Choco.
+
+## Layout
+
+```
+manifests/<first-letter>/<name>/<version>.toml
+```
+
+See [`manifests/README.md`](manifests/README.md) for the full layout contract
+and schema. Example: `manifests/r/ripgrep/14.1.1.toml`.
+
+## Contributing a manifest
+
+1. Add `manifests/<first-letter>/<name>/<version>.toml`. The `<first-letter>`,
+   `<name>` directory, and `<version>` filename must match the `name`/`version`
+   fields inside the file.
+2. Follow the rules in [`docs/Voli.md` §4][spec]:
+   - **`sha256` is mandatory** on every `[source.<arch>]` (64 hex chars). No
+     hash, no merge.
+   - **No scripts.** There is no `pre_install`/`post_install`/`installer` field;
+     unknown fields are rejected.
+   - **Portable archives only** (`.zip`/`.tar.*`/`.7z`). MSI/EXE installers are
+     not supported in v1.
+3. Open a PR. CI validates it (below). Green check required to merge.
+
+## How CI works
+
+- **`validate.yml`** (on PR): installs `voli-index-tool` and runs
+  `voli-index-tool validate manifests/`. It parses every `.toml`, checks the
+  layout, enforces `sha256`, and rejects duplicates — reporting *all* errors,
+  not just the first.
+- **`publish.yml`** (on push to `main`): rebuilds the signed index and uploads
+  the triple to the `index` release tag, replacing the assets in place.
+
+Both workflows currently `cargo install --git … voli-index-tool` from source on
+every run. Once the main repo ships prebuilt `voli-index-tool` release binaries,
+swap that step for a binary download to cut CI from minutes to seconds.
+
+## Published index
+
+`publish.yml` writes three assets to the GitHub Release tagged **`index`**:
+
+| Asset               | Purpose                                                    |
+| ------------------- | ---------------------------------------------------------- |
+| `index.json`        | Tiny freshness pointer: `{ epoch, sha256, size }`.         |
+| `index.sqlite.zst`  | zstd-compressed SQLite catalog (the payload).              |
+| `index.sig`         | Ed25519 signature over the **decompressed** `index.sqlite`.|
+
+The client fetches `<index_url>/index.json` first, compares `epoch`, and only
+then downloads the snapshot, checks its size + sha256, and verifies `index.sig`
+before atomically swapping its local index. Any check failing leaves the
+existing index untouched.
+
+### Point a client at this registry
+
+```
+voli config set index_url https://github.com/Topurrra/voli-registry/releases/download/index
+voli update
+```
+
+That base URL resolves to the three release assets above
+(`…/releases/download/index/index.json`, etc.).
+
+## Signing key
+
+The index is signed with an offline Ed25519 key, supplied to `publish.yml` via
+the GitHub Actions secret **`VOLI_INDEX_SIGNING_KEY`** (hex-encoded 32-byte
+secret). The client verifies against the public key embedded in the `voli`
+binary.
+
+> **For now** the secret is the **dev key** from the main repo
+> (`registry-dev/dev-signing-key.hex`), which matches the client's built-in
+> `DEV_PUBKEY`. **Rotate to a real offline key — and re-embed its public half in
+> the client — before public launch.**
+
+## License
+
+MIT — see [`LICENSE`](LICENSE). Manifests imported from Scoop are MIT from
+`ScoopInstaller/Main`; see [`ATTRIBUTION.md`](ATTRIBUTION.md).
+
+[spec]: https://github.com/Topurrra/voli/blob/main/docs/Voli.md

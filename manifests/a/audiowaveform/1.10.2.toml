@@ -1,0 +1,14 @@
+name = "audiowaveform"
+version = "1.10.2"
+description = "A CLI tool to generate waveform data and render waveform images from audio files."
+homepage = "https://github.com/bbc/audiowaveform"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["audiowaveform.exe"]
+
+[source.x64]
+url = "https://github.com/bbc/audiowaveform/releases/download/1.10.2/audiowaveform-1.10.2-win64.zip"
+sha256 = "17ab4657b9482ffa063d88d367598208060400af91c2c3e2b04723f98b418ad1"
+
+[autoupdate]
+checkver = { github = "bbc/audiowaveform" }

@@ -1,0 +1,18 @@
+name = "matcha"
+version = "0.44.0"
+description = "A powerful, feature-rich email client for your terminal, built with Go and the charming Bubble Tea TUI library."
+homepage = "https://matcha.floatpane.com/"
+license = "MIT"
+kind = "app"
+bin = ["matcha.exe"]
+
+[source.x64]
+url = "https://github.com/floatpane/matcha/releases/download/v0.44.0/matcha_0.44.0_windows_amd64.zip"
+sha256 = "349270e04ad9d3f34e3f58137df0445068b591c65f0a73c3374267a365923a96"
+
+[source.arm64]
+url = "https://github.com/floatpane/matcha/releases/download/v0.44.0/matcha_0.44.0_windows_arm64.zip"
+sha256 = "df61955e50614f6624945a2b851dd9d66fdb0edfe405f26c84549958f895f586"
+
+[autoupdate]
+checkver = { github = "floatpane/matcha" }

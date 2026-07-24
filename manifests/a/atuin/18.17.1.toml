@@ -1,0 +1,14 @@
+name = "atuin"
+version = "18.17.1"
+description = "Shell history tool featuring advanced context-aware search, along with secure sync and backup."
+homepage = "https://atuin.sh"
+license = "MIT"
+kind = "app"
+bin = ["atuin.exe"]
+
+[source.x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.17.1/atuin-x86_64-pc-windows-msvc.zip"
+sha256 = "a92e13735ec28a979c497a83e17f5f54d753fbc03affb487d3a4ed23b363c121"
+
+[autoupdate]
+checkver = { github = "atuinsh/atuin" }

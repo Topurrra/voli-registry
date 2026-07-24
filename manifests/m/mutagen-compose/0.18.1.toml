@@ -1,0 +1,18 @@
+name = "mutagen-compose"
+version = "0.18.1"
+description = "Compose with Mutagen integration"
+homepage = "https://mutagen.io/documentation/orchestration/compose"
+license = "MIT"
+kind = "app"
+bin = ["mutagen-compose.exe"]
+
+[source.x64]
+url = "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.18.1/mutagen-compose_windows_amd64_v0.18.1.zip"
+sha256 = "ce266f8798b74d2040fd01a0513832f2501974f707aa99b61374d901cca2437d"
+
+[source.arm64]
+url = "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.18.1/mutagen-compose_windows_arm64_v0.18.1.zip"
+sha256 = "08a2f48a2f12cb6365c1c49d473b95daf4f9f62eef7ce1d5633e992456634a60"
+
+[autoupdate]
+checkver = { github = "mutagen-io/mutagen-compose" }

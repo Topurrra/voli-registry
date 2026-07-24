@@ -1,0 +1,14 @@
+name = "turso"
+version = "0.7.1"
+description = "An open-source, SQLite-compatible database written in Rust that lets developers create millions of small, file-based databases for AI agents, multi-tenant SaaS applications, and edge workloads."
+homepage = "https://turso.tech"
+license = "MIT"
+kind = "app"
+bin = ["tursodb.exe"]
+
+[source.x64]
+url = "https://github.com/tursodatabase/turso/releases/download/v0.7.1/turso_cli-x86_64-pc-windows-msvc.zip"
+sha256 = "a097b5e631ab0fa1df6a03883995d11592dc24753a089872ac271688a81c841a"
+
+[autoupdate]
+checkver = { github = "tursodatabase/turso" }

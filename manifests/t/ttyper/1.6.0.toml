@@ -1,0 +1,18 @@
+name = "ttyper"
+version = "1.6.0"
+description = "Terminal-based typing test."
+homepage = "https://github.com/max-niederman/ttyper"
+license = "MIT"
+kind = "app"
+bin = ["ttyper.exe"]
+
+[source.x64]
+url = "https://github.com/max-niederman/ttyper/releases/download/v1.6.0/ttyper-x86_64-pc-windows-msvc.zip"
+sha256 = "9b332a3f551739b02a3fc5c266b2b2c1546780aa2b25ef313b05039f1c738a27"
+
+[source.arm64]
+url = "https://github.com/max-niederman/ttyper/releases/download/v1.6.0/ttyper-aarch64-pc-windows-msvc.zip"
+sha256 = "95c2a4a93b7c3f8de0ce69fd8281f3dd7036cbcae671531e5014c42255578f5d"
+
+[autoupdate]
+checkver = { github = "max-niederman/ttyper" }

@@ -1,0 +1,15 @@
+name = "zstd"
+version = "1.5.7"
+description = "High compression ratios compression algorithm"
+homepage = "https://facebook.github.io/zstd/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "zstd-v1.5.7-win64"
+bin = ["zstd.exe"]
+
+[source.x64]
+url = "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-v1.5.7-win64.zip"
+sha256 = "acb4e8111511749dc7a3ebedca9b04190e37a17afeb73f55d4425dbf0b90fad9"
+
+[autoupdate]
+checkver = { github = "facebook/zstd" }

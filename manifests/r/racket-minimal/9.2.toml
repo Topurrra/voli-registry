@@ -1,0 +1,18 @@
+name = "racket-minimal"
+version = "9.2"
+description = "Minimal Racket installation, without DrRacket/docs"
+homepage = "https://racket-lang.org"
+license = "LGPL-3.0-or-later"
+kind = "app"
+bin = ["racket.exe", "raco.exe"]
+
+[source.x64]
+url = "https://mirror.racket-lang.org/installers/9.2/racket-minimal-9.2-x86_64-win32.exe#/dl.7z"
+sha256 = "2e1e5c527ee2181947f638fd2e8acea7f3fd5f1578f30640b8f820e0a798a9d3"
+
+[source.arm64]
+url = "https://mirror.racket-lang.org/installers/9.2/racket-minimal-9.2-arm64-win32.exe#/dl.7z"
+sha256 = "667b5b81acfac067e13913124bf1b1e04f6be519db30fc33f8a070a12e0499d9"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://download.racket-lang.org/\"}"

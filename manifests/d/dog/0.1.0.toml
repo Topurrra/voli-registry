@@ -1,0 +1,14 @@
+name = "dog"
+version = "0.1.0"
+description = "Command-line DNS client"
+homepage = "https://dns.lookup.dog"
+license = "EUPL-1.2"
+kind = "app"
+bin = ["bin\\dog.exe"]
+
+[source.x64]
+url = "https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-pc-windows-msvc.zip"
+sha256 = "85e80ebd1560195fb9a2eb87c782d7a9e50d94ae76938ae4df852cecda7fcced"
+
+[autoupdate]
+checkver = { github = "ogham/dog" }

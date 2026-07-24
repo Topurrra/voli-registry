@@ -1,0 +1,18 @@
+name = "jid"
+version = "1.1.2"
+description = "JSON Incremental Digger. Drill down JSON interactively by using filtering queries like jq"
+homepage = "https://github.com/simeji/jid"
+license = "MIT"
+kind = "app"
+bin = ["jid.exe"]
+
+[source.x64]
+url = "https://github.com/simeji/jid/releases/download/v1.1.2/jid_windows_amd64.zip"
+sha256 = "f463125f836c2af4f666da004586e45749a0662f198d8788c327363cea70adb5"
+
+[source.arm64]
+url = "https://github.com/simeji/jid/releases/download/v1.1.2/jid_windows_arm64.zip"
+sha256 = "fbaba4d9d3243bccc6e10a778959d36b7353d4d57a0480427e251dfc59924258"
+
+[autoupdate]
+checkver = { github = "simeji/jid" }

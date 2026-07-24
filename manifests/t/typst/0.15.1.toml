@@ -1,0 +1,19 @@
+name = "typst"
+version = "0.15.1"
+description = "A markup-based typesetting system for the sciences."
+homepage = "https://typst.app"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "typst-x86_64-pc-windows-msvc"
+bin = ["typst.exe"]
+
+[source.x64]
+url = "https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-pc-windows-msvc.zip"
+sha256 = "19ce3551153c2fe7ee9fa2f95208310c8f4d3209fedb699e0333faf8913f6736"
+
+[source.arm64]
+url = "https://github.com/typst/typst/releases/download/v0.15.1/typst-aarch64-pc-windows-msvc.zip"
+sha256 = "4ab28e1b71ec3184d38d580ab797f499b6770d952b6b19167be5cea5c2662e14"
+
+[autoupdate]
+checkver = { github = "typst/typst" }

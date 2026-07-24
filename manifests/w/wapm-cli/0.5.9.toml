@@ -1,0 +1,14 @@
+name = "wapm-cli"
+version = "0.5.9"
+description = "WebAssembly package manager."
+homepage = "https://wapm.io/"
+license = "MIT"
+kind = "app"
+bin = ["bin\\wapm.exe", "bin\\wax.cmd"]
+
+[source.x64]
+url = "https://github.com/wasmerio/wapm-cli/releases/download/v0.5.9/wapm-cli-windows-amd64.tar.gz"
+sha256 = "dad17ac4b936bfdbecec88afcdda286d1e5a13fd08f053852bda94f71df0a73d"
+
+[autoupdate]
+checkver = { github = "wasmerio/wapm-cli" }

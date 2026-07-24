@@ -1,0 +1,13 @@
+# Standalone importer — deliberately NOT part of any workspace.
+[workspace]
+
+[package]
+name = "scoop-import"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_json = "1"
+# Path dep on voli-core for the round-trip check. Relative from
+# voli-registry/tools/scoop-import → voli/crates/voli-core.
+voli-core = { path = "../../../voli/crates/voli-core" }

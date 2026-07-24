@@ -1,0 +1,18 @@
+name = "scc"
+version = "3.7.0"
+description = "Sloc, Cloc and Code (scc) is a very fast accurate code counter with complexity calculations and COCOMO estimates."
+homepage = "https://github.com/boyter/scc"
+license = "MIT|Unlicense"
+kind = "app"
+bin = ["scc.exe"]
+
+[source.x64]
+url = "https://github.com/boyter/scc/releases/download/v3.7.0/scc_Windows_x86_64.zip"
+sha256 = "97abf9d55d4b79d3310536d576ccbdf5017aeb425780e850336120b6e67622e1"
+
+[source.arm64]
+url = "https://github.com/boyter/scc/releases/download/v3.7.0/scc_Windows_arm64.zip"
+sha256 = "fd114614c10382c9ed2e32d5455cc4b51960a9f71691c5c1ca42b31adea5b84d"
+
+[autoupdate]
+checkver = { github = "boyter/scc" }

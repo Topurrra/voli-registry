@@ -1,0 +1,18 @@
+name = "lnav"
+version = "0.14.0"
+description = "A log file viewer for the terminal."
+homepage = "https://lnav.org"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["bin\\lnav.exe"]
+
+[source.x64]
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-windows-x86_64.zip"
+sha256 = "62e35078b0ba6ff94cb38a3e31df0197b372a96e3e516a0bfc740061729be023"
+
+[source.arm64]
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-windows-arm64.zip"
+sha256 = "3c6a27057fc08263ae9435a34c6c787fc9b476a2f682f4a03ec2873a8c4addec"
+
+[autoupdate]
+checkver = { github = "tstack/lnav" }

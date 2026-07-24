@@ -1,0 +1,14 @@
+name = "helm-docs"
+version = "1.14.2"
+description = "Generates Helm charts documentation as markdown files."
+homepage = "https://github.com/norwoodj/helm-docs"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["helm-docs.exe"]
+
+[source.x64]
+url = "https://github.com/norwoodj/helm-docs/releases/download/v1.14.2/helm-docs_1.14.2_Windows_x86_64.tar.gz"
+sha256 = "3c54fd78d99e2769cf83a0faf12cf6cd4de1cac6ed7bee8d908a2c8fc23f538c"
+
+[autoupdate]
+checkver = { github = "norwoodj/helm-docs" }

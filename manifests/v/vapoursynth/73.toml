@@ -1,0 +1,11 @@
+name = "vapoursynth"
+version = "73"
+description = "A video processing framework with simplicity in mind"
+homepage = "https://www.vapoursynth.com/"
+license = "LGPL-2.1-or-later"
+kind = "app"
+bin = ["AVFS.exe", "VSPipe.exe", "pfm-192-vapoursynth-win.exe", "vsrepo.py"]
+
+[source.x64]
+url = "https://github.com/vapoursynth/vapoursynth/releases/download/R73/VapourSynth64-Portable-R73.zip"
+sha256 = "3326f10d0fdcdec45649a474cbc9810795ab3da422634d0f134bca6089afbb91"

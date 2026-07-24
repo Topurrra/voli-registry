@@ -1,0 +1,14 @@
+name = "winfetch"
+version = "2.5.1"
+description = "A command-line system information utility for Windows"
+homepage = "https://github.com/lptstr/winfetch"
+license = "MIT"
+kind = "app"
+bin = ["winfetch.ps1"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/lptstr/winfetch/v2.5.1/winfetch.ps1"
+sha256 = "37359a63285945d425e4daab97b1cbf8cc259509b49eb0171c3ab762500856d9"
+
+[autoupdate]
+checkver = { github = "lptstr/winfetch" }

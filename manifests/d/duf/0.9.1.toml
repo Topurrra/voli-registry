@@ -1,0 +1,18 @@
+name = "duf"
+version = "0.9.1"
+description = "Disk Usage/Free Utility - a better 'df' alternative"
+homepage = "https://github.com/muesli/duf"
+license = "MIT"
+kind = "app"
+bin = ["duf.exe"]
+
+[source.x64]
+url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_Windows_x86_64.zip"
+sha256 = "503934be81f847d9ddb1b739834217480633435ad16515dd199e372c0b2e1afc"
+
+[source.arm64]
+url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_Windows_arm64.zip"
+sha256 = "6aa91380c7bd5ba935bab38bb826680255a0d9569614de7b0d149cea471ccf4b"
+
+[autoupdate]
+checkver = { github = "muesli/duf" }

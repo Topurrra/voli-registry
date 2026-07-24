@@ -1,0 +1,18 @@
+name = "gk"
+version = "3.1.70"
+description = "GitKraken CLI"
+homepage = "https://www.gitkraken.com/cli"
+license = "Proprietary"
+kind = "app"
+bin = ["gk.exe"]
+
+[source.x64]
+url = "https://github.com/gitkraken/gk-cli/releases/download/v3.1.70/gk_3.1.70_windows_amd64.zip"
+sha256 = "2dbcf650a1f4921c47f875f857a1e41dc57caceae181ab5cfe981d104d163cd3"
+
+[source.arm64]
+url = "https://github.com/gitkraken/gk-cli/releases/download/v3.1.70/gk_3.1.70_windows_arm64.zip"
+sha256 = "ad37bd94a74ecbb2a5aa48ccc13f471d3573b4beedfae388c08a5524152b8c65"
+
+[autoupdate]
+checkver = { github = "gitkraken/gk-cli" }

@@ -1,0 +1,14 @@
+name = "unrar"
+version = "7.23"
+description = "Decompress RAR files."
+homepage = "https://www.rarlab.com/"
+license = "Freeware"
+kind = "app"
+bin = ["UnRAR.exe"]
+
+[source.x64]
+url = "https://www.rarlab.com/rar/unrarw64.exe#/dl.zip"
+sha256 = "ca630e4d4eff213076def6690cc82ead81abb739158da7ead3fd263ff9d104e5"
+
+[autoupdate]
+checkver = "WinRAR and RAR ([\\d.]+) release"

@@ -1,0 +1,15 @@
+name = "lychee"
+version = "0.24.2"
+description = "A command-line link checker"
+homepage = "https://github.com/lycheeverse/lychee"
+license = "Apache-2.0|MIT"
+kind = "app"
+extract_dir = "lychee-x86_64-pc-windows-msvc"
+bin = ["lychee.exe"]
+
+[source.x64]
+url = "https://github.com/lycheeverse/lychee/releases/download/lychee-v0.24.2/lychee-x86_64-pc-windows-msvc.zip"
+sha256 = "32975d1493ee1a975d6bb41e4fb56fe419cb442ded628bb772ba2e614acfacad"
+
+[autoupdate]
+checkver = { github = "lycheeverse/lychee" }

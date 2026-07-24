@@ -1,0 +1,18 @@
+name = "dotslash"
+version = "0.5.9"
+description = "A command-line tool that lets you represent a set of platform-specific, heavyweight executables with an equivalent small, easy-to-read text file."
+homepage = "https://dotslash-cli.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dotslash.exe"]
+
+[source.x64]
+url = "https://github.com/facebook/dotslash/releases/download/v0.5.9/dotslash-windows.v0.5.9.tar.gz"
+sha256 = "c925840a9bf9105a187cd120278cb023c51dac0cecb3234855152422751b7b41"
+
+[source.arm64]
+url = "https://github.com/facebook/dotslash/releases/download/v0.5.9/dotslash-windows-arm64.v0.5.9.tar.gz"
+sha256 = "43d49d3472808738993ccf95a36dda8cc2869996d9a397bb02bde1e39b16146b"
+
+[autoupdate]
+checkver = { github = "facebook/dotslash" }

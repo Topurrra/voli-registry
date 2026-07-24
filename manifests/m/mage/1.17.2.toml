@@ -1,0 +1,14 @@
+name = "mage"
+version = "1.17.2"
+description = "A make/rake-like build tool for Go"
+homepage = "https://magefile.org"
+license = "Apache-2.0"
+kind = "app"
+bin = ["mage.exe"]
+
+[source.x64]
+url = "https://github.com/magefile/mage/releases/download/v1.17.2/mage_1.17.2_Windows-64bit.zip"
+sha256 = "970bc6efa76d6dc7285098a7033f4e6c83c18dc02f80548ae8de8dc5586e0445"
+
+[autoupdate]
+checkver = { github = "magefile/mage" }

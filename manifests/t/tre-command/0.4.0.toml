@@ -1,0 +1,14 @@
+name = "tre-command"
+version = "0.4.0"
+description = "Improved Tree command"
+homepage = "https://github.com/dduan/tre"
+license = "MIT"
+kind = "app"
+bin = ["tre.exe"]
+
+[source.x64]
+url = "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-pc-windows-msvc.zip"
+sha256 = "9dfbf8c33038e6b31fb359d7f8e7661e46f015067f5cc2f378c93d8bbd1a432a"
+
+[autoupdate]
+checkver = { github = "dduan/tre" }

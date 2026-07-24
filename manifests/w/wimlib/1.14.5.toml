@@ -1,0 +1,20 @@
+name = "wimlib"
+version = "1.14.5"
+description = "An open source, cross-platform library for creating, extracting, and modifying Windows Imaging (WIM) archives."
+homepage = "https://wimlib.net"
+license = "LGPL-2.1-or-later|GPL-3.0-or-later"
+kind = "app"
+
+[source.x64]
+url = "https://wimlib.net/downloads/wimlib-1.14.5-windows-x86_64-bin.zip"
+sha256 = "2f446d6fa3866582175f1a22a7be198eeee0aec7aba5b4e04ad25c99eae2d265"
+
+[source.arm64]
+url = "https://wimlib.net/downloads/wimlib-1.14.5-windows-aarch64-bin.zip"
+sha256 = "2c2e3e50cf21bfdd4ffd693b5052b231aa04a10c85f218ae61eb5a031dfcdd8f"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = "Current release: wimlib-([\\d.]+)"

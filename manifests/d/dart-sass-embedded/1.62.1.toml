@@ -1,0 +1,14 @@
+name = "dart-sass-embedded"
+version = "1.62.1"
+description = "A wrapper for Dart Sass that implements the compiler side of the Embedded Sass protocol"
+homepage = "https://github.com/sass/dart-sass-embedded"
+license = "MIT"
+kind = "app"
+bin = ["sass_embedded\\dart-sass-embedded.bat"]
+
+[source.x64]
+url = "https://github.com/sass/dart-sass-embedded/releases/download/1.62.1/sass_embedded-1.62.1-windows-x64.zip"
+sha256 = "97336afe04e7b5ad38a3dbb6b5a9ea01d0e8652c3889bf7fdf67d1d635511feb"
+
+[autoupdate]
+checkver = { github = "sass/dart-sass-embedded" }

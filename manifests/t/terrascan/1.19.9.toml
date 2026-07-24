@@ -1,0 +1,14 @@
+name = "terrascan"
+version = "1.19.9"
+description = "A static code analyzer for Infrastructure as Code."
+homepage = "https://runterrascan.io/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["terrascan.exe"]
+
+[source.x64]
+url = "https://github.com/tenable/terrascan/releases/download/v1.19.9/terrascan_1.19.9_Windows_x86_64.zip"
+sha256 = "2585e0ae7121bfa28a471175ec3cabe810680fcbeb064eefab93a8c6c475b094"
+
+[autoupdate]
+checkver = { github = "tenable/terrascan" }

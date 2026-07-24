@@ -1,0 +1,15 @@
+name = "psake"
+version = "4.9.0"
+description = "A build automation tool, now with less XML."
+homepage = "https://github.com/psake/psake"
+license = "MIT"
+kind = "app"
+extract_dir = "tools\\psake"
+bin = ["psake.ps1"]
+
+[source.x64]
+url = "https://nuget.org/api/v2/package/psake/4.9.0#/dl.7z"
+sha256 = "b2e0b4abf252de17bdec2c4af1c1a412d7b787c67e758304557ec9057d9f6ff2"
+
+[autoupdate]
+checkver = { github = "psake/psake" }

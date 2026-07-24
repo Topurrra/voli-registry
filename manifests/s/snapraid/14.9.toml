@@ -1,0 +1,14 @@
+name = "snapraid"
+version = "14.9"
+description = "A backup program for disk arrays"
+homepage = "https://www.snapraid.it"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["snapraid.exe"]
+
+[source.x64]
+url = "https://github.com/amadvance/snapraid/releases/download/v14.9/snapraid-14.9-windows-x64.zip"
+sha256 = "84af790cd25c8f2d773386bca7320cb5cf81706f850eb1fda33d4b9ff4e0d692"
+
+[autoupdate]
+checkver = { github = "amadvance/snapraid" }

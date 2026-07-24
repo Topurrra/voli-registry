@@ -1,0 +1,14 @@
+name = "time"
+version = "0.2018.07.25"
+description = "An approximation of the Unix time command."
+homepage = "https://github.com/lukesampson/psutils"
+license = "MIT"
+kind = "app"
+bin = ["time.ps1", { name = "timecmd", path = "time.ps1" }]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/lukesampson/psutils/3290c04d7653ea8183a5e11d3d5a4e46716035d1/time.ps1"
+sha256 = "250413758eb4845973cfd0778b58e40ec52b881f17cbe13b22afac440fb26d93"
+
+[autoupdate]
+checkver = { github = "lukesampson/psutils" }

@@ -1,0 +1,15 @@
+name = "git-absorb"
+version = "0.9.0"
+description = "git commit --fixup, but automatic"
+homepage = "https://github.com/tummychow/git-absorb"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "git-absorb-0.9.0-x86_64-pc-windows-msvc"
+bin = ["git-absorb.exe"]
+
+[source.x64]
+url = "https://github.com/tummychow/git-absorb/releases/download/0.9.0/git-absorb-0.9.0-x86_64-pc-windows-msvc.zip"
+sha256 = "3fcf1d9b4f42017dbffe90539c6be5ac415e9b119552c5ae5cdbb034d36aab87"
+
+[autoupdate]
+checkver = { github = "tummychow/git-absorb" }

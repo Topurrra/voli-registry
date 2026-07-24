@@ -1,0 +1,18 @@
+name = "pyrefly"
+version = "1.1.1"
+description = "A fast type checker and language server for Python."
+homepage = "https://pyrefly.org"
+license = "MIT"
+kind = "app"
+bin = ["pyrefly.exe"]
+
+[source.x64]
+url = "https://github.com/facebook/pyrefly/releases/download/1.1.1/pyrefly-windows-x86_64.zip"
+sha256 = "d54e29b9f49877d2937710c975996cf00e6576f0a10ec4c84c9f6c370ca396a8"
+
+[source.arm64]
+url = "https://github.com/facebook/pyrefly/releases/download/1.1.1/pyrefly-windows-arm64.zip"
+sha256 = "f75eb69610c76df17c4a2279961003d896ecd4f880ca02f211f4ade39f451fec"
+
+[autoupdate]
+checkver = { github = "facebook/pyrefly" }

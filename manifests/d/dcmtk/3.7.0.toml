@@ -1,0 +1,17 @@
+name = "dcmtk"
+version = "3.7.0"
+description = "DCMTK is a collection of libraries and applications implementing large parts the DICOM standard."
+homepage = "https://dcmtk.org/en/dcmtk/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "dcmtk-3.7.0-win64-dynamic"
+
+[source.x64]
+url = "https://dicom.offis.de/download/dcmtk/dcmtk370/bin/dcmtk-3.7.0-win64-dynamic.zip"
+sha256 = "dcca45b2a7596e829f0eda885c746880385176830fe47253a6444330017ba191"
+
+[env]
+PATH = "{dir}\\.\\bin\\"
+
+[autoupdate]
+checkver = "{\"regex\":\"dcmtk-([\\\\d\\\\.]+)\\\\.zip\",\"url\":\"https://dicom.offis.de/download/dcmtk/current/\"}"

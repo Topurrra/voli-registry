@@ -1,0 +1,15 @@
+name = "trdsql"
+version = "1.2.3"
+description = "CLI tool that can execute SQL queries on CSV, LTSV, JSON, YAML and TBLN. Can output to various formats."
+homepage = "https://noborus.github.io/trdsql/"
+license = "MIT"
+kind = "app"
+extract_dir = "trdsql_v1.2.3_windows_amd64"
+bin = ["trdsql.exe"]
+
+[source.x64]
+url = "https://github.com/noborus/trdsql/releases/download/v1.2.3/trdsql_v1.2.3_windows_amd64.zip"
+sha256 = "03d6aa5a593511e8c0a75eb235a161aa8305f5ab2b1b1ac039ed800cab27d823"
+
+[autoupdate]
+checkver = { github = "noborus/trdsql" }

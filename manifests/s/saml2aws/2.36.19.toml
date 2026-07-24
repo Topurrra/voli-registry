@@ -1,0 +1,14 @@
+name = "saml2aws"
+version = "2.36.19"
+description = "Login and retrieve Amazon Web Services / AWS temporary credentials using a SAML IDP."
+homepage = "https://github.com/Versent/saml2aws"
+license = "MIT"
+kind = "app"
+bin = ["saml2aws.exe"]
+
+[source.x64]
+url = "https://github.com/Versent/saml2aws/releases/download/v2.36.19/saml2aws_2.36.19_windows_amd64.zip"
+sha256 = "739bd99db011825521cf7adb15c205e7aac6570f8b74cd0afc5bedbb0804a0eb"
+
+[autoupdate]
+checkver = { github = "Versent/saml2aws" }

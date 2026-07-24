@@ -1,0 +1,17 @@
+name = "nunit-extension-nunit-project-loader"
+version = "3.8.0"
+description = "NUnit Project Loader Extension"
+homepage = "https://nunit.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "tools"
+
+[source.x64]
+url = "https://packages.chocolatey.org/nunit-extension-nunit-project-loader.3.8.0.nupkg"
+sha256 = "be01b9d7c04f0518c97d82d3fe08ce3881f3aed68ea9edeb5c5fb809ab27b623"
+
+[depends]
+nunit-console = "*"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\\s+([\\\\d.]+)</title>\",\"url\":\"https://chocolatey.org/packages/nunit-extension-nunit-project-loader\"}"

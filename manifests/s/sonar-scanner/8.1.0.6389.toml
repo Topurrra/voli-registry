@@ -1,0 +1,15 @@
+name = "sonar-scanner"
+version = "8.1.0.6389"
+description = "Source code scanner for SonarQube analyzer."
+homepage = "https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/"
+license = "LGPL-3.0-only"
+kind = "app"
+extract_dir = "sonar-scanner-8.1.0.6389"
+bin = ["bin\\sonar-scanner.bat"]
+
+[source.x64]
+url = "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-8.1.0.6389.zip"
+sha256 = "ab76ab3c360025e9108be5b55be066f304a164f8b2850d2f2f333915db51bc1b"
+
+[autoupdate]
+checkver = { github = "SonarSource/sonar-scanner-cli" }

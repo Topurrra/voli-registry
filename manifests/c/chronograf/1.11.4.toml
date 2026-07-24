@@ -1,0 +1,15 @@
+name = "chronograf"
+version = "1.11.4"
+description = "Open source monitoring and visualization UI for the TICK stack."
+homepage = "https://www.influxdata.com/time-series-platform/chronograf/"
+license = "MIT"
+kind = "app"
+extract_dir = "chronograf-1.11.4-1"
+bin = ["chronoctl.exe", "chronograf.exe"]
+
+[source.x64]
+url = "https://dl.influxdata.com/chronograf/releases/chronograf-1.11.4_windows_amd64.zip"
+sha256 = "e9f1e38be359f6fa00c201c6a4ee8467dc9b83408e3f78e407fdef12769667c3"
+
+[autoupdate]
+checkver = "{\"regex\":\">Chronograf v([\\\\d.]+)<\",\"url\":\"https://portal.influxdata.com/downloads\"}"

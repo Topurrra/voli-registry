@@ -1,0 +1,14 @@
+name = "juicefs"
+version = "1.4.0"
+description = "A distributed POSIX file system built on top of Redis and S3."
+homepage = "https://juicefs.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["juicefs.exe"]
+
+[source.x64]
+url = "https://github.com/juicedata/juicefs/releases/download/v1.4.0/juicefs-1.4.0-windows-amd64.tar.gz"
+sha256 = "0b0f30a736f749d9ab9cd184ebd3424b6c44ae43a225c2ede6ba5186bf92dd45"
+
+[autoupdate]
+checkver = { github = "juicedata/juicefs" }

@@ -1,0 +1,15 @@
+name = "latexindent"
+version = "4.0.2"
+description = "Perl script to add indentation to LaTeX files"
+homepage = "https://github.com/cmhughes/latexindent.pl"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "latexindent"
+bin = ["bin\\windows\\latexindent.exe"]
+
+[source.x64]
+url = "http://mirrors.ctan.org/support/latexindent.zip"
+sha256 = "8bc6559c02e3d44cdfc6eb22040ba83d9ab4385dc6f78592b49e510b8f8df81e"
+
+[autoupdate]
+checkver = { github = "cmhughes/latexindent.pl" }

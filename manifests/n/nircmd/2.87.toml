@@ -1,0 +1,16 @@
+name = "nircmd"
+version = "2.87"
+description = "Execute various system wide tasks."
+homepage = "https://www.nirsoft.net/utils/nircmd.html"
+license = "Freeware"
+kind = "app"
+
+[source.x64]
+url = "https://www.nirsoft.net/utils/nircmd-x64.zip"
+sha256 = "51e34ed379dd099a96bbf0a2266003361e2864fe3ef2f8baed76634909763a7c"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = "<td>NirCmd v([\\d.]+)"

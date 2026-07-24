@@ -1,0 +1,15 @@
+name = "eac3to"
+version = "3.63"
+description = "Audio conversion tool"
+homepage = "https://www.rationalqm.us/eac3to/"
+license = "Freeware"
+kind = "app"
+bin = ["eac3to.exe"]
+persist = ["eac3to.ini", "error.wav", "success.wav"]
+
+[source.x64]
+url = "https://www.videohelp.com/download/eac3to_3.63.rar"
+sha256 = "ff590f580022551cf17a197401b889dbfc90a3ce4bc5e39fe81c0c3771e32dca"
+
+[autoupdate]
+checkver = "{\"regex\":\"eac3to_([\\\\d.]+).rar\",\"url\":\"https://www.videohelp.com/software/eac3to\"}"

@@ -1,0 +1,18 @@
+name = "deepstream"
+version = "10.1.4"
+description = "Realtime, fast and secure data-sync server for mobile, web & iot"
+homepage = "https://deepstream.io"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["deepstream.exe"]
+persist = ["conf"]
+
+[source.x64]
+url = "https://github.com/deepstreamIO/deepstream.io/releases/download/v10.1.4/deepstream.io-windows-10.1.4.zip"
+sha256 = "3e5b55b817c11c4ecdee145cae63ec959c4bbd92f75065be5ec6dbed91c58d4d"
+
+[env]
+DEEPSTREAM_CONFIG_DIRECTORY = "{dir}\\conf\\config.yml"
+
+[autoupdate]
+checkver = { github = "deepstreamIO/deepstream.io" }

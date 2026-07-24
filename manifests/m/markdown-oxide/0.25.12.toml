@@ -1,0 +1,15 @@
+name = "markdown-oxide"
+version = "0.25.12"
+description = "Robust, Minimalist, Unbundled PKM for your favorite text-editor through the LSP"
+homepage = "https://oxide.md"
+license = "GPL-3.0"
+kind = "app"
+extract_dir = "markdown-oxide-v0.25.12-x86_64-pc-windows-gnu"
+bin = ["markdown-oxide.exe"]
+
+[source.x64]
+url = "https://github.com/Feel-ix-343/markdown-oxide/releases/download/v0.25.12/markdown-oxide-v0.25.12-x86_64-pc-windows-gnu.zip"
+sha256 = "876c5d448abd44211f14d8d611e91b2152f6e3aec98702da976489891bab8839"
+
+[autoupdate]
+checkver = { github = "Feel-ix-343/markdown-oxide" }

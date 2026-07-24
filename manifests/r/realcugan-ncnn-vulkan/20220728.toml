@@ -1,0 +1,15 @@
+name = "realcugan-ncnn-vulkan"
+version = "20220728"
+description = "NCNN implementation of Real-CUGAN image upscaling software."
+homepage = "https://github.com/nihui/realcugan-ncnn-vulkan"
+license = "MIT"
+kind = "app"
+extract_dir = "realcugan-ncnn-vulkan-20220728-windows"
+bin = ["realcugan-ncnn-vulkan.exe"]
+
+[source.x64]
+url = "https://github.com/nihui/realcugan-ncnn-vulkan/releases/download/20220728/realcugan-ncnn-vulkan-20220728-windows.zip"
+sha256 = "c6e08d46c11704b1e3a1ada9ddd591cb5005f52f132136c8633ba25def400e01"
+
+[autoupdate]
+checkver = { github = "nihui/realcugan-ncnn-vulkan" }

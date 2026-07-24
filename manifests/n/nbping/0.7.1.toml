@@ -1,0 +1,14 @@
+name = "nbping"
+version = "0.7.1"
+description = "A Ping Tool in Rust with Real-Time Data and Visualizations."
+homepage = "https://github.com/hanshuaikang/NBping"
+license = "MIT"
+kind = "app"
+bin = ["nbping.exe"]
+
+[source.x64]
+url = "https://github.com/hanshuaikang/NBping/releases/download/v0.7.1/nbping-x86_64-pc-windows-msvc.zip"
+sha256 = "973fdf04028f7a89893caf607c0706c8d5ab7f4a67c4bfaf4d1677c46c811543"
+
+[autoupdate]
+checkver = { github = "hanshuaikang/NBping" }

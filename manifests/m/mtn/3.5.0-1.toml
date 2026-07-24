@@ -1,0 +1,15 @@
+name = "mtn"
+version = "3.5.0-1"
+description = "Movie Thumbnailer - save thumbnails (screenshots) of movie or video files to image files."
+homepage = "https://gitlab.com/movie_thumbnailer/mtn/-/wikis/home"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "mtn-win64"
+bin = ["mtn.exe"]
+
+[source.x64]
+url = "https://gitlab.com/-/project/3655713/uploads/5b7ca00b81629aacd8fcf8e99b859368/mtn-3.5.0-1-win64.zip"
+sha256 = "4e21b1bdf4fde6df5cbc31a11abe1be4a48131a307b7dfc822dfe7bb8e5703e9"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.description\",\"regex\":\"uploads/(?<hash>[a-f0-9]+)/mtn-(?<version>[\\\\d.]+(?:-\\\\d+)?)-win64\\\\.zip\",\"url\":\"https://gitlab.com/api/v4/projects/movie_thumbnailer%2Fmtn/releases/permalink/latest\"}"

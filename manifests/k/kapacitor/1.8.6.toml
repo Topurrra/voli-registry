@@ -1,0 +1,16 @@
+name = "kapacitor"
+version = "1.8.6"
+description = "Open source framework for processing, monitoring, and alerting on time series data."
+homepage = "https://www.influxdata.com/time-series-platform/kapacitor/"
+license = "MIT"
+kind = "app"
+extract_dir = "kapacitor-1.8.6-1"
+bin = ["kapacitor.exe", "kapacitord.exe"]
+persist = ["kapacitor.conf"]
+
+[source.x64]
+url = "https://dl.influxdata.com/kapacitor/releases/kapacitor-1.8.6_windows_amd64.zip"
+sha256 = "b17739a8b05b336afdf0778a4e1a48e68b7c8f0ec8c632c7135f6aa1f80523db"
+
+[autoupdate]
+checkver = "{\"regex\":\">Kapacitor v([\\\\d.]+)<\",\"url\":\"https://portal.influxdata.com/downloads\"}"

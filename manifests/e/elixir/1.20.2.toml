@@ -1,0 +1,16 @@
+name = "elixir"
+version = "1.20.2"
+description = "A dynamic and functional programming language designed for building scalable and maintainable applications."
+homepage = "https://elixir-lang.org/"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://builds.hex.pm/builds/elixir/v1.20.2.zip"
+sha256 = "8ed70a989bf543c3e1607aae2b42729d2d58af9ce7abee6545fbacdead929e18"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "elixir-lang/elixir" }

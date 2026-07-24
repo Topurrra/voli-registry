@@ -1,0 +1,18 @@
+name = "cq"
+version = "0.16.0"
+description = "An open standard for shared agent learning that lets AI agents persist, share, and query collective knowledge so they stop rediscovering the same failures."
+homepage = "https://github.com/mozilla-ai/cq"
+license = "Apache-2.0"
+kind = "app"
+bin = ["cq.exe"]
+
+[source.x64]
+url = "https://github.com/mozilla-ai/cq/releases/download/cli/v0.16.0/cq_Windows_x86_64.zip"
+sha256 = "ee9cc83558165cf961550ae027d20a1ea1b3045fe6b29c77cb42e40a1b80625f"
+
+[source.arm64]
+url = "https://github.com/mozilla-ai/cq/releases/download/cli/v0.16.0/cq_Windows_arm64.zip"
+sha256 = "ea4aeac9184294ebaa17348d0b56e96e7c2412571580ca0d12b0fc8a357bb972"
+
+[autoupdate]
+checkver = { github = "mozilla-ai/cq" }

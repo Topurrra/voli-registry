@@ -1,0 +1,18 @@
+name = "portal"
+version = "1.2.3"
+description = "Quick and easy CLI file transfer utility from any computer to another."
+homepage = "https://github.com/SpatiumPortae/portal"
+license = "MIT"
+kind = "app"
+bin = ["portal.exe"]
+
+[source.x64]
+url = "https://github.com/SpatiumPortae/portal/releases/download/v1.2.3/portal_1.2.3_Windows_x86_64.zip"
+sha256 = "f775a4a9362da02d9ad19436deb18b01a371ad9ab5ba337c4815a2d00dcfef04"
+
+[source.arm64]
+url = "https://github.com/SpatiumPortae/portal/releases/download/v1.2.3/portal_1.2.3_Windows_arm64.zip"
+sha256 = "b504eb979099127b9ad5d8be2804b1bcae0d49fd49bbbedd6b96873b28ccf94f"
+
+[autoupdate]
+checkver = { github = "SpatiumPortae/portal" }

@@ -1,0 +1,17 @@
+name = "invoke-build"
+version = "5.14.23"
+description = "Build Automation in PowerShell"
+homepage = "https://github.com/nightroman/Invoke-Build"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "tools"
+
+[source.x64]
+url = "https://nuget.org/api/v2/package/Invoke-Build/5.14.23#/dl.7z"
+sha256 = "e170f2babd1ee14e1af1a0a57afad56f42d9f478382f712f90461e0cbe7a8da7"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "nightroman/Invoke-Build" }

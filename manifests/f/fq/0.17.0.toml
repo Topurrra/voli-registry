@@ -1,0 +1,18 @@
+name = "fq"
+version = "0.17.0"
+description = "Tool, language and decoders for working with binary data."
+homepage = "https://github.com/wader/fq"
+license = "MIT"
+kind = "app"
+bin = ["fq.exe"]
+
+[source.x64]
+url = "https://github.com/wader/fq/releases/download/v0.17.0/fq_0.17.0_windows_amd64.zip"
+sha256 = "9a84c41a4c088d7df748c8b210afbb3b5307cf69c2605d86aead595c6785fd97"
+
+[source.arm64]
+url = "https://github.com/wader/fq/releases/download/v0.17.0/fq_0.17.0_windows_arm64.zip"
+sha256 = "488346a0935e6519e48a29e655b18d6af2f30412f1faebb0e98c9d27c0ed2b91"
+
+[autoupdate]
+checkver = { github = "wader/fq" }

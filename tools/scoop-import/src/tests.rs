@@ -1,0 +1,426 @@
+use super::*;
+use serde_json::json;
+use voli_core::manifest::{Bin, Kind, Manifest};
+
+/// Convert, assert it succeeded, and return the round-tripped voli Manifest.
+fn ok(stem: &str, v: Value) -> Manifest {
+    match convert(stem, &v) {
+        Outcome::Ok(c) => Manifest::from_toml_str(&c.toml)
+            .unwrap_or_else(|e| panic!("round-trip failed for {stem}: {e}\n---\n{}", c.toml)),
+        Outcome::Skip(r) => panic!("expected Ok for {stem}, got Skip({r})"),
+    }
+}
+
+fn skip_reason(stem: &str, v: Value) -> &'static str {
+    match convert(stem, &v) {
+        Outcome::Skip(r) => r,
+        Outcome::Ok(_) => panic!("expected Skip for {stem}, got Ok"),
+    }
+}
+
+#[test]
+fn simple_single_url_top_level() {
+    let m = ok(
+        "tool",
+        json!({
+            "version": "1.0.0",
+            "description": "A tool",
+            "homepage": "https://example.com",
+            "license": "MIT",
+            "url": "https://example.com/tool-1.0.0.zip",
+            "hash": "a".repeat(64),
+            "bin": "tool.exe"
+        }),
+    );
+    assert_eq!(m.name, "tool");
+    assert_eq!(m.version, "1.0.0");
+    assert_eq!(m.kind, Kind::App);
+    assert!(m.source.x64.is_some());
+    assert!(m.source.arm64.is_none());
+    assert_eq!(m.source.x64.unwrap().sha256, "a".repeat(64));
+    assert_eq!(m.bin, vec![Bin::Path("tool.exe".into())]);
+}
+
+#[test]
+fn per_arch_sources() {
+    let m = ok(
+        "ripgrep",
+        json!({
+            "version": "15.2.0",
+            "architecture": {
+                "64bit": { "url": "https://x/rg-x64.zip", "hash": "1".repeat(64), "extract_dir": "rg-x64" },
+                "32bit": { "url": "https://x/rg-32.zip", "hash": "2".repeat(64) },
+                "arm64": { "url": "https://x/rg-arm64.zip", "hash": "3".repeat(64), "extract_dir": "rg-arm64" }
+            },
+            "bin": "rg.exe"
+        }),
+    );
+    assert_eq!(m.source.x64.unwrap().url, "https://x/rg-x64.zip");
+    assert_eq!(m.source.arm64.unwrap().sha256, "3".repeat(64));
+    // extract_dir prefers x64.
+    assert_eq!(m.extract_dir.as_deref(), Some("rg-x64"));
+}
+
+#[test]
+fn bin_string_array_and_nested_alias() {
+    let m = ok(
+        "multi",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "bin": [
+                "a.exe",
+                ["b.exe", "bee"],
+                ["c.exe", "cee", "--flag --x"],
+                ["d.exe"]
+            ]
+        }),
+    );
+    assert_eq!(m.bin.len(), 4);
+    assert_eq!(m.bin[0], Bin::Path("a.exe".into()));
+    assert_eq!(
+        m.bin[1],
+        Bin::Table {
+            name: "bee".into(),
+            path: "b.exe".into(),
+            args: None
+        }
+    );
+    assert_eq!(
+        m.bin[2],
+        Bin::Table {
+            name: "cee".into(),
+            path: "c.exe".into(),
+            args: Some("--flag --x".into())
+        }
+    );
+    // Nested single-element degrades to a plain path.
+    assert_eq!(m.bin[3], Bin::Path("d.exe".into()));
+}
+
+#[test]
+fn bin_nested_args_array_joined() {
+    let m = ok(
+        "alist",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "bin": [["alist.exe", "alist", ["--force", "--bin-dir"]]]
+        }),
+    );
+    assert_eq!(
+        m.bin[0],
+        Bin::Table {
+            name: "alist".into(),
+            path: "alist.exe".into(),
+            args: Some("--force --bin-dir".into())
+        }
+    );
+}
+
+#[test]
+fn bin_backslash_subpath_ok() {
+    let m = ok(
+        "apngasm",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "bin": [["bin\\apngasm.exe", "apngasm-cli"]]
+        }),
+    );
+    assert_eq!(m.bin[0].path(), "bin\\apngasm.exe");
+}
+
+#[test]
+fn extract_dir_mapped() {
+    let m = ok(
+        "fd",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "extract_dir": "fd-1.0"
+        }),
+    );
+    assert_eq!(m.extract_dir.as_deref(), Some("fd-1.0"));
+}
+
+#[test]
+fn env_add_path_mapping() {
+    let m = ok(
+        "node",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.7z",
+            "hash": "b".repeat(64),
+            "env_add_path": ["bin", "."]
+        }),
+    );
+    // "." → {dir}, "bin" → {dir}\bin, joined with ';'.
+    assert_eq!(m.env.get("PATH").unwrap(), "{dir}\\bin;{dir}");
+}
+
+#[test]
+fn env_set_dir_template() {
+    let m = ok(
+        "temurin",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "env_set": { "JAVA_HOME": "$dir", "JAVA_OPTS": "$dir\\lib" }
+        }),
+    );
+    assert_eq!(m.env.get("JAVA_HOME").unwrap(), "{dir}");
+    assert_eq!(m.env.get("JAVA_OPTS").unwrap(), "{dir}\\lib");
+}
+
+#[test]
+fn persist_string_and_array() {
+    let m = ok(
+        "app",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "persist": ["config", "data"]
+        }),
+    );
+    assert_eq!(m.persist, vec!["config", "data"]);
+
+    let m2 = ok(
+        "app",
+        json!({ "version": "1.0", "url": "https://x/a.zip", "hash": "b".repeat(64), "persist": "config" }),
+    );
+    assert_eq!(m2.persist, vec!["config"]);
+}
+
+#[test]
+fn depends_strips_bucket_prefix() {
+    let m = ok(
+        "app",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "depends": ["extras/vcredist2022", "7zip"]
+        }),
+    );
+    assert_eq!(m.depends.get("vcredist2022").map(String::as_str), Some("*"));
+    assert_eq!(m.depends.get("7zip").map(String::as_str), Some("*"));
+}
+
+#[test]
+fn hash_prefix_sha256_handled() {
+    let m = ok(
+        "app",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": format!("sha256:{}", "F".repeat(64))
+        }),
+    );
+    // Prefix stripped and lowercased.
+    assert_eq!(m.source.x64.unwrap().sha256, "f".repeat(64));
+}
+
+#[test]
+fn license_object_identifier() {
+    let m = ok(
+        "app",
+        json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "license": { "identifier": "BSD-2-Clause", "url": "https://x/l" }
+        }),
+    );
+    assert_eq!(m.license.as_deref(), Some("BSD-2-Clause"));
+}
+
+#[test]
+fn autoupdate_github_from_checkver_object() {
+    match convert(
+        "jq",
+        &json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "checkver": { "github": "https://github.com/jqlang/jq", "regex": "x" }
+        }),
+    ) {
+        Outcome::Ok(c) => {
+            assert!(c.toml.contains("[autoupdate]"));
+            assert!(c.toml.contains(r#"github = "jqlang/jq""#), "{}", c.toml);
+            Manifest::from_toml_str(&c.toml).unwrap();
+        }
+        Outcome::Skip(r) => panic!("skip {r}"),
+    }
+}
+
+#[test]
+fn autoupdate_github_from_homepage() {
+    match convert(
+        "fzf",
+        &json!({
+            "version": "1.0",
+            "homepage": "https://github.com/junegunn/fzf",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "checkver": "github"
+        }),
+    ) {
+        Outcome::Ok(c) => assert!(c.toml.contains(r#"github = "junegunn/fzf""#), "{}", c.toml),
+        Outcome::Skip(r) => panic!("skip {r}"),
+    }
+}
+
+// --- skip reasons --------------------------------------------------------
+
+#[test]
+fn skip_script_fields() {
+    for field in [
+        "pre_install",
+        "post_install",
+        "installer",
+        "uninstaller",
+        "psmodule",
+    ] {
+        let v = json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            field: ["do something"]
+        });
+        assert_eq!(skip_reason("s", v), "script-field", "field {field}");
+    }
+}
+
+#[test]
+fn skip_nested_arch_script() {
+    // 7zip pattern: arm64 has pre_install.
+    let v = json!({
+        "version": "1.0",
+        "architecture": {
+            "64bit": { "url": "https://x/a.zip", "hash": "b".repeat(64) },
+            "arm64": { "url": "https://x/b.zip", "hash": "c".repeat(64), "pre_install": ["x"] }
+        }
+    });
+    assert_eq!(skip_reason("s", v), "script-field");
+}
+
+#[test]
+fn skip_installer_exe_and_msi() {
+    let exe = json!({ "version": "1.0", "url": "https://x/setup.exe", "hash": "b".repeat(64) });
+    assert_eq!(skip_reason("s", exe), "installer-binary");
+
+    let msi = json!({ "version": "1.0", "url": "https://x/app.msi", "hash": "b".repeat(64) });
+    assert_eq!(skip_reason("s", msi), "installer-binary");
+
+    // jq pattern: .exe renamed via #/ fragment is still an installer binary.
+    let frag = json!({ "version": "1.0", "url": "https://x/jq-amd64.exe#/jq.exe", "hash": "b".repeat(64) });
+    assert_eq!(skip_reason("s", frag), "installer-binary");
+}
+
+#[test]
+fn archive_with_fragment_not_skipped() {
+    // #/name.7z fragment marks an archive → keep.
+    let m = ok(
+        "app",
+        json!({ "version": "1.0", "url": "https://x/download?id=5#/app.7z", "hash": "b".repeat(64) }),
+    );
+    assert_eq!(m.source.x64.unwrap().url, "https://x/download?id=5#/app.7z");
+}
+
+#[test]
+fn skip_no_url() {
+    let v = json!({ "version": "1.0", "description": "x" });
+    assert_eq!(skip_reason("s", v), "no-url");
+}
+
+#[test]
+fn skip_only_32bit() {
+    let v = json!({
+        "version": "1.0",
+        "architecture": { "32bit": { "url": "https://x/a.zip", "hash": "b".repeat(64) } }
+    });
+    assert_eq!(skip_reason("s", v), "no-64bit-source");
+}
+
+#[test]
+fn skip_no_hash() {
+    let v = json!({ "version": "1.0", "url": "https://x/a.zip" });
+    assert_eq!(skip_reason("s", v), "no-hash");
+}
+
+#[test]
+fn skip_unsupported_hash() {
+    // md5 (32 hex) by length.
+    let md5 = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": "b".repeat(32) });
+    assert_eq!(skip_reason("s", md5), "unsupported-hash");
+    // sha512 by prefix.
+    let sha512 = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": format!("sha512:{}", "b".repeat(128)) });
+    assert_eq!(skip_reason("s", sha512), "unsupported-hash");
+}
+
+#[test]
+fn skip_multi_url() {
+    let v = json!({
+        "version": "1.0",
+        "url": ["https://x/a.zip", "https://x/b.zip"],
+        "hash": ["b".repeat(64), "c".repeat(64)]
+    });
+    assert_eq!(skip_reason("s", v), "multi-url");
+}
+
+#[test]
+fn skip_persist_nested() {
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/a.zip",
+        "hash": "b".repeat(64),
+        "persist": [["src", "dst"]]
+    });
+    assert_eq!(skip_reason("s", v), "persist-nested");
+}
+
+#[test]
+fn skip_env_unmappable_scoop_var() {
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/a.zip",
+        "hash": "b".repeat(64),
+        "env_set": { "PREFIX": "$persist_dir\\bin" }
+    });
+    assert_eq!(skip_reason("s", v), "env-unmappable");
+}
+
+#[test]
+fn skip_invalid_name() {
+    // Underscore is not allowed by voli's name rule.
+    let v = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": "b".repeat(64) });
+    assert_eq!(skip_reason("bad_name", v), "invalid-name");
+}
+
+#[test]
+fn escaping_backslashes_round_trips() {
+    // Windows paths in env values must be escaped correctly.
+    let c = match convert(
+        "app",
+        &json!({
+            "version": "1.0",
+            "url": "https://x/a.zip",
+            "hash": "b".repeat(64),
+            "env_set": { "HOME": "$dir\\a\\b\\c" }
+        }),
+    ) {
+        Outcome::Ok(c) => c,
+        Outcome::Skip(r) => panic!("skip {r}"),
+    };
+    assert!(c.toml.contains(r#"HOME = "{dir}\\a\\b\\c""#), "{}", c.toml);
+    let m = Manifest::from_toml_str(&c.toml).unwrap();
+    assert_eq!(m.env.get("HOME").unwrap(), "{dir}\\a\\b\\c");
+}

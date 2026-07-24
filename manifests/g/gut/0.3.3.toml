@@ -1,0 +1,18 @@
+name = "gut"
+version = "0.3.3"
+description = "An easy to use Git client for the command line"
+homepage = "https://gut-cli.dev"
+license = "MIT"
+kind = "app"
+bin = ["gut.exe"]
+
+[source.x64]
+url = "https://github.com/julien040/gut/releases/download/0.3.3/gut_Windows_x86_64.zip"
+sha256 = "03be23f79088a5c93bf8e80081f8dd035c47460ce5ab8298a53a38ca3ec96ea4"
+
+[source.arm64]
+url = "https://github.com/julien040/gut/releases/download/0.3.3/gut_Windows_arm64.zip"
+sha256 = "b2449f25404a6d989d61bb906c3a8baf01658e11e704ccea3b5e1691110076a2"
+
+[autoupdate]
+checkver = { github = "julien040/gut" }

@@ -1,0 +1,18 @@
+name = "auto-doc"
+version = "3.6.0"
+description = "Generate a beautiful, easy-to-read markdown table or YAML code block with just a few lines of code."
+homepage = "https://github.com/tj-actions/auto-doc"
+license = "Apache-2.0"
+kind = "app"
+bin = ["auto-doc.exe"]
+
+[source.x64]
+url = "https://github.com/tj-actions/auto-doc/releases/download/v3.6.0/auto-doc_3.6.0_Windows_x86_64.zip"
+sha256 = "0c4afb8ef7fc1b3519d39dc8f1e586e67352dcebe6bf612f72f157f4ff77d6ac"
+
+[source.arm64]
+url = "https://github.com/tj-actions/auto-doc/releases/download/v3.6.0/auto-doc_3.6.0_Windows_arm64.zip"
+sha256 = "ed12610509bf36c42a1c34d0e0cece1f5120a5381b23751c4d1fa8a44b908d83"
+
+[autoupdate]
+checkver = { github = "tj-actions/auto-doc" }

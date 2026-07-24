@@ -1,0 +1,15 @@
+name = "realesrgan-ncnn-vulkan"
+version = "0.2.0"
+description = "NCNN implementation of Real-ESRGAN image upscaling software."
+homepage = "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan"
+license = "MIT"
+kind = "app"
+extract_dir = "realesrgan-ncnn-vulkan-v0.2.0-windows"
+bin = ["realesrgan-ncnn-vulkan.exe"]
+
+[source.x64]
+url = "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases/download/v0.2.0/realesrgan-ncnn-vulkan-v0.2.0-windows.zip"
+sha256 = "1bbbdb12d470af80b035c773682e144c6c2f6ece9210832a289af0a48ce3fa9a"
+
+[autoupdate]
+checkver = { github = "xinntao/Real-ESRGAN-ncnn-vulkan" }

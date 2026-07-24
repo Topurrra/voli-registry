@@ -1,0 +1,14 @@
+name = "flatc"
+version = "25.12.19-2026-02-06-03fffb2"
+description = "An efficient serialization library for multiple languages"
+homepage = "https://google.github.io/flatbuffers/index.html"
+license = "Apache-2.0"
+kind = "app"
+bin = ["flatc.exe"]
+
+[source.x64]
+url = "https://github.com/google/flatbuffers/releases/download/v25.12.19-2026-02-06-03fffb2/Windows.flatc.binary.zip"
+sha256 = "68d51916873a3dbdaf7997ddfbbbfd6472b5907ffc62ccc9a88d146bbc0db87d"
+
+[autoupdate]
+checkver = { github = "google/flatbuffers" }

@@ -1,0 +1,14 @@
+name = "ddev"
+version = "1.25.3"
+description = "An open source tool that makes it simple to get local PHP development environments up and running in minutes"
+homepage = "https://ddev.readthedocs.io/en/latest/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ddev.exe", "ddev-hostname.exe"]
+
+[source.x64]
+url = "https://github.com/ddev/ddev/releases/download/v1.25.3/ddev_windows-amd64.v1.25.3.zip"
+sha256 = "9a7fa1a4f3e5bc6b2a3f1cbc2adcdfcaa3b0104b5df96cd4213c83ccdb080677"
+
+[autoupdate]
+checkver = { github = "ddev/ddev" }

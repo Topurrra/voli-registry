@@ -1,0 +1,15 @@
+name = "hyperfine"
+version = "1.20.0"
+description = "A command-line benchmarking tool"
+homepage = "https://github.com/sharkdp/hyperfine"
+license = "Apache-2.0|MIT"
+kind = "app"
+extract_dir = "hyperfine-v1.20.0-x86_64-pc-windows-msvc"
+bin = ["hyperfine.exe"]
+
+[source.x64]
+url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip"
+sha256 = "2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822dbb32"
+
+[autoupdate]
+checkver = { github = "sharkdp/hyperfine" }

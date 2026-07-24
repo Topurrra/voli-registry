@@ -1,0 +1,20 @@
+name = "updatecli"
+version = "0.119.0"
+description = "A tool used to apply file update strategies. Designed to be used from everywhere, each application 'run' detects if a value needs to be updated using a custom strategy then apply changes according to the strategy."
+homepage = "https://www.updatecli.io/"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/updatecli/updatecli/releases/download/v0.119.0/updatecli_Windows_x86_64.zip"
+sha256 = "2b73dea293f1c7cbb40a0e6e62ce11b1aaff7fe32dfcd9573d22290445e64056"
+
+[source.arm64]
+url = "https://github.com/updatecli/updatecli/releases/download/v0.119.0/updatecli_Windows_arm64.zip"
+sha256 = "d074f2d66ccf3fd0f3e6d6832fa2b546687af72b22d026c2814c22e5029d13ab"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "updatecli/updatecli" }

@@ -1,0 +1,14 @@
+name = "govc"
+version = "0.55.1"
+description = "A vSphere CLI built on top of govmomi"
+homepage = "https://github.com/vmware/govmomi"
+license = "Apache-2.0"
+kind = "app"
+bin = ["govc.exe"]
+
+[source.x64]
+url = "https://github.com/vmware/govmomi/releases/download/v0.55.1/govc_Windows_x86_64.zip"
+sha256 = "4abb6cbd441311f2d9ffdb37f00497a44cef7dffa4bd1ce38d59e526d52cdd70"
+
+[autoupdate]
+checkver = { github = "vmware/govmomi" }

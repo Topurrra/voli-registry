@@ -1,0 +1,18 @@
+name = "gifsicle"
+version = "1.95"
+description = "Command-line tool for creating, editing, and getting information about GIF images and animations"
+homepage = "https://www.lcdf.org/gifsicle/"
+license = "LGPL-2.0-only"
+kind = "app"
+bin = ["gifsicle.exe", "gifdiff.exe"]
+
+[source.x64]
+url = "https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.95-win64.zip"
+sha256 = "7e47dd0bfd5ee47f911464c57faeed89a8709a7625dd1c449b16579889539ee8"
+
+[source.arm64]
+url = "https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.95-winarm64.zip"
+sha256 = "cbf4ce0b8df65fb933a2d2310b10593636781edcdad67f3edb0048569bba8a62"
+
+[autoupdate]
+checkver = "{\"regex\":\"Gifsicle ([\\\\d.]+)\",\"url\":\"https://eternallybored.org/misc/gifsicle/\"}"

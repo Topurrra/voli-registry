@@ -1,0 +1,14 @@
+name = "staticcheck"
+version = "2026.1"
+description = "An advanced Go linter"
+homepage = "https://staticcheck.io"
+license = "MIT"
+kind = "app"
+bin = ["staticcheck.exe"]
+
+[source.x64]
+url = "https://github.com/dominikh/go-tools/releases/download/2026.1/staticcheck_windows_amd64.tar.gz"
+sha256 = "98755d516530d03058ac59cb58ab7fbb9d487d0bc2e16d16e1f700833381e135"
+
+[autoupdate]
+checkver = { github = "dominikh/go-tools" }

@@ -1,0 +1,15 @@
+name = "cht"
+version = "0.7.2"
+description = "A command line client for https://cht.sh, working examples about various commands, APIs, ... Unified access to the best community driven documentation repositories of the world."
+homepage = "https://github.com/tpanj/cht.exe"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "bin"
+bin = ["cht.exe"]
+
+[source.x64]
+url = "https://github.com/tpanj/cht.exe/releases/download/v0.7.2/cht_windows.zip"
+sha256 = "9f678ae500377c735fdc296b105e19092ffef5769e64a719cff0fc0962b97997"
+
+[autoupdate]
+checkver = { github = "tpanj/cht.exe" }

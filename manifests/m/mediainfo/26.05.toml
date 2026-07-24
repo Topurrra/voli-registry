@@ -1,0 +1,14 @@
+name = "mediainfo"
+version = "26.05"
+description = "A convenient unified display of the most relevant technical and tag data for video and audio files."
+homepage = "https://mediaarea.net/en/MediaInfo"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["mediainfo.exe"]
+
+[source.x64]
+url = "https://mediaarea.net/download/binary/mediainfo/26.05/MediaInfo_CLI_26.05_Windows_x64.zip"
+sha256 = "f7f80620ce6d14f4995f0de6f98e3ef18ad29496db01899571152ee3311229f9"
+
+[autoupdate]
+checkver = "version ([\\d.]+)"

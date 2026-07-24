@@ -1,0 +1,15 @@
+name = "ntfy"
+version = "2.26.3"
+description = "Send push notifications to your phone or desktop via PUT/POST"
+homepage = "https://ntfy.sh"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "ntfy_2.26.3_windows_amd64"
+bin = ["ntfy.exe"]
+
+[source.x64]
+url = "https://github.com/binwiederhier/ntfy/releases/download/v2.26.3/ntfy_2.26.3_windows_amd64.zip"
+sha256 = "98714f38dd08d7362ad2ea270984ed7effce3f796c96a15161d0b83cb7a35feb"
+
+[autoupdate]
+checkver = { github = "binwiederhier/ntfy" }

@@ -1,0 +1,15 @@
+name = "mpg123"
+version = "1.33.5"
+description = "Fast console MPEG Audio Player and decoder library"
+homepage = "https://www.mpg123.org"
+license = "LGPL-2.1"
+kind = "app"
+extract_dir = "mpg123-1.33.5-static-x86-64"
+bin = ["mpg123.exe", "mpg123-id3dump.exe", "mpg123-strip.exe", "out123.exe"]
+
+[source.x64]
+url = "https://www.mpg123.org/download/win64/1.33.5/mpg123-1.33.5-static-x86-64.zip"
+sha256 = "a174b0bb766a15783718b72907e0ac8f2fdd51036e0c739e29ff5b624f70a93d"
+
+[autoupdate]
+checkver = "{\"regex\":\"download/win64/([\\\\d.]+)/\",\"url\":\"https://www.mpg123.org/download.shtml\"}"

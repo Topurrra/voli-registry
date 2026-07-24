@@ -1,0 +1,18 @@
+name = "dioxus"
+version = "0.7.9"
+description = "A fullstack app framework for web, desktop, mobile, and more."
+homepage = "https://dioxuslabs.com"
+license = "Apache-2.0|MIT"
+kind = "app"
+bin = ["dx.exe"]
+
+[source.x64]
+url = "https://github.com/DioxusLabs/dioxus/releases/download/v0.7.9/dx-x86_64-pc-windows-msvc.zip"
+sha256 = "0423b94dd36372d09936a9a288c4a6e7903a9f1bddd193b60bba9659890c87c4"
+
+[source.arm64]
+url = "https://github.com/DioxusLabs/dioxus/releases/download/v0.7.9/dx-aarch64-pc-windows-msvc.zip"
+sha256 = "1c64a31208b0f6b8f9072a92268e1c18b86f290ced64fec9e32e9e7a5ec4e59d"
+
+[autoupdate]
+checkver = { github = "DioxusLabs/dioxus" }

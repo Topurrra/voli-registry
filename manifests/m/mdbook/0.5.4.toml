@@ -1,0 +1,14 @@
+name = "mdbook"
+version = "0.5.4"
+description = "Create a book from markdown files."
+homepage = "https://github.com/rust-lang/mdBook"
+license = "MPL-2.0"
+kind = "app"
+bin = ["mdbook.exe"]
+
+[source.x64]
+url = "https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-pc-windows-msvc.zip"
+sha256 = "8a6b2421aa522de06d746871d2b8fff9c8d71773467e310a4516d2566e7f2de4"
+
+[autoupdate]
+checkver = { github = "rust-lang/mdBook" }

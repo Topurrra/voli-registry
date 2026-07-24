@@ -1,0 +1,18 @@
+name = "dufs"
+version = "0.46.0"
+description = "A file server that supports static serving, uploading, searching, accessing control, webdav..."
+homepage = "https://github.com/sigoden/dufs"
+license = "MIT|Apache"
+kind = "app"
+bin = ["dufs.exe"]
+
+[source.x64]
+url = "https://github.com/sigoden/dufs/releases/download/v0.46.0/dufs-v0.46.0-x86_64-pc-windows-msvc.zip"
+sha256 = "21d829653ac1f178b124ed384e2a57df19b99ae404935cba9a1a5719c199b0bf"
+
+[source.arm64]
+url = "https://github.com/sigoden/dufs/releases/download/v0.46.0/dufs-v0.46.0-aarch64-pc-windows-msvc.zip"
+sha256 = "530e061b5a26182a7cfebc3d473c397aaef931b07f6eccab9592d5df57ef0c39"
+
+[autoupdate]
+checkver = { github = "sigoden/dufs" }

@@ -1,0 +1,15 @@
+name = "r128gain"
+version = "1.0.7"
+description = "Fast audio loudness scanner & tagger (ReplayGain v2 / R128)"
+homepage = "https://github.com/desbma/r128gain"
+license = "LGPL-2.1-only"
+kind = "app"
+extract_dir = "r128gain-win64"
+bin = ["r128gain.exe"]
+
+[source.x64]
+url = "https://github.com/desbma/r128gain/releases/download/1.0.7/r128gain_win64.7z"
+sha256 = "eb032bd4aff4fea0987c99f3e91239359c887648bb2429935ae944d01a3dda88"
+
+[autoupdate]
+checkver = { github = "desbma/r128gain" }

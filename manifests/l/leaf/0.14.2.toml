@@ -1,0 +1,13 @@
+name = "leaf"
+version = "0.14.2"
+description = "A versatile and efficient proxy framework."
+homepage = "https://github.com/eycorsican/leaf"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/eycorsican/leaf/releases/download/v0.14.2/leaf-x86_64-pc-windows-gnu.zip"
+sha256 = "d04705f049946473e117cff25b82b51bf3cbd421f484e041e390dd5ac640b59d"
+
+[autoupdate]
+checkver = { github = "eycorsican/leaf" }

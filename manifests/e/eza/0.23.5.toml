@@ -1,0 +1,14 @@
+name = "eza"
+version = "0.23.5"
+description = "A modern, maintained replacement for ls, built on exa."
+homepage = "https://github.com/eza-community/eza"
+license = "MIT"
+kind = "app"
+bin = ["eza.exe", { name = "exa", path = "eza.exe" }]
+
+[source.x64]
+url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x86_64-pc-windows-gnu.zip"
+sha256 = "c830638c844a5b89d39ba662b5549903a71fa539018e813880f5b8afa77bac2e"
+
+[autoupdate]
+checkver = { github = "eza-community/eza" }

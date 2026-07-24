@@ -1,0 +1,18 @@
+name = "grails"
+version = "6.2.3"
+description = "A powerful Groovy-based web application framework for the JVM built on top of Spring Boot."
+homepage = "https://grails.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "grails-6.2.3"
+bin = ["bin\\grails.bat"]
+
+[source.x64]
+url = "https://github.com/apache/grails-core/releases/download/v6.2.3/grails-6.2.3.zip"
+sha256 = "b41e95efad66e2b93b4e26664f746a409ea70d43548e6c011e9695874a710b09"
+
+[env]
+GRAILS_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/apache/grails-core/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"/grails-([\\\\d.]+)\\\\.zip\"}"

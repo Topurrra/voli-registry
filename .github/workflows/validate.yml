@@ -1,0 +1,36 @@
+name: validate
+
+# Validate every manifest on pull requests. Merge is blocked unless every
+# .toml under manifests/ parses, matches its layout, and carries a sha256.
+on:
+  pull_request:
+    paths:
+      - "manifests/**"
+      - ".github/workflows/validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: cargo-voli-index-tool-${{ runner.os }}
+
+      # NOTE: installs the tool from source on every run. Slow (~minutes).
+      # TODO: replace with a downloaded prebuilt `voli-index-tool` release
+      # binary once the main repo publishes them — cuts CI to seconds.
+      - name: Install voli-index-tool
+        run: cargo install --git https://github.com/Topurrra/voli voli-index-tool --locked
+
+      - name: Validate manifests
+        run: voli-index-tool validate manifests/

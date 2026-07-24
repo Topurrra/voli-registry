@@ -1,0 +1,18 @@
+name = "taplo"
+version = "0.10.0"
+description = "A TOML toolkit written in Rust"
+homepage = "https://taplo.tamasfe.dev/"
+license = "MIT"
+kind = "app"
+bin = ["taplo.exe"]
+
+[source.x64]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-x86_64.zip"
+sha256 = "1615eed140039bd58e7089109883b1c434de5d6de8f64a993e6e8c80ca57bdf9"
+
+[source.arm64]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-aarch64.zip"
+sha256 = "65a50c5d3b78f6014e6bc6d64eb6dc1d4992bc236589c9bb29e5609fc3454674"
+
+[autoupdate]
+checkver = { github = "tamasfe/taplo" }

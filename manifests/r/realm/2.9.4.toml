@@ -1,0 +1,14 @@
+name = "realm"
+version = "2.9.4"
+description = "A simple, high performance relay server written in rust."
+homepage = "https://github.com/zhboner/realm"
+license = "MIT"
+kind = "app"
+bin = ["realm.exe"]
+
+[source.x64]
+url = "https://github.com/zhboner/realm/releases/download/v2.9.4/realm-x86_64-pc-windows-msvc.tar.gz"
+sha256 = "cff11b55f41753e525c5a76c5726bbc9d8cbffb106ea514952047aae960d6464"
+
+[autoupdate]
+checkver = { github = "zhboner/realm" }

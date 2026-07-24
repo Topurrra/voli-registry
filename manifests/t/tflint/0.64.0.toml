@@ -1,0 +1,14 @@
+name = "tflint"
+version = "0.64.0"
+description = "A Terraform linter focused on possible errors, best practices, etc."
+homepage = "https://github.com/terraform-linters/tflint"
+license = "MPL-2.0"
+kind = "app"
+bin = ["tflint.exe"]
+
+[source.x64]
+url = "https://github.com/terraform-linters/tflint/releases/download/v0.64.0/tflint_windows_amd64.zip"
+sha256 = "fb42fb859d844b156a8ea9d3363078c4d8b85ca78782e60876b08c9b8e59f303"
+
+[autoupdate]
+checkver = { github = "terraform-linters/tflint" }

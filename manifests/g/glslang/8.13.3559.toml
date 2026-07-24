@@ -1,0 +1,11 @@
+name = "glslang"
+version = "8.13.3559"
+description = "The official reference compiler front end for the OpenGL ES and OpenGL shading languages."
+homepage = "https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/"
+license = "Freeware,MIT,..."
+kind = "app"
+bin = ["bin\\glslangValidator.exe", "bin\\spirv-remap.exe"]
+
+[source.x64]
+url = "https://github.com/KhronosGroup/glslang/releases/download/8.13.3559/glslang-master-windows-x64-Release.zip"
+sha256 = "e4bffacd4a75e1e150c0cf19d5020cfa6893386a1e6dd14ef6426789859eab88"

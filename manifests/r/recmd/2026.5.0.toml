@@ -1,0 +1,15 @@
+name = "recmd"
+version = "2026.5.0"
+description = "Command-line Registry tool for searching, multi-hive support, plugins, and more."
+homepage = "https://ericzimmerman.github.io"
+license = "MIT"
+kind = "app"
+extract_dir = "RECmd"
+bin = ["RECmd.exe"]
+
+[source.x64]
+url = "https://download.ericzimmermanstools.com/net9/RECmd.zip"
+sha256 = "6f97cee65de76c2c96f72baf78592b346c657de13d3c2390bfda1b4582f0e540"
+
+[autoupdate]
+checkver = "{\"regex\":\"RECmd \\\\| \\\\[([\\\\d.]+)\\\\]\",\"url\":\"https://raw.githubusercontent.com/EricZimmerman/ericzimmerman.github.io/master/index.md\"}"

@@ -1,0 +1,15 @@
+name = "cocogitto"
+version = "7.0.0"
+description = "The Conventional Commits toolbox."
+homepage = "https://docs.cocogitto.io"
+license = "MIT"
+kind = "app"
+extract_dir = "x86_64-pc-windows-msvc"
+bin = ["cog.exe"]
+
+[source.x64]
+url = "https://github.com/cocogitto/cocogitto/releases/download/7.0.0/cocogitto-7.0.0-x86_64-pc-windows-msvc.tar.gz"
+sha256 = "074f68f05d270da5c0d69d3e234ec362bec4c6e3189c21d1c948d038603655d7"
+
+[autoupdate]
+checkver = { github = "cocogitto/cocogitto" }

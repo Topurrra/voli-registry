@@ -1,0 +1,14 @@
+name = "resvg"
+version = "0.47.0"
+description = "An SVG rendering library."
+homepage = "https://github.com/linebender/resvg"
+license = "MPL-2.0"
+kind = "app"
+bin = ["resvg.exe"]
+
+[source.x64]
+url = "https://github.com/linebender/resvg/releases/download/v0.47.0/resvg-win64.zip"
+sha256 = "5684e59ceaa53ce720b49efb441b0918ae99d04e8ce3f6f753664524592d67f1"
+
+[autoupdate]
+checkver = { github = "linebender/resvg" }

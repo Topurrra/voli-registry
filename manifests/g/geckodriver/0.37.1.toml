@@ -1,0 +1,14 @@
+name = "geckodriver"
+version = "0.37.1"
+description = "WebDriver for the Firefox web browser."
+homepage = "https://github.com/mozilla/geckodriver"
+license = "MPL-2.0"
+kind = "app"
+bin = ["geckodriver.exe"]
+
+[source.x64]
+url = "https://github.com/mozilla/geckodriver/releases/download/v0.37.1/geckodriver-v0.37.1-win64.zip"
+sha256 = "dfed9315abe8d2fbc1b6161a2ee8002452e79cf05ee92fdc653a4e26bc35edd8"
+
+[autoupdate]
+checkver = { github = "mozilla/geckodriver" }

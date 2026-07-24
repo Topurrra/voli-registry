@@ -1,0 +1,19 @@
+name = "ffmpeg-shared"
+version = "8.1.2"
+description = "A complete, cross-platform solution to record, convert and stream audio and video."
+homepage = "https://ffmpeg.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "ffmpeg-8.1.2-full_build-shared"
+persist = ["fonts"]
+
+[source.x64]
+url = "https://github.com/GyanD/codexffmpeg/releases/download/8.1.2/ffmpeg-8.1.2-full_build-shared.7z"
+sha256 = "cba748035c21ce1431d0823c7a3a711f38616f89f87a265dceddf9b7f6749d2d"
+
+[env]
+PATH = "{dir}\\bin"
+FFMPEG_DIR = "{dir}"
+
+[autoupdate]
+checkver = { github = "GyanD/codexffmpeg" }

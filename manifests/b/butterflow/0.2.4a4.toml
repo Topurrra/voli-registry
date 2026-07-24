@@ -1,0 +1,12 @@
+name = "butterflow"
+version = "0.2.4a4"
+description = "Video manipulation tool"
+homepage = "https://github.com/dthpham/sminterpolate"
+license = "MIT"
+kind = "app"
+extract_dir = "butterflow-0.2.4a4-win64"
+bin = ["butterflow.exe"]
+
+[source.x64]
+url = "https://github.com/dthpham/sminterpolate/releases/download/0.2.4.alpha4/butterflow-0.2.4a4-win64.zip"
+sha256 = "856ad05bafaeb9d084d6b1cbf0bdec17defeef438e610f6a3a772087acea301b"

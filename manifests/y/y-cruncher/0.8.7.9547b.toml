@@ -1,0 +1,15 @@
+name = "y-cruncher"
+version = "0.8.7.9547b"
+description = "Scalable multi-threaded benchmark calculating multiple mathematical constants to trillions of digits."
+homepage = "https://www.numberworld.org/y-cruncher/"
+license = "Freeware"
+kind = "app"
+extract_dir = "y-cruncher v0.8.7.9547b"
+bin = ["y-cruncher.exe"]
+
+[source.x64]
+url = "https://github.com/Mysticial/y-cruncher/releases/download/v0.8.7.9547b/y-cruncher.v0.8.7.9547b.zip"
+sha256 = "3be696c1cc44907f2ea73aac35de4a5d45048255308f34ed4410a743163a4f87"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Mysticial/y-cruncher/releases/latest\",\"jsonpath\":\"$.tag_name\",\"regex\":\"\\\\Av(\\\\S+)\\\\Z\"}"

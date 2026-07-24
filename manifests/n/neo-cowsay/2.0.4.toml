@@ -1,0 +1,18 @@
+name = "neo-cowsay"
+version = "2.0.4"
+description = "Cowsay written in Go, with more fun options"
+homepage = "https://github.com/Code-Hex/Neo-cowsay"
+license = "Artistic-2.0"
+kind = "app"
+bin = ["cowsay.exe", "cowthink.exe"]
+
+[source.x64]
+url = "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.4/cowsay_2.0.4_Windows_x86_64.zip"
+sha256 = "9a7ba1dfd94c526f9fbef10e8b59f068530e18d2457d0776240ffab791824cb1"
+
+[source.arm64]
+url = "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.4/cowsay_2.0.4_Windows_arm64.zip"
+sha256 = "6e4301108b708880583aa080c1ec4efe16dd6f4cc7c2817d3653b3b1e0f4f547"
+
+[autoupdate]
+checkver = { github = "Code-Hex/Neo-cowsay" }

@@ -1,0 +1,14 @@
+name = "git-branchless"
+version = "0.11.1"
+description = "A suite of tools that enhances Git in several ways."
+homepage = "https://github.com/arxanas/git-branchless"
+license = "GPL-2.0"
+kind = "app"
+bin = ["git-branchless.exe"]
+
+[source.x64]
+url = "https://github.com/arxanas/git-branchless/releases/download/v0.11.1/git-branchless-v0.11.1-x86_64-pc-windows-msvc.zip"
+sha256 = "94b3497fa98f0ca3a2bf0a2d089349843bc2a2103096cc008d8b397576bb5325"
+
+[autoupdate]
+checkver = { github = "arxanas/git-branchless" }

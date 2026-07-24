@@ -1,0 +1,15 @@
+name = "etcd"
+version = "3.7.1"
+description = "A distributed, reliable key-value store for the most critical data of a distributed system"
+homepage = "https://etcd.io/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "etcd-v3.7.1-windows-amd64"
+bin = ["etcd.exe", "etcdctl.exe"]
+
+[source.x64]
+url = "https://github.com/etcd-io/etcd/releases/download/v3.7.1/etcd-v3.7.1-windows-amd64.zip"
+sha256 = "228d600d103e0f48715687c768de8dcaeacb19eef2006261160a9a677e36cc59"
+
+[autoupdate]
+checkver = { github = "etcd-io/etcd" }

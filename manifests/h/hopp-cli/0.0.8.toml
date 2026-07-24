@@ -1,0 +1,18 @@
+name = "hopp-cli"
+version = "0.0.8"
+description = "An HTTP CLI client for Hoppscotch, an alternative to curl/httpie"
+homepage = "https://hoppscotch.io/"
+license = "MIT"
+kind = "app"
+bin = ["hopp-cli.exe"]
+
+[source.x64]
+url = "https://github.com/hoppscotch/hopp-cli/releases/download/v0.0.8/hopp-cli_0.0.8_windows_x86_64.tar.gz"
+sha256 = "17307a8d0fa1b38174807a10218d23dffc0c58c46449912fe472595cc23acfef"
+
+[source.arm64]
+url = "https://github.com/hoppscotch/hopp-cli/releases/download/v0.0.8/hopp-cli_0.0.8_windows_arm64.tar.gz"
+sha256 = "accc78843c9755796b18aa568df184c8942f4a40833c28a0719a1fe1907be830"
+
+[autoupdate]
+checkver = { github = "hoppscotch/hopp-cli" }

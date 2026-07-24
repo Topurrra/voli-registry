@@ -1,0 +1,17 @@
+name = "ldc"
+version = "1.42.0"
+description = "LDC is LLVM based D-language compiler"
+homepage = "https://dlang.org/"
+license = "BSD-3-Clause,BSL-1.0,NCSA,MIT,GPL-2.0-or-later"
+kind = "app"
+extract_dir = "ldc2-1.42.0-windows-x64"
+
+[source.x64]
+url = "https://github.com/ldc-developers/ldc/releases/download/v1.42.0/ldc2-1.42.0-windows-x64.7z"
+sha256 = "5b16bf2a44d7fb6b8012f932c8760603dab6307968c3112cc578b5690f46b5c8"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "ldc-developers/ldc" }

@@ -1,0 +1,14 @@
+name = "avrdude"
+version = "8.2"
+description = "AVRDUDE is software for programming Atmel AVR Microcontrollers"
+homepage = "https://github.com/avrdudes/avrdude"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["avrdude.exe"]
+
+[source.x64]
+url = "https://github.com/avrdudes/avrdude/releases/download/v8.2/avrdude-v8.2-windows-x64.zip"
+sha256 = "e2a89a921e1b2fe675a319248ea968c7e28c7edc44c5fd836e2879a3e094c9cf"
+
+[autoupdate]
+checkver = { github = "avrdudes/avrdude" }

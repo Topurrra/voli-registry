@@ -1,0 +1,14 @@
+name = "quickjs"
+version = "2026-06-04"
+description = "A small and embeddable Javascript engine with ES2023 support."
+homepage = "https://bellard.org/quickjs/"
+license = "MIT"
+kind = "app"
+bin = ["qjs.exe"]
+
+[source.x64]
+url = "https://bellard.org/quickjs/binary_releases/quickjs-win-x86_64-2026-06-04.zip"
+sha256 = "8d10e75796656f49a3797e2c14465bd67c1f085dba505cf0c8d8a14bf5b19cb4"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://bellard.org/quickjs/binary_releases/LATEST.json\"}"

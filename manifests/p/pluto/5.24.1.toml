@@ -1,0 +1,14 @@
+name = "pluto"
+version = "5.24.1"
+description = "Utility to help users find deprecated Kubernetes apiVersions in their code repositories and their helm releases."
+homepage = "https://pluto.docs.fairwinds.com/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["pluto.exe"]
+
+[source.x64]
+url = "https://github.com/FairwindsOps/pluto/releases/download/v5.24.1/pluto_5.24.1_windows_amd64.tar.gz"
+sha256 = "80072f0ed02ff4c02099b58c0cb88d513240cf0f1b4772d962e9d03b0a44c7ef"
+
+[autoupdate]
+checkver = { github = "FairwindsOps/pluto" }

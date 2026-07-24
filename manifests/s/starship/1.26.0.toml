@@ -1,0 +1,20 @@
+name = "starship"
+version = "1.26.0"
+description = "The minimal, blazing fast, and extremely customizable prompt for any shell!"
+homepage = "https://starship.rs"
+license = "ISC"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-pc-windows-msvc.zip"
+sha256 = "690021e22f2bf2c57d5867dc0fababe5e55e714c26942bd909ffddb6c5df42f2"
+
+[source.arm64]
+url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-aarch64-pc-windows-msvc.zip"
+sha256 = "52e60a2182aed66af225401d8906b2eb8cd2a08d206c7304d503c2cf44345f77"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "starship/starship" }

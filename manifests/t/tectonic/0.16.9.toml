@@ -1,0 +1,14 @@
+name = "tectonic"
+version = "0.16.9"
+description = "Tectonic is a modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive."
+homepage = "https://tectonic-typesetting.github.io/en-US/"
+license = "MIT"
+kind = "app"
+bin = ["tectonic.exe"]
+
+[source.x64]
+url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.16.9/tectonic-0.16.9-x86_64-pc-windows-msvc.zip"
+sha256 = "131a24604785a9600989a3d91225f597df52ac06f00aeffe86fd529f99ee5cdd"
+
+[autoupdate]
+checkver = "{\"regex\":\"Install Tectonic.*?([\\\\d.]+)\",\"url\":\"https://tectonic-typesetting.github.io/en-US/\"}"

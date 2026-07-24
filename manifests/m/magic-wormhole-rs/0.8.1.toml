@@ -1,0 +1,14 @@
+name = "magic-wormhole-rs"
+version = "0.8.1"
+description = "Securely transfer data between computers. Rust implementation of Magic Wormhole, with new features and enhancements"
+homepage = "https://github.com/magic-wormhole/magic-wormhole.rs"
+license = "EUPL-1.2"
+kind = "app"
+bin = ["wormhole-rs.exe"]
+
+[source.x64]
+url = "https://github.com/magic-wormhole/magic-wormhole.rs/releases/download/0.8.1/magic-wormhole-cli-x86_64-pc-windows-gnu.tgz"
+sha256 = "67898966c1d88778f04ab77b6bdedc98ec35de0b11c5410e32b85aaa47b08c66"
+
+[autoupdate]
+checkver = { github = "magic-wormhole/magic-wormhole.rs" }

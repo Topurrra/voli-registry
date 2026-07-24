@@ -1,0 +1,18 @@
+name = "gitleaks"
+version = "8.30.1"
+description = "SAST tool for detecting and preventing hardcoded secrets like passwords, api keys, and tokens in git repos"
+homepage = "https://gitleaks.io"
+license = "MIT"
+kind = "app"
+bin = ["gitleaks.exe"]
+
+[source.x64]
+url = "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_x64.zip"
+sha256 = "d29144deff3a68aa93ced33dddf84b7fdc26070add4aa0f4513094c8332afc4e"
+
+[source.arm64]
+url = "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_arm64.zip"
+sha256 = "b95f5e4f5c425cedca7ee203d9afd29597e692c4924a12ed42f970537c72cc0f"
+
+[autoupdate]
+checkver = { github = "gitleaks/gitleaks" }

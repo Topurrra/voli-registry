@@ -1,0 +1,15 @@
+name = "dua"
+version = "2.38.1"
+description = "Disk Usage Analyzer"
+homepage = "https://github.com/Byron/dua-cli"
+license = "MIT"
+kind = "app"
+extract_dir = "dua-v2.38.1-x86_64-pc-windows-msvc"
+bin = ["dua.exe"]
+
+[source.x64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.38.1/dua-v2.38.1-x86_64-pc-windows-msvc.zip"
+sha256 = "1496059ba245743504a8c3e22bbb29c10278e1f4454a10adae59042630bea4fa"
+
+[autoupdate]
+checkver = { github = "Byron/dua-cli" }

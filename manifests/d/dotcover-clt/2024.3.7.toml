@@ -1,0 +1,18 @@
+name = "dotcover-clt"
+version = "2024.3.7"
+description = "JetBrains dotCover Command Line Tools that enable analysing code coverage outside of Visual Studio."
+homepage = "https://www.jetbrains.com/dotcover/download/#section=commandline"
+license = "Freeware"
+kind = "app"
+bin = ["dotCover.exe"]
+
+[source.x64]
+url = "https://download.jetbrains.com/resharper/dotUltimate.2024.3.7/JetBrains.dotCover.CommandLineTools.windows-x64.2024.3.7.zip"
+sha256 = "2f9fc79bd94fb06e6e626a257e9c9bb1609ac314691b71bc05d771aa13e71fa9"
+
+[source.arm64]
+url = "https://download.jetbrains.com/resharper/dotUltimate.2024.3.7/JetBrains.dotCover.CommandLineTools.windows-arm64.2024.3.7.zip"
+sha256 = "a020907614b919fa37cb70e56a57db5f9d60393a93879a91981e3dd8e3b6ef40"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&platform=zip&type=release\"}"

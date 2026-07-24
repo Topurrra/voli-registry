@@ -1,0 +1,17 @@
+name = "mingit-busybox"
+version = "2.55.0.3"
+description = "Minimal Git for Windows (MinGit) is a reduced sized package designed to support application integration (like integrated development environments, graph visualizers, etc.) where full console support (colorization, pagniation, etc.) is not needed.(BusyBox-backed MinGit, experimental, smaller version of MinGit)"
+homepage = "https://git-for-windows.github.io/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["cmd\\git.exe", "mingw64\\bin\\busybox.exe"]
+
+[source.x64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.3/MinGit-2.55.0.3-busybox-64-bit.zip"
+sha256 = "cbb2ade2bf690b62f0d692ec64733cb26c6b4ea294b0b9752a705446f011b41f"
+
+[env]
+GIT_INSTALL_ROOT = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"download/v(?<tag>[\\\\d.]+windows\\\\.\\\\d)/MinGit-([\\\\d.]+)-busybox-64\"}"

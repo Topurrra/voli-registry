@@ -1,0 +1,14 @@
+name = "gitomatic"
+version = "0.2"
+description = "A tool to monitor git repositories and automatically pull & push changes."
+homepage = "https://github.com/muesli/gitomatic"
+license = "MIT"
+kind = "app"
+bin = ["gitomatic.exe"]
+
+[source.x64]
+url = "https://github.com/muesli/gitomatic/releases/download/v0.2/gitomatic_0.2_Windows_x86_64.tar.gz"
+sha256 = "21fa09906fa38dd50267d541c53588110c0c9d7d7dfba62a386172a01a410e91"
+
+[autoupdate]
+checkver = { github = "muesli/gitomatic" }

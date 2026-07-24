@@ -1,0 +1,18 @@
+name = "termshark"
+version = "2.4.0"
+description = "A terminal UI for tshark, inspired by Wireshark"
+homepage = "https://github.com/gcla/termshark"
+license = "MIT"
+kind = "app"
+extract_dir = "termshark_2.4.0_windows_x64"
+bin = ["termshark.exe"]
+
+[source.x64]
+url = "https://github.com/gcla/termshark/releases/download/v2.4.0/termshark_2.4.0_windows_x64.zip"
+sha256 = "f6cb1628e7630ae4707f0438a12a1f64c7eda57d4d6ada636a7c44e3d54b1e68"
+
+[depends]
+wireshark = "*"
+
+[autoupdate]
+checkver = { github = "gcla/termshark" }

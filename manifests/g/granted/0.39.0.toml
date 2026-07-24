@@ -1,0 +1,21 @@
+name = "granted"
+version = "0.39.0"
+description = "Granted is a command line interface (CLI) application which simplifies access to cloud roles and allows multiple cloud accounts to be opened in your web browser simultaneously."
+homepage = "https://granted.dev"
+license = "MIT"
+kind = "app"
+bin = ["assume.ps1", "granted.exe"]
+
+[source.x64]
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_windows_x86_64.zip"
+sha256 = "29227ca9041a743524306c87775a24d0784f900375f98571abc470b2d477cfc3"
+
+[source.arm64]
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_windows_arm64.zip"
+sha256 = "1038b8c242278018ca869071a047d489b75525a4217953dfbf547de03bb68df2"
+
+[depends]
+aws = "*"
+
+[autoupdate]
+checkver = { github = "fwdcloudsec/granted" }

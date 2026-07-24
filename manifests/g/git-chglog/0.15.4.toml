@@ -1,0 +1,14 @@
+name = "git-chglog"
+version = "0.15.4"
+description = "Changelog generator implemented in Go (Golang)"
+homepage = "https://github.com/git-chglog/git-chglog"
+license = "MIT"
+kind = "app"
+bin = ["git-chglog.exe"]
+
+[source.x64]
+url = "https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_windows_amd64.zip"
+sha256 = "0e7e9421565714f56885f068ae434416a6a3177b6ff65f350afe580e201289a6"
+
+[autoupdate]
+checkver = { github = "git-chglog/git-chglog" }

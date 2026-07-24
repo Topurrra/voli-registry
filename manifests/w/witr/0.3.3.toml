@@ -1,0 +1,18 @@
+name = "witr"
+version = "0.3.3"
+description = "witr ('Why Is This Running') is a tool that explains the causal chain behind running processes with additional insights."
+homepage = "https://github.com/pranshuparmar/witr"
+license = "Apache-2.0"
+kind = "app"
+bin = ["witr.exe"]
+
+[source.x64]
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-windows-amd64.zip"
+sha256 = "1ae95a354fa7f767828ad7942497f3801e5299f8afad5844ec6d1819703a6b28"
+
+[source.arm64]
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-windows-arm64.zip"
+sha256 = "e644a1e152437a0aff93c672660b363de690361ca90f35a792f88b361ca569e4"
+
+[autoupdate]
+checkver = { github = "pranshuparmar/witr" }

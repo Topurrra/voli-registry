@@ -1,0 +1,15 @@
+name = "aks-engine"
+version = "0.79.0"
+description = "Self-managed Kubernetes cluster provisioning on Azure"
+homepage = "https://github.com/Azure/aks-engine"
+license = "MIT"
+kind = "app"
+extract_dir = "aks-engine-v0.79.0-windows-amd64"
+bin = ["aks-engine.exe"]
+
+[source.x64]
+url = "https://github.com/Azure/aks-engine/releases/download/v0.79.0/aks-engine-v0.79.0-windows-amd64.zip"
+sha256 = "5c35c3d2b2aaff2d0d1946ffe84c88e8f60aca5eadf3cec899df4a1b02186e28"
+
+[autoupdate]
+checkver = { github = "Azure/aks-engine" }

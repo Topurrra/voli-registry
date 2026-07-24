@@ -1,0 +1,14 @@
+name = "zellij"
+version = "0.44.3"
+description = "A terminal workspace with batteries included"
+homepage = "https://zellij.dev/"
+license = "MIT"
+kind = "app"
+bin = ["zellij.exe"]
+
+[source.x64]
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.3/zellij-x86_64-pc-windows-msvc.zip"
+sha256 = "45f25febb588d36f499232b3ba80a9edcde3b3a2a85bebb105a82457b0ca6aef"
+
+[autoupdate]
+checkver = { github = "zellij-org/zellij" }

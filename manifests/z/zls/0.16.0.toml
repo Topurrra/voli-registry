@@ -1,0 +1,14 @@
+name = "zls"
+version = "0.16.0"
+description = "Zig language LSP server"
+homepage = "https://github.com/zigtools/zls"
+license = "MIT"
+kind = "app"
+bin = ["zls.exe"]
+
+[source.x64]
+url = "https://github.com/zigtools/zls/releases/download/0.16.0/zls-x86_64-windows.zip"
+sha256 = "35cbb7163224e8cf92d21099c1b1391f2aba927f25d389f021b13a21d40b96dd"
+
+[autoupdate]
+checkver = { github = "zigtools/zls" }

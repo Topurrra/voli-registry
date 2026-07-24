@@ -1,0 +1,18 @@
+name = "sqlite"
+version = "3.53.3"
+description = "A small, fast, self-contained, high-reliability and full-featured SQL database engine"
+homepage = "https://www.sqlite.org/"
+license = "Public Domain"
+kind = "app"
+bin = ["sqlite3.exe", "sqldiff.exe", "sqlite3_analyzer.exe", "sqlite3_rsync.exe"]
+
+[source.x64]
+url = "https://www.sqlite.org/2026/sqlite-tools-win-x64-3530300.zip"
+sha256 = "c90fe36442cf573e8a19b3e8733d121622b8e2d5a0c47cbda97aeba9517d1c45"
+
+[source.arm64]
+url = "https://www.sqlite.org/2026/sqlite-tools-win-arm64-3530300.zip"
+sha256 = "179a97eb01457932ab3b6c181b8ed8a5b7e0d9854551b6a87c673b58827cbcbb"
+
+[autoupdate]
+checkver = "{\"regex\":\"PRODUCT,([\\\\d.]+),(?<year>\\\\d+)/sqlite-tools-win-x64-(?<clean>\\\\d+)\\\\.zip\",\"url\":\"https://www.sqlite.org/download.html\"}"

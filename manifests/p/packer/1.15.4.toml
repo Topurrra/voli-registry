@@ -1,0 +1,14 @@
+name = "packer"
+version = "1.15.4"
+description = "Automates the creation of any type of virtual machine image."
+homepage = "https://www.packer.io"
+license = "MPL-2.0"
+kind = "app"
+bin = ["packer.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/packer/1.15.4/packer_1.15.4_windows_amd64.zip"
+sha256 = "a50db29fae2972f5e5d05ecee23f80e303d605f8132dc2167848fc89184f044b"
+
+[autoupdate]
+checkver = "{\"regex\":\"packer_([\\\\d.]+)</a>\",\"url\":\"https://releases.hashicorp.com/packer/\"}"

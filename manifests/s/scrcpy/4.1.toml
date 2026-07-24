@@ -1,0 +1,15 @@
+name = "scrcpy"
+version = "4.1"
+description = "Display and control your Android device"
+homepage = "https://github.com/Genymobile/scrcpy"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "scrcpy-win64-v4.1"
+bin = ["scrcpy.exe"]
+
+[source.x64]
+url = "https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win64-v4.1.zip"
+sha256 = "5b12172b3264b2889f4583ee64752ce832e29bc8b1089dca81093459697165db"
+
+[autoupdate]
+checkver = { github = "Genymobile/scrcpy" }

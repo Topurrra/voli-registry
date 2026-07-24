@@ -1,0 +1,15 @@
+name = "hexyl"
+version = "0.17.0"
+description = "Hex viewer, which uses colored output to distinguish different categories of bytes."
+homepage = "https://github.com/sharkdp/hexyl"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "hexyl-v0.17.0-x86_64-pc-windows-msvc"
+bin = ["hexyl.exe"]
+
+[source.x64]
+url = "https://github.com/sharkdp/hexyl/releases/download/v0.17.0/hexyl-v0.17.0-x86_64-pc-windows-msvc.zip"
+sha256 = "ab5c3442cff63f585553d4fce330eaa1ef1bd2584643f1a0e29ab7c13fc9566d"
+
+[autoupdate]
+checkver = { github = "sharkdp/hexyl" }

@@ -1,0 +1,19 @@
+name = "nginx"
+version = "1.31.3"
+description = "An HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server."
+homepage = "https://nginx.org"
+license = "BSD-2-Clause"
+kind = "app"
+extract_dir = "nginx-1.31.3"
+bin = ["nginx.exe"]
+persist = ["conf", "html", "logs", "temp"]
+
+[source.x64]
+url = "https://nginx.org/download/nginx-1.31.3.zip"
+sha256 = "934a8fedd91646a4d7c51079ac9b71397d1caf7a6aeb81ccfd361250c04ace2c"
+
+[env]
+NGINX_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"Changes with nginx ([\\\\d.]+)\",\"url\":\"https://nginx.org/en/CHANGES\"}"

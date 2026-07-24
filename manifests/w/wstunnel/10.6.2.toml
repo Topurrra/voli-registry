@@ -1,0 +1,14 @@
+name = "wstunnel"
+version = "10.6.2"
+description = "Tunneling over websocket protocol"
+homepage = "https://github.com/erebe/wstunnel"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["wstunnel.exe"]
+
+[source.x64]
+url = "https://github.com/erebe/wstunnel/releases/download/v10.6.2/wstunnel_10.6.2_windows_amd64.tar.gz"
+sha256 = "3a88e9533845fdd377c79f5aa61f9eb7cedbfc26639533e7b944e317408f1c3b"
+
+[autoupdate]
+checkver = { github = "erebe/wstunnel" }

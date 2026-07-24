@@ -1,0 +1,15 @@
+name = "rain"
+version = "1.24.4"
+description = "A development workflow tool for working with AWS CloudFormation."
+homepage = "https://github.com/aws-cloudformation/rain"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "rain-v1.24.4_windows-amd64"
+bin = ["rain.exe"]
+
+[source.x64]
+url = "https://github.com/aws-cloudformation/rain/releases/download/v1.24.4/rain-v1.24.4_windows-amd64.zip"
+sha256 = "13c9af5739917dfb62f49d796f254d2864bd9c1200ab3b3811907f926b76a1db"
+
+[autoupdate]
+checkver = { github = "aws-cloudformation/rain" }

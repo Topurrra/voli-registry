@@ -1,0 +1,15 @@
+name = "ytcast"
+version = "1.4.1"
+description = "Cast YouTube videos to your smart TV from command-line"
+homepage = "https://github.com/MarcoLucidi01/ytcast"
+license = "MIT"
+kind = "app"
+extract_dir = "ytcast-v1.4.1-windows-amd64"
+bin = ["ytcast.exe"]
+
+[source.x64]
+url = "https://github.com/MarcoLucidi01/ytcast/releases/download/v1.4.1/ytcast-v1.4.1-windows-amd64.zip"
+sha256 = "cda9c9e83b755b519af034b58f5519c0ef0be803efaa7ca459b94b6748a42b9f"
+
+[autoupdate]
+checkver = { github = "MarcoLucidi01/ytcast" }

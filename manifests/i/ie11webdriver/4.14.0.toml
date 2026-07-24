@@ -1,0 +1,14 @@
+name = "ie11webdriver"
+version = "4.14.0"
+description = "Selenium WebDriver for Internet Explorer 11"
+homepage = "https://selenium.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["IEDriverServer.exe"]
+
+[source.x64]
+url = "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.14.0/IEDriverServer_x64_4.14.0.zip"
+sha256 = "24ddc5f6b081de05d65367020a6e89bc98146fb19b2abc8fafcde4d3dc3fc31c"
+
+[autoupdate]
+checkver = "{\"regex\":\"IEDriverServer_x64_([\\\\d.]+)\\\\.zip\",\"url\":\"https://selenium.dev/downloads/\"}"

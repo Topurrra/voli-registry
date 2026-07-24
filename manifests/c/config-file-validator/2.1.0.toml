@@ -1,0 +1,14 @@
+name = "config-file-validator"
+version = "2.1.0"
+description = "A tool to validate the syntax of configuration files"
+homepage = "https://boeing.github.io/config-file-validator/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["validator.exe"]
+
+[source.x64]
+url = "https://github.com/Boeing/config-file-validator/releases/download/v2.1.0/validator-v2.1.0-windows-amd64.zip"
+sha256 = "108018b7cc376fe1cbffb0a46df9dd182fd2f03c3fa4d8b415fcd9143b38da73"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Boeing/config-file-validator/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].tag_name\",\"regex\":\"(?:v|V)?([\\\\d.]+)\"}"

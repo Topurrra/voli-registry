@@ -1,0 +1,17 @@
+name = "jbang"
+version = "0.141.0"
+description = "The tool to run java, jar or jsh files with automatic dependency fetching, immediate compilation and execution"
+homepage = "https://jbang.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "jbang-0.141.0"
+
+[source.x64]
+url = "https://github.com/jbangdev/jbang/releases/download/v0.141.0/jbang-0.141.0.zip"
+sha256 = "be34e7416227dac8b98c79e07d80488d73b3e131272a616e0754a7d496133fc0"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "jbangdev/jbang" }

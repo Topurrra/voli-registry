@@ -1,0 +1,15 @@
+name = "gof"
+version = "0.0.13"
+description = "Fuzzy search tool written in Go"
+homepage = "https://github.com/mattn/gof"
+license = "MIT"
+kind = "app"
+extract_dir = "gof_v0.0.13_windows_amd64"
+bin = ["gof.exe"]
+
+[source.x64]
+url = "https://github.com/mattn/gof/releases/download/v0.0.13/gof_v0.0.13_windows_amd64.zip"
+sha256 = "b3b27a935abd925764a3005cccb3c379347956c279c6019a7e4c3728db4413db"
+
+[autoupdate]
+checkver = { github = "mattn/gof" }

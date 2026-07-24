@@ -1,0 +1,15 @@
+name = "perfetto"
+version = "57.2"
+description = "A production-grade open-source stack for performance instrumentation and trace analysis."
+homepage = "https://perfetto.dev/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "windows-amd64"
+bin = ["perfetto.exe", "trace_processor_shell.exe", "traceconv.exe", "traced.exe"]
+
+[source.x64]
+url = "https://github.com/google/perfetto/releases/download/v57.2/windows-amd64.zip"
+sha256 = "0d47a31f9058cae5442baeab1ffce3f3f75e176f4f7cd8fedb1a29a51955975e"
+
+[autoupdate]
+checkver = { github = "google/perfetto" }

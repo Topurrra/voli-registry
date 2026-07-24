@@ -1,0 +1,18 @@
+name = "protolint"
+version = "0.56.4"
+description = "A pluggable linter and fixer to enforce Protocol Buffer style and conventions"
+homepage = "https://github.com/yoheimuta/protolint"
+license = "MIT"
+kind = "app"
+bin = ["protolint.exe", "protoc-gen-protolint.exe"]
+
+[source.x64]
+url = "https://github.com/yoheimuta/protolint/releases/download/v0.56.4/protolint_0.56.4_windows_amd64.tar.gz"
+sha256 = "35691e4d2394abde9f3fe180a0f5605988a793592a3e9396c71c310fca294ab5"
+
+[source.arm64]
+url = "https://github.com/yoheimuta/protolint/releases/download/v0.56.4/protolint_0.56.4_windows_arm64.tar.gz"
+sha256 = "798bcec78d79b6e1e1b74ce56e6febabdda3895eb3567fd69b3ae2446e420bd5"
+
+[autoupdate]
+checkver = { github = "yoheimuta/protolint" }

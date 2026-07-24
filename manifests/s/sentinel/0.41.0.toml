@@ -1,0 +1,14 @@
+name = "sentinel"
+version = "0.41.0"
+description = "An embeddable policy as code framework to enable fine-grained, logic-based policy decisions."
+homepage = "https://www.hashicorp.com/sentinel"
+license = "Proprietary"
+kind = "app"
+bin = ["sentinel.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_windows_amd64.zip"
+sha256 = "34d4cafe6266cc968a1b5678d025d1a0a27fd266789b78d842008bb3ee9a508e"
+
+[autoupdate]
+checkver = "{\"regex\":\"sentinel_([\\\\d.]+)\",\"url\":\"https://releases.hashicorp.com/sentinel/\"}"

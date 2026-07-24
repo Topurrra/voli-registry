@@ -1,0 +1,15 @@
+name = "offlineinsiderenroll"
+version = "2.6.6"
+description = "A script to enable access to the Windows Insider Program on machines not signed in with Microsoft Account"
+homepage = "https://github.com/abbodi1406/offlineinsiderenroll"
+license = "MIT"
+kind = "app"
+extract_dir = "offlineinsiderenroll-2.6.6"
+bin = ["OfflineInsiderEnroll.cmd"]
+
+[source.x64]
+url = "https://github.com/abbodi1406/offlineinsiderenroll/archive/refs/tags/2.6.6.zip"
+sha256 = "827a5d2f0977eba29ee97730dc3db409c781a89ec3ba8e48d9c7b5543ec1131b"
+
+[autoupdate]
+checkver = { github = "abbodi1406/offlineinsiderenroll" }

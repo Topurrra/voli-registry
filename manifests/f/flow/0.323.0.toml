@@ -1,0 +1,14 @@
+name = "flow"
+version = "0.323.0"
+description = "A static type checker for JavaScript code"
+homepage = "https://flow.org/"
+license = "MIT"
+kind = "app"
+bin = ["flow.exe"]
+
+[source.x64]
+url = "https://github.com/facebook/flow/releases/download/v0.323.0/flow-win64-v0.323.0.zip"
+sha256 = "89cb7ca6095df8c82dc8e9392f3cd070641d94a31cc7105d310f7df446430830"
+
+[autoupdate]
+checkver = { github = "facebook/flow" }

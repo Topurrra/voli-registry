@@ -1,0 +1,16 @@
+name = "elinks"
+version = "0.19.1"
+description = "Fork of elinks. ELinks is an advanced and well-established feature-rich text mode web (HTTP/FTP/..) browser."
+homepage = "https://github.com/rkd77/elinks"
+license = "GPL-2.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/rkd77/elinks/releases/download/v0.19.1/elinks-0.19.1-win64.zip"
+sha256 = "8dba4a93d96b943923818dfdc55a42c30bd61a7cd0873e8835112afd247cbfcc"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "rkd77/elinks" }

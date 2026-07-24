@@ -1,0 +1,16 @@
+name = "haskell-language-server"
+version = "2.14.0.0"
+description = "The official language server for Haskell."
+homepage = "https://github.com/haskell/haskell-language-server"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/haskell/haskell-language-server/releases/download/2.14.0.0/haskell-language-server-2.14.0.0-x86_64-mingw64.zip"
+sha256 = "b928e205dfd09d2b75986f19bc37700dcd74037bf695c5663a7454d84e3409e7"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "haskell/haskell-language-server" }

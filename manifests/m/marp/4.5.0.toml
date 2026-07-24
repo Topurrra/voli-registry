@@ -1,0 +1,14 @@
+name = "marp"
+version = "4.5.0"
+description = "A CLI interface for Marp and Marpit based converters"
+homepage = "https://github.com/marp-team/marp-cli"
+license = "MIT"
+kind = "app"
+bin = ["marp.exe"]
+
+[source.x64]
+url = "https://github.com/marp-team/marp-cli/releases/download/v4.5.0/marp-cli-v4.5.0-win.zip"
+sha256 = "b1fedb3d0879c667351175222082ec82dd5f8f389d6dd8cdc5543c508cd4e7ec"
+
+[autoupdate]
+checkver = { github = "marp-team/marp-cli" }

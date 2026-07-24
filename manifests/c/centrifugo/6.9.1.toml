@@ -1,0 +1,14 @@
+name = "centrifugo"
+version = "6.9.1"
+description = "Language-agnostic real-time messaging server. Centrifugo supports at moment: Websocket and SockJS"
+homepage = "https://centrifugal.dev"
+license = "MIT"
+kind = "app"
+bin = ["centrifugo.exe"]
+
+[source.x64]
+url = "https://github.com/centrifugal/centrifugo/releases/download/v6.9.1/centrifugo_6.9.1_windows_amd64.zip"
+sha256 = "98c7569d43e38d8c69d6f7db5f89b608d848f0ce21e174ea3e32ac11557a5435"
+
+[autoupdate]
+checkver = { github = "centrifugal/centrifugo" }

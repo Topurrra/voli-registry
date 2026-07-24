@@ -1,0 +1,11 @@
+name = "procyon"
+version = "0.5.36"
+description = "Java decompiler"
+homepage = "https://bitbucket.org/mstrobel/procyon/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["procyon.jar"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/procyon/procyon-decompiler-0.5.36.jar#/procyon.jar"
+sha256 = "74f9f1537113207521a075fafe64bd8265c47a9c73574bbf9fa8854bbf7126bc"

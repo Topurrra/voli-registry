@@ -1,0 +1,18 @@
+name = "go-jsonnet"
+version = "0.22.0"
+description = "A data templating language for app and tool developers"
+homepage = "https://jsonnet.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["jsonnet.exe", "jsonnetfmt.exe"]
+
+[source.x64]
+url = "https://github.com/google/go-jsonnet/releases/download/v0.22.0/go-jsonnet_0.22.0_windows_amd64.tar.gz"
+sha256 = "277b83ddbe836a627dcde0655720aa42b02277fdf3a9cdaebeef2a53e98599b1"
+
+[source.arm64]
+url = "https://github.com/google/go-jsonnet/releases/download/v0.22.0/go-jsonnet_0.22.0_windows_arm64.tar.gz"
+sha256 = "663d4b9258e201ce9471a02e329167027e68bf4063192a937d83d8b6bac8b044"
+
+[autoupdate]
+checkver = { github = "google/go-jsonnet" }

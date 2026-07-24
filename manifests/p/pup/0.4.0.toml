@@ -1,0 +1,14 @@
+name = "pup"
+version = "0.4.0"
+description = "Parsing HTML at the command line"
+homepage = "https://github.com/ericchiang/pup"
+license = "MIT"
+kind = "app"
+bin = ["pup.exe"]
+
+[source.x64]
+url = "https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_windows_amd64.zip"
+sha256 = "6755cbd43e94eaf173689e93e914c7056a2249c2977e5b90024fb397f9b45ba4"
+
+[autoupdate]
+checkver = { github = "ericchiang/pup" }

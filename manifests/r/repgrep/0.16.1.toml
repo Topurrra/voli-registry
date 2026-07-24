@@ -1,0 +1,15 @@
+name = "repgrep"
+version = "0.16.1"
+description = "An interactive replacer for ripgrep that makes it easy to find and replace across files on the command line."
+homepage = "https://github.com/acheronfail/repgrep"
+license = "Apache-2.0|MIT|Unlicense"
+kind = "app"
+extract_dir = "repgrep-0.16.1-x86_64-pc-windows-msvc"
+bin = ["rgr.exe"]
+
+[source.x64]
+url = "https://github.com/acheronfail/repgrep/releases/download/0.16.1/repgrep-0.16.1-x86_64-pc-windows-msvc.zip"
+sha256 = "67bdbe22a22da65fed6237c8fc0a29cd35183fea277a429aa82e1b2956d89eff"
+
+[autoupdate]
+checkver = { github = "acheronfail/repgrep" }

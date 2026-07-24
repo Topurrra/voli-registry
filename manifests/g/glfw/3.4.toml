@@ -1,0 +1,17 @@
+name = "glfw"
+version = "3.4"
+description = "GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development."
+homepage = "https://github.com/glfw/glfw"
+license = "zlib-acknowledgement"
+kind = "app"
+extract_dir = "glfw-3.4.bin.WIN64"
+
+[source.x64]
+url = "https://github.com/glfw/glfw/releases/download/3.4/glfw-3.4.bin.WIN64.zip"
+sha256 = "54efa829400f2a0537f742b2b3bdd74e437bb4f2f048e4b7d3c5557d11a611e6"
+
+[env]
+GLFW_ROOT = "{dir}"
+
+[autoupdate]
+checkver = { github = "glfw/glfw" }

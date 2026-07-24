@@ -1,0 +1,14 @@
+name = "kalk"
+version = "0.13.0"
+description = "Command line calculator app."
+homepage = "https://kalk.dev/"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["kalk.exe"]
+
+[source.x64]
+url = "https://github.com/xoofx/kalk/releases/download/0.13.0/kalk.0.13.0.win-x64.zip"
+sha256 = "377065e9d6bad1ac25ff45f8564651a136f67242ba5c3a83809151b2cd61a38b"
+
+[autoupdate]
+checkver = { github = "xoofx/kalk" }

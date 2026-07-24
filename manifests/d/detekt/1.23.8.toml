@@ -1,0 +1,15 @@
+name = "detekt"
+version = "1.23.8"
+description = "A static code analysis tool for the Kotlin programming language"
+homepage = "https://github.com/detekt/detekt"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "detekt-cli-1.23.8"
+bin = [{ name = "detekt", path = "bin\\detekt-cli.bat" }]
+
+[source.x64]
+url = "https://github.com/detekt/detekt/releases/download/v1.23.8/detekt-cli-1.23.8.zip"
+sha256 = "ff9f9258879ff2ec4349114740221498afec46a85cf6302c9f80b06eb4429501"
+
+[autoupdate]
+checkver = { github = "detekt/detekt" }

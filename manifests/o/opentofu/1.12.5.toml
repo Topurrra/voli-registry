@@ -1,0 +1,14 @@
+name = "opentofu"
+version = "1.12.5"
+description = "An OSS tool for building, changing, and versioning infrastructure safely and efficiently. OpenTofu can manage existing and popular service providers as well as custom in-house solutions."
+homepage = "https://opentofu.org/"
+license = "MPL-2.0"
+kind = "app"
+bin = ["tofu.exe"]
+
+[source.x64]
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.5/tofu_1.12.5_windows_amd64.zip"
+sha256 = "465adc4bdf4aa80c650387b7ada2cf750f7908bf1fae7f35b05402c384e79928"
+
+[autoupdate]
+checkver = { github = "opentofu/opentofu" }

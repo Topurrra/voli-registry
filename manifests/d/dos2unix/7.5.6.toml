@@ -1,0 +1,14 @@
+name = "dos2unix"
+version = "7.5.6"
+description = "Convert text files with DOS or Mac line breaks to Unix line breaks and vice versa."
+homepage = "https://waterlander.net/dos2unix/"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["bin\\dos2unix.exe", "bin\\mac2unix.exe", "bin\\unix2dos.exe", "bin\\unix2mac.exe"]
+
+[source.x64]
+url = "https://waterlander.net/dos2unix/files/dos2unix-7.5.6-win64.zip"
+sha256 = "0be4148fc594491e24b259da3b729eafbcc4ebabd30df9a554a1679aaa200a81"
+
+[autoupdate]
+checkver = "Stable version:\\s+([\\d.]+)"

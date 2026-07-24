@@ -1,0 +1,14 @@
+name = "rnr"
+version = "0.5.1"
+description = "A command-line tool to batch rename files and directories"
+homepage = "https://github.com/ismaelgv/rnr"
+license = "MIT"
+kind = "app"
+bin = ["rnr.exe"]
+
+[source.x64]
+url = "https://github.com/ismaelgv/rnr/releases/download/v0.5.1/rnr-v0.5.1-x86_64-pc-windows-msvc.zip"
+sha256 = "667c5082a041d85a6b80b68473c7eb8cffe18a37224a79efc53fda7276302b0e"
+
+[autoupdate]
+checkver = { github = "ismaelgv/rnr" }

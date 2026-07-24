@@ -1,0 +1,18 @@
+name = "gibo"
+version = "3.0.22"
+description = "gibo (short for .gitignore boilerplates) is a shell script to help you easily access .gitignore boilerplates from github.com/github/gitignore"
+homepage = "https://github.com/simonwhitaker/gibo"
+license = "Unlicense"
+kind = "app"
+bin = ["gibo.exe"]
+
+[source.x64]
+url = "https://github.com/simonwhitaker/gibo/releases/download/v3.0.22/gibo_Windows_x86_64.zip"
+sha256 = "ac29ea2d4cecce4aa22d290bc88b5f14185cf12beb957b9a097b3d38c279a0d5"
+
+[source.arm64]
+url = "https://github.com/simonwhitaker/gibo/releases/download/v3.0.22/gibo_Windows_arm64.zip"
+sha256 = "6e5e50b347a5aba29d3105cbee68562b264b8acd0ef084264f53143d92817c11"
+
+[autoupdate]
+checkver = { github = "simonwhitaker/gibo" }

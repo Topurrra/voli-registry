@@ -1,0 +1,15 @@
+name = "s"
+version = "0.8.0"
+description = "Open a web search in your terminal."
+homepage = "https://github.com/zquestz/s"
+license = "MIT"
+kind = "app"
+extract_dir = "s-windows_amd64"
+bin = ["s.exe"]
+
+[source.x64]
+url = "https://github.com/zquestz/s/releases/download/v0.8.0/s-windows_amd64.zip"
+sha256 = "295ad67c263ae2e4763abce3f71f3bbf1b62eeaca9fc017ec2e643c221fda818"
+
+[autoupdate]
+checkver = { github = "zquestz/s" }

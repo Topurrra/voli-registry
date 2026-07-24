@@ -1,0 +1,18 @@
+name = "prek"
+version = "0.4.10"
+description = "prek is a reimagined version of pre-commit, built in Rust. It is designed to be a faster, dependency-free and drop-in alternative for it, while also providing some additional long-requested features."
+homepage = "https://github.com/j178/prek"
+license = "MIT"
+kind = "app"
+bin = ["prek.exe"]
+
+[source.x64]
+url = "https://github.com/j178/prek/releases/download/v0.4.10/prek-x86_64-pc-windows-msvc.zip"
+sha256 = "872d1c5ac32efce01e93821e790dedc8c055b499f524f1250270679562bf3792"
+
+[source.arm64]
+url = "https://github.com/j178/prek/releases/download/v0.4.10/prek-aarch64-pc-windows-msvc.zip"
+sha256 = "ef9b5d6c643ae2ef2d73b60a0706e3303c5d1eab6a7c3e909ab95e693827be2e"
+
+[autoupdate]
+checkver = { github = "j178/prek" }

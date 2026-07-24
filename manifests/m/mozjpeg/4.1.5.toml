@@ -1,0 +1,14 @@
+name = "mozjpeg"
+version = "4.1.5"
+description = "Improved JPEG encoder"
+homepage = "https://github.com/mozilla/mozjpeg"
+license = "BSD-3-Clause,IJG,Zlib"
+kind = "app"
+bin = [{ name = "cjpeg", path = "cjpeg-static.exe" }, { name = "mozjpeg", path = "cjpeg-static.exe" }, { name = "djpeg", path = "djpeg-static.exe" }, { name = "jpegtran", path = "jpegtran-static.exe" }]
+
+[source.x64]
+url = "https://github.com/garyzyg/mozjpeg-windows/releases/download/4.1.5/mozjpeg-x64.zip"
+sha256 = "176ef4f632b09dca449e27bc11df090c1222528dff9f583a14bbd026a0c8eb2f"
+
+[autoupdate]
+checkver = { github = "garyzyg/mozjpeg-windows" }

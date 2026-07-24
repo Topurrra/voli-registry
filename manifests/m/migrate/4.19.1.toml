@@ -1,0 +1,14 @@
+name = "migrate"
+version = "4.19.1"
+description = "Reads and applies migrations in correct order to a database."
+homepage = "https://github.com/golang-migrate/migrate"
+license = "MIT"
+kind = "app"
+bin = ["migrate.exe"]
+
+[source.x64]
+url = "https://github.com/golang-migrate/migrate/releases/download/v4.19.1/migrate.windows-amd64.zip"
+sha256 = "d2537dfd991787c1e458965c4f49098c5a72f943bfc9d975c573a9c245f7ba2e"
+
+[autoupdate]
+checkver = { github = "golang-migrate/migrate" }

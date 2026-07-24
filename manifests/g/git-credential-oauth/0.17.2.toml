@@ -1,0 +1,18 @@
+name = "git-credential-oauth"
+version = "0.17.2"
+description = "A Git credential helper that securely authenticates to GitHub, GitLab and BitBucket using OAuth."
+homepage = "https://github.com/hickford/git-credential-oauth"
+license = "Apache-2.0"
+kind = "app"
+bin = ["git-credential-oauth.exe"]
+
+[source.x64]
+url = "https://github.com/hickford/git-credential-oauth/releases/download/v0.17.2/git-credential-oauth_0.17.2_windows_amd64.zip"
+sha256 = "268a95e29fa8b56f1f42d65bf4a7465aefb74e9b671dd656129f6207151e0aae"
+
+[source.arm64]
+url = "https://github.com/hickford/git-credential-oauth/releases/download/v0.17.2/git-credential-oauth_0.17.2_windows_arm64.zip"
+sha256 = "2b1d3656561ef54049920239017bd9395a4ee0bdfe279a6b1e02ce4c8c7cd362"
+
+[autoupdate]
+checkver = { github = "hickford/git-credential-oauth" }

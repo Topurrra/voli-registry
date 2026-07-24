@@ -1,0 +1,18 @@
+name = "ddosify"
+version = "1.0.6"
+description = "Load testing and DDOS attack simulation tool"
+homepage = "https://ddosify.com"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["ddosify.exe"]
+
+[source.x64]
+url = "https://github.com/getanteon/anteon/releases/download/v1.0.6/ddosify_1.0.6_windows_amd64.zip"
+sha256 = "f3980b434a64da7190d99bdcd04fb0c7162f44eeccdaf1f3489a30ac378f04ee"
+
+[source.arm64]
+url = "https://github.com/getanteon/anteon/releases/download/v1.0.6/ddosify_1.0.6_windows_arm64.zip"
+sha256 = "42d878db6197680c0f310d509920d9c6e7dfe4360ee71895c012a45d5dc43446"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/getanteon/anteon/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"ddosify_([\\\\d.]+)_windows_amd64\\\\.zip\"}"

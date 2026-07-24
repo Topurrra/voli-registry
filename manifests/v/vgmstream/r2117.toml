@@ -1,0 +1,14 @@
+name = "vgmstream"
+version = "r2117"
+description = "vgmstream command line interface"
+homepage = "https://github.com/vgmstream/vgmstream"
+license = "VGMStream Team"
+kind = "app"
+bin = ["vgmstream-cli.exe"]
+
+[source.x64]
+url = "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-win64.zip"
+sha256 = "6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c"
+
+[autoupdate]
+checkver = { github = "vgmstream/vgmstream" }

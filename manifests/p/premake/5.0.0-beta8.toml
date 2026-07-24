@@ -1,0 +1,14 @@
+name = "premake"
+version = "5.0.0-beta8"
+description = "Automatically generate build configurations for multiple and widely used toolsets using one universal definition."
+homepage = "https://premake.github.io/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["premake5.exe"]
+
+[source.x64]
+url = "https://github.com/premake/premake-core/releases/download/v5.0.0-beta8/premake-5.0.0-beta8-windows.zip"
+sha256 = "e64ce2ed8778e0098f63674cca61fe33941b5f0c8d9a4afd651152bdea3758ab"
+
+[autoupdate]
+checkver = "{\"regex\":\"v(5[\\\\w.-]+)\",\"url\":\"https://premake.github.io/download\"}"

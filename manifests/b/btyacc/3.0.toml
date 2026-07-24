@@ -1,0 +1,11 @@
+name = "btyacc"
+version = "3.0"
+description = "A version of Byacc with backtracking (from GNUWin32)"
+homepage = "https://gnuwin32.sourceforge.net/packages/btyacc.htm"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["bin\\btyacc.exe"]
+
+[source.x64]
+url = "https://downloads.sourceforge.net/project/gnuwin32/btyacc/3.0/btyacc-3.0-bin.zip"
+sha256 = "7450fa179a304cc3185f5980f42f422e0c88fe545a1c9f96b715994a69c507b0"

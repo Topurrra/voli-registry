@@ -1,0 +1,21 @@
+name = "jruby"
+version = "10.1.1.0"
+description = "The Ruby Programming Language on the JVM."
+homepage = "https://www.jruby.org/"
+license = "EPL-1.0|GPL-2.0-only|LGPL-2.1-only"
+kind = "app"
+extract_dir = "jruby-10.1.1.0"
+persist = ["gems"]
+
+[source.x64]
+url = "https://repo1.maven.org/maven2/org/jruby/jruby-dist/10.1.1.0/jruby-dist-10.1.1.0-bin.zip"
+sha256 = "9a6d740da7ab11c99ef109feb065f44b09c4379c7b3fad79d8aebbbd1a7571b5"
+
+[env]
+PATH = "{dir}\\bin;{dir}\\gems\\bin"
+GEM_HOME = "{dir}\\gems"
+GEM_PATH = "{dir}\\gems"
+JRUBY_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"Current Release:\\\\s+JRuby\\\\s+([\\\\d.]+)\",\"url\":\"https://www.jruby.org/download\"}"

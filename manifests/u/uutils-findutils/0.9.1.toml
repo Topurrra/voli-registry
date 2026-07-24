@@ -1,0 +1,14 @@
+name = "uutils-findutils"
+version = "0.9.1"
+description = "Rust implementation of GNU findutils."
+homepage = "https://github.com/uutils/findutils"
+license = "MIT"
+kind = "app"
+bin = ["find.exe", "xargs.exe"]
+
+[source.x64]
+url = "https://github.com/uutils/findutils/releases/download/0.9.1/findutils-x86_64-pc-windows-msvc.zip"
+sha256 = "3cd96c5073a4fa2d913365a179327653bd038c646d4c613e93f8a4dc62e82be6"
+
+[autoupdate]
+checkver = { github = "uutils/findutils" }

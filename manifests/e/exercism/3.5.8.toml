@@ -1,0 +1,14 @@
+name = "exercism"
+version = "3.5.8"
+description = "A Go based command line tool for exercism.io"
+homepage = "https://exercism.org/"
+license = "MIT"
+kind = "app"
+bin = ["exercism.exe"]
+
+[source.x64]
+url = "https://github.com/exercism/cli/releases/download/v3.5.8/exercism-3.5.8-windows-x86_64.zip#/dl.7z"
+sha256 = "5c8990828ff50406891140b53e300e11e9d9ce8cdad25b95545b7bae6e83563b"
+
+[autoupdate]
+checkver = { github = "exercism/cli" }

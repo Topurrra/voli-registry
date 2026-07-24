@@ -1,0 +1,18 @@
+name = "whosthere"
+version = "0.8.3"
+description = "Local Area Network discovery tool with an interactive Terminal User Interface (TUI) written in Go."
+homepage = "https://github.com/ramonvermeulen/whosthere"
+license = "Apache-2.0"
+kind = "app"
+bin = ["whosthere.exe"]
+
+[source.x64]
+url = "https://github.com/ramonvermeulen/whosthere/releases/download/v0.8.3/whosthere_0.8.3_windows_amd64.tar.gz"
+sha256 = "59510c76f28e1a8215b7e1e89c1faba721078cf5064f1632a4222560e296bf0f"
+
+[source.arm64]
+url = "https://github.com/ramonvermeulen/whosthere/releases/download/v0.8.3/whosthere_0.8.3_windows_arm64.tar.gz"
+sha256 = "85b131546079c7bd21ec7f88068e5a6800a8eacceb259db06e841db41bacbef5"
+
+[autoupdate]
+checkver = { github = "ramonvermeulen/whosthere" }

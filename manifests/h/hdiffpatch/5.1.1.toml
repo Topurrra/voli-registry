@@ -1,0 +1,19 @@
+name = "hdiffpatch"
+version = "5.1.1"
+description = "A C/C++ library and command-line tools for diff & patch between binary files or directories; cross-platform, runs fast, and creates small delta/differential patches."
+homepage = "https://github.com/sisong/HDiffPatch"
+license = "MIT"
+kind = "app"
+extract_dir = "windows64"
+bin = ["hdiffz.exe", "hpatchz.exe"]
+
+[source.x64]
+url = "https://github.com/sisong/HDiffPatch/releases/download/v5.1.1/hdiffpatch_v5.1.1_bin_windows64.zip"
+sha256 = "0c52b721ca79e918fc8a7409928a4ab6ba38fae692f8e3b80fd4ea96f53ffd0f"
+
+[source.arm64]
+url = "https://github.com/sisong/HDiffPatch/releases/download/v5.1.1/hdiffpatch_v5.1.1_bin_windows_arm64.zip"
+sha256 = "adcbca29ade0bd879907d48181106dbfa2ede33e50aaec6a4b20d44eb4439fd8"
+
+[autoupdate]
+checkver = { github = "sisong/HDiffPatch" }

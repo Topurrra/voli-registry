@@ -1,0 +1,15 @@
+name = "monero-cli"
+version = "0.18.5.1"
+description = "The secure, private, untraceable cryptocurrency (CLI)"
+homepage = "https://getmonero.org/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "monero-x86_64-w64-mingw32-v0.18.5.1"
+bin = ["monerod.exe", "monero-wallet-rpc.exe", "monero-wallet-cli.exe", "monero-gen-trusted-multisig.exe", "monero-blockchain-usage.exe", "monero-blockchain-mark-spent-outputs.exe", "monero-blockchain-import.exe", "monero-blockchain-export.exe", "monero-blockchain-depth.exe", "monero-blockchain-ancestry.exe", "monero-blockchain-prune.exe", "monero-blockchain-prune-known-spent-data.exe", "monero-blockchain-stats.exe", { name = "monero-blockchain-blackball", path = "monero-blockchain-mark-spent-outputs.exe" }]
+
+[source.x64]
+url = "https://dlsrc.getmonero.org/cli/monero-win-x64-v0.18.5.1.zip"
+sha256 = "cf2ae8273977697d9ef2031c7337b781e6e5936578f602444b2990a173a2437d"
+
+[autoupdate]
+checkver = "{\"regex\":\"monero-win-x64-v([\\\\d.]+)\\\\.zip\",\"url\":\"https://getmonero.org/downloads/hashes.txt\"}"

@@ -1,0 +1,15 @@
+name = "webhook"
+version = "2.8.2"
+description = "A lightweight incoming webhook server to run shell commands."
+homepage = "https://github.com/adnanh/webhook"
+license = "MIT"
+kind = "app"
+extract_dir = "webhook-windows-amd64"
+bin = ["webhook.exe"]
+
+[source.x64]
+url = "https://github.com/adnanh/webhook/releases/download/2.8.2/webhook-windows-amd64.tar.gz"
+sha256 = "cbba045cda61597c8876dd4a60c1c0f857d85b10cfac876e7c7eecd189eb8cd8"
+
+[autoupdate]
+checkver = { github = "adnanh/webhook" }

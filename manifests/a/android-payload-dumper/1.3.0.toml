@@ -1,0 +1,14 @@
+name = "android-payload-dumper"
+version = "1.3.0"
+description = "Android OTA payload dumper written in Go"
+homepage = "https://github.com/ssut/payload-dumper-go"
+license = "Apache-2.0"
+kind = "app"
+bin = ["payload-dumper-go.exe"]
+
+[source.x64]
+url = "https://github.com/ssut/payload-dumper-go/releases/download/1.3.0/payload-dumper-go_1.3.0_windows_amd64.tar.gz"
+sha256 = "0f96e07477963327f7f50a03bf2aa9dac5c76dba110ab332dc759321ae345d52"
+
+[autoupdate]
+checkver = { github = "ssut/payload-dumper-go" }

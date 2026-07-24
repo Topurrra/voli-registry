@@ -1,0 +1,12 @@
+name = "sendmail"
+version = "32"
+description = "Fake sendmail wrapper."
+homepage = "https://www.glob.com.au/sendmail/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["sendmail.exe"]
+persist = ["sendmail.ini"]
+
+[source.x64]
+url = "https://www.glob.com.au/sendmail/sendmail.zip"
+sha256 = "5ad276d066ceeaeaf0352c5b36076638474e94035d27705b48dacf358c595ce0"

@@ -1,0 +1,14 @@
+name = "sq"
+version = "0.54.1"
+description = "A command line tool that provides jq-style access to structured data sources."
+homepage = "https://sq.io"
+license = "MIT"
+kind = "app"
+bin = ["sq.exe"]
+
+[source.x64]
+url = "https://github.com/neilotoole/sq/releases/download/v0.54.1/sq-0.54.1-windows-amd64.zip"
+sha256 = "cbde3786910ab142ee12b2d24e9b220e41dfd1615b2cf4be209e0a00073d042e"
+
+[autoupdate]
+checkver = { github = "neilotoole/sq" }

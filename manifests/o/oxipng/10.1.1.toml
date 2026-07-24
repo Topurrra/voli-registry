@@ -1,0 +1,15 @@
+name = "oxipng"
+version = "10.1.1"
+description = "Multi-threaded lossless PNG optimizer"
+homepage = "https://github.com/oxipng/oxipng"
+license = "MIT"
+kind = "app"
+extract_dir = "oxipng-10.1.1-x86_64-pc-windows-msvc"
+bin = ["oxipng.exe"]
+
+[source.x64]
+url = "https://github.com/oxipng/oxipng/releases/download/v10.1.1/oxipng-10.1.1-x86_64-pc-windows-msvc.zip"
+sha256 = "0f57b33abb46c76258ac8e20be604a48208141d514bc2936b5200ed626976dd8"
+
+[autoupdate]
+checkver = { github = "oxipng/oxipng" }

@@ -1,0 +1,14 @@
+name = "dapr-cli"
+version = "1.18.0"
+description = "Command-line tools for Dapr"
+homepage = "https://github.com/dapr/cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dapr.exe"]
+
+[source.x64]
+url = "https://github.com/dapr/cli/releases/download/v1.18.0/dapr_windows_amd64.zip"
+sha256 = "3f66b68a0678e39712f0cf93d5a3f38a198a57b0e6e829bb8f50fddb15807de8"
+
+[autoupdate]
+checkver = { github = "dapr/cli" }

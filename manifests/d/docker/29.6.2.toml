@@ -1,0 +1,14 @@
+name = "docker"
+version = "29.6.2"
+description = "Docker CLI & Docker Engine for Windows containers. Docker is an open platform for developing, shipping, and running applications."
+homepage = "https://docs.docker.com/engine"
+license = "Apache-2.0"
+kind = "app"
+bin = ["docker.exe", "dockerd.exe"]
+
+[source.x64]
+url = "https://download.docker.com/win/static/stable/x86_64/docker-29.6.2.zip"
+sha256 = "c790bfcc9e8b227173b20f04f4ddaae6e997eac6d4aeaf7a850e2874d9222944"
+
+[autoupdate]
+checkver = { github = "moby/moby" }

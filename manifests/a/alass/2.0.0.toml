@@ -1,0 +1,15 @@
+name = "alass"
+version = "2.0.0"
+description = "Automatic Language-Agnostic Subtitle Synchronization"
+homepage = "https://github.com/kaegi/alass"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "alass-windows64"
+bin = ["alass.bat"]
+
+[source.x64]
+url = "https://github.com/kaegi/alass/releases/download/v2.0.0/alass-windows64.zip"
+sha256 = "e81a72f97f592910e909a2352d6b8c0de0801c51ac1383bad4ebf3f2ecdd2fd8"
+
+[autoupdate]
+checkver = { github = "kaegi/alass" }

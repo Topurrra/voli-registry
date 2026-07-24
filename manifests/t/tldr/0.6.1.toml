@@ -1,0 +1,11 @@
+name = "tldr"
+version = "0.6.1"
+description = "Interactive tldr pages (simplified and community-driven man pages) client"
+homepage = "https://isacikgoz.me/tldr/"
+license = "MIT"
+kind = "app"
+bin = ["tldr.exe"]
+
+[source.x64]
+url = "https://github.com/isacikgoz/tldr/releases/download/v0.6.1/tldr_0.6.1_windows_amd64.zip"
+sha256 = "355a8483f70f5cc5462d0618daa9ffc13217ce2b4f90cf669b0065bb08ff6788"

@@ -1,0 +1,15 @@
+name = "jreleaser"
+version = "1.25.0"
+description = "Release projects quickly and easily with JReleaser"
+homepage = "https://jreleaser.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "jreleaser-1.25.0"
+bin = ["bin\\jreleaser.bat"]
+
+[source.x64]
+url = "https://github.com/jreleaser/jreleaser/releases/download/v1.25.0/jreleaser-1.25.0.zip"
+sha256 = "7c086a384e509ae30ad12ce2f10946601c0798e746d06a5538afc267e398644b"
+
+[autoupdate]
+checkver = { github = "jreleaser/jreleaser" }

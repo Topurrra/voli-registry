@@ -1,0 +1,14 @@
+name = "kubefwd"
+version = "1.25.16"
+description = "Bulk port forwarding Kubernetes services for local development"
+homepage = "https://github.com/txn2/kubefwd"
+license = "Apache-2.0"
+kind = "app"
+bin = ["kubefwd.exe"]
+
+[source.x64]
+url = "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Windows_x86_64.zip"
+sha256 = "2f671f3f1104ba4da1b1a2dc6ab8658c8f797789629808a624955363488b28c3"
+
+[autoupdate]
+checkver = { github = "txn2/kubefwd" }

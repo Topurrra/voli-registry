@@ -1,0 +1,14 @@
+name = "twilio-cli"
+version = "6.2.4"
+description = "Twilio CLI. Unleash the power of Twilio from your command prompt."
+homepage = "https://github.com/twilio/twilio-cli"
+license = "MIT"
+kind = "app"
+bin = ["bin\\twilio.cmd"]
+
+[source.x64]
+url = "https://twilio-cli-prod.s3.amazonaws.com/twilio-v6.2.4/twilio-v6.2.4-win32-x64.tar.xz"
+sha256 = "ef025e46a9de0205ab5dded561f1a46f1951c492ff894d2a63e2676136d9fa7a"
+
+[autoupdate]
+checkver = { github = "twilio/twilio-cli" }

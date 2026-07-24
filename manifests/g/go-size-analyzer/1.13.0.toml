@@ -1,0 +1,18 @@
+name = "go-size-analyzer"
+version = "1.13.0"
+description = "A tool for analyzing the dependencies in compiled Golang binaries."
+homepage = "https://github.com/Zxilly/go-size-analyzer"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["gsa.exe"]
+
+[source.x64]
+url = "https://github.com/Zxilly/go-size-analyzer/releases/download/v1.13.0/go-size-analyzer_1.13.0_windows_amd64.zip"
+sha256 = "13138f1760454d00bd137bbc3a94302d118fc060d3b192ea3b06fa6cf988f1ea"
+
+[source.arm64]
+url = "https://github.com/Zxilly/go-size-analyzer/releases/download/v1.13.0/go-size-analyzer_1.13.0_windows_arm64.zip"
+sha256 = "d346e16ff79c0fc924553d24285b4a6df56f762cb663890da17018c44907fe06"
+
+[autoupdate]
+checkver = { github = "Zxilly/go-size-analyzer" }

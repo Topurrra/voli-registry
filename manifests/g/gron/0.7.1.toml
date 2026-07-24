@@ -1,0 +1,18 @@
+name = "gron"
+version = "0.7.1"
+description = "Transform JSON into discrete assignments to make it easier to grep and see the absolute 'path'."
+homepage = "https://github.com/tomnomnom/gron"
+license = "MIT"
+kind = "app"
+bin = ["gron.exe"]
+
+[source.x64]
+url = "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-windows-amd64-0.7.1.zip"
+sha256 = "5ed427a4a504d8e03a1770b71d4ad16a3764179e085b5ae84e51a57b299f300d"
+
+[source.arm64]
+url = "https://github.com/tomnomnom/gron/releases/download/v0.7.1/gron-windows-arm64-0.7.1.zip"
+sha256 = "9bd38a241f1afdbd3c8f952b92b7090e7a446cac5251bfed3fdf28f219c9dda8"
+
+[autoupdate]
+checkver = { github = "tomnomnom/gron" }

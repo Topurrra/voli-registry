@@ -1,0 +1,18 @@
+name = "evans"
+version = "0.10.11"
+description = "More expressive gRPC client"
+homepage = "https://evans.syfm.me"
+license = "MIT"
+kind = "app"
+bin = ["evans.exe"]
+
+[source.x64]
+url = "https://github.com/ktr0731/evans/releases/download/v0.10.11/evans_windows_amd64.tar.gz"
+sha256 = "064f455ec597d359e4c00448770f5eb237e4ab029e230cc4cd64d63751447e97"
+
+[source.arm64]
+url = "https://github.com/ktr0731/evans/releases/download/v0.10.11/evans_windows_arm64.tar.gz"
+sha256 = "8fab21d03b060ebd4c27ffb06a7a2dcbc600adb5db3b1656d42a18cf29ced420"
+
+[autoupdate]
+checkver = { github = "ktr0731/evans" }

@@ -1,0 +1,14 @@
+name = "svtplay-dl"
+version = "4.191"
+description = "Video downloader from various sites"
+homepage = "https://svtplay-dl.se"
+license = "MIT"
+kind = "app"
+bin = ["svtplay-dl.exe"]
+
+[source.x64]
+url = "https://svtplay-dl.se/download/4.191/svtplay-dl-amd64.zip"
+sha256 = "3a95a7a894f4696c1d0a5f0764c114be7bb73bb16fa6121a064876565461dabb"
+
+[autoupdate]
+checkver = ">Currently v([\\d.]+)\\s+\\("

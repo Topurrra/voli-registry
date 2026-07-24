@@ -1,0 +1,14 @@
+name = "sayit"
+version = "1.7"
+description = "A text-to-speech command line tool"
+homepage = "https://github.com/pviotti/sayit"
+license = "MIT"
+kind = "app"
+bin = ["SayIt.exe"]
+
+[source.x64]
+url = "https://github.com/pviotti/sayit/releases/download/v1.7/sayit-v1.7-win-sc.zip"
+sha256 = "c1f8da3e230f8c56299f394fedc18a76a5d246b55434fde93c880a731efa23ac"
+
+[autoupdate]
+checkver = { github = "pviotti/sayit" }

@@ -1,0 +1,15 @@
+name = "rustnet"
+version = "1.5.0"
+description = "Network monitoring terminal UI with per-process connection tracking and deep packet inspection."
+homepage = "https://github.com/domcyrus/rustnet"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "rustnet-v1.5.0-x86_64-pc-windows-msvc"
+bin = ["rustnet.exe"]
+
+[source.x64]
+url = "https://github.com/domcyrus/rustnet/releases/download/v1.5.0/rustnet-v1.5.0-x86_64-pc-windows-msvc.zip"
+sha256 = "f233160488a62799cc0bbd7d0c8c61d9fe802570ba898592e3d094d8fc2cdde4"
+
+[autoupdate]
+checkver = { github = "domcyrus/rustnet" }

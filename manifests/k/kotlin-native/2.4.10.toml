@@ -1,0 +1,18 @@
+name = "kotlin-native"
+version = "2.4.10"
+description = "An LLVM backend for the Kotlin compiler, runtime implementation, and native code generation facility using the LLVM toolchain for native binaries runnable without a virtual machine."
+homepage = "https://kotlinlang.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kotlin-native-prebuilt-windows-x86_64-2.4.10"
+bin = ["bin\\cinterop.bat", "bin\\klib.bat", "bin\\konanc.bat", "bin\\generate-platform.bat", "bin\\kotlinc-native.bat", "bin\\run_konan.bat"]
+
+[source.x64]
+url = "https://github.com/JetBrains/kotlin/releases/download/v2.4.10/kotlin-native-prebuilt-windows-x86_64-2.4.10.zip"
+sha256 = "ce99eba1f4faec1d77f4bbd747bb722404ef11f2c349ec70c59d4c002859380f"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/JetBrains/kotlin/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"windows-x86_64-([\\\\w.\\\\-]+)\\\\.zip\"}"

@@ -1,0 +1,18 @@
+name = "tree-sitter"
+version = "0.26.11"
+description = "An incremental parsing system for programming tools"
+homepage = "https://tree-sitter.github.io/tree-sitter/"
+license = "MIT"
+kind = "app"
+bin = ["tree-sitter.exe"]
+
+[source.x64]
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.11/tree-sitter-windows-x64.gz"
+sha256 = "9d836a8c405ed50cea6b3410905576de3bff2b42ca12edc1e825ec86fe918a5f"
+
+[source.arm64]
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.11/tree-sitter-windows-arm64.gz"
+sha256 = "436c5fd1f1b999fedb6ba007c43f73bdfee01549a965420c0cee6a7f6c7f1a44"
+
+[autoupdate]
+checkver = { github = "tree-sitter/tree-sitter" }

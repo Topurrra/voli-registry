@@ -1,0 +1,15 @@
+name = "px"
+version = "0.11.0"
+description = "An HTTP proxy server to automatically authenticate through an NTLM proxy."
+homepage = "https://github.com/genotrance/px"
+license = "MIT"
+kind = "app"
+bin = ["px.exe", "pxw.exe"]
+persist = ["px.ini"]
+
+[source.x64]
+url = "https://github.com/genotrance/px/releases/download/v0.11.0/px-v0.11.0-windows-amd64.zip"
+sha256 = "4e69f56f5bad9878190a5e82b5ea18857d15ef34a04256a624a40b4458e96417"
+
+[autoupdate]
+checkver = { github = "genotrance/px" }

@@ -1,0 +1,18 @@
+name = "s5cmd"
+version = "2.3.0"
+description = "Parallel S3 and local filesystem execution tool."
+homepage = "https://github.com/peak/s5cmd"
+license = "MIT"
+kind = "app"
+bin = ["s5cmd.exe"]
+
+[source.x64]
+url = "https://github.com/peak/s5cmd/releases/download/v2.3.0/s5cmd_2.3.0_Windows-64bit.zip"
+sha256 = "9d8a98c1d9f6284c6d54aeec3daeb5f1412fd101850ae756c1e70dd8ffe52166"
+
+[source.arm64]
+url = "https://github.com/peak/s5cmd/releases/download/v2.3.0/s5cmd_2.3.0_Windows-arm64.zip"
+sha256 = "0d99ce0cbf4a266e7fd9b3cd2682384fb7b432754eb52f17f9a9f7cbe6bcca55"
+
+[autoupdate]
+checkver = { github = "peak/s5cmd" }

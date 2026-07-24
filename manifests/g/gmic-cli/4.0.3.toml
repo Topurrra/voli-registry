@@ -1,0 +1,15 @@
+name = "gmic-cli"
+version = "4.0.3"
+description = "A full-featured open-source framework for digital image processing."
+homepage = "https://gmic.eu"
+license = "CECILL-2.1"
+kind = "app"
+extract_dir = "gmic-4.0.3-cli-win64"
+bin = ["gmic.exe"]
+
+[source.x64]
+url = "https://gmic.eu/get_file.php?file=windows/gmic_4.0.3_cli_win64.zip"
+sha256 = "ba8b35dee1cb87413c6da737a2f973ddb744ee09832ec8629aa43ac29418f957"
+
+[autoupdate]
+checkver = "{\"regex\":\"file=windows/gmic_([\\\\d.]+)_cli_win64.zip\",\"url\":\"https://gmic.eu/download.html\"}"

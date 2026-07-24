@@ -1,0 +1,17 @@
+name = "nunit-extension-nunit-v2-driver"
+version = "3.9.0"
+description = "NUnit V2 Framework Driver Extension"
+homepage = "https://nunit.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "tools"
+
+[source.x64]
+url = "https://packages.chocolatey.org/nunit-extension-nunit-v2-driver.3.9.0.nupkg"
+sha256 = "90a14371bbf5a21dc44d1913bb76c8765719f373fb4b171d75bc63b92ba6b43d"
+
+[depends]
+nunit-console = "*"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\\s+([\\\\d.]+)</title>\",\"url\":\"https://chocolatey.org/packages/nunit-extension-nunit-v2-driver\"}"

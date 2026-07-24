@@ -1,0 +1,15 @@
+name = "psutils"
+version = "0.2023.06.28"
+description = "A collection of command line utilities written in PowerShell proudly ignoring PowerShell Verb-Noun naming conventions."
+homepage = "https://github.com/lukesampson/psutils"
+license = "MIT"
+kind = "app"
+extract_dir = "psutils-1d746384cb351f2e38bdbe98120d3a9322bbd1a0"
+bin = ["gitignore.ps1", "ln.ps1", "runat.ps1", "say.ps1", "shasum.ps1", "sudo.ps1", "time.ps1", { name = "timecmd", path = "time.ps1" }, "touch.ps1", "vimtutor.ps1"]
+
+[source.x64]
+url = "https://github.com/lukesampson/psutils/archive/1d746384cb351f2e38bdbe98120d3a9322bbd1a0.zip"
+sha256 = "fd2609aae7065a6218e566a0345f38e308a1199b9674e38db572c8465b56c3a0"
+
+[autoupdate]
+checkver = { github = "lukesampson/psutils" }

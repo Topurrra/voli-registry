@@ -1,0 +1,14 @@
+name = "hollows-hunter"
+version = "0.4.1.1"
+description = "Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches)."
+homepage = "https://hshrzd.wordpress.com/pe-sieve/"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["hollows_hunter.exe", { name = "hollows-hunter", path = "hollows_hunter.exe" }]
+
+[source.x64]
+url = "https://github.com/hasherezade/hollows_hunter/releases/download/v0.4.1.1/hollows_hunter64.zip"
+sha256 = "00bff71b46f81f1c5f5d6c64fe8682a695a435d00e9b84112d79be05f8e1140c"
+
+[autoupdate]
+checkver = { github = "hasherezade/hollows_hunter" }

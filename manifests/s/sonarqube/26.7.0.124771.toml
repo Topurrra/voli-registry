@@ -1,0 +1,16 @@
+name = "sonarqube"
+version = "26.7.0.124771"
+description = "Platform for continuous inspection of code quality and security using static analysis for 20+ programming languages."
+homepage = "https://www.sonarsource.com/products/sonarqube/"
+license = "LGPL-3.0-only"
+kind = "app"
+extract_dir = "sonarqube-26.7.0.124771"
+bin = ["bin\\windows-x86-64\\StartSonar.bat"]
+persist = ["conf", "data", "extensions", "logs", "temp"]
+
+[source.x64]
+url = "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-26.7.0.124771.zip"
+sha256 = "ed3fba538bbd2531b8afa8b9f6b9e7b04f43bb702443b313addf8fdf427cfc74"
+
+[autoupdate]
+checkver = "{\"regex\":\"Community Build.*?Release (?<version>[\\\\d.]+)\",\"url\":\"https://www.sonarsource.com/products/sonarqube/downloads/\"}"

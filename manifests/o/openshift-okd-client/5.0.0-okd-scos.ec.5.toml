@@ -1,0 +1,14 @@
+name = "openshift-okd-client"
+version = "5.0.0-okd-scos.ec.5"
+description = "OKD is the community distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. OKD adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams."
+homepage = "https://okd.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["oc.exe"]
+
+[source.x64]
+url = "https://github.com/okd-project/okd/releases/download/5.0.0-okd-scos.ec.5/openshift-client-windows-5.0.0-okd-scos.ec.5.zip"
+sha256 = "e10ae4950f90e644d7eae326e8ecff4447e0d739335c52f9a929b8d7f0c58b47"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/okd-project/okd/tags\",\"jsonpath\":\"$[0].name\",\"regex\":\"([\\\\w.-]+)\"}"

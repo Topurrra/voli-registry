@@ -1,0 +1,14 @@
+name = "rv"
+version = "0.22.2"
+description = "A declarative R package manager, allowing you to quickly create reproducible projects."
+homepage = "https://a2-ai.github.io/rv-docs/"
+license = "MIT"
+kind = "app"
+bin = ["rv.exe"]
+
+[source.x64]
+url = "https://github.com/A2-ai/rv/releases/download/v0.22.2/rv-v0.22.2-x86_64-pc-windows-msvc.zip"
+sha256 = "8adc0d558e0459e58eb88a770082211bcb1e23c2efc1f6ba5da3d5a9ba39877c"
+
+[autoupdate]
+checkver = { github = "A2-ai/rv" }

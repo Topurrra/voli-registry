@@ -1,0 +1,15 @@
+name = "algernon"
+version = "1.17.10"
+description = "Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support"
+homepage = "https://algernon.roboticoverlords.org"
+license = "MIT"
+kind = "app"
+extract_dir = "algernon-1.17.10-windows_x86_64_static"
+bin = ["algernon.exe"]
+
+[source.x64]
+url = "https://github.com/xyproto/algernon/releases/download/v1.17.10/algernon-1.17.10-windows_x86_64_static.zip"
+sha256 = "cdc2b95c3b05165f19147e7c606bfb13bda50594064def55db582af45504cc90"
+
+[autoupdate]
+checkver = { github = "xyproto/algernon" }

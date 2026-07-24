@@ -1,0 +1,15 @@
+name = "ispc"
+version = "1.31.0"
+description = "Intel® Implicit SPMD (Single Program Multiple Data) Compiler"
+homepage = "https://ispc.github.io/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "ispc-v1.31.0-windows\\bin"
+bin = ["ispc.exe"]
+
+[source.x64]
+url = "https://github.com/ispc/ispc/releases/download/v1.31.0/ispc-v1.31.0-windows.zip"
+sha256 = "9a18793800b91d5be7b851513672cd9a81a985a5a5dfec5611c2318e8ad4140a"
+
+[autoupdate]
+checkver = { github = "ispc/ispc" }

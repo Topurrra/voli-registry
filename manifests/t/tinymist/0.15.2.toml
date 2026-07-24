@@ -1,0 +1,18 @@
+name = "tinymist"
+version = "0.15.2"
+description = "A brand-new language server for Typst"
+homepage = "https://github.com/Myriad-Dreamin/tinymist"
+license = "Apache-2.0"
+kind = "app"
+bin = ["tinymist.exe"]
+
+[source.x64]
+url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tinymist-x86_64-pc-windows-msvc.zip"
+sha256 = "91edb0d21edca5841b896d702d8086622792d52b71a9b444d8befb0e937969ae"
+
+[source.arm64]
+url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tinymist-aarch64-pc-windows-msvc.zip"
+sha256 = "ed120fc474a07c5614bb8a7ecd17a649360cba26c2d9f1f96b14a8bc7b3afc11"
+
+[autoupdate]
+checkver = { github = "Myriad-Dreamin/tinymist" }

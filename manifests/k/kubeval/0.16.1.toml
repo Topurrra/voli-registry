@@ -1,0 +1,14 @@
+name = "kubeval"
+version = "0.16.1"
+description = "Kubernetes resource files linter"
+homepage = "https://kubeval.instrumenta.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["kubeval.exe"]
+
+[source.x64]
+url = "https://github.com/instrumenta/kubeval/releases/download/v0.16.1/kubeval-windows-amd64.zip"
+sha256 = "3732bd6874f5f508a2f2faa2e47d117562195a94bf2dd20c22036968f26e416a"
+
+[autoupdate]
+checkver = { github = "instrumenta/kubeval" }

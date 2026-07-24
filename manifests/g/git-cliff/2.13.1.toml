@@ -1,0 +1,18 @@
+name = "git-cliff"
+version = "2.13.1"
+description = "A highly customizable Changelog Generator that follows Conventional Commit specifications"
+homepage = "https://git-cliff.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["git-cliff.exe"]
+
+[source.x64]
+url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-x86_64-pc-windows-msvc.zip"
+sha256 = "3ae3a5549e85c7ad5b20192ebcfee4371269deca51255f6f2f2e051c6541f5ca"
+
+[source.arm64]
+url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-aarch64-pc-windows-msvc.zip"
+sha256 = "03a623191fe575bc0024e2ebc61cc861cebd3ba84b93ff13b002c42e8248cd3f"
+
+[autoupdate]
+checkver = { github = "orhun/git-cliff" }

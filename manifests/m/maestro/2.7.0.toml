@@ -1,0 +1,18 @@
+name = "maestro"
+version = "2.7.0"
+description = "An open-source framework that makes UI and end-to-end testing for Android, iOS, and web apps simple and fast."
+homepage = "https://maestro.dev"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "maestro"
+bin = ["bin\\maestro.bat"]
+
+[source.x64]
+url = "https://github.com/mobile-dev-inc/Maestro/releases/download/cli-2.7.0/maestro.zip"
+sha256 = "a4ccab6b604617e7aef6db4f885666056eabe5cfa32befaa3bc994041b8fcbb5"
+
+[env]
+MAESTRO_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "mobile-dev-inc/Maestro" }

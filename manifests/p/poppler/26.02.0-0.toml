@@ -1,0 +1,14 @@
+name = "poppler"
+version = "26.02.0-0"
+description = "PDF rendering library"
+homepage = "https://github.com/oschwartz10612/poppler-windows"
+license = "MIT"
+kind = "app"
+bin = ["bin\\pdfattach.exe", "bin\\pdfdetach.exe", "bin\\pdffonts.exe", "bin\\pdfimages.exe", "bin\\pdfinfo.exe", "bin\\pdfseparate.exe", "bin\\pdftocairo.exe", "bin\\pdftohtml.exe", "bin\\pdftoppm.exe", "bin\\pdftops.exe", "bin\\pdftotext.exe", "bin\\pdfunite.exe"]
+
+[source.x64]
+url = "https://github.com/oschwartz10612/poppler-windows/releases/download/v26.02.0-0/Release-26.02.0-0.zip"
+sha256 = "993e4a94376ed712fafc7058d724ea0b943d118bbd2305cd9ed55174eb85cda5"
+
+[autoupdate]
+checkver = { github = "oschwartz10612/poppler-windows" }

@@ -1,0 +1,14 @@
+name = "tere"
+version = "1.6.0"
+description = "A terminal file explorer that acts as an alternative to the cd + ls commands."
+homepage = "https://github.com/mgunyho/tere"
+license = "EUPL-1.2"
+kind = "app"
+bin = ["tere.exe"]
+
+[source.x64]
+url = "https://github.com/mgunyho/tere/releases/download/v1.6.0/tere-1.6.0-x86_64-pc-windows-gnu.zip"
+sha256 = "cf782e069907df23b0a0bec88552d2ef35e433d5b46f1a855d57f6a70c05d507"
+
+[autoupdate]
+checkver = { github = "mgunyho/tere" }

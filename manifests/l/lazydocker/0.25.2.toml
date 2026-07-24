@@ -1,0 +1,18 @@
+name = "lazydocker"
+version = "0.25.2"
+description = "Terminal UI for both docker and docker-compose"
+homepage = "https://github.com/jesseduffield/lazydocker"
+license = "MIT"
+kind = "app"
+bin = ["lazydocker.exe"]
+
+[source.x64]
+url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Windows_x86_64.zip"
+sha256 = "facae8869c1bf144468191c563002162273a2c2761f052659170530cae3fa8a9"
+
+[source.arm64]
+url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Windows_arm64.zip"
+sha256 = "25a4f4708b7f73a0aeadde13c8d7a172baa5a1ebabccb062765c28ae93029903"
+
+[autoupdate]
+checkver = { github = "jesseduffield/lazydocker" }

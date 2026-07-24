@@ -1,0 +1,18 @@
+name = "ghorg"
+version = "1.11.14"
+description = "Quickly clone an entire org/users repositories into one directory - Supports GitHub, GitLab, Bitbucket, and more"
+homepage = "https://github.com/gabrie30/ghorg"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ghorg.exe"]
+
+[source.x64]
+url = "https://github.com/gabrie30/ghorg/releases/download/v1.11.14/ghorg_1.11.14_Windows_x86_64.tar.gz"
+sha256 = "f82544c3fc9f8afc73d85a7d808d1777195f5c774b01a5f150f7e7129c3b7441"
+
+[source.arm64]
+url = "https://github.com/gabrie30/ghorg/releases/download/v1.11.14/ghorg_1.11.14_Windows_arm64.tar.gz"
+sha256 = "0ed6cec6318cda86c4e967dac76684ffeb94120215d38bd26d6b0460dd15873f"
+
+[autoupdate]
+checkver = { github = "gabrie30/ghorg" }

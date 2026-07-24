@@ -1,0 +1,19 @@
+name = "trippy"
+version = "0.13.0"
+description = "Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues."
+homepage = "https://trippy.rs/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "trippy-0.13.0-x86_64-pc-windows-msvc"
+bin = ["trip.exe"]
+
+[source.x64]
+url = "https://github.com/fujiapple852/trippy/releases/download/0.13.0/trippy-0.13.0-x86_64-pc-windows-msvc.zip"
+sha256 = "74a184434d96eec6c7f8e4b467147c40fa8841fa3722a3ddf51267208fcbbbe6"
+
+[source.arm64]
+url = "https://github.com/fujiapple852/trippy/releases/download/0.13.0/trippy-0.13.0-aarch64-pc-windows-msvc.zip"
+sha256 = "14b9955853d4185675c0e71761230ff9e48136f7ff8f5989a6a591926f44cc6f"
+
+[autoupdate]
+checkver = { github = "fujiapple852/trippy" }

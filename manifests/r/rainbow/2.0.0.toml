@@ -1,0 +1,15 @@
+name = "rainbow"
+version = "2.0.0"
+description = "Print text in rainbow pattern."
+homepage = "https://github.com/arsham/rainbow"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "deploy"
+bin = ["rainbow.exe"]
+
+[source.x64]
+url = "https://github.com/arsham/rainbow/releases/download/v2.0.0/figurine_windows_v2.0.0.zip"
+sha256 = "8a1420e4d6c19261fdd494728c798b830e626eed8e3b0751dab26bf31ddf7bb1"
+
+[autoupdate]
+checkver = { github = "arsham/rainbow" }

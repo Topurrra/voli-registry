@@ -1,0 +1,15 @@
+name = "kopia"
+version = "0.23.1"
+description = "Fast and secure open source backup."
+homepage = "https://kopia.io/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kopia-0.23.1-windows-x64"
+bin = ["kopia.exe"]
+
+[source.x64]
+url = "https://github.com/kopia/kopia/releases/download/v0.23.1/kopia-0.23.1-windows-x64.zip"
+sha256 = "f0369d9657dbe47a1b8b6ff4e308c5958a4813b405d4e32ae9d81b3f2b3d8251"
+
+[autoupdate]
+checkver = { github = "kopia/kopia" }

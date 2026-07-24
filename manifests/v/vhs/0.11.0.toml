@@ -1,0 +1,19 @@
+name = "vhs"
+version = "0.11.0"
+description = "A cli application that allows you to create terminal GIFs as code for integration testing and demoing your CLI tools (ex. neofetch/winfetch)."
+homepage = "https://github.com/charmbracelet/vhs"
+license = "MIT"
+kind = "app"
+extract_dir = "vhs_0.11.0_Windows_x86_64"
+bin = ["vhs.exe"]
+
+[source.x64]
+url = "https://github.com/charmbracelet/vhs/releases/download/v0.11.0/vhs_0.11.0_Windows_x86_64.zip"
+sha256 = "e3d87403b25e1e88addec6548bdbfdbee772a5c313c9f6f96c495b8e163f18ba"
+
+[depends]
+ffmpeg = "*"
+ttyd = "*"
+
+[autoupdate]
+checkver = { github = "charmbracelet/vhs" }

@@ -1,0 +1,14 @@
+name = "omnisharp"
+version = "1.39.15"
+description = "A .NET development platform based on roslyn workspaces"
+homepage = "https://www.omnisharp.net"
+license = "MIT"
+kind = "app"
+bin = ["omnisharp.exe"]
+
+[source.x64]
+url = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.15/omnisharp-win-x64.zip"
+sha256 = "afa4b20c97bf5ba4af0ac87e120c5730ff50b285ea129b353a3761681a3b5183"
+
+[autoupdate]
+checkver = { github = "OmniSharp/omnisharp-roslyn" }

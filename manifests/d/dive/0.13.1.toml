@@ -1,0 +1,18 @@
+name = "dive"
+version = "0.13.1"
+description = "A tool for exploring each layer in a docker image."
+homepage = "https://github.com/wagoodman/dive/"
+license = "MIT"
+kind = "app"
+bin = ["dive.exe"]
+
+[source.x64]
+url = "https://github.com/wagoodman/dive/releases/download/v0.13.1/dive_0.13.1_windows_amd64.zip"
+sha256 = "3e764ff28c7b89f4da679deac80483249fbbae3a1d512c103d54609eec09086a"
+
+[source.arm64]
+url = "https://github.com/wagoodman/dive/releases/download/v0.13.1/dive_0.13.1_windows_arm64.zip"
+sha256 = "de298f2edeffeac3e4c715eb516eab8075b50a7c8fce28194f730f2a384d4dc9"
+
+[autoupdate]
+checkver = { github = "wagoodman/dive" }

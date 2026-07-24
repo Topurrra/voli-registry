@@ -1,0 +1,18 @@
+name = "lab"
+version = "0.25.1"
+description = "An extension to command-line git that helps with everyday GitLab tasks."
+homepage = "https://zaquestion.github.io/lab"
+license = "CC0-1.0"
+kind = "app"
+bin = ["lab.exe"]
+
+[source.x64]
+url = "https://github.com/zaquestion/lab/releases/download/v0.25.1/lab_0.25.1_windows_amd64.zip"
+sha256 = "75daf8d98678c5544b20a1a544ae77506d2f5bd011e7094f251d69bdf3262994"
+
+[source.arm64]
+url = "https://github.com/zaquestion/lab/releases/download/v0.25.1/lab_0.25.1_windows_arm64.zip"
+sha256 = "15715fb650e16aee10a0a2849aec4a96f33a4a2808df562aad28b3fc630c85f6"
+
+[autoupdate]
+checkver = { github = "zaquestion/lab" }

@@ -1,0 +1,14 @@
+name = "aichat"
+version = "0.30.0"
+description = "A powerful chatgpt cli"
+homepage = "https://github.com/sigoden/aichat"
+license = "MIT|Apache"
+kind = "app"
+bin = ["aichat.exe"]
+
+[source.x64]
+url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"
+sha256 = "89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f"
+
+[autoupdate]
+checkver = { github = "sigoden/aichat" }

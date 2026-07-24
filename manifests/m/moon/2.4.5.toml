@@ -1,0 +1,14 @@
+name = "moon"
+version = "2.4.5"
+description = "A task runner and monorepo management tool for the web ecosystem, written in Rust."
+homepage = "https://moonrepo.dev/moon"
+license = "MIT"
+kind = "app"
+bin = ["moon.exe"]
+
+[source.x64]
+url = "https://github.com/moonrepo/moon/releases/download/v2.4.5/moon_cli-x86_64-pc-windows-msvc.zip"
+sha256 = "9beec4165ce2c70982188b200a3ef2ff090db4c8118e3b78f1a672a0912bbeab"
+
+[autoupdate]
+checkver = { github = "moonrepo/moon" }

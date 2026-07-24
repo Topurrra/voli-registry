@@ -1,0 +1,18 @@
+name = "vegeta"
+version = "12.13.0"
+description = "Versatile HTTP load testing tool"
+homepage = "https://github.com/tsenart/vegeta"
+license = "MIT"
+kind = "app"
+bin = ["vegeta.exe"]
+
+[source.x64]
+url = "https://github.com/tsenart/vegeta/releases/download/v12.13.0/vegeta_12.13.0_windows_amd64.zip"
+sha256 = "421362edb7c8e1b97db9faf43806d2a8850067afc97c2f1bf9bc5cdcdfc9c0b6"
+
+[source.arm64]
+url = "https://github.com/tsenart/vegeta/releases/download/v12.13.0/vegeta_12.13.0_windows_arm64.zip"
+sha256 = "d8852495569b006b5db920f437865756573a494123aa8ec5d7af166cf2ce1263"
+
+[autoupdate]
+checkver = { github = "tsenart/vegeta" }

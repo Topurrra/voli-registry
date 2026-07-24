@@ -1,0 +1,11 @@
+name = "httping"
+version = "1.4.1"
+description = "Ping with HTTP requests."
+homepage = "https://www.vanheusden.com/httping/"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["httping.exe"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/httping/httping_1.4.1.7z"
+sha256 = "dbc66ef4fd92cb8e9563cc4dd172f2670104ab73aaf51d643f53030722ff1c41"

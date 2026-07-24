@@ -1,0 +1,14 @@
+name = "twitchdownloader-cli"
+version = "1.56.5"
+description = "A Twitch VOD/Clip/Chat Downloader and Chat Renderer. (CLI Version)"
+homepage = "https://github.com/lay295/TwitchDownloader"
+license = "MIT"
+kind = "app"
+bin = ["TwitchDownloaderCLI.exe"]
+
+[source.x64]
+url = "https://github.com/lay295/TwitchDownloader/releases/download/1.56.5/TwitchDownloaderCLI-1.56.5-Windows-x64.zip"
+sha256 = "8b1b0695f2b1b6bf0d2535fab4b84032951cded8cf4078dfdf4d58e391c813a0"
+
+[autoupdate]
+checkver = { github = "lay295/TwitchDownloader" }

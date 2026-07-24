@@ -1,0 +1,11 @@
+name = "unar"
+version = "1.8.1"
+description = "Universal archives extractor."
+homepage = "https://theunarchiver.com/command-line"
+license = "LGPL-2.1-or-later"
+kind = "app"
+bin = ["lsar.exe", "unar.exe"]
+
+[source.x64]
+url = "https://cdn.theunarchiver.com/downloads/unarWindows.zip"
+sha256 = "61a6b299606282f72f51c278801eac11d3dccfac83e2d68bccce33539912e0dd"

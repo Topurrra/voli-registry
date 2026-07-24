@@ -1,0 +1,18 @@
+name = "air"
+version = "1.67.2"
+description = "A live-reloading command line utility for developing Go applications."
+homepage = "https://github.com/air-verse/air"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["air.exe"]
+
+[source.x64]
+url = "https://github.com/air-verse/air/releases/download/v1.67.2/air_1.67.2_windows_amd64.tar.gz"
+sha256 = "2190f1fed649f95e20f9d6af7b5543e5e6c4064ac133664a0bda5f239c1e4bc3"
+
+[source.arm64]
+url = "https://github.com/air-verse/air/releases/download/v1.67.2/air_1.67.2_windows_arm64.tar.gz"
+sha256 = "b2897dfa4fffe5f6b11a550941f06e36e940cafdc77b0d477922c328e7bd709e"
+
+[autoupdate]
+checkver = { github = "air-verse/air" }

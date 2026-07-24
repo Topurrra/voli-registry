@@ -1,0 +1,14 @@
+name = "blink1-tool"
+version = "2.5.0"
+description = "Control the blink(1) USB RGB indicator light"
+homepage = "https://blink1.thingm.com/"
+license = "CC-BY-SA-3.0"
+kind = "app"
+bin = ["blink1-tool.exe"]
+
+[source.x64]
+url = "https://github.com/todbot/blink1-tool/releases/download/v2.5.0/blink1-tool-v2.5.0-windows-x86_64.zip"
+sha256 = "997fa0a19f5e7bd157d8bca3b19c57a93b005fa77c74b3684b52627d244cd25f"
+
+[autoupdate]
+checkver = { github = "todbot/blink1-tool" }

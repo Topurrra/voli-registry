@@ -1,0 +1,18 @@
+name = "aliyundrive-webdav"
+version = "2.3.3"
+description = "Aliyundrive WebDav Service"
+homepage = "https://github.com/messense/aliyundrive-webdav"
+license = "MIT"
+kind = "app"
+bin = ["aliyundrive-webdav.exe"]
+
+[source.x64]
+url = "https://github.com/messense/aliyundrive-webdav/releases/download/v2.3.3/aliyundrive-webdav-v2.3.3.x86_64-pc-windows-msvc.zip"
+sha256 = "6582ce142faba27bb8b3ee0295dda209a675653f84fd69403cf54be2eacb9e13"
+
+[source.arm64]
+url = "https://github.com/messense/aliyundrive-webdav/releases/download/v2.3.3/aliyundrive-webdav-v2.3.3.x86_64-pc-windows-msvc.zip"
+sha256 = "6582ce142faba27bb8b3ee0295dda209a675653f84fd69403cf54be2eacb9e13"
+
+[autoupdate]
+checkver = { github = "messense/aliyundrive-webdav" }

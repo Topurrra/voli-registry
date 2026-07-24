@@ -1,0 +1,14 @@
+name = "mach2"
+version = "0.7.0.0"
+description = "Feature Control Multi-tool for Windows 10"
+homepage = "https://github.com/riverar/mach2"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["mach2.exe"]
+
+[source.x64]
+url = "https://github.com/riverar/mach2/releases/download/0.7.0.0/mach2_0.7.0.0_x64.zip"
+sha256 = "96e111c709c8401059039f962264e151ed5cf48489fba0d3946562e2f96f5c47"
+
+[autoupdate]
+checkver = { github = "riverar/mach2" }

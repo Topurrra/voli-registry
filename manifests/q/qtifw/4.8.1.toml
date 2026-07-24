@@ -1,0 +1,14 @@
+name = "qtifw"
+version = "4.8.1"
+description = "A set of tools and utilities to create installers."
+homepage = "https://doc.qt.io/qtinstallerframework/ifw-overview.html"
+license = "GPL-3.0-only,Qt Company GPL Exception 1.0"
+kind = "app"
+bin = [{ name = "qtifw-archivegen", path = "bin\\archivegen.exe" }, { name = "qtifw-binarycreator", path = "bin\\binarycreator.exe" }, { name = "qtifw-devtool", path = "bin\\devtool.exe" }, { name = "qtifw-repogen", path = "bin\\repogen.exe" }]
+
+[source.x64]
+url = "https://download.qt.io/official_releases/qt-installer-framework/4.8.1/QtInstallerFramework-windows-x64-4.8.1.exe#/dl.7z"
+sha256 = "b0a7c6816dfaff7d571c9e5350fc08952f12022be87a28f6d8d36a78428c6210"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)/\\\">[\\\\d.]+\",\"url\":\"https://download.qt.io/official_releases/qt-installer-framework/?C=M;O=D\"}"

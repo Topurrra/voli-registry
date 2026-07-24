@@ -1,0 +1,17 @@
+name = "apimtemplate"
+version = "1.1.1"
+description = "Azure API Management DevOps Resource Kit"
+homepage = "https://github.com/Azure/azure-api-management-devops-resource-kit"
+license = "MIT"
+kind = "app"
+bin = ["armtemplates.exe"]
+
+[source.x64]
+url = "https://github.com/Azure/azure-api-management-devops-resource-kit/releases/download/1.1.1/reskit-1.1.1.zip"
+sha256 = "11cfd076512f968bc394520942e5411d3ae25c9ac8df71139f6b02a361415dcd"
+
+[depends]
+azure-cli = "*"
+
+[autoupdate]
+checkver = { github = "Azure/azure-api-management-devops-resource-kit" }

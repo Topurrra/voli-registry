@@ -1,0 +1,18 @@
+name = "tenv"
+version = "4.14.8"
+description = "OpenTofu, Terraform, Terragrunt, and Atmos version manager, written in Go."
+homepage = "https://tofuutils.github.io/tenv/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["atmos.exe", "tenv.exe", "terraform.exe", "terragrunt.exe", "tf.exe", "tofu.exe"]
+
+[source.x64]
+url = "https://github.com/tofuutils/tenv/releases/download/v4.14.8/tenv_v4.14.8_Windows_x86_64.zip"
+sha256 = "6bafb4e2ccb4498b47659b8b39a0a644f44985fc63641fd2e43a1d12b89c7882"
+
+[source.arm64]
+url = "https://github.com/tofuutils/tenv/releases/download/v4.14.8/tenv_v4.14.8_Windows_arm64.zip"
+sha256 = "5fe0c13786409ce6641f3781b3c64461e837b69a6e7256e2d2715bcb1ecbdc6c"
+
+[autoupdate]
+checkver = { github = "tofuutils/tenv" }

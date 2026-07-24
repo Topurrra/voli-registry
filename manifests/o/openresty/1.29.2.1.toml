@@ -1,0 +1,16 @@
+name = "openresty"
+version = "1.29.2.1"
+description = "Dynamic web platform based on NGINX and LuaJIT."
+homepage = "https://openresty.org"
+license = "BSD-2-Clause"
+kind = "app"
+extract_dir = "openresty-1.29.2.1-win64"
+bin = [{ name = "openresty", path = "nginx.exe" }, "resty.bat", "restydoc.bat", "restydoc-index.bat"]
+persist = ["conf", "html", "logs"]
+
+[source.x64]
+url = "https://openresty.org/download/openresty-1.29.2.1-win64.zip"
+sha256 = "44586213135d21aa2c48eec533b4c207bdfecda53bd9b6d5563f1aac544aca4b"
+
+[autoupdate]
+checkver = "{\"regex\":\"openresty-([\\\\d.]+)-win\",\"url\":\"https://openresty.org/en/download.html\"}"

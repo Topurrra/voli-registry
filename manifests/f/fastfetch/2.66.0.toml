@@ -1,0 +1,18 @@
+name = "fastfetch"
+version = "2.66.0"
+description = "A maintained, feature-rich and performance oriented, neofetch like system information tool"
+homepage = "https://github.com/fastfetch-cli/fastfetch"
+license = "MIT"
+kind = "app"
+bin = ["fastfetch.exe", "flashfetch.exe"]
+
+[source.x64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.66.0/fastfetch-windows-amd64.7z"
+sha256 = "290bc98a4cedf7ff81cf40481718cff465d4f33eb73f67ddd62982bf2155f461"
+
+[source.arm64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.66.0/fastfetch-windows-aarch64.7z"
+sha256 = "8613fc985dae3e0205496724f9d8ca950971675c68fb1f19c338259676a669c6"
+
+[autoupdate]
+checkver = { github = "fastfetch-cli/fastfetch" }

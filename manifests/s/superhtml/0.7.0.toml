@@ -1,0 +1,18 @@
+name = "superhtml"
+version = "0.7.0"
+description = "HTML Language Server & Templating Language Library"
+homepage = "https://github.com/kristoff-it/superhtml"
+license = "MIT"
+kind = "app"
+bin = ["superhtml.exe"]
+
+[source.x64]
+url = "https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/x86_64-windows.zip"
+sha256 = "1ecb8d701ee01a837c6664707e49328821b660c28a5da82edbbb4e3639afccdc"
+
+[source.arm64]
+url = "https://github.com/kristoff-it/superhtml/releases/download/v0.7.0/aarch64-windows.zip"
+sha256 = "359223875d104386f7fed2ace844bf70540073ce1d5c24a6fff232a2cdcb563f"
+
+[autoupdate]
+checkver = { github = "kristoff-it/superhtml" }

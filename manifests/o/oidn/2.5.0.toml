@@ -1,0 +1,14 @@
+name = "oidn"
+version = "2.5.0"
+description = "Intel Open Image Denoise library"
+homepage = "https://github.com/RenderKit/oidn"
+license = "Apache-2.0"
+kind = "app"
+bin = ["oidnBenchmark.exe", "oidnDenoise.exe", "oidnTest.exe"]
+
+[source.x64]
+url = "https://github.com/RenderKit/oidn/releases/download/v2.5.0/oidn-2.5.0.x64.windows.zip"
+sha256 = "6ae0474ef7606d68647c1e2c2842832d6af01128ee84a523d30368a91013b707"
+
+[autoupdate]
+checkver = { github = "RenderKit/oidn" }

@@ -1,0 +1,14 @@
+name = "binaryen"
+version = "131"
+description = "Compiler infrastructure and toolchain library for WebAssembly"
+homepage = "https://github.com/WebAssembly/binaryen"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\wasm2js.exe", "bin\\wasm-as.exe", "bin\\wasm-ctor-eval.exe", "bin\\wasm-dis.exe", "bin\\wasm-emscripten-finalize.exe", "bin\\wasm-metadce.exe", "bin\\wasm-opt.exe", "bin\\wasm-reduce.exe", "bin\\wasm-shell.exe", "bin\\wasm-split.exe", "bin\\wasm-merge.exe"]
+
+[source.x64]
+url = "https://github.com/WebAssembly/binaryen/releases/download/version_131/binaryen-version_131-x86_64-windows.tar.gz"
+sha256 = "2f4edac1703a2f695254d6ff52ede03481e67db1f094915763d863158c17d9bc"
+
+[autoupdate]
+checkver = { github = "WebAssembly/binaryen" }

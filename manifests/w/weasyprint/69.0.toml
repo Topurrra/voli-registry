@@ -1,0 +1,15 @@
+name = "weasyprint"
+version = "69.0"
+description = "The awesome document factory"
+homepage = "https://weasyprint.org"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "dist"
+bin = ["weasyprint.exe"]
+
+[source.x64]
+url = "https://github.com/Kozea/WeasyPrint/releases/download/v69.0/weasyprint-windows.zip"
+sha256 = "330101ff3ea50ebde4abf805283b6d703d5f3d71c77c983db94357ec4524a3ef"
+
+[autoupdate]
+checkver = { github = "Kozea/WeasyPrint" }

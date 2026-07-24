@@ -1,0 +1,18 @@
+name = "globalping"
+version = "1.5.2"
+description = "Access a global network of probes without leaving your console"
+homepage = "https://www.jsdelivr.com/globalping"
+license = "MPL-2.0"
+kind = "app"
+bin = ["globalping.exe"]
+
+[source.x64]
+url = "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Windows_x86_64.zip"
+sha256 = "11d4499567240525b88eacb29c5e21f62898a9c21e7f1878dd193845eb62f222"
+
+[source.arm64]
+url = "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Windows_arm64.zip"
+sha256 = "689a9c4428e14c3f9ee289b38ec53ed0527251e9837507c4072a8356f62dbd4c"
+
+[autoupdate]
+checkver = { github = "jsdelivr/globalping-cli" }

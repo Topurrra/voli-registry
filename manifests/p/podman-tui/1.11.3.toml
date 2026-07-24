@@ -1,0 +1,15 @@
+name = "podman-tui"
+version = "1.11.3"
+description = "Podman Terminal UI"
+homepage = "https://github.com/containers/podman-tui"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "podman-tui-release-windows_amd64/podman-tui-1.11.3"
+bin = ["podman-tui.exe"]
+
+[source.x64]
+url = "https://github.com/containers/podman-tui/releases/download/v1.11.3/podman-tui-release-windows_amd64.zip"
+sha256 = "17089acca3d6b4fbc9f35b51574cdba41932f5e0f9a60e820a00a1c8f20cba5a"
+
+[autoupdate]
+checkver = { github = "containers/podman-tui" }

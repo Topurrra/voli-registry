@@ -1,0 +1,15 @@
+name = "harfbuzz"
+version = "14.2.1"
+description = "Text shaping engine. Supports OpenType and Apple Advanced Typography."
+homepage = "https://harfbuzz.github.io/"
+license = "MIT"
+kind = "app"
+extract_dir = "harfbuzz-win64"
+bin = ["hb-shape.exe", "hb-subset.exe", "hb-view.exe"]
+
+[source.x64]
+url = "https://github.com/harfbuzz/harfbuzz/releases/download/14.2.1/harfbuzz-win64-14.2.1.zip"
+sha256 = "493f7ca6e45377ffb8a330d4ca2abd14f82032da85e4a7094bbaa6059c5dde99"
+
+[autoupdate]
+checkver = { github = "harfbuzz/harfbuzz" }

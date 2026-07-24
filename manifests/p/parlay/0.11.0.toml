@@ -1,0 +1,18 @@
+name = "parlay"
+version = "0.11.0"
+description = "Enrich SBOMs with data from third party services."
+homepage = "https://github.com/snyk/parlay"
+license = "Apache-2.0"
+kind = "app"
+bin = ["parlay.exe"]
+
+[source.x64]
+url = "https://github.com/snyk/parlay/releases/download/v0.11.0/parlay_Windows_x86_64.zip"
+sha256 = "51e5fee301181cffb8dd1fad8757bdc9328990ad7c73f4d700b06591b7757599"
+
+[source.arm64]
+url = "https://github.com/snyk/parlay/releases/download/v0.11.0/parlay_Windows_arm64.zip"
+sha256 = "26887cf90fccb9c7f8daf2f3003022551fa6c1f2e4146ad199785039a4b8ac7c"
+
+[autoupdate]
+checkver = { github = "snyk/parlay" }

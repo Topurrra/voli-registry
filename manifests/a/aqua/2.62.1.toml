@@ -1,0 +1,18 @@
+name = "aqua"
+version = "2.62.1"
+description = "Declarative CLI version manager written in Go"
+homepage = "https://aquaproj.github.io/"
+license = "MIT"
+kind = "app"
+bin = ["aqua.exe"]
+
+[source.x64]
+url = "https://github.com/aquaproj/aqua/releases/download/v2.62.1/aqua_windows_amd64.zip"
+sha256 = "e283911dd8def160ac85c15140790033f7668bd765a551f6d32a21b066322684"
+
+[source.arm64]
+url = "https://github.com/aquaproj/aqua/releases/download/v2.62.1/aqua_windows_arm64.zip"
+sha256 = "9398024ab265e1916c71237b6de2c3fc61f2bb0349108cf80d2183cbc31b11a5"
+
+[autoupdate]
+checkver = { github = "aquaproj/aqua" }

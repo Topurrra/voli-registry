@@ -1,0 +1,15 @@
+name = "flyway"
+version = "13.0.0"
+description = "Database migration tool that favors simplicity and convention over configuration."
+homepage = "https://github.com/flyway/flyway"
+license = "Apache-2.0"
+kind = "app"
+bin = ["flyway.cmd"]
+persist = ["conf", "sql", "jars"]
+
+[source.x64]
+url = "https://github.com/flyway/flyway/releases/download/flyway-13.0.0/flyway-commandline-13.0.0-windows-x64.zip"
+sha256 = "6c9d9c52d8ffeb06f3909f5aa392dae06d3f9abb74ac221a6201c51c579ac817"
+
+[autoupdate]
+checkver = { github = "flyway/flyway" }

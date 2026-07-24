@@ -1,0 +1,70 @@
+name: publish
+
+# On merge to main: recompile the signed index and publish the triple
+# (index.sqlite.zst, index.sig, index.json) to the `index` release tag, always
+# replacing the assets in place so the client's index_url is stable.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "manifests/**"
+      - ".github/workflows/publish.yml"
+
+permissions:
+  contents: write # required to create/update the release and its assets
+
+concurrency:
+  group: publish-index
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: cargo-voli-index-tool-${{ runner.os }}
+
+      # NOTE: same source install as validate.yml. Swap for a prebuilt
+      # release-binary download once the main repo publishes them.
+      - name: Install voli-index-tool
+        run: cargo install --git https://github.com/Topurrra/voli voli-index-tool --locked
+
+      - name: Build signed index
+        env:
+          # Ed25519 signing key (hex). Stored as a GitHub Actions secret.
+          # For now this is the dev key from the main repo's
+          # registry-dev/dev-signing-key.hex — ROTATE before public launch.
+          VOLI_INDEX_SIGNING_KEY: ${{ secrets.VOLI_INDEX_SIGNING_KEY }}
+        run: |
+          printf '%s' "$VOLI_INDEX_SIGNING_KEY" > signing-key.hex
+          voli-index-tool build manifests/ --out dist/ --key signing-key.hex
+          rm -f signing-key.hex
+
+      # The client (voli-core index::net) fetches, from the release's asset URL:
+      #   <index_url>/index.json
+      #   <index_url>/index.sqlite.zst
+      #   <index_url>/index.sig
+      # where index_url = .../releases/download/index. Uploading these three as
+      # assets on tag `index` produces exactly those URLs. index.sqlite (the
+      # uncompressed db) is intentionally NOT uploaded — the client never fetches it.
+      - name: Publish to the `index` release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: index
+          name: Package index
+          body: "Latest signed Voli package index. Auto-published from main."
+          files: |
+            dist/index.sqlite.zst
+            dist/index.sig
+            dist/index.json

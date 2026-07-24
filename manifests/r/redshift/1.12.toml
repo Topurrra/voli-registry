@@ -1,0 +1,15 @@
+name = "redshift"
+version = "1.12"
+description = "Adjusts the color temperature of screen according to surroundings."
+homepage = "http://jonls.dk/redshift"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "redshift-windows-x86_64"
+bin = ["redshift.exe"]
+
+[source.x64]
+url = "https://github.com/sharpbracket/redshift/releases/download/v1.12/redshift-windows-x86_64.zip"
+sha256 = "9e56e2f88ad13e372ac815f37b6b7dbe0aeba4224a0a8441db9bdfe1ef3a8b8d"
+
+[autoupdate]
+checkver = { github = "sharpbracket/redshift" }

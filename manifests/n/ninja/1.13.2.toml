@@ -1,0 +1,18 @@
+name = "ninja"
+version = "1.13.2"
+description = "A small build system with a focus on speed."
+homepage = "https://ninja-build.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ninja.exe"]
+
+[source.x64]
+url = "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip"
+sha256 = "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65"
+
+[source.arm64]
+url = "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-winarm64.zip"
+sha256 = "e52f0bdef9dfb1003229dbd6508a508c4073fd017247002adc66e5e806cb0391"
+
+[autoupdate]
+checkver = { github = "ninja-build/ninja" }

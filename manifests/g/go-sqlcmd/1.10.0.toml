@@ -1,0 +1,18 @@
+name = "go-sqlcmd"
+version = "1.10.0"
+description = "sqlcmd is a multi-platform command line experience for Microsoft SQL Server and Azure SQL"
+homepage = "https://github.com/microsoft/go-sqlcmd"
+license = "MIT"
+kind = "app"
+bin = ["sqlcmd.exe"]
+
+[source.x64]
+url = "https://github.com/microsoft/go-sqlcmd/releases/download/v1.10.0/sqlcmd-windows-amd64.zip"
+sha256 = "a4c28332fcc6e497d655e53ac8f4939f4ab170f9cfd32d0fa5081b60f4d9d691"
+
+[source.arm64]
+url = "https://github.com/microsoft/go-sqlcmd/releases/download/v1.10.0/sqlcmd-windows-arm64.zip"
+sha256 = "ac6f257dce55e7f34d618ea9af736d9077854cadb6af6fdb0259c90d42e0b8d2"
+
+[autoupdate]
+checkver = { github = "microsoft/go-sqlcmd" }

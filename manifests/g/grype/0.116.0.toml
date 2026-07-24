@@ -1,0 +1,14 @@
+name = "grype"
+version = "0.116.0"
+description = "A vulnerability scanner for container images and filesystems."
+homepage = "https://github.com/anchore/grype"
+license = "Apache-2.0"
+kind = "app"
+bin = ["grype.exe"]
+
+[source.x64]
+url = "https://github.com/anchore/grype/releases/download/v0.116.0/grype_0.116.0_windows_amd64.zip"
+sha256 = "e5301bca123e7bb545a551cb6cc91a66b8400f65d6897005eca9f40fc16ce107"
+
+[autoupdate]
+checkver = { github = "anchore/grype" }

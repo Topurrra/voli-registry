@@ -1,0 +1,15 @@
+name = "subconverter"
+version = "0.9.0"
+description = "Utility to convert between various subscription format."
+homepage = "https://github.com/tindy2013/subconverter"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["subconverter.exe"]
+persist = ["config", "profiles", "rules"]
+
+[source.x64]
+url = "https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_win64.7z"
+sha256 = "e97d100b2e1cdd1daba863307ad05a6d7f785783d17a3c2df897bcefabaf5d4d"
+
+[autoupdate]
+checkver = { github = "tindy2013/subconverter" }

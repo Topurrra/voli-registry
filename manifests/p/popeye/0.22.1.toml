@@ -1,0 +1,18 @@
+name = "popeye"
+version = "0.22.1"
+description = "A Kubernetes cluster resource sanitizer."
+homepage = "https://popeyecli.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["popeye.exe"]
+
+[source.x64]
+url = "https://github.com/derailed/popeye/releases/download/v0.22.1/popeye_windows_amd64.tar.gz"
+sha256 = "fa5c155d65313e93985bdb7ed1a79fb0e310b7868848dfaf381ea081f349dacc"
+
+[source.arm64]
+url = "https://github.com/derailed/popeye/releases/download/v0.22.1/popeye_windows_arm64.tar.gz"
+sha256 = "91aee5c13655f6fa509e79a87963ec0a81dd23486bb54a4845b3d0db33dabfb0"
+
+[autoupdate]
+checkver = { github = "derailed/popeye" }

@@ -1,0 +1,14 @@
+name = "boundary"
+version = "0.21.3"
+description = "Simple and secure remote access for any system from anywhere based on user identity"
+homepage = "https://www.boundaryproject.io"
+license = "MPL-2.0"
+kind = "app"
+bin = ["boundary.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/boundary/0.21.3/boundary_0.21.3_windows_amd64.zip"
+sha256 = "34a143a6796d3c6cfb10d6858dd25ccfadf0008eec06a074315c8e2e65eb03a3"
+
+[autoupdate]
+checkver = "{\"regex\":\"boundary_([\\\\d.]+)</a>\",\"url\":\"https://releases.hashicorp.com/boundary/\"}"

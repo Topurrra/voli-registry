@@ -1,0 +1,14 @@
+name = "jcli"
+version = "0.0.47"
+description = "Multiple Jenkins servers manager"
+homepage = "https://jenkins-zh.github.io/jcli-docs/"
+license = "MIT"
+kind = "app"
+bin = ["jcli.exe"]
+
+[source.x64]
+url = "https://github.com/jenkins-zh/jenkins-cli/releases/download/v0.0.47/jcli-windows-amd64.zip"
+sha256 = "deadcca486c55d2d243a9351c18f5387f95ddf9f99c28423145ead696eeefbbb"
+
+[autoupdate]
+checkver = { github = "jenkins-zh/jenkins-cli" }

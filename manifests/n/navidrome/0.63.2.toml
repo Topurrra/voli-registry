@@ -1,0 +1,14 @@
+name = "navidrome"
+version = "0.63.2"
+description = "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!"
+homepage = "https://www.navidrome.org/"
+license = "GPL-3.0"
+kind = "app"
+bin = ["navidrome.exe"]
+
+[source.x64]
+url = "https://github.com/navidrome/navidrome/releases/download/v0.63.2/navidrome_0.63.2_windows_amd64.zip"
+sha256 = "b2de41128e563beec4a92de4e8116c35d73dabad2d708e93c544ddcbab53fada"
+
+[autoupdate]
+checkver = { github = "navidrome/navidrome" }

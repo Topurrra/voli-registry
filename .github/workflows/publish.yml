@@ -4,6 +4,7 @@ name: publish
 # (index.sqlite.zst, index.sig, index.json) to the `index` release tag, always
 # replacing the assets in place so the client's index_url is stable.
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:

@@ -69,3 +69,19 @@ jobs:
             dist/index.sqlite.zst
             dist/index.sig
             dist/index.json
+            dist/packages.json
+
+      # Also commit packages.json to the repo: the website fetches it via
+      # raw.githubusercontent.com because GitHub's release-asset endpoint sends
+      # no CORS headers (verified 2026-07-24). Root path is outside this
+      # workflow's `paths` filter, so this commit cannot retrigger publish.
+      - name: Commit packages.json for the website
+        run: |
+          cp dist/packages.json packages.json
+          if ! git diff --quiet -- packages.json 2>/dev/null || [ -n "$(git status --porcelain packages.json)" ]; then
+            git config user.name "voli-registry-ci"
+            git config user.email "ci@volibear.dev"
+            git add packages.json
+            git commit -m "ci: refresh packages.json"
+            git push
+          fi

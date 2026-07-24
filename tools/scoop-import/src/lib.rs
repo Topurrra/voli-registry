@@ -36,8 +36,14 @@ const SCRIPT_FIELDS: [&str; 7] = [
 
 struct SourceParts {
     url: String,
-    sha256: String,
+    hash: Hash,
     extract_dir: Option<String>,
+}
+
+/// Hash algorithm used by the source.
+enum Hash {
+    Sha256(String),
+    Sha512(String),
 }
 
 enum BinOut {
@@ -193,12 +199,12 @@ fn resolve_entry(entry: Option<&Value>) -> Result<Option<SourceParts>, &'static 
     if is_installer_ext(&url) {
         return Err("installer-binary");
     }
-    let sha256 = normalize_hash(&raw_hash)?;
+    let hash = normalize_hash(&raw_hash)?;
     let extract_dir = entry.get("extract_dir").and_then(first_string);
 
     Ok(Some(SourceParts {
         url,
-        sha256,
+        hash,
         extract_dir,
     }))
 }
@@ -227,22 +233,31 @@ fn first_string(v: &Value) -> Option<String> {
         .map(str::to_string)
 }
 
-/// Normalize a Scoop hash to a 64-hex sha256, handling a `sha256:` prefix.
-/// md5/sha1/sha512 (by prefix or by length) are rejected.
-fn normalize_hash(raw: &str) -> Result<String, &'static str> {
+/// Normalize a Scoop hash to a [`Hash`], handling `sha256:`/`sha512:` prefixes.
+/// md5/sha1 (by prefix or by length) are still rejected.
+fn normalize_hash(raw: &str) -> Result<Hash, &'static str> {
     let raw = raw.trim();
     if let Some((prefix, rest)) = raw.split_once(':') {
         return match prefix.to_ascii_lowercase().as_str() {
-            "sha256" => hex64(rest),
-            _ => Err("unsupported-hash"), // md5/sha1/sha512/unknown
+            "sha256" => Ok(Hash::Sha256(hex_n(rest, 64)?)),
+            "sha512" => Ok(Hash::Sha512(hex_n(rest, 128)?)),
+            _ => Err("unsupported-hash"), // md5/sha1/unknown
         };
     }
-    hex64(raw)
+    // Bare hash: determine by length.
+    let s = raw.trim().to_ascii_lowercase();
+    if s.len() == 64 && s.chars().all(|c| c.is_ascii_hexdigit()) {
+        Ok(Hash::Sha256(s))
+    } else if s.len() == 128 && s.chars().all(|c| c.is_ascii_hexdigit()) {
+        Ok(Hash::Sha512(s))
+    } else {
+        Err("unsupported-hash")
+    }
 }
 
-fn hex64(s: &str) -> Result<String, &'static str> {
+fn hex_n(s: &str, len: usize) -> Result<String, &'static str> {
     let s = s.trim().to_ascii_lowercase();
-    if s.len() == 64 && s.chars().all(|c| c.is_ascii_hexdigit()) {
+    if s.len() == len && s.chars().all(|c| c.is_ascii_hexdigit()) {
         Ok(s)
     } else {
         Err("unsupported-hash")
@@ -626,12 +641,18 @@ fn emit_toml(
     if let Some(s) = x64 {
         o.push_str("\n[source.x64]\n");
         o.push_str(&format!("url = {}\n", esc(&s.url)));
-        o.push_str(&format!("sha256 = {}\n", esc(&s.sha256)));
+        match &s.hash {
+            Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
+            Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
+        }
     }
     if let Some(s) = arm64 {
         o.push_str("\n[source.arm64]\n");
         o.push_str(&format!("url = {}\n", esc(&s.url)));
-        o.push_str(&format!("sha256 = {}\n", esc(&s.sha256)));
+        match &s.hash {
+            Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
+            Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
+        }
     }
     if !env.is_empty() {
         o.push_str("\n[env]\n");

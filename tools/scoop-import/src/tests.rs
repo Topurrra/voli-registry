@@ -37,7 +37,7 @@ fn simple_single_url_top_level() {
     assert_eq!(m.kind, Kind::App);
     assert!(m.source.x64.is_some());
     assert!(m.source.arm64.is_none());
-    assert_eq!(m.source.x64.unwrap().sha256, "a".repeat(64));
+    assert_eq!(m.source.x64.unwrap().hash(), "a".repeat(64));
     assert_eq!(m.bin, vec![Bin::Path("tool.exe".into())]);
 }
 
@@ -56,7 +56,7 @@ fn per_arch_sources() {
         }),
     );
     assert_eq!(m.source.x64.unwrap().url, "https://x/rg-x64.zip");
-    assert_eq!(m.source.arm64.unwrap().sha256, "3".repeat(64));
+    assert_eq!(m.source.arm64.unwrap().hash(), "3".repeat(64));
     // extract_dir prefers x64.
     assert_eq!(m.extract_dir.as_deref(), Some("rg-x64"));
 }
@@ -224,7 +224,7 @@ fn hash_prefix_sha256_handled() {
         }),
     );
     // Prefix stripped and lowercased.
-    assert_eq!(m.source.x64.unwrap().sha256, "f".repeat(64));
+    assert_eq!(m.source.x64.unwrap().hash(), "f".repeat(64));
 }
 
 #[test]
@@ -358,12 +358,29 @@ fn skip_no_hash() {
 
 #[test]
 fn skip_unsupported_hash() {
-    // md5 (32 hex) by length.
+    // md5 (32 hex) by length — still rejected.
     let md5 = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": "b".repeat(32) });
     assert_eq!(skip_reason("s", md5), "unsupported-hash");
-    // sha512 by prefix.
-    let sha512 = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": format!("sha512:{}", "b".repeat(128)) });
-    assert_eq!(skip_reason("s", sha512), "unsupported-hash");
+    // sha1 by prefix — still rejected.
+    let sha1 = json!({ "version": "1.0", "url": "https://x/a.zip", "hash": format!("sha1:{}", "b".repeat(40)) });
+    assert_eq!(skip_reason("s", sha1), "unsupported-hash");
+}
+
+#[test]
+fn sha512_now_accepted() {
+    // sha512 by prefix — now accepted (round 2).
+    let m = ok(
+        "s",
+        json!({ "version": "1.0", "url": "https://x/a.zip", "hash": format!("sha512:{}", "b".repeat(128)) }),
+    );
+    assert!(m.source.x64.as_ref().unwrap().is_sha512());
+    assert_eq!(m.source.x64.unwrap().hash(), "b".repeat(128));
+    // bare 128-hex — also accepted.
+    let m2 = ok(
+        "s",
+        json!({ "version": "1.0", "url": "https://x/a.zip", "hash": "b".repeat(128) }),
+    );
+    assert!(m2.source.x64.as_ref().unwrap().is_sha512());
 }
 
 #[test]

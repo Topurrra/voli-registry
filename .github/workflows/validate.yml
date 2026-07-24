@@ -30,7 +30,7 @@ jobs:
       # TODO: replace with a downloaded prebuilt `voli-index-tool` release
       # binary once the main repo publishes them — cuts CI to seconds.
       - name: Install voli-index-tool
-        run: cargo install --git https://github.com/Topurrra/voli voli-index-tool --locked
+        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
 
       - name: Validate manifests
         run: voli-index-tool validate manifests/

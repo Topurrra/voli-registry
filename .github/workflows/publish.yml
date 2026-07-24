@@ -39,7 +39,7 @@ jobs:
       # NOTE: same source install as validate.yml. Swap for a prebuilt
       # release-binary download once the main repo publishes them.
       - name: Install voli-index-tool
-        run: cargo install --git https://github.com/Topurrra/voli voli-index-tool --locked
+        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
 
       - name: Build signed index
         env:

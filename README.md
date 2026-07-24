@@ -76,11 +76,6 @@ the GitHub Actions secret **`VOLI_INDEX_SIGNING_KEY`** (hex-encoded 32-byte
 secret). The client verifies against the public key embedded in the `voli`
 binary.
 
-> **For now** the secret is the **dev key** from the main repo
-> (`registry-dev/dev-signing-key.hex`), which matches the client's built-in
-> `DEV_PUBKEY`. **Rotate to a real offline key — and re-embed its public half in
-> the client — before public launch.**
-
 ## License
 
 MIT — see [`LICENSE`](LICENSE). Manifests imported from Scoop are MIT from

@@ -1,0 +1,15 @@
+name = "testcentric"
+version = "1.7.1"
+description = "GUI Runner for NUnit"
+homepage = "https://github.com/TestCentric/testcentric-gui"
+license = "MIT"
+kind = "app"
+extract_dir = "tools"
+bin = ["testcentric.exe"]
+
+[source.x64]
+url = "https://github.com/TestCentric/testcentric-gui/releases/download/1.7.1/testcentric-gui.1.7.1.nupkg"
+sha256 = "9dd62f659541c093cf58d82e9d7d2845a854b113adfd706a7207b0fc3fc59677"
+
+[autoupdate]
+checkver = { github = "TestCentric/testcentric-gui" }

@@ -1,0 +1,15 @@
+name = "compatibility-manager"
+version = "1.1.2"
+description = "A Windows app for bulk editing compatibility settings"
+homepage = "https://nbusseneau.github.io/CompatibilityManager/"
+license = "MIT"
+kind = "app"
+extract_dir = "CompatibilityManager"
+persist = ["CompatibilityManager.exe.config"]
+
+[source.x64]
+url = "https://github.com/nbusseneau/CompatibilityManager/releases/download/v1.1.2/CompatibilityManager.v1.1.2.7z"
+sha256 = "c8e890fde904ea633e02df17ae3078c48b3107f936aa03b0b634d3040b9ea245"
+
+[autoupdate]
+checkver = { github = "nbusseneau/CompatibilityManager" }

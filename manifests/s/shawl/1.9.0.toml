@@ -1,0 +1,14 @@
+name = "shawl"
+version = "1.9.0"
+description = "Windows service wrapper for arbitrary commands"
+homepage = "https://github.com/mtkennerly/shawl"
+license = "MIT"
+kind = "app"
+bin = ["shawl.exe"]
+
+[source.x64]
+url = "https://github.com/mtkennerly/shawl/releases/download/v1.9.0/shawl-v1.9.0-win64.zip"
+sha256 = "f883c5d09c9beae2efaeabd8513e7d3f57cd1d0864cec3df4f4a7b6ee904351c"
+
+[autoupdate]
+checkver = { github = "mtkennerly/shawl" }

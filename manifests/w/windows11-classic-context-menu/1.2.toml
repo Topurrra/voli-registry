@@ -1,0 +1,15 @@
+name = "windows11-classic-context-menu"
+version = "1.2"
+description = "An application that allows Windows 11 users to revert back to the classic Windows 10 context menu."
+homepage = "https://www.sordum.org/windows-11-classic-context-menu"
+license = "Freeware"
+kind = "app"
+bin = ["W11ClassicMenu.exe"]
+persist = ["W11ClassicMenu.ini"]
+
+[source.x64]
+url = "https://www.sordum.org/files/download/win11-classic-context-menu/W11ClassicMenu.zip"
+sha256 = "a79d124f10a31cb6a4d4adb50469e13df55149c30fe651ad5d5caea290e6c48a"
+
+[autoupdate]
+checkver = "Windows\\s11\\sClassic\\sContext\\sMenu\\sv([\\d.]+)"

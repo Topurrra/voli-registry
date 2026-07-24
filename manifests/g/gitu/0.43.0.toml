@@ -1,0 +1,15 @@
+name = "gitu"
+version = "0.43.0"
+description = "A TUI Git client inspired by Magit"
+homepage = "https://github.com/altsem/gitu"
+license = "MIT"
+kind = "app"
+extract_dir = "gitu-v0.43.0-x86_64-pc-windows-msvc"
+bin = ["gitu.exe"]
+
+[source.x64]
+url = "https://github.com/altsem/gitu/releases/download/v0.43.0/gitu-v0.43.0-x86_64-pc-windows-msvc.zip"
+sha256 = "9debbc715166f038cf86f80cc4602f04efaf10ef173329286a592cf2826f9be3"
+
+[autoupdate]
+checkver = { github = "altsem/gitu" }

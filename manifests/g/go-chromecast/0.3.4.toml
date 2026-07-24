@@ -1,0 +1,18 @@
+name = "go-chromecast"
+version = "0.3.4"
+description = "CLI for controlling Google Chromecast devices."
+homepage = "https://github.com/vishen/go-chromecast"
+license = "Apache-2.0"
+kind = "app"
+bin = ["go-chromecast.exe"]
+
+[source.x64]
+url = "https://github.com/vishen/go-chromecast/releases/download/v0.3.4/go-chromecast_Windows_x86_64.zip"
+sha256 = "95424f0c5d87cd696f4ad77c917025682bdbd90400fa611f1914b5fb26bd61db"
+
+[source.arm64]
+url = "https://github.com/vishen/go-chromecast/releases/download/v0.3.4/go-chromecast_Windows_arm64.zip"
+sha256 = "9f7902398d53ee7bb812b1eba795dbb19bd05b5c481b6febac2891027e353e82"
+
+[autoupdate]
+checkver = { github = "vishen/go-chromecast" }

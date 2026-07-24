@@ -1,0 +1,14 @@
+name = "virgo"
+version = "1.4.2"
+description = "Virtual desktops for Windows."
+homepage = "https://github.com/henkman/virgo"
+license = "MIT"
+kind = "app"
+bin = ["virgo.exe"]
+
+[source.x64]
+url = "https://github.com/henkman/virgo/releases/download/v.1.4.2/virgo.zip"
+sha256 = "bc9f698daa1a7c19c933f90dd7382af0f7fec844a01f38baa428d3bae318c739"
+
+[autoupdate]
+checkver = { github = "henkman/virgo" }

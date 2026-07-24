@@ -1,0 +1,18 @@
+name = "tageditor"
+version = "3.9.11"
+description = "A tag editor utility supporting MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLAC and Matroska."
+homepage = "https://github.com/Martchus/tageditor"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["tageditor-cli.exe"]
+
+[source.x64]
+url = "https://github.com/Martchus/tageditor/releases/download/v3.9.11/tageditor-3.9.11-x86_64-w64-mingw32.exe.zip"
+sha256 = "f1a7f33561bda19e833b1eb3b5cfcdae83fe1f37c6806623f86f20cc3038b090"
+
+[source.arm64]
+url = "https://github.com/Martchus/tageditor/releases/download/v3.9.11/tageditor-3.9.11-aarch64-w64-mingw32.exe.zip"
+sha256 = "3a8310d02890f966f1a44de8223cc866cd987473ba199ddd850a8a65e1bb7020"
+
+[autoupdate]
+checkver = { github = "Martchus/tageditor" }

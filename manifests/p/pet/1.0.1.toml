@@ -1,0 +1,18 @@
+name = "pet"
+version = "1.0.1"
+description = "Simple command-line snippet manager, written in Go."
+homepage = "https://github.com/knqyf263/pet"
+license = "MIT"
+kind = "app"
+bin = ["pet.exe"]
+
+[source.x64]
+url = "https://github.com/knqyf263/pet/releases/download/v1.0.1/pet_1.0.1_windows_amd64.tar.gz"
+sha256 = "49c8346998958774513ee65977d8b9d9a327f76ca3a32caaa30ce1c98dadd64a"
+
+[source.arm64]
+url = "https://github.com/knqyf263/pet/releases/download/v1.0.1/pet_1.0.1_windows_arm64.tar.gz"
+sha256 = "9879245027bdfb342e5d7c6946744db5e403c448f84298e2a88a82c11d045fe1"
+
+[autoupdate]
+checkver = { github = "knqyf263/pet" }

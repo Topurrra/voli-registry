@@ -1,0 +1,15 @@
+name = "sirikali"
+version = "1.8.6"
+description = "A Qt/C++ GUI front end to sshfs, ecryptfs-simple, cryfs, gocryptfs, securefs, fscrypt and encfs"
+homepage = "https://mhogomchungu.github.io/sirikali/"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "SiriKaliQt6-1.8.6"
+persist = ["local\\favorites", "local\\settings"]
+
+[source.x64]
+url = "https://github.com/mhogomchungu/sirikali/releases/download/1.8.6/SiriKaliQt6-1.8.6.zip"
+sha256 = "011cbe37d3fcc283bab7bacf9093133dec9e169503374b431cb29c89d75c162c"
+
+[autoupdate]
+checkver = { github = "mhogomchungu/sirikali" }

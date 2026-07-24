@@ -1,0 +1,15 @@
+name = "steam-desktop-authenticator"
+version = "1.0.15"
+description = "A desktop implementation of Steam's mobile authenticator"
+homepage = "https://github.com/Jessecar96/SteamDesktopAuthenticator"
+license = "MIT"
+kind = "app"
+bin = ["Steam Desktop Authenticator.exe", { name = "steam-desktop-authenticator", path = "Steam Desktop Authenticator.exe" }]
+persist = ["maFiles"]
+
+[source.x64]
+url = "https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/download/1.0.15/SDA.1.0.15.zip"
+sha256 = "05a8ee140080c51b4b51ba4ee46b27efbfc82f75dc94eb5c78bbbb7250cc9102"
+
+[autoupdate]
+checkver = { github = "Jessecar96/SteamDesktopAuthenticator" }

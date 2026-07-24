@@ -1,0 +1,14 @@
+name = "gittyup"
+version = "1.4.0"
+description = "A continuation of GitAhead client, a graphical Git client designed to help you understand and manage your source code history."
+homepage = "https://murmele.github.io/Gittyup/"
+license = "MIT"
+kind = "app"
+bin = ["bin\\gittyup.exe"]
+
+[source.x64]
+url = "https://github.com/Murmele/Gittyup/releases/download/gittyup_v1.4.0/Gittyup-win64-1.4.0.exe#/dl.7z"
+sha256 = "ab86d29dffd131718d2c2d0149ce90e6ad46e624e205e4feead011a800cd9302"
+
+[autoupdate]
+checkver = { github = "Murmele/Gittyup" }

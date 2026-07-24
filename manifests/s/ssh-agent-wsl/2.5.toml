@@ -1,0 +1,13 @@
+name = "ssh-agent-wsl"
+version = "2.5"
+description = "Use the Windows SSH agent from inside WSL"
+homepage = "https://github.com/rupor-github/ssh-agent-wsl"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/rupor-github/ssh-agent-wsl/releases/download/v2.5/ssh-agent-wsl.7z"
+sha256 = "fba9c2811e98da4a8024eb8b3d582fb347fb01141759d4d6f6513eb046ff83a0"
+
+[autoupdate]
+checkver = { github = "rupor-github/ssh-agent-wsl" }

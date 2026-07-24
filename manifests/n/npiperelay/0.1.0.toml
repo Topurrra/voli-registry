@@ -1,0 +1,14 @@
+name = "npiperelay"
+version = "0.1.0"
+description = "npiperelay allows you to access Windows named pipes from WSL"
+homepage = "https://github.com/jstarks/npiperelay"
+license = "MIT"
+kind = "app"
+bin = ["npiperelay.exe"]
+
+[source.x64]
+url = "https://github.com/jstarks/npiperelay/releases/download/v0.1.0/npiperelay_windows_amd64.zip"
+sha256 = "6b9ef61ffd17c03507a9a3d54d815dceb3dae669ac67fc3bf4225d1e764ce5f6"
+
+[autoupdate]
+checkver = { github = "jstarks/npiperelay" }

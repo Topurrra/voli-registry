@@ -1,0 +1,26 @@
+name = "inbucket"
+version = "3.1.1"
+description = "Inbucket is an email testing application; it will accept messages for any email address and make them available to view via a web interface."
+homepage = "https://www.inbucket.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "inbucket_3.1.1_windows_amd64"
+bin = ["inbucket.exe", "inbucket-client.exe"]
+persist = ["cert"]
+
+[source.x64]
+url = "https://github.com/inbucket/inbucket/releases/download/v3.1.1/inbucket_3.1.1_windows_amd64.zip"
+sha256 = "232fb49c92f88505be1feceb4be90b70ca59bb7853216dee7c8b2814c85235d0"
+
+[source.arm64]
+url = "https://github.com/inbucket/inbucket/releases/download/v3.1.1/inbucket_3.1.1_windows_arm64.zip"
+sha256 = "d6d3018a522e71c3231766adb2668ae15a5708f29259755d2f0b7b805a6ed27d"
+
+[env]
+INBUCKET_SMTP_TLSCERT = "{dir}\\cert\\cert.crt"
+INBUCKET_SMTP_TLSPRIVKEY = "{dir}\\cert\\cert.key"
+INBUCKET_WEB_GREETINGFILE = "{dir}\\ui\\greeting.html"
+INBUCKET_WEB_UIDIR = "{dir}\\ui\\dist"
+
+[autoupdate]
+checkver = { github = "inbucket/inbucket" }

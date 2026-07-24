@@ -1,0 +1,15 @@
+name = "nmkoder"
+version = "1.10.0"
+description = "A video encoding, muxing, and analysis GUI in Winforms, built around FFmpeg, FFprobe, and av1an."
+homepage = "https://github.com/n00mkrad/nmkoder"
+license = "GPL-3.0"
+kind = "app"
+extract_dir = "Nmkoder1.10"
+persist = ["logs", "data"]
+
+[source.x64]
+url = "https://github.com/n00mkrad/nmkoder/releases/download/v1.10.0/Nmkoder1.10.7z"
+sha256 = "8a699e4114555be9ed71a39e285f4ef86c74fed72987a3b267a9bd409bb55579"
+
+[autoupdate]
+checkver = { github = "n00mkrad/nmkoder" }

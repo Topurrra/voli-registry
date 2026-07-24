@@ -1,0 +1,17 @@
+name = "gyroflow"
+version = "1.6.3"
+description = "Gyro-assisted video stabilization software."
+homepage = "https://gyroflow.xyz/"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/gyroflow/gyroflow/releases/download/v1.6.3/Gyroflow-windows64.zip"
+sha256 = "37ef4064adb6991ae2251e283e5888a02ea00024d0a6f1353501892bb5367e21"
+
+[source.arm64]
+url = "https://github.com/gyroflow/gyroflow/releases/download/v1.6.3/Gyroflow-windows-arm64.zip"
+sha256 = "6011bf616a9bb5eacf4c3d80675cfba774debf824dd9f792eddf85ed7d0f85a3"
+
+[autoupdate]
+checkver = { github = "gyroflow/gyroflow" }

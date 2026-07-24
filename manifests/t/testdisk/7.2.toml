@@ -1,0 +1,15 @@
+name = "testdisk"
+version = "7.2"
+description = "TestDisk & PhotoRec. Data and digital picture recovery"
+homepage = "https://www.cgsecurity.org/wiki/TestDisk"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "testdisk-7.2"
+bin = ["photorec_win.exe", { name = "photorec", path = "photorec_win.exe" }, { name = "qphotorec", path = "qphotorec_win.exe" }, "testdisk_win.exe", { name = "testdisk", path = "testdisk_win.exe" }]
+
+[source.x64]
+url = "https://www.cgsecurity.org/testdisk-7.2.win.zip"
+sha256 = "0718a4529611e5f8b6d5fcb873279d23a0b212b18bcf72291f3b47351bfc7126"
+
+[autoupdate]
+checkver = "{\"regex\":\"TestDisk &amp; PhotoRec\\\\s+([\\\\d.]+)\\\\s+\\\\(\",\"url\":\"https://www.cgsecurity.org/wiki/TestDisk_Download\"}"

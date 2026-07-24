@@ -1,0 +1,18 @@
+name = "vieb"
+version = "12.10.0"
+description = "Vim Inspired Electron Browser"
+homepage = "https://vieb.dev"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["Vieb.exe"]
+
+[source.x64]
+url = "https://github.com/Jelmerro/Vieb/releases/download/12.10.0/Vieb-12.10.0-win.zip"
+sha256 = "d29a0e8d442f951dc3e8d5c0687f4911cdfe63fa35d8525013a5e923d4d0165b"
+
+[source.arm64]
+url = "https://github.com/Jelmerro/Vieb/releases/download/12.10.0/Vieb-12.10.0-arm64-win.zip"
+sha256 = "17de2703ef97999dc8ee53afcc42037f09780494cfd7ba3bc9899772e22e5c99"
+
+[autoupdate]
+checkver = { github = "Jelmerro/Vieb" }

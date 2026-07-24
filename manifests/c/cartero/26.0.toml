@@ -1,0 +1,18 @@
+name = "cartero"
+version = "26.0"
+description = "A native, lightweight, multiplatform and free HTTP client that you can use to test your APIs"
+homepage = "https://cartero.danirod.es"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["bin/cartero.exe"]
+
+[source.x64]
+url = "https://github.com/danirod/cartero/releases/download/v26.0/cartero-26.0-windows-x64.zip"
+sha256 = "90aa3b4c5e68cf50b4d270ce9df209af36abf44846f671ebba4556d50e76d543"
+
+[source.arm64]
+url = "https://github.com/danirod/cartero/releases/download/v26.0/cartero-26.0-windows-arm64.zip"
+sha256 = "876f43a9b8b79051f7cc2a9a86dab8353ffccbe5c20c1abbcdb94e774fca9e9a"
+
+[autoupdate]
+checkver = { github = "danirod/cartero" }

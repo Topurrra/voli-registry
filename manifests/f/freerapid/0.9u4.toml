@@ -1,0 +1,13 @@
+name = "freerapid"
+version = "0.9u4"
+description = "A Java downloader that supports downloading from Rapidshare, Youtube, Facebook, Picasa and other file-sharing services."
+homepage = "https://wordrider.net/freerapid/"
+license = "Freeware"
+kind = "app"
+extract_dir = "FreeRapid-0.9u4"
+bin = ["frd.jar"]
+persist = ["log", "objectdb.conf"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/freerapid/FreeRapid-0.9u4.zip"
+sha256 = "f26d570b63e9591e438a625f87eee80480b160f077a4d7aae433c8d3e0d20ab9"

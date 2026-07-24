@@ -1,0 +1,14 @@
+name = "kando"
+version = "2.3.1"
+description = "The Cross-Platform Pie Menu."
+homepage = "https://github.com/kando-menu/kando"
+license = "MIT"
+kind = "app"
+bin = ["kando.exe"]
+
+[source.x64]
+url = "https://github.com/kando-menu/kando/releases/download/v2.3.1/Kando-win32-x64-2.3.1.zip"
+sha256 = "f1078383739d8661ecc7df19c101a9dbdbee8bd83a139b54e304fe5d8519591a"
+
+[autoupdate]
+checkver = { github = "kando-menu/kando" }

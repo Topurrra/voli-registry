@@ -1,0 +1,18 @@
+name = "ilspy"
+version = "10.1.1.8388"
+description = ".NET assembly browser and decompiler."
+homepage = "http://ilspy.net"
+license = "MIT"
+kind = "app"
+bin = ["ILSpy.exe"]
+
+[source.x64]
+url = "https://github.com/icsharpcode/ILSpy/releases/download/v10.1.1/ILSpy_binaries_10.1.1.8388-x64.zip"
+sha256 = "24b02fbc306948c1163ec6ed0cd1c1f720a54d100eb22d356547c9245c1b73d5"
+
+[source.arm64]
+url = "https://github.com/icsharpcode/ILSpy/releases/download/v10.1.1/ILSpy_binaries_10.1.1.8388-arm64.zip"
+sha256 = "37397740b30f3106cc5b3226ceb2c3126e03dbd831cc6852389ad1dfdcf4b473"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/icsharpcode/ILSpy/releases\",\"jsonpath\":\"$..assets[?(@.browser_download_url =~ /ILSpy_binaries_(?:[\\\\d.]+)-x64\\\\.zip$/i)].browser_download_url\",\"regex\":\"download/v(?<tag>[\\\\d.]+)/ILSpy_binaries_([\\\\d.]+)-x64\\\\.zip\"}"

@@ -1,0 +1,14 @@
+name = "cupscale"
+version = "1.39.0f1"
+description = "Image Upscaler"
+homepage = "https://github.com/n00mkrad/cupscale"
+license = "MIT"
+kind = "app"
+persist = ["CupscaleData\\models"]
+
+[source.x64]
+url = "https://github.com/n00mkrad/cupscale/releases/download/1.39/Cupscale.1.39.0f1.zip"
+sha256 = "fde68914ea4a103f4fe6cdc95a264b1b3af734bc768762ff6d7cfe22feb95e18"
+
+[autoupdate]
+checkver = { github = "n00mkrad/cupscale" }

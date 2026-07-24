@@ -1,0 +1,10 @@
+name = "mist"
+version = "0.11.1"
+description = "Browse and use apps on the Ethereum network."
+homepage = "https://github.com/ethereum/mist"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ethereum/mist/releases/download/v0.11.1/Mist-win64-0-11-1.zip"
+sha256 = "2222f23bbfd216160a9b16efd8ac5c0fb2db3d1cfb59302445c752baddec483d"

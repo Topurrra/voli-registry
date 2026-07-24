@@ -1,0 +1,14 @@
+name = "castle-view-image"
+version = "2.2.0"
+description = "Image viewer and converter using Castle Game Engine, supporting common image formats (PNG, JPG...) and some exotic ones (DDS, KTX, RGBE)"
+homepage = "https://castle-engine.io/castle-image-viewer"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["castle-image-viewer.exe"]
+
+[source.x64]
+url = "https://github.com/castle-engine/castle-image-viewer/releases/download/v2.2.0/castle-image-viewer-2.2.0-win64-x86_64.zip"
+sha256 = "40ce6261c7f288ac5c96ec80634840db074733c04ce89977f496e7bc8376a28d"
+
+[autoupdate]
+checkver = { github = "castle-engine/castle-image-viewer" }

@@ -1,0 +1,16 @@
+name = "exeinfo-pe"
+version = "0.0.9.8"
+description = "EXE analyzer inspired by PEiD. Designed to detect exe signatures, compressor format and dump internal information."
+homepage = "http://www.exeinfo.xn.pl/"
+license = "Freeware"
+kind = "app"
+extract_dir = "ExeinfoPe"
+bin = ["exeinfope.exe"]
+persist = ["plugins", "exeinfopeRUN.cfg", "userdb.txt"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/ExeinfoASL/ASL/master/exeinfope.zip"
+sha256 = "b14852e681b1880b0e5d694870af85b88e72976c82b07227198d5e70eef36881"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version\\\\s+\\\\: ([\\\\d.]+)\",\"url\":\"https://raw.githubusercontent.com/ExeinfoASL/ASL/master/README.md\"}"

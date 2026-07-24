@@ -1,0 +1,19 @@
+name = "openutau"
+version = "0.1.565"
+description = "Open source singing synthesis platform"
+homepage = "https://github.com/stakira/OpenUtau"
+license = "MIT"
+kind = "app"
+bin = ["OpenUtau.exe"]
+persist = ["Backups", "Cache", "Dictionaries", "Plugins", "Resamplers", "Singers", "Templates", "Wavtools"]
+
+[source.x64]
+url = "https://github.com/stakira/OpenUtau/releases/download/0.1.565/OpenUtau-win-x64.zip"
+sha256 = "6697e84469574d0d9abf3c0e1927475005e64114fb01efa302b7d82d778f439d"
+
+[source.arm64]
+url = "https://github.com/stakira/OpenUtau/releases/download/0.1.565/OpenUtau-win-arm64.zip"
+sha256 = "3dbf19424b588a12be12d68f53eafce235562deec3b62e4312bf61761835e74b"
+
+[autoupdate]
+checkver = { github = "stakira/OpenUtau" }

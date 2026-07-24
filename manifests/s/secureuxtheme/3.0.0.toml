@@ -1,0 +1,17 @@
+name = "secureuxtheme"
+version = "3.0.0"
+description = "A secure boot compatible in-memory UxTheme patcher"
+homepage = "https://github.com/namazso/SecureUxTheme"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/namazso/SecureUxTheme/releases/download/v3.0.0/SecureUxTheme-amd64.zip"
+sha256 = "9b170fc59d6efc3097a165735aa2641564c2445805a9e534e4c887b00a1d85d7"
+
+[source.arm64]
+url = "https://github.com/namazso/SecureUxTheme/releases/download/v3.0.0/SecureUxTheme-arm64.zip"
+sha256 = "6d1ec05d084af804936c0981980dbfb3902ad694b90ec9fd56ecd78a35633f25"
+
+[autoupdate]
+checkver = { github = "namazso/SecureUxTheme" }

@@ -1,0 +1,14 @@
+name = "vuplayer"
+version = "4.24"
+description = "Audio player"
+homepage = "http://www.vuplayer.com"
+license = "MIT"
+kind = "app"
+bin = ["VUPlayer.exe"]
+
+[source.x64]
+url = "https://github.com/jfchapman/VUPlayer/releases/download/v4.24/VUPlayer4_64bit.zip"
+sha256 = "8ae20963d1963a43b8f37f18e267d8c1aaf4a2bf23f4c86fd7b494ea1e4f3d26"
+
+[autoupdate]
+checkver = { github = "jfchapman/VUPlayer" }

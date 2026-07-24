@@ -1,0 +1,11 @@
+name = "notepad2"
+version = "4.2.25"
+description = "A fast and light-weight Notepad-like text editor with syntax highlighting."
+homepage = "http://www.flos-freeware.ch/notepad2.html"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["Notepad2.exe"]
+
+[source.x64]
+url = "http://www.flos-freeware.ch/zip/notepad2_4.2.25_x64.zip"
+sha256 = "37a62f7e891335a1e671f444cefe761fcd814a2fa1a3141fe2501d8433d8920b"

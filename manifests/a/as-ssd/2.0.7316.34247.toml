@@ -1,0 +1,13 @@
+name = "as-ssd"
+version = "2.0.7316.34247"
+description = "Performance benchmark for Solid State Drives (SSDs)"
+homepage = "https://www.alex-is.de/PHP/fusion/infusions/downloads/downloads.php?cat_id=4&download_id=9"
+license = "Freeware"
+kind = "app"
+
+[source.x64]
+url = "https://www.alex-is.de/progs/AS%20SSD%20Benchmark.zip"
+sha256 = "56b80a3dde4537a77f9f7fb6bf45372b9b3d0a75e030d5373e5661913d7ef057"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)\",\"url\":\"https://www.alex-is.de/progs/updater/as-ssd-version.txt\"}"

@@ -1,0 +1,14 @@
+name = "roughgrep"
+version = "3.16.2"
+description = "Fast, brutalist UI on top of ripgrep."
+homepage = "https://github.com/vivainio/RoughGrep/"
+license = "MIT"
+kind = "app"
+bin = ["rgg.exe"]
+
+[source.x64]
+url = "https://github.com/vivainio/RoughGrep/releases/download/v3.16.2/RoughGrep-3.16.2.zip"
+sha256 = "379e1cc0faf8a5bcb892e48cf9d7019ef35670dfdc97db77f4ba3f3eeefe2110"
+
+[autoupdate]
+checkver = { github = "vivainio/RoughGrep" }

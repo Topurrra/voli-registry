@@ -1,0 +1,15 @@
+name = "soundnode"
+version = "7.0.0"
+description = "SoundCloud desktop application"
+homepage = "https://soundnode.github.io/soundnode-website/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "Soundnode-win32-x64"
+bin = ["Soundnode.exe"]
+
+[source.x64]
+url = "https://github.com/Soundnode/soundnode-app/releases/download/7.0.0/Soundnode-win32-x64.zip"
+sha256 = "c8632328243c612ccb5d5751699db29cc054064c9d168ebea9a5e28aaa9f994d"
+
+[autoupdate]
+checkver = { github = "Soundnode/soundnode-app" }

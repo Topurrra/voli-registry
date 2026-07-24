@@ -1,0 +1,15 @@
+name = "deepgit"
+version = "26.1.003"
+description = "Git Archaeology Tool."
+homepage = "https://www.syntevo.com/deepgit/"
+license = "Proprietary"
+kind = "app"
+bin = [{ name = "deepgit", path = "bin\\deepgitc.exe" }]
+persist = [".settings"]
+
+[source.x64]
+url = "https://downloads.syntevo.com/downloads/deepgit/deepgit-26_1_003-win-portable.7z"
+sha256 = "1f443fbd12ba3e27b77502bc6274faa8e43cd874dd44141cc02fa3bbf7d2779e"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://www.syntevo.com/deepgit/download/\"}"

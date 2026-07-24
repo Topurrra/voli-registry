@@ -1,0 +1,15 @@
+name = "sophiapp"
+version = "1.0.97"
+description = "An open-source app for configuring and fine-tuning Windows 10 & Windows 11."
+homepage = "https://github.com/Sophia-Community/SophiApp/"
+license = "MIT"
+kind = "app"
+extract_dir = "SophiApp"
+persist = ["Logs"]
+
+[source.x64]
+url = "https://github.com/Sophia-Community/SophiApp/releases/download/1.0.97/SophiApp.zip"
+sha256 = "621226b572dcaa91d44e36450f82fcf28fce052dff5770d50b3f628987f59291"
+
+[autoupdate]
+checkver = { github = "Sophia-Community/SophiApp" }

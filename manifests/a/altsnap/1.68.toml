@@ -1,0 +1,15 @@
+name = "altsnap"
+version = "1.68"
+description = "Easily drag windows when pressing the Alt key (maintained continuation of Stefan Sundin's AltDrag)"
+homepage = "https://github.com/RamonUnch/AltSnap"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["AltSnap.exe"]
+persist = ["AltSnap.ini"]
+
+[source.x64]
+url = "https://github.com/RamonUnch/AltSnap/releases/download/1.68/AltSnap1.68bin_x64.zip"
+sha256 = "7db3dad3746e7b23857db92fc05ee2d3e17eee1b28e237709a612366ba909c79"
+
+[autoupdate]
+checkver = { github = "RamonUnch/AltSnap" }

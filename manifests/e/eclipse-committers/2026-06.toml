@@ -1,0 +1,13 @@
+name = "eclipse-committers"
+version = "2026-06"
+description = "Eclipse IDE for Eclipse Committers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-committers-2026-06-R-win32-x86_64.zip"
+sha512 = "5b5c2678a731a969d15ecf646c71afca7918c154c4ffc84e56ddc27be85a9c7e18c05dec726e2d4c8da8799c1c1e69a2e23c83a9c6eba33a031334d95d4f5c27"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d-]+)\",\"url\":\"https://download.eclipse.org/technology/epp/downloads/release/release.xml\",\"xpath\":\"/packages/present\"}"

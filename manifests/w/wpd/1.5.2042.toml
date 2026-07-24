@@ -1,0 +1,14 @@
+name = "wpd"
+version = "1.5.2042"
+description = "A small, yet powerful privacy dashboard app for Windows 10 and Windows 11."
+homepage = "https://wpd.app/"
+license = "Freeware"
+kind = "app"
+bin = ["WPD.exe"]
+
+[source.x64]
+url = "https://wpd.app/get/latest.zip"
+sha256 = "8c9105cc81ac94f291a8d18b4ac0a88b51488bf49aa9a076490b1c42aacabe09"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)\\\\sRC\",\"url\":\"https://wpd.app/changelog/\"}"

@@ -1,0 +1,14 @@
+name = "puttie"
+version = "20240523-7604753a"
+description = "A fork of the SSH/Telnet client PuTTY with new features such as background images, transparent window, clickable URLs and zooming."
+homepage = "https://github.com/lalbornoz/PuTTie"
+license = "MIT"
+kind = "app"
+bin = ["pageant.exe", "plink.exe", "pscp.exe", "psftp.exe", "psocks.exe", "puttie.exe", "puttie-portable.exe", "puttygen.exe", "puttytel.exe"]
+
+[source.x64]
+url = "https://github.com/lalbornoz/PuTTie/releases/download/PuTTie-file-Release-7604753a/PuTTie-file-Release-7604753a.zip"
+sha256 = "935ae1c900b9ab9cf4cb3dedb85a641c27747b1170599e02c6846e6d0b927199"
+
+[autoupdate]
+checkver = { github = "lalbornoz/PuTTie" }

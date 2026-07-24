@@ -1,0 +1,16 @@
+name = "kui"
+version = "13.1.4"
+description = "A hybrid command-line/UI Kubernetes development experience for cloud-native development"
+homepage = "https://github.com/kubernetes-sigs/kui"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/kubernetes-sigs/kui/releases/download/v13.1.4/Kui-win32-x64.zip"
+sha256 = "da068216b0dd15b9c8f32c24dc324049a86962200e2edda31daea6dbd9e45bfd"
+
+[depends]
+kubectl = "*"
+
+[autoupdate]
+checkver = { github = "kubernetes-sigs/kui" }

@@ -1,0 +1,18 @@
+name = "komorebi"
+version = "0.1.41"
+description = "A tiling window manager for Windows"
+homepage = "https://github.com/LGUG2Z/komorebi"
+license = "Komorebi"
+kind = "app"
+bin = ["komorebi.exe", "komorebic.exe", "komorebic-no-console.exe", "komorebi-gui.exe", "komorebi-bar.exe", "komorebi-shortcuts.exe"]
+
+[source.x64]
+url = "https://github.com/LGUG2Z/komorebi/releases/download/v0.1.41/komorebi-0.1.41-x86_64-pc-windows-msvc.zip"
+sha256 = "838b1cbe551dbfada306a91e23fd536f8cea059ff619ad98495379e5228055b9"
+
+[source.arm64]
+url = "https://github.com/LGUG2Z/komorebi/releases/download/v0.1.41/komorebi-0.1.41-aarch64-pc-windows-msvc.zip"
+sha256 = "c80723d4720fa3917683a8ca806a2a17703aa33b8978322fb6f0e0da18038779"
+
+[autoupdate]
+checkver = { github = "LGUG2Z/komorebi" }

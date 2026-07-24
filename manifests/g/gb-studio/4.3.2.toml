@@ -1,0 +1,14 @@
+name = "gb-studio"
+version = "4.3.2"
+description = "Free and easy to use retro adventure game creator for Game Boy."
+homepage = "https://www.gbstudio.dev"
+license = "MIT"
+kind = "app"
+extract_dir = "GB Studio-win32-x64"
+
+[source.x64]
+url = "https://github.com/chrismaltby/gb-studio/releases/download/v4.3.2/gb-studio-windows-64bit-standalone.zip"
+sha256 = "9afea7d8f3920991c3562fd69fa8a98aed7f29d231aa468bb4dbcf123b60db80"
+
+[autoupdate]
+checkver = { github = "chrismaltby/gb-studio" }

@@ -1,0 +1,15 @@
+name = "yaffplayer"
+version = "0.12.2"
+description = "A simple video player based on FFmpeg libraries."
+homepage = "https://www.geeks3d.com/yaffplayer/"
+license = "Freeware"
+kind = "app"
+extract_dir = "YAFFplayer_win64"
+persist = ["_geexlab_log.txt", "_scene_init_log.txt", "imgui.ini"]
+
+[source.x64]
+url = "https://geeks3d.com/dl/get/822#YAFFplayer_0.12.2_win64.7z"
+sha256 = "1faeee2e8e36942a8c5d977f22ecd1b4ec3ce488f7e92f7effc6e989577aa110"
+
+[autoupdate]
+checkver = "{\"regex\":\"dl/show/(?<page>\\\\d+).*?YAFFplayer\\\\s+(?<version>[\\\\d.]+).*?win64\",\"url\":\"https://www.geeks3d.com/yaffplayer/downloads/\"}"

@@ -1,0 +1,13 @@
+name = "project-graph"
+version = "3.2.3"
+description = "A node-based visual tool for organizing thoughts and notes in a non-linear way."
+homepage = "https://graphif.dev"
+license = "Proprietary"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/graphif/project-graph/releases/download/v3.2.3/Project.Graph_3.2.3_x64-setup.exe#/dl.7z"
+sha256 = "cf42f7fbabd260dc2aef04b479d5ba4b05dfeae91b88a766f59421eaffc895c3"
+
+[autoupdate]
+checkver = { github = "LiRenTech/project-graph" }

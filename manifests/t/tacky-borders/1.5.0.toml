@@ -1,0 +1,13 @@
+name = "tacky-borders"
+version = "1.5.0"
+description = "Customizable borders for Windows 11 and 10"
+homepage = "https://github.com/lukeyou05/tacky-borders"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/lukeyou05/tacky-borders/releases/download/v1.5.0/tacky-borders-v1.5.0.zip"
+sha256 = "497271f38c32fe4cbbe0e7c6b051dd5a64b78c4af250f4e078b5eda5a127bbe2"
+
+[autoupdate]
+checkver = { github = "lukeyou05/tacky-borders" }

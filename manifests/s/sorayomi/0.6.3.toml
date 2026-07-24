@@ -1,0 +1,13 @@
+name = "sorayomi"
+version = "0.6.3"
+description = "A flutter manga reader compatible with Tachiyomi extensions and backups"
+homepage = "https://github.com/Suwayomi/Tachidesk-Sorayomi"
+license = "MPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/Suwayomi/Tachidesk-Sorayomi/releases/download/0.6.3/tachidesk-sorayomi-0.6.3-windows-x64.zip"
+sha256 = "3d15de13d2c990951aa4f698940ce9d642755752ab300e6b564699171945bdcb"
+
+[autoupdate]
+checkver = { github = "Suwayomi/Tachidesk-Sorayomi" }

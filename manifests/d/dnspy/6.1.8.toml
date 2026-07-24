@@ -1,0 +1,11 @@
+name = "dnspy"
+version = "6.1.8"
+description = ".NET debugger and assembly editor"
+homepage = "https://github.com/0xd4d/dnSpy"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["dnSpy.Console.exe", "dnSpy.exe"]
+
+[source.x64]
+url = "https://github.com/0xd4d/dnSpy/releases/download/v6.1.8/dnSpy-net-win64.zip"
+sha256 = "78d855aef02d87195ddde4f4a89f16f03708e66ec8282cf8eb9ecc89dd469f6c"

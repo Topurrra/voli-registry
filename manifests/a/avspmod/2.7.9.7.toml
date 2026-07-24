@@ -1,0 +1,14 @@
+name = "avspmod"
+version = "2.7.9.7"
+description = "An enhanced version of AvsP for editing and previewing AviSynth scripts"
+homepage = "https://github.com/gispos/AvsPmod"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "AvsPmod_64"
+
+[source.x64]
+url = "https://github.com/gispos/AvsPmod/releases/download/2.7.9.7/AvsPmod_v2.7.9.7_.Windows_x86-64.zip"
+sha256 = "3e2719d91d1bf55c48330bfae6cf681e2142595b2f56572193f7b6bb7cb2e0fe"
+
+[autoupdate]
+checkver = { github = "gispos/AvsPmod" }

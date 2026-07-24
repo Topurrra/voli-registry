@@ -1,0 +1,14 @@
+name = "mediainfo-gui"
+version = "26.05"
+description = "MediaInfo is a convenient unified display of the most relevant technical and tag data for video and audio files."
+homepage = "https://mediaarea.net/en/MediaInfo"
+license = "BSD-2-Clause"
+kind = "app"
+persist = ["Plugin"]
+
+[source.x64]
+url = "https://mediaarea.net/download/binary/mediainfo-gui/26.05/MediaInfo_GUI_26.05_Windows_x64_WithoutInstaller.7z"
+sha256 = "8e6c036e14bd5da3c8eb74cd60597b66c44fbae193a66d177dc065e6247cb2b1"
+
+[autoupdate]
+checkver = "version ([\\d.]+)"

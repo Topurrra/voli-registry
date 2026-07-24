@@ -1,0 +1,14 @@
+name = "kate"
+version = "26.04-12063"
+description = "Multi-document editor"
+homepage = "https://kate-editor.org"
+license = "LGPL-2.0-only"
+kind = "app"
+bin = ["bin\\kate.exe"]
+
+[source.x64]
+url = "https://cdn.kde.org/ci-builds/utilities/kate/release-26.04/windows/kate-release_26.04-12063-windows-cl-msvc2022-x86_64.7z"
+sha256 = "404cc97bc47bfad4291030c9368339eaa50ca2e2c11203d38874461a379a2fe6"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.-]+) (?<lib>[\\\\w]+)\",\"script\":[\"$url = 'https://cdn.kde.org/ci-builds/utilities/kate/?C=N;O=D'\",\"\",\"$cont = (Invoke-WebRequest $url).Content\",\"$regex = 'release-([\\\\d.]+)'\",\"if (!($cont -match $regex)) { error \\\"Could not match $regex in $url\\\"; continue }\",\"$ver = $matches[1]\",\"\",\"$nextUrl = \\\"https://cdn.kde.org/ci-builds/utilities/kate/release-$ver/windows/\\\"\",\"$nextCont = (Invoke-WebRequest $nextUrl).Content\",\"$nextRegex = \\\"kate-release_$ver-([\\\\d]+)-windows-cl-([\\\\w]+)-x86_64\\\\.7z\\\"\",\"if (!($nextCont -match $nextRegex)) { error \\\"Could not match $nextRegex in $nextUrl\\\"; continue }\",\"$build = $matches[1]\",\"$lib = $matches[2]\",\"Write-Output $ver-$build $lib\"]}"

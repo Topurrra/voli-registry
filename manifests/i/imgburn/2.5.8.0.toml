@@ -1,0 +1,11 @@
+name = "imgburn"
+version = "2.5.8.0"
+description = "A lightweight CD / DVD / HD DVD / Blu-ray burning application."
+homepage = "http://www.imgburn.com/"
+license = "Freeware"
+kind = "app"
+bin = ["ImgBurn.exe"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/imgburn/SetupImgBurn_2.5.8.0.exe#/dl.7z"
+sha256 = "49aa06eaffe431f05687109fee25f66781abbe1108f3f8ca78c79bdec8753420"

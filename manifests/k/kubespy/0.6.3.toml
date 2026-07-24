@@ -1,0 +1,18 @@
+name = "kubespy"
+version = "0.6.3"
+description = "A tool for observing Kubernetes resources in real time."
+homepage = "https://github.com/pulumi/kubespy"
+license = "Apache-2.0"
+kind = "app"
+bin = ["kubespy.exe"]
+
+[source.x64]
+url = "https://github.com/pulumi/kubespy/releases/download/v0.6.3/kubespy-v0.6.3-windows-amd64.tar.gz"
+sha256 = "3a3b266808b15aea79b9a71666a743d90dd976ef17ce12b9feee9e5c303d3a7f"
+
+[source.arm64]
+url = "https://github.com/pulumi/kubespy/releases/download/v0.6.3/kubespy-v0.6.3-windows-arm64.tar.gz"
+sha256 = "d0bb9ed65b4b5869280e6030058c8eed32d4f6590ceff666cf4221429745ea84"
+
+[autoupdate]
+checkver = { github = "pulumi/kubespy" }

@@ -1,0 +1,14 @@
+name = "bloatynosy"
+version = "1.0.20.522"
+description = "Universal debloater and PC manager for Windows 11"
+homepage = "https://github.com/builtbybel/BloatyNosy"
+license = "MIT"
+kind = "app"
+bin = ["BloatyNosy.exe"]
+
+[source.x64]
+url = "https://github.com/builtbybel/Bloatynosy/releases/download/1.0.20.522/Bloatynosy.zip"
+sha256 = "afb079b1b556970e841d9b2685793bd553cd8a9666cc87b339b508d816c05a2c"
+
+[autoupdate]
+checkver = { github = "builtbybel/BloatyNosy" }

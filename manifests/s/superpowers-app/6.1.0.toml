@@ -1,0 +1,15 @@
+name = "superpowers-app"
+version = "6.1.0"
+description = "Desktop app for the HTML5 2D+3D game maker"
+homepage = "http://superpowers-html5.com"
+license = "ISC"
+kind = "app"
+extract_dir = "superpowers-v6.1.0-win-x64"
+bin = ["Superpowers.exe"]
+
+[source.x64]
+url = "https://github.com/superpowers/superpowers-app/releases/download/v6.1.0/superpowers-v6.1.0-win-x64.zip"
+sha256 = "12c11d8ea32fc4283c6b16ff18477a1af29980131d71e98daf7f9d0516045337"
+
+[autoupdate]
+checkver = { github = "superpowers/superpowers-app" }

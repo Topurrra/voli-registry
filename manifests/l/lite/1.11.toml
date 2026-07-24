@@ -1,0 +1,15 @@
+name = "lite"
+version = "1.11"
+description = "A lightweight text editor written in Lua."
+homepage = "https://github.com/rxi/lite"
+license = "MIT"
+kind = "app"
+bin = ["lite.exe"]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/rxi/lite/releases/download/v1.11/lite.zip"
+sha256 = "da3701cf6985bc493cb11b37556325551c7ce8606f5502ff3f15199039835eef"
+
+[autoupdate]
+checkver = { github = "rxi/lite" }

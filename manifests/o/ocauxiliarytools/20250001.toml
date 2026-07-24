@@ -1,0 +1,14 @@
+name = "ocauxiliarytools"
+version = "20250001"
+description = "A GUI-based Configurator for editing config.plist files for Acidanthera's OpenCore Boot Manager"
+homepage = "https://github.com/ic005k/OCAuxiliaryTools"
+license = "MIT"
+kind = "app"
+extract_dir = "OCAT-Win64"
+
+[source.x64]
+url = "https://github.com/ic005k/OCAuxiliaryTools/releases/download/20250001/OCAT-Win64.zip"
+sha256 = "1752a53ed1d781fb815209362704210bb728a6831082aa15f37d71591859add4"
+
+[autoupdate]
+checkver = { github = "ic005k/OCAuxiliaryTools" }

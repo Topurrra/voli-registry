@@ -1,0 +1,14 @@
+name = "swyh-rs"
+version = "1.20.5"
+description = "DLNA/UPnP audio streaming software"
+homepage = "https://github.com/dheijl/swyh-rs"
+license = "MIT"
+kind = "app"
+bin = [{ name = "swyh-rs", path = "swyh-rs-cli.exe" }]
+
+[source.x64]
+url = "https://github.com/dheijl/swyh-rs/releases/download/1.20.5/swyh-rs-release.zip"
+sha256 = "4e821f1d18ee515d53d782e466e82fe185cadd83849f4d8db1564cc650c6bdbe"
+
+[autoupdate]
+checkver = { github = "dheijl/swyh-rs" }

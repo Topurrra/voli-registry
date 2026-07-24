@@ -1,0 +1,13 @@
+name = "vapoursyntheditor"
+version = "19"
+description = "An editor for editing and previewing VapourSynth scripts"
+homepage = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/VapourSynthEditor-r19-64bit.7z"
+sha256 = "43bc782772bc4f3a717ef6d9622b24ca905919bfd0423b1760e76f9bd34b91c2"
+
+[autoupdate]
+checkver = "{\"regex\":\"<td class=\\\"name\\\">r(\\\\d+)<\\\\/td>\",\"url\":\"https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/?tab=tags\"}"

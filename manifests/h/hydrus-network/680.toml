@@ -1,0 +1,15 @@
+name = "hydrus-network"
+version = "680"
+description = "A personal booru-style media tagger"
+homepage = "https://hydrusnetwork.github.io/hydrus/"
+license = "WTFPL"
+kind = "app"
+bin = [{ name = "hydrusclient", path = "hydrus_client.exe" }, { name = "hydrusserver", path = "hydrus_server.exe" }]
+persist = ["db"]
+
+[source.x64]
+url = "https://github.com/hydrusnetwork/hydrus/releases/download/v680/Hydrus.Network.680.-.Windows.-.Extract.only.zip"
+sha256 = "7d75abaca7aca5355531b5725b0dfc715a42d653eb3037e31054964d2a3fef4e"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/hydrusnetwork/hydrus/releases\",\"jsonpath\":\"$[*].assets[*].browser_download_url\",\"regex\":\"download/v(?<version>[\\\\d.]+[a-z]{0,1})/Hydrus\\\\.Network\\\\.\\\\k<version>\\\\.-\\\\.Windows\\\\.-\\\\.Extract\\\\.only\\\\.zip\"}"

@@ -1,0 +1,15 @@
+name = "ppink"
+version = "1.9.100"
+description = "An easy to use on-screen annotation software (fork of gInk)."
+homepage = "https://github.com/pubpub-zz/ppInk"
+license = "MIT"
+kind = "app"
+bin = ["ppInk.exe"]
+persist = ["config.ini", "hotkeys.ini", "pens.ini"]
+
+[source.x64]
+url = "https://github.com/pubpub-zz/ppInk/releases/download/v1.9.100/ppInk.1.9.100.zip"
+sha256 = "3d7317bee4dd396b3b088bd116008b605938902512d1246a5dcb9df7a735b2ff"
+
+[autoupdate]
+checkver = { github = "pubpub-zz/ppInk" }

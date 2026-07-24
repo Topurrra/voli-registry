@@ -1,0 +1,16 @@
+name = "snoop"
+version = "6.1.1"
+description = "Spy/browse the visual tree of a running application (without the need for a debugger) and change properties, view triggers, set breakpoints on property changes and more."
+homepage = "https://github.com/snoopwpf/snoopwpf"
+license = "MS-PL"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/snoopwpf/snoopwpf/releases/download/v6.1.1/Snoop.6.1.1.signed.zip"
+sha256 = "9195d224fdecd111c266e55efa5045a6ada365b5d2f4076b6fd53073247c4676"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "snoopwpf/snoopwpf" }

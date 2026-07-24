@@ -1,0 +1,15 @@
+name = "r3dfox"
+version = "153.0"
+description = "Firefox-based web browser for Windows 7"
+homepage = "https://eclipse.cx/projects/r3dfox"
+license = "MPL-2.0"
+kind = "app"
+bin = ["r3dfox.exe"]
+persist = ["Profile"]
+
+[source.x64]
+url = "https://github.com/Eclipse-Community/r3dfox/releases/download/v153.0/r3dfox-153.0.en-US.win64.portable.7z"
+sha256 = "ee8506e441e16be4ee8cee4ae81caf2c09a92f2545169ffd2d284ac0487f6b0f"
+
+[autoupdate]
+checkver = { github = "Eclipse-Community/r3dfox" }

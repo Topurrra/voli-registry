@@ -1,0 +1,13 @@
+name = "noi"
+version = "1.1.0"
+description = "Noi, a platform solution integrating AI with operating systems (AI + tools + plugins + community)"
+homepage = "https://noib.app"
+license = "Unknown"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/lencx/Noi/releases/download/v1.1.0/noi-1.1.0-full.nupkg"
+sha256 = "4929ed8096b7509cfdfcbd0424110ee4eb301ba903e7e8e02dec5b5ac84bd99b"
+
+[autoupdate]
+checkver = { github = "lencx/Noi" }

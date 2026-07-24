@@ -1,0 +1,18 @@
+name = "letos"
+version = "4.0.1"
+description = "A SQLite database manager. (Formerly known as SQLiteStudio.)"
+homepage = "https://letos.org/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["letos.exe"]
+
+[source.x64]
+url = "https://github.com/pawelsalawa/letos/releases/download/4.0.1/letos-4.0.1-windows-x64.zip"
+sha256 = "bea0f372463d1a467179af0dac201fc253bb892d017290caa9a407c9b277964e"
+
+[source.arm64]
+url = "https://github.com/pawelsalawa/letos/releases/download/4.0.1/letos-4.0.1-windows-arm64.zip"
+sha256 = "46b1127dc5667648b986dafa9cc7529b6159ee22966d8937faead39d1c863660"
+
+[autoupdate]
+checkver = { github = "pawelsalawa/letos" }

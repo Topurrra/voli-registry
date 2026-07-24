@@ -1,0 +1,12 @@
+name = "ilmerge"
+version = "3.0.41"
+description = "A static linker for .NET assemblies developed by Microsoft .NET team."
+homepage = "https://github.com/dotnet/ILMerge"
+license = "MIT"
+kind = "app"
+extract_dir = "tools\\net452"
+bin = ["ILMerge.exe"]
+
+[source.x64]
+url = "https://globalcdn.nuget.org/packages/ilmerge.3.0.41.nupkg"
+sha256 = "9121fe69cbde20180aff5f7ff0ca18c857c6b6de375ae3fbe48ff189b51f1637"

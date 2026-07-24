@@ -1,0 +1,11 @@
+name = "pathod"
+version = "6.0.2"
+description = "A pathological HTTP daemon designed to let you craft almost any conceivable HTTP response."
+homepage = "https://mitmproxy.org/"
+license = "MIT"
+kind = "app"
+bin = ["pathod.exe", "pathoc.exe"]
+
+[source.x64]
+url = "https://snapshots.mitmproxy.org/6.0.2/pathod-6.0.2-windows.zip"
+sha256 = "ef0a75dc189af2199cc5c2fa86087329d8581f6b549bbd14f149f6ec875e42c7"

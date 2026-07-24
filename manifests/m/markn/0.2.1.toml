@@ -1,0 +1,15 @@
+name = "markn"
+version = "0.2.1"
+description = "Lightweight markdown viewer."
+homepage = "https://github.com/minodisk/markn/"
+license = "MIT"
+kind = "app"
+extract_dir = "build\\Markn-win32-x64"
+bin = ["Markn.exe"]
+
+[source.x64]
+url = "https://github.com/minodisk/markn/releases/download/v0.2.1/Markn-win32-x64.zip"
+sha256 = "ad3669dd0543b0371db199ea8716372b32cc1b77414f69b18588631e59f8bc65"
+
+[autoupdate]
+checkver = { github = "minodisk/markn" }

@@ -1,0 +1,15 @@
+name = "oss-browser"
+version = "1.19.0"
+description = "Alibaba cloud (Aliyun) oss file manager."
+homepage = "https://github.com/aliyun/oss-browser"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "oss-browser-win32-x64"
+bin = ["oss-browser.exe"]
+
+[source.x64]
+url = "https://oss-attachment.oss-cn-zhangjiakou.aliyuncs.com/ossbrowser/1.19.0/oss-browser-win32-x64.zip"
+sha256 = "bd6311c50051966c8b165e52c7729b518df5f09f51d8c05a4552efb3cc72ebba"
+
+[autoupdate]
+checkver = { github = "aliyun/oss-browser" }

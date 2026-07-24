@@ -1,0 +1,15 @@
+name = "firefox-eme-free"
+version = "153.0"
+description = "EME-free version of the Firefox browser, with DRM-support disabled by default."
+homepage = "https://www.firefox.com/"
+license = "MPL-2.0"
+kind = "app"
+bin = ["firefox.exe"]
+persist = ["distribution", "profile"]
+
+[source.x64]
+url = "https://archive.mozilla.org/pub/firefox/releases/153.0/win64-EME-free/en-US/Firefox%20Setup%20153.0.exe#/dl.7z"
+sha512 = "afa17a3a29c580284c6d9609dea226e6e7a383920747680b1003b42aca1c95a3ef16740381c050247c9ab59e30b50347f392c042710996ab0e20fd61fe2a4836"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.LATEST_FIREFOX_VERSION\",\"url\":\"https://product-details.mozilla.org/1.0/firefox_versions.json\"}"

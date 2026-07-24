@@ -1,0 +1,23 @@
+name = "ungoogled-chromium"
+version = "150.0.7871.128-1.1"
+description = "Google Chromium, sans integration with Google."
+homepage = "https://ungoogled-software.github.io/ungoogled-chromium-binaries/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "ungoogled-chromium_150.0.7871.128-1.1_windows_x64"
+bin = [{ name = "chromium", path = "chrome.exe", args = "--user-data-dir=\"$dir\\User Data\"" }]
+persist = ["User Data"]
+
+[source.x64]
+url = "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/150.0.7871.128-1.1/ungoogled-chromium_150.0.7871.128-1.1_windows_x64.zip"
+sha256 = "010291b89489763adb2ce3bc2ac9a4e77b2045feab1b6ef0fbcd4ac334807f9f"
+
+[source.arm64]
+url = "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/150.0.7871.128-1.1/ungoogled-chromium_150.0.7871.128-1.1_windows_arm64.zip"
+sha256 = "79b0bec5d59088ab806157ffd0da6354253570e74b1f82c8cfd42c10d2ff940f"
+
+[env]
+CHROME_EXECUTABLE = "{dir}\\chrome.exe"
+
+[autoupdate]
+checkver = { github = "ungoogled-software/ungoogled-chromium-windows" }

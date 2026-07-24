@@ -1,0 +1,18 @@
+name = "schismtracker"
+version = "20260524"
+description = "An oldschool sample-based music composition tool"
+homepage = "http://schismtracker.org"
+license = "GPL-2.0"
+kind = "app"
+bin = ["schismtracker.exe"]
+
+[source.x64]
+url = "https://github.com/schismtracker/schismtracker/releases/download/20260524/schismtracker-20260524-windows-x86_64.zip"
+sha256 = "80fe3aa234755f4475c7cc71ae3946fcca5e8149d60890cc5ccd5c3f86478450"
+
+[source.arm64]
+url = "https://github.com/schismtracker/schismtracker/releases/download/20260524/schismtracker-20260524-windows-aarch64.zip"
+sha256 = "746c0e1d96d3ce07ca29ceee3b6f5169c7a38ee7549acc5697f8aee2157524bb"
+
+[autoupdate]
+checkver = { github = "schismtracker/schismtracker" }

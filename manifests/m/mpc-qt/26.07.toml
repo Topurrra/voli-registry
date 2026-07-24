@@ -1,0 +1,15 @@
+name = "mpc-qt"
+version = "26.07"
+description = "A clone of Media Player Classic reimplemented in Qt."
+homepage = "https://mpc-qt.github.io"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "mpc-qt-win-x64"
+bin = ["mpc-qt.exe"]
+
+[source.x64]
+url = "https://github.com/mpc-qt/mpc-qt/releases/download/v26.07/mpc-qt-win-x64-26.07.zip"
+sha256 = "129a3cfc51cb714efba7f97fe0da090cb4ab8ece3c2c0f1466b26733b83c2ab4"
+
+[autoupdate]
+checkver = { github = "mpc-qt/mpc-qt" }

@@ -1,0 +1,14 @@
+name = "selene"
+version = "0.31.0"
+description = "A blazing-fast modern Lua linter written in Rust"
+homepage = "https://kampfkarren.github.io/selene/"
+license = "MPL-2.0"
+kind = "app"
+bin = ["selene.exe"]
+
+[source.x64]
+url = "https://github.com/Kampfkarren/selene/releases/download/0.31.0/selene-0.31.0-windows.zip"
+sha256 = "c5d5d087daa8e38bd71680b2202a407e5d4bc00fd584a648dec17ef9b29a2b73"
+
+[autoupdate]
+checkver = { github = "Kampfkarren/selene" }

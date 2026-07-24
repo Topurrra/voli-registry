@@ -1,0 +1,14 @@
+name = "amber"
+version = "0.6.1"
+description = "Recursively searches/replaces directories for a regex pattern."
+homepage = "https://github.com/dalance/amber"
+license = "MIT"
+kind = "app"
+bin = ["ambs.exe", "ambr.exe"]
+
+[source.x64]
+url = "https://github.com/dalance/amber/releases/download/v0.6.1/amber-v0.6.1-x86_64-win.zip"
+sha256 = "ad3aa89d7751a1e8cbced749aa47d891aceffc55528eee852e631be392341abb"
+
+[autoupdate]
+checkver = { github = "dalance/amber" }

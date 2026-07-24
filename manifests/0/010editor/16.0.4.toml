@@ -1,0 +1,16 @@
+name = "010editor"
+version = "16.0.4"
+description = "Professional text and hex editor with Binary Templates technology."
+homepage = "https://www.sweetscape.com/010editor/"
+license = "Proprietary"
+kind = "app"
+extract_dir = "010EditorWin64Portable"
+bin = [{ name = "010editor", path = "AppData\\010Editor.exe" }]
+persist = ["AppData\\Config", "AppData\\Data", "AppData\\Plugins", "010 Scripts", "010 Templates", "AppData\\Temp"]
+
+[source.x64]
+url = "https://download.sweetscape.com/010EditorWin64Portable16.0.4.zip"
+sha256 = "f4512b246c5629fd080d41b5c866ced86a1400480c10fda0f5240008b2cd2675"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?s)Portable Version.*Version: ([\\\\d.]+)\",\"url\":\"https://www.sweetscape.com/download/010editor/\"}"

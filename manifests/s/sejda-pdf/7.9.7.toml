@@ -1,0 +1,13 @@
+name = "sejda-pdf"
+version = "7.9.7"
+description = "PDF Editor"
+homepage = "https://www.sejda.com/desktop"
+license = "Proprietary"
+kind = "app"
+
+[source.x64]
+url = "https://downloads.sejda-cdn.com/sejda-desktop_7.9.7_x64_portable.zip"
+sha256 = "55fbfe130617f45c90a8b15989c0342fb2caa774663c0dde84fe8f86f22a5688"
+
+[autoupdate]
+checkver = "sejda-desktop_([\\d.]+)_x64_portable"

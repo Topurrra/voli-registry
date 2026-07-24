@@ -1,0 +1,15 @@
+name = "copyq"
+version = "16.0.0"
+description = "Clipboard manager"
+homepage = "https://hluk.github.io/CopyQ/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["copyq.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/hluk/CopyQ/releases/download/v16.0.0/copyq-16.0.0.zip"
+sha256 = "a043aafd9d061d4682cbb3aee2991435d1cd7ca6969cfc508382ccf4b21c07be"
+
+[autoupdate]
+checkver = { github = "hluk/CopyQ" }

@@ -1,0 +1,16 @@
+name = "desktop-ini-editor"
+version = "1.2"
+description = "A simple app that allows users to edit the desktop.ini file in thier folders."
+homepage = "https://www.sordum.org/desktop-ini-editor"
+license = "Freeware"
+kind = "app"
+extract_dir = "DeskEdit"
+bin = ["DeskEdit.exe"]
+persist = ["DeskEdit.ini"]
+
+[source.x64]
+url = "https://www.sordum.org/files/download/desktop-ini-editor/DeskEdit.zip"
+sha256 = "f778d0e3b14b7e1481c54e9af4d60979ac67303344bf6319fcabeae58620eefa"
+
+[autoupdate]
+checkver = "Desktop.ini\\sEditor\\sv([\\d.]+)"

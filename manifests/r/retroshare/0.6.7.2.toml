@@ -1,0 +1,15 @@
+name = "retroshare"
+version = "0.6.7.2"
+description = "RetroShare is a Free and Open Source cross-platform, Friend-2-Friend and secure decentralised communication platform."
+homepage = "https://retroshare.cc/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["retroshare.exe", "retroshare-service.exe"]
+persist = ["Data"]
+
+[source.x64]
+url = "https://github.com/RetroShare/RetroShare/releases/download/v0.6.7.2/RetroShare-0.6.7a-4-ga1fdce2e5-Windows-Portable-20231126-Qt-5.15.2-x64.7z"
+sha256 = "5a89a746115f34312ace09a3ec84c1929f31ab680eb6892d72c71406a15bb3fb"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/RetroShare/RetroShare/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /Windows-Portable/i)].browser_download_url\",\"regex\":\"download/v([\\\\d.]+)/RetroShare-(?<commit>[^\\\"]+)-Windows-Portable-(?<build>[\\\\w.-]+?)(?<!-tor)(?=(?:-x64|-x86)?\\\\.7z)\"}"

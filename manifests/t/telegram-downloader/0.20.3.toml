@@ -1,0 +1,18 @@
+name = "telegram-downloader"
+version = "0.20.3"
+description = "A cli utility for downloading files from Telegram, backing up your Telegram data, uploading files to Telegram, and recovering your Telegram data."
+homepage = "https://github.com/iyear/tdl"
+license = "AGPL-3.0"
+kind = "app"
+bin = ["tdl.exe"]
+
+[source.x64]
+url = "https://github.com/iyear/tdl/releases/download/v0.20.3/tdl_Windows_64bit.zip"
+sha256 = "a908fe0e8aef387e50f3861ddcbd4f47b9c915153845ab05017a66478c0c530b"
+
+[source.arm64]
+url = "https://github.com/iyear/tdl/releases/download/v0.20.3/tdl_Windows_arm64.zip"
+sha256 = "b08f7d61b6bca66e2bc6540a221d189a044f09b90a7a6ffbf230be0f891ba719"
+
+[autoupdate]
+checkver = { github = "iyear/tdl" }

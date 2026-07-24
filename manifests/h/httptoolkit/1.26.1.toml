@@ -1,0 +1,13 @@
+name = "httptoolkit"
+version = "1.26.1"
+description = "HTTP(S) debugging proxy, analyzer and client"
+homepage = "https://httptoolkit.com"
+license = "AGPL-3.0-or-later"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.26.1/HttpToolkit-1.26.1-win-x64.zip"
+sha256 = "b25352a26e1ca11df232b49f0a773d4d13dec89896707fbc8b7db57af6cd0395"
+
+[autoupdate]
+checkver = { github = "httptoolkit/httptoolkit-desktop" }

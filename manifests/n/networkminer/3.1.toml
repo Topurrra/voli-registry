@@ -1,0 +1,15 @@
+name = "networkminer"
+version = "3.1"
+description = "Network Forensic Analysis Tool"
+homepage = "https://www.netresec.com/?page=NetworkMiner"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "NetworkMiner_3-1"
+bin = ["NetworkMiner.exe"]
+
+[source.x64]
+url = "https://www.netresec.com/?download=NetworkMiner#/dl.zip"
+sha256 = "782e3d4d0b917a5aadf59966ab7d21ab30dbd593eff14e426f2b580a2e3f89e1"
+
+[autoupdate]
+checkver = "{\"regex\":\"^([\\\\d.]+)\\\\s+\",\"url\":\"https://www.netresec.com/updatecheck.ashx?l=1250\"}"

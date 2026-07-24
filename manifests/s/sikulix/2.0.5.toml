@@ -1,0 +1,14 @@
+name = "sikulix"
+version = "2.0.5"
+description = "Visual Automation and Testing"
+homepage = "https://sikulix.github.io/"
+license = "MIT"
+kind = "app"
+bin = ["sikulix.jar"]
+
+[source.x64]
+url = "https://launchpad.net/sikuli/sikulix/2.0.5/+download/sikulixide-2.0.5.jar#/sikulix.jar"
+sha256 = "f4b0b50c8e413094e78cd1d8fed02ae65f62f8c53ed00da0562fdedf4acff729"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version ([\\\\d.]+) \\\\(latest stable version\\\\)\",\"url\":\"https://raiman.github.io/SikuliX1/downloads.html\"}"

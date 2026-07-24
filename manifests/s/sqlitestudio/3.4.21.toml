@@ -1,0 +1,14 @@
+name = "sqlitestudio"
+version = "3.4.21"
+description = "A SQLite database manager. (Deprecated, please use `extras/letos` instead)"
+homepage = "https://sqlitestudio.pl"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["SQLiteStudio.exe"]
+
+[source.x64]
+url = "https://github.com/pawelsalawa/sqlitestudio/releases/download/3.4.21/sqlitestudio-3.4.21-windows-x64.zip"
+sha256 = "5d1f4974fe1d7517a7bd23f86985eaf934149625e3cefc6c98bba473a1658620"
+
+[autoupdate]
+checkver = { github = "pawelsalawa/sqlitestudio" }

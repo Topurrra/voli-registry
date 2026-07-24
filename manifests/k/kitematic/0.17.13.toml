@@ -1,0 +1,14 @@
+name = "kitematic"
+version = "0.17.13"
+description = "A simple application for managing Docker containers."
+homepage = "https://github.com/docker/kitematic"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Kitematic.exe"]
+
+[source.x64]
+url = "https://github.com/docker/kitematic/releases/download/v0.17.13/Kitematic-0.17.13-Windows.zip"
+sha256 = "cb7f1de32e2c4b6ba46eda237779e9f66082d5ad8929f591ad88ac5747972603"
+
+[autoupdate]
+checkver = { github = "docker/kitematic" }

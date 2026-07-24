@@ -1,0 +1,14 @@
+name = "mesonlsp"
+version = "5.0.3"
+description = "An unofficial, unendorsed language server for meson written in C++."
+homepage = "https://github.com/JCWasmx86/mesonlsp"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["mesonlsp.exe"]
+
+[source.x64]
+url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.3/mesonlsp-x86_64-pc-windows-gnu.zip"
+sha256 = "d098bdcd27a6594f476c6f4db1d57d100910b75f30f0efbfa84721852cdd03e1"
+
+[autoupdate]
+checkver = { github = "JCWasmx86/mesonlsp" }

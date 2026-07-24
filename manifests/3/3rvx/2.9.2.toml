@@ -1,0 +1,12 @@
+name = "3rvx"
+version = "2.9.2"
+description = "Skinnable volume controller and OSD."
+homepage = "https://3rvx.com/"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["3RVX.exe"]
+persist = ["Settings.xml"]
+
+[source.x64]
+url = "https://3rvx.com/releases/3RVX-2.9.2.zip"
+sha256 = "7d6c0d3c94d4ff1755cbdf3eb9b235a16084588c1e31759bd221617e5ac166d3"

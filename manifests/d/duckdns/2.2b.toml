@@ -1,0 +1,13 @@
+name = "duckdns"
+version = "2.2b"
+description = "A simple C# DuckDNS updater."
+homepage = "https://github.com/XWolfOverride/DuckDNS"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/XWolfOverride/DuckDNS/releases/download/2.2b/DuckDNS.7z"
+sha256 = "dd961749a5eb6f9d1b94707969b409b3db199608e1b7a843d73ffd44195836c6"
+
+[autoupdate]
+checkver = { github = "XWolfOverride/DuckDNS" }

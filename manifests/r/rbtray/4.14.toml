@@ -1,0 +1,13 @@
+name = "rbtray"
+version = "4.14"
+description = "Background program making any application minimizable to the system tray by right-clicking its Minimize button"
+homepage = "https://github.com/benbuck/rbtray"
+license = "GPL-2.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/benbuck/rbtray/releases/download/v4.14/x64.zip"
+sha256 = "0bc420262a583a06e41418547a151803d27739d5e6ccb79f0f1939e902e667ac"
+
+[autoupdate]
+checkver = { github = "benbuck/rbtray" }

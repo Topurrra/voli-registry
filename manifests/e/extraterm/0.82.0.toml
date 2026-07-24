@@ -1,0 +1,15 @@
+name = "extraterm"
+version = "0.82.0"
+description = "The swiss army chainsaw of terminal emulators"
+homepage = "https://extraterm.org"
+license = "MIT"
+kind = "app"
+extract_dir = "extratermqt-0.82.0-windows-x64"
+bin = ["extratermqt.exe"]
+
+[source.x64]
+url = "https://github.com/sedwards2009/extraterm/releases/download/v0.82.0/extratermqt-0.82.0-windows-x64.zip"
+sha256 = "b2963d1a1f0315d86a2506741a7f1bb76a6f7cad36250aae118cd1ccde74adea"
+
+[autoupdate]
+checkver = { github = "sedwards2009/extraterm" }

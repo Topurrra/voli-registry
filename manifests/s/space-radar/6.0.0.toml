@@ -1,0 +1,13 @@
+name = "space-radar"
+version = "6.0.0"
+description = "Disk And Memory Space Visualization App built with Electron & d3.js"
+homepage = "https://github.com/zz85/space-radar"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/zz85/space-radar/releases/download/v6.0.0/SpaceRadar-6.0.0-win-x64.zip"
+sha256 = "e5b96e8259f5733fceac3aafe170299c6fceb454cc2318de3c53aa80b079d3a3"
+
+[autoupdate]
+checkver = { github = "zz85/space-radar" }

@@ -1,0 +1,14 @@
+name = "depends"
+version = "2.2"
+description = "A free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules."
+homepage = "https://www.dependencywalker.com/"
+license = "Unknown"
+kind = "app"
+bin = ["depends.exe"]
+
+[source.x64]
+url = "https://www.dependencywalker.com/depends22_x64.zip"
+sha256 = "35db68a613874a2e8c1422eb0ea7861f825fc71717d46dabf1f249ce9634b4f1"
+
+[autoupdate]
+checkver = "Version ([\\d.]+).*for x86"

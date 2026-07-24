@@ -1,0 +1,14 @@
+name = "speedyfox"
+version = "2.0.30"
+description = "Boosts Firefox, Skype, Chrome, Thunderbird in a single click."
+homepage = "https://www.crystalidea.com/speedyfox"
+license = "Freeware"
+kind = "app"
+bin = ["speedyfox.exe"]
+
+[source.x64]
+url = "https://www.crystalidea.com/downloads/speedyfox.zip"
+sha256 = "3aad88cde609c382de6d1cce22a6bac22c4e779543827bb53a4d7280027877a5"
+
+[autoupdate]
+checkver = "{\"regex\":\"u>([\\\\d.]+)</u\",\"url\":\"https://crystalidea.com/speedyfox/release-notes\"}"

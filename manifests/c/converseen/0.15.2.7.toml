@@ -1,0 +1,15 @@
+name = "converseen"
+version = "0.15.2.7"
+description = "Converseen is a batch image converter and resizer"
+homepage = "https://github.com/Faster3ck/Converseen"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "converseen-0.15.2.7-1-win32-portable"
+persist = ["settings"]
+
+[source.x64]
+url = "https://github.com/Faster3ck/Converseen/releases/download/v0.15.2.7/converseen-0.15.2.7-1-win32-portable.zip"
+sha256 = "7ab98dec9c3e1718296cd67ddf657f19470e2e5edf7e2c75f4248734e5e37772"
+
+[autoupdate]
+checkver = { github = "Faster3ck/Converseen" }

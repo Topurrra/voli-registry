@@ -1,0 +1,14 @@
+name = "flowgorithm"
+version = "4.5"
+description = "A free beginner's programming language that is based on simple graphical flowcharts."
+homepage = "http://www.flowgorithm.org"
+license = "Freeware"
+kind = "app"
+bin = ["Flowgorithm.exe"]
+
+[source.x64]
+url = "http://www.flowgorithm.org/download/files/Flowgorithm-exe-only.zip"
+sha256 = "50a845f5723d011ac606a2235d914ec05c927497191c7993ff44eccef524f147"
+
+[autoupdate]
+checkver = "{\"regex\":\"Flowgorithm ([\\\\d.]+)\",\"url\":\"http://www.flowgorithm.org/download/index.html\"}"

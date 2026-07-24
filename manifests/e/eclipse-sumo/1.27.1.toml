@@ -1,0 +1,17 @@
+name = "eclipse-sumo"
+version = "1.27.1"
+description = "Microscopic and continuous traffic simulation package designed to handle large networks"
+homepage = "https://www.eclipse.org/sumo/"
+license = "EPL-2.0"
+kind = "app"
+bin = ["bin\\activitygen.exe", "bin\\dfrouter.exe", "bin\\duarouter.exe", "bin\\emissionsDrivingCycle.exe", "bin\\emissionsMap.exe", "bin\\jtrrouter.exe", "bin\\marouter.exe", "bin\\netconvert.exe", "bin\\netedit.exe", "bin\\netgenerate.exe", "bin\\od2trips.exe", "bin\\polyconvert.exe", "bin\\sumo.exe", "bin\\sumo-gui.exe"]
+
+[source.x64]
+url = "https://sumo.dlr.de/releases/1.27.1/sumo-win64-1.27.1.zip"
+sha256 = "a229befd836a2bb78958af7b428b375b67965805fd1936e608e4cfedc872f38a"
+
+[env]
+SUMO_HOME = "{dir}"
+
+[autoupdate]
+checkver = "releases/([\\d.]+)/sumo-win\\d+"

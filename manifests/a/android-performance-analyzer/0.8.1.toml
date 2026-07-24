@@ -1,0 +1,14 @@
+name = "android-performance-analyzer"
+version = "0.8.1"
+description = "Optimize your app or game with Android's new profiler and performance analysis tool for the Android ecosystem."
+homepage = "https://developer.android.com/android-performance-analyzer"
+license = "Freeware"
+kind = "app"
+bin = ["bin\\apa.bat"]
+
+[source.x64]
+url = "https://dl.google.com/android/apa/ide-zips/v0.8.1/android-performance-analyzer-windows.zip"
+sha256 = "db8253ba4709c438f6aab99ea6118aa05e20764d49072d515590260709557772"
+
+[autoupdate]
+checkver = "/ide-zips/v(?<version>[\\w.-]+)/android-performance-analyzer-windows\\.zip"

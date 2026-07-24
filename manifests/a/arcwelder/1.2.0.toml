@@ -1,0 +1,14 @@
+name = "arcwelder"
+version = "1.2.0"
+description = "Arc welder simplifies gcode for Marlin and Klipper 3D Printer"
+homepage = "https://github.com/FormerLurker/ArcWelderLib"
+license = "LGPL-3.0-or-later"
+kind = "app"
+bin = ["bin\\ArcWelder.exe", "bin\\ArcStraightener.exe"]
+
+[source.x64]
+url = "https://github.com/FormerLurker/ArcWelderLib/releases/download/1.2.0/Windows.zip"
+sha256 = "caa17e168cce43f2c11ed141c405c53082fdfc3e7a162e1649d2ef63a311b612"
+
+[autoupdate]
+checkver = { github = "FormerLurker/ArcWelderLib" }

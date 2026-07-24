@@ -1,0 +1,13 @@
+name = "interlink"
+version = "52.9.8194"
+description = "E-mail client"
+homepage = "https://binaryoutcast.com/projects/interlink/"
+license = "MPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "http://projects.binaryoutcast.com/interlink/releases/latest/interlink-52.9.8194.WINNT_x86_64-msvc.7z"
+sha256 = "1bd8824c335c6d72269cba016b96e5543b5eeba2e12ec58b6847f34670642c6d"
+
+[autoupdate]
+checkver = "{\"regex\":\"interlink-([\\\\d.]+)\\\\.WINNT_x86_64-msvc\\\\.7z\",\"url\":\"https://projects.binaryoutcast.com/interlink/releases/latest/\"}"

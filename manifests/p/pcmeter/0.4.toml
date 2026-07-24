@@ -1,0 +1,12 @@
+name = "pcmeter"
+version = "0.4"
+description = "CPU and graphic card monitor"
+homepage = "http://addgadgets.com/pc_meter/"
+license = "MPL-2.0"
+kind = "app"
+extract_dir = "PCMeterV4"
+bin = [{ name = "PCMeter", path = "PCMeterV0.4.exe" }]
+
+[source.x64]
+url = "http://addgadgets.com/download/PCMeter.zip"
+sha256 = "eb258a52a6f9e9a6e771ec849d56e84ddf46af88e79e1434fc2b4a675b64524f"

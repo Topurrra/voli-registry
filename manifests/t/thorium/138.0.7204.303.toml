@@ -1,0 +1,18 @@
+name = "thorium"
+version = "138.0.7204.303"
+description = "Chromium fork for Linux, Windows, MacOS, Android, and Raspberry Pi named after radioactive element No. 90."
+homepage = "https://thorium.rocks/"
+license = "BSD 3-Clause"
+kind = "app"
+bin = [{ name = "thorium", path = "bin\\thorium.exe", args = "--user-data-dir=\"$dir\\USER_DATA\"" }]
+persist = ["USER_DATA"]
+
+[source.x64]
+url = "https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/Thorium_SSE3_138.0.7204.303.zip"
+sha256 = "931468563186c4fb1d0f4f835a5b1399be18c3d1c399d7f78fb02d4f1b1a23a8"
+
+[env]
+CHROME_EXECUTABLE = "{dir}\\bin\\thorium.exe"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Alex313031/Thorium-Win/releases\",\"jsonpath\":\"$[*].tag_name\",\"regex\":\"M(?<version>(?:\\\\d+\\\\.){3}\\\\d+)\"}"

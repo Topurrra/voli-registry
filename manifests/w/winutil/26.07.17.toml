@@ -1,0 +1,14 @@
+name = "winutil"
+version = "26.07.17"
+description = "Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates."
+homepage = "https://github.com/ChrisTitusTech/winutil"
+license = "MIT"
+kind = "app"
+bin = ["winutil.ps1"]
+
+[source.x64]
+url = "https://github.com/ChrisTitusTech/winutil/releases/download/26.07.17/winutil.ps1"
+sha256 = "921b89d2772df4ac69d66370c3bd7b7f23dd8a569ec5c5ca9039ab7d1bf4cb9c"
+
+[autoupdate]
+checkver = { github = "ChrisTitusTech/winutil" }

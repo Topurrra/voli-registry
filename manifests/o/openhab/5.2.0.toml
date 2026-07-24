@@ -1,0 +1,15 @@
+name = "openhab"
+version = "5.2.0"
+description = "A vendor and technology agnostic open source automation software for your home"
+homepage = "https://www.openhab.org"
+license = "EPL-1.0"
+kind = "app"
+bin = [{ name = "openhab", path = "runtime\\bin\\karaf.bat" }, { name = "openhab-client", path = "runtime\\bin\\client.bat" }]
+persist = ["conf", "userdata"]
+
+[source.x64]
+url = "https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/5.2.0/openhab-5.2.0.zip"
+sha256 = "24b686a6948753e689a140f20b1f40f10bfd9b1cb7417e2fc884154ddb15a9ce"
+
+[autoupdate]
+checkver = "{\"url\":\"https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/maven-metadata.xml\",\"xpath\":\"/metadata/versioning/latest\"}"

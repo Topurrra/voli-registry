@@ -1,0 +1,15 @@
+name = "shadered"
+version = "1.5.6"
+description = "Lightweight, cross-platform & full-featured desktop IDE for HLSL and GLSL shaders"
+homepage = "https://shadered.org"
+license = "MIT"
+kind = "app"
+bin = ["SHADERed.exe"]
+persist = ["data\\settings.ini"]
+
+[source.x64]
+url = "https://github.com/dfranx/SHADERed/releases/download/v1.5.6/Win64.zip"
+sha256 = "6a2b52ceefd9d6f41456639b8a3924827a37b92e5fa02bec703fc494a7a822ec"
+
+[autoupdate]
+checkver = { github = "dfranx/SHADERed" }

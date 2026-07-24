@@ -1,0 +1,15 @@
+name = "vnote"
+version = "4.2.0"
+description = "A Vim-inspired note-taking platform"
+homepage = "https://app.vnote.fun"
+license = "LGPL-3.0-only"
+kind = "app"
+extract_dir = "VNote-4.2.0-win64\\bin"
+bin = ["vnote.exe"]
+
+[source.x64]
+url = "https://github.com/vnotex/vnote/releases/download/v4.2.0/VNote-4.2.0-win64.zip"
+sha256 = "9acbdfa45156f8ebbb627edaec3cf0322867fdf2b12c2be9ef057ae9a729d8cc"
+
+[autoupdate]
+checkver = { github = "vnotex/vnote" }

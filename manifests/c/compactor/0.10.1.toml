@@ -1,0 +1,14 @@
+name = "compactor"
+version = "0.10.1"
+description = "A user interface for Windows 10 filesystem compression"
+homepage = "https://github.com/Freaky/Compactor"
+license = "MIT"
+kind = "app"
+extract_dir = "Compactor-0.10.1"
+
+[source.x64]
+url = "https://github.com/Freaky/Compactor/releases/download/v0.10.1/Compactor-0.10.1.7z"
+sha256 = "1dc75fd5dad212e0cbf29a363632e0299945183d722b2c00e527e54ed86de379"
+
+[autoupdate]
+checkver = { github = "Freaky/Compactor" }

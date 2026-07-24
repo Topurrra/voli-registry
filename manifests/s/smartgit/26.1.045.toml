@@ -1,0 +1,15 @@
+name = "smartgit"
+version = "26.1.045"
+description = "A graphical Git client with support for SVN and Pull Requests for GitHub and Bitbucket."
+homepage = "https://www.smartgit.dev/"
+license = "Proprietary"
+kind = "app"
+bin = ["bin\\smartgitc.exe", { name = "smartgit", path = "bin\\smartgitc.exe" }]
+persist = [".settings"]
+
+[source.x64]
+url = "https://download.smartgit.dev/smartgit/smartgit-26_1_045-win-portable.7z"
+sha256 = "d03257a679cd4025223ee477bf36577daee2247bab84200e0a95f53a768aabe1"
+
+[autoupdate]
+checkver = "{\"regex\":\">Version ([\\\\d.]+)<\",\"url\":\"https://www.smartgit.dev/download/\"}"

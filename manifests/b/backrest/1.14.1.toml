@@ -1,0 +1,21 @@
+name = "backrest"
+version = "1.14.1"
+description = "Web UI and orchestrator for restic backup."
+homepage = "https://github.com/garethgeorge/backrest"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["backrest.exe"]
+
+[source.x64]
+url = "https://github.com/garethgeorge/backrest/releases/download/v1.14.1/backrest_Windows_x86_64.zip"
+sha256 = "16b6d902303df77c14601325eada8656158e8a0531973d6094d22638ff45f545"
+
+[source.arm64]
+url = "https://github.com/garethgeorge/backrest/releases/download/v1.14.1/backrest_Windows_arm64.zip"
+sha256 = "7776a47e4ebd04f5fecf9fe23ef243124001954135b30d5391c7a5b3633a90ac"
+
+[depends]
+restic = "*"
+
+[autoupdate]
+checkver = { github = "garethgeorge/backrest" }

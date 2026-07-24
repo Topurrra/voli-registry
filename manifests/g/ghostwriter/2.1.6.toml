@@ -1,0 +1,15 @@
+name = "ghostwriter"
+version = "2.1.6"
+description = "Distraction-free Markdown editor"
+homepage = "https://ghostwriter.kde.org/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["ghostwriter.exe"]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/KDE/ghostwriter/releases/download/2.1.6/ghostwriter_2.1.6_win64_portable.zip"
+sha256 = "f3b3408f12a01d05c5ad360147949e3a15c7df8ed7eefa8d2a408b90b27d14f5"
+
+[autoupdate]
+checkver = { github = "KDE/ghostwriter" }

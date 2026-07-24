@@ -1,0 +1,15 @@
+name = "dra"
+version = "0.10.2"
+description = "A command line tool to download release assets from GitHub"
+homepage = "https://github.com/devmatteini/dra"
+license = "MIT"
+kind = "app"
+extract_dir = "dra-0.10.2-x86_64-pc-windows-msvc"
+bin = ["dra.exe"]
+
+[source.x64]
+url = "https://github.com/devmatteini/dra/releases/download/0.10.2/dra-0.10.2-x86_64-pc-windows-msvc.zip"
+sha256 = "ab4178cfa9ee7a46983336438c2bd100b529d21c6cd6e378be52e814b59b40d2"
+
+[autoupdate]
+checkver = { github = "devmatteini/dra" }

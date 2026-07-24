@@ -284,10 +284,10 @@ fn autoupdate_github_from_homepage() {
 fn skip_script_fields() {
     for field in [
         "pre_install",
-        "post_install",
         "installer",
         "uninstaller",
         "psmodule",
+        "pre_uninstall",
     ] {
         let v = json!({
             "version": "1.0",
@@ -297,6 +297,20 @@ fn skip_script_fields() {
         });
         assert_eq!(skip_reason("s", v), "script-field", "field {field}");
     }
+}
+
+#[test]
+fn benign_post_install_allowed() {
+    // post_install and post_uninstall are benign — dropped, not skipped.
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/a.zip",
+        "hash": "b".repeat(64),
+        "post_install": ["Write-Host 'config tweak'"],
+        "post_uninstall": ["Remove-Item 'config.ini'"]
+    });
+    let m = ok("s", v);
+    assert_eq!(m.version, "1.0");
 }
 
 #[test]

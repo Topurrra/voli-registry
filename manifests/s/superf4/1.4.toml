@@ -1,0 +1,14 @@
+name = "superf4"
+version = "1.4"
+description = "Force quit apps by pressing Ctrl-Alt-F4"
+homepage = "https://stefansundin.github.io/superf4/"
+license = "GPL-3.0-or-later"
+kind = "app"
+persist = ["SuperF4.ini"]
+
+[source.x64]
+url = "https://github.com/stefansundin/superf4/releases/download/v1.4/SuperF4-1.4-64bit.zip"
+sha256 = "99d22b4062641342ea1a529a1c7d151e568944d6c5d6011f4e1b115e5a4ca63a"
+
+[autoupdate]
+checkver = { github = "stefansundin/superf4" }

@@ -1,0 +1,15 @@
+name = "sqlitebrowser"
+version = "3.13.1"
+description = "DB Browser for SQLite (DB4S) project"
+homepage = "https://sqlitebrowser.org/"
+license = "MPL-2.0|GPL-3.0-or-later"
+kind = "app"
+bin = ["DB Browser for SQLite.exe", "DB Browser for SQLCipher.exe"]
+persist = ["Data"]
+
+[source.x64]
+url = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.zip"
+sha256 = "22375e275ec42d96de1d3b8e9ea4ed86d2a3505c4d0ffcbd1af67aa4003e5e4d"
+
+[autoupdate]
+checkver = { github = "sqlitebrowser/sqlitebrowser" }

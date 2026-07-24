@@ -24,14 +24,15 @@ pub struct Converted {
     pub toml: String,
 }
 
-const SCRIPT_FIELDS: [&str; 7] = [
+/// Script fields that BLOCK import (arbitrary code execution risk).
+/// `post_install` and `post_uninstall` are benign (config/persist tweaks
+/// that voli's `persist` handles natively) — allowed and silently dropped.
+const BLOCKING_SCRIPT_FIELDS: [&str; 5] = [
     "pre_install",
-    "post_install",
     "installer",
     "uninstaller",
     "psmodule",
     "pre_uninstall",
-    "post_uninstall",
 ];
 
 struct SourceParts {
@@ -147,7 +148,7 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
 
 fn has_script(v: &Value) -> bool {
     v.as_object().is_some_and(|m| {
-        SCRIPT_FIELDS
+        BLOCKING_SCRIPT_FIELDS
             .iter()
             .any(|k| m.get(*k).is_some_and(|x| !x.is_null()))
     })

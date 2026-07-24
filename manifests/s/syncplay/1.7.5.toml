@@ -1,0 +1,15 @@
+name = "syncplay"
+version = "1.7.5"
+description = "Solution to synchronize video playback across multiple instances of mpv, VLC, MPC-HC, MPC-BE and mplayer2 over the Internet."
+homepage = "https://syncplay.pl/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Syncplay.exe"]
+persist = ["syncplay.ini"]
+
+[source.x64]
+url = "https://github.com/Syncplay/syncplay/releases/download/v1.7.5/Syncplay_1.7.5_Portable.zip"
+sha256 = "160a17af6f3b50dde84d633d3b273281c32cbb712e48b7e534f245cc9ab63dc5"
+
+[autoupdate]
+checkver = { github = "Syncplay/syncplay" }

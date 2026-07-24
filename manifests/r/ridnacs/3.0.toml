@@ -1,0 +1,14 @@
+name = "ridnacs"
+version = "3.0"
+description = "Disk space usage analyzer"
+homepage = "https://www.splashsoft.de/ridnacs-disk-space-usage-analyzer/"
+license = "Freeware"
+kind = "app"
+bin = ["RidNacs.exe"]
+
+[source.x64]
+url = "https://www.splashsoft.de/?download=520#/dl.zip"
+sha256 = "e25052121994423edd757dc549ff8520dad87092bd1bba57c573dbdc59a38f9a"
+
+[autoupdate]
+checkver = "{\"regex\":\"download=(?<page>\\\\d+)\\\" title=\\\"RidNacs ([\\\\d.]+) \\\\(zip, portable\",\"url\":\"https://www.splashsoft.de/ridnacs-download/\"}"

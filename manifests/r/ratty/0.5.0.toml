@@ -1,0 +1,14 @@
+name = "ratty"
+version = "0.5.0"
+description = "GPU-rendered terminal emulator with inline 3D graphics"
+homepage = "https://ratty-term.org/"
+license = "MIT"
+kind = "app"
+bin = ["ratty.exe"]
+
+[source.x64]
+url = "https://github.com/orhun/ratty/releases/download/v0.5.0/ratty-x86_64-pc-windows-msvc.zip"
+sha256 = "fc9f619377c4ab613b5006098077deefe912132741dd082b05bac4c0eb1ddc89"
+
+[autoupdate]
+checkver = { github = "orhun/ratty" }

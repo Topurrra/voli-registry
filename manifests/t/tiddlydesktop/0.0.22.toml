@@ -1,0 +1,14 @@
+name = "tiddlydesktop"
+version = "0.0.22"
+description = " A custom desktop browser for TiddlyWiki 5 and TiddlyWiki Classic, based on nw.js"
+homepage = "https://tiddlywiki.com/#TiddlyDesktop"
+license = "BSD"
+kind = "app"
+extract_dir = "tiddlydesktop-win64-v0.0.22"
+
+[source.x64]
+url = "https://github.com/TiddlyWiki/TiddlyDesktop/releases/download/v0.0.22/tiddlydesktop-win64-v0.0.22.zip"
+sha256 = "99f8dd3dbb9206d54a76c99d088937ac5763d7de4d690c34a9a221007eca0572"
+
+[autoupdate]
+checkver = { github = "TiddlyWiki/TiddlyDesktop" }

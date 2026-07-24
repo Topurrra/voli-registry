@@ -1,0 +1,11 @@
+name = "etcher-cli"
+version = "1.4.9"
+description = "CLI for balena Etcher (no longer updated)"
+homepage = "https://www.balena.io/etcher/"
+license = "Apache-2.0"
+kind = "app"
+bin = [{ name = "etcher", path = "balena-etcher.exe" }]
+
+[source.x64]
+url = "https://github.com/balena-io/etcher/releases/download/v1.4.9/balena-etcher-cli-1.4.9-windows-x64.zip"
+sha256 = "a3efeab1ee775dab6d07405e0c7f6f0fdd36a544fd5cba80cd387ffc1e305afc"

@@ -1,0 +1,14 @@
+name = "tftpd"
+version = "4.74"
+description = "Lightweight multi-threaded TFTP, DNS, SNTP, SYSLOG and DHCP server"
+homepage = "https://pjo2.github.io/tftpd64/"
+license = "GPL-2.0-only"
+kind = "app"
+persist = ["tftpd32.ini"]
+
+[source.x64]
+url = "https://github.com/PJO2/tftpd64/releases/download/v4.74/tftpd64_portable_v4.74.zip"
+sha256 = "3ad38a71c0d7d42915429f8f02945e27bcf88161ad1028980d1364af8f76bf22"
+
+[autoupdate]
+checkver = { github = "PJO2/tftpd64" }

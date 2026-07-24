@@ -1,0 +1,14 @@
+name = "nuget-package-explorer"
+version = "7.0.7"
+description = "GUI tool for creating, updating, and deploying NuGet packages"
+homepage = "https://github.com/NuGetPackageExplorer/NuGetPackageExplorer"
+license = "MIT"
+kind = "app"
+bin = ["NuGetPackageExplorer.exe"]
+
+[source.x64]
+url = "https://packages.chocolatey.org/NugetPackageExplorer.7.0.7.nupkg"
+sha256 = "cf1ab455be6224d874310a1827e6ae562dd2dc700e972325cded5854c192e0b7"
+
+[autoupdate]
+checkver = { github = "NuGetPackageExplorer/NuGetPackageExplorer" }

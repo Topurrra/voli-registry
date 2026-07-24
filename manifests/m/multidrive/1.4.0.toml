@@ -1,0 +1,14 @@
+name = "multidrive"
+version = "1.4.0"
+description = "Free disk backup, clone, and wipe utility with CLI support"
+homepage = "https://multidrive.io"
+license = "Freeware"
+kind = "app"
+bin = ["mdcli.exe"]
+
+[source.x64]
+url = "https://github.com/atola-technology/multidrive/releases/download/v1.4.0/MultiDrive_1.4.zip"
+sha256 = "28e0258d849813d3241d64dff46f2730f4d02850f1268a839477960ac8ab43a8"
+
+[autoupdate]
+checkver = { github = "atola-technology/multidrive" }

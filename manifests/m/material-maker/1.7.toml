@@ -1,0 +1,14 @@
+name = "material-maker"
+version = "1.7"
+description = "Extensible procedural material generator"
+homepage = "https://rodzilla.itch.io/material-maker"
+license = "MIT"
+kind = "app"
+bin = ["material_maker.exe"]
+
+[source.x64]
+url = "https://github.com/RodZill4/godot-procedural-textures/releases/download/1.7/material_maker_1_7_windows.zip"
+sha256 = "deb4416bc939861d48097a866a8b2bf0363c29ff64874f2e04478658ff900808"
+
+[autoupdate]
+checkver = { github = "RodZill4/godot-procedural-textures" }

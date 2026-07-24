@@ -1,0 +1,14 @@
+name = "dnspyex"
+version = "6.6.0"
+description = "Continuation of the dnSpy project, a .NET debugger and assembly editor."
+homepage = "https://github.com/dnSpyEx/dnSpy"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["dnSpy.Console.exe"]
+
+[source.x64]
+url = "https://github.com/dnSpyEx/dnSpy/releases/download/v6.6.0/dnSpy-net-win64.zip"
+sha256 = "8ed48f165dc355e869f3a0037ad4f9216147f995a5ae0258b296eeef1f73aab0"
+
+[autoupdate]
+checkver = { github = "dnSpyEx/dnSpy" }

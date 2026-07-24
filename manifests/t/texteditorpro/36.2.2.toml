@@ -1,0 +1,19 @@
+name = "texteditorpro"
+version = "36.2.2"
+description = "Powerful text editor with syntax highlighting for multiple languages and scripts. Formerly known as EditBone"
+homepage = "https://texteditor.pro/"
+license = "Freeware"
+kind = "app"
+bin = [{ name = "TextEditorPro", path = "TextEditorPro.exe", args = "-inipath=\"$dir\\config\"" }]
+persist = ["config", "Skins"]
+
+[source.x64]
+url = "https://www.texteditor.pro/downloads/TextEditorPro64.7z"
+sha256 = "3d2b577c51cce3475a7225e1ffbf834c2c014dc83634ac41df81648560976091"
+
+[source.arm64]
+url = "https://www.texteditor.pro/downloads/TextEditorProArm64.7z"
+sha256 = "220b7d8248c8759e126ade8d5ea3ff7338364e9e9fb72046752a5b55dea73b74"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://texteditor.pro/pages/changes.php\"}"

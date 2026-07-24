@@ -1,0 +1,18 @@
+name = "cromite"
+version = "148.0.7778.168"
+description = "A Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy"
+homepage = "https://www.cromite.org/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = [{ name = "cromite", path = "chrome.exe", args = "--user-data-dir=\"$dir\\User Data\"" }]
+persist = ["User Data"]
+
+[source.x64]
+url = "https://github.com/uazo/cromite/releases/download/v148.0.7778.168-cb3baf14f52eb4365d017f640f85310735c19b79/chrome-win.zip"
+sha256 = "13af6545c9c23ce3a7ebe26a73ba7794eea7af76e6fc6bac7c434072b6b12885"
+
+[env]
+CHROME_EXECUTABLE = "{dir}\\chrome.exe"
+
+[autoupdate]
+checkver = { github = "uazo/cromite" }

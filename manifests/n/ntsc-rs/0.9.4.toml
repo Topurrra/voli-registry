@@ -1,0 +1,13 @@
+name = "ntsc-rs"
+version = "0.9.4"
+description = "Video effect tool which emulates NTSC and VHS video artifacts"
+homepage = "https://ntsc.rs/"
+license = "MIT,ISC,Apache-2.0,GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/valadaptive/ntsc-rs/releases/download/v0.9.4/ntsc-rs-windows-standalone.zip"
+sha256 = "c11ffaa0a267c2275474ff98eebf34d725f4dc2c99758d5c9c9711a050630448"
+
+[autoupdate]
+checkver = { github = "valadaptive/ntsc-rs" }

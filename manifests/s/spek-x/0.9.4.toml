@@ -1,0 +1,18 @@
+name = "spek-x"
+version = "0.9.4"
+description = "Acoustic spectrum analyser (fork of Spek)."
+homepage = "https://github.com/MikeWang000000/spek-X"
+license = "GPL-3.0-only"
+kind = "app"
+bin = [{ name = "spek-x", path = "spek.exe" }]
+
+[source.x64]
+url = "https://github.com/MikeWang000000/spek-X/releases/download/v0.9.4/spek-x-0.9.4-windows-x86_64.zip"
+sha256 = "061b89450f167595c0466eb0335b461c64c017d88ce52f1c559cb4e76a59566c"
+
+[source.arm64]
+url = "https://github.com/MikeWang000000/spek-X/releases/download/v0.9.4/spek-x-0.9.4-windows-aarch64.zip"
+sha256 = "e7da8d04113aa08e6c55b0a5ede3959cfb79ae578832558a43907cc793236b28"
+
+[autoupdate]
+checkver = { github = "MikeWang000000/spek-X" }

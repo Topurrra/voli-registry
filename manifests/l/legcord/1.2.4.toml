@@ -1,0 +1,17 @@
+name = "legcord"
+version = "1.2.4"
+description = "A custom client designed to enhance your Discord experience while keeping everything lightweight."
+homepage = "https://legcord.app/"
+license = "OSL-3.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/Legcord/Legcord/releases/download/v1.2.4/Legcord-1.2.4-win-x64.zip"
+sha256 = "5b702362a744b1c8e0759151e9abd5210bf9c1ee2610e82c2b9bd9f6bdd02eee"
+
+[source.arm64]
+url = "https://github.com/Legcord/Legcord/releases/download/v1.2.4/Legcord-1.2.4-win-arm64.zip"
+sha256 = "6b21c1c4f80a569b9d42daa64148bdd7121e323c62f1d2e04c6772f9d047e8c9"
+
+[autoupdate]
+checkver = { github = "Legcord/Legcord" }

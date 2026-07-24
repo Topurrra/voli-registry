@@ -1,0 +1,18 @@
+name = "vtm"
+version = "2026.07.22"
+description = "Text-based desktop environment"
+homepage = "https://github.com/directvt/vtm"
+license = "MIT"
+kind = "app"
+bin = ["vtm.exe"]
+
+[source.x64]
+url = "https://github.com/directvt/vtm/releases/download/v2026.07.22/vtm_windows_x86_64.7z"
+sha256 = "0e745be4bc6bafbd9549b38f62c3fd90923a346358655f3865c65d685ce43165"
+
+[source.arm64]
+url = "https://github.com/directvt/vtm/releases/download/v2026.07.22/vtm_windows_arm64.7z"
+sha256 = "b72d9f1b847f5086528c49b69d0c296a0df7bc658b59d9bc3345419eb145b30c"
+
+[autoupdate]
+checkver = { github = "directvt/vtm" }

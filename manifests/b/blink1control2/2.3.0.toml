@@ -1,0 +1,14 @@
+name = "blink1control2"
+version = "2.3.0"
+description = "Control and hook events to blink(1)."
+homepage = "https://blink1.thingm.com/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Blink1Control2.exe"]
+
+[source.x64]
+url = "https://github.com/todbot/Blink1Control2/releases/download/v2.3.0/Blink1Control2-2.3.0-win-x64.zip"
+sha256 = "6f578a7dac2525d4dd06c73e96995fd254981bd3cd479d63e48a099cdb3dcb61"
+
+[autoupdate]
+checkver = { github = "todbot/Blink1Control2" }

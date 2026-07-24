@@ -1,0 +1,14 @@
+name = "siril"
+version = "1.4.4"
+description = "The Siril image processing software for amateur astronomy"
+homepage = "https://siril.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["bin\\siril-cli.exe", "bin\\siril.exe"]
+
+[source.x64]
+url = "https://free-astro.org/download/siril-1.4.4-ucrt64_win.zip"
+sha256 = "ab276bedd3e805d523c535c1fe813fd68ad4f9dd1c1e5367278b6d027e53a6ee"
+
+[autoupdate]
+checkver = "{\"regex\":\"siril-(.+?)-ucrt64_win\",\"url\":\"https://siril.org/download/\"}"

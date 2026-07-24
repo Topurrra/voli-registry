@@ -1,0 +1,14 @@
+name = "inky"
+version = "0.15.2"
+description = "An editor for ink: inkle's narrative scripting language"
+homepage = "https://www.inklestudios.com/ink/"
+license = "MIT"
+kind = "app"
+bin = ["Inky.exe"]
+
+[source.x64]
+url = "https://github.com/inkle/inky/releases/download/0.15.2/Inky_windows_64.zip"
+sha256 = "c6cf8cf567d63ff322e8a41dfda453200b02d94403ef403cbd43778147f8411c"
+
+[autoupdate]
+checkver = { github = "inkle/inky" }

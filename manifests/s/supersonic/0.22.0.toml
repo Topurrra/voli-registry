@@ -1,0 +1,13 @@
+name = "supersonic"
+version = "0.22.0"
+description = "A lightweight cross-platform desktop client for Subsonic and Jellyfin music servers."
+homepage = "https://github.com/dweymouth/supersonic"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/dweymouth/supersonic/releases/download/v0.22.0/Supersonic-0.22.0-windows-x64.zip"
+sha256 = "f3492d3e33fd4615fa04371670bae540f63cb87bd8d90a397636b19e83b85f7d"
+
+[autoupdate]
+checkver = { github = "dweymouth/supersonic" }

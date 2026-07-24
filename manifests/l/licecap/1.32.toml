@@ -1,0 +1,14 @@
+name = "licecap"
+version = "1.32"
+description = "Capture an area of your desktop and save it directly to .GIF or .LCF file."
+homepage = "https://www.cockos.com/licecap/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["licecap.exe"]
+
+[source.x64]
+url = "https://www.cockos.com/licecap/licecap132-install.exe#/dl.7z"
+sha256 = "b1e7eaf6b275bfb820bffa790082b36dd4eab1c06a54b3d508c7bad304b1d518"
+
+[autoupdate]
+checkver = "LICEcap v([\\d.]+) for Windows"

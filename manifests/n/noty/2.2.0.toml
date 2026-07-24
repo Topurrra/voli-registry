@@ -1,0 +1,14 @@
+name = "noty"
+version = "2.2.0"
+description = "Autosaving sticky note with support for multiple notes without needing multiple windows."
+homepage = "https://github.com/fabiospampinato/noty"
+license = "MIT"
+kind = "app"
+bin = ["noty.exe"]
+
+[source.x64]
+url = "https://github.com/fabiospampinato/noty/releases/download/v2.2.0/Noty-2.2.0-win.zip"
+sha256 = "166d125e409a3d4f0f92a2f583df3997cdabbaf0aa8803cdbbac4460ce8eee30"
+
+[autoupdate]
+checkver = { github = "fabiospampinato/noty" }

@@ -1,0 +1,16 @@
+name = "dnsjumper"
+version = "2.3"
+description = "Quickly and easily change IPv4 and IPv6 DNS settings."
+homepage = "https://www.sordum.org/dns-jumper/"
+license = "Freeware"
+kind = "app"
+extract_dir = "DnsJumper"
+bin = ["dnsjumper.exe"]
+persist = ["DnsJumper.ini"]
+
+[source.x64]
+url = "https://www.sordum.org/files/download/dns-jumper/DnsJumper.zip"
+sha256 = "4533b284f87251e689ce25020de9108e776a174f9da98f707e0e1b3c9264c169"
+
+[autoupdate]
+checkver = "{\"regex\":\";DnsJumper\\\\|([\\\\d.]+)\\\\|\\\\d\",\"url\":\"http://www.sordum.org/updates/dnsjumper.upt\"}"

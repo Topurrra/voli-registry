@@ -1,0 +1,14 @@
+name = "butterfly"
+version = "2.5.4"
+description = "Powerful, minimalistic, cross-platform, opensource note-taking app."
+homepage = "https://butterfly.linwood.dev/"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["butterfly.exe"]
+
+[source.x64]
+url = "https://github.com/LinwoodCloud/Butterfly/releases/download/v2.5.4/linwood-butterfly-windows-x86_64.zip"
+sha256 = "30f64c70ef197c41d85b699246d07368f3251d51153e4a73d3a2f9220192c9ea"
+
+[autoupdate]
+checkver = { github = "LinwoodCloud/Butterfly" }

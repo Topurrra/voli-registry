@@ -1,0 +1,19 @@
+name = "firefox"
+version = "153.0"
+description = "Popular open source web browser."
+homepage = "https://www.firefox.com/"
+license = "MPL-2.0"
+kind = "app"
+bin = ["firefox.exe"]
+persist = ["distribution", "profile"]
+
+[source.x64]
+url = "https://archive.mozilla.org/pub/firefox/releases/153.0/win64/en-US/Firefox%20Setup%20153.0.exe#/dl.7z"
+sha512 = "2d7df639c637842f7d71d5f720e4d4ab80e0bed8a2f71820fff34b28d1c74e21245bbe7db33c1f13e26faebf1e7015680e6027d049a7c020dfdf003d24235043"
+
+[source.arm64]
+url = "https://archive.mozilla.org/pub/firefox/releases/153.0/win64-aarch64/en-US/Firefox%20Setup%20153.0.exe#/dl.7z"
+sha512 = "30696bd641048b47644357da14bbd1e6b38cd1fc756782941022a4bf47493d639390a996b3dfe33130bf67e1cf78e3f80b7482c2a7ab4e88704fa7c248b553bf"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.LATEST_FIREFOX_VERSION\",\"url\":\"https://product-details.mozilla.org/1.0/firefox_versions.json\"}"

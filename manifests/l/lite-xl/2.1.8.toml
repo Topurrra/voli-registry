@@ -1,0 +1,14 @@
+name = "lite-xl"
+version = "2.1.8"
+description = "A lightweight text editor written in Lua, adapted from lite."
+homepage = "https://lite-xl.github.io"
+license = "MIT"
+kind = "app"
+bin = ["lite-xl.exe"]
+
+[source.x64]
+url = "https://github.com/lite-xl/lite-xl/releases/download/v2.1.8/lite-xl-v2.1.8-windows-x86_64.zip"
+sha256 = "de4983f8f537e3876d0c326423537914b576b6970e35b9c9cc62eafe72719ec2"
+
+[autoupdate]
+checkver = { github = "lite-xl/lite-xl" }

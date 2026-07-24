@@ -1,0 +1,16 @@
+name = "peazip"
+version = "11.2.0"
+description = "A free file archiver utility, based on Open Source technologies"
+homepage = "https://peazip.github.io"
+license = "LGPL-3.0-only"
+kind = "app"
+extract_dir = "peazip_portable-11.2.0.WIN64"
+bin = ["peazip.exe"]
+persist = ["res\\conf"]
+
+[source.x64]
+url = "https://github.com/peazip/PeaZip/releases/download/11.2.0/peazip_portable-11.2.0.WIN64.zip"
+sha256 = "fb5c555b470c15e461171a8a0172c2a794f0fb510113440927049815f4f8e546"
+
+[autoupdate]
+checkver = { github = "peazip/PeaZip" }

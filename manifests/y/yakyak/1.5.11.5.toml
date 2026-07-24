@@ -1,0 +1,15 @@
+name = "yakyak"
+version = "1.5.11.5"
+description = "Unofficial chat client for Google Hangouts"
+homepage = "https://github.com/yakyak/yakyak"
+license = "MIT"
+kind = "app"
+extract_dir = "yakyak-win32-x64"
+bin = ["yakyak.exe"]
+
+[source.x64]
+url = "https://github.com/yakyak/yakyak/releases/download/v1.5.11.5/yakyak-1.5.11.5-win32-x64.zip"
+sha256 = "c26c916fce875fd03b76454cac093f15f395d9821f7ef9015e03a30f15659356"
+
+[autoupdate]
+checkver = { github = "yakyak/yakyak" }

@@ -1,0 +1,13 @@
+name = "yubikey-piv-manager"
+version = "1.4.2"
+description = "Graphical application for configuring a PIV-enabled YubiKey."
+homepage = "https://developers.yubico.com/yubikey-piv-manager/"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/Yubico/yubikey-piv-manager/releases/download/yubikey-piv-manager-1.4.2/yubikey-piv-manager-1.4.2-win.exe#/dl.7z"
+sha256 = "fd6f3ef1497c065731f4c7dd270f99aebaba78ac63be71d62e8a9ec073b7de90"
+
+[autoupdate]
+checkver = { github = "Yubico/yubikey-piv-manager" }

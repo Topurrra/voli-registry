@@ -1,0 +1,16 @@
+name = "quodlibet"
+version = "4.7.1"
+description = "Music player and music library manager."
+homepage = "https://quodlibet.readthedocs.io"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "quodlibet-4.7.1-portable"
+bin = [{ name = "quodlibet", path = "data\\bin\\quodlibet-cmd.exe" }, { name = "exfalso", path = "data\\bin\\exfalso-cmd.exe" }, "data\\bin\\operon.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/quodlibet/quodlibet/releases/download/release-4.7.1/quodlibet-4.7.1-portable.exe#/dl.7z"
+sha256 = "a12e2026af4e109ef324ff352ded21e1900db65573917087b1d8737aaaadb77f"
+
+[autoupdate]
+checkver = { github = "quodlibet/quodlibet" }

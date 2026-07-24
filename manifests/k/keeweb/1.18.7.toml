@@ -1,0 +1,14 @@
+name = "keeweb"
+version = "1.18.7"
+description = "A password manager compatible with KeePass"
+homepage = "https://keeweb.info"
+license = "MIT"
+kind = "app"
+bin = ["KeeWeb.exe"]
+
+[source.x64]
+url = "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.win.x64.zip"
+sha256 = "8bca3bd04172863f14b649763e7dc0696230e94b11b4ba9ea6158822057b1551"
+
+[autoupdate]
+checkver = { github = "keeweb/keeweb" }

@@ -1,0 +1,14 @@
+name = "freeclipboardviewer"
+version = "4.0"
+description = "A program used to view the information that is stored in memory when you use copy and cut functions of Windows."
+homepage = "https://freeclipboardviewer.com"
+license = "Freeware"
+kind = "app"
+bin = ["freeclipviewer.exe"]
+
+[source.x64]
+url = "https://freeclipboardviewer.com/FreeClipViewer.zip"
+sha256 = "fd03862e8532219c5d60b167adeb83b2d59e2ce3181f4adc502c133a20fdecc6"
+
+[autoupdate]
+checkver = "Version:\\s*</span\\s*>\\s*([\\d.]+)"

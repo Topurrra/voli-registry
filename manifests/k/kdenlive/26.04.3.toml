@@ -1,0 +1,14 @@
+name = "kdenlive"
+version = "26.04.3"
+description = "Video editing software based on the MLT Framework, KDE and Qt"
+homepage = "https://kdenlive.org"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["bin\\kdenlive.exe"]
+
+[source.x64]
+url = "https://download.kde.org/stable/kdenlive/26.04/windows/kdenlive-26.04.3_standalone.exe#/dl.7z"
+sha256 = "f2dc616c9c29cae261a4e4fc56293f5e88362b8024dc0b8f662c480c97e18df9"
+
+[autoupdate]
+checkver = "{\"regex\":\"kdenlive-([\\\\d\\\\w.-]+)_standalone\\\\.exe\",\"url\":\"https://kdenlive.org/download/\"}"

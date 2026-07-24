@@ -1,0 +1,14 @@
+name = "mupdf"
+version = "1.28.0"
+description = "A lightweight PDF, XPS, and E-book viewer"
+homepage = "https://mupdf.com"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["mupdf.exe", "mupdf-gl.exe", "mutool.exe"]
+
+[source.x64]
+url = "https://casper.mupdf.com/downloads/archive/mupdf-1.28.0-windows.zip"
+sha256 = "a0ee869bf38ee66b19cd30c281d04e91215f812f0cb20177cd1f69c74c33eb22"
+
+[autoupdate]
+checkver = "{\"regex\":\"mupdf-([\\\\d.]+)-windows\\\\.zip\",\"url\":\"https://mupdf.com/releases?product=MuPDF\"}"

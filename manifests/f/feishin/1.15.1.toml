@@ -1,0 +1,17 @@
+name = "feishin"
+version = "1.15.1"
+description = "A modern self-hosted music player."
+homepage = "https://github.com/jeffvli/feishin"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/jeffvli/feishin/releases/download/v1.15.1/Feishin-1.15.1-win-x64.zip"
+sha256 = "2e3f897882de2496ad5656df0ce49bcae401a67c404d39b8838010f3efa524a0"
+
+[source.arm64]
+url = "https://github.com/jeffvli/feishin/releases/download/v1.15.1/Feishin-1.15.1-win-arm64.zip"
+sha256 = "9039379742797c56cca6bdb4823fef1ee93153570eb1abe9be5f26e1c0986349"
+
+[autoupdate]
+checkver = { github = "jeffvli/feishin" }

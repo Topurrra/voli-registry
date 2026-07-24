@@ -1,0 +1,18 @@
+name = "defendnot"
+version = "1.5.0"
+description = "An even funnier way to disable windows defender."
+homepage = "https://github.com/es3n1n/defendnot"
+license = "Apache-2.0"
+kind = "app"
+bin = ["defendnot-loader.exe"]
+
+[source.x64]
+url = "https://github.com/es3n1n/defendnot/releases/download/v1.5.0/x64.zip"
+sha256 = "ff552765e35a810dfba462a66a0a67bf15f312fb63da378202f4074b2f5515ac"
+
+[source.arm64]
+url = "https://github.com/es3n1n/defendnot/releases/download/v1.5.0/ARM64.zip"
+sha256 = "5d3a1b40dc63ac9949684b3df98706d97cc306233483ad0aa500f755dd439293"
+
+[autoupdate]
+checkver = { github = "es3n1n/defendnot" }

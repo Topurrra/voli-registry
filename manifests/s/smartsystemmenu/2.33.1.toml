@@ -1,0 +1,15 @@
+name = "smartsystemmenu"
+version = "2.33.1"
+description = "A tool extends system menu of all windows in the system."
+homepage = "https://github.com/AlexanderPro/SmartSystemMenu"
+license = "MIT"
+kind = "app"
+bin = ["SmartSystemMenu.exe"]
+persist = ["SmartSystemMenu.xml"]
+
+[source.x64]
+url = "https://github.com/AlexanderPro/SmartSystemMenu/releases/download/v2.33.1/SmartSystemMenu_v2.33.1.zip"
+sha256 = "fadb3f53e525f3f8b2570e0830a9f066288fb89a51cabd5f5346a56be15e5f74"
+
+[autoupdate]
+checkver = { github = "AlexanderPro/SmartSystemMenu" }

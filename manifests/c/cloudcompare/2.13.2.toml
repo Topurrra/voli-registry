@@ -1,0 +1,15 @@
+name = "cloudcompare"
+version = "2.13.2"
+description = "3D point cloud and mesh processing software"
+homepage = "https://cloudcompare.org/"
+license = "GPL-2.0-or-later,LGPL-2.0-only"
+kind = "app"
+extract_dir = "CloudCompare_v2.13.2.preview_bin_x64"
+bin = ["CloudCompare.exe"]
+
+[source.x64]
+url = "https://cloudcompare.org/release/CloudCompare_v2.13.2_bin_x64.7z"
+sha256 = "b5c534443eb58a80b54cef23c525d1c92534400e76fe068bb45ad13cb0a1ff29"
+
+[autoupdate]
+checkver = "{\"regex\":\"Latest stable release.+(\\\\d+\\\\.\\\\d+\\\\.\\\\d+) \",\"url\":\"https://cloudcompare.org/release/\"}"

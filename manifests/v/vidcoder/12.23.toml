@@ -1,0 +1,14 @@
+name = "vidcoder"
+version = "12.23"
+description = "DVD/Blu-ray ripping and video transcoding tool that uses HandBrake as its encoding engine."
+homepage = "https://vidcoder.net"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["VidCoderCLI.exe"]
+
+[source.x64]
+url = "https://github.com/RandomEngy/VidCoder/releases/download/v12.23/VidCoder-12.23-Portable.exe#/dl.7z"
+sha256 = "9b12a926c5f7da99724dc36b1a7510e14217bae4f449dee341f90de20c95b121"
+
+[autoupdate]
+checkver = { github = "RandomEngy/VidCoder" }

@@ -1,0 +1,14 @@
+name = "brows3"
+version = "0.2.43"
+description = "A high-performance, open-source Amazon S3 browser and desktop client built with Rust and Tauri"
+homepage = "https://brows3.app"
+license = "MIT"
+kind = "app"
+extract_dir = "src-tauri\\target\\release\\bundle\\portable\\Brows3_0.2.43_x64-portable"
+
+[source.x64]
+url = "https://github.com/rgcsekaraa/brows3/releases/download/app-v0.2.43/Brows3_0.2.43_x64-portable.zip"
+sha256 = "4348fefda06117490ed6795e34cc2bdc9512329a35b82e10ff5cffb336834d2c"
+
+[autoupdate]
+checkver = { github = "rgcsekaraa/brows3" }

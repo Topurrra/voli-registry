@@ -1,0 +1,15 @@
+name = "contour"
+version = "0.6.3.8249"
+description = "Modern C++ Terminal Emulator"
+homepage = "https://github.com/contour-terminal/contour"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Contour-0.6.3.8249-win64/bin"
+bin = ["contour.exe"]
+
+[source.x64]
+url = "https://github.com/contour-terminal/contour/releases/download/v0.6.3.8249/contour-0.6.3.8249-win64.zip"
+sha256 = "2f18d6304ec643282df62fbdc9d4391b364e03b94d5582a2e82f3fe0ea506515"
+
+[autoupdate]
+checkver = { github = "contour-terminal/contour" }

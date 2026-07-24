@@ -1,0 +1,13 @@
+name = "stack-wallet"
+version = "2.6.0"
+description = "An open source, non-custodial, and private multi-currency crypto wallet."
+homepage = "https://stackwallet.com/"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/cypherstack/stack_wallet/releases/download/build_310/stack_wallet-v2.6.0-windows.zip"
+sha256 = "fb861816d4212bba54c53c7b6fef793437427cd15c3022fda79d3c5cbb9c68de"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/cypherstack/stack_wallet/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"/download/(?<tag>[^/]+)/stack_wallet-v(?<version>[\\\\d.]+)-windows\\\\.zip\"}"

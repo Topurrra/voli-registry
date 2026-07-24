@@ -1,0 +1,13 @@
+name = "iographica"
+version = "2.0.2"
+description = "An application that turns mouse movements into modern art."
+homepage = "https://www.iographica.com"
+license = "Unknown"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/anatolyzenkov/IOGraph/releases/download/v2.0.2/IOGraph-windows-v2.0.2.zip"
+sha256 = "01e96c39bdf7ac53b72db8f1e25b7a567e99ad8d60d2f32d2a44df206b73bc5b"
+
+[autoupdate]
+checkver = { github = "anatolyzenkov/IOGraph" }

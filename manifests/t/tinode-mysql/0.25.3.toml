@@ -1,0 +1,18 @@
+name = "tinode-mysql"
+version = "0.25.3"
+description = "Instant messaging server"
+homepage = "https://github.com/tinode/chat"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["tinode.exe"]
+persist = ["uploads", "tinode.conf"]
+
+[source.x64]
+url = "https://github.com/tinode/chat/releases/download/v0.25.3/tinode-mysql.windows-amd64.zip"
+sha256 = "6865727e9bd8e4dd26077c75604ee8ae8f221634338c8cee6b9d07280ae14c26"
+
+[depends]
+mysql = "*"
+
+[autoupdate]
+checkver = { github = "tinode/chat" }

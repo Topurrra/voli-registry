@@ -1,0 +1,15 @@
+name = "chatterino"
+version = "2.5.5"
+description = "Twitch chat client"
+homepage = "https://chatterino.com"
+license = "MIT"
+kind = "app"
+bin = ["chatterino.exe"]
+persist = ["Cache", "Logs", "Misc", "ProfileAvatars", "Settings", "Themes"]
+
+[source.x64]
+url = "https://chatterino.fra1.digitaloceanspaces.com/bin/2.5.5/Chatterino.Portable.zip"
+sha256 = "b17a484952486b5e10094430f30896dc9b719969ce0b31c5b82bf3c9b4ff8afa"
+
+[autoupdate]
+checkver = "/([\\d.]+)/Chatterino.Portable.zip"

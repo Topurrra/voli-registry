@@ -1,0 +1,15 @@
+name = "keystore-explorer"
+version = "5.6.1"
+description = "An open source GUI replacement for the Java command-line utilities keytool and jarsigner."
+homepage = "https://keystore-explorer.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "kse-561"
+bin = ["kse.exe"]
+
+[source.x64]
+url = "https://github.com/kaikramer/keystore-explorer/releases/download/v5.6.1/kse-561.zip"
+sha256 = "b242289d1c8931d202c2e8b17fd076a1e97827fd42c700126c8910fc7bdf8981"
+
+[autoupdate]
+checkver = { github = "kaikramer/keystore-explorer" }

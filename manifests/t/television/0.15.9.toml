@@ -1,0 +1,14 @@
+name = "television"
+version = "0.15.9"
+description = "Blazing fast general purpose fuzzy finder TUI."
+homepage = "https://github.com/alexpasmantier/television"
+license = "MIT"
+kind = "app"
+bin = ["tv.exe"]
+
+[source.x64]
+url = "https://github.com/alexpasmantier/television/releases/download/0.15.9/tv-0.15.9-x86_64-pc-windows-msvc.zip"
+sha256 = "abfbb2a9989cc633f4467dd9026ef84e63969acaa87c69541073226533236ecb"
+
+[autoupdate]
+checkver = { github = "alexpasmantier/television" }

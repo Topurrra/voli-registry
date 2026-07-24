@@ -1,0 +1,18 @@
+name = "mattermost"
+version = "6.2.2"
+description = "Team communication client"
+homepage = "https://mattermost.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Mattermost.exe"]
+
+[source.x64]
+url = "https://releases.mattermost.com/desktop/6.2.2/mattermost-desktop-6.2.2-win-x64.zip"
+sha256 = "29dd2729dbcdca034a0aa48f30c7e6abee7c19aee3c61aaec42046a2e94534f8"
+
+[source.arm64]
+url = "https://releases.mattermost.com/desktop/6.2.2/mattermost-desktop-6.2.2-win-arm64.zip"
+sha256 = "3c595b40ff958c170efb27aabe30d4683119929fdc111469756df1a23d937f96"
+
+[autoupdate]
+checkver = { github = "mattermost/desktop" }

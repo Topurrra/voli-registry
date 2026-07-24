@@ -1,0 +1,17 @@
+name = "cv4pve-pepper"
+version = "2.0.0"
+description = "Launching SPICE remote-viewer to access VM running on Proxmox VE."
+homepage = "https://www.cv4pve-tools.com/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["cv4pve-pepper.exe"]
+
+[source.x64]
+url = "https://github.com/Corsinvest/cv4pve-pepper/releases/download/v2.0.0/cv4pve-pepper.exe-win-x64.zip"
+sha256 = "508840a41ac7e9c24a836534f592ac5675fd1bcaf38694e2872973b05a1c9949"
+
+[depends]
+virt-viewer = "*"
+
+[autoupdate]
+checkver = { github = "Corsinvest/cv4pve-pepper" }

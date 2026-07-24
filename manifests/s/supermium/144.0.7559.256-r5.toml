@@ -1,0 +1,18 @@
+name = "supermium"
+version = "144.0.7559.256-r5"
+description = "Chromium fork for Windows XP/2003 and up"
+homepage = "https://win32subsystem.live/supermium/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = [{ name = "supermium", path = "chrome.exe", args = "--user-data-dir=\"$dir\\User Data\"" }]
+persist = ["User Data"]
+
+[source.x64]
+url = "https://github.com/win32ss/supermium/releases/download/v144-r5/supermium_144_64_setup_win10_11.exe#/dl.zip"
+sha256 = "ccab398b616597744c460361db14681fd619907647a22340ef813cfb60eddc3c"
+
+[env]
+CHROME_EXECUTABLE = "{dir}\\chrome.exe"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/win32ss/supermium/releases/latest\",\"jsonpath\":\"$..['tag_name', 'name']\",\"regex\":\"(?i)\\\"(?<tag>v?[\\\\d]+(?<suffix>-[^\\\"]+)?)\\\",\\\"[^\\\"]+?(?<prefix>[\\\\d.]+)\",\"replace\":\"${prefix}${suffix}\"}"

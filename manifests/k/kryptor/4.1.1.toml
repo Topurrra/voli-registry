@@ -1,0 +1,14 @@
+name = "kryptor"
+version = "4.1.1"
+description = "An open source encryption and signing tool."
+homepage = "https://www.kryptor.co.uk/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["kryptor.exe"]
+
+[source.x64]
+url = "https://github.com/samuel-lucas6/Kryptor/releases/download/v4.1.1/kryptor-windows-x64.zip"
+sha256 = "7e0e29ea48660762004877de3ded4de8061fef59473b6b16e5891e87e11669b3"
+
+[autoupdate]
+checkver = { github = "samuel-lucas6/Kryptor" }

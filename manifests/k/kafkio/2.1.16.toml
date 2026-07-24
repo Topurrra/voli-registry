@@ -1,0 +1,15 @@
+name = "kafkio"
+version = "2.1.16"
+description = "KafkIO - A Fast, Easy and Free Kafka Client for Mac, Windows and Linux"
+homepage = "https://www.kafkio.com/"
+license = "Freeware"
+kind = "app"
+extract_dir = "KafkIO-win-2.1.16-x64"
+bin = ["KafkIO.exe"]
+
+[source.x64]
+url = "https://www.kafkio.com/download/kafkio/2.1.16/KafkIO-win-2.1.16-x64.zip"
+sha256 = "eb95e60905a01e45b09ea0c4bd7e256a3d8c8888da21df4404e4fe0eae785732"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"softwareVersion\\\": ([\\\\d.]+)\"}"

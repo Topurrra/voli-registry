@@ -1,0 +1,14 @@
+name = "qmplay2"
+version = "26.06.27"
+description = "A video and audio player which can play most formats and codecs."
+homepage = "https://github.com/zaps166/QMPlay2"
+license = "LGPL-3.0-only"
+kind = "app"
+bin = ["QMPlay2.exe"]
+
+[source.x64]
+url = "https://github.com/zaps166/QMPlay2/releases/download/26.06.27/QMPlay2-Win64-26.06.27-v2.exe#/dl.7z"
+sha256 = "19d9f3d205183555e90f69b1f86dad0584ff2c515da784334c223286750159d1"
+
+[autoupdate]
+checkver = { github = "zaps166/QMPlay2" }

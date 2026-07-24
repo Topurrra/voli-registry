@@ -1,0 +1,17 @@
+name = "goofcord"
+version = "2.3.0"
+description = "A privacy minded and highly configurable Discord client"
+homepage = "https://github.com/Milkshiift/GoofCord"
+license = "OSL-3.0"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/Milkshiift/GoofCord/releases/download/v2.3.0/GoofCord-2.3.0-win-x64.zip"
+sha256 = "2ed16ee7bce11eecec51f595d0f67c781ed346555a8d99fdb4adcf6678c78310"
+
+[source.arm64]
+url = "https://github.com/Milkshiift/GoofCord/releases/download/v2.3.0/GoofCord-2.3.0-win-arm64.zip"
+sha256 = "72de049f71f80c0c9661a2a3203d084672246bf2ce784b58f28d1897009f3835"
+
+[autoupdate]
+checkver = { github = "Milkshiift/GoofCord" }

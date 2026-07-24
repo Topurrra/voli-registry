@@ -1,0 +1,16 @@
+name = "nexusfont"
+version = "2.7.1"
+description = "Font manager"
+homepage = "https://www.xiles.app"
+license = "Freeware"
+kind = "app"
+extract_dir = "nexusfont"
+bin = ["nexusfont.exe", "FontInstaller.exe"]
+persist = ["userdata"]
+
+[source.x64]
+url = "https://s3.ap-northeast-2.amazonaws.com/net.xiles.public/download/nexusfont_2.7.1.zip"
+sha256 = "376be2e3b94c4b46865e59e784fba2153fff3dbad6481925213dfc8e137a1b2c"
+
+[autoupdate]
+checkver = "nexusfont_([\\d.]+)\\.zip"

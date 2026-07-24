@@ -1,0 +1,14 @@
+name = "clash-nyanpasu"
+version = "1.6.1"
+description = "Clash Nyanpasu! (∠・ω< )⌒☆ An opinionated Clash GUI based on Tauri."
+homepage = "https://github.com/libNyanpasu/clash-nyanpasu"
+license = "GPL-3.0-only"
+kind = "app"
+persist = [".config"]
+
+[source.x64]
+url = "https://github.com/libNyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64_portable.zip"
+sha256 = "99525f1d5338e2edb3037661b6f81b5eeee359d8a2e0801c1606a547bc084bcf"
+
+[autoupdate]
+checkver = { github = "libNyanpasu/clash-nyanpasu" }

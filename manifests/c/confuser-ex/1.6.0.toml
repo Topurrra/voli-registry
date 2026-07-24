@@ -1,0 +1,14 @@
+name = "confuser-ex"
+version = "1.6.0"
+description = "Protector for .NET applications"
+homepage = "https://mkaring.github.io/ConfuserEx/"
+license = "MIT"
+kind = "app"
+bin = ["Confuser.CLI.exe", { name = "confuser", path = "Confuser.CLI.exe" }]
+
+[source.x64]
+url = "https://github.com/mkaring/ConfuserEx/releases/download/v1.6.0/ConfuserEx.zip"
+sha256 = "91c7a4387c3fc3d05aebd7da7235e5e0f12a628b88fcdf87c2af12c40f96ec79"
+
+[autoupdate]
+checkver = { github = "mkaring/ConfuserEx" }

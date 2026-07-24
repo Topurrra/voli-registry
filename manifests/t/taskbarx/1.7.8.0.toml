@@ -1,0 +1,14 @@
+name = "taskbarx"
+version = "1.7.8.0"
+description = "Center Windows taskbar icons with a variety of animations and options."
+homepage = "https://chrisandriessen.nl/taskbarx"
+license = "MIT"
+kind = "app"
+bin = ["TaskbarX.exe"]
+
+[source.x64]
+url = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.8.0/TaskbarX_1.7.8.0_x64.zip"
+sha256 = "ab192d20ed1ff6a88fef856b1a0dcf997e5022437c09a686c28356b43dc5a3e2"
+
+[autoupdate]
+checkver = { github = "ChrisAnd1998/TaskbarX" }

@@ -1,0 +1,13 @@
+name = "wxformbuilder"
+version = "4.2.1"
+description = "A GUI builder for the wxWidgets framework."
+homepage = "https://github.com/wxFormBuilder/wxFormBuilder"
+license = "GPL-2.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v4.2.1/wxFormBuilder-4.2.1-ucrt-x86_64.zip"
+sha256 = "44c9a989a07001e000ade3fa06b919fa67176053898fc8f120304ef9a53be147"
+
+[autoupdate]
+checkver = { github = "wxFormBuilder/wxFormBuilder" }

@@ -1,0 +1,14 @@
+name = "ayugram"
+version = "6.7.8"
+description = "AyuGram is a Telegram client with ghost mode and message history."
+homepage = "https://github.com/AyuGram/AyuGramDesktop"
+license = "Freeware"
+kind = "app"
+persist = ["tdata"]
+
+[source.x64]
+url = "https://github.com/AyuGram/AyuGramDesktop/releases/download/v6.7.8/AyuGram.zip"
+sha256 = "fd1bc60069d0fe78e232c6255d00b96e993c572ced4a2750a7a67c7dda88592b"
+
+[autoupdate]
+checkver = { github = "AyuGram/AyuGramDesktop" }

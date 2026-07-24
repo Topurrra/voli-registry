@@ -1,0 +1,14 @@
+name = "mangal"
+version = "4.0.6"
+description = "The ultimate CLI manga downloader"
+homepage = "https://github.com/metafates/mangal"
+license = "MIT"
+kind = "app"
+bin = ["mangal.exe"]
+
+[source.x64]
+url = "https://github.com/metafates/mangal/releases/download/v4.0.6/mangal_4.0.6_Windows_x86_64.zip"
+sha256 = "f0f3a21c01fb8e80f93d31af0c6ca589d9ce6b291a1f57598a36790db969a6ac"
+
+[autoupdate]
+checkver = { github = "metafates/mangal" }

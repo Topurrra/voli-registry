@@ -1,0 +1,18 @@
+name = "vipsdisp"
+version = "4.1.4"
+description = "Tiny libvips / gtk+4 image viewer"
+homepage = "https://github.com/libvips/vipsdisp"
+license = "MIT"
+kind = "app"
+bin = ["bin\\vipsdisp.exe"]
+
+[source.x64]
+url = "https://github.com/libvips/vipsdisp/releases/download/v4.1.4/vipsdisp-x64-4.1.4.zip"
+sha256 = "e836eb7592112e83ac87018695f4535345b7cc3dbe93b0624b1392df092e0cee"
+
+[source.arm64]
+url = "https://github.com/libvips/vipsdisp/releases/download/v4.1.4/vipsdisp-arm64-4.1.4.zip"
+sha256 = "9475b867dad83defda6e576df858f258c071a23441e08ed4df64dc3bde78419b"
+
+[autoupdate]
+checkver = { github = "libvips/vipsdisp" }

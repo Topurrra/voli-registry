@@ -1,0 +1,14 @@
+name = "flamelens"
+version = "0.4.0"
+description = "Interactive flamegraph viewer in the terminal."
+homepage = "https://github.com/YS-L/flamelens"
+license = "MIT"
+kind = "app"
+bin = ["flamelens.exe"]
+
+[source.x64]
+url = "https://github.com/YS-L/flamelens/releases/download/v0.4.0/flamelens-x86_64-pc-windows-msvc.zip"
+sha256 = "ed32e5885a5ee88b4a8471c50b29c35e002db409fbdeb249a4c558d9feee5885"
+
+[autoupdate]
+checkver = { github = "YS-L/flamelens" }

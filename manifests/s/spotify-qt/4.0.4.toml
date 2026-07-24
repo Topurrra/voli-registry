@@ -1,0 +1,14 @@
+name = "spotify-qt"
+version = "4.0.4"
+description = "Lightweight Spotify client using Qt"
+homepage = "https://github.com/kraxarn/spotify-qt"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["spotify-qt.exe"]
+
+[source.x64]
+url = "https://github.com/kraxarn/spotify-qt/releases/download/v4.0.4/spotify-qt-v4.0.4-win64.zip"
+sha256 = "c1d81bde4608910207b5e651a70e1bafcc835b611b4bd472f6c817186d02c5c6"
+
+[autoupdate]
+checkver = { github = "kraxarn/spotify-qt" }

@@ -1,0 +1,14 @@
+name = "smartcontextmenu"
+version = "1.8.1"
+description = "Smart context menu for all windows in the system."
+homepage = "https://github.com/AlexanderPro/SmartContextMenu"
+license = "MIT"
+kind = "app"
+bin = ["SmartContextMenu.exe"]
+
+[source.x64]
+url = "https://github.com/AlexanderPro/SmartContextMenu/releases/download/v1.8.1/SmartContextMenu_v1.8.1.zip"
+sha256 = "ae76eb6a15715d6ac77175a4eef779036e51f0e52dfe0105246d06d5b8939fa9"
+
+[autoupdate]
+checkver = { github = "AlexanderPro/SmartContextMenu" }

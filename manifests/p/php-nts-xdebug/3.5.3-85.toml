@@ -1,0 +1,13 @@
+name = "php-nts-xdebug"
+version = "3.5.3-85"
+description = "An extension for PHP to assist with debugging and development. (Non Thread Safe)"
+homepage = "https://xdebug.org/"
+license = "Xdebug-1.03"
+kind = "app"
+
+[source.x64]
+url = "https://xdebug.org/files/php_xdebug-3.5.3-8.5-nts-vs17-x86_64.dll#/php_xdebug.dll"
+sha256 = "0a0d52bf276dad7e5f90ac30a5110b3119d291b20c118be0cb7f5752064f1811"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.-]+) / (?<name>.+)\",\"script\":[\"$xdebug_regex = 'php_xdebug(?=[^'']+nts)-(?<prefix>[\\\\d.]+)-(?<suffix>[\\\\d.]+)(?<=\\\\d)[^'']+dll'\",\"$latest_xdebug = [regex]::Matches($page, $xdebug_regex) | ForEach-Object {\",\"    [pscustomobject]@{\",\"        FileName = $_.Value\",\"        XdebugVersion = [version]$_.Groups['prefix'].Value\",\"        PHPVersion = [version]$_.Groups['suffix'].Value\",\"    }\",\"} | Sort-Object XdebugVersion, PHPVersion -Descending | Select-Object -First 1\",\"$version_prefix = $latest_xdebug.XdebugVersion.ToString()\",\"$version_suffix = $latest_xdebug.PHPVersion.ToString().Split('.')[0..1] -join ''\",\"Write-Output \\\"$version_prefix-$version_suffix / $($latest_xdebug.FileName)\\\"\"],\"url\":\"https://xdebug.org/download/historical\"}"

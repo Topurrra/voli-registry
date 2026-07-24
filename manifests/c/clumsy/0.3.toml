@@ -1,0 +1,15 @@
+name = "clumsy"
+version = "0.3"
+description = "Broken network simulator"
+homepage = "https://jagt.github.io/clumsy/"
+license = "MIT"
+kind = "app"
+bin = ["clumsy.exe"]
+persist = ["config.txt"]
+
+[source.x64]
+url = "https://github.com/jagt/clumsy/releases/download/0.3/clumsy-0.3-win64-a.zip"
+sha256 = "f50dc734148815831c67d9fc2c246c22d421c53dcea51e26eee905b0b2806c27"
+
+[autoupdate]
+checkver = "{\"regex\":\"clumsy-([\\\\d.]+)-win64(?:-a)?\\\\.zip\",\"url\":\"https://jagt.github.io/clumsy/download.html\"}"

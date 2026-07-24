@@ -1,0 +1,18 @@
+name = "terminal-parrot"
+version = "1.2.1"
+description = "A parrot for your terminal"
+homepage = "https://cultofthepartyparrot.com/"
+license = "MIT"
+kind = "app"
+bin = ["terminal-parrot.exe"]
+
+[source.x64]
+url = "https://github.com/jmhobbs/terminal-parrot/releases/download/1.2.1/terminal-parrot_Windows_x86_64.zip"
+sha256 = "bbd042ae5432fd53c8910d21e9fad0aabfdb3a501c4899e3ebb12ca89ec19b30"
+
+[source.arm64]
+url = "https://github.com/jmhobbs/terminal-parrot/releases/download/1.2.1/terminal-parrot_Windows_arm64.zip"
+sha256 = "9f3871a709fa1777dcac70ffb468c819232286f4a8ed58617c40c7232b3860aa"
+
+[autoupdate]
+checkver = { github = "jmhobbs/terminal-parrot" }

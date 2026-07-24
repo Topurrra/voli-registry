@@ -1,0 +1,13 @@
+name = "cc-switch"
+version = "3.18.0"
+description = "A desktop All-in-One assistant tool for Claude Code, Codex & Gemini CLI."
+homepage = "https://github.com/farion1231/cc-switch"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/farion1231/cc-switch/releases/download/v3.18.0/CC-Switch-v3.18.0-Windows-Portable.zip"
+sha256 = "9b180af9817d60b2be2a69f5a71ec7383fce67404521a38046c58d53aa3bbc01"
+
+[autoupdate]
+checkver = { github = "farion1231/cc-switch" }

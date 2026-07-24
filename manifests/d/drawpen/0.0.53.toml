@@ -1,0 +1,13 @@
+name = "drawpen"
+version = "0.0.53"
+description = "A simple screen annotation."
+homepage = "https://github.com/DmytroVasin/DrawPen"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/DmytroVasin/DrawPen/releases/download/v0.0.53/DrawPen-win32-x64-0.0.53.zip"
+sha256 = "d484c54da70a1d11771f1be1ffc95e634c03f5afb7729f62030cb1ecb97717b8"
+
+[autoupdate]
+checkver = { github = "DmytroVasin/DrawPen" }

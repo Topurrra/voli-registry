@@ -1,0 +1,15 @@
+name = "anypoint-studio"
+version = "7.25.0"
+description = "MuleSoft's Eclipse-based IDE for designing and testing Mule applications."
+homepage = "https://www.mulesoft.com/platform/studio"
+license = "Proprietary"
+kind = "app"
+bin = ["AnypointStudio.exe"]
+persist = ["workspace", "configuration"]
+
+[source.x64]
+url = "https://mule-studio.s3.amazonaws.com/7.25.0-GA/AnypointStudio-7.25.0-win64.zip"
+sha256 = "9df0929007152e74b5b61c0c489e0ba38f89b83c56b6d2f17b56e26a36167352"
+
+[autoupdate]
+checkver = "{\"regex\":\"Anypoint\\\\s+Studio\\\\s+v?([\\\\d.]+)\",\"url\":\"https://docs.mulesoft.com/release-notes/studio/anypoint-studio\"}"

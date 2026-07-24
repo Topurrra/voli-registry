@@ -1,0 +1,15 @@
+name = "ncmpc"
+version = "0.20"
+description = "Curses Music Player Daemon (MPD) client"
+homepage = "https://www.musicpd.org/clients/ncmpc"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "ncmpc-0.20"
+bin = ["ncmpc.exe"]
+
+[source.x64]
+url = "https://www.musicpd.org/download/ncmpc/0/ncmpc-0.20-win32.zip"
+sha256 = "ec7ba2ee6ed58a939eb0487e1e79169f695f7172d620790d734e6c3f9711fc1e"
+
+[autoupdate]
+checkver = "{\"regex\":\"ncmpc-([\\\\d.]+)-win32\\\\.zip\",\"url\":\"https://www.musicpd.org/download/ncmpc/0/\"}"

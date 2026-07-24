@@ -1,0 +1,13 @@
+name = "cpu-v"
+version = "10"
+description = "Detect CPU Hardware Virtualization support / state."
+homepage = "https://leomoon.com/downloads/desktop-apps/leomoon-cpu-v/"
+license = "Unknown"
+kind = "app"
+
+[source.x64]
+url = "https://leomoon.com/static/?file=leomoon-cpu-v_win.zip#/dl.zip"
+sha256 = "f899c78c1600beb6df038d9506cba2f8275e7621ca16ff53d74acfa99f6e46bd"
+
+[autoupdate]
+checkver = "([\\d.]+):"

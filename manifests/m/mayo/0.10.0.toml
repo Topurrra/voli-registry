@@ -1,0 +1,15 @@
+name = "mayo"
+version = "0.10.0"
+description = "The opensource 3D CAD viewer and converter"
+homepage = "https://github.com/fougue/mayo"
+license = "BSD-2-Clause"
+kind = "app"
+extract_dir = "Mayo-0.10.0-win64-binaries"
+bin = ["mayo.exe"]
+
+[source.x64]
+url = "https://github.com/fougue/mayo/releases/download/v0.10.0/Mayo-0.10.0-win64-binaries.zip"
+sha256 = "4cd2df02e0d5b113873515b0e222e9944629d432fe731537204a119c3b6d74b2"
+
+[autoupdate]
+checkver = { github = "fougue/mayo" }

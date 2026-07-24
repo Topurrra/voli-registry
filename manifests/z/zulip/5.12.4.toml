@@ -1,0 +1,14 @@
+name = "zulip"
+version = "5.12.4"
+description = "Desktop client for Zulip, an open source team chat application"
+homepage = "https://zulipchat.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Zulip.exe"]
+
+[source.x64]
+url = "https://github.com/zulip/zulip-desktop/releases/download/v5.12.4/zulip-5.12.4-x64.nsis.7z"
+sha512 = "a288eca9cb9c9b761dcc2e7e6bc627ef3e7d9b8e2e872453da1f99ca5d02aacbca6102aaaadfa421f09bfb555c1fde6ba3879ee644f79b432c4028c78019a2f8"
+
+[autoupdate]
+checkver = { github = "zulip/zulip-desktop" }

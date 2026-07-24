@@ -1,0 +1,14 @@
+name = "kodi"
+version = "21.3"
+description = "Open source home theater/media center software and entertainment hub for digital media"
+homepage = "https://kodi.tv/"
+license = "GPL-2.0-or-later"
+kind = "app"
+persist = ["portable_data"]
+
+[source.x64]
+url = "https://mirrors.kodi.tv/releases/windows/win64/kodi-21.3-Omega-x64.exe#/dl.7z"
+sha256 = "2c46c2bd60b38bb60eb0a5e3468bfd43e9235521eae2910b8c81455e46335c5c"
+
+[autoupdate]
+checkver = "{\"regex\":\"/releases/tag/(?<version>[\\\\d.]+)-(?<name>\\\\w+)\",\"url\":\"https://github.com/xbmc/xbmc/releases/latest\"}"

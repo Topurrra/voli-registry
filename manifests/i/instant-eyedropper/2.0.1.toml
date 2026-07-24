@@ -1,0 +1,16 @@
+name = "instant-eyedropper"
+version = "2.0.1"
+description = "Color picker and detection tool."
+homepage = "http://instant-eyedropper.com"
+license = "Freeware"
+kind = "app"
+extract_dir = "instant-eyedropper"
+bin = ["instanteyedropper.exe"]
+persist = ["eyedropper.ini"]
+
+[source.x64]
+url = "http://instant-eyedropper.com/download/instant-eyedropper-2.0.1.zip"
+sha256 = "066c09377fe7a985fb1e865b9f8d5d9ca830f88e84e251cfd1ccdb6f7cb24760"
+
+[autoupdate]
+checkver = "/download/instant-eyedropper-([\\d.]+)\\.zip"

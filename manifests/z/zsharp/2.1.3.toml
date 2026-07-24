@@ -1,0 +1,11 @@
+name = "zsharp"
+version = "2.1.3"
+description = "A custom programming interpreter for ZSharp (Z#), a custom programming language developed by sam-astro."
+homepage = "https://github.com/sam-astro/Z-Sharp"
+license = "MIT"
+kind = "app"
+bin = ["ZSharp.exe"]
+
+[source.x64]
+url = "https://github.com/sam-astro/Z-Sharp/releases/download/v2.1.3/ZS_Win_Base_Raw.zip"
+sha256 = "92255cc953ae2a152ec355b29c35032abfc53b43ee43efcf83106d1036501dbd"

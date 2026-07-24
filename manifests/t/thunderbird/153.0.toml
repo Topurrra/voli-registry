@@ -1,0 +1,15 @@
+name = "thunderbird"
+version = "153.0"
+description = "A free email application that’s easy to set up and customize."
+homepage = "https://www.thunderbird.net"
+license = "MPL-2.0"
+kind = "app"
+bin = ["thunderbird.exe"]
+persist = ["distribution", "profile"]
+
+[source.x64]
+url = "https://archive.mozilla.org/pub/thunderbird/releases/153.0/win64/en-US/Thunderbird%20Setup%20153.0.exe#/dl.7z"
+sha512 = "4589c12282c4616f9c1f6a41caf45d818839be22c3333fc6b3c4c8b247162d79cd9b72cc504b82d09520e5e9d1b4f0fa88f1a19f80c9d97e39dfbd471267f033"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.LATEST_THUNDERBIRD_VERSION\",\"url\":\"https://product-details.mozilla.org/1.0/thunderbird_versions.json\"}"

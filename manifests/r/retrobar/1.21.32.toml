@@ -1,0 +1,18 @@
+name = "retrobar"
+version = "1.21.32"
+description = "Classic Windows 95, 98, Me, 2000, XP, Vista taskbar for modern versions of Windows"
+homepage = "https://github.com/dremin/RetroBar"
+license = "Apache-2.0"
+kind = "app"
+bin = ["RetroBar.exe"]
+
+[source.x64]
+url = "https://github.com/dremin/RetroBar/releases/download/v1.21.32/RetroBar.Portable.64-bit.zip"
+sha256 = "56e5fcfae5a3fdad4cda09863e6deae558bd8926f44ba8a18c4643c612eea651"
+
+[source.arm64]
+url = "https://github.com/dremin/RetroBar/releases/download/v1.21.32/RetroBar.Portable.ARM64.zip"
+sha256 = "4ff3672ebfeba33cffed5a3200db7ac909c8a219836f103bb9124d0175cc9cbb"
+
+[autoupdate]
+checkver = { github = "dremin/RetroBar" }

@@ -1,0 +1,14 @@
+name = "git-credential-manager"
+version = "2.9.1"
+description = "Secure Git credential helper"
+homepage = "https://github.com/git-ecosystem/git-credential-manager"
+license = "MIT"
+kind = "app"
+bin = ["git-credential-manager.exe"]
+
+[source.x64]
+url = "https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.9.1/gcm-win-x86-2.9.1.zip"
+sha256 = "076d120618e876f06cf47cdb79aabda2d4afe89701a2b4e81f441d8b20200d35"
+
+[autoupdate]
+checkver = { github = "git-ecosystem/git-credential-manager" }

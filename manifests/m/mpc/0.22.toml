@@ -1,0 +1,15 @@
+name = "mpc"
+version = "0.22"
+description = "Command-line music player client for mpd"
+homepage = "https://www.musicpd.org/clients/mpc"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "mpc-0.22"
+bin = ["mpc.exe"]
+
+[source.x64]
+url = "https://www.musicpd.org/download/mpc/0/mpc-0.22-win32.zip"
+sha256 = "11ef51e8b40723637704aa01af8ab17664f63662f409f0d56f2a59a960688724"
+
+[autoupdate]
+checkver = "{\"regex\":\"mpc-([\\\\d.]+)-win32.zip\",\"reverse\":true,\"url\":\"https://musicpd.org/download/mpc/0/\"}"

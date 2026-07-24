@@ -1,0 +1,15 @@
+name = "kdoc-formatter"
+version = "1.6.9"
+description = "Reformats Kotlin KDoc comments, reflowing text and other cleanup"
+homepage = "https://github.com/tnorbye/kdoc-formatter"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kdoc-formatter-1.6.9"
+bin = ["bin\\kdoc-formatter.bat"]
+
+[source.x64]
+url = "https://github.com/tnorbye/kdoc-formatter/releases/download/v1.6.9/kdoc-formatter-1.6.9.zip"
+sha256 = "4bf484b32b6432d06c60b7d7bda8c5fc93197177e48af3a5052f71a86ed53fcf"
+
+[autoupdate]
+checkver = { github = "tnorbye/kdoc-formatter" }

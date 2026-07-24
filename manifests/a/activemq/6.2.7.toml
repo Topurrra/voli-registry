@@ -1,0 +1,16 @@
+name = "activemq"
+version = "6.2.7"
+description = "Multi-protocol and Java-based message broker"
+homepage = "https://activemq.apache.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "apache-activemq-6.2.7"
+bin = ["bin\\activemq.bat", "bin\\activemq-admin.bat"]
+persist = ["conf", "data"]
+
+[source.x64]
+url = "https://downloads.apache.org/activemq/6.2.7/apache-activemq-6.2.7-bin.zip"
+sha512 = "bd3a13fc56c4f4a076501c526b40986dec2ae840230ce62e9590f4cfeca89e67fbec402b8fdff8ff4a82b39975ebdaa00958822ad0946bb352bf4c2c17305007"
+
+[autoupdate]
+checkver = "{\"regex\":\"apache-activemq-([\\\\d.]+)-bin\\\\.zip\",\"url\":\"https://activemq.apache.org/components/classic/download\"}"

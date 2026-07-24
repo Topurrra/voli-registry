@@ -1,0 +1,16 @@
+name = "webcam-on-off"
+version = "1.4"
+description = "A simple app that allows you to turn your webcam on or off."
+homepage = "https://www.sordum.org/webcam-on-off"
+license = "Freeware"
+kind = "app"
+extract_dir = "Webcam_on_off_v1.4"
+bin = ["WebCam.exe"]
+persist = ["WebCam.ini"]
+
+[source.x64]
+url = "https://www.sordum.org/files/download/webcam-on-off/WebcamOnOff.zip"
+sha256 = "16d5a6442afa885dc59a23ed973b323c63f04ba0660c5ac88b68c2c4736a2392"
+
+[autoupdate]
+checkver = "WebCam\\sOn-Off\\sv([\\d.]+)"

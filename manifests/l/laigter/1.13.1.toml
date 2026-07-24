@@ -1,0 +1,15 @@
+name = "laigter"
+version = "1.13.1"
+description = "Automatic normal map generator for sprites"
+homepage = "https://azagaya.itch.io/laigter"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "laigter-windows"
+bin = ["laigter.exe"]
+
+[source.x64]
+url = "https://github.com/azagaya/laigter/releases/download/1.13.1/laigter-windows.zip"
+sha256 = "c5130992989094b337c02131588030bc534e69cea3eef7d1179d52876d98b770"
+
+[autoupdate]
+checkver = { github = "azagaya/laigter" }

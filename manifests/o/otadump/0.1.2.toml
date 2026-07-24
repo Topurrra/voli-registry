@@ -1,0 +1,18 @@
+name = "otadump"
+version = "0.1.2"
+description = "Extract partitions from Android OTA files."
+homepage = "https://github.com/crazystylus/otadump"
+license = "MIT"
+kind = "app"
+bin = ["otadump.exe"]
+
+[source.x64]
+url = "https://github.com/crazystylus/otadump/releases/download/0.1.2/otadump-0.1.2-x86_64-pc-windows-msvc.zip"
+sha256 = "2aad2d2f657cde497fb550b0bcee77dd1df5a334a5170f66c930ffcfa0fd9156"
+
+[source.arm64]
+url = "https://github.com/crazystylus/otadump/releases/download/0.1.2/otadump-0.1.2-aarch64-pc-windows-msvc.zip"
+sha256 = "dee7af98947e00dbde775bb740b2d75ccf1fc07ba8e62f1ae5e6fddb951daf1a"
+
+[autoupdate]
+checkver = { github = "crazystylus/otadump" }

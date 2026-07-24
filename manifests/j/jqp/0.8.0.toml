@@ -1,0 +1,18 @@
+name = "jqp"
+version = "0.8.0"
+description = "A TUI playground to experiment with jq"
+homepage = "https://github.com/noahgorstein/jqp"
+license = "MIT"
+kind = "app"
+bin = ["jqp.exe"]
+
+[source.x64]
+url = "https://github.com/noahgorstein/jqp/releases/download/v0.8.0/jqp_Windows_x86_64.tar.gz"
+sha256 = "9d62970c1355705c7050788f70fe597f65f1fe808a7b29fc34876c90bf509c17"
+
+[source.arm64]
+url = "https://github.com/noahgorstein/jqp/releases/download/v0.8.0/jqp_Windows_arm64.tar.gz"
+sha256 = "097fdb13c151c933f8e131c7d7429a14482df947c8343c425b60660625ba01bc"
+
+[autoupdate]
+checkver = { github = "noahgorstein/jqp" }

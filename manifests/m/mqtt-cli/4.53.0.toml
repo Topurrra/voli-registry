@@ -1,0 +1,14 @@
+name = "mqtt-cli"
+version = "4.53.0"
+description = "MQTT CLI is a useful command line interface for connecting various MQTT clients supporting MQTT 5.0 and 3.1.1 "
+homepage = "https://hivemq.github.io/mqtt-cli/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["mqtt-cli.exe"]
+
+[source.x64]
+url = "https://github.com/hivemq/mqtt-cli/releases/download/v4.53.0/mqtt-cli-4.53.0-win.zip"
+sha256 = "59647d621a87b4fc1a1bb23f4b687ce913001dccf3dfa71f57bac006ce527751"
+
+[autoupdate]
+checkver = { github = "hivemq/mqtt-cli" }

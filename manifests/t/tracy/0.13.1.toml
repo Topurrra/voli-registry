@@ -1,0 +1,13 @@
+name = "tracy"
+version = "0.13.1"
+description = "A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications"
+homepage = "https://github.com/wolfpld/tracy"
+license = "BSD-3-Clause"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/wolfpld/tracy/releases/download/v0.13.1/windows-0.13.1.zip"
+sha256 = "ee6db1a7e71a12deb5973a8dbfdf9f36d3635bec0e0b31b1cc74f28de7dac4c9"
+
+[autoupdate]
+checkver = { github = "wolfpld/tracy" }

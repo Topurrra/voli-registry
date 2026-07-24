@@ -1,0 +1,14 @@
+name = "inkscape"
+version = "1.4.4"
+description = "Professional vector graphics editor"
+homepage = "https://inkscape.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = [{ name = "inkscape", path = "bin\\inkscape.com" }, { name = "inkview", path = "bin\\inkview.com" }]
+
+[source.x64]
+url = "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4_2026-05-05_dcaf3e7-x64_mHK170m.7z"
+sha256 = "c4dbd64a92628abe7d7316c43f9325396e4d48417866027ee3d993d4f5b54c6a"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?<cleanfilename>inkscape-(\\\\d+(?:\\\\.\\\\d+)+).*?)\\\\.7z\",\"script\":[\"$redirUrl = [System.Net.HttpWebRequest]::Create('https://inkscape.org/release/').GetResponse().ResponseUri.AbsoluteUri\",\"$test_dl = Invoke-WebRequest ($redirUrl + 'windows/64-bit/compressed-7z/dl/') -UseBasicParsing\",\"$filename = ($test_dl.Links | Where-Object href -match '.7z$' | Select-Object -First 1 -ExpandProperty href) -split '/' | Select-Object -Last 1\",\"Write-Output $filename\"]}"

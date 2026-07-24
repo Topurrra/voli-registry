@@ -1,0 +1,14 @@
+name = "synfig-studio"
+version = "1.5.5"
+description = "2D Animation Software"
+homepage = "https://www.synfig.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["bin\\synfig.exe"]
+
+[source.x64]
+url = "https://github.com/synfig/synfig/releases/download/v1.5.5/SynfigStudio-1.5.5-2026.03.15-win64-79bf7.zip"
+sha256 = "f8e62c860216ed733be092147779df2aa5afdeee34ad9da5736f99ed96550fe0"
+
+[autoupdate]
+checkver = "{\"regex\":\"SynfigStudio-([\\\\d.]+)-(?<date>[\\\\d.]+)-win64-(?<sha>[\\\\da-f]+)\\\\.zip\",\"url\":\"https://github.com/synfig/synfig/releases\"}"

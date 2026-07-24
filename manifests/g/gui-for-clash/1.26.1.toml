@@ -1,0 +1,18 @@
+name = "gui-for-clash"
+version = "1.26.1"
+description = "A GUI program for Clash developed by vue3 + wails."
+homepage = "https://github.com/GUI-for-Cores/GUI.for.Clash"
+license = "GPL-3.0"
+kind = "app"
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.26.1/GUI.for.Clash-windows-amd64.zip"
+sha256 = "f6dd9062b9b5bd9efe1decc5f076f7e674c34ae4b16987ef6cbfc7fd6cf40fab"
+
+[source.arm64]
+url = "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.26.1/GUI.for.Clash-windows-arm64.zip"
+sha256 = "b125aed4e36d31a168dee7735942c830ac8e86fb23ccf996ad743e06c2bc9533"
+
+[autoupdate]
+checkver = { github = "GUI-for-Cores/GUI.for.Clash" }

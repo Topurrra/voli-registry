@@ -1,0 +1,15 @@
+name = "ferrite"
+version = "0.3.0"
+description = "A fast, lightweight text editor for Markdown, JSON, YAML, and TOML files."
+homepage = "https://getferrite.dev/"
+license = "MIT"
+kind = "app"
+bin = ["ferrite.exe"]
+persist = ["portable"]
+
+[source.x64]
+url = "https://github.com/OlaProeis/Ferrite/releases/download/v0.3.0/ferrite-portable-windows-x64.zip"
+sha256 = "703421fb9c560a1f85a9bedcc0d2debec0223554bee0bab4e1a79c83d961474a"
+
+[autoupdate]
+checkver = { github = "OlaProeis/Ferrite" }

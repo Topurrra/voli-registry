@@ -1,0 +1,14 @@
+name = "universal-mediacreationtool"
+version = "2022.03.20"
+description = "Universal MediaCreationTool. Wrapper for all Windows 10/11 versions from 1507 to 21H1 with business (Enterprise) edition support"
+homepage = "https://github.com/AveYo/MediaCreationTool.bat"
+license = "MIT"
+kind = "app"
+extract_dir = "MediaCreationTool.bat-main"
+
+[source.x64]
+url = "https://codeload.github.com/AveYo/MediaCreationTool.bat/zip/refs/heads/main#/dl.zip"
+sha256 = "91cfa0e7ccbe81741358dadd72c713fd6b7458f39234533c8a1bebd06bf75620"
+
+[autoupdate]
+checkver = { github = "AveYo/MediaCreationTool.bat" }

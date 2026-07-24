@@ -1,0 +1,21 @@
+name = "exifglass"
+version = "2.0.0.0"
+description = "EXIF metadata viewing tool"
+homepage = "https://github.com/d2phap/ExifGlass"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "ExifGlass_2.0.0.0_win-x64"
+
+[source.x64]
+url = "https://github.com/d2phap/ExifGlass/releases/download/2.0.0.0/ExifGlass_2.0.0.0_win-x64.zip"
+sha256 = "a17e84901b0c188ba7d56ed053794bbdb19647cb1d72ca609a9d27335ca88201"
+
+[source.arm64]
+url = "https://github.com/d2phap/ExifGlass/releases/download/2.0.0.0/ExifGlass_2.0.0.0_win-arm64.zip"
+sha256 = "afec78f114e956cc3f45ed68975c2c4d38cd65bef14cb69c43a650742700f1a4"
+
+[depends]
+exiftool = "*"
+
+[autoupdate]
+checkver = { github = "d2phap/ExifGlass" }

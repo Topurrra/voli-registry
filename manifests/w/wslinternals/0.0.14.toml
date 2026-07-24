@@ -1,0 +1,14 @@
+name = "wslinternals"
+version = "0.0.14"
+description = "A collection of some nifty WSL-related utilities."
+homepage = "https://github.com/sirredbeard/wslinternals"
+license = "Apache-2.0"
+kind = "app"
+bin = ["list-wsl.exe", "sysdistrowt.exe", "wslctl.exe", "wsl-dist-update.exe", "wsl-latest-kernel.exe", "wsl-reset.exe", "wsl-perf.exe"]
+
+[source.x64]
+url = "https://github.com/sirredbeard/wslinternals/releases/download/0.0.14/0.0.14.zip"
+sha256 = "6e667966954fbf670a340f213970d2cbdffc58061b85a66833f9540dabce8069"
+
+[autoupdate]
+checkver = { github = "sirredbeard/wslinternals" }

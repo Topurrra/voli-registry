@@ -1,0 +1,13 @@
+name = "tcno-acc-switcher"
+version = "2025-11-20_03"
+description = "A Super-fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot, Ubisoft and many others!"
+homepage = "https://github.com/TcNobo/TcNo-Acc-Switcher"
+license = "GPL-3.0-only,LGPL-2.1-only,..."
+kind = "app"
+
+[source.x64]
+url = "https://github.com/TCNOco/TcNo-Acc-Switcher/releases/download/2025-11-20_03/TcNo-Acc-Switcher_2025-11-20_03.7z"
+sha256 = "f913135639584a8b4850ed8e1ece5a3fdbc32624deebf8ec804cb6b1884e5341"
+
+[autoupdate]
+checkver = { github = "TcNobo/TcNo-Acc-Switcher" }

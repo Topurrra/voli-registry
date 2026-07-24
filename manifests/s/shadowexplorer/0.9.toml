@@ -1,0 +1,13 @@
+name = "shadowexplorer"
+version = "0.9"
+description = "Browse the Shadow Copies created by the Windows Vista / 7 / 8 / 10 / 11 Volume Shadow Copy Service"
+homepage = "https://www.shadowexplorer.com"
+license = "Freeware"
+kind = "app"
+extract_dir = "ShadowExplorerPortable-0.9"
+bin = ["ShadowExplorerPortable.exe"]
+persist = ["ShadowExplorerPortable.exe.config"]
+
+[source.x64]
+url = "https://www.shadowexplorer.com/uploads/ShadowExplorer-0.9-portable.zip"
+sha256 = "92590121920b130a7787c25036d17cf4bd188f1de7cfac6d98c254eef531bb92"

@@ -1,0 +1,16 @@
+name = "openface"
+version = "2.2.0"
+description = "Facial behavior analysis toolkit"
+homepage = "https://github.com/TadasBaltrusaitis/OpenFace"
+license = "Proprietary"
+kind = "app"
+extract_dir = "OpenFace_2.2.0_win_x64"
+bin = ["FeatureExtraction.exe", "FaceLandmarkVid.exe", "FaceLandmarkVidMulti.exe", "FaceLandmarkImg.exe"]
+persist = ["model"]
+
+[source.x64]
+url = "https://github.com/TadasBaltrusaitis/OpenFace/releases/download/OpenFace_2.2.0/OpenFace_2.2.0_win_x64.zip"
+sha256 = "4201e96f3bc561a0e3a7fa50d2e12ce782b8a685746d63062572cd5296478dec"
+
+[autoupdate]
+checkver = { github = "TadasBaltrusaitis/OpenFace" }

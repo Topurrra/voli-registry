@@ -1,0 +1,14 @@
+name = "stretchly"
+version = "1.22.0"
+description = "Break time reminder"
+homepage = "https://hovancik.net/stretchly/"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["stretchly.exe"]
+
+[source.x64]
+url = "https://github.com/hovancik/stretchly/releases/download/v1.22.0/stretchly-1.22.0-win.7z"
+sha256 = "ab6fb4ff4a313cd2fddf527db44ae10606438fcc3442fc4a050551bbdc295058"
+
+[autoupdate]
+checkver = { github = "hovancik/stretchly" }

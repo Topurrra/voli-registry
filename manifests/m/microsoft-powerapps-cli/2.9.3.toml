@@ -1,0 +1,15 @@
+name = "microsoft-powerapps-cli"
+version = "2.9.3"
+description = "Simple, single-stop tool for developing customizations and extensions for Microsoft PowerApps."
+homepage = "https://docs.microsoft.com/en-us/powerapps/developer/component-framework/overview"
+license = "Proprietary"
+kind = "app"
+extract_dir = "tools"
+bin = ["pac.exe"]
+
+[source.x64]
+url = "https://www.nuget.org/api/v2/package/Microsoft.PowerApps.CLI/2.9.3#/dl.zip"
+sha256 = "2efbe5a5b5f1ff33a2d0f2081c1e035cea00705d784789933b045e1df399211b"
+
+[autoupdate]
+checkver = "{\"regex\":\">\\\\s*([\\\\d.]+)\\\\s*</\",\"url\":\"https://www.nuget.org/packages/Microsoft.PowerApps.CLI\"}"

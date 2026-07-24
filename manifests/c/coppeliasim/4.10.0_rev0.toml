@@ -1,0 +1,14 @@
+name = "coppeliasim"
+version = "4.10.0_rev0"
+description = "Create, compose and simulate any robot."
+homepage = "https://www.coppeliarobotics.com"
+license = "CoppeliaSim Educational License"
+kind = "app"
+bin = ["coppeliaSim.exe"]
+
+[source.x64]
+url = "https://downloads.coppeliarobotics.com/V4_10_0_rev0/CoppeliaSim_Edu_V4_10_0_rev0_Win.zip"
+sha256 = "fd265fdabeddef7e9586501dfc9937251a59e990804e728948ed79cab96cd474"
+
+[autoupdate]
+checkver = "{\"regex\":\"CoppeliaSim_Edu_V(\\\\d+)_(\\\\d+)_(\\\\d+)?(_rev[\\\\d]+)?_?Win\\\\.zip\",\"replace\":\"${1}.${2}.${3}${4}\",\"url\":\"https://www.coppeliarobotics.com/downloads?flavor=edu&platform=win-x86_64-zip\"}"

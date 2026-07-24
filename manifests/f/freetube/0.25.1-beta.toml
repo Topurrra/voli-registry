@@ -1,0 +1,17 @@
+name = "freetube"
+version = "0.25.1-beta"
+description = "The private YouTube client"
+homepage = "https://freetubeapp.io"
+license = "AGPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.1-beta/freetube-0.25.1-beta-win-x64-portable.7z"
+sha256 = "7586801a92a93f477a5d8305ca7668241d86739331ffdeaa926d77e5989d6115"
+
+[source.arm64]
+url = "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.1-beta/freetube-0.25.1-beta-win-arm64-portable.7z"
+sha256 = "43772698e21a7b8847d55f04bc7df72fc4a5bc2abef68fb1f507c8a04a71553d"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/FreeTubeApp/FreeTube/tags\",\"jsonpath\":\"$[0].name\",\"regex\":\"v([\\\\w.-]+)\"}"

@@ -1,0 +1,15 @@
+name = "kotlin-interactive-shell"
+version = "0.5.2"
+description = "This shell is an extensible implementation of Kotlin REPL."
+homepage = "https://github.com/Kotlin/kotlin-interactive-shell"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "ki"
+bin = ["bin\\ki.bat"]
+
+[source.x64]
+url = "https://github.com/Kotlin/kotlin-interactive-shell/releases/download/v0.5.2/ki-archive.zip"
+sha256 = "9bd5697f9ec29cd63eaf0b503f46edce377bac73e46552aa12231ac5dbda21e4"
+
+[autoupdate]
+checkver = { github = "Kotlin/kotlin-interactive-shell" }

@@ -1,0 +1,14 @@
+name = "datovka"
+version = "4.29.3"
+description = "Datovka is a multiplatform desktop application for accessing Datová schránka. The application's user interface is inspired by mail clients. Datovka is free software protected by the GNU GPL version 3 license."
+homepage = "https://www.datovka.cz/"
+license = "GPL-3"
+kind = "app"
+persist = [".dsgui"]
+
+[source.x64]
+url = "https://datovka.nic.cz/4.29.3/datovka-portable-4.29.3-windows-x64.zip"
+sha256 = "60b722e6ea3b1a94e54d1f963548c696645a7e72b02e0225a74a158f367c20f9"
+
+[autoupdate]
+checkver = "{\"regex\":\"Instalační balíčky verze\\\\s(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"url\":\"https://www.datovka.cz/cs/pages/instalace.html\"}"

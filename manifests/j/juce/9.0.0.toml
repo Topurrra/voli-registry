@@ -1,0 +1,14 @@
+name = "juce"
+version = "9.0.0"
+description = "C++ audio application framework"
+homepage = "https://juce.com"
+license = "Proprietary"
+kind = "app"
+bin = ["Projucer.exe"]
+
+[source.x64]
+url = "https://github.com/juce-framework/JUCE/releases/download/9.0.0/juce-9.0.0-windows.zip"
+sha256 = "6168a2e213a032b9e25c789497517b97f6df87414df0adcd3f159c2eb4ca517f"
+
+[autoupdate]
+checkver = { github = "juce-framework/JUCE" }

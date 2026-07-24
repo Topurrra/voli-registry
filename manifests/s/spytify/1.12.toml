@@ -1,0 +1,14 @@
+name = "spytify"
+version = "1.12"
+description = "Records Spotify while it plays without ads."
+homepage = "https://jwallet.github.io/spy-spotify/overview.html"
+license = "MIT"
+kind = "app"
+bin = ["Spytify.exe"]
+
+[source.x64]
+url = "https://github.com/jwallet/spy-spotify/releases/download/1.12/Spytify-v.1.12.zip"
+sha256 = "d94a5c91889f6503bf93ef6d2493fc9c354aaa4dc8c60103398554bde20025bb"
+
+[autoupdate]
+checkver = { github = "jwallet/spy-spotify" }

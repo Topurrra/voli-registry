@@ -1,0 +1,21 @@
+name = "mpv"
+version = "0.41.0"
+description = "A free, open source, and cross-platform media player"
+homepage = "https://mpv.io"
+license = "LGPL-2.1-or-later,GPL-2.0-or-later"
+kind = "app"
+persist = ["portable_config"]
+
+[source.x64]
+url = "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-x86_64-pc-windows-msvc.zip"
+sha256 = "4e197f729f5071c6772f35fffd96e0f36e3e8a044bd9479b136bb09b7c6a80ff"
+
+[source.arm64]
+url = "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-aarch64-pc-windows-msvc.zip"
+sha256 = "a822abeffd0ac88951f4084f3425f949842aa17d616f880637ebe9041e482e97"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "mpv-player/mpv" }

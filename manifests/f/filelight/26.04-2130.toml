@@ -1,0 +1,14 @@
+name = "filelight"
+version = "26.04-2130"
+description = "Disk usage visualizer"
+homepage = "https://apps.kde.org/filelight"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["bin\\filelight.exe"]
+
+[source.x64]
+url = "https://cdn.kde.org/ci-builds/utilities/filelight/release-26.04/windows/filelight-release_26.04-2130-windows-cl-msvc2022-x86_64.7z"
+sha256 = "5c7f73748c1f118adadb87856ea2a1c21be1cb5e752acc51b110d14205693c35"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.-]+) (?<lib>[\\\\w]+)\",\"script\":[\"$url = 'https://cdn.kde.org/ci-builds/utilities/filelight/?C=N;O=D'\",\"\",\"$cont = (Invoke-WebRequest $url).Content\",\"$regex = 'release-([\\\\d.]+)'\",\"if (!($cont -match $regex)) { error \\\"Could not match $regex in $url\\\"; continue }\",\"$ver = $matches[1]\",\"\",\"$nextUrl = \\\"https://cdn.kde.org/ci-builds/utilities/filelight/release-$ver/windows/\\\"\",\"$nextCont = (Invoke-WebRequest $nextUrl).Content\",\"$nextRegex = \\\"filelight-release_$ver-([\\\\d]+)-windows-cl-([\\\\w]+)-x86_64\\\\.7z\\\"\",\"if (!($nextCont -match $nextRegex)) { error \\\"Could not match $nextRegex in $nextUrl\\\"; continue }\",\"$build = $matches[1]\",\"$lib = $matches[2]\",\"Write-Output $ver-$build $lib\"]}"

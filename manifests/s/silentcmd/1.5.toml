@@ -1,0 +1,15 @@
+name = "silentcmd"
+version = "1.5"
+description = "Executes a batch file without opening the command prompt window."
+homepage = "https://github.com/stbrenner/SilentCMD"
+license = "MIT"
+kind = "app"
+bin = ["SilentCMD.exe"]
+persist = ["SilentCMD.exe.config"]
+
+[source.x64]
+url = "https://github.com/stbrenner/SilentCMD/releases/download/v1.5/SilentCMD-1.5.zip"
+sha256 = "a9c635d30a701c3d6975acfe03b0753cfe372381a4c9e6aa5a17e73b23b13647"
+
+[autoupdate]
+checkver = { github = "stbrenner/SilentCMD" }

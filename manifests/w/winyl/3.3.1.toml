@@ -1,0 +1,15 @@
+name = "winyl"
+version = "3.3.1"
+description = "A FOS digital audio player and music library application for organizing and playing audio on Windows."
+homepage = "https://winyl-player.github.io"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["Winyl.exe"]
+persist = ["Profile"]
+
+[source.x64]
+url = "https://github.com/winyl-player/winyl/releases/download/v3.3.1/winyl_portable_x64.zip"
+sha256 = "7057713873e2e7a1a62775359afc4102c891f312ec885bfcb4673e3f8eec3fae"
+
+[autoupdate]
+checkver = { github = "winyl-player/winyl" }

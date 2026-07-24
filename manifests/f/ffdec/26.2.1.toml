@@ -1,0 +1,14 @@
+name = "ffdec"
+version = "26.2.1"
+description = "Open Source Flash SWF decompiler and editor."
+homepage = "https://github.com/jindrapetrik/jpexs-decompiler"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["ffdec.jar"]
+
+[source.x64]
+url = "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip"
+sha256 = "0333b56998a55bd83f4e0deb678a811fcdc45607582b4f5dd438309c8c3ad5ce"
+
+[autoupdate]
+checkver = { github = "jindrapetrik/jpexs-decompiler" }

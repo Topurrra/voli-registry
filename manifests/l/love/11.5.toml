@@ -1,0 +1,15 @@
+name = "love"
+version = "11.5"
+description = "A framework you can use to make 2D games in Lua."
+homepage = "https://love2d.org"
+license = "Zlib"
+kind = "app"
+extract_dir = "love-11.5-win64"
+bin = ["love.exe", "lovec.exe"]
+
+[source.x64]
+url = "https://github.com/love2d/love/releases/download/11.5/love-11.5-win64.zip"
+sha256 = "ba6e56be2685e53c817749c4a5007f51137136fe5a3ab64920508babc2e74369"
+
+[autoupdate]
+checkver = { github = "love2d/love" }

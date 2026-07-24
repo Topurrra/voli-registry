@@ -1,0 +1,14 @@
+name = "nswagstudio"
+version = "14.7.1"
+description = "The OpenAPI/Swagger API toolchain for .NET and TypeScript"
+homepage = "https://github.com/RicoSuter/NSwag"
+license = "MIT"
+kind = "app"
+bin = ["Win\\NSwag.exe"]
+
+[source.x64]
+url = "https://github.com/RicoSuter/NSwag/releases/download/v14.7.1/NSwag.zip"
+sha256 = "ca8c81467cf23900b8cc9440ccab3c3138add7943223f855814518350aeab60d"
+
+[autoupdate]
+checkver = { github = "RicoSuter/NSwag" }

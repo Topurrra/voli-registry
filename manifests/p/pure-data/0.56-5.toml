@@ -1,0 +1,15 @@
+name = "pure-data"
+version = "0.56-5"
+description = "The \"vanilla\" distribution of Pure Data (aka Pd Vanilla) is an open source visual programming language for multimedia."
+homepage = "https://puredata.info/"
+license = "Standard-Improved-BSD"
+kind = "app"
+extract_dir = "pd-0.56-5"
+bin = ["bin\\pd.com", "bin\\pdsend.exe", "bin\\pdreceive.exe"]
+
+[source.x64]
+url = "http://msp.ucsd.edu/Software/pd-0.56-5.msw.zip"
+sha256 = "73f031bcc28304323c9a41ac03c874c7a1a5a92b5c665a9b301576e7b8de1b68"
+
+[autoupdate]
+checkver = "{\"regex\":\"CURRENT STABLE RELEASE, version ([\\\\d.-]+)\",\"url\":\"http://msp.ucsd.edu/software.html\"}"

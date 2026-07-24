@@ -1,0 +1,14 @@
+name = "proxybridge"
+version = "4.0.0"
+description = "A Proxifier alternative to redirect any TCP and UDP traffic to HTTP/SOCKS5 proxy."
+homepage = "https://interceptsuite.com"
+license = "MIT"
+kind = "app"
+bin = [{ name = "ProxyBridge", path = "ProxyBridge_CLI.exe" }]
+
+[source.x64]
+url = "https://github.com/InterceptSuite/ProxyBridge/releases/download/v4.0.0/ProxyBridge-Setup-4.0.0.exe#/dl.7z"
+sha256 = "7f2465151b785c4e089cd0fed18465e4bd7ae6c922b4f645de9809441d64ef32"
+
+[autoupdate]
+checkver = { github = "InterceptSuite/ProxyBridge" }

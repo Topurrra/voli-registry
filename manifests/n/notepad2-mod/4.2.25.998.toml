@@ -1,0 +1,12 @@
+name = "notepad2-mod"
+version = "4.2.25.998"
+description = "A Notepad2 fork, a fast and light-weight Notepad-like text editor with syntax highlighting."
+homepage = "https://github.com/XhmikosR/notepad2-mod"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["Notepad2.exe"]
+persist = ["Notepad2.ini"]
+
+[source.x64]
+url = "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998_x64.zip"
+sha256 = "c893ce4ac5f38ae9500d92f3ff4060542da2eae93a7d602b4bb5c4bec7562516"

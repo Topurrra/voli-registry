@@ -1,0 +1,14 @@
+name = "gptscript"
+version = "0.9.9"
+description = "GPTScript is a new scripting language to automate your interaction with a Large Language Model (LLM), namely OpenAI"
+homepage = "https://github.com/gptscript-ai/gptscript"
+license = "Apache 2.0"
+kind = "app"
+bin = ["gptscript.exe"]
+
+[source.x64]
+url = "https://github.com/gptscript-ai/gptscript/releases/download/v0.9.9/gptscript-v0.9.9-windows-amd64.zip"
+sha256 = "c177435d00152df1e6c52bf3909a7ced78a7bb2eebecadfe79ac93fd816e066f"
+
+[autoupdate]
+checkver = { github = "gptscript-ai/gptscript" }

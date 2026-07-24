@@ -1,0 +1,15 @@
+name = "qimgv-video"
+version = "1.0.2"
+description = "Fast, configurable and easy to use image viewer with video support"
+homepage = "https://github.com/easymodo/qimgv"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["qimgv.exe"]
+persist = ["cache", "conf", "thumbnails"]
+
+[source.x64]
+url = "https://github.com/easymodo/qimgv/releases/download/v1.0.2/qimgv-x64_1.0.2-video.zip"
+sha256 = "5476268f5f237fbb4dbd840ac626dc63f54007ab6d79a130e31dafeba35142ed"
+
+[autoupdate]
+checkver = { github = "easymodo/qimgv" }

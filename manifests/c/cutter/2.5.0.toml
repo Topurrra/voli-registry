@@ -1,0 +1,15 @@
+name = "cutter"
+version = "2.5.0"
+description = "A Qt and C++ GUI for Rizin reverse engineering framework."
+homepage = "https://cutter.re"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "Cutter-v2.5.0-Windows-x86_64"
+bin = ["cutter.exe", "rizin.exe", "rz-ax.exe", "rz-bin.exe", "rz-diff.exe", "rz-find.exe", "rz-gg.exe", "rz-hash.exe", "rz-run.exe"]
+
+[source.x64]
+url = "https://github.com/rizinorg/cutter/releases/download/v2.5.0/cutter-v2.5.0-Windows-x86_64.zip"
+sha256 = "a04154a03a392dbf5886a629938582f7d23a93636fa0611c3e1c34905b197e69"
+
+[autoupdate]
+checkver = { github = "rizinorg/cutter" }

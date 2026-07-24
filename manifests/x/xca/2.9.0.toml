@@ -1,0 +1,14 @@
+name = "xca"
+version = "2.9.0"
+description = "X - Certificate and Key management"
+homepage = "https://www.hohnstaedt.de/xca/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "xca-portable-2.9.0"
+
+[source.x64]
+url = "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-portable-2.9.0.zip"
+sha256 = "50d8a44a795a07ebef4238e22e0318a607f85464aba9f2853e0630196de1141f"
+
+[autoupdate]
+checkver = { github = "chris2511/xca" }

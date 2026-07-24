@@ -1,0 +1,14 @@
+name = "pdfarranger"
+version = "1.14.0"
+description = "PDF files editor"
+homepage = "https://github.com/pdfarranger/pdfarranger"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["pdfarranger.exe"]
+
+[source.x64]
+url = "https://github.com/pdfarranger/pdfarranger/releases/download/1.14.0/pdfarranger-1.14.0-windows-portable.zip"
+sha256 = "71bb8c7d3e9bd1713424ec546681f4cf4d50961020607e1c154ade67ea532615"
+
+[autoupdate]
+checkver = { github = "pdfarranger/pdfarranger" }

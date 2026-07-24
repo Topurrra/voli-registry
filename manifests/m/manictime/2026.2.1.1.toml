@@ -1,0 +1,14 @@
+name = "manictime"
+version = "2026.2.1.1"
+description = "A time tracking software"
+homepage = "https://www.manictime.com"
+license = "Proprietary"
+kind = "app"
+persist = ["Data"]
+
+[source.x64]
+url = "https://cdn.manictime.com/setup/v2026_2_1_1/manictime-portable-2026.2.1.1-win-x64.zip"
+sha256 = "76b4b1696dd327b80266fa5711ee5bb988690f834d687eadd9845a7e1204e9cf"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"http://services.manictime.com/Versions/GetLatestVersionNumber\"}"

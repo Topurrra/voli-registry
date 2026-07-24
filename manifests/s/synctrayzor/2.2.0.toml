@@ -1,0 +1,20 @@
+name = "synctrayzor"
+version = "2.2.0"
+description = "Windows tray utility / launcher for Syncthing (v2 continued)."
+homepage = "https://github.com/GermanCoding/SyncTrayzor"
+license = "MIT"
+kind = "app"
+extract_dir = "SyncTrayzorPortable-x64"
+bin = ["SyncTrayzor.exe"]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/GermanCoding/SyncTrayzor/releases/download/v2.2.0/SyncTrayzorPortable-x64.zip"
+sha512 = "f2f9dc102da81d523cf0287fb8c9894fcba939edca254e9835161ff612ca47921dff59e470a2551ebbe2bfc5e266a4a80c70f41fdc2029d5cbc539fcc4024e12"
+
+[source.arm64]
+url = "https://github.com/GermanCoding/SyncTrayzor/releases/download/v2.2.0/SyncTrayzorPortable-arm64.zip"
+sha512 = "79eb7521318399f291b6d1e9ac84128c1772d1d1dfe4386064aeed64e724649ff574e08b97afad66bfa520048921378b23972981756e172b7ec821d972880277"
+
+[autoupdate]
+checkver = { github = "GermanCoding/SyncTrayzor" }

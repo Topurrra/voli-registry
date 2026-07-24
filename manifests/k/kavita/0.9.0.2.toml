@@ -1,0 +1,14 @@
+name = "kavita"
+version = "0.9.0.2"
+description = "Kavita is a fast, feature rich, cross platform reading server. Built with a focus for manga and the goal of being a full solution for all your reading needs."
+homepage = "https://github.com/Kareadita/Kavita/"
+license = "GPL-3.0"
+kind = "app"
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/Kareadita/Kavita/releases/download/v0.9.0.2/kavita-win-x64.tar.gz"
+sha256 = "67b00f1a9a2a8f503f8301857d1c14b4fd2491180a74a4d874fa832c68e0b997"
+
+[autoupdate]
+checkver = { github = "Kareadita/Kavita" }

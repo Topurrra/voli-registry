@@ -1,0 +1,14 @@
+name = "foxe"
+version = "2.4.2"
+description = "Firstobject's free XML editor for Window"
+homepage = "https://www.firstobject.com/dn_editor.htm"
+license = "Unknown"
+kind = "app"
+bin = ["foxe.exe"]
+
+[source.x64]
+url = "https://www.firstobject.com/foxe242.zip"
+sha256 = "689fbd70a01ab88cc1a0d4f36574643f1c1cd54e0aac4b1045cfc7ac7bef8358"
+
+[autoupdate]
+checkver = "Download ([\\d.]+)"

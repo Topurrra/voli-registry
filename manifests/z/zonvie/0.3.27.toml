@@ -1,0 +1,18 @@
+name = "zonvie"
+version = "0.3.27"
+description = "A fast, feature-rich Neovim GUI built with Zig."
+homepage = "https://github.com/akiyosi/zonvie"
+license = "MIT"
+kind = "app"
+bin = ["zonvie.exe"]
+
+[source.x64]
+url = "https://github.com/akiyosi/zonvie/releases/download/v0.3.27/zonvie-v0.3.27-windows-x64.zip"
+sha256 = "cf5e0842470021bfd98dd7ad172b3311ea8ca9b324efca407efc7ec1523e7dac"
+
+[source.arm64]
+url = "https://github.com/akiyosi/zonvie/releases/download/v0.3.27/zonvie-v0.3.27-windows-arm64.zip"
+sha256 = "772e2b15fba72ee0272d2ae6f64c657002ff48390d569934ad8e1a9a2d3308e4"
+
+[autoupdate]
+checkver = { github = "akiyosi/zonvie" }

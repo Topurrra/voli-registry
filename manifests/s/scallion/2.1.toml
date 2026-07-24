@@ -1,0 +1,15 @@
+name = "scallion"
+version = "2.1"
+description = "GPU-based Onion Hash generator"
+homepage = "https://github.com/lachesis/scallion"
+license = "MIT"
+kind = "app"
+extract_dir = "scallion-v2.1"
+bin = ["scallion.exe"]
+
+[source.x64]
+url = "https://github.com/lachesis/scallion/releases/download/v2.1/scallion-v2.1.zip"
+sha256 = "ed258e34193dd56bb87d1893399c0014b16a0759109ccd9eeac494000ad21778"
+
+[autoupdate]
+checkver = { github = "lachesis/scallion" }

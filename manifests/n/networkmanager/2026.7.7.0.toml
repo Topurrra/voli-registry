@@ -1,0 +1,15 @@
+name = "networkmanager"
+version = "2026.7.7.0"
+description = "Tool for managing networks and network troubleshooting"
+homepage = "https://borntoberoot.net/NETworkManager/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["NETworkManager.exe"]
+persist = ["Settings", "Profiles"]
+
+[source.x64]
+url = "https://github.com/BornToBeRoot/NETworkManager/releases/download/2026.7.7.0/NETworkManager_2026.7.7.0_Portable.zip"
+sha256 = "39d4a17a299431079c021eb480c4b0b718b9a3c56a0a3fdcd079c89b83740290"
+
+[autoupdate]
+checkver = { github = "BornToBeRoot/NETworkManager" }

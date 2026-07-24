@@ -1,0 +1,14 @@
+name = "registry-explorer"
+version = "2026.5.0"
+description = "A registry viewer with advanced search capabilities, multi-hive support, and the ability to access locked registry files."
+homepage = "https://ericzimmerman.github.io"
+license = "MIT"
+kind = "app"
+persist = ["Settings", "Bookmarks\\User"]
+
+[source.x64]
+url = "https://download.ericzimmermanstools.com/net9/RegistryExplorer.zip"
+sha256 = "7cbd0994c0329b24a95cb7e66354d959f0e3fbf5ee9811b63a7d3d898be4f4f2"
+
+[autoupdate]
+checkver = "{\"regex\":\"Registry Explorer[^[]+\\\\[([\\\\d.]+)[^)]+/(?<path>[^/]+)/RegistryExplorer\",\"url\":\"https://raw.githubusercontent.com/EricZimmerman/ericzimmerman.github.io/HEAD/docs/index.md\"}"

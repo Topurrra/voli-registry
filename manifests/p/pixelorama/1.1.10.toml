@@ -1,0 +1,15 @@
+name = "pixelorama"
+version = "1.1.10"
+description = "2D sprite editor designed for pixel art"
+homepage = "https://orama-interactive.itch.io/pixelorama"
+license = "MIT"
+kind = "app"
+extract_dir = "Pixelorama-Windows-64bit"
+bin = ["Pixelorama.exe"]
+
+[source.x64]
+url = "https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.1.10/Pixelorama-Windows-64bit.zip"
+sha256 = "994b8a24e4970f5792577ede99845fb7b632c719095082bb094e692556e96f06"
+
+[autoupdate]
+checkver = { github = "Orama-Interactive/Pixelorama" }

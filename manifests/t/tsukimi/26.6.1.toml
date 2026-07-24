@@ -1,0 +1,13 @@
+name = "tsukimi"
+version = "26.6.1"
+description = "A simple third-party Jellyfin client."
+homepage = "https://github.com/tsukinaha/tsukimi"
+license = "GPL-3.0-or-later"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/tsukinaha/tsukimi/releases/download/v26.6.1/tsukimi-ucrt64-x86_64-windows-gnu.7z"
+sha256 = "09085fa64a8fe959a76b5cc267f07ae9737764434a1c48cde603530f49d50130"
+
+[autoupdate]
+checkver = { github = "tsukinaha/tsukimi" }

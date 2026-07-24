@@ -1,0 +1,14 @@
+name = "restish"
+version = "2.3.0"
+description = "Restish is a CLI for interacting with REST-ish HTTP APIs with some nice features built-in"
+homepage = "https://rest.sh/"
+license = "MIT"
+kind = "app"
+bin = ["restish.exe"]
+
+[source.x64]
+url = "https://github.com/danielgtaylor/restish/releases/download/v2.3.0/restish-2.3.0-windows-amd64.zip"
+sha256 = "8d9f468996c986a5ad49e53c5224fec9f86670328b05675a02891e3c4d54225b"
+
+[autoupdate]
+checkver = { github = "danielgtaylor/restish" }

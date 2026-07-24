@@ -1,0 +1,16 @@
+name = "zeronet"
+version = "670a9cf2e737f6b11187129515b2d4b73c78c962"
+description = "Decentralized websites using Bitcoin crypto and BitTorrent network"
+homepage = "https://zeronet.io/"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "ZeroNet-win-670a9cf2e737f6b11187129515b2d4b73c78c962"
+bin = ["ZeroNet.exe"]
+persist = ["data", "log"]
+
+[source.x64]
+url = "https://github.com/HelloZeroNet/ZeroNet-win/archive/670a9cf2e737f6b11187129515b2d4b73c78c962.zip"
+sha256 = "3faaa82bdb148a0212ad4d9219d2c7cc6725580560b0624a224ec369d732b891"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/HelloZeroNet/ZeroNet-win/branches\",\"jsonpath\":\"$[?(@.name == 'dist-win64')].commit.sha\",\"regex\":\"([a-f0-9]+)\"}"

@@ -1,0 +1,18 @@
+name = "pia-desktop"
+version = "3.7.2-08420"
+description = "Private Internet Access - Desktop VPN Client for Windows/macOS/Linux"
+homepage = "https://github.com/pia-foss/desktop"
+license = "Freeware"
+kind = "app"
+bin = ["openvpn_updown.bat", "pia-hnsd.exe", "pia-openvpn.exe", "pia-service.exe", "pia-ss-local.exe", "pia-unbound.exe", "pia-wgservice.exe", "pia-winsvcstub.exe", "piactl.exe"]
+
+[source.x64]
+url = "https://privateinternetaccess-storage.s3.amazonaws.com/pub/pia_desktop/builds/pia-windows-x64-3.7.2-08420.exe#/dl.7z"
+sha256 = "5ec83799746ab96c710a98e25ed161e02a1b6f648ef9a2659f6abaab0e8a680f"
+
+[source.arm64]
+url = "https://privateinternetaccess-storage.s3.amazonaws.com/pub/pia_desktop/builds/pia-windows-arm64-3.7.2-08420.exe#/dl.7z"
+sha256 = "345931db87de4111cf95fdef6e7572619450dac5540e2c25e0de90087732e4e2"
+
+[autoupdate]
+checkver = { github = "pia-foss/desktop" }

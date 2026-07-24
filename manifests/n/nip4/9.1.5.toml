@@ -1,0 +1,18 @@
+name = "nip4"
+version = "9.1.5"
+description = "A spreadsheet-like interface to the libvips image processing library"
+homepage = "https://github.com/libvips/nip4"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["bin\\nip4.exe"]
+
+[source.x64]
+url = "https://github.com/libvips/nip4/releases/download/v9.1.5/nip4-x64-9.1.5.zip"
+sha256 = "6441f2e0a05944f88f8fffecb1f7474caff03381d81e36ca9008c15c22a79522"
+
+[source.arm64]
+url = "https://github.com/libvips/nip4/releases/download/v9.1.5/nip4-arm64-9.1.5.zip"
+sha256 = "0edc12d4b9b66261bbee6d26a210c3bb3bd92308ecf6db2e51c36a4a876bbe3c"
+
+[autoupdate]
+checkver = { github = "libvips/nip4" }

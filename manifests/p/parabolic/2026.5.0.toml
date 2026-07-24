@@ -1,0 +1,17 @@
+name = "parabolic"
+version = "2026.5.0"
+description = "A powerful yt-dlp frontend that supports downloading videos in multiple formats (mp4, webm, mp3, opus, flac, and wav)."
+homepage = "https://nickvision.org/parabolic.html"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/NickvisionApps/Parabolic/releases/download/2026.5.0/NickvisionParabolicPortable.zip"
+sha256 = "d6c25b4968a35209b225e5342ea147eeca8091247a99bbb6d6011c64839ecf97"
+
+[source.arm64]
+url = "https://github.com/NickvisionApps/Parabolic/releases/download/2026.5.0/NickvisionParabolicPortable-arm64.zip"
+sha256 = "68dde1d9f1293eed816c86289e6c7300dbd88c9a6be8a1df1a3006501290aa5d"
+
+[autoupdate]
+checkver = { github = "NickvisionApps/Parabolic" }

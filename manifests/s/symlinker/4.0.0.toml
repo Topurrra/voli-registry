@@ -1,0 +1,13 @@
+name = "symlinker"
+version = "4.0.0"
+description = "GUI for creating symbolic links, hard links, and directory junctions on Windows."
+homepage = "https://amd989.github.io/Symlinker/"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/amd989/Symlinker/releases/download/v4.0.0/symlinker-4.0.0-portable.zip"
+sha256 = "64e5a025298a422d4627b6e11a56e2d54d6db45f2bc604441fbf74960a174c9b"
+
+[autoupdate]
+checkver = { github = "amd989/Symlinker" }

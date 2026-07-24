@@ -1,0 +1,15 @@
+name = "meinplatz"
+version = "8.66"
+description = "Hard disk scan and folder size tool"
+homepage = "http://www.softwareok.com/?seite=Freeware/MeinPlatz"
+license = "Freeware"
+kind = "app"
+bin = ["MeinPlatz.exe"]
+persist = ["MeinPlatz.ini"]
+
+[source.x64]
+url = "https://www.softwareok.com/Download/MeinPlatz_Portable_x64.zip"
+sha256 = "919cb98271408a0762c0a831121dc75018c4f1217d2162d5605f96bf7144670e"
+
+[autoupdate]
+checkver = "{\"regex\":\"New in version ([\\\\d.]+)\",\"url\":\"https://www.softwareok.com/?seite=Microsoft/MeinPlatz/History\"}"

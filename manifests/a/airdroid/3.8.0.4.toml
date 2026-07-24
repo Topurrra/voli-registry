@@ -1,0 +1,14 @@
+name = "airdroid"
+version = "3.8.0.4"
+description = "An application for transferring files across devices, remote control Android devices, mirror screen, and manage SMS & notifications on your computer."
+homepage = "https://www.airdroid.com"
+license = "Freeware"
+kind = "app"
+bin = ["AirDroid.exe"]
+
+[source.x64]
+url = "https://dl.airdroid.com/download/AirDroid/Win/v3.8.0.4/20250311152551/AirDroid_Desktop_Client_3.8.0.4.exe#/dl.7z"
+sha256 = "ce7f2dfa2ed42b0013c9342d52b5b870fab1a2ecda4d114c12074887806de60e"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\\/(?<datetime>\\\\d+)\\\\/AirDroid_Desktop_Client_([\\\\d.]+)\\\\.exe\",\"script\":[\"$redirUrl = [System.Net.HttpWebRequest]::Create('https://srv3.airdroid.com/p20/web/getbinaryredirect?type=exe&channel=&version=').GetResponse().ResponseUri.AbsoluteUri\",\"return $redirUrl\"]}"

@@ -1,0 +1,13 @@
+name = "notion-enhanced"
+version = "2.0.18-1"
+description = "Collaborative note taking. Notion with notion-enhancer embedded."
+homepage = "https://notion-enhancer.github.io/"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1-win.zip"
+sha256 = "22fb539c65caf2fbbaa201ac8ce983e6bf7c4af7e05ea706302c7c4c1947165e"
+
+[autoupdate]
+checkver = { github = "notion-enhancer/notion-repackaged" }

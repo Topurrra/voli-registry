@@ -1,0 +1,18 @@
+name = "xpipe"
+version = "23.8"
+description = "A connection hub and remote file manager to access your entire server infrastructure from your local desktop"
+homepage = "https://xpipe.io/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\xpipe.exe"]
+
+[source.x64]
+url = "https://github.com/xpipe-io/xpipe/releases/download/23.8/xpipe-portable-windows-x86_64.zip"
+sha256 = "e63e33484cee30e78ec22ae840fda8323fccdbeafa1fda8fbb7bd8f025360f7b"
+
+[source.arm64]
+url = "https://github.com/xpipe-io/xpipe/releases/download/23.8/xpipe-portable-windows-arm64.zip"
+sha256 = "23a2ea82c4d60b273600f6a8dbc0f076e9fe0ea0e4ef06625e2d8d17c4155cf7"
+
+[autoupdate]
+checkver = { github = "xpipe-io/xpipe" }

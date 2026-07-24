@@ -1,0 +1,14 @@
+name = "yuescript"
+version = "0.34.1"
+description = "A moonscipt dialect that is derived from the Moonscript language and continuously adopting new features to be more up to date. Just like moonscipt, it also compiles into Lua."
+homepage = "https://yuescript.org/"
+license = "MIT"
+kind = "app"
+bin = ["yue.exe"]
+
+[source.x64]
+url = "https://github.com/pigpigyyy/Yuescript/releases/download/v0.34.1/yue-windows-x64.7z"
+sha256 = "f8e600bec696474b09812db9c4b0d6ce26b1fc73742a174b494fff46f280128d"
+
+[autoupdate]
+checkver = { github = "pigpigyyy/Yuescript" }

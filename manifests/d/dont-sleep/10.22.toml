@@ -1,0 +1,13 @@
+name = "dont-sleep"
+version = "10.22"
+description = "A small program to prevent system Shutdown, Stand By, Turn Off, Restart, Hibernate."
+homepage = "https://www.softwareok.com/?Download=DontSleep"
+license = "Freeware"
+kind = "app"
+
+[source.x64]
+url = "https://www.softwareok.com/Download/DontSleep_x64.zip"
+sha256 = "243652c2f4c24544a7e4cba70a111640669979c45b03fda27f84097cfb60771c"
+
+[autoupdate]
+checkver = "{\"regex\":\"version ([\\\\d.]+)\",\"url\":\"https://www.softwareok.com/?seite=Microsoft/DontSleep/History\"}"

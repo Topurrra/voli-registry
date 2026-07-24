@@ -1,0 +1,14 @@
+name = "dmde"
+version = "4.4.4.842"
+description = "Data searching, editing, and recovery on disks."
+homepage = "https://dmde.com/"
+license = "Proprietary"
+kind = "app"
+persist = ["dmde.ini"]
+
+[source.x64]
+url = "https://dmde.com/download/dmde-4-4-4-842-win64-gui.zip"
+sha256 = "205b2cb4c6531070df921af786350b53389e375d0fe00f1e344d87540c48a481"
+
+[autoupdate]
+checkver = "{\"regex\":\"DMDE ([\\\\d.]+)\",\"url\":\"https://dmde.com/changelog.html\"}"

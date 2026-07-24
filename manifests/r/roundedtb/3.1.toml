@@ -1,0 +1,13 @@
+name = "roundedtb"
+version = "3.1"
+description = "A tool to add margins, rounded corners and segments to the taskbar"
+homepage = "https://github.com/RoundedTB/RoundedTB"
+license = "GPL-3.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/RoundedTB/RoundedTB/releases/download/R3.1/RoundedTB_R3.1.zip"
+sha256 = "1fb9fe40bceb39d681df733c2822165a78ff0b7d627be1c0eba0f73be5376f5b"
+
+[autoupdate]
+checkver = { github = "RoundedTB/RoundedTB" }

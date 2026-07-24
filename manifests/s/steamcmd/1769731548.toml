@@ -1,0 +1,15 @@
+name = "steamcmd"
+version = "1769731548"
+description = "A command-line version of the Steam client"
+homepage = "https://developer.valvesoftware.com/wiki/SteamCMD"
+license = "Freeware"
+kind = "app"
+bin = ["steamcmd.exe"]
+persist = ["appcache", "config", "steamapps", "userdata"]
+
+[source.x64]
+url = "http://cdn.steamstatic.com/client/steamcmd_win32.zip.ae4a6f47ec93a6d7c6216d3a0638060ffd31dc62#/dl.7z"
+sha256 = "b7b934ee23952c5ffb5b83451efb3570f4a721c230b3b61e05bbc32b5a89e771"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"version\\\"\\\\s+\\\"(\\\\d+)\\\"[\\\\s\\\\S]*?steamcmd_win32\\\\.zip\\\\.(?<random>[a-f\\\\d]{40})\",\"url\":\"http://cdn.steamstatic.com/client/steam_cmd_win32\"}"

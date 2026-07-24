@@ -1,0 +1,18 @@
+name = "putty"
+version = "0.84"
+description = "A free implementation of SSH and Telnet, along with an xterm terminal emulator."
+homepage = "https://www.chiark.greenend.org.uk/~sgtatham/putty/"
+license = "MIT"
+kind = "app"
+bin = ["putty.exe", "puttygen.exe", "pscp.exe", "pageant.exe", "psftp.exe", "plink.exe"]
+
+[source.x64]
+url = "https://the.earth.li/~sgtatham/putty/0.84/w64/putty.zip"
+sha512 = "bfc73285e6145ffff37eab8ba3871207bf17a612fe8addec1c6f73530d6e6f5a91d61eddee074ceb74d154822587fc8be68566c7d65e2c9f54895881c5dc62e6"
+
+[source.arm64]
+url = "https://the.earth.li/~sgtatham/putty/0.84/wa64/putty.zip"
+sha512 = "a5b1750d73f63d9c2868892791d95a9654f8b353ea6258695905c2b4defb2d2ddf5682748cfa6e02da00bcea606366834f3b46aec3a7076693048cffc8432703"
+
+[autoupdate]
+checkver = "The latest version is ([\\d.]+)\\."

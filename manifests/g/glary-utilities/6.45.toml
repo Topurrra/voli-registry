@@ -1,0 +1,14 @@
+name = "glary-utilities"
+version = "6.45"
+description = "All-in-one utility for cleaning your PC"
+homepage = "https://www.glarysoft.com/"
+license = "Freeware"
+kind = "app"
+persist = ["Portable\\data", "Portable\\skins"]
+
+[source.x64]
+url = "https://download.glarysoft.com/guportable.zip"
+sha256 = "c655e3c3caec66b1ada4195d0360ffbb9f8b15ed6a4d723f8dedcbb2b167b8da"
+
+[autoupdate]
+checkver = "([\\d.-]+)</span> for Windows"

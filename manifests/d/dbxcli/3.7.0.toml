@@ -1,0 +1,15 @@
+name = "dbxcli"
+version = "3.7.0"
+description = "A command line client for Dropbox"
+homepage = "https://github.com/dropbox/dbxcli"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "dbxcli_3.7.0_windows_amd64"
+bin = ["dbxcli.exe"]
+
+[source.x64]
+url = "https://github.com/dropbox/dbxcli/releases/download/v3.7.0/dbxcli_3.7.0_windows_amd64.zip"
+sha256 = "fd69c4958894e9020bf5d2840096c8dcdfaca747b8ee3634091cdb24e757b3be"
+
+[autoupdate]
+checkver = { github = "dropbox/dbxcli" }

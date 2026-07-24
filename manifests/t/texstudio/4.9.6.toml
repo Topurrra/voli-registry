@@ -1,0 +1,15 @@
+name = "texstudio"
+version = "4.9.6"
+description = "An integrated writing environment for creating LaTeX documents."
+homepage = "https://www.texstudio.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["texstudio.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/texstudio-org/texstudio/releases/download/4.9.6/texstudio-4.9.6-win-portable-qt6.zip"
+sha256 = "924f3874560a0fbba319f41336270bb7c499fe59668cfbab6bdaac9aaed18b42"
+
+[autoupdate]
+checkver = "<span class=\"currentVersion\">([\\d.]+)</span>"

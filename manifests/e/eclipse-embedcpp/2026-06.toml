@@ -1,0 +1,13 @@
+name = "eclipse-embedcpp"
+version = "2026-06"
+description = "Eclipse IDE for Embedded C and C++ Developers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-embedcpp-2026-06-R-win32-x86_64.zip"
+sha512 = "a60a3cc7ab8b7d1c4ecb2da7fc05805f91f0de35caf44173e88856b35e9d08a7fa20b1b425dbe7bc258491c9b97eb53ce71d88de13edfddf29adbebf342458ec"
+
+[autoupdate]
+checkver = "{\"regex\":\"\\\"/downloads/packages/release/([\\\\d-]+)/r\\\"\",\"url\":\"https://www.eclipse.org/downloads/packages/\"}"

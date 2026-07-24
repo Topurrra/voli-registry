@@ -1,0 +1,11 @@
+name = "dukto"
+version = "6"
+description = "An easy file transfer tool designed for LAN use."
+homepage = "https://www.msec.it/blog/dukto/"
+license = "Freeware"
+kind = "app"
+extract_dir = "DuktoR6"
+
+[source.x64]
+url = "https://downloads.sourceforge.net/project/dukto/DuktoR6-Portable.zip"
+sha256 = "d32ab402e288dc80cfe9699459605f6b680f0e78b5ef2d04e4bd65e25ca270c9"

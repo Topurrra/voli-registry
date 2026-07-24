@@ -1,0 +1,14 @@
+name = "xan"
+version = "0.60.0"
+description = "xan is a command line tool that can be used to process CSV files directly from the shell."
+homepage = "https://github.com/medialab/xan"
+license = "Unlincense|MIT"
+kind = "app"
+bin = ["xan.exe"]
+
+[source.x64]
+url = "https://github.com/medialab/xan/releases/download/0.60.0/xan-x86_64-pc-windows-msvc.zip"
+sha256 = "e7ad980fb033381f0ae8445330328e086f92443828f89b3e5a6777409b2ec3bd"
+
+[autoupdate]
+checkver = { github = "medialab/xan" }

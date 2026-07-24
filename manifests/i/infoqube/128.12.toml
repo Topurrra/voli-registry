@@ -1,0 +1,14 @@
+name = "infoqube"
+version = "128.12"
+description = "information management system"
+homepage = "http://www.infoqube.biz/"
+license = "Proprietary"
+kind = "app"
+persist = ["AppData", "Users"]
+
+[source.x64]
+url = "https://infoqubeim.com/downloadarea/InfoQubeV128.12Portable.zip"
+sha256 = "31ca04fa0777af79d204c6ea351d3587f6cc97cdc785f30bbe4ca629375be3f0"
+
+[autoupdate]
+checkver = "{\"regex\":\"InfoQubeV([\\\\d.]+[A-Za-z]?)Portable\\\\.zip\",\"url\":\"http://www.infoqube.biz/download\"}"

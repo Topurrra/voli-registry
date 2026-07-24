@@ -1,0 +1,13 @@
+name = "eclipse-dsl"
+version = "2026-06"
+description = "Eclipse IDE for Java and DSL Developers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-dsl-2026-06-R-win32-x86_64.zip"
+sha512 = "5b33e7bd632ad4a92249f3f83ad346889efb035838a1a97d48a9c8451eb72a34b4e7cae2ffef7be28d02ef9bc198917cc1f8869c4ab6aaab95baf07547a9a805"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d-]+)\",\"url\":\"https://download.eclipse.org/technology/epp/downloads/release/release.xml\",\"xpath\":\"/packages/present\"}"

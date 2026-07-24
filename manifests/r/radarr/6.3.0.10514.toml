@@ -1,0 +1,14 @@
+name = "radarr"
+version = "6.3.0.10514"
+description = "A movie collection manager with several features for Usenet and BitTorrent users."
+homepage = "https://radarr.video/"
+license = "GPL-3.0"
+kind = "app"
+bin = ["Radarr.Console.exe", { name = "Radarr", path = "Radarr.Console.exe" }]
+
+[source.x64]
+url = "https://github.com/Radarr/Radarr/releases/download/v6.3.0.10514/Radarr.master.6.3.0.10514.windows-core-x64.zip"
+sha256 = "0723cb13be251f99e0e5862904c323f403d5c036e006faff9ac4a230a5f7a79b"
+
+[autoupdate]
+checkver = { github = "Radarr/Radarr" }

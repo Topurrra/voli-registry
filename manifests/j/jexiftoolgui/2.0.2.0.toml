@@ -1,0 +1,18 @@
+name = "jexiftoolgui"
+version = "2.0.2.0"
+description = "Graphical frontend for ExifTool"
+homepage = "https://hvdwolf.github.io/jExifToolGUI/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "jExifToolGUI-2.0.2.0-win-x86_64_with-jre"
+persist = ["logs"]
+
+[source.x64]
+url = "https://github.com/hvdwolf/jExifToolGUI/releases/download/2.0.2/jExifToolGUI-2.0.2.0-win-x86_64_with-jre.zip"
+sha256 = "d85bdab9b19355f07bce8db51cfaee999ed899a1d2d6c0b60f7b7bddcde97cc1"
+
+[depends]
+exiftool = "*"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/hvdwolf/jExifToolGUI/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"jExifToolGUI-([\\\\d.]+)-win-x86_64_with-jre\\\\.zip\"}"

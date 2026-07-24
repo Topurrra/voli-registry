@@ -1,0 +1,14 @@
+name = "conan"
+version = "2.31.1"
+description = "The open-source, decentralized C/C++ package manager"
+homepage = "https://conan.io"
+license = "MIT"
+kind = "app"
+bin = ["conan.exe"]
+
+[source.x64]
+url = "https://github.com/conan-io/conan/releases/download/2.31.1/conan-2.31.1-windows-x86_64.zip"
+sha256 = "705d9f52b7e14ab20208ca8e30356a9a119ffffa7c606db81065cf1d49a9f7e8"
+
+[autoupdate]
+checkver = { github = "conan-io/conan" }

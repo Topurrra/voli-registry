@@ -1,0 +1,18 @@
+name = "traefik"
+version = "3.7.9"
+description = "HTTP reverse proxy and load balancer"
+homepage = "https://traefik.io/"
+license = "MIT"
+kind = "app"
+bin = ["traefik.exe"]
+
+[source.x64]
+url = "https://github.com/traefik/traefik/releases/download/v3.7.9/traefik_v3.7.9_windows_amd64.zip"
+sha256 = "d6aae2e681a3aa3448645ea6bd57887815aef88d0a4280d7f6c7f1a5fe8c4f3d"
+
+[source.arm64]
+url = "https://github.com/traefik/traefik/releases/download/v3.7.9/traefik_v3.7.9_windows_arm64.zip"
+sha256 = "47e8647ff2a5f61a49fc08f8d825b776217f4a59730870a49184116d1546a333"
+
+[autoupdate]
+checkver = { github = "traefik/traefik" }

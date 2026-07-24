@@ -1,0 +1,14 @@
+name = "logcli"
+version = "3.7.4"
+description = "Command-line tool for querying and exploring logs in Grafana Loki."
+homepage = "https://grafana.com/docs/loki/latest/query/logcli/"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = [{ name = "logcli", path = "logcli-windows-amd64.exe" }]
+
+[source.x64]
+url = "https://github.com/grafana/loki/releases/download/v3.7.4/logcli-windows-amd64.exe.zip"
+sha256 = "0a3e05e9085f454da584d54bcb16c861357b8b1defcd442d60060591d5e18ecc"
+
+[autoupdate]
+checkver = { github = "grafana/loki" }

@@ -1,0 +1,14 @@
+name = "minify"
+version = "2.24.14"
+description = "Go minifiers for web formats"
+homepage = "https://github.com/tdewolff/minify"
+license = "MIT"
+kind = "app"
+bin = ["minify.exe"]
+
+[source.x64]
+url = "https://github.com/tdewolff/minify/releases/download/v2.24.14/minify_windows_amd64.zip"
+sha256 = "23953f6d533ed6a93dec747cbc41090e4c55f13468a643dbf9822ce4ba05d06b"
+
+[autoupdate]
+checkver = { github = "tdewolff/minify" }

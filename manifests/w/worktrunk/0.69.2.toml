@@ -1,0 +1,14 @@
+name = "worktrunk"
+version = "0.69.2"
+description = "A CLI for Git worktree management, designed for parallel AI agent workflows."
+homepage = "https://worktrunk.dev"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["git-wt.exe", "wt.exe"]
+
+[source.x64]
+url = "https://github.com/max-sixty/worktrunk/releases/download/v0.69.2/worktrunk-x86_64-pc-windows-msvc.zip"
+sha256 = "c4343fb59d4938433a600aeb7a2af52fed2e412889c6fa6788d74982c87a1a43"
+
+[autoupdate]
+checkver = { github = "max-sixty/worktrunk" }

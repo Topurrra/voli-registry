@@ -1,0 +1,14 @@
+name = "chroma"
+version = "3.0.0-alpha.5"
+description = "A general purpose syntax highlighter in pure Go"
+homepage = "https://github.com/alecthomas/chroma"
+license = "MIT"
+kind = "app"
+bin = ["chroma.exe"]
+
+[source.x64]
+url = "https://github.com/alecthomas/chroma/releases/download/v3.0.0-alpha.5/chroma-3.0.0-alpha.5-windows-amd64.tar.gz"
+sha256 = "0492494aeee667267f5b0526a37a11611cbbeac54491d7138793e1b8c9b517fa"
+
+[autoupdate]
+checkver = { github = "alecthomas/chroma" }

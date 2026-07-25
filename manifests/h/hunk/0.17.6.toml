@@ -1,0 +1,15 @@
+name = "hunk"
+version = "0.17.6"
+description = "Review-first terminal diff viewer for agentic coders."
+homepage = "https://hunk.dev"
+license = "MIT"
+kind = "app"
+extract_dir = "hunkdiff-windows-x64"
+bin = ["hunk.exe"]
+
+[source.x64]
+url = "https://github.com/modem-dev/hunk/releases/download/v0.17.6/hunkdiff-windows-x64.tar.gz"
+sha256 = "c2b473dcb75c001f863adb384f5dc522c7a69488bb8ab447941f9e6ed7415558"
+
+[autoupdate]
+checkver = { github = "modem-dev/hunk" }

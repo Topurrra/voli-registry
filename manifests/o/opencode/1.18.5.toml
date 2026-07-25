@@ -1,0 +1,14 @@
+name = "opencode"
+version = "1.18.5"
+description = "The open source AI coding agent."
+homepage = "https://opencode.ai/"
+license = "MIT"
+kind = "app"
+bin = ["opencode.exe"]
+
+[source.x64]
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.5/opencode-windows-x64.zip"
+sha256 = "755b9ff083ef4f444a9be1fb59803729a2158e448a526317fa3e54de464b515b"
+
+[autoupdate]
+checkver = { github = "anomalyco/opencode" }

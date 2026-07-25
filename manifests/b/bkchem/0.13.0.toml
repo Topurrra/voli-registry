@@ -1,0 +1,15 @@
+name = "bkchem"
+version = "0.13.0"
+description = "Free chemical drawing software with IUPAC InChI support"
+homepage = "https://bkchem.zirael.org/"
+license = "GPL-2.0-or-later"
+kind = "app"
+shortcuts = [{ target = "bkchem\\bkchem.exe", name = "BKchem" }]
+
+[source.x64]
+url = "https://bkchem.zirael.org/download/bkchem-0.13.0.exe"
+sha256 = "1b90a4c21462ac11014c3470e793f5f90ae393fac9a7d3927865ec0ecd5a34ce"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"bkchem-([\\\\d.]+)\\\\.exe\",\"url\":\"https://bkchem.zirael.org/download_en.html\"}"

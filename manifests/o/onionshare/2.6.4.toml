@@ -1,0 +1,17 @@
+name = "onionshare"
+version = "2.6.4"
+description = "Securely and anonymously send and receive files."
+homepage = "https://onionshare.org/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "OnionShare"
+bin = [{ name = "onionshare", path = "onionshare-cli.exe" }]
+shortcuts = [{ target = "onionshare.exe", name = "OnionShare" }]
+
+[source.x64]
+url = "https://github.com/onionshare/onionshare/releases/download/v2.6.4/OnionShare-win64-2.6.4.msi"
+sha256 = "84572c27546894b8b88a435c3777ce5f2269c8857a54054c6a356ee1f950fe08"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "onionshare/onionshare" }

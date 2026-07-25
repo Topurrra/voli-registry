@@ -1,0 +1,15 @@
+name = "search-deflector"
+version = "1.3.2"
+description = "A small program that forwards searches from Cortana to your preferred browser and search engine"
+homepage = "https://github.com/spikespaz/search-deflector"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "configure.exe", name = "Search Deflector" }]
+
+[source.x64]
+url = "https://github.com/spikespaz/search-deflector/releases/download/1.3.2/SearchDeflector-Installer.exe"
+sha256 = "5748459a852af0aab295cc1aa45e2e78785fb74b8f9880ab7a88ae2ddfbda630"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "spikespaz/search-deflector" }

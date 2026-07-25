@@ -1,0 +1,21 @@
+name = "azurestorageexplorer"
+version = "1.44.0"
+description = "Easily manage the contents of Azure storage account."
+homepage = "https://azure.microsoft.com/en-us/features/storage-explorer/"
+license = "CC-BY-4.0"
+kind = "app"
+bin = ["StorageExplorer.exe"]
+shortcuts = [{ target = "StorageExplorer.exe", name = "Azure Storage Explorer" }]
+
+[source.x64]
+url = "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.44.0/StorageExplorer-windows-x64.exe"
+sha256 = "58d87ad6237692914e6b4240b345ec03f25005c3b59d016712027ae527f89bea"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.44.0/StorageExplorer-windows-arm64.exe"
+sha256 = "c4b153a777f4c534af1309c618b4a18daf70f46d1dc1008e0e6555019b4d057e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "microsoft/AzureStorageExplorer" }

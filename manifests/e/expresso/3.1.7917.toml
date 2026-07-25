@@ -1,0 +1,16 @@
+name = "expresso"
+version = "3.1.7917"
+description = "Editor equally suitable as a teaching tool for the beginning user of regular expressions or as a full-featured development environment for the experienced programmer or web designer with an extensive knowledge of regular expressions."
+homepage = "https://www.ultrapico.com/Expresso.htm"
+license = "Proprietary"
+kind = "app"
+bin = ["expresso.exe"]
+shortcuts = [{ target = "expresso.exe", name = "Expresso" }]
+
+[source.x64]
+url = "https://www.ultrapico.com/ExpressoSetup-3.1.7917.msi"
+sha256 = "4bac670cec408d26f8332a02c30c1a1de766956b8cd3c7ba8e9e1e8400e93eec"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://www.ultrapico.com/ExpressoDownload.htm\"}"

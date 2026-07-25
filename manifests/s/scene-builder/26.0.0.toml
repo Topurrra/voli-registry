@@ -1,0 +1,17 @@
+name = "scene-builder"
+version = "26.0.0"
+description = "A visual, drag n drop, layout tool for designing JavaFX application user interfaces."
+homepage = "https://gluonhq.com/products/scene-builder/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "SceneBuilder"
+bin = ["SceneBuilder.exe"]
+shortcuts = [{ target = "SceneBuilder.exe", name = "Scene Builder" }]
+
+[source.x64]
+url = "https://github.com/gluonhq/scenebuilder/releases/download/26.0.0/SceneBuilder-26.0.0.msi"
+sha256 = "36b5d8616dbbebc8d2e62bc4506862073cdee0c5378d52cce5d37437b8fc8ee9"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "gluonhq/scenebuilder" }

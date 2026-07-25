@@ -1,0 +1,16 @@
+name = "inno-setup"
+version = "6.7.3"
+description = "An open-source installation builder for Windows applications."
+homepage = "https://www.jrsoftware.org/isinfo.php"
+license = "Freeware"
+kind = "app"
+bin = ["iscc.exe"]
+shortcuts = [{ target = "Compil32.exe", name = "Inno Setup Compiler" }]
+
+[source.x64]
+url = "https://github.com/jrsoftware/issrc/releases/download/is-6_7_3/innosetup-6.7.3.exe"
+sha256 = "9c73c3bae7ed48d44112a0f48e66742c00090bdb5bef71d9d3c056c66e97b732"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"innosetup-([\\\\d.]+)\\\\.exe\",\"url\":\"https://www.jrsoftware.org/isdl.php\"}"

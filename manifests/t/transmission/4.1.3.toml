@@ -1,0 +1,17 @@
+name = "transmission"
+version = "4.1.3"
+description = "A fast, easy, and free BitTorrent client."
+homepage = "https://transmissionbt.com/"
+license = "GPL-2.0-only|GPL-3.0-only"
+kind = "app"
+extract_dir = "PFiles\\Transmission"
+bin = [{ name = "transmission", path = "transmission-qt.exe" }, "transmission-create.exe", "transmission-daemon.exe", "transmission-edit.exe", "transmission-remote.exe", "transmission-show.exe"]
+shortcuts = [{ target = "transmission-qt.exe", name = "Transmission" }]
+
+[source.x64]
+url = "https://github.com/transmission/transmission/releases/download/4.1.3/transmission-4.1.3-x64.msi"
+sha256 = "c8ea492d8f46fadac26e0c05b244cabba556201d5fe348dfcf1cf036621741f8"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "transmission/transmission" }

@@ -1,7 +1,7 @@
 name: scoop-sync
 
-# Weekly re-import from ScoopInstaller/Main: rides Scoop's maintainer army
-# for free. New version files are added, same-version files are refreshed
+# Weekly re-import from ScoopInstaller/Main and Extras.
+# New version files are added, same-version files are refreshed
 # (URL/hash corrections), existing old versions are NEVER deleted.
 on:
   schedule:
@@ -34,15 +34,20 @@ jobs:
             ~/.cargo/git
           key: cargo-scoop-sync-${{ runner.os }}
 
-      - name: Clone ScoopInstaller/Main (shallow)
-        run: git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
+      - name: Clone upstream sources
+        run: |
+          git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
+          git clone --depth 1 https://github.com/ScoopInstaller/Extras /tmp/scoop-extras
+          git clone --depth 1 --branch v0.5.0 https://github.com/Topurrra/voli ../voli
 
       - name: Build scoop-import
         working-directory: tools/scoop-import
-        run: cargo build --release
+        run: cargo build --release --locked
 
       - name: Run importer
-        run: tools/scoop-import/target/release/scoop-import /tmp/scoop-main manifests/
+        run: |
+          tools/scoop-import/target/release/scoop-import /tmp/scoop-main manifests/
+          tools/scoop-import/target/release/scoop-import /tmp/scoop-extras manifests/
 
       - name: Install voli-index-tool
         run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
@@ -75,10 +80,10 @@ jobs:
           git config user.email "ci@volibear.dev"
           git checkout -b "$BRANCH"
           git add manifests/
-          git commit -m "sync: ScoopInstaller/Main import ${DATE}"
+          git commit -m "sync: Scoop bucket import ${DATE}"
           git push -u origin "$BRANCH"
 
-          BODY="Weekly Scoop sync (${DATE}).
+          BODY="Weekly Scoop Main and Extras sync (${DATE}).
 
           - **${{ steps.summary.outputs.new }}** new version file(s)
           - **${{ steps.summary.outputs.modified }}** modified existing file(s)

@@ -1,0 +1,15 @@
+name = "dadroitjsonviewer"
+version = "3.3.0.604"
+description = "A JSON viewer that gives a new approach to process JSON Data files."
+homepage = "https://dadroit.com/"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "DadroitViewer.exe", name = "Dadroit JSON Viewer" }]
+
+[source.x64]
+url = "https://dadroit.com/releases/win/DadroitJSONViewerSetup.exe"
+sha256 = "f289d7cfae91af75a4771dbd182b684168c2b9febeecf0b3713cfee15de5f239"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"Dadroit JSON Viewer — ([\\\\d.]+)\",\"url\":\"https://dadroit.com/release-notes\"}"

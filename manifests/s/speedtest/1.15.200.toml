@@ -1,0 +1,16 @@
+name = "speedtest"
+version = "1.15.200"
+description = "Internet Speedtest GUI for Windows"
+homepage = "https://www.speedtest.net/apps/windows"
+license = "Freeware"
+kind = "app"
+extract_dir = "ProgramFiles64Folder\\Speedtest"
+shortcuts = [{ target = "Speedtest.exe", name = "Speed Test" }]
+
+[source.x64]
+url = "https://install.speedtest.net/app/windows/latest/speedtestbyookla_x64.msi"
+sha256 = "281b9a15556ac2d1fb54b67fee260ea200266e31c70de9eceb82e04225c94d72"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "<span class=\"u-note\">v([\\d.]+)</span>"

@@ -1,0 +1,16 @@
+name = "ahkpm"
+version = "0.7.0"
+description = "The AutoHotKey Package Manager"
+homepage = "https://ahkpm.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "ahkpm"
+bin = ["ahkpm.exe"]
+
+[source.x64]
+url = "https://github.com/joshuacc/ahkpm/releases/download/0.7.0/ahkpm-0.7.0.msi"
+sha256 = "6dc749cac0be1b472bccea8fe831da6ba8c07d126e62cbf40b6b3c92e88c8dc3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "joshuacc/ahkpm" }

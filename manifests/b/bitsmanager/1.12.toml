@@ -1,0 +1,16 @@
+name = "bitsmanager"
+version = "1.12"
+description = "Manager for BITS (Background Intelligent Transfer Service) for Windows."
+homepage = "https://github.com/microsoft/BITS-Manager/"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\BITS Manager"
+shortcuts = [{ target = "BitsManager.exe", name = "BITS Manager" }]
+
+[source.x64]
+url = "https://github.com/microsoft/BITS-Manager/releases/download/v1.12/BITSManager.msi"
+sha256 = "ac3e204d782d54375080b22cf9f3517f8b107362173c84ab5b3dd58a10c50469"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "microsoft/BITS-Manager" }

@@ -1,0 +1,16 @@
+name = "fastglacier"
+version = "4.1.5"
+description = "A freeware Windows Client for Amazon Glacier."
+homepage = "https://fastglacier.com"
+license = "Freeware"
+kind = "app"
+bin = ["glacier-con.exe", "glacier-ui.exe"]
+shortcuts = [{ target = "glacier-ui.exe", name = "FastGlacier" }]
+
+[source.x64]
+url = "https://fastglacier.com/download/fastglacier-4-1-5.exe"
+sha256 = "c2f7ff9f07d117f22313780d2c3970be986cea42f06f159684d4660e11fa21bb"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "FastGlacier Version ([\\d.]+) Released"

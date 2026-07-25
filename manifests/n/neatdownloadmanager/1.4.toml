@@ -1,0 +1,15 @@
+name = "neatdownloadmanager"
+version = "1.4"
+description = "A simple and lightweight GUI wrapped around a powerful and optimized Download-Engine"
+homepage = "http://neatdownloadmanager.com/index.php"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "NeatDM.exe", name = "Neat Download Manager" }]
+
+[source.x64]
+url = "http://neatdownloadmanager.com/file/NeatDM_setup.exe"
+sha256 = "3474f9a78cf4a443eeba53d136d0d36d860cecdf955c39075f99287fc759c69e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "\\(ver ([\\d.]+)\\)"

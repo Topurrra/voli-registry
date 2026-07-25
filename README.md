@@ -23,19 +23,20 @@ and schema. Example: `manifests/r/ripgrep/14.1.1.toml`.
    `<name>` directory, and `<version>` filename must match the `name`/`version`
    fields inside the file.
 2. Follow the rules in [`docs/Voli.md` §4][spec]:
-   - **`sha256` is mandatory** on every `[source.<arch>]` (64 hex chars). No
-     hash, no merge.
+   - Exactly one strong hash is mandatory on every `[source.<arch>]`:
+     `sha256` (64 hex chars) or `sha512` (128 hex chars).
    - **No scripts.** There is no `pre_install`/`post_install`/`installer` field;
      unknown fields are rejected.
-   - **Portable archives only** (`.zip`/`.tar.*`/`.7z`). MSI/EXE installers are
-     not supported in v1.
+   - Portable archives are preferred. Hash-pinned MSI and explicitly identified
+     Inno Setup packages may use `kind = "installer-archive"` for no-execute
+     7-Zip extraction. Standalone EXEs remain unsupported.
 3. Open a PR. CI validates it (below). Green check required to merge.
 
 ## How CI works
 
 - **`validate.yml`** (on PR): installs `voli-index-tool` and runs
   `voli-index-tool validate manifests/`. It parses every `.toml`, checks the
-  layout, enforces `sha256`, and rejects duplicates — reporting *all* errors,
+  layout, enforces exactly one strong hash, and rejects duplicates — reporting all errors,
   not just the first.
 - **`publish.yml`** (on push to `main`): rebuilds the signed index and uploads
   the triple to the `index` release tag, replacing the assets in place.
@@ -78,7 +79,8 @@ binary.
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE). Manifests imported from Scoop are MIT from
-`ScoopInstaller/Main`; see [`ATTRIBUTION.md`](ATTRIBUTION.md).
+MIT — see [`LICENSE`](LICENSE). Manifests imported from Scoop's Main and Extras
+buckets retain their upstream Unlicense attribution; see
+[`ATTRIBUTION.md`](ATTRIBUTION.md).
 
 [spec]: https://github.com/Topurrra/voli/blob/main/docs/Voli.md

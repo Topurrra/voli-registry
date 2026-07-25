@@ -1,0 +1,15 @@
+name = "resource-tuner-console"
+version = "2.31"
+description = "Console version of Resource Tuner, a resource editor for EXE/DLL files."
+homepage = "https://www.restuner.com/"
+license = "Proprietary"
+kind = "app"
+bin = ["rtc.exe", { name = "resource-tuner-console", path = "rtc.exe" }]
+
+[source.x64]
+url = "https://www.heaventools.com/download/rtconsole_setup.exe"
+sha256 = "2402bf51584a17f4cdd22a92a6ecacb982de37051e3ea040042de76af405c118"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"Product version: <b>([\\\\d.]+)\",\"url\":\"https://www.heaventools.com/download-rtc.htm\"}"

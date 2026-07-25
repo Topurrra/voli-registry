@@ -1,0 +1,17 @@
+name = "yubioath"
+version = "7.4.1"
+description = "Yubico Authenticator for Desktop"
+homepage = "https://developers.yubico.com/yubioath-flutter/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "PFiles\\Yubico\\Yubico Authenticator"
+bin = ["authenticator.exe", { name = "yubico-authenticator", path = "authenticator.exe" }]
+shortcuts = [{ target = "authenticator.exe", name = "Yubico Authenticator" }]
+
+[source.x64]
+url = "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.4.1-win64.msi"
+sha256 = "fd3a4beee31b07ce6acb67f8b9f46b75daf15b669bd034b7582171743e0436ad"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"yubico-authenticator-([\\\\w.]+)-win64\\\\.msi\",\"url\":\"https://developers.yubico.com/yubioath-flutter/Releases/\"}"

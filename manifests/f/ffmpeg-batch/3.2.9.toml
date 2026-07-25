@@ -1,0 +1,16 @@
+name = "ffmpeg-batch"
+version = "3.2.9"
+description = "An ffmpeg gui with batch processing, video downloading, and more"
+homepage = "https://github.com/eibol/ffmpeg_batch"
+license = "CC-BY-SA-3.0"
+kind = "app"
+shortcuts = [{ target = "FFBatch.exe", name = "FFmpeg Batch" }]
+persist = ["FFBatch.exe.config", "settings"]
+
+[source.x64]
+url = "https://github.com/eibol/ffmpeg_batch/releases/download/3.2.9/FFBatch_AV_Converter_3.2.9_64bit.exe"
+sha256 = "6f7cbebff1e1e758f5d9402af26798f180fecfb27bd1275782c51fe88faaebdf"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "eibol/ffmpeg_batch" }

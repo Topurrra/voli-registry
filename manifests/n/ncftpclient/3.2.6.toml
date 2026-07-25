@@ -1,0 +1,16 @@
+name = "ncftpclient"
+version = "3.2.6"
+description = "A set of free application programs implementing the File Transfer Protocol (FTP)."
+homepage = "https://www.ncftp.com/"
+license = "ClArtistic"
+kind = "app"
+extract_dir = "Windows folder"
+bin = ["ncftp.exe", "ncftpbatch.exe", "ncftpbookmarks.exe", "ncftpget.exe", "ncftpls.exe", "ncftpput.exe"]
+
+[source.x64]
+url = "https://www.ncftp.com/public_ftp/ncftp/older_binaries/Setup%20NcFTP%203.2.6.msi"
+sha256 = "b034c6c11cb2b888733e047ae9df494c8255e3d9ddfd0cbb2a6ccd98b02c79f2"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"<A HREF=\\\"https://www\\\\.ncftp\\\\.com/(?<url>.*?)Setup NcFTP (?<version>[\\\\d.]+).msi\\\">Microsoft Windows<\",\"url\":\"https://www.ncftp.com/download/\"}"

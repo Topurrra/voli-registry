@@ -1,0 +1,17 @@
+name = "subsync"
+version = "0.17.0"
+description = "An automatic movie subtitle synchronization tool."
+homepage = "https://subsync.online/"
+license = "GPL-3.0"
+kind = "app"
+extract_dir = "subsync"
+bin = ["subsync-cmd.exe"]
+shortcuts = [{ target = "subsync.exe", name = "SubSync (Subtitle Speech Synchronizer)" }]
+
+[source.x64]
+url = "https://github.com/sc0ty/subsync/releases/download/0.17/subsync-0.17.0-amd64.msi"
+sha256 = "6288f178565ab7c3823a6cb5c022d9b861e42207ed7dc8da385f0aa26a4d5882"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/sc0ty/subsync/releases/latest\",\"jsonpath\":\"$.name\",\"regex\":\"subsync\\\\sv([\\\\d.]+)\"}"

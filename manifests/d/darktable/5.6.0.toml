@@ -1,0 +1,21 @@
+name = "darktable"
+version = "5.6.0"
+description = "Photography workflow application and raw developer. A virtual lighttable and darkroom for photographers."
+homepage = "https://www.darktable.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["bin\\darktable.exe"]
+shortcuts = [{ target = "bin\\darktable.exe", name = "darktable" }]
+
+[source.x64]
+url = "https://github.com/darktable-org/darktable/releases/download/release-5.6.0/darktable-5.6.0-win64.exe"
+sha256 = "b42989195dfff44540c0b767b407987329ca99853612304cbbf14c48d1d3f803"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/darktable-org/darktable/releases/download/release-5.6.0/darktable-5.6.0-woa64.exe"
+sha256 = "b7737d54d6ee007816ae0a1fad3ca3677588735e1432887a917bc55f818f5268"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "darktable-org/darktable" }

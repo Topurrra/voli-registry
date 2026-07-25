@@ -1,0 +1,16 @@
+name = "hosts-file-editor"
+version = "1.2.0"
+description = "Easily edit and manage the hosts file"
+homepage = "https://hostsfileeditor.com"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["HostsFileEditor.exe"]
+shortcuts = [{ target = "HostsFileEditor.exe", name = "Hosts File Editor" }]
+
+[source.x64]
+url = "https://github.com/scottlerch/HostsFileEditor/releases/download/v1.2.0/HostsFileEditorSetup-1.2.0.msi"
+sha256 = "52db892868e2094de82690f2825e1cc08187b11e850463daa33d9a829da34753"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "scottlerch/HostsFileEditor" }

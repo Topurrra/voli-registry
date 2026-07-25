@@ -1,0 +1,17 @@
+name = "logbert"
+version = "1.6.3.2"
+description = "Advanced log message viewer for log4net, log4j and others"
+homepage = "https://github.com/couchcoding/Logbert"
+license = "MIT"
+kind = "app"
+extract_dir = "Couchcoding\\Logbert"
+bin = ["Logbert.exe"]
+shortcuts = [{ target = "Logbert.exe", name = "Logbert" }]
+
+[source.x64]
+url = "https://github.com/couchcoding/Logbert/releases/download/1.6.3.2/Logbert.1.6.3.2.-.Setup.-.x64.msi"
+sha256 = "998b65cd2b0384854a19f08f07c99d64e453fe923895be5f1df7f5f446405669"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "couchcoding/Logbert" }

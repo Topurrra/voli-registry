@@ -1,0 +1,17 @@
+name = "ipfilter-updater"
+version = "3.0.5-beta"
+description = "Protects privacy and security when using Bit Torrent by blocking a list of potentially malicious peers."
+homepage = "https://www.ipfilter.app/"
+license = "MIT"
+kind = "app"
+extract_dir = "LocalApp\\IPFilter"
+bin = ["ipfilter.exe"]
+shortcuts = [{ target = "IPFilter.exe", name = "IPFilter Updater" }]
+
+[source.x64]
+url = "https://github.com/DavidMoore/ipfilter/releases/download/3.0.5-beta/IPFilter.msi"
+sha256 = "78326c970df93226c5b57f25873e38e05be848cddfeaab9ec88ddaedb68e9144"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/DavidMoore/ipfilter/releases\",\"jsonpath\":\"$.[0].tag_name\",\"regex\":\"([\\\\w.-]+)\"}"

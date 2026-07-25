@@ -1,0 +1,16 @@
+name = "quicksfv"
+version = "3.00"
+description = "QuickSFV is a small Windows program that checks file integrity using checksum files such as SFV."
+homepage = "https://www.quicksfv.org/overview.html"
+license = "Freeware"
+kind = "app"
+bin = ["quicksfv.exe"]
+shortcuts = [{ target = "quicksfv.exe", name = "QuickSFV" }]
+
+[source.x64]
+url = "https://www.quicksfv.org/quicksfv-setup64.msi"
+sha256 = "7b4ced15746973773882579b2740b3f2c6a76e739511f1fa352babc96b08e79f"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+) for Windows\",\"url\":\"https://www.quicksfv.org/download.html\"}"

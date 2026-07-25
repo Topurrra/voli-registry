@@ -1,0 +1,17 @@
+name = "horizon-eda"
+version = "2.7.2"
+description = "Horizon is a free EDA package"
+homepage = "https://horizon-eda.org/"
+license = "GPL-3.0"
+kind = "app"
+extract_dir = "PFiles/Horizon EDA"
+shortcuts = [{ target = "bin/horizon-eda.exe", name = "Horizon EDA" }]
+persist = ["share/themes"]
+
+[source.x64]
+url = "https://github.com/horizon-eda/horizon/releases/download/v2.7.2/horizon-eda-2.7.2-x64.msi"
+sha256 = "7a226e9423bdca53cd3de46280267b0abeca757ffbb637f01e05bd574f9b0476"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "horizon-eda/horizon" }

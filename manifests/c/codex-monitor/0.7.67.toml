@@ -1,0 +1,17 @@
+name = "codex-monitor"
+version = "0.7.67"
+description = "An app to monitor the (Codex) situation."
+homepage = "https://github.com/Dimillian/CodexMonitor"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\Codex Monitor"
+bin = ["codex_monitor_daemon.exe"]
+shortcuts = [{ target = "codex-monitor.exe", name = "Codex Monitor" }]
+
+[source.x64]
+url = "https://github.com/Dimillian/CodexMonitor/releases/download/v0.7.67/Codex.Monitor_0.7.67_x64_en-US.msi"
+sha256 = "5478ae574ec1b239c0127e4ce93460b99d0b5f43434d95c877ad7be6eba3e4fa"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Dimillian/CodexMonitor" }

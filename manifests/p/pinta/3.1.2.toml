@@ -1,0 +1,20 @@
+name = "pinta"
+version = "3.1.2"
+description = "Open source program for drawing and image editing."
+homepage = "https://www.pinta-project.com/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "bin\\Pinta.exe", name = "Pinta" }]
+
+[source.x64]
+url = "https://github.com/PintaProject/Pinta/releases/download/3.1.2/Pinta-x86_64.exe"
+sha256 = "6c5c9252716a0a6860a25b3184a171045e8d4fca7b15ff3beb635bbe48bb16f6"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/PintaProject/Pinta/releases/download/3.1.2/Pinta-arm64.exe"
+sha256 = "86e8804f6199aaa83674945b098133a5608a661224fa17df0edc89b984c6203e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "PintaProject/Pinta" }

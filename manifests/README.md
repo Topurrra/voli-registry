@@ -44,12 +44,15 @@ not put real, installable packages under `_examples/`.
 Full schema and rules live in the main repo: [`docs/Voli.md` §4][spec]. The hard
 rules CI enforces:
 
-- **`sha256` is mandatory** on every `[source.<arch>]` (64 hex chars). No hash,
-  no merge.
+- Exactly one strong hash is mandatory on every `[source.<arch>]`: `sha256`
+  (64 hex chars) or `sha512` (128 hex chars).
 - **No scripts, ever.** The manifest grammar cannot express code — there is no
   `pre_install` / `post_install` / `installer` field, and unknown fields are
   rejected. This is the security moat; do not add script-like escape hatches.
-- **Portable archives only.** MSI/EXE installers are not supported in v1.
+- Portable archives are preferred. `kind = "installer-archive"` is allowed for
+  hash-pinned MSI and explicitly identified Inno Setup packages. Voli extracts
+  them with 7-Zip and never executes the installer. Standalone EXEs are not
+  installer archives and remain unsupported.
 - At least one of `[source.x64]` / `[source.arm64]` must be present.
 - `bin` paths must be relative (no absolute paths, no `..`).
 - `[env]` values may only use the `{dir}` template variable.
@@ -76,8 +79,10 @@ sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
 
 ## Imported (Scoop) manifests
 
-Manifests converted from Scoop's `main` bucket are MIT-licensed from
-[`ScoopInstaller/Main`](https://github.com/ScoopInstaller/Main) — see the repo
-root `ATTRIBUTION.md`. The importer lives in `tools/`.
+Manifests converted from Scoop's
+[`Main`](https://github.com/ScoopInstaller/Main) and
+[`Extras`](https://github.com/ScoopInstaller/Extras) buckets retain the
+upstream Unlicense attribution. See the repo root `ATTRIBUTION.md`. The importer
+lives in `tools/`.
 
 [spec]: https://github.com/Topurrra/voli/blob/main/docs/Voli.md

@@ -1,0 +1,16 @@
+name = "quickinstaller"
+version = "0.3.8859.20616"
+description = "QuickInstaller is a free software updater and installer for Windows for both installers and portable applications."
+homepage = "https://quickinstaller.net/"
+license = "Freeware"
+kind = "app"
+bin = ["QuickInstaller.exe"]
+shortcuts = [{ target = "QuickInstaller.exe", name = "QuickInstaller" }]
+
+[source.x64]
+url = "https://app.quickinstaller.net/downloads/QuickInstallerSetup.exe"
+sha256 = "260e487feb6870c01bd8440117aebae4a7ca4cbc14cbbe4aca84b91b26c160d4"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"latest version ([\\\\d.]+)\\\\. Release Date\",\"url\":\"https://quickinstaller.net/download\"}"

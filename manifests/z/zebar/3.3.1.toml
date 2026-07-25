@@ -1,0 +1,22 @@
+name = "zebar"
+version = "3.3.1"
+description = "Zebar is a tool for creating customizable and cross-platform taskbars, desktop widgets, and popups."
+homepage = "https://github.com/glzr-io/zebar"
+license = "GPL-3.0"
+kind = "app"
+extract_dir = "PFiles\\glzr.io\\Zebar"
+bin = ["zebar.exe"]
+shortcuts = [{ target = "zebar.exe", name = "Zebar" }]
+
+[source.x64]
+url = "https://github.com/glzr-io/zebar/releases/download/v3.3.1/zebar-v3.3.1-opt1-x64.msi"
+sha256 = "1d5584be8def58f828d55ed09cee52fe80fdd60ea118141f37963aa80e902c28"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/glzr-io/zebar/releases/download/v3.3.1/zebar-v3.3.1-opt2-arm64.msi"
+sha256 = "8d1f9351da529aad5582148f3ea41046352560473a2c321a7f7f2bd7312d9e1e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "glzr-io/zebar" }

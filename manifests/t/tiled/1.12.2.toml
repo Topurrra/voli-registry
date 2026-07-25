@@ -1,0 +1,17 @@
+name = "tiled"
+version = "1.12.2"
+description = "A free and open source, easy to use, and flexible level editor."
+homepage = "https://www.mapeditor.org/"
+license = "GPL-2.0-only|BSD-2-Clause"
+kind = "app"
+extract_dir = "PFiles/Tiled"
+bin = ["tiled.exe"]
+shortcuts = [{ target = "tiled.exe", name = "Tiled" }]
+
+[source.x64]
+url = "https://github.com/mapeditor/tiled/releases/download/v1.12.2/Tiled-1.12.2_Windows-10+_x86_64.msi"
+sha256 = "11a0e6c97cc105e07a57ea9995f2704617986722de4ab699d286dab0d2becc3f"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "mapeditor/tiled" }

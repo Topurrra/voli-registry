@@ -1,0 +1,16 @@
+name = "pageedit"
+version = "2.7.6"
+description = "ePub XHTML Visual Editor"
+homepage = "https://github.com/Sigil-Ebook/PageEdit"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["PageEdit.exe"]
+shortcuts = [{ target = "PageEdit.exe", name = "PageEdit" }]
+
+[source.x64]
+url = "https://github.com/Sigil-Ebook/PageEdit/releases/download/2.7.6/PageEdit-2.7.6-Windows-x64-Setup.exe"
+sha256 = "8dfbc6a62a887aa9da272184fba5ed0a568215f6ee83823257e6c3206a6a081e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Sigil-Ebook/PageEdit" }

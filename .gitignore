@@ -1,3 +1,4 @@
 /dist/
 /target/
+/manifests/_import-report.md
 signing-key.hex

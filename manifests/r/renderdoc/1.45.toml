@@ -1,0 +1,17 @@
+name = "renderdoc"
+version = "1.45"
+description = "A stand-alone graphics debugging tool"
+homepage = "https://renderdoc.org"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\RenderDoc"
+bin = [{ name = "renderdocgui", path = "qrenderdoc.exe" }, { name = "renderdoccli", path = "renderdoccmd.exe" }]
+shortcuts = [{ target = "qrenderdoc.exe", name = "RenderDocGUI" }, { target = "renderdoccmd.exe", name = "RenderDocCLI" }]
+
+[source.x64]
+url = "https://renderdoc.org/stable/1.45/RenderDoc_1.45_64.msi"
+sha256 = "228c03e3eba017a80bb22e75c8f00ec7c04b6d7f31472c6396a878f701022605"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "baldurk/renderdoc" }

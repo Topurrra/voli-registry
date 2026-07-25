@@ -1,20 +1,24 @@
 # Attribution
 
-## Scoop `main` bucket
+## Scoop Main and Extras buckets
 
 A large share of the manifests under `manifests/` are automatically converted
-from the [Scoop `main` bucket](https://github.com/ScoopInstaller/Main)
-(`ScoopInstaller/Main`), which is distributed under the **MIT License**.
+from Scoop's [Main](https://github.com/ScoopInstaller/Main) and
+[Extras](https://github.com/ScoopInstaller/Extras) buckets. Both are
+distributed under the **Unlicense**.
 
 The conversion is mechanical (Scoop JSON → Voli TOML; see `tools/`). Package
-metadata — names, versions, download URLs, hashes, and bin lists — originates
-upstream. We retain the upstream MIT license and this attribution as required.
+metadata, including names, versions, download URLs, hashes, bins, and shortcuts,
+originates upstream.
 
-Manifests with `pre_install` / `post_install` / `installer` scripts are **not**
-imported (Voli's no-script rule), so the imported subset is a script-free
-portion of the upstream bucket.
+Manifests requiring executable install or uninstall scripts are not imported.
+Benign `post_install` and `post_uninstall` metadata is dropped because Voli
+expresses persistence declaratively and cannot execute scripts.
 
-Upstream license: <https://github.com/ScoopInstaller/Main/blob/master/LICENSE>
+Upstream licenses:
+
+- <https://github.com/ScoopInstaller/Main/blob/master/LICENSE>
+- <https://github.com/ScoopInstaller/Extras/blob/master/LICENSE>
 
 ## This repository
 

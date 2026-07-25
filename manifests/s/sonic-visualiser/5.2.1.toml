@@ -1,0 +1,16 @@
+name = "sonic-visualiser"
+version = "5.2.1"
+description = "Visualisation, analysis, and annotation of music audio recordings."
+homepage = "https://www.sonicvisualiser.org"
+license = "GPL-2.0"
+kind = "app"
+extract_dir = "PFiles64\\Sonic Visualiser"
+shortcuts = [{ target = "Sonic Visualiser.exe", name = "Sonic Visualiser" }]
+
+[source.x64]
+url = "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v5.2.1/sonic-visualiser-5.2.1-win64.msi"
+sha256 = "fb421363db474de2161ef5e73d5a5a1f548d2df0624d811ad0713e76bdae43b1"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "sonic-visualiser/sonic-visualiser" }

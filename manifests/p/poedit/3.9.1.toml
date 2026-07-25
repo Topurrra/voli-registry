@@ -1,0 +1,16 @@
+name = "poedit"
+version = "3.9.1"
+description = "Gettext translations editor."
+homepage = "https://poedit.net"
+license = "MIT"
+kind = "app"
+bin = ["Poedit.exe"]
+shortcuts = [{ target = "Poedit.exe", name = "Poedit" }]
+
+[source.x64]
+url = "https://download.poedit.net/Poedit-3.9.1-setup.exe"
+sha256 = "a6cb88246834e6e54224b923a839c9566580cb5d4be95d4eba1d18bd34e8ecc9"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"Poedit-([\\\\d.]+)-setup\",\"url\":\"https://poedit.net/download\"}"

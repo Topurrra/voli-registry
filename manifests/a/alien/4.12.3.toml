@@ -1,0 +1,15 @@
+name = "alien"
+version = "4.12.3"
+description = "ALIEN is a CUDA-powered artificial life simulation program."
+homepage = "https://github.com/chrxh/alien"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["bin/alien.exe"]
+
+[source.x64]
+url = "https://github.com/chrxh/alien/releases/download/v4.12.3/alien-installer.msi"
+sha256 = "75e26da00b6fe8ed33c38181d1fbca63b252653606ac4626bff4bf4285d32dd3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "chrxh/alien" }

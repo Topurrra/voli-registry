@@ -1,0 +1,17 @@
+name = "trae"
+version = "2.3.56917"
+description = "An AI-powered IDE that makes programming more enjoyable and efficient."
+homepage = "https://www.trae.ai"
+license = "Freeware"
+kind = "app"
+extract_dir = "{code_GetDestDir}"
+bin = ["IDE\\bin\\trae.cmd"]
+shortcuts = [{ target = "IDE\\Trae.exe", name = "Trae" }]
+
+[source.x64]
+url = "https://lf-cdn.trae.ai/obj/trae-ai-sg/pkg/app/releases/stable/2.3.56917/win32/Trae-Setup-x64.exe"
+sha256 = "15827583f82387d5573e6d86bb6398dd711ee33b1b00f6dd57149f955064cca6"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.data.manifest.win32.version\",\"url\":\"https://api.trae.ai/icube/api/v1/native/version/trae/latest\"}"

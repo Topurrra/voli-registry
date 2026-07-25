@@ -1,0 +1,16 @@
+name = "syncback"
+version = "12.0.17.0"
+description = "Data backup and synchronization software"
+homepage = "https://www.2brightsparks.com/download-syncbackfree.html"
+license = "Freeware"
+kind = "app"
+bin = ["SyncBackFree.exe"]
+shortcuts = [{ target = "SyncBackFree.exe", name = "SyncBackFree" }]
+
+[source.x64]
+url = "https://www.2brightsparks.com/assets/software/SyncBack_Setup.exe"
+sha256 = "40839a5fa19f9ceba12a8e90ebe2a162ad207d52b0ee4ce19017364e8553a715"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "(?sm)SyncBackFree.*?Version.*?([\\d.]+)"

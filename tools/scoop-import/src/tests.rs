@@ -1,6 +1,6 @@
 use super::*;
 use serde_json::json;
-use voli_core::manifest::{Bin, Kind, Manifest};
+use voli_core::manifest::{Bin, Kind, Manifest, Shortcut, SourceKind};
 
 /// Convert, assert it succeeded, and return the round-tripped voli Manifest.
 fn ok(stem: &str, v: Value) -> Manifest {
@@ -59,6 +59,22 @@ fn per_arch_sources() {
     assert_eq!(m.source.arm64.unwrap().hash(), "3".repeat(64));
     // extract_dir prefers x64.
     assert_eq!(m.extract_dir.as_deref(), Some("rg-x64"));
+}
+
+#[test]
+fn top_level_extract_dir_applies_to_arch_sources() {
+    let m = ok(
+        "app",
+        json!({
+            "version": "1.0",
+            "architecture": {
+                "64bit": { "url": "https://x/app.msi", "hash": "1".repeat(64) }
+            },
+            "extract_dir": "PFiles64/App",
+            "shortcuts": [["app.exe", "App"]]
+        }),
+    );
+    assert_eq!(m.extract_dir.as_deref(), Some("PFiles64/App"));
 }
 
 #[test]
@@ -327,16 +343,89 @@ fn skip_nested_arch_script() {
 }
 
 #[test]
-fn skip_installer_exe_and_msi() {
-    let exe = json!({ "version": "1.0", "url": "https://x/setup.exe", "hash": "b".repeat(64) });
-    assert_eq!(skip_reason("s", exe), "installer-binary");
+fn explicit_installer_archives_are_accepted() {
+    let exe = ok(
+        "s",
+        json!({
+            "version": "1.0",
+            "url": "https://x/setup.exe",
+            "hash": "b".repeat(64),
+            "innosetup": true,
+            "bin": "app.exe"
+        }),
+    );
+    assert_eq!(
+        exe.source.x64.as_ref().unwrap().kind,
+        SourceKind::InstallerArchive
+    );
 
-    let msi = json!({ "version": "1.0", "url": "https://x/app.msi", "hash": "b".repeat(64) });
-    assert_eq!(skip_reason("s", msi), "installer-binary");
+    let msi = ok(
+        "s",
+        json!({
+            "version": "1.0",
+            "url": "https://x/app.msi",
+            "hash": "b".repeat(64),
+            "shortcuts": [["PFiles/App/app.exe", "App"]]
+        }),
+    );
+    assert_eq!(
+        msi.source.x64.as_ref().unwrap().kind,
+        SourceKind::InstallerArchive
+    );
+    assert_eq!(
+        msi.shortcuts,
+        vec![Shortcut::Table {
+            target: "PFiles/App/app.exe".into(),
+            name: "App".into()
+        }]
+    );
+}
 
-    // jq pattern: .exe renamed via #/ fragment is still an installer binary.
-    let frag = json!({ "version": "1.0", "url": "https://x/jq-amd64.exe#/jq.exe", "hash": "b".repeat(64) });
-    assert_eq!(skip_reason("s", frag), "installer-binary");
+#[test]
+fn standalone_exe_is_not_treated_as_an_installer() {
+    for url in ["https://x/tool.exe", "https://x/tool-amd64.exe#/tool.exe"] {
+        let v = json!({
+            "version": "1.0",
+            "url": url,
+            "hash": "b".repeat(64),
+            "bin": "tool.exe"
+        });
+        assert_eq!(skip_reason("s", v), "standalone-binary");
+    }
+}
+
+#[test]
+fn installer_without_launch_entry_is_skipped() {
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/app.msi",
+        "hash": "b".repeat(64)
+    });
+    assert_eq!(skip_reason("s", v), "no-launch-entry");
+}
+
+#[test]
+fn shortcut_arguments_are_not_silently_dropped() {
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/app.msi",
+        "hash": "b".repeat(64),
+        "shortcuts": [["app.exe", "App", "--portable"]]
+    });
+    assert_eq!(skip_reason("s", v), "shortcut-args");
+}
+
+#[test]
+fn installer_key_still_blocked() {
+    // Manifests with an explicit `installer` key are still blocked
+    // (they need to be RUN, not extracted).
+    let v = json!({
+        "version": "1.0",
+        "url": "https://x/setup.exe",
+        "hash": "b".repeat(64),
+        "installer": { "script": ["Start-Process"] }
+    });
+    assert_eq!(skip_reason("s", v), "script-field");
 }
 
 #[test]

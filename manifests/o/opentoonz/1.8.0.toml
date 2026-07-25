@@ -1,0 +1,15 @@
+name = "opentoonz"
+version = "1.8.0"
+description = "An open-source full-featured 2D animation creation software"
+homepage = "https://github.com/opentoonz/opentoonz"
+license = "BSD-3-Clause"
+kind = "app"
+shortcuts = [{ target = "OpenToonz.exe", name = "OpenToonz" }]
+
+[source.x64]
+url = "https://github.com/opentoonz/opentoonz/releases/download/v1.8.0/OpenToonzSetup.exe"
+sha256 = "bd678a03d2725522346bf5a055a7bc44ded6537957efb0026bfd875d3ac061d0"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "opentoonz/opentoonz" }

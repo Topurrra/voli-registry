@@ -1,0 +1,17 @@
+name = "gitbutler"
+version = "0.21.2"
+description = "A Git client for simultaneous branches on top of your existing workflow."
+homepage = "https://gitbutler.com/"
+license = "FSL-1.1-MIT"
+kind = "app"
+extract_dir = "PFiles/GitButler"
+bin = ["but.exe"]
+shortcuts = [{ target = "gitbutler-tauri.exe", name = "GitButler" }]
+
+[source.x64]
+url = "https://releases.gitbutler.com/releases/release/0.21.2-3163/windows/x86_64/GitButler_0.21.2_x64_en-US.msi"
+sha256 = "ae6df7d50642c2483bf80d39ba7ed4f9600b98dac5471a1b2824a38af4a5e763"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"releases/release/([\\\\d.-]+)-(?<Build>[\\\\d]+)/windows\",\"url\":\"https://app.gitbutler.com/api/downloads?limit=1&channel=release\"}"

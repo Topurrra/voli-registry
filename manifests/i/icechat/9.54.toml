@@ -1,0 +1,16 @@
+name = "icechat"
+version = "9.54"
+description = "A full-featured graphical IRC client."
+homepage = "https://www.icechat.net"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["IceChat2009.exe"]
+shortcuts = [{ target = "IceChat2009.exe", name = "IceChat IRC Client" }]
+
+[source.x64]
+url = "https://github.com/icechat/IceChat/releases/download/9.54F/icechat-setup.exe"
+sha256 = "c3d31b77991a33c0d517a668646a4df43400b53565115e5728f930268f4f3dbc"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "icechat/IceChat" }

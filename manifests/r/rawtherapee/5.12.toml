@@ -1,0 +1,16 @@
+name = "rawtherapee"
+version = "5.12"
+description = "Raw image processor"
+homepage = "https://rawtherapee.com"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["rawtherapee.exe", "rawtherapee-cli.exe"]
+shortcuts = [{ target = "rawtherapee.exe", name = "RawTherapee" }]
+
+[source.x64]
+url = "https://github.com/RawTherapee/RawTherapee/releases/download/5.12/RawTherapee_5.12_win64_release.exe"
+sha256 = "fe0ab7e0e647130641a13cfaf54543c63efcc62a8da97acb9cde92c1bc255b8c"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "RawTherapee/RawTherapee" }

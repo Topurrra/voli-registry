@@ -1,0 +1,16 @@
+name = "fontforge"
+version = "20251009"
+description = "A free (libre) font editor, which can create, edit and convert fonts in OpenType, TrueType, UFO, CID-keyed, Multiple Master, and many other formats."
+homepage = "https://fontforge.github.io"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["fontforge.bat", "bin/ffpython.exe"]
+shortcuts = [{ target = "run_fontforge.exe", name = "FontForge" }, { target = "fontforge-console.bat", name = "FontForge console" }]
+
+[source.x64]
+url = "https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-Windows-x64.exe"
+sha256 = "548523f08834e344bda69abb759e30c0f84a1a5ef9a5e965eb946d86a11118a3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/fontforge/fontforge/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"(\\\\d{8})/(?<fname>FontForge-\\\\d{4}-\\\\d{2}-\\\\d{2}-Windows(?<arch>-x64)?(?<release>[-r\\\\d]*?)?.exe)\"}"

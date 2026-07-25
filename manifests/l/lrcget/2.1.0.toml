@@ -1,0 +1,16 @@
+name = "lrcget"
+version = "2.1.0"
+description = "Utility for mass-downloading LRC synced lyrics for your offline music library."
+homepage = "https://github.com/tranxuanthang/lrcget"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\LRCGET"
+shortcuts = [{ target = "LRCGET.exe", name = "LRCGET" }]
+
+[source.x64]
+url = "https://github.com/tranxuanthang/lrcget/releases/download/2.1.0/LRCGET_2.1.0_x64_en-US.msi"
+sha256 = "fe3142cae2791483757e70ab5ac335162ef888b966fcc3516d897bdda8297adb"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "tranxuanthang/lrcget" }

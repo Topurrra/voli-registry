@@ -1,0 +1,17 @@
+name = "tortoisehg"
+version = "7.0.1"
+description = "TortoiseHg. A set of graphical tools and a shell extension for the Mercurial distributed revision control system."
+homepage = "https://tortoisehg.bitbucket.io/"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "PFiles\\TortoiseHg"
+bin = ["thg.exe", "thgw.exe", "hg.exe", "Pageant.exe", "TortoiseHgOverlayServer.exe", "lib\\kdiff3.exe", "lib\\TortoisePlink.exe"]
+shortcuts = [{ target = "thg.exe", name = "Thg, TortoiseHg's GUI tools for Mercurial SCM (Hg)" }, { target = "thgw.exe", name = "TortoiseHg Workbench" }, { target = "hg.exe", name = "Mercurial Distributed SCM" }, { target = "Pageant.exe", name = "Pageant is a PuTTY authentication agent" }, { target = "TortoiseHgOverlayServer.exe", name = "Service which gives us icons on the version-controlled files or folders" }, { target = "lib\\kdiff3.exe", name = "Tool for Comparison and Merge of Files and Directories" }, { target = "lib\\TortoisePlink.exe", name = "Command-line connection utility (based on PuTTY Plink)" }]
+
+[source.x64]
+url = "https://www.mercurial-scm.org/release/tortoisehg/windows/tortoisehg-7.0.1-x64.msi"
+sha256 = "39697eab1e17684737bdd36d840eabf71a63aa2d75c2b3edbbfcdf536731d4f9"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"tortoisehg-([\\\\d.]+)-x[468]{2}\\\\.msi\",\"reverse\":true,\"url\":\"https://www.mercurial-scm.org/release/tortoisehg/windows/\"}"

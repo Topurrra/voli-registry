@@ -1,4 +1,4 @@
-//! Scoop `main` bucket → voli TOML converter (spec §7).
+//! Scoop bucket → voli TOML converter (spec §7).
 //!
 //! Pure conversion + manual TOML emission. The driver in `main.rs` handles
 //! cloning, file IO, and the round-trip check against `voli_core::Manifest`.
@@ -39,6 +39,8 @@ struct SourceParts {
     url: String,
     hash: Hash,
     extract_dir: Option<String>,
+    /// True when Scoop explicitly treats the source as an extractable installer.
+    is_installer_archive: bool,
 }
 
 /// Hash algorithm used by the source.
@@ -54,6 +56,11 @@ enum BinOut {
         path: String,
         args: Option<String>,
     },
+}
+
+struct ShortcutOut {
+    target: String,
+    name: String,
 }
 
 /// Convert one Scoop manifest. `name_stem` is the JSON filename without `.json`.
@@ -114,6 +121,19 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         Err(reason) => return Outcome::Skip(reason),
     };
 
+    // 8. Start Menu shortcuts.
+    let shortcuts = match parse_shortcuts(json.get("shortcuts")) {
+        Ok(s) => s,
+        Err(reason) => return Outcome::Skip(reason),
+    };
+
+    let has_installer_archive = x64.as_ref().is_some_and(|s| s.is_installer_archive)
+        || arm64.as_ref().is_some_and(|s| s.is_installer_archive);
+    let adds_to_path = env.iter().any(|(key, _)| key == "PATH");
+    if has_installer_archive && bins.is_empty() && shortcuts.is_empty() && !adds_to_path {
+        return Outcome::Skip("no-launch-entry");
+    }
+
     let depends = parse_depends(json.get("depends"));
     let description = string_or_joined(json.get("description"));
     let homepage = json
@@ -131,6 +151,7 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         license.as_deref(),
         extract_dir.as_deref(),
         &bins,
+        &shortcuts,
         &persist,
         x64.as_ref(),
         arm64.as_ref(),
@@ -169,8 +190,21 @@ fn resolve_sources(
         None => (json.get("url").map(|_| json), None),
     };
 
-    let x64 = resolve_entry(x64_entry)?;
-    let arm64 = resolve_entry(arm64_entry)?;
+    let top_level_innosetup = json
+        .get("innosetup")
+        .and_then(Value::as_bool)
+        .unwrap_or(false);
+    let top_level_extract_dir = json.get("extract_dir").and_then(first_string);
+    let x64 = resolve_entry(
+        x64_entry,
+        top_level_innosetup,
+        top_level_extract_dir.as_deref(),
+    )?;
+    let arm64 = resolve_entry(
+        arm64_entry,
+        top_level_innosetup,
+        top_level_extract_dir.as_deref(),
+    )?;
 
     if x64.is_none() && arm64.is_none() {
         // Distinguish "only 32-bit offered" from "nothing at all".
@@ -181,7 +215,11 @@ fn resolve_sources(
 }
 
 /// `None` entry or entry without a url → `Ok(None)` (arch simply absent).
-fn resolve_entry(entry: Option<&Value>) -> Result<Option<SourceParts>, &'static str> {
+fn resolve_entry(
+    entry: Option<&Value>,
+    top_level_innosetup: bool,
+    top_level_extract_dir: Option<&str>,
+) -> Result<Option<SourceParts>, &'static str> {
     let Some(entry) = entry else {
         return Ok(None);
     };
@@ -197,16 +235,33 @@ fn resolve_entry(entry: Option<&Value>) -> Result<Option<SourceParts>, &'static 
     };
     let raw_hash = one_string(hash_v).ok_or("multi-url")?;
 
-    if is_installer_ext(&url) {
-        return Err("installer-binary");
-    }
+    let is_installer_archive = match effective_ext(&url).as_deref() {
+        Some("msi") => true,
+        Some("exe")
+            if top_level_innosetup
+                || entry
+                    .get("innosetup")
+                    .and_then(Value::as_bool)
+                    .unwrap_or(false) =>
+        {
+            true
+        }
+        // A bare PE may be the application itself. Passing it to 7-Zip strips
+        // it into sections instead of preserving the executable.
+        Some("exe") => return Err("standalone-binary"),
+        _ => false,
+    };
     let hash = normalize_hash(&raw_hash)?;
-    let extract_dir = entry.get("extract_dir").and_then(first_string);
+    let extract_dir = entry
+        .get("extract_dir")
+        .and_then(first_string)
+        .or_else(|| top_level_extract_dir.map(str::to_string));
 
     Ok(Some(SourceParts {
         url,
         hash,
         extract_dir,
+        is_installer_archive,
     }))
 }
 
@@ -265,12 +320,6 @@ fn hex_n(s: &str, len: usize) -> Result<String, &'static str> {
     }
 }
 
-/// True if the URL's effective download extension is `.exe`/`.msi`.
-/// Scoop uses a `#/name.ext` fragment to set the real filename; honor it.
-fn is_installer_ext(url: &str) -> bool {
-    matches!(effective_ext(url).as_deref(), Some("exe") | Some("msi"))
-}
-
 fn effective_ext(url: &str) -> Option<String> {
     let candidate: &str = match url.split_once('#') {
         Some((base, frag)) => {
@@ -285,6 +334,43 @@ fn effective_ext(url: &str) -> Option<String> {
         return None;
     }
     seg.rsplit('.').next().map(|e| e.to_ascii_lowercase())
+}
+
+// --- shortcuts -----------------------------------------------------------
+
+fn parse_shortcuts(v: Option<&Value>) -> Result<Vec<ShortcutOut>, &'static str> {
+    let Some(v) = v.filter(|v| !v.is_null()) else {
+        return Ok(Vec::new());
+    };
+    let entries = v.as_array().ok_or("shortcut-malformed")?;
+    let mut out = Vec::with_capacity(entries.len());
+    for entry in entries {
+        let parts = entry.as_array().ok_or("shortcut-malformed")?;
+        let target = parts
+            .first()
+            .and_then(Value::as_str)
+            .ok_or("shortcut-malformed")?;
+        let name = parts
+            .get(1)
+            .and_then(Value::as_str)
+            .filter(|name| !name.is_empty())
+            .ok_or("shortcut-malformed")?;
+        if parts
+            .get(2)
+            .is_some_and(|args| !args.is_null() && args.as_str() != Some(""))
+        {
+            return Err("shortcut-args");
+        }
+        if parts.len() > 4 {
+            return Err("shortcut-malformed");
+        }
+        check_bin_path(target)?;
+        out.push(ShortcutOut {
+            target: target.to_string(),
+            name: name.to_string(),
+        });
+    }
+    Ok(out)
 }
 
 // --- bin -----------------------------------------------------------------
@@ -605,6 +691,7 @@ fn emit_toml(
     license: Option<&str>,
     extract_dir: Option<&str>,
     bins: &[BinOut],
+    shortcuts: &[ShortcutOut],
     persist: &[String],
     x64: Option<&SourceParts>,
     arm64: Option<&SourceParts>,
@@ -633,6 +720,9 @@ fn emit_toml(
     if !bins.is_empty() {
         o.push_str(&format!("bin = {}\n", emit_bins(bins)));
     }
+    if !shortcuts.is_empty() {
+        o.push_str(&format!("shortcuts = {}\n", emit_shortcuts(shortcuts)));
+    }
     if !persist.is_empty() {
         let items: Vec<String> = persist.iter().map(|p| esc(p)).collect();
         o.push_str(&format!("persist = [{}]\n", items.join(", ")));
@@ -646,6 +736,9 @@ fn emit_toml(
             Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
             Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
         }
+        if s.is_installer_archive {
+            o.push_str("kind = \"installer-archive\"\n");
+        }
     }
     if let Some(s) = arm64 {
         o.push_str("\n[source.arm64]\n");
@@ -653,6 +746,9 @@ fn emit_toml(
         match &s.hash {
             Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
             Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
+        }
+        if s.is_installer_archive {
+            o.push_str("kind = \"installer-archive\"\n");
         }
     }
     if !env.is_empty() {
@@ -674,6 +770,14 @@ fn emit_toml(
     }
 
     o
+}
+
+fn emit_shortcuts(shortcuts: &[ShortcutOut]) -> String {
+    let items: Vec<String> = shortcuts
+        .iter()
+        .map(|s| format!("{{ target = {}, name = {} }}", esc(&s.target), esc(&s.name)))
+        .collect();
+    format!("[{}]", items.join(", "))
 }
 
 fn emit_bins(bins: &[BinOut]) -> String {

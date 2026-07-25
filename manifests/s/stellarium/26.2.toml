@@ -1,0 +1,21 @@
+name = "stellarium"
+version = "26.2"
+description = "Real time realistic skies generator"
+homepage = "https://stellarium.org"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["stellarium.exe"]
+shortcuts = [{ target = "stellarium.exe", name = "Stellarium" }]
+
+[source.x64]
+url = "https://github.com/Stellarium/stellarium/releases/download/v26.2/stellarium-26.2-qt6-win64.exe"
+sha256 = "cda1d07081c94781e388f6c607da5b85a3215a366ae545473ce92a7d38135045"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/Stellarium/stellarium/releases/download/v26.2/stellarium-26.2-qt6-arm64.exe"
+sha256 = "8c35bde7a6f580b9c97d85d514de33148e4b56c2b4d05744dca374af3d7f38d3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?sm)stellarium-(?<long>[\\\\d\\\\.]+)\\\\.tar\\\\.gz</.*?Stellarium (?<version>[\\\\d\\\\.]+) for\",\"url\":\"https://github.com/Stellarium/stellarium/releases\"}"

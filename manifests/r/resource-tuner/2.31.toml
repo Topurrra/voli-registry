@@ -1,0 +1,15 @@
+name = "resource-tuner"
+version = "2.31"
+description = "Visual resource editor for EXE/DLL files. View and edit strings, bitmaps, dialogs and icons."
+homepage = "https://www.restuner.com/"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "restuner.exe", name = "Resource Tuner" }]
+
+[source.x64]
+url = "https://www.heaventools.com/download/restuner_setup.exe"
+sha256 = "14a8ec9e3ed57bfeea8c40779cdc3e16d10fe1df401f5ce4deca1d13c6f2c580"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"<h1>Resource Tuner ([\\\\d.]+)\",\"url\":\"https://www.restuner.com/download.htm\"}"

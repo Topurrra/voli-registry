@@ -1,0 +1,17 @@
+name = "owncloud"
+version = "7.1.0.19041"
+description = "The ownCloud Desktop Client is a tool to synchronize files from ownCloud Server with your computer."
+homepage = "https://owncloud.com/"
+license = "GPL-2.0"
+kind = "app"
+extract_dir = "PFiles\\ownCloud"
+bin = ["owncloudcmd.exe", { name = "owncloud", path = "owncloudcmd.exe" }]
+shortcuts = [{ target = "owncloud.exe", name = "ownCloud" }]
+
+[source.x64]
+url = "https://download.owncloud.com/desktop/ownCloud/stable/7.1.0.19041/win/ownCloud-7.1.0.19041.x64.msi"
+sha256 = "70a75705251dfec278ca80c937028145b06a09604d8566c5f39c8d0c75109d9b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"ownCloud-([\\\\d.]+).x64.msi\",\"url\":\"https://owncloud.com/desktop-app/\"}"

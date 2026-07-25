@@ -1,0 +1,15 @@
+name = "m4a-to-mp3-converter"
+version = "X.89"
+description = "M4a to MP3 converter"
+homepage = "https://www.maniactools.com/soft/m4a-to-mp3-converter/"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "m4a_converter.exe", name = "Free M4a to MP3 Converter" }]
+
+[source.x64]
+url = "https://www.maniactools.com/soft/m4a-to-mp3-converter.exe"
+sha256 = "5872d19451f7f6fdd796f846e53bc9cae5a9270a71ba12ae689f40df98727c32"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"Free M4a to MP3 Converter\\\\s+([\\\\w]+)\\\\s+Build\\\\s+(?<build>[\\\\d]+)\",\"replace\":\"$1.${build}\",\"url\":\"https://www.maniactools.com/cgi-bin/version?prog=m4a-converter\"}"

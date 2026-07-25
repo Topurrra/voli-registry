@@ -1,0 +1,15 @@
+name = "copy-dialog-lunar-lander"
+version = "1.2"
+description = "Copy Dialog Lunar Lander is a small open-source Windows game that turns the file copy progress dialog into a playable lunar lander overlay."
+homepage = "https://github.com/Sanakan8472/copy-dialog-lunar-lander"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "CopyDialogLunarLander.exe", name = "Copy Dialog Lunar Lander" }]
+
+[source.x64]
+url = "https://github.com/Sanakan8472/copy-dialog-lunar-lander/releases/download/v1.2/CopyDialogLunarLander.msi"
+sha256 = "7c7f51589099d03c696128729ffcd9cd51ae32600701bb5f4ed4def8e43d1267"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Sanakan8472/copy-dialog-lunar-lander" }

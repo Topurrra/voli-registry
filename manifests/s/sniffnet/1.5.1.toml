@@ -1,0 +1,22 @@
+name = "sniffnet"
+version = "1.5.1"
+description = "An application that allows you to comfortably monitor your network traffic."
+homepage = "https://www.sniffnet.net"
+license = "Apache-2.0|MIT"
+kind = "app"
+extract_dir = "PFiles\\Sniffnet"
+bin = ["sniffnet.exe"]
+shortcuts = [{ target = "sniffnet.exe", name = "Sniffnet" }]
+
+[source.x64]
+url = "https://github.com/GyulyVGC/sniffnet/releases/download/v1.5.1/Sniffnet_Windows_x64.msi"
+sha256 = "3f4dacf273b0e5270d4055a6561c5b0e1e0747ef6530f984cc42389ebc401700"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/GyulyVGC/sniffnet/releases/download/v1.5.1/Sniffnet_Windows_arm64.msi"
+sha256 = "54b52b1ce8bfd9e0d6d727da8db988bc6b6a843492c7ce4afc4709e8378eec9a"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "GyulyVGC/sniffnet" }

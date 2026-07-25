@@ -1,0 +1,21 @@
+name = "freelens"
+version = "1.10.3"
+description = "A free and open-source user interface designed for managing Kubernetes clusters"
+homepage = "https://github.com/freelensapp/freelens"
+license = "MIT"
+kind = "app"
+extract_dir = "freelens"
+shortcuts = [{ target = "Freelens.exe", name = "Freelens" }]
+
+[source.x64]
+url = "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-windows-amd64.msi"
+sha256 = "21addcff6698124da6d1cf97e26e100ee17c294cecd1e20be2037d22cc030735"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-windows-arm64.msi"
+sha256 = "e69b4bc2d89db7b609be1f9fe14506cb42b25426998fe0ad3ddfd2d7b06eb51f"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "freelensapp/freelens" }

@@ -1,0 +1,16 @@
+name = "mc"
+version = "4.8.33.236"
+description = "Native GNU Midnight Commander for Win32"
+homepage = "https://midnight-commander.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["mc.exe"]
+shortcuts = [{ target = "mc.exe", name = "mc" }]
+
+[source.x64]
+url = "https://github.com/adamyg/mcwin32/releases/download/4.8.33.236/mcwin32-build236-x64-setup.exe"
+sha256 = "c7edf10402542d334df7e6ff802e2213d384eafa949a6fa88d3813bd87a8ee04"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "adamyg/mcwin32" }

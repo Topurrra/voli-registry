@@ -1,0 +1,17 @@
+name = "dangerzone"
+version = "0.10.0"
+description = "Take potentially dangerous PDFs, office documents, or images and convert them to a safe PDF."
+homepage = "https://dangerzone.rocks/"
+license = "AGPL-3.0"
+kind = "app"
+extract_dir = "PFiles64\\Dangerzone"
+bin = ["dangerzone-cli.exe"]
+shortcuts = [{ target = "dangerzone.exe", name = "DangerZone" }]
+
+[source.x64]
+url = "https://github.com/freedomofpress/dangerzone/releases/download/v0.10.0/Dangerzone-0.10.0.msi"
+sha256 = "2b40f5a863b2f9a2843e2c8174a6d4ba562c32494e15a9151fe4ac7f3ad7d9b6"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "freedomofpress/dangerzone" }

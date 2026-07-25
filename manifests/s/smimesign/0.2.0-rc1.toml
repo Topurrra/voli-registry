@@ -1,0 +1,14 @@
+name = "smimesign"
+version = "0.2.0-rc1"
+description = "An S/MIME signing utility compatible with Git that allows developers to sign their commits and tags using X.509 certificates"
+homepage = "https://github.com/github/smimesign"
+license = "MIT"
+kind = "app"
+bin = ["smimesign.exe"]
+
+[source.x64]
+url = "https://github.com/github/smimesign/releases/download/v0.2.0-rc1/smimesign-windows-amd64-v0.2.0-rc1.zip"
+sha256 = "5814da0c1248a74add12acf4dd6f41f8de952f0ab878b9a01412c6a78f7fb761"
+
+[autoupdate]
+checkver = { github = "github/smimesign" }

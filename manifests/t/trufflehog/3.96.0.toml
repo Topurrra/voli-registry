@@ -1,0 +1,14 @@
+name = "trufflehog"
+version = "3.96.0"
+description = "Find leaked credentials"
+homepage = "https://github.com/trufflesecurity/trufflehog"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["trufflehog.exe"]
+
+[source.x64]
+url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.96.0/trufflehog_3.96.0_windows_amd64.tar.gz"
+sha256 = "fbf918c52a1f29be96344e1c4696fe019cfc34fb1184fab31cf3e8347917b43a"
+
+[autoupdate]
+checkver = { github = "trufflesecurity/trufflehog" }

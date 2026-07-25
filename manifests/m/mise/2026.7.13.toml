@@ -1,0 +1,14 @@
+name = "mise"
+version = "2026.7.13"
+description = "Polyglot tool version manager and task runner"
+homepage = "https://mise.jdx.dev/"
+license = "MIT"
+kind = "app"
+bin = ["bin/mise.exe"]
+
+[source.x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.7.13/mise-v2026.7.13-windows-x64.zip"
+sha256 = "541a7669ce5530ba71afcc695138d665ba3a06e718230fec5293e4d0af6ae2b3"
+
+[autoupdate]
+checkver = { github = "jdx/mise" }

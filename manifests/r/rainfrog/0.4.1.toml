@@ -1,0 +1,14 @@
+name = "rainfrog"
+version = "0.4.1"
+description = "Database tool for the terminal"
+homepage = "https://github.com/achristmascarl/rainfrog"
+license = "MIT"
+kind = "app"
+bin = ["rainfrog.exe"]
+
+[source.x64]
+url = "https://github.com/achristmascarl/rainfrog/releases/download/v0.4.1/rainfrog-v0.4.1-x86_64-pc-windows-msvc.tar.gz"
+sha256 = "339b629aa3ad8c2fb0cbac4400699d404e96e8f5ba02d883d264b7aba5726b4d"
+
+[autoupdate]
+checkver = { github = "achristmascarl/rainfrog" }

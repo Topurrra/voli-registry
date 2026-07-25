@@ -1,0 +1,14 @@
+name = "luau"
+version = "0.731"
+description = "A fast, small, safe, gradually typed embeddable scripting language derived from Lua"
+homepage = "https://luau-lang.org/"
+license = "MIT"
+kind = "app"
+bin = ["luau.exe", "luau-analyze.exe"]
+
+[source.x64]
+url = "https://github.com/luau-lang/luau/releases/download/0.731/luau-windows.zip"
+sha256 = "2fab3fca875a41d1be33440bd295c6d1db3c3ab08583d24eef84ccb5a5db9c83"
+
+[autoupdate]
+checkver = { github = "luau-lang/luau" }

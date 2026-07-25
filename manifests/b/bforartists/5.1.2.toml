@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "Bforartists-5.1.2-Windows"
 bin = ["bforartists.exe"]
+shortcuts = [{ target = "bforartists.exe", name = "Bforartists" }]
 
 [source.x64]
 url = "https://www.bforartists.de/data/binaries/Bforartists-5.1.2-Windows.zip"

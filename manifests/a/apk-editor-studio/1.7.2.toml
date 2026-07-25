@@ -4,6 +4,8 @@ description = "Powerful yet easy to use APK editor for PC and Mac."
 homepage = "https://github.com/kefir500/apk-editor-studio"
 license = "GPL-3.0"
 kind = "app"
+extract_dir = "APK Editor Studio v1.7.2"
+shortcuts = [{ target = "apk-editor-studio.exe", name = "APK Editor Studio" }]
 persist = ["tools"]
 
 [source.x64]

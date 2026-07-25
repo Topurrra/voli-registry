@@ -5,6 +5,7 @@ homepage = "https://github.com/Equicord/Equibop"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["Equibop.exe"]
+shortcuts = [{ target = "Equibop.exe", name = "Equicord Desktop" }]
 persist = ["Data"]
 
 [source.x64]

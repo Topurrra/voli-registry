@@ -4,6 +4,7 @@ description = "Friendship management tool for VRChat"
 homepage = "https://github.com/vrcx-team/VRCX"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "VRCX.exe", name = "VRCX" }]
 
 [source.x64]
 url = "https://github.com/vrcx-team/VRCX/releases/download/v2026.07.18/VRCX_2026.07.18.zip"

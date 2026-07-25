@@ -5,6 +5,7 @@ homepage = "https://github.com/GerryFerdinandus/bittorrent-tracker-editor"
 license = "MIT"
 kind = "app"
 bin = ["trackereditor.exe"]
+shortcuts = [{ target = "trackereditor.exe", name = "Bittorrent Tracker Editor" }]
 persist = ["add_trackers.txt", "remove_trackers.txt"]
 
 [source.x64]

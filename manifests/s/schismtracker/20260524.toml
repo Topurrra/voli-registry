@@ -5,6 +5,7 @@ homepage = "http://schismtracker.org"
 license = "GPL-2.0"
 kind = "app"
 bin = ["schismtracker.exe"]
+shortcuts = [{ target = "schismtracker.exe", name = "Schism Tracker" }]
 
 [source.x64]
 url = "https://github.com/schismtracker/schismtracker/releases/download/20260524/schismtracker-20260524-windows-x86_64.zip"

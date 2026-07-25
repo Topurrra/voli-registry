@@ -5,6 +5,7 @@ homepage = "https://www.jamovi.org"
 license = "AGPL-3.0-only"
 kind = "app"
 extract_dir = "jamovi"
+shortcuts = [{ target = "bin\\jamovi.exe", name = "Jamovi" }]
 
 [source.x64]
 url = "https://dl.jamovi.org/jamovi-2.7.30.0-win-x64.zip"

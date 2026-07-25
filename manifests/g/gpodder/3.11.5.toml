@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "gpodder-3.11.5-portable"
 bin = ["data\\bin\\gpo.exe", "data\\bin\\gpodder.exe"]
+shortcuts = [{ target = "data\\bin\\gpodder.exe", name = "gPodder" }]
 persist = ["config"]
 
 [source.x64]

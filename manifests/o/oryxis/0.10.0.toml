@@ -5,6 +5,7 @@ homepage = "https://github.com/wilsonglasser/oryxis"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = ["oryxis.exe"]
+shortcuts = [{ target = "oryxis.exe", name = "Oryxis" }]
 
 [source.x64]
 url = "https://github.com/wilsonglasser/oryxis/releases/download/v0.10.0/oryxis-windows-x86_64.zip"

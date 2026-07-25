@@ -4,6 +4,7 @@ description = "A simple third-party Jellyfin client."
 homepage = "https://github.com/tsukinaha/tsukimi"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "bin\\tsukimi.exe", name = "Tsukimi" }]
 
 [source.x64]
 url = "https://github.com/tsukinaha/tsukimi/releases/download/v26.6.1/tsukimi-ucrt64-x86_64-windows-gnu.7z"

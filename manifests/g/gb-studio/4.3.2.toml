@@ -5,6 +5,7 @@ homepage = "https://www.gbstudio.dev"
 license = "MIT"
 kind = "app"
 extract_dir = "GB Studio-win32-x64"
+shortcuts = [{ target = "gb-studio.exe", name = "GB Studio" }]
 
 [source.x64]
 url = "https://github.com/chrismaltby/gb-studio/releases/download/v4.3.2/gb-studio-windows-64bit-standalone.zip"

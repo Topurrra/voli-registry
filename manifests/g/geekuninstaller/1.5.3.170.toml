@@ -5,6 +5,7 @@ homepage = "https://geekuninstaller.com/"
 license = "Shareware"
 kind = "app"
 bin = ["geek.exe"]
+shortcuts = [{ target = "geek.exe", name = "Geek Uninstaller" }]
 
 [source.x64]
 url = "https://geekuninstaller.com/geek.7z"

@@ -5,6 +5,7 @@ homepage = "https://github.com/docker/kitematic"
 license = "Apache-2.0"
 kind = "app"
 bin = ["Kitematic.exe"]
+shortcuts = [{ target = "Kitematic.exe", name = "Kitematic" }]
 
 [source.x64]
 url = "https://github.com/docker/kitematic/releases/download/v0.17.13/Kitematic-0.17.13-Windows.zip"

@@ -5,6 +5,7 @@ homepage = "https://www.cockos.com/licecap/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["licecap.exe"]
+shortcuts = [{ target = "licecap.exe", name = "LICEcap" }]
 
 [source.x64]
 url = "https://www.cockos.com/licecap/licecap132-install.exe#/dl.7z"

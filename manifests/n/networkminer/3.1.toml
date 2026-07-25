@@ -6,6 +6,7 @@ license = "GPL-2.0-or-later"
 kind = "app"
 extract_dir = "NetworkMiner_3-1"
 bin = ["NetworkMiner.exe"]
+shortcuts = [{ target = "NetworkMiner.exe", name = "NetworkMiner" }]
 
 [source.x64]
 url = "https://www.netresec.com/?download=NetworkMiner#/dl.zip"

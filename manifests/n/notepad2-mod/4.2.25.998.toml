@@ -5,6 +5,7 @@ homepage = "https://github.com/XhmikosR/notepad2-mod"
 license = "BSD-3-Clause"
 kind = "app"
 bin = ["Notepad2.exe"]
+shortcuts = [{ target = "Notepad2.exe", name = "Notepad2-mod" }]
 persist = ["Notepad2.ini"]
 
 [source.x64]

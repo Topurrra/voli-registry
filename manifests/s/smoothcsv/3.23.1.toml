@@ -5,6 +5,7 @@ homepage = "https://smoothcsv.com/"
 license = "Freeware"
 kind = "app"
 bin = ["bin\\smoothcsv.exe"]
+shortcuts = [{ target = "SmoothCSV.exe", name = "SmoothCSV" }]
 persist = ["data"]
 
 [source.x64]

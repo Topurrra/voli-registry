@@ -5,6 +5,7 @@ homepage = "https://github.com/Microsoft/winfile"
 license = "MIT"
 kind = "app"
 bin = ["Winfile.exe"]
+shortcuts = [{ target = "Winfile.exe", name = "Winfile" }]
 
 [source.x64]
 url = "https://github.com/Microsoft/winfile/releases/download/original_plus/Winfile_orig_plus.zip"

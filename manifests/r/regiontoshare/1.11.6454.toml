@@ -6,6 +6,7 @@ license = "GPL-3.0"
 kind = "app"
 extract_dir = "RegionToShare"
 bin = ["RegionToShare.exe"]
+shortcuts = [{ target = "RegionToShare.exe", name = "RegionToShare" }]
 
 [source.x64]
 url = "https://github.com/tom-englert/RegionToShare/releases/download/1.11.0/RegionToShare.zip"

@@ -5,6 +5,7 @@ homepage = "https://www.texstudio.org"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["texstudio.exe"]
+shortcuts = [{ target = "texstudio.exe", name = "TeXstudio" }]
 persist = ["config"]
 
 [source.x64]

@@ -4,7 +4,9 @@ description = "Lightweight, cross-platform & full-featured desktop IDE for HLSL 
 homepage = "https://shadered.org"
 license = "MIT"
 kind = "app"
+extract_dir = "SHADERed"
 bin = ["SHADERed.exe"]
+shortcuts = [{ target = "SHADERed.exe", name = "SHADERed" }]
 persist = ["data\\settings.ini"]
 
 [source.x64]

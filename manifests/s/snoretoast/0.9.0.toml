@@ -4,6 +4,7 @@ description = "A command line application capable of creating Windows Toast noti
 homepage = "https://invent.kde.org/libraries/snoretoast"
 license = "LGPL-3.0-or-later"
 kind = "app"
+extract_dir = "bin"
 bin = ["snoretoast.exe"]
 
 [source.x64]

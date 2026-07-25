@@ -5,6 +5,7 @@ homepage = "https://github.com/okieselbach/SyncMLViewer"
 license = "MIT"
 kind = "app"
 bin = ["SyncMLViewer.exe"]
+shortcuts = [{ target = "SyncMLViewer.exe", name = "SyncMLViewer" }]
 
 [source.x64]
 url = "https://github.com/okieselbach/SyncMLViewer/releases/download/v1.4.0/SyncMLViewer-v140.zip"

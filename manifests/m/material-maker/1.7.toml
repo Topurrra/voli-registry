@@ -4,7 +4,9 @@ description = "Extensible procedural material generator"
 homepage = "https://rodzilla.itch.io/material-maker"
 license = "MIT"
 kind = "app"
+extract_dir = "material_maker_1_7_windows"
 bin = ["material_maker.exe"]
+shortcuts = [{ target = "material_maker.exe", name = "Material Maker" }]
 
 [source.x64]
 url = "https://github.com/RodZill4/godot-procedural-textures/releases/download/1.7/material_maker_1_7_windows.zip"

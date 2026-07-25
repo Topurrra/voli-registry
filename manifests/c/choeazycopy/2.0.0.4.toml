@@ -5,6 +5,7 @@ homepage = "https://github.com/Cinchoo/ChoEazyCopy"
 license = "MIT"
 kind = "app"
 bin = ["ChoEazyCopy.exe"]
+shortcuts = [{ target = "ChoEazyCopy.exe", name = "ChoEazyCopy" }]
 
 [source.x64]
 url = "https://github.com/Cinchoo/ChoEazyCopy/releases/download/v2.0.0.4/ChoEazyCopy.zip"

@@ -4,6 +4,7 @@ description = "Advanced API Debugging Proxy"
 homepage = "https://reqable.com/"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "Reqable.exe", name = "Reqable" }]
 
 [source.x64]
 url = "https://github.com/reqable/reqable-app/releases/download/3.2.14/reqable-app-windows-x86_64.zip"

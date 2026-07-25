@@ -4,6 +4,7 @@ description = "'wabbit' is a suite of tools for WebAssembly"
 homepage = "https://github.com/WebAssembly/wabt"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "wabt-1.0.41\\bin"
 bin = ["spectest-interp.exe", "wasm2c.exe", "wasm2wat.exe", "wasm-decompile.exe", "wasm-interp.exe", "wasm-objdump.exe", "wasm-stats.exe", "wasm-strip.exe", "wasm-validate.exe", "wast2json.exe", "wat2wasm.exe", "wat-desugar.exe"]
 
 [source.x64]

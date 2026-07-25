@@ -4,7 +4,9 @@ description = "Hard disk scan and folder size tool"
 homepage = "http://www.softwareok.com/?seite=Freeware/MeinPlatz"
 license = "Freeware"
 kind = "app"
+extract_dir = "MeinPlatz"
 bin = ["MeinPlatz.exe"]
+shortcuts = [{ target = "MeinPlatz.exe", name = "MeinPlatz" }]
 persist = ["MeinPlatz.ini"]
 
 [source.x64]

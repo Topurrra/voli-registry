@@ -4,6 +4,7 @@ description = "A CLI utility to build and manage a PKI CA"
 homepage = "https://openvpn.net/easyrsa.html"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "EasyRSA-3.2.6"
 bin = [{ name = "easyrsa", path = "bin\\sh.exe", args = "$dir\\easyrsa-wrapper.sh" }]
 persist = ["keys"]
 

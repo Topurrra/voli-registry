@@ -6,6 +6,7 @@ license = "MPL-2.0"
 kind = "app"
 extract_dir = "OpenHardwareMonitor"
 bin = ["OpenHardwareMonitor.exe"]
+shortcuts = [{ target = "OpenHardwareMonitor.exe", name = "Open Hardware Monitor" }]
 
 [source.x64]
 url = "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip"

@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "renpy-8.5.3-sdk"
 bin = ["renpy.exe"]
+shortcuts = [{ target = "renpy.exe", name = "RenPy" }]
 
 [source.x64]
 url = "https://www.renpy.org/dl/8.5.3/renpy-8.5.3-sdk.7z.exe#/dl.7z"

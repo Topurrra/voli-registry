@@ -4,7 +4,9 @@ description = "A lightweight text editor written in Lua, adapted from lite."
 homepage = "https://lite-xl.github.io"
 license = "MIT"
 kind = "app"
+extract_dir = "lite-xl"
 bin = ["lite-xl.exe"]
+shortcuts = [{ target = "lite-xl.exe", name = "Lite XL" }]
 
 [source.x64]
 url = "https://github.com/lite-xl/lite-xl/releases/download/v2.1.8/lite-xl-v2.1.8-windows-x86_64.zip"

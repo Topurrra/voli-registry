@@ -5,6 +5,7 @@ homepage = "https://3rvx.com/"
 license = "BSD-2-Clause"
 kind = "app"
 bin = ["3RVX.exe"]
+shortcuts = [{ target = "3RVX.exe", name = "3RVX" }]
 persist = ["Settings.xml"]
 
 [source.x64]

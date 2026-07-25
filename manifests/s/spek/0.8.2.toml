@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "Spek"
 bin = ["spek.exe"]
+shortcuts = [{ target = "spek.exe", name = "Spek" }]
 
 [source.x64]
 url = "https://github.com/alexkay/spek/releases/download/v0.8.2/spek-0.8.2.zip"

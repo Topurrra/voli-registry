@@ -5,6 +5,7 @@ homepage = "https://sqlitebrowser.org/"
 license = "MPL-2.0|GPL-3.0-or-later"
 kind = "app"
 bin = ["DB Browser for SQLite.exe", "DB Browser for SQLCipher.exe"]
+shortcuts = [{ target = "DB Browser for SQLite.exe", name = "DB Browser for SQLite" }, { target = "DB Browser for SQLCipher.exe", name = "DB Browser for SQLCipher" }]
 persist = ["Data"]
 
 [source.x64]

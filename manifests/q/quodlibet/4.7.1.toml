@@ -6,6 +6,7 @@ license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "quodlibet-4.7.1-portable"
 bin = [{ name = "quodlibet", path = "data\\bin\\quodlibet-cmd.exe" }, { name = "exfalso", path = "data\\bin\\exfalso-cmd.exe" }, "data\\bin\\operon.exe"]
+shortcuts = [{ target = "data\\bin\\quodlibet.exe", name = "Quod Libet" }, { target = "data\\bin\\exfalso.exe", name = "Ex Falso" }]
 persist = ["config"]
 
 [source.x64]

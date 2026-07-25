@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "DisplayCAL-3.8.9.3"
 bin = ["DisplayCAL.exe"]
+shortcuts = [{ target = "DisplayCAL.exe", name = "DisplayCAL" }]
 
 [source.x64]
 url = "https://downloads.sourceforge.net/project/dispcalgui/release/3.8.9.3/DisplayCAL-3.8.9.3-win32.zip"

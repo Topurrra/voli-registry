@@ -5,6 +5,7 @@ homepage = "https://www.clementine-player.org/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["clementine.exe"]
+shortcuts = [{ target = "clementine.exe", name = "Clementine" }]
 
 [source.x64]
 url = "https://github.com/clementine-player/Clementine/releases/download/1.4.1-82-g47062c88e/ClementineSetup-1.4.1-82-g47062c88e.exe#/dl.7z"

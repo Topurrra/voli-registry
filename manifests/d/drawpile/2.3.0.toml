@@ -5,6 +5,7 @@ homepage = "https://drawpile.net/"
 license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "Drawpile-2.3.0-x86_64"
+shortcuts = [{ target = "drawpile.exe", name = "Drawpile" }]
 
 [source.x64]
 url = "https://github.com/drawpile/Drawpile/releases/download/2.3.0/Drawpile-2.3.0-x86_64.zip"

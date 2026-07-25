@@ -4,6 +4,7 @@ description = "Open source IDE for exploring and testing APIs (lightweight alter
 homepage = "https://www.usebruno.com/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Bruno.exe", name = "Bruno" }]
 
 [source.x64]
 url = "https://github.com/usebruno/bruno/releases/download/v4.0.0/bruno_4.0.0_x64_win.zip"

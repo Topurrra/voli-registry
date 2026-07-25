@@ -5,6 +5,7 @@ homepage = "https://www.sordum.org/network-profile-name-changer"
 license = "Freeware"
 kind = "app"
 extract_dir = "NetPnc"
+shortcuts = [{ target = "NetPnc.exe", name = "Network Profile Name Changer" }]
 persist = ["NetPnc.ini"]
 
 [source.x64]

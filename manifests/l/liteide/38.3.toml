@@ -4,7 +4,9 @@ description = "Simple, open source, cross-platform Go IDE"
 homepage = "http://liteide.org"
 license = "LGPL-2.1-only"
 kind = "app"
+extract_dir = "liteide"
 bin = ["bin\\liteide.exe"]
+shortcuts = [{ target = "bin\\liteide.exe", name = "LiteIDE" }]
 
 [source.x64]
 url = "https://github.com/visualfc/liteide/releases/download/x38.3/liteidex38.3-win64-qt5.15.2.zip"

@@ -4,7 +4,9 @@ description = "Twitch chat client"
 homepage = "https://chatterino.com"
 license = "MIT"
 kind = "app"
+extract_dir = "chatterino2"
 bin = ["chatterino.exe"]
+shortcuts = [{ target = "chatterino.exe", name = "Chatterino" }]
 persist = ["Cache", "Logs", "Misc", "ProfileAvatars", "Settings", "Themes"]
 
 [source.x64]

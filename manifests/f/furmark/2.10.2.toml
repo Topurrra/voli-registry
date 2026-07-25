@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "FurMark_win64"
 bin = ["furmark.exe"]
+shortcuts = [{ target = "FurMark_GUI.exe", name = "FurMark" }]
 
 [source.x64]
 url = "https://geeks3d.com/dl/get/830#FurMark_2.10.2_win64.zip"

@@ -5,6 +5,7 @@ homepage = "https://github.com/henkman/virgo"
 license = "MIT"
 kind = "app"
 bin = ["virgo.exe"]
+shortcuts = [{ target = "virgo.exe", name = "virgo" }]
 
 [source.x64]
 url = "https://github.com/henkman/virgo/releases/download/v.1.4.2/virgo.zip"

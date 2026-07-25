@@ -4,6 +4,7 @@ description = "A free all-in-one download manager."
 homepage = "https://www.eagleget.org/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "EagleGet.exe", name = "EagleGet" }]
 persist = ["EagleGet\\configs", "EGDownloads"]
 
 [source.x64]

@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "extratermqt-0.82.0-windows-x64"
 bin = ["extratermqt.exe"]
+shortcuts = [{ target = "extratermqt.exe", name = "Extraterm" }]
 
 [source.x64]
 url = "https://github.com/sedwards2009/extraterm/releases/download/v0.82.0/extratermqt-0.82.0-windows-x64.zip"

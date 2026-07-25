@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "DeskEdit"
 bin = ["DeskEdit.exe"]
+shortcuts = [{ target = "DeskEdit.exe", name = "Desktop.ini Editor" }]
 persist = ["DeskEdit.ini"]
 
 [source.x64]

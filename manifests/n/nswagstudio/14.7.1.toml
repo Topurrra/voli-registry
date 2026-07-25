@@ -5,6 +5,7 @@ homepage = "https://github.com/RicoSuter/NSwag"
 license = "MIT"
 kind = "app"
 bin = ["Win\\NSwag.exe"]
+shortcuts = [{ target = "NSwagStudio.exe", name = "NSwagStudio" }]
 
 [source.x64]
 url = "https://github.com/RicoSuter/NSwag/releases/download/v14.7.1/NSwag.zip"

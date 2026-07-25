@@ -4,6 +4,7 @@ description = "A Flutter LLM Chat Client."
 homepage = "https://kelivo.psycheas.top/"
 license = "AGPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "kelivo.exe", name = "Kelivo" }]
 
 [source.x64]
 url = "https://github.com/Chevey339/kelivo/releases/download/v1.1.17/Kelivo_windows_1.1.17%2B61.zip"

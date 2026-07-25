@@ -5,6 +5,7 @@ homepage = "https://www.msec.it/blog/dukto/"
 license = "Freeware"
 kind = "app"
 extract_dir = "DuktoR6"
+shortcuts = [{ target = "dukto.exe", name = "Dukto" }]
 
 [source.x64]
 url = "https://downloads.sourceforge.net/project/dukto/DuktoR6-Portable.zip"

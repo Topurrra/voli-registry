@@ -5,6 +5,7 @@ homepage = "http://lapce.dev/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["lapce.exe"]
+shortcuts = [{ target = "lapce.exe", name = "Lapce" }]
 
 [source.x64]
 url = "https://github.com/lapce/lapce/releases/download/v0.4.6/Lapce-windows-portable.zip"

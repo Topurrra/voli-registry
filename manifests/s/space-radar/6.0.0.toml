@@ -4,6 +4,7 @@ description = "Disk And Memory Space Visualization App built with Electron & d3.
 homepage = "https://github.com/zz85/space-radar"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "SpaceRadar.exe", name = "SpaceRadar" }]
 
 [source.x64]
 url = "https://github.com/zz85/space-radar/releases/download/v6.0.0/SpaceRadar-6.0.0-win-x64.zip"

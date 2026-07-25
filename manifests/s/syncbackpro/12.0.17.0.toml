@@ -4,6 +4,7 @@ description = "Backup up and synchronize files to several resources, including a
 homepage = "https://www.2brightsparks.com/syncback/sbpro.html"
 license = "Shareware"
 kind = "app"
+shortcuts = [{ target = "SyncBackPro.exe", name = "SyncBackPro" }]
 persist = ["settings"]
 
 [source.x64]

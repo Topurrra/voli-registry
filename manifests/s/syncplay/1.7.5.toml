@@ -5,6 +5,7 @@ homepage = "https://syncplay.pl/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["Syncplay.exe"]
+shortcuts = [{ target = "Syncplay.exe", name = "Syncplay" }]
 persist = ["syncplay.ini"]
 
 [source.x64]

@@ -4,7 +4,9 @@ description = "An image viewer and converter with combination of two window form
 homepage = "https://www.vieas.com/en/software/vieas.html"
 license = "Freeware"
 kind = "app"
+extract_dir = "Vieas"
 bin = ["Vieas.exe"]
+shortcuts = [{ target = "Vieas.exe", name = "Vieas" }]
 
 [source.x64]
 url = "https://www.vieas.com/software/dl/Vieas5460_64.zip"

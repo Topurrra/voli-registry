@@ -5,6 +5,7 @@ homepage = "https://tiddlywiki.com/#TiddlyDesktop"
 license = "BSD"
 kind = "app"
 extract_dir = "tiddlydesktop-win64-v0.0.22"
+shortcuts = [{ target = "nw.exe", name = "TiddlyDesktop" }]
 
 [source.x64]
 url = "https://github.com/TiddlyWiki/TiddlyDesktop/releases/download/v0.0.22/tiddlydesktop-win64-v0.0.22.zip"

@@ -4,6 +4,7 @@ description = "Tauon Music Box is a free, open-source, lightweight music player 
 homepage = "https://github.com/Taiko2k/Tauon"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "Tauon Music Box.exe", name = "Tauon Music Box" }]
 
 [source.x64]
 url = "https://github.com/Taiko2k/Tauon/releases/download/v11.1.1/TauonMusicBox-windows.7z"

@@ -5,6 +5,7 @@ homepage = "https://github.com/staxrip/staxrip"
 license = "MIT"
 kind = "app"
 extract_dir = "StaxRip-v2.52.4-x64"
+shortcuts = [{ target = "StaxRip.exe", name = "StaxRip" }]
 persist = ["Settings"]
 
 [source.x64]

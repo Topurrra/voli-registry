@@ -4,7 +4,9 @@ description = "Collaboration software"
 homepage = "https://slack.com"
 license = "Freeware"
 kind = "app"
+extract_dir = "app"
 bin = ["slack.exe"]
+shortcuts = [{ target = "slack.exe", name = "Slack" }]
 
 [source.x64]
 url = "https://downloads.slack-edge.com/desktop-releases/windows/x64/4.51.180/Slack.msix#/dl.zip"

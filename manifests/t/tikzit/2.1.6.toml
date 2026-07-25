@@ -5,6 +5,7 @@ homepage = "https://tikzit.github.io/"
 license = "AGPL-3.0-or-later"
 kind = "app"
 extract_dir = "tikzit"
+shortcuts = [{ target = "tikzit.exe", name = "TikZit" }]
 
 [source.x64]
 url = "https://github.com/tikzit/tikzit/releases/download/v2.1.6/tikzit-win.zip"

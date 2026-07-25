@@ -4,7 +4,9 @@ description = "Audio player"
 homepage = "https://www.aimp.ru"
 license = "Freeware"
 kind = "app"
+extract_dir = "AIMP"
 bin = ["AIMP.exe", "AIMPac.exe", "AIMPate.exe"]
+shortcuts = [{ target = "AIMP.exe", name = "AIMP" }, { target = "AIMPac.exe", name = "AIMP Audio Converter" }, { target = "AIMPate.exe", name = "AIMP Advanced Tag Editor" }]
 persist = ["Icons", "Skins", "Plugins", "Profile"]
 
 [source.x64]

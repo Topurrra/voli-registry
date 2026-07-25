@@ -5,6 +5,7 @@ homepage = "http://www.abelhadigital.com/hostsman"
 license = "Freeware"
 kind = "app"
 bin = ["hm.exe"]
+shortcuts = [{ target = "hm.exe", name = "HostsMan" }]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/hostsman/HostsMan_4.7.105.zip"

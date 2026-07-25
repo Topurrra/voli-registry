@@ -6,6 +6,7 @@ license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "KeePassXC-2.7.12-Win64"
 bin = ["KeePassXC.exe", "keepassxc-cli.exe", "keepassxc-proxy.exe"]
+shortcuts = [{ target = "KeePassXC.exe", name = "KeePassXC" }]
 persist = ["config"]
 
 [source.x64]

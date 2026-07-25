@@ -4,6 +4,8 @@ description = "An open source, non-custodial, and private multi-currency crypto 
 homepage = "https://stackwallet.com/"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "Release"
+shortcuts = [{ target = "stack_wallet.exe", name = "Stack Wallet" }]
 
 [source.x64]
 url = "https://github.com/cypherstack/stack_wallet/releases/download/build_310/stack_wallet-v2.6.0-windows.zip"

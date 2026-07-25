@@ -4,6 +4,7 @@ description = "Another Mihomo GUI."
 homepage = "https://clashparty.org/"
 license = "GPL-3.0"
 kind = "app"
+shortcuts = [{ target = "Clash Party.exe", name = "Clash Party" }]
 persist = ["data"]
 
 [source.x64]

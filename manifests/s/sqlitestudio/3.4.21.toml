@@ -4,7 +4,9 @@ description = "A SQLite database manager. (Deprecated, please use `extras/letos`
 homepage = "https://sqlitestudio.pl"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "SQLiteStudio"
 bin = ["SQLiteStudio.exe"]
+shortcuts = [{ target = "SQLiteStudio.exe", name = "SQLiteStudio" }]
 
 [source.x64]
 url = "https://github.com/pawelsalawa/sqlitestudio/releases/download/3.4.21/sqlitestudio-3.4.21-windows-x64.zip"

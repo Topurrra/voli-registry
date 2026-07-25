@@ -4,6 +4,7 @@ description = "A tool to help you become more aware of time spent on the compute
 homepage = "http://iamfutureproof.com/tools/awareness/"
 license = "Unknown"
 kind = "app"
+shortcuts = [{ target = "Awareness.exe", name = "Awareness" }]
 
 [source.x64]
 url = "http://iamfutureproof.com/downloads/InstallAwareness.exe#/dl.7z"

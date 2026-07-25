@@ -5,6 +5,7 @@ homepage = "https://github.com/jindrapetrik/jpexs-decompiler"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["ffdec.jar"]
+shortcuts = [{ target = "ffdec.exe", name = "FFDec" }]
 
 [source.x64]
 url = "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip"

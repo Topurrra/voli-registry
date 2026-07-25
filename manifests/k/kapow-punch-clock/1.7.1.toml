@@ -4,6 +4,7 @@ description = "A punch clock program to help in tracking spent time"
 homepage = "https://gottcode.org/kapow/"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "Kapow.exe", name = "KapowClock" }]
 persist = ["data"]
 
 [source.x64]

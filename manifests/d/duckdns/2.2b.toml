@@ -4,6 +4,7 @@ description = "A simple C# DuckDNS updater."
 homepage = "https://github.com/XWolfOverride/DuckDNS"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "DuckDNS.exe", name = "DuckDNS" }]
 
 [source.x64]
 url = "https://github.com/XWolfOverride/DuckDNS/releases/download/2.2b/DuckDNS.7z"

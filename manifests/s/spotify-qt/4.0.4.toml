@@ -5,6 +5,7 @@ homepage = "https://github.com/kraxarn/spotify-qt"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["spotify-qt.exe"]
+shortcuts = [{ target = "spotify-qt.exe", name = "spotify-qt" }]
 
 [source.x64]
 url = "https://github.com/kraxarn/spotify-qt/releases/download/v4.0.4/spotify-qt-v4.0.4-win64.zip"

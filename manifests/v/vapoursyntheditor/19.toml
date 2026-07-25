@@ -4,6 +4,7 @@ description = "An editor for editing and previewing VapourSynth scripts"
 homepage = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "vsedit.exe", name = "VapourSynth Editor" }]
 
 [source.x64]
 url = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/VapourSynthEditor-r19-64bit.7z"

@@ -6,6 +6,7 @@ license = "BSL-1.0"
 kind = "app"
 extract_dir = "Debugview-1.2.0.0-x64"
 bin = ["Debugviewpp.exe", "DebugViewConsole.exe"]
+shortcuts = [{ target = "Debugviewpp.exe", name = "Debugview++" }]
 
 [source.x64]
 url = "https://github.com/CobaltFusion/DebugViewPP/releases/download/v.1.20.0.0/Debugview-1.2.0.0-x64.zip"

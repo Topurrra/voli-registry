@@ -4,6 +4,7 @@ description = "MediaInfo is a convenient unified display of the most relevant te
 homepage = "https://mediaarea.net/en/MediaInfo"
 license = "BSD-2-Clause"
 kind = "app"
+shortcuts = [{ target = "MediaInfo.exe", name = "MediaInfo" }]
 persist = ["Plugin"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "A data processing pipeline that ingests data from a multitude of 
 homepage = "https://www.elastic.co/logstash"
 license = "Freeware|Apache-2.0"
 kind = "app"
+extract_dir = "logstash-9.3.8"
 bin = [{ name = "logstash", path = "bin\\logstash.bat" }, { name = "logstash-plugin", path = "bin\\logstash-plugin.bat" }]
 persist = ["config", "data"]
 

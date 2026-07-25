@@ -5,6 +5,7 @@ homepage = "https://www.inklestudios.com/ink/"
 license = "MIT"
 kind = "app"
 bin = ["Inky.exe"]
+shortcuts = [{ target = "Inky.exe", name = "Inky" }]
 
 [source.x64]
 url = "https://github.com/inkle/inky/releases/download/0.15.2/Inky_windows_64.zip"

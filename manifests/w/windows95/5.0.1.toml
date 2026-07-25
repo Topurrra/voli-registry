@@ -4,6 +4,7 @@ description = "Windows 95 emulator"
 homepage = "https://github.com/felixrieseberg/windows95"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "windows95.exe", name = "Windows 95" }]
 
 [source.x64]
 url = "https://github.com/felixrieseberg/windows95/releases/download/v5.0.1/windows95-win32-x64-5.0.1.zip"

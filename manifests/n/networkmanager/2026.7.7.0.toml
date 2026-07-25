@@ -5,6 +5,7 @@ homepage = "https://borntoberoot.net/NETworkManager/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["NETworkManager.exe"]
+shortcuts = [{ target = "NETworkManager.exe", name = "NETworkManager" }]
 persist = ["Settings", "Profiles"]
 
 [source.x64]

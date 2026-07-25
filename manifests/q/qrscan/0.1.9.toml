@@ -4,6 +4,7 @@ description = "Scan a QR code in the terminal using the system camera or a given
 homepage = "https://github.com/sayanarijit/qrscan"
 license = "MIT"
 kind = "app"
+extract_dir = "qrscan-0.1.9"
 bin = ["qrscan.exe"]
 
 [source.x64]

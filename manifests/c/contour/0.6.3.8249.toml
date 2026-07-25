@@ -6,6 +6,7 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "Contour-0.6.3.8249-win64/bin"
 bin = ["contour.exe"]
+shortcuts = [{ target = "contour.exe", name = "contour" }]
 
 [source.x64]
 url = "https://github.com/contour-terminal/contour/releases/download/v0.6.3.8249/contour-0.6.3.8249-win64.zip"

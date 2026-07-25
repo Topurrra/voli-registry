@@ -4,6 +4,8 @@ description = "Image Upscaler"
 homepage = "https://github.com/n00mkrad/cupscale"
 license = "MIT"
 kind = "app"
+extract_dir = "Cupscale 1.39.0f1"
+shortcuts = [{ target = "Cupscale.exe", name = "Cupscale" }]
 persist = ["CupscaleData\\models"]
 
 [source.x64]

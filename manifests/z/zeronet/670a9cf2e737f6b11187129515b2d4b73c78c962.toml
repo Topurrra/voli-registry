@@ -6,6 +6,7 @@ license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "ZeroNet-win-670a9cf2e737f6b11187129515b2d4b73c78c962"
 bin = ["ZeroNet.exe"]
+shortcuts = [{ target = "ZeroNet.exe", name = "ZeroNet" }]
 persist = ["data", "log"]
 
 [source.x64]

@@ -4,6 +4,8 @@ description = "Free password manager with identity protection by Proton."
 homepage = "https://proton.me/pass"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "lib\\net45"
+shortcuts = [{ target = "ProtonPass.exe", name = "Proton\\Proton Pass" }]
 
 [source.x64]
 url = "https://proton.me/download/pass/windows/ProtonPass-1.37.0-full.nupkg"

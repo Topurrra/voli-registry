@@ -5,6 +5,7 @@ homepage = "https://aria-ng.xmader.com/"
 license = "MIT"
 kind = "app"
 bin = ["AriaNgGUI.exe"]
+shortcuts = [{ target = "AriaNgGUI.exe", name = "AriaNgGUI" }]
 
 [source.x64]
 url = "https://github.com/Xmader/aria-ng-gui/releases/download/v3.1.2/AriaNgGUI-win32-x64.zip"

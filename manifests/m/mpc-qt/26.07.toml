@@ -6,6 +6,7 @@ license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "mpc-qt-win-x64"
 bin = ["mpc-qt.exe"]
+shortcuts = [{ target = "mpc-qt.exe", name = "MPC QT" }]
 
 [source.x64]
 url = "https://github.com/mpc-qt/mpc-qt/releases/download/v26.07/mpc-qt-win-x64-26.07.zip"

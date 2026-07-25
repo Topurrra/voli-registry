@@ -4,6 +4,7 @@ description = "A time tracking software"
 homepage = "https://www.manictime.com"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "ManicTimeClient.exe", name = "ManicTime" }]
 persist = ["Data"]
 
 [source.x64]

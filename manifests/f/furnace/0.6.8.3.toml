@@ -5,6 +5,7 @@ homepage = "https://github.com/tildearrow/furnace"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["furnace.exe"]
+shortcuts = [{ target = "furnace.exe", name = "Furnace Chiptune Tracker" }]
 
 [source.x64]
 url = "https://github.com/tildearrow/furnace/releases/download/v0.6.8.3/furnace-0.6.8.3-win64.zip"

@@ -4,6 +4,7 @@ description = "Display a special cursor as a prompt for the user to select a win
 homepage = "https://bitbucket.org/sta-ger/win-xkill"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "XKill.exe", name = "XKill" }]
 
 [source.x64]
 url = "https://bitbucket.org/sta-ger/win-xkill/downloads/XKill.zip"

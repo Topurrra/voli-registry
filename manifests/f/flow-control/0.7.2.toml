@@ -5,6 +5,7 @@ homepage = "https://flow-control.dev/"
 license = "MIT"
 kind = "app"
 bin = ["flow.exe"]
+shortcuts = [{ target = "flow-gui.exe", name = "Flow Control" }]
 
 [source.x64]
 url = "https://github.com/neurocyte/flow/releases/download/v0.7.2/flow-v0.7.2-windows-x86_64.zip"

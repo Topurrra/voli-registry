@@ -5,6 +5,7 @@ homepage = "https://veusz.github.io"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["veusz.exe"]
+shortcuts = [{ target = "veusz.exe", name = "Veusz" }]
 
 [source.x64]
 url = "https://github.com/veusz/veusz/releases/download/veusz-4.2.1/veusz-4.2.1-windows-x64.zip"

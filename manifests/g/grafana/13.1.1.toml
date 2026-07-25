@@ -4,6 +4,7 @@ description = "Open platform for analytics and data monitoring"
 homepage = "https://grafana.com/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "grafana-13.1.1"
 bin = ["bin\\grafana.exe", { name = "grafana-cli", path = "bin\\grafana.exe", args = "cli" }, { name = "grafana-server", path = "bin\\grafana.exe", args = "server -homepath \"$dir\"" }]
 persist = ["conf", "data"]
 

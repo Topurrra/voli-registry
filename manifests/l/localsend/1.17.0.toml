@@ -5,6 +5,7 @@ homepage = "https://localsend.org/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["localsend_app.exe", { name = "localsend", path = "localsend_app.exe" }]
+shortcuts = [{ target = "localsend_app.exe", name = "LocalSend" }]
 persist = ["settings.json"]
 
 [source.x64]

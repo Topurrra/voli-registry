@@ -4,6 +4,8 @@ description = "Eclipse Memory Analyzer"
 homepage = "https://eclipse.dev/mat/"
 license = "EPL-2.0"
 kind = "app"
+extract_dir = "mat"
+shortcuts = [{ target = "MemoryAnalyzer.exe", name = "Eclipse Memory Analyzer" }]
 persist = ["workspace"]
 
 [source.x64]

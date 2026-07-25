@@ -4,6 +4,7 @@ description = "Hash calculator with unicode support"
 homepage = "https://ov2.eu/programs/rapidcrc-unicode"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "RapidCRC.exe", name = "RapidCRC" }]
 
 [source.x64]
 url = "http://dl.ov2.eu/programs/rapidcrc-unicode/rapidcrc_0.3.41_x64.zip"

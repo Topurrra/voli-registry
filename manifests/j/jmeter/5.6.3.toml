@@ -6,6 +6,7 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "apache-jmeter-5.6.3"
 bin = ["bin\\jmeter.bat", "bin\\jmeterw.cmd", "bin\\jmeter-n.cmd", "bin\\jmeter-n-r.cmd", "bin\\jmeter-t.cmd", "bin\\jmeter-server.bat", "bin\\mirror-server.cmd", { name = "jmeter-shutdown", path = "bin\\shutdown.cmd" }, { name = "jmeter-stoptest", path = "bin\\stoptest.cmd" }]
+shortcuts = [{ target = "bin\\jmeterw.cmd", name = "JMeter" }, { target = "bin\\jmeter.bat", name = "JMeter (with console)" }]
 persist = ["lib"]
 
 [source.x64]

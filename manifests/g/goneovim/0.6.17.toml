@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "goneovim-v0.6.17-windows-x86_64"
 bin = ["goneovim.exe"]
+shortcuts = [{ target = "goneovim.exe", name = "Goneovim" }]
 
 [source.x64]
 url = "https://github.com/akiyosi/goneovim/releases/download/v0.6.17/goneovim-v0.6.17-windows-x86_64.zip"

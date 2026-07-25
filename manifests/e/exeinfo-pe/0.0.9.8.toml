@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "ExeinfoPe"
 bin = ["exeinfope.exe"]
+shortcuts = [{ target = "exeinfope.exe", name = "Exeinfo PE" }]
 persist = ["plugins", "exeinfopeRUN.cfg", "userdb.txt"]
 
 [source.x64]

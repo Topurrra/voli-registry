@@ -4,6 +4,7 @@ description = "Download manager based on aria2"
 homepage = "https://github.com/giantpinkrobots/varia"
 license = "MPL-2.0"
 kind = "app"
+shortcuts = [{ target = "variamain.exe", name = "Varia" }]
 
 [source.x64]
 url = "https://github.com/giantpinkrobots/varia/releases/download/v2026.3.27/varia-windows-portable-amd64.zip"

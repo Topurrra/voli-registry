@@ -4,6 +4,7 @@ description = "An all-rounder tool to set up and customize Windows 11"
 homepage = "https://github.com/builtbybel/ThisIsWin11"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "ThisIsWin11.exe", name = "ThisIsWin11" }]
 
 [source.x64]
 url = "https://github.com/builtbybel/ThisIsWin11/releases/download/1.5.0/TIW11.zip"

@@ -5,6 +5,7 @@ homepage = "https://github.com/Martchus/tageditor"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["tageditor-cli.exe"]
+shortcuts = [{ target = "tageditor.exe", name = "Tag Editor" }]
 
 [source.x64]
 url = "https://github.com/Martchus/tageditor/releases/download/v3.9.11/tageditor-3.9.11-x86_64-w64-mingw32.exe.zip"

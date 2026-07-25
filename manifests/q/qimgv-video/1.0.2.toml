@@ -4,7 +4,9 @@ description = "Fast, configurable and easy to use image viewer with video suppor
 homepage = "https://github.com/easymodo/qimgv"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "qimgv"
 bin = ["qimgv.exe"]
+shortcuts = [{ target = "qimgv.exe", name = "qimgv" }]
 persist = ["cache", "conf", "thumbnails"]
 
 [source.x64]

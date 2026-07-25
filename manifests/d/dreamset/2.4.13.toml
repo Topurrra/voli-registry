@@ -4,6 +4,7 @@ description = "Satellite receivers settings editor"
 homepage = "https://www.dreamset-editor.com/index.php"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "dreamset.exe", name = "Dreamset" }]
 
 [source.x64]
 url = "https://www.dreamset-editor.com/files/dreamset2413x64.zip"

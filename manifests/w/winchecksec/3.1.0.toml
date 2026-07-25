@@ -4,6 +4,7 @@ description = "A static detector of security mitigations in executables"
 homepage = "https://trailofbits.github.io/winchecksec/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "build\\Release"
 bin = ["winchecksec.exe"]
 
 [source.x64]

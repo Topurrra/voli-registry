@@ -4,6 +4,7 @@ description = "GUI software for creating and applying xdelta patches"
 homepage = "https://github.com/marco-calautti/DeltaPatcher"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "DeltaPatcher.exe", name = "Delta Patcher" }]
 
 [source.x64]
 url = "https://github.com/marco-calautti/DeltaPatcher/releases/download/v3.1.6/windows_bin_x86_64.zip"

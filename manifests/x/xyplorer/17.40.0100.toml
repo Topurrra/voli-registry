@@ -5,6 +5,7 @@ homepage = "https://www.xyplorer.com/free.php"
 license = "Freeware"
 kind = "app"
 bin = ["XYplorerFree.exe"]
+shortcuts = [{ target = "XYplorerFree.exe", name = "XYplorer" }]
 persist = ["Data"]
 
 [source.x64]

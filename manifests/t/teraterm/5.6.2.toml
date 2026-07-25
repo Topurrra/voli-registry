@@ -6,6 +6,7 @@ license = "BSD-3-Clause"
 kind = "app"
 extract_dir = "teraterm-5.6.2-x64"
 bin = ["ttermpro.exe"]
+shortcuts = [{ target = "ttermpro.exe", name = "Tera Term" }]
 persist = ["cygterm.cfg", "KEYBOARD.CNF", "ttpmenu.ini", "ssh_known_hosts", "TERATERM.INI"]
 
 [source.x64]

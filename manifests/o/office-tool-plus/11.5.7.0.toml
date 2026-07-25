@@ -4,7 +4,9 @@ description = "A powerful and useful tool for Office deployments"
 homepage = "https://www.officetool.plus"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "Office Tool"
 bin = ["Office Tool Plus.Console.exe"]
+shortcuts = [{ target = "Office Tool Plus.exe", name = "Office Tool Plus" }]
 
 [source.x64]
 url = "https://github.com/YerongAI/Office-Tool/releases/download/v11.5.7.0/Office_Tool_v11.5.7.0_x64.zip"

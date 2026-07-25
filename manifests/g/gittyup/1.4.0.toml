@@ -5,6 +5,7 @@ homepage = "https://murmele.github.io/Gittyup/"
 license = "MIT"
 kind = "app"
 bin = ["bin\\gittyup.exe"]
+shortcuts = [{ target = "bin\\gittyup.exe", name = "Gittyup" }]
 
 [source.x64]
 url = "https://github.com/Murmele/Gittyup/releases/download/gittyup_v1.4.0/Gittyup-win64-1.4.0.exe#/dl.7z"

@@ -5,6 +5,7 @@ homepage = "https://github.com/AlexanderPro/WindowTextExtractor"
 license = "MIT"
 kind = "app"
 bin = ["WindowTextExtractor.exe"]
+shortcuts = [{ target = "WindowTextExtractor.exe", name = "WindowTextExtractor" }]
 
 [source.x64]
 url = "https://github.com/AlexanderPro/WindowTextExtractor/releases/download/v2.2.1/WindowTextExtractor_v2.2.1.zip"

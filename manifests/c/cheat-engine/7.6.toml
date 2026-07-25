@@ -4,6 +4,7 @@ description = "Tool for modifying/debugging single player games and applications
 homepage = "https://cheatengine.org"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "Cheat Engine.exe", name = "Cheat Engine" }, { target = "windowsrepair.exe", name = "Cheat Engine Windows Repair" }]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/cheat-engine/CheatEngine76.7z"

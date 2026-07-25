@@ -5,6 +5,7 @@ homepage = "https://github.com/unknownskl/greenlight"
 license = "MIT"
 kind = "app"
 bin = ["greenlight.exe"]
+shortcuts = [{ target = "greenlight.exe", name = "Greenlight" }]
 
 [source.x64]
 url = "https://github.com/unknownskl/greenlight/releases/download/v2.4.2/Greenlight-2.4.2-win.zip"

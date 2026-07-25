@@ -5,6 +5,7 @@ homepage = "https://gitahead.com/"
 license = "MIT"
 kind = "app"
 bin = ["GitAhead.exe"]
+shortcuts = [{ target = "GitAhead.exe", name = "gitahead" }]
 
 [source.x64]
 url = "https://github.com/gitahead/gitahead/releases/download/v2.7.1/GitAhead-win64-2.7.1.exe#/dl.7z"

@@ -5,6 +5,7 @@ homepage = "http://tremulous.net/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["tremulous.exe"]
+shortcuts = [{ target = "tremulous.exe", name = "Tremulous" }]
 
 [source.x64]
 url = "https://github.com/GrangerHub/tremulous/releases/download/v1.3.0-alpha.0.14/release-mingw32-x86_64.zip"

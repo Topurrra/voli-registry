@@ -4,6 +4,7 @@ description = "balenaEtcher lets you flash OS images to SD cards & USB drives, s
 homepage = "https://etcher.balena.io/"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "balenaEtcher.exe", name = "Etcher" }]
 
 [source.x64]
 url = "https://github.com/balena-io/etcher/releases/download/v2.1.6/balenaEtcher-win32-x64-2.1.6.zip"

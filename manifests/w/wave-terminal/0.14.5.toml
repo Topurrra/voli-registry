@@ -4,6 +4,7 @@ description = "An open-source, cross-platform terminal for seamless workflows"
 homepage = "https://www.waveterm.dev"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "Wave.exe", name = "Wave" }]
 
 [source.x64]
 url = "https://github.com/wavetermdev/waveterm/releases/download/v0.14.5/Wave-win32-x64-0.14.5.zip"

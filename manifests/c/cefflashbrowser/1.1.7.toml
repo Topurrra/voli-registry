@@ -5,6 +5,7 @@ homepage = "https://github.com/Mzying2001/CefFlashBrowser"
 license = "MIT"
 kind = "app"
 bin = ["CefFlashBrowser.exe"]
+shortcuts = [{ target = "CefFlashBrowser.exe", name = "CefFlashBrowser" }]
 persist = ["Caches"]
 
 [source.x64]

@@ -5,6 +5,7 @@ homepage = "https://ra3xdh.github.io/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["bin\\qucs-s.exe"]
+shortcuts = [{ target = "bin\\qucs-s.exe", name = "Qucs-S" }]
 
 [source.x64]
 url = "https://github.com/ra3xdh/qucs_s/releases/download/26.1.1/Qucs-S-26.1.1-win64.zip"

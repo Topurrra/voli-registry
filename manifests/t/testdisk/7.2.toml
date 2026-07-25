@@ -6,6 +6,7 @@ license = "GPL-2.0-or-later"
 kind = "app"
 extract_dir = "testdisk-7.2"
 bin = ["photorec_win.exe", { name = "photorec", path = "photorec_win.exe" }, { name = "qphotorec", path = "qphotorec_win.exe" }, "testdisk_win.exe", { name = "testdisk", path = "testdisk_win.exe" }]
+shortcuts = [{ target = "photorec_win.exe", name = "PhotoRec" }, { target = "qphotorec_win.exe", name = "QPhotoRec" }, { target = "testdisk_win.exe", name = "TestDisk" }]
 
 [source.x64]
 url = "https://www.cgsecurity.org/testdisk-7.2.win.zip"

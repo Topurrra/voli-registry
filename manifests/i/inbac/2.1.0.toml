@@ -5,6 +5,7 @@ homepage = "https://github.com/weclaw1/inbac"
 license = "MIT"
 kind = "app"
 bin = ["inbac.exe"]
+shortcuts = [{ target = "inbac.exe", name = "inbac" }]
 
 [source.x64]
 url = "https://github.com/weclaw1/inbac/releases/download/2.1.0/inbac-Windows.zip"

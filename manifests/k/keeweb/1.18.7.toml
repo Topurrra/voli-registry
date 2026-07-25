@@ -5,6 +5,7 @@ homepage = "https://keeweb.info"
 license = "MIT"
 kind = "app"
 bin = ["KeeWeb.exe"]
+shortcuts = [{ target = "KeeWeb.exe", name = "KeeWeb" }]
 
 [source.x64]
 url = "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.win.x64.zip"

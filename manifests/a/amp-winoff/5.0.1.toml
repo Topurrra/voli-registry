@@ -5,6 +5,7 @@ homepage = "https://www.ampsoft.net/utilities/WinOFF.php"
 license = "Freeware"
 kind = "app"
 bin = ["WinOFF.exe"]
+shortcuts = [{ target = "WinOFF.exe", name = "AMP WinOFF" }]
 
 [source.x64]
 url = "https://www.ampsoft.net/files/WinOFF.zip"

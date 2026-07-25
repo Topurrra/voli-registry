@@ -4,6 +4,7 @@ description = "All-in-one utility for cleaning your PC"
 homepage = "https://www.glarysoft.com/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "Integrator_Portable.exe", name = "Glary Utilities" }]
 persist = ["Portable\\data", "Portable\\skins"]
 
 [source.x64]

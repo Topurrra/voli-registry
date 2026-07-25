@@ -5,6 +5,7 @@ homepage = "https://bifrost.zwander.dev/"
 license = "MIT"
 kind = "app"
 bin = ["bin/Bifrost.exe"]
+shortcuts = [{ target = "bin/Bifrost.exe", name = "Bifrost" }]
 
 [source.x64]
 url = "https://github.com/zacharee/Bifrost/releases/download/2.1.2/bifrost-2.1.2-windows-amd64.zip"

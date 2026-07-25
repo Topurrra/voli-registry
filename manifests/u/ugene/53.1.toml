@@ -4,7 +4,9 @@ description = "Open-source bioinformatics software for manipulating DNA/RNA/prot
 homepage = "http://ugene.net/"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "ugene-53.1"
 bin = ["ugenecl.exe", { name = "ugene", path = "ugenecl.exe" }]
+shortcuts = [{ target = "ugeneui.exe", name = "UGene" }]
 
 [source.x64]
 url = "https://github.com/ugeneunipro/ugene/releases/download/53.1/ugene-53.1-win-x86-64.zip"

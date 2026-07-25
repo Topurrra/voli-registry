@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Mancy-win32-x64"
 bin = ["Mancy.exe"]
+shortcuts = [{ target = "Mancy.exe", name = "Mancy" }]
 
 [source.x64]
 url = "https://github.com/princejwesley/Mancy/releases/download/v3.2.0/Mancy-win32-x64.zip"

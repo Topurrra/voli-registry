@@ -4,7 +4,9 @@ description = "A C/C++ memory profiler and memory leak finder for Windows, PlayS
 homepage = "https://github.com/milostosic/MTuner"
 license = "BSD-2-Clause"
 kind = "app"
+extract_dir = "MTuner"
 bin = ["MTuner.com"]
+shortcuts = [{ target = "MTuner.exe", name = "MTuner" }]
 
 [source.x64]
 url = "https://github.com/milostosic/MTuner/releases/download/v5.0/mtuner64.zip"

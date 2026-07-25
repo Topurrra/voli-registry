@@ -4,7 +4,9 @@ description = "Image viewer and converter using Castle Game Engine, supporting c
 homepage = "https://castle-engine.io/castle-image-viewer"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "castle-image-viewer"
 bin = ["castle-image-viewer.exe"]
+shortcuts = [{ target = "castle-image-viewer.exe", name = "Castle Image Viewer" }]
 
 [source.x64]
 url = "https://github.com/castle-engine/castle-image-viewer/releases/download/v2.2.0/castle-image-viewer-2.2.0-win64-x86_64.zip"

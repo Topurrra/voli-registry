@@ -4,6 +4,8 @@ description = "Eclipse IDE for PHP Developers"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for PHP Developers" }]
 
 [source.x64]
 url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-php-2026-06-R-win32-x86_64.zip"

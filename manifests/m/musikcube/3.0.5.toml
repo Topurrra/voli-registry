@@ -5,6 +5,7 @@ homepage = "https://musikcube.com"
 license = "BSD-3-Clause"
 kind = "app"
 bin = [{ name = "musikcube", path = "musikcube-cmd.exe" }]
+shortcuts = [{ target = "musikcube.exe", name = "musikcube" }]
 
 [source.x64]
 url = "https://github.com/clangen/musikcube/releases/download/3.0.5/musikcube_3.0.5_win64.zip"

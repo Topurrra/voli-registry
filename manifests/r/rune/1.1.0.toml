@@ -4,6 +4,7 @@ description = "Rune is a music player that offers audio analysis and recommendat
 homepage = "https://github.com/Losses/rune"
 license = "MPL-2.0|Shareware"
 kind = "app"
+shortcuts = [{ target = "rune.exe", name = "Rune" }]
 
 [source.x64]
 url = "https://github.com/Losses/rune/releases/download/v1.1.0/Rune-v1.1.0-windows-amd64.zip"

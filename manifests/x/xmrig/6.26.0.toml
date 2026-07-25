@@ -4,6 +4,7 @@ description = "High performance RandomX, CryptoNight, AstroBWT and Argon2 CPU/GP
 homepage = "https://xmrig.com"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "xmrig-6.26.0"
 bin = ["xmrig.exe"]
 persist = ["config.json"]
 

@@ -4,6 +4,8 @@ description = "Tahoma2D is a 2D and stop motion animation software."
 homepage = "https://tahoma2d.org/"
 license = "BSD-3-Clause"
 kind = "app"
+extract_dir = "Tahoma2D"
+shortcuts = [{ target = "Tahoma2D.exe", name = "Tahoma2D" }]
 persist = ["tahomastuff/profiles/users", "tahomastuff/sandbox"]
 
 [source.x64]

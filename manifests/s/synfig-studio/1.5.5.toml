@@ -5,6 +5,7 @@ homepage = "https://www.synfig.org"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["bin\\synfig.exe"]
+shortcuts = [{ target = "bin\\synfigstudio.exe", name = "Synfig Studio" }]
 
 [source.x64]
 url = "https://github.com/synfig/synfig/releases/download/v1.5.5/SynfigStudio-1.5.5-2026.03.15-win64-79bf7.zip"

@@ -6,6 +6,7 @@ license = "GPL-2.0-or-later"
 kind = "app"
 extract_dir = "UniExtract"
 bin = ["UniExtract.exe"]
+shortcuts = [{ target = "UniExtract.exe", name = "Universal Extractor" }]
 persist = ["log", "UniExtract.ini"]
 
 [source.x64]

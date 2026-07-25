@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "SyncTrayzorPortable-x64"
 bin = ["SyncTrayzor.exe"]
+shortcuts = [{ target = "SyncTrayzor.exe", name = "SyncTrayzor" }]
 persist = ["data"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "Fast and Powerful Uninstaller for Complete Removal of Programs."
 homepage = "https://crystalidea.com/uninstall-tool"
 license = "Shareware"
 kind = "app"
+shortcuts = [{ target = "UninstallToolPortable.exe", name = "Uninstall Tool" }]
 
 [source.x64]
 url = "https://github.com/crystalidea/uninstall-tool/releases/download/v3.8.0/uninstalltool_portable.zip"

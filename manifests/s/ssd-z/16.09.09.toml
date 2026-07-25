@@ -4,6 +4,7 @@ description = "Information tool for Solid State Drives and other disk devices."
 homepage = "http://aezay.dk/aezay/ssdz/"
 license = "Unknown"
 kind = "app"
+shortcuts = [{ target = "SSD-Z.exe", name = "SSD-Z" }]
 
 [source.x64]
 url = "http://aezay.dk/aezay/ssdz/SSD-Z_16.09.09wip.rar"

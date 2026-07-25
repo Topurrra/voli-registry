@@ -5,6 +5,7 @@ homepage = "http://utilfr42.free.fr/util/Clavier.php"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["Clavier.exe"]
+shortcuts = [{ target = "Clavier.exe", name = "Clavier+" }]
 persist = ["Clavier.ini"]
 
 [source.x64]

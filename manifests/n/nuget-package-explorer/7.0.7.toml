@@ -4,7 +4,9 @@ description = "GUI tool for creating, updating, and deploying NuGet packages"
 homepage = "https://github.com/NuGetPackageExplorer/NuGetPackageExplorer"
 license = "MIT"
 kind = "app"
+extract_dir = "tools"
 bin = ["NuGetPackageExplorer.exe"]
+shortcuts = [{ target = "NuGetPackageExplorer.exe", name = "Nuget Package Explorer" }]
 
 [source.x64]
 url = "https://packages.chocolatey.org/NugetPackageExplorer.7.0.7.nupkg"

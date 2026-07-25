@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "ungit-win32-x64"
 bin = ["ungit.exe"]
+shortcuts = [{ target = "ungit.exe", name = "ungit" }]
 
 [source.x64]
 url = "https://github.com/FredrikNoren/ungit/releases/download/v1.5.30/ungit-1.5.30-win32-x64.zip"

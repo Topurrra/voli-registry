@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "lazpaint64"
 bin = ["lazpaint.exe"]
+shortcuts = [{ target = "lazpaint.exe", name = "LazPaint" }]
 
 [source.x64]
 url = "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_win64_no_install.zip"

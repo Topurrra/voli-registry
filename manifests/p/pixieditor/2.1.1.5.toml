@@ -4,6 +4,8 @@ description = "An universal 2D editor"
 homepage = "https://pixieditor.net/"
 license = "LGPL-3.0"
 kind = "app"
+extract_dir = "PixiEditor"
+shortcuts = [{ target = "PixiEditor.exe", name = "PixiEditor" }]
 
 [source.x64]
 url = "https://github.com/PixiEditor/PixiEditor/releases/download/2.1.1.5/PixiEditor.2.1.1.5.x64-win.zip"

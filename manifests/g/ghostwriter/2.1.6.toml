@@ -5,6 +5,7 @@ homepage = "https://ghostwriter.kde.org/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["ghostwriter.exe"]
+shortcuts = [{ target = "ghostwriter.exe", name = "Ghostwriter" }]
 persist = ["data"]
 
 [source.x64]

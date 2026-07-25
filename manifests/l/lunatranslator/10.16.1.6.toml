@@ -5,6 +5,7 @@ homepage = "https://github.com/HIllya51/LunaTranslator"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "LunaTranslator_x64"
+shortcuts = [{ target = "LunaTranslator.exe", name = "LunaTranslator" }, { target = "LunaTranslator_admin.exe", name = "LunaTranslator (admin)" }, { target = "LunaTranslator_debug.bat", name = "LunaTranslator (debug)" }]
 persist = ["cache", "userconfig", "translation_record"]
 
 [source.x64]

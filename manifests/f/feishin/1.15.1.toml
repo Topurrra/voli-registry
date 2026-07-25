@@ -4,6 +4,7 @@ description = "A modern self-hosted music player."
 homepage = "https://github.com/jeffvli/feishin"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Feishin.exe", name = "Feishin" }]
 
 [source.x64]
 url = "https://github.com/jeffvli/feishin/releases/download/v1.15.1/Feishin-1.15.1-win-x64.zip"

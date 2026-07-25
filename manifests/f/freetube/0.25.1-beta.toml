@@ -4,6 +4,7 @@ description = "The private YouTube client"
 homepage = "https://freetubeapp.io"
 license = "AGPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "FreeTube.exe", name = "FreeTube" }]
 
 [source.x64]
 url = "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.1-beta/freetube-0.25.1-beta-win-x64-portable.7z"

@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "Webcam_on_off_v1.4"
 bin = ["WebCam.exe"]
+shortcuts = [{ target = "WebCam.exe", name = "WebCam On Off" }]
 persist = ["WebCam.ini"]
 
 [source.x64]

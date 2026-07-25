@@ -5,6 +5,7 @@ homepage = "http://www.imgburn.com/"
 license = "Freeware"
 kind = "app"
 bin = ["ImgBurn.exe"]
+shortcuts = [{ target = "ImgBurn.exe", name = "ImgBurn" }]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/imgburn/SetupImgBurn_2.5.8.0.exe#/dl.7z"

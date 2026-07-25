@@ -4,6 +4,8 @@ description = "Sharing files via Wi-Fi or Mobile Hotspot."
 homepage = "https://github.com/marchellodev/sharik"
 license = "MIT"
 kind = "app"
+extract_dir = "sharik"
+shortcuts = [{ target = "sharik.exe", name = "Sharik" }]
 
 [source.x64]
 url = "https://github.com/marchellodev/sharik/releases/download/v3.1/sharik_v3.1_windows.zip"

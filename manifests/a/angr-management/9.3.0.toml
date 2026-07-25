@@ -4,6 +4,8 @@ description = "The official GUI for angr, an open-source binary analysis platfor
 homepage = "https://angr.io/"
 license = "BSD-2-Clause"
 kind = "app"
+extract_dir = "angr-management"
+shortcuts = [{ target = "angr-management.exe", name = "angr management" }]
 
 [source.x64]
 url = "https://github.com/angr/angr-management/releases/download/v9.3.0/angr-management-v9.3.0-win64-x86_64.zip"

@@ -6,6 +6,7 @@ license = "BSD-2-Clause-Views"
 kind = "app"
 extract_dir = "Protege-5.6.9"
 bin = ["Protege.exe"]
+shortcuts = [{ target = "Protege.exe", name = "Protege" }]
 persist = ["conf", "plugins"]
 
 [source.x64]

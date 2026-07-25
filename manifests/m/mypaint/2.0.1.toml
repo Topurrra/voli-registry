@@ -5,6 +5,7 @@ homepage = "http://mypaint.org"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["mypaint.exe"]
+shortcuts = [{ target = "mypaint.exe", name = "MyPaint" }]
 
 [source.x64]
 url = "https://github.com/mypaint/mypaint/releases/download/v2.0.1/mypaint-w64-2.0.1-standalone.7z"

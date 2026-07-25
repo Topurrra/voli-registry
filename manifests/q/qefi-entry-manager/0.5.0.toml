@@ -4,6 +4,7 @@ description = "A userspace cross-platform EFI boot entry management GUI App base
 homepage = "https://github.com/Inokinoki/QEFIEntryManager"
 license = "GPL-3.0"
 kind = "app"
+shortcuts = [{ target = "QEFIEntryManager.exe", name = "QEFI Entry Manager" }]
 
 [source.x64]
 url = "https://github.com/Inokinoki/QEFIEntryManager/releases/download/v0.5.0/QEFI.Entry.Manager.for.Windows.Qt5.15.2.zip"

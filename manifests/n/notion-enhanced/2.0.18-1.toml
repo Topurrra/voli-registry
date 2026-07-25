@@ -4,6 +4,7 @@ description = "Collaborative note taking. Notion with notion-enhancer embedded."
 homepage = "https://notion-enhancer.github.io/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Notion Enhanced.exe", name = "Notion Enhanced" }]
 
 [source.x64]
 url = "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1-win.zip"

@@ -4,7 +4,9 @@ description = "A fork of the SSH/Telnet client PuTTY with new features such as b
 homepage = "https://github.com/lalbornoz/PuTTie"
 license = "MIT"
 kind = "app"
+extract_dir = "FySTY-Release-76f785d5"
 bin = ["bidi_gettype.exe", "bidi_test.exe", "pageant.exe", "plink.exe", "pscp.exe", "psftp.exe", "psocks.exe", "putty.exe", "puttygen.exe", "puttytel.exe"]
+shortcuts = [{ target = "putty.exe", name = "PuTTY" }, { target = "puttygen.exe", name = "PuttyGen (PuTTY Key Generator)" }, { target = "pageant.exe", name = "Pageant (PuTTY authentication agent)" }]
 
 [source.x64]
 url = "https://github.com/lalbornoz/PuTTie/releases/download/FySTY-Release-76f785d5/FySTY-Release-76f785d5.zip"

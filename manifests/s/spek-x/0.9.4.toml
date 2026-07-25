@@ -5,6 +5,7 @@ homepage = "https://github.com/MikeWang000000/spek-X"
 license = "GPL-3.0-only"
 kind = "app"
 bin = [{ name = "spek-x", path = "spek.exe" }]
+shortcuts = [{ target = "spek.exe", name = "Spek-X" }]
 
 [source.x64]
 url = "https://github.com/MikeWang000000/spek-X/releases/download/v0.9.4/spek-x-0.9.4-windows-x86_64.zip"

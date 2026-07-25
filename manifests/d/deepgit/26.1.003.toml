@@ -4,7 +4,9 @@ description = "Git Archaeology Tool."
 homepage = "https://www.syntevo.com/deepgit/"
 license = "Proprietary"
 kind = "app"
+extract_dir = "DeepGit"
 bin = [{ name = "deepgit", path = "bin\\deepgitc.exe" }]
+shortcuts = [{ target = "bin\\deepgit.exe", name = "DeepGit" }]
 persist = [".settings"]
 
 [source.x64]

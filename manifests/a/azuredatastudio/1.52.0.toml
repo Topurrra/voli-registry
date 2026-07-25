@@ -5,6 +5,7 @@ homepage = "https://docs.microsoft.com/en-us/sql/azure-data-studio"
 license = "MIT"
 kind = "app"
 bin = ["bin\\azuredatastudio.cmd"]
+shortcuts = [{ target = "azuredatastudio.exe", name = "Azure Data Studio" }]
 
 [source.x64]
 url = "https://github.com/microsoft/azuredatastudio/releases/download/final/azuredatastudio-windows-1.52.0.zip"

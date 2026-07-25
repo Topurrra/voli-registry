@@ -5,6 +5,7 @@ homepage = "https://vibrancegui.com/"
 license = "Unknown"
 kind = "app"
 bin = ["vibranceGUI.exe"]
+shortcuts = [{ target = "vibranceGUI.exe", name = "vibranceGUI" }]
 
 [source.x64]
 url = "https://vibrancegui.com/files/vibranceGUI.zip"

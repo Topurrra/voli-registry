@@ -5,6 +5,7 @@ homepage = "https://jan.ai"
 license = "AGPL-3.0-only"
 kind = "app"
 bin = ["resources\\bin\\jan-cli.exe"]
+shortcuts = [{ target = "Jan.exe", name = "Jan" }]
 
 [source.x64]
 url = "https://github.com/janhq/jan/releases/download/v0.8.4/Jan_0.8.4_x64-setup.exe#/dl.7z"

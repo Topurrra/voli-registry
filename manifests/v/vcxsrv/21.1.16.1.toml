@@ -5,6 +5,7 @@ homepage = "https://github.com/marchaesen/vcxsrv"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["vcxsrv.exe", "xauth.exe", "xcalc.exe", "xclock.exe", "xhost.exe", "xkbcomp.exe", "xlaunch.exe", "xrdb.exe", "xwininfo.exe"]
+shortcuts = [{ target = "vcxsrv.exe", name = "VcXsrv" }, { target = "xlaunch.exe", name = "XLauncher" }]
 
 [source.x64]
 url = "https://github.com/marchaesen/vcxsrv/releases/download/21.1.16.1/vcxsrv-64.21.1.16.1.installer.exe#/dl.7z"

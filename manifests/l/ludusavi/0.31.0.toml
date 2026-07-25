@@ -5,6 +5,7 @@ homepage = "https://github.com/mtkennerly/ludusavi"
 license = "MIT"
 kind = "app"
 bin = ["ludusavi.exe"]
+shortcuts = [{ target = "ludusavi.exe", name = "Ludusavi" }]
 
 [source.x64]
 url = "https://github.com/mtkennerly/ludusavi/releases/download/v0.31.0/ludusavi-v0.31.0-win64.zip"

@@ -5,6 +5,7 @@ homepage = "https://nukesaq88.github.io/Pngyu/"
 license = "BSD-3-Clause"
 kind = "app"
 extract_dir = "Pngyu"
+shortcuts = [{ target = "Pngyu.exe", name = "Pngyu" }]
 
 [source.x64]
 url = "https://nukesaq88.github.io/Pngyu/download/Pngyu_win_101.zip"

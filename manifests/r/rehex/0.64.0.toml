@@ -4,7 +4,9 @@ description = "Hex editor for reverse engineering"
 homepage = "https://github.com/solemnwarning/rehex"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "rehex-0.64.0"
 bin = ["rehex.exe"]
+shortcuts = [{ target = "rehex.exe", name = "Reverse Engineers' Hex Editor" }]
 
 [source.x64]
 url = "https://github.com/solemnwarning/rehex/releases/download/0.64.0/rehex-0.64.0-win-x64.zip"

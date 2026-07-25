@@ -4,6 +4,8 @@ description = "Noi, a platform solution integrating AI with operating systems (A
 homepage = "https://noib.app"
 license = "Unknown"
 kind = "app"
+extract_dir = "lib\\net45"
+shortcuts = [{ target = "Noi.exe", name = "Noi" }]
 
 [source.x64]
 url = "https://github.com/lencx/Noi/releases/download/v1.1.0/noi-1.1.0-full.nupkg"

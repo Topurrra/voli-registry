@@ -4,7 +4,9 @@ description = "One of the biggest and most reliable peer-to-peer file sharing cl
 homepage = "https://www.emule-project.net/"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "eMule0.70b"
 bin = ["emule.exe"]
+shortcuts = [{ target = "emule.exe", name = "eMule" }]
 
 [source.x64]
 url = "https://github.com/irwir/eMule/releases/download/eMule_v0.70b-community/eMule0.70b_x64.zip"

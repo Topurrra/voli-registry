@@ -5,6 +5,7 @@ homepage = "https://helixmod.blogspot.com/2017/05/3d-fix-manager.html"
 license = "Freeware"
 kind = "app"
 bin = ["3DFixManager.exe"]
+shortcuts = [{ target = "3DFixManager.exe", name = "3D Fix Manager" }]
 persist = ["updateFixes", "3DFixManager.exe.config"]
 
 [source.x64]

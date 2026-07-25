@@ -5,6 +5,7 @@ homepage = "https://hakchi.net/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["hakchi.exe"]
+shortcuts = [{ target = "hakchi.exe", name = "Hakchi" }]
 persist = ["config", "games", "games_originals"]
 
 [source.x64]

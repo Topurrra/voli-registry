@@ -4,7 +4,9 @@ description = "A flexible software sketchbook and a language for learning how to
 homepage = "https://processing.org/"
 license = "GPL-2.0-or-later,LGPL-2.0-or-later,IPL-1.0"
 kind = "app"
+extract_dir = "processing-3.5.4"
 bin = ["processing.exe", "processing-java.exe"]
+shortcuts = [{ target = "processing.exe", name = "Processing" }]
 
 [source.x64]
 url = "https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-windows64.zip"

@@ -4,6 +4,7 @@ description = "A privacy-focused, extensible and beautiful web browser"
 homepage = "https://wexond.net"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Wexond.exe", name = "Wexond" }]
 
 [source.x64]
 url = "https://github.com/wexond/desktop/releases/download/v5.2.0/wexond-5.2.0-x64.nsis.7z"

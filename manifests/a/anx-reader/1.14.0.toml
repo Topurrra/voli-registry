@@ -4,6 +4,7 @@ description = "A thoughtfully crafted e-book reader for book lovers."
 homepage = "https://github.com/Anxcye/anx-reader"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "anx_reader.exe", name = "Anx Reader" }]
 
 [source.x64]
 url = "https://github.com/Anxcye/anx-reader/releases/download/v1.14.0/Anx-Reader-windows-1.14.0.zip"

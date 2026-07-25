@@ -5,6 +5,7 @@ homepage = "https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["Dn-FamiTracker.exe"]
+shortcuts = [{ target = "Dn-FamiTracker.exe", name = "Dn-FamiTracker" }]
 
 [source.x64]
 url = "https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker/releases/download/Dn0.5.3.0/Dn-FamiTracker_v053_x64_Release.7z"

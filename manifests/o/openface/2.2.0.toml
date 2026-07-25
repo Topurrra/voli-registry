@@ -6,6 +6,7 @@ license = "Proprietary"
 kind = "app"
 extract_dir = "OpenFace_2.2.0_win_x64"
 bin = ["FeatureExtraction.exe", "FaceLandmarkVid.exe", "FaceLandmarkVidMulti.exe", "FaceLandmarkImg.exe"]
+shortcuts = [{ target = "HeadPoseLive.exe", name = "Cambridge Face Tracker" }, { target = "OpenFaceDemo.exe", name = "OpenFace Analyser" }, { target = "OpenFaceOffline.exe", name = "OpenFace Offline" }]
 persist = ["model"]
 
 [source.x64]

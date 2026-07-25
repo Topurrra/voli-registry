@@ -4,6 +4,7 @@ description = "Free Voice and Text Chat"
 homepage = "https://discord.com/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "discord-portable.exe", name = "Discord" }]
 persist = ["data", "log"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "A Discord and Fosscord web-based client."
 homepage = "https://github.com/SpacingBat3/WebCord"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "webcord.exe", name = "WebCord" }]
 
 [source.x64]
 url = "https://github.com/SpacingBat3/WebCord/releases/download/v4.14.0/WebCord-win32-x64-4.14.0.zip"

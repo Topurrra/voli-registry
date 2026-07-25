@@ -4,6 +4,7 @@ description = "PDF Editor"
 homepage = "https://www.sejda.com/desktop"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "Sejda PDF Desktop.exe", name = "Sejda PDF" }]
 
 [source.x64]
 url = "https://downloads.sejda-cdn.com/sejda-desktop_7.9.7_x64_portable.zip"

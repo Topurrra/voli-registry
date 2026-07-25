@@ -4,6 +4,7 @@ description = "A utility designed to facilitate re-configuration of YubiKeys."
 homepage = "https://developers.yubico.com/yubikey-personalization-gui/"
 license = "BSD-2-Clause"
 kind = "app"
+shortcuts = [{ target = "yubikey-personalization-gui.exe", name = "YubiKey Personalization Tool" }]
 
 [source.x64]
 url = "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubikey-personalization-gui-3.1.25.exe#/dl.7z"

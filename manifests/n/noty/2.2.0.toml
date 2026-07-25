@@ -5,6 +5,7 @@ homepage = "https://github.com/fabiospampinato/noty"
 license = "MIT"
 kind = "app"
 bin = ["noty.exe"]
+shortcuts = [{ target = "noty.exe", name = "noty" }]
 
 [source.x64]
 url = "https://github.com/fabiospampinato/noty/releases/download/v2.2.0/Noty-2.2.0-win.zip"

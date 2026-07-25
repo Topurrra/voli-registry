@@ -5,6 +5,7 @@ homepage = "https://github.com/TRGamer-tech/FluentTaskScheduler"
 license = "MIT"
 kind = "app"
 bin = ["FluentTaskScheduler.exe"]
+shortcuts = [{ target = "FluentTaskScheduler.exe", name = "Fluent Task Scheduler" }]
 
 [source.x64]
 url = "https://github.com/TRGamer-tech/FluentTaskScheduler/releases/download/V1.8.1/Portable-x64.zip"

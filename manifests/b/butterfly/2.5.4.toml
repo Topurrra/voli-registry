@@ -5,6 +5,7 @@ homepage = "https://butterfly.linwood.dev/"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = ["butterfly.exe"]
+shortcuts = [{ target = "butterfly.exe", name = "Butterfly" }]
 
 [source.x64]
 url = "https://github.com/LinwoodCloud/Butterfly/releases/download/v2.5.4/linwood-butterfly-windows-x86_64.zip"

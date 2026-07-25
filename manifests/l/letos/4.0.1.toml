@@ -4,7 +4,9 @@ description = "A SQLite database manager. (Formerly known as SQLiteStudio.)"
 homepage = "https://letos.org/"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "Letos"
 bin = ["letos.exe"]
+shortcuts = [{ target = "letos.exe", name = "letos" }]
 
 [source.x64]
 url = "https://github.com/pawelsalawa/letos/releases/download/4.0.1/letos-4.0.1-windows-x64.zip"

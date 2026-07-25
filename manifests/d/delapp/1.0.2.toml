@@ -4,6 +4,7 @@ description = "A simple tool to delete files or folders in Windows"
 homepage = "https://github.com/differentrain/Delapp"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Delapp.exe", name = "Delapp" }]
 
 [source.x64]
 url = "https://github.com/differentrain/Delapp/releases/download/1.0.2/Delapp.zip"

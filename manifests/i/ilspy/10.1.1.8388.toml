@@ -5,6 +5,7 @@ homepage = "http://ilspy.net"
 license = "MIT"
 kind = "app"
 bin = ["ILSpy.exe"]
+shortcuts = [{ target = "ILSpy.exe", name = "ILSpy" }]
 
 [source.x64]
 url = "https://github.com/icsharpcode/ILSpy/releases/download/v10.1.1/ILSpy_binaries_10.1.1.8388-x64.zip"

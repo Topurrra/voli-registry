@@ -5,6 +5,7 @@ homepage = "http://goebish.free.fr/cpk/"
 license = "Unknown"
 kind = "app"
 bin = ["CPKeeper.exe"]
+shortcuts = [{ target = "CPKeeper.exe", name = "Color Profile Keeper" }]
 
 [source.x64]
 url = "http://goebish.free.fr/cpk/files/cpk_05.zip"

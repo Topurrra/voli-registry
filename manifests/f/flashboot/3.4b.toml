@@ -5,6 +5,7 @@ homepage = "https://www.prime-expert.com/flashboot/"
 license = "Unknown"
 kind = "app"
 bin = ["fb-cli.exe", { name = "flashboot", path = "fb-cli.exe" }]
+shortcuts = [{ target = "fb-gui.exe", name = "FlashBoot" }]
 persist = ["FlashBoot.ini"]
 
 [source.x64]

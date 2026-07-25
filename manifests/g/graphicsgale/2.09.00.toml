@@ -4,6 +4,7 @@ description = "Animation graphic editor easy to use, powerful tool for spriting 
 homepage = "https://graphicsgale.com/us/"
 license = "Unknown"
 kind = "app"
+shortcuts = [{ target = "gale.exe", name = "GraphicsGale" }, { target = "GaleBrowse.exe", name = "GraphicsGale Browser" }]
 persist = ["config"]
 
 [source.x64]

@@ -4,6 +4,8 @@ description = "Eclipse IDE for Automotive Software Developers"
 homepage = "https://projects.eclipse.org/projects/automotive"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse IDE for Automotive Software Developers" }]
 
 [source.x64]
 url = "https://archive.eclipse.org/technology/epp/downloads/release/mars/2/eclipse-automotive-mars-2-incubation-win32-x86_64.zip"

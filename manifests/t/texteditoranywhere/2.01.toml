@@ -5,6 +5,7 @@ homepage = "https://www.listary.com/text-editor-anywhere"
 license = "Unknown"
 kind = "app"
 extract_dir = "TextEditorAnywhere"
+shortcuts = [{ target = "TextEditorAnywhere.exe", name = "Text Editor Anywhere" }]
 persist = ["TEAConfig.xml"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "ApE (A plasmid Editor), tool for analyzing DNA plasmid sequences.
 homepage = "https://jorgensen.biology.utah.edu/wayned/ape/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "ApE.exe", name = "ApE" }]
 
 [source.x64]
 url = "https://jorgensen.biology.utah.edu/wayned/ape/Download/Windows/ApE_win_current.zip"

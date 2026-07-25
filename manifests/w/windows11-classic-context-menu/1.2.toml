@@ -4,7 +4,9 @@ description = "An application that allows Windows 11 users to revert back to the
 homepage = "https://www.sordum.org/windows-11-classic-context-menu"
 license = "Freeware"
 kind = "app"
+extract_dir = "W11ClassicMenu"
 bin = ["W11ClassicMenu.exe"]
+shortcuts = [{ target = "W11ClassicMenu.exe", name = "Windows 11 Classic Context Menu" }]
 persist = ["W11ClassicMenu.ini"]
 
 [source.x64]

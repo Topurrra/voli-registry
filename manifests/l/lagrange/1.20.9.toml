@@ -5,6 +5,7 @@ homepage = "https://gmi.skyjake.fi/lagrange"
 license = "BSD-2-Clause"
 kind = "app"
 bin = ["lagrange.exe"]
+shortcuts = [{ target = "lagrange.exe", name = "Lagrange" }]
 persist = ["userdata"]
 
 [source.x64]

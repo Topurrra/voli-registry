@@ -4,6 +4,7 @@ description = "Desktop client for Synology Surveillance Station"
 homepage = "https://www.synology.com/en-global/surveillance"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "bin\\Synology Surveillance Station Client.exe", name = "Synology Surveillance Station Client" }]
 
 [source.x64]
 url = "https://global.download.synology.com/download/Utility/SurveillanceStationClient/2.2.3-2598/Windows/x86_64/Synology%20Surveillance%20Station%20Client-2.2.3-2598_x64.zip"

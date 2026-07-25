@@ -6,6 +6,7 @@ license = "Zlib"
 kind = "app"
 extract_dir = "love-11.5-win64"
 bin = ["love.exe", "lovec.exe"]
+shortcuts = [{ target = "love.exe", name = "LOVE" }]
 
 [source.x64]
 url = "https://github.com/love2d/love/releases/download/11.5/love-11.5-win64.zip"

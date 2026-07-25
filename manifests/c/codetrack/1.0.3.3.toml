@@ -5,6 +5,7 @@ homepage = "https://www.getcodetrack.com"
 license = "Freeware"
 kind = "app"
 bin = ["CodeTrack.exe"]
+shortcuts = [{ target = "CodeTrack.exe", name = "CodeTrack" }]
 
 [source.x64]
 url = "https://www.getcodetrack.com/releases/codetrack_1_0_3_3.zip"

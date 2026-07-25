@@ -6,6 +6,7 @@ license = "BSD-2-Clause"
 kind = "app"
 extract_dir = "BPGconvPortable"
 bin = ["BPGconv.exe"]
+shortcuts = [{ target = "BPGconv.exe", name = "BPGconv" }]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/bpgconv/BPGconvPortable.zip"

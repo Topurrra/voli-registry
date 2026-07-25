@@ -4,7 +4,9 @@ description = "PDF files editor"
 homepage = "https://github.com/pdfarranger/pdfarranger"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "pdf arranger-1.14.0"
 bin = ["pdfarranger.exe"]
+shortcuts = [{ target = "pdfarranger.exe", name = "PDF Arranger" }]
 
 [source.x64]
 url = "https://github.com/pdfarranger/pdfarranger/releases/download/1.14.0/pdfarranger-1.14.0-windows-portable.zip"

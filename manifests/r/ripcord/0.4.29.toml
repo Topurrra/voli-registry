@@ -4,6 +4,7 @@ description = "Desktop chat client for group-centric services like Slack and Dis
 homepage = "https://cancel.fm/ripcord/"
 license = "Shareware"
 kind = "app"
+shortcuts = [{ target = "Ripcord.exe", name = "Ripcord" }]
 
 [source.x64]
 url = "https://cancel.fm/dl/Ripcord_Win_0.4.29.zip"

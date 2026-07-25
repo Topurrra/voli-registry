@@ -4,6 +4,7 @@ description = "The Programmers Solid 3D CAD Modeller"
 homepage = "https://www.openscad.org/"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "openscad-2021.01"
 
 [source.x64]
 url = "https://files.openscad.org/OpenSCAD-2021.01-x86-64.zip"

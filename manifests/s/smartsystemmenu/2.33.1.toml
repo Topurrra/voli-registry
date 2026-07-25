@@ -5,6 +5,7 @@ homepage = "https://github.com/AlexanderPro/SmartSystemMenu"
 license = "MIT"
 kind = "app"
 bin = ["SmartSystemMenu.exe"]
+shortcuts = [{ target = "SmartSystemMenu.exe", name = "SmartSystemMenu" }]
 persist = ["SmartSystemMenu.xml"]
 
 [source.x64]

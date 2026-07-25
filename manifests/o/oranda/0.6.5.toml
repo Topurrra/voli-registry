@@ -4,6 +4,7 @@ description = "Generate beautiful landing pages for your developer tools"
 homepage = "https://opensource.axo.dev/oranda/"
 license = "MIT|Apache-2.0"
 kind = "app"
+extract_dir = "oranda-x86_64-pc-windows-msvc"
 bin = ["oranda.exe"]
 
 [source.x64]

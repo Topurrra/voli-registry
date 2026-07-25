@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "Milton_1.9.1_Standalone_x64"
 bin = ["Milton.exe"]
+shortcuts = [{ target = "Milton.exe", name = "Milton" }]
 
 [source.x64]
 url = "https://github.com/serge-rgb/milton/releases/download/v1.9.1/Milton_1.9.1_Standalone_x64.zip"

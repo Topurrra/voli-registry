@@ -5,6 +5,7 @@ homepage = "https://multicommander.com/"
 license = "Freeware"
 kind = "app"
 bin = ["MultiCommander.exe"]
+shortcuts = [{ target = "MultiCommander.exe", name = "Multi Commander" }]
 persist = ["Config", "SessionConfig", "Extensions", "UserData"]
 
 [source.x64]

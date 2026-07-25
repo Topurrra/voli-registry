@@ -5,6 +5,7 @@ homepage = "https://netbird.io/"
 license = "BSD-3-Clause"
 kind = "app"
 bin = ["netbird.exe"]
+shortcuts = [{ target = "netbird-ui.exe", name = "netbird" }]
 
 [source.x64]
 url = "https://github.com/netbirdio/netbird/releases/download/v0.75.0/netbird_installer_0.75.0_windows_amd64.exe#/dl.7z"

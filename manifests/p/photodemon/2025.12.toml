@@ -6,6 +6,7 @@ license = "BSD-2-Clause,..."
 kind = "app"
 extract_dir = "PhotoDemon"
 bin = ["PhotoDemon.exe"]
+shortcuts = [{ target = "PhotoDemon.exe", name = "PhotoDemon" }]
 persist = ["Data"]
 
 [source.x64]

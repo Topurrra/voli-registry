@@ -5,6 +5,7 @@ homepage = "https://winauth.github.io/winauth/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["WinAuth.exe"]
+shortcuts = [{ target = "WinAuth.exe", name = "WinAuth" }]
 
 [source.x64]
 url = "https://github.com/winauth/winauth/releases/download/3.6.2/WinAuth-3.6.2.zip"

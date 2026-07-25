@@ -4,6 +4,7 @@ description = "A privacy minded and highly configurable Discord client"
 homepage = "https://github.com/Milkshiift/GoofCord"
 license = "OSL-3.0"
 kind = "app"
+shortcuts = [{ target = "GoofCord.exe", name = "GoofCord" }]
 
 [source.x64]
 url = "https://github.com/Milkshiift/GoofCord/releases/download/v2.3.0/GoofCord-2.3.0-win-x64.zip"

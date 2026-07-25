@@ -4,7 +4,9 @@ description = "Qt5 image viewer"
 homepage = "https://github.com/easymodo/qimgv"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "qimgv"
 bin = ["qimgv.exe"]
+shortcuts = [{ target = "qimgv.exe", name = "qimgv" }]
 persist = ["conf", "thumbnails"]
 
 [source.x64]

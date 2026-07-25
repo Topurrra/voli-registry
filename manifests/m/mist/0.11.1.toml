@@ -4,6 +4,7 @@ description = "Browse and use apps on the Ethereum network."
 homepage = "https://github.com/ethereum/mist"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Mist.exe", name = "Mist" }]
 
 [source.x64]
 url = "https://github.com/ethereum/mist/releases/download/v0.11.1/Mist-win64-0-11-1.zip"

@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Codiff-win32-x64"
 bin = ["codiff.exe"]
+shortcuts = [{ target = "codiff.exe", name = "Codiff" }]
 
 [source.x64]
 url = "https://github.com/nkzw-tech/codiff/releases/download/v1.9.2/Codiff-win32-x64-1.9.2.zip"

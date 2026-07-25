@@ -4,7 +4,9 @@ description = "Fast, secure, and free web browser, built for the modern web."
 homepage = "https://www.google.com/chrome/"
 license = "Freeware"
 kind = "app"
+extract_dir = "Chrome-bin"
 bin = [{ name = "chrome", path = "chrome.exe" }]
+shortcuts = [{ target = "chrome.exe", name = "Google Chrome" }]
 
 [source.x64]
 url = "https://dl.google.com/release2/chrome/advqzie6g3gpcqe35ou4bp5inmbq_150.0.7871.187/150.0.7871.187_chrome_installer_uncompressed.exe#/dl.7z"

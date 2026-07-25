@@ -5,6 +5,7 @@ homepage = "https://www.tinymediamanager.org/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["tinyMediaManagerCMD.exe"]
+shortcuts = [{ target = "tinyMediaManager.exe", name = "tinyMediaManager" }]
 persist = ["logs", "data", "cache", "backup"]
 
 [source.x64]

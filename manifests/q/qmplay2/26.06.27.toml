@@ -5,6 +5,7 @@ homepage = "https://github.com/zaps166/QMPlay2"
 license = "LGPL-3.0-only"
 kind = "app"
 bin = ["QMPlay2.exe"]
+shortcuts = [{ target = "QMPlay2.exe", name = "QMPlay2" }]
 
 [source.x64]
 url = "https://github.com/zaps166/QMPlay2/releases/download/26.06.27/QMPlay2-Win64-26.06.27-v2.exe#/dl.7z"

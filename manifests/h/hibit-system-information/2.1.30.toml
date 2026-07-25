@@ -4,6 +4,7 @@ description = "Show detailed information about the configuration of your compute
 homepage = "https://www.hibitsoft.ir/SystemInformation.html"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "HiBitSysInfo-Portable.exe", name = "HiBit System Information" }]
 
 [source.x64]
 url = "https://www.hibitsoft.ir/HiBitSysynfo/HiBitSysInfo-Portable-2.1.30.zip"

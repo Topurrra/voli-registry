@@ -4,6 +4,7 @@ description = "A Windows console window enhancement."
 homepage = "https://sourceforge.net/projects/console/"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "Console2"
 bin = ["Console.exe"]
 
 [source.x64]

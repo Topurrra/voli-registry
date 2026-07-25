@@ -5,6 +5,7 @@ homepage = "https://www.rathlev-home.de/tools/prog-e.html#unpack"
 license = "Freeware"
 kind = "app"
 bin = ["innounp.exe", "InnoUnpack.exe"]
+shortcuts = [{ target = "InnoUnpack.exe", name = "InnoUnpacker" }]
 
 [source.x64]
 url = "https://www.rathlev-home.de/tools/download/innounpacker.zip"

@@ -4,6 +4,7 @@ description = "A GUI program for Clash developed by vue3 + wails."
 homepage = "https://github.com/GUI-for-Cores/GUI.for.Clash"
 license = "GPL-3.0"
 kind = "app"
+shortcuts = [{ target = "GUI.for.Clash.exe", name = "GUI.for.Clash" }]
 persist = ["data"]
 
 [source.x64]

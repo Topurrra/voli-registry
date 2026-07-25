@@ -4,6 +4,7 @@ description = "A context-aware AI assistant for your desktop. Ready to respond i
 homepage = "https://everywhere.sylinko.com/"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "Everywhere.exe", name = "Everywhere" }]
 
 [source.x64]
 url = "https://github.com/DearVa/Everywhere/releases/download/v0.8.0/Everywhere-Windows-x64-v0.8.0.zip"

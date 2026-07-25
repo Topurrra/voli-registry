@@ -4,6 +4,7 @@ description = "Clash Nyanpasu! (∠・ω< )⌒☆ An opinionated Clash GUI based
 homepage = "https://github.com/libNyanpasu/clash-nyanpasu"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Clash Nyanpasu.exe", name = "Clash Nyanpasu" }]
 persist = [".config"]
 
 [source.x64]

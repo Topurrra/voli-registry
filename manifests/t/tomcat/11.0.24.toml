@@ -4,6 +4,7 @@ description = "Implementation of the Java Servlet, JavaServer Pages, Java Expres
 homepage = "https://tomcat.apache.org"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "apache-tomcat-11.0.24"
 bin = ["bin\\catalina.bat"]
 persist = ["conf", "webapps"]
 

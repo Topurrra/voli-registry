@@ -4,6 +4,7 @@ description = "Enables the backdrop effect on titlebar of Win32 apps on Windows 
 homepage = "https://github.com/MicaForEveryone/MicaForEveryone"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "MicaForEveryone.exe", name = "MicaForEveryone" }]
 
 [source.x64]
 url = "https://github.com/MicaForEveryone/MicaForEveryone/releases/download/v1.3.1.2/MicaForEveryone-x64-Release.zip"

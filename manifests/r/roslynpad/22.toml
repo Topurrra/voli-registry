@@ -5,6 +5,7 @@ homepage = "https://roslynpad.net"
 license = "Apache-2.0"
 kind = "app"
 bin = ["RoslynPad.exe"]
+shortcuts = [{ target = "RoslynPad.exe", name = "RoslynPad" }]
 
 [source.x64]
 url = "https://github.com/roslynpad/roslynpad/releases/download/22/RoslynPad-windows-x64.zip"

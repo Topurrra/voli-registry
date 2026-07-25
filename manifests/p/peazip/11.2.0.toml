@@ -6,6 +6,7 @@ license = "LGPL-3.0-only"
 kind = "app"
 extract_dir = "peazip_portable-11.2.0.WIN64"
 bin = ["peazip.exe"]
+shortcuts = [{ target = "peazip.exe", name = "PeaZip" }]
 persist = ["res\\conf"]
 
 [source.x64]

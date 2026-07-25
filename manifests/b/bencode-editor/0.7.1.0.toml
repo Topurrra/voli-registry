@@ -5,6 +5,7 @@ homepage = "https://sites.google.com/site/ultimasites/bencode-editor"
 license = "Unknown"
 kind = "app"
 bin = [{ name = "bencode-editor", path = "BEncode Editor.exe" }]
+shortcuts = [{ target = "BEncode Editor.exe", name = "BEncode Editor" }]
 
 [source.x64]
 url = "https://drive.google.com/uc?id=1Ngp66elk8TLX-Cwyn9DcNYk-_VQi-hxE&export=download#/bencode-editor.0710x.zip"

@@ -5,6 +5,7 @@ homepage = "https://getcatalyst.eu.org/"
 license = "MIT"
 kind = "app"
 extract_dir = "lib\\net45"
+shortcuts = [{ target = "Catalyst.exe", name = "Catalyst" }]
 
 [source.x64]
 url = "https://github.com/CatalystDevOrg/Catalyst/releases/download/v3.9.8/catalyst-3.9.8-full.nupkg"

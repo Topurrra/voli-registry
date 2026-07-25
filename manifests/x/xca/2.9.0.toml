@@ -5,6 +5,7 @@ homepage = "https://www.hohnstaedt.de/xca/"
 license = "BSD-3-Clause"
 kind = "app"
 extract_dir = "xca-portable-2.9.0"
+shortcuts = [{ target = "xca.exe", name = "XCA - Certificate and Key management" }]
 
 [source.x64]
 url = "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-portable-2.9.0.zip"

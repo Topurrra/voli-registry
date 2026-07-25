@@ -5,6 +5,7 @@ homepage = "https://gtoolkit.com"
 license = "MIT"
 kind = "app"
 bin = ["bin\\GlamorousToolkit-cli.exe"]
+shortcuts = [{ target = "bin\\GlamorousToolkit.exe", name = "GlamorousToolkit" }]
 
 [source.x64]
 url = "https://github.com/feenkcom/gtoolkit/releases/download/v1.1.529/GlamorousToolkit-Windows-x86_64-v1.1.529.zip"

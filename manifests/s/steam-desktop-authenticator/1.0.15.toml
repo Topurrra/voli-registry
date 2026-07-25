@@ -5,6 +5,7 @@ homepage = "https://github.com/Jessecar96/SteamDesktopAuthenticator"
 license = "MIT"
 kind = "app"
 bin = ["Steam Desktop Authenticator.exe", { name = "steam-desktop-authenticator", path = "Steam Desktop Authenticator.exe" }]
+shortcuts = [{ target = "Steam Desktop Authenticator.exe", name = "Steam Desktop Authenticator" }]
 persist = ["maFiles"]
 
 [source.x64]

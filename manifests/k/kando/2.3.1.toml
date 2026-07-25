@@ -5,6 +5,7 @@ homepage = "https://github.com/kando-menu/kando"
 license = "MIT"
 kind = "app"
 bin = ["kando.exe"]
+shortcuts = [{ target = "kando.exe", name = "Kando" }]
 
 [source.x64]
 url = "https://github.com/kando-menu/kando/releases/download/v2.3.1/Kando-win32-x64-2.3.1.zip"

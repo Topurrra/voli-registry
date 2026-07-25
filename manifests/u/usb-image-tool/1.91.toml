@@ -5,6 +5,7 @@ homepage = "https://www.alexpage.de/usb-image-tool/"
 license = "Freeware"
 kind = "app"
 bin = ["usbitcmd.exe"]
+shortcuts = [{ target = "USB Image Tool.exe", name = "USB Image Tool" }]
 
 [source.x64]
 url = "https://www.alexpage.de/download/usbit/usbit191.zip"

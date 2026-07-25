@@ -4,6 +4,7 @@ description = "A GUI to browse and restore restic backup repositories."
 homepage = "https://github.com/emuell/restic-browser"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "restic-browser.exe", name = "Restic Browser" }]
 
 [source.x64]
 url = "https://github.com/emuell/restic-browser/releases/download/v0.3.3/Restic-Browser-v0.3.3-windows.zip"

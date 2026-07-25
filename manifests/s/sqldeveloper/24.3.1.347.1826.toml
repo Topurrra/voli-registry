@@ -5,6 +5,7 @@ homepage = "https://www.oracle.com/database/sqldeveloper/"
 license = "Oracle Free Use License"
 kind = "app"
 extract_dir = "sqldeveloper"
+shortcuts = [{ target = "sqldeveloper.exe", name = "Oracle SQL Developer" }]
 
 [source.x64]
 url = "https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-24.3.1.347.1826-no-jre.zip"

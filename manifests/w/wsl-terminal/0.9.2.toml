@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "wsl-terminal"
 bin = [{ name = "wsl-terminal", path = "open-wsl.exe" }, "open-wsl.exe", "run-wsl-file.exe", { name = "wsl-vim", path = "vim.exe" }]
+shortcuts = [{ target = "open-wsl.exe", name = "wsl-terminal" }]
 persist = ["etc\\wsl-terminal.conf", "etc\\minttyrc", "etc\\themes"]
 
 [source.x64]

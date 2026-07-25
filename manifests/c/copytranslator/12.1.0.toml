@@ -4,6 +4,7 @@ description = "Foreign language reading and translation assistant based on copy 
 homepage = "https://copytranslator.github.io/"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "copytranslator.exe", name = "CopyTranslator" }]
 
 [source.x64]
 url = "https://github.com/CopyTranslator/CopyTranslator/releases/download/v12.1.0/copytranslator-12.1.0-win.zip"

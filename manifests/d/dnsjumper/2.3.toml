@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "DnsJumper"
 bin = ["dnsjumper.exe"]
+shortcuts = [{ target = "dnsjumper.exe", name = "DNS Jumper" }]
 persist = ["DnsJumper.ini"]
 
 [source.x64]

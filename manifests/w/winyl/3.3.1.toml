@@ -4,7 +4,9 @@ description = "A FOS digital audio player and music library application for orga
 homepage = "https://winyl-player.github.io"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "Winyl"
 bin = ["Winyl.exe"]
+shortcuts = [{ target = "Winyl.exe", name = "Winyl" }]
 persist = ["Profile"]
 
 [source.x64]

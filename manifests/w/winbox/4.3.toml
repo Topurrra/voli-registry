@@ -5,6 +5,7 @@ homepage = "https://mikrotik.com/winbox"
 license = "Freeware"
 kind = "app"
 bin = [{ name = "winbox", path = "WinBox.exe" }]
+shortcuts = [{ target = "WinBox.exe", name = "RouterOS WinBox" }]
 
 [source.x64]
 url = "https://download.mikrotik.com/routeros/winbox/4.3/WinBox_Windows.zip"

@@ -5,6 +5,7 @@ homepage = "https://www.coppeliarobotics.com"
 license = "CoppeliaSim Educational License"
 kind = "app"
 bin = ["coppeliaSim.exe"]
+shortcuts = [{ target = "coppeliaSim.exe", name = "CoppeliaSim Edu" }]
 
 [source.x64]
 url = "https://downloads.coppeliarobotics.com/V4_10_0_rev0/CoppeliaSim_Edu_V4_10_0_rev0_Win.zip"

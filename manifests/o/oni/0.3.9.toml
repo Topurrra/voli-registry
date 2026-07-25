@@ -5,6 +5,7 @@ homepage = "https://www.onivim.io/"
 license = "MIT"
 kind = "app"
 bin = ["oni.exe"]
+shortcuts = [{ target = "oni.exe", name = "oni" }]
 
 [source.x64]
 url = "https://github.com/onivim/oni/releases/download/v0.3.9/Oni-0.3.9-win.zip"

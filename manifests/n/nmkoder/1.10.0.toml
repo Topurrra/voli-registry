@@ -5,6 +5,7 @@ homepage = "https://github.com/n00mkrad/nmkoder"
 license = "GPL-3.0"
 kind = "app"
 extract_dir = "Nmkoder1.10"
+shortcuts = [{ target = "Nmkoder.exe", name = "Nmkoder" }]
 persist = ["logs", "data"]
 
 [source.x64]

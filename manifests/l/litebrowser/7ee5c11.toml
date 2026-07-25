@@ -5,6 +5,7 @@ homepage = "https://github.com/litehtml/litebrowser"
 license = "BSD-3-Clause"
 kind = "app"
 bin = ["litebrowser.exe"]
+shortcuts = [{ target = "litebrowser.exe", name = "LiteBrowser" }]
 
 [source.x64]
 url = "http://www.litehtml.com/download/litehtml/litebrowser.zip"

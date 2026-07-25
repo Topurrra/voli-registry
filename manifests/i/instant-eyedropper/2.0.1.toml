@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "instant-eyedropper"
 bin = ["instanteyedropper.exe"]
+shortcuts = [{ target = "instanteyedropper.exe", name = "Instant Eyedropper" }]
 persist = ["eyedropper.ini"]
 
 [source.x64]

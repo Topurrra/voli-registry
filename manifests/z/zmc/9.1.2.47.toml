@@ -6,6 +6,7 @@ license = "UPL-1.0"
 kind = "app"
 extract_dir = "zmc9.1.2.47-ca-win_x64\\Azul Mission Control"
 bin = ["zmc.exe"]
+shortcuts = [{ target = "zmc.exe", name = "Zulu Mission Control" }]
 persist = ["configuration", "dropins"]
 
 [source.x64]

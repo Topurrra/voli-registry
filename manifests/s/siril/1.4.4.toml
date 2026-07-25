@@ -4,7 +4,9 @@ description = "The Siril image processing software for amateur astronomy"
 homepage = "https://siril.org/"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "siril"
 bin = ["bin\\siril-cli.exe", "bin\\siril.exe"]
+shortcuts = [{ target = "bin\\siril.exe", name = "Siril" }]
 
 [source.x64]
 url = "https://free-astro.org/download/siril-1.4.4-ucrt64_win.zip"

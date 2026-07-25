@@ -4,6 +4,7 @@ description = "Spy/browse the visual tree of a running application (without the 
 homepage = "https://github.com/snoopwpf/snoopwpf"
 license = "MS-PL"
 kind = "app"
+shortcuts = [{ target = "Snoop.exe", name = "Snoop" }]
 
 [source.x64]
 url = "https://github.com/snoopwpf/snoopwpf/releases/download/v6.1.1/Snoop.6.1.1.signed.zip"

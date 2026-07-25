@@ -5,6 +5,7 @@ homepage = "https://get.vial.today/"
 license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "Vial"
+shortcuts = [{ target = "Vial.exe", name = "Vial" }]
 
 [source.x64]
 url = "https://github.com/vial-kb/vial-gui/releases/download/v0.7.5/Vial-v0.7.5-portable.zip"

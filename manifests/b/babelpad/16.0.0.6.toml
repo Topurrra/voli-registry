@@ -5,6 +5,7 @@ homepage = "https://www.babelstone.co.uk/Software/BabelPad.html"
 license = "Freeware"
 kind = "app"
 bin = ["BabelPad.exe"]
+shortcuts = [{ target = "BabelPad.exe", name = "BabelPad" }]
 
 [source.x64]
 url = "https://www.babelstone.co.uk/Software/Download/BabelPad.zip"

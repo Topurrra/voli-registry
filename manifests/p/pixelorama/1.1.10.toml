@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Pixelorama-Windows-64bit"
 bin = ["Pixelorama.exe"]
+shortcuts = [{ target = "Pixelorama.exe", name = "Pixelorama" }]
 
 [source.x64]
 url = "https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.1.10/Pixelorama-Windows-64bit.zip"

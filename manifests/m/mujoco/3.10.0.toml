@@ -5,6 +5,7 @@ homepage = "https://mujoco.org/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["bin\\simulate.exe"]
+shortcuts = [{ target = "bin\\simulate.exe", name = "MuJoCo Simulate" }]
 
 [source.x64]
 url = "https://github.com/google-deepmind/mujoco/releases/download/3.10.0/mujoco-3.10.0-windows-x86_64.zip"

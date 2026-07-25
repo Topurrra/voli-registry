@@ -5,6 +5,7 @@ homepage = "https://github.com/paolosalvatori/ServiceBusExplorer"
 license = "Apache-2.0"
 kind = "app"
 bin = ["tools\\servicebusexplorer.exe"]
+shortcuts = [{ target = "tools\\servicebusexplorer.exe", name = "Service Bus Explorer" }]
 persist = ["tools\\ServiceBusExplorer.exe.config"]
 
 [source.x64]

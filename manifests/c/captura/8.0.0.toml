@@ -5,6 +5,7 @@ homepage = "https://mathewsachin.github.io/Captura/"
 license = "MIT"
 kind = "app"
 bin = ["captura-cli.exe", { name = "captura", path = "captura-cli.exe" }]
+shortcuts = [{ target = "captura.exe", name = "Captura" }]
 
 [source.x64]
 url = "https://github.com/MathewSachin/Captura/releases/download/v8.0.0/Captura-Portable.zip"

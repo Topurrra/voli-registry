@@ -5,6 +5,7 @@ homepage = "https://apps.kde.org/filelight"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["bin\\filelight.exe"]
+shortcuts = [{ target = "bin\\filelight.exe", name = "Filelight" }]
 
 [source.x64]
 url = "https://cdn.kde.org/ci-builds/utilities/filelight/release-26.04/windows/filelight-release_26.04-2130-windows-cl-msvc2022-x86_64.7z"

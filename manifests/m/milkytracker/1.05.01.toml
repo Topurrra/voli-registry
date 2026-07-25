@@ -5,6 +5,7 @@ homepage = "http://milkytracker.github.io/"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "milkytracker-1.05.01-win64"
+shortcuts = [{ target = "MilkyTracker.exe", name = "MilkyTracker" }]
 
 [source.x64]
 url = "https://github.com/milkytracker/MilkyTracker/releases/download/v1.05.01/milkytracker-1.05.01-win64.zip"

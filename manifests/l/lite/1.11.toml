@@ -5,6 +5,7 @@ homepage = "https://github.com/rxi/lite"
 license = "MIT"
 kind = "app"
 bin = ["lite.exe"]
+shortcuts = [{ target = "lite.exe", name = "Lite" }]
 persist = ["data"]
 
 [source.x64]

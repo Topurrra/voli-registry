@@ -5,6 +5,7 @@ homepage = "https://github.com/Terminals-Origin/Terminals"
 license = "Freeware"
 kind = "app"
 bin = ["Terminals.exe"]
+shortcuts = [{ target = "Terminals.exe", name = "Terminals" }]
 persist = ["data"]
 
 [source.x64]

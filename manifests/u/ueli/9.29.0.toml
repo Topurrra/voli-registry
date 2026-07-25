@@ -5,6 +5,7 @@ homepage = "https://ueli.app/"
 license = "MIT"
 kind = "app"
 bin = ["ueli.exe"]
+shortcuts = [{ target = "ueli.exe", name = "ueli" }]
 
 [source.x64]
 url = "https://github.com/oliverschwendener/ueli/releases/download/v9.29.0/ueli-9.29.0-win.zip"

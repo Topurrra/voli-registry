@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "Applications"
 bin = ["Takc.exe"]
+shortcuts = [{ target = "Tak.exe", name = "Tak" }]
 
 [source.x64]
 url = "http://thbeck.de/Download/TAK_2.3.3.zip"

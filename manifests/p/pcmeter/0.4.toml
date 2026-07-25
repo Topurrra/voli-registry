@@ -6,6 +6,7 @@ license = "MPL-2.0"
 kind = "app"
 extract_dir = "PCMeterV4"
 bin = [{ name = "PCMeter", path = "PCMeterV0.4.exe" }]
+shortcuts = [{ target = "PCMeterV0.4.exe", name = "PCMeter" }]
 
 [source.x64]
 url = "http://addgadgets.com/download/PCMeter.zip"

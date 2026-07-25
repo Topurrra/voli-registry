@@ -5,6 +5,7 @@ homepage = "https://vieb.dev"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["Vieb.exe"]
+shortcuts = [{ target = "Vieb.exe", name = "Vieb" }]
 
 [source.x64]
 url = "https://github.com/Jelmerro/Vieb/releases/download/12.10.0/Vieb-12.10.0-win.zip"

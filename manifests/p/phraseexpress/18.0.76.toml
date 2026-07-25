@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "PhraseExpress"
 bin = ["PhraseExpress.exe"]
+shortcuts = [{ target = "PhraseExpress.exe", name = "PhraseExpress" }]
 
 [source.x64]
 url = "https://www.phraseexpress.com/PhraseExpress_USB.zip"

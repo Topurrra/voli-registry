@@ -4,6 +4,7 @@ description = "Data searching, editing, and recovery on disks."
 homepage = "https://dmde.com/"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "dmde.exe", name = "DMDE" }]
 persist = ["dmde.ini"]
 
 [source.x64]

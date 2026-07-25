@@ -5,6 +5,7 @@ homepage = "https://gitlab.com/qtemu/gui"
 license = "GPL-2.0-or-later"
 kind = "app"
 extract_dir = "qtemu_3.0-beta1-portable"
+shortcuts = [{ target = "qtemu.exe", name = "QtEmu" }]
 
 [source.x64]
 url = "https://gitlab.com/qtemu/releases/-/raw/main/3.0-beta1/qtemu_3.0-beta1-portable.zip"

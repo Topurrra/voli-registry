@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "FreeRapid-0.9u4"
 bin = ["frd.jar"]
+shortcuts = [{ target = "frd.exe", name = "FreeRapid Downloader" }]
 persist = ["log", "objectdb.conf"]
 
 [source.x64]

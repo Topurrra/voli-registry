@@ -5,6 +5,7 @@ homepage = "https://www.palemoon.org"
 license = "MPL-2.0"
 kind = "app"
 bin = [{ name = "palemoon", path = "Palemoon-Portable.exe" }]
+shortcuts = [{ target = "Palemoon-Portable.exe", name = "Pale Moon" }]
 persist = ["Backups", "Downloads", "User"]
 
 [source.x64]

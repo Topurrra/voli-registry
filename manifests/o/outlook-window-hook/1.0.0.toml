@@ -4,6 +4,7 @@ description = "Keep Outlook running in the background when the main window is cl
 homepage = "https://github.com/Palsternakka/OutlookWindowHook"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "OlkWindowHook.exe", name = "Outlook Window Hook" }]
 
 [source.x64]
 url = "https://github.com/Palsternakka/OutlookWindowHook/releases/download/v1.0.0/OutlookWindowsHook-Standalone.zip"

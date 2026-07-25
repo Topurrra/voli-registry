@@ -5,6 +5,7 @@ homepage = "https://www.arduino.cc"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = [{ name = "arduino", path = "Arduino IDE.exe" }]
+shortcuts = [{ target = "Arduino IDE.exe", name = "Arduino IDE" }]
 
 [source.x64]
 url = "https://github.com/arduino/arduino-ide/releases/download/2.3.10/arduino-ide_2.3.10_Windows_64bit.zip"

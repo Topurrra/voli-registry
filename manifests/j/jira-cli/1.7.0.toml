@@ -4,6 +4,7 @@ description = "Feature-rich Interactive Jira Command Line"
 homepage = "https://github.com/ankitpokhrel/jira-cli"
 license = "MIT"
 kind = "app"
+extract_dir = "bin"
 bin = ["jira.exe"]
 
 [source.x64]

@@ -5,6 +5,7 @@ homepage = "https://github.com/Vencord/Vesktop"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["Vesktop.exe"]
+shortcuts = [{ target = "Vesktop.exe", name = "Vencord Desktop" }]
 persist = ["Data"]
 
 [source.x64]

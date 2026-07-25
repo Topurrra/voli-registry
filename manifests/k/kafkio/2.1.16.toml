@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "KafkIO-win-2.1.16-x64"
 bin = ["KafkIO.exe"]
+shortcuts = [{ target = "KafkIO.exe", name = "KafkIO" }]
 
 [source.x64]
 url = "https://www.kafkio.com/download/kafkio/2.1.16/KafkIO-win-2.1.16-x64.zip"

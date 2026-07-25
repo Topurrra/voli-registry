@@ -6,6 +6,7 @@ license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "Natron-2.5.0-Windows-x86_64"
 bin = ["bin\\Natron.exe", "bin\\NatronRenderer.exe"]
+shortcuts = [{ target = "bin\\Natron.exe", name = "Natron" }]
 
 [source.x64]
 url = "https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-Windows-x86_64.zip"

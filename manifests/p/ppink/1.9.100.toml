@@ -4,7 +4,9 @@ description = "An easy to use on-screen annotation software (fork of gInk)."
 homepage = "https://github.com/pubpub-zz/ppInk"
 license = "MIT"
 kind = "app"
+extract_dir = "ppInk"
 bin = ["ppInk.exe"]
+shortcuts = [{ target = "ppInk.exe", name = "ppInk" }]
 persist = ["config.ini", "hotkeys.ini", "pens.ini"]
 
 [source.x64]

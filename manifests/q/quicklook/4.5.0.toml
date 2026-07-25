@@ -5,6 +5,7 @@ homepage = "https://github.com/QL-Win/QuickLook"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["QuickLook.exe"]
+shortcuts = [{ target = "QuickLook.exe", name = "QuickLook" }]
 persist = ["UserData"]
 
 [source.x64]

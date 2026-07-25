@@ -4,6 +4,8 @@ description = "Kavita is a fast, feature rich, cross platform reading server. Bu
 homepage = "https://github.com/Kareadita/Kavita/"
 license = "GPL-3.0"
 kind = "app"
+extract_dir = "Kavita"
+shortcuts = [{ target = "Kavita.exe", name = "Kavita" }]
 persist = ["config"]
 
 [source.x64]

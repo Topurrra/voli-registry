@@ -4,6 +4,7 @@ description = "A custom client designed to enhance your Discord experience while
 homepage = "https://legcord.app/"
 license = "OSL-3.0"
 kind = "app"
+shortcuts = [{ target = "Legcord.exe", name = "Legcord" }]
 
 [source.x64]
 url = "https://github.com/Legcord/Legcord/releases/download/v1.2.4/Legcord-1.2.4-win-x64.zip"

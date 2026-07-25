@@ -4,7 +4,9 @@ description = "A cross-platform HTTP client desktop application for testing HTTP
 homepage = "https://sunny-chung.github.io/hello-http/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "Hello HTTP"
 bin = ["Hello HTTP.exe"]
+shortcuts = [{ target = "Hello HTTP.exe", name = "hello HTTP" }]
 
 [source.x64]
 url = "https://github.com/sunny-chung/hello-http/releases/download/v1.9.0/HelloHTTP-v1.9.0-windows-X64.zip"

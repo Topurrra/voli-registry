@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "Sourcetrail_2021_4_19_64bit_Portable\\Sourcetrail_2021_4_19_64bit"
 bin = ["Sourcetrail.exe"]
+shortcuts = [{ target = "Sourcetrail.exe", name = "Sourcetrail" }]
 persist = ["user"]
 
 [source.x64]

@@ -5,6 +5,7 @@ homepage = "https://kdeconnect.kde.org/"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["bin\\kdeconnect-cli.exe"]
+shortcuts = [{ target = "bin\\kdeconnect-app.exe", name = "KDEConnect" }]
 
 [source.x64]
 url = "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.04/windows/kdeconnect-kde-release_26.04-6392-windows-cl-msvc2022-x86_64.7z"

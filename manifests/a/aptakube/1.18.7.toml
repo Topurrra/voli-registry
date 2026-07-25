@@ -5,6 +5,7 @@ homepage = "https://aptakube.com/"
 license = "Proprietary"
 kind = "app"
 bin = [{ name = "aptakube", path = "Aptakube.exe" }]
+shortcuts = [{ target = "Aptakube.exe", name = "Aptakube" }]
 
 [source.x64]
 url = "https://github.com/aptakube/aptakube/releases/download/1.18.7/Aptakube_1.18.7_x64.zip"

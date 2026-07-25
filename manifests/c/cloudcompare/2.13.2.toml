@@ -6,6 +6,7 @@ license = "GPL-2.0-or-later,LGPL-2.0-only"
 kind = "app"
 extract_dir = "CloudCompare_v2.13.2.preview_bin_x64"
 bin = ["CloudCompare.exe"]
+shortcuts = [{ target = "CloudCompare.exe", name = "CloudCompare" }]
 
 [source.x64]
 url = "https://cloudcompare.org/release/CloudCompare_v2.13.2_bin_x64.7z"

@@ -5,6 +5,7 @@ homepage = "https://github.com/dheijl/swyh-rs"
 license = "MIT"
 kind = "app"
 bin = [{ name = "swyh-rs", path = "swyh-rs-cli.exe" }]
+shortcuts = [{ target = "swyh-rs.exe", name = "SWYH-RS" }]
 
 [source.x64]
 url = "https://github.com/dheijl/swyh-rs/releases/download/1.20.5/swyh-rs-release.zip"

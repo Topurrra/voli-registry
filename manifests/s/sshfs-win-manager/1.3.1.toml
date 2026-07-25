@@ -4,6 +4,7 @@ description = "A GUI for SSHFS-Win."
 homepage = "https://github.com/evsar3/sshfs-win-manager"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "SSHFS-Win Manager.exe", name = "SSHFS-Win Manager" }]
 
 [source.x64]
 url = "https://github.com/evsar3/sshfs-win-manager/releases/download/v1.3.1/sshfs-win-manager-v1.3.1.zip"

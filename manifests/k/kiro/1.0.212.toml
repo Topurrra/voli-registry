@@ -5,6 +5,7 @@ homepage = "https://kiro.dev"
 license = "Proprietary"
 kind = "app"
 bin = [{ name = "kiro", path = "bin\\kiro.cmd" }]
+shortcuts = [{ target = "Kiro.exe", name = "Kiro" }]
 
 [source.x64]
 url = "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/1.0.212/kiro-ide-1.0.212-stable-win32-x64.zip"

@@ -5,6 +5,7 @@ homepage = "https://github.com/AlexanderPro/SmartContextMenu"
 license = "MIT"
 kind = "app"
 bin = ["SmartContextMenu.exe"]
+shortcuts = [{ target = "SmartContextMenu.exe", name = "SmartContextMenu" }]
 
 [source.x64]
 url = "https://github.com/AlexanderPro/SmartContextMenu/releases/download/v1.8.1/SmartContextMenu_v1.8.1.zip"

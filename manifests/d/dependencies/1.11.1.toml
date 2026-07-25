@@ -5,6 +5,7 @@ homepage = "https://github.com/lucasg/Dependencies"
 license = "MIT"
 kind = "app"
 bin = ["Dependencies.exe", "DependenciesGui.exe"]
+shortcuts = [{ target = "DependenciesGui.exe", name = "Dependencies GUI" }]
 
 [source.x64]
 url = "https://github.com/lucasg/Dependencies/releases/download/v1.11.1/Dependencies_x64_Release.zip"

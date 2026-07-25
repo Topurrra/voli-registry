@@ -4,6 +4,7 @@ description = "Manage applications that are loaded automatically when Windows st
 homepage = "https://www.hibitsoft.ir/StartupManager.html"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "HiBitStartupManager-Portable.exe", name = "HiBit Startup Manager" }]
 persist = ["HiBitStartupManager"]
 
 [source.x64]

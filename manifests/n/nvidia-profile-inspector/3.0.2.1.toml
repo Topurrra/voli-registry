@@ -5,6 +5,7 @@ homepage = "https://github.com/Orbmu2k/nvidiaProfileInspector/"
 license = "MIT"
 kind = "app"
 bin = ["nvidiaProfileInspector.exe"]
+shortcuts = [{ target = "nvidiaProfileInspector.exe", name = "NVIDIA Profile Inspector" }]
 
 [source.x64]
 url = "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v3.0.2.1/nvidiaProfileInspector.zip"

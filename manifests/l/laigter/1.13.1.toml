@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "laigter-windows"
 bin = ["laigter.exe"]
+shortcuts = [{ target = "laigter.exe", name = "Laigter" }]
 
 [source.x64]
 url = "https://github.com/azagaya/laigter/releases/download/1.13.1/laigter-windows.zip"

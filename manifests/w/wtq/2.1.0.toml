@@ -5,6 +5,7 @@ homepage = "https://github.com/flyingpie/windows-terminal-quake"
 license = "MIT"
 kind = "app"
 bin = ["wtq.exe"]
+shortcuts = [{ target = "wtq.exe", name = "WTQ - Windows Terminal Quake" }]
 
 [source.x64]
 url = "https://github.com/flyingpie/windows-terminal-quake/releases/download/v2.1.0/win-x64_self-contained.zip"

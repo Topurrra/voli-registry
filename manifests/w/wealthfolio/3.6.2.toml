@@ -4,6 +4,7 @@ description = "A wealth management tool designed to help users track and manage 
 homepage = "https://wealthfolio.app/"
 license = "LGPL-3.0"
 kind = "app"
+shortcuts = [{ target = "Wealthfolio.exe", name = "Wealthfolio" }]
 
 [source.x64]
 url = "https://github.com/wealthfolio/wealthfolio/releases/download/v3.6.2/Wealthfolio_3.6.2_x64-setup.exe#/dl.7z"

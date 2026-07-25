@@ -4,6 +4,7 @@ description = "A small, but powerful GUI for FFmpeg that processes audio and vid
 homepage = "https://www.videohelp.com/software/clever-FFmpeg-GUI"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "clever FFmpeg GUI.exe", name = "Clever FFmpeg" }]
 
 [source.x64]
 url = "https://www.videohelp.com/download/clever_ffmpeg_gui_356.zip"

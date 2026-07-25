@@ -4,6 +4,7 @@ description = "A visual PDF tool to compose, combine, delete pages, crop and muc
 homepage = "https://pdfsam.org/pdfsam-visual/"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "PDFsam Visual.exe", name = "PDFsam Visual" }]
 
 [source.x64]
 url = "https://github.com/torakiki/pdfsam-visual-public/releases/download/v7.0.1/pdfsam-visual-7.0.1-windows-x64.zip"

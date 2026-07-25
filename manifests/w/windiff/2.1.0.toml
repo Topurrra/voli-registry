@@ -5,6 +5,7 @@ homepage = "https://en.wikipedia.org/wiki/WinDiff"
 license = "Unlicense"
 kind = "app"
 bin = ["bin\\WinDiff.exe"]
+shortcuts = [{ target = "bin\\WinDiff.exe", name = "WinDiff" }]
 
 [source.x64]
 url = "https://github.com/kitamstudios/WinDiff/releases/download/v2.1.0/WinDiff.zip"

@@ -4,6 +4,8 @@ description = "Eclipse IDE for Java and DSL Developers"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse IDE for Java and DSL Developers" }]
 
 [source.x64]
 url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-dsl-2026-06-R-win32-x86_64.zip"

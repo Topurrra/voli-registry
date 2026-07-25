@@ -5,6 +5,7 @@ homepage = "https://vidcoder.net"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["VidCoderCLI.exe"]
+shortcuts = [{ target = "VidCoder.exe", name = "VidCoder" }]
 
 [source.x64]
 url = "https://github.com/RandomEngy/VidCoder/releases/download/v12.23/VidCoder-12.23-Portable.exe#/dl.7z"

@@ -5,6 +5,7 @@ homepage = "https://eclipse.cx/projects/r3dfox"
 license = "MPL-2.0"
 kind = "app"
 bin = ["r3dfox.exe"]
+shortcuts = [{ target = "r3dfox.exe", name = "r3dfox" }]
 persist = ["Profile"]
 
 [source.x64]

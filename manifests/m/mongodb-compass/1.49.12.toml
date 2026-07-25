@@ -4,6 +4,7 @@ description = "An interactive tool for querying, optimizing, and analyzing Mongo
 homepage = "https://www.mongodb.com/products/compass"
 license = "SSPL-1.0"
 kind = "app"
+shortcuts = [{ target = "MongoDBCompass.exe", name = "MongoDB Compass" }]
 
 [source.x64]
 url = "https://downloads.mongodb.com/compass/mongodb-compass-1.49.12-win32-x64.zip"

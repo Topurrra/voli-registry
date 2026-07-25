@@ -5,6 +5,7 @@ homepage = "https://github.com/JustArchiNET/ArchiSteamFarm"
 license = "Apache-2.0"
 kind = "app"
 bin = ["ArchiSteamFarm.exe"]
+shortcuts = [{ target = "ArchiSteamFarm.exe", name = "ArchiSteamFarm" }]
 persist = ["config", "plugins"]
 
 [source.x64]

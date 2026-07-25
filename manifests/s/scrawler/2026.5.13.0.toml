@@ -4,6 +4,7 @@ description = "A program to download photos and videos from any site (e.g. Reddi
 homepage = "https://github.com/AAndyProgram/SCrawler"
 license = "GPL-3.0"
 kind = "app"
+shortcuts = [{ target = "SCrawler.exe", name = "SCrawler" }]
 persist = ["Data", "Settings", "Plugins"]
 
 [source.x64]

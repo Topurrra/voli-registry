@@ -4,6 +4,7 @@ description = "A modern, cross-platform desktop RSS reader."
 homepage = "https://github.com/WCY-dt/MrRSS"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "MrRSS.exe", name = "MrRSS" }]
 persist = ["data"]
 
 [source.x64]

@@ -4,7 +4,9 @@ description = "A tabbed SSH solution for Windows, combining PuTTY, WinSCP and Vc
 homepage = "https://winsshterm.blogspot.com/"
 license = "Freeware"
 kind = "app"
+extract_dir = "WinSSHTerm"
 bin = ["WinSSHTerm.exe"]
+shortcuts = [{ target = "WinSSHTerm.exe", name = "WinSSHTerm" }]
 persist = ["config", "tools"]
 
 [source.x64]

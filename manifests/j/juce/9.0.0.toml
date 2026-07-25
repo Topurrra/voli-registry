@@ -4,7 +4,9 @@ description = "C++ audio application framework"
 homepage = "https://juce.com"
 license = "Proprietary"
 kind = "app"
+extract_dir = "JUCE"
 bin = ["Projucer.exe"]
+shortcuts = [{ target = "Projucer.exe", name = "Projucer" }]
 
 [source.x64]
 url = "https://github.com/juce-framework/JUCE/releases/download/9.0.0/juce-9.0.0-windows.zip"

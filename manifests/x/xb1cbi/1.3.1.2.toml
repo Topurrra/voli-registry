@@ -5,6 +5,7 @@ homepage = "https://github.com/NiyaShy/XB1ControllerBatteryIndicator"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["XB1ControllerBatteryIndicator.exe"]
+shortcuts = [{ target = "XB1ControllerBatteryIndicator.exe", name = "XB1ControllerBatteryIndicator" }]
 
 [source.x64]
 url = "https://github.com/NiyaShy/XB1ControllerBatteryIndicator/releases/download/v1.3.1.2/XB1ControllerBatteryIndicator_1.3.1.2.zip"

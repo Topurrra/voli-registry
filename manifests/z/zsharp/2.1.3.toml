@@ -4,6 +4,7 @@ description = "A custom programming interpreter for ZSharp (Z#), a custom progra
 homepage = "https://github.com/sam-astro/Z-Sharp"
 license = "MIT"
 kind = "app"
+extract_dir = "ZS_Win_Base_Raw"
 bin = ["ZSharp.exe"]
 
 [source.x64]

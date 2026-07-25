@@ -5,6 +5,7 @@ homepage = "https://mhogomchungu.github.io/sirikali/"
 license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "SiriKaliQt6-1.8.6"
+shortcuts = [{ target = "sirikali.exe", name = "SiriKali" }]
 persist = ["local\\favorites", "local\\settings"]
 
 [source.x64]

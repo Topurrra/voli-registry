@@ -4,6 +4,7 @@ description = "A highly customizable fan controlling software for Windows"
 homepage = "https://getfancontrol.com/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "FanControl.exe", name = "FanControl" }]
 persist = ["Configurations", "Plugins"]
 
 [source.x64]

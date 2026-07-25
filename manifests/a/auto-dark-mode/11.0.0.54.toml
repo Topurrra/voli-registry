@@ -4,7 +4,9 @@ description = "Automatically switches between the dark and light theme of Window
 homepage = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "adm-app"
 bin = ["core\\AutoDarkModeShell.exe"]
+shortcuts = [{ target = "ui\\AutoDarkModeApp.exe", name = "Auto Dark Mode" }]
 
 [source.x64]
 url = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.0.0.54/AutoDarkMode_11.0.0.54_x64.zip"

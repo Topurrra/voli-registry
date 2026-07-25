@@ -4,7 +4,9 @@ description = "Eclipse Platform"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
 bin = ["eclipsec.exe"]
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse Platform" }]
 
 [source.x64]
 url = "http://download.eclipse.org/eclipse/downloads/drops4/R-4.38-202512010920/eclipse-platform-4.38-win32-x86_64.zip"

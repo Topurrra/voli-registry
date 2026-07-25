@@ -5,6 +5,7 @@ homepage = "https://getferrite.dev/"
 license = "MIT"
 kind = "app"
 bin = ["ferrite.exe"]
+shortcuts = [{ target = "ferrite.exe", name = "Ferrite" }]
 persist = ["portable"]
 
 [source.x64]

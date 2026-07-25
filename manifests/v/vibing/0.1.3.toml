@@ -4,6 +4,7 @@ description = "An intelligent voice input method powered by VibeVoice-ASR."
 homepage = "https://vibingjustspeakit.github.io/Vibing/"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "Vibing.exe", name = "Vibing" }]
 persist = ["config.yaml", "data"]
 
 [source.x64]

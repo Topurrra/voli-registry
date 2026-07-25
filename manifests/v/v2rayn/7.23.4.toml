@@ -5,6 +5,7 @@ homepage = "https://github.com/2dust/v2rayN"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "v2rayN-windows-64"
+shortcuts = [{ target = "v2rayN.exe", name = "v2rayN" }]
 persist = ["guiConfigs"]
 
 [source.x64]

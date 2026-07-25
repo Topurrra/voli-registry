@@ -5,6 +5,7 @@ homepage = "https://github.com/yatli/fvim"
 license = "MIT"
 kind = "app"
 bin = ["fvim.exe"]
+shortcuts = [{ target = "fvim.exe", name = "FVim" }]
 
 [source.x64]
 url = "https://github.com/yatli/fvim/releases/download/v0.3.549%2Bee4316c/fvim-win-x64-v0.3.548%2Bg2e4087d-2-gee4316c.zip"

@@ -5,6 +5,7 @@ homepage = "http://www.vanmiddlesworth.org/vitrite/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["Vitrite.exe"]
+shortcuts = [{ target = "Vitrite.exe", name = "Vitrite" }]
 
 [source.x64]
 url = "http://vitrite.vanmiddlesworth.org/vitrite/1.1.1/Vitrite-1.1.zip"

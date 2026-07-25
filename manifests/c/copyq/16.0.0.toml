@@ -4,7 +4,9 @@ description = "Clipboard manager"
 homepage = "https://hluk.github.io/CopyQ/"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "copyq-16.0.0"
 bin = ["copyq.exe"]
+shortcuts = [{ target = "copyq.exe", name = "CopyQ" }]
 persist = ["config"]
 
 [source.x64]

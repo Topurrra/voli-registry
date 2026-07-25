@@ -5,6 +5,7 @@ homepage = "https://retroshare.cc/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["retroshare.exe", "retroshare-service.exe"]
+shortcuts = [{ target = "retroshare.exe", name = "RetroShare" }]
 persist = ["Data"]
 
 [source.x64]

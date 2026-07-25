@@ -5,6 +5,7 @@ homepage = "https://hvdwolf.github.io/jExifToolGUI/"
 license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "jExifToolGUI-2.0.2.0-win-x86_64_with-jre"
+shortcuts = [{ target = "jExifToolGUI.exe", name = "jExifToolGUI" }]
 persist = ["logs"]
 
 [source.x64]

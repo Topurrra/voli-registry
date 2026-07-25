@@ -5,6 +5,7 @@ homepage = "https://github.com/vivainio/RoughGrep/"
 license = "MIT"
 kind = "app"
 bin = ["rgg.exe"]
+shortcuts = [{ target = "rgg.exe", name = "RoughGrep" }]
 
 [source.x64]
 url = "https://github.com/vivainio/RoughGrep/releases/download/v3.16.2/RoughGrep-3.16.2.zip"

@@ -5,6 +5,7 @@ homepage = "https://fbflipper.com"
 license = "MIT"
 kind = "app"
 bin = ["Flipper.exe"]
+shortcuts = [{ target = "Flipper.exe", name = "Facebook Flipper" }]
 
 [source.x64]
 url = "https://github.com/facebook/flipper/releases/download/v0.239.0/Flipper-win.zip"

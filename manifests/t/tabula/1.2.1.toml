@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "tabula"
 bin = ["tabula.exe"]
+shortcuts = [{ target = "tabula.exe", name = "tabula" }]
 
 [source.x64]
 url = "https://github.com/tabulapdf/tabula/releases/download/v1.2.1/tabula-win-1.2.1.zip"

@@ -4,6 +4,7 @@ description = "Customizable borders for Windows 11 and 10"
 homepage = "https://github.com/lukeyou05/tacky-borders"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "tacky-borders.exe", name = "tacky-borders" }]
 
 [source.x64]
 url = "https://github.com/lukeyou05/tacky-borders/releases/download/v1.5.0/tacky-borders-v1.5.0.zip"

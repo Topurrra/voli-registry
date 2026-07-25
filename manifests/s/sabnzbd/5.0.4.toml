@@ -4,7 +4,9 @@ description = "The automated Usenet download tool"
 homepage = "https://sabnzbd.org"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "SABnzbd"
 bin = ["SABnzbd-console.exe", { name = "SABnzbd", path = "SABnzbd-console.exe" }]
+shortcuts = [{ target = "SABnzbd.exe", name = "SABnzbd" }]
 
 [source.x64]
 url = "https://github.com/sabnzbd/sabnzbd/releases/download/5.0.4/SABnzbd-5.0.4-win64-bin.zip"

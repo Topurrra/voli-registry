@@ -4,7 +4,9 @@ description = "Differencing and merging tool, that compares both folders and fil
 homepage = "https://winmerge.org"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "WinMerge"
 bin = ["WinMergeU.exe"]
+shortcuts = [{ target = "WinMergeU.exe", name = "WinMerge" }]
 
 [source.x64]
 url = "https://github.com/WinMerge/winmerge/releases/download/v2.16.56.2/winmerge-2.16.56.2-x64-exe.zip"

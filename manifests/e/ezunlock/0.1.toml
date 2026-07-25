@@ -4,6 +4,7 @@ description = "A simple GUI application for deleting stuck/stale/undeletable fil
 homepage = "https://github.com/demberto/EzUnlock"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "EzUnlock.exe", name = "EzUnlock" }]
 
 [source.x64]
 url = "https://github.com/demberto/EzUnlock/releases/download/v0.1/EzUnlock_x64_v0.1.zip"

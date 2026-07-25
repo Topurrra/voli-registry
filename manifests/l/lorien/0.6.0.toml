@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Lorien_v0.6.0_Windows"
 bin = ["Lorien.exe"]
+shortcuts = [{ target = "Lorien.exe", name = "Lorien" }]
 
 [source.x64]
 url = "https://github.com/mbrlabs/Lorien/releases/download/v0.6.0/Lorien_v0.6.0_Windows.zip"

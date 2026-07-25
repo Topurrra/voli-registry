@@ -4,6 +4,7 @@ description = "A cross-platform GUI for creating xDelta3 patches"
 homepage = "https://github.com/dan0v/xdelta3-cross-gui"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "xDelta3 Cross GUI\\xdelta3_cross_gui.exe", name = "xDelta3 Cross GUI" }]
 
 [source.x64]
 url = "https://github.com/dan0v/xdelta3-cross-gui/releases/download/1.7.2/xdelta3-cross-gui_win_x86.zip"

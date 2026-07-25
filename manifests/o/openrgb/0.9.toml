@@ -5,6 +5,7 @@ homepage = "https://openrgb.org"
 license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "OpenRGB Windows 64-bit"
+shortcuts = [{ target = "OpenRGB.exe", name = "OpenRGB" }]
 
 [source.x64]
 url = "https://openrgb.org/releases/release_0.9/OpenRGB_0.9_Windows_64_b5f46e3.zip"

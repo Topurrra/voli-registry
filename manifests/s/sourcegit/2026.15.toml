@@ -4,7 +4,9 @@ description = "Open-source GUI client for git users."
 homepage = "https://github.com/sourcegit-scm/sourcegit"
 license = "MIT"
 kind = "app"
+extract_dir = "SourceGit"
 bin = ["SourceGit.exe"]
+shortcuts = [{ target = "SourceGit.exe", name = "SourceGit" }]
 persist = ["data"]
 
 [source.x64]

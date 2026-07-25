@@ -5,6 +5,7 @@ homepage = "https://bztsrc.gitlab.io/usbimager/"
 license = "MIT"
 kind = "app"
 extract_dir = "USBImager"
+shortcuts = [{ target = "usbimager.exe", name = "USBImager" }]
 
 [source.x64]
 url = "https://gitlab.com/bztsrc/usbimager/raw/binaries/usbimager_1.0.10-i686-win-gdi.zip"

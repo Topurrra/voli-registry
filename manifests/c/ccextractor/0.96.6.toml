@@ -5,6 +5,7 @@ homepage = "https://www.ccextractor.org"
 license = "GPL-2.0-only"
 kind = "app"
 bin = [{ name = "ccextractor", path = "ccextractorwinfull.exe" }]
+shortcuts = [{ target = "ccxgui.exe", name = "CCExtractor" }]
 
 [source.x64]
 url = "https://github.com/CCExtractor/ccextractor/releases/download/v0.96.6/CCExtractor.0.96.6_win_portable.zip"

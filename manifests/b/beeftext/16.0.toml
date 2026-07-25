@@ -4,6 +4,8 @@ description = "An open-source text substitution/snippet management tool."
 homepage = "https://beeftext.org/"
 license = "MIT"
 kind = "app"
+extract_dir = "BeeftextPortableEdition"
+shortcuts = [{ target = "Beeftext.exe", name = "Beeftext" }]
 persist = ["Data"]
 
 [source.x64]

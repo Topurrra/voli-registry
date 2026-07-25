@@ -5,6 +5,7 @@ homepage = "https://posit.co/products/open-source/rstudio/"
 license = "AGPL-3.0-only"
 kind = "app"
 bin = ["rstudio.exe"]
+shortcuts = [{ target = "rstudio.exe", name = "RStudio" }]
 
 [source.x64]
 url = "https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-2026.07.1-147.exe#/dl.7z"

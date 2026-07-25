@@ -5,6 +5,7 @@ homepage = "https://www.naps2.com/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = [{ name = "NAPS2", path = "App\\NAPS2.Console.exe" }]
+shortcuts = [{ target = "App\\NAPS2.exe", name = "NAPS2" }]
 persist = ["Data"]
 
 [source.x64]

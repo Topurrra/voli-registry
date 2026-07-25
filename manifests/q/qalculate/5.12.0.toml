@@ -4,7 +4,9 @@ description = "Multi-purpose calculator"
 homepage = "https://qalculate.github.io/"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "qalculate"
 bin = ["qalc.exe", "qalculate-gtk.exe", "qalculate-qt.exe"]
+shortcuts = [{ target = "qalculate-gtk.exe", name = "Qalculate! (GTK)" }, { target = "qalculate-qt.exe", name = "Qalculate! (Qt)" }]
 persist = ["user"]
 
 [source.x64]

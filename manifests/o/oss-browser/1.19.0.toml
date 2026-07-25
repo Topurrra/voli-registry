@@ -6,6 +6,7 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "oss-browser-win32-x64"
 bin = ["oss-browser.exe"]
+shortcuts = [{ target = "oss-browser.exe", name = "OSS Browser" }]
 
 [source.x64]
 url = "https://oss-attachment.oss-cn-zhangjiakou.aliyuncs.com/ossbrowser/1.19.0/oss-browser-win32-x64.zip"

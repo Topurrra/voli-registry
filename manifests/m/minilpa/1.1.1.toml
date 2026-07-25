@@ -4,6 +4,7 @@ description = "An elegant modern LPA (Licensed Profile Assistant) UI designed fo
 homepage = "https://github.com/EsimMoe/MiniLPA"
 license = "AGPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "MiniLPA.exe", name = "MiniLPA" }]
 
 [source.x64]
 url = "https://github.com/EsimMoe/MiniLPA/releases/download/v1.1.1/MiniLPA-Windows-x86_64.zip"

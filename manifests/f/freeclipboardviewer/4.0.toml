@@ -5,6 +5,7 @@ homepage = "https://freeclipboardviewer.com"
 license = "Freeware"
 kind = "app"
 bin = ["freeclipviewer.exe"]
+shortcuts = [{ target = "FreeClipViewer.exe", name = "Free Clipboard Viewer" }]
 
 [source.x64]
 url = "https://freeclipboardviewer.com/FreeClipViewer.zip"

@@ -4,7 +4,9 @@ description = "Professional vector graphics editor"
 homepage = "https://inkscape.org"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "inkscape"
 bin = [{ name = "inkscape", path = "bin\\inkscape.com" }, { name = "inkview", path = "bin\\inkview.com" }]
+shortcuts = [{ target = "bin\\inkscape.exe", name = "Inkscape" }]
 
 [source.x64]
 url = "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4_2026-05-05_dcaf3e7-x64_mHK170m.7z"

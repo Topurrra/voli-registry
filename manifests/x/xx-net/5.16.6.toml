@@ -6,6 +6,7 @@ license = "BSD-2-Clause"
 kind = "app"
 extract_dir = "XX-Net"
 bin = [{ name = "XX-Net", path = "start.bat" }]
+shortcuts = [{ target = "start.bat", name = "XX-Net" }]
 persist = ["data"]
 
 [source.x64]

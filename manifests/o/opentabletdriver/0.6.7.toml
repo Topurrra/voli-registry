@@ -6,6 +6,7 @@ license = "LGPL-3.0"
 kind = "app"
 extract_dir = "OpenTabletDriver-0.6.7_win-x64"
 bin = ["OpenTabletDriver.Console.exe", "OpenTabletDriver.Daemon.exe"]
+shortcuts = [{ target = "OpenTabletDriver.UX.Wpf.exe", name = "OpenTabletDriver" }, { target = "OpenTabletDriver.Daemon.exe", name = "OpenTabletDriver Daemon" }]
 persist = ["userdata"]
 
 [source.x64]

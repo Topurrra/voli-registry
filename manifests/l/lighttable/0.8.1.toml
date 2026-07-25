@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "lighttable-0.8.1-windows"
 bin = ["LightTable.exe"]
+shortcuts = [{ target = "LightTable.exe", name = "LightTable" }]
 
 [source.x64]
 url = "https://github.com/LightTable/LightTable/releases/download/0.8.1/lighttable-0.8.1-windows.zip"

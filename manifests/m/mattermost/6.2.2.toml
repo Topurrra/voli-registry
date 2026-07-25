@@ -5,6 +5,7 @@ homepage = "https://mattermost.com"
 license = "Apache-2.0"
 kind = "app"
 bin = ["Mattermost.exe"]
+shortcuts = [{ target = "Mattermost.exe", name = "Mattermost" }]
 
 [source.x64]
 url = "https://releases.mattermost.com/desktop/6.2.2/mattermost-desktop-6.2.2-win-x64.zip"

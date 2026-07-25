@@ -5,6 +5,7 @@ homepage = "https://github.com/ksnip/ksnip"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["ksnip.exe"]
+shortcuts = [{ target = "ksnip.exe", name = "ksnip" }]
 
 [source.x64]
 url = "https://github.com/ksnip/ksnip/releases/download/v1.10.1/ksnip-1.10.1-windows.zip"

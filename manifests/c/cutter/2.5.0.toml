@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "Cutter-v2.5.0-Windows-x86_64"
 bin = ["cutter.exe", "rizin.exe", "rz-ax.exe", "rz-bin.exe", "rz-diff.exe", "rz-find.exe", "rz-gg.exe", "rz-hash.exe", "rz-run.exe"]
+shortcuts = [{ target = "cutter.exe", name = "Cutter" }]
 
 [source.x64]
 url = "https://github.com/rizinorg/cutter/releases/download/v2.5.0/cutter-v2.5.0-Windows-x86_64.zip"

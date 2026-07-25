@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "nexusfont"
 bin = ["nexusfont.exe", "FontInstaller.exe"]
+shortcuts = [{ target = "nexusfont.exe", name = "NexusFont - Font Manager" }]
 persist = ["userdata"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "information management system"
 homepage = "http://www.infoqube.biz/"
 license = "Proprietary"
 kind = "app"
+shortcuts = [{ target = "InfoQube.exe", name = "InfoQube" }]
 persist = ["AppData", "Users"]
 
 [source.x64]

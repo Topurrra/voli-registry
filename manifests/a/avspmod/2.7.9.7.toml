@@ -5,6 +5,7 @@ homepage = "https://github.com/gispos/AvsPmod"
 license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "AvsPmod_64"
+shortcuts = [{ target = "AvsPmod.exe", name = "AvsPmod" }]
 
 [source.x64]
 url = "https://github.com/gispos/AvsPmod/releases/download/2.7.9.7/AvsPmod_v2.7.9.7_.Windows_x86-64.zip"

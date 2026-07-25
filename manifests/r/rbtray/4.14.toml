@@ -4,6 +4,7 @@ description = "Background program making any application minimizable to the syst
 homepage = "https://github.com/benbuck/rbtray"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "RBTray.exe", name = "RBTray" }]
 
 [source.x64]
 url = "https://github.com/benbuck/rbtray/releases/download/v4.14/x64.zip"

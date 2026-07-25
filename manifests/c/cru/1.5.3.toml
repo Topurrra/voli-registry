@@ -4,6 +4,7 @@ description = "Custom Resolution Utility (CRU) allows custom resolutions to be d
 homepage = "https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU"
 license = "Unknown"
 kind = "app"
+shortcuts = [{ target = "CRU.exe", name = "Custom Resolution Utility" }]
 
 [source.x64]
 url = "https://www.monitortests.com/download/cru/cru-1.5.3.zip"

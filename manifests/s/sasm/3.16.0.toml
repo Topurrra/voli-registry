@@ -5,6 +5,7 @@ homepage = "https://dman95.github.io/SASM/english.html"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "SASM"
+shortcuts = [{ target = "sasm.exe", name = "SASM" }]
 persist = ["Windows\\keys.ini"]
 
 [source.x64]

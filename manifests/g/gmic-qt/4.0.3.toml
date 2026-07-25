@@ -5,6 +5,7 @@ homepage = "https://gmic.eu"
 license = "CECILL-2.1"
 kind = "app"
 extract_dir = "gmic-4.0.3-qt-win64"
+shortcuts = [{ target = "gmic_qt.exe", name = "G'MIC-Qt" }]
 
 [source.x64]
 url = "https://gmic.eu/get_file.php?file=windows/gmic_4.0.3_qt_win64.zip"

@@ -4,6 +4,7 @@ description = "A simple Jellyfin frontend built on top of Flutter."
 homepage = "https://github.com/DonutWare/Fladder"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "fladder.exe", name = "Fladder" }]
 persist = ["data", ".config"]
 
 [source.x64]

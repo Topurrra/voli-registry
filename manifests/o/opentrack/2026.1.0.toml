@@ -6,6 +6,7 @@ license = "ISC"
 kind = "app"
 extract_dir = "install"
 bin = ["opentrack.exe"]
+shortcuts = [{ target = "opentrack.exe", name = "Opentrack" }]
 persist = ["ini"]
 
 [source.x64]

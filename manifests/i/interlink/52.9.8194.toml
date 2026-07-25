@@ -4,6 +4,8 @@ description = "E-mail client"
 homepage = "https://binaryoutcast.com/projects/interlink/"
 license = "MPL-2.0"
 kind = "app"
+extract_dir = "interlink"
+shortcuts = [{ target = "interlink.exe", name = "Interlink" }]
 
 [source.x64]
 url = "http://projects.binaryoutcast.com/interlink/releases/latest/interlink-52.9.8194.WINNT_x86_64-msvc.7z"

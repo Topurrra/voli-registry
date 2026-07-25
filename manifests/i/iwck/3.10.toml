@@ -4,6 +4,7 @@ description = "Block the keyboard input while you were eating instant noodles on
 homepage = "https://github.com/Nigh/I-wanna-clean-keyboard"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "iwck.exe", name = "iwck" }]
 
 [source.x64]
 url = "https://github.com/Nigh/I-wanna-clean-keyboard/releases/download/v3.10/iwck.zip"

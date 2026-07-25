@@ -5,6 +5,7 @@ homepage = "https://www.vosviewer.com/"
 license = "Proprietary"
 kind = "app"
 bin = ["VOSviewer.exe"]
+shortcuts = [{ target = "VOSviewer.exe", name = "VOSviewer" }]
 
 [source.x64]
 url = "https://www.vosviewer.com/downloads/VOSviewer_1.6.21_exe.zip"

@@ -4,6 +4,7 @@ description = "The official IDE for Android development, which includes everythi
 homepage = "https://developer.android.com/studio"
 license = "Freeware"
 kind = "app"
+extract_dir = "android-studio"
 
 [source.x64]
 url = "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.2.11/android-studio-quail2-patch1-windows.zip"

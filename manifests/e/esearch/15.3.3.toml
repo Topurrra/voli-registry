@@ -5,6 +5,7 @@ homepage = "https://github.com/xushengfeng/eSearch"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["e-search.exe"]
+shortcuts = [{ target = "e-search.exe", name = "eSearch" }]
 
 [source.x64]
 url = "https://github.com/xushengfeng/eSearch/releases/download/15.3.3/eSearch-15.3.3-win32-x64.zip"

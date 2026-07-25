@@ -4,6 +4,7 @@ description = "A GUI builder for the wxWidgets framework."
 homepage = "https://github.com/wxFormBuilder/wxFormBuilder"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "wxFormBuilder.exe", name = "wxFormBuilder" }]
 
 [source.x64]
 url = "https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v4.2.1/wxFormBuilder-4.2.1-ucrt-x86_64.zip"

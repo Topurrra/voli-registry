@@ -5,6 +5,7 @@ homepage = "https://uniclipboard.app"
 license = "AGPL-3.0-only"
 kind = "app"
 bin = ["UniClipboard.exe"]
+shortcuts = [{ target = "UniClipboard.exe", name = "UniClipboard" }]
 persist = ["data"]
 
 [source.x64]

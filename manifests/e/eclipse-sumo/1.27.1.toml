@@ -4,7 +4,9 @@ description = "Microscopic and continuous traffic simulation package designed to
 homepage = "https://www.eclipse.org/sumo/"
 license = "EPL-2.0"
 kind = "app"
+extract_dir = "sumo-1.27.1"
 bin = ["bin\\activitygen.exe", "bin\\dfrouter.exe", "bin\\duarouter.exe", "bin\\emissionsDrivingCycle.exe", "bin\\emissionsMap.exe", "bin\\jtrrouter.exe", "bin\\marouter.exe", "bin\\netconvert.exe", "bin\\netedit.exe", "bin\\netgenerate.exe", "bin\\od2trips.exe", "bin\\polyconvert.exe", "bin\\sumo.exe", "bin\\sumo-gui.exe"]
+shortcuts = [{ target = "bin\\sumo-gui.exe", name = "SUMO" }, { target = "bin\\netedit.exe", name = "NETEDIT" }]
 
 [source.x64]
 url = "https://sumo.dlr.de/releases/1.27.1/sumo-win64-1.27.1.zip"

@@ -5,6 +5,7 @@ homepage = "https://github.com/fmd-project-team/FMD"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["fmd.exe"]
+shortcuts = [{ target = "fmd.exe", name = "Free Manga Downloader" }]
 persist = ["config", "lua", "works"]
 
 [source.x64]

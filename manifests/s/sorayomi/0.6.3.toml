@@ -4,6 +4,7 @@ description = "A flutter manga reader compatible with Tachiyomi extensions and b
 homepage = "https://github.com/Suwayomi/Tachidesk-Sorayomi"
 license = "MPL-2.0"
 kind = "app"
+shortcuts = [{ target = "tachidesk_sorayomi.exe", name = "Sorayomi" }]
 
 [source.x64]
 url = "https://github.com/Suwayomi/Tachidesk-Sorayomi/releases/download/0.6.3/tachidesk-sorayomi-0.6.3-windows-x64.zip"

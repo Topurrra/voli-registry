@@ -4,6 +4,7 @@ description = "Multi platform circuit layout and schematic drawing tool."
 homepage = "https://bancika.github.io/diy-layout-creator/"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "diylc.exe", name = "DIY Layout Creator" }]
 
 [source.x64]
 url = "https://github.com/bancika/diy-layout-creator/releases/download/v6.1.0/diylc-6.1.0-win64.zip"

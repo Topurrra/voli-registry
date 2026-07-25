@@ -6,6 +6,7 @@ license = "Proprietary"
 kind = "app"
 extract_dir = "010EditorWin64Portable"
 bin = [{ name = "010editor", path = "AppData\\010Editor.exe" }]
+shortcuts = [{ target = "AppData\\010Editor.exe", name = "010 Editor" }]
 persist = ["AppData\\Config", "AppData\\Data", "AppData\\Plugins", "010 Scripts", "010 Templates", "AppData\\Temp"]
 
 [source.x64]

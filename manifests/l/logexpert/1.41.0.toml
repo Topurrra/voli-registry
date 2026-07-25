@@ -5,6 +5,7 @@ homepage = "https://github.com/LogExperts/LogExpert"
 license = "MIT"
 kind = "app"
 bin = ["LogExpert.exe"]
+shortcuts = [{ target = "LogExpert.exe", name = "LogExpert" }]
 
 [source.x64]
 url = "https://github.com/LogExperts/LogExpert/releases/download/v1.41.0/LogExpert.1.41.0.zip"

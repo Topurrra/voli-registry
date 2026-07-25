@@ -4,6 +4,7 @@ description = "Optimize your app or game with Android's new profiler and perform
 homepage = "https://developer.android.com/android-performance-analyzer"
 license = "Freeware"
 kind = "app"
+extract_dir = "apa-windows"
 bin = ["bin\\apa.bat"]
 
 [source.x64]

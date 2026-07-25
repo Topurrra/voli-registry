@@ -4,6 +4,7 @@ description = "A clipboard manager built with Rust and GPUI"
 homepage = "https://github.com/StudentWeis/ropy"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "ropy.exe", name = "Ropy" }]
 
 [source.x64]
 url = "https://github.com/StudentWeis/ropy/releases/download/0.5.3/ropy-x86_64-pc-windows-msvc.zip"

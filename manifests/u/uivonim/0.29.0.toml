@@ -5,6 +5,7 @@ homepage = "https://github.com/smolck/uivonim"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = ["uivonim.exe"]
+shortcuts = [{ target = "uivonim.exe", name = "Uivonim" }]
 
 [source.x64]
 url = "https://github.com/smolck/uivonim/releases/download/v0.29.0/uivonim-0.29.0-win.zip"

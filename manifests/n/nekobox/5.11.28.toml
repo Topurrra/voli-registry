@@ -4,7 +4,9 @@ description = "A lightweight proxy client, empowered by sing-box and thrift."
 homepage = "https://github.com/qr243vbi/nekobox"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "nekobox"
 bin = ["nekobox_core.exe"]
+shortcuts = [{ target = "nekobox.exe", name = "NekoBox" }]
 persist = ["settings"]
 
 [source.x64]

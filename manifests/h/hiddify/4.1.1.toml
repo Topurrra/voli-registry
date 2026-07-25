@@ -4,7 +4,9 @@ description = "A cross-platform auto-proxy client based on the Sing-box universa
 homepage = "https://hiddify.com"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "Hiddify"
 bin = ["HiddifyCli.exe"]
+shortcuts = [{ target = "Hiddify.exe", name = "Hiddify" }]
 persist = ["hiddify_portable_data"]
 
 [source.x64]

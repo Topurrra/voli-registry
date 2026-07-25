@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "pass-winmenu"
 bin = ["pass-winmenu.exe"]
+shortcuts = [{ target = "pass-winmenu.exe", name = "Pass-winmenu" }]
 persist = ["pass-winmenu.yaml"]
 
 [source.x64]

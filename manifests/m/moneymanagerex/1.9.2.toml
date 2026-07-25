@@ -5,6 +5,7 @@ homepage = "https://moneymanagerex.org/"
 license = "GPL-2.0-only"
 kind = "app"
 extract_dir = "mmex-1.9.2-win64"
+shortcuts = [{ target = "bin\\mmex.exe", name = "Money Manager Ex" }]
 
 [source.x64]
 url = "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.9.2/mmex-1.9.2-win64-portable.zip"

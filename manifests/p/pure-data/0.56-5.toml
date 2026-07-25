@@ -6,6 +6,7 @@ license = "Standard-Improved-BSD"
 kind = "app"
 extract_dir = "pd-0.56-5"
 bin = ["bin\\pd.com", "bin\\pdsend.exe", "bin\\pdreceive.exe"]
+shortcuts = [{ target = "bin\\pd.exe", name = "Pure Data" }]
 
 [source.x64]
 url = "http://msp.ucsd.edu/Software/pd-0.56-5.msw.zip"

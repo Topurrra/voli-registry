@@ -4,6 +4,7 @@ description = "GUI for creating symbolic links, hard links, and directory juncti
 homepage = "https://amd989.github.io/Symlinker/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Symlinker.exe", name = "Symlinker" }]
 
 [source.x64]
 url = "https://github.com/amd989/Symlinker/releases/download/v4.0.0/symlinker-4.0.0-portable.zip"

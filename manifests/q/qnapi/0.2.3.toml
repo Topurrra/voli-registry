@@ -6,6 +6,7 @@ license = "GPL-2.0-or-later"
 kind = "app"
 extract_dir = "QNapi"
 bin = ["qnapi.exe"]
+shortcuts = [{ target = "qnapi.exe", name = "QNapi" }]
 persist = ["qnapi.ini"]
 
 [source.x64]

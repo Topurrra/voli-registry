@@ -4,7 +4,9 @@ description = "KubeVPN offers a Cloud Native Dev Environment that connects to ku
 homepage = "https://www.kubevpn.dev/"
 license = "MIT"
 kind = "app"
+extract_dir = "bin"
 bin = ["kubevpn.exe"]
+shortcuts = [{ target = "kubevpn.exe", name = "kubevpn" }]
 
 [source.x64]
 url = "https://github.com/kubenetworks/kubevpn/releases/download/v2.11.5/kubevpn_v2.11.5_windows_amd64.zip"

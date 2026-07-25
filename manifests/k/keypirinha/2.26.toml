@@ -4,7 +4,9 @@ description = "A fast launcher for keyboard ninjas on Windows."
 homepage = "http://keypirinha.com"
 license = "Freeware"
 kind = "app"
+extract_dir = "Keypirinha"
 bin = ["keypirinha.exe"]
+shortcuts = [{ target = "keypirinha.exe", name = "Keypirinha" }]
 persist = ["portable"]
 
 [source.x64]

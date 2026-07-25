@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "Soundnode-win32-x64"
 bin = ["Soundnode.exe"]
+shortcuts = [{ target = "Soundnode.exe", name = "Soundnode" }]
 
 [source.x64]
 url = "https://github.com/Soundnode/soundnode-app/releases/download/7.0.0/Soundnode-win32-x64.zip"

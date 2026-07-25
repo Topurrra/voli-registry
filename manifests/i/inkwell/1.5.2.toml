@@ -4,6 +4,7 @@ description = "Lightweight Markdown editor with split view, live preview, themes
 homepage = "https://inkwell.4worlds.dev/"
 license = "Shareware"
 kind = "app"
+shortcuts = [{ target = "inkwell.exe", name = "Inkwell" }]
 
 [source.x64]
 url = "https://github.com/4worlds4w-svg/inkwell/releases/download/v1.5.2/inkwell-windows-x64-v1.5.2.zip"

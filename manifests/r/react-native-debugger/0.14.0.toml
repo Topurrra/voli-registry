@@ -4,6 +4,7 @@ description = "Standalone app based on official debugger of React Native, and in
 homepage = "https://github.com/jhen0409/react-native-debugger"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "react-native-debugger.exe", name = "React Native Debugger" }]
 
 [source.x64]
 url = "https://github.com/jhen0409/react-native-debugger/releases/download/v0.14.0/rn-debugger-windows-x64.zip"

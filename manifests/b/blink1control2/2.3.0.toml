@@ -5,6 +5,7 @@ homepage = "https://blink1.thingm.com/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["Blink1Control2.exe"]
+shortcuts = [{ target = "Blink1Control2.exe", name = "Blink1Control2" }]
 
 [source.x64]
 url = "https://github.com/todbot/Blink1Control2/releases/download/v2.3.0/Blink1Control2-2.3.0-win-x64.zip"

@@ -4,6 +4,7 @@ description = "A project, version, and addons/plugins manager for Godot."
 homepage = "https://github.com/eumario/godot-manager"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "GodotManager.exe", name = "Godot Manager" }]
 
 [source.x64]
 url = "https://github.com/eumario/godot-manager/releases/download/v0.2.9/godotmanager-windows-v0.2.9.zip"

@@ -4,7 +4,9 @@ description = "Citation and reference management software that uses BibTeX and B
 homepage = "https://www.jabref.org"
 license = "MIT"
 kind = "app"
+extract_dir = "JabRef"
 bin = ["runtime\\bin\\JabRef.bat"]
+shortcuts = [{ target = "JabRef.exe", name = "JabRef" }]
 
 [source.x64]
 url = "https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-portable_windows.zip"

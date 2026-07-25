@@ -5,6 +5,7 @@ homepage = "https://www.sordum.org/hide-from-uninstall-list"
 license = "Freeware"
 kind = "app"
 extract_dir = "HideUL"
+shortcuts = [{ target = "HideUL.exe", name = "Hide from Uninstall List" }]
 persist = ["HideUL.ini"]
 
 [source.x64]

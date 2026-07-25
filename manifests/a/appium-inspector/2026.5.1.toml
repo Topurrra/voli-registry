@@ -4,6 +4,7 @@ description = "A GUI inspector for mobile apps and more, powered by a (separatel
 homepage = "https://github.com/appium/appium-inspector"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "Appium Inspector.exe", name = "Appium Inspector" }]
 
 [source.x64]
 url = "https://github.com/appium/appium-inspector/releases/download/v2026.5.1/Appium-Inspector-2026.5.1-win-x64.zip"

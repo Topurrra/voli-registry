@@ -4,6 +4,7 @@ description = "Browsing a wide range of Visual Novel resources through a GUI int
 homepage = "https://github.com/morkt/GARbro"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "GARbro.GUI.exe", name = "GARbro" }]
 
 [source.x64]
 url = "https://github.com/morkt/GARbro/releases/download/v1.5.44/GARbro-v1.5.44.2904.rar"

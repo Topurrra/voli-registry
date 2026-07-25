@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "textadept"
 bin = ["textadept.exe", "textadept-curses.exe"]
+shortcuts = [{ target = "textadept.exe", name = "Textadept" }]
 
 [source.x64]
 url = "https://github.com/orbitalquark/textadept/releases/download/textadept_13.0/textadept_13.0.win.zip"

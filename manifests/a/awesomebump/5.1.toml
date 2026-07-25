@@ -5,6 +5,7 @@ homepage = "https://github.com/kmkolasinski/AwesomeBump"
 license = "GPL-3.0"
 kind = "app"
 extract_dir = "AwesomeBumpV5.01Bin32x64Win7"
+shortcuts = [{ target = "AwesomeBump.exe", name = "AwesomeBump" }, { target = "AwesomeBump330.exe", name = "AwesomeBump 330" }]
 
 [source.x64]
 url = "https://github.com/kmkolasinski/AwesomeBump/releases/download/Winx32v5.1/AwesomeBumpV5.1Bin32x64Win7.zip"

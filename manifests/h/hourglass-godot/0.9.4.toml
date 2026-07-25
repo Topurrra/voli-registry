@@ -4,6 +4,7 @@ description = "A project manager for Godot Engine"
 homepage = "https://hourglass.jwestman.net/"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "hourglass-windows.exe", name = "Hourglass (Godot project manager)" }]
 
 [source.x64]
 url = "https://jwestman.gitlab.io/hourglass/hourglass-windows.zip"

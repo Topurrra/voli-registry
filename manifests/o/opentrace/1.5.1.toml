@@ -5,6 +5,7 @@ homepage = "https://github.com/Archeb/opentrace"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["OpenTrace.exe", "nexttrace.exe"]
+shortcuts = [{ target = "OpenTrace.exe", name = "OpenTrace" }]
 
 [source.x64]
 url = "https://github.com/Archeb/opentrace/releases/download/v1.5.1/win-x64.zip"

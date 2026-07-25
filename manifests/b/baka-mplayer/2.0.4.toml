@@ -4,6 +4,7 @@ description = "FOSS libmpv based multimedia player"
 homepage = "https://github.com/u8sand/Baka-MPlayer"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "Baka MPlayer.exe", name = "Baka MPlayer" }]
 persist = ["bakamplayer.ini"]
 
 [source.x64]

@@ -5,6 +5,7 @@ homepage = "https://www.pastebar.app/"
 license = "CC-BY-NC-SA-4.0"
 kind = "app"
 bin = ["PasteBar.exe"]
+shortcuts = [{ target = "PasteBar.exe", name = "PasteBar" }]
 
 [source.x64]
 url = "https://github.com/PasteBar/PasteBarApp/releases/download/v0.7.0/PasteBar_0.7.0_x64-portable.zip"

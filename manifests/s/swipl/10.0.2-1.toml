@@ -5,6 +5,7 @@ homepage = "https://www.swi-prolog.org/"
 license = "MIT"
 kind = "app"
 bin = ["bin\\swipl.exe", "bin\\swipl-ld.exe"]
+shortcuts = [{ target = "bin\\swipl-win.exe", name = "SWI-Prolog" }]
 
 [source.x64]
 url = "https://www.swi-prolog.org/download/stable/bin/swipl-10.0.2-1.x64.exe#/dl.7z"

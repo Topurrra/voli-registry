@@ -4,6 +4,7 @@ description = "A terminal program for serial communication."
 homepage = "https://www.der-hammer.info/pages/terminal.html"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "hterm.exe", name = "HTerm" }]
 
 [source.x64]
 url = "https://www.der-hammer.info/terminal/hterm089-windows.zip"

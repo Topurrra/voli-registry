@@ -5,6 +5,7 @@ homepage = "https://mitmproxy.org/"
 license = "MIT"
 kind = "app"
 bin = ["pathod.exe", "pathoc.exe"]
+shortcuts = [{ target = "pathod.exe", name = "pathod" }, { target = "pathoc.exe", name = "pathoc" }]
 
 [source.x64]
 url = "https://snapshots.mitmproxy.org/6.0.2/pathod-6.0.2-windows.zip"

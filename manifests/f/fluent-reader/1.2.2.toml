@@ -4,6 +4,7 @@ description = "Modern desktop RSS reader"
 homepage = "https://hyliu.me/fluent-reader/"
 license = "BSD-3-Clause"
 kind = "app"
+shortcuts = [{ target = "Fluent Reader.exe", name = "Fluent Reader" }]
 
 [source.x64]
 url = "https://github.com/yang991178/fluent-reader/releases/download/v1.2.2/Fluent.Reader.Unpacked.1.2.2.x64.zip"

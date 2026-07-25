@@ -5,6 +5,7 @@ homepage = "https://github.com/google/UIforETW"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "etwpackage"
+shortcuts = [{ target = "bin\\UIforETW.exe", name = "UIforETW" }]
 
 [source.x64]
 url = "https://github.com/google/UIforETW/releases/download/v1.59/etwpackage1.59.zip"

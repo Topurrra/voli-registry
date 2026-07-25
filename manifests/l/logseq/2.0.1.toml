@@ -4,6 +4,7 @@ description = "A privacy-first platform for knowledge sharing and management"
 homepage = "https://logseq.com"
 license = "AGPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Logseq.exe", name = "Logseq" }]
 
 [source.x64]
 url = "https://github.com/logseq/logseq/releases/download/2.0.1/Logseq-win-x64-2.0.1.zip"

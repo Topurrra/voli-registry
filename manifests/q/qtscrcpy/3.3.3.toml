@@ -5,6 +5,7 @@ homepage = "https://github.com/barry-ran/QtScrcpy"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "QtScrcpy-win-x64-v3.3.3"
+shortcuts = [{ target = "QtScrcpy.exe", name = "QtScrcpy" }]
 persist = ["config"]
 
 [source.x64]

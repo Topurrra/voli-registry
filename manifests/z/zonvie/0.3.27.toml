@@ -5,6 +5,7 @@ homepage = "https://github.com/akiyosi/zonvie"
 license = "MIT"
 kind = "app"
 bin = ["zonvie.exe"]
+shortcuts = [{ target = "zonvie.exe", name = "Zonvie" }]
 
 [source.x64]
 url = "https://github.com/akiyosi/zonvie/releases/download/v0.3.27/zonvie-v0.3.27-windows-x64.zip"

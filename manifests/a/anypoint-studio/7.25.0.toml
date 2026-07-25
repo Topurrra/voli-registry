@@ -4,7 +4,9 @@ description = "MuleSoft's Eclipse-based IDE for designing and testing Mule appli
 homepage = "https://www.mulesoft.com/platform/studio"
 license = "Proprietary"
 kind = "app"
+extract_dir = "AnypointStudio"
 bin = ["AnypointStudio.exe"]
+shortcuts = [{ target = "AnypointStudio.exe", name = "Anypoint Studio" }]
 persist = ["workspace", "configuration"]
 
 [source.x64]

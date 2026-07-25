@@ -5,6 +5,7 @@ homepage = "https://axiomui.github.io/"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["Axiom.exe"]
+shortcuts = [{ target = "Axiom.exe", name = "Axiom" }]
 
 [source.x64]
 url = "https://github.com/MattMcManis/Axiom/releases/download/v1.9.6.1-alpha/Axiom.zip"

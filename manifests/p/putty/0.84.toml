@@ -5,6 +5,7 @@ homepage = "https://www.chiark.greenend.org.uk/~sgtatham/putty/"
 license = "MIT"
 kind = "app"
 bin = ["putty.exe", "puttygen.exe", "pscp.exe", "pageant.exe", "psftp.exe", "plink.exe"]
+shortcuts = [{ target = "putty.exe", name = "PuTTY" }, { target = "pageant.exe", name = "Pageant (PuTTY authentication agent)" }, { target = "psftp.exe", name = "PSFTP" }, { target = "puttygen.exe", name = "PuTTYgen (PuTTY Key Generator)" }]
 
 [source.x64]
 url = "https://the.earth.li/~sgtatham/putty/0.84/w64/putty.zip"

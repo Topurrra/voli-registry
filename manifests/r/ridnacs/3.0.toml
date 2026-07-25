@@ -5,6 +5,7 @@ homepage = "https://www.splashsoft.de/ridnacs-disk-space-usage-analyzer/"
 license = "Freeware"
 kind = "app"
 bin = ["RidNacs.exe"]
+shortcuts = [{ target = "RidNacs.exe", name = "RidNacs" }]
 
 [source.x64]
 url = "https://www.splashsoft.de/?download=520#/dl.zip"

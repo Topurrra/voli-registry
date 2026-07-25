@@ -5,6 +5,7 @@ homepage = "https://86box.net/"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["86Box.exe"]
+shortcuts = [{ target = "86Box.exe", name = "86Box" }]
 
 [source.x64]
 url = "https://github.com/86Box/86Box/releases/download/v6.0/86Box-Windows-64-b9001.zip"

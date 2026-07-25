@@ -4,6 +4,7 @@ description = "A Super-fast account switcher for Steam, Battle.net, Epic Games, 
 homepage = "https://github.com/TcNobo/TcNo-Acc-Switcher"
 license = "GPL-3.0-only,LGPL-2.1-only,..."
 kind = "app"
+shortcuts = [{ target = "_First_Run_Installer.exe", name = "TcNo Account Switcher\\First Run Installer" }, { target = "TcNo-Acc-Switcher.exe", name = "TcNo Account Switcher\\TcNo Account Switcher" }]
 
 [source.x64]
 url = "https://github.com/TCNOco/TcNo-Acc-Switcher/releases/download/2025-11-20_03/TcNo-Acc-Switcher_2025-11-20_03.7z"

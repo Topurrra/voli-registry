@@ -4,7 +4,9 @@ description = "A connection hub and remote file manager to access your entire se
 homepage = "https://xpipe.io/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "xpipe-23.8"
 bin = ["bin\\xpipe.exe"]
+shortcuts = [{ target = "xpiped.exe", name = "XPipe" }]
 
 [source.x64]
 url = "https://github.com/xpipe-io/xpipe/releases/download/23.8/xpipe-portable-windows-x86_64.zip"

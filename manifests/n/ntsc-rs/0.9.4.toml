@@ -4,6 +4,8 @@ description = "Video effect tool which emulates NTSC and VHS video artifacts"
 homepage = "https://ntsc.rs/"
 license = "MIT,ISC,Apache-2.0,GPL-3.0-only"
 kind = "app"
+extract_dir = "ntsc-rs-windows-standalone"
+shortcuts = [{ target = "ntsc-rs-launcher.exe", name = "ntsc-rs" }]
 
 [source.x64]
 url = "https://github.com/valadaptive/ntsc-rs/releases/download/v0.9.4/ntsc-rs-windows-standalone.zip"

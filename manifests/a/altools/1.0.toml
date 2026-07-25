@@ -5,6 +5,7 @@ homepage = "https://www.microsoft.com/en-us/download/details.aspx?id=18465"
 license = "Unknown"
 kind = "app"
 bin = ["ALoInfo.exe", "EventCombMT.exe", "LockoutStatus.exe", "NLParse.exe"]
+shortcuts = [{ target = "ALoInfo.exe", name = "ALoInfo" }, { target = "EventCombMT.exe", name = "EventCombMT" }, { target = "LockoutStatus.exe", name = "LockoutStatus" }, { target = "NLParse.exe", name = "NLParse" }]
 
 [source.x64]
 url = "https://download.microsoft.com/download/1/f/0/1f0e9569-3350-4329-b443-822976f29284/ALTools.exe#/dl.7z"

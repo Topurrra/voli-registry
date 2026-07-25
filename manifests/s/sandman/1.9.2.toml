@@ -5,6 +5,7 @@ homepage = "https://alexanderepstein.github.io/Sandman/"
 license = "MIT"
 kind = "app"
 extract_dir = "Sandman-win32-x64"
+shortcuts = [{ target = "Sandman.exe", name = "Sandman" }]
 
 [source.x64]
 url = "https://github.com/alexanderepstein/Sandman/releases/download/v1.9.2/Sandman.Version.1.9.2.64.Bit.Windows.zip"

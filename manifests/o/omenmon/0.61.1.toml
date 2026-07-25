@@ -5,6 +5,7 @@ homepage = "https://github.com/OmenMon/OmenMon"
 license = "GPL-3.0"
 kind = "app"
 bin = ["OmenMon.exe"]
+shortcuts = [{ target = "OmenMon.exe", name = "OmenMon" }]
 persist = ["OmenMon.xml"]
 
 [source.x64]

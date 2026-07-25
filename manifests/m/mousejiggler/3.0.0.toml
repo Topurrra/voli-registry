@@ -5,6 +5,7 @@ homepage = "https://github.com/arkane-systems/mousejiggler"
 license = "MS-PL"
 kind = "app"
 bin = ["MouseJiggler.exe"]
+shortcuts = [{ target = "MouseJiggler.exe", name = "MouseJiggler" }]
 
 [source.x64]
 url = "https://github.com/arkane-systems/mousejiggler/releases/download/3.0.0/MouseJiggler-standalone-x64.zip"

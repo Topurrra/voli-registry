@@ -6,6 +6,7 @@ license = "AGPL-3.0-only"
 kind = "app"
 extract_dir = "pdfsam-basic-6.0.4-windows-x64\\pdfsam"
 bin = ["pdfsam.exe"]
+shortcuts = [{ target = "pdfsam.exe", name = "PDFsam" }]
 
 [source.x64]
 url = "https://github.com/torakiki/pdfsam/releases/download/v6.0.4/pdfsam-basic-6.0.4-windows-x64.zip"

@@ -5,6 +5,7 @@ homepage = "https://mkaring.github.io/ConfuserEx/"
 license = "MIT"
 kind = "app"
 bin = ["Confuser.CLI.exe", { name = "confuser", path = "Confuser.CLI.exe" }]
+shortcuts = [{ target = "ConfuserEx.exe", name = "ConfuserEx" }]
 
 [source.x64]
 url = "https://github.com/mkaring/ConfuserEx/releases/download/v1.6.0/ConfuserEx.zip"

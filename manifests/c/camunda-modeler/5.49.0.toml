@@ -5,6 +5,7 @@ homepage = "https://camunda.org/download/modeler/"
 license = "MIT"
 kind = "app"
 bin = ["Camunda Modeler.exe"]
+shortcuts = [{ target = "Camunda Modeler.exe", name = "Camunda Modeler" }]
 
 [source.x64]
 url = "https://github.com/camunda/camunda-modeler/releases/download/v5.49.0/camunda-modeler-5.49.0-win-x64.zip"

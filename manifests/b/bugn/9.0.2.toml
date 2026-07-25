@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "bug.n-9.0.2"
 bin = ["bugn.exe"]
+shortcuts = [{ target = "bugn.exe", name = "bug.n" }]
 
 [source.x64]
 url = "https://github.com/fuhsjr00/bug.n/archive/v9.0.2.zip"

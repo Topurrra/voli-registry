@@ -5,6 +5,7 @@ homepage = "https://github.com/LongSoft/UEFITool"
 license = "BSD-2-Clause"
 kind = "app"
 bin = ["UEFITool.exe"]
+shortcuts = [{ target = "UEFITool.exe", name = "LongSoft\\UEFITool" }]
 
 [source.x64]
 url = "https://github.com/LongSoft/UEFITool/releases/download/A75/UEFITool_NE_A75_win64.zip"

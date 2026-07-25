@@ -5,6 +5,7 @@ homepage = "https://apps.kde.org/crowtranslate"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["bin\\crow.exe"]
+shortcuts = [{ target = "bin\\crow.exe", name = "Crow Translate" }]
 
 [source.x64]
 url = "https://download.kde.org/stable/crow-translate/3.1.0/crow-translate-release_3.1-433-windows-cl-msvc2019-x86_64.7z"

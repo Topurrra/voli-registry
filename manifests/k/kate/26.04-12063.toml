@@ -5,6 +5,7 @@ homepage = "https://kate-editor.org"
 license = "LGPL-2.0-only"
 kind = "app"
 bin = ["bin\\kate.exe"]
+shortcuts = [{ target = "bin\\kate.exe", name = "Kate" }]
 
 [source.x64]
 url = "https://cdn.kde.org/ci-builds/utilities/kate/release-26.04/windows/kate-release_26.04-12063-windows-cl-msvc2022-x86_64.7z"

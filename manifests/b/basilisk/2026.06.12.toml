@@ -4,7 +4,9 @@ description = "A XUL-based web-browser demonstrating the Unified XUL Platform (U
 homepage = "https://basilisk-browser.org/"
 license = "MPL-2.0"
 kind = "app"
+extract_dir = "basilisk"
 bin = ["basilisk.exe"]
+shortcuts = [{ target = "basilisk.exe", name = "Basilisk" }]
 
 [source.x64]
 url = "https://dl.basilisk-browser.org/basilisk-20260613185748.win64.7z"

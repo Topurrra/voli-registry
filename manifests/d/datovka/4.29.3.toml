@@ -4,6 +4,8 @@ description = "Datovka is a multiplatform desktop application for accessing Dato
 homepage = "https://www.datovka.cz/"
 license = "GPL-3"
 kind = "app"
+extract_dir = "datovka-4.29.3-portable"
+shortcuts = [{ target = "datovka-portable.exe", name = "Datovka" }]
 persist = [".dsgui"]
 
 [source.x64]

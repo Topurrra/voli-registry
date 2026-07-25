@@ -4,6 +4,7 @@ description = "Speech to Text to Speech"
 homepage = "https://ttsvoicewizard.com/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "TTSVoiceWizard.exe", name = "TTS Voice Wizard" }]
 persist = ["Assets", "Output"]
 
 [source.x64]

@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "blender-5.2.0-windows-x64"
 bin = ["blender-launcher.exe", "blender.exe"]
+shortcuts = [{ target = "blender-launcher.exe", name = "Blender" }]
 persist = ["portable"]
 
 [source.x64]

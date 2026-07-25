@@ -4,6 +4,8 @@ description = "SSH/Sftp/Shell/Telnet/Serial client"
 homepage = "https://kingtoolbox.github.io/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "WindTerm_2.7.0"
+shortcuts = [{ target = "WindTerm.exe", name = "WindTerm" }]
 persist = [".wind"]
 
 [source.x64]

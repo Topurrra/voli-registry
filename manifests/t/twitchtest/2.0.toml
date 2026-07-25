@@ -4,6 +4,7 @@ description = "A lightweight program that performs a bandwidth test for Twitch"
 homepage = "https://r1ch.net/projects/twitchtest"
 license = "GPL-2.0-only"
 kind = "app"
+shortcuts = [{ target = "TwitchTest.exe", name = "TwitchTest" }]
 
 [source.x64]
 url = "https://r1ch.net/assets/twitchtest/twitchtest-2.0.zip"

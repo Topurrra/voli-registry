@@ -5,6 +5,7 @@ homepage = "https://github.com/libvips/nip4"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["bin\\nip4.exe"]
+shortcuts = [{ target = "bin\\nip4.exe", name = "nip4" }]
 
 [source.x64]
 url = "https://github.com/libvips/nip4/releases/download/v9.1.5/nip4-x64-9.1.5.zip"

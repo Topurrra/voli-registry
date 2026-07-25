@@ -4,7 +4,9 @@ description = "The practical and pragmatic code editor."
 homepage = "https://pragtical.dev/"
 license = "MIT"
 kind = "app"
+extract_dir = "pragtical"
 bin = ["pragtical.exe"]
+shortcuts = [{ target = "pragtical.exe", name = "Pragtical" }]
 
 [source.x64]
 url = "https://github.com/pragtical/pragtical/releases/download/v3.12.4/pragtical-v3.12.4-windows-x86_64.zip"

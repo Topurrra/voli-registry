@@ -5,6 +5,7 @@ homepage = "https://hovancik.net/stretchly/"
 license = "BSD-2-Clause"
 kind = "app"
 bin = ["stretchly.exe"]
+shortcuts = [{ target = "stretchly.exe", name = "Stretchly" }]
 
 [source.x64]
 url = "https://github.com/hovancik/stretchly/releases/download/v1.22.0/stretchly-1.22.0-win.7z"

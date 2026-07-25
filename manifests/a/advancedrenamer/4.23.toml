@@ -5,6 +5,7 @@ homepage = "https://www.advancedrenamer.com"
 license = "Freeware"
 kind = "app"
 bin = ["arenc.exe"]
+shortcuts = [{ target = "ARen.exe", name = "Advanced Renamer" }]
 persist = ["BatchMethods", "AdvData"]
 
 [source.x64]

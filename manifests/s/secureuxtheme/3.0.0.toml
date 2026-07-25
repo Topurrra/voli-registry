@@ -4,6 +4,7 @@ description = "A secure boot compatible in-memory UxTheme patcher"
 homepage = "https://github.com/namazso/SecureUxTheme"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "ThemeTool.exe", name = "ThemeTool" }]
 
 [source.x64]
 url = "https://github.com/namazso/SecureUxTheme/releases/download/v3.0.0/SecureUxTheme-amd64.zip"

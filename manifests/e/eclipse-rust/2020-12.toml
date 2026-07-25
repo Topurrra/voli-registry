@@ -4,6 +4,8 @@ description = "Eclipse for Rust Developers"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for Rust Developers" }]
 
 [source.x64]
 url = "http://download.eclipse.org/technology/epp/downloads/release/2020-12/R/eclipse-rust-2020-12-R-win32-x86_64.zip"

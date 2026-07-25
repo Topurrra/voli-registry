@@ -4,6 +4,7 @@ description = "A real time, nanosecond resolution, remote telemetry, hybrid fram
 homepage = "https://github.com/wolfpld/tracy"
 license = "BSD-3-Clause"
 kind = "app"
+shortcuts = [{ target = "tracy-profiler.exe", name = "Tracy" }]
 
 [source.x64]
 url = "https://github.com/wolfpld/tracy/releases/download/v0.13.1/windows-0.13.1.zip"

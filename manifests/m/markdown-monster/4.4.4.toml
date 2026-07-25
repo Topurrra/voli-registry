@@ -5,6 +5,7 @@ homepage = "https://markdownmonster.west-wind.com"
 license = "Proprietary"
 kind = "app"
 bin = ["mmcli.exe"]
+shortcuts = [{ target = "MarkdownMonster.exe", name = "Markdown Monster" }]
 persist = ["PortableSettings"]
 
 [source.x64]

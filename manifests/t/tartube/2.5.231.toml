@@ -4,6 +4,7 @@ description = "GUI front-end for youtube-dl, partly based on youtube-dl-gui."
 homepage = "https://github.com/axcore/tartube"
 license = "GPL-2.0-or-later,Unlicense,LGPL-2.1-or-later"
 kind = "app"
+extract_dir = "tartube"
 persist = ["home\\user\\tartube\\settings.json", "mingw64\\bin"]
 
 [source.x64]

@@ -4,6 +4,8 @@ description = "Free universal JMS client"
 homepage = "https://github.com/jmstoolbox/jmstoolbox"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "JMSToolBox"
+shortcuts = [{ target = "JMSToolBox.exe", name = "JMSToolBox" }]
 
 [source.x64]
 url = "https://github.com/jmstoolbox/jmstoolbox/releases/download/v8.1.0/jmstoolbox-8.1.0-win32.win32.x86_64.zip"

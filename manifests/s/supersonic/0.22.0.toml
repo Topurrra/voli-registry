@@ -4,6 +4,7 @@ description = "A lightweight cross-platform desktop client for Subsonic and Jell
 homepage = "https://github.com/dweymouth/supersonic"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "supersonic.exe", name = "Supersonic" }]
 
 [source.x64]
 url = "https://github.com/dweymouth/supersonic/releases/download/v0.22.0/Supersonic-0.22.0-windows-x64.zip"

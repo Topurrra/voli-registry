@@ -4,6 +4,7 @@ description = "Gyro-assisted video stabilization software."
 homepage = "https://gyroflow.xyz/"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "Gyroflow.exe", name = "Gyroflow" }]
 
 [source.x64]
 url = "https://github.com/gyroflow/gyroflow/releases/download/v1.6.3/Gyroflow-windows64.zip"

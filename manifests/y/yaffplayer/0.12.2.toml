@@ -5,6 +5,7 @@ homepage = "https://www.geeks3d.com/yaffplayer/"
 license = "Freeware"
 kind = "app"
 extract_dir = "YAFFplayer_win64"
+shortcuts = [{ target = "YAFFplayer.exe", name = "YAFFplayer" }]
 persist = ["_geexlab_log.txt", "_scene_init_log.txt", "imgui.ini"]
 
 [source.x64]

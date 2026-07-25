@@ -5,6 +5,7 @@ homepage = "https://hshrzd.wordpress.com/pe-bear/"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["PE-bear.exe"]
+shortcuts = [{ target = "PE-bear.exe", name = "PE-bear" }]
 
 [source.x64]
 url = "https://github.com/hasherezade/pe-bear/releases/download/v0.7.2/PE-bear_0.7.2_qt6_x64_win_vs22.zip"

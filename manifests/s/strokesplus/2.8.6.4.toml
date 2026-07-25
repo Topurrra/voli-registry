@@ -5,6 +5,7 @@ homepage = "https://www.strokesplus.com"
 license = "Unknown"
 kind = "app"
 extract_dir = "StrokesPlus_x64"
+shortcuts = [{ target = "StrokesPlus.exe", name = "StrokesPlus" }]
 
 [source.x64]
 url = "https://www.strokesplus.com/StrokesPlus_2.8.6.4_x64.zip"

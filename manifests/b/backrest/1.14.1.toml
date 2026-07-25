@@ -5,6 +5,7 @@ homepage = "https://github.com/garethgeorge/backrest"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["backrest.exe"]
+shortcuts = [{ target = "backrest.exe", name = "Backrest" }]
 
 [source.x64]
 url = "https://github.com/garethgeorge/backrest/releases/download/v1.14.1/backrest_Windows_x86_64.zip"

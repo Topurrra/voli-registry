@@ -5,6 +5,7 @@ homepage = "https://www.babelstone.co.uk/Software/BabelMap.html"
 license = "Freeware"
 kind = "app"
 bin = ["BabelMap.exe"]
+shortcuts = [{ target = "BabelMap.exe", name = "BabelMap" }]
 
 [source.x64]
 url = "https://www.babelstone.co.uk/Software/Download/BabelMap.zip"

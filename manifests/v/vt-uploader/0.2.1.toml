@@ -5,6 +5,7 @@ homepage = "https://github.com/SamuelTulach/VirusTotalUploader"
 license = "GPL-3.0"
 kind = "app"
 bin = [{ name = "vt-uploader", path = "uploader.exe" }]
+shortcuts = [{ target = "uploader.exe", name = "VirusTotalUploader" }]
 
 [source.x64]
 url = "https://github.com/SamuelTulach/VirusTotalUploader/releases/download/0.2.1/vt_portable.zip"

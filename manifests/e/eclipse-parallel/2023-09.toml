@@ -4,6 +4,8 @@ description = "Eclipse for Parallel Application Developers"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for Parallel Application Developers" }]
 
 [source.x64]
 url = "http://download.eclipse.org/technology/epp/downloads/release/2023-09/R/eclipse-parallel-2023-09-R-win32-x86_64.zip"

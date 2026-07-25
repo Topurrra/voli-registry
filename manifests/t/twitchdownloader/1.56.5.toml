@@ -4,6 +4,7 @@ description = "A Twitch VOD/Clip/Chat Downloader and Chat Renderer."
 homepage = "https://github.com/lay295/TwitchDownloader"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "TwitchDownloaderWPF.exe", name = "TwitchDownloader" }]
 persist = ["Themes"]
 
 [source.x64]

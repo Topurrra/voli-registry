@@ -5,6 +5,7 @@ homepage = "https://github.com/libvips/vipsdisp"
 license = "MIT"
 kind = "app"
 bin = ["bin\\vipsdisp.exe"]
+shortcuts = [{ target = "bin\\vipsdisp.exe", name = "vipsdisp" }]
 
 [source.x64]
 url = "https://github.com/libvips/vipsdisp/releases/download/v4.1.4/vipsdisp-x64-4.1.4.zip"

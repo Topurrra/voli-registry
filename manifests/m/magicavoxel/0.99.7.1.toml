@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "MagicaVoxel-0.99.7.1-win64"
 bin = ["MagicaVoxel.exe"]
+shortcuts = [{ target = "MagicaVoxel.exe", name = "MagicaVoxel" }]
 
 [source.x64]
 url = "https://github.com/ephtracy/ephtracy.github.io/releases/download/0.99.7/MagicaVoxel-0.99.7.1-win64.zip"

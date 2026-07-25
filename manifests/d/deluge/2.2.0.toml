@@ -5,6 +5,7 @@ homepage = "https://deluge-torrent.org"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["deluge-console.exe", "deluge-web.exe", "deluged.exe"]
+shortcuts = [{ target = "deluge.exe", name = "Deluge" }]
 
 [source.x64]
 url = "http://download.deluge-torrent.org/windows/deluge-2.2.0-win64-setup.exe#/dl.7z"

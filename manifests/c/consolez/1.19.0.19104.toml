@@ -5,6 +5,7 @@ homepage = "https://github.com/cbucher/console"
 license = "GPL-2.0-only"
 kind = "app"
 bin = ["console.exe"]
+shortcuts = [{ target = "console.exe", name = "ConsoleZ" }]
 
 [source.x64]
 url = "https://github.com/cbucher/console/releases/download/1.19.0/ConsoleZ.x64.1.19.0.19104.zip"

@@ -4,6 +4,7 @@ description = "Simple and lightweight app to help with Virtual Desktops for Wind
 homepage = "https://github.com/dankrusi/WindowsVirtualDesktopHelper"
 license = "AGPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "WindowsVirtualDesktopHelper.exe", name = "Windows Virtual Desktop Helper" }]
 
 [source.x64]
 url = "https://github.com/dankrusi/WindowsVirtualDesktopHelper/releases/download/v2.0/WindowsVirtualDesktopHelper.Executable.v2.0.zip"

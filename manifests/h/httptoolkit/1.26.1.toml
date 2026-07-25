@@ -4,6 +4,7 @@ description = "HTTP(S) debugging proxy, analyzer and client"
 homepage = "https://httptoolkit.com"
 license = "AGPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "HTTP Toolkit.exe", name = "HTTP Toolkit" }]
 
 [source.x64]
 url = "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.26.1/HttpToolkit-1.26.1-win-x64.zip"

@@ -4,6 +4,7 @@ description = "Standalone application which fakes upload and download stats of a
 homepage = "https://ratiomaster.net/"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "RatioMaster.NET.exe", name = "RatioMaster.NET" }]
 
 [source.x64]
 url = "https://github.com/NikolayIT/RatioMaster.NET/releases/download/0.43/RatioMaster.NET_0.43.zip"

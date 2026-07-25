@@ -4,6 +4,8 @@ description = "A peer-to-peer file transfer tool that sends files directly witho
 homepage = "https://www.altsendme.com/"
 license = "AGPL-3.0-only"
 kind = "app"
+extract_dir = "AltSendme"
+shortcuts = [{ target = "AltSendme.exe", name = "AltSendme" }]
 
 [source.x64]
 url = "https://github.com/tonyantony300/dashbeam/releases/download/v0.6.0/AltSendme_0.6.0_x64-portable.zip"

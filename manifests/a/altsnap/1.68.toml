@@ -5,6 +5,7 @@ homepage = "https://github.com/RamonUnch/AltSnap"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["AltSnap.exe"]
+shortcuts = [{ target = "AltSnap.exe", name = "AltSnap" }]
 persist = ["AltSnap.ini"]
 
 [source.x64]

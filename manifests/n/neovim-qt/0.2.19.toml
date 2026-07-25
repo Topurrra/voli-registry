@@ -5,6 +5,7 @@ homepage = "https://github.com/equalsraf/neovim-qt"
 license = "ISC"
 kind = "app"
 bin = ["bin\\nvim-qt.exe"]
+shortcuts = [{ target = "bin\\nvim-qt.exe", name = "Neovim Qt" }]
 
 [source.x64]
 url = "https://github.com/equalsraf/neovim-qt/releases/download/v0.2.19/neovim-qt.zip"

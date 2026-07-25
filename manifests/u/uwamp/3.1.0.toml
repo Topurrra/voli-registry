@@ -6,6 +6,7 @@ license = "Unknown"
 kind = "app"
 extract_dir = "UwAmp"
 bin = ["UwAmp.exe"]
+shortcuts = [{ target = "UwAmp.exe", name = "UwAmp" }]
 
 [source.x64]
 url = "https://www.uwamp.com/file/UwAmp.zip"

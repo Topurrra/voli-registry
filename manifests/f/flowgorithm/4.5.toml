@@ -5,6 +5,7 @@ homepage = "http://www.flowgorithm.org"
 license = "Freeware"
 kind = "app"
 bin = ["Flowgorithm.exe"]
+shortcuts = [{ target = "Flowgorithm.exe", name = "Flowgorithm" }]
 
 [source.x64]
 url = "http://www.flowgorithm.org/download/files/Flowgorithm-exe-only.zip"

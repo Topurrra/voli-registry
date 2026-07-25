@@ -5,6 +5,7 @@ homepage = "https://chrisandriessen.nl/web/FalconX.html"
 license = "MIT"
 kind = "app"
 bin = ["FalconX.exe"]
+shortcuts = [{ target = "FalconXSettings.exe", name = "FalconX Settings" }]
 
 [source.x64]
 url = "https://github.com/ChrisAnd1998/FalconX-Center-Taskbar/releases/download/1.4.5.0/FalconX_02.03.2020_1.4.5.0.zip"

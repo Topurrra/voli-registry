@@ -5,6 +5,7 @@ homepage = "https://dbgl.org/"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = [{ name = "dbgl", path = "launch.exe" }]
+shortcuts = [{ target = "launch.exe", name = "DOSBox Game Launcher" }]
 
 [source.x64]
 url = "https://dbgl.org/download/dbgl099.zip"

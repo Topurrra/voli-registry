@@ -4,7 +4,9 @@ description = "a software reverse engineering (SRE) framework"
 homepage = "https://ghidra-sre.org"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "ghidra_12.1.2_PUBLIC"
 bin = ["ghidraRun.bat"]
+shortcuts = [{ target = "ghidraRun.bat", name = "ghidra" }]
 persist = ["Ghidra/Configurations"]
 
 [source.x64]

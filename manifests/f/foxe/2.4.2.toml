@@ -5,6 +5,7 @@ homepage = "https://www.firstobject.com/dn_editor.htm"
 license = "Unknown"
 kind = "app"
 bin = ["foxe.exe"]
+shortcuts = [{ target = "foxe.exe", name = "firstobject XML Editor" }]
 
 [source.x64]
 url = "https://www.firstobject.com/foxe242.zip"

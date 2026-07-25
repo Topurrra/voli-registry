@@ -5,6 +5,7 @@ homepage = "https://jagt.github.io/clumsy/"
 license = "MIT"
 kind = "app"
 bin = ["clumsy.exe"]
+shortcuts = [{ target = "clumsy.exe", name = "clumsy" }]
 persist = ["config.txt"]
 
 [source.x64]

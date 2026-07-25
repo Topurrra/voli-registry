@@ -4,6 +4,7 @@ description = "A highly visual ARM emulator"
 homepage = "https://salmanarif.bitbucket.io/visual/index.html"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "VisUAL.exe", name = "VisUAL" }]
 
 [source.x64]
 url = "https://bit.ly/visualwin_127#/dl.7z"

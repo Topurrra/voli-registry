@@ -5,6 +5,7 @@ homepage = "https://robomongo.org"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "robo3t-1.4.4-windows-x86_64-e6ac9ec5"
+shortcuts = [{ target = "robo3t.exe", name = "Robo 3T" }]
 
 [source.x64]
 url = "https://github.com/Studio3T/robomongo/releases/download/v1.4.4/robo3t-1.4.4-windows-x86_64-e6ac9ec5.zip"

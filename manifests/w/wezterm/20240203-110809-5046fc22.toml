@@ -4,7 +4,9 @@ description = "GPU-accelerated terminal emulator"
 homepage = "https://github.com/wez/wezterm"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "WezTerm-windows-20240203-110809-5046fc22"
 bin = ["wezterm.exe", "wezterm-gui.exe"]
+shortcuts = [{ target = "wezterm-gui.exe", name = "Wezterm" }]
 
 [source.x64]
 url = "https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-windows-20240203-110809-5046fc22.zip"

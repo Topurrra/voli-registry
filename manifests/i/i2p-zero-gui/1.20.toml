@@ -6,6 +6,7 @@ license = "BSD-3-Clause|Apache-2.0"
 kind = "app"
 extract_dir = "i2p-zero-win-gui.v1.20\\router"
 bin = ["i2p-zero.exe"]
+shortcuts = [{ target = "i2p-zero.exe", name = "I2P zero" }]
 persist = ["runtime\\conf", "runtime\\i2p.base"]
 
 [source.x64]

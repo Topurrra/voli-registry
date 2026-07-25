@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "yakyak-win32-x64"
 bin = ["yakyak.exe"]
+shortcuts = [{ target = "yakyak.exe", name = "YakYak" }]
 
 [source.x64]
 url = "https://github.com/yakyak/yakyak/releases/download/v1.5.11.5/yakyak-1.5.11.5-win32-x64.zip"

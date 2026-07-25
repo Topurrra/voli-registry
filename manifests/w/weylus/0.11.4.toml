@@ -5,6 +5,7 @@ homepage = "https://github.com/H-M-H/Weylus"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = ["weylus.exe"]
+shortcuts = [{ target = "weylus.exe", name = "Weylus" }]
 
 [source.x64]
 url = "https://github.com/H-M-H/Weylus/releases/download/v0.11.4/Windows.zip"

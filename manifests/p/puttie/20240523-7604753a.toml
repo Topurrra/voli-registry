@@ -4,7 +4,9 @@ description = "A fork of the SSH/Telnet client PuTTY with new features such as b
 homepage = "https://github.com/lalbornoz/PuTTie"
 license = "MIT"
 kind = "app"
+extract_dir = "PuTTie-file-Release-7604753a"
 bin = ["pageant.exe", "plink.exe", "pscp.exe", "psftp.exe", "psocks.exe", "puttie.exe", "puttie-portable.exe", "puttygen.exe", "puttytel.exe"]
+shortcuts = [{ target = "puttie.exe", name = "PuTTie" }, { target = "puttie-portable.exe", name = "PuTTie (Portable)" }, { target = "puttygen.exe", name = "PuttyGen (PuTTY Key Generator)" }, { target = "pageant.exe", name = "Pageant (PuTTY authentication agent)" }]
 
 [source.x64]
 url = "https://github.com/lalbornoz/PuTTie/releases/download/PuTTie-file-Release-7604753a/PuTTie-file-Release-7604753a.zip"

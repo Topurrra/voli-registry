@@ -5,6 +5,7 @@ homepage = "https://sysprogs.com/SmarTTY/"
 license = "Freeware"
 kind = "app"
 bin = ["PortableSmartty\\SmarTTY.exe"]
+shortcuts = [{ target = "PortableSmartty\\SmarTTY.exe", name = "SmarTTY" }]
 persist = ["PortableSmartty\\CommandCompletions.xml", "PortableSmartty\\PortableSettings"]
 
 [source.x64]

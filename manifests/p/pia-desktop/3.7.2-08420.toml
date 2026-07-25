@@ -5,6 +5,7 @@ homepage = "https://github.com/pia-foss/desktop"
 license = "Freeware"
 kind = "app"
 bin = ["openvpn_updown.bat", "pia-hnsd.exe", "pia-openvpn.exe", "pia-service.exe", "pia-ss-local.exe", "pia-unbound.exe", "pia-wgservice.exe", "pia-winsvcstub.exe", "piactl.exe"]
+shortcuts = [{ target = "pia-client.exe", name = "PIA-client" }]
 
 [source.x64]
 url = "https://privateinternetaccess-storage.s3.amazonaws.com/pub/pia_desktop/builds/pia-windows-x64-3.7.2-08420.exe#/dl.7z"

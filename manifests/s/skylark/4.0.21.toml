@@ -5,6 +5,7 @@ homepage = "https://github.com/adonais/skylark"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "skylark_x64"
+shortcuts = [{ target = "skylark.exe", name = "SkyLark" }]
 
 [source.x64]
 url = "https://github.com/adonais/skylark/releases/download/20260709065830/skylark_x64-v4.0.21.7z"

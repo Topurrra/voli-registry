@@ -4,7 +4,9 @@ description = "KNIME Analytics Platform. Software for creating data science appl
 homepage = "https://www.knime.com"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "knime_5.12.0"
 bin = ["knime.exe"]
+shortcuts = [{ target = "knime.exe", name = "KNIME Analytics Platform" }]
 
 [source.x64]
 url = "https://download.knime.org/analytics-platform/win/knime_5.12.0.win32.win32.x86_64.zip"

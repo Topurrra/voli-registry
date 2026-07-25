@@ -4,6 +4,8 @@ description = "Integrated Development Environment for Web Development."
 homepage = "https://tweakstyle.com"
 license = "Proprietary"
 kind = "app"
+extract_dir = "TweakStyle"
+shortcuts = [{ target = "TweakStyle.exe", name = "TweakStyle" }]
 
 [source.x64]
 url = "https://tweakstyle.com/dl/TweakStyle-win64-0.9.5.zip"

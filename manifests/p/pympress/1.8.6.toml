@@ -4,7 +4,9 @@ description = "Pympress is a PDF presentation tool designed for dual-screen setu
 homepage = "https://github.com/Cimbali/pympress"
 license = "GPL-2.0"
 kind = "app"
+extract_dir = "pympress"
 bin = ["pympress.exe"]
+shortcuts = [{ target = "pympress-gui.exe", name = "Pympress" }]
 
 [source.x64]
 url = "https://github.com/Cimbali/pympress/releases/download/v1.8.6/pympress-1.8.6-x86_64.zip"

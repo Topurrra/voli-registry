@@ -5,6 +5,7 @@ homepage = "https://nbusseneau.github.io/CompatibilityManager/"
 license = "MIT"
 kind = "app"
 extract_dir = "CompatibilityManager"
+shortcuts = [{ target = "CompatibilityManager.exe", name = "CompatibilityManager" }]
 persist = ["CompatibilityManager.exe.config"]
 
 [source.x64]

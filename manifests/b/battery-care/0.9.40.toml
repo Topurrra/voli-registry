@@ -4,6 +4,7 @@ description = "Tool to optimize the usage and performance of the modern laptop's
 homepage = "https://batterycare.net/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "BatteryCare.exe", name = "BatteryCare" }]
 
 [source.x64]
 url = "https://batterycare.net/files/BatteryCarePortable.zip"

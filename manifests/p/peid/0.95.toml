@@ -5,6 +5,7 @@ homepage = "https://web.archive.org/web/20110226030434/http://peid.info/"
 license = "Freeware"
 kind = "app"
 bin = ["PEiD.exe"]
+shortcuts = [{ target = "PEiD.exe", name = "PEiD" }]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/peid/PEiD-0.95.zip"

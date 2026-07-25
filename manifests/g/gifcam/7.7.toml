@@ -5,6 +5,7 @@ homepage = "https://blog.bahraniapps.com/gifcam/"
 license = "Unknown"
 kind = "app"
 bin = ["GifCam.exe"]
+shortcuts = [{ target = "GifCam.exe", name = "GifCam" }]
 
 [source.x64]
 url = "https://www.bahraniapps.com/apps/gifcam/GifCam.zip"

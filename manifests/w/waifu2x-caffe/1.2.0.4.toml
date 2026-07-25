@@ -4,7 +4,9 @@ description = "AI-powered image upscaler."
 homepage = "https://github.com/lltcggie/waifu2x-caffe"
 license = "MIT"
 kind = "app"
+extract_dir = "waifu2x-caffe"
 bin = ["waifu2x-caffe-cui.exe"]
+shortcuts = [{ target = "waifu2x-caffe.exe", name = "waifu2x-caffe" }]
 
 [source.x64]
 url = "https://github.com/lltcggie/waifu2x-caffe/releases/download/1.2.0.4/waifu2x-caffe.zip"

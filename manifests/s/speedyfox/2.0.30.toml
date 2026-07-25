@@ -5,6 +5,7 @@ homepage = "https://www.crystalidea.com/speedyfox"
 license = "Freeware"
 kind = "app"
 bin = ["speedyfox.exe"]
+shortcuts = [{ target = "speedyfox.exe", name = "SpeedyFox" }]
 
 [source.x64]
 url = "https://www.crystalidea.com/downloads/speedyfox.zip"

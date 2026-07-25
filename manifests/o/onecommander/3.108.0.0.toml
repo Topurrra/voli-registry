@@ -5,6 +5,7 @@ homepage = "https://onecommander.com/"
 license = "Freeware"
 kind = "app"
 bin = ["OneCommander.exe"]
+shortcuts = [{ target = "OneCommander.exe", name = "OneCommander" }]
 persist = ["Settings", "Templates", "Logs", "Resources"]
 
 [source.x64]

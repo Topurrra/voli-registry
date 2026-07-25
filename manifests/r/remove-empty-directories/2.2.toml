@@ -4,6 +4,7 @@ description = "Searches, displays and deletes empty directories recursively"
 homepage = "https://github.com/hxseven/Remove-Empty-Directories"
 license = "LGPL-3.0"
 kind = "app"
+shortcuts = [{ target = "RED2.exe", name = "Remove Empty Directories" }]
 
 [source.x64]
 url = "https://github.com/hxseven/Remove-Empty-Directories/releases/download/2.2/red-v2.2-portable.zip"

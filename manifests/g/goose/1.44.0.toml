@@ -4,6 +4,7 @@ description = "An open-source, extensible AI agent that goes beyond code suggest
 homepage = "https://block.github.io/goose/"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "dist-windows/goose.exe", name = "goose" }]
 
 [source.x64]
 url = "https://github.com/block/goose/releases/download/v1.44.0/Goose-win32-x64.zip"

@@ -5,6 +5,7 @@ homepage = "https://github.com/Faster3ck/Converseen"
 license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "converseen-0.15.2.7-1-win32-portable"
+shortcuts = [{ target = "converseen.exe", name = "Converseen" }]
 persist = ["settings"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "A cross-platform reimplementation of Notepad++"
 homepage = "https://github.com/dail8859/NotepadNext"
 license = "GPL-3.0-only"
 kind = "app"
+shortcuts = [{ target = "NotepadNext.exe", name = "Notepad Next" }]
 
 [source.x64]
 url = "https://github.com/dail8859/NotepadNext/releases/download/v0.14/NotepadNext-v0.14-win64.zip"

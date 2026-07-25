@@ -5,6 +5,7 @@ homepage = "https://www.guru3d.com/download/color-sustainer-download"
 license = "Unknown"
 kind = "app"
 bin = ["Color_Sustainer.exe"]
+shortcuts = [{ target = "Color_Sustainer.exe", name = "Color Sustainer" }]
 
 [source.x64]
 url = "https://ftp.nluug.nl/pub/games/PC/guru3d/colorsustainer/Color%20Sustainerv105-%5BGuru3D.com%5D.zip"

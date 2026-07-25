@@ -5,6 +5,7 @@ homepage = "https://museeks.io"
 license = "MIT"
 kind = "app"
 bin = ["museeks.exe"]
+shortcuts = [{ target = "museeks.exe", name = "Museeks" }]
 
 [source.x64]
 url = "https://github.com/martpie/museeks/releases/download/0.23.4/Museeks_0.23.4_x64-setup.exe#/dl.7z"

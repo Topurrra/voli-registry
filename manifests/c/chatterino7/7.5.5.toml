@@ -4,7 +4,9 @@ description = "A fork of Chatterino 2 with 7TV subscriber features."
 homepage = "https://github.com/SevenTV/chatterino7"
 license = "MIT"
 kind = "app"
+extract_dir = "Chatterino2"
 bin = [{ name = "chatterino7", path = "chatterino.exe" }]
+shortcuts = [{ target = "chatterino.exe", name = "Chatterino7" }]
 persist = ["Settings", "Cache", "Logs", "Misc", "ProfileAvatars"]
 
 [source.x64]

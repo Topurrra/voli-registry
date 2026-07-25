@@ -4,6 +4,7 @@ description = "Download, install and manage any version of Godot Engine from a s
 homepage = "https://github.com/noidexe/godot-version-manager"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "gvm.exe", name = "Godot Version Manager" }]
 
 [source.x64]
 url = "https://github.com/noidexe/godot-version-manager/releases/download/v1.17.3/Godot.Version.Manager.v1.17.3-win.zip"

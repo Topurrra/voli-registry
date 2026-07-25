@@ -5,6 +5,7 @@ homepage = "https://www.airdroid.com"
 license = "Freeware"
 kind = "app"
 bin = ["AirDroid.exe"]
+shortcuts = [{ target = "AirDroid.exe", name = "AirDroid" }]
 
 [source.x64]
 url = "https://dl.airdroid.com/download/AirDroid/Win/v3.8.0.4/20250311152551/AirDroid_Desktop_Client_3.8.0.4.exe#/dl.7z"

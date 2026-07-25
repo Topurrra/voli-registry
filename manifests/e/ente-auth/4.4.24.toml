@@ -5,6 +5,7 @@ homepage = "https://ente.io/auth/"
 license = "AGPL-3.0-only"
 kind = "app"
 extract_dir = "ente-auth-v4.4.24-windows"
+shortcuts = [{ target = "auth.exe", name = "Ente Auth" }]
 
 [source.x64]
 url = "https://github.com/ente-io/ente/releases/download/auth-v4.4.24/ente-auth-v4.4.24-windows.zip"

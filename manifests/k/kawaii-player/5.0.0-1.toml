@@ -5,6 +5,7 @@ homepage = "https://github.com/kanishka-linux/kawaii-player"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "kawaii-player-5.0.0-1.windows10.x86_64-bin"
+shortcuts = [{ target = "kawaii_player.exe", name = "Kawaii-Player" }]
 
 [source.x64]
 url = "https://github.com/kanishka-linux/kawaii-player/releases/download/v5.0.0-1/kawaii-player-5.0.0-1.windows10.x86_64-bin.7z"

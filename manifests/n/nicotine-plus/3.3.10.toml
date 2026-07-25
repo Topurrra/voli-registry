@@ -4,6 +4,8 @@ description = "Graphical client for the Soulseek file sharing network"
 homepage = "https://nicotine-plus.org"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "Nicotine+"
+shortcuts = [{ target = "Nicotine+.exe", name = "Nicotine+" }]
 
 [source.x64]
 url = "https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.10/windows-x86_64-package.zip"

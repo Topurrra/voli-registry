@@ -5,6 +5,7 @@ homepage = "https://github.com/datadiode/winmerge2011"
 license = "AGPL-3.0-or-later"
 kind = "app"
 bin = ["WinMergeU.exe"]
+shortcuts = [{ target = "WinMergeU.exe", name = "WinMerge" }]
 persist = ["ProgramData", "WinMergeU.json"]
 
 [source.x64]

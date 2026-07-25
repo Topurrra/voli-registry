@@ -4,6 +4,7 @@ description = "Browser extension and cross-platform desktop application for tran
 homepage = "https://github.com/nextai-translator/nextai-translator"
 license = "AGPL-3.0"
 kind = "app"
+shortcuts = [{ target = "app.exe", name = "NextAI Translator" }]
 
 [source.x64]
 url = "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.32/NextAI.Translator_0.6.32_x64-setup.exe#/dl.7z"

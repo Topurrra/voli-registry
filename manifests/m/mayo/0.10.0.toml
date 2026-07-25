@@ -6,6 +6,7 @@ license = "BSD-2-Clause"
 kind = "app"
 extract_dir = "Mayo-0.10.0-win64-binaries"
 bin = ["mayo.exe"]
+shortcuts = [{ target = "mayo.exe", name = "Mayo" }]
 
 [source.x64]
 url = "https://github.com/fougue/mayo/releases/download/v0.10.0/Mayo-0.10.0-win64-binaries.zip"

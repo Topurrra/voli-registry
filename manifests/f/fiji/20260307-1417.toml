@@ -4,6 +4,7 @@ description = "ImageJ distribution with many plugins which facilitating scientif
 homepage = "https://fiji.sc/"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "Fiji.app"
 
 [source.x64]
 url = "https://downloads.imagej.net/fiji/archive/stable/20260307-1417/fiji-stable-win64-jdk.zip"

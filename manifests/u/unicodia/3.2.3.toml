@@ -5,6 +5,7 @@ homepage = "https://mercury13.github.io/unicodia/"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["unicodia.exe"]
+shortcuts = [{ target = "Unicodia.exe", name = "Unicodia" }]
 
 [source.x64]
 url = "https://github.com/Mercury13/unicodia/releases/download/v3.2.3/Unicodia-w64-3.2.3.7z"

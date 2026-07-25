@@ -4,7 +4,9 @@ description = "A movie collection manager with several features for Usenet and B
 homepage = "https://radarr.video/"
 license = "GPL-3.0"
 kind = "app"
+extract_dir = "Radarr"
 bin = ["Radarr.Console.exe", { name = "Radarr", path = "Radarr.Console.exe" }]
+shortcuts = [{ target = "Radarr.exe", name = "Radarr" }]
 
 [source.x64]
 url = "https://github.com/Radarr/Radarr/releases/download/v6.3.0.10514/Radarr.master.6.3.0.10514.windows-core-x64.zip"

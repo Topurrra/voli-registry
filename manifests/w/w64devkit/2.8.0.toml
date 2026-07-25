@@ -4,7 +4,9 @@ description = "Portable C and C++ Development Kit for x64 Windows"
 homepage = "https://github.com/skeeto/w64devkit"
 license = "Unlicense"
 kind = "app"
+extract_dir = "w64devkit"
 bin = ["w64devkit.exe"]
+shortcuts = [{ target = "w64devkit.exe", name = "W64DevKit Command Prompt" }]
 
 [source.x64]
 url = "https://github.com/skeeto/w64devkit/releases/download/v2.8.0/w64devkit-x64-2.8.0.7z.exe#/dl.7z"

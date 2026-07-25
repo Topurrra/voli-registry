@@ -4,7 +4,9 @@ description = "Free disk backup, clone, and wipe utility with CLI support"
 homepage = "https://multidrive.io"
 license = "Freeware"
 kind = "app"
+extract_dir = "MultiDrive"
 bin = ["mdcli.exe"]
+shortcuts = [{ target = "MultiDrive.exe", name = "MultiDrive" }]
 
 [source.x64]
 url = "https://github.com/atola-technology/multidrive/releases/download/v1.4.0/MultiDrive_1.4.zip"

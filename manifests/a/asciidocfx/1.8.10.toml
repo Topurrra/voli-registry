@@ -4,6 +4,8 @@ description = "A book/document editor to build PDF, Epub, Mobi and HTML books, d
 homepage = "https://asciidocfx.com"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "AsciidocFX"
+shortcuts = [{ target = "AsciidocFX.exe", name = "AsciidocFX" }]
 persist = ["conf", "log"]
 
 [source.x64]

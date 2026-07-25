@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Koffee"
 bin = ["Koffee.exe"]
+shortcuts = [{ target = "Koffee.exe", name = "Koffee" }]
 
 [source.x64]
 url = "https://github.com/mattstermiller/koffee/releases/download/v0.7.1/Koffee-0.7.1.zip"

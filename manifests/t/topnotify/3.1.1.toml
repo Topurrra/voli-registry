@@ -4,6 +4,7 @@ description = "The Ultimate Notification Customization Tool For Windows."
 homepage = "https://samsidparty.com/software/topnotify"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "TopNotify.exe", name = "TopNotify" }]
 
 [source.x64]
 url = "https://github.com/SamsidParty/TopNotify/releases/download/3.1.1/TopNotify.Msix#/dl.7z"

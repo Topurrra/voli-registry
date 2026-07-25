@@ -4,6 +4,8 @@ description = "Eclipse for Android Developers"
 homepage = "https://www.eclipse.org"
 license = "EPL-1.0"
 kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for Android Developers" }]
 
 [source.x64]
 url = "https://archive.eclipse.org/technology/epp/downloads/release/neon/3/eclipse-android-neon-3-incubation-win32-x86_64.zip"

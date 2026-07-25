@@ -4,7 +4,9 @@ description = "A multi platform Twitch.tv browser for Streamlink"
 homepage = "https://streamlink.github.io/streamlink-twitch-gui/"
 license = "MIT"
 kind = "app"
+extract_dir = "streamlink-twitch-gui"
 bin = ["streamlink-twitch-gui.exe"]
+shortcuts = [{ target = "streamlink-twitch-gui.exe", name = "Streamlink Twitch GUI" }]
 
 [source.x64]
 url = "https://github.com/streamlink/streamlink-twitch-gui/releases/download/v2.5.3/streamlink-twitch-gui-v2.5.3-win64.zip"

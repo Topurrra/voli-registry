@@ -5,6 +5,7 @@ homepage = "https://github.com/Victor-IX/Blender-Launcher"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = [{ name = "blender-launcher", path = "Blender Launcher.exe" }]
+shortcuts = [{ target = "Blender Launcher.exe", name = "Blender Launcher" }]
 
 [source.x64]
 url = "https://github.com/Victor-IX/Blender-Launcher/releases/download/v2.7.6/Blender_Launcher_v2.7.6_Windows_x64.zip"

@@ -5,6 +5,7 @@ homepage = "https://web.archive.org/web/20210126020258/https://www.microsoft.com
 license = "Freeware"
 kind = "app"
 bin = ["SyncToyCmd.exe"]
+shortcuts = [{ target = "SyncToy.exe", name = "SyncToy" }]
 persist = ["SyncToy.config"]
 
 [source.x64]

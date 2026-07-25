@@ -4,6 +4,7 @@ description = "A hybrid command-line/UI Kubernetes development experience for cl
 homepage = "https://github.com/kubernetes-sigs/kui"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "Kui-win32-x64/Kui.exe", name = "Kui" }]
 
 [source.x64]
 url = "https://github.com/kubernetes-sigs/kui/releases/download/v13.1.4/Kui-win32-x64.zip"

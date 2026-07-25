@@ -5,6 +5,7 @@ homepage = "https://www.filebot.net/"
 license = "Proprietary"
 kind = "app"
 bin = ["filebot.exe"]
+shortcuts = [{ target = "filebot.launcher.exe", name = "FileBot" }]
 persist = ["data"]
 
 [source.x64]

@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "TouchCursor"
 bin = ["touchcursor.exe"]
+shortcuts = [{ target = "touchcursor.exe", name = "touchcursor" }]
 
 [source.x64]
 url = "https://github.com/martin-stone/touchcursor/releases/download/v1.7.1/TouchCursor-1.7.1.zip"

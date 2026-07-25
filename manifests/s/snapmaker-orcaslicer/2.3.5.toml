@@ -4,6 +4,8 @@ description = "G-code generator for 3D printers (Snapmaker's fork of OrcaSlicer)
 homepage = "https://github.com/Snapmaker/OrcaSlicer"
 license = "AGPL-3.0-or-later"
 kind = "app"
+extract_dir = "Snapmaker_Orca_Windows_V2.3.5_portable"
+shortcuts = [{ target = "snapmaker-orca.exe", name = "Snapmaker OrcaSlicer" }]
 
 [source.x64]
 url = "https://github.com/Snapmaker/OrcaSlicer/releases/download/v2.3.5/Snapmaker_Orca_Windows_V2.3.5_portable.zip"

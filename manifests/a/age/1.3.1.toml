@@ -4,6 +4,7 @@ description = "A simple, modern and secure encryption tool with small explicit k
 homepage = "https://age-encryption.org/"
 license = "BSD-3-Clause"
 kind = "app"
+extract_dir = "age"
 bin = ["age.exe", "age-inspect.exe", "age-keygen.exe", "age-plugin-batchpass.exe"]
 
 [source.x64]

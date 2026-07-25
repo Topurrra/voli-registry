@@ -5,6 +5,7 @@ homepage = "https://github.com/d2phap/ExifGlass"
 license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "ExifGlass_2.0.0.0_win-x64"
+shortcuts = [{ target = "ExifGlass.exe", name = "ExifGlass" }]
 
 [source.x64]
 url = "https://github.com/d2phap/ExifGlass/releases/download/2.0.0.0/ExifGlass_2.0.0.0_win-x64.zip"

@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "BleachBit-portable"
 bin = ["bleachbit_console.exe", { name = "bleachbit", path = "bleachbit_console.exe" }]
+shortcuts = [{ target = "bleachbit.exe", name = "BleachBit" }]
 persist = ["cleaners", "BleachBit.ini"]
 
 [source.x64]

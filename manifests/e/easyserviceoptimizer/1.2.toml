@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "eso"
 bin = ["eso.exe"]
+shortcuts = [{ target = "eso.exe", name = "Easy Service Optimizer" }]
 persist = ["eso.ini"]
 
 [source.x64]

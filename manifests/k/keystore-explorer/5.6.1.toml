@@ -6,6 +6,7 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "kse-561"
 bin = ["kse.exe"]
+shortcuts = [{ target = "kse.exe", name = "Key Store Explorer" }]
 
 [source.x64]
 url = "https://github.com/kaikramer/keystore-explorer/releases/download/v5.6.1/kse-561.zip"

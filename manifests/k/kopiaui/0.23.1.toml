@@ -5,6 +5,7 @@ homepage = "https://kopia.io/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["resources\\server\\kopia.exe"]
+shortcuts = [{ target = "KopiaUI.exe", name = "KopiaUI" }]
 
 [source.x64]
 url = "https://github.com/kopia/kopia/releases/download/v0.23.1/KopiaUI-0.23.1-win.zip"

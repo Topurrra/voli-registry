@@ -5,6 +5,7 @@ homepage = "https://okular.kde.org"
 license = "LGPL-2.0-only"
 kind = "app"
 bin = ["bin\\okular.exe"]
+shortcuts = [{ target = "bin\\okular.exe", name = "Okular" }]
 
 [source.x64]
 url = "https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/windows/okular-release_26.04-7510-windows-cl-msvc2022-x86_64.7z"

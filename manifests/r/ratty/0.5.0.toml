@@ -5,6 +5,7 @@ homepage = "https://ratty-term.org/"
 license = "MIT"
 kind = "app"
 bin = ["ratty.exe"]
+shortcuts = [{ target = "ratty.exe", name = "Ratty" }]
 
 [source.x64]
 url = "https://github.com/orhun/ratty/releases/download/v0.5.0/ratty-x86_64-pc-windows-msvc.zip"

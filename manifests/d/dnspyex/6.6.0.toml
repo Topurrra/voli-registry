@@ -5,6 +5,7 @@ homepage = "https://github.com/dnSpyEx/dnSpy"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["dnSpy.Console.exe"]
+shortcuts = [{ target = "dnSpy.exe", name = "dnSpy" }]
 
 [source.x64]
 url = "https://github.com/dnSpyEx/dnSpy/releases/download/v6.6.0/dnSpy-net-win64.zip"

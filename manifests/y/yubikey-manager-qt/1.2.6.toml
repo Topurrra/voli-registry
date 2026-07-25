@@ -5,6 +5,7 @@ homepage = "https://developers.yubico.com/yubikey-manager-qt/"
 license = "BSD-2-Clause"
 kind = "app"
 bin = ["ykman.exe"]
+shortcuts = [{ target = "ykman-gui.exe", name = "YubiKey Manager" }]
 
 [source.x64]
 url = "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-1.2.6-win64.exe#/dl.7z"

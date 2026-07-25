@@ -4,6 +4,7 @@ description = "Reasonix Desktop, official GUI for Reasonix, a DeepSeek-native AI
 homepage = "https://reasonix.io"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Reasonix.exe", name = "Reasonix Desktop" }]
 
 [source.x64]
 url = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v1.17.20/Reasonix-windows-amd64.zip"

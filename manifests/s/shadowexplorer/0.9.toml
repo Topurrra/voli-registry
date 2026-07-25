@@ -6,6 +6,7 @@ license = "Freeware"
 kind = "app"
 extract_dir = "ShadowExplorerPortable-0.9"
 bin = ["ShadowExplorerPortable.exe"]
+shortcuts = [{ target = "ShadowExplorerPortable.exe", name = "ShadowExplorerPortable" }]
 persist = ["ShadowExplorerPortable.exe.config"]
 
 [source.x64]

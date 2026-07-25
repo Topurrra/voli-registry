@@ -5,6 +5,7 @@ homepage = "https://chrisandriessen.nl/taskbarx"
 license = "MIT"
 kind = "app"
 bin = ["TaskbarX.exe"]
+shortcuts = [{ target = "TaskbarX Configurator.exe", name = "TaskbarX Configurator" }]
 
 [source.x64]
 url = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.8.0/TaskbarX_1.7.8.0_x64.zip"

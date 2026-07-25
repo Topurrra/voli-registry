@@ -5,6 +5,7 @@ homepage = "https://mitmproxy.org/"
 license = "MIT"
 kind = "app"
 bin = ["mitmproxy.exe", "mitmweb.exe", "mitmdump.exe"]
+shortcuts = [{ target = "mitmproxy.exe", name = "mitmproxy" }, { target = "mitmweb.exe", name = "mitmweb" }, { target = "mitmdump.exe", name = "mitmdump" }]
 
 [source.x64]
 url = "https://snapshots.mitmproxy.org/12.2.3/mitmproxy-12.2.3-windows-x86_64.zip"

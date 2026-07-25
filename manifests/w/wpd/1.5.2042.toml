@@ -5,6 +5,7 @@ homepage = "https://wpd.app/"
 license = "Freeware"
 kind = "app"
 bin = ["WPD.exe"]
+shortcuts = [{ target = "WPD.exe", name = "WPD" }]
 
 [source.x64]
 url = "https://wpd.app/get/latest.zip"

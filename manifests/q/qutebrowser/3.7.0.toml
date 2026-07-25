@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "qutebrowser-3.7.0"
 bin = ["qutebrowser.exe"]
+shortcuts = [{ target = "qutebrowser.exe", name = "qutebrowser" }]
 
 [source.x64]
 url = "https://github.com/qutebrowser/qutebrowser/releases/download/v3.7.0/qutebrowser-3.7.0-windows-standalone.zip"

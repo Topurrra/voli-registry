@@ -4,6 +4,7 @@ description = "A proxy utility with routing rule support for clash/sing-box."
 homepage = "https://karing.app/en/"
 license = "GPL-3.0-or-later"
 kind = "app"
+shortcuts = [{ target = "karing.exe", name = "karing" }]
 persist = ["profiles"]
 
 [source.x64]

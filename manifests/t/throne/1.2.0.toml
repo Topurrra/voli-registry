@@ -4,6 +4,8 @@ description = "Cross-platform GUI proxy utility (Empowered by sing-box)"
 homepage = "https://github.com/throneproj/throne"
 license = "GPL-3.0-only"
 kind = "app"
+extract_dir = "Throne"
+shortcuts = [{ target = "Throne.exe", name = "Throne" }]
 persist = ["config"]
 
 [source.x64]

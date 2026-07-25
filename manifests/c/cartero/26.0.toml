@@ -5,6 +5,7 @@ homepage = "https://cartero.danirod.es"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["bin/cartero.exe"]
+shortcuts = [{ target = "bin/cartero.exe", name = "Cartero" }]
 
 [source.x64]
 url = "https://github.com/danirod/cartero/releases/download/v26.0/cartero-26.0-windows-x64.zip"

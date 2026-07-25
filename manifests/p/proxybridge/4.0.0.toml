@@ -5,6 +5,7 @@ homepage = "https://interceptsuite.com"
 license = "MIT"
 kind = "app"
 bin = [{ name = "ProxyBridge", path = "ProxyBridge_CLI.exe" }]
+shortcuts = [{ target = "ProxyBridge.exe", name = "Proxy Bridge" }]
 
 [source.x64]
 url = "https://github.com/InterceptSuite/ProxyBridge/releases/download/v4.0.0/ProxyBridge-Setup-4.0.0.exe#/dl.7z"

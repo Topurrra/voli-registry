@@ -5,6 +5,7 @@ homepage = "https://github.com/stakira/OpenUtau"
 license = "MIT"
 kind = "app"
 bin = ["OpenUtau.exe"]
+shortcuts = [{ target = "OpenUtau.exe", name = "OpenUtau" }]
 persist = ["Backups", "Cache", "Dictionaries", "Plugins", "Resamplers", "Singers", "Templates", "Wavtools"]
 
 [source.x64]

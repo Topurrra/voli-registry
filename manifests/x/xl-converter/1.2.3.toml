@@ -6,6 +6,7 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "xl-converter-win-1.2.3-x86_64-portable"
 bin = ["xl-converter.exe"]
+shortcuts = [{ target = "xl-converter.exe", name = "XL Converter" }]
 persist = ["_internal\\user_data"]
 
 [source.x64]

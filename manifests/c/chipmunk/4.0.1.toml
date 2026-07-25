@@ -4,6 +4,7 @@ description = "Fast logfile viewer with support for huge logfiles (>10 GB)"
 homepage = "https://github.com/esrlabs/chipmunk"
 license = "Apache-2.0"
 kind = "app"
+shortcuts = [{ target = "chipmunk.exe", name = "chipmunk" }]
 
 [source.x64]
 url = "https://github.com/esrlabs/chipmunk/releases/download/4.0.1/chipmunk@4.0.1-win64-portable.tgz"

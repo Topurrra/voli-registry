@@ -5,6 +5,7 @@ homepage = "https://github.com/RevoLand/Steam-Library-Manager"
 license = "MIT"
 kind = "app"
 bin = ["Steam Library Manager.exe", { name = "Steam-Library-Manager", path = "Steam Library Manager.exe" }, { name = "Steam.Library.Manager", path = "Steam Library Manager.exe" }]
+shortcuts = [{ target = "Steam Library Manager.exe", name = "Steam Library Manager" }]
 
 [source.x64]
 url = "https://github.com/RevoLand/Steam-Library-Manager/releases/download/v1.7.2.0/Steam.Library.Manager.zip"

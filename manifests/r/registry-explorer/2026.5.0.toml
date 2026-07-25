@@ -4,6 +4,8 @@ description = "A registry viewer with advanced search capabilities, multi-hive s
 homepage = "https://ericzimmerman.github.io"
 license = "MIT"
 kind = "app"
+extract_dir = "RegistryExplorer"
+shortcuts = [{ target = "RegistryExplorer.exe", name = "Registry Explorer" }]
 persist = ["Settings", "Bookmarks\\User"]
 
 [source.x64]

@@ -4,6 +4,7 @@ description = "Performance benchmark for Solid State Drives (SSDs)"
 homepage = "https://www.alex-is.de/PHP/fusion/infusions/downloads/downloads.php?cat_id=4&download_id=9"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "AS SSD Benchmark.exe", name = "AS SSD Benchmark" }]
 
 [source.x64]
 url = "https://www.alex-is.de/progs/AS%20SSD%20Benchmark.zip"

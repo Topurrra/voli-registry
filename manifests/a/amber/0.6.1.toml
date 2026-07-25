@@ -4,6 +4,7 @@ description = "Recursively searches/replaces directories for a regex pattern."
 homepage = "https://github.com/dalance/amber"
 license = "MIT"
 kind = "app"
+extract_dir = "target/x86_64-pc-windows-msvc/release"
 bin = ["ambs.exe", "ambr.exe"]
 
 [source.x64]

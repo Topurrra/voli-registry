@@ -4,7 +4,9 @@ description = "A fast, minimal browser that protects your privacy"
 homepage = "https://minbrowser.org/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "Min-v1.35.6"
 bin = ["Min.exe"]
+shortcuts = [{ target = "Min.exe", name = "Min" }]
 
 [source.x64]
 url = "https://github.com/minbrowser/min/releases/download/v1.35.6/Min-v1.35.6-windows.zip"

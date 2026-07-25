@@ -5,6 +5,7 @@ homepage = "https://praat.org/"
 license = "GPL-2.0-or-later"
 kind = "app"
 bin = ["Praat.exe"]
+shortcuts = [{ target = "Praat.exe", name = "Praat" }]
 
 [source.x64]
 url = "https://github.com/praat/praat.github.io/releases/download/v6.6.30/praat6630_win-x64v3.zip"

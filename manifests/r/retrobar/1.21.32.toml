@@ -5,6 +5,7 @@ homepage = "https://github.com/dremin/RetroBar"
 license = "Apache-2.0"
 kind = "app"
 bin = ["RetroBar.exe"]
+shortcuts = [{ target = "RetroBar.exe", name = "RetroBar" }]
 
 [source.x64]
 url = "https://github.com/dremin/RetroBar/releases/download/v1.21.32/RetroBar.Portable.64-bit.zip"

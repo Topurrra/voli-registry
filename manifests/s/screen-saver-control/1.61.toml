@@ -5,6 +5,7 @@ homepage = "http://www.ampsoft.net/utilities/ScreenSaverControl.php"
 license = "Freeware"
 kind = "app"
 bin = ["ScreenSaverControl.exe"]
+shortcuts = [{ target = "ScreenSaverControl.exe", name = "Screen Saver Control" }]
 
 [source.x64]
 url = "http://www.ampsoft.net/files/ScreenSaverControl.zip"

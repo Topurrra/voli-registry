@@ -4,6 +4,7 @@ description = "An app to debug in-production Electron-based apps."
 homepage = "https://github.com/pd4d10/debugtron"
 license = "MIT"
 kind = "app"
+shortcuts = [{ target = "Debugtron.exe", name = "Debugtron" }]
 
 [source.x64]
 url = "https://github.com/pd4d10/debugtron/releases/download/v0.5.0/Debugtron-win32-x64-0.5.0.zip"

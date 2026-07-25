@@ -5,6 +5,7 @@ homepage = "https://saerasoft.com/caesium"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "caesium-image-compressor-2.8.5-win"
+shortcuts = [{ target = "Caesium Image Compressor.exe", name = "Caesium Image Compressor" }]
 
 [source.x64]
 url = "https://github.com/Lymphatus/caesium-image-compressor/releases/download/v2.8.5/caesium-image-compressor-2.8.5-win-portable.zip"

@@ -4,7 +4,9 @@ description = "Video editing software based on the MLT Framework, KDE and Qt"
 homepage = "https://kdenlive.org"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "kdenlive-26.04.3_standalone"
 bin = ["bin\\kdenlive.exe"]
+shortcuts = [{ target = "bin\\kdenlive.exe", name = "Kdenlive" }]
 
 [source.x64]
 url = "https://download.kde.org/stable/kdenlive/26.04/windows/kdenlive-26.04.3_standalone.exe#/dl.7z"

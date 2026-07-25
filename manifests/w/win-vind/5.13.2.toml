@@ -4,7 +4,9 @@ description = "A Vim-oriented toy box that allows the user to operate Windows wi
 homepage = "https://github.com/pit-ray/win-vind"
 license = "MIT"
 kind = "app"
+extract_dir = "win-vind"
 bin = ["win-vind.exe"]
+shortcuts = [{ target = "win-vind.exe", name = "win-vind" }]
 persist = ["config", "log"]
 
 [source.x64]

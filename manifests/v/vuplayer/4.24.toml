@@ -5,6 +5,7 @@ homepage = "http://www.vuplayer.com"
 license = "MIT"
 kind = "app"
 bin = ["VUPlayer.exe"]
+shortcuts = [{ target = "VUPlayer.exe", name = "VUPlayer" }]
 
 [source.x64]
 url = "https://github.com/jfchapman/VUPlayer/releases/download/v4.24/VUPlayer4_64bit.zip"

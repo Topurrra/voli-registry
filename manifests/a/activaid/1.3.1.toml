@@ -4,6 +4,7 @@ description = "A modular collection of AutoHotkey-based tools."
 homepage = "https://www.heise.de/download/product/activaid-24593/"
 license = "Freeware"
 kind = "app"
+shortcuts = [{ target = "Portable_ac'tivAid.exe", name = "activaid" }]
 persist = ["settings"]
 
 [source.x64]

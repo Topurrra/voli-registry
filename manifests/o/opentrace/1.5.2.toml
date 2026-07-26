@@ -1,0 +1,28 @@
+name = "opentrace"
+version = "1.5.2"
+description = "A cross-platform GUI wrapper for NextTrace."
+homepage = "https://github.com/Archeb/opentrace"
+license = "GPL-3.0-only"
+kind = "app"
+bin = [
+    "OpenTrace.exe",
+    "nexttrace.exe",
+]
+persist = []
+write_file = []
+
+[source.x64]
+url = "https://github.com/Archeb/opentrace/releases/download/v1.5.2/win-x64.zip"
+sha256 = "326bbc045e47955263587773c1ebfc6a3ef24d4eac0d7176504dad5c603f8683"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+github = "Archeb/opentrace"
+
+[[shortcuts]]
+target = "OpenTrace.exe"
+name = "OpenTrace"

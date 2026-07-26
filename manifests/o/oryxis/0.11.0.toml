@@ -1,0 +1,15 @@
+name = "oryxis"
+version = "0.11.0"
+description = "Modern SSH client built in Rust (encrypted vault, P2P sync, AI, Kubernetes)"
+homepage = "https://github.com/wilsonglasser/oryxis"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["oryxis.exe"]
+shortcuts = [{ target = "oryxis.exe", name = "Oryxis" }]
+
+[source.x64]
+url = "https://github.com/wilsonglasser/oryxis/releases/download/v0.11.0/oryxis-windows-x86_64.zip"
+sha256 = "b348775a87393fc41534452b22ef6d9de14ab6362b38085069aa5a26a955eed8"
+
+[autoupdate]
+checkver = { github = "wilsonglasser/oryxis" }

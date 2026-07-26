@@ -1,0 +1,17 @@
+name = "nekobox"
+version = "5.11.28.1"
+description = "A lightweight proxy client, empowered by sing-box and thrift."
+homepage = "https://github.com/qr243vbi/nekobox"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "nekobox"
+bin = ["nekobox_core.exe"]
+persist = ["settings"]
+shortcuts = [{ target = "nekobox.exe", name = "NekoBox" }]
+
+[source.x64]
+url = "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.1/nekobox-5.11.28.1-windows64.zip"
+sha256 = "de967cee66e75c37b8000ae5c16b9d7deebc24ec4ccabfd15cd2c52cc1170a49"
+
+[autoupdate]
+checkver = { github = "qr243vbi/nekobox" }

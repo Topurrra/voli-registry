@@ -140,6 +140,16 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         .get("homepage")
         .and_then(Value::as_str)
         .map(str::to_string);
+    let icon = json
+        .get("icon")
+        .and_then(Value::as_str)
+        .filter(|url| url.starts_with("https://"))
+        .or_else(|| match name.as_str() {
+            "googlechrome" => {
+                Some("https://www.google.com/chrome/static/images/chrome-logo-m100.svg")
+            }
+            _ => None,
+        });
     let license = parse_license(json.get("license"));
     let autoupdate = build_autoupdate(json, homepage.as_deref());
 
@@ -148,6 +158,7 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         &version,
         description.as_deref(),
         homepage.as_deref(),
+        icon,
         license.as_deref(),
         extract_dir.as_deref(),
         &bins,
@@ -688,6 +699,7 @@ fn emit_toml(
     version: &str,
     description: Option<&str>,
     homepage: Option<&str>,
+    icon: Option<&str>,
     license: Option<&str>,
     extract_dir: Option<&str>,
     bins: &[BinOut],
@@ -709,6 +721,9 @@ fn emit_toml(
     }
     if let Some(h) = homepage {
         o.push_str(&format!("homepage = {}\n", esc(h)));
+    }
+    if let Some(i) = icon {
+        o.push_str(&format!("icon = {}\n", esc(i)));
     }
     if let Some(l) = license {
         o.push_str(&format!("license = {}\n", esc(l)));

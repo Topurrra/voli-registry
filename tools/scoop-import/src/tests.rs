@@ -26,6 +26,7 @@ fn simple_single_url_top_level() {
             "version": "1.0.0",
             "description": "A tool",
             "homepage": "https://example.com",
+            "icon": "https://example.com/tool.svg",
             "license": "MIT",
             "url": "https://example.com/tool-1.0.0.zip",
             "hash": "a".repeat(64),
@@ -35,10 +36,28 @@ fn simple_single_url_top_level() {
     assert_eq!(m.name, "tool");
     assert_eq!(m.version, "1.0.0");
     assert_eq!(m.kind, Kind::App);
+    assert_eq!(m.icon.as_deref(), Some("https://example.com/tool.svg"));
     assert!(m.source.x64.is_some());
     assert!(m.source.arm64.is_none());
     assert_eq!(m.source.x64.unwrap().hash(), "a".repeat(64));
     assert_eq!(m.bin, vec![Bin::Path("tool.exe".into())]);
+}
+
+#[test]
+fn curated_icon_survives_future_imports() {
+    let m = ok(
+        "googlechrome",
+        json!({
+            "version": "1.0.0",
+            "url": "https://example.com/chrome.zip",
+            "hash": "a".repeat(64),
+            "bin": "chrome.exe"
+        }),
+    );
+    assert_eq!(
+        m.icon.as_deref(),
+        Some("https://www.google.com/chrome/static/images/chrome-logo-m100.svg")
+    );
 }
 
 #[test]

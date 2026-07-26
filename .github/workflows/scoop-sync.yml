@@ -38,7 +38,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
           git clone --depth 1 https://github.com/ScoopInstaller/Extras /tmp/scoop-extras
-          git clone --depth 1 --branch v0.5.4 https://github.com/Topurrra/voli ../voli
+          git clone --depth 1 --branch v0.5.5 https://github.com/Topurrra/voli ../voli
 
       - name: Build scoop-import
         working-directory: tools/scoop-import

@@ -313,6 +313,89 @@ fn autoupdate_github_from_homepage() {
     }
 }
 
+#[test]
+fn autoupdate_vendor_url_regex_is_declarative() {
+    match convert(
+        "brave",
+        &json!({
+            "version": "1.0",
+            "url": "https://x/brave-1.0.zip",
+            "hash": "b".repeat(64),
+            "checkver": {
+                "url": "https://example.com/latest.version",
+                "regex": "([\\d.]+)"
+            }
+        }),
+    ) {
+        Outcome::Ok(c) => assert!(
+            c.toml.contains(
+                r#"checkver = { url = "https://example.com/latest.version", regex = "([\\d.]+)" }"#
+            ),
+            "{}",
+            c.toml
+        ),
+        Outcome::Skip(r) => panic!("skip {r}"),
+    }
+}
+
+#[test]
+fn autoupdate_preserves_architecture_url_templates() {
+    match convert(
+        "tool",
+        &json!({
+            "version": "1.0",
+            "homepage": "https://github.com/example/tool",
+            "architecture": {
+                "64bit": {
+                    "url": "https://example.com/tool-1.0-x64.zip",
+                    "hash": "b".repeat(64)
+                },
+                "arm64": {
+                    "url": "https://example.com/tool-1.0-arm64.zip",
+                    "hash": "c".repeat(64)
+                }
+            },
+            "checkver": "github",
+            "autoupdate": {
+                "architecture": {
+                    "64bit": { "url": "https://example.com/tool-$version-x64.zip" },
+                    "arm64": { "url": "https://example.com/tool-$version-arm64.zip" }
+                }
+            }
+        }),
+    ) {
+        Outcome::Ok(c) => assert!(
+            c.toml.contains(
+                r#"url_template = { x64 = "https://example.com/tool-$version-x64.zip", arm64 = "https://example.com/tool-$version-arm64.zip" }"#
+            ),
+            "{}",
+            c.toml
+        ),
+        Outcome::Skip(r) => panic!("skip {r}"),
+    }
+}
+
+#[test]
+fn autoupdate_googlechrome_uses_clean_room_vendor_resolver() {
+    match convert(
+        "googlechrome",
+        &json!({
+            "version": "1.0",
+            "url": "https://x/chrome-1.0.zip",
+            "hash": "b".repeat(64),
+            "checkver": { "script": ["do not import"], "regex": "(.+)" }
+        }),
+    ) {
+        Outcome::Ok(c) => assert!(
+            c.toml
+                .contains(r#"checkver = { vendor = "google-chrome" }"#),
+            "{}",
+            c.toml
+        ),
+        Outcome::Skip(r) => panic!("skip {r}"),
+    }
+}
+
 // --- skip reasons --------------------------------------------------------
 
 #[test]

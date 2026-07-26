@@ -144,14 +144,14 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         .get("icon")
         .and_then(Value::as_str)
         .filter(|url| url.starts_with("https://"))
-        .or_else(|| match name.as_str() {
+        .or(match name.as_str() {
             "googlechrome" => {
                 Some("https://www.google.com/chrome/static/images/chrome-logo-m100.svg")
             }
             _ => None,
         });
     let license = parse_license(json.get("license"));
-    let autoupdate = build_autoupdate(json, homepage.as_deref());
+    let autoupdate = build_autoupdate(&name, json, homepage.as_deref());
 
     let toml = emit_toml(
         &name,
@@ -617,8 +617,12 @@ fn string_or_joined(v: Option<&Value>) -> Option<String> {
 
 /// Best-effort [autoupdate] contents (opaque to the client).
 /// Returns the body to place under `[autoupdate]`, or None if no checkver.
-fn build_autoupdate(json: &Value, homepage: Option<&str>) -> Option<String> {
+fn build_autoupdate(name: &str, json: &Value, homepage: Option<&str>) -> Option<String> {
     let cv = json.get("checkver").filter(|v| !v.is_null())?;
+
+    if name == "googlechrome" {
+        return Some(r#"checkver = { vendor = "google-chrome" }"#.to_string());
+    }
 
     // Prefer an explicit github repo, then a github homepage.
     let repo = cv
@@ -628,14 +632,73 @@ fn build_autoupdate(json: &Value, homepage: Option<&str>) -> Option<String> {
         .or_else(|| homepage.and_then(github_repo));
 
     if let Some(repo) = repo {
-        return Some(format!("checkver = {{ github = {} }}", esc(&repo)));
+        return Some(with_url_template(
+            format!("checkver = {{ github = {} }}", esc(&repo)),
+            json,
+        ));
+    }
+    if cv.get("script").is_none()
+        && let (Some(url), Some(regex)) = (
+            cv.get("url").and_then(Value::as_str),
+            cv.get("regex").and_then(Value::as_str),
+        )
+        && url.starts_with("https://")
+    {
+        return Some(with_url_template(
+            format!(
+                "checkver = {{ url = {}, regex = {} }}",
+                esc(url),
+                esc(regex)
+            ),
+            json,
+        ));
     }
     // Non-github: store the raw pattern as an opaque string.
     let raw = match cv {
         Value::String(s) => s.clone(),
         other => serde_json::to_string(other).unwrap_or_default(),
     };
-    Some(format!("checkver = {}", esc(&raw)))
+    Some(with_url_template(format!("checkver = {}", esc(&raw)), json))
+}
+
+fn with_url_template(mut body: String, json: &Value) -> String {
+    let Some(autoupdate) = json.get("autoupdate") else {
+        return body;
+    };
+    if let Some(url) = autoupdate.get("url").and_then(supported_url_template) {
+        body.push_str(&format!("\nurl_template = {}", esc(url)));
+        return body;
+    }
+
+    let Some(architectures) = autoupdate.get("architecture") else {
+        return body;
+    };
+    let x64 = architectures
+        .get("64bit")
+        .and_then(|value| value.get("url"))
+        .and_then(supported_url_template);
+    let arm64 = architectures
+        .get("arm64")
+        .and_then(|value| value.get("url"))
+        .and_then(supported_url_template);
+    let mut templates = Vec::new();
+    if let Some(url) = x64 {
+        templates.push(format!("x64 = {}", esc(url)));
+    }
+    if let Some(url) = arm64 {
+        templates.push(format!("arm64 = {}", esc(url)));
+    }
+    if !templates.is_empty() {
+        body.push_str(&format!("\nurl_template = {{ {} }}", templates.join(", ")));
+    }
+    body
+}
+
+fn supported_url_template(value: &Value) -> Option<&str> {
+    value
+        .as_str()
+        .filter(|url| url.starts_with("https://"))
+        .filter(|url| url.contains("$version") || url.contains("{version}"))
 }
 
 /// "owner/repo" from a github URL or a bare "owner/repo".

@@ -13,3 +13,4 @@ sha256 = "04a01ea95ae96df75058a893e774957d294e69012dab1f4e256ce2b0c6725483"
 
 [autoupdate]
 checkver = { github = "mitmproxy/mitmproxy" }
+url_template = "https://snapshots.mitmproxy.org/$version/mitmproxy-$version-windows-x86_64.zip"

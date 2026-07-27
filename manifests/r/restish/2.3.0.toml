@@ -12,3 +12,4 @@ sha256 = "8d9f468996c986a5ad49e53c5224fec9f86670328b05675a02891e3c4d54225b"
 
 [autoupdate]
 checkver = { github = "danielgtaylor/restish" }
+url_template = { x64 = "https://github.com/danielgtaylor/restish/releases/download/v$version/restish-$version-windows-amd64.zip" }

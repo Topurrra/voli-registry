@@ -12,3 +12,4 @@ sha256 = "997fa0a19f5e7bd157d8bca3b19c57a93b005fa77c74b3684b52627d244cd25f"
 
 [autoupdate]
 checkver = { github = "todbot/blink1-tool" }
+url_template = "https://github.com/todbot/blink1-tool/releases/download/v$version/blink1-tool-v$version-windows-x86_64.zip"

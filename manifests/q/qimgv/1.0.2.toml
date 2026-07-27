@@ -15,3 +15,4 @@ sha256 = "17600bcde1f3c5b2bc7fdbabe0f1679c16bdf9ff4b34656826faa2d768344135"
 
 [autoupdate]
 checkver = { github = "easymodo/qimgv" }
+url_template = { x64 = "https://github.com/easymodo/qimgv/releases/download/v$version/qimgv-x64_$version.zip" }

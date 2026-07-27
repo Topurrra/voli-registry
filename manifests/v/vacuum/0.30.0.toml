@@ -16,3 +16,4 @@ sha256 = "32cfaf6c0062fe4ef0a0add76c98937e84b5b11a66c390ec024288f85b44bc7f"
 
 [autoupdate]
 checkver = { github = "daveshanley/vacuum" }
+url_template = { x64 = "https://github.com/daveshanley/vacuum/releases/download/v$version/vacuum_$version_windows_x86_64.tar.gz", arm64 = "https://github.com/daveshanley/vacuum/releases/download/v$version/vacuum_$version_windows_arm64.tar.gz" }

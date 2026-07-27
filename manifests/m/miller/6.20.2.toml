@@ -13,3 +13,4 @@ sha256 = "c49cb6c1dd3a5a8c7b63f64e6758c910caf4b4b2aae040e75946aaa5bff77b6d"
 
 [autoupdate]
 checkver = { github = "johnkerl/miller" }
+url_template = { x64 = "https://github.com/johnkerl/miller/releases/download/v$version/miller-$version-windows-amd64.zip" }

@@ -17,3 +17,4 @@ sha256 = "876f43a9b8b79051f7cc2a9a86dab8353ffccbe5c20c1abbcdb94e774fca9e9a"
 
 [autoupdate]
 checkver = { github = "danirod/cartero" }
+url_template = { x64 = "https://github.com/danirod/cartero/releases/download/v$version/cartero-$version-windows-x64.zip", arm64 = "https://github.com/danirod/cartero/releases/download/v$version/cartero-$version-windows-arm64.zip" }

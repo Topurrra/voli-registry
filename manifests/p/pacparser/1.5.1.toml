@@ -13,3 +13,4 @@ sha256 = "9cd28dbb2d05b6bc84d466872012f9070cc5e0ce2970a297430d70bc8ac0dca7"
 
 [autoupdate]
 checkver = { github = "manugarg/pacparser" }
+url_template = { x64 = "https://github.com/manugarg/pacparser/releases/download/v$version/pacparser-v$version-windows-x86_64.zip" }

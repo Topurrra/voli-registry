@@ -20,3 +20,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "GyulyVGC/sniffnet" }
+url_template = { x64 = "https://github.com/GyulyVGC/sniffnet/releases/download/v$version/Sniffnet_Windows_x64.msi", arm64 = "https://github.com/GyulyVGC/sniffnet/releases/download/v$version/Sniffnet_Windows_arm64.msi" }

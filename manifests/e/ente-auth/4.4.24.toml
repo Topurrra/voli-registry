@@ -12,4 +12,5 @@ url = "https://github.com/ente-io/ente/releases/download/auth-v4.4.24/ente-auth-
 sha256 = "bcfea3470626b134d8dedf9e87ea3ea74b675499aaf1105b9525a942d85af9fa"
 
 [autoupdate]
-checkver = "{\"regex\":\"/releases/tag/(?:auth-v)?([\\\\d.]+)\\\"\",\"url\":\"https://github.com/ente-io/ente/releases?q=auth\"}"
+checkver = { url = "https://github.com/ente-io/ente/releases?q=auth", regex = "/releases/tag/(?:auth-v)?([\\d.]+)\"" }
+url_template = "https://github.com/ente-io/ente/releases/download/auth-v$version/ente-auth-v$version-windows.zip"

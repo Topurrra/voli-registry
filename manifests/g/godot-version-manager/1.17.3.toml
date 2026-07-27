@@ -12,3 +12,4 @@ sha256 = "5fb254dd371e261c8a213be3148540149a61d7b6f8b2da6f7c894689a755bdf4"
 
 [autoupdate]
 checkver = { github = "noidexe/godot-version-manager" }
+url_template = { x64 = "https://github.com/noidexe/godot-version-manager/releases/download/v$version/Godot.Version.Manager.v$version-win.zip" }

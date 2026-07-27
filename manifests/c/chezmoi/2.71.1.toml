@@ -16,3 +16,4 @@ sha256 = "fdc6e21dcfd244144c06f3479e51cfabb5343196b88021207a169b0e916bc64d"
 
 [autoupdate]
 checkver = { github = "twpayne/chezmoi" }
+url_template = { x64 = "https://github.com/twpayne/chezmoi/releases/download/v$version/chezmoi_$version_windows_amd64.zip", arm64 = "https://github.com/twpayne/chezmoi/releases/download/v$version/chezmoi_$version_windows_arm64.zip" }

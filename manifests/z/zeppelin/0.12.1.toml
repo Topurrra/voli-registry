@@ -15,4 +15,5 @@ sha512 = "026505894534903fb9042bc86eb94fe9ec25a70745533d8cc59ed9963a249eca11443f
 PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"zeppelin-([\\\\d.]+)-bin-all\\\\.tgz\",\"url\":\"https://zeppelin.apache.org/download.html\"}"
+checkver = { url = "https://zeppelin.apache.org/download.html", regex = "zeppelin-([\\d.]+)-bin-all\\.tgz" }
+url_template = "https://www.apache.org/dist/zeppelin/zeppelin-$version/zeppelin-$version-bin-all.tgz#/zeppelin.tar.gz"

@@ -1,0 +1,17 @@
+name = "apache"
+version = "2.4.66"
+description = "The Apache HTTP Server ('httpd')"
+homepage = "https://www.apachelounge.com"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Apache24"
+bin = ["bin\\ab.exe", "bin\\abs.exe", "bin\\htcacheclean.exe", "bin\\htdbm.exe", "bin\\htdigest.exe", "bin\\htpasswd.exe", "bin\\httpd.exe", "bin\\httxt2dbm.exe", "bin\\logresolve.exe", "bin\\rotatelogs.exe"]
+persist = ["htdocs", "conf", "logs"]
+
+[source.x64]
+url = "https://fossies.org/windows/www/httpd-2.4.66-251206-Win64-VS17.zip"
+sha256 = "7c78cda3aed9a6b5af7af640b6b961ae0566ab933bbbca3d39ef5dd3912386f3"
+
+[autoupdate]
+checkver = { url = "https://fossies.org/windows/www/", regex = "httpd-([\\d.]+)-(?<date>[\\d]+)-(?<arch>(w|W)in64)-VS17\\.zip" }
+url_template = { x64 = "https://fossies.org/windows/www/httpd-$version-$matchDate-$matchArch-VS17.zip" }

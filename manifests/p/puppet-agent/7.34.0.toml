@@ -1,0 +1,16 @@
+name = "puppet-agent"
+version = "7.34.0"
+description = "An open-core software configuration management tool."
+homepage = "https://puppetlabs.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["Puppet Labs\\Puppet\\bin\\facter.bat", "Puppet Labs\\Puppet\\bin\\facter_interactive.bat", "Puppet Labs\\Puppet\\bin\\hiera.bat", "Puppet Labs\\Puppet\\bin\\puppet.bat", "Puppet Labs\\Puppet\\bin\\puppet_interactive.bat"]
+
+[source.x64]
+url = "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-7.34.0-x64.msi"
+sha256 = "c7725c18c5054e79494a64452aed444cf1dae86f9864b863544f6c98c4b23302"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://downloads.puppetlabs.com/windows/puppet/index_by_lastModified_reverse.html", regex = "puppet-agent-([\\d.]+)-x64\\.msi" }
+url_template = { x64 = "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-$version-x64.msi" }

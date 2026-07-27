@@ -13,3 +13,4 @@ sha256 = "7f9ebf301989d0f13640d21150c168ae9d4cc72cac59a1dccf7a42b30ccb89fc"
 
 [autoupdate]
 checkver = { github = "antonpup/Aurora" }
+url_template = "https://github.com/antonpup/Aurora/releases/download/v$version/Aurora-v$version.zip"

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/hoppscotch/releases/releases/latest\",\"jsonpath\":\"$.tag_name\",\"regex\":\"v(?<version>[\\\\d.]+-\\\\d+)\"}"
+url_template = { x64 = "https://github.com/hoppscotch/releases/releases/download/v$version/Hoppscotch_win_x64.msi" }

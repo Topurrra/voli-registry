@@ -16,3 +16,4 @@ sha256 = "237e7d4eaddb1f43c0aff110612bd9415b07f021939b00932d70d0ba2484cf34"
 
 [autoupdate]
 checkver = { github = "clitic/vsd" }
+url_template = { x64 = "https://github.com/clitic/vsd/releases/download/vsd-$version/vsd-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/clitic/vsd/releases/download/vsd-$version/vsd-$version-aarch64-pc-windows-msvc.zip" }

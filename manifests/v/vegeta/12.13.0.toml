@@ -16,3 +16,4 @@ sha256 = "d8852495569b006b5db920f437865756573a494123aa8ec5d7af166cf2ce1263"
 
 [autoupdate]
 checkver = { github = "tsenart/vegeta" }
+url_template = { x64 = "https://github.com/tsenart/vegeta/releases/download/v$version/vegeta_$version_windows_amd64.zip", arm64 = "https://github.com/tsenart/vegeta/releases/download/v$version/vegeta_$version_windows_arm64.zip" }

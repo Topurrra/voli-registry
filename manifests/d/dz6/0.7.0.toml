@@ -12,3 +12,4 @@ sha256 = "90f82558ac56d910f997d2e5b6a20aad5967fb00b676bb77985c1ca7b0262b9f"
 
 [autoupdate]
 checkver = { github = "mentebinaria/dz6" }
+url_template = { x64 = "https://github.com/mentebinaria/dz6/releases/download/v$version/dz6-x86_64-pc-windows-msvc.zip" }

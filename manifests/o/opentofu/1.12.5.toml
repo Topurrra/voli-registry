@@ -12,3 +12,4 @@ sha256 = "465adc4bdf4aa80c650387b7ada2cf750f7908bf1fae7f35b05402c384e79928"
 
 [autoupdate]
 checkver = { github = "opentofu/opentofu" }
+url_template = { x64 = "https://github.com/opentofu/opentofu/releases/download/v$version/tofu_$version_windows_amd64.zip" }

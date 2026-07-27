@@ -13,3 +13,4 @@ sha256 = "d73c5f6b3d34d4ef6299eda6206fbe8ff402b7840f69af1182da5a94a22e0c00"
 
 [autoupdate]
 checkver = { github = "equalsraf/neovim-qt" }
+url_template = "https://github.com/equalsraf/neovim-qt/releases/download/v$version/neovim-qt.zip"

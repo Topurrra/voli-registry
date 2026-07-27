@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "wagesj45/butterflow-ui" }
+url_template = { x64 = "https://github.com/wagesj45/butterflow-ui/releases/download/$version/butterflow_ui.setup.msi" }

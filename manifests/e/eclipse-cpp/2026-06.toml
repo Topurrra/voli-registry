@@ -12,4 +12,4 @@ url = "http://download.eclipse.org/technology/epp/downloads/release/2026-06/R/ec
 sha512 = "91bfb18ac2f2a1330ce14491a60d89fd71b11d27e2a3272bc5b5e370bef3a536925ccb12b0fa82160a47f14494b7519e698409007b2e007b0f8739af7e69b353"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d-]+)\",\"url\":\"https://download.eclipse.org/technology/epp/downloads/release/release.xml\",\"xpath\":\"/packages/present\"}"
+checkver = { url = "https://download.eclipse.org/technology/epp/downloads/release/release.xml", regex = "([\\d-]+)" }

@@ -13,3 +13,4 @@ sha256 = "4380cd1e19e2f527d3492d8437beb5a9569791fd568e3d6345af2e4cec492a68"
 
 [autoupdate]
 checkver = { github = "roslynpad/roslynpad" }
+url_template = { x64 = "https://github.com/roslynpad/roslynpad/releases/download/$version/RoslynPad-windows-x64.zip" }

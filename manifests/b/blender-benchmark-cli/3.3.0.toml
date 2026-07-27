@@ -11,4 +11,5 @@ url = "https://download.blender.org/release/BlenderBenchmark2.0/launcher/benchma
 sha256 = "3f00bb68915800f14ddad6877083544aa25c56aac252b77b161bf7962ee67dde"
 
 [autoupdate]
-checkver = "{\"regex\":\"benchmark-launcher-cli-([\\\\w.]+)-windows.zip\",\"url\":\"https://opendata.blender.org/\"}"
+checkver = { url = "https://opendata.blender.org/", regex = "benchmark-launcher-cli-([\\w.]+)-windows.zip" }
+url_template = "https://download.blender.org/release/BlenderBenchmark2.0/launcher/benchmark-launcher-cli-$version-windows.zip"

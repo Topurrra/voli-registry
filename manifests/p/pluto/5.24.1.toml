@@ -12,3 +12,4 @@ sha256 = "80072f0ed02ff4c02099b58c0cb88d513240cf0f1b4772d962e9d03b0a44c7ef"
 
 [autoupdate]
 checkver = { github = "FairwindsOps/pluto" }
+url_template = { x64 = "https://github.com/FairwindsOps/pluto/releases/download/v$version/pluto_$version_windows_amd64.tar.gz" }

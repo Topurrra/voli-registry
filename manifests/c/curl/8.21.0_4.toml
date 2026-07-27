@@ -16,4 +16,5 @@ url = "https://curl.se/windows/dl-8.21.0_4/curl-8.21.0_4-win64a-mingw.tar.xz"
 sha256 = "94fdc6ddba41b24a5767b49bf41f131daa36376b07cabdab3f9971a9a5f809f8"
 
 [autoupdate]
-checkver = "{\"regex\":\"Build<\\\\/b>:\\\\s+([\\\\d._]+)\",\"url\":\"https://curl.se/windows/\"}"
+checkver = { url = "https://curl.se/windows/", regex = "Build<\\/b>:\\s+([\\d._]+)" }
+url_template = { x64 = "https://curl.se/windows/dl-$version/curl-$version-win64-mingw.tar.xz", arm64 = "https://curl.se/windows/dl-$version/curl-$version-win64a-mingw.tar.xz" }

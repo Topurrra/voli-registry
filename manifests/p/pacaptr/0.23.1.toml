@@ -16,3 +16,4 @@ sha256 = "6305397261b943799d45f6c19c959ac43ab8beaaa9c20694e6ad4bd441b1173e"
 
 [autoupdate]
 checkver = { github = "rami3l/pacaptr" }
+url_template = { x64 = "https://github.com/rami3l/pacaptr/releases/download/v$version/pacaptr-windows-amd64.zip", arm64 = "https://github.com/rami3l/pacaptr/releases/download/v$version/pacaptr-windows-arm64.zip" }

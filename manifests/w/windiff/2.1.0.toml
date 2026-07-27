@@ -13,3 +13,4 @@ sha256 = "e25ccdc2fef77eb001fc3a5d755d448a301338d7e4feb2cf365bcb3d34200931"
 
 [autoupdate]
 checkver = { github = "kitamstudios/WinDiff" }
+url_template = "https://github.com/kitamstudios/WinDiff/releases/download/v$version/WinDiff.zip"

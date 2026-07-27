@@ -16,3 +16,4 @@ sha256 = "6d1ec05d084af804936c0981980dbfb3902ad694b90ec9fd56ecd78a35633f25"
 
 [autoupdate]
 checkver = { github = "namazso/SecureUxTheme" }
+url_template = { x64 = "https://github.com/namazso/SecureUxTheme/releases/download/v$version/SecureUxTheme-amd64.zip", arm64 = "https://github.com/namazso/SecureUxTheme/releases/download/v$version/SecureUxTheme-arm64.zip" }

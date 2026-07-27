@@ -17,3 +17,4 @@ sha256 = "e7da8d04113aa08e6c55b0a5ede3959cfb79ae578832558a43907cc793236b28"
 
 [autoupdate]
 checkver = { github = "MikeWang000000/spek-X" }
+url_template = { x64 = "https://github.com/MikeWang000000/spek-X/releases/download/v$version/spek-x-$version-windows-x86_64.zip", arm64 = "https://github.com/MikeWang000000/spek-X/releases/download/v$version/spek-x-$version-windows-aarch64.zip" }

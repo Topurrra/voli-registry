@@ -12,3 +12,4 @@ sha256 = "2d40455b4978987923106a6a5d67fc7555dc74cd339edb5d05ed318d2dbc8ecd"
 
 [autoupdate]
 checkver = { github = "labstack/armor" }
+url_template = { x64 = "https://github.com/labstack/armor/releases/download/v$version/armor_$version_windows_64-bit.zip" }

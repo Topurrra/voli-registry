@@ -12,3 +12,4 @@ sha256 = "1638a53d63a634ab2f9fba6e636c9eb1f847dc503f58e3579aee25c1a1b30f6a"
 
 [autoupdate]
 checkver = { github = "LGUG2Z/unsubscan" }
+url_template = { x64 = "https://github.com/LGUG2Z/unsubscan/releases/download/v$version/unsubscan-v$version-x86_64-pc-windows-msvc.zip" }

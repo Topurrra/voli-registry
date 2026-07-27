@@ -16,3 +16,4 @@ sha256 = "aa9b926313f922a2c7c668076dd5a2754724d61f528c1d5ef033bed11b27eccd"
 
 [autoupdate]
 checkver = { github = "sqlc-dev/sqlc" }
+url_template = { x64 = "https://github.com/sqlc-dev/sqlc/releases/download/v$version/sqlc_$version_windows_amd64.tar.gz", arm64 = "https://github.com/sqlc-dev/sqlc/releases/download/v$version/sqlc_$version_windows_arm64.tar.gz" }

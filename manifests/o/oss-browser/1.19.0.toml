@@ -14,3 +14,4 @@ sha256 = "bd6311c50051966c8b165e52c7729b518df5f09f51d8c05a4552efb3cc72ebba"
 
 [autoupdate]
 checkver = { github = "aliyun/oss-browser" }
+url_template = { x64 = "https://oss-attachment.oss-cn-zhangjiakou.aliyuncs.com/ossbrowser/$version/oss-browser-win32-x64.zip" }

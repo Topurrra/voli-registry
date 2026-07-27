@@ -13,3 +13,4 @@ sha256 = "1fdb7c7ceedae2e97aba68ec7eeb262b8229b1b7a0096e315806981f2e6dacf4"
 
 [autoupdate]
 checkver = { github = "CatalystDevOrg/Catalyst" }
+url_template = { x64 = "https://github.com/CatalystDevOrg/Catalyst/releases/download/v$version/catalyst-$version-full.nupkg" }

@@ -1,0 +1,19 @@
+name = "fnm"
+version = "1.39.0"
+description = "Cross-platform Node.js version switcher"
+homepage = "https://github.com/Schniz/fnm"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["fnm.exe"]
+persist = ["aliases", "node-versions"]
+
+[source.x64]
+url = "https://github.com/Schniz/fnm/releases/download/v1.39.0/fnm-windows.zip"
+sha256 = "8183bed4348cb78fdfd8abb3d1247fbeab7b2082f941363929c61e747c001e10"
+
+[env]
+FNM_DIR = "{dir}"
+
+[autoupdate]
+checkver = { github = "Schniz/fnm" }
+url_template = { x64 = "https://github.com/Schniz/fnm/releases/download/v$version/fnm-windows.zip" }

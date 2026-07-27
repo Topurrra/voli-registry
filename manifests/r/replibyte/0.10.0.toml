@@ -12,3 +12,4 @@ sha256 = "7d4a33356eb5c7175d6d2dfec4013cfc09d04f3aff4a552d9e330108c4522b7c"
 
 [autoupdate]
 checkver = { github = "Qovery/Replibyte" }
+url_template = { x64 = "https://github.com/Qovery/Replibyte/releases/download/v$version/replibyte_v$version_x86_64-pc-windows-gnu.exe.zip" }

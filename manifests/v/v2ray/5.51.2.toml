@@ -17,3 +17,4 @@ sha256 = "50c96fe962ea84941585c3f3032d5ae0975d2209473c6fbd196b219fe44bbb8f"
 
 [autoupdate]
 checkver = { github = "v2fly/v2ray-core" }
+url_template = { x64 = "https://github.com/v2fly/v2ray-core/releases/download/v$version/v2ray-windows-64.zip", arm64 = "https://github.com/v2fly/v2ray-core/releases/download/v$version/v2ray-windows-arm64-v8a.zip" }

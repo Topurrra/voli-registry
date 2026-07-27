@@ -19,3 +19,4 @@ sha256 = "466c83fb68b8d1e767e64e94060bde437d936625f17615b210abadbb115464b5"
 
 [autoupdate]
 checkver = { github = "deskflow/deskflow" }
+url_template = { x64 = "https://github.com/deskflow/deskflow/releases/download/v$version/deskflow-$version-win-x64-portable.7z", arm64 = "https://github.com/deskflow/deskflow/releases/download/v$version/deskflow-$version-win-arm64-portable.7z" }

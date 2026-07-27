@@ -12,3 +12,4 @@ sha256 = "7cef2e64bba950f5425c2c46983b1ca4a5122a33ff60e2cf3ff001e24d0beb30"
 
 [autoupdate]
 checkver = { github = "rvben/rumdl" }
+url_template = { x64 = "https://github.com/rvben/rumdl/releases/download/v$version/rumdl-v$version-x86_64-pc-windows-msvc.zip" }

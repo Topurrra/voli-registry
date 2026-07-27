@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "microsoft/BITS-Manager" }
+url_template = "https://github.com/microsoft/BITS-Manager/releases/download/v$version/BITSManager.msi"

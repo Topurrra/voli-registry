@@ -12,3 +12,4 @@ sha256 = "a31d9effd17c9c9effcc24ba3674326a7798fc6f29d94ce4dcf49c8ad6aa3648"
 
 [autoupdate]
 checkver = { github = "hetznercloud/cli" }
+url_template = { x64 = "https://github.com/hetznercloud/cli/releases/download/v$version/hcloud-windows-amd64.zip" }

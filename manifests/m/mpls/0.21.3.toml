@@ -16,3 +16,4 @@ sha256 = "4d77fc53d96ad25e48f33258796e93ec118419f83349adbcbb947b685b822945"
 
 [autoupdate]
 checkver = { github = "mhersson/mpls" }
+url_template = { x64 = "https://github.com/mhersson/mpls/releases/download/v$version/mpls_$version_windows_amd64.zip", arm64 = "https://github.com/mhersson/mpls/releases/download/v$version/mpls_$version_windows_arm64.zip" }

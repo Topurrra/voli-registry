@@ -16,3 +16,4 @@ sha256 = "9f3871a709fa1777dcac70ffb468c819232286f4a8ed58617c40c7232b3860aa"
 
 [autoupdate]
 checkver = { github = "jmhobbs/terminal-parrot" }
+url_template = { x64 = "https://github.com/jmhobbs/terminal-parrot/releases/download/$version/terminal-parrot_Windows_x86_64.zip", arm64 = "https://github.com/jmhobbs/terminal-parrot/releases/download/$version/terminal-parrot_Windows_arm64.zip" }

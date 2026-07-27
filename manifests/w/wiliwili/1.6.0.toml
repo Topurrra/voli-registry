@@ -13,3 +13,4 @@ sha256 = "e98bdbbbc0ab0ac5860c50e35c6414bcd093d0b695e5cce31ccc52b85155d760"
 
 [autoupdate]
 checkver = { github = "xfangfang/wiliwili" }
+url_template = { x64 = "https://github.com/xfangfang/wiliwili/releases/download/v$version/wiliwili-Windows-x86_64.zip" }

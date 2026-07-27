@@ -1,15 +1,16 @@
 name = "nircmd"
 version = "2.87"
-description = "Do many useful tasks from command-line."
+description = "Execute various system wide tasks."
 homepage = "https://www.nirsoft.net/utils/nircmd.html"
 license = "Freeware"
 kind = "app"
-bin = ["nircmd.exe"]
-persist = ["nircmd_lng.ini", "nircmd.cfg"]
 
 [source.x64]
 url = "https://www.nirsoft.net/utils/nircmd-x64.zip"
 sha256 = "51e34ed379dd099a96bbf0a2266003361e2864fe3ef2f8baed76634909763a7c"
 
+[env]
+PATH = "{dir}"
+
 [autoupdate]
-checkver = "{\"url\":\"https://www.nirsoft.net/pad/nircmd.xml\",\"xpath\":\"/XML_DIZ_INFO/Program_Info/Program_Version\"}"
+checkver = "<td>NirCmd v([\\d.]+)"

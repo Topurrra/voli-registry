@@ -13,3 +13,4 @@ sha256 = "e90f4faea709b3c0a55909646a2b94289b9779ba9c8fd5c6eaa847d3f67312eb"
 
 [autoupdate]
 checkver = { github = "AsamK/signal-cli" }
+url_template = "https://github.com/AsamK/signal-cli/releases/download/v$version/signal-cli-$version.tar.gz"

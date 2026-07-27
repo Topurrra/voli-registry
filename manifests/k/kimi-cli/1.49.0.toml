@@ -4,6 +4,7 @@ description = "Kimi CLI is your next CLI agent."
 homepage = "https://github.com/MoonshotAI/kimi-cli/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "kimi"
 bin = ["kimi.exe"]
 
 [source.x64]
@@ -16,3 +17,4 @@ sha256 = "56ddcf0a640a36fd987d3c283b9782b4e59c6b0c53e575cdbfa72784a2de1a8a"
 
 [autoupdate]
 checkver = { github = "MoonshotAI/kimi-cli" }
+url_template = { x64 = "https://github.com/MoonshotAI/kimi-cli/releases/download/$version/kimi-$version-x86_64-pc-windows-msvc-onedir.zip", arm64 = "https://github.com/MoonshotAI/kimi-cli/releases/download/$version/kimi-$version-aarch64-pc-windows-msvc-onedir.zip" }

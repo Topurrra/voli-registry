@@ -13,3 +13,4 @@ sha256 = "ab6fb4ff4a313cd2fddf527db44ae10606438fcc3442fc4a050551bbdc295058"
 
 [autoupdate]
 checkver = { github = "hovancik/stretchly" }
+url_template = { x64 = "https://github.com/hovancik/stretchly/releases/download/v$version/stretchly-$version-win.7z" }

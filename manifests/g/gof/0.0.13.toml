@@ -13,3 +13,4 @@ sha256 = "b3b27a935abd925764a3005cccb3c379347956c279c6019a7e4c3728db4413db"
 
 [autoupdate]
 checkver = { github = "mattn/gof" }
+url_template = { x64 = "https://github.com/mattn/gof/releases/download/v$version/gof_v$version_windows_amd64.zip" }

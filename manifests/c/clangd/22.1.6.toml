@@ -13,3 +13,4 @@ sha256 = "ce54f16e0b4fd76d450eeda9664420b195360b73febcfe40e661108fa57f2ce1"
 
 [autoupdate]
 checkver = { github = "clangd/clangd" }
+url_template = { x64 = "https://github.com/clangd/clangd/releases/download/$version/clangd-windows-$version.zip" }

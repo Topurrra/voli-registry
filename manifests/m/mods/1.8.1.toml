@@ -17,3 +17,4 @@ sha256 = "6b409c753dfe9d5d35c4bf3ff7fba8d34508dbe2f8e38b092c6d7539abe0910d"
 
 [autoupdate]
 checkver = { github = "charmbracelet/mods" }
+url_template = { x64 = "https://github.com/charmbracelet/mods/releases/download/v$version/mods_$version_Windows_x86_64.zip", arm64 = "https://github.com/charmbracelet/mods/releases/download/v$version/mods_$version_Windows_arm64.zip" }

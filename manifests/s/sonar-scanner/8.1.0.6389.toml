@@ -13,3 +13,4 @@ sha256 = "ab76ab3c360025e9108be5b55be066f304a164f8b2850d2f2f333915db51bc1b"
 
 [autoupdate]
 checkver = { github = "SonarSource/sonar-scanner-cli" }
+url_template = "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$version.zip"

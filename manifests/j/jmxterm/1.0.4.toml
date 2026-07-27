@@ -12,3 +12,4 @@ sha256 = "ce3e78c732a8632f084f8114d50ca5022cef4a69d68a74b45f5007d34349872b"
 
 [autoupdate]
 checkver = { github = "jiaqi/jmxterm" }
+url_template = "https://github.com/jiaqi/jmxterm/releases/download/v$version/jmxterm-$version-uber.jar#/jmxterm.jar"

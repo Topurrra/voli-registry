@@ -12,3 +12,4 @@ sha256 = "e05bddb512d944bee1c7006389e5c8302101bce559d1f869ee78912dc333bebe"
 
 [autoupdate]
 checkver = { github = "builtbybel/ThisIsWin11" }
+url_template = { x64 = "https://github.com/builtbybel/ThisIsWin11/releases/download/$version/TIW11.zip" }

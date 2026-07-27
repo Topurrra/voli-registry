@@ -13,3 +13,4 @@ sha256 = "ff9f9258879ff2ec4349114740221498afec46a85cf6302c9f80b06eb4429501"
 
 [autoupdate]
 checkver = { github = "detekt/detekt" }
+url_template = "https://github.com/detekt/detekt/releases/download/v$version/detekt-cli-$version.zip"

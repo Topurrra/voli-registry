@@ -17,3 +17,4 @@ sha256 = "074012a4fa080391407d4e9963d3463cd24da007729f915490362e48061d2488"
 
 [autoupdate]
 checkver = { github = "microsoft/edit" }
+url_template = { x64 = "https://github.com/microsoft/edit/releases/download/v$version/edit-$version-x86_64-windows.zip", arm64 = "https://github.com/microsoft/edit/releases/download/v$version/edit-$version-aarch64-windows.zip" }

@@ -13,3 +13,4 @@ sha256 = "eb08d642f016787bb9fc918a4dc5f34665463657fddf83a40f2441cbf020fb4c"
 
 [autoupdate]
 checkver = { github = "bootandy/dust" }
+url_template = { x64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-x86_64-pc-windows-msvc.zip" }

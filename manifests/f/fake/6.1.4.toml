@@ -12,3 +12,4 @@ sha256 = "30d3e19c17210c29c7148abd1b0ea35cf768324e1ebdd823bd7fb67d48ad3fc2"
 
 [autoupdate]
 checkver = { github = "fsprojects/fake" }
+url_template = { x64 = "https://github.com/fsprojects/fake/releases/download/$version/fake-dotnetcore-win-x64.zip" }

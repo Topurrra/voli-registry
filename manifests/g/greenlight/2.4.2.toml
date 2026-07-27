@@ -13,3 +13,4 @@ sha256 = "ad3411f0058a11b768b4c32393c44816f30dae2e285e0ef889641b00b338917b"
 
 [autoupdate]
 checkver = { github = "unknownskl/greenlight" }
+url_template = { x64 = "https://github.com/unknownskl/greenlight/releases/download/v$version/Greenlight-$version-win.zip" }

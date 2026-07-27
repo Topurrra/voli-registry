@@ -17,3 +17,4 @@ sha256 = "c65435276fa58fc2a8321a8e923db0dda817931d45d53ec7645451f31c957892"
 
 [autoupdate]
 checkver = { github = "zacharee/Bifrost" }
+url_template = { x64 = "https://github.com/zacharee/Bifrost/releases/download/$version/bifrost-$version-windows-amd64.zip", arm64 = "https://github.com/zacharee/Bifrost/releases/download/$version/bifrost-$version-windows-aarch64.zip" }

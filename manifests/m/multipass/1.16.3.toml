@@ -1,0 +1,18 @@
+name = "multipass"
+version = "1.16.3"
+description = "A lightweight VM manager, designed for developers who want a fresh Ubuntu environment with a single command."
+homepage = "https://multipass.run"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "PFiles64\\Multipass"
+bin = ["bin\\multipass.exe", "bin\\multipassd.exe"]
+shortcuts = [{ target = "bin\\multipass.gui.exe", name = "Multipass" }]
+
+[source.x64]
+url = "https://github.com/canonical/multipass/releases/download/v1.16.3/multipass-1.16.3%2Bwin-win64.msi"
+sha256 = "f5bff63d13fb1377a72b8dd6d277bbdd3369b1f278f4c85d2c8427a2e7d38d39"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "canonical/multipass" }
+url_template = { x64 = "https://github.com/canonical/multipass/releases/download/v$version/multipass-$version%2Bwin-win64.msi" }

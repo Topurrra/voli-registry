@@ -14,3 +14,4 @@ sha256 = "673b3af9ed0e3dc42c6c2cd8308a815fcc3141c2d97ee9e4fa88e182ac56898e"
 
 [autoupdate]
 checkver = "Current version: <strong>([\\d.]+)</strong>"
+url_template = { x64 = "https://syndicode.org/infekt/downloads/v$version/iNFekt-v$version-64bit-Portable.rar" }

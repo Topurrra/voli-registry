@@ -16,3 +16,4 @@ sha256 = "6011bf616a9bb5eacf4c3d80675cfba774debf824dd9f792eddf85ed7d0f85a3"
 
 [autoupdate]
 checkver = { github = "gyroflow/gyroflow" }
+url_template = { x64 = "https://github.com/gyroflow/gyroflow/releases/download/v$version/Gyroflow-windows64.zip", arm64 = "https://github.com/gyroflow/gyroflow/releases/download/v$version/Gyroflow-windows-arm64.zip" }

@@ -14,3 +14,4 @@ sha256 = "fbbb6fae63b295e10c529535c8077bdbf2e5124ebb75497c1ee51b678e16493f"
 
 [autoupdate]
 checkver = { github = "pragtical/pragtical" }
+url_template = { x64 = "https://github.com/pragtical/pragtical/releases/download/v$version/pragtical-v$version-windows-x86_64.zip" }

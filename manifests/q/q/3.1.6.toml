@@ -1,0 +1,17 @@
+name = "q"
+version = "3.1.6"
+description = "Run SQL directly on delimited files and multi-file sqlite databases"
+homepage = "https://harelba.github.io/q/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "PFiles/q-text-as-data"
+bin = ["q.exe"]
+
+[source.x64]
+url = "https://github.com/harelba/q/releases/download/v3.1.6/q-text-as-data-3.1.6.msi"
+sha256 = "3f2893064a83f9430d4bf951b9706835c7aa61ceaaa8a85374662b2795d0dfb9"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "harelba/q" }
+url_template = { x64 = "https://github.com/harelba/q/releases/download/v$version/q-text-as-data-$version.msi" }

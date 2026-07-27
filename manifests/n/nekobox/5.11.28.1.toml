@@ -6,26 +6,17 @@ license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "nekobox"
 bin = ["nekobox_core.exe"]
+shortcuts = [{ target = "nekobox.exe", name = "NekoBox" }]
 persist = ["settings"]
-write_file = []
 
 [source.x64]
 url = "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.1/nekobox-5.11.28.1-windows64.zip"
 sha256 = "de967cee66e75c37b8000ae5c16b9d7deebc24ec4ccabfd15cd2c52cc1170a49"
-extra = []
 
 [source.arm64]
 url = "https://github.com/qr243vbi/nekobox/releases/download/5.11.28.1/nekobox-5.11.28.1-windows-arm64.zip"
 sha256 = "954c93b1a6ff5c9dbda2a932533fba9bee8c00cd3923e48442bcc24f50bf73b1"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "qr243vbi/nekobox"
-
-[[shortcuts]]
-target = "nekobox.exe"
-name = "NekoBox"
+[autoupdate]
+checkver = { github = "qr243vbi/nekobox" }
+url_template = { x64 = "https://github.com/qr243vbi/nekobox/releases/download/$version/nekobox-$version-windows64.zip", arm64 = "https://github.com/qr243vbi/nekobox/releases/download/$version/nekobox-$version-windows-arm64.zip" }

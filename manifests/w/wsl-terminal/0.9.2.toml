@@ -15,3 +15,4 @@ sha256 = "55233b0cd44db4b392ca6bb21ffaedc8635b588d54a7eb1c266ec1c88d5f9eb6"
 
 [autoupdate]
 checkver = { github = "goreliu/wsl-terminal" }
+url_template = "https://github.com/goreliu/wsl-terminal/releases/download/v$version/wsl-terminal-$version.7z"

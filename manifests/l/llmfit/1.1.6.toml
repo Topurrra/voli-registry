@@ -17,3 +17,4 @@ sha256 = "0cc8b983af7f87fe198161920eb5a66ab737b7faaf31fc9106f665fff783e587"
 
 [autoupdate]
 checkver = { github = "AlexsJones/llmfit" }
+url_template = { x64 = "https://github.com/AlexsJones/llmfit/releases/download/v$version/llmfit-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/AlexsJones/llmfit/releases/download/v$version/llmfit-v$version-aarch64-pc-windows-msvc.zip" }

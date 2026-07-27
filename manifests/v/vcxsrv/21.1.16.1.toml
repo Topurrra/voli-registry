@@ -13,3 +13,4 @@ sha256 = "df7fed8f49665d0592528ab6be9d07111ea73c6848283d128b77690e05b8f90b"
 
 [autoupdate]
 checkver = { github = "marchaesen/vcxsrv" }
+url_template = { x64 = "https://github.com/marchaesen/vcxsrv/releases/download/$matchTag/vcxsrv-64.$version.installer.exe#/dl.7z" }

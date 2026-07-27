@@ -19,3 +19,4 @@ sha512 = "79eb7521318399f291b6d1e9ac84128c1772d1d1dfe4386064aeed64e724649ff574e0
 
 [autoupdate]
 checkver = { github = "GermanCoding/SyncTrayzor" }
+url_template = { x64 = "https://github.com/GermanCoding/SyncTrayzor/releases/download/v$version/SyncTrayzorPortable-x64.zip", arm64 = "https://github.com/GermanCoding/SyncTrayzor/releases/download/v$version/SyncTrayzorPortable-arm64.zip" }

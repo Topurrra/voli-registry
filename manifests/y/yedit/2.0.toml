@@ -1,0 +1,14 @@
+name = "yedit"
+version = "2.0"
+description = "A modern version of the legacy EDIT.COM text editor, from the author of Yori."
+homepage = "http://www.malsmith.net/yori/"
+license = "MIT"
+kind = "app"
+bin = ["yedit.exe"]
+
+[source.x64]
+url = "http://www.malsmith.net/download/?obj=yori/2.0/yori-typical-amd64.cab#/dl.7z"
+sha256 = "d3757a4ab8f1a8e01d1f710df387555bc31a7bff55776ba7c2ba366140c8ca03"
+
+[autoupdate]
+checkver = { github = "malxau/yori" }

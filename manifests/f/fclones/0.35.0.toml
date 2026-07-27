@@ -12,3 +12,4 @@ sha256 = "cbbc14167d93d3c550af5e38b617437b9c89b8eb3a5aaf8903a9ea6e5b551424"
 
 [autoupdate]
 checkver = { github = "pkolaczk/fclones" }
+url_template = { x64 = "https://github.com/pkolaczk/fclones/releases/download/v$version/fclones-$version-windows-x86_64.zip" }

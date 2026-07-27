@@ -16,3 +16,4 @@ sha256 = "3d9febab6a3bb68808f098a65fd26637d5b6fe402ece258d79fc124104c14725"
 
 [autoupdate]
 checkver = { github = "gvcgo/version-manager" }
+url_template = { x64 = "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr_windows-amd64.zip", arm64 = "https://github.com/gvcgo/version-manager/releases/download/v$version/vmr_windows-arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "cd6ac15b9daff0365e5695036791ef2ce3c63f61c014f5a8c532363266e4569c"
 
 [autoupdate]
 checkver = { github = "trunk-rs/trunk" }
+url_template = { x64 = "https://github.com/trunk-rs/trunk/releases/download/v$version/trunk-x86_64-pc-windows-msvc.zip" }

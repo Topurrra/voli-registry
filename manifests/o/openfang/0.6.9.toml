@@ -16,3 +16,4 @@ sha256 = "0c9b59460e94202583af973cd21be8d2ec864f94d90b05d0ab1fc948b3cd7f63"
 
 [autoupdate]
 checkver = { github = "RightNow-AI/openfang" }
+url_template = { x64 = "https://github.com/RightNow-AI/openfang/releases/download/v$version/openfang-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/RightNow-AI/openfang/releases/download/v$version/openfang-aarch64-pc-windows-msvc.zip" }

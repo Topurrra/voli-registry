@@ -13,3 +13,4 @@ sha256 = "076d120618e876f06cf47cdb79aabda2d4afe89701a2b4e81f441d8b20200d35"
 
 [autoupdate]
 checkver = { github = "git-ecosystem/git-credential-manager" }
+url_template = "https://github.com/git-ecosystem/git-credential-manager/releases/download/v$version/gcm-win-x86-$version.zip"

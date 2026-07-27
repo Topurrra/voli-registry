@@ -12,3 +12,4 @@ sha256 = "9b180af9817d60b2be2a69f5a71ec7383fce67404521a38046c58d53aa3bbc01"
 
 [autoupdate]
 checkver = { github = "farion1231/cc-switch" }
+url_template = { x64 = "https://github.com/farion1231/cc-switch/releases/download/v$version/CC-Switch-v$version-Windows-Portable.zip" }

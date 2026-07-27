@@ -13,3 +13,4 @@ sha256 = "5cf2147b2dd17e7ffbdc9904bd049db54c99cb074bdea6f85781caf14ce677c1"
 
 [autoupdate]
 checkver = { github = "github/codeql-cli-binaries" }
+url_template = { x64 = "https://github.com/github/codeql-cli-binaries/releases/download/v$version/codeql-win64.zip" }

@@ -13,3 +13,4 @@ sha256 = "1a0741a8f997a50ad7a32370e9ddf719ed3d5d87701324c57b7b34518b980460"
 
 [autoupdate]
 checkver = { github = "redis-windows/redis-windows" }
+url_template = { x64 = "https://github.com/redis-windows/redis-windows/releases/download/$version/Redis-$matchHead-Windows-x64-msys2.zip" }

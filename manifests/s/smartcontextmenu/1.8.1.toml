@@ -13,3 +13,4 @@ sha256 = "ae76eb6a15715d6ac77175a4eef779036e51f0e52dfe0105246d06d5b8939fa9"
 
 [autoupdate]
 checkver = { github = "AlexanderPro/SmartContextMenu" }
+url_template = "https://github.com/AlexanderPro/SmartContextMenu/releases/download/v$version/SmartContextMenu_v$version.zip"

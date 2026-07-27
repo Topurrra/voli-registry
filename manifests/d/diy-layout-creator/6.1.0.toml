@@ -12,3 +12,4 @@ sha256 = "9cb7594595744740e4b4bab265217e68dc6fd08143245cc139718f8d9e3caf3b"
 
 [autoupdate]
 checkver = { github = "bancika/diy-layout-creator" }
+url_template = { x64 = "https://github.com/bancika/diy-layout-creator/releases/download/v$version/diylc-$version-win64.zip" }

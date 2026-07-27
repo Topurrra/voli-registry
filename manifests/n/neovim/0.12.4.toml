@@ -17,3 +17,4 @@ sha256 = "49906085a3c473ee87a28319942c62216fb365a1a1a4f83dbc4ac41365f5e609"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/neovim/neovim/releases/latest\",\"jsonpath\":\"$.body\",\"regex\":\"NVIM v(?<majorVersion>[\\\\w.-]+)\\\\.(?<minorVersion>[\\\\w.-]+)\\\\.(?<patchVersion>[\\\\w.-]+)\",\"replace\":\"${majorVersion}.${minorVersion}.${patchVersion}\"}"
+url_template = { x64 = "https://github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip", arm64 = "https://github.com/neovim/neovim/releases/download/v$version/nvim-win-arm64.zip" }

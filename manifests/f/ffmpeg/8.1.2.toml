@@ -14,3 +14,4 @@ sha256 = "0fff188997a499b5382e0f66e845d4556c48c54f0113ebed4853d556dbdd7059"
 
 [autoupdate]
 checkver = { github = "GyanD/codexffmpeg" }
+url_template = { x64 = "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-full_build.7z" }

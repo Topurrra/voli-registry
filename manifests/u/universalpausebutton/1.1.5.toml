@@ -12,3 +12,4 @@ sha256 = "bdf7c72c29de2bd53de35671b336c63ecf74bc243116df4dec19dbd775a6d7d0"
 
 [autoupdate]
 checkver = { github = "ryanries/UniversalPauseButton" }
+url_template = { x64 = "https://github.com/ryanries/UniversalPauseButton/releases/download/v$version/UniversalPauseButton_v$version.zip" }

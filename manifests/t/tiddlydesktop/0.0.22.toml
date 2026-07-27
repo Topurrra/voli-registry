@@ -13,3 +13,4 @@ sha256 = "99f8dd3dbb9206d54a76c99d088937ac5763d7de4d690c34a9a221007eca0572"
 
 [autoupdate]
 checkver = { github = "TiddlyWiki/TiddlyDesktop" }
+url_template = { x64 = "https://github.com/TiddlyWiki/TiddlyDesktop/releases/download/v$version/tiddlydesktop-win64-v$version.zip" }

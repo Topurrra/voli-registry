@@ -13,3 +13,4 @@ sha256 = "cda9c9e83b755b519af034b58f5519c0ef0be803efaa7ca459b94b6748a42b9f"
 
 [autoupdate]
 checkver = { github = "MarcoLucidi01/ytcast" }
+url_template = { x64 = "https://github.com/MarcoLucidi01/ytcast/releases/download/v$version/ytcast-v$version-windows-amd64.zip" }

@@ -12,3 +12,4 @@ sha256 = "fd8b443f4cca0c056bdedfda3296afb3669cee54a1813f6ae192450942914a37"
 
 [autoupdate]
 checkver = { github = "mszostok/codeowners-validator" }
+url_template = { x64 = "https://github.com/mszostok/codeowners-validator/releases/download/v$version/codeowners-validator_$version_Windows_x86_64.zip" }

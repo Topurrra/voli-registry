@@ -1,0 +1,16 @@
+name = "nunit-console"
+version = "3.20.1"
+description = "NUnit Console runner for NUnit, the most popular and widely used unit testing framework for .NET"
+homepage = "https://nunit.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "tools"
+bin = ["nunit3-console.exe"]
+
+[source.x64]
+url = "https://packages.chocolatey.org/nunit-console-runner.3.20.1.nupkg"
+sha256 = "3020911c61245511bc0ca3a274d9ba2c7d460f5451fa51cd030311e5fd540a15"
+
+[autoupdate]
+checkver = { url = "https://chocolatey.org/packages/nunit-console-runner", regex = "\\s+([\\d.]+)</title>" }
+url_template = "https://packages.chocolatey.org/nunit-console-runner.$version.nupkg"

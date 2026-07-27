@@ -14,3 +14,4 @@ sha256 = "011cbe37d3fcc283bab7bacf9093133dec9e169503374b431cb29c89d75c162c"
 
 [autoupdate]
 checkver = { github = "mhogomchungu/sirikali" }
+url_template = { x64 = "https://github.com/mhogomchungu/sirikali/releases/download/$version/SiriKaliQt6-$version.zip" }

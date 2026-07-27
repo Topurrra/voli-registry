@@ -1,0 +1,23 @@
+name = "postgresql"
+version = "18.4-2"
+description = "Object-relational database management system based on POSTGRES."
+homepage = "https://www.postgresql.org"
+license = "PostgreSQL"
+kind = "app"
+extract_dir = "pgsql"
+shortcuts = [{ target = "pgAdmin 4\\runtime\\pgAdmin4.exe", name = "pgAdmin 4" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://get.enterprisedb.com/postgresql/postgresql-18.4-2-windows-x64-binaries.zip"
+sha256 = "02e239529ed7833d169f98d915d3feffe0813264b08b3ae353e78e8b9c97e1a6"
+
+[env]
+PATH = "{dir}\\bin"
+PGDATA = "{dir}\\data"
+PG_INCLUDE_DIR = "{dir}\\include"
+PG_LIB_DIR = "{dir}\\lib"
+
+[autoupdate]
+checkver = "{\"regex\":\"postgresql-(?<version>\\\\d+\\\\.\\\\d+-\\\\d+)-windows\",\"script\":[\"$url = ([xml]$page).SelectSingleNode('//table/tbody/tr[1]/td[5]/a').href\",\"$request = [System.Net.HttpWebRequest]::Create($url)\",\"$response = $request.GetResponse()\",\"Write-Output $response.ResponseUri.AbsoluteUri\"],\"url\":\"https://www.enterprisedb.com/downloads/postgres-postgresql-downloads\"}"
+url_template = { x64 = "https://get.enterprisedb.com/postgresql/postgresql-$version-windows-x64-binaries.zip" }

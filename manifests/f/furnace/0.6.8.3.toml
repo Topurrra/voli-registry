@@ -13,3 +13,4 @@ sha256 = "040c30cb522c9446d76bf2f17995c8ad3f21b34e4984b4cca6db8e2a9bf0fd87"
 
 [autoupdate]
 checkver = { github = "tildearrow/furnace" }
+url_template = { x64 = "https://github.com/tildearrow/furnace/releases/download/v$version/furnace-$version-win64.zip" }

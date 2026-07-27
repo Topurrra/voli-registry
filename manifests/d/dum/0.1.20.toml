@@ -12,3 +12,4 @@ sha256 = "3759d385ca4559ac62f63542aa6955a16c9fd9b8978e7854925a7bea5d5bf32c"
 
 [autoupdate]
 checkver = { github = "egoist/dum" }
+url_template = { x64 = "https://github.com/egoist/dum/releases/download/v$version/dum-x86_64-pc-windows-msvc.zip" }

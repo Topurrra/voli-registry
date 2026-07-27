@@ -16,3 +16,4 @@ HASHLINKPATH = "{dir}"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/HaxeFoundation/hashlink/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"([\\\\d.]+)-win\"}"
+url_template = "https://github.com/HaxeFoundation/hashlink/releases/download/$majorVersion.$minorVersion/hashlink-$version-win.zip"

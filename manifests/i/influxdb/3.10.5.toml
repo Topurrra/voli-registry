@@ -11,4 +11,5 @@ url = "https://dl.influxdata.com/influxdb/releases/influxdb3-core-3.10.5-windows
 sha256 = "707e2bc8ec6bab8b2d10e417556886dd42033db0f359d87b92da736fcbe16c7e"
 
 [autoupdate]
-checkver = "{\"regex\":\">v([\\\\d.]+)<\",\"url\":\"https://docs.influxdata.com/influxdb3/core/release-notes/\"}"
+checkver = { url = "https://docs.influxdata.com/influxdb3/core/release-notes/", regex = ">v([\\d.]+)<" }
+url_template = { x64 = "https://dl.influxdata.com/influxdb/releases/influxdb3-core-$version-windows_amd64.zip" }

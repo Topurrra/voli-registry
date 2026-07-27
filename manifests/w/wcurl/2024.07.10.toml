@@ -16,4 +16,5 @@ busybox = "*"
 curl = "*"
 
 [autoupdate]
-checkver = "{\"regex\":\"tag/([\\\\d.-]+)\",\"url\":\"https://github.com/curl/wcurl/tags\"}"
+checkver = { url = "https://github.com/curl/wcurl/tags", regex = "tag/([\\d.-]+)" }
+url_template = "https://github.com/curl/wcurl/archive/$version.zip"

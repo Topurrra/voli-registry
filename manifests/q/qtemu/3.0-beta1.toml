@@ -12,4 +12,5 @@ url = "https://gitlab.com/qtemu/releases/-/raw/main/3.0-beta1/qtemu_3.0-beta1-po
 sha256 = "8a321287ff7a40a9d2084f0de868d967576c594efb9f889ee985eba6cb16b0d3"
 
 [autoupdate]
-checkver = "{\"regex\":\"Stable version: ([\\\\w.-]+)\",\"url\":\"https://gitlab.com/qtemu/gui/-/raw/master/README.md\"}"
+checkver = { url = "https://gitlab.com/qtemu/gui/-/raw/master/README.md", regex = "Stable version: ([\\w.-]+)" }
+url_template = { x64 = "https://gitlab.com/qtemu/releases/-/raw/main/$version/qtemu_$version-portable.zip" }

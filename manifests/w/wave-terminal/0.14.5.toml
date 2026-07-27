@@ -12,3 +12,4 @@ sha256 = "61d132770a5b44a4ab1d6f4fe111fcb270047b97ef0e6f2d4f7d93562eea79dd"
 
 [autoupdate]
 checkver = { github = "wavetermdev/waveterm" }
+url_template = { x64 = "https://github.com/wavetermdev/waveterm/releases/download/v$version/Wave-win32-x64-$version.zip" }

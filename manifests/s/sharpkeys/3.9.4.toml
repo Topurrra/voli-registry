@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "randyrants/sharpkeys" }
+url_template = "https://github.com/randyrants/sharpkeys/releases/download/v$version/sharpkeys$cleanVersion.msi"

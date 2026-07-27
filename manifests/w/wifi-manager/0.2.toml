@@ -13,3 +13,4 @@ sha512 = "ec980517b51bae13621a4db8c70a69244c077977eb0ce2501ec0a888b1a8297a945864
 
 [autoupdate]
 checkver = { github = "shanselman/Windows-Wifi-Manager" }
+url_template = "https://packages.chocolatey.org/wifi-manager.$version.nupkg"

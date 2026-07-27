@@ -11,4 +11,4 @@ url = "https://jorgensen.biology.utah.edu/wayned/ape/Download/Windows/ApE_win_cu
 sha256 = "e5c3a6f84a40c1ffd5030e539f6fa4d917f081bf1d798d7bc2d11c087546def5"
 
 [autoupdate]
-checkver = "{\"regex\":\"latest ApE \\\\(v([\\\\d.]+),\",\"url\":\"https://jorgensen.biology.utah.edu/wayned/ape/\"}"
+checkver = { url = "https://jorgensen.biology.utah.edu/wayned/ape/", regex = "latest ApE \\(v([\\d.]+)," }

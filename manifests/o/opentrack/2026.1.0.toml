@@ -15,3 +15,4 @@ sha256 = "92ed738f863d5a46c0a4518bc81ceb71c778804cb66b2108eee34c9962d71813"
 
 [autoupdate]
 checkver = { github = "opentrack/opentrack" }
+url_template = "https://github.com/opentrack/opentrack/releases/download/opentrack-$version/opentrack-$version-win32-portable.7z"

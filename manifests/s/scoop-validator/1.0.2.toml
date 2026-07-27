@@ -12,3 +12,4 @@ sha256 = "eecc3122d4e9a73e8e5cf742e7af2e60c5a77360b64c514166c0250ed13120a9"
 
 [autoupdate]
 checkver = { github = "ScoopInstaller/Validator" }
+url_template = "https://github.com/ScoopInstaller/Validator/releases/download/v$version/validator.zip"

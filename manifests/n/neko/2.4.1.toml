@@ -17,3 +17,4 @@ NEKO_INSTPATH = "{dir}"
 
 [autoupdate]
 checkver = { github = "HaxeFoundation/neko" }
+url_template = { x64 = "https://github.com/HaxeFoundation/neko/releases/download/v$dashVersion/neko-$version-win64.zip" }

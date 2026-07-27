@@ -12,3 +12,4 @@ sha256 = "e5b96e8259f5733fceac3aafe170299c6fceb454cc2318de3c53aa80b079d3a3"
 
 [autoupdate]
 checkver = { github = "zz85/space-radar" }
+url_template = { x64 = "https://github.com/zz85/space-radar/releases/download/v$version/SpaceRadar-$version-win-x64.zip" }

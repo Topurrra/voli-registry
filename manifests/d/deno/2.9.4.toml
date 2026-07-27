@@ -12,3 +12,4 @@ sha256 = "68ed08b05c56cf887e9aa509947dc3f468f7e12f47a13e5c1abd51d46d1453ef"
 
 [autoupdate]
 checkver = { github = "denoland/deno" }
+url_template = { x64 = "https://github.com/denoland/deno/releases/download/v$version/deno-x86_64-pc-windows-msvc.zip" }

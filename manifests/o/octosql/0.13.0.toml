@@ -16,3 +16,4 @@ sha256 = "4736b55ed99f6d2504b408612bbcea9a0b9cc2f5853cefc0a8b70b56737010d5"
 
 [autoupdate]
 checkver = { github = "cube2222/octosql" }
+url_template = { x64 = "https://github.com/cube2222/octosql/releases/download/v$version/octosql_$version_windows_amd64.tar.gz", arm64 = "https://github.com/cube2222/octosql/releases/download/v$version/octosql_$version_windows_arm64.tar.gz" }

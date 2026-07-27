@@ -5,10 +5,12 @@ homepage = "https://octave.org"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "octave-11.1.0-w64"
+shortcuts = [{ target = "octave-launch.exe", name = "Octave" }]
 
 [source.x64]
 url = "https://ftpmirror.gnu.org/octave/windows/octave-11.1.0-w64.7z"
 sha256 = "f173776067a7c8d3a9485eeb71ead5eb0e2fe0292b25d0f276f5d889c4b56d3f"
 
 [autoupdate]
-checkver = "{\"regex\":\"GNU Octave ([\\\\d.]+).*is the current stable release\",\"url\":\"https://wiki.octave.org/GNU_Octave_Wiki\"}"
+checkver = { url = "https://wiki.octave.org/GNU_Octave_Wiki", regex = "GNU Octave ([\\d.]+).*is the current stable release" }
+url_template = { x64 = "https://ftpmirror.gnu.org/octave/windows/octave-$version-w64.7z" }

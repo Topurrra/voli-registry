@@ -16,3 +16,4 @@ sha256 = "85b131546079c7bd21ec7f88068e5a6800a8eacceb259db06e841db41bacbef5"
 
 [autoupdate]
 checkver = { github = "ramonvermeulen/whosthere" }
+url_template = { x64 = "https://github.com/ramonvermeulen/whosthere/releases/download/v$version/whosthere_$version_windows_amd64.tar.gz", arm64 = "https://github.com/ramonvermeulen/whosthere/releases/download/v$version/whosthere_$version_windows_arm64.tar.gz" }

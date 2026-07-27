@@ -13,3 +13,4 @@ sha256 = "590068b6c3dba327b91bf6509d55fdf1bc67eccef6961ef2f47977c5e4be5507"
 
 [autoupdate]
 checkver = { github = "Canop/broot" }
+url_template = { x64 = "https://github.com/Canop/broot/releases/download/v$version/broot_$version.zip" }

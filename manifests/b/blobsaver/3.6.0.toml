@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "airsquared/blobsaver" }
+url_template = { x64 = "https://github.com/airsquared/blobsaver/releases/download/v$version/blobsaver-$version.exe" }

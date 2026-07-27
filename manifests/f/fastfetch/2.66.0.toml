@@ -16,3 +16,4 @@ sha256 = "8613fc985dae3e0205496724f9d8ca950971675c68fb1f19c338259676a669c6"
 
 [autoupdate]
 checkver = { github = "fastfetch-cli/fastfetch" }
+url_template = { x64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-amd64.7z", arm64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-aarch64.7z" }

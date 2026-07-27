@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "ModuleArt/quick-picture-viewer" }
+url_template = "https://github.com/ModuleArt/quick-picture-viewer/releases/download/v$version/QuickPictureViewer-Setup.exe"

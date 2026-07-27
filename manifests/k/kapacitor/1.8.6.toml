@@ -13,4 +13,5 @@ url = "https://dl.influxdata.com/kapacitor/releases/kapacitor-1.8.6_windows_amd6
 sha256 = "b17739a8b05b336afdf0778a4e1a48e68b7c8f0ec8c632c7135f6aa1f80523db"
 
 [autoupdate]
-checkver = "{\"regex\":\">Kapacitor v([\\\\d.]+)<\",\"url\":\"https://portal.influxdata.com/downloads\"}"
+checkver = { url = "https://portal.influxdata.com/downloads", regex = ">Kapacitor v([\\d.]+)<" }
+url_template = { x64 = "https://dl.influxdata.com/kapacitor/releases/kapacitor-$version_windows_amd64.zip" }

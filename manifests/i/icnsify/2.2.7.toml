@@ -16,3 +16,4 @@ sha256 = "76646231e55d0113fd83ee890ad20a33affccd31c5e24e7b7ab558a2cdb3f021"
 
 [autoupdate]
 checkver = { github = "JackMordaunt/icns" }
+url_template = { x64 = "https://github.com/JackMordaunt/icns/releases/download/v$version/icns_$version_Windows_amd64.zip", arm64 = "https://github.com/JackMordaunt/icns/releases/download/v$version/icns_$version_Windows_arm64.zip" }

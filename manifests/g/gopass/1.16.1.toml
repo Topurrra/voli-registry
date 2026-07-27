@@ -16,3 +16,4 @@ sha256 = "7f604444a217c07fa6dcc53faefebc856124d291031f21d4271ff0ef89bd0bc0"
 
 [autoupdate]
 checkver = { github = "gopasspw/gopass" }
+url_template = { x64 = "https://github.com/gopasspw/gopass/releases/download/v$version/gopass-$version-windows-amd64.zip", arm64 = "https://github.com/gopasspw/gopass/releases/download/v$version/gopass-$version-windows-arm64.zip" }

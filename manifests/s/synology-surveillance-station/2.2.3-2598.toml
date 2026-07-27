@@ -11,4 +11,5 @@ url = "https://global.download.synology.com/download/Utility/SurveillanceStation
 sha256 = "96e085734a46748a6f9756e7bb928af1581dc117cf25ff8bc96a833a9d7afee8"
 
 [autoupdate]
-checkver = "{\"regex\":\"/download/Utility/SurveillanceStationClient/([\\\\d.-]+)\",\"url\":\"https://archive.synology.com/download/Utility/SurveillanceStationClient\"}"
+checkver = { url = "https://archive.synology.com/download/Utility/SurveillanceStationClient", regex = "/download/Utility/SurveillanceStationClient/([\\d.-]+)" }
+url_template = { x64 = "https://global.download.synology.com/download/Utility/SurveillanceStationClient/$version/Windows/x86_64/Synology%20Surveillance%20Station%20Client-$version_x64.zip" }

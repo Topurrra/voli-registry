@@ -12,3 +12,4 @@ sha256 = "b9ddc128565f2ccf077b5a5b8d20e7545be49c96fd6b6f986635de16367ef00c"
 
 [autoupdate]
 checkver = { github = "labstack/tunnel-client" }
+url_template = { x64 = "https://github.com/labstack/tunnel-client/releases/download/v$version/tunnel_$version_windows_64-bit.zip" }

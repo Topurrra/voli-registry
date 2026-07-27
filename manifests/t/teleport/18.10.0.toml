@@ -12,3 +12,4 @@ sha256 = "4f47e100fab27acbe440f5413559893ba46bd2a7a5055d19e7906159d7a33341"
 
 [autoupdate]
 checkver = { github = "gravitational/teleport" }
+url_template = { x64 = "https://cdn.teleport.dev/teleport-v$version-windows-amd64-bin.zip" }

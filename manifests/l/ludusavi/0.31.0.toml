@@ -13,3 +13,4 @@ sha256 = "f47a8ad8c708f01d2eb124704973beffab205e292f5287a10fc4a101f8d68706"
 
 [autoupdate]
 checkver = { github = "mtkennerly/ludusavi" }
+url_template = { x64 = "https://github.com/mtkennerly/ludusavi/releases/download/v$version/ludusavi-v$version-win64.zip" }

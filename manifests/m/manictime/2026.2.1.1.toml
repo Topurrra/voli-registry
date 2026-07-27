@@ -13,3 +13,4 @@ sha256 = "76b4b1696dd327b80266fa5711ee5bb988690f834d687eadd9845a7e1204e9cf"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.version\",\"url\":\"http://services.manictime.com/Versions/GetLatestVersionNumber\"}"
+url_template = { x64 = "https://cdn.manictime.com/setup/v$underscoreVersion/manictime-portable-$version-win-x64.zip" }

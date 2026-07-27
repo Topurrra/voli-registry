@@ -12,3 +12,4 @@ sha256 = "7a8ed8d6c6188ea3256902728974f8b7009d5581b22d7d8eb0865dec66f7f1c3"
 
 [autoupdate]
 checkver = { github = "dirkvdb/ffmpegthumbnailer" }
+url_template = { x64 = "https://github.com/dirkvdb/ffmpegthumbnailer/releases/download/v$version/ffmpegthumbnailer-windows-mingw64.zip" }

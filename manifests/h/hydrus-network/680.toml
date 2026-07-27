@@ -15,3 +15,4 @@ sha256 = "7d75abaca7aca5355531b5725b0dfc715a42d653eb3037e31054964d2a3fef4e"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/hydrusnetwork/hydrus/releases\",\"jsonpath\":\"$[*].assets[*].browser_download_url\",\"regex\":\"download/v(?<version>[\\\\d.]+[a-z]{0,1})/Hydrus\\\\.Network\\\\.\\\\k<version>\\\\.-\\\\.Windows\\\\.-\\\\.Extract\\\\.only\\\\.zip\"}"
+url_template = { x64 = "https://github.com/hydrusnetwork/hydrus/releases/download/v$version/Hydrus.Network.$version.-.Windows.-.Extract.only.zip" }

@@ -12,3 +12,4 @@ sha256 = "8f4bdd02cf3b42976f6b48e01239bc0ae61f9da7a3c260505a7880de615291d0"
 
 [autoupdate]
 checkver = { github = "shadowsocks/shadowsocks-rust" }
+url_template = { x64 = "https://github.com/shadowsocks/shadowsocks-rust/releases/download/v$version/shadowsocks-v$version.x86_64-pc-windows-msvc.zip" }

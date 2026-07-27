@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "BartoszCichecki/LenovoLegionToolkit" }
+url_template = "https://github.com/BartoszCichecki/LenovoLegionToolkit/releases/download/$version/LenovoLegionToolkitSetup.exe"

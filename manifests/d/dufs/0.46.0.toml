@@ -16,3 +16,4 @@ sha256 = "530e061b5a26182a7cfebc3d473c397aaef931b07f6eccab9592d5df57ef0c39"
 
 [autoupdate]
 checkver = { github = "sigoden/dufs" }
+url_template = { x64 = "https://github.com/sigoden/dufs/releases/download/v$version/dufs-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sigoden/dufs/releases/download/v$version/dufs-v$version-aarch64-pc-windows-msvc.zip" }

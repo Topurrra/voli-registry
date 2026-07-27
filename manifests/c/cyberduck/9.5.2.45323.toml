@@ -13,4 +13,5 @@ sha256 = "d04c49e3fa5ba3422f3a37f60c6e2c4cde1715de49bb34d88bd939c7985021db"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Cyberduck-Installer-([\\\\d.]+)\\\\.exe\",\"url\":\"https://cyberduck.io/download/\"}"
+checkver = { url = "https://cyberduck.io/download/", regex = "Cyberduck-Installer-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://update.cyberduck.io/windows/Cyberduck-Installer-$version.msi" }

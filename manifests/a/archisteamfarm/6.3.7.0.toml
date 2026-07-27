@@ -14,3 +14,4 @@ sha256 = "8535f6034c9e98c10d89388be0ac43f8c8488bfd93c6a64c8efd56fb9d9e3bcf"
 
 [autoupdate]
 checkver = { github = "JustArchiNET/ArchiSteamFarm" }
+url_template = { x64 = "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/$version/ASF-win-x64.zip" }

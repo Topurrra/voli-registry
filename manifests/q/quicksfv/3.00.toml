@@ -13,4 +13,4 @@ sha256 = "7b4ced15746973773882579b2740b3f2c6a76e739511f1fa352babc96b08e79f"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+) for Windows\",\"url\":\"https://www.quicksfv.org/download.html\"}"
+checkver = { url = "https://www.quicksfv.org/download.html", regex = "([\\d.]+) for Windows" }

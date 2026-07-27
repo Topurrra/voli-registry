@@ -12,3 +12,4 @@ sha256 = "863013b1f94da6f3b7d0d5a74022ac3370424eeea9a470ebdb33d188d61b9125"
 
 [autoupdate]
 checkver = { github = "alire-project/alire" }
+url_template = { x64 = "https://github.com/alire-project/alire/releases/download/v$version/alr-$version-bin-x86_64-windows.zip" }

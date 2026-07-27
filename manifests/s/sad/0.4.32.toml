@@ -16,3 +16,4 @@ sha256 = "37290417cd469d8a4d601909685226573732e6a0a05173bcc41621772d43f377"
 
 [autoupdate]
 checkver = { github = "ms-jpq/sad" }
+url_template = { x64 = "https://github.com/ms-jpq/sad/releases/download/v$version/x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ms-jpq/sad/releases/download/v$version/aarch64-pc-windows-msvc.zip" }

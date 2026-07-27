@@ -12,3 +12,4 @@ sha256 = "ee6db1a7e71a12deb5973a8dbfdf9f36d3635bec0e0b31b1cc74f28de7dac4c9"
 
 [autoupdate]
 checkver = { github = "wolfpld/tracy" }
+url_template = { x64 = "https://github.com/wolfpld/tracy/releases/download/v$version/windows-$version.zip" }

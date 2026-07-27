@@ -12,3 +12,4 @@ sha256 = "bfb7f9ead6cd328389bc2da53860443bc0e805dfd08cc889bfdf43b26cb2a6e8"
 
 [autoupdate]
 checkver = { github = "google/google-java-format" }
+url_template = "https://github.com/google/google-java-format/releases/download/v$version/google-java-format-$version-all-deps.jar#/google-java-format.jar"

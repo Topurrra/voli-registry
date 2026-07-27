@@ -17,3 +17,4 @@ sha256 = "6261ad31ee5207034693fa3fe1aea33fc6652284e2d58f3e9932296647e517fe"
 
 [autoupdate]
 checkver = { github = "nats-io/natscli" }
+url_template = { x64 = "https://github.com/nats-io/natscli/releases/download/v$version/nats-$version-windows-amd64.zip", arm64 = "https://github.com/nats-io/natscli/releases/download/v$version/nats-$version-windows-arm64.zip" }

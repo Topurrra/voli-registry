@@ -12,3 +12,4 @@ sha256 = "07668c141e524ddd08dbbc6723bcdf426dc91a7becbb8985e1a37bbb2276ec4f"
 
 [autoupdate]
 checkver = { github = "samtay/so" }
+url_template = { x64 = "https://github.com/samtay/so/releases/download/v$version/so-x86_64-pc-windows-msvc.zip" }

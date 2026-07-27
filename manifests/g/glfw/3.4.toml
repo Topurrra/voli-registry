@@ -15,3 +15,4 @@ GLFW_ROOT = "{dir}"
 
 [autoupdate]
 checkver = { github = "glfw/glfw" }
+url_template = { x64 = "https://github.com/glfw/glfw/releases/download/$version/glfw-$version.bin.WIN64.zip" }

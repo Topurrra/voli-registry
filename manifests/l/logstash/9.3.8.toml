@@ -13,4 +13,5 @@ url = "https://artifacts.elastic.co/downloads/logstash/logstash-9.3.8-windows-x8
 sha512 = "8f2fab21ded9210bf2aa163c7b2e128e4e3cb73984622b71a8962457367769be820f8b7a224a2004398be418d0207f92e4eda76350e71b6a7c3fbf92f686dd5f"
 
 [autoupdate]
-checkver = "{\"regex\":\"logstash-([\\\\d.]+)-windows-x86_64\\\\.zip\",\"url\":\"https://www.elastic.co/downloads/logstash\"}"
+checkver = { url = "https://www.elastic.co/downloads/logstash", regex = "logstash-([\\d.]+)-windows-x86_64\\.zip" }
+url_template = { x64 = "https://artifacts.elastic.co/downloads/logstash/logstash-$version-windows-x86_64.zip" }

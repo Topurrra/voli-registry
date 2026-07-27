@@ -16,4 +16,5 @@ url = "https://ziglang.org/download/0.16.0/zig-aarch64-windows-0.16.0.zip"
 sha256 = "aee38316ee4111717900f45dd3130145c39289e105541d737eb8c5ed653c78ef"
 
 [autoupdate]
-checkver = "{\"regex\":\">([\\\\d.]+)</h\",\"url\":\"https://ziglang.org/download/\"}"
+checkver = { url = "https://ziglang.org/download/", regex = ">([\\d.]+)</h" }
+url_template = { x64 = "https://ziglang.org/download/$version/zig-x86_64-windows-$version.zip", arm64 = "https://ziglang.org/download/$version/zig-aarch64-windows-$version.zip" }

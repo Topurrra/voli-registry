@@ -12,3 +12,4 @@ sha256 = "bac08322ea3698157eb2373bb5b65e38c15df9dd41e1c06f142f874367fa472f"
 
 [autoupdate]
 checkver = { github = "elixir-lsp/elixir-ls" }
+url_template = "https://github.com/elixir-lsp/elixir-ls/releases/download/v$version/elixir-ls-v$version.zip"

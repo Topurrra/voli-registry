@@ -11,3 +11,4 @@ sha256 = "ae2aa930ca25fb2e1be6df69ed8053f70d023bf3c35fac7103eb511606dc2327"
 
 [autoupdate]
 checkver = { github = "rhysd/Shiba" }
+url_template = { x64 = "https://github.com/rhysd/Shiba/releases/download/v$version/Shiba-win32-x64.zip" }

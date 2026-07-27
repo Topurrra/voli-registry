@@ -16,3 +16,4 @@ sha256 = "9bd38a241f1afdbd3c8f952b92b7090e7a446cac5251bfed3fdf28f219c9dda8"
 
 [autoupdate]
 checkver = { github = "tomnomnom/gron" }
+url_template = { x64 = "https://github.com/tomnomnom/gron/releases/download/v$version/gron-windows-amd64-$version.zip", arm64 = "https://github.com/tomnomnom/gron/releases/download/v$version/gron-windows-arm64-$version.zip" }

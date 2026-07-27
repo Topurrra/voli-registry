@@ -15,4 +15,5 @@ sha256 = "22dc942be1b968d5e28e75c06aba52829d0c52d9234bc9941df9ab2a0e2a610d"
 PATH = "{dir}\\lib\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?s)Current Stable Releases.*?>([\\\\d.]+)<\",\"url\":\"https://www.haskell.org/ghc/download.html\"}"
+checkver = { url = "https://www.haskell.org/ghc/download.html", regex = "(?s)Current Stable Releases.*?>([\\d.]+)<" }
+url_template = { x64 = "https://downloads.haskell.org/~ghc/$version/ghc-$version-x86_64-unknown-mingw32.tar.xz" }

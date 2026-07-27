@@ -13,3 +13,4 @@ sha256 = "ff3694f7a9038caf756545049dd7aef74e3d0d8fe3586e87aa881045704dd6f9"
 
 [autoupdate]
 checkver = { github = "ArduPilot/MissionPlanner" }
+url_template = { x64 = "https://github.com/ArduPilot/MissionPlanner/releases/download/MissionPlanner$version/MissionPlanner-$version.zip" }

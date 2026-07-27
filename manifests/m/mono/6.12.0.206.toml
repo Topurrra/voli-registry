@@ -1,0 +1,19 @@
+name = "mono"
+version = "6.12.0.206"
+description = "Cross platform, open source .NET framework."
+homepage = "https://www.mono-project.com/"
+license = "MIT"
+kind = "app"
+extract_dir = "Mono"
+
+[source.x64]
+url = "https://download.mono-project.com/archive/6.12.0/windows-installer/mono-6.12.0.206-x64-0.msi"
+sha256 = "4125f57d97cfa88257915edc969e913de198cd8e22396a29849037479a0ac368"
+kind = "installer-archive"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?<short>[\\\\d.]+)/windows-installer/(?<file>mono-(?<version>[\\\\d.]+).*win32.*)\\\\.msi\",\"url\":\"http://www.mono-project.com/download/stable/\"}"
+url_template = { x64 = "https://download.mono-project.com/archive/$matchShort/windows-installer/mono-$version-x64-0.msi" }

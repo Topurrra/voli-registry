@@ -12,4 +12,5 @@ url = "https://codeberg.org/jbruchon/jdupes/releases/download/v1.31.1/jdupes-1.3
 sha256 = "a50fa22a008bc345c900154f7a0fd95e4dbba2e6142f22f9e33dcf0f205b8437"
 
 [autoupdate]
-checkver = "{\"jsonpath\":\"$.tag_name\",\"regex\":\"v([\\\\d.]+)\",\"url\":\"https://codeberg.org/api/v1/repos/jbruchon/jdupes/releases/latest\"}"
+checkver = { url = "https://codeberg.org/api/v1/repos/jbruchon/jdupes/releases/latest", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://codeberg.org/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win64.zip" }

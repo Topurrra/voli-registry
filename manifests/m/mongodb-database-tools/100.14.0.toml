@@ -1,0 +1,19 @@
+name = "mongodb-database-tools"
+version = "100.14.0"
+description = "A collection of command-line utilities for working with a MongoDB deployment."
+homepage = "https://docs.mongodb.com/database-tools/"
+license = "SSPL-1.0"
+kind = "app"
+extract_dir = "MongoDB\\Tools\\100"
+
+[source.x64]
+url = "https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.14.0.msi"
+sha256 = "66887285752ba3c1c26d7303a33692b0b10a99420443b45a4a7063a3e1a55999"
+kind = "installer-archive"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.versions[0].version\",\"url\":\"https://s3.amazonaws.com/downloads.mongodb.org/tools/db/release.json\"}"
+url_template = { x64 = "https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-$version.msi" }

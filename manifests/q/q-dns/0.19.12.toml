@@ -16,3 +16,4 @@ sha256 = "25479b18dbcb3897551d712d5a993707be982d6cb14932ca4e2abf801548f19e"
 
 [autoupdate]
 checkver = { github = "natesales/q" }
+url_template = { x64 = "https://github.com/natesales/q/releases/download/v$version/q_$version_windows_amd64.zip", arm64 = "https://github.com/natesales/q/releases/download/v$version/q_$version_windows_arm64.zip" }

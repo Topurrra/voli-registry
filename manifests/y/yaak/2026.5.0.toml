@@ -12,3 +12,4 @@ sha256 = "29a9cb37473c3a0de234f8af4130b02f85537f17ac4b411bafc08411f1555f9f"
 
 [autoupdate]
 checkver = { github = "mountain-loop/yaak" }
+url_template = { x64 = "https://github.com/mountain-loop/yaak/releases/download/v$version/Yaak_$version_x64-setup.exe#/dl.7z" }

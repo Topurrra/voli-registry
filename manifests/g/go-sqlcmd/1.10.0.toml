@@ -16,3 +16,4 @@ sha256 = "ac6f257dce55e7f34d618ea9af736d9077854cadb6af6fdb0259c90d42e0b8d2"
 
 [autoupdate]
 checkver = { github = "microsoft/go-sqlcmd" }
+url_template = { x64 = "https://github.com/microsoft/go-sqlcmd/releases/download/v$version/sqlcmd-windows-amd64.zip", arm64 = "https://github.com/microsoft/go-sqlcmd/releases/download/v$version/sqlcmd-windows-arm64.zip" }

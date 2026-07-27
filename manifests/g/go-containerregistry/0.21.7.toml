@@ -16,3 +16,4 @@ sha256 = "4818ddc4250f76eb949bf9f4b1e1243b5cd5dd6dd51f800c4826bbc3a9bb5fc5"
 
 [autoupdate]
 checkver = { github = "google/go-containerregistry" }
+url_template = { x64 = "https://github.com/google/go-containerregistry/releases/download/v$version/go-containerregistry_Windows_x86_64.tar.gz", arm64 = "https://github.com/google/go-containerregistry/releases/download/v$version/go-containerregistry_Windows_arm64.tar.gz" }

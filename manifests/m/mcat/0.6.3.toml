@@ -13,3 +13,4 @@ sha256 = "be0a3cbadd45149e0a090d8f799d86246adfe9708233073973b9aad418c0730b"
 
 [autoupdate]
 checkver = { github = "Skardyy/mcat" }
+url_template = { x64 = "https://github.com/Skardyy/mcat/releases/download/v$version/mcat-v$version-x86_64-pc-windows-msvc.zip" }

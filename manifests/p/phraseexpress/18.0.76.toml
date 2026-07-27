@@ -13,4 +13,4 @@ url = "https://www.phraseexpress.com/PhraseExpress_USB.zip"
 sha256 = "1ef3d7e594f95daf47f6320510753fcaf4aae5263049e72ace8abcb27e643368"
 
 [autoupdate]
-checkver = "{\"regex\":\">([\\\\d.]+)</\",\"url\":\"https://www.phraseexpress.com/download/\"}"
+checkver = { url = "https://www.phraseexpress.com/download/", regex = ">([\\d.]+)</" }

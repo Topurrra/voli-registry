@@ -16,3 +16,4 @@ sha512 = "582ad4657223ecd52a627d88b9d5a0cc051a0289546427659e878c57db3b4f44cedf9e
 
 [autoupdate]
 checkver = { github = "caddyserver/caddy" }
+url_template = { x64 = "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_amd64.zip", arm64 = "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_arm64.zip" }

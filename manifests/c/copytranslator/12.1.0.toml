@@ -12,3 +12,4 @@ sha256 = "e6dc364a4ab304389d830ab7537f11f0feb763774fd15b15c3fb6aed5552c6fd"
 
 [autoupdate]
 checkver = { github = "CopyTranslator/CopyTranslator" }
+url_template = "https://github.com/CopyTranslator/CopyTranslator/releases/download/v$version/copytranslator-$version-win.zip"

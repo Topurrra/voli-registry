@@ -16,3 +16,4 @@ WASMER_DIR = "{dir}"
 
 [autoupdate]
 checkver = { github = "wasmerio/wasmer" }
+url_template = { x64 = "https://github.com/wasmerio/wasmer/releases/download/v$version/wasmer-windows-amd64.tar.gz" }

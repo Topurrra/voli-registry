@@ -18,3 +18,4 @@ sha256 = "46b1127dc5667648b986dafa9cc7529b6159ee22966d8937faead39d1c863660"
 
 [autoupdate]
 checkver = { github = "pawelsalawa/letos" }
+url_template = { x64 = "https://github.com/pawelsalawa/letos/releases/download/$version/letos-$version-windows-x64.zip", arm64 = "https://github.com/pawelsalawa/letos/releases/download/$version/letos-$version-windows-arm64.zip" }

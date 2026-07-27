@@ -18,3 +18,4 @@ sha256 = "0089bff4847fd8fe740cf03ce73e805754ff746ce007a8ea62902899fc592050"
 
 [autoupdate]
 checkver = { github = "minbrowser/min" }
+url_template = { x64 = "https://github.com/minbrowser/min/releases/download/v$version/Min-v$version-windows.zip", arm64 = "https://github.com/minbrowser/min/releases/download/v$version/Min-v$version-windows-arm64.zip" }

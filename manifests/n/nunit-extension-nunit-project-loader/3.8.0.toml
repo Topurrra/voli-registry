@@ -14,4 +14,5 @@ sha256 = "be01b9d7c04f0518c97d82d3fe08ce3881f3aed68ea9edeb5c5fb809ab27b623"
 nunit-console = "*"
 
 [autoupdate]
-checkver = "{\"regex\":\"\\\\s+([\\\\d.]+)</title>\",\"url\":\"https://chocolatey.org/packages/nunit-extension-nunit-project-loader\"}"
+checkver = { url = "https://chocolatey.org/packages/nunit-extension-nunit-project-loader", regex = "\\s+([\\d.]+)</title>" }
+url_template = "https://packages.chocolatey.org/nunit-extension-nunit-project-loader.$version.nupkg"

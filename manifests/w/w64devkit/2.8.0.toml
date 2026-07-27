@@ -17,3 +17,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "skeeto/w64devkit" }
+url_template = { x64 = "https://github.com/skeeto/w64devkit/releases/download/v$version/w64devkit-x64-$version.7z.exe#/dl.7z" }

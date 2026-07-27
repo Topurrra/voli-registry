@@ -16,3 +16,4 @@ sha256 = "6aa91380c7bd5ba935bab38bb826680255a0d9569614de7b0d149cea471ccf4b"
 
 [autoupdate]
 checkver = { github = "muesli/duf" }
+url_template = { x64 = "https://github.com/muesli/duf/releases/download/v$version/duf_$version_Windows_x86_64.zip", arm64 = "https://github.com/muesli/duf/releases/download/v$version/duf_$version_Windows_arm64.zip" }

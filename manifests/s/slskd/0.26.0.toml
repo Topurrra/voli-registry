@@ -17,3 +17,4 @@ sha256 = "707ca26de16835d83ff980d9fee5a2c2fd8ec7bf8260be63d60805914a627e9d"
 
 [autoupdate]
 checkver = { github = "slskd/slskd" }
+url_template = { x64 = "https://github.com/slskd/slskd/releases/download/$version/slskd-$version-win-x64.zip", arm64 = "https://github.com/slskd/slskd/releases/download/$version/slskd-$version-win-arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "135aaa026857276a0185da2d1c202c1c3d15c2bec1631d49d3edca800175ab5c"
 
 [autoupdate]
 checkver = { github = "fedify-dev/fedify" }
+url_template = { x64 = "https://github.com/fedify-dev/fedify/releases/download/$version/fedify-cli-$version-windows-x86_64.zip" }

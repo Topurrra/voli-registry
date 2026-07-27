@@ -12,4 +12,5 @@ url = "https://hpjansson.org/chafa/releases/static/chafa-1.18.2-1-x86_64-windows
 sha256 = "dcd3245c31851eef11eb077fefc12c6c76f3b0616754f0275fa8c3cb1e694165"
 
 [autoupdate]
-checkver = "{\"regex\":\"releases/static/chafa-([\\\\d.]+)-(?<rel>\\\\d)-x86_64-windows.zip\",\"url\":\"https://hpjansson.org/chafa/download/\"}"
+checkver = { url = "https://hpjansson.org/chafa/download/", regex = "releases/static/chafa-([\\d.]+)-(?<rel>\\d)-x86_64-windows.zip" }
+url_template = { x64 = "https://hpjansson.org/chafa/releases/static/chafa-$version-$matchRel-x86_64-windows.zip" }

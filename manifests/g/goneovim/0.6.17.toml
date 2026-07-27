@@ -18,3 +18,4 @@ sha256 = "713d3cf487cb287df0337f314688325ccd455ab30df5c4717ad404f34058a0ee"
 
 [autoupdate]
 checkver = { github = "akiyosi/goneovim" }
+url_template = { x64 = "https://github.com/akiyosi/goneovim/releases/download/v$version/goneovim-v$version-windows-x86_64.zip", arm64 = "https://github.com/akiyosi/goneovim/releases/download/v$version/goneovim-v$version-windows-arm64.zip" }

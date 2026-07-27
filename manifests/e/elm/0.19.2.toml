@@ -13,3 +13,4 @@ sha256 = "9de9ae1be7049391e1b353ecbe4d13f7527777b9c5e6ebb212b52b31b3fdc2be"
 
 [autoupdate]
 checkver = { github = "elm/compiler" }
+url_template = "https://github.com/elm/compiler/releases/download/$version/installer-for-windows.exe#/dl.7z"

@@ -11,4 +11,4 @@ url = "https://www.videohelp.com/download/clever_ffmpeg_gui_356.zip"
 sha256 = "c15da074834bee54607427aeafea0135454786a23e9724841664f72ae0ab4721"
 
 [autoupdate]
-checkver = "{\"regex\":\"\\\\s+version\\\\s+([\\\\d.]+)\\\\.\",\"url\":\"https://www.videohelp.com/software/clever-FFmpeg-GUI/version-history\"}"
+checkver = { url = "https://www.videohelp.com/software/clever-FFmpeg-GUI/version-history", regex = "\\s+version\\s+([\\d.]+)\\." }

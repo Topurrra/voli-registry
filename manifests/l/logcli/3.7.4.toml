@@ -12,3 +12,4 @@ sha256 = "0a3e05e9085f454da584d54bcb16c861357b8b1defcd442d60060591d5e18ecc"
 
 [autoupdate]
 checkver = { github = "grafana/loki" }
+url_template = { x64 = "https://github.com/grafana/loki/releases/download/v$version/logcli-windows-amd64.exe.zip" }

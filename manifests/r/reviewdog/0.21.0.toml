@@ -16,3 +16,4 @@ sha256 = "72abe9907454c5697777cfff1d0d03db8f5a9fd6950c609ca397a90d41ab65d7"
 
 [autoupdate]
 checkver = { github = "reviewdog/reviewdog" }
+url_template = { x64 = "https://github.com/reviewdog/reviewdog/releases/download/v$version/reviewdog_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/reviewdog/reviewdog/releases/download/v$version/reviewdog_$version_Windows_arm64.tar.gz" }

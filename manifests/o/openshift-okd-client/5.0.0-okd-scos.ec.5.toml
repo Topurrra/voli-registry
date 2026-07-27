@@ -12,3 +12,4 @@ sha256 = "e10ae4950f90e644d7eae326e8ecff4447e0d739335c52f9a929b8d7f0c58b47"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/okd-project/okd/tags\",\"jsonpath\":\"$[0].name\",\"regex\":\"([\\\\w.-]+)\"}"
+url_template = { x64 = "https://github.com/okd-project/okd/releases/download/$version/openshift-client-windows-$version.zip" }

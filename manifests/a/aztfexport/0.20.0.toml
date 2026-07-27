@@ -12,3 +12,4 @@ sha256 = "aa9f8fb6c2a5aa8b32f9d844a15f883bccc5d4d557f66a7d864f2a8ee40667dc"
 
 [autoupdate]
 checkver = { github = "Azure/aztfexport" }
+url_template = { x64 = "https://github.com/Azure/aztfexport/releases/download/v$version/aztfexport_v$version_windows_amd64.zip" }

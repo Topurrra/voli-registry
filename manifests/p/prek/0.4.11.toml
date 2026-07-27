@@ -10,5 +10,10 @@ bin = ["prek.exe"]
 url = "https://github.com/j178/prek/releases/download/v0.4.11/prek-x86_64-pc-windows-msvc.zip"
 sha256 = "64eae0b1bafd6798cd0d0d634b2f5c2f7131944e8ca1d25b670b3f87bec563ff"
 
+[source.arm64]
+url = "https://github.com/j178/prek/releases/download/v0.4.11/prek-aarch64-pc-windows-msvc.zip"
+sha256 = "402471ee97118c5df3f7d211fc03f177eb5d1dbe5264be814c6243d4f3d9dddb"
+
 [autoupdate]
 checkver = { github = "j178/prek" }
+url_template = { x64 = "https://github.com/j178/prek/releases/download/v$version/prek-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/j178/prek/releases/download/v$version/prek-aarch64-pc-windows-msvc.zip" }

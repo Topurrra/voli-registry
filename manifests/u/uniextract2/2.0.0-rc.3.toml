@@ -15,3 +15,4 @@ sha256 = "03170680b80f2afdf824f4d700c11b8e2dac805a4d9bd3d24f53e43bd7131c3a"
 
 [autoupdate]
 checkver = { github = "Bioruebe/UniExtract2" }
+url_template = "https://github.com/Bioruebe/UniExtract2/releases/download/v$version/$matchFilename"

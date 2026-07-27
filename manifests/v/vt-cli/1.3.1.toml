@@ -12,3 +12,4 @@ sha256 = "0b355668acbd181b2b8d9a04bcf70853616fb7a96f41491243b8daaa077da947"
 
 [autoupdate]
 checkver = { github = "VirusTotal/vt-cli" }
+url_template = { x64 = "https://github.com/VirusTotal/vt-cli/releases/download/$version/Windows64.zip" }

@@ -17,3 +17,4 @@ sha256 = "1c8edacfd3d557be6b8bccaed8d83ac1a5511882f628182bcf0e6887a7de0dfa"
 
 [autoupdate]
 checkver = { github = "ouch-org/ouch" }
+url_template = { x64 = "https://github.com/ouch-org/ouch/releases/download/$version/ouch-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ouch-org/ouch/releases/download/$version/ouch-aarch64-pc-windows-msvc.zip" }

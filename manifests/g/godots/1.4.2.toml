@@ -13,3 +13,4 @@ sha256 = "a14e45ca4b8b803bec6aabf9655e7e61d50b1cb90962a2a4f863ca0af55735b1"
 
 [autoupdate]
 checkver = { github = "MakovWait/godots" }
+url_template = { x64 = "https://github.com/MakovWait/godots/releases/download/v$version.stable/Windows.Desktop.zip" }

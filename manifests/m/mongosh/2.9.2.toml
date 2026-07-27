@@ -12,4 +12,5 @@ url = "https://downloads.mongodb.com/compass/mongosh-2.9.2-win32-x64.zip"
 sha256 = "1e9b505f78830a717bfc8c22d6a904cc68e3aa5a3b47fe1453a9eb2ed400fbc0"
 
 [autoupdate]
-checkver = "{\"regex\":\"mongosh-([\\\\d.]+)-win\",\"url\":\"https://www.mongodb.com/try/download/shell\"}"
+checkver = { url = "https://www.mongodb.com/try/download/shell", regex = "mongosh-([\\d.]+)-win" }
+url_template = { x64 = "https://downloads.mongodb.com/compass/mongosh-$version-win32-x64.zip" }

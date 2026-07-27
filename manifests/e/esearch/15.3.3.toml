@@ -17,3 +17,4 @@ sha256 = "7be2e1eb99c854170c014e208c17e2385da3d06b301c0ecbb6052b5f08571774"
 
 [autoupdate]
 checkver = { github = "xushengfeng/eSearch" }
+url_template = { x64 = "https://github.com/xushengfeng/eSearch/releases/download/$version/eSearch-$version-win32-x64.zip", arm64 = "https://github.com/xushengfeng/eSearch/releases/download/$version/eSearch-$version-win32-arm64.zip" }

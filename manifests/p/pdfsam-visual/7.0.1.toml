@@ -12,3 +12,4 @@ sha256 = "baaa41ce8bcb7abc378091393a2bc276afa01bcbe0dd6746f6f6df9db78da20e"
 
 [autoupdate]
 checkver = { github = "torakiki/pdfsam-visual-public" }
+url_template = { x64 = "https://github.com/torakiki/pdfsam-visual-public/releases/download/v$version/pdfsam-visual-$version-windows-x64.zip" }

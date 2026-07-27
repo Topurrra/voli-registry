@@ -13,3 +13,4 @@ sha256 = "1b6aa73b8a23fa91f9547f65e7deaa164c1df99ccdb9f6175a66cff1c3a60ccf"
 
 [autoupdate]
 checkver = { github = "Z3Prover/z3" }
+url_template = { x64 = "https://github.com/Z3Prover/z3/releases/download/z3-$version/z3-$version-x64-win.zip" }

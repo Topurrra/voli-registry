@@ -13,3 +13,4 @@ sha256 = "1dda3b041bc9af41bb0e3b78818ef5c99df845ee0e06a258d117ce70f1ec5941"
 
 [autoupdate]
 checkver = { github = "kscripting/kscript" }
+url_template = "https://github.com/kscripting/kscript/releases/download/v$version/kscript-$version-bin.zip"

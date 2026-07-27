@@ -12,3 +12,4 @@ sha256 = "1fe1aa79e9ce04275bbdc3cf24e30ec159db21d273b467647a6a83f99326419f"
 
 [autoupdate]
 checkver = { github = "omrikiei/ktunnel" }
+url_template = { x64 = "https://github.com/omrikiei/ktunnel/releases/download/v$version/ktunnel_$version_Windows_x86_64.tar.gz" }

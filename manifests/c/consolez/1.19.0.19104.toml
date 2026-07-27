@@ -13,3 +13,4 @@ sha256 = "671566592f1e8b0b71a5e8a5bce3a5437a2f65c1e251715b0155774ec1be669f"
 
 [autoupdate]
 checkver = { github = "cbucher/console" }
+url_template = { x64 = "https://github.com/cbucher/console/releases/download/$matchHead/ConsoleZ.x64.$version.zip" }

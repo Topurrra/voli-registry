@@ -18,3 +18,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "lima-vm/lima" }
+url_template = { x64 = "https://github.com/lima-vm/lima/releases/download/v$version/lima-$version-Windows-AMD64.zip", arm64 = "https://github.com/lima-vm/lima/releases/download/v$version/lima-$version-Windows-ARM64.zip" }

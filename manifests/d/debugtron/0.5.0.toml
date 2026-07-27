@@ -12,3 +12,4 @@ sha256 = "9145a1e443f5ff368b2e08ffca6c2f1bdac0e84b80ed2c23255492bae47472f7"
 
 [autoupdate]
 checkver = { github = "pd4d10/debugtron" }
+url_template = { x64 = "https://github.com/pd4d10/debugtron/releases/download/v$version/Debugtron-win32-x64-$version.zip" }

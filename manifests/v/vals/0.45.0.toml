@@ -12,3 +12,4 @@ sha256 = "8177c039047e5896054b7d8f7ed405b5553f4b673a8fb1df2c4f951a1c4aa36e"
 
 [autoupdate]
 checkver = { github = "helmfile/vals" }
+url_template = { x64 = "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz" }

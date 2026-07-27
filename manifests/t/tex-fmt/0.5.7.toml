@@ -16,3 +16,4 @@ sha256 = "d3ce79d3cecf1b6a66c0978125b924cace80904c0d55bf75dc96bebdca5fc978"
 
 [autoupdate]
 checkver = { github = "WGUNDERWOOD/tex-fmt" }
+url_template = { x64 = "https://github.com/WGUNDERWOOD/tex-fmt/releases/download/v$version/tex-fmt-x86_64-windows.zip", arm64 = "https://github.com/WGUNDERWOOD/tex-fmt/releases/download/v$version/tex-fmt-aarch64-windows.zip" }

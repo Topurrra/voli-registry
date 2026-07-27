@@ -12,3 +12,4 @@ sha256 = "01d9a0d7193ef4df170d65ca8c64a5ae73e1be0502c0735c7f2ae0875439cc1a"
 
 [autoupdate]
 checkver = { github = "ProtonMail/proton-mail-export" }
+url_template = { x64 = "https://github.com/ProtonMail/proton-mail-export/releases/download/v$version/proton-mail-export-cli-windows_x86_64.zip" }

@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "transmission/transmission" }
+url_template = { x64 = "https://github.com/transmission/transmission/releases/download/$version/transmission-$version-x64.msi" }

@@ -1,0 +1,23 @@
+name = "nodejs"
+version = "26.5.0"
+description = "An asynchronous event driven JavaScript runtime designed to build scalable network applications."
+homepage = "https://nodejs.org"
+license = "MIT"
+kind = "app"
+extract_dir = "node-v26.5.0-win-x64"
+persist = ["bin", "cache"]
+
+[source.x64]
+url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-win-x64.7z"
+sha256 = "8385446010721c01b9959d554e365b0494ecc047a1f13cc8af219389ce102db3"
+
+[source.arm64]
+url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-win-arm64.7z"
+sha256 = "9245990322cc93b0dc4ecae502d3a3ad66086de2fd401315e31c40de3a4bdca7"
+
+[env]
+PATH = "{dir}\\bin;{dir}"
+
+[autoupdate]
+checkver = { url = "https://nodejs.org/dist/index.json", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z", arm64 = "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z" }

@@ -16,3 +16,4 @@ sha256 = "fda90a5c7c1306a3e8dace1b8cc4db91bd85fd64b13b8d3b9dab321e37f93edc"
 
 [autoupdate]
 checkver = { github = "tamnd/kage" }
+url_template = { x64 = "https://github.com/tamnd/kage/releases/download/v$version/kage_$version_windows_amd64.zip", arm64 = "https://github.com/tamnd/kage/releases/download/v$version/kage_$version_windows_arm64.zip" }

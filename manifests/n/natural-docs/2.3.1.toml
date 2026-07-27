@@ -12,4 +12,5 @@ url = "https://www.naturaldocs.org/download/natural_docs/2.3.1/Natural_Docs_2.3.
 sha256 = "92144e2deb1ff2606d29343cfea203ea890549ad2f77c03df1cea2d8014972cb"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?sm)Current Stable Release:.*?Natural Docs ([\\\\d+.]+)\",\"url\":\"https://www.naturaldocs.org/download/\"}"
+checkver = { url = "https://www.naturaldocs.org/download/", regex = "(?sm)Current Stable Release:.*?Natural Docs ([\\d+.]+)" }
+url_template = "https://www.naturaldocs.org/download/natural_docs/$version/Natural_Docs_$version.zip"

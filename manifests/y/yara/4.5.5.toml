@@ -11,3 +11,4 @@ sha256 = "352396c8a3d9b31b157a4820abd3b9347fc934a2314cdda8a4f566a5570163e4"
 
 [autoupdate]
 checkver = { github = "VirusTotal/yara" }
+url_template = { x64 = "https://github.com/VirusTotal/yara/releases/download/v$version/yara-$version-$matchBuild-win64.zip" }

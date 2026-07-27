@@ -14,3 +14,4 @@ sha256 = "cb0496343bb9c7ebe851e6169aa02fce8fec941d92dfeee21966f4ea311f0329"
 
 [autoupdate]
 checkver = { github = "lighttable/lighttable" }
+url_template = "https://github.com/LightTable/LightTable/releases/download/$version/lighttable-$version-windows.zip"

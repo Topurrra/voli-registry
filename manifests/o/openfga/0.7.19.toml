@@ -16,3 +16,4 @@ sha256 = "8a005731073657ec319e30099681f33cf327db69e77c2f4622d4e41bc98473f2"
 
 [autoupdate]
 checkver = { github = "openfga/cli" }
+url_template = { x64 = "https://github.com/openfga/cli/releases/download/v$version/fga_$version_windows_amd64.tar.gz", arm64 = "https://github.com/openfga/cli/releases/download/v$version/fga_$version_windows_arm64.tar.gz" }

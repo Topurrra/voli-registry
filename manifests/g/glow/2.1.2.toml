@@ -13,3 +13,4 @@ sha256 = "9bc12fce6061b0dd45325401b0d11ec2e45981b76eef2b7fa3c0f941ba5c0b39"
 
 [autoupdate]
 checkver = { github = "charmbracelet/glow" }
+url_template = { x64 = "https://github.com/charmbracelet/glow/releases/download/v$version/glow_$version_Windows_x86_64.zip" }

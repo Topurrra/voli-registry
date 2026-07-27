@@ -14,3 +14,4 @@ sha256 = "b590beffbc6f7f6efe70c37143d99cdfb9716d3e19b5ce8364396a914a17f309"
 
 [autoupdate]
 checkver = { github = "Mzying2001/CefFlashBrowser" }
+url_template = { x64 = "https://github.com/Mzying2001/CefFlashBrowser/releases/download/$matchTag/FlashBrowser_x64_v$version.zip" }

@@ -15,4 +15,5 @@ url = "https://mirror.racket-lang.org/installers/9.2/racket-minimal-9.2-arm64-wi
 sha256 = "667b5b81acfac067e13913124bf1b1e04f6be519db30fc33f8a070a12e0499d9"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://download.racket-lang.org/\"}"
+checkver = { url = "https://download.racket-lang.org/", regex = "Version ([\\d.]+)" }
+url_template = { x64 = "https://mirror.racket-lang.org/installers/$version/racket-minimal-$version-x86_64-win32.exe#/dl.7z", arm64 = "https://mirror.racket-lang.org/installers/$version/racket-minimal-$version-arm64-win32.exe#/dl.7z" }

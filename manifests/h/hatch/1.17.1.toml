@@ -12,3 +12,4 @@ sha256 = "6b8a66dcb64cfcc14148b7969843da205a63be2b95decd93e8f869bc8c340a99"
 
 [autoupdate]
 checkver = { github = "pypa/hatch" }
+url_template = { x64 = "https://github.com/pypa/hatch/releases/download/hatch-v$version/hatch-x86_64-pc-windows-msvc.zip" }

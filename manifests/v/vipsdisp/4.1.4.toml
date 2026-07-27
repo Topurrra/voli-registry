@@ -17,3 +17,4 @@ sha256 = "9475b867dad83defda6e576df858f258c071a23441e08ed4df64dc3bde78419b"
 
 [autoupdate]
 checkver = { github = "libvips/vipsdisp" }
+url_template = { x64 = "https://github.com/libvips/vipsdisp/releases/download/v$version/vipsdisp-x64-$version.zip", arm64 = "https://github.com/libvips/vipsdisp/releases/download/v$version/vipsdisp-arm64-$version.zip" }

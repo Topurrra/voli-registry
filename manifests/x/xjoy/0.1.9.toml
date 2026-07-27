@@ -13,3 +13,4 @@ sha256 = "3d4b8e77b8b81ee147bc6942cbfea3231a07c07cd90db523c5f4c6b8e7e71b15"
 
 [autoupdate]
 checkver = { github = "sam0x17/XJoy" }
+url_template = "https://github.com/sam0x17/XJoy/releases/download/v$version/XJoy.v$version.zip"

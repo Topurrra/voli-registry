@@ -13,3 +13,4 @@ sha256 = "3be696c1cc44907f2ea73aac35de4a5d45048255308f34ed4410a743163a4f87"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/Mysticial/y-cruncher/releases/latest\",\"jsonpath\":\"$.tag_name\",\"regex\":\"\\\\Av(\\\\S+)\\\\Z\"}"
+url_template = "https://github.com/Mysticial/y-cruncher/releases/download/v$version/y-cruncher.v$version.zip"

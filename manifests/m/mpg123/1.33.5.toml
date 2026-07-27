@@ -12,4 +12,5 @@ url = "https://www.mpg123.org/download/win64/1.33.5/mpg123-1.33.5-static-x86-64.
 sha256 = "a174b0bb766a15783718b72907e0ac8f2fdd51036e0c739e29ff5b624f70a93d"
 
 [autoupdate]
-checkver = "{\"regex\":\"download/win64/([\\\\d.]+)/\",\"url\":\"https://www.mpg123.org/download.shtml\"}"
+checkver = { url = "https://www.mpg123.org/download.shtml", regex = "download/win64/([\\d.]+)/" }
+url_template = { x64 = "https://www.mpg123.org/download/win64/$version/mpg123-$version-static-x86-64.zip" }

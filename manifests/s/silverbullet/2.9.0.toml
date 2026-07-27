@@ -12,3 +12,4 @@ sha256 = "7a2c88fd83da8435ec86f1ccb6f1ed033aa731c6831cf91b5334e70971d39f79"
 
 [autoupdate]
 checkver = { github = "silverbulletmd/silverbullet" }
+url_template = { x64 = "https://github.com/silverbulletmd/silverbullet/releases/download/$version/silverbullet-server-windows-x86_64.zip" }

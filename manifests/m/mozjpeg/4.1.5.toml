@@ -12,3 +12,4 @@ sha256 = "176ef4f632b09dca449e27bc11df090c1222528dff9f583a14bbd026a0c8eb2f"
 
 [autoupdate]
 checkver = { github = "garyzyg/mozjpeg-windows" }
+url_template = { x64 = "https://github.com/garyzyg/mozjpeg-windows/releases/download/$version/mozjpeg-x64.zip" }

@@ -13,3 +13,4 @@ sha256 = "28ee98d22b78fecc7abea7d2bd4c6bba3934f34628b259d75edc4b7c865b073a"
 
 [autoupdate]
 checkver = { github = "micahkepe/jsongrep" }
+url_template = { x64 = "https://github.com/micahkepe/jsongrep/releases/download/v$version/jsongrep-$version-x86_64-pc-windows-msvc.zip" }

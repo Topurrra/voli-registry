@@ -12,3 +12,4 @@ sha256 = "6f1ea25914fb5c1ae7c48bcb688bea37e54960a6143208c35b4fb506ac947611"
 
 [autoupdate]
 checkver = { github = "int128/kubelogin" }
+url_template = { x64 = "https://github.com/int128/kubelogin/releases/download/v$version/kubelogin_windows_amd64.zip" }

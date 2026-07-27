@@ -12,3 +12,4 @@ sha256 = "4abb6cbd441311f2d9ffdb37f00497a44cef7dffa4bd1ce38d59e526d52cdd70"
 
 [autoupdate]
 checkver = { github = "vmware/govmomi" }
+url_template = { x64 = "https://github.com/vmware/govmomi/releases/download/v$version/govc_Windows_x86_64.zip" }

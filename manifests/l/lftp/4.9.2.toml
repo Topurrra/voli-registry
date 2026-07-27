@@ -12,3 +12,4 @@ sha256 = "31f7464f297a0af6529e1b7a3c9602f2fd2694f5402cedc52c20551108e1d02a"
 
 [autoupdate]
 checkver = "<p><strong>Version ([\\d.]+) - "
+url_template = { x64 = "https://f001.backblazeb2.com/file/nwgat-cdn/lftp/win64/lftp-$version.win64-openssl.zip" }

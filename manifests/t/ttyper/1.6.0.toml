@@ -16,3 +16,4 @@ sha256 = "95c2a4a93b7c3f8de0ce69fd8281f3dd7036cbcae671531e5014c42255578f5d"
 
 [autoupdate]
 checkver = { github = "max-niederman/ttyper" }
+url_template = { x64 = "https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/max-niederman/ttyper/releases/download/v$version/ttyper-aarch64-pc-windows-msvc.zip" }

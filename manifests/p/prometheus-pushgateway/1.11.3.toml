@@ -13,3 +13,4 @@ sha256 = "ba22eae5fe5434446cac98ee620accfdb392852583908919e5faa5860da9dc10"
 
 [autoupdate]
 checkver = { github = "prometheus/pushgateway" }
+url_template = { x64 = "https://github.com/prometheus/pushgateway/releases/download/v$version/pushgateway-$version.windows-amd64.tar.gz" }

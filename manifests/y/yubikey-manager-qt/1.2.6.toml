@@ -12,4 +12,5 @@ url = "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager
 sha256 = "fc8f1c992c5b9f5d542549072cf58178a45af31851561b22a768e35dbfd648b7"
 
 [autoupdate]
-checkver = "{\"regex\":\"dt>([\\\\d.]+)<\",\"url\":\"https://developers.yubico.com/yubikey-manager-qt/Releases/\"}"
+checkver = { url = "https://developers.yubico.com/yubikey-manager-qt/Releases/", regex = "dt>([\\d.]+)<" }
+url_template = { x64 = "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-$version-win64.exe#/dl.7z" }

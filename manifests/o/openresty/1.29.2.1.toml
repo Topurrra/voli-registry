@@ -13,4 +13,5 @@ url = "https://openresty.org/download/openresty-1.29.2.1-win64.zip"
 sha256 = "44586213135d21aa2c48eec533b4c207bdfecda53bd9b6d5563f1aac544aca4b"
 
 [autoupdate]
-checkver = "{\"regex\":\"openresty-([\\\\d.]+)-win\",\"url\":\"https://openresty.org/en/download.html\"}"
+checkver = { url = "https://openresty.org/en/download.html", regex = "openresty-([\\d.]+)-win" }
+url_template = { x64 = "https://openresty.org/download/openresty-$version-win64.zip" }

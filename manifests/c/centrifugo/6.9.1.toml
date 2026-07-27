@@ -12,3 +12,4 @@ sha256 = "98c7569d43e38d8c69d6f7db5f89b608d848f0ce21e174ea3e32ac11557a5435"
 
 [autoupdate]
 checkver = { github = "centrifugal/centrifugo" }
+url_template = { x64 = "https://github.com/centrifugal/centrifugo/releases/download/v$version/centrifugo_$version_windows_amd64.zip" }

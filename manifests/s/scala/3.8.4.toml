@@ -1,0 +1,20 @@
+name = "scala"
+version = "3.8.4"
+description = "A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way."
+homepage = "https://www.scala-lang.org/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "PFiles\\Scala"
+bin = ["bin\\scala.bat", "bin\\scalac.bat", "bin\\scaladoc.bat"]
+
+[source.x64]
+url = "https://github.com/scala/scala3/releases/download/3.8.4/scala3-3.8.4.msi"
+sha256 = "32ac6f84e0482583f36457b6b9b110672443c876699e433477622c52fde623a9"
+kind = "installer-archive"
+
+[env]
+SCALA_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "scala/scala3" }
+url_template = "https://github.com/scala/scala3/releases/download/$version/scala3-$version.msi"

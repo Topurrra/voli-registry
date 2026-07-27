@@ -16,3 +16,4 @@ sha256 = "933b3c2aaa016d84cd2b3926ea9b99c3febdc6bb778bfd854640223a3a4c5e50"
 
 [autoupdate]
 checkver = { github = "evilmartians/lefthook" }
+url_template = { x64 = "https://github.com/evilmartians/lefthook/releases/download/v$version/lefthook_$version_Windows_x86_64.gz", arm64 = "https://github.com/evilmartians/lefthook/releases/download/v$version/lefthook_$version_Windows_arm64.gz" }

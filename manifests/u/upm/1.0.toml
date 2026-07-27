@@ -12,3 +12,4 @@ sha256 = "9d590a7beb702d6d54678a3f1766e1d7cdc2b9faa577f507c26e76cd625a687d"
 
 [autoupdate]
 checkver = { github = "replit/upm" }
+url_template = { x64 = "https://github.com/replit/upm/releases/download/v$version/upm_$version_windows_amd64.tar.gz" }

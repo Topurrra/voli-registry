@@ -14,3 +14,4 @@ sha256 = "c5130992989094b337c02131588030bc534e69cea3eef7d1179d52876d98b770"
 
 [autoupdate]
 checkver = { github = "azagaya/laigter" }
+url_template = "https://github.com/azagaya/laigter/releases/download/$version/laigter-windows.zip"

@@ -16,4 +16,5 @@ PATH = "{dir}\\bin"
 SPARK_HOME = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\"addRelease\\\\(\\\"([\\\\d.]+)\\\",\",\"url\":\"https://spark.apache.org/js/downloads.js\"}"
+checkver = { url = "https://spark.apache.org/js/downloads.js", regex = "addRelease\\(\"([\\d.]+)\"," }
+url_template = "https://archive.apache.org/dist/spark/spark-$version/spark-$version-bin-hadoop3.tgz"

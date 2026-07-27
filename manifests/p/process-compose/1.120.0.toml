@@ -16,3 +16,4 @@ sha256 = "bf5cda823d0b6d0bcf454da0f786d1a140b5f27dbcc10c2162aa8cb7a3d363e9"
 
 [autoupdate]
 checkver = { github = "F1bonacc1/process-compose" }
+url_template = { x64 = "https://github.com/F1bonacc1/process-compose/releases/download/v$version/process-compose_windows_amd64.zip", arm64 = "https://github.com/F1bonacc1/process-compose/releases/download/v$version/process-compose_windows_arm64.zip" }

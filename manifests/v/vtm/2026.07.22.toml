@@ -16,3 +16,4 @@ sha256 = "b72d9f1b847f5086528c49b69d0c296a0df7bc658b59d9bc3345419eb145b30c"
 
 [autoupdate]
 checkver = { github = "directvt/vtm" }
+url_template = { x64 = "https://github.com/directvt/vtm/releases/download/v$version/vtm_windows_x86_64.7z", arm64 = "https://github.com/directvt/vtm/releases/download/v$version/vtm_windows_arm64.7z" }

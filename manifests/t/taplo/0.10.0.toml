@@ -16,3 +16,4 @@ sha256 = "65a50c5d3b78f6014e6bc6d64eb6dc1d4992bc236589c9bb29e5609fc3454674"
 
 [autoupdate]
 checkver = { github = "tamasfe/taplo" }
+url_template = { x64 = "https://github.com/tamasfe/taplo/releases/download/$version/taplo-windows-x86_64.zip", arm64 = "https://github.com/tamasfe/taplo/releases/download/$version/taplo-windows-aarch64.zip" }

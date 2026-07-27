@@ -19,3 +19,4 @@ fzf = "*"
 
 [autoupdate]
 checkver = { github = "shihanng/gig" }
+url_template = { x64 = "https://github.com/shihanng/gig/releases/download/v$version/gig_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/shihanng/gig/releases/download/v$version/gig_$version_Windows_arm64.tar.gz" }

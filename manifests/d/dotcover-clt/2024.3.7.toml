@@ -16,3 +16,4 @@ sha256 = "a020907614b919fa37cb70e56a57db5f9d60393a93879a91981e3dd8e3b6ef40"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&platform=zip&type=release\"}"
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotCover.CommandLineTools.windows-x64.$version.zip", arm64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotCover.CommandLineTools.windows-arm64.$version.zip" }

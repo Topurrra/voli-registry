@@ -13,3 +13,4 @@ sha256 = "166d125e409a3d4f0f92a2f583df3997cdabbaf0aa8803cdbbac4460ce8eee30"
 
 [autoupdate]
 checkver = { github = "fabiospampinato/noty" }
+url_template = "https://github.com/fabiospampinato/noty/releases/download/v$version/Noty-$version-win.zip"

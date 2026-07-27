@@ -12,3 +12,4 @@ sha256 = "31c6dd5472f3d83b4a6023cf929b475ded04ba5fa24b2d027fae3a3098b169ea"
 
 [autoupdate]
 checkver = { github = "vslavik/diff-pdf" }
+url_template = "https://github.com/vslavik/diff-pdf/releases/download/v$version/diff-pdf-win-$version.zip"

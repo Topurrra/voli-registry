@@ -17,3 +17,4 @@ sha256 = "d871f2b5e9e048983c19e72e1e1f36806ef16819ec2344b4e60e0c5db8356a8e"
 
 [autoupdate]
 checkver = { github = "vmware/octant" }
+url_template = { x64 = "https://github.com/vmware/octant/releases/download/v$version/octant_$version_Windows-64bit.zip", arm64 = "https://github.com/vmware/octant/releases/download/v$version/octant_$version_Windows-arm64.zip" }

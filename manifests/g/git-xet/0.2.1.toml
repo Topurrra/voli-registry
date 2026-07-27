@@ -12,3 +12,4 @@ sha256 = "427179c2f410bb0a1da28df590adcfbdc8fff50369f295da148fb1c9c27d2cea"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/huggingface/xet-core/releases?per_page=45\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /git-xet/i)].browser_download_url\",\"regex\":\"(?i)download/git-xet-v([\\\\d.]+)/git-xet\"}"
+url_template = { x64 = "https://github.com/huggingface/xet-core/releases/download/git-xet-v$version/git-xet-windows-x86_64.zip" }

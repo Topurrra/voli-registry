@@ -12,3 +12,4 @@ sha256 = "03f36e72a8d3de98dcdc031603fc5208a9887478b1fcbdb154dd7e632dda424f"
 
 [autoupdate]
 checkver = { github = "tobya/DocTo" }
+url_template = { x64 = "https://github.com/tobya/DocTo/releases/download/v$version/docto_64.zip" }

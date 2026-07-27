@@ -14,3 +14,4 @@ sha256 = "923abaabc7e6bc7e2a030269c7df5f0ac4a0adc24c03b83262fefa0c026c0421"
 
 [autoupdate]
 checkver = { github = "fmd-project-team/FMD" }
+url_template = { x64 = "https://github.com/fmd-project-team/FMD/releases/download/$version/fmd_$version_x86_64-win64.7z" }

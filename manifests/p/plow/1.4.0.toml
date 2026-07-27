@@ -16,3 +16,4 @@ sha256 = "09e58db86079f7cc9c94d2f9077c161421cd80ff1241bf01fd95f6edae0f5293"
 
 [autoupdate]
 checkver = { github = "six-ddc/plow" }
+url_template = { x64 = "https://github.com/six-ddc/plow/releases/download/v$version/plow_$version_windows_amd64.tar.gz", arm64 = "https://github.com/six-ddc/plow/releases/download/v$version/plow_$version_windows_arm64.tar.gz" }

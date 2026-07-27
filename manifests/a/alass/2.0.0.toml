@@ -13,3 +13,4 @@ sha256 = "e81a72f97f592910e909a2352d6b8c0de0801c51ac1383bad4ebf3f2ecdd2fd8"
 
 [autoupdate]
 checkver = { github = "kaegi/alass" }
+url_template = { x64 = "https://github.com/kaegi/alass/releases/download/v$version/alass-windows64.zip" }

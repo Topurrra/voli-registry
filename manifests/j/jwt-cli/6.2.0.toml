@@ -12,3 +12,4 @@ sha256 = "f8dc93223cf7f778e1d8c2787832b4a5f70511ad0073424d27bbdb3f071ddd4f"
 
 [autoupdate]
 checkver = { github = "mike-engel/jwt-cli" }
+url_template = { x64 = "https://github.com/mike-engel/jwt-cli/releases/download/$version/jwt-windows.tar.gz" }

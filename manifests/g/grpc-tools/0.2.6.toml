@@ -12,3 +12,4 @@ sha256 = "2ee536fffd58a2bdd576409d98b7c959a9b9d50f095eeee842507fdcc1994747"
 
 [autoupdate]
 checkver = { github = "bradleyjkemp/grpc-tools" }
+url_template = { x64 = "https://github.com/bradleyjkemp/grpc-tools/releases/download/v$version/grpc-tools_$version_Windows_amd64.zip" }

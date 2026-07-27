@@ -13,3 +13,4 @@ sha256 = "379e1cc0faf8a5bcb892e48cf9d7019ef35670dfdc97db77f4ba3f3eeefe2110"
 
 [autoupdate]
 checkver = { github = "vivainio/RoughGrep" }
+url_template = "https://github.com/vivainio/RoughGrep/releases/download/v$version/RoughGrep-$version.zip"

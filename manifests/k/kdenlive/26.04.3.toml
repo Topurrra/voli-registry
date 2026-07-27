@@ -13,4 +13,5 @@ url = "https://download.kde.org/stable/kdenlive/26.04/windows/kdenlive-26.04.3_s
 sha256 = "f2dc616c9c29cae261a4e4fc56293f5e88362b8024dc0b8f662c480c97e18df9"
 
 [autoupdate]
-checkver = "{\"regex\":\"kdenlive-([\\\\d\\\\w.-]+)_standalone\\\\.exe\",\"url\":\"https://kdenlive.org/download/\"}"
+checkver = { url = "https://kdenlive.org/download/", regex = "kdenlive-([\\d\\w.-]+)_standalone\\.exe" }
+url_template = { x64 = "https://download.kde.org/stable/kdenlive/$majorVersion.$minorVersion/windows/kdenlive-$version_standalone.exe#/dl.7z" }

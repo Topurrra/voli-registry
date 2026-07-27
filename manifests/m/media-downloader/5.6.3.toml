@@ -15,3 +15,4 @@ sha256 = "8294660eeafb98459492ad2296b1b75769073f5dd08c028a8b7c8bb1777bbb48"
 
 [autoupdate]
 checkver = { github = "mhogomchungu/media-downloader" }
+url_template = { x64 = "https://github.com/mhogomchungu/media-downloader/releases/download/$version/MediaDownloaderQt6-$version.zip" }

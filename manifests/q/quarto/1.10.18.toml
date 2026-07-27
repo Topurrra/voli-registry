@@ -12,3 +12,4 @@ sha256 = "4e824652ff0da3f646868277582ed59c0872d1456e35350b7d7cdc4243ee18c2"
 
 [autoupdate]
 checkver = { github = "quarto-dev/quarto-cli" }
+url_template = { x64 = "https://github.com/quarto-dev/quarto-cli/releases/download/v$version/quarto-$version-win.zip" }

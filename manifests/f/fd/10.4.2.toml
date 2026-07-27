@@ -17,3 +17,4 @@ sha256 = "4f9110c2d5b33a7f760bfa5510f4c113d828109f7277d421b1053a9943c0fc92"
 
 [autoupdate]
 checkver = { github = "sharkdp/fd" }
+url_template = { x64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-aarch64-pc-windows-msvc.zip" }

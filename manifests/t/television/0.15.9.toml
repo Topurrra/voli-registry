@@ -12,3 +12,4 @@ sha256 = "abfbb2a9989cc633f4467dd9026ef84e63969acaa87c69541073226533236ecb"
 
 [autoupdate]
 checkver = { github = "alexpasmantier/television" }
+url_template = { x64 = "https://github.com/alexpasmantier/television/releases/download/$version/tv-$version-x86_64-pc-windows-msvc.zip" }

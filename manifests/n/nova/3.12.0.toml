@@ -12,3 +12,4 @@ sha256 = "b4d872e692547f67308eb6fe16d4777f5f75fe2aea79a501d71e5089aeaa8945"
 
 [autoupdate]
 checkver = { github = "FairwindsOps/nova" }
+url_template = { x64 = "https://github.com/FairwindsOps/nova/releases/download/v$version/nova_$version_windows_amd64.tar.gz" }

@@ -12,4 +12,5 @@ url = "https://www.musicpd.org/download/ncmpc/0/ncmpc-0.20-win32.zip"
 sha256 = "ec7ba2ee6ed58a939eb0487e1e79169f695f7172d620790d734e6c3f9711fc1e"
 
 [autoupdate]
-checkver = "{\"regex\":\"ncmpc-([\\\\d.]+)-win32\\\\.zip\",\"url\":\"https://www.musicpd.org/download/ncmpc/0/\"}"
+checkver = { url = "https://www.musicpd.org/download/ncmpc/0/", regex = "ncmpc-([\\d.]+)-win32\\.zip" }
+url_template = "https://www.musicpd.org/download/ncmpc/0/ncmpc-$version-win32.zip"

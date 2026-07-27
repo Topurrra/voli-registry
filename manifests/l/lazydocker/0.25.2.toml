@@ -16,3 +16,4 @@ sha256 = "25a4f4708b7f73a0aeadde13c8d7a172baa5a1ebabccb062765c28ae93029903"
 
 [autoupdate]
 checkver = { github = "jesseduffield/lazydocker" }
+url_template = { x64 = "https://github.com/jesseduffield/lazydocker/releases/download/v$version/lazydocker_$version_Windows_x86_64.zip", arm64 = "https://github.com/jesseduffield/lazydocker/releases/download/v$version/lazydocker_$version_Windows_arm64.zip" }

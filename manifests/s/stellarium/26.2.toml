@@ -18,4 +18,5 @@ sha256 = "8c35bde7a6f580b9c97d85d514de33148e4b56c2b4d05744dca374af3d7f38d3"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?sm)stellarium-(?<long>[\\\\d\\\\.]+)\\\\.tar\\\\.gz</.*?Stellarium (?<version>[\\\\d\\\\.]+) for\",\"url\":\"https://github.com/Stellarium/stellarium/releases\"}"
+checkver = { url = "https://github.com/Stellarium/stellarium/releases", regex = "(?sm)stellarium-(?<long>[\\d\\.]+)\\.tar\\.gz</.*?Stellarium (?<version>[\\d\\.]+) for" }
+url_template = { x64 = "https://github.com/Stellarium/stellarium/releases/download/v$version/stellarium-$matchLong-qt6-win64.exe", arm64 = "https://github.com/Stellarium/stellarium/releases/download/v$version/stellarium-$matchLong-qt6-arm64.exe" }

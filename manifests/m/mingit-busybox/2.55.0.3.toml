@@ -15,3 +15,4 @@ GIT_INSTALL_ROOT = "{dir}"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"download/v(?<tag>[\\\\d.]+windows\\\\.\\\\d)/MinGit-([\\\\d.]+)-busybox-64\"}"
+url_template = { x64 = "https://github.com/git-for-windows/git/releases/download/v$matchTag/MinGit-$version-busybox-64-bit.zip" }

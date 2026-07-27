@@ -16,3 +16,4 @@ sha256 = "bea671c52214d61f4e202423140bab5a5e9b5b82091aa4f8f1145e1fc0adfe0c"
 
 [autoupdate]
 checkver = { github = "openclaw/gogcli" }
+url_template = { x64 = "https://github.com/openclaw/gogcli/releases/download/v$version/gogcli_$version_windows_amd64.zip", arm64 = "https://github.com/openclaw/gogcli/releases/download/v$version/gogcli_$version_windows_arm64.zip" }

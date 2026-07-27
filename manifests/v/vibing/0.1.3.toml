@@ -13,3 +13,4 @@ sha256 = "00b28fea2b9ecd2ed203f247aed58521b53a85e4ea1bfa8e6040f658a573f7b4"
 
 [autoupdate]
 checkver = { github = "VibingJustSpeakIt/Vibing" }
+url_template = { x64 = "https://github.com/VibingJustSpeakIt/Vibing/releases/download/v$version/Vibing-v$version-windows.zip" }

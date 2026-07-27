@@ -12,3 +12,4 @@ sha256 = "52093c1cba0bb8e00da14c9eef678eb052fc729c32419415817076f06b5c85d8"
 
 [autoupdate]
 checkver = { github = "github/git-sizer" }
+url_template = { x64 = "https://github.com/github/git-sizer/releases/download/v$version/git-sizer-$version-windows-amd64.zip" }

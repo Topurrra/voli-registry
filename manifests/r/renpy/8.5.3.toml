@@ -13,4 +13,5 @@ url = "https://www.renpy.org/dl/8.5.3/renpy-8.5.3-sdk.7z.exe#/dl.7z"
 sha256 = "f0d18b03af2bd1eb6dee223071557028a287f4b82a2403bddf1f336869346dfb"
 
 [autoupdate]
-checkver = "{\"regex\":\"Ren'Py ([\\\\d.]+)\",\"url\":\"https://www.renpy.org/release_list.html\"}"
+checkver = { url = "https://www.renpy.org/release_list.html", regex = "Ren'Py ([\\d.]+)" }
+url_template = "https://www.renpy.org/dl/$version/renpy-$version-sdk.7z.exe#/dl.7z"

@@ -14,3 +14,4 @@ sha256 = "5d1f4974fe1d7517a7bd23f86985eaf934149625e3cefc6c98bba473a1658620"
 
 [autoupdate]
 checkver = { github = "pawelsalawa/sqlitestudio" }
+url_template = { x64 = "https://github.com/pawelsalawa/sqlitestudio/releases/download/$version/sqlitestudio-$version-windows-x64.zip" }

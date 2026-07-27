@@ -16,3 +16,4 @@ sha256 = "5a25c390a9bed8aa0d733b89b4911816e2e25220dad95372dedf8ef1c2f0d92f"
 
 [autoupdate]
 checkver = { github = "langchain-ai/langsmith-cli" }
+url_template = { x64 = "https://github.com/langchain-ai/langsmith-cli/releases/download/v$version/langsmith_windows_amd64.zip", arm64 = "https://github.com/langchain-ai/langsmith-cli/releases/download/v$version/langsmith_windows_arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "ed32e5885a5ee88b4a8471c50b29c35e002db409fbdeb249a4c558d9feee5885"
 
 [autoupdate]
 checkver = { github = "YS-L/flamelens" }
+url_template = { x64 = "https://github.com/YS-L/flamelens/releases/download/v$version/flamelens-x86_64-pc-windows-msvc.zip" }

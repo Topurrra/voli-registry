@@ -14,3 +14,4 @@ sha256 = "de4983f8f537e3876d0c326423537914b576b6970e35b9c9cc62eafe72719ec2"
 
 [autoupdate]
 checkver = { github = "lite-xl/lite-xl" }
+url_template = { x64 = "https://github.com/lite-xl/lite-xl/releases/download/v$version/lite-xl-v$version-windows-x86_64.zip" }

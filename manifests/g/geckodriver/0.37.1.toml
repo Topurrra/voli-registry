@@ -12,3 +12,4 @@ sha256 = "dfed9315abe8d2fbc1b6161a2ee8002452e79cf05ee92fdc653a4e26bc35edd8"
 
 [autoupdate]
 checkver = { github = "mozilla/geckodriver" }
+url_template = { x64 = "https://github.com/mozilla/geckodriver/releases/download/v$version/geckodriver-v$version-win64.zip" }

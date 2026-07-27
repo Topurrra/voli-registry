@@ -13,4 +13,5 @@ sha256 = "4bac670cec408d26f8332a02c30c1a1de766956b8cd3c7ba8e9e1e8400e93eec"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://www.ultrapico.com/ExpressoDownload.htm\"}"
+checkver = { url = "https://www.ultrapico.com/ExpressoDownload.htm", regex = "Version ([\\d.]+)" }
+url_template = "https://www.ultrapico.com/ExpressoSetup-$version.msi"

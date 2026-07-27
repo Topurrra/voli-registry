@@ -13,3 +13,4 @@ sha256 = "31ca04fa0777af79d204c6ea351d3587f6cc97cdc785f30bbe4ca629375be3f0"
 
 [autoupdate]
 checkver = "{\"regex\":\"InfoQubeV([\\\\d.]+[A-Za-z]?)Portable\\\\.zip\",\"url\":\"http://www.infoqube.biz/download\"}"
+url_template = "https://infoqubeim.com/downloadarea/InfoQubeV$versionPortable.zip"

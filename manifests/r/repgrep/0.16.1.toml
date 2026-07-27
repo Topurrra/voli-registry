@@ -13,3 +13,4 @@ sha256 = "67bdbe22a22da65fed6237c8fc0a29cd35183fea277a429aa82e1b2956d89eff"
 
 [autoupdate]
 checkver = { github = "acheronfail/repgrep" }
+url_template = { x64 = "https://github.com/acheronfail/repgrep/releases/download/$version/repgrep-$version-x86_64-pc-windows-msvc.zip" }

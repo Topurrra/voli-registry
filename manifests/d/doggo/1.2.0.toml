@@ -12,3 +12,4 @@ sha256 = "a84f677f7596c320f419cdc035adb64e89def37fb1ee6c57500a39742024e664"
 
 [autoupdate]
 checkver = { github = "mr-karan/doggo" }
+url_template = { x64 = "https://github.com/mr-karan/doggo/releases/download/v$version/doggo-windows-x86_64.zip" }

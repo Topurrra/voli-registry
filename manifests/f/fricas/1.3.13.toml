@@ -13,3 +13,4 @@ sha256 = "ad3deae8a403f03e8378e1a44324e65d61418bcbe669ac9652759ec0ae77156f"
 
 [autoupdate]
 checkver = { github = "fricas/fricas" }
+url_template = { x64 = "https://github.com/fricas/fricas/releases/download/$version/fricas-$version-windows-x86-64.zip" }

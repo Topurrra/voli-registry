@@ -13,3 +13,4 @@ sha256 = "6c2d033653b30fb02087cf168d45cd06a940eb72f702567d05358c9a23c5178a"
 
 [autoupdate]
 checkver = { github = "mypaint/mypaint" }
+url_template = { x64 = "https://github.com/mypaint/mypaint/releases/download/v$version/mypaint-w64-$version-standalone.7z" }

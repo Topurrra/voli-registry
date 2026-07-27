@@ -16,3 +16,4 @@ sha256 = "dee7af98947e00dbde775bb740b2d75ccf1fc07ba8e62f1ae5e6fddb951daf1a"
 
 [autoupdate]
 checkver = { github = "crazystylus/otadump" }
+url_template = { x64 = "https://github.com/crazystylus/otadump/releases/download/$version/otadump-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/crazystylus/otadump/releases/download/$version/otadump-$version-aarch64-pc-windows-msvc.zip" }

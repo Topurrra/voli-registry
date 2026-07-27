@@ -12,3 +12,4 @@ sha256 = "f884aa776262a8dd6eec06194f0e8fa62af9d07b144505339c6d9b31248fef2c"
 
 [autoupdate]
 checkver = { github = "aliyun/aliyun-cli" }
+url_template = { x64 = "https://github.com/aliyun/aliyun-cli/releases/download/v$version/aliyun-cli-windows-$version-amd64.zip" }

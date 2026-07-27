@@ -13,3 +13,4 @@ sha256 = "c76204883caa9cf046e90fec57901871519e4c94c4cdfab2648178625f6bc4da"
 
 [autoupdate]
 checkver = { github = "u8sand/Baka-MPlayer" }
+url_template = { x64 = "https://github.com/u8sand/Baka-MPlayer/releases/download/v$version/Baka-MPlayer.x86_64.zip" }

@@ -13,3 +13,4 @@ sha256 = "f1078383739d8661ecc7df19c101a9dbdbee8bd83a139b54e304fe5d8519591a"
 
 [autoupdate]
 checkver = { github = "kando-menu/kando" }
+url_template = { x64 = "https://github.com/kando-menu/kando/releases/download/v$version/Kando-win32-x64-$version.zip" }

@@ -12,3 +12,4 @@ sha256 = "8d067614985f8a0d7b7aa6d2efeb713f76f94c10a01c940cc0dbc3de6692ccd6"
 
 [autoupdate]
 checkver = { github = "n0-computer/sendme" }
+url_template = { x64 = "https://github.com/n0-computer/sendme/releases/download/v$version/sendme-v$version-windows-x86_64.zip" }

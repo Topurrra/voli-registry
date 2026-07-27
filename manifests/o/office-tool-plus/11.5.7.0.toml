@@ -18,3 +18,4 @@ sha256 = "65e6184857edb01365cd42b64f134cc71e29195286ccd615d79d45d99cc34a30"
 
 [autoupdate]
 checkver = { github = "YerongAI/Office-Tool" }
+url_template = { x64 = "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_v$version_x64.zip", arm64 = "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_v$version_arm64.zip" }

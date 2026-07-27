@@ -12,3 +12,4 @@ sha256 = "cf42f7fbabd260dc2aef04b479d5ba4b05dfeae91b88a766f59421eaffc895c3"
 
 [autoupdate]
 checkver = { github = "LiRenTech/project-graph" }
+url_template = { x64 = "https://github.com/graphif/project-graph/releases/download/v$version/Project.Graph_$version_x64-setup.exe#/dl.7z" }

@@ -13,3 +13,4 @@ sha256 = "334c6e9646483d444cb0266e46e06ed985f1d3334c24291ffbeba2fc9eb5c90c"
 
 [autoupdate]
 checkver = { github = "lay295/TwitchDownloader" }
+url_template = { x64 = "https://github.com/lay295/TwitchDownloader/releases/download/$version/TwitchDownloaderGUI-$version-Windows-x64.zip" }

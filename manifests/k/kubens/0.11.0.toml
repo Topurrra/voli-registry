@@ -16,3 +16,4 @@ sha256 = "8d801fc38965a08488678763b92aad537086f00768ce8a7527e416e797870e0d"
 
 [autoupdate]
 checkver = { github = "ahmetb/kubectx" }
+url_template = { x64 = "https://github.com/ahmetb/kubectx/releases/download/v$version/kubens_v$version_windows_x86_64.zip", arm64 = "https://github.com/ahmetb/kubectx/releases/download/v$version/kubens_v$version_windows_arm64.zip" }

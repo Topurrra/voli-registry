@@ -13,4 +13,4 @@ sha256 = "4ba32e37bbd804ee69a88af018c3b9b49dd1bf772b65ad7c268718d0ed93eb29"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"SoulseekQt-(\\\\d+)-(\\\\d+)-(\\\\d+(?:-\\\\d+)?)-64bit\",\"replace\":\"${1}.${2}.${3}\",\"url\":\"https://www.slsknet.org/news/node/1\"}"
+checkver = { url = "https://www.slsknet.org/news/node/1", regex = "SoulseekQt-(\\d+)-(\\d+)-(\\d+(?:-\\d+)?)-64bit" }

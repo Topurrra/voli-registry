@@ -12,4 +12,5 @@ url = "https://gmic.eu/get_file.php?file=windows/gmic_4.0.3_cli_win64.zip"
 sha256 = "ba8b35dee1cb87413c6da737a2f973ddb744ee09832ec8629aa43ac29418f957"
 
 [autoupdate]
-checkver = "{\"regex\":\"file=windows/gmic_([\\\\d.]+)_cli_win64.zip\",\"url\":\"https://gmic.eu/download.html\"}"
+checkver = { url = "https://gmic.eu/download.html", regex = "file=windows/gmic_([\\d.]+)_cli_win64.zip" }
+url_template = { x64 = "https://gmic.eu/get_file.php?file=windows/gmic_$version_cli_win64.zip" }

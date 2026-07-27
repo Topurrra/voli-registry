@@ -16,3 +16,4 @@ sha256 = "097fdb13c151c933f8e131c7d7429a14482df947c8343c425b60660625ba01bc"
 
 [autoupdate]
 checkver = { github = "noahgorstein/jqp" }
+url_template = { x64 = "https://github.com/noahgorstein/jqp/releases/download/v$version/jqp_Windows_x86_64.tar.gz", arm64 = "https://github.com/noahgorstein/jqp/releases/download/v$version/jqp_Windows_arm64.tar.gz" }

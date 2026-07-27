@@ -11,4 +11,4 @@ url = "https://www.dreamset-editor.com/files/dreamset2413x64.zip"
 sha256 = "e61dc8125941076eb56c0db452be1b750f9fa20b78ccd3f62f35d05c6b980e82"
 
 [autoupdate]
-checkver = "{\"regex\":\"-\\\\s+ver\\\\s+([\\\\d.]+)\",\"url\":\"https://www.dreamset-editor.com/dreamset-history\"}"
+checkver = { url = "https://www.dreamset-editor.com/dreamset-history", regex = "-\\s+ver\\s+([\\d.]+)" }

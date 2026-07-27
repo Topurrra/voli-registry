@@ -15,3 +15,4 @@ sha256 = "fb5c555b470c15e461171a8a0172c2a794f0fb510113440927049815f4f8e546"
 
 [autoupdate]
 checkver = { github = "peazip/PeaZip" }
+url_template = { x64 = "https://github.com/peazip/PeaZip/releases/download/$version/peazip_portable-$version.WIN64.zip" }

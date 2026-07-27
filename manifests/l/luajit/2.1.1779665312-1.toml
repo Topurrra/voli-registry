@@ -13,3 +13,4 @@ sha256 = "912d359c2a0966fb503ae4c319f9d5d21826500a7377952696cd5ccf46bf7017"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.results.exact.version\",\"url\":\"https://packages.msys2.org/api/search?query=mingw-w64-x86_64-luajit&qtype=binpkg\"}"
+url_template = { x64 = "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-$version-any.pkg.tar.zst" }

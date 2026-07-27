@@ -19,3 +19,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "freelensapp/freelens" }
+url_template = { x64 = "https://github.com/freelensapp/freelens/releases/download/v$version/Freelens-$version-windows-amd64.msi", arm64 = "https://github.com/freelensapp/freelens/releases/download/v$version/Freelens-$version-windows-arm64.msi" }

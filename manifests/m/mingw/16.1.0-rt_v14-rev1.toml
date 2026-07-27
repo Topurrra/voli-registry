@@ -1,0 +1,18 @@
+name = "mingw"
+version = "16.1.0-rt_v14-rev1"
+description = "Minimalistic GNU for Windows is a runtime environment for GCC, GDB, make and related binutils."
+homepage = "https://www.mingw-w64.org"
+license = "ZPL-2.1"
+kind = "app"
+extract_dir = "mingw64"
+
+[source.x64]
+url = "https://github.com/niXman/mingw-builds-binaries/releases/download/16.1.0-rt_v14-rev1/x86_64-16.1.0-release-posix-seh-ucrt-rt_v14-rev1.7z"
+sha256 = "820bed24f181b96cfc3b0542113e11b4208a36810d2e5272fe715bcb99687284"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/niXman/mingw-builds-binaries/releases\",\"jsonpath\":\"$..tag_name\",\"regex\":\"([\\\\d.]+)-(?<build>[a-z0-9_\\\\-]+)\",\"replace\":\"${1}-${build}\"}"
+url_template = { x64 = "https://github.com/niXman/mingw-builds-binaries/releases/download/$version/x86_64-$match1-release-posix-seh-ucrt-$matchBuild.7z" }

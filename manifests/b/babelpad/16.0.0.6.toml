@@ -12,4 +12,4 @@ url = "https://www.babelstone.co.uk/Software/Download/BabelPad.zip"
 sha256 = "eed79df5a1e4638cb9006ec807fc47f16c5966f95ea319075336b819f40285b0"
 
 [autoupdate]
-checkver = "{\"regex\":\">([\\\\d.]+)<\",\"url\":\"https://www.babelstone.co.uk/Software/BabelPad_Versions.html\"}"
+checkver = { url = "https://www.babelstone.co.uk/Software/BabelPad_Versions.html", regex = ">([\\d.]+)<" }

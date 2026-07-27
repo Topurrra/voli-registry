@@ -16,3 +16,4 @@ sha256 = "fa709e803088b54774adf0111409483ee5edfbbc1f9dcc5610e81e4ed3841e53"
 
 [autoupdate]
 checkver = { github = "Wilfred/difftastic" }
+url_template = { x64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-aarch64-pc-windows-msvc.zip" }

@@ -14,3 +14,4 @@ sha256 = "eb95e60905a01e45b09ea0c4bd7e256a3d8c8888da21df4404e4fe0eae785732"
 
 [autoupdate]
 checkver = "{\"regex\":\"\\\"softwareVersion\\\": ([\\\\d.]+)\"}"
+url_template = { x64 = "https://www.kafkio.com/download/kafkio/$version/KafkIO-win-$version-x64.zip" }

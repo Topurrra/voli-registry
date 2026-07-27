@@ -18,3 +18,4 @@ sha256 = "fa8213756b0d4d7c03e45183c502d59c4af69c7d28c4715479361744065495b7"
 
 [autoupdate]
 checkver = { github = "FredrikNoren/ungit" }
+url_template = { x64 = "https://github.com/FredrikNoren/ungit/releases/download/v$version/ungit-$version-win32-x64.zip", arm64 = "https://github.com/FredrikNoren/ungit/releases/download/v$version/ungit-$version-win32-arm64.zip" }

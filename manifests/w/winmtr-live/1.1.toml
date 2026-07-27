@@ -13,3 +13,4 @@ sha256 = "5cbb846d88e7c90256cbb1d4dceb97dc38060912f614430da08a5494674b4ab2"
 
 [autoupdate]
 checkver = { github = "AUnited/WinMTR" }
+url_template = { x64 = "https://github.com/AUnited/WinMTR/releases/download/$version/WinMTR$version_x64.zip" }

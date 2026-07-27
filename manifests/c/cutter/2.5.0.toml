@@ -14,3 +14,4 @@ sha256 = "a04154a03a392dbf5886a629938582f7d23a93636fa0611c3e1c34905b197e69"
 
 [autoupdate]
 checkver = { github = "rizinorg/cutter" }
+url_template = { x64 = "https://github.com/rizinorg/cutter/releases/download/v$version/cutter-v$version-Windows-x86_64.zip" }

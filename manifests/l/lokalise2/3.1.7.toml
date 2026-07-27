@@ -12,3 +12,4 @@ sha256 = "31a4ca7a04869f61a6df6179f0045336edfd843072a3a5a68263a4d052f9927f"
 
 [autoupdate]
 checkver = { github = "lokalise/lokalise-cli-2-go" }
+url_template = { x64 = "https://github.com/lokalise/lokalise-cli-2-go/releases/download/v$version/lokalise2_windows_x86_64.zip" }

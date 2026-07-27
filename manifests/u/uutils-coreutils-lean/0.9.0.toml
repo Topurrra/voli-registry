@@ -13,3 +13,4 @@ sha256 = "3f84876d20b86e2b13ce4cca7d5fe220bc7773b92a3df844e70c2c9b590357d6"
 
 [autoupdate]
 checkver = { github = "uutils/coreutils" }
+url_template = { x64 = "https://github.com/uutils/coreutils/releases/download/$version/coreutils-$version-x86_64-pc-windows-gnu.zip" }

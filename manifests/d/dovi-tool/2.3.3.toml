@@ -16,3 +16,4 @@ sha256 = "559ed634ef0b956ab89ed965b4920371bb228983f105d99fafeb372a8190c872"
 
 [autoupdate]
 checkver = { github = "quietvoid/dovi_tool" }
+url_template = { x64 = "https://github.com/quietvoid/dovi_tool/releases/download/$version/dovi_tool-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/quietvoid/dovi_tool/releases/download/$version/dovi_tool-$version-aarch64-pc-windows-msvc.zip" }

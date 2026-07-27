@@ -13,3 +13,4 @@ sha256 = "23cee24f3ade178a1218d2beaae029d152cca01d02e903d8d60e18d41726ca36"
 
 [autoupdate]
 checkver = { github = "oliverschwendener/ueli" }
+url_template = "https://github.com/oliverschwendener/ueli/releases/download/v$version/ueli-$version-win.zip"

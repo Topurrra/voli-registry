@@ -17,3 +17,4 @@ sha256 = "e46de8521ffb015d67a3b9570f458d5d9f9ecb8dd83911cd75c9a3c70e91a622"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/M2Team/NanaRun/releases\",\"jsonpath\":\"$.[0].tag_name\"}"
+url_template = { x64 = "https://github.com/M2Team/NanaRun/releases/download/$version/NanaRun_1.0_Preview3_$version.zip", arm64 = "https://github.com/M2Team/NanaRun/releases/download/$version/NanaRun_1.0_Preview3_$version.zip" }

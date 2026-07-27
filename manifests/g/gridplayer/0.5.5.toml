@@ -14,3 +14,4 @@ sha256 = "13a7e2ff20267bd902128e4ab07edce135615f1c94efabc327b13c4ec0a94d3d"
 
 [autoupdate]
 checkver = { github = "vzhd1701/gridplayer" }
+url_template = { x64 = "https://github.com/vzhd1701/gridplayer/releases/download/v$version/GridPlayer-$version-win64-portable.zip" }

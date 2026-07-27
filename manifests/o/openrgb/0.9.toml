@@ -12,4 +12,5 @@ url = "https://openrgb.org/releases/release_0.9/OpenRGB_0.9_Windows_64_b5f46e3.z
 sha256 = "4a42df973bf9e0694268993478f03a71dafbf2ddbcb1512835b4bbabdc6dc6de"
 
 [autoupdate]
-checkver = "{\"regex\":\"/OpenRGB_([\\\\d.]+)_Windows_\\\\d+_(?<commit>[\\\\da-fA-F]{7})\\\\.zip\",\"url\":\"https://openrgb.org/releases.html\"}"
+checkver = { url = "https://openrgb.org/releases.html", regex = "/OpenRGB_([\\d.]+)_Windows_\\d+_(?<commit>[\\da-fA-F]{7})\\.zip" }
+url_template = { x64 = "https://openrgb.org/releases/release_$version/OpenRGB_$version_Windows_64_$matchCommit.zip" }

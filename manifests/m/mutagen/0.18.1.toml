@@ -16,3 +16,4 @@ sha256 = "d0dd95b60f6077f0c02baee3128f754c1507bc4abfa63ae0bcae12e01a3d45f1"
 
 [autoupdate]
 checkver = { github = "mutagen-io/mutagen" }
+url_template = { x64 = "https://github.com/mutagen-io/mutagen/releases/download/v$version/mutagen_windows_amd64_v$version.zip", arm64 = "https://github.com/mutagen-io/mutagen/releases/download/v$version/mutagen_windows_arm64_v$version.zip" }

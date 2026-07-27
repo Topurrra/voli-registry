@@ -14,3 +14,4 @@ sha256 = "71bb8c7d3e9bd1713424ec546681f4cf4d50961020607e1c154ade67ea532615"
 
 [autoupdate]
 checkver = { github = "pdfarranger/pdfarranger" }
+url_template = { x64 = "https://github.com/pdfarranger/pdfarranger/releases/download/$version/pdfarranger-$version-windows-portable.zip" }

@@ -12,3 +12,4 @@ sha256 = "a3fd620207d5c40da6ca789b95e7f823c54e854b7fade7f613e91096a3706d75"
 
 [autoupdate]
 checkver = { github = "ktlint/ktlint" }
+url_template = "https://github.com/ktlint/ktlint/releases/download/$version/ktlint#/ktlint.jar"

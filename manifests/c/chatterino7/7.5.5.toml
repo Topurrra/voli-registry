@@ -15,3 +15,4 @@ sha256 = "665e7e3d61bf40c2cea0397e54f42c9c2d9ae3ef4c1252148f407a3258b90aa9"
 
 [autoupdate]
 checkver = { github = "SevenTV/chatterino7" }
+url_template = { x64 = "https://github.com/SevenTV/chatterino7/releases/download/v$version/Chatterino7.Portable.zip" }

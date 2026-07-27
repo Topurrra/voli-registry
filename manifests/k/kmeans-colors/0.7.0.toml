@@ -12,3 +12,4 @@ sha256 = "c1426b78559ac3ba0c1e5a7b6e4da1ac6270ea4d6df57710ab3791d30047ec39"
 
 [autoupdate]
 checkver = { github = "okaneco/kmeans-colors" }
+url_template = { x64 = "https://github.com/okaneco/kmeans-colors/releases/download/$version-binary/kmeans_colors-$version-binary-windows-x86_64.tar.gz" }

@@ -12,3 +12,4 @@ sha256 = "b77c34a18d10fb3c9338ef292a59de00f3d695aa423fd3b6ff617ef6840e2a70"
 
 [autoupdate]
 checkver = { github = "sachaos/viddy" }
+url_template = { x64 = "https://github.com/sachaos/viddy/releases/download/v$version/viddy-v$version-windows-x86_64.tar.gz" }

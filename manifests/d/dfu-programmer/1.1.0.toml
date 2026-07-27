@@ -12,3 +12,4 @@ sha256 = "3a4905a81700c966ae0a00dad793ef6f9232a15b864151254837bce3fb24a605"
 
 [autoupdate]
 checkver = { github = "dfu-programmer/dfu-programmer" }
+url_template = { x64 = "https://github.com/dfu-programmer/dfu-programmer/releases/download/v$version/dfu-programmer-x64-$version.7z" }

@@ -16,3 +16,4 @@ sha256 = "6e4301108b708880583aa080c1ec4efe16dd6f4cc7c2817d3653b3b1e0f4f547"
 
 [autoupdate]
 checkver = { github = "Code-Hex/Neo-cowsay" }
+url_template = { x64 = "https://github.com/Code-Hex/Neo-cowsay/releases/download/v$version/cowsay_$version_Windows_x86_64.zip", arm64 = "https://github.com/Code-Hex/Neo-cowsay/releases/download/v$version/cowsay_$version_Windows_arm64.zip" }

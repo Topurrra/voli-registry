@@ -13,3 +13,4 @@ sha256 = "5dd9d6b2e2c9ef8dd9d98da7808f712daff97911a91d3ccfaf946355c6b6abb3"
 
 [autoupdate]
 checkver = { github = "arduino/arduino-ide" }
+url_template = { x64 = "https://github.com/arduino/arduino-ide/releases/download/$version/arduino-ide_$version_Windows_64bit.zip" }

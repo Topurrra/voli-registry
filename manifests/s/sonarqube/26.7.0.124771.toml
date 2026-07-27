@@ -13,4 +13,5 @@ url = "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-26.7.0.
 sha256 = "ed3fba538bbd2531b8afa8b9f6b9e7b04f43bb702443b313addf8fdf427cfc74"
 
 [autoupdate]
-checkver = "{\"regex\":\"Community Build.*?Release (?<version>[\\\\d.]+)\",\"url\":\"https://www.sonarsource.com/products/sonarqube/downloads/\"}"
+checkver = { url = "https://www.sonarsource.com/products/sonarqube/downloads/", regex = "Community Build.*?Release (?<version>[\\d.]+)" }
+url_template = "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$version.zip"

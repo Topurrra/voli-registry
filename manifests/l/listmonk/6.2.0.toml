@@ -16,3 +16,4 @@ sha256 = "ccc163bb93277d4e0d589596757ea79f9676b4208efe14c45e0b8a143ffb0a3a"
 
 [autoupdate]
 checkver = { github = "knadh/listmonk" }
+url_template = { x64 = "https://github.com/knadh/listmonk/releases/download/v$version/listmonk_$version_windows_amd64.tar.gz", arm64 = "https://github.com/knadh/listmonk/releases/download/v$version/listmonk_$version_windows_arm64.tar.gz" }

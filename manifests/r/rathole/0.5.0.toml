@@ -12,3 +12,4 @@ sha256 = "2f3b4900a63d32a14e1578b2de68f78daad89b7c47b9388c26d922962faef430"
 
 [autoupdate]
 checkver = { github = "rathole-org/rathole" }
+url_template = { x64 = "https://github.com/rathole-org/rathole/releases/download/v$version/rathole-x86_64-pc-windows-msvc.zip" }

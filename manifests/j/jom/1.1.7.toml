@@ -11,4 +11,4 @@ url = "https://download.qt.io/official_releases/jom/jom_1_1_7.zip"
 sha256 = "4c8af345586a9a08fbfd2f613fcac748226d91a75627aa3581b297dd513046fe"
 
 [autoupdate]
-checkver = "{\"regex\":\"jom_(\\\\d+)_(\\\\d+)_(\\\\d+)\\\\.zip\",\"replace\":\"${1}.${2}.${3}\",\"reverse\":true,\"url\":\"https://download.qt.io/official_releases/jom/md5sums.txt\"}"
+checkver = { url = "https://download.qt.io/official_releases/jom/md5sums.txt", regex = "jom_(\\d+)_(\\d+)_(\\d+)\\.zip" }

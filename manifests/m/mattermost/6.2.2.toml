@@ -17,3 +17,4 @@ sha256 = "3c595b40ff958c170efb27aabe30d4683119929fdc111469756df1a23d937f96"
 
 [autoupdate]
 checkver = { github = "mattermost/desktop" }
+url_template = { x64 = "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-win-x64.zip", arm64 = "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-win-arm64.zip" }

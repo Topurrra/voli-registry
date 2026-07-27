@@ -4,6 +4,7 @@ description = "A simple, secure and modern encryption tool (and Rust library) wi
 homepage = "https://github.com/str4d/rage"
 license = "Apache-2.0, MIT"
 kind = "app"
+extract_dir = "rage"
 bin = ["rage.exe", "rage-keygen.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "da5b8111c8f097c7822df505ad504696e4891ff8adec06a39171f8d717590b2c"
 
 [autoupdate]
 checkver = { github = "str4d/rage" }
+url_template = { x64 = "https://github.com/str4d/rage/releases/download/v$version/rage-v$version-x86_64-windows.zip" }

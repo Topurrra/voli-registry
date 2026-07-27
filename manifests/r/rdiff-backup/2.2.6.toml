@@ -13,3 +13,4 @@ sha256 = "2f2e2c6836a23e4e0b546d525beb179b7afeba5f49b65a1aa9342f2cb7115ee4"
 
 [autoupdate]
 checkver = { github = "rdiff-backup/rdiff-backup" }
+url_template = { x64 = "https://github.com/rdiff-backup/rdiff-backup/releases/download/v$version/rdiff-backup-$version.win64exe.zip" }

@@ -13,4 +13,4 @@ url = "http://download.tuxfamily.org/lilicreator/stable-portable/LinuxLive%20USB
 sha256 = "d6259681b8006c6dd9635b8709f890c82ea13a14a33da6563b44edc37fcd93a5"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version ([\\\\d.]+) Final - Portable Edition\",\"url\":\"https://www.linuxliveusb.com/en/other-versions\"}"
+checkver = { url = "https://www.linuxliveusb.com/en/other-versions", regex = "Version ([\\d.]+) Final - Portable Edition" }

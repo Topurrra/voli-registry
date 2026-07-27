@@ -12,4 +12,4 @@ sha256 = "78ac80fb59ae24657ccf7e8ea79b5e0a4087d9314e90c1799c6ae7d6f8f0b0ab"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"FontCreator ([\\\\d.]+) (?!\\\\[expected soon\\\\])\",\"url\":\"https://www.high-logic.com/font-editor/fontcreator/changelog\"}"
+checkver = { url = "https://www.high-logic.com/font-editor/fontcreator/changelog", regex = "FontCreator ([\\d.]+) (?!\\[expected soon\\])" }

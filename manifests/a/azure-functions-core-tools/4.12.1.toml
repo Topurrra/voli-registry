@@ -16,3 +16,4 @@ sha256 = "3a6281cc15096173f49edea7e22ef4cce6e3e75fed15e86eb06a12ef3b4e85fe"
 
 [autoupdate]
 checkver = { github = "Azure/azure-functions-core-tools" }
+url_template = { x64 = "https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x64.$version.zip#/dl.7z", arm64 = "https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-arm64.$version.zip#/dl.7z" }

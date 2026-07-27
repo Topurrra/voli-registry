@@ -16,3 +16,4 @@ sha256 = "c55c62eb274d7db9b0fa8fb13738c2d96d9e213ea144233dda98bd8af9dc4216"
 
 [autoupdate]
 checkver = { github = "rs/curlie" }
+url_template = { x64 = "https://github.com/rs/curlie/releases/download/v$version/curlie_$version_windows_amd64.zip", arm64 = "https://github.com/rs/curlie/releases/download/v$version/curlie_$version_windows_arm64.zip" }

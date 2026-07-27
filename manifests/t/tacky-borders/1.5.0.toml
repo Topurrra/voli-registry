@@ -12,3 +12,4 @@ sha256 = "497271f38c32fe4cbbe0e7c6b051dd5a64b78c4af250f4e078b5eda5a127bbe2"
 
 [autoupdate]
 checkver = { github = "lukeyou05/tacky-borders" }
+url_template = { x64 = "https://github.com/lukeyou05/tacky-borders/releases/download/v$version/tacky-borders-v$version.zip" }

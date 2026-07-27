@@ -4,6 +4,7 @@ description = "SDK for the Dart programming language"
 homepage = "https://dart.dev/"
 license = "BSD-3-Clause"
 kind = "app"
+extract_dir = "dart-sdk"
 
 [source.x64]
 url = "https://storage.googleapis.com/dart-archive/channels/stable/release/3.12.2/sdk/dartsdk-windows-x64-release.zip"
@@ -14,3 +15,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://storage.googleapis.com/dart-archive/channels/stable/release/latest/VERSION\"}"
+url_template = { x64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-x64-release.zip" }

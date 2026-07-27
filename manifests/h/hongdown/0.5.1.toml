@@ -16,3 +16,4 @@ sha256 = "73aa984710a955f458e9e21bd02ad72b30df3870957ef15931d693bae46f642d"
 
 [autoupdate]
 checkver = { github = "dahlia/hongdown" }
+url_template = { x64 = "https://github.com/dahlia/hongdown/releases/download/$version/hongdown-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/dahlia/hongdown/releases/download/$version/hongdown-$version-aarch64-pc-windows-msvc.zip" }

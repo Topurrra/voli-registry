@@ -16,3 +16,4 @@ sha256 = "a09dc09537be654dc4559104a546372d4f13ccda2eb0e445d09863b4e83778e7"
 
 [autoupdate]
 checkver = { github = "DingTalk-Real-AI/dingtalk-workspace-cli" }
+url_template = { x64 = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v$version/dws-windows-amd64.zip", arm64 = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v$version/dws-windows-arm64.zip" }

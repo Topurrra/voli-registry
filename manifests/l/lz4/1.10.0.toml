@@ -12,3 +12,4 @@ sha256 = "8cb562a53189dfc8a53ec12469b91f1b51a5075036061a86b55738183bf4ab74"
 
 [autoupdate]
 checkver = { github = "lz4/lz4" }
+url_template = { x64 = "https://github.com/lz4/lz4/releases/download/v$version/lz4_win64_v$underscoreVersion.zip" }

@@ -14,3 +14,4 @@ sha256 = "994b8a24e4970f5792577ede99845fb7b632c719095082bb094e692556e96f06"
 
 [autoupdate]
 checkver = { github = "Orama-Interactive/Pixelorama" }
+url_template = { x64 = "https://github.com/Orama-Interactive/Pixelorama/releases/download/v$version/Pixelorama-Windows-64bit.zip" }

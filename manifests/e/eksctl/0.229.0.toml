@@ -16,3 +16,4 @@ sha256 = "d8f28428106af1d6851226a5a05d122595ea5a4ab9c2ce33126607c0c49dc016"
 
 [autoupdate]
 checkver = { github = "eksctl-io/eksctl" }
+url_template = { x64 = "https://github.com/eksctl-io/eksctl/releases/download/v$version/eksctl_Windows_amd64.zip", arm64 = "https://github.com/eksctl-io/eksctl/releases/download/v$version/eksctl_Windows_arm64.zip" }

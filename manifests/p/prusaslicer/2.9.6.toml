@@ -14,3 +14,4 @@ sha256 = "5aaf22e42f95accecfa122d23a835911f289ecc2ff606db3e83d637ddcc0a209"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/prusa3d/PrusaSlicer/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"PrusaSlicer-([\\\\d.]+)\\\\.zip\"}"
+url_template = { x64 = "https://github.com/prusa3d/PrusaSlicer/releases/download/version_$version/PrusaSlicer-$version.zip" }

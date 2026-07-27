@@ -12,3 +12,4 @@ sha256 = "ab2feff62373a2d0c29271b691a68f41a049966d4dc675b2f1966e6ffa3d5260"
 
 [autoupdate]
 checkver = { github = "microsoft/kiota" }
+url_template = { x64 = "https://github.com/microsoft/kiota/releases/download/v$version/win-x64.zip" }

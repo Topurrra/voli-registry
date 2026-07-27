@@ -13,3 +13,4 @@ sha256 = "091d35d34be4a0263ca0883085ddc1767d7b5ef08391826b33b966c65d6058ef"
 
 [autoupdate]
 checkver = { github = "RevoLand/Steam-Library-Manager" }
+url_template = "https://github.com/RevoLand/Steam-Library-Manager/releases/download/v$version/Steam.Library.Manager.zip"

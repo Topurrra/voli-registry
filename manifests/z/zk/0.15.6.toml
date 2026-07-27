@@ -1,0 +1,15 @@
+name = "zk"
+version = "0.15.6"
+description = "A plain text note-taking assistant."
+homepage = "https://zk-org.github.io/zk"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["zk.exe"]
+
+[source.x64]
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-windows-x86_64.tar.gz"
+sha256 = "c3e5f7673762720b1a3e832aa4fbef9d3f696fa53b7c6cb4a7d5dadbf2092a46"
+
+[autoupdate]
+checkver = { github = "zk-org/zk" }
+url_template = { x64 = "https://github.com/zk-org/zk/releases/download/v$version/zk-v$version-windows-x86_64.tar.gz" }

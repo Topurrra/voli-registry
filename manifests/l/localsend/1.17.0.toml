@@ -14,3 +14,4 @@ sha256 = "a4ffb41fcbc3bd0f2f0cbd30b62a58d9a478eaf1da63eb410886886064abe70c"
 
 [autoupdate]
 checkver = { github = "localsend/localsend" }
+url_template = { x64 = "https://github.com/localsend/localsend/releases/download/v$version/LocalSend-$version-windows-x86-64.zip" }

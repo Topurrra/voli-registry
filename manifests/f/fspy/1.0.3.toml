@@ -13,3 +13,4 @@ sha256 = "e9694824de5c663e8fd89713ccf30dc95ec00a2cb3df1c97b61c989f85d39a5d"
 
 [autoupdate]
 checkver = { github = "stuffmatic/fSpy" }
+url_template = { x64 = "https://github.com/stuffmatic/fSpy/releases/download/v$version/fSpy-$version-win.zip" }

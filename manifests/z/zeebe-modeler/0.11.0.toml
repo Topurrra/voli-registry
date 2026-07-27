@@ -12,3 +12,4 @@ sha256 = "5b07d336b3ec9b635381ccf58ae026dae85973e19b288e267df680bf15b2cf20"
 
 [autoupdate]
 checkver = { github = "zeebe-io/zeebe-modeler" }
+url_template = { x64 = "https://github.com/zeebe-io/zeebe-modeler/releases/download/v$version/zeebe-modeler-$version-win-x64.zip" }

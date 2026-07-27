@@ -11,4 +11,5 @@ url = "https://files.openscad.org/OpenSCAD-2021.01-x86-64.zip"
 sha256 = "fb0caabf5bbc89f8f2f80c10b79ae64d697aaff6efd58b2756f5d6270edb7ba7"
 
 [autoupdate]
-checkver = "{\"regex\":\"OpenSCAD-([\\\\d.-]+)-x\",\"url\":\"https://www.openscad.org/inc/releases.js\"}"
+checkver = { url = "https://www.openscad.org/inc/releases.js", regex = "OpenSCAD-([\\d.-]+)-x" }
+url_template = { x64 = "https://files.openscad.org/OpenSCAD-$version-x86-64.zip" }

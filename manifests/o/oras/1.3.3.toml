@@ -13,3 +13,4 @@ sha256 = "30ca213a565a450de33001dae83053db53c221e6674c5233dc3406b686657969"
 
 [autoupdate]
 checkver = { github = "oras-project/oras" }
+url_template = { x64 = "https://github.com/oras-project/oras/releases/download/v$version/oras_$version_windows_amd64.zip" }

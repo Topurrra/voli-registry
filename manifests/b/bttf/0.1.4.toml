@@ -13,3 +13,4 @@ sha256 = "9614043c7701fb523cd222e932cd7bb4faf22eb0334b8248fb4a6158a61a43ed"
 
 [autoupdate]
 checkver = { github = "BurntSushi/bttf" }
+url_template = { x64 = "https://github.com/BurntSushi/bttf/releases/download/$version/bttf-$version-x86_64-pc-windows-msvc.zip" }

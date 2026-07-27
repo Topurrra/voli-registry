@@ -18,3 +18,4 @@ sha256 = "23a2ea82c4d60b273600f6a8dbc0f076e9fe0ea0e4ef06625e2d8d17c4155cf7"
 
 [autoupdate]
 checkver = { github = "xpipe-io/xpipe" }
+url_template = { x64 = "https://github.com/xpipe-io/xpipe/releases/download/$version/xpipe-portable-windows-x86_64.zip", arm64 = "https://github.com/xpipe-io/xpipe/releases/download/$version/xpipe-portable-windows-arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "4bcbe7888077d27a43e4b802123f1f13e7f6e94c6b283c6ab37714b2680ce9e5"
 
 [autoupdate]
 checkver = { github = "achannarasappa/ticker" }
+url_template = { x64 = "https://github.com/achannarasappa/ticker/releases/download/v$version/ticker-$version-windows-amd64.tar.gz" }

@@ -18,3 +18,4 @@ sha256 = "5545a69ef6b14b8565abf52d75ec464f31c413d44c3b970df63a0db4d2ba8de1"
 
 [autoupdate]
 checkver = { github = "kubenetworks/kubevpn" }
+url_template = { x64 = "https://github.com/kubenetworks/kubevpn/releases/download/v$version/kubevpn_v$version_windows_amd64.zip", arm64 = "https://github.com/kubenetworks/kubevpn/releases/download/v$version/kubevpn_v$version_windows_arm64.zip" }

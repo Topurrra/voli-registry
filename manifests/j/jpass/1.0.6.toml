@@ -13,3 +13,4 @@ sha256 = "ba390f0cc63aa88c5b667c3fe6d2c69d15aad2afa5f196beca110a331309173b"
 
 [autoupdate]
 checkver = { github = "gaborbata/jpass" }
+url_template = "https://github.com/gaborbata/jpass/releases/download/v$version/jpass-$version-RELEASE.zip"

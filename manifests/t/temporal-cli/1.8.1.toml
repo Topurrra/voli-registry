@@ -16,3 +16,4 @@ sha256 = "acce687dacc75df806456e84cacab4e2200c7e2ab32a298d83a031f77dcff360"
 
 [autoupdate]
 checkver = { github = "temporalio/cli" }
+url_template = { x64 = "https://github.com/temporalio/cli/releases/download/v$version/temporal_cli_$version_windows_amd64.zip", arm64 = "https://github.com/temporalio/cli/releases/download/v$version/temporal_cli_$version_windows_arm64.zip" }

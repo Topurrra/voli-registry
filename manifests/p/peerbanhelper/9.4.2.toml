@@ -14,3 +14,4 @@ sha256 = "4dd25471e04adb4ba627e90d637efc25ef21513c34defc0f81469d295d714cdb"
 
 [autoupdate]
 checkver = { github = "PBH-BTN/PeerBanHelper" }
+url_template = { x64 = "https://github.com/PBH-BTN/PeerBanHelper/releases/download/v$version/PeerBanHelper_Windows_$version_Portable.zip" }

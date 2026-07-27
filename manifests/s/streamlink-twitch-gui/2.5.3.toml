@@ -14,3 +14,4 @@ sha256 = "cc0eda3090a215abe23ca631cad91f247417677fc22fbc7f533ee5508bb42182"
 
 [autoupdate]
 checkver = { github = "streamlink/streamlink-twitch-gui" }
+url_template = { x64 = "https://github.com/streamlink/streamlink-twitch-gui/releases/download/v$version/streamlink-twitch-gui-v$version-win64.zip" }

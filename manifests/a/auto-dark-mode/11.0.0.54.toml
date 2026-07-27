@@ -18,3 +18,4 @@ sha256 = "dfd300b0d10196ea05dd016c41fbc90219301512de5130a78ca82bdc833c56cc"
 
 [autoupdate]
 checkver = { github = "AutoDarkMode/Windows-Auto-Night-Mode" }
+url_template = { x64 = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_x64.zip", arm64 = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_ARM64.zip" }

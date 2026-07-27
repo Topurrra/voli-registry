@@ -12,3 +12,4 @@ sha256 = "f913135639584a8b4850ed8e1ece5a3fdbc32624deebf8ec804cb6b1884e5341"
 
 [autoupdate]
 checkver = { github = "TcNobo/TcNo-Acc-Switcher" }
+url_template = { x64 = "https://github.com/TCNOco/TcNo-Acc-Switcher/releases/download/$version/$matchName" }

@@ -13,3 +13,4 @@ sha256 = "3652f9ac1a4215b899f871cda0e80b1341edde55d7ba5daa21bf2babda84ce13"
 
 [autoupdate]
 checkver = { github = "gotson/komga" }
+url_template = "https://github.com/gotson/komga/releases/download/$version/komga-$version.jar#/komga.jar"

@@ -12,3 +12,4 @@ sha256 = "e6ccd16f61b5d3405836168acf782d4e52164bafae35004329bba41a94cd8329"
 
 [autoupdate]
 checkver = { github = "github/smimesign" }
+url_template = { x64 = "https://github.com/github/smimesign/releases/download/v$version/smimesign-windows-amd64-v$version.zip" }

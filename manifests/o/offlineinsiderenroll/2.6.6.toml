@@ -13,3 +13,4 @@ sha256 = "827a5d2f0977eba29ee97730dc3db409c781a89ec3ba8e48d9c7b5543ec1131b"
 
 [autoupdate]
 checkver = { github = "abbodi1406/offlineinsiderenroll" }
+url_template = "https://github.com/abbodi1406/offlineinsiderenroll/archive/refs/tags/$version.zip"

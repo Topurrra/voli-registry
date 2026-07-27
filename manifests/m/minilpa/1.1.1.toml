@@ -12,3 +12,4 @@ sha256 = "19139adaae3428a25d84d94ea8723c7dd65bb880efcff1119a00f5bfa2f7b00b"
 
 [autoupdate]
 checkver = { github = "EsimMoe/MiniLPA" }
+url_template = { x64 = "https://github.com/EsimMoe/MiniLPA/releases/download/v$version/MiniLPA-Windows-x86_64.zip" }

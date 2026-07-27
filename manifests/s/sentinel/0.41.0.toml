@@ -11,4 +11,5 @@ url = "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_windows_am
 sha256 = "34d4cafe6266cc968a1b5678d025d1a0a27fd266789b78d842008bb3ee9a508e"
 
 [autoupdate]
-checkver = "{\"regex\":\"sentinel_([\\\\d.]+)\",\"url\":\"https://releases.hashicorp.com/sentinel/\"}"
+checkver = { url = "https://releases.hashicorp.com/sentinel/", regex = "sentinel_([\\d.]+)" }
+url_template = { x64 = "https://releases.hashicorp.com/sentinel/$version/sentinel_$version_windows_amd64.zip" }

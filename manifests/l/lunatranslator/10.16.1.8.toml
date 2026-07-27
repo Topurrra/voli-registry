@@ -5,23 +5,13 @@ homepage = "https://github.com/HIllya51/LunaTranslator"
 license = "GPL-3.0-only"
 kind = "app"
 extract_dir = "LunaTranslator_x64"
-bin = []
-persist = [
-    "cache",
-    "userconfig",
-    "translation_record",
-]
-shortcuts = []
-write_file = []
+shortcuts = [{ target = "LunaTranslator.exe", name = "LunaTranslator" }, { target = "LunaTranslator_admin.exe", name = "LunaTranslator (admin)" }, { target = "LunaTranslator_debug.bat", name = "LunaTranslator (debug)" }]
+persist = ["cache", "userconfig", "translation_record"]
 
 [source.x64]
 url = "https://github.com/HIllya51/LunaTranslator/releases/download/v10.16.1.8/LunaTranslator_x64.zip"
 sha256 = "02fc637aa33dace9450eb94f2549bf8f13d073eb9168aa2edd26eb202b79b132"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "HIllya51/LunaTranslator"
+[autoupdate]
+checkver = { github = "HIllya51/LunaTranslator" }
+url_template = { x64 = "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/LunaTranslator_x64.zip" }

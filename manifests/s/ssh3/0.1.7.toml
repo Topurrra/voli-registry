@@ -16,3 +16,4 @@ sha256 = "d74092cc418e355086243c125aeeed8d70a5ffa2627d7f7ac6491fd92a26e961"
 
 [autoupdate]
 checkver = { github = "francoismichel/ssh3" }
+url_template = { x64 = "https://github.com/francoismichel/ssh3/releases/download/v$version/ssh3_$version_clientonly_windows_x86_64.zip", arm64 = "https://github.com/francoismichel/ssh3/releases/download/v$version/ssh3_$version_clientonly_windows_arm64.zip" }

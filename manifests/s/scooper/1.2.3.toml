@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "windedge/Scooper" }
+url_template = "https://github.com/windedge/Scooper/releases/download/v$version/Scooper-$version.msi"

@@ -20,3 +20,4 @@ PATH = "{dir}"
 
 [autoupdate]
 checkver = { github = "mpv-player/mpv" }
+url_template = { x64 = "https://github.com/mpv-player/mpv/releases/download/v$version/mpv-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/mpv-player/mpv/releases/download/v$version/mpv-v$version-aarch64-pc-windows-msvc.zip" }

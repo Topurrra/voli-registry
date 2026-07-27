@@ -12,3 +12,4 @@ sha256 = "75d5496f3a4915a224387d93c682a161327557dc10db571d1807054fba5cae25"
 
 [autoupdate]
 checkver = { github = "fossas/fossa-cli" }
+url_template = { x64 = "https://github.com/fossas/fossa-cli/releases/download/v$version/fossa_$version_windows_amd64.zip" }

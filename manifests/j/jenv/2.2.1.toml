@@ -12,3 +12,4 @@ sha256 = "11c0f3f18f531d4c664e2e39c1a39b3432e92252d5f7aab421846233b607ec3c"
 
 [autoupdate]
 checkver = { github = "FelixSelter/JEnv-for-Windows" }
+url_template = "https://github.com/FelixSelter/JEnv-for-Windows/releases/download/v$version/JEnv.zip"

@@ -16,3 +16,4 @@ sha256 = "a9d8d19a7f1908dd3f21e2a6aaa46b709aac657520fa7034c0977bacd7bd08e4"
 
 [autoupdate]
 checkver = { github = "jdx/hk" }
+url_template = { x64 = "https://github.com/jdx/hk/releases/download/v$version/hk-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/jdx/hk/releases/download/v$version/hk-aarch64-pc-windows-msvc.zip" }

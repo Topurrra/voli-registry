@@ -4,6 +4,7 @@ description = "Performs static and dynamic analysis on ELF binaries, including s
 homepage = "https://binsider.dev/"
 license = "Apache-2.0|MIT"
 kind = "app"
+extract_dir = "binsider-"
 bin = ["binsider.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "acb806543b1a1c0b09a4da782f6ba8c8042591f694b2124cf602424720c33392"
 
 [autoupdate]
 checkver = { github = "orhun/binsider" }
+url_template = { x64 = "https://github.com/orhun/binsider/releases/download/v$version/binsider--x86_64-pc-windows-msvc.zip" }

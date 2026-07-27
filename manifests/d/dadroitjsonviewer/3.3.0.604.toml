@@ -12,4 +12,4 @@ sha256 = "f289d7cfae91af75a4771dbd182b684168c2b9febeecf0b3713cfee15de5f239"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Dadroit JSON Viewer — ([\\\\d.]+)\",\"url\":\"https://dadroit.com/release-notes\"}"
+checkver = { url = "https://dadroit.com/release-notes", regex = "Dadroit JSON Viewer — ([\\d.]+)" }

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "saber-notes/saber" }
+url_template = { x64 = "https://github.com/saber-notes/saber/releases/download/v$version/SaberInstaller_v$version$matchExtra.exe" }

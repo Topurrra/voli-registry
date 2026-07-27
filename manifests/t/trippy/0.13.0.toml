@@ -17,3 +17,4 @@ sha256 = "14b9955853d4185675c0e71761230ff9e48136f7ff8f5989a6a591926f44cc6f"
 
 [autoupdate]
 checkver = { github = "fujiapple852/trippy" }
+url_template = { x64 = "https://github.com/fujiapple852/trippy/releases/download/$version/trippy-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/fujiapple852/trippy/releases/download/$version/trippy-$version-aarch64-pc-windows-msvc.zip" }

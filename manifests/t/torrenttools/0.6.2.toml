@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "fbdtemme/torrenttools" }
+url_template = { x64 = "https://github.com/fbdtemme/torrenttools/releases/download/v$version/torrenttools-$version-windows-x86_64.msi" }

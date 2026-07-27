@@ -16,3 +16,4 @@ sha256 = "ded864d72f0cf842e3957fdeb322d5999c7f867262981d5a9f8d3a600b51d487"
 
 [autoupdate]
 checkver = { github = "folbricht/desync" }
+url_template = { x64 = "https://github.com/folbricht/desync/releases/download/v$version/desync_$version_windows_amd64.tar.gz", arm64 = "https://github.com/folbricht/desync/releases/download/v$version/desync_$version_windows_arm64.tar.gz" }

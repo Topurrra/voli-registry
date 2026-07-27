@@ -14,3 +14,4 @@ PATH = "{dir}"
 
 [autoupdate]
 checkver = { github = "haskell/haskell-language-server" }
+url_template = { x64 = "https://github.com/haskell/haskell-language-server/releases/download/$version/haskell-language-server-$version-x86_64-mingw64.zip" }

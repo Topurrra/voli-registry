@@ -11,4 +11,5 @@ url = "https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32cli-1.4.23.exe#/dl.7z"
 sha256 = "59234aed42a0822c53480de33e2d6a2d82f3c0cde1dc0fdabebad1549014f2b6"
 
 [autoupdate]
-checkver = "{\"regex\":\"gnupg-w32cli-(1\\\\.[\\\\d.]+)\\\\.exe\",\"url\":\"https://www.gnupg.org/ftp/gcrypt/binary/\"}"
+checkver = { url = "https://www.gnupg.org/ftp/gcrypt/binary/", regex = "gnupg-w32cli-(1\\.[\\d.]+)\\.exe" }
+url_template = "https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32cli-$version.exe#/dl.7z"

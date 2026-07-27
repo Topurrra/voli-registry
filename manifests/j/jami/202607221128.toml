@@ -14,4 +14,5 @@ sha256 = "01622c06531f99190b941f37a6e068f7704fefe4d2dd38711f5b45ee33cf8b42"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"jami_x86_64-(\\\\d+)\\\\.msi\",\"url\":\"https://dl.jami.net/windows/archive/?C=M;O=D\"}"
+checkver = { url = "https://dl.jami.net/windows/archive/?C=M;O=D", regex = "jami_x86_64-(\\d+)\\.msi" }
+url_template = { x64 = "https://dl.jami.net/windows/archive/jami_x86_64-$version.msi" }

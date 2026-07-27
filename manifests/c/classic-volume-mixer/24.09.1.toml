@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "popeen/Classic-Volume-Mixer" }
+url_template = "https://github.com/popeen/Classic-Volume-Mixer/releases/download/$version/setup.exe"

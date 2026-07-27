@@ -16,3 +16,4 @@ sha512 = "e17d767aa6abd148d0580474eb83aeec6da1ded525b6207b97ee0ee59264e31b7b1a8d
 
 [autoupdate]
 checkver = { github = "Parchive/par2cmdline" }
+url_template = { x64 = "https://github.com/Parchive/par2cmdline/releases/download/v$version/par2cmdline-$version-win-x64.zip", arm64 = "https://github.com/Parchive/par2cmdline/releases/download/v$version/par2cmdline-$version-win-arm64.zip" }

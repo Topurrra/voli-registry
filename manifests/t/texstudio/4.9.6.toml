@@ -14,3 +14,4 @@ sha256 = "924f3874560a0fbba319f41336270bb7c499fe59668cfbab6bdaac9aaed18b42"
 
 [autoupdate]
 checkver = "<span class=\"currentVersion\">([\\d.]+)</span>"
+url_template = { x64 = "https://github.com/texstudio-org/texstudio/releases/download/$version/texstudio-$version-win-portable-qt6.zip" }

@@ -12,3 +12,4 @@ sha256 = "f1c7a62ae956ea9ad6fb3ae4cf13f3df882b0d52a7fcc34a0e4e728e0e364fed"
 
 [autoupdate]
 checkver = { github = "google/ios-webkit-debug-proxy" }
+url_template = { x64 = "https://github.com/google/ios-webkit-debug-proxy/releases/download/$matchTag/ios-webkit-debug-proxy-$version-win64-bin.zip" }

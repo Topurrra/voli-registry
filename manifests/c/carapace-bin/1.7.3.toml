@@ -16,3 +16,4 @@ sha256 = "b1f3f5a9e1643693620307e1d2823011d81b5247b77cdf005579a7f317c2078d"
 
 [autoupdate]
 checkver = { github = "carapace-sh/carapace-bin" }
+url_template = { x64 = "https://github.com/carapace-sh/carapace-bin/releases/download/v$version/carapace-bin_$version_windows_amd64.zip", arm64 = "https://github.com/carapace-sh/carapace-bin/releases/download/v$version/carapace-bin_$version_windows_arm64.zip" }

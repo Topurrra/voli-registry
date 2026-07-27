@@ -13,3 +13,4 @@ sha256 = "b7cf6248b8db6fb788408c01d2811784d1e7ce94c41c9852d0fe7790e549dea6"
 
 [autoupdate]
 checkver = { github = "ZakKemble/AVRDUDESS" }
+url_template = "https://github.com/ZakKemble/AVRDUDESS/releases/download/v$version/AVRDUDESS-$version-portable.zip"

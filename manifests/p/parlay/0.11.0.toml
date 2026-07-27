@@ -16,3 +16,4 @@ sha256 = "26887cf90fccb9c7f8daf2f3003022551fa6c1f2e4146ad199785039a4b8ac7c"
 
 [autoupdate]
 checkver = { github = "snyk/parlay" }
+url_template = { x64 = "https://github.com/snyk/parlay/releases/download/v$version/parlay_Windows_x86_64.zip", arm64 = "https://github.com/snyk/parlay/releases/download/v$version/parlay_Windows_arm64.zip" }

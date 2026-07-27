@@ -12,4 +12,5 @@ sha256 = "10b47fb07cae61d48ea9ade811261d3a7ff26b5e96f362e663a583d4d8773e10"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Marble-setup_(?<version>[\\\\d.]+)(?<release>-?[\\\\d+]?)_x64\\\\.exe\",\"url\":\"https://marble.kde.org/install.php?\"}"
+checkver = { url = "https://marble.kde.org/install.php?", regex = "Marble-setup_(?<version>[\\d.]+)(?<release>-?[\\d+]?)_x64\\.exe" }
+url_template = { x64 = "https://files.kde.org/marble/downloads/windows/Marble-setup_$version$matchRelease_x64.exe" }

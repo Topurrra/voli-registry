@@ -12,3 +12,4 @@ sha256 = "30a4895c3a37c0c5e99ee80842fbbe64194ed2e48ff579ca7dbebd9edfdabf7e"
 
 [autoupdate]
 checkver = { github = "logseq/logseq" }
+url_template = { x64 = "https://github.com/logseq/logseq/releases/download/$version/Logseq-win-x64-$version.zip" }

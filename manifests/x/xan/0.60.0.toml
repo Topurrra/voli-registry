@@ -12,3 +12,4 @@ sha256 = "e7ad980fb033381f0ae8445330328e086f92443828f89b3e5a6777409b2ec3bd"
 
 [autoupdate]
 checkver = { github = "medialab/xan" }
+url_template = { x64 = "https://github.com/medialab/xan/releases/download/$version/xan-x86_64-pc-windows-msvc.zip" }

@@ -13,3 +13,4 @@ sha256 = "03d6aa5a593511e8c0a75eb235a161aa8305f5ab2b1b1ac039ed800cab27d823"
 
 [autoupdate]
 checkver = { github = "noborus/trdsql" }
+url_template = { x64 = "https://github.com/noborus/trdsql/releases/download/v$version/trdsql_v$version_windows_amd64.zip" }

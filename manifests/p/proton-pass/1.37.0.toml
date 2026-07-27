@@ -13,3 +13,4 @@ sha256 = "b263c099225e045c2a03dc4cb355065f0fe0a5af6987e66168682d6e8ce3dc79"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.Releases[?(@.CategoryName == 'Stable')].Version\",\"url\":\"https://proton.me/download/pass/windows/version.json\"}"
+url_template = { x64 = "https://proton.me/download/pass/windows/ProtonPass-$version-full.nupkg" }

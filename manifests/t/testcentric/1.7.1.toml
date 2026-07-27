@@ -14,3 +14,4 @@ sha256 = "9dd62f659541c093cf58d82e9d7d2845a854b113adfd706a7207b0fc3fc59677"
 
 [autoupdate]
 checkver = { github = "TestCentric/testcentric-gui" }
+url_template = "https://github.com/TestCentric/testcentric-gui/releases/download/$version/testcentric-gui.$version.nupkg"

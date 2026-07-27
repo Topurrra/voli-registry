@@ -13,3 +13,4 @@ sha256 = "53341485375b0a9ebd4085dbafa71c68af9a2044ff1bb65f3300be4b43f6c11c"
 
 [autoupdate]
 checkver = { github = "RolandPheasant/TailBlazer" }
+url_template = "https://github.com/RolandPheasant/TailBlazer/releases/download/$version/Tailblazer_v$version.zip"

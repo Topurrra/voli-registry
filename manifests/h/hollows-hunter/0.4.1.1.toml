@@ -12,3 +12,4 @@ sha256 = "00bff71b46f81f1c5f5d6c64fe8682a695a435d00e9b84112d79be05f8e1140c"
 
 [autoupdate]
 checkver = { github = "hasherezade/hollows_hunter" }
+url_template = { x64 = "https://github.com/hasherezade/hollows_hunter/releases/download/v$version/hollows_hunter64.zip" }

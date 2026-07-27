@@ -14,3 +14,4 @@ shadowsocks = "*"
 
 [autoupdate]
 checkver = { github = "shadowsocks/v2ray-plugin" }
+url_template = { x64 = "https://github.com/shadowsocks/v2ray-plugin/releases/download/v$version/v2ray-plugin-windows-amd64-v$version.tar.gz" }

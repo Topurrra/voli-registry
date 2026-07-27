@@ -13,4 +13,5 @@ url = "https://artifacts.elastic.co/downloads/kibana/kibana-9.4.4-windows-x86_64
 sha512 = "ff0b524807a16418f3a39cb1e3cd4d394e82bea464837c10ebceee4bf3be2bbe9eae028d082fed68461393cf412683697d8f082506077284ff8740ec1247e73d"
 
 [autoupdate]
-checkver = "{\"regex\":\"kibana-([\\\\d.]+)-windows-x86_64\\\\.zip\",\"url\":\"https://www.elastic.co/downloads/kibana\"}"
+checkver = { url = "https://www.elastic.co/downloads/kibana", regex = "kibana-([\\d.]+)-windows-x86_64\\.zip" }
+url_template = { x64 = "https://artifacts.elastic.co/downloads/kibana/kibana-$version-windows-x86_64.zip" }

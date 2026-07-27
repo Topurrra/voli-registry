@@ -13,3 +13,4 @@ sha256 = "fc9f619377c4ab613b5006098077deefe912132741dd082b05bac4c0eb1ddc89"
 
 [autoupdate]
 checkver = { github = "orhun/ratty" }
+url_template = "https://github.com/orhun/ratty/releases/download/v$version/ratty-x86_64-pc-windows-msvc.zip"

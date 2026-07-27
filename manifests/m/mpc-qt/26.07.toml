@@ -14,3 +14,4 @@ sha256 = "129a3cfc51cb714efba7f97fe0da090cb4ab8ece3c2c0f1466b26733b83c2ab4"
 
 [autoupdate]
 checkver = { github = "mpc-qt/mpc-qt" }
+url_template = { x64 = "https://github.com/mpc-qt/mpc-qt/releases/download/v$version/mpc-qt-win-x64-$version.zip" }

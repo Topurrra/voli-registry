@@ -14,3 +14,4 @@ sha256 = "15fee0d5efbb9dffd1abd148b66b834943dedff1bf0a9a4a040c18cd9943029b"
 
 [autoupdate]
 checkver = { github = "cyanfish/naps2" }
+url_template = { x64 = "https://github.com/cyanfish/naps2/releases/download/v$version/naps2-$version-win-x64.zip" }

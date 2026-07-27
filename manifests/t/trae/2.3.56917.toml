@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.data.manifest.win32.version\",\"url\":\"https://api.trae.ai/icube/api/v1/native/version/trae/latest\"}"
+url_template = { x64 = "https://lf-cdn.trae.ai/obj/trae-ai-sg/pkg/app/releases/stable/$version/win32/Trae-Setup-x64.exe" }

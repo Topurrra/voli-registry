@@ -4,6 +4,7 @@ description = "Multi-browser, realtime, bookmark manager."
 homepage = "https://gosuki.net"
 license = "AGPL-3.0-or-later"
 kind = "app"
+extract_dir = "gosuki-v1.4.2"
 
 [source.x64]
 url = "https://github.com/blob42/gosuki/releases/download/v1.4.2/gosuki-v1.4.2-windows-amd64.zip"
@@ -11,3 +12,4 @@ sha256 = "21eed1f2c48d775d6cdc3f47d084dd8805a2abcfa52705a7a86c199a81d5c701"
 
 [autoupdate]
 checkver = { github = "blob42/gosuki" }
+url_template = { x64 = "https://github.com/blob42/gosuki/releases/download/v$version/gosuki-v$version-windows-amd64.zip" }

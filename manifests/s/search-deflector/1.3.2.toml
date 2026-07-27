@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "spikespaz/search-deflector" }
+url_template = "https://github.com/spikespaz/search-deflector/releases/download/$version/SearchDeflector-Installer.exe"

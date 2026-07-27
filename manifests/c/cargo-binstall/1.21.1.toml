@@ -5,23 +5,15 @@ homepage = "https://github.com/cargo-bins/cargo-binstall"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["cargo-binstall.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.21.1/cargo-binstall-x86_64-pc-windows-msvc.zip"
 sha256 = "27aee4e73cd8b1d479730cb9cdbd89b1114453a135689d4ee1a7e7f913f0ffe1"
-extra = []
 
 [source.arm64]
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.21.1/cargo-binstall-aarch64-pc-windows-msvc.zip"
 sha256 = "93fc0bf26857cefda5d36010ab0f1faf3dddc5e26f10cbd051e4c94e6fdad17c"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "cargo-bins/cargo-binstall"
+[autoupdate]
+checkver = { github = "cargo-bins/cargo-binstall" }
+url_template = { x64 = "https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/cargo-bins/cargo-binstall/releases/download/v$version/cargo-binstall-aarch64-pc-windows-msvc.zip" }

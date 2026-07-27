@@ -12,3 +12,4 @@ sha256 = "1991ddf9ed4aee62fd3ebbcc9620ff4d97227c9e9c169dc99d64b67c816468fd"
 
 [autoupdate]
 checkver = { github = "esrlabs/chipmunk" }
+url_template = { x64 = "https://github.com/esrlabs/chipmunk/releases/download/$version/chipmunk@$version-win64-portable.tgz" }

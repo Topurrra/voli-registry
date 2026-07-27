@@ -17,3 +17,4 @@ sha256 = "345931db87de4111cf95fdef6e7572619450dac5540e2c25e0de90087732e4e2"
 
 [autoupdate]
 checkver = { github = "pia-foss/desktop" }
+url_template = { x64 = "https://privateinternetaccess-storage.s3.amazonaws.com/pub/pia_desktop/builds/pia-windows-x64-$version.exe#/dl.7z", arm64 = "https://privateinternetaccess-storage.s3.amazonaws.com/pub/pia_desktop/builds/pia-windows-arm64-$version.exe#/dl.7z" }

@@ -20,3 +20,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://cdn.posit.co/positron/releases/win/x86_64/user-releases.json\"}"
+url_template = { x64 = "https://cdn.posit.co/positron/releases/win/x86_64/Positron-$version-UserSetup-x64.exe", arm64 = "https://cdn.posit.co/positron/releases/win/arm64/Positron-$version-UserSetup-arm64.exe" }

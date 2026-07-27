@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "filips123/PWAsForFirefox" }
+url_template = { x64 = "https://github.com/filips123/PWAsForFirefox/releases/download/v$version/firefoxpwa-$version-x86_64.msi" }

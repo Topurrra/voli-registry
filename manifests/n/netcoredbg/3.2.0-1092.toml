@@ -4,6 +4,7 @@ description = "NetCoreDbg is a managed code debugger with MI interface for CoreC
 homepage = "https://github.com/Samsung/netcoredbg"
 license = "MIT"
 kind = "app"
+extract_dir = "netcoredbg"
 bin = ["netcoredbg.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "3c410a45fa502415203a94fcb88654af65bf8e3dac158a5527a722e7a6b9274a"
 
 [autoupdate]
 checkver = { github = "Samsung/netcoredbg" }
+url_template = { x64 = "https://github.com/Samsung/netcoredbg/releases/download/$version/netcoredbg-win64.zip" }

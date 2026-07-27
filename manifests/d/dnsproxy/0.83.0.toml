@@ -17,3 +17,4 @@ sha256 = "99ee64516a4a86e7fcee40c89e439efe2cb1abdb8c34c7ac92ccbb36f92d4bce"
 
 [autoupdate]
 checkver = { github = "AdguardTeam/dnsproxy" }
+url_template = { x64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip", arm64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip" }

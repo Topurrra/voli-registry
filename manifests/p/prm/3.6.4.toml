@@ -12,3 +12,4 @@ sha256 = "74134fa0b4f1b574a201d360824b45dc5e6ff55b4c03a1ccfc5c32e16b88493f"
 
 [autoupdate]
 checkver = { github = "ldez/prm" }
+url_template = { x64 = "https://github.com/ldez/prm/releases/download/v$version/prm_v$version_windows_amd64.zip" }

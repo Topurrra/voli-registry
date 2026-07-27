@@ -13,3 +13,4 @@ sha256 = "f4385e37c13bc4c440382d9d7a92f00e4ae809c9035d87ed0a442baa2d7ce39c"
 
 [autoupdate]
 checkver = { github = "VRCWizard/TTS-Voice-Wizard" }
+url_template = { x64 = "https://github.com/VRCWizard/TTS-Voice-Wizard/releases/download/v$version/TTSVoiceWizard-v$version-x64.zip" }

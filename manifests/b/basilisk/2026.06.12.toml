@@ -13,4 +13,4 @@ url = "https://dl.basilisk-browser.org/basilisk-20260613185748.win64.7z"
 sha256 = "da71cb9971da793068468f8f155c56e0fff396ca3ba7de7ed0921c1fad1ce6bf"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?sm)https://dl.basilisk-browser.org/basilisk-(?<win32>\\\\d+).win32.7z.*https://dl.basilisk-browser.org/basilisk-(?<win64>\\\\d+).win64.7z.*basilisk-([\\\\d.]+)-source\",\"url\":\"https://basilisk-browser.org/download.html\"}"
+checkver = { url = "https://basilisk-browser.org/download.html", regex = "(?sm)https://dl.basilisk-browser.org/basilisk-(?<win32>\\d+).win32.7z.*https://dl.basilisk-browser.org/basilisk-(?<win64>\\d+).win64.7z.*basilisk-([\\d.]+)-source" }

@@ -15,3 +15,4 @@ azure-cli = "*"
 
 [autoupdate]
 checkver = { github = "Azure/azure-api-management-devops-resource-kit" }
+url_template = { x64 = "https://github.com/Azure/azure-api-management-devops-resource-kit/releases/download/$version/reskit-$version.zip" }

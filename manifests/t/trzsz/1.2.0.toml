@@ -17,3 +17,4 @@ sha256 = "ed2d96019f7c3eeca63203b1e1725808a0a894dbbd3a26f8d9abec1d0852b1ec"
 
 [autoupdate]
 checkver = { github = "trzsz/trzsz-go" }
+url_template = { x64 = "https://github.com/trzsz/trzsz-go/releases/download/v$version/trzsz_$version_windows_x86_64.zip", arm64 = "https://github.com/trzsz/trzsz-go/releases/download/v$version/trzsz_$version_windows_aarch64.zip" }

@@ -4,6 +4,7 @@ description = "Reverse tethering for Android (no root required)"
 homepage = "https://github.com/Genymobile/gnirehtet"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "gnirehtet-rust-win64"
 bin = ["gnirehtet.exe"]
 
 [source.x64]
@@ -15,3 +16,4 @@ adb = "*"
 
 [autoupdate]
 checkver = { github = "Genymobile/gnirehtet" }
+url_template = { x64 = "https://github.com/Genymobile/gnirehtet/releases/download/v$version/gnirehtet-rust-win64-v$version.zip" }

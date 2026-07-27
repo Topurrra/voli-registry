@@ -14,4 +14,5 @@ sha256 = "68a42ce15737a3c640a719b0323e426dc36a51eed3906bf89dda7965390cd969"
 PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"GnuTLS ([\\\\d.]+)\",\"url\":\"https://www.gnutls.org/manual/gnutls.html\"}"
+checkver = { url = "https://www.gnutls.org/manual/gnutls.html", regex = "GnuTLS ([\\d.]+)" }
+url_template = { x64 = "https://www.gnupg.org/ftp/gcrypt/gnutls/v$majorVersion.$minorVersion/gnutls-$version-w64.zip" }

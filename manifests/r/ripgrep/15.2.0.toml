@@ -17,3 +17,4 @@ sha256 = "e4abca10c3a64ebea742667dd7009449d49403db5460dd6873e389fa2945360f"
 
 [autoupdate]
 checkver = { github = "BurntSushi/ripgrep" }
+url_template = { x64 = "https://github.com/BurntSushi/ripgrep/releases/download/$version/ripgrep-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/BurntSushi/ripgrep/releases/download/$version/ripgrep-$version-aarch64-pc-windows-msvc.zip" }

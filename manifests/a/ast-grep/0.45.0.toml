@@ -16,3 +16,4 @@ sha256 = "0c0ec11916d77002ddff86f3f43cabd03d2d63189d54a1aedc5141592e7ac23d"
 
 [autoupdate]
 checkver = { github = "ast-grep/ast-grep" }
+url_template = { x64 = "https://github.com/ast-grep/ast-grep/releases/download/$version/app-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ast-grep/ast-grep/releases/download/$version/app-aarch64-pc-windows-msvc.zip" }

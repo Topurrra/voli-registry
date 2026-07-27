@@ -13,3 +13,4 @@ sha256 = "bcda7c75c7ca844961cf4f3a72ee2fe988912c707b48f471b4169ac860cb490f"
 
 [autoupdate]
 checkver = { github = "datalust/seqcli" }
+url_template = { x64 = "https://github.com/datalust/seqcli/releases/download/v$version/seqcli-$version-win-x64.zip" }

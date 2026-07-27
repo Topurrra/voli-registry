@@ -16,3 +16,4 @@ mpv = "*"
 
 [autoupdate]
 checkver = { github = "pystardust/ani-cli" }
+url_template = "https://raw.githubusercontent.com/pystardust/ani-cli/refs/tags/v$version/ani-cli"

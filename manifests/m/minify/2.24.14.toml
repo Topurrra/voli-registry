@@ -12,3 +12,4 @@ sha256 = "23953f6d533ed6a93dec747cbc41090e4c55f13468a643dbf9822ce4ba05d06b"
 
 [autoupdate]
 checkver = { github = "tdewolff/minify" }
+url_template = { x64 = "https://github.com/tdewolff/minify/releases/download/v$version/minify_windows_amd64.zip" }

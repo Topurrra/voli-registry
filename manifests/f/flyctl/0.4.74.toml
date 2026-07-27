@@ -16,3 +16,4 @@ sha256 = "49ad21f0d2731a7b4acb7dd344e7df7f70d300a2079d2a310436ef558d3652e9"
 
 [autoupdate]
 checkver = { github = "superfly/flyctl" }
+url_template = { x64 = "https://github.com/superfly/flyctl/releases/download/v$version/flyctl_$version_Windows_x86_64.zip", arm64 = "https://github.com/superfly/flyctl/releases/download/v$version/flyctl_$version_Windows_arm64.zip" }

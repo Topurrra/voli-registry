@@ -13,3 +13,4 @@ sha256 = "5c35c3d2b2aaff2d0d1946ffe84c88e8f60aca5eadf3cec899df4a1b02186e28"
 
 [autoupdate]
 checkver = { github = "Azure/aks-engine" }
+url_template = { x64 = "https://github.com/Azure/aks-engine/releases/download/v$version/aks-engine-v$version-windows-amd64.zip" }

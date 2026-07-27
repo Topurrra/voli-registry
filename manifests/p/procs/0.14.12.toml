@@ -12,3 +12,4 @@ sha256 = "4928c399ae78ee82f99139a5629077b8d90a58599d834584dd4e613cb60c83d0"
 
 [autoupdate]
 checkver = { github = "dalance/procs" }
+url_template = { x64 = "https://github.com/dalance/procs/releases/download/v$version/procs-v$version-x86_64-windows.zip" }

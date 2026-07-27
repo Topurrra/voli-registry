@@ -14,3 +14,4 @@ sha256 = "3af7e4f810b6c8ed4aa65877b4ebd11635bbe55a1b3cac5ba971b3818cb21d69"
 
 [autoupdate]
 checkver = { github = "GerryFerdinandus/bittorrent-tracker-editor" }
+url_template = { x64 = "https://github.com/GerryFerdinandus/bittorrent-tracker-editor/releases/download/V$version/trackereditor_windows_amd64.zip" }

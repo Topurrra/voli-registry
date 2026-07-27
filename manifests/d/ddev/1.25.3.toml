@@ -12,3 +12,4 @@ sha256 = "9a7fa1a4f3e5bc6b2a3f1cbc2adcdfcaa3b0104b5df96cd4213c83ccdb080677"
 
 [autoupdate]
 checkver = { github = "ddev/ddev" }
+url_template = { x64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip" }

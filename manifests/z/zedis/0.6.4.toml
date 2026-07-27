@@ -16,3 +16,4 @@ sha256 = "5f1534a1912059df3afb908366bb7529df3dad1f41450be566983749c7556833"
 
 [autoupdate]
 checkver = { github = "vicanso/zedis" }
+url_template = { x64 = "https://github.com/vicanso/zedis/releases/download/v$version/zedis-windows-x86_64.zip", arm64 = "https://github.com/vicanso/zedis/releases/download/v$version/zedis-windows-aarch64.zip" }

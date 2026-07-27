@@ -17,3 +17,4 @@ sha256 = "ea290c562e175dc0497ad7ac4fa7e106f857e247c9c1ce6e89750dedaae3547c"
 
 [autoupdate]
 checkver = { github = "Cisco-Talos/clamav" }
+url_template = { x64 = "https://github.com/Cisco-Talos/clamav/releases/download/clamav-$version/clamav-$version.win.x64.zip", arm64 = "https://github.com/Cisco-Talos/clamav/releases/download/clamav-$version/clamav-$version.win.arm64.zip" }

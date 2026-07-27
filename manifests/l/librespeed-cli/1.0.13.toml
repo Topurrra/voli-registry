@@ -12,3 +12,4 @@ sha256 = "0d10a38858a05998fe1af070ca3c98e6dc038c0883b22c18918b33c855789f2a"
 
 [autoupdate]
 checkver = { github = "librespeed/speedtest-cli" }
+url_template = { x64 = "https://github.com/librespeed/speedtest-cli/releases/download/v$version/librespeed-cli_$version_windows_amd64.zip" }

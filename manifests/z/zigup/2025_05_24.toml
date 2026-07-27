@@ -16,3 +16,4 @@ PATH = "{dir}"
 
 [autoupdate]
 checkver = { github = "marler8997/zigup" }
+url_template = { x64 = "https://github.com/marler8997/zigup/releases/download/v$version/zigup-x86_64-windows.zip" }

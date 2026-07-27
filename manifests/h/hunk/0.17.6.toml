@@ -13,3 +13,4 @@ sha256 = "c2b473dcb75c001f863adb384f5dc522c7a69488bb8ab447941f9e6ed7415558"
 
 [autoupdate]
 checkver = { github = "modem-dev/hunk" }
+url_template = { x64 = "https://github.com/modem-dev/hunk/releases/download/v$version/hunkdiff-windows-x64.tar.gz" }

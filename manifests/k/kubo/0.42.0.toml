@@ -4,6 +4,7 @@ description = "A peer-to-peer hypermedia protocol to make the web faster, safer,
 homepage = "https://ipfs.tech/"
 license = "MIT"
 kind = "app"
+extract_dir = "kubo"
 bin = ["ipfs.exe"]
 
 [source.x64]
@@ -15,4 +16,5 @@ url = "https://dist.ipfs.tech/kubo/v0.42.0/kubo_v0.42.0_windows-arm64.zip"
 sha512 = "9a954176a428ec165d5eb92d330bf4f99cf00498f180f161d8870d1867775f734937a40bd115323cf7d9ecf6749745b81fe5569b3db11bec5fbf6b8437bea861"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?m)^v([\\\\d.]*)$\",\"reverse\":true,\"url\":\"https://dist.ipfs.tech/kubo/versions\"}"
+checkver = { url = "https://dist.ipfs.tech/kubo/versions", regex = "(?m)^v([\\d.]*)$" }
+url_template = { x64 = "https://dist.ipfs.tech/kubo/v$version/kubo_v$version_windows-amd64.zip", arm64 = "https://dist.ipfs.tech/kubo/v$version/kubo_v$version_windows-arm64.zip" }

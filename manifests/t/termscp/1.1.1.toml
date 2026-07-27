@@ -16,3 +16,4 @@ sha256 = "8d25752e3322cb692ba9004abb14c29677ab32c2453c36c8a90764f7d83fca64"
 
 [autoupdate]
 checkver = { github = "veeso/termscp" }
+url_template = { x64 = "https://github.com/veeso/termscp/releases/download/v$version/termscp-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/veeso/termscp/releases/download/v$version/termscp-v$version-aarch64-pc-windows-msvc.zip" }

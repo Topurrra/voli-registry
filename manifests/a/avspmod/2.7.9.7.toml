@@ -13,3 +13,4 @@ sha256 = "3e2719d91d1bf55c48330bfae6cf681e2142595b2f56572193f7b6bb7cb2e0fe"
 
 [autoupdate]
 checkver = { github = "gispos/AvsPmod" }
+url_template = { x64 = "https://github.com/gispos/AvsPmod/releases/download/$version/AvsPmod_v$version_.Windows_x86-64.zip" }

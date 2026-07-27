@@ -13,4 +13,4 @@ url = "https://www.uwamp.com/file/UwAmp.zip"
 sha256 = "6f0478caa44da0bf7fb9138392062f042008827118ca0c65395af8fbbd4ff1a3"
 
 [autoupdate]
-checkver = "{\"regex\":\"Last version ([\\\\d.]+)\",\"url\":\"https://www.uwamp.com/en/?page=download\"}"
+checkver = { url = "https://www.uwamp.com/en/?page=download", regex = "Last version ([\\d.]+)" }

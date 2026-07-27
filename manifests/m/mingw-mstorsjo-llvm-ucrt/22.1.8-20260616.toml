@@ -1,0 +1,21 @@
+name = "mingw-mstorsjo-llvm-ucrt"
+version = "22.1.8-20260616"
+description = "LLVM toolchain based on mingw-w64. (UCRT, mstorsjo build)"
+homepage = "https://github.com/mstorsjo/llvm-mingw/"
+license = "GPL-3.0-or-later,ZPL-2.1,Apache-2.0 WITH LLVM-exception,ISC"
+kind = "app"
+extract_dir = "llvm-mingw-20260616-ucrt-x86_64"
+
+[source.x64]
+url = "https://github.com/mstorsjo/llvm-mingw/releases/download/20260616/llvm-mingw-20260616-ucrt-x86_64.zip"
+sha256 = "b9b68a4d276e16fa25802aaba458e4638f64b3884c290aaccdc2d87083b6ca35"
+
+[source.arm64]
+url = "https://github.com/mstorsjo/llvm-mingw/releases/download/20260616/llvm-mingw-20260616-ucrt-aarch64.zip"
+sha256 = "312593669435bd0bfc1a43ac3fba23c8b27e0610bade88b2738e5a01702a99ba"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "mstorsjo/llvm-mingw" }

@@ -13,3 +13,4 @@ sha256 = "77535bbcecb029a669acdd855dbf12d9608575aab4d76fb66ad895c9b3ce66f8"
 
 [autoupdate]
 checkver = { github = "STranslate/STranslate" }
+url_template = { x64 = "https://github.com/STranslate/STranslate/releases/download/v$version/STranslate-win-Portable.zip" }

@@ -12,4 +12,4 @@ url = "https://github.com/hasherezade/ViDi/releases/download/0.2.5.5/vidi_0.2.5.
 sha256 = "487f27e9df14c4da167caab3556a45cc0900028adde3100433be9cf0a64439d9"
 
 [autoupdate]
-checkver = "{\"regex\":\"download/([\\\\d.]+)/\",\"url\":\"https://github.com/hasherezade/ViDi/releases\"}"
+checkver = { url = "https://github.com/hasherezade/ViDi/releases", regex = "download/([\\d.]+)/" }

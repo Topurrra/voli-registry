@@ -13,3 +13,4 @@ sha256 = "c1b757bc7c64921b38bf5fd70d2a2e2f591d36fe1cae3b5722822c08f651ba7b"
 
 [autoupdate]
 checkver = { github = "indygreg/PyOxidizer" }
+url_template = { x64 = "https://github.com/indygreg/PyOxidizer/releases/download/pyoxidizer%2F$version/pyoxidizer-$version-x86_64-pc-windows-msvc.zip" }

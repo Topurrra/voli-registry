@@ -12,3 +12,4 @@ sha256 = "6e347dc8ed9e8d980973f278dcf3d9911fc480c0804ff9ce8938dad305464bf7"
 
 [autoupdate]
 checkver = { github = "aduros/wasm4" }
+url_template = { x64 = "https://github.com/aduros/wasm4/releases/download/v$version/w4-windows.zip" }

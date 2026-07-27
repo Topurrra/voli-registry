@@ -12,3 +12,4 @@ sha256 = "65d859dfc4cae1e3b7958cf618d404de95d65228f914aa84e808cf1ed9f6f7d0"
 
 [autoupdate]
 checkver = { github = "Slashbunny/gog-galaxy-plugin-downloader" }
+url_template = "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases/download/v$version/gog-plugins-downloader-v$version.zip"

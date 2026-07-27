@@ -12,3 +12,4 @@ sha256 = "374ad79d46bd9cf165fb254b5a82836da383cbff86510e16639c99fd084f3efd"
 
 [autoupdate]
 checkver = { github = "jesseduffield/horcrux" }
+url_template = { x64 = "https://github.com/jesseduffield/horcrux/releases/download/v$version/horcrux_$version_Windows_x86_64.zip" }

@@ -12,3 +12,4 @@ sha256 = "020ce7a897baadbd19ac27bf28e6ffb3b4024ee09fa1b46534c5c75881da1041"
 
 [autoupdate]
 checkver = { github = "shenwei356/brename" }
+url_template = { x64 = "https://github.com/shenwei356/brename/releases/download/v$version/brename_windows_amd64.exe.tar.gz" }

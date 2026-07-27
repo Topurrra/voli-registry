@@ -12,3 +12,4 @@ sha256 = "0ce2d7f52cf695fbdc245096048505cd64b9092689067a10bd7d78c0dc1fead8"
 
 [autoupdate]
 checkver = { github = "Losses/rune" }
+url_template = "https://github.com/Losses/rune/releases/download/v$version/Rune-v$version-windows-amd64.zip"

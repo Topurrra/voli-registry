@@ -17,4 +17,5 @@ CATALINA_BASE = "{dir}"
 CATALINA_HOME = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\"v([\\\\d.]+)/\",\"url\":\"https://archive.apache.org/dist/tomcat/tomcat-11/?C=M;O=D\"}"
+checkver = { url = "https://archive.apache.org/dist/tomcat/tomcat-11/?C=M;O=D", regex = "v([\\d.]+)/" }
+url_template = { x64 = "https://archive.apache.org/dist/tomcat/tomcat-$majorVersion/v$version/bin/apache-tomcat-$version-windows-x64.zip" }

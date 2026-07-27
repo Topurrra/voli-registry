@@ -13,4 +13,4 @@ url = "https://www.vieas.com/software/dl/Vieas5460_64.zip"
 sha256 = "0bddd11fbf873dbaa6b66dfa8a0f03a950ef1c4f7235a7a2687e072dd6f17d89"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://www.vieas.com/en/software/vie_his.html\"}"
+checkver = { url = "https://www.vieas.com/en/software/vie_his.html", regex = "Version ([\\d.]+)" }

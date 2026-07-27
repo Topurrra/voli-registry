@@ -13,3 +13,4 @@ sha256 = "0a48f45c212adc9400bb3cfa74800ccff1b234c18251f0b0c9f05bf3811cd5c6"
 
 [autoupdate]
 checkver = { github = "danielqsj/kafka_exporter" }
+url_template = { x64 = "https://github.com/danielqsj/kafka_exporter/releases/download/v$version/kafka_exporter-$version.windows-amd64.tar.gz" }

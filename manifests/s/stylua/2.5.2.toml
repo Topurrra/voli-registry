@@ -12,3 +12,4 @@ sha256 = "e77d0ea1226b8b389b43f702240091249a96eea25857281f90ea24d0eb9eb969"
 
 [autoupdate]
 checkver = { github = "JohnnyMorganz/StyLua" }
+url_template = { x64 = "https://github.com/JohnnyMorganz/StyLua/releases/download/v$version/stylua-windows-x86_64.zip" }

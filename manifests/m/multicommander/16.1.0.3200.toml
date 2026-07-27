@@ -14,3 +14,4 @@ sha256 = "8fe0f3d3347be1fc7b7bdd40ba7fdb853a25b66bcb579dfdad9b09585773df59"
 
 [autoupdate]
 checkver = "{\"url\":\"https://multicommander.com/updates/version.xml\",\"xpath\":\"/updates/multicommander/stable/@version\"}"
+url_template = { x64 = "https://multicommander.com/files/updates/MultiCommander_x64_Portable_($version).zip" }

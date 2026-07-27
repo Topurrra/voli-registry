@@ -12,3 +12,4 @@ sha256 = "b41b42a7411a01f092faac619080f5f73d2695f81c92458d195efc5934701218"
 
 [autoupdate]
 checkver = { github = "topgrade-rs/topgrade" }
+url_template = { x64 = "https://github.com/topgrade-rs/topgrade/releases/download/v$version/topgrade-v$version-x86_64-pc-windows-msvc.zip" }

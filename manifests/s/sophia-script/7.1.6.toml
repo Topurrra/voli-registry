@@ -17,3 +17,4 @@ sha256 = "6b3ed9f40132882a6e26183646603ef0fccba3449a5232e959195cd7139979de"
 
 [autoupdate]
 checkver = { github = "farag2/Sophia-Script-for-Windows" }
+url_template = { x64 = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.v$version.zip", arm64 = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.Arm.v$version.zip" }

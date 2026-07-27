@@ -18,3 +18,4 @@ PATH = "{dir}"
 
 [autoupdate]
 checkver = "Current release: wimlib-([\\d.]+)"
+url_template = { x64 = "https://wimlib.net/downloads/wimlib-$version-windows-x86_64-bin.zip", arm64 = "https://wimlib.net/downloads/wimlib-$version-windows-aarch64-bin.zip" }

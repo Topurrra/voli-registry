@@ -12,3 +12,4 @@ sha256 = "24dd6f0e6c99eb67a47641ebc74f91982ead1be869a87763002e5efa3cac2432"
 
 [autoupdate]
 checkver = { github = "netlify/netlifyctl" }
+url_template = { x64 = "https://github.com/netlify/netlifyctl/releases/download/v$version/netlifyctl-windows-amd64-$version.zip" }

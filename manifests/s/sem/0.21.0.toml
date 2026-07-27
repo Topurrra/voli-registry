@@ -12,3 +12,4 @@ sha256 = "8ead28b095b829dba340e77d8d184394918223bd62a3fcd7cd634df50246fc9b"
 
 [autoupdate]
 checkver = { github = "Ataraxy-Labs/sem" }
+url_template = { x64 = "https://github.com/Ataraxy-Labs/sem/releases/download/v$version/sem-windows-x86_64.zip" }

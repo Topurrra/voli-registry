@@ -12,3 +12,4 @@ sha256 = "6979087f9deaca79874977a4313c9a1dc7d32358694c3fe91a5d73a8beb0c68d"
 
 [autoupdate]
 checkver = { github = "514-labs/dnsglobe" }
+url_template = { x64 = "https://github.com/514-labs/dnsglobe/releases/download/v$version/dnsglobe-x86_64-pc-windows-msvc.zip" }

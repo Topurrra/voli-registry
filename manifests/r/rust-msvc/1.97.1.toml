@@ -1,0 +1,22 @@
+name = "rust-msvc"
+version = "1.97.1"
+description = "A language empowering everyone to build reliable and efficient software. (MSVC toolchain)"
+homepage = "https://www.rust-lang.org"
+license = "MIT|Apache-2.0"
+kind = "app"
+extract_dir = "Rust"
+bin = ["bin\\rustc.exe", "bin\\rustdoc.exe", "bin\\cargo.exe"]
+
+[source.x64]
+url = "https://static.rust-lang.org/dist/rust-1.97.1-x86_64-pc-windows-msvc.msi"
+sha256 = "58ec069612df27fd21c58c3d438258b2161ceedfc343e23387d5a4811c5cd539"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://static.rust-lang.org/dist/rust-1.97.1-aarch64-pc-windows-msvc.msi"
+sha256 = "c8e98fd5bb5c5ef33e5b53e580584d838657b51a4f0586cbdbe1069972edad2b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.rust-lang.org/", regex = "Version ([\\d.]+)" }
+url_template = { x64 = "https://static.rust-lang.org/dist/rust-$version-x86_64-pc-windows-msvc.msi", arm64 = "https://static.rust-lang.org/dist/rust-$version-aarch64-pc-windows-msvc.msi" }

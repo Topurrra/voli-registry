@@ -15,3 +15,4 @@ sha256 = "a3be46d277b87ef56f10b151cd530077e81b47620d84c5f9edbde1b1015c6b47"
 
 [autoupdate]
 checkver = { github = "JacobDev1/xl-converter" }
+url_template = { x64 = "https://github.com/JacobDev1/xl-converter/releases/download/v$version/xl-converter-win-$version-x86_64-portable.7z" }

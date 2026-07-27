@@ -12,3 +12,4 @@ sha256 = "db2d8caee88f2665b772c4591cba223b8b729500b88266dc06d4bf79d28fe11a"
 
 [autoupdate]
 checkver = { github = "tjko/jpegoptim" }
+url_template = { x64 = "https://github.com/tjko/jpegoptim/releases/download/v$version/jpegoptim-$version-x64-windows.zip" }

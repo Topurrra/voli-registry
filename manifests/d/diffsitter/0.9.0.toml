@@ -16,3 +16,4 @@ sha256 = "8eff9c84f478bcb21c46c22d68dd7510a7c4f9def53808e357f1109bd0e13b23"
 
 [autoupdate]
 checkver = { github = "afnanenayet/diffsitter" }
+url_template = { x64 = "https://github.com/afnanenayet/diffsitter/releases/download/v$version/diffsitter-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/afnanenayet/diffsitter/releases/download/v$version/diffsitter-aarch64-pc-windows-msvc.zip" }

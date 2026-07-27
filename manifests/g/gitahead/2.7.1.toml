@@ -13,3 +13,4 @@ sha256 = "6e51cd17e228ac2043e15f2b162048bf751547a91183c5b93336a0255c2306da"
 
 [autoupdate]
 checkver = { github = "gitahead/gitahead" }
+url_template = { x64 = "https://github.com/gitahead/gitahead/releases/download/v$version/GitAhead-win64-$version.exe#/dl.7z" }

@@ -13,3 +13,4 @@ sha256 = "3fcf1d9b4f42017dbffe90539c6be5ac415e9b119552c5ae5cdbb034d36aab87"
 
 [autoupdate]
 checkver = { github = "tummychow/git-absorb" }
+url_template = { x64 = "https://github.com/tummychow/git-absorb/releases/download/$version/git-absorb-$version-x86_64-pc-windows-msvc.zip" }

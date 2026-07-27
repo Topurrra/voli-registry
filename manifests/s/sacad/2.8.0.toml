@@ -13,3 +13,4 @@ sha256 = "64e8ba4c06b09961c6f5e2c4248eb6ea1cb622ad38fece5391afabba64faa7dd"
 
 [autoupdate]
 checkver = { github = "desbma/sacad" }
+url_template = { x64 = "https://github.com/desbma/sacad/releases/download/$version/sacad_win64.7z" }

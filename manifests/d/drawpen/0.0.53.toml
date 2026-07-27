@@ -12,3 +12,4 @@ sha256 = "d484c54da70a1d11771f1be1ffc95e634c03f5afb7729f62030cb1ecb97717b8"
 
 [autoupdate]
 checkver = { github = "DmytroVasin/DrawPen" }
+url_template = { x64 = "https://github.com/DmytroVasin/DrawPen/releases/download/v$version/DrawPen-win32-x64-$version.zip" }

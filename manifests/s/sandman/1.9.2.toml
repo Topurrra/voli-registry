@@ -13,3 +13,4 @@ sha256 = "5f0b5216d3875aaa5c42c57020aa9f673725d6a6554f4bffa833634d9190e2ae"
 
 [autoupdate]
 checkver = { github = "alexanderepstein/Sandman" }
+url_template = { x64 = "https://github.com/alexanderepstein/Sandman/releases/download/v$version/Sandman.Version.$version.64.Bit.Windows.zip" }

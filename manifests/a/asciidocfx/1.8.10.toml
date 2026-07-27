@@ -14,3 +14,4 @@ sha256 = "a0d470db785877b05e3cc03396b1388cdc7fee8d992fcc156dc212bc22af0f46"
 
 [autoupdate]
 checkver = { github = "asciidocfx/AsciidocFX" }
+url_template = { x64 = "https://github.com/asciidocfx/AsciidocFX/releases/download/v$version/AsciidocFX_Windows.zip" }

@@ -19,3 +19,4 @@ ffmpeg = "*"
 
 [autoupdate]
 checkver = { github = "iawia002/lux" }
+url_template = { x64 = "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_x86_64.zip", arm64 = "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_arm64.zip" }

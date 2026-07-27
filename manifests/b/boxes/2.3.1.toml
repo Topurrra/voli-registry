@@ -13,3 +13,4 @@ sha256 = "950d3b23090f06fc6628ee661893bc264fc66938ca3636366f33b9b638eaa7c9"
 
 [autoupdate]
 checkver = { github = "ascii-boxes/boxes" }
+url_template = "https://github.com/ascii-boxes/boxes/releases/download/v$version/boxes-$version-intel-win32.zip"

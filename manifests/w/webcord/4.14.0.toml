@@ -16,3 +16,4 @@ sha256 = "1ec0e6d7fa929f73295c7af0b8106f69a69b993e984c9de8ccb983c01b6adb76"
 
 [autoupdate]
 checkver = { github = "SpacingBat3/WebCord" }
+url_template = { x64 = "https://github.com/SpacingBat3/WebCord/releases/download/v$version/WebCord-win32-x64-$version.zip", arm64 = "https://github.com/SpacingBat3/WebCord/releases/download/v$version/WebCord-win32-arm64-$version.zip" }

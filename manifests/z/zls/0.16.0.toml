@@ -12,3 +12,4 @@ sha256 = "35cbb7163224e8cf92d21099c1b1391f2aba927f25d389f021b13a21d40b96dd"
 
 [autoupdate]
 checkver = { github = "zigtools/zls" }
+url_template = { x64 = "https://github.com/zigtools/zls/releases/download/$version/zls-x86_64-windows.zip" }

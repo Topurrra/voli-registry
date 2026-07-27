@@ -12,4 +12,5 @@ url = "https://www.nuget.org/api/v2/package/Microsoft.PowerApps.CLI/2.9.3#/dl.zi
 sha256 = "2efbe5a5b5f1ff33a2d0f2081c1e035cea00705d784789933b045e1df399211b"
 
 [autoupdate]
-checkver = "{\"regex\":\">\\\\s*([\\\\d.]+)\\\\s*</\",\"url\":\"https://www.nuget.org/packages/Microsoft.PowerApps.CLI\"}"
+checkver = { url = "https://www.nuget.org/packages/Microsoft.PowerApps.CLI", regex = ">\\s*([\\d.]+)\\s*</" }
+url_template = "https://www.nuget.org/api/v2/package/Microsoft.PowerApps.CLI/$version#/dl.zip"

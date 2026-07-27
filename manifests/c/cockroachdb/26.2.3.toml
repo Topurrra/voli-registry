@@ -12,4 +12,5 @@ url = "https://binaries.cockroachdb.com/cockroach-v26.2.3.windows-6.2-amd64.zip"
 sha256 = "8bba5155fc4dbdccae87e02c7e5d9f0108fe762c8f238807f8e87940d6c78bbb"
 
 [autoupdate]
-checkver = "{\"regex\":\"\\\"version-name\\\">v([\\\\d.]+)<\",\"url\":\"https://www.cockroachlabs.com/docs/stable/install-cockroachdb.html\"}"
+checkver = { url = "https://www.cockroachlabs.com/docs/stable/install-cockroachdb.html", regex = "\"version-name\">v([\\d.]+)<" }
+url_template = { x64 = "https://binaries.cockroachdb.com/cockroach-v$version.windows-6.2-amd64.zip" }

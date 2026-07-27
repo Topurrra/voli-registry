@@ -12,3 +12,4 @@ sha256 = "d7168545a6d5df4772b6090d470650f3eb8c9732dbd19b1f9027824c7f4a6fa3"
 
 [autoupdate]
 checkver = { github = "openocd-org/openocd" }
+url_template = "https://github.com/openocd-org/openocd/releases/download/v$version/openocd-v$version-i686-w64-mingw32.tar.gz"

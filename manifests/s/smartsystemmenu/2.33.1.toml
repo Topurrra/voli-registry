@@ -14,3 +14,4 @@ sha256 = "fadb3f53e525f3f8b2570e0830a9f066288fb89a51cabd5f5346a56be15e5f74"
 
 [autoupdate]
 checkver = { github = "AlexanderPro/SmartSystemMenu" }
+url_template = "https://github.com/AlexanderPro/SmartSystemMenu/releases/download/v$version/SmartSystemMenu_v$version.zip"

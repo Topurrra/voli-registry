@@ -12,3 +12,4 @@ sha256 = "39ee0decdac1f9faa5cd3eef1856fa3eb49775e04dedf80288aa74618b3cd65b"
 
 [autoupdate]
 checkver = { github = "VladimirMarkelov/ttdl" }
+url_template = { x64 = "https://github.com/VladimirMarkelov/ttdl/releases/download/v$version/ttdl_$version_win_x64.zip" }

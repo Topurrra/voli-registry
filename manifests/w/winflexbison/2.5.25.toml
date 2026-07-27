@@ -12,3 +12,4 @@ sha256 = "8d324b62be33604b2c45ad1dd34ab93d722534448f55a16ca7292de32b6ac135"
 
 [autoupdate]
 checkver = { github = "lexxmark/winflexbison" }
+url_template = "https://github.com/lexxmark/winflexbison/releases/download/v$version/win_flex_bison-$version.zip"

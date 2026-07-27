@@ -13,3 +13,4 @@ sha256 = "2cea370ba8d6e69dcec3026fea619fa7fa38839f1dd389a9e0d8d62edca97cb1"
 
 [autoupdate]
 checkver = "latest-version\">([\\d.]+)<"
+url_template = { x64 = "https://tweakstyle.com/dl/TweakStyle-win64-$version.zip" }

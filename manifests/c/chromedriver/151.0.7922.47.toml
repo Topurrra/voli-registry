@@ -12,4 +12,5 @@ url = "https://storage.googleapis.com/chrome-for-testing-public/151.0.7922.47/wi
 sha256 = "8af9c85a8793ae9fa09783a2a554234d4aae05b44a8254cf6a674e3e4e247b30"
 
 [autoupdate]
-checkver = "{\"jsonpath\":\"$.channels.Stable.version\",\"regex\":\"([\\\\d.]+)\",\"url\":\"https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json\"}"
+checkver = { url = "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json", regex = "([\\d.]+)" }
+url_template = { x64 = "https://storage.googleapis.com/chrome-for-testing-public/$version/win64/chromedriver-win64.zip" }

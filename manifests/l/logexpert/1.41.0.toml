@@ -13,3 +13,4 @@ sha256 = "74524db34332aed480c5c631ca9023118140bc120075c1365ae6713620673c89"
 
 [autoupdate]
 checkver = { github = "LogExperts/LogExpert" }
+url_template = { x64 = "https://github.com/LogExperts/LogExpert/releases/download/v$matchTag/LogExpert.$version.zip" }

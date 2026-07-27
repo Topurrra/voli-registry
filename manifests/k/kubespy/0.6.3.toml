@@ -16,3 +16,4 @@ sha256 = "d0bb9ed65b4b5869280e6030058c8eed32d4f6590ceff666cf4221429745ea84"
 
 [autoupdate]
 checkver = { github = "pulumi/kubespy" }
+url_template = { x64 = "https://github.com/pulumi/kubespy/releases/download/v$version/kubespy-v$version-windows-amd64.tar.gz", arm64 = "https://github.com/pulumi/kubespy/releases/download/v$version/kubespy-v$version-windows-arm64.tar.gz" }

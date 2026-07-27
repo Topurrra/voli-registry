@@ -18,3 +18,4 @@ COURSIER_CACHE = "{dir}\\cache"
 
 [autoupdate]
 checkver = { github = "coursier/coursier" }
+url_template = "https://github.com/coursier/coursier/releases/download/v$version/coursier#/coursier.jar"

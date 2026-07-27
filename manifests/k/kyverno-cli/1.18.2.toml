@@ -12,3 +12,4 @@ sha256 = "b5c9d1cb75587a312dc8334537a5773bdedb1a985deae9d89a5251385afb831f"
 
 [autoupdate]
 checkver = { github = "kyverno/kyverno" }
+url_template = { x64 = "https://github.com/kyverno/kyverno/releases/download/v$version/kyverno-cli_v$version_windows_x86_64.zip" }

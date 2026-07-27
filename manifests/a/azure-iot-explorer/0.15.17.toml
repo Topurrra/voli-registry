@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Azure/azure-iot-explorer" }
+url_template = { x64 = "https://github.com/Azure/azure-iot-explorer/releases/download/v$version/Azure.IoT.Explorer.preview.$version.msi" }

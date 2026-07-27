@@ -13,3 +13,4 @@ sha256 = "9c908eacc4b3d0bf494bc0a72048a9f3bb59ed6471c4571da8f5441e277fc883"
 
 [autoupdate]
 checkver = { github = "clangen/musikcube" }
+url_template = { x64 = "https://github.com/clangen/musikcube/releases/download/$version/musikcube_$version_win64.zip" }

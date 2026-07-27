@@ -12,3 +12,4 @@ sha256 = "58b9bb55279da2a58acd1465e0448cc9556e280f8208f60a5f669b2bd4617005"
 
 [autoupdate]
 checkver = { github = "mgdm/htmlq" }
+url_template = { x64 = "https://github.com/mgdm/htmlq/releases/download/v$version/htmlq-x86_64-windows.zip" }

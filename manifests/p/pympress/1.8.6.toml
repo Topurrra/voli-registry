@@ -14,3 +14,4 @@ sha256 = "4a63b9ab61e2ca442f9590816bfae4c9e38639d5ed3f004f6f6e481a02769979"
 
 [autoupdate]
 checkver = { github = "Cimbali/pympress" }
+url_template = { x64 = "https://github.com/Cimbali/pympress/releases/download/v$version/pympress-$version-x86_64.zip" }

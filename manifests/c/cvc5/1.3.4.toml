@@ -17,3 +17,4 @@ sha256 = "2fd3e9c9aa6deb64fd1cd07ff20fe074985c306394d9003f8e278e10fc372360"
 
 [autoupdate]
 checkver = { github = "cvc5/cvc5" }
+url_template = { x64 = "https://github.com/cvc5/cvc5/releases/download/cvc5-$version/cvc5-Win64-x86_64-static.zip", arm64 = "https://github.com/cvc5/cvc5/releases/download/cvc5-$version/cvc5-Win64-arm64-static.zip" }

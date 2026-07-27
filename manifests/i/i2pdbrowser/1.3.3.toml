@@ -13,3 +13,4 @@ sha512 = "e7fbcf4b564211869b1fe35463ef7347f5ac75e1c531cd5487f20234251a3015f82fd3
 
 [autoupdate]
 checkver = { github = "PurpleI2P/i2pdbrowser" }
+url_template = { x64 = "https://github.com/PurpleI2P/i2pdbrowser/releases/download/$version/I2PdBrowserPortable_$version.7z" }

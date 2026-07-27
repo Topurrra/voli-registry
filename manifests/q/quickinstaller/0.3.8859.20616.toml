@@ -13,4 +13,4 @@ sha256 = "260e487feb6870c01bd8440117aebae4a7ca4cbc14cbbe4aca84b91b26c160d4"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"latest version ([\\\\d.]+)\\\\. Release Date\",\"url\":\"https://quickinstaller.net/download\"}"
+checkver = { url = "https://quickinstaller.net/download", regex = "latest version ([\\d.]+)\\. Release Date" }

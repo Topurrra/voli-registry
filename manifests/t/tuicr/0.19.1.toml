@@ -12,3 +12,4 @@ sha256 = "3116f4e82aaf6ce71b0496cbf535f4b2c0e457f785fc6bdf9cf45094261a4563"
 
 [autoupdate]
 checkver = { github = "agavra/tuicr" }
+url_template = { x64 = "https://github.com/agavra/tuicr/releases/download/v$version/tuicr-$version-x86_64-pc-windows-msvc.zip" }

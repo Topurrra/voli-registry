@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "tranxuanthang/lrcget" }
+url_template = { x64 = "https://github.com/tranxuanthang/lrcget/releases/download/$version/LRCGET_$version_x64_en-US.msi" }

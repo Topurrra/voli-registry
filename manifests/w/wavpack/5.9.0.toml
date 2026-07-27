@@ -12,3 +12,4 @@ sha256 = "ad5e94bcde6f4edfc859210d98f144f225805a391c633c68f6dbb15a9e52570e"
 
 [autoupdate]
 checkver = { github = "dbry/WavPack" }
+url_template = { x64 = "https://github.com/dbry/WavPack/releases/download/$version/wavpack-$version-x64.zip" }

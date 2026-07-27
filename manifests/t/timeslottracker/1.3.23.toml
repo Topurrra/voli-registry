@@ -12,3 +12,4 @@ sha256 = "d4ab2676dec5ba56cabd032bd7ec37c2a989553bb7a50a6a41be92dda0464473"
 
 [autoupdate]
 checkver = { github = "TimeSlotTracker/timeslottracker-desktop" }
+url_template = "https://github.com/TimeSlotTracker/timeslottracker-desktop/releases/download/v$version/TimeSlotTracker-$version-full.jar#/TimeSlotTracker.jar"

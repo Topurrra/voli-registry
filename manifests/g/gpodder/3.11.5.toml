@@ -15,3 +15,4 @@ sha256 = "c73d6d1e6df63d8c8ff631c053f3d4d8db975b319022adc60a56add41166fb7b"
 
 [autoupdate]
 checkver = { github = "gpodder/gpodder" }
+url_template = "https://github.com/gpodder/gpodder/releases/download/$version/windows-gpodder-$version-portable.exe#/dl.7z"

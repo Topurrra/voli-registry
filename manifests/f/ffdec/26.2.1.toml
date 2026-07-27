@@ -13,3 +13,4 @@ sha256 = "0333b56998a55bd83f4e0deb678a811fcdc45607582b4f5dd438309c8c3ad5ce"
 
 [autoupdate]
 checkver = { github = "jindrapetrik/jpexs-decompiler" }
+url_template = "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version$version/ffdec_$version.zip"

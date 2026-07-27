@@ -13,4 +13,5 @@ url = "https://geeks3d.com/dl/get/822#YAFFplayer_0.12.2_win64.7z"
 sha256 = "1faeee2e8e36942a8c5d977f22ecd1b4ec3ce488f7e92f7effc6e989577aa110"
 
 [autoupdate]
-checkver = "{\"regex\":\"dl/show/(?<page>\\\\d+).*?YAFFplayer\\\\s+(?<version>[\\\\d.]+).*?win64\",\"url\":\"https://www.geeks3d.com/yaffplayer/downloads/\"}"
+checkver = { url = "https://www.geeks3d.com/yaffplayer/downloads/", regex = "dl/show/(?<page>\\d+).*?YAFFplayer\\s+(?<version>[\\d.]+).*?win64" }
+url_template = { x64 = "https://geeks3d.com/dl/get/$matchPage#YAFFplayer_$version_win64.7z" }

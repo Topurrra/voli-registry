@@ -12,3 +12,4 @@ sha256 = "e2211da5056092c13a5690a23c0e03feac7b4caf147e2400ebcad80ca82cabe3"
 
 [autoupdate]
 checkver = { github = "orf/gping" }
+url_template = { x64 = "https://github.com/orf/gping/releases/download/gping-v$version/gping-Windows-msvc-x86_64.zip" }

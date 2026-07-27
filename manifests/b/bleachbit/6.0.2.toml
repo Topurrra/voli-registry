@@ -14,4 +14,5 @@ url = "https://download.bleachbit.org/BleachBit-6.0.2-portable.zip"
 sha256 = "0322920a592ba311cb374b4f44053ee35f793c5a5690f1f8cb419b57321b2883"
 
 [autoupdate]
-checkver = "{\"regex\":\"BleachBit ([\\\\d.]+)\",\"url\":\"https://www.bleachbit.org/download/windows\",\"useragent\":\"Scoop\"}"
+checkver = { url = "https://www.bleachbit.org/download/windows", regex = "BleachBit ([\\d.]+)" }
+url_template = "https://download.bleachbit.org/BleachBit-$version-portable.zip"

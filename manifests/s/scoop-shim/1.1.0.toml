@@ -11,3 +11,4 @@ sha256 = "c8452b3c4b8c219edef150cc423b0c844cb2d46381266011f6f076301e7e65d9"
 
 [autoupdate]
 checkver = { github = "ScoopInstaller/Shim" }
+url_template = "https://github.com/ScoopInstaller/Shim/releases/download/v$version/shim-$version.zip"

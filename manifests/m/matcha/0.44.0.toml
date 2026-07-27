@@ -16,3 +16,4 @@ sha256 = "df61955e50614f6624945a2b851dd9d66fdb0edfe405f26c84549958f895f586"
 
 [autoupdate]
 checkver = { github = "floatpane/matcha" }
+url_template = { x64 = "https://github.com/floatpane/matcha/releases/download/v$version/matcha_$version_windows_amd64.zip", arm64 = "https://github.com/floatpane/matcha/releases/download/v$version/matcha_$version_windows_arm64.zip" }

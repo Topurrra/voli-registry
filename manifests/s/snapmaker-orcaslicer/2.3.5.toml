@@ -13,3 +13,4 @@ sha256 = "053fdbb622b0c20fb4de30a677a487786a992efebf82451e39cada9900aea169"
 
 [autoupdate]
 checkver = { github = "Snapmaker/OrcaSlicer" }
+url_template = { x64 = "https://github.com/Snapmaker/OrcaSlicer/releases/download/v$version/Snapmaker_Orca_Windows_V$version_portable.zip" }

@@ -12,3 +12,4 @@ sha256 = "c0e64b881f967e0a1473127b1d181c0808068a47e99d8b5f1fbe2d99a6b2ed53"
 
 [autoupdate]
 checkver = { github = "morkt/GARbro" }
+url_template = "https://github.com/morkt/GARbro/releases/download/v$majorVersion.$minorVersion.$patchVersion/GARbro-v$version.rar"

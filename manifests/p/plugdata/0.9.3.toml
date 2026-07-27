@@ -12,4 +12,5 @@ sha256 = "3be7a5b73328b999f962050b75043a63db31222d4f5e4fd1676bd2ea3f4daeb0"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?<!plugdata )v(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)(?!-)\",\"url\":\"https://github.com/plugdata-team/plugdata/releases\"}"
+checkver = { url = "https://github.com/plugdata-team/plugdata/releases", regex = "(?<!plugdata )v(\\d+\\.\\d+\\.\\d+)(?!-)" }
+url_template = { x64 = "https://github.com/plugdata-team/plugdata/releases/download/v$version/plugdata-Win64.msi" }

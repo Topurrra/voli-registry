@@ -13,3 +13,4 @@ sha256 = "8ed48f165dc355e869f3a0037ad4f9216147f995a5ae0258b296eeef1f73aab0"
 
 [autoupdate]
 checkver = { github = "dnSpyEx/dnSpy" }
+url_template = { x64 = "https://github.com/dnSpyEx/dnSpy/releases/download/v$version/dnSpy-net-win64.zip" }

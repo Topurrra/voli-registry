@@ -13,3 +13,4 @@ sha256 = "ce9a3fcd64ffa3ab265b76a11fca37c450dcf7ac96e0f3439fc9edfec5571c52"
 
 [autoupdate]
 checkver = { github = "nicotine-plus/nicotine-plus" }
+url_template = { x64 = "https://github.com/nicotine-plus/nicotine-plus/releases/download/$version/windows-x86_64-package.zip" }

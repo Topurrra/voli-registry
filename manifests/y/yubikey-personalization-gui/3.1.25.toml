@@ -11,4 +11,5 @@ url = "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubike
 sha256 = "3debb239ff541ae6de058580cbecfc28137915f1118fd902de8e478c0d8168f2"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version\\\\s+([\\\\d.]+)\\\\s+\\\\(released\",\"url\":\"https://developers.yubico.com/yubikey-personalization-gui/Release_Notes.html\"}"
+checkver = { url = "https://developers.yubico.com/yubikey-personalization-gui/Release_Notes.html", regex = "Version\\s+([\\d.]+)\\s+\\(released" }
+url_template = "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubikey-personalization-gui-$version.exe#/dl.7z"

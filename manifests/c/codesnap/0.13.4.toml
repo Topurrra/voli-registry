@@ -12,3 +12,4 @@ sha256 = "631a669a61b09294badaea19ef2d15cfa30aaa1b456ade7862fd6530604dcd91"
 
 [autoupdate]
 checkver = { github = "codesnap-rs/codesnap" }
+url_template = { x64 = "https://github.com/codesnap-rs/codesnap/releases/download/v$version/codesnap-cli_v$version_x86_64-pc-windows-msvc.zip" }

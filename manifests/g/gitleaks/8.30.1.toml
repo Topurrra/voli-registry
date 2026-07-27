@@ -16,3 +16,4 @@ sha256 = "b95f5e4f5c425cedca7ee203d9afd29597e692c4924a12ed42f970537c72cc0f"
 
 [autoupdate]
 checkver = { github = "gitleaks/gitleaks" }
+url_template = { x64 = "https://github.com/gitleaks/gitleaks/releases/download/v$version/gitleaks_$version_windows_x64.zip", arm64 = "https://github.com/gitleaks/gitleaks/releases/download/v$version/gitleaks_$version_windows_arm64.zip" }

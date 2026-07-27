@@ -12,3 +12,4 @@ sha256 = "cbde3786910ab142ee12b2d24e9b220e41dfd1615b2cf4be209e0a00073d042e"
 
 [autoupdate]
 checkver = { github = "neilotoole/sq" }
+url_template = { x64 = "https://github.com/neilotoole/sq/releases/download/v$version/sq-$version-windows-amd64.zip" }

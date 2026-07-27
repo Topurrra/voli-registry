@@ -4,6 +4,7 @@ description = "A highly customizable Changelog Generator that follows Convention
 homepage = "https://git-cliff.org"
 license = "GPL-3.0-or-later"
 kind = "app"
+extract_dir = "git-cliff-2.13.1"
 bin = ["git-cliff.exe"]
 
 [source.x64]
@@ -16,3 +17,4 @@ sha256 = "03a623191fe575bc0024e2ebc61cc861cebd3ba84b93ff13b002c42e8248cd3f"
 
 [autoupdate]
 checkver = { github = "orhun/git-cliff" }
+url_template = { x64 = "https://github.com/orhun/git-cliff/releases/download/v$version/git-cliff-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/orhun/git-cliff/releases/download/v$version/git-cliff-$version-aarch64-pc-windows-msvc.zip" }

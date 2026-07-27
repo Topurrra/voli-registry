@@ -12,4 +12,4 @@ url = "https://wpd.app/get/latest.zip"
 sha256 = "8c9105cc81ac94f291a8d18b4ac0a88b51488bf49aa9a076490b1c42aacabe09"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+)\\\\sRC\",\"url\":\"https://wpd.app/changelog/\"}"
+checkver = { url = "https://wpd.app/changelog/", regex = "([\\d.]+)\\sRC" }

@@ -14,3 +14,4 @@ sha256 = "5a89a746115f34312ace09a3ec84c1929f31ab680eb6892d72c71406a15bb3fb"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/RetroShare/RetroShare/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /Windows-Portable/i)].browser_download_url\",\"regex\":\"download/v([\\\\d.]+)/RetroShare-(?<commit>[^\\\"]+)-Windows-Portable-(?<build>[\\\\w.-]+?)(?<!-tor)(?=(?:-x64|-x86)?\\\\.7z)\"}"
+url_template = { x64 = "https://github.com/RetroShare/RetroShare/releases/download/v$version/RetroShare-$matchCommit-Windows-Portable-$matchBuild-x64.7z" }

@@ -16,3 +16,4 @@ sha256 = "d0c937bb48183df19a9bbb68f7512215cc924b4dc1f6e930397392881aadae92"
 
 [autoupdate]
 checkver = { github = "stackitcloud/stackit-cli" }
+url_template = { x64 = "https://github.com/stackitcloud/stackit-cli/releases/download/v$version/stackit-cli_$version_windows_amd64.zip", arm64 = "https://github.com/stackitcloud/stackit-cli/releases/download/v$version/stackit-cli_$version_windows_arm64.zip" }

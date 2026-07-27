@@ -16,3 +16,4 @@ sha256 = "556b01eb279f4c27fc67ab6cc6a4d4b39d3c1d5c04bb0eeaea77a6c2a4b15795"
 
 [autoupdate]
 checkver = { github = "gohugoio/hugo" }
+url_template = { x64 = "https://github.com/gohugoio/hugo/releases/download/v$version/hugo_$version_windows-amd64.zip", arm64 = "https://github.com/gohugoio/hugo/releases/download/v$version/hugo_$version_windows-arm64.zip" }

@@ -17,3 +17,4 @@ sha256 = "b125aed4e36d31a168dee7735942c830ac8e86fb23ccf996ad743e06c2bc9533"
 
 [autoupdate]
 checkver = { github = "GUI-for-Cores/GUI.for.Clash" }
+url_template = { x64 = "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v$version/GUI.for.Clash-windows-amd64.zip", arm64 = "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v$version/GUI.for.Clash-windows-arm64.zip" }

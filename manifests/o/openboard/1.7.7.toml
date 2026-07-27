@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "OpenBoard-org/OpenBoard" }
+url_template = "https://github.com/OpenBoard-org/OpenBoard/releases/download/v$version/OpenBoard_Installer_$version.exe"

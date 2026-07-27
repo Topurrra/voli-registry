@@ -12,3 +12,4 @@ sha256 = "dd568877166e762433b2bdeb5b3cddac93e4946a4d1311d99e60298ce867a173"
 
 [autoupdate]
 checkver = { github = "gjbae1212/gossm" }
+url_template = { x64 = "https://github.com/gjbae1212/gossm/releases/download/v$version/gossm_$version_Windows_x86_64.tar.gz" }

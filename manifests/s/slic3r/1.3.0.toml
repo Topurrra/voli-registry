@@ -13,3 +13,4 @@ sha256 = "58f08c9c6910f1161409330bccec2d5ad36d7c142dd99e14034b5a9fb603e7c0"
 
 [autoupdate]
 checkver = { github = "slic3r/Slic3r" }
+url_template = { x64 = "https://github.com/slic3r/Slic3r/releases/download/$version/Slic3r-$version.64bit.zip" }

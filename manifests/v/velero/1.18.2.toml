@@ -13,3 +13,4 @@ sha256 = "bf4312e6b7e56c6677892f6b802ca6e43541a11ef8b3c07af97a7bae42399282"
 
 [autoupdate]
 checkver = { github = "velero-io/velero" }
+url_template = { x64 = "https://github.com/velero-io/velero/releases/download/v$version/velero-v$version-windows-amd64.tar.gz" }

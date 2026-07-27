@@ -13,4 +13,5 @@ url = "https://sysprogs.com/getfile/1838/PortableSmarTTY-3.3.7z"
 sha256 = "a042cbb4d58cda5e67c4c1dcc9cecc768445f5434ee7b7a936619413e7388bbd"
 
 [autoupdate]
-checkver = "{\"regex\":\"/(?<id>\\\\d+)/PortableSmarTTY-([\\\\d.]+)\\\\.7z\",\"url\":\"https://sysprogs.com/SmarTTY/portable/\"}"
+checkver = { url = "https://sysprogs.com/SmarTTY/portable/", regex = "/(?<id>\\d+)/PortableSmarTTY-([\\d.]+)\\.7z" }
+url_template = "https://sysprogs.com/getfile/$matchId/PortableSmarTTY-$version.7z"

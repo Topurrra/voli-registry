@@ -15,3 +15,4 @@ sha256 = "f378c00bfb9861484451a8cd7e13677f77484069e7cd6878ae542a0f4e0428cf"
 
 [autoupdate]
 checkver = { github = "Baggykiin/pass-winmenu" }
+url_template = "https://github.com/Baggykiin/pass-winmenu/releases/download/v$version/pass-winmenu-nogpg.zip"

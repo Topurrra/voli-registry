@@ -16,3 +16,4 @@ sha256 = "98c130eb695be6e1ae039ae7db40f5452a044a67932c821e42476b86f18ee583"
 
 [autoupdate]
 checkver = { github = "guumaster/hostctl" }
+url_template = { x64 = "https://github.com/guumaster/hostctl/releases/download/v$version/hostctl_$version_windows_64-bit.zip", arm64 = "https://github.com/guumaster/hostctl/releases/download/v$version/hostctl_$version_windows_arm64.zip" }

@@ -13,3 +13,4 @@ sha256 = "cbba045cda61597c8876dd4a60c1c0f857d85b10cfac876e7c7eecd189eb8cd8"
 
 [autoupdate]
 checkver = { github = "adnanh/webhook" }
+url_template = { x64 = "https://github.com/adnanh/webhook/releases/download/$version/webhook-windows-amd64.tar.gz" }

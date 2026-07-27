@@ -12,3 +12,4 @@ sha256 = "3fce807017317ba5cced626cd538d774ea363fe47dbde98de4a3ca97dd8c7176"
 
 [autoupdate]
 checkver = { github = "StudentWeis/ropy" }
+url_template = { x64 = "https://github.com/StudentWeis/ropy/releases/download/$version/ropy-x86_64-pc-windows-msvc.zip" }

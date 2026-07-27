@@ -16,3 +16,4 @@ sha256 = "25efbceb4447f72d8ca21af0b5090c172df5abe1b3f3ea15301c014133ffc59e"
 
 [autoupdate]
 checkver = { github = "Angelmmiguel/fu" }
+url_template = { x64 = "https://github.com/Angelmmiguel/fu/releases/download/v$version/fu-pc-windows-x86_64.tar.gz", arm64 = "https://github.com/Angelmmiguel/fu/releases/download/v$version/fu-pc-windows-aarch64.tar.gz" }

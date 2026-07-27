@@ -16,3 +16,4 @@ sha256 = "056f29ba31442d4de183aaa8fd2cb38c60db879c8539c6ec9ecec48a52f5ea41"
 
 [autoupdate]
 checkver = { github = "Julien-cpsn/ATAC" }
+url_template = { x64 = "https://github.com/Julien-cpsn/ATAC/releases/download/v$version/atac-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Julien-cpsn/ATAC/releases/download/v$version/atac-v$version-aarch64-pc-windows-msvc.zip" }

@@ -13,3 +13,4 @@ sha256 = "4348fefda06117490ed6795e34cc2bdc9512329a35b82e10ff5cffb336834d2c"
 
 [autoupdate]
 checkver = { github = "rgcsekaraa/brows3" }
+url_template = { x64 = "https://github.com/rgcsekaraa/brows3/releases/download/app-v$version/Brows3_$version_x64-portable.zip" }

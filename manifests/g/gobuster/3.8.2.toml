@@ -16,3 +16,4 @@ sha256 = "14ca560d798c200f264498f5f7598020fc6c42c47ae752258862cd71c7a70a24"
 
 [autoupdate]
 checkver = { github = "OJ/gobuster" }
+url_template = { x64 = "https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Windows_x86_64.zip", arm64 = "https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Windows_arm64.zip" }

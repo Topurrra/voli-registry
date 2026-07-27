@@ -13,4 +13,5 @@ url = "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/
 sha256 = "6d1260ba4f763e52536c9234087d0e22471f49c3920950f4b0e37ffe6f951357"
 
 [autoupdate]
-checkver = "{\"jsonpath\":\"$.latest_releases.runtime.driver_location\",\"regex\":\"openliberty-([\\\\d.]+)\\\\.zip\",\"url\":\"https://openliberty.io/api/builds/data\"}"
+checkver = { url = "https://openliberty.io/api/builds/data", regex = "openliberty-([\\d.]+)\\.zip" }
+url_template = "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/$version/openliberty-$version.zip"

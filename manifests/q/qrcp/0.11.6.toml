@@ -16,3 +16,4 @@ sha256 = "829eeb8d772ee3fd8c9031f1144c0beb5c29d73c21e3f08c824396a009c92a1d"
 
 [autoupdate]
 checkver = { github = "claudiodangelis/qrcp" }
+url_template = { x64 = "https://github.com/claudiodangelis/qrcp/releases/download/v$version/qrcp_$version_windows_amd64.tar.gz", arm64 = "https://github.com/claudiodangelis/qrcp/releases/download/v$version/qrcp_$version_windows_arm64.tar.gz" }

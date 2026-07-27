@@ -13,3 +13,4 @@ sha512 = "a54d8886e600e1e003458b8f906a91447c190997fbb763a998d858163ee83c85a083ef
 
 [autoupdate]
 checkver = { github = "microsoft/vswhere" }
+url_template = "https://www.nuget.org/api/v2/package/vswhere/$version#/vswhere.zip"

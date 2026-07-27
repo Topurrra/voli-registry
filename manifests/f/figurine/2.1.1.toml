@@ -4,6 +4,7 @@ description = "Print any text using ASCII art in FIGlet."
 homepage = "https://github.com/arsham/figurine"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "deploy"
 bin = ["figurine.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "9eae6503eb28673cfd0a4398e7e1a71faa0224515472a22f4678ec455f41cfba"
 
 [autoupdate]
 checkver = { github = "arsham/figurine" }
+url_template = { x64 = "https://github.com/arsham/figurine/releases/download/v$version/figurine_windows_amd64_v$version.zip" }

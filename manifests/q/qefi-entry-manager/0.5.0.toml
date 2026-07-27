@@ -12,3 +12,4 @@ sha256 = "4d412e9fb0a05120de7690881f34b1b8e17e7cdd255d22b31b82b3798138ae44"
 
 [autoupdate]
 checkver = { github = "Inokinoki/QEFIEntryManager" }
+url_template = "https://github.com/Inokinoki/QEFIEntryManager/releases/download/$matchPrefix$version/QEFI.Entry.Manager.for.Windows.Qt$matchQt.zip"

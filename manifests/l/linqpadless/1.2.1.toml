@@ -12,3 +12,4 @@ sha256 = "f64f71b3e3a9acff3987d447c6adff502dfbbad7f4f6ad2f997bb1685c379399"
 
 [autoupdate]
 checkver = { github = "linqpadless/LinqPadless" }
+url_template = "https://api.nuget.org/packages/linqpadless.$version.nupkg#/dl.7z"

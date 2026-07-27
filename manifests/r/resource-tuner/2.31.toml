@@ -12,4 +12,4 @@ sha256 = "14a8ec9e3ed57bfeea8c40779cdc3e16d10fe1df401f5ce4deca1d13c6f2c580"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"<h1>Resource Tuner ([\\\\d.]+)\",\"url\":\"https://www.restuner.com/download.htm\"}"
+checkver = { url = "https://www.restuner.com/download.htm", regex = "<h1>Resource Tuner ([\\d.]+)" }

@@ -12,3 +12,4 @@ sha256 = "d2537dfd991787c1e458965c4f49098c5a72f943bfc9d975c573a9c245f7ba2e"
 
 [autoupdate]
 checkver = { github = "golang-migrate/migrate" }
+url_template = { x64 = "https://github.com/golang-migrate/migrate/releases/download/v$version/migrate.windows-amd64.zip" }

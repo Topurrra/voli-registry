@@ -12,3 +12,4 @@ sha256 = "f35902aebb01efa5d9777a42358c023f022a9d4c3058b0ad477fa8da5b61f0aa"
 
 [autoupdate]
 checkver = { github = "alibaba/arthas" }
+url_template = "https://github.com/alibaba/arthas/releases/download/arthas-all-$version/arthas-bin.zip"

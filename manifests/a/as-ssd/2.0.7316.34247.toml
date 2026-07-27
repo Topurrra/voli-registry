@@ -11,4 +11,4 @@ url = "https://www.alex-is.de/progs/AS%20SSD%20Benchmark.zip"
 sha256 = "56b80a3dde4537a77f9f7fb6bf45372b9b3d0a75e030d5373e5661913d7ef057"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+)\",\"url\":\"https://www.alex-is.de/progs/updater/as-ssd-version.txt\"}"
+checkver = { url = "https://www.alex-is.de/progs/updater/as-ssd-version.txt", regex = "([\\d.]+)" }

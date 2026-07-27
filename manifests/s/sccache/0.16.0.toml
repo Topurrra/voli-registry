@@ -17,3 +17,4 @@ sha256 = "09ca24bf12288b4b7ff8a852d89e533aa67353f7b956e73a3d7c298256ededa7"
 
 [autoupdate]
 checkver = { github = "mozilla/sccache" }
+url_template = { x64 = "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-x86_64-pc-windows-msvc.tar.gz", arm64 = "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-aarch64-pc-windows-msvc.tar.gz" }

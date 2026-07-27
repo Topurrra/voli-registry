@@ -12,3 +12,4 @@ sha256 = "deadcca486c55d2d243a9351c18f5387f95ddf9f99c28423145ead696eeefbbb"
 
 [autoupdate]
 checkver = { github = "jenkins-zh/jenkins-cli" }
+url_template = { x64 = "https://github.com/jenkins-zh/jenkins-cli/releases/download/v$version/jcli-windows-amd64.zip" }

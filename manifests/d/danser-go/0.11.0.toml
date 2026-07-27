@@ -5,6 +5,7 @@ homepage = "https://github.com/Wieku/danser-go"
 license = "MIT"
 kind = "app"
 bin = ["danser.exe", "danser-cli.exe"]
+shortcuts = [{ target = "danser.exe", name = "danser-go" }]
 persist = ["settings"]
 
 [source.x64]
@@ -13,3 +14,4 @@ sha256 = "749b2e66e36c3e2217910923802f08de9bc1c0858fcb6ffae861a6787fb21eee"
 
 [autoupdate]
 checkver = { github = "Wieku/danser-go" }
+url_template = { x64 = "https://github.com/Wieku/danser-go/releases/download/$version/danser-$version-win.zip" }

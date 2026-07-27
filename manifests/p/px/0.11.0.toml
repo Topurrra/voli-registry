@@ -13,3 +13,4 @@ sha256 = "4e69f56f5bad9878190a5e82b5ea18857d15ef34a04256a624a40b4458e96417"
 
 [autoupdate]
 checkver = { github = "genotrance/px" }
+url_template = { x64 = "https://github.com/genotrance/px/releases/download/v$version/px-v$version-windows-amd64.zip" }

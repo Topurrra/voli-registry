@@ -16,3 +16,4 @@ sha256 = "fd114614c10382c9ed2e32d5455cc4b51960a9f71691c5c1ca42b31adea5b84d"
 
 [autoupdate]
 checkver = { github = "boyter/scc" }
+url_template = { x64 = "https://github.com/boyter/scc/releases/download/v$version/scc_Windows_x86_64.zip", arm64 = "https://github.com/boyter/scc/releases/download/v$version/scc_Windows_arm64.zip" }

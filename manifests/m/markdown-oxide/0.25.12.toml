@@ -13,3 +13,4 @@ sha256 = "876c5d448abd44211f14d8d611e91b2152f6e3aec98702da976489891bab8839"
 
 [autoupdate]
 checkver = { github = "Feel-ix-343/markdown-oxide" }
+url_template = { x64 = "https://github.com/Feel-ix-343/markdown-oxide/releases/download/v$version/markdown-oxide-v$version-x86_64-pc-windows-gnu.zip" }

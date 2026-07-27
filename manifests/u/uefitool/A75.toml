@@ -13,3 +13,4 @@ sha256 = "c10db134e76f31c2e0a15674ee9725ca7091145d3be7157f369bd7515cb24c2c"
 
 [autoupdate]
 checkver = { github = "LongSoft/UEFITool" }
+url_template = { x64 = "https://github.com/LongSoft/UEFITool/releases/download/$version/UEFITool_NE_$version_win64.zip" }

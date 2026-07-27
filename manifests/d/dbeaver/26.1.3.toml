@@ -18,3 +18,4 @@ sha256 = "7d85f6f50176a14f43ffc4827710c8d7d38d4a32260d27b91f43860410511571"
 
 [autoupdate]
 checkver = { github = "dbeaver/dbeaver" }
+url_template = { x64 = "https://dbeaver.io/files/$version/dbeaver-ce-$version-windows-x86_64.zip", arm64 = "https://dbeaver.io/files/$version/dbeaver-ce-$version-windows-aarch64.zip" }

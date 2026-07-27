@@ -13,3 +13,4 @@ sha256 = "bce041ea9fe0f8a3351301dcbe29cdf6a523bb25cf9c62f17ebb5699a8051d0f"
 
 [autoupdate]
 checkver = { github = "windtf/wireproxy" }
+url_template = { x64 = "https://github.com/windtf/wireproxy/releases/download/v$version/wireproxy_windows_amd64.tar.gz" }

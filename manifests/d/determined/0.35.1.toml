@@ -12,3 +12,4 @@ sha256 = "1e1838218b4d996df3d2a3dd66f2748deb85f02c6772f49934e59eee9fb987ed"
 
 [autoupdate]
 checkver = { github = "sirredbeard/determined-windows-cli" }
+url_template = "https://github.com/sirredbeard/determined-windows-cli/releases/download/$version/determined-cli.zip"

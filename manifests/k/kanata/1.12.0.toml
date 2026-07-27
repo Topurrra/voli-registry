@@ -15,3 +15,4 @@ sha256 = "f6970ebda03c03c370a1dedf8a75cb73a1690cfd3095f459b5bb3f527aa75407"
 
 [autoupdate]
 checkver = { github = "jtroo/kanata" }
+url_template = { x64 = "https://github.com/jtroo/kanata/releases/download/v$version/windows-binaries-x64.zip", arm64 = "https://github.com/jtroo/kanata/releases/download/v$version/windows-binaries-arm64.zip" }

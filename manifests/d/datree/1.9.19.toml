@@ -12,3 +12,4 @@ sha256 = "5c108942b18dc097e53173d289317eaf26c25fd683d054e2b34c54c5d5a738eb"
 
 [autoupdate]
 checkver = { github = "datreeio/datree" }
+url_template = { x64 = "https://github.com/datreeio/datree/releases/download/$version/datree-cli_$version_windows_x86_64.zip" }

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Gisto/Gisto" }
+url_template = { x64 = "https://github.com/Gisto/Gisto/releases/download/v$version/Gisto_$version_x64_en-US.msi" }

@@ -12,3 +12,4 @@ sha256 = "5ee61f01bb26500070aa1336de662cf30ddd7afac57151d042891d5e85bb194b"
 
 [autoupdate]
 checkver = { github = "OmniSharp/omnisharp-roslyn" }
+url_template = { x64 = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v$version/omnisharp.http-win-x64.zip" }

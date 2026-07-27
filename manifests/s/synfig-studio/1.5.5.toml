@@ -12,4 +12,5 @@ url = "https://github.com/synfig/synfig/releases/download/v1.5.5/SynfigStudio-1.
 sha256 = "f8e62c860216ed733be092147779df2aa5afdeee34ad9da5736f99ed96550fe0"
 
 [autoupdate]
-checkver = "{\"regex\":\"SynfigStudio-([\\\\d.]+)-(?<date>[\\\\d.]+)-win64-(?<sha>[\\\\da-f]+)\\\\.zip\",\"url\":\"https://github.com/synfig/synfig/releases\"}"
+checkver = { url = "https://github.com/synfig/synfig/releases", regex = "SynfigStudio-([\\d.]+)-(?<date>[\\d.]+)-win64-(?<sha>[\\da-f]+)\\.zip" }
+url_template = { x64 = "https://github.com/synfig/synfig/releases/download/v$version/SynfigStudio-$version-$matchDate-win64-$matchSha.zip" }

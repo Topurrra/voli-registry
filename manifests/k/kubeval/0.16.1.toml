@@ -12,3 +12,4 @@ sha256 = "3732bd6874f5f508a2f2faa2e47d117562195a94bf2dd20c22036968f26e416a"
 
 [autoupdate]
 checkver = { github = "instrumenta/kubeval" }
+url_template = { x64 = "https://github.com/instrumenta/kubeval/releases/download/v$version/kubeval-windows-amd64.zip" }

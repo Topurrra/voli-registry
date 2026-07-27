@@ -14,3 +14,4 @@ sha256 = "3fa56eaeaebcc18cf2846bd71f11d49f6c3dcb7484763b919b7b7bf4f2766b66"
 
 [autoupdate]
 checkver = { github = "mattstermiller/koffee" }
+url_template = "https://github.com/mattstermiller/koffee/releases/download/v$version/Koffee-$version.zip"

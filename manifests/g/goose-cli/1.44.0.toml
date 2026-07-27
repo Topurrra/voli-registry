@@ -4,6 +4,7 @@ description = "An open-source, extensible AI agent that goes beyond code suggest
 homepage = "https://block.github.io/goose/"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "goose-package"
 bin = ["goose.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "50ed0ee034355036b94718b65aad5b7a2ec4fd6d80f6ae4fc7f26e623aa5b193"
 
 [autoupdate]
 checkver = { github = "aaif-goose/goose" }
+url_template = { x64 = "https://github.com/aaif-goose/goose/releases/download/v$version/goose-x86_64-pc-windows-msvc.zip" }

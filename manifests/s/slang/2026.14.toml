@@ -16,3 +16,4 @@ sha256 = "4acec8a0aedd574043a37aa0fdcaed11b08d7f26399b09166fcacc4f60cb73a2"
 
 [autoupdate]
 checkver = { github = "shader-slang/slang" }
+url_template = { x64 = "https://github.com/shader-slang/slang/releases/download/v$version/slang-$version-windows-x86_64.zip", arm64 = "https://github.com/shader-slang/slang/releases/download/v$version/slang-$version-windows-aarch64.zip" }

@@ -12,3 +12,4 @@ sha256 = "9201e9770b4d3d2512ee7f7f979127e4a73e8f6bf77865a8570d662ba72f88c8"
 
 [autoupdate]
 checkver = "cru-([\\d.]+)\\.zip"
+url_template = "https://www.monitortests.com/download/cru/cru-$version.zip"

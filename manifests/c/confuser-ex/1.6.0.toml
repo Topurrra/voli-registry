@@ -13,3 +13,4 @@ sha256 = "91c7a4387c3fc3d05aebd7da7235e5e0f12a628b88fcdf87c2af12c40f96ec79"
 
 [autoupdate]
 checkver = { github = "mkaring/ConfuserEx" }
+url_template = "https://github.com/mkaring/ConfuserEx/releases/download/v$version/ConfuserEx.zip"

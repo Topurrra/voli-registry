@@ -12,3 +12,4 @@ sha256 = "b25352a26e1ca11df232b49f0a773d4d13dec89896707fbc8b7db57af6cd0395"
 
 [autoupdate]
 checkver = { github = "httptoolkit/httptoolkit-desktop" }
+url_template = { x64 = "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v$version/HttpToolkit-$version-win-x64.zip" }

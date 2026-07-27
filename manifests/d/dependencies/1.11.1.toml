@@ -13,3 +13,4 @@ sha256 = "7d22dc00f1c09fd4415d48ad74d1cf801893e83b9a39944b0fce6dea7ceaea99"
 
 [autoupdate]
 checkver = { github = "lucasg/Dependencies" }
+url_template = { x64 = "https://github.com/lucasg/Dependencies/releases/download/v$version/Dependencies_x64_Release.zip" }

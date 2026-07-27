@@ -13,3 +13,4 @@ sha256 = "2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822dbb32"
 
 [autoupdate]
 checkver = { github = "sharkdp/hyperfine" }
+url_template = { x64 = "https://github.com/sharkdp/hyperfine/releases/download/v$version/hyperfine-v$version-x86_64-pc-windows-msvc.zip" }

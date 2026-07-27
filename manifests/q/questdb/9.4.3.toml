@@ -14,3 +14,4 @@ sha256 = "7fc11a03b8e2ab85314226b7b10bed54dfefe1d87c7ec836e85c8ad6175e7d5c"
 
 [autoupdate]
 checkver = { github = "questdb/questdb" }
+url_template = { x64 = "https://github.com/questdb/questdb/releases/download/$version/questdb-$version-no-jre-bin.tar.gz" }

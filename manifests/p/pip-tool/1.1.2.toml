@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "LionelJouin/PiP-Tool" }
+url_template = { x64 = "https://github.com/LionelJouin/PiP-Tool/releases/download/$version/PiP-Tool.msi" }

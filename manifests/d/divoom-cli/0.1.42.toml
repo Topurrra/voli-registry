@@ -12,3 +12,4 @@ sha256 = "4823f97041444d8791c12a8d33257020e601b53e1f2a1faf03c402c88c089b6c"
 
 [autoupdate]
 checkver = { github = "r12f/divoom" }
+url_template = { x64 = "https://github.com/r12f/divoom/releases/download/$version/divoom-cli.$version.windows.x64.zip" }

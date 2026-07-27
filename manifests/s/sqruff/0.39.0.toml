@@ -12,3 +12,4 @@ sha256 = "3c3c3e0c0924e0a38fe75d99d7fd40ca6ba5d9701cbfbe7caa8b92e6930c9c43"
 
 [autoupdate]
 checkver = { github = "quarylabs/sqruff" }
+url_template = { x64 = "https://github.com/quarylabs/sqruff/releases/download/v$version/sqruff-windows-x86_64.zip" }

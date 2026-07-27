@@ -13,3 +13,4 @@ sha256 = "5d938c7558490d6f7332307212a41c9c5d5bf39009590e4ca5cf1ff0762da91c"
 
 [autoupdate]
 checkver = { github = "google-deepmind/mujoco" }
+url_template = { x64 = "https://github.com/google-deepmind/mujoco/releases/download/$version/mujoco-$version-windows-x86_64.zip" }

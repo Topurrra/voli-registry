@@ -16,3 +16,4 @@ sha256 = "a3501d0f52a3ae53e30fc5f28dba924a702360ebc0f351b8bdf828b6489df3f8"
 
 [autoupdate]
 checkver = { github = "tombi-toml/tombi" }
+url_template = { x64 = "https://github.com/tombi-toml/tombi/releases/download/v$version/tombi-cli-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/tombi-toml/tombi/releases/download/v$version/tombi-cli-$version-aarch64-pc-windows-msvc.zip" }

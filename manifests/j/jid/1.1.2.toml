@@ -16,3 +16,4 @@ sha256 = "fbaba4d9d3243bccc6e10a778959d36b7353d4d57a0480427e251dfc59924258"
 
 [autoupdate]
 checkver = { github = "simeji/jid" }
+url_template = { x64 = "https://github.com/simeji/jid/releases/download/v$version/jid_windows_amd64.zip", arm64 = "https://github.com/simeji/jid/releases/download/v$version/jid_windows_arm64.zip" }

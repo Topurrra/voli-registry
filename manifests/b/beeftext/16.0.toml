@@ -14,3 +14,4 @@ sha256 = "4a64ed2bf2ea8a853dad4fb5453e058bd01287d9ed09185ec02e0d5f81f8018d"
 
 [autoupdate]
 checkver = { github = "xmichelo/Beeftext" }
+url_template = { x64 = "https://github.com/xmichelo/Beeftext/releases/download/v$version/Beeftext-$version-PortableEdition.zip" }

@@ -13,3 +13,4 @@ sha256 = "c6e08d46c11704b1e3a1ada9ddd591cb5005f52f132136c8633ba25def400e01"
 
 [autoupdate]
 checkver = { github = "nihui/realcugan-ncnn-vulkan" }
+url_template = { x64 = "https://github.com/nihui/realcugan-ncnn-vulkan/releases/download/$version/realcugan-ncnn-vulkan-$version-windows.zip" }

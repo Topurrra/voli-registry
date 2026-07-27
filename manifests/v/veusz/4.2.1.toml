@@ -13,3 +13,4 @@ sha256 = "af649eb57e61855b3f9067a5ba3bda4873316dd28111b30136d093313b87b0bf"
 
 [autoupdate]
 checkver = { github = "veusz/veusz" }
+url_template = { x64 = "https://github.com/veusz/veusz/releases/download/veusz-$version/veusz-$version-windows-x64.zip" }

@@ -13,3 +13,4 @@ sha256 = "8941870a604e7c87ed24566b038d46c24ce76616254d2383c578f60c0677f202"
 
 [autoupdate]
 checkver = { github = "qpdf/qpdf" }
+url_template = { x64 = "https://github.com/qpdf/qpdf/releases/download/v$version/qpdf-$version-msvc64.zip" }

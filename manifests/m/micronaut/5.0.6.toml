@@ -16,3 +16,4 @@ MICRONAUT_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "micronaut-projects/micronaut-starter" }
+url_template = "https://github.com/micronaut-projects/micronaut-starter/releases/download/v$version/micronaut-cli-$version.zip"

@@ -12,3 +12,4 @@ sha256 = "970bc6efa76d6dc7285098a7033f4e6c83c18dc02f80548ae8de8dc5586e0445"
 
 [autoupdate]
 checkver = { github = "magefile/mage" }
+url_template = { x64 = "https://github.com/magefile/mage/releases/download/v$version/mage_$version_Windows-64bit.zip" }

@@ -16,3 +16,4 @@ sha256 = "0df2e22b415c77c44fbf787340e326a18b928879a663ac9845690fbc5734b167"
 
 [autoupdate]
 checkver = { github = "jorgerojas26/lazysql" }
+url_template = { x64 = "https://github.com/jorgerojas26/lazysql/releases/download/v$version/lazysql_Windows_x86_64.zip", arm64 = "https://github.com/jorgerojas26/lazysql/releases/download/v$version/lazysql_Windows_arm64.zip" }

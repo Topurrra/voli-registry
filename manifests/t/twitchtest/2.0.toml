@@ -12,3 +12,4 @@ sha256 = "18c13815f4254f4688b149b4ee3f3f32ad2631ce9c6135cef3b61554819cc40e"
 
 [autoupdate]
 checkver = "twitchtest-([\\d.]+)\\.zip"
+url_template = "https://r1ch.net/assets/twitchtest/twitchtest-$version.zip"

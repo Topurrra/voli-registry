@@ -16,3 +16,4 @@ sha256 = "77b8d719ebc28bd4ca5b2203c9168bad238cfc84855e0b3ce00110927c09ab9d"
 
 [autoupdate]
 checkver = { github = "noborus/ov" }
+url_template = { x64 = "https://github.com/noborus/ov/releases/download/v$version/ov_$version_windows_amd64.zip", arm64 = "https://github.com/noborus/ov/releases/download/v$version/ov_$version_windows_arm64.zip" }

@@ -13,3 +13,4 @@ sha256 = "496b953b94a8ec39e3d9448e79beaec0b9502de8d6fd2752b899dacb6af22244"
 
 [autoupdate]
 checkver = { github = "tramhao/termusic" }
+url_template = { x64 = "https://github.com/tramhao/termusic/releases/download/v$version/termusic-v$version-x86_64-windows.zip" }

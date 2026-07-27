@@ -13,3 +13,4 @@ sha256 = "476c6cbcfcdc7af6bbcea265f6b3080967f95c0fbc026b218e500ac34155f5a5"
 
 [autoupdate]
 checkver = { github = "camunda/camunda-modeler" }
+url_template = { x64 = "https://github.com/camunda/camunda-modeler/releases/download/v$version/camunda-modeler-$version-win-x64.zip" }

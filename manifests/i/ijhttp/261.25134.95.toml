@@ -13,3 +13,4 @@ sha256 = "4656e9c1e2c798fbe7fd78ed8fc124bc071ebb46e02770e198a562689da32c9d"
 
 [autoupdate]
 checkver = "{\"regex\":\"/http-client/([\\\\d.]+)/\",\"script\":[\"$resp = [System.Net.WebRequest]::Create('https://jb.gg/ijhttp/latest').GetResponse()\",\"Write-Output = $resp.ResponseUri.LocalPath\"]}"
+url_template = "https://download.jetbrains.com/resources/intellij/http-client/$version/intellij-http-client.zip"

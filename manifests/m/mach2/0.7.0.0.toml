@@ -12,3 +12,4 @@ sha256 = "96e111c709c8401059039f962264e151ed5cf48489fba0d3946562e2f96f5c47"
 
 [autoupdate]
 checkver = { github = "riverar/mach2" }
+url_template = { x64 = "https://github.com/riverar/mach2/releases/download/$version/mach2_$version_x64.zip" }

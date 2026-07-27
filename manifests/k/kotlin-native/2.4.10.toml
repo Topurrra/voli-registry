@@ -16,3 +16,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/JetBrains/kotlin/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"windows-x86_64-([\\\\w.\\\\-]+)\\\\.zip\"}"
+url_template = { x64 = "https://github.com/JetBrains/kotlin/releases/download/v$matchHead/kotlin-native-prebuilt-windows-x86_64-$version.zip" }

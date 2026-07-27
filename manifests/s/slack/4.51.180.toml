@@ -17,4 +17,5 @@ url = "https://downloads.slack-edge.com/desktop-releases/windows/arm64/4.51.180/
 sha256 = "8033967ddaa035d0d989c2b847edb0a2ecc7b2563c6623b98a8f227059c10daa"
 
 [autoupdate]
-checkver = "{\"regex\":\"<h2 .+?>Slack ([\\\\d.]+)\",\"url\":\"https://slack.com/release-notes/windows\"}"
+checkver = { url = "https://slack.com/release-notes/windows", regex = "<h2 .+?>Slack ([\\d.]+)" }
+url_template = { x64 = "https://downloads.slack-edge.com/desktop-releases/windows/x64/$version/Slack.msix#/dl.zip", arm64 = "https://downloads.slack-edge.com/desktop-releases/windows/arm64/$version/Slack.msix#/dl.zip" }

@@ -1,0 +1,22 @@
+name = "qownnotes"
+version = "26.7.10"
+description = "Plain-text notepad and todo-list manager with markdown support and Nextcloud / ownCloud integration"
+homepage = "https://www.qownnotes.org/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = []
+persist = ["Data"]
+shortcuts = []
+write_file = []
+
+[source.x64]
+url = "https://github.com/pbek/QOwnNotes/releases/download/v26.7.10/QOwnNotes.zip"
+sha256 = "500b9e76c023752aa1bc2e70b31dbe6941b8bd8ecc6fea054ef949a815ce01c1"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+github = "pbek/QOwnNotes"

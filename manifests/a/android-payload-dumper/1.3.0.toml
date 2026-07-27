@@ -12,3 +12,4 @@ sha256 = "0f96e07477963327f7f50a03bf2aa9dac5c76dba110ab332dc759321ae345d52"
 
 [autoupdate]
 checkver = { github = "ssut/payload-dumper-go" }
+url_template = { x64 = "https://github.com/ssut/payload-dumper-go/releases/download/$version/payload-dumper-go_$version_windows_amd64.tar.gz" }

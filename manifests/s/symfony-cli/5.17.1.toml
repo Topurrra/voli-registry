@@ -12,3 +12,4 @@ sha256 = "232a4e8c314804ed4fa59f957ab6764172d8d07e30cc3bfa6427e708b029f959"
 
 [autoupdate]
 checkver = { github = "symfony-cli/symfony-cli" }
+url_template = { x64 = "https://github.com/symfony-cli/symfony-cli/releases/download/v$version/symfony-cli_windows_amd64.zip" }

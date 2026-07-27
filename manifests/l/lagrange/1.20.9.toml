@@ -14,3 +14,4 @@ sha256 = "88afde4970bd5886e10291f012719bf012a44aea693195a77d9e4e5e51c56939"
 
 [autoupdate]
 checkver = { github = "skyjake/lagrange" }
+url_template = { x64 = "https://github.com/skyjake/lagrange/releases/download/v$version/lagrange_v$version_windows-x64_portable.zip" }

@@ -11,3 +11,4 @@ sha256 = "23fc7814bdc77898c7fc5991e25676da01b7feca053e4067812b4c580f5ae558"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/acaudwell/Gource/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"gource-([\\\\d.]+)\\\\.win64\\\\.zip\"}"
+url_template = { x64 = "https://github.com/acaudwell/Gource/releases/download/gource-$version/gource-$version.win64.zip" }

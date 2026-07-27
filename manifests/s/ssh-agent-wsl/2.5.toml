@@ -11,3 +11,4 @@ sha256 = "fba9c2811e98da4a8024eb8b3d582fb347fb01141759d4d6f6513eb046ff83a0"
 
 [autoupdate]
 checkver = { github = "rupor-github/ssh-agent-wsl" }
+url_template = "https://github.com/rupor-github/ssh-agent-wsl/releases/download/v$version/ssh-agent-wsl.7z"

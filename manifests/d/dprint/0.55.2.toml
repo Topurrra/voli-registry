@@ -12,3 +12,4 @@ sha256 = "12e8c26abc8c436223e70f5a30a2864001c92fa356a859eb93e06b97ab7dbd12"
 
 [autoupdate]
 checkver = { github = "dprint/dprint" }
+url_template = { x64 = "https://github.com/dprint/dprint/releases/download/$version/dprint-x86_64-pc-windows-msvc.zip" }

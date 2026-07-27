@@ -14,3 +14,4 @@ sha256 = "aefc6d051b3b3e6e1d1a571d66cb267a09d7cfbe2d8f889a433cd8ac5f787a69"
 
 [autoupdate]
 checkver = { github = "supermerill/SuperSlicer" }
+url_template = { x64 = "https://github.com/supermerill/SuperSlicer/releases/download/$version/SuperSlicer_$version_win64_$matchTimestamp64.zip" }

@@ -12,3 +12,4 @@ sha256 = "ec66c879b03ec7098b5c67739e2f6002027a8e001c749e8b918d72a87611fe11"
 
 [autoupdate]
 checkver = { github = "balena-io/etcher" }
+url_template = "https://github.com/balena-io/etcher/releases/download/v$version/balenaEtcher-win32-x64-$version.zip"

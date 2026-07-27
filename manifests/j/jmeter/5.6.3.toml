@@ -17,4 +17,5 @@ sha512 = "387fadca903ee0aa30e3f2115fdfedb3898b102e6b9fe7cc3942703094bd2e65b235df
 JMETER_HOME = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\">Version ([\\\\d.]+)\",\"url\":\"https://jmeter.apache.org/changes.html\"}"
+checkver = { url = "https://jmeter.apache.org/changes.html", regex = ">Version ([\\d.]+)" }
+url_template = "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$version.zip"

@@ -12,3 +12,4 @@ sha256 = "3a914aaecf2f05f7a19f2f5738c392bf72c52796c985861f81d17d5b6ea4983c"
 
 [autoupdate]
 checkver = { github = "bostrot/wsl2-distro-manager" }
+url_template = { x64 = "https://github.com/bostrot/wsl2-distro-manager/releases/download/v$version/wsl2-distro-manager-v$version.zip" }

@@ -17,3 +17,4 @@ sha256 = "3a8310d02890f966f1a44de8223cc866cd987473ba199ddd850a8a65e1bb7020"
 
 [autoupdate]
 checkver = { github = "Martchus/tageditor" }
+url_template = { x64 = "https://github.com/Martchus/tageditor/releases/download/v$version/tageditor-$version-x86_64-w64-mingw32.exe.zip", arm64 = "https://github.com/Martchus/tageditor/releases/download/v$version/tageditor-$version-aarch64-w64-mingw32.exe.zip" }

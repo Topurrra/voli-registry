@@ -12,4 +12,5 @@ url = "https://download.mikrotik.com/routeros/winbox/4.3/WinBox_Windows.zip"
 sha256 = "f2dc282abe7e1b8f63b13b2ba6a893b6d1c16671e2c8f8a6a5a9d3956f36100b"
 
 [autoupdate]
-checkver = "{\"regex\":\">v([\\\\d.]+)<\",\"url\":\"https://mikrotik.com/download/winbox\"}"
+checkver = { url = "https://mikrotik.com/download/winbox", regex = ">v([\\d.]+)<" }
+url_template = { x64 = "https://download.mikrotik.com/routeros/winbox/$version/WinBox_Windows.zip" }

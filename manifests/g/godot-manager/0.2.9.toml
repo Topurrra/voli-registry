@@ -12,3 +12,4 @@ sha256 = "b268dacf7f00d9e87e2013569e14888a1e0edbc31afcfd0134f7a0a8aa6db3c5"
 
 [autoupdate]
 checkver = { github = "eumario/godot-manager" }
+url_template = { x64 = "https://github.com/eumario/godot-manager/releases/download/v$version/godotmanager-windows-v$version.zip" }

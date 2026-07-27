@@ -12,3 +12,4 @@ sha256 = "1fb9fe40bceb39d681df733c2822165a78ff0b7d627be1c0eba0f73be5376f5b"
 
 [autoupdate]
 checkver = { github = "RoundedTB/RoundedTB" }
+url_template = { x64 = "https://github.com/RoundedTB/RoundedTB/releases/download/R$version/RoundedTB_R$version.zip" }

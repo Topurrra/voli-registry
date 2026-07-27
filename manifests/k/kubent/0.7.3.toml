@@ -12,3 +12,4 @@ sha256 = "c248d1287f28b25bd9dfac7173b01e77ae31d608c3b1ce0fd90856b5c82d1a64"
 
 [autoupdate]
 checkver = { github = "doitintl/kube-no-trouble" }
+url_template = { x64 = "https://github.com/doitintl/kube-no-trouble/releases/download/$version/kubent-$version-windows-amd64.tar.gz" }

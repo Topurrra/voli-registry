@@ -17,3 +17,4 @@ sha256 = "4ab28e1b71ec3184d38d580ab797f499b6770d952b6b19167be5cea5c2662e14"
 
 [autoupdate]
 checkver = { github = "typst/typst" }
+url_template = { x64 = "https://github.com/typst/typst/releases/download/v$version/typst-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/typst/typst/releases/download/v$version/typst-aarch64-pc-windows-msvc.zip" }

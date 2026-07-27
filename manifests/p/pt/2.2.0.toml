@@ -12,3 +12,4 @@ sha256 = "7fa5aab0462a63cc1a746af3f07f1d03bf6521e23f8b2d149fc5af7b4e00596c"
 
 [autoupdate]
 checkver = { github = "monochromegane/the_platinum_searcher" }
+url_template = { x64 = "https://github.com/monochromegane/the_platinum_searcher/releases/download/v$version/pt_windows_amd64.zip" }

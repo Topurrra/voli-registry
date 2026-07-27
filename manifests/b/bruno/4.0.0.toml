@@ -12,3 +12,4 @@ sha256 = "fe5acbc0e9743553138fe33f1e4aebdf847b8d5f86cc4e01a6c4b926f11a4089"
 
 [autoupdate]
 checkver = { github = "usebruno/bruno" }
+url_template = { x64 = "https://github.com/usebruno/bruno/releases/download/v$version/bruno_$version_x64_win.zip" }

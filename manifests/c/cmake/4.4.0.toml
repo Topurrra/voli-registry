@@ -6,6 +6,7 @@ license = "BSD-3-Clause"
 kind = "app"
 extract_dir = "cmake-4.4.0-windows-x86_64"
 bin = ["bin\\cmake.exe", "bin\\cmcldeps.exe", "bin\\cpack.exe", "bin\\ctest.exe", "bin\\cmake-gui.exe"]
+shortcuts = [{ target = "bin\\cmake-gui.exe", name = "cmake-gui" }]
 
 [source.x64]
 url = "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-windows-x86_64.zip"
@@ -16,4 +17,5 @@ url = "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-win
 sha256 = "57437e918b2929bbd25b8d427611120149df02d4b216872e0f48f361f03d71e5"
 
 [autoupdate]
-checkver = "{\"regex\":\"Latest Release \\\\(([\\\\d.]+)\\\\)\",\"url\":\"https://cmake.org/download/\"}"
+checkver = { url = "https://cmake.org/download/", regex = "Latest Release \\(([\\d.]+)\\)" }
+url_template = { x64 = "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-windows-x86_64.zip", arm64 = "https://github.com/Kitware/CMake/releases/download/v$version/cmake-$version-windows-arm64.zip" }

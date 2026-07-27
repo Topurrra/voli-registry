@@ -12,4 +12,5 @@ url = "https://jmvdveer.home.xs4all.nl/algol68g-3.9.5.win32.zip"
 sha256 = "6292e195a3c6f7a1e77ff003787c476bfa9e8cc30d20cbc74e004059b574c6f6"
 
 [autoupdate]
-checkver = "{\"regex\":\"algol68g-([\\\\d.]+).win32.zip\",\"url\":\"https://jmvdveer.home.xs4all.nl/en.download.algol-68-genie-current.html\"}"
+checkver = { url = "https://jmvdveer.home.xs4all.nl/en.download.algol-68-genie-current.html", regex = "algol68g-([\\d.]+).win32.zip" }
+url_template = "https://jmvdveer.home.xs4all.nl/algol68g-$version.win32.zip"

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "raspberrypi/rpi-imager" }
+url_template = { x64 = "https://github.com/raspberrypi/rpi-imager/releases/download/v$version/imager-v$version.exe" }

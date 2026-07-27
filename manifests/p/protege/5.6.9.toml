@@ -14,4 +14,5 @@ url = "https://github.com/protegeproject/protege-distribution/releases/download/
 sha256 = "656db16bbaa93ea8ac25f553e86c4ab0f2e58edd3470301d9c79452facc7a01c"
 
 [autoupdate]
-checkver = "{\"regex\":\"releases/tag/(?<prefix>(v|protege-)?)(?<version>[\\\\d\\\\w.]+)\\\"\",\"replace\":\"${version}\",\"url\":\"https://github.com/protegeproject/protege-distribution/releases/latest\"}"
+checkver = { url = "https://github.com/protegeproject/protege-distribution/releases/latest", regex = "releases/tag/(?<prefix>(v|protege-)?)(?<version>[\\d\\w.]+)\"" }
+url_template = "https://github.com/protegeproject/protege-distribution/releases/download/$matchPrefix$version/Protege-$version-win.zip"

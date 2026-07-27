@@ -12,3 +12,4 @@ sha256 = "06374a8d7951c250a95fe35528c95fbb53003588a399b334261a2aeaa2707fac"
 
 [autoupdate]
 checkver = { github = "aome510/hackernews-tui" }
+url_template = { x64 = "https://github.com/aome510/hackernews-tui/releases/download/v$version/hackernews_tui-x86_64-pc-windows-msvc.zip" }

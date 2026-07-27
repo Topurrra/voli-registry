@@ -4,6 +4,7 @@ description = "TCP/UDP port mapping for full-cone NAT"
 homepage = "https://github.com/heiher/natmap"
 license = "MIT"
 kind = "app"
+extract_dir = "natmap"
 bin = ["natmap.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "e2530e3a14a9f89388d72a28e524eabdfed3af62b826f2600ea7173ac930109c"
 
 [autoupdate]
 checkver = { github = "heiher/natmap" }
+url_template = { x64 = "https://github.com/heiher/natmap/releases/download/$version/natmap-win64.zip" }

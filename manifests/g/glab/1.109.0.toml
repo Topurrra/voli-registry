@@ -11,4 +11,5 @@ url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.109.0/downloads/glab_1.10
 sha256 = "ae7c59adf785a3877176fea40341ac6ac1db316578fbb57e1f0c003d4e840876"
 
 [autoupdate]
-checkver = "{\"regex\":\"/tags/v([\\\\d.]+)<\",\"url\":\"https://gitlab.com/gitlab-org/cli/-/tags?format=atom\"}"
+checkver = { url = "https://gitlab.com/gitlab-org/cli/-/tags?format=atom", regex = "/tags/v([\\d.]+)<" }
+url_template = { x64 = "https://gitlab.com/gitlab-org/cli/-/releases/v$version/downloads/glab_$version_windows_amd64.zip" }

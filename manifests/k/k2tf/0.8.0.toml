@@ -16,3 +16,4 @@ sha256 = "ed9f243a9eca66e75c9ff140fbd8a203705c1115ee788cabc5cdc80d13a09705"
 
 [autoupdate]
 checkver = { github = "sl1pm4t/k2tf" }
+url_template = { x64 = "https://github.com/sl1pm4t/k2tf/releases/download/v$version/k2tf_$version_Windows_amd64.tar.gz", arm64 = "https://github.com/sl1pm4t/k2tf/releases/download/v$version/k2tf_$version_Windows_arm64.tar.gz" }

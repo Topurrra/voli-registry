@@ -19,3 +19,4 @@ ripgrep = "*"
 
 [autoupdate]
 checkver = { github = "phiresky/ripgrep-all" }
+url_template = { x64 = "https://github.com/phiresky/ripgrep-all/releases/download/v$version/ripgrep_all-v$version-x86_64-pc-windows-msvc.zip" }

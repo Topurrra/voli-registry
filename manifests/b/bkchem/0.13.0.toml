@@ -12,4 +12,5 @@ sha256 = "1b90a4c21462ac11014c3470e793f5f90ae393fac9a7d3927865ec0ecd5a34ce"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"bkchem-([\\\\d.]+)\\\\.exe\",\"url\":\"https://bkchem.zirael.org/download_en.html\"}"
+checkver = { url = "https://bkchem.zirael.org/download_en.html", regex = "bkchem-([\\d.]+)\\.exe" }
+url_template = "https://bkchem.zirael.org/download/bkchem-$version.exe"

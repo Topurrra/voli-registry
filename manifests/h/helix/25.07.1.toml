@@ -13,3 +13,4 @@ sha256 = "5c8325ced8bacd8418d62706f669e96d9c3578a9237526e34d546900cbc049b6"
 
 [autoupdate]
 checkver = { github = "helix-editor/helix" }
+url_template = { x64 = "https://github.com/helix-editor/helix/releases/download/$version/helix-$version-x86_64-windows.zip" }

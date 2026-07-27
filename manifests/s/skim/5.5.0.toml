@@ -12,3 +12,4 @@ sha256 = "8ea158d71f226cc6dc6382122c6f5e0a97b92f1fdc476982cc05288ded201fb6"
 
 [autoupdate]
 checkver = { github = "skim-rs/skim" }
+url_template = { x64 = "https://github.com/skim-rs/skim/releases/download/v$version/skim-x86_64-pc-windows-msvc.zip" }

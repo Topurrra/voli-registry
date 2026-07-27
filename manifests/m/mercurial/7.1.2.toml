@@ -1,0 +1,16 @@
+name = "mercurial"
+version = "7.1.2"
+description = "Fast, lightweight, distributed source control management system designed for easy and efficient handling of very large distributed projects."
+homepage = "https://www.mercurial-scm.org/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["hg.exe"]
+
+[source.x64]
+url = "https://www.mercurial-scm.org/release/windows/Mercurial-7.1.2-x64.exe"
+sha256 = "22219ca17a3e6b67eb4678d470de010bf66478b7d4861ea5e29f3cd31585eb25"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.mercurial-scm.org/release/windows/latest.dat", regex = "Mercurial-([\\w.]+)-x" }
+url_template = { x64 = "https://www.mercurial-scm.org/release/windows/Mercurial-$version-x64.exe" }

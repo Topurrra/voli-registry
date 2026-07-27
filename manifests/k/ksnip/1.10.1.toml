@@ -13,3 +13,4 @@ sha256 = "baef1dfb98b0d50a49dc636672fd5f3e3c90d5908cc1c85028f04914738f0977"
 
 [autoupdate]
 checkver = { github = "ksnip/ksnip" }
+url_template = "https://github.com/ksnip/ksnip/releases/download/v$version/ksnip-$version-windows.zip"

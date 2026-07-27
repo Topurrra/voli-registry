@@ -16,3 +16,4 @@ sha256 = "1c64a31208b0f6b8f9072a92268e1c18b86f290ced64fec9e32e9e7a5ec4e59d"
 
 [autoupdate]
 checkver = { github = "DioxusLabs/dioxus" }
+url_template = { x64 = "https://github.com/DioxusLabs/dioxus/releases/download/v$version/dx-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/DioxusLabs/dioxus/releases/download/v$version/dx-aarch64-pc-windows-msvc.zip" }

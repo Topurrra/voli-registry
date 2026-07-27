@@ -16,3 +16,4 @@ sha256 = "b2020c599533e9f1207c4027e5cedac3ea10a902150f31238d816fe1ec3f6011"
 
 [autoupdate]
 checkver = { github = "flux-subsystem-argo/flamingo" }
+url_template = { x64 = "https://github.com/flux-subsystem-argo/flamingo/releases/download/v$version/flamingo_$version_windows_amd64.zip", arm64 = "https://github.com/flux-subsystem-argo/flamingo/releases/download/v$version/flamingo_$version_windows_arm64.zip" }

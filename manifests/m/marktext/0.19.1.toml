@@ -17,3 +17,4 @@ sha256 = "b37528e150929d5817a225a15b3c57d01b652766c77e43430bc17bccb70ab453"
 
 [autoupdate]
 checkver = { github = "marktext/marktext" }
+url_template = { x64 = "https://github.com/marktext/marktext/releases/download/v$version/marktext-win-x64-$version.zip", arm64 = "https://github.com/marktext/marktext/releases/download/v$version/marktext-win-arm64-$version.zip" }

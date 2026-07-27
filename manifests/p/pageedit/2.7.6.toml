@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Sigil-Ebook/PageEdit" }
+url_template = { x64 = "https://github.com/Sigil-Ebook/PageEdit/releases/download/$version/PageEdit-$version-Windows-x64-Setup.exe" }

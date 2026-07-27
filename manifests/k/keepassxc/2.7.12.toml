@@ -15,3 +15,4 @@ sha256 = "958234b0669d757b53eacf42bdd5de0fa1cc1ab7527709ddf4f7e29c06a8305f"
 
 [autoupdate]
 checkver = { github = "keepassxreboot/keepassxc" }
+url_template = { x64 = "https://github.com/keepassxreboot/keepassxc/releases/download/$version/KeePassXC-$version-Win64.zip" }

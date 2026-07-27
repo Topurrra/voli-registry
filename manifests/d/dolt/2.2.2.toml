@@ -4,6 +4,7 @@ description = "Dolt is a SQL database that you can fork, clone, branch, merge, p
 homepage = "https://github.com/dolthub/dolt"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "dolt-windows-amd64"
 bin = ["bin\\dolt.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "95def3c5f588e53382befa88569a91acceb412ff15897fe964243744f42f78a7"
 
 [autoupdate]
 checkver = { github = "dolthub/dolt" }
+url_template = { x64 = "https://github.com/dolthub/dolt/releases/download/v$version/dolt-windows-amd64.zip" }

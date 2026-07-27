@@ -13,3 +13,4 @@ sha256 = "1b74a90c7ee6373ab2926addd110c1dbc5934a9675e5f436cac4d04f46cce2f5"
 
 [autoupdate]
 checkver = { github = "microsoft/apm" }
+url_template = { x64 = "https://github.com/microsoft/apm/releases/download/v$version/apm-windows-x86_64.zip" }

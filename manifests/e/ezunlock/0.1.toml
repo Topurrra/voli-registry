@@ -12,3 +12,4 @@ sha256 = "0f4063e5b4ffff6aaf6806386d591cf621ae76a6637f91bdccbda2e1021a68c3"
 
 [autoupdate]
 checkver = { github = "demberto/EzUnlock" }
+url_template = { x64 = "https://github.com/demberto/EzUnlock/releases/download/v$version/EzUnlock_x64_v$version.zip" }

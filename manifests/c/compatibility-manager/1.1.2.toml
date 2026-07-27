@@ -14,3 +14,4 @@ sha256 = "c8e890fde904ea633e02df17ae3078c48b3107f936aa03b0b634d3040b9ea245"
 
 [autoupdate]
 checkver = { github = "nbusseneau/CompatibilityManager" }
+url_template = "https://github.com/nbusseneau/CompatibilityManager/releases/download/v$version/CompatibilityManager.v$version.7z"

@@ -13,3 +13,4 @@ sha256 = "c9b14cd356c7ada66b294426ba25c52d7654396a31b8b115b789e4d5e73f62bc"
 
 [autoupdate]
 checkver = { github = "CCExtractor/ccextractor" }
+url_template = { x64 = "https://github.com/CCExtractor/ccextractor/releases/download/v$version/CCExtractor.$version_win_portable.zip" }

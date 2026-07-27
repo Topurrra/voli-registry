@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/persepolisdm/persepolis/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"persepolis_([\\\\d.]+)_windows\"}"
+url_template = { x64 = "https://github.com/persepolisdm/persepolis/releases/download/$matchHead/persepolis_$version_windows_64bit.exe" }

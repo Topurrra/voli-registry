@@ -12,3 +12,4 @@ sha256 = "55d7994c02f4e5e82b97b1ab3b8eeef0d5215320c897351195183426c1192bec"
 
 [autoupdate]
 checkver = { github = "LadybugDB/ladybug" }
+url_template = { x64 = "https://github.com/LadybugDB/ladybug/releases/download/v$version/lbug_cli-windows-x86_64.zip" }

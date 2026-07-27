@@ -12,3 +12,4 @@ sha256 = "d9a401a5cd532a3c3659e98fcd7ddc0c645fd76170eb9a216cf9c587ea6bed62"
 
 [autoupdate]
 checkver = { github = "yvgude/lean-ctx" }
+url_template = { x64 = "https://github.com/yvgude/lean-ctx/releases/download/v$version/lean-ctx-x86_64-pc-windows-msvc.zip" }

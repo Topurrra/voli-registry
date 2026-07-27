@@ -13,3 +13,4 @@ sha256 = "0e4038a768e144676f9d250949680afa410e8733ce3dc60686ae987beb8b6b05"
 
 [autoupdate]
 checkver = { github = "SalOne22/rimage" }
+url_template = { x64 = "https://github.com/SalOne22/rimage/releases/download/v$version/rimage-$version-x86_64-pc-windows-msvc.zip" }

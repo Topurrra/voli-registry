@@ -4,19 +4,11 @@ description = "Real-time network diagnostics TUI — like htop for your network.
 homepage = "https://github.com/matthart1983/netwatch"
 license = "MIT"
 kind = "app"
-bin = []
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/matthart1983/netwatch/releases/download/v0.27.0/netwatch-windows-x86_64.exe.zip"
 sha256 = "7fb07c30e2898b965e27eba49d44b1b85fc6ae2a3f2cd81f867ddef37db2514f"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "matthart1983/netwatch"
+[autoupdate]
+checkver = { github = "matthart1983/netwatch" }
+url_template = { x64 = "https://github.com/matthart1983/netwatch/releases/download/v$version/netwatch-windows-x86_64.exe.zip" }

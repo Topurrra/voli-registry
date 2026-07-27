@@ -16,3 +16,4 @@ PATH = "{dir}\\resources\\resources\\win32\\bin;{dir}\\resources\\resources\\lin
 
 [autoupdate]
 checkver = { github = "rancher-sandbox/rancher-desktop" }
+url_template = { x64 = "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v$version/Rancher.Desktop.Setup.$version.msi" }

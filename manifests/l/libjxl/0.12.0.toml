@@ -13,3 +13,4 @@ sha256 = "ff147dc7ac4ce55392974ccc70f2a8a8ec0eff3ae28529b072258b66c8f01ab2"
 
 [autoupdate]
 checkver = { github = "libjxl/libjxl" }
+url_template = { x64 = "https://github.com/libjxl/libjxl/releases/download/v$version/jxl-x64-windows-static.7z" }

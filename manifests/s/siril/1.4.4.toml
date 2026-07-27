@@ -13,4 +13,5 @@ url = "https://free-astro.org/download/siril-1.4.4-ucrt64_win.zip"
 sha256 = "ab276bedd3e805d523c535c1fe813fd68ad4f9dd1c1e5367278b6d027e53a6ee"
 
 [autoupdate]
-checkver = "{\"regex\":\"siril-(.+?)-ucrt64_win\",\"url\":\"https://siril.org/download/\"}"
+checkver = { url = "https://siril.org/download/", regex = "siril-(.+?)-ucrt64_win" }
+url_template = { x64 = "https://free-astro.org/download/siril-$version-ucrt64_win.zip" }

@@ -12,3 +12,4 @@ sha256 = "cb2d9fea43dcbab1d0707e3b37eb7b08070ad2fb60a2c188c39ec12382c0484a"
 
 [autoupdate]
 checkver = { github = "AOMediaCodec/libavif" }
+url_template = { x64 = "https://github.com/AOMediaCodec/libavif/releases/download/v$version/windows-artifacts.zip" }

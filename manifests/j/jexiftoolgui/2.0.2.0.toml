@@ -17,3 +17,4 @@ exiftool = "*"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/hvdwolf/jExifToolGUI/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"jExifToolGUI-([\\\\d.]+)-win-x86_64_with-jre\\\\.zip\"}"
+url_template = "https://github.com/hvdwolf/jExifToolGUI/releases/download/$matchHead/jExifToolGUI-$version-win-x86_64_with-jre.zip"

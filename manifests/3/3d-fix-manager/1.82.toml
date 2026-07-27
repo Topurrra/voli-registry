@@ -13,4 +13,5 @@ url = "https://duselpaul86.s3.amazonaws.com/fix_manager_1.82.zip"
 sha256 = "ed3a1903f1a56f2fc10dc5d8361a5a69e6bf436ba3799ccbcd9429775b72794f"
 
 [autoupdate]
-checkver = "{\"regex\":\"fix_manager_([\\\\d.]+)\\\\.zip\",\"url\":\"https://helixmod.blogspot.com/2017/05/3d-fix-manager.html\"}"
+checkver = { url = "https://helixmod.blogspot.com/2017/05/3d-fix-manager.html", regex = "fix_manager_([\\d.]+)\\.zip" }
+url_template = { x64 = "https://duselpaul86.s3.amazonaws.com/fix_manager_$version.zip" }

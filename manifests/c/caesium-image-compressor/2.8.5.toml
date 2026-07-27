@@ -13,3 +13,4 @@ sha256 = "44417dfe07725e84ad8b173185d56e66def50a653e6c05216c47f7b6f6493839"
 
 [autoupdate]
 checkver = { github = "Lymphatus/caesium-image-compressor" }
+url_template = { x64 = "https://github.com/Lymphatus/caesium-image-compressor/releases/download/v$version/caesium-image-compressor-$version-win-portable.zip" }

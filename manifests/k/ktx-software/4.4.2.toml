@@ -16,3 +16,4 @@ sha256 = "86d6edba47f3df597f3b9bceda6e4da8b4205b43c8386519e1c0d2ce804c4284"
 
 [autoupdate]
 checkver = { github = "KhronosGroup/KTX-Software" }
+url_template = { x64 = "https://github.com/KhronosGroup/KTX-Software/releases/download/v$version/KTX-Software-$version-Windows-x64.exe#/dl.7z", arm64 = "https://github.com/KhronosGroup/KTX-Software/releases/download/v$version/KTX-Software-$version-Windows-arm64.exe#/dl.7z" }

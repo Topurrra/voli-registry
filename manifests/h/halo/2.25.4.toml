@@ -12,3 +12,4 @@ sha256 = "537756c406ff013db34d47a3740093ed2cd1cbdedf5b3da34ca8017de61aa04e"
 
 [autoupdate]
 checkver = { github = "halo-dev/halo" }
+url_template = "https://github.com/halo-dev/halo/releases/download/v$version/halo-$version.jar#/halo.jar"

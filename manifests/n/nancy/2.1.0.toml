@@ -12,3 +12,4 @@ sha256 = "f8f35bc7e0e8eca35a763340f6d244c76e923102fc4bc156de02a8ee2436cdba"
 
 [autoupdate]
 checkver = { github = "sonatype-nexus-community/nancy" }
+url_template = { x64 = "https://github.com/sonatype-nexus-community/nancy/releases/download/v$version/nancy-v$version-windows-amd64.zip" }

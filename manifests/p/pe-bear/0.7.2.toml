@@ -13,3 +13,4 @@ sha256 = "d2b995b213d0e6b3910a863c12fdb842722ce47387e65fc8e711ee9013d0876e"
 
 [autoupdate]
 checkver = { github = "hasherezade/pe-bear" }
+url_template = { x64 = "https://github.com/hasherezade/pe-bear/releases/download/v$version/PE-bear_$version_qt6_x64_win_vs22.zip" }

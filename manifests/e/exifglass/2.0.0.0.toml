@@ -20,3 +20,4 @@ exiftool = "*"
 
 [autoupdate]
 checkver = { github = "d2phap/ExifGlass" }
+url_template = { x64 = "https://github.com/d2phap/ExifGlass/releases/download/$version/ExifGlass_$version_win-x64.zip", arm64 = "https://github.com/d2phap/ExifGlass/releases/download/$version/ExifGlass_$version_win-arm64.zip" }

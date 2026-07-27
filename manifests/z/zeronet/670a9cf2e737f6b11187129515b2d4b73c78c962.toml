@@ -15,3 +15,4 @@ sha256 = "3faaa82bdb148a0212ad4d9219d2c7cc6725580560b0624a224ec369d732b891"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/HelloZeroNet/ZeroNet-win/branches\",\"jsonpath\":\"$[?(@.name == 'dist-win64')].commit.sha\",\"regex\":\"([a-f0-9]+)\"}"
+url_template = { x64 = "https://github.com/HelloZeroNet/ZeroNet-win/archive/$version.zip" }

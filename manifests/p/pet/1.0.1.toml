@@ -16,3 +16,4 @@ sha256 = "9879245027bdfb342e5d7c6946744db5e403c448f84298e2a88a82c11d045fe1"
 
 [autoupdate]
 checkver = { github = "knqyf263/pet" }
+url_template = { x64 = "https://github.com/knqyf263/pet/releases/download/v$version/pet_$version_windows_amd64.tar.gz", arm64 = "https://github.com/knqyf263/pet/releases/download/v$version/pet_$version_windows_arm64.tar.gz" }

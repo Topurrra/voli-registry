@@ -14,3 +14,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "elixir-lang/elixir" }
+url_template = "https://builds.hex.pm/builds/elixir/v$version.zip"

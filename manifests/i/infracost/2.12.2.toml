@@ -16,3 +16,4 @@ sha256 = "6c7d804ff6e3d2273499c15dc0e663cf10aa56cbfeee6b739af236997cb59d5f"
 
 [autoupdate]
 checkver = { github = "infracost/cli" }
+url_template = { x64 = "https://github.com/infracost/cli/releases/download/v$version/infracost-windows-amd64.zip", arm64 = "https://github.com/infracost/cli/releases/download/v$version/infracost-windows-arm64.zip" }

@@ -14,3 +14,4 @@ sha256 = "39d4a17a299431079c021eb480c4b0b718b9a3c56a0a3fdcd079c89b83740290"
 
 [autoupdate]
 checkver = { github = "BornToBeRoot/NETworkManager" }
+url_template = { x64 = "https://github.com/BornToBeRoot/NETworkManager/releases/download/$version/NETworkManager_$version_Portable.zip" }

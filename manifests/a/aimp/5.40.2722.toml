@@ -14,4 +14,4 @@ url = "https://www.aimp.ru/?do=download.file&id=31#/dl.zip"
 sha256 = "58b3e8b181c8dfb6789f9cf27c10755f153ec7357d07308e3f88e0fd18799fa5"
 
 [autoupdate]
-checkver = "{\"regex\":\">AIMP v([\\\\d.]+)<\",\"url\":\"https://www.aimp.ru/?do=download&os=windows\"}"
+checkver = { url = "https://www.aimp.ru/?do=download&os=windows", regex = ">AIMP v([\\d.]+)<" }

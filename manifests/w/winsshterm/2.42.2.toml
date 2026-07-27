@@ -25,3 +25,4 @@ putty = "*"
 
 [autoupdate]
 checkver = { github = "WinSSHTerm/WinSSHTerm" }
+url_template = { x64 = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-x64.zip", arm64 = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-arm64.zip" }

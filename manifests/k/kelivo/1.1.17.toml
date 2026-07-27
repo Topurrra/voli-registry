@@ -12,3 +12,4 @@ sha256 = "5de3d92b06a459a4551c8df3023cb18c4974e746d0e0fa4d1ee4536c7aff1f66"
 
 [autoupdate]
 checkver = { github = "Chevey339/kelivo" }
+url_template = { x64 = "https://github.com/Chevey339/kelivo/releases/download/v$version/Kelivo_windows_$version%2B$matchBuild.zip" }

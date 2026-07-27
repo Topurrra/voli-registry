@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "StreamWhatYouHear/SWYH" }
+url_template = "https://github.com/StreamWhatYouHear/SWYH/releases/download/$version/SWYH_$version.exe"

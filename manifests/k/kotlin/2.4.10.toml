@@ -16,3 +16,4 @@ KOTLIN_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "JetBrains/kotlin" }
+url_template = "https://github.com/JetBrains/kotlin/releases/download/v$version/kotlin-compiler-$version.zip"

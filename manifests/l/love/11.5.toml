@@ -14,3 +14,4 @@ sha256 = "ba6e56be2685e53c817749c4a5007f51137136fe5a3ab64920508babc2e74369"
 
 [autoupdate]
 checkver = { github = "love2d/love" }
+url_template = { x64 = "https://github.com/love2d/love/releases/download/$version/love-$version-win64.zip" }

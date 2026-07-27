@@ -13,3 +13,4 @@ sha256 = "5906dc5cffde4f9cefac2345785f7b2d69fbfeb02aad6b79a98ce8ad89bfb2df"
 
 [autoupdate]
 checkver = { github = "Stirling-Tools/Stirling-PDF" }
+url_template = { x64 = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v$version/Stirling-PDF.jar" }

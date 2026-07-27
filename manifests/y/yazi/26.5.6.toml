@@ -17,3 +17,4 @@ sha256 = "797abc8965c07d903f3cd263512fe4114b2fc36f03fc62011300787f28a48f1e"
 
 [autoupdate]
 checkver = { github = "sxyazi/yazi" }
+url_template = { x64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-aarch64-pc-windows-msvc.zip" }

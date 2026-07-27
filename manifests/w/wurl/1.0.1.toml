@@ -12,3 +12,4 @@ sha256 = "dc40eea0843fd9ca8c24fca03adf61d051f0d38a4f6e7f3f240bb903fd20c193"
 
 [autoupdate]
 checkver = { github = "xakep666/wurl" }
+url_template = { x64 = "https://github.com/xakep666/wurl/releases/download/v$version/wurl_windows_amd64_v$version.zip" }

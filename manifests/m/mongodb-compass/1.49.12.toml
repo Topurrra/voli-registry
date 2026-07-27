@@ -11,4 +11,5 @@ url = "https://downloads.mongodb.com/compass/mongodb-compass-1.49.12-win32-x64.z
 sha256 = "9675cea7e076f2f308ed2caa6407e9c4f3dd30ea6536f5418c36917ed1fe4145"
 
 [autoupdate]
-checkver = "{\"regex\":\"mongodb-compass-([\\\\d.]+)-win32-x64.zip\",\"url\":\"https://www.mongodb.com/try/download/compass\"}"
+checkver = { url = "https://www.mongodb.com/try/download/compass", regex = "mongodb-compass-([\\d.]+)-win32-x64.zip" }
+url_template = { x64 = "https://downloads.mongodb.com/compass/mongodb-compass-$version-win32-x64.zip" }

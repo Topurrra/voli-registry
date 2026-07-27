@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "flxzt/rnote" }
+url_template = "https://github.com/flxzt/rnote/releases/download/v$version/rnote-win-installer-$version-x86_64.exe#/setup.exe"

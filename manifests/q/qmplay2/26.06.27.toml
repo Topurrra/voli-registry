@@ -13,3 +13,4 @@ sha256 = "19d9f3d205183555e90f69b1f86dad0584ff2c515da784334c223286750159d1"
 
 [autoupdate]
 checkver = { github = "zaps166/QMPlay2" }
+url_template = { x64 = "https://github.com/zaps166/QMPlay2/releases/download/$version/QMPlay2-Win64-$version.exe#/dl.7z" }

@@ -5,6 +5,7 @@ homepage = "https://lessmsi.activescott.com"
 license = "MIT"
 kind = "app"
 bin = ["lessmsi.exe"]
+shortcuts = [{ target = "lessmsi-gui.exe", name = "Less MSIérables" }]
 
 [source.x64]
 url = "https://github.com/activescott/lessmsi/releases/download/v2.12.9/lessmsi-v2.12.9.zip"
@@ -12,3 +13,4 @@ sha256 = "5b4e187e74b184ad3a63ccf06c3d17dae2b8c4b6c298a996dbd51a9f6db29d21"
 
 [autoupdate]
 checkver = { github = "activescott/lessmsi" }
+url_template = "https://github.com/activescott/lessmsi/releases/download/v$version/lessmsi-v$version.zip"

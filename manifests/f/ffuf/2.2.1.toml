@@ -16,3 +16,4 @@ sha256 = "a1a4e9005143e11c8a79f6ae0d0b24b67e54209b8b4f4736399211ebbc7a0b71"
 
 [autoupdate]
 checkver = { github = "ffuf/ffuf" }
+url_template = { x64 = "https://github.com/ffuf/ffuf/releases/download/v$version/ffuf_$version_windows_amd64.zip", arm64 = "https://github.com/ffuf/ffuf/releases/download/v$version/ffuf_$version_windows_arm64.zip" }

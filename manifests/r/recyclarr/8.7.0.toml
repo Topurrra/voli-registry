@@ -16,3 +16,4 @@ sha256 = "dae3375d3af98920684531d19f9a243817e77c6f16c308ebb0b0fb79359f6387"
 
 [autoupdate]
 checkver = { github = "recyclarr/recyclarr" }
+url_template = { x64 = "https://github.com/recyclarr/recyclarr/releases/download/v$version/recyclarr-win-x64.zip", arm64 = "https://github.com/recyclarr/recyclarr/releases/download/v$version/recyclarr-win-arm64.zip" }

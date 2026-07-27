@@ -19,3 +19,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "microsoft/AzureStorageExplorer" }
+url_template = { x64 = "https://github.com/microsoft/AzureStorageExplorer/releases/download/v$version/StorageExplorer-windows-x64.exe", arm64 = "https://github.com/microsoft/AzureStorageExplorer/releases/download/v$version/StorageExplorer-windows-arm64.exe" }

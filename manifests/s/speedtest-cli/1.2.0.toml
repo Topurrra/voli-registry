@@ -12,3 +12,4 @@ sha256 = "13e3d888b845d301a556419e31f14ab9bff57e3f06089ef2fd3bdc9ba6841efa"
 
 [autoupdate]
 checkver = "speedtest-([\\d.]+)-win64\\.zip"
+url_template = { x64 = "https://install.speedtest.net/app/cli/ookla-speedtest-$version-win64.zip" }

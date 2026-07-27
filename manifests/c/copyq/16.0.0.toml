@@ -15,3 +15,4 @@ sha256 = "a043aafd9d061d4682cbb3aee2991435d1cd7ca6969cfc508382ccf4b21c07be"
 
 [autoupdate]
 checkver = { github = "hluk/CopyQ" }
+url_template = { x64 = "https://github.com/hluk/CopyQ/releases/download/v$version/copyq-$version.zip" }

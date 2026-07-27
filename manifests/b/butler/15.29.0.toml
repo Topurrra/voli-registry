@@ -12,3 +12,4 @@ sha256 = "3fdb262f2bc4c56adfec80942e74de2811bfa49c828faae7eab2a9d1e5dc516a"
 
 [autoupdate]
 checkver = { github = "itchio/butler" }
+url_template = { x64 = "https://broth.itch.zone/butler/windows-amd64/$version/archive/default#/download.zip" }

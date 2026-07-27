@@ -13,3 +13,4 @@ sha256 = "ac8ebb4a9f1cbee8b9ea897ba119808a244181adae6f3bed1f3b6b923c50b557"
 
 [autoupdate]
 checkver = { github = "dandavison/delta" }
+url_template = { x64 = "https://github.com/dandavison/delta/releases/download/$version/delta-$version-x86_64-pc-windows-msvc.zip" }

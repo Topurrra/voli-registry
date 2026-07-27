@@ -13,3 +13,4 @@ sha256 = "2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ede21"
 
 [autoupdate]
 checkver = { github = "sharkdp/numbat" }
+url_template = { x64 = "https://github.com/sharkdp/numbat/releases/download/v$version/numbat-v$version-x86_64-pc-windows-msvc.zip" }

@@ -12,3 +12,4 @@ sha256 = "e1299fd6fcf4da527dd53735b56127e8ea922a321128123b9c32d619bba1d835"
 
 [autoupdate]
 checkver = { github = "patrickfav/uber-apk-signer" }
+url_template = "https://github.com/patrickfav/uber-apk-signer/releases/download/v$version/uber-apk-signer-$version.jar#/uber-apk-signer.jar"

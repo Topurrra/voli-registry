@@ -12,3 +12,4 @@ sha256 = "ab8e274c2e1144440a15dd0c78bb6385084439c94f85c1413739b2c8e7c8d6ba"
 
 [autoupdate]
 checkver = { github = "philippgille/serve" }
+url_template = { x64 = "https://github.com/philippgille/serve/releases/download/v$version/serve_v$version_Windows_x64.zip" }

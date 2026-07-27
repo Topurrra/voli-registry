@@ -13,3 +13,4 @@ sha256 = "51e914b0308b089f032c481e786d67a9f11d8857f4ffe99405f3452e77582393"
 
 [autoupdate]
 checkver = { github = "sharkdp/pastel" }
+url_template = { x64 = "https://github.com/sharkdp/pastel/releases/download/v$version/pastel-v$version-x86_64-pc-windows-msvc.zip" }

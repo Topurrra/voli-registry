@@ -12,3 +12,4 @@ sha256 = "e2a89a921e1b2fe675a319248ea968c7e28c7edc44c5fd836e2879a3e094c9cf"
 
 [autoupdate]
 checkver = { github = "avrdudes/avrdude" }
+url_template = { x64 = "https://github.com/avrdudes/avrdude/releases/download/v$version/avrdude-v$version-windows-x64.zip" }

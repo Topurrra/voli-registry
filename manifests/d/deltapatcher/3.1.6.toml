@@ -12,3 +12,4 @@ sha256 = "6fae5d8af839339a9adaf053f30d9444476ee2ca45cb0f38049f7c82ba5c01be"
 
 [autoupdate]
 checkver = { github = "marco-calautti/DeltaPatcher" }
+url_template = { x64 = "https://github.com/marco-calautti/DeltaPatcher/releases/download/v$version/windows_bin_x86_64.zip" }

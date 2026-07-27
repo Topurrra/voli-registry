@@ -13,3 +13,4 @@ sha256 = "2bc2700c9cae57c43c6abbb1063e755977972b81e8eb34f266750aabd02a9cf1"
 
 [autoupdate]
 checkver = { github = "sharkdp/vivid" }
+url_template = { x64 = "https://github.com/sharkdp/vivid/releases/download/v$version/vivid-v$version-x86_64-pc-windows-msvc.zip" }

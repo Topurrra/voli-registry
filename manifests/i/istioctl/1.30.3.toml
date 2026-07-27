@@ -12,3 +12,4 @@ sha256 = "26fb18554d81d54ead9ff32100437e09bd48513aa41e09962a755e19ba4e08e6"
 
 [autoupdate]
 checkver = { github = "istio/istio" }
+url_template = { x64 = "https://github.com/istio/istio/releases/download/$version/istioctl-$version-win.zip" }

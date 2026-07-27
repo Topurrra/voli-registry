@@ -14,3 +14,4 @@ sha256 = "ee8506e441e16be4ee8cee4ae81caf2c09a92f2545169ffd2d284ac0487f6b0f"
 
 [autoupdate]
 checkver = { github = "Eclipse-Community/r3dfox" }
+url_template = { x64 = "https://github.com/Eclipse-Community/r3dfox/releases/download/v$version/r3dfox-$version.en-US.win64.portable.7z" }

@@ -1,0 +1,18 @@
+name = "git-up"
+version = "2.4.0"
+description = "A nicer 'git pull'"
+homepage = "https://github.com/msiemens/PyGitUp"
+license = "MIT"
+kind = "app"
+extract_dir = "PyGitUp-2.4.0"
+
+[source.x64]
+url = "https://github.com/msiemens/PyGitUp/archive/v2.4.0.zip"
+sha256 = "f8dd9a2f1457623d0ee93192f2a92df343ed125fadf2083f138b72ca20c865a1"
+
+[depends]
+python = "*"
+
+[autoupdate]
+checkver = { github = "msiemens/PyGitUp" }
+url_template = "https://github.com/msiemens/PyGitUp/archive/v$version.zip"

@@ -14,3 +14,4 @@ sha256 = "21b14cecc320513c4dbe30e40c07073f2cbe9273e5ffd765bc4347e042b4166b"
 
 [autoupdate]
 checkver = "Stable Release.*?\\(([\\d.]+)\\)"
+url_template = "https://github.com/orbitalquark/textadept/releases/download/textadept_$version/textadept_$version.win.zip"

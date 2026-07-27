@@ -16,3 +16,4 @@ sha256 = "0ed95db2387984cc8a03aaceb7e493bb43a78cd901ef977e2bdbc2e641e491dd"
 
 [autoupdate]
 checkver = { github = "prefix-dev/pixi" }
+url_template = { x64 = "https://github.com/prefix-dev/pixi/releases/download/v$version/pixi-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/prefix-dev/pixi/releases/download/v$version/pixi-aarch64-pc-windows-msvc.zip" }

@@ -15,3 +15,4 @@ sha256 = "ad52fe93c289945d15636a96b2c16ecd5ec55a317f6e2f97b2ed2ee15f4b84d5"
 
 [autoupdate]
 checkver = { github = "pit-ray/win-vind" }
+url_template = { x64 = "https://github.com/pit-ray/win-vind/releases/download/v$version/win-vind_$version_64bit_portable.zip" }

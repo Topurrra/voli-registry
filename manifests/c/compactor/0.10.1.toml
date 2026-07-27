@@ -13,3 +13,4 @@ sha256 = "1dc75fd5dad212e0cbf29a363632e0299945183d722b2c00e527e54ed86de379"
 
 [autoupdate]
 checkver = { github = "Freaky/Compactor" }
+url_template = { x64 = "https://github.com/Freaky/Compactor/releases/download/v$version/Compactor-$version.7z" }

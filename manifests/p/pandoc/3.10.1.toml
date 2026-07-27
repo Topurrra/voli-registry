@@ -4,6 +4,7 @@ description = "Universal markup converter"
 homepage = "https://pandoc.org"
 license = "GPL-2.0-or-later"
 kind = "app"
+extract_dir = "pandoc-3.10.1"
 bin = ["pandoc.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "4725a1883e2171c2e181e6fd45003acb59ca4e9cbe031fdd3b79ef0d697d36aa"
 
 [autoupdate]
 checkver = { github = "jgm/pandoc" }
+url_template = { x64 = "https://github.com/jgm/pandoc/releases/download/$version/pandoc-$version-windows-x86_64.zip" }

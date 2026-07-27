@@ -12,4 +12,5 @@ url = "https://www.vosviewer.com/downloads/VOSviewer_1.6.21_exe.zip"
 sha256 = "246e5f5aa64dc0f14536e9b842fb2d8d1de080717c8d11ec46923dbf1c14ac85"
 
 [autoupdate]
-checkver = "{\"regex\":\"VOSviewer version ([\\\\d.]+)\",\"url\":\"https://www.vosviewer.com/download\"}"
+checkver = { url = "https://www.vosviewer.com/download", regex = "VOSviewer version ([\\d.]+)" }
+url_template = "https://www.vosviewer.com/downloads/VOSviewer_$version_exe.zip"

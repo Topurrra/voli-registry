@@ -15,4 +15,5 @@ sha512 = "ed41650d42485cfc243fad22158caf9cbb5dc408ce7a09ddb94dd42a019de929ca4306
 PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"<b>([\\\\d.]+)</b>\",\"url\":\"https://maven.apache.org/docs/history.html\"}"
+checkver = { url = "https://maven.apache.org/docs/history.html", regex = "<b>([\\d.]+)</b>" }
+url_template = "https://dlcdn.apache.org/maven/maven-$majorVersion/$version/binaries/apache-maven-$version-bin.zip"

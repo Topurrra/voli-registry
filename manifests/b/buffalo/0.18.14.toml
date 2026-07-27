@@ -12,3 +12,4 @@ sha256 = "1717c5e7e79df8ef46f740e7d89d6035845cbbb5e2103d55acf55589cb6d7440"
 
 [autoupdate]
 checkver = { github = "gobuffalo/cli" }
+url_template = { x64 = "https://github.com/gobuffalo/cli/releases/download/v$version/buffalo_$version_windows_x86_64.tar.gz" }

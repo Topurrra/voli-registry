@@ -14,3 +14,4 @@ sha256 = "79e39a9a8cd13e476da3ec69f84be7016473beb5222f3acd16cfbde0b648f57d"
 
 [autoupdate]
 checkver = { github = "datadiode/winmerge2011" }
+url_template = { x64 = "https://github.com/datadiode/winmerge2011/releases/download/0.$version/WinMerge_0.$version_x64_setup.cpl#/dl.7z" }

@@ -12,3 +12,4 @@ sha256 = "aae5af1cfc952289a27f3429f443ae6e809df952315e351ac98f400300b9a44b"
 
 [autoupdate]
 checkver = { github = "buildpacks/pack" }
+url_template = { x64 = "https://github.com/buildpacks/pack/releases/download/v$version/pack-v$version-windows.zip" }

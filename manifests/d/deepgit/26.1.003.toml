@@ -14,4 +14,4 @@ url = "https://downloads.syntevo.com/downloads/deepgit/deepgit-26_1_003-win-port
 sha256 = "1f443fbd12ba3e27b77502bc6274faa8e43cd874dd44141cc02fa3bbf7d2779e"
 
 [autoupdate]
-checkver = "{\"regex\":\"Version ([\\\\d.]+)\",\"url\":\"https://www.syntevo.com/deepgit/download/\"}"
+checkver = { url = "https://www.syntevo.com/deepgit/download/", regex = "Version ([\\d.]+)" }

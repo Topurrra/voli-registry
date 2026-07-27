@@ -14,3 +14,4 @@ sha256 = "c26c916fce875fd03b76454cac093f15f395d9821f7ef9015e03a30f15659356"
 
 [autoupdate]
 checkver = { github = "yakyak/yakyak" }
+url_template = { x64 = "https://github.com/yakyak/yakyak/releases/download/v$version/yakyak-$version-win32-x64.zip" }

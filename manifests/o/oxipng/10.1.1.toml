@@ -13,3 +13,4 @@ sha256 = "0f57b33abb46c76258ac8e20be604a48208141d514bc2936b5200ed626976dd8"
 
 [autoupdate]
 checkver = { github = "oxipng/oxipng" }
+url_template = { x64 = "https://github.com/oxipng/oxipng/releases/download/v$version/oxipng-$version-x86_64-pc-windows-msvc.zip" }

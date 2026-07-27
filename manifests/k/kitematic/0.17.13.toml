@@ -13,3 +13,4 @@ sha256 = "cb7f1de32e2c4b6ba46eda237779e9f66082d5ad8929f591ad88ac5747972603"
 
 [autoupdate]
 checkver = { github = "docker/kitematic" }
+url_template = "https://github.com/docker/kitematic/releases/download/v$version/Kitematic-$version-Windows.zip"

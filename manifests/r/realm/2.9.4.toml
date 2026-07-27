@@ -12,3 +12,4 @@ sha256 = "cff11b55f41753e525c5a76c5726bbc9d8cbffb106ea514952047aae960d6464"
 
 [autoupdate]
 checkver = { github = "zhboner/realm" }
+url_template = { x64 = "https://github.com/zhboner/realm/releases/download/v$version/realm-x86_64-pc-windows-msvc.tar.gz" }

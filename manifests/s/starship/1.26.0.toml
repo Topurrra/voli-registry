@@ -18,3 +18,4 @@ PATH = "{dir}"
 
 [autoupdate]
 checkver = { github = "starship/starship" }
+url_template = { x64 = "https://github.com/starship/starship/releases/download/v$version/starship-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/starship/starship/releases/download/v$version/starship-aarch64-pc-windows-msvc.zip" }

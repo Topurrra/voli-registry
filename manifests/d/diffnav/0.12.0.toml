@@ -16,3 +16,4 @@ sha256 = "d16c19ef16bc4fbd5332860f528929909d31099ad782be59e9cc191d33ee46c1"
 
 [autoupdate]
 checkver = { github = "dlvhdr/diffnav" }
+url_template = { x64 = "https://github.com/dlvhdr/diffnav/releases/download/v$version/diffnav_Windows_x86_64.zip", arm64 = "https://github.com/dlvhdr/diffnav/releases/download/v$version/diffnav_Windows_arm64.zip" }

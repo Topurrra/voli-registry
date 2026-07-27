@@ -12,3 +12,4 @@ sha256 = "f7f80620ce6d14f4995f0de6f98e3ef18ad29496db01899571152ee3311229f9"
 
 [autoupdate]
 checkver = "version ([\\d.]+)"
+url_template = { x64 = "https://mediaarea.net/download/binary/mediainfo/$version/MediaInfo_CLI_$version_Windows_x64.zip" }

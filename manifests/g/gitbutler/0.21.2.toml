@@ -14,4 +14,5 @@ sha256 = "ae6df7d50642c2483bf80d39ba7ed4f9600b98dac5471a1b2824a38af4a5e763"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"releases/release/([\\\\d.-]+)-(?<Build>[\\\\d]+)/windows\",\"url\":\"https://app.gitbutler.com/api/downloads?limit=1&channel=release\"}"
+checkver = { url = "https://app.gitbutler.com/api/downloads?limit=1&channel=release", regex = "releases/release/([\\d.-]+)-(?<Build>[\\d]+)/windows" }
+url_template = { x64 = "https://releases.gitbutler.com/releases/release/$version-$matchBuild/windows/x86_64/GitButler_$version_x64_en-US.msi" }

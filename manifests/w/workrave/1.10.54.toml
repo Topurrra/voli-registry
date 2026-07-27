@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "rcaelers/workrave" }
+url_template = "https://github.com/rcaelers/workrave/releases/download/v$underscoreVersion/workrave-win32-v$version.exe"

@@ -16,3 +16,4 @@ sha256 = "bec9d445ed45bad10df399336b52f56c1c6302f12dbd6b81abb159cc0e37af78"
 
 [autoupdate]
 checkver = { github = "jftuga/less-Windows" }
+url_template = { x64 = "https://github.com/jftuga/less-Windows/releases/download/less-v$version/less-x64.zip", arm64 = "https://github.com/jftuga/less-Windows/releases/download/less-v$version/less-arm64.zip" }

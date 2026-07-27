@@ -12,3 +12,4 @@ sha256 = "062834458ab700ffb3a9fbb02099762efc9f48a62e1a88b835674d729af03ddc"
 
 [autoupdate]
 checkver = { github = "vale-cli/vale" }
+url_template = { x64 = "https://github.com/vale-cli/vale/releases/download/v$version/vale_$version_Windows_64-bit.zip" }

@@ -13,3 +13,4 @@ sha256 = "9a18793800b91d5be7b851513672cd9a81a985a5a5dfec5611c2318e8ad4140a"
 
 [autoupdate]
 checkver = { github = "ispc/ispc" }
+url_template = "https://github.com/ispc/ispc/releases/download/v$version/ispc-v$version-windows.zip"

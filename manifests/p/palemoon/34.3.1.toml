@@ -13,4 +13,5 @@ url = "https://rm-eu.palemoon.org/release/Palemoon-Portable-34.3.1.win64.exe#/pa
 sha256 = "00579a7c172f7f95b9c9a1743e1f6db237638b771ac85149cf769ba13b9e9154"
 
 [autoupdate]
-checkver = "{\"regex\":\"Hashes for release ([\\\\d.]+)\",\"url\":\"https://www.palemoon.org/download.shtml\"}"
+checkver = { url = "https://www.palemoon.org/download.shtml", regex = "Hashes for release ([\\d.]+)" }
+url_template = { x64 = "https://rm-eu.palemoon.org/release/Palemoon-Portable-$version.win64.exe#/palemoon.7z" }

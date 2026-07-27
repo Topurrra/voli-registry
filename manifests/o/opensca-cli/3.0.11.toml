@@ -12,3 +12,4 @@ sha256 = "534f3e50d246ffb77b2ef9f43bf1c15fd7f882c39e90374d942aa589fe739893"
 
 [autoupdate]
 checkver = { github = "XmirrorSecurity/OpenSCA-cli" }
+url_template = { x64 = "https://github.com/XmirrorSecurity/OpenSCA-cli/releases/download/v$version/opensca-cli-v$version-windows-amd64.zip" }

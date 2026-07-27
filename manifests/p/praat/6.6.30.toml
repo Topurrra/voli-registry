@@ -17,3 +17,4 @@ sha256 = "ab74942fbf569a4df1c02fb0a384bfc2ed7009cf80dc87ea05f2e56515ad73c9"
 
 [autoupdate]
 checkver = { github = "praat/praat.github.io" }
+url_template = { x64 = "https://github.com/praat/praat.github.io/releases/download/v$version/praat$cleanVersion_win-x64v3.zip", arm64 = "https://github.com/praat/praat.github.io/releases/download/v$version/praat$cleanVersion_win-arm64.zip" }

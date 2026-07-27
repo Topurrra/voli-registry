@@ -13,3 +13,4 @@ sha256 = "59837c2e7c911099aca1cc46b663bcdc5a949fd3e9fbbaf34fc73e5d5d71007c"
 
 [autoupdate]
 checkver = { github = "chmln/sd" }
+url_template = { x64 = "https://github.com/chmln/sd/releases/download/v$version/sd-v$version-x86_64-pc-windows-msvc.zip" }

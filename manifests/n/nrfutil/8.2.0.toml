@@ -1,0 +1,21 @@
+name = "nrfutil"
+version = "8.2.0"
+description = "A unified command line utility for Nordic products."
+homepage = "https://www.nordicsemi.com/Products/Development-tools/nRF-Util"
+license = "LicenseRef-Nordic-1-Clause"
+kind = "app"
+extract_dir = "nrfutil-x86_64-pc-windows-msvc-8.2.0\\data"
+bin = ["bin\\nrfutil.exe"]
+persist = ["bin", "installed", "logs", "lib", "registry", "share"]
+
+[source.x64]
+url = "https://files.nordicsemi.com/artifactory/swtools/external/nrfutil/packages/nrfutil/nrfutil-x86_64-pc-windows-msvc-8.2.0.tar.gz"
+sha256 = "a0284c4f9f7cd58185c9b6cb184f9456c6de701c27cc63c89a8260b4c649bcce"
+
+[env]
+PATH = "{dir}\\bin"
+NRFUTIL_HOME = "{dir}"
+
+[autoupdate]
+checkver = { url = "https://files.nordicsemi.com/artifactory/swtools/external/nrfutil/index/bootstrap.json", regex = "windows-msvc-([\\d.]+)\\.tar\\.gz" }
+url_template = { x64 = "https://files.nordicsemi.com/artifactory/swtools/external/nrfutil/packages/nrfutil/nrfutil-x86_64-pc-windows-msvc-$version.tar.gz" }

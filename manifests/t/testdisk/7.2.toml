@@ -13,4 +13,5 @@ url = "https://www.cgsecurity.org/testdisk-7.2.win.zip"
 sha256 = "0718a4529611e5f8b6d5fcb873279d23a0b212b18bcf72291f3b47351bfc7126"
 
 [autoupdate]
-checkver = "{\"regex\":\"TestDisk &amp; PhotoRec\\\\s+([\\\\d.]+)\\\\s+\\\\(\",\"url\":\"https://www.cgsecurity.org/wiki/TestDisk_Download\"}"
+checkver = { url = "https://www.cgsecurity.org/wiki/TestDisk_Download", regex = "TestDisk &amp; PhotoRec\\s+([\\d.]+)\\s+\\(" }
+url_template = "https://www.cgsecurity.org/testdisk-$version.win.zip"

@@ -14,3 +14,4 @@ sha256 = "e7a3f924bc265e926e63e1ea771d1379448b58c2d0671b0f8ddadef1aa6eda0e"
 
 [autoupdate]
 checkver = { github = "processing/processing" }
+url_template = { x64 = "https://github.com/processing/processing/releases/download/processing-$matchRev-$version/processing-$version-windows64.zip" }

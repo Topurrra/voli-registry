@@ -12,3 +12,4 @@ sha256 = "17ab4657b9482ffa063d88d367598208060400af91c2c3e2b04723f98b418ad1"
 
 [autoupdate]
 checkver = { github = "bbc/audiowaveform" }
+url_template = { x64 = "https://github.com/bbc/audiowaveform/releases/download/$version/audiowaveform-$version-win64.zip" }

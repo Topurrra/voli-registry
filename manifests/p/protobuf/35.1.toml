@@ -12,3 +12,4 @@ sha256 = "5d3ff218d7d91eea95f7569bcb5a98f3030f8996d44151279d9772edcff76082"
 
 [autoupdate]
 checkver = { github = "protocolbuffers/protobuf" }
+url_template = { x64 = "https://github.com/protocolbuffers/protobuf/releases/download/v$version/protoc-$version-win64.zip" }

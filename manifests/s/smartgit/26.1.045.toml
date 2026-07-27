@@ -14,4 +14,4 @@ url = "https://download.smartgit.dev/smartgit/smartgit-26_1_045-win-portable.7z"
 sha256 = "d03257a679cd4025223ee477bf36577daee2247bab84200e0a95f53a768aabe1"
 
 [autoupdate]
-checkver = "{\"regex\":\">Version ([\\\\d.]+)<\",\"url\":\"https://www.smartgit.dev/download/\"}"
+checkver = { url = "https://www.smartgit.dev/download/", regex = ">Version ([\\d.]+)<" }

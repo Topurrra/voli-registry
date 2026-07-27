@@ -12,3 +12,4 @@ sha256 = "9e257ec401597086702c5045a68a9296bc31a58e240bb64f4dc7973c7f66c05e"
 
 [autoupdate]
 checkver = { github = "wasmCloud/wasmCloud" }
+url_template = { x64 = "https://github.com/wasmCloud/wasmCloud/releases/download/v$version/wash-x86_64-pc-windows-msvc.zip" }

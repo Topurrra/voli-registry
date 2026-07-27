@@ -10,5 +10,10 @@ bin = ["trufflehog.exe"]
 url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.96.0/trufflehog_3.96.0_windows_amd64.tar.gz"
 sha256 = "fbf918c52a1f29be96344e1c4696fe019cfc34fb1184fab31cf3e8347917b43a"
 
+[source.arm64]
+url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.96.0/trufflehog_3.96.0_windows_arm64.tar.gz"
+sha256 = "e8a8a2db3e479c420b6c12b0740e4ff013ebc672b35a730637937b56eb55562e"
+
 [autoupdate]
 checkver = { github = "trufflesecurity/trufflehog" }
+url_template = { x64 = "https://github.com/trufflesecurity/trufflehog/releases/download/v$version/trufflehog_$version_windows_amd64.tar.gz", arm64 = "https://github.com/trufflesecurity/trufflehog/releases/download/v$version/trufflehog_$version_windows_arm64.tar.gz" }

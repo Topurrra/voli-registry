@@ -12,3 +12,4 @@ sha256 = "76e160ceec35834c73ada6e4e484416d13aed4b64cbc7c74c5cca53a7ef60e41"
 
 [autoupdate]
 checkver = { github = "ghdl/ghdl" }
+url_template = { x64 = "https://github.com/ghdl/ghdl/releases/download/v$version/ghdl-mcode-$version-ucrt64.zip" }

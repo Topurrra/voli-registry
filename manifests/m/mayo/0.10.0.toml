@@ -14,3 +14,4 @@ sha256 = "4cd2df02e0d5b113873515b0e222e9944629d432fe731537204a119c3b6d74b2"
 
 [autoupdate]
 checkver = { github = "fougue/mayo" }
+url_template = { x64 = "https://github.com/fougue/mayo/releases/download/v$version/Mayo-$version-win64-binaries.zip" }

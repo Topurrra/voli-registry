@@ -12,3 +12,4 @@ sha256 = "2f828d996891ab6d106af72048b0625e853a8f374ba6cc6592c11a400fafc109"
 
 [autoupdate]
 checkver = { github = "fugue/regula" }
+url_template = { x64 = "https://github.com/fugue/regula/releases/download/v$version/regula_$version_Windows_x86_64.zip" }

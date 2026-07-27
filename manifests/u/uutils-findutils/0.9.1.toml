@@ -12,3 +12,4 @@ sha256 = "3cd96c5073a4fa2d913365a179327653bd038c646d4c613e93f8a4dc62e82be6"
 
 [autoupdate]
 checkver = { github = "uutils/findutils" }
+url_template = { x64 = "https://github.com/uutils/findutils/releases/download/$version/findutils-x86_64-pc-windows-msvc.zip" }

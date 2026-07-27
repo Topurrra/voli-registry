@@ -13,3 +13,4 @@ sha256 = "c80f78ba30e715079a00a14c2e7c9f533c58e6c8fdbc27f2d32b3d7813f9d132"
 
 [autoupdate]
 checkver = "Current Version ([\\d.]+)\\s+\\("
+url_template = { x64 = "https://www.argyllcms.com/Argyll_V$version_win64_exe.zip" }

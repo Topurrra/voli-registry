@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Spagett1/PineFlash" }
+url_template = { x64 = "https://github.com/Spagett1/PineFlash/releases/download/$version/pineflash-$version-win64.exe" }

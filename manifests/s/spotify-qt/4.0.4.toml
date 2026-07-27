@@ -13,3 +13,4 @@ sha256 = "c1d81bde4608910207b5e651a70e1bafcc835b611b4bd472f6c817186d02c5c6"
 
 [autoupdate]
 checkver = { github = "kraxarn/spotify-qt" }
+url_template = { x64 = "https://github.com/kraxarn/spotify-qt/releases/download/v$matchHead/spotify-qt-v$version-win64.zip" }

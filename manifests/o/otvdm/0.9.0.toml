@@ -13,3 +13,4 @@ sha256 = "842b11aed5fa81f3e1d4272e0ee7d37f1a5a8f936de825309dda672835e16fd4"
 
 [autoupdate]
 checkver = { github = "otya128/winevdm" }
+url_template = { x64 = "https://github.com/otya128/winevdm/releases/download/v$version/otvdm-v$version.zip" }

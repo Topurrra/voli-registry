@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Sanakan8472/copy-dialog-lunar-lander" }
+url_template = "https://github.com/Sanakan8472/copy-dialog-lunar-lander/releases/download/v$version/CopyDialogLunarLander.msi"

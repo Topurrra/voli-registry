@@ -15,3 +15,4 @@ kubectl = "*"
 
 [autoupdate]
 checkver = { github = "kubernetes-sigs/kui" }
+url_template = { x64 = "https://github.com/kubernetes-sigs/kui/releases/download/v$version/Kui-win32-x64.zip" }

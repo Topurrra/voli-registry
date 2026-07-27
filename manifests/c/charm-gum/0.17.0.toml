@@ -13,3 +13,4 @@ sha256 = "b2be80531c6babc8d4e0e6ca95773d58118a2e1582ae006aace08dbc55503072"
 
 [autoupdate]
 checkver = { github = "charmbracelet/gum" }
+url_template = { x64 = "https://github.com/charmbracelet/gum/releases/download/v$version/gum_$version_Windows_x86_64.zip" }

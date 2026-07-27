@@ -4,6 +4,7 @@ description = "Minishift is a tool that helps you run OpenShift locally by runni
 homepage = "https://www.openshift.org/minishift"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "minishift-1.34.3-windows-amd64"
 bin = ["minishift.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "c86ff71252aa40f06ee3ee95964b3525a4e8922d7ec9c639e2c0624317507619"
 
 [autoupdate]
 checkver = { github = "minishift/minishift" }
+url_template = { x64 = "https://github.com/minishift/minishift/releases/download/v$version/minishift-$version-windows-amd64.zip" }

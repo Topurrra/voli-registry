@@ -14,3 +14,4 @@ sha256 = "8ebe97c21c866c0290544bbdc8ede76f0c48a004574e9c599bb75fbc36672c3a"
 
 [autoupdate]
 checkver = { github = "Terminals-Origin/Terminals" }
+url_template = "https://github.com/Terminals-Origin/Terminals/releases/download/$version/Terminals_v$version.zip"

@@ -1,0 +1,22 @@
+name = "pkgconf"
+version = "3.0.4"
+description = "Package compiler and linker metadata toolkit."
+homepage = "https://github.com/pkgconf/pkgconf"
+license = "ISC"
+kind = "app"
+extract_dir = "PFiles64\\pkgconf 3.0.4"
+bin = ["bomtool.exe", "pccritic.exe", "pkgconf.exe", "pkg-config.exe", "spdxtool.exe"]
+
+[source.x64]
+url = "https://github.com/pkgconf/pkgconf/releases/download/pkgconf-3.0.4/pkgconf-x64-3.0.4.msi"
+sha256 = "9343ecb0d28dc94abf6f632842b0229cba5742d3aa6f91b7d2bf59ae12dfbb1f"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/pkgconf/pkgconf/releases/download/pkgconf-3.0.4/pkgconf-arm64-3.0.4.msi"
+sha256 = "b3055b3f91c1cf28011520cb259c018c8186d6d170037e62ca3024af0cbec86b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "pkgconf/pkgconf" }
+url_template = { x64 = "https://github.com/pkgconf/pkgconf/releases/download/pkgconf-$version/pkgconf-x64-$version.msi", arm64 = "https://github.com/pkgconf/pkgconf/releases/download/pkgconf-$version/pkgconf-arm64-$version.msi" }

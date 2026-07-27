@@ -12,3 +12,4 @@ sha256 = "d4de347c53e2d25f9663780c93fdf26d156284c64d6a5ec4bcdb829f9994f6f3"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/google/magika/releases\",\"jsonpath\":\"$[*].tag_name\",\"regex\":\"\\\"cli/(?:v|V)?([\\\\d.-]+)\\\"\"}"
+url_template = { x64 = "https://github.com/google/magika/releases/download/cli/v$version/magika-cli-x86_64-pc-windows-msvc.zip" }

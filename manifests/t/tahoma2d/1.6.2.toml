@@ -14,3 +14,4 @@ sha256 = "54e57a61682c12ba5b08359fb970a96b9430db612f20e65076f0a4f5cb42cdb8"
 
 [autoupdate]
 checkver = { github = "tahoma2d/tahoma2d" }
+url_template = { x64 = "https://github.com/tahoma2d/tahoma2d/releases/download/v$version/Tahoma2D-portable-win.zip" }

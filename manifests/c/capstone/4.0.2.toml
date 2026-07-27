@@ -13,3 +13,4 @@ sha256 = "eae21d2a5baeed5de40ff07bd4baca5195cbf63b16919bf4e0ca2e4a4eb14bbc"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/capstone-engine/capstone/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"capstone-(?<version>[\\\\d.]+)-win64\\\\.zip\"}"
+url_template = { x64 = "https://github.com/capstone-engine/capstone/releases/download/$version/capstone-$version-win64.zip" }

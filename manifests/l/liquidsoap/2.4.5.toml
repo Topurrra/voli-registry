@@ -13,3 +13,4 @@ sha256 = "17c29c9f662db11ced6b85e807f6038e15e32b76f30f9695506905879a43f4b6"
 
 [autoupdate]
 checkver = { github = "savonet/liquidsoap" }
+url_template = { x64 = "https://github.com/savonet/liquidsoap/releases/download/v$version/liquidsoap-$version-win64.zip" }

@@ -13,3 +13,4 @@ sha256 = "185ca503ead8f0348daa79c002469e5eb324473c39452f29b5f70b1c1b4c8503"
 
 [autoupdate]
 checkver = { github = "grafana/k6" }
+url_template = { x64 = "https://github.com/grafana/k6/releases/download/v$version/k6-v$version-windows-amd64.zip" }

@@ -12,3 +12,4 @@ sha256 = "0bc420262a583a06e41418547a151803d27739d5e6ccb79f0f1939e902e667ac"
 
 [autoupdate]
 checkver = { github = "benbuck/rbtray" }
+url_template = { x64 = "https://github.com/benbuck/rbtray/releases/download/v$version/x64.zip" }

@@ -14,3 +14,4 @@ sha256 = "22375e275ec42d96de1d3b8e9ea4ed86d2a3505c4d0ffcbd1af67aa4003e5e4d"
 
 [autoupdate]
 checkver = { github = "sqlitebrowser/sqlitebrowser" }
+url_template = { x64 = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v$version/DB.Browser.for.SQLite-v$version-win64.zip" }

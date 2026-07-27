@@ -13,4 +13,4 @@ sha256 = "5564abf832bcb92cefe7209cb8a583c462dbf8ab3652697634cd178324352616"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"<font size=\\\"2\\\">([\\\\d.]+)</font>\",\"url\":\"https://www.ezbsystems.com/ultraiso/download.htm\"}"
+checkver = { url = "https://www.ezbsystems.com/ultraiso/download.htm", regex = "<font size=\"2\">([\\d.]+)</font>" }

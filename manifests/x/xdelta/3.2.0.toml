@@ -13,3 +13,4 @@ sha256 = "af8ef036cb077a48df080c9a8ac1be4a6e7511c32d11f8bec89b6803a9e52576"
 
 [autoupdate]
 checkver = { github = "jmacd/xdelta" }
+url_template = { x64 = "https://github.com/jmacd/xdelta/releases/download/v$version/xdelta3-$version-windows-x86_64.zip" }

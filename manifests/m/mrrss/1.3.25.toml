@@ -17,3 +17,4 @@ sha256 = "0e5b3bb0f2dfc2078feb1e0eddef50698af0581d0ac7f7d0783f13aa802ed71f"
 
 [autoupdate]
 checkver = { github = "WCY-dt/MrRSS" }
+url_template = { x64 = "https://github.com/WCY-dt/MrRSS/releases/download/v$version/MrRSS-$version-windows-amd64-portable.zip", arm64 = "https://github.com/WCY-dt/MrRSS/releases/download/v$version/MrRSS-$version-windows-arm64-portable.zip" }

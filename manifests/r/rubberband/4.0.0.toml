@@ -13,3 +13,4 @@ sha256 = "f2d47fc64dbb42f6cc62edf7933ac4fa89d8f0ef8b9cf97b6afc263a7fe05644"
 
 [autoupdate]
 checkver = "rubberband-([\\d.]+)-gpl-executable-windows"
+url_template = "https://breakfastquay.com/files/releases/rubberband-$version-gpl-executable-windows.zip"

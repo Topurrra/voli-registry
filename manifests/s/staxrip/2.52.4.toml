@@ -14,3 +14,4 @@ sha256 = "bf9520bbc8c6023846ea240a26caeb5a4aa499fa6bfc3bba6484994d7829d293"
 
 [autoupdate]
 checkver = { github = "staxrip/staxrip" }
+url_template = { x64 = "https://github.com/staxrip/staxrip/releases/download/v$version/StaxRip-v$version-x64.7z" }

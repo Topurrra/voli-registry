@@ -16,3 +16,4 @@ sha256 = "c80723d4720fa3917683a8ca806a2a17703aa33b8978322fb6f0e0da18038779"
 
 [autoupdate]
 checkver = { github = "LGUG2Z/komorebi" }
+url_template = { x64 = "https://github.com/LGUG2Z/komorebi/releases/download/v$version/komorebi-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/LGUG2Z/komorebi/releases/download/v$version/komorebi-$version-aarch64-pc-windows-msvc.zip" }

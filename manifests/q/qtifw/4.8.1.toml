@@ -11,4 +11,5 @@ url = "https://download.qt.io/official_releases/qt-installer-framework/4.8.1/QtI
 sha256 = "b0a7c6816dfaff7d571c9e5350fc08952f12022be87a28f6d8d36a78428c6210"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+)/\\\">[\\\\d.]+\",\"url\":\"https://download.qt.io/official_releases/qt-installer-framework/?C=M;O=D\"}"
+checkver = { url = "https://download.qt.io/official_releases/qt-installer-framework/?C=M;O=D", regex = "([\\d.]+)/\">[\\d.]+" }
+url_template = { x64 = "https://download.qt.io/official_releases/qt-installer-framework/$version/QtInstallerFramework-windows-x64-$version.exe#/dl.7z" }

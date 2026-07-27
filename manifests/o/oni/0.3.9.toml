@@ -13,3 +13,4 @@ sha256 = "da3bfd8cc9c3c86eada5e72740c435052eaba2bc638d3daa6c12b59d2b11f8b2"
 
 [autoupdate]
 checkver = { github = "onivim/oni" }
+url_template = { x64 = "https://github.com/onivim/oni/releases/download/v$version/Oni-$version-win.zip" }

@@ -12,3 +12,4 @@ sha256 = "0be4148fc594491e24b259da3b729eafbcc4ebabd30df9a554a1679aaa200a81"
 
 [autoupdate]
 checkver = "Stable version:\\s+([\\d.]+)"
+url_template = { x64 = "https://waterlander.net/dos2unix/files/dos2unix-$version-win64.zip" }

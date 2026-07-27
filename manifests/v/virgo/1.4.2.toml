@@ -13,3 +13,4 @@ sha256 = "bc9f698daa1a7c19c933f90dd7382af0f7fec844a01f38baa428d3bae318c739"
 
 [autoupdate]
 checkver = { github = "henkman/virgo" }
+url_template = "https://github.com/henkman/virgo/releases/download/v.$version/virgo.zip"

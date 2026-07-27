@@ -16,3 +16,4 @@ sha256 = "4701a880e6cf441a7b24bb9a0bd5f156fdbcd35aee5fa6663c3f08e85f2234fd"
 
 [autoupdate]
 checkver = { github = "hashicorp/terraform-ls" }
+url_template = { x64 = "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_windows_amd64.zip", arm64 = "https://releases.hashicorp.com/terraform-ls/$version/terraform-ls_$version_windows_arm64.zip" }

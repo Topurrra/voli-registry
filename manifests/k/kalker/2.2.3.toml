@@ -1,0 +1,17 @@
+name = "kalker"
+version = "2.2.3"
+description = "Calculator with math syntax that supports user-defined variables and functions, complex numbers, and estimation of derivatives and integrals"
+homepage = "https://kalker.xyz"
+license = "MIT"
+kind = "app"
+extract_dir = "kalker"
+bin = ["kalker.exe"]
+
+[source.x64]
+url = "https://github.com/PaddiM8/kalker/releases/download/v2.2.3/kalker-windows.msi"
+sha256 = "f7575c69a08a4bf41ebca66a568d82702e64856d2f11601659bd84cf7a7aded3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "PaddiM8/kalker" }
+url_template = { x64 = "https://github.com/PaddiM8/kalker/releases/download/v$version/kalker-windows.msi" }

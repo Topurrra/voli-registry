@@ -13,3 +13,4 @@ sha256 = "d8e4d772d26cd8006ef0ad0bc82eb191b53c68677d1ae2f42506d74cbbbea606"
 
 [autoupdate]
 checkver = { github = "nihui/rife-ncnn-vulkan" }
+url_template = { x64 = "https://github.com/nihui/rife-ncnn-vulkan/releases/download/$version/rife-ncnn-vulkan-$version-windows.zip" }

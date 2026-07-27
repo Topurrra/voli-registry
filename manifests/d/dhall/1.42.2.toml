@@ -12,3 +12,4 @@ sha256 = "c2447b8406d11611f43c47366fc93baa8061961736b46b9822077625cbd8ff9e"
 
 [autoupdate]
 checkver = { github = "dhall-lang/dhall-haskell" }
+url_template = { x64 = "https://github.com/dhall-lang/dhall-haskell/releases/download/$version/dhall-$version-x86_64-windows.zip" }

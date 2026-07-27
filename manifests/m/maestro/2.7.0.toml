@@ -16,3 +16,4 @@ MAESTRO_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "mobile-dev-inc/Maestro" }
+url_template = "https://github.com/mobile-dev-inc/Maestro/releases/download/cli-$version/maestro.zip"

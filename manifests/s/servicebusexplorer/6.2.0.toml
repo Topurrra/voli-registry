@@ -14,3 +14,4 @@ sha256 = "e5377aa0eb818989b99eb474a51cbdb1d7216a671384857c1e726438c0436725"
 
 [autoupdate]
 checkver = { github = "paolosalvatori/ServiceBusExplorer" }
+url_template = "https://github.com/paolosalvatori/ServiceBusExplorer/releases/download/$version/servicebusexplorer.$version.nupkg"

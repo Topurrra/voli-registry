@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "([\\d.]+)</strong>\\s"
+url_template = "https://bluetoothinstaller.com/bluetooth-command-line-tools/BluetoothCLTools-$version.exe"

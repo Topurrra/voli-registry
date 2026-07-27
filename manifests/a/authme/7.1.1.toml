@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Levminer/authme" }
+url_template = { x64 = "https://github.com/Levminer/authme/releases/download/$version/authme-$version-windows-x64.msi" }

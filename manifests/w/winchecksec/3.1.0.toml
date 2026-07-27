@@ -13,3 +13,4 @@ sha256 = "487c14d941f94d8c1098f0da85144f1ecb40fc3e7f39dbaad16c8eab909fff25"
 
 [autoupdate]
 checkver = { github = "trailofbits/winchecksec" }
+url_template = { x64 = "https://github.com/trailofbits/winchecksec/releases/download/v$version/windows.x64.Release.zip" }

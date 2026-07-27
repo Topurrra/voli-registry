@@ -15,3 +15,4 @@ sha256 = "20723da50684c6a6581b36f8c7a90e9d63baf0e4848e0b781a343ad1791ab2a0"
 
 [autoupdate]
 checkver = { github = "i2p-zero/i2p-zero" }
+url_template = "https://github.com/i2p-zero/i2p-zero/releases/download/v$version/i2p-zero-win-gui.v$version.zip"

@@ -12,4 +12,5 @@ sha256 = "4ba1e23a4a821cb040bf5e8242d3ef43255f25f9c6d496b6b739f8ef9c1908a3"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"NeoAxisLauncher-([\\\\d.]+)\\\\.exe\",\"url\":\"https://www.neoaxis.com/neoaxis/downloads\"}"
+checkver = { url = "https://www.neoaxis.com/neoaxis/downloads", regex = "NeoAxisLauncher-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://www.neoaxis.com/downloads/NeoAxisLauncher-$version.exe" }

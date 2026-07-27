@@ -16,3 +16,4 @@ sha256 = "5f7356bdd186a2af97e3dcd4422b481fd107ae0867cc04a2a8c150441ccd15b6"
 
 [autoupdate]
 checkver = { github = "astral-sh/ruff" }
+url_template = { x64 = "https://github.com/astral-sh/ruff/releases/download/$version/ruff-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/astral-sh/ruff/releases/download/$version/ruff-aarch64-pc-windows-msvc.zip" }

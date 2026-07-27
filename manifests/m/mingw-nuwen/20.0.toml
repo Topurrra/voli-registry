@@ -4,6 +4,7 @@ description = "Nuwen's MinGW Distro with GCC, GDB, make, binutils, coreutils, 7z
 homepage = "https://nuwen.net/mingw.html"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "MinGW"
 
 [source.x64]
 url = "https://nuwen.net/files/mingw/mingw-20.0.exe#/dl.7z"
@@ -16,3 +17,4 @@ C_INCLUDE_PATH = "{dir}\\include;{dir}\\include\\freetype2"
 
 [autoupdate]
 checkver = "{\"regex\":\"mingw-([\\\\d.]+).exe\"}"
+url_template = { x64 = "https://nuwen.net/files/mingw/mingw-$version.exe#/dl.7z" }

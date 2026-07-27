@@ -14,3 +14,4 @@ sha256 = "2f18d6304ec643282df62fbdc9d4391b364e03b94d5582a2e82f3fe0ea506515"
 
 [autoupdate]
 checkver = { github = "contour-terminal/contour" }
+url_template = { x64 = "https://github.com/contour-terminal/contour/releases/download/v$version/contour-$version-win64.zip" }

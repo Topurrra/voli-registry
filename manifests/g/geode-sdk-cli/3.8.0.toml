@@ -12,3 +12,4 @@ sha256 = "9913d6688cc1e2524ebeb916ec979f674efc3fa3fc83aa56189ec8b5cee244bf"
 
 [autoupdate]
 checkver = { github = "geode-sdk/cli" }
+url_template = { x64 = "https://github.com/geode-sdk/cli/releases/download/v$version/geode-cli-v$version-win.zip" }

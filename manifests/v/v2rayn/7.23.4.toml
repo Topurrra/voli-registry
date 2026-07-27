@@ -18,3 +18,4 @@ sha256 = "0ec4693c64fd2696fabd8b1782465275832fa80c8f6073b9211d49a33076acc1"
 
 [autoupdate]
 checkver = { github = "2dust/v2rayN" }
+url_template = { x64 = "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-64.zip", arm64 = "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-arm64.zip" }

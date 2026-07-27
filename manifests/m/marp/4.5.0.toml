@@ -12,3 +12,4 @@ sha256 = "b1fedb3d0879c667351175222082ec82dd5f8f389d6dd8cdc5543c508cd4e7ec"
 
 [autoupdate]
 checkver = { github = "marp-team/marp-cli" }
+url_template = { x64 = "https://github.com/marp-team/marp-cli/releases/download/v$version/marp-cli-v$version-win.zip" }

@@ -12,3 +12,4 @@ sha256 = "9dfbf8c33038e6b31fb359d7f8e7661e46f015067f5cc2f378c93d8bbd1a432a"
 
 [autoupdate]
 checkver = { github = "dduan/tre" }
+url_template = { x64 = "https://github.com/dduan/tre/releases/download/v$version/tre-v$version-x86_64-pc-windows-msvc.zip" }

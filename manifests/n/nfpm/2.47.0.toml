@@ -16,3 +16,4 @@ sha256 = "07aba1dafa832bc03469302b1054c1ca9dbfdf528bab4139d233cce3fe82e672"
 
 [autoupdate]
 checkver = { github = "goreleaser/nfpm" }
+url_template = { x64 = "https://github.com/goreleaser/nfpm/releases/download/v$version/nfpm_$version_Windows_x86_64.zip", arm64 = "https://github.com/goreleaser/nfpm/releases/download/v$version/nfpm_$version_Windows_arm64.zip" }

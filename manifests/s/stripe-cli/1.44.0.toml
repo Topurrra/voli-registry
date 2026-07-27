@@ -12,3 +12,4 @@ sha256 = "d3be03ae24f56aea5d0acdd483f2a699a6e7ef495971021be5933cb74a5f63a2"
 
 [autoupdate]
 checkver = { github = "stripe/stripe-cli" }
+url_template = { x64 = "https://github.com/stripe/stripe-cli/releases/download/v$version/stripe_$version_windows_x86_64.zip" }

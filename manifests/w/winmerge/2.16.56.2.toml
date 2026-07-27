@@ -18,3 +18,4 @@ sha256 = "d983329457e76a1f0252c685a5700557292870ebb959a361f7bec4be440958c9"
 
 [autoupdate]
 checkver = "WinMerge ([\\d.]+) - latest stable version"
+url_template = { x64 = "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-x64-exe.zip", arm64 = "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-ARM64-exe.zip" }

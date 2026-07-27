@@ -12,3 +12,4 @@ sha256 = "1641211da1c1fd2907aeb5665a9e70cea456ac16a7a3a49921581643983fc383"
 
 [autoupdate]
 checkver = { github = "ArcadeRenegade/SidebarDiagnostics" }
+url_template = { x64 = "https://github.com/ArcadeRenegade/SidebarDiagnostics/releases/download/v$version/Standalone.zip" }

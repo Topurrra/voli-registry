@@ -12,3 +12,4 @@ sha256 = "59647d621a87b4fc1a1bb23f4b687ce913001dccf3dfa71f57bac006ce527751"
 
 [autoupdate]
 checkver = { github = "hivemq/mqtt-cli" }
+url_template = { x64 = "https://github.com/hivemq/mqtt-cli/releases/download/v$version/mqtt-cli-$version-win.zip" }

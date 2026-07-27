@@ -14,4 +14,5 @@ sha256 = "6f5be888c1128c302181d75fdece6085d4eb94391dc92d25df48946b2dd0a630"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"gedit-x86_64-([\\\\d.]+)\\\\.msi\",\"url\":\"https://download.gnome.org/binaries/win64/gedit/\"}"
+checkver = { url = "https://download.gnome.org/binaries/win64/gedit/", regex = "gedit-x86_64-([\\d.]+)\\.msi" }
+url_template = { x64 = "https://download.gnome.org/binaries/win64/gedit/gedit-x86_64-$version.msi" }

@@ -12,3 +12,4 @@ sha256 = "ace02e0fa584d8e6639b82afdacbd352c6f3e77ab735997a0bb254a5fa8c705b"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&platform=zip&type=release\"}"
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotMemory.Console.windows-x64.$version.zip" }

@@ -12,3 +12,4 @@ sha256 = "649410e79bd2127108b89ee639612615b8e1c4fa427f987b973793430107c69f"
 
 [autoupdate]
 checkver = "([\\w\\.]+) Released"
+url_template = { x64 = "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cscope-win32/cscope-$version-win64rev1-static.zip" }

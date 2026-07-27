@@ -12,3 +12,4 @@ sha256 = "38c4b24eec64c83cce5d25ad02ea1883897cb8a10519079eb5c134d270c840e1"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/aptos-labs/aptos-core/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /aptos-cli/i)].browser_download_url\",\"regex\":\"(?i)download/aptos-cli-v([\\\\d.]+)/aptos-cli\"}"
+url_template = { x64 = "https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v$version/aptos-cli-$version-Windows-x86_64.zip" }

@@ -13,3 +13,4 @@ sha256 = "50d8a44a795a07ebef4238e22e0318a607f85464aba9f2853e0630196de1141f"
 
 [autoupdate]
 checkver = { github = "chris2511/xca" }
+url_template = "https://github.com/chris2511/xca/releases/download/RELEASE.$version/xca-portable-$version.zip"

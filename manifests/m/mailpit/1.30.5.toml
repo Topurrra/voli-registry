@@ -16,3 +16,4 @@ sha256 = "19d98b1aac56b9e1ce2c4115b97b4823b8cf1267106e9b18fbd5d2c3f739036c"
 
 [autoupdate]
 checkver = { github = "axllent/mailpit" }
+url_template = { x64 = "https://github.com/axllent/mailpit/releases/download/v$version/mailpit-windows-amd64.zip", arm64 = "https://github.com/axllent/mailpit/releases/download/v$version/mailpit-windows-arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "0577be2f68ed42c9310812592d9e3f6fc42e0bf53f15720089e64d100d3fab60"
 
 [autoupdate]
 checkver = { github = "civo/cli" }
+url_template = { x64 = "https://github.com/civo/cli/releases/download/v$version/civo-$version-windows-amd64.zip" }

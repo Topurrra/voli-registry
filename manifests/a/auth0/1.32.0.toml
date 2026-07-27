@@ -16,3 +16,4 @@ sha256 = "09cae2649437626e1b515d91954ed134edb13da16f882958d7945a6edef2be52"
 
 [autoupdate]
 checkver = { github = "auth0/auth0-cli" }
+url_template = { x64 = "https://github.com/auth0/auth0-cli/releases/download/v$version/auth0-cli_$version_Windows_x86_64.zip", arm64 = "https://github.com/auth0/auth0-cli/releases/download/v$version/auth0-cli_$version_Windows_arm64.zip" }

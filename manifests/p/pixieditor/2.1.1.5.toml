@@ -13,3 +13,4 @@ sha256 = "6215525f87f14c8e83da7aa73e6039da1c0bb2fe2e8a226696ca3c0438222ab2"
 
 [autoupdate]
 checkver = { github = "PixiEditor/PixiEditor" }
+url_template = { x64 = "https://github.com/PixiEditor/PixiEditor/releases/download/$version/PixiEditor.$version.x64-win.zip" }

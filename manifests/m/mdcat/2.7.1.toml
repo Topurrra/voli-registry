@@ -12,3 +12,4 @@ sha256 = "e140429e8892e164d42d093ef6646336bbb512fffd102baff64d009059cc6e86"
 
 [autoupdate]
 checkver = { github = "swsnr/mdcat" }
+url_template = { x64 = "https://github.com/swsnr/mdcat/releases/download/mdcat-$version/mdcat-$version-x86_64-pc-windows-msvc.zip" }

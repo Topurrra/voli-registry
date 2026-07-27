@@ -11,4 +11,5 @@ url = "https://typespec.blob.core.windows.net/dist/0.84.0/tsp-windows-x64.zip"
 sha256 = "f7dc10f9e369aa834651869ee1372d4fc94e3141b74381c6c058eeae17f3039f"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+)\",\"url\":\"https://typespec.blob.core.windows.net/dist/latest.txt\"}"
+checkver = { url = "https://typespec.blob.core.windows.net/dist/latest.txt", regex = "([\\d.]+)" }
+url_template = { x64 = "https://typespec.blob.core.windows.net/dist/$version/tsp-windows-x64.zip" }

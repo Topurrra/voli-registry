@@ -13,3 +13,4 @@ sha256 = "24b686a6948753e689a140f20b1f40f10bfd9b1cb7417e2fc884154ddb15a9ce"
 
 [autoupdate]
 checkver = "{\"url\":\"https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/maven-metadata.xml\",\"xpath\":\"/metadata/versioning/latest\"}"
+url_template = "https://openhab.jfrog.io/artifactory/libs-release-local/org/openhab/distro/openhab/$version/openhab-$version.zip"

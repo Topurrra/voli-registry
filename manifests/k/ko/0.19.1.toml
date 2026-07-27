@@ -16,3 +16,4 @@ sha256 = "7fd21854bc3bdab2f71e4927cc8e39c60bdaf99992fd4442bfee0fe84025feed"
 
 [autoupdate]
 checkver = { github = "ko-build/ko" }
+url_template = { x64 = "https://github.com/ko-build/ko/releases/download/v$version/ko_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/ko-build/ko/releases/download/v$version/ko_$version_Windows_arm64.tar.gz" }

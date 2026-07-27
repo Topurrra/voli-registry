@@ -13,3 +13,4 @@ sha256 = "27ffb63d5e2e17a829653a4c65a9412fe45fae2be56478167e3b89aaa8ffe899"
 
 [autoupdate]
 checkver = { github = "zyedidia/eget" }
+url_template = { x64 = "https://github.com/zyedidia/eget/releases/download/v$version/eget-$version-windows_amd64.zip" }

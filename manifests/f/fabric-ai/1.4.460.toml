@@ -10,5 +10,10 @@ bin = ["fabric.exe"]
 url = "https://github.com/danielmiessler/Fabric/releases/download/v1.4.460/fabric_Windows_x86_64.zip"
 sha256 = "220cc50735c63a3183d551d8b697df725fae2a60df7d9256a13f84c150300f15"
 
+[source.arm64]
+url = "https://github.com/danielmiessler/Fabric/releases/download/v1.4.460/fabric_Windows_arm64.zip"
+sha256 = "1112be219c94b015846195372729b4d16cbfeddc809b944d34bc2e2c865710d7"
+
 [autoupdate]
 checkver = { github = "danielmiessler/fabric" }
+url_template = { x64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_x86_64.zip", arm64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_arm64.zip" }

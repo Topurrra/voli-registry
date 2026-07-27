@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "sonic-visualiser/sonic-visualiser" }
+url_template = { x64 = "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v$version/sonic-visualiser-$version-win64.msi" }

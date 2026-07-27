@@ -18,3 +18,4 @@ sha256 = "7ab724a54d42074f8316f7ae5527fcebc522d710b2de035be17ce619424b8104"
 
 [autoupdate]
 checkver = { github = "xournalpp/xournalpp" }
+url_template = { x64 = "https://github.com/xournalpp/xournalpp/releases/download/v$version/xournalpp-$version-windows-portable-AMD64.zip", arm64 = "https://github.com/xournalpp/xournalpp/releases/download/v$version/xournalpp-$version-windows-portable-ARM64.zip" }

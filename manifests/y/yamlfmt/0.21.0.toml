@@ -16,3 +16,4 @@ sha256 = "c1e64d1c72ca8986bc5b8c8edd4ec89f0627804e7e08f8de9f4b484cb5cad897"
 
 [autoupdate]
 checkver = { github = "google/yamlfmt" }
+url_template = { x64 = "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_arm64.tar.gz" }

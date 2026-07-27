@@ -1,0 +1,21 @@
+name = "microsoft-coreutils-lean"
+version = "2026.6.16"
+description = "A Microsoft-maintained build of uutils/coreutils, uutils/findutils."
+homepage = "https://github.com/microsoft/coreutils"
+license = "MIT"
+kind = "app"
+bin = ["coreutils.exe", { name = "uutils", path = "coreutils.exe" }]
+
+[source.x64]
+url = "https://github.com/microsoft/coreutils/releases/download/v2026.6.16/coreutils-2026.6.16-x64.exe"
+sha256 = "f862b1aa433310420ae20f9b1384f3f974a26ba98ae37ac548061116a3ef6c62"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/microsoft/coreutils/releases/download/v2026.6.16/coreutils-2026.6.16-arm64.exe"
+sha256 = "45a1b07f5416fa7fef175e12218686eabb3192cdba75e719a4d6f5b37c7bcab3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "microsoft/coreutils" }
+url_template = { x64 = "https://github.com/microsoft/coreutils/releases/download/v$version/coreutils-$version-x64.exe", arm64 = "https://github.com/microsoft/coreutils/releases/download/v$version/coreutils-$version-arm64.exe" }

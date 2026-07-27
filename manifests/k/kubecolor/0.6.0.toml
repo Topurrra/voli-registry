@@ -16,3 +16,4 @@ sha256 = "4b88981e9dad7679bbb32d971389ea45ae0ad3a0738f78211fb4923ac73f76a4"
 
 [autoupdate]
 checkver = { github = "kubecolor/kubecolor" }
+url_template = { x64 = "https://github.com/kubecolor/kubecolor/releases/download/v$version/kubecolor_$version_windows_amd64.zip", arm64 = "https://github.com/kubecolor/kubecolor/releases/download/v$version/kubecolor_$version_windows_arm64.zip" }

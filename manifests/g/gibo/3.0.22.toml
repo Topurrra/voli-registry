@@ -16,3 +16,4 @@ sha256 = "6e5e50b347a5aba29d3105cbee68562b264b8acd0ef084264f53143d92817c11"
 
 [autoupdate]
 checkver = { github = "simonwhitaker/gibo" }
+url_template = { x64 = "https://github.com/simonwhitaker/gibo/releases/download/v$version/gibo_Windows_x86_64.zip", arm64 = "https://github.com/simonwhitaker/gibo/releases/download/v$version/gibo_Windows_arm64.zip" }

@@ -16,3 +16,4 @@ sha256 = "36d387ed67e4e3e7f8373166451aa1913930a6a9b9cd3b32ecdb3558860e3020"
 
 [autoupdate]
 checkver = { github = "SecureAuthCorp/oauth2c" }
+url_template = { x64 = "https://github.com/SecureAuthCorp/oauth2c/releases/download/v$version/oauth2c_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/SecureAuthCorp/oauth2c/releases/download/v$version/oauth2c_$version_Windows_arm64.tar.gz" }

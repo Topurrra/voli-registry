@@ -1,0 +1,19 @@
+name = "buck"
+version = "2021.01.12.01"
+description = "A high-performance build tool."
+homepage = "https://buck.build/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "tools"
+bin = ["buck.bat"]
+
+[source.x64]
+url = "https://packages.chocolatey.org/buck.2021.01.12.01.nupkg"
+sha256 = "6623ab85184b7f0e0afad2e504423f33c803ada6ce1606886e78ae0565777dd4"
+
+[depends]
+python27 = "*"
+
+[autoupdate]
+checkver = { url = "https://chocolatey.org/packages/buck", regex = "\\s+([\\d.]+)</title>" }
+url_template = "https://packages.chocolatey.org/buck.$version.nupkg"

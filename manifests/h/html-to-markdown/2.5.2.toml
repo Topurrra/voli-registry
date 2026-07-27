@@ -16,3 +16,4 @@ sha256 = "e662fd4a803e4270580963799f6b47c44c4781ce74132db7f1aff467588fb678"
 
 [autoupdate]
 checkver = { github = "JohannesKaufmann/html-to-markdown" }
+url_template = { x64 = "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v$version/html-to-markdown_Windows_x86_64.zip", arm64 = "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v$version/html-to-markdown_Windows_arm64.zip" }

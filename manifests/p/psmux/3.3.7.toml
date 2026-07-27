@@ -16,3 +16,4 @@ sha256 = "9404969b06f41acd1e7cbb56bbee074dc62389a650d8a7dbab71c8181e9b5efc"
 
 [autoupdate]
 checkver = { github = "psmux/psmux" }
+url_template = { x64 = "https://github.com/psmux/psmux/releases/download/v$version/psmux-v$version-windows-x64.zip", arm64 = "https://github.com/psmux/psmux/releases/download/v$version/psmux-v$version-windows-arm64.zip" }

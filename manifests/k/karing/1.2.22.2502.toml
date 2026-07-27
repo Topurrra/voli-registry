@@ -13,3 +13,4 @@ sha256 = "7951437a8eb33f60f47158b3ea56b4d84640a519a9e6b59784d475c5adf99b15"
 
 [autoupdate]
 checkver = { github = "KaringX/karing" }
+url_template = { x64 = "https://github.com/KaringX/karing/releases/download/v$version/karing_$version_windows_x64.zip" }

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "icechat/IceChat" }
+url_template = "https://github.com/icechat/IceChat/releases/download/$versionF/icechat-setup.exe"

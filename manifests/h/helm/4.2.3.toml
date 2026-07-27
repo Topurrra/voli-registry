@@ -17,3 +17,4 @@ sha256 = "5f444ed097688ed3abaf1d8801e21110d9bddeb6ed13939afcac302888527ab5"
 
 [autoupdate]
 checkver = { github = "helm/helm" }
+url_template = { x64 = "https://get.helm.sh/helm-v$version-windows-amd64.zip", arm64 = "https://get.helm.sh/helm-v$version-windows-arm64.zip" }

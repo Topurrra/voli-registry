@@ -12,4 +12,5 @@ url = "https://downloads.python.org/pypy/pypy2.7-v7.3.23-win64.zip"
 sha256 = "005fda0a46e0e3f34476967c27e9f7f80d8b60a1095a2cda380e5eb47c3733ef"
 
 [autoupdate]
-checkver = "{\"regex\":\"pypy(?<py>2[\\\\d.]+)-v([\\\\d.]+)\",\"url\":\"https://www.pypy.org/download.html\"}"
+checkver = { url = "https://www.pypy.org/download.html", regex = "pypy(?<py>2[\\d.]+)-v([\\d.]+)" }
+url_template = { x64 = "https://downloads.python.org/pypy/pypy$matchPy-v$version-win64.zip" }

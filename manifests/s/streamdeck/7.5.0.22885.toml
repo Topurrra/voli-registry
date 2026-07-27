@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.Manual.Version\",\"url\":\"https://gc-updates.elgato.com/windows/sd-update/final/app-version-check.json\"}"
+url_template = { x64 = "https://edge.elgato.com/egc/windows/sd/Stream_Deck_$version.msi" }

@@ -12,3 +12,4 @@ sha256 = "b32a4ac9d8d10e998ad934f0a0b83e4a46b45225312dcd8ae510a067fa91789c"
 
 [autoupdate]
 checkver = { github = "printfn/fend" }
+url_template = { x64 = "https://github.com/printfn/fend/releases/download/v$version/fend-$version-windows-x64-exe.zip" }

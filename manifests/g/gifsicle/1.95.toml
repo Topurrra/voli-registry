@@ -15,4 +15,5 @@ url = "https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.95-winarm64.
 sha256 = "cbf4ce0b8df65fb933a2d2310b10593636781edcdad67f3edb0048569bba8a62"
 
 [autoupdate]
-checkver = "{\"regex\":\"Gifsicle ([\\\\d.]+)\",\"url\":\"https://eternallybored.org/misc/gifsicle/\"}"
+checkver = { url = "https://eternallybored.org/misc/gifsicle/", regex = "Gifsicle ([\\d.]+)" }
+url_template = { x64 = "https://eternallybored.org/misc/gifsicle/releases/gifsicle-$version-win64.zip", arm64 = "https://eternallybored.org/misc/gifsicle/releases/gifsicle-$version-winarm64.zip" }

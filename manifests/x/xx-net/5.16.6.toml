@@ -15,3 +15,4 @@ sha256 = "2f51084607da766085948e29b8aa4e6bff4f4342bb9b2e9a1d0e04c71db35722"
 
 [autoupdate]
 checkver = { github = "XX-net/XX-Net" }
+url_template = "https://github.com/XX-net/XX-Net/releases/download/$version/XX-Net-win10-$version.zip"

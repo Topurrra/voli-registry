@@ -14,3 +14,4 @@ sha256 = "27cc1ce069f7947b543306d4b1ec28f31fdf71fd0941650a9a39bb6a24880a5b"
 
 [autoupdate]
 checkver = { github = "fuhsjr00/bug.n" }
+url_template = "https://github.com/fuhsjr00/bug.n/archive/v$version.zip"

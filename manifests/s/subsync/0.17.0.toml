@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/sc0ty/subsync/releases/latest\",\"jsonpath\":\"$.name\",\"regex\":\"subsync\\\\sv([\\\\d.]+)\"}"
+url_template = { x64 = "https://github.com/sc0ty/subsync/releases/download/$majorVersion.$minorVersion/subsync-$version-amd64.msi" }

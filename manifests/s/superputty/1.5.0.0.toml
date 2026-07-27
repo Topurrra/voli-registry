@@ -17,3 +17,4 @@ putty = "*"
 
 [autoupdate]
 checkver = { github = "jimradford/superputty" }
+url_template = "https://github.com/jimradford/superputty/releases/download/$version/SuperPuTTY-$version.zip"

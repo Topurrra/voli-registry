@@ -4,6 +4,7 @@ description = "LXD client"
 homepage = "https://linuxcontainers.org/lxd"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "tools"
 bin = ["lxc.exe"]
 
 [source.x64]
@@ -11,4 +12,5 @@ url = "https://packages.chocolatey.org/lxc.6.9.0.nupkg"
 sha256 = "e1ca1c69b51d60cb8efb0ec68a6e477e1c3110af4486a5d084a4ef63b53a203f"
 
 [autoupdate]
-checkver = "{\"regex\":\"LXD client ([\\\\d.]+)</title>\",\"url\":\"https://community.chocolatey.org/packages/lxc\"}"
+checkver = { url = "https://community.chocolatey.org/packages/lxc", regex = "LXD client ([\\d.]+)</title>" }
+url_template = { x64 = "https://packages.chocolatey.org/lxc.$version.nupkg" }

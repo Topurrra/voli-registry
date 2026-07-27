@@ -13,3 +13,4 @@ sha256 = "80025a24128df6652e9c6349b4aa9b6771ababd4a0fbfd939349cc4dcfb3ef1c"
 
 [autoupdate]
 checkver = { github = "ra3xdh/qucs_s" }
+url_template = { x64 = "https://github.com/ra3xdh/qucs_s/releases/download/$version/Qucs-S-$version-win64.zip" }

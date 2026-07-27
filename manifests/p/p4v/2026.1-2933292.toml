@@ -14,4 +14,4 @@ sha256 = "3f5d210db394cc78f11cfe03637c92c1bcd86c47b6156108d6887e6a7d111e9a"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"\\\\d{4}\\\\.\\\\d Update \\\\d+ \\\\((?<yyyy>\\\\d{2}(?<yy>\\\\d{2}))\\\\.(?<release>\\\\d)/(?<build>\\\\d+)\\\\)\",\"replace\":\"${yyyy}.${release}-${build}\",\"url\":\"https://help.perforce.com/helix-core/release-notes/current/p4vnotes.txt\"}"
+checkver = { url = "https://help.perforce.com/helix-core/release-notes/current/p4vnotes.txt", regex = "\\d{4}\\.\\d Update \\d+ \\((?<yyyy>\\d{2}(?<yy>\\d{2}))\\.(?<release>\\d)/(?<build>\\d+)\\)" }

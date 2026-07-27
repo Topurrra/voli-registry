@@ -14,3 +14,4 @@ sha256 = "1629b6f1cd4b866d311910b35a570493f8d52e5cb031f93776c199a14ca4c96d"
 
 [autoupdate]
 checkver = { github = "OpenVPN/easy-rsa" }
+url_template = { x64 = "https://github.com/OpenVPN/easy-rsa/releases/download/v$version/EasyRSA-$version-win64.zip" }

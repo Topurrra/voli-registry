@@ -16,3 +16,4 @@ sha256 = "fd478816fa62c137bc0c187a09b82aa37c52b8ccbd441ef715e87c02a45dbc0e"
 
 [autoupdate]
 checkver = { github = "pot-app/pot-desktop" }
+url_template = { x64 = "https://github.com/pot-app/pot-desktop/releases/download/$version/pot_$version_x64-setup.exe#/dl.7z", arm64 = "https://github.com/pot-app/pot-desktop/releases/download/$version/pot_$version_arm64-setup.exe#/dl.7z" }

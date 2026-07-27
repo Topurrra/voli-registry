@@ -12,3 +12,4 @@ sha256 = "2290667c7740a666c2d0341291538500285d737e98aa6c7c66b1217a99ebca9e"
 
 [autoupdate]
 checkver = { github = "uzxmx/pasteboard" }
+url_template = "https://github.com/uzxmx/pasteboard/releases/download/v$version/pasteboard-v$version-windows.zip"

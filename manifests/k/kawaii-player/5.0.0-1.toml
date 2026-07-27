@@ -13,3 +13,4 @@ sha256 = "7249072cdd4914a0da276fe1c2990579df486555dce5dcc6cd6f889c22e90864"
 
 [autoupdate]
 checkver = { github = "kanishka-linux/kawaii-player" }
+url_template = { x64 = "https://github.com/kanishka-linux/kawaii-player/releases/download/v$version/kawaii-player-$version.windows10.x86_64-bin.7z" }

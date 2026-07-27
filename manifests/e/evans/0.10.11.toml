@@ -16,3 +16,4 @@ sha256 = "8fab21d03b060ebd4c27ffb06a7a2dcbc600adb5db3b1656d42a18cf29ced420"
 
 [autoupdate]
 checkver = { github = "ktr0731/evans" }
+url_template = { x64 = "https://github.com/ktr0731/evans/releases/download/v$version/evans_windows_amd64.tar.gz", arm64 = "https://github.com/ktr0731/evans/releases/download/v$version/evans_windows_arm64.tar.gz" }

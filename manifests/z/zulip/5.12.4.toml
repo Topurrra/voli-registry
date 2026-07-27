@@ -13,3 +13,4 @@ sha512 = "a288eca9cb9c9b761dcc2e7e6bc627ef3e7d9b8e2e872453da1f99ca5d02aacbca6102
 
 [autoupdate]
 checkver = { github = "zulip/zulip-desktop" }
+url_template = { x64 = "https://github.com/zulip/zulip-desktop/releases/download/v$version/zulip-$version-x64.nsis.7z" }

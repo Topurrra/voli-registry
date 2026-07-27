@@ -13,3 +13,4 @@ sha256 = "8a1420e4d6c19261fdd494728c798b830e626eed8e3b0751dab26bf31ddf7bb1"
 
 [autoupdate]
 checkver = { github = "arsham/rainbow" }
+url_template = "https://github.com/arsham/rainbow/releases/download/v$version/figurine_windows_v$version.zip"

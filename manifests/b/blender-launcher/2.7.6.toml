@@ -13,3 +13,4 @@ sha256 = "623483de759fb90dab21a61b2ed783a5cb7575b6bc15ac85efff63e4f6118d34"
 
 [autoupdate]
 checkver = { github = "Victor-IX/Blender-Launcher" }
+url_template = { x64 = "https://github.com/Victor-IX/Blender-Launcher/releases/download/v$version/Blender_Launcher_v$version_Windows_x64.zip" }

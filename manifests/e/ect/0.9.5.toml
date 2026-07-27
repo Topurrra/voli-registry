@@ -12,3 +12,4 @@ sha256 = "9218661a91fd939668e2033f77eddb7db513286e1c91e6fe62013a40c27c21ba"
 
 [autoupdate]
 checkver = { github = "fhanau/Efficient-Compression-Tool" }
+url_template = { x64 = "https://github.com/fhanau/Efficient-Compression-Tool/releases/download/v$version/ect-$version-win64.zip" }

@@ -14,3 +14,4 @@ sha256 = "703421fb9c560a1f85a9bedcc0d2debec0223554bee0bab4e1a79c83d961474a"
 
 [autoupdate]
 checkver = { github = "OlaProeis/Ferrite" }
+url_template = { x64 = "https://github.com/OlaProeis/Ferrite/releases/download/v$version/ferrite-portable-windows-x64.zip" }

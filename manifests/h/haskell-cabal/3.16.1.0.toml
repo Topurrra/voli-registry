@@ -11,4 +11,5 @@ url = "https://downloads.haskell.org/~cabal/cabal-install-latest/cabal-install-3
 sha256 = "7f760fd4afde9bf3f592d71055c1ad6068d297c45244a3f71a5d7cad484d5afd"
 
 [autoupdate]
-checkver = "{\"regex\":\"cabal-install-([\\\\d.-]+)-x86_64-windows.zip\",\"url\":\"https://downloads.haskell.org/~cabal/cabal-install-latest/\"}"
+checkver = { url = "https://downloads.haskell.org/~cabal/cabal-install-latest/", regex = "cabal-install-([\\d.-]+)-x86_64-windows.zip" }
+url_template = { x64 = "https://downloads.haskell.org/~cabal/cabal-install-latest/cabal-install-$version-x86_64-windows.zip" }

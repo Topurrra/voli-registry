@@ -6,6 +6,7 @@ license = "MIT"
 kind = "app"
 extract_dir = "Corman Lisp"
 bin = ["clconsole.exe", "clconsoleapp.exe"]
+shortcuts = [{ target = "CormanLisp.exe", name = "Corman Lisp IDE" }, { target = "documentation\\CormanLisp.pdf", name = "Corman Lisp Manual" }, { target = "clconsole.exe", name = "Corman Lisp REPL" }]
 
 [source.x64]
 url = "https://github.com/sharplispers/cormanlisp/releases/download/v3.1.2b/CormanLisp-3.1.2b.zip"
@@ -16,3 +17,4 @@ CORMANLISP_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "sharplispers/cormanlisp" }
+url_template = "https://github.com/sharplispers/cormanlisp/releases/download/v$version/CormanLisp-$version.zip"

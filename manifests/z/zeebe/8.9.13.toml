@@ -4,6 +4,7 @@ description = "Distributed Workflow Engine for Microservices Orchestration"
 homepage = "https://camunda.com/products/cloud/workflow-engine/"
 license = "Zeebe Community License v1.0"
 kind = "app"
+extract_dir = "camunda-zeebe-8.9.13"
 bin = [{ name = "zeebe-broker", path = "bin\\broker.bat" }, { name = "zeebe-gateway", path = "bin\\gateway.bat" }]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "05197bf79492cc13641c608ec996c6a4b817193ab377a7a0901802e5e8ff85df"
 
 [autoupdate]
 checkver = { github = "camunda/camunda" }
+url_template = { x64 = "https://github.com/camunda/camunda/releases/download/$version/camunda-zeebe-$version.zip" }

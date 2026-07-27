@@ -14,4 +14,5 @@ sha256 = "39697eab1e17684737bdd36d840eabf71a63aa2d75c2b3edbbfcdf536731d4f9"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"tortoisehg-([\\\\d.]+)-x[468]{2}\\\\.msi\",\"reverse\":true,\"url\":\"https://www.mercurial-scm.org/release/tortoisehg/windows/\"}"
+checkver = { url = "https://www.mercurial-scm.org/release/tortoisehg/windows/", regex = "tortoisehg-([\\d.]+)-x[468]{2}\\.msi" }
+url_template = { x64 = "https://www.mercurial-scm.org/release/tortoisehg/windows/tortoisehg-$version-x64.msi" }

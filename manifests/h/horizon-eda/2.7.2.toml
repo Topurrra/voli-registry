@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "horizon-eda/horizon" }
+url_template = { x64 = "https://github.com/horizon-eda/horizon/releases/download/v$version/horizon-eda-$version-x64.msi" }

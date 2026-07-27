@@ -12,3 +12,4 @@ sha256 = "77408e02dde65ff41f5813da78e82d0154d015f6491dd55d8e27f42bae923dd0"
 
 [autoupdate]
 checkver = { github = "bep/s3deploy" }
+url_template = { x64 = "https://github.com/bep/s3deploy/releases/download/v$version/s3deploy_$version_windows-amd64.zip" }

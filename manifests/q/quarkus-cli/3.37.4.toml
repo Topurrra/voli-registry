@@ -12,4 +12,5 @@ url = "https://github.com/quarkusio/quarkus/releases/download/3.37.4/quarkus-cli
 sha256 = "2d86667357ef19da5c33541b74056f7d1ab3360419347897695e630db74baca6"
 
 [autoupdate]
-checkver = "{\"jsonpath\":\"$..version\",\"regex\":\"([\\\\d+\\\\.]+)\",\"url\":\"https://registry.quarkus.io/client/platforms\"}"
+checkver = { url = "https://registry.quarkus.io/client/platforms", regex = "([\\d+\\.]+)" }
+url_template = "https://github.com/quarkusio/quarkus/releases/download/$version/quarkus-cli-$version.zip"

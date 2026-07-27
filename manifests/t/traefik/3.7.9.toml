@@ -16,3 +16,4 @@ sha256 = "47e8647ff2a5f61a49fc08f8d825b776217f4a59730870a49184116d1546a333"
 
 [autoupdate]
 checkver = { github = "traefik/traefik" }
+url_template = { x64 = "https://github.com/traefik/traefik/releases/download/v$version/traefik_v$version_windows_amd64.zip", arm64 = "https://github.com/traefik/traefik/releases/download/v$version/traefik_v$version_windows_arm64.zip" }

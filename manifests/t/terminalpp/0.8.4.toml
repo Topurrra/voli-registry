@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "terminalpp/terminalpp" }
+url_template = { x64 = "https://github.com/terminalpp/terminalpp/releases/download/v$version/terminalpp.msi" }

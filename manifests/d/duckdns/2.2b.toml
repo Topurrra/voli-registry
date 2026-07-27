@@ -12,3 +12,4 @@ sha256 = "dd961749a5eb6f9d1b94707969b409b3db199608e1b7a843d73ffd44195836c6"
 
 [autoupdate]
 checkver = { github = "XWolfOverride/DuckDNS" }
+url_template = { x64 = "https://github.com/XWolfOverride/DuckDNS/releases/download/$version/DuckDNS.7z" }

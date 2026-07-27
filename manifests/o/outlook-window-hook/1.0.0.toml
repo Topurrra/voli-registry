@@ -12,3 +12,4 @@ sha256 = "b93e484d742f682cb4b6330650337188b6eea8d89827a5a16d65d266c4eebae8"
 
 [autoupdate]
 checkver = { github = "Palsternakka/OutlookWindowHook" }
+url_template = { x64 = "https://github.com/Palsternakka/OutlookWindowHook/releases/download/v$version/OutlookWindowsHook-Standalone.zip" }

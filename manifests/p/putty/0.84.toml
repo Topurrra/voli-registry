@@ -17,3 +17,4 @@ sha512 = "a5b1750d73f63d9c2868892791d95a9654f8b353ea6258695905c2b4defb2d2ddf5682
 
 [autoupdate]
 checkver = "The latest version is ([\\d.]+)\\."
+url_template = { x64 = "https://the.earth.li/~sgtatham/putty/$version/w64/putty.zip", arm64 = "https://the.earth.li/~sgtatham/putty/$version/wa64/putty.zip" }

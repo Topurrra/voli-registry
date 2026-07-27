@@ -13,3 +13,4 @@ sha256 = "c2ebab8105b893d97bd8ce35b88e01985e2a106efc97f03adf95840a631b20ce"
 
 [autoupdate]
 checkver = { github = "sleuthkit/sleuthkit" }
+url_template = "https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-$version/sleuthkit-$version-win32.zip"

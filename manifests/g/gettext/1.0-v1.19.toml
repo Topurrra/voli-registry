@@ -11,4 +11,5 @@ url = "https://github.com/mlocati/gettext-iconv-windows/releases/download/v1.0-v
 sha256 = "c2f195fc4ed3df4070fb08ff88c2f724afd1eed4e28f859efae1000bb7ba1152"
 
 [autoupdate]
-checkver = "{\"regex\":\"/releases/tag/v((?<gettext>[\\\\d.]+)-v(?<iconv>[\\\\d.]+))\",\"url\":\"https://github.com/mlocati/gettext-iconv-windows/releases\"}"
+checkver = { url = "https://github.com/mlocati/gettext-iconv-windows/releases", regex = "/releases/tag/v((?<gettext>[\\d.]+)-v(?<iconv>[\\d.]+))" }
+url_template = { x64 = "https://github.com/mlocati/gettext-iconv-windows/releases/download/v$version/gettext$matchGettext-iconv$matchIconv-shared-64.zip" }

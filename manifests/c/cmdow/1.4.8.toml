@@ -13,3 +13,4 @@ sha256 = "f5c5289a6c26aff63dd27af321ba0392ce3f5c2ed0e6bfcd07d8c7952c468ac9"
 
 [autoupdate]
 checkver = { github = "ritchielawrence/cmdow" }
+url_template = "https://github.com/ritchielawrence/cmdow/archive/v$version.zip"

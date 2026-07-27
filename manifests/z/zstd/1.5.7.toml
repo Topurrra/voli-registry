@@ -13,3 +13,4 @@ sha256 = "acb4e8111511749dc7a3ebedca9b04190e37a17afeb73f55d4425dbf0b90fad9"
 
 [autoupdate]
 checkver = { github = "facebook/zstd" }
+url_template = { x64 = "https://github.com/facebook/zstd/releases/download/v$version/zstd-v$version-win64.zip" }

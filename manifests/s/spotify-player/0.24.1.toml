@@ -12,3 +12,4 @@ sha256 = "e4b37883b8c6195bf525ed43db9f9916e729f56741aa9cc65e0fe1abd27c2d0d"
 
 [autoupdate]
 checkver = { github = "aome510/spotify-player" }
+url_template = { x64 = "https://github.com/aome510/spotify-player/releases/download/v$version/spotify_player-x86_64-pc-windows-msvc.zip" }

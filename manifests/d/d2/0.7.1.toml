@@ -4,6 +4,7 @@ description = "A modern diagram scripting language that turns text to diagrams."
 homepage = "https://d2lang.com"
 license = "MPL-2.0"
 kind = "app"
+extract_dir = "d2-v0.7.1"
 bin = ["bin\\d2.exe"]
 
 [source.x64]
@@ -16,3 +17,4 @@ sha256 = "c7ebdc7b2f6df513b715d431762105386f7c702b0b2dddff2a500a032b1bba67"
 
 [autoupdate]
 checkver = { github = "terrastruct/d2" }
+url_template = { x64 = "https://github.com/terrastruct/d2/releases/download/v$version/d2-v$version-windows-amd64.tar.gz", arm64 = "https://github.com/terrastruct/d2/releases/download/v$version/d2-v$version-windows-arm64.tar.gz" }

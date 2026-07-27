@@ -14,3 +14,4 @@ sha256 = "a5bd9afd969c7488f91ea3a7a09d56a1b53fe86ee231b81d205a8c1a9d459a05"
 
 [autoupdate]
 checkver = { github = "tabulapdf/tabula" }
+url_template = "https://github.com/tabulapdf/tabula/releases/download/v$version/tabula-win-$version.zip"

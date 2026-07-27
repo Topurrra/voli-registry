@@ -12,3 +12,4 @@ sha256 = "3d15de13d2c990951aa4f698940ce9d642755752ab300e6b564699171945bdcb"
 
 [autoupdate]
 checkver = { github = "Suwayomi/Tachidesk-Sorayomi" }
+url_template = { x64 = "https://github.com/Suwayomi/Tachidesk-Sorayomi/releases/download/$version/tachidesk-sorayomi-$version-windows-x64.zip" }

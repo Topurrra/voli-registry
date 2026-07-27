@@ -16,3 +16,4 @@ sha256 = "ba18adeb5d123481211c47c4e4d0ad6d81a6b0139150704785542fdee542e583"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/bitwarden/sdk-sm/releases\",\"jsonpath\":\"$..assets[?(@.name =~ /bws-x86_64-pc-windows/i)].browser_download_url\",\"regex\":\"(?i)download/bws-v([\\\\d.]+)/bws-x86_64-pc-windows\"}"
+url_template = { x64 = "https://github.com/bitwarden/sdk-sm/releases/download/bws-v$version/bws-x86_64-pc-windows-msvc-$version.zip", arm64 = "https://github.com/bitwarden/sdk-sm/releases/download/bws-v$version/bws-aarch64-pc-windows-msvc-$version.zip" }

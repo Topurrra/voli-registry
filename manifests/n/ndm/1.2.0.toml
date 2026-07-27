@@ -14,3 +14,4 @@ sha256 = "f9bbf509dd4ccdb7b81cce75d55a7b1bdafdfbd38d886fa37a7d079119c412c3"
 
 [autoupdate]
 checkver = { github = "720kb/ndm" }
+url_template = "https://github.com/720kb/ndm/releases/download/v$version/ndm-$version-ia32-win.zip"

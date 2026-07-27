@@ -12,4 +12,4 @@ url = "https://www.splashsoft.de/?download=520#/dl.zip"
 sha256 = "e25052121994423edd757dc549ff8520dad87092bd1bba57c573dbdc59a38f9a"
 
 [autoupdate]
-checkver = "{\"regex\":\"download=(?<page>\\\\d+)\\\" title=\\\"RidNacs ([\\\\d.]+) \\\\(zip, portable\",\"url\":\"https://www.splashsoft.de/ridnacs-download/\"}"
+checkver = { url = "https://www.splashsoft.de/ridnacs-download/", regex = "download=(?<page>\\d+)\" title=\"RidNacs ([\\d.]+) \\(zip, portable" }

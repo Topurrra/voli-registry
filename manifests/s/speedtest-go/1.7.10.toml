@@ -16,3 +16,4 @@ sha256 = "83f7ca7dcb8991fbb31d33158da245be4bc987ea2f8072193c321ee5ce20acb4"
 
 [autoupdate]
 checkver = { github = "showwin/speedtest-go" }
+url_template = { x64 = "https://github.com/showwin/speedtest-go/releases/download/v$version/speedtest-go_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/showwin/speedtest-go/releases/download/v$version/speedtest-go_$version_Windows_arm64.tar.gz" }

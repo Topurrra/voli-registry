@@ -13,3 +13,4 @@ sha256 = "1aadec5283389670729b1332ca938e3cf12a1413853c30a2193cfe9d3fc8bbea"
 
 [autoupdate]
 checkver = { github = "maxmind/geoipupdate" }
+url_template = { x64 = "https://github.com/maxmind/geoipupdate/releases/download/v$version/geoipupdate_$version_windows_amd64.zip" }

@@ -13,3 +13,4 @@ sha256 = "39e3ee0ba99fb1c4b13dde8c7924ddcd06faaeb16a840d58c565a4abd403859f"
 
 [autoupdate]
 checkver = { github = "Xmader/aria-ng-gui" }
+url_template = { x64 = "https://github.com/Xmader/aria-ng-gui/releases/download/v$version/AriaNgGUI-win32-x64.zip" }

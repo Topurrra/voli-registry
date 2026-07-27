@@ -13,3 +13,4 @@ sha256 = "5f6d5dfb77f69e190aea16d6a06e80e50397b49b9296662a0c86d49757958606"
 
 [autoupdate]
 checkver = { github = "radareorg/radare2" }
+url_template = { x64 = "https://github.com/radareorg/radare2/releases/download/$version/radare2-$version-w64.zip" }

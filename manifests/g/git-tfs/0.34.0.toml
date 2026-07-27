@@ -15,3 +15,4 @@ git = "*"
 
 [autoupdate]
 checkver = { github = "git-tfs/git-tfs" }
+url_template = "https://github.com/git-tfs/git-tfs/releases/download/v$version/GitTfs-$version.zip"

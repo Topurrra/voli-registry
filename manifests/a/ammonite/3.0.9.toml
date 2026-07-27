@@ -12,3 +12,4 @@ sha256 = "80cc934033e61ec97a6f70810ac2076fff33d85c0bdfe4f1bb3d2c88582f4b0b"
 
 [autoupdate]
 checkver = { github = "com-lihaoyi/Ammonite" }
+url_template = "https://github.com/com-lihaoyi/Ammonite/releases/download/$version/2.12-$version#/amm.bat"

@@ -16,3 +16,4 @@ sha256 = "7f622ff5ccc0a0dc1c89914f1ac712322327826dd5512afd454da3aafc1b5ef3"
 
 [autoupdate]
 checkver = { github = "PlakarKorp/plakar" }
+url_template = { x64 = "https://github.com/PlakarKorp/plakar/releases/download/v$version/plakar_$version_windows_amd64.tar.gz", arm64 = "https://github.com/PlakarKorp/plakar/releases/download/v$version/plakar_$version_windows_arm64.tar.gz" }

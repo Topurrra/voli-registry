@@ -16,3 +16,4 @@ sha256 = "9c54011cd4ad5f2baca2ae952860b055e514b9e40923efc7971b7ffa66511366"
 
 [autoupdate]
 checkver = { github = "EutropicAI/Final2x" }
+url_template = { x64 = "https://github.com/EutropicAI/Final2x/releases/download/v$version/Final2x-windows-x64-unpacked.7z", arm64 = "https://github.com/EutropicAI/Final2x/releases/download/v$version/Final2x-windows-arm64-unpacked.7z" }

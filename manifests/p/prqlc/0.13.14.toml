@@ -12,3 +12,4 @@ sha256 = "fa8cb13b3871842c65de5f4101e7371b03191f0ddcb7a9d0c0e5feceff9b3f3c"
 
 [autoupdate]
 checkver = { github = "PRQL/prql" }
+url_template = { x64 = "https://github.com/PRQL/prql/releases/download/$version/prqlc-$version-x86_64-pc-windows-msvc.zip" }

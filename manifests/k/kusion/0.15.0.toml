@@ -12,3 +12,4 @@ sha256 = "d125bee2bfb5b5e3a468135da058696d843aca70c8a2bfec12b9582c69dafb7d"
 
 [autoupdate]
 checkver = { github = "KusionStack/kusion" }
+url_template = { x64 = "https://github.com/KusionStack/kusion/releases/download/v$version/kusion_$version_windows_amd64.zip" }

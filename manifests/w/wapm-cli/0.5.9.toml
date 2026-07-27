@@ -12,3 +12,4 @@ sha256 = "dad17ac4b936bfdbecec88afcdda286d1e5a13fd08f053852bda94f71df0a73d"
 
 [autoupdate]
 checkver = { github = "wasmerio/wapm-cli" }
+url_template = { x64 = "https://github.com/wasmerio/wapm-cli/releases/download/v$version/wapm-cli-windows-amd64.tar.gz" }

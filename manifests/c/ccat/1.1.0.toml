@@ -13,3 +13,4 @@ sha256 = "45b4bff0f6988c72b876cb832af37cbf21ef6f2cf9871f9e1c1afb39c22122f9"
 
 [autoupdate]
 checkver = { github = "owenthereal/ccat" }
+url_template = { x64 = "https://github.com/owenthereal/ccat/releases/download/v$version/windows-amd64-$version.tar.gz" }

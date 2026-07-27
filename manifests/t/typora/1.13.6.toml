@@ -18,4 +18,5 @@ sha256 = "e7e8905b3fab6b990ef5a4437e3a867a6cde314968163362a087bb19100132df"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"typora-setup-x64-([\\\\d.]+)\\\\.exe\",\"url\":\"https://typora.io/releases/stable\"}"
+checkver = { url = "https://typora.io/releases/stable", regex = "typora-setup-x64-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://download.typora.io/windows/typora-setup-x64-$version.exe", arm64 = "https://download.typora.io/windows/typora-setup-arm64-$version.exe" }

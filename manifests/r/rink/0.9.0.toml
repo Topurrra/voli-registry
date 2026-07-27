@@ -12,3 +12,4 @@ sha256 = "9684e738fa169b1f0de88e8b351fb1c2c870986e955276725cf9a9c8f28993ce"
 
 [autoupdate]
 checkver = { github = "tiffany352/rink-rs" }
+url_template = { x64 = "https://github.com/tiffany352/rink-rs/releases/download/v$version/Rink.CLI.Windows.zip" }

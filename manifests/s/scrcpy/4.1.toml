@@ -6,6 +6,7 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "scrcpy-win64-v4.1"
 bin = ["scrcpy.exe"]
+shortcuts = [{ target = "scrcpy-noconsole.vbs", name = "scrcpy" }]
 
 [source.x64]
 url = "https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-win64-v4.1.zip"
@@ -13,3 +14,4 @@ sha256 = "5b12172b3264b2889f4583ee64752ce832e29bc8b1089dca81093459697165db"
 
 [autoupdate]
 checkver = { github = "Genymobile/scrcpy" }
+url_template = { x64 = "https://github.com/Genymobile/scrcpy/releases/download/v$version/scrcpy-win64-v$version.zip" }

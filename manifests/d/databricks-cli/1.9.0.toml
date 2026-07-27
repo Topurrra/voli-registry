@@ -15,4 +15,5 @@ url = "https://github.com/databricks/cli/releases/download/v1.9.0/databricks_cli
 sha256 = "ac77338f19dde29c1594e71048ab89a7c5bde763edd2a457fa9c3511a279dbd0"
 
 [autoupdate]
-checkver = "{\"regex\":\"/tree/(?:v|V)([\\\\d.]+)\",\"url\":\"https://github.com/databricks/cli/releases/latest\"}"
+checkver = { url = "https://github.com/databricks/cli/releases/latest", regex = "/tree/(?:v|V)([\\d.]+)" }
+url_template = { x64 = "https://github.com/databricks/cli/releases/download/v$version/databricks_cli_$version_windows_amd64.zip", arm64 = "https://github.com/databricks/cli/releases/download/v$version/databricks_cli_$version_windows_arm64.zip" }

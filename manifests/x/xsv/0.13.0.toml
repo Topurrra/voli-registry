@@ -12,3 +12,4 @@ sha256 = "3e319c08456031a9683c19c998ac9f61756a2e456413db17c8e6819b17818a1a"
 
 [autoupdate]
 checkver = { github = "BurntSushi/xsv" }
+url_template = { x64 = "https://github.com/BurntSushi/xsv/releases/download/$version/xsv-$version-x86_64-pc-windows-msvc.zip" }

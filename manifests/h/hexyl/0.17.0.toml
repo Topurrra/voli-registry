@@ -13,3 +13,4 @@ sha256 = "ab5c3442cff63f585553d4fce330eaa1ef1bd2584643f1a0e29ab7c13fc9566d"
 
 [autoupdate]
 checkver = { github = "sharkdp/hexyl" }
+url_template = { x64 = "https://github.com/sharkdp/hexyl/releases/download/v$version/hexyl-v$version-x86_64-pc-windows-msvc.zip" }

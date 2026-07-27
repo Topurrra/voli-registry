@@ -16,3 +16,4 @@ sha256 = "92f855ddc5d7cc86f4487f2ef0e13d77a23eab63f57bbec6e3cf680e6db0adda"
 
 [autoupdate]
 checkver = { github = "vektra/mockery" }
+url_template = { x64 = "https://github.com/vektra/mockery/releases/download/v$version/mockery_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/vektra/mockery/releases/download/v$version/mockery_$version_Windows_arm64.tar.gz" }

@@ -14,3 +14,4 @@ sha256 = "f21a078bfb46df1c87124cd91b545f92949a54795c615639e2cd647749b0235d"
 
 [autoupdate]
 checkver = { github = "irwir/eMule" }
+url_template = { x64 = "https://github.com/irwir/eMule/releases/download/eMule_v$version-community/eMule$version_x64.zip" }

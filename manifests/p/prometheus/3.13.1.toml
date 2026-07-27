@@ -14,3 +14,4 @@ sha256 = "612dd4729d3b6b851bb240b96955d6c3d652c91833c7f74ecea7b8e834f583a3"
 
 [autoupdate]
 checkver = { github = "prometheus/prometheus" }
+url_template = { x64 = "https://github.com/prometheus/prometheus/releases/download/v$version/prometheus-$version.windows-amd64.tar.gz" }

@@ -12,3 +12,4 @@ sha256 = "8dd9c95bdb5189717c0706de543faab71e0c0969af763abea4d3c5f3a3b0e189"
 
 [autoupdate]
 checkver = { github = "DearVa/Everywhere" }
+url_template = { x64 = "https://github.com/DearVa/Everywhere/releases/download/v$version/Everywhere-Windows-x64-v$version.zip" }

@@ -13,3 +13,4 @@ sha256 = "9ae1090d1e056488981fe8903431f46abfa825065adabbdf1a0ee5936e4b0683"
 
 [autoupdate]
 checkver = { github = "adonais/skylark" }
+url_template = { x64 = "https://github.com/adonais/skylark/releases/download/$matchTag/skylark_x64-v$version.7z" }

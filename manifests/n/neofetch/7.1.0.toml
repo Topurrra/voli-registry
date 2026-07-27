@@ -12,3 +12,4 @@ sha256 = "3dc33493e54029fb1528251552093a9f9a2894fcf94f9c3a6f809136a42348c7"
 
 [autoupdate]
 checkver = { github = "dylanaraps/neofetch" }
+url_template = "https://raw.githubusercontent.com/dylanaraps/neofetch/$version/neofetch"

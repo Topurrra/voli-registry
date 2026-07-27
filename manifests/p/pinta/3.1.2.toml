@@ -18,3 +18,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "PintaProject/Pinta" }
+url_template = { x64 = "https://github.com/PintaProject/Pinta/releases/download/$version/Pinta-x86_64.exe", arm64 = "https://github.com/PintaProject/Pinta/releases/download/$version/Pinta-arm64.exe" }

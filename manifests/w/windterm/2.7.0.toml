@@ -14,3 +14,4 @@ sha256 = "b05c3c7371340ff1302967247ffcd3a3ba27b237f72010e9157086143c453e50"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/kingToolbox/WindTerm/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"WindTerm_([\\\\d.]+)_Windows_Portable\"}"
+url_template = { x64 = "https://github.com/kingToolbox/WindTerm/releases/download/$version/WindTerm_$version_Windows_Portable_x86_64.zip" }

@@ -16,3 +16,4 @@ sha256 = "ad37bd94a74ecbb2a5aa48ccc13f471d3573b4beedfae388c08a5524152b8c65"
 
 [autoupdate]
 checkver = { github = "gitkraken/gk-cli" }
+url_template = { x64 = "https://github.com/gitkraken/gk-cli/releases/download/v$version/gk_$version_windows_amd64.zip", arm64 = "https://github.com/gitkraken/gk-cli/releases/download/v$version/gk_$version_windows_arm64.zip" }

@@ -18,3 +18,4 @@ sha256 = "3dbf19424b588a12be12d68f53eafce235562deec3b62e4312bf61761835e74b"
 
 [autoupdate]
 checkver = { github = "stakira/OpenUtau" }
+url_template = { x64 = "https://github.com/stakira/OpenUtau/releases/download/$version/OpenUtau-win-x64.zip", arm64 = "https://github.com/stakira/OpenUtau/releases/download/$version/OpenUtau-win-arm64.zip" }

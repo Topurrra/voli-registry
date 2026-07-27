@@ -13,3 +13,4 @@ sha256 = "ade54248d8f81652882d7491b91c3f9bbbaffd28d35d2d02875b27acd58904d1"
 
 [autoupdate]
 checkver = { github = "Snd-R/komf" }
+url_template = "https://github.com/Snd-R/komf/releases/download/$version/komf-$version.jar#/komf.jar"

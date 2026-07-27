@@ -12,3 +12,4 @@ sha256 = "a7cb5c78ebb53538862f86434c07626f3e1d0ec627abe9a78fa3a4ed87ecdc18"
 
 [autoupdate]
 checkver = { github = "bitnami/sealed-secrets" }
+url_template = { x64 = "https://github.com/bitnami/sealed-secrets/releases/download/v$version/kubeseal-$version-windows-amd64.tar.gz" }

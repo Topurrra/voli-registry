@@ -16,3 +16,4 @@ sha256 = "42d878db6197680c0f310d509920d9c6e7dfe4360ee71895c012a45d5dc43446"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/getanteon/anteon/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"ddosify_([\\\\d.]+)_windows_amd64\\\\.zip\"}"
+url_template = { x64 = "https://github.com/getanteon/anteon/releases/download/v$version/ddosify_$version_windows_amd64.zip", arm64 = "https://github.com/getanteon/anteon/releases/download/v$version/ddosify_$version_windows_arm64.zip" }

@@ -4,6 +4,7 @@ description = "80x86 and x86-64 assembler designed for portability and modularit
 homepage = "https://www.nasm.us"
 license = "BSD-2-Clause"
 kind = "app"
+extract_dir = "nasm-3.02"
 bin = ["nasm.exe", "ndisasm.exe"]
 
 [source.x64]
@@ -11,4 +12,5 @@ url = "https://www.nasm.us/pub/nasm/releasebuilds/3.02/win64/nasm-3.02-win64.zip
 sha256 = "161d0bfaff53c2f9e9f3e69fd0672323ebabafd1268976a5cec11be92a19aee7"
 
 [autoupdate]
-checkver = "{\"regex\":\"version ([\\\\d.]+)\",\"url\":\"https://nasm.us/doc/nasmdocc.html\"}"
+checkver = { url = "https://nasm.us/doc/nasmdocc.html", regex = "version ([\\d.]+)" }
+url_template = { x64 = "https://www.nasm.us/pub/nasm/releasebuilds/$version/win64/nasm-$version-win64.zip" }

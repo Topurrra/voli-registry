@@ -12,3 +12,4 @@ sha256 = "c99c0d82a7dde77fc6d768393136a201f4774532635de79be3e43246db069796"
 
 [autoupdate]
 checkver = { github = "coredns/coredns" }
+url_template = { x64 = "https://github.com/coredns/coredns/releases/download/v$version/coredns_$version_windows_amd64.tgz" }

@@ -14,3 +14,4 @@ sha256 = "fe8b3155a03fdf908886b988ef49dd1f1d9b25d5de82f0de64e3ca7085979331"
 
 [autoupdate]
 checkver = { github = "cxasm/notepad--" }
+url_template = { x64 = "https://github.com/cxasm/notepad--/releases/download/notepad-v$version/Notepad--v$matchShort-win10-portable.zip" }

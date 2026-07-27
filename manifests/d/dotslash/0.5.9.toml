@@ -16,3 +16,4 @@ sha256 = "43d49d3472808738993ccf95a36dda8cc2869996d9a397bb02bde1e39b16146b"
 
 [autoupdate]
 checkver = { github = "facebook/dotslash" }
+url_template = { x64 = "https://github.com/facebook/dotslash/releases/download/v$version/dotslash-windows.v$version.tar.gz", arm64 = "https://github.com/facebook/dotslash/releases/download/v$version/dotslash-windows-arm64.v$version.tar.gz" }

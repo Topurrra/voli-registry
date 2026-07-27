@@ -16,3 +16,4 @@ ALLURE_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "allure-framework/allure2" }
+url_template = "https://github.com/allure-framework/allure2/releases/download/$version/allure-$version.zip"

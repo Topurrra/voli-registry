@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/adventuregamestudio/ags/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /AGS.+exe/i)].browser_download_url\",\"regex\":\"download/v([\\\\d.]+)/(?<name>.+)\"}"
+url_template = "https://github.com/adventuregamestudio/ags/releases/download/v$version/$matchName"

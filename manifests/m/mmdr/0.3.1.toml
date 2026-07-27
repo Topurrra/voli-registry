@@ -16,3 +16,4 @@ sha256 = "965192bcb95912d22c6d2e7b74db82930949eefbf25c064076353bafa566ac07"
 
 [autoupdate]
 checkver = { github = "1jehuang/mermaid-rs-renderer" }
+url_template = { x64 = "https://github.com/1jehuang/mermaid-rs-renderer/releases/download/v$version/mmdr-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/1jehuang/mermaid-rs-renderer/releases/download/v$version/mmdr-aarch64-pc-windows-msvc.zip" }

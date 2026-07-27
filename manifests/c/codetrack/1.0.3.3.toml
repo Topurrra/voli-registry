@@ -12,4 +12,4 @@ url = "https://www.getcodetrack.com/releases/codetrack_1_0_3_3.zip"
 sha256 = "455eccfcc568004bf6108ba9ad8dbbc32cdecb84c6c62153c8f181ca984d68ce"
 
 [autoupdate]
-checkver = "{\"regex\":\">V([\\\\d.]+)<\",\"url\":\"https://www.getcodetrack.com/releases.html\"}"
+checkver = { url = "https://www.getcodetrack.com/releases.html", regex = ">V([\\d.]+)<" }

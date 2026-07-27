@@ -12,3 +12,4 @@ sha256 = "5c8990828ff50406891140b53e300e11e9d9ce8cdad25b95545b7bae6e83563b"
 
 [autoupdate]
 checkver = { github = "exercism/cli" }
+url_template = { x64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-x86_64.zip#/dl.7z" }

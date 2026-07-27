@@ -12,3 +12,4 @@ sha256 = "aaf429fb9de9135b7f5f78e113fca6c6806617ec0015e107c97cfc1e062e7e87"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://c.quick-lint-js.com/releases/latest/scoop/quick-lint-js.json\"}"
+url_template = { x64 = "https://c.quick-lint-js.com/releases/$version/manual/windows.zip" }

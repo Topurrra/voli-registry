@@ -14,3 +14,4 @@ sha256 = "160a17af6f3b50dde84d633d3b273281c32cbb712e48b7e534f245cc9ab63dc5"
 
 [autoupdate]
 checkver = { github = "Syncplay/syncplay" }
+url_template = "https://github.com/Syncplay/syncplay/releases/download/v$version/Syncplay_$version_Portable.zip"

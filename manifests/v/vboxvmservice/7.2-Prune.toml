@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "onlyfang/VBoxVmService" }
+url_template = "https://github.com/onlyfang/VBoxVmService/releases/download/$version/VBoxVmService-$version.exe"

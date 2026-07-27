@@ -19,3 +19,4 @@ sha256 = "7d8ad4af02cca361099b099009f673d37cdaee152bb53e1c6fcd1c093c6e08c1"
 
 [autoupdate]
 checkver = { github = "TeraTermProject/teraterm" }
+url_template = { x64 = "https://github.com/TeraTermProject/teraterm/releases/download/v$version/teraterm-$version-x64.zip", arm64 = "https://github.com/TeraTermProject/teraterm/releases/download/v$version/teraterm-$version-arm64.zip" }

@@ -12,3 +12,4 @@ sha256 = "52e0c061d8b42f1c6bd8fe1cbc1e26a9da579ad5a4f5dd30a8ee0d599062f6c4"
 
 [autoupdate]
 checkver = { github = "zeux/meshoptimizer" }
+url_template = { x64 = "https://github.com/zeux/meshoptimizer/releases/download/v$version/gltfpack-windows.zip" }

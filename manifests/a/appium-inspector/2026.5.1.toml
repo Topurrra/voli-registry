@@ -16,3 +16,4 @@ sha256 = "dd4eb6b82fe6e0ac13859c80c6ee2d5259f22fe3a12a7d9e565562e95d4ec594"
 
 [autoupdate]
 checkver = { github = "appium/appium-inspector" }
+url_template = { x64 = "https://github.com/appium/appium-inspector/releases/download/v$version/Appium-Inspector-$version-win-x64.zip", arm64 = "https://github.com/appium/appium-inspector/releases/download/v$version/Appium-Inspector-$version-win-arm64.zip" }

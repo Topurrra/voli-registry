@@ -12,4 +12,4 @@ url = "https://dmde.com/download/dmde-4-4-4-842-win64-gui.zip"
 sha256 = "205b2cb4c6531070df921af786350b53389e375d0fe00f1e344d87540c48a481"
 
 [autoupdate]
-checkver = "{\"regex\":\"DMDE ([\\\\d.]+)\",\"url\":\"https://dmde.com/changelog.html\"}"
+checkver = { url = "https://dmde.com/changelog.html", regex = "DMDE ([\\d.]+)" }

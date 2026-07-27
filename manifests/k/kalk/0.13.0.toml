@@ -12,3 +12,4 @@ sha256 = "377065e9d6bad1ac25ff45f8564651a136f67242ba5c3a83809151b2cd61a38b"
 
 [autoupdate]
 checkver = { github = "xoofx/kalk" }
+url_template = { x64 = "https://github.com/xoofx/kalk/releases/download/$version/kalk.$version.win-x64.zip" }

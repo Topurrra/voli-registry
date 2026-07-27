@@ -1,0 +1,22 @@
+name = "wget"
+version = "1.21.4"
+description = "A command-line utility for retrieving files using HTTP, HTTPS, FTP, and FTPS protocols."
+homepage = "https://eternallybored.org/misc/wget/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["wget.exe"]
+
+[source.x64]
+url = "https://eternallybored.org/misc/wget/releases/wget-1.21.4-win64.zip"
+sha256 = "7b0addf04edd370307aa6005f0c08a171a319cccd4403663daca5478860b3056"
+
+[source.arm64]
+url = "https://eternallybored.org/misc/wget/releases/wget-1.21.4-winarm64.zip"
+sha256 = "351139852fd719ba1d660c67e82442c4344a53ab210a629c6d6b1fba9446b1c5"
+
+[depends]
+cacert = "*"
+
+[autoupdate]
+checkver = { url = "https://eternallybored.org/misc/wget/releases/?C=M;O=D", regex = ">wget-([\\d.-]+)-win64\\.zip" }
+url_template = { x64 = "https://eternallybored.org/misc/wget/releases/wget-$version-win64.zip", arm64 = "https://eternallybored.org/misc/wget/releases/wget-$version-winarm64.zip" }

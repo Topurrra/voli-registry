@@ -11,4 +11,5 @@ url = "https://repo.enonic.com/public/com/enonic/cli/enonic/4.0.0/enonic_4.0.0_W
 sha256 = "3b0da7ef20a3039275a930ef0c3ed330424d0a031c4296e37551b197071542e4"
 
 [autoupdate]
-checkver = "{\"regex\":\"<a[^>]+>([\\\\d.]+)</a>\",\"reverse\":true,\"url\":\"https://repo.enonic.com/service/rest/repository/browse/public/com/enonic/cli/enonic/\"}"
+checkver = { url = "https://repo.enonic.com/service/rest/repository/browse/public/com/enonic/cli/enonic/", regex = "<a[^>]+>([\\d.]+)</a>" }
+url_template = { x64 = "https://repo.enonic.com/public/com/enonic/cli/enonic/$version/enonic_$version_Windows_64-bit.zip" }

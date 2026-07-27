@@ -12,4 +12,5 @@ sha256 = "c62249e0d4d49bd3f062d55635cf6a3ab089ea8ee7f6c03947f6febfafaa0288"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\">V([\\\\d.]+)\",\"url\":\"https://www.listary.com/download\"}"
+checkver = { url = "https://www.listary.com/download", regex = ">V([\\d.]+)" }
+url_template = "https://www.listary.com/download/Listary.exe?version=$version#/dl.exe"

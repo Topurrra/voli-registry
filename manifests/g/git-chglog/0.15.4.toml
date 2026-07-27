@@ -12,3 +12,4 @@ sha256 = "0e7e9421565714f56885f068ae434416a6a3177b6ff65f350afe580e201289a6"
 
 [autoupdate]
 checkver = { github = "git-chglog/git-chglog" }
+url_template = { x64 = "https://github.com/git-chglog/git-chglog/releases/download/v$version/git-chglog_$version_windows_amd64.zip" }

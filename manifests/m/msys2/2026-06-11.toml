@@ -6,6 +6,7 @@ license = "GPL-2.0-only|BSD-3-Clause"
 kind = "app"
 extract_dir = "msys64"
 bin = [{ name = "msys2", path = "msys2_shell.cmd", args = "-msys2 -defterm -here -no-start" }, { name = "mingw", path = "msys2_shell.cmd", args = "-mingw -defterm -here -full-path -no-start" }, { name = "mingw32", path = "msys2_shell.cmd", args = "-mingw32 -defterm -here -full-path -no-start" }, { name = "mingw64", path = "msys2_shell.cmd", args = "-mingw64 -defterm -here -full-path -no-start" }, { name = "clang64", path = "msys2_shell.cmd", args = "-clang64 -defterm -here -full-path -no-start" }, { name = "clangarm64", path = "msys2_shell.cmd", args = "-clangarm64 -defterm -here -full-path -no-start" }, { name = "ucrt64", path = "msys2_shell.cmd", args = "-ucrt64 -defterm -here -full-path -no-start" }]
+shortcuts = [{ target = "msys2.exe", name = "MSYS2" }, { target = "mingw32.exe", name = "MinGW32" }, { target = "mingw64.exe", name = "MinGW64" }, { target = "clang64.exe", name = "Clang64" }, { target = "clangarm64.exe", name = "ClangArm64" }, { target = "ucrt64.exe", name = "UCRT64" }]
 persist = ["home"]
 
 [source.x64]
@@ -13,4 +14,5 @@ url = "https://github.com/msys2/msys2-installer/releases/download/2026-06-11/msy
 sha256 = "a2d047e8ee213c3c6a49a8de427eb1069df12207c0422ff1b3cbb5c905c34221"
 
 [autoupdate]
-checkver = "{\"regex\":\"/releases/tag/(?<version>(?<year>\\\\d{4})-(?<month>\\\\d{2})-(?<day>\\\\d{2}))\",\"url\":\"https://github.com/msys2/msys2-installer/releases\"}"
+checkver = { url = "https://github.com/msys2/msys2-installer/releases", regex = "/releases/tag/(?<version>(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2}))" }
+url_template = { x64 = "https://github.com/msys2/msys2-installer/releases/download/$version/msys2-base-x86_64-$matchYear$matchMonth$matchDay.tar.xz" }

@@ -12,3 +12,4 @@ sha256 = "c213169d251b73feb3fdf1655b9b5e6717a6a862762825918cc318a570018ded"
 
 [autoupdate]
 checkver = { github = "EpicGames/lore" }
+url_template = { x64 = "https://github.com/EpicGames/lore/releases/download/v$version/lore-v$version-x86_64-pc-windows-msvc.zip" }

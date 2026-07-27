@@ -12,3 +12,4 @@ sha256 = "215435095420e3804001a650c072f51befde897b414b0dac054edc2ea258ebea"
 
 [autoupdate]
 checkver = { github = "spicetify/cli" }
+url_template = { x64 = "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x64.zip" }

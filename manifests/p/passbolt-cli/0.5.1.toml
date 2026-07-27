@@ -16,3 +16,4 @@ sha256 = "314a6843d9194881071a78818b17e79ebd8e04e9dcd7a9fede9c3f8b66f7fc07"
 
 [autoupdate]
 checkver = { github = "passbolt/go-passbolt-cli" }
+url_template = { x64 = "https://github.com/passbolt/go-passbolt-cli/releases/download/v$version/go-passbolt-cli_$version_windows_amd64.zip", arm64 = "https://github.com/passbolt/go-passbolt-cli/releases/download/v$version/go-passbolt-cli_$version_windows_arm64.zip" }

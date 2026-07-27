@@ -17,3 +17,4 @@ sha256 = "172360c0db2e82af124f64f3afe0722e1a9d582f70d5540ddbfef334cd20628b"
 
 [autoupdate]
 checkver = { github = "pocketbase/pocketbase" }
+url_template = { x64 = "https://github.com/pocketbase/pocketbase/releases/download/v$version/pocketbase_$version_windows_amd64.zip", arm64 = "https://github.com/pocketbase/pocketbase/releases/download/v$version/pocketbase_$version_windows_arm64.zip" }

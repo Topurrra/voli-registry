@@ -14,3 +14,4 @@ sha256 = "258ab4e4180b85a516dce04689f5185565a37453e45d8eb1533ff8e8f3522d93"
 
 [autoupdate]
 checkver = { github = "JabRef/jabref" }
+url_template = { x64 = "https://github.com/JabRef/jabref/releases/download/v$version/JabRef-$version-portable_windows.zip" }

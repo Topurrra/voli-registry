@@ -12,4 +12,4 @@ sha256 = "2402bf51584a17f4cdd22a92a6ecacb982de37051e3ea040042de76af405c118"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Product version: <b>([\\\\d.]+)\",\"url\":\"https://www.heaventools.com/download-rtc.htm\"}"
+checkver = { url = "https://www.heaventools.com/download-rtc.htm", regex = "Product version: <b>([\\d.]+)" }

@@ -16,3 +16,4 @@ sha256 = "ea4aeac9184294ebaa17348d0b56e96e7c2412571580ca0d12b0fc8a357bb972"
 
 [autoupdate]
 checkver = { github = "mozilla-ai/cq" }
+url_template = { x64 = "https://github.com/mozilla-ai/cq/releases/download/cli/v$version/cq_Windows_x86_64.zip", arm64 = "https://github.com/mozilla-ai/cq/releases/download/cli/v$version/cq_Windows_arm64.zip" }

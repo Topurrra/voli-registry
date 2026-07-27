@@ -12,3 +12,4 @@ sha256 = "d069a8c9b3a4ddae996f51acb933a9515164b27a0609b8386256796671daa4b2"
 
 [autoupdate]
 checkver = { github = "Gu1llaum-3/sshm" }
+url_template = { x64 = "https://github.com/Gu1llaum-3/sshm/releases/download/v$version/sshm_Windows_x86_64.zip" }

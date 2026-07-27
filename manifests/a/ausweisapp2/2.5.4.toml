@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "Governikus/AusweisApp" }
+url_template = { x64 = "https://github.com/Governikus/AusweisApp/releases/download/$version/AusweisApp-$version.msi" }

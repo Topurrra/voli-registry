@@ -15,3 +15,4 @@ psqlodbc = "*"
 
 [autoupdate]
 checkver = { github = "PostgREST/postgrest" }
+url_template = { x64 = "https://github.com/PostgREST/postgrest/releases/download/v$version/postgrest-v$version-windows-x86-64.zip" }

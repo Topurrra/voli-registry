@@ -12,3 +12,4 @@ sha256 = "51b23a190a21e089a5108b1ed72b04c8c45222bed1934b259d4d2a6355f1bbc3"
 
 [autoupdate]
 checkver = { github = "8051Enthusiast/biodiff" }
+url_template = { x64 = "https://github.com/8051Enthusiast/biodiff/releases/download/v$version/biodiff-windows-$version.zip" }

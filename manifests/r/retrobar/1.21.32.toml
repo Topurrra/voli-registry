@@ -17,3 +17,4 @@ sha256 = "4ff3672ebfeba33cffed5a3200db7ac909c8a219836f103bb9124d0175cc9cbb"
 
 [autoupdate]
 checkver = { github = "dremin/RetroBar" }
+url_template = { x64 = "https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.Portable.64-bit.zip", arm64 = "https://github.com/dremin/RetroBar/releases/download/v$version/RetroBar.Portable.ARM64.zip" }

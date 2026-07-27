@@ -18,3 +18,4 @@ sha256 = "195326304afc30f6f4a0b9b8dd6b0489c95f40d1772a5b10c5032e38e9b3e5f7"
 
 [autoupdate]
 checkver = { github = "UniClipboard/UniClipboard" }
+url_template = { x64 = "https://github.com/UniClipboard/UniClipboard/releases/download/v$version/UniClipboard_$version_x64-portable.zip", arm64 = "https://github.com/UniClipboard/UniClipboard/releases/download/v$version/UniClipboard_$version_arm64-portable.zip" }

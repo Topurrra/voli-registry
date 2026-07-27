@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "jendrikseipp/rednotebook" }
+url_template = "https://github.com/jendrikseipp/rednotebook/releases/download/v$version/rednotebook-$version.exe"

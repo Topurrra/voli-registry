@@ -13,4 +13,5 @@ sha256 = "a6cb88246834e6e54224b923a839c9566580cb5d4be95d4eba1d18bd34e8ecc9"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Poedit-([\\\\d.]+)-setup\",\"url\":\"https://poedit.net/download\"}"
+checkver = { url = "https://poedit.net/download", regex = "Poedit-([\\d.]+)-setup" }
+url_template = "https://download.poedit.net/Poedit-$version-setup.exe"

@@ -14,4 +14,5 @@ sha256 = "d87fc0d89839ad73857ee15ee417d26ca9ba1c9d0cd15cc54d90cb1484a95fca"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"/turtl-([\\\\d.]+)-windows64\",\"url\":\"https://turtlapp.com/download/\"}"
+checkver = { url = "https://turtlapp.com/download/", regex = "/turtl-([\\d.]+)-windows64" }
+url_template = { x64 = "https://github.com/turtl/desktop/releases/download/v$version/turtl-$version-windows64.msi" }

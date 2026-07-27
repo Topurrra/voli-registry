@@ -13,3 +13,4 @@ sha256 = "503063af4b3b2b1596a811fe1d81cd4d4fab720cd328197e5aad3aa31f1e68cd"
 
 [autoupdate]
 checkver = { github = "vial-kb/vial-gui" }
+url_template = "https://github.com/vial-kb/vial-gui/releases/download/v$version/Vial-v$version-portable.zip"

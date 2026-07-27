@@ -1,0 +1,18 @@
+name = "iverilog"
+version = "12-20220611"
+description = "Compiler for IEEE-1364 Verilog hardware description language."
+homepage = "https://bleyer.org/icarus/"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["bin\\iverilog.exe", "bin\\iverilog-vpi.exe", "bin\\vvp.exe", "gtkwave\\bin\\gtkwave.exe"]
+
+[source.x64]
+url = "http://bleyer.org/icarus/iverilog-v12-20220611-x64_setup.exe"
+sha256 = "a614057374dfaed5da0fe454cdeb410e54981fd85dbd28bd472f4ccb765deb84"
+kind = "installer-archive"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "iverilog-v([\\d.-]+)-x64_setup\\.exe"

@@ -4,6 +4,7 @@ description = "The Ergonomic, Safe and Familiar Evolution of C"
 homepage = "https://c3-lang.org"
 license = "LGPL-3.0-or-later,MIT"
 kind = "app"
+extract_dir = "c3"
 bin = ["c3c.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "66612b5849b4a3efe72272b93bffc1622a30f2e93f9e9d7f6edf506af8a60f28"
 
 [autoupdate]
 checkver = { github = "c3lang/c3c" }
+url_template = { x64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows.zip" }

@@ -16,3 +16,4 @@ sha256 = "2b1d3656561ef54049920239017bd9395a4ee0bdfe279a6b1e02ce4c8c7cd362"
 
 [autoupdate]
 checkver = { github = "hickford/git-credential-oauth" }
+url_template = { x64 = "https://github.com/hickford/git-credential-oauth/releases/download/v$version/git-credential-oauth_$version_windows_amd64.zip", arm64 = "https://github.com/hickford/git-credential-oauth/releases/download/v$version/git-credential-oauth_$version_windows_arm64.zip" }

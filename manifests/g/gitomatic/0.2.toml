@@ -12,3 +12,4 @@ sha256 = "21fa09906fa38dd50267d541c53588110c0c9d7d7dfba62a386172a01a410e91"
 
 [autoupdate]
 checkver = { github = "muesli/gitomatic" }
+url_template = { x64 = "https://github.com/muesli/gitomatic/releases/download/v$version/gitomatic_$version_Windows_x86_64.tar.gz" }

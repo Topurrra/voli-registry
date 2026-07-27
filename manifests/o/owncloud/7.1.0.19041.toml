@@ -14,4 +14,5 @@ sha256 = "70a75705251dfec278ca80c937028145b06a09604d8566c5f39c8d0c75109d9b"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"ownCloud-([\\\\d.]+).x64.msi\",\"url\":\"https://owncloud.com/desktop-app/\"}"
+checkver = { url = "https://owncloud.com/desktop-app/", regex = "ownCloud-([\\d.]+).x64.msi" }
+url_template = { x64 = "https://download.owncloud.com/desktop/ownCloud/stable/$version/win/ownCloud-$version.x64.msi" }

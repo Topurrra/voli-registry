@@ -20,3 +20,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "glzr-io/zebar" }
+url_template = { x64 = "https://github.com/glzr-io/zebar/releases/download/v$version/zebar-v$version-opt1-x64.msi", arm64 = "https://github.com/glzr-io/zebar/releases/download/v$version/zebar-v$version-opt2-arm64.msi" }

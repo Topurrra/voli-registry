@@ -12,3 +12,4 @@ sha256 = "edd6e6e61ed84ed87de16b704a170577e411454538ba53ec7a50e92c10055616"
 
 [autoupdate]
 checkver = { github = "arimxyer/models" }
+url_template = { x64 = "https://github.com/arimxyer/models/releases/download/v$version/models-x86_64-pc-windows-msvc.zip" }

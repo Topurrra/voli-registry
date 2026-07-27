@@ -12,3 +12,4 @@ sha256 = "60a2e5bbf1c322e945b96c8e21995409877e2b48b2da92a2539756015c785ab6"
 
 [autoupdate]
 checkver = { github = "tpanj/qr" }
+url_template = "https://github.com/tpanj/qr/releases/download/v$version/qr-$version-windows.zip"

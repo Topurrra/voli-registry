@@ -12,3 +12,4 @@ sha256 = "fcce6aa255d5872f668afe40b21b8633ca972ccf34edf9421896d8beda612cc4"
 
 [autoupdate]
 checkver = { github = "beefytech/Beef" }
+url_template = { x64 = "https://github.com/beefytech/Beef/releases/download/$version/BeefSetup_$underscoreVersion.exe#/dl.7z" }

@@ -16,3 +16,4 @@ sha256 = "13d95502e3888055df077ed4383ed2e010ec659a3a0f0b3db726e9d7a8fa6724"
 
 [autoupdate]
 checkver = { github = "GitTools/GitVersion" }
+url_template = { x64 = "https://github.com/GitTools/GitVersion/releases/download/$version/gitversion-win-x64-$version.zip", arm64 = "https://github.com/GitTools/GitVersion/releases/download/$version/gitversion-win-arm64-$version.zip" }

@@ -13,3 +13,4 @@ sha256 = "f9b2e4c1819781edfeedfeda9f6f51163b8dd8f704da4ade5271b7ade05d6914"
 
 [autoupdate]
 checkver = { github = "kellyjonbrazil/jc" }
+url_template = { x64 = "https://github.com/kellyjonbrazil/jc/releases/download/v$version/jc-$version-windows.zip" }

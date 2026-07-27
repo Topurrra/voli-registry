@@ -16,3 +16,4 @@ sha256 = "a6e2bfeb58c996bb09f4e19dfb389bd7bf8cf7504e6f071e7a6d14558f36c805"
 
 [autoupdate]
 checkver = { github = "sindresorhus/recycle-bin" }
+url_template = { x64 = "https://github.com/sindresorhus/recycle-bin/releases/download/v$version/recycle-bin-v$version-x86_64.zip", arm64 = "https://github.com/sindresorhus/recycle-bin/releases/download/v$version/recycle-bin-v$version-arm64.zip" }

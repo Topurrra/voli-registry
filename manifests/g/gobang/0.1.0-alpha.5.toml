@@ -13,3 +13,4 @@ sha256 = "4fb7d76776cc778e047b25eb460cdf76745642b937efa07737d0ee077b4541a5"
 
 [autoupdate]
 checkver = { github = "TaKO8Ki/gobang" }
+url_template = { x64 = "https://github.com/TaKO8Ki/gobang/releases/download/v$version/gobang-$version-x86_64-pc-windows-msvc.zip" }

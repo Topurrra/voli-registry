@@ -15,3 +15,4 @@ sha256 = "6a2b52ceefd9d6f41456639b8a3924827a37b92e5fa02bec703fc494a7a822ec"
 
 [autoupdate]
 checkver = { github = "dfranx/SHADERed" }
+url_template = { x64 = "https://github.com/dfranx/SHADERed/releases/download/v$version/Win64.zip" }

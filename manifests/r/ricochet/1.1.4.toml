@@ -17,3 +17,4 @@ tor = "*"
 
 [autoupdate]
 checkver = { github = "ricochet-im/ricochet" }
+url_template = "https://github.com/ricochet-im/ricochet/releases/download/v$version/ricochet-$version-win-install.exe"

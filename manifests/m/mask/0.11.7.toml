@@ -13,3 +13,4 @@ sha256 = "e2240d00f1663d5a39ba7658dc9d4f8273e70c6c7f3144c1fc37eb94448e0deb"
 
 [autoupdate]
 checkver = { github = "jacobdeichert/mask" }
+url_template = { x64 = "https://github.com/jacobdeichert/mask/releases/download/mask/$version/mask-$version-x86_64-pc-windows-msvc.zip" }

@@ -13,3 +13,4 @@ sha256 = "db8253ba4709c438f6aab99ea6118aa05e20764d49072d515590260709557772"
 
 [autoupdate]
 checkver = "/ide-zips/v(?<version>[\\w.-]+)/android-performance-analyzer-windows\\.zip"
+url_template = { x64 = "https://dl.google.com/android/apa/ide-zips/v$version/android-performance-analyzer-windows.zip" }

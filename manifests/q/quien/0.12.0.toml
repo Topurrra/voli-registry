@@ -16,3 +16,4 @@ sha256 = "5dae7aa56645825a86a578a30d880bc80682c617800a3a822e6e74c6d0540a38"
 
 [autoupdate]
 checkver = { github = "retlehs/quien" }
+url_template = { x64 = "https://github.com/retlehs/quien/releases/download/v$version/quien_windows_amd64.zip", arm64 = "https://github.com/retlehs/quien/releases/download/v$version/quien_windows_arm64.zip" }

@@ -13,3 +13,4 @@ sha256 = "ad3aa89d7751a1e8cbced749aa47d891aceffc55528eee852e631be392341abb"
 
 [autoupdate]
 checkver = { github = "dalance/amber" }
+url_template = { x64 = "https://github.com/dalance/amber/releases/download/v$version/amber-v$version-x86_64-win.zip" }

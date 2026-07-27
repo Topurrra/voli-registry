@@ -13,3 +13,4 @@ sha256 = "9b12a926c5f7da99724dc36b1a7510e14217bae4f449dee341f90de20c95b121"
 
 [autoupdate]
 checkver = { github = "RandomEngy/VidCoder" }
+url_template = { x64 = "https://github.com/RandomEngy/VidCoder/releases/download/v$version/VidCoder-$version-Portable.exe#/dl.7z" }

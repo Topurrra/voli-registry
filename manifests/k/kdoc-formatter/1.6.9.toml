@@ -13,3 +13,4 @@ sha256 = "4bf484b32b6432d06c60b7d7bda8c5fc93197177e48af3a5052f71a86ed53fcf"
 
 [autoupdate]
 checkver = { github = "tnorbye/kdoc-formatter" }
+url_template = "https://github.com/tnorbye/kdoc-formatter/releases/download/v$matchTag/kdoc-formatter-$version.zip"

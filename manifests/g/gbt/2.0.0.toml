@@ -4,6 +4,7 @@ description = "Highly configurable prompt builder for Bash, ZSH and PowerShell w
 homepage = "https://github.com/jtyr/gbt"
 license = "MIT"
 kind = "app"
+extract_dir = "gbt-2.0.0"
 bin = ["gbt.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "cb777db5299da8187f1e94cc5389c980e92f56c1030d6c850724410b87b983d9"
 
 [autoupdate]
 checkver = { github = "jtyr/gbt" }
+url_template = { x64 = "https://github.com/jtyr/gbt/releases/download/v$version/gbt-$version-windows-amd64.zip" }

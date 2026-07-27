@@ -12,3 +12,4 @@ sha256 = "2ad771ff5e5e47c8d48aa22f6852ebef87e1fe0f53a1194ddcbe615a9ddbc59e"
 
 [autoupdate]
 checkver = { github = "mislav/hub" }
+url_template = { x64 = "https://github.com/mislav/hub/releases/download/v$version/hub-windows-amd64-$version.zip" }

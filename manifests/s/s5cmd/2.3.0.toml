@@ -16,3 +16,4 @@ sha256 = "0d99ce0cbf4a266e7fd9b3cd2682384fb7b432754eb52f17f9a9f7cbe6bcca55"
 
 [autoupdate]
 checkver = { github = "peak/s5cmd" }
+url_template = { x64 = "https://github.com/peak/s5cmd/releases/download/v$version/s5cmd_$version_Windows-64bit.zip", arm64 = "https://github.com/peak/s5cmd/releases/download/v$version/s5cmd_$version_Windows-arm64.zip" }

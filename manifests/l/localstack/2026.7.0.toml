@@ -12,3 +12,4 @@ sha256 = "4b9c5f1f860fdb42fbc00e75e018d8423a5ae04eb11bffc49e2a3de267e22ff2"
 
 [autoupdate]
 checkver = { github = "localstack/localstack-cli" }
+url_template = { x64 = "https://github.com/localstack/localstack-cli/releases/download/v$version/localstack-cli-$version-windows-amd64-onefile.zip" }

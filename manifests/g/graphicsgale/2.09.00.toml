@@ -12,4 +12,4 @@ url = "https://graphicsgale.com/files/GalePortable20900.zip"
 sha256 = "a89d7dc96d560534dd44247e29a5db8a8bcf435983885fabda9c2626f3e0f9bc"
 
 [autoupdate]
-checkver = "{\"regex\":\"ver\\\\.([\\\\d.]+)\",\"url\":\"https://graphicsgale.com/files/historyUS.txt\"}"
+checkver = { url = "https://graphicsgale.com/files/historyUS.txt", regex = "ver\\.([\\d.]+)" }

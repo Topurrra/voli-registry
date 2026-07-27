@@ -13,3 +13,4 @@ sha256 = "7faa93ad570275bbbc470178802ddff5b3552f07d7f8dca152139fc964926a29"
 
 [autoupdate]
 checkver = { github = "bytecodealliance/wasmtime" }
+url_template = { x64 = "https://github.com/bytecodealliance/wasmtime/releases/download/v$version/wasmtime-v$version-x86_64-windows.zip" }

@@ -13,3 +13,4 @@ sha256 = "cee1d000181c6ae8ebb7cb6d955edf4ac10aa0449654af2cfe8ce954df44e539"
 
 [autoupdate]
 checkver = { github = "qarmin/czkawka" }
+url_template = { x64 = "https://github.com/qarmin/czkawka/releases/download/$version/windows_czkawka_gui_gtk_412.zip" }

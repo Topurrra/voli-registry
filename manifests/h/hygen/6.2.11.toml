@@ -12,3 +12,4 @@ sha256 = "e0c397b5b7667cbabaf84ebcda5225565625b4bcff8b5e54e71d72189ad20875"
 
 [autoupdate]
 checkver = { github = "jondot/hygen" }
+url_template = "https://github.com/jondot/hygen/releases/download/v$version/hygen.win.exe.v$version.zip"

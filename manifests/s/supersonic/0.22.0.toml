@@ -12,3 +12,4 @@ sha256 = "f3492d3e33fd4615fa04371670bae540f63cb87bd8d90a397636b19e83b85f7d"
 
 [autoupdate]
 checkver = { github = "dweymouth/supersonic" }
+url_template = { x64 = "https://github.com/dweymouth/supersonic/releases/download/v$version/Supersonic-$version-windows-x64.zip" }

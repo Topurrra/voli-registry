@@ -12,3 +12,4 @@ sha256 = "fe5415174e8fd2fcaeac75fa3bd81259ed1d4ae62768adaf5076fd4c41c29cae"
 
 [autoupdate]
 checkver = { github = "WasmEdge/WasmEdge" }
+url_template = "https://github.com/WasmEdge/WasmEdge/releases/download/$version/WasmEdge-$version-windows-msvc.zip"

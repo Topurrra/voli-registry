@@ -13,3 +13,4 @@ sha256 = "57a4c14622224feb0741e73d5b6bcbd55d16d1048068f875704239f33960349e"
 
 [autoupdate]
 checkver = { github = "NiyaShy/XB1ControllerBatteryIndicator" }
+url_template = "https://github.com/NiyaShy/XB1ControllerBatteryIndicator/releases/download/v$version/XB1ControllerBatteryIndicator_$version.zip"

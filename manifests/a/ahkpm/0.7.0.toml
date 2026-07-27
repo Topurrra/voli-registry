@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "joshuacc/ahkpm" }
+url_template = { x64 = "https://github.com/joshuacc/ahkpm/releases/download/$version/ahkpm-$version.msi" }

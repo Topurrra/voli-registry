@@ -12,3 +12,4 @@ sha256 = "d9e87920072fc803d9bfa7f2a13666c309ecd70a859b66e245adf7328ef100b2"
 
 [autoupdate]
 checkver = { github = "mlange-42/git-graph" }
+url_template = { x64 = "https://github.com/mlange-42/git-graph/releases/download/v$version/git-graph-v$version-windows-amd64.tar.gz" }

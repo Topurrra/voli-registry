@@ -12,3 +12,4 @@ sha256 = "4877078630efc46f731df2e58017f4777e887728eb62631d5206b372c7f9e6c5"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&platform=zip&type=release\"}"
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotTrace.CommandLineTools.windows-x64.$version.zip" }

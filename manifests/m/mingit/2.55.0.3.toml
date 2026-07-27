@@ -19,3 +19,4 @@ GIT_INSTALL_ROOT = "{dir}"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /MinGit/i)].browser_download_url\",\"regex\":\"(?i)download/(?<tag>v?[\\\\d.]+windows[\\\\d.]+)/MinGit-([\\\\d.]+)\"}"
+url_template = { x64 = "https://github.com/git-for-windows/git/releases/download/$matchTag/MinGit-$version-64-bit.zip", arm64 = "https://github.com/git-for-windows/git/releases/download/$matchTag/MinGit-$version-arm64.zip" }

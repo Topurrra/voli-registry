@@ -12,3 +12,4 @@ sha256 = "64eba7ddbadeca9cd5657b344058311f3c42d342c5e88f93a68d8f07fb8d0a53"
 
 [autoupdate]
 checkver = { github = "ayoisaiah/f2" }
+url_template = { x64 = "https://github.com/ayoisaiah/f2/releases/download/v$version/f2_$version_windows_amd64.zip" }

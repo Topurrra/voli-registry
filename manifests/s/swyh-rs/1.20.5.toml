@@ -13,3 +13,4 @@ sha256 = "4e821f1d18ee515d53d782e466e82fe185cadd83849f4d8db1564cc650c6bdbe"
 
 [autoupdate]
 checkver = { github = "dheijl/swyh-rs" }
+url_template = { x64 = "https://github.com/dheijl/swyh-rs/releases/download/$version/swyh-rs-release.zip" }

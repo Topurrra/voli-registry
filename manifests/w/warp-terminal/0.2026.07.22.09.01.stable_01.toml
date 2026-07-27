@@ -18,3 +18,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"regex\":\"/v([\\\\d.]+stable_\\\\d+)\",\"script\":\"[System.Net.HttpWebRequest]::Create('https://app.warp.dev/download?package=exe_x86_64').GetResponse().ResponseUri.AbsoluteUri\"}"
+url_template = { x64 = "https://releases.warp.dev/stable/v$version/WarpSetup.exe", arm64 = "https://releases.warp.dev/stable/v$version/WarpSetup-arm64.exe" }

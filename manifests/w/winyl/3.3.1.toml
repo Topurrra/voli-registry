@@ -15,3 +15,4 @@ sha256 = "7057713873e2e7a1a62775359afc4102c891f312ec885bfcb4673e3f8eec3fae"
 
 [autoupdate]
 checkver = { github = "winyl-player/winyl" }
+url_template = { x64 = "https://github.com/winyl-player/winyl/releases/download/v$version/winyl_portable_x64.zip" }

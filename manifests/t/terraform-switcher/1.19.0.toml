@@ -12,3 +12,4 @@ sha256 = "0ca9ba439a904ae666399f4da4bdcb01c6443aa760c1c013b02a66a7ca904402"
 
 [autoupdate]
 checkver = { github = "warrensbox/terraform-switcher" }
+url_template = { x64 = "https://github.com/warrensbox/terraform-switcher/releases/download/v$version/terraform-switcher_v$version_windows_amd64.zip" }

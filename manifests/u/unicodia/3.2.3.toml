@@ -13,3 +13,4 @@ sha256 = "a05a5f2e003b17a754f400fa94127c01871098e838becd582be04f230b4c6822"
 
 [autoupdate]
 checkver = { github = "Mercury13/unicodia" }
+url_template = { x64 = "https://github.com/Mercury13/unicodia/releases/download/v$version/Unicodia-w64-$version.7z" }

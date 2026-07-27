@@ -14,3 +14,4 @@ sha256 = "bdbe24d2649502296a96a2eea49f5b1b284823df7332648f768467c0ad75722f"
 
 [autoupdate]
 checkver = "{\"regex\":\"BetterbirdPortable-([\\\\d.]+.+).en-US.win64.zip\",\"script\":[\"$url = 'https://www.betterbird.eu/downloads/get.php?os=win&lang=en-US&version=release&portable=true'\",\"$location = (Invoke-WebRequest -Uri $url -MaximumRedirection 0 -SkipHttpErrorCheck -ErrorAction SilentlyContinue).Headers.Location\",\"Write-Output $location\"]}"
+url_template = { x64 = "https://www.betterbird.eu/downloads/WindowsPortable/BetterbirdPortable-$version.en-US.win64.zip" }

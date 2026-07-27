@@ -6,10 +6,12 @@ license = "MIT"
 kind = "app"
 extract_dir = "julia-1.12.6"
 bin = ["bin\\julia.exe"]
+shortcuts = [{ target = "bin\\julia.exe", name = "Julia" }]
 
 [source.x64]
 url = "https://julialang-s3.julialang.org/bin/winnt/x64/1.12/julia-1.12.6-win64.zip"
 sha256 = "a63d991976e6893f508c512e3dc7bca1836c1a1f6ad1f3e4aedec159b6733e89"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?m:^stable_release *= *\\\"([0-9.]+)\\\"$)\",\"url\":\"https://github.com/JuliaLang/www.julialang.org/raw/main/config.md\"}"
+checkver = { url = "https://github.com/JuliaLang/www.julialang.org/raw/main/config.md", regex = "(?m:^stable_release *= *\"([0-9.]+)\"$)" }
+url_template = { x64 = "https://julialang-s3.julialang.org/bin/winnt/x64/$majorVersion.$minorVersion/julia-$version-win64.zip" }

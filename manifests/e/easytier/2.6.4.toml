@@ -17,3 +17,4 @@ sha256 = "37023f8a3451c9234b17ee2089a03dc344ce90d803b5b359cb6c46682b0549b4"
 
 [autoupdate]
 checkver = { github = "EasyTier/EasyTier" }
+url_template = { x64 = "https://github.com/EasyTier/EasyTier/releases/download/v$version/easytier-windows-x86_64-v$version.zip", arm64 = "https://github.com/EasyTier/EasyTier/releases/download/v$version/easytier-windows-arm64-v$version.zip" }

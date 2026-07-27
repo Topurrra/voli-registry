@@ -13,3 +13,4 @@ sha256 = "92c6f42490aa8b18d006dd40e76ce086bb335a8745ab13f824e0907cc01830f1"
 
 [autoupdate]
 checkver = { github = "sayanarijit/qrscan" }
+url_template = { x64 = "https://github.com/sayanarijit/qrscan/releases/download/v$version/qrscan-$version-x86_64-pc-windows-msvc.zip" }

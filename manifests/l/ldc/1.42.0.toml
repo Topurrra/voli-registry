@@ -15,3 +15,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ldc-developers/ldc" }
+url_template = { x64 = "https://github.com/ldc-developers/ldc/releases/download/v$version/ldc2-$version-windows-x64.7z" }

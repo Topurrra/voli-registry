@@ -24,3 +24,4 @@ INBUCKET_WEB_UIDIR = "{dir}\\ui\\dist"
 
 [autoupdate]
 checkver = { github = "inbucket/inbucket" }
+url_template = { x64 = "https://github.com/inbucket/inbucket/releases/download/v$version/inbucket_$version_windows_amd64.zip", arm64 = "https://github.com/inbucket/inbucket/releases/download/v$version/inbucket_$version_windows_arm64.zip" }

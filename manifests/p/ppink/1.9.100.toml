@@ -15,3 +15,4 @@ sha256 = "3d7317bee4dd396b3b088bd116008b605938902512d1246a5dcb9df7a735b2ff"
 
 [autoupdate]
 checkver = { github = "pubpub-zz/ppInk" }
+url_template = { x64 = "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.$version.zip" }

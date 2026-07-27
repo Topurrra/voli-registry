@@ -17,3 +17,4 @@ sha256 = "c3c73dd9ebc9f483fdc7a29a933fa333defecf618956465ee84fae441e14846b"
 
 [autoupdate]
 checkver = { github = "binbat/live777" }
+url_template = { x64 = "https://github.com/binbat/live777/releases/download/v$version/live777-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/binbat/live777/releases/download/v$version/live777-v$version-aarch64-pc-windows-msvc.zip" }

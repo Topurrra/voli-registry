@@ -16,3 +16,4 @@ sha256 = "8f866d08cde1799308209ac0f94945517719e104749890ae1aac2f509ed71173"
 
 [autoupdate]
 checkver = { github = "dineshba/tf-summarize" }
+url_template = { x64 = "https://github.com/dineshba/tf-summarize/releases/download/v$version/tf-summarize_windows_amd64.zip", arm64 = "https://github.com/dineshba/tf-summarize/releases/download/v$version/tf-summarize_windows_arm64.zip" }

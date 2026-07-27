@@ -13,3 +13,4 @@ sha256 = "2dd15a98dc516eabb3d3ca711dd57c19df54ae5520247cfd362546188ad42809"
 
 [autoupdate]
 checkver = { github = "flipperdevices/qFlipper" }
+url_template = { x64 = "https://update.flipperzero.one/builds/qFlipper/$version/qFlipper-64bit-$version.zip" }

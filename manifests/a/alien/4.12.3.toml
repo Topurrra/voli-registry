@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "chrxh/alien" }
+url_template = { x64 = "https://github.com/chrxh/alien/releases/download/v$version/alien-installer.msi" }

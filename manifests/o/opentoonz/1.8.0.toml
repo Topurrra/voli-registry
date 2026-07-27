@@ -13,3 +13,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "opentoonz/opentoonz" }
+url_template = { x64 = "https://github.com/opentoonz/opentoonz/releases/download/v$version/OpenToonzSetup.exe" }

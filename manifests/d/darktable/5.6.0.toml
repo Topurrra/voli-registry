@@ -19,3 +19,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "darktable-org/darktable" }
+url_template = { x64 = "https://github.com/darktable-org/darktable/releases/download/release-$matchHead/darktable-$version-win64.exe", arm64 = "https://github.com/darktable-org/darktable/releases/download/release-$matchHead/darktable-$version-woa64.exe" }

@@ -12,3 +12,4 @@ sha256 = "ead4c8282867255c9e47cd8855383422d82e31908721405a5b7191b95125262b"
 
 [autoupdate]
 checkver = { github = "Kingcom/armips" }
+url_template = "https://github.com/Kingcom/armips/releases/download/v$version/armips-v$version-windows-x86.7z"

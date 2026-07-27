@@ -13,3 +13,4 @@ sha256 = "bbafd3db801305aecb848a3c5c441bd84317ef713303b0d8008281d77c195d21"
 
 [autoupdate]
 checkver = { github = "Dn-Programming-Core-Management/Dn-FamiTracker" }
+url_template = { x64 = "https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker/releases/download/Dn$version/Dn-FamiTracker_v$matchShort_x64_Release.7z" }

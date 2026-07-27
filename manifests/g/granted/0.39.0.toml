@@ -19,3 +19,4 @@ aws = "*"
 
 [autoupdate]
 checkver = { github = "fwdcloudsec/granted" }
+url_template = { x64 = "https://github.com/fwdcloudsec/granted/releases/download/v$version/granted_$version_windows_x86_64.zip", arm64 = "https://github.com/fwdcloudsec/granted/releases/download/v$version/granted_$version_windows_arm64.zip" }

@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "leokhoa/laragon" }
+url_template = "https://github.com/leokhoa/laragon/releases/download/$version/laragon-wamp.exe"

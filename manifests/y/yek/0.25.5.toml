@@ -17,3 +17,4 @@ sha256 = "d66d47645c7096ccb60d5dfb504faac32e9d31b1018f0db88c64e033fdcb8b45"
 
 [autoupdate]
 checkver = { github = "bodo-run/yek" }
+url_template = { x64 = "https://github.com/bodo-run/yek/releases/download/v$version/yek-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/bodo-run/yek/releases/download/v$version/yek-aarch64-pc-windows-msvc.zip" }

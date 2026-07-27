@@ -5,23 +5,15 @@ homepage = "https://github.com/air-verse/air"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["air.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/air-verse/air/releases/download/v1.67.3/air_1.67.3_windows_amd64.tar.gz"
 sha256 = "150ab78cf4a48f46ca845660b41a913b0bae94572c061ea5dbe75cd745849a5a"
-extra = []
 
 [source.arm64]
 url = "https://github.com/air-verse/air/releases/download/v1.67.3/air_1.67.3_windows_arm64.tar.gz"
 sha256 = "37e6fabdf076fed08cba18521320752b55d3abe95eb5006c5aa537c5f1cc852e"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "air-verse/air"
+[autoupdate]
+checkver = { github = "air-verse/air" }
+url_template = { x64 = "https://github.com/air-verse/air/releases/download/v$version/air_$version_windows_amd64.tar.gz", arm64 = "https://github.com/air-verse/air/releases/download/v$version/air_$version_windows_arm64.tar.gz" }

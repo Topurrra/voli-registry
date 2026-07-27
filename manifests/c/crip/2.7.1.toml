@@ -12,3 +12,4 @@ sha256 = "c98b25872771312ac88cf6a475a7570bf5f8c872d6bf406cba88196e2a7d430f"
 
 [autoupdate]
 checkver = { github = "Hakky54/certificate-ripper" }
+url_template = { x64 = "https://github.com/Hakky54/certificate-ripper/releases/download/$version/crip-windows-amd64.zip" }

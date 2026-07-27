@@ -18,3 +18,4 @@ sha256 = "0cb12ab79e77f8c3fbd61f5ced666af08031e16daa7d7b5d9ca34d6aa5f53e1f"
 
 [autoupdate]
 checkver = { github = "Equicord/Equibop" }
+url_template = { x64 = "https://github.com/Equicord/Equibop/releases/download/v$version/Equibop-$version-win.zip", arm64 = "https://github.com/Equicord/Equibop/releases/download/v$version/Equibop-$version-arm64-win.zip" }

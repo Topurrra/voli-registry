@@ -14,3 +14,4 @@ sha256 = "b242289d1c8931d202c2e8b17fd076a1e97827fd42c700126c8910fc7bdf8981"
 
 [autoupdate]
 checkver = { github = "kaikramer/keystore-explorer" }
+url_template = "https://github.com/kaikramer/keystore-explorer/releases/download/v$version/kse-$cleanVersion.zip"

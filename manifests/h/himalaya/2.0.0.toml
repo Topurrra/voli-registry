@@ -5,18 +5,11 @@ homepage = "https://github.com/pimalaya/himalaya"
 license = "BSD-3-Clause"
 kind = "app"
 bin = ["himalaya.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/pimalaya/himalaya/releases/download/v2.0.0/himalaya.x86_64-windows.tgz"
 sha256 = "06737d50343122c5cb89d711fda890df37aab448dbc8d79c2c1e2813eaec167a"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "pimalaya/himalaya"
+[autoupdate]
+checkver = { github = "pimalaya/himalaya" }
+url_template = { x64 = "https://github.com/pimalaya/himalaya/releases/download/v$version/himalaya.x86_64-windows.tgz" }

@@ -11,4 +11,4 @@ url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/
 sha256 = "c4b499a027fcaaf5682f02919862a47cd2ab9ac25472e254485a03c5704a36f6"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?s)What's new/History.*?<b>(\\\\d+(?:\\\\.\\\\d+){2})</b>\",\"url\":\"https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/docs/innounp.htm\"}"
+checkver = { url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/docs/innounp.htm", regex = "(?s)What's new/History.*?<b>(\\d+(?:\\.\\d+){2})</b>" }

@@ -1,0 +1,15 @@
+name = "leiningen"
+version = "2.13.0"
+description = "Simplify Clojure project automation and configuration."
+homepage = "https://leiningen.org/"
+license = "EPL-1.0"
+kind = "app"
+bin = ["lein.bat"]
+
+[source.x64]
+url = "https://codeberg.org/leiningen/leiningen/raw/tag/2.13.0/bin/lein.bat"
+sha256 = "3375c96dc2fb24c1ff0533e6949510cae02c169dabaf0d4b3b585363d22020fe"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$[0].name\",\"url\":\"https://codeberg.org/api/v1/repos/leiningen/leiningen/tags\"}"
+url_template = "https://codeberg.org/leiningen/leiningen/raw/tag/$version/bin/lein.bat"

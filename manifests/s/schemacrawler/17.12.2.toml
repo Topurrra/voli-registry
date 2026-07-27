@@ -1,0 +1,17 @@
+name = "schemacrawler"
+version = "17.12.2"
+description = "Free database schema discovery and comprehension tool"
+homepage = "https://www.schemacrawler.com/"
+license = "EPL-2.0"
+kind = "app"
+extract_dir = "SchemaCrawler"
+bin = ["SchemaCrawler.exe"]
+
+[source.x64]
+url = "https://github.com/schemacrawler/SchemaCrawler-Installers/releases/download/v17.12.2/SchemaCrawler-17.12.2.msi"
+sha256 = "8d932ed77c45c3ae77c83d85df56ecc66be17a19521a2c8ceb038fa07049b160"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "schemacrawler/SchemaCrawler" }
+url_template = { x64 = "https://github.com/schemacrawler/SchemaCrawler-Installers/releases/download/v$version/SchemaCrawler-$version.msi" }

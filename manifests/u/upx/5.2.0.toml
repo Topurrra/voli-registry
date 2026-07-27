@@ -13,3 +13,4 @@ sha256 = "b471ebf1b7f20f4a89150264ed9a008a2a5bfd247f3c6d1184a75bb59ca08f5d"
 
 [autoupdate]
 checkver = { github = "upx/upx" }
+url_template = { x64 = "https://github.com/upx/upx/releases/download/v$version/upx-$version-win64.zip" }

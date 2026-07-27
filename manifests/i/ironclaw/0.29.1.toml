@@ -13,3 +13,4 @@ sha256 = "185d19b530addce9339af3d9be004e7d1c4aeed8e541a5d6d5d3af60aa0b5ee5"
 
 [autoupdate]
 checkver = { github = "nearai/ironclaw" }
+url_template = { x64 = "https://github.com/nearai/ironclaw/releases/download/ironclaw-v$version/ironclaw-x86_64-pc-windows-msvc.tar.gz" }

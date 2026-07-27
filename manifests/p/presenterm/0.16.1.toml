@@ -4,6 +4,7 @@ description = "Terminal-based slideshow tool"
 homepage = "https://github.com/mfontanini/presenterm"
 license = "BSD-2-Clause"
 kind = "app"
+extract_dir = "presenterm-0.16.1"
 bin = ["presenterm.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha512 = "5687b68ae51aebf8de55b15e850ee48d4b9cbe15ed5ec2c7584698b7a492a26b514123
 
 [autoupdate]
 checkver = { github = "mfontanini/presenterm" }
+url_template = { x64 = "https://github.com/mfontanini/presenterm/releases/download/v$version/presenterm-$version-x86_64-pc-windows-msvc.zip" }

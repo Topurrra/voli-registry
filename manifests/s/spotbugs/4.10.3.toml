@@ -6,6 +6,7 @@ license = "LGPL-2.1-only"
 kind = "app"
 extract_dir = "spotbugs-4.10.3"
 bin = ["bin\\spotbugs.bat"]
+shortcuts = [{ target = "bin\\spotbugs.bat", name = "SpotBugs" }]
 persist = ["plugin"]
 
 [source.x64]
@@ -13,4 +14,5 @@ url = "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/4.10.3/
 sha256 = "e814ee5bf9665412658c4d684e45eae3cf993148a71bc8bc93fb343e92288151"
 
 [autoupdate]
-checkver = "{\"regex\":\"spotbugs ([\\\\d.]+) documentation\",\"url\":\"https://spotbugs.readthedocs.io/en/stable/installing.html\"}"
+checkver = { url = "https://spotbugs.readthedocs.io/en/stable/installing.html", regex = "spotbugs ([\\d.]+) documentation" }
+url_template = "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/$version/spotbugs-$version.zip"

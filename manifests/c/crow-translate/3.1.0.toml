@@ -12,4 +12,5 @@ url = "https://download.kde.org/stable/crow-translate/3.1.0/crow-translate-relea
 sha256 = "4a7ab5ddb0a62279d1fa1aed76fcd1424c0da101a0f6166b3fc77403ef219113"
 
 [autoupdate]
-checkver = "{\"regex\":\"stable/crow-translate/([\\\\d.]+)/crow-translate-release_(?<full>[\\\\d.-]+)-windows-cl-(?<lib>\\\\w+)-x86_64\\\\.7z\",\"url\":\"https://apps.kde.org/crowtranslate\"}"
+checkver = { url = "https://apps.kde.org/crowtranslate", regex = "stable/crow-translate/([\\d.]+)/crow-translate-release_(?<full>[\\d.-]+)-windows-cl-(?<lib>\\w+)-x86_64\\.7z" }
+url_template = { x64 = "https://download.kde.org/stable/crow-translate/$version/crow-translate-release_$matchFull-windows-cl-$matchLib-x86_64.7z" }

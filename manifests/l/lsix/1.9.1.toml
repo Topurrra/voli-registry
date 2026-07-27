@@ -12,3 +12,4 @@ sha256 = "b12b41453e64aaf5657216a297f77f66edf19038a47a9db698e8fc1d95ed6bad"
 
 [autoupdate]
 checkver = { github = "hackerb9/lsix" }
+url_template = "https://raw.githubusercontent.com/hackerb9/lsix/$version/lsix"

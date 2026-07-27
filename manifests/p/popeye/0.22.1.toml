@@ -16,3 +16,4 @@ sha256 = "91aee5c13655f6fa509e79a87963ec0a81dd23486bb54a4845b3d0db33dabfb0"
 
 [autoupdate]
 checkver = { github = "derailed/popeye" }
+url_template = { x64 = "https://github.com/derailed/popeye/releases/download/v$version/popeye_windows_amd64.tar.gz", arm64 = "https://github.com/derailed/popeye/releases/download/v$version/popeye_windows_arm64.tar.gz" }

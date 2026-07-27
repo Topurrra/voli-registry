@@ -12,3 +12,4 @@ sha256 = "121e265b4843baec365a8c57061b8a170451b4b12a06d5d6f827eceecc621969"
 
 [autoupdate]
 checkver = { github = "Nheko-Reborn/nheko" }
+url_template = { x64 = "https://github.com/Nheko-Reborn/nheko/releases/download/v$version/nheko-v$version-windows-no-installer.zip" }

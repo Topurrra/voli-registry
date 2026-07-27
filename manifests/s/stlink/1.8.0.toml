@@ -13,3 +13,4 @@ sha256 = "134e479b4039d52376378f2eb5b97e6028ab5b36b178ea32e49f75693e51aae3"
 
 [autoupdate]
 checkver = { github = "stlink-org/stlink" }
+url_template = "https://github.com/stlink-org/stlink/releases/download/v$version/stlink-$version-win32.zip"

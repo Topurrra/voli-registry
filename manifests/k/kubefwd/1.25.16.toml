@@ -12,3 +12,4 @@ sha256 = "2f671f3f1104ba4da1b1a2dc6ab8658c8f797789629808a624955363488b28c3"
 
 [autoupdate]
 checkver = { github = "txn2/kubefwd" }
+url_template = { x64 = "https://github.com/txn2/kubefwd/releases/download/v$version/kubefwd_Windows_x86_64.zip" }

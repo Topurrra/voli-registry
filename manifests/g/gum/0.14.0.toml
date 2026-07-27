@@ -17,3 +17,4 @@ sha512 = "9e2ef825395ce0dc64411def6bc274e83f2aec444c10ab54dc5e45bd47353f1be00bcc
 
 [autoupdate]
 checkver = { github = "kordamp/gm" }
+url_template = { x64 = "https://github.com/kordamp/gm/releases/download/v$version/gm-$version-windows-amd64.zip", arm64 = "https://github.com/kordamp/gm/releases/download/v$version/gm-$version-windows-arm64.zip" }

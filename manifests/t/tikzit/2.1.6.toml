@@ -13,3 +13,4 @@ sha256 = "e97bc93434b719d891e1c24bafb025d9176b94f24b32d675bc1c73fe4aaf0375"
 
 [autoupdate]
 checkver = { github = "tikzit/tikzit" }
+url_template = "https://github.com/tikzit/tikzit/releases/download/v$version/tikzit-win.zip"

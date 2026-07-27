@@ -13,3 +13,4 @@ sha256 = "ce7f2dfa2ed42b0013c9342d52b5b870fab1a2ecda4d114c12074887806de60e"
 
 [autoupdate]
 checkver = "{\"regex\":\"\\\\/(?<datetime>\\\\d+)\\\\/AirDroid_Desktop_Client_([\\\\d.]+)\\\\.exe\",\"script\":[\"$redirUrl = [System.Net.HttpWebRequest]::Create('https://srv3.airdroid.com/p20/web/getbinaryredirect?type=exe&channel=&version=').GetResponse().ResponseUri.AbsoluteUri\",\"return $redirUrl\"]}"
+url_template = "https://dl.airdroid.com/download/AirDroid/Win/v$version/$matchDatetime/AirDroid_Desktop_Client_$version.exe#/dl.7z"

@@ -16,3 +16,4 @@ sha256 = "efd1d3926aedb3bd8978a17f4fb9af1d952576785975fc0bd419f3a68b303848"
 
 [autoupdate]
 checkver = { github = "Code-Hex/pget" }
+url_template = { x64 = "https://github.com/Code-Hex/pget/releases/download/v$version/pget_.$version_Windows_x86_64.zip", arm64 = "https://github.com/Code-Hex/pget/releases/download/v$version/pget_.$version_Windows_arm64.zip" }

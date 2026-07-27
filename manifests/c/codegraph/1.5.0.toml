@@ -17,3 +17,4 @@ sha256 = "de125e792b5eed7dee8def2ab9bd7e762f372012f75f595e59d3b0c8714b0d55"
 
 [autoupdate]
 checkver = { github = "colbymchenry/codegraph" }
+url_template = { x64 = "https://github.com/colbymchenry/codegraph/releases/download/v$version/codegraph-win32-x64.zip", arm64 = "https://github.com/colbymchenry/codegraph/releases/download/v$version/codegraph-win32-arm64.zip" }

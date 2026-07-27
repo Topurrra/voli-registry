@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "couchcoding/Logbert" }
+url_template = { x64 = "https://github.com/couchcoding/Logbert/releases/download/$version/Logbert.$version.-.Setup.-.x64.msi" }

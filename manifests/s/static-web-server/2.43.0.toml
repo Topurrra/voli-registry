@@ -17,3 +17,4 @@ sha256 = "492b1a3abf65c7ed57b0954796ee942f72c37a0a34c3e55c6809390815710fc3"
 
 [autoupdate]
 checkver = { github = "static-web-server/static-web-server" }
+url_template = { x64 = "https://github.com/static-web-server/static-web-server/releases/download/v$version/static-web-server-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/static-web-server/static-web-server/releases/download/v$version/static-web-server-v$version-aarch64-pc-windows-msvc.zip" }

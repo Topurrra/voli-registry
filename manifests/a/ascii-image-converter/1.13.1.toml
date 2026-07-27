@@ -17,3 +17,4 @@ sha256 = "4a4f27f3aeda9ab5d71c91c77c82ac7c9ff9050ebeaaab67e417ee87454d9152"
 
 [autoupdate]
 checkver = { github = "TheZoraiz/ascii-image-converter" }
+url_template = { x64 = "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v$version/ascii-image-converter_Windows_amd64_64bit.zip", arm64 = "https://github.com/TheZoraiz/ascii-image-converter/releases/download/v$version/ascii-image-converter_Windows_arm64_64bit.zip" }

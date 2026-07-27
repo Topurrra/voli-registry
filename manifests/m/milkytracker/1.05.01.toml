@@ -13,3 +13,4 @@ sha256 = "d2af55f26fe51ae411fd30890d7840d8327c78307b602b335b94fac5af6d3844"
 
 [autoupdate]
 checkver = { github = "milkytracker/MilkyTracker" }
+url_template = { x64 = "https://github.com/milkytracker/MilkyTracker/releases/download/v$version/milkytracker-$version-win64.zip" }

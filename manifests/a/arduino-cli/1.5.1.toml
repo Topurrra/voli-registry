@@ -12,3 +12,4 @@ sha256 = "fabe42e0eb04d00e776a66178299ff95a46c623dbc260f997e58fd514853dd40"
 
 [autoupdate]
 checkver = { github = "arduino/arduino-cli" }
+url_template = { x64 = "https://github.com/arduino/arduino-cli/releases/download/v$version/arduino-cli_$version_Windows_64bit.zip" }

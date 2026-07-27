@@ -13,3 +13,4 @@ sha256 = "fb861816d4212bba54c53c7b6fef793437427cd15c3022fda79d3c5cbb9c68de"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/cypherstack/stack_wallet/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"/download/(?<tag>[^/]+)/stack_wallet-v(?<version>[\\\\d.]+)-windows\\\\.zip\"}"
+url_template = { x64 = "https://github.com/cypherstack/stack_wallet/releases/download/$matchTag/stack_wallet-v$version-windows.zip" }

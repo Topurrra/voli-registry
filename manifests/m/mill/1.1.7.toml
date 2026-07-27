@@ -12,3 +12,4 @@ sha256 = "4604963e94a2763278bda0a9e3bed61bbeeae7de8bef70d7901c21917ef9a7f0"
 
 [autoupdate]
 checkver = { github = "com-lihaoyi/mill" }
+url_template = "https://repo1.maven.org/maven2/com/lihaoyi/mill-dist/$version/mill-dist-$version-mill.bat#/mill.bat"

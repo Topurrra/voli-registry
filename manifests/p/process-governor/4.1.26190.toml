@@ -12,3 +12,4 @@ sha256 = "1bd7384dfbc9b562a587c3a6ebb8b393ddcc281b1a62cc18d87e99cea0f7ec01"
 
 [autoupdate]
 checkver = { github = "lowleveldesign/process-governor" }
+url_template = { x64 = "https://github.com/lowleveldesign/process-governor/releases/download/$version/procgov.zip" }

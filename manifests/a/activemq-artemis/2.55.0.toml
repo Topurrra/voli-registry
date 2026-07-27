@@ -12,4 +12,5 @@ url = "https://dlcdn.apache.org/artemis/artemis/2.55.0/apache-artemis-2.55.0-bin
 sha512 = "233027a46a351c15f52174110744718dc41d0376c524407d0b5618064886f1b074a1dcceb626239d6c1cfbf8b7918baa9eb82b265e8ad4432d335b1f85775589"
 
 [autoupdate]
-checkver = "{\"regex\":\"Apache Artemis ([\\\\d.]+)\",\"url\":\"https://artemis.apache.org/components/artemis/download/\"}"
+checkver = { url = "https://artemis.apache.org/components/artemis/download/", regex = "Apache Artemis ([\\d.]+)" }
+url_template = "https://dlcdn.apache.org/artemis/artemis/$version/apache-artemis-$version-bin.zip"

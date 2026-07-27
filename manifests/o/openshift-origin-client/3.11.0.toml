@@ -11,4 +11,5 @@ url = "https://github.com/openshift/origin/releases/download/v3.11.0/openshift-o
 sha256 = "cdb84cc0000d0f0983120f903b2cad7114527ce2a9c4eb1988986eda7b877bfa"
 
 [autoupdate]
-checkver = "{\"regex\":\"openshift-origin-client-tools-v(?<version>[\\\\d.]+)-(?<commit>[\\\\w]+)-windows\\\\.zip\",\"url\":\"https://github.com/openshift/origin/releases/latest\"}"
+checkver = { url = "https://github.com/openshift/origin/releases/latest", regex = "openshift-origin-client-tools-v(?<version>[\\d.]+)-(?<commit>[\\w]+)-windows\\.zip" }
+url_template = { x64 = "https://github.com/openshift/origin/releases/download/v$version/openshift-origin-client-tools-v$version-$matchCommit-windows.zip" }

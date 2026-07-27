@@ -14,3 +14,4 @@ sha256 = "7ab98dec9c3e1718296cd67ddf657f19470e2e5edf7e2c75f4248734e5e37772"
 
 [autoupdate]
 checkver = { github = "Faster3ck/Converseen" }
+url_template = "https://github.com/Faster3ck/Converseen/releases/download/v$version/converseen-$version-$matchBuild-win32-portable.zip"

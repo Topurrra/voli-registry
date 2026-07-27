@@ -13,3 +13,4 @@ sha256 = "797ebcb5c181ae68fa3365d422e533894aabbc2746b1060eae83449bbffd29da"
 
 [autoupdate]
 checkver = { github = "careteditor/releases" }
+url_template = "https://github.com/careteditor/releases/releases/download/$version/Caret-$version-full.nupkg"

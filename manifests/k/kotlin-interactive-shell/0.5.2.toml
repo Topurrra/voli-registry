@@ -13,3 +13,4 @@ sha256 = "9bd5697f9ec29cd63eaf0b503f46edce377bac73e46552aa12231ac5dbda21e4"
 
 [autoupdate]
 checkver = { github = "Kotlin/kotlin-interactive-shell" }
+url_template = "https://github.com/Kotlin/kotlin-interactive-shell/releases/download/v$version/ki-archive.zip"

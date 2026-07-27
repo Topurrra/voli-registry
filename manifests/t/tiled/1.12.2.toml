@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "mapeditor/tiled" }
+url_template = { x64 = "https://github.com/mapeditor/tiled/releases/download/v$version/Tiled-$version_Windows-10+_x86_64.msi" }

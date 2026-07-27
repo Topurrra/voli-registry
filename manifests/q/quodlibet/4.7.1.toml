@@ -15,3 +15,4 @@ sha256 = "a12e2026af4e109ef324ff352ded21e1900db65573917087b1d8737aaaadb77f"
 
 [autoupdate]
 checkver = { github = "quodlibet/quodlibet" }
+url_template = "https://github.com/quodlibet/quodlibet/releases/download/release-$version/quodlibet-$version-portable.exe#/dl.7z"

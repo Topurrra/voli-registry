@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "trobonox/kanri" }
+url_template = { x64 = "https://github.com/trobonox/kanri/releases/download/app-v$version/kanri_$version_x64_en-US.msi" }

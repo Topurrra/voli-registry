@@ -12,4 +12,5 @@ url = "https://dl.influxdata.com/chronograf/releases/chronograf-1.11.4_windows_a
 sha256 = "e9f1e38be359f6fa00c201c6a4ee8467dc9b83408e3f78e407fdef12769667c3"
 
 [autoupdate]
-checkver = "{\"regex\":\">Chronograf v([\\\\d.]+)<\",\"url\":\"https://portal.influxdata.com/downloads\"}"
+checkver = { url = "https://portal.influxdata.com/downloads", regex = ">Chronograf v([\\d.]+)<" }
+url_template = { x64 = "https://dl.influxdata.com/chronograf/releases/chronograf-$version_windows_amd64.zip" }

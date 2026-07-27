@@ -16,3 +16,4 @@ sha256 = "9039379742797c56cca6bdb4823fef1ee93153570eb1abe9be5f26e1c0986349"
 
 [autoupdate]
 checkver = { github = "jeffvli/feishin" }
+url_template = { x64 = "https://github.com/jeffvli/feishin/releases/download/v$version/Feishin-$version-win-x64.zip", arm64 = "https://github.com/jeffvli/feishin/releases/download/v$version/Feishin-$version-win-arm64.zip" }

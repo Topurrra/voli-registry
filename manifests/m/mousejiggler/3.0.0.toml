@@ -17,3 +17,4 @@ sha256 = "e989104df9e26804a7eb24bae9ba52038d8eccb06f01ee6bd63b98120e58433f"
 
 [autoupdate]
 checkver = { github = "arkane-systems/mousejiggler" }
+url_template = { x64 = "https://github.com/arkane-systems/mousejiggler/releases/download/$version/MouseJiggler-standalone-x64.zip", arm64 = "https://github.com/arkane-systems/mousejiggler/releases/download/$version/MouseJiggler-standalone-arm64.zip" }

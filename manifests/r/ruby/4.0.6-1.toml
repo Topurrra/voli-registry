@@ -1,0 +1,24 @@
+name = "ruby"
+version = "4.0.6-1"
+description = "A dynamic programming language with a focus on simplicity and productivity."
+homepage = "https://rubyinstaller.org"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "rubyinstaller-4.0.6-1-x64"
+persist = ["gems"]
+
+[source.x64]
+url = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-4.0.6-1/rubyinstaller-4.0.6-1-x64.7z"
+sha256 = "328d7a86bea2f4c432783025050c9ffa1c36fcfc54ebccc466b63450ec3af223"
+
+[source.arm64]
+url = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-4.0.6-1/rubyinstaller-4.0.6-1-arm.7z"
+sha256 = "7d4c80e2251190afb4708f2c840425f16b0c912669a7fc105f889fbe6565cd8c"
+
+[env]
+PATH = "{dir}\\bin;{dir}\\gems\\bin"
+GEM_HOME = "{dir}\\gems"
+
+[autoupdate]
+checkver = { url = "https://raw.githubusercontent.com/oneclick/rubyinstaller.org-website/master/_data/downloads.yaml", regex = "Ruby (\\S+)" }
+url_template = { x64 = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-$version/rubyinstaller-$version-x64.7z", arm64 = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-$version/rubyinstaller-$version-arm.7z" }

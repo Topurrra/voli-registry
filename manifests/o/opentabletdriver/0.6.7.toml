@@ -15,3 +15,4 @@ sha256 = "4ee9ae149404f0b39132624e488507639c8ce56d1ec77755c66ee7e58562110a"
 
 [autoupdate]
 checkver = { github = "OpenTabletDriver/OpenTabletDriver" }
+url_template = { x64 = "https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v$version/OpenTabletDriver-$version_win-x64.zip" }

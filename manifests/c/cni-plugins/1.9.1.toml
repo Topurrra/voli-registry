@@ -12,3 +12,4 @@ sha256 = "c09a62523d76b32b883b6a9ee824c997b5c3cc8b3caebc8612c2f64fbbe97334"
 
 [autoupdate]
 checkver = { github = "containernetworking/plugins" }
+url_template = { x64 = "https://github.com/containernetworking/plugins/releases/download/v$version/cni-plugins-windows-amd64-v$version.tgz" }

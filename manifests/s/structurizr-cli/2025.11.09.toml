@@ -12,3 +12,4 @@ sha256 = "f5365a463fc44d539ed19bec00c48ba1e1ecda0ccfd1ba40d2e7472d264eb79a"
 
 [autoupdate]
 checkver = { github = "structurizr/cli" }
+url_template = "https://github.com/structurizr/cli/releases/download/v$version/structurizr-cli.zip"

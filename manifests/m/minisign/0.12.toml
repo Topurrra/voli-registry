@@ -17,3 +17,4 @@ sha256 = "37b600344e20c19314b2e82813db2bfdcc408b77b876f7727889dbd46d539479"
 
 [autoupdate]
 checkver = { github = "jedisct1/minisign" }
+url_template = { x64 = "https://github.com/jedisct1/minisign/releases/download/$version/minisign-$version-win64.zip", arm64 = "https://github.com/jedisct1/minisign/releases/download/$version/minisign-$version-win64.zip" }

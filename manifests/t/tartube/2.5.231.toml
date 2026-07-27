@@ -13,3 +13,4 @@ sha256 = "72d8f459293ceffb52d2baf9f0c9b134c4985d08f20d160b6469c916d2fdcfa5"
 
 [autoupdate]
 checkver = { github = "axcore/tartube" }
+url_template = { x64 = "https://github.com/axcore/tartube/releases/download/v$version/tartube-$version-64bit-mswin-portable.zip" }

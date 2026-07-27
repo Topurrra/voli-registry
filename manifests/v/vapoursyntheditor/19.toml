@@ -11,4 +11,5 @@ url = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/VapourS
 sha256 = "43bc782772bc4f3a717ef6d9622b24ca905919bfd0423b1760e76f9bd34b91c2"
 
 [autoupdate]
-checkver = "{\"regex\":\"<td class=\\\"name\\\">r(\\\\d+)<\\\\/td>\",\"url\":\"https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/?tab=tags\"}"
+checkver = { url = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/?tab=tags", regex = "<td class=\"name\">r(\\d+)<\\/td>" }
+url_template = { x64 = "https://bitbucket.org/mystery_keeper/vapoursynth-editor/downloads/VapourSynthEditor-r$version-64bit.7z" }

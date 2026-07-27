@@ -12,3 +12,4 @@ sha256 = "49a47b8d8c25aa74d18008aa9225db40a45ce7279bb3a491e32a010b669cda29"
 
 [autoupdate]
 checkver = { github = "Taiko2k/Tauon" }
+url_template = { x64 = "https://github.com/Taiko2k/Tauon/releases/download/v$version/TauonMusicBox-windows.7z" }

@@ -13,3 +13,4 @@ sha256 = "66d45b21f309cca2646689d06656dec1c9115a0b31da7c3a078aa6bdcabc327c"
 
 [autoupdate]
 checkver = { github = "martpie/museeks" }
+url_template = { x64 = "https://github.com/martpie/museeks/releases/download/$version/Museeks_$version_x64-setup.exe#/dl.7z" }

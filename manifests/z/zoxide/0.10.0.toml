@@ -16,3 +16,4 @@ sha256 = "b0e6eb62b11ebf168d5c65c5d23c635e81848cc4a88ae6b9caee64cf1e35d12b"
 
 [autoupdate]
 checkver = { github = "ajeetdsouza/zoxide" }
+url_template = { x64 = "https://github.com/ajeetdsouza/zoxide/releases/download/v$version/zoxide-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ajeetdsouza/zoxide/releases/download/v$version/zoxide-$version-aarch64-pc-windows-msvc.zip" }

@@ -13,3 +13,4 @@ sha256 = "6f7b631bf0827e8801cb4ab77a0e6fe28ca503584fd83feaca6c9cb7298ad001"
 
 [autoupdate]
 checkver = { github = "weclaw1/inbac" }
+url_template = "https://github.com/weclaw1/inbac/releases/download/$version/inbac-Windows.zip"

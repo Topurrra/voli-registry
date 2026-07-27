@@ -16,3 +16,4 @@ wireshark = "*"
 
 [autoupdate]
 checkver = { github = "gcla/termshark" }
+url_template = { x64 = "https://github.com/gcla/termshark/releases/download/v$version/termshark_$version_windows_x64.zip" }

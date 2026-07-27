@@ -14,3 +14,4 @@ sha256 = "7db3dad3746e7b23857db92fc05ee2d3e17eee1b28e237709a612366ba909c79"
 
 [autoupdate]
 checkver = { github = "RamonUnch/AltSnap" }
+url_template = { x64 = "https://github.com/RamonUnch/AltSnap/releases/download/$version/AltSnap$versionbin_x64.zip" }

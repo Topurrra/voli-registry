@@ -12,3 +12,4 @@ sha512 = "44731e1cb28aeb575f449e40ebe6ef7471626af821a83c4e955252b8c584fdab3eaf7a
 
 [autoupdate]
 checkver = { github = "wexond/desktop" }
+url_template = { x64 = "https://github.com/wexond/desktop/releases/download/v$version/wexond-$version-x64.nsis.7z" }

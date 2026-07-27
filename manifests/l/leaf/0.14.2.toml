@@ -11,3 +11,4 @@ sha256 = "d04705f049946473e117cff25b82b51bf3cbd421f484e041e390dd5ac640b59d"
 
 [autoupdate]
 checkver = { github = "eycorsican/leaf" }
+url_template = { x64 = "https://github.com/eycorsican/leaf/releases/download/v$version/leaf-x86_64-pc-windows-gnu.zip" }

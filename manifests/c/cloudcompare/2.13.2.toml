@@ -13,4 +13,5 @@ url = "https://cloudcompare.org/release/CloudCompare_v2.13.2_bin_x64.7z"
 sha256 = "b5c534443eb58a80b54cef23c525d1c92534400e76fe068bb45ad13cb0a1ff29"
 
 [autoupdate]
-checkver = "{\"regex\":\"Latest stable release.+(\\\\d+\\\\.\\\\d+\\\\.\\\\d+) \",\"url\":\"https://cloudcompare.org/release/\"}"
+checkver = { url = "https://cloudcompare.org/release/", regex = "Latest stable release.+(\\d+\\.\\d+\\.\\d+) " }
+url_template = "https://cloudcompare.org/release/CloudCompare_v$version_bin_x64.7z"

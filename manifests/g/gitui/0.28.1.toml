@@ -12,3 +12,4 @@ sha256 = "fab116ccdf9ae4e17378db912d76cc26e60aefd2226f44e665120dea166867e4"
 
 [autoupdate]
 checkver = { github = "gitui-org/gitui" }
+url_template = "https://github.com/gitui-org/gitui/releases/download/v$version/gitui-win.tar.gz"

@@ -18,3 +18,4 @@ sha256 = "958952de131c392a4e1e9656a1d70c3916d09d5a1f5e3f8c67dc0e6f35dbd76a"
 
 [autoupdate]
 checkver = { github = "xmrig/xmrig" }
+url_template = { x64 = "https://github.com/xmrig/xmrig/releases/download/v$version/xmrig-$version-windows-x64.zip", arm64 = "https://github.com/xmrig/xmrig/releases/download/v$version/xmrig-$version-windows-arm64.zip" }

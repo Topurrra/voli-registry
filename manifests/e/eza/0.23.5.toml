@@ -12,3 +12,4 @@ sha256 = "c830638c844a5b89d39ba662b5549903a71fa539018e813880f5b8afa77bac2e"
 
 [autoupdate]
 checkver = { github = "eza-community/eza" }
+url_template = { x64 = "https://github.com/eza-community/eza/releases/download/v$version/eza.exe_x86_64-pc-windows-gnu.zip" }

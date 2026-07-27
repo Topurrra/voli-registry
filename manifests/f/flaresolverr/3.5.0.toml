@@ -4,6 +4,7 @@ description = "A proxy server to bypass Cloudflare and DDoS-GUARD protection."
 homepage = "https://github.com/FlareSolverr/FlareSolverr"
 license = "MIT"
 kind = "app"
+extract_dir = "flaresolverr"
 bin = ["flaresolverr.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "76a6c3e43af7de3827b2ea1badf2bb607f664caa445cef3f14d624b421f7e01e"
 
 [autoupdate]
 checkver = { github = "FlareSolverr/FlareSolverr" }
+url_template = { x64 = "https://github.com/FlareSolverr/FlareSolverr/releases/download/v$version/flaresolverr_windows_x64.zip" }

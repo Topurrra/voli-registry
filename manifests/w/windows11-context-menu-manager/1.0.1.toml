@@ -16,3 +16,4 @@ sha256 = "715b91419559e0aa1bd3b28b6c6fb0b43e50133c1d324e83472b05eb36975b11"
 
 [autoupdate]
 checkver = { github = "branhill/windows-11-context-menu-manager" }
+url_template = { x64 = "https://github.com/branhill/windows-11-context-menu-manager/releases/download/v$version/release_win-x64.zip", arm64 = "https://github.com/branhill/windows-11-context-menu-manager/releases/download/v$version/release_win-arm64.zip" }

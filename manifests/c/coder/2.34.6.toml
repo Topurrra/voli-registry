@@ -16,3 +16,4 @@ CODER_CONFIG_DIR = "{dir}\\config"
 
 [autoupdate]
 checkver = { github = "coder/coder" }
+url_template = { x64 = "https://github.com/coder/coder/releases/download/v$version/coder_$version_windows_amd64.zip" }

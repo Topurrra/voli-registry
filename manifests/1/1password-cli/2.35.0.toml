@@ -13,4 +13,5 @@ sha256 = "f99f974f38c114c341fa589e4f4cc5e7b13fa1bf19a302283e438360636a796b"
 PATH = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\"/op_windows_amd64_v([\\\\d.]+)\\\\.zip\",\"url\":\"https://app-updates.agilebits.com/product_history/CLI2\"}"
+checkver = { url = "https://app-updates.agilebits.com/product_history/CLI2", regex = "/op_windows_amd64_v([\\d.]+)\\.zip" }
+url_template = { x64 = "https://cache.agilebits.com/dist/1P/op2/pkg/v$version/op_windows_amd64_v$version.zip" }

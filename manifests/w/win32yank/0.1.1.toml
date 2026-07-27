@@ -12,3 +12,4 @@ sha256 = "247c9a05b94387a884b49d3db13f806b1677dfc38020f955f719be6902260cd6"
 
 [autoupdate]
 checkver = { github = "equalsraf/win32yank" }
+url_template = { x64 = "https://github.com/equalsraf/win32yank/releases/download/v$version/win32yank-x64.zip" }

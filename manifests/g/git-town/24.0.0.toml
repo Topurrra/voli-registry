@@ -16,3 +16,4 @@ sha256 = "9e711e47a798eca69cd53a9921f8afb64f100c41852b3c063ec527de752b3c11"
 
 [autoupdate]
 checkver = { github = "git-town/git-town" }
+url_template = { x64 = "https://github.com/git-town/git-town/releases/download/v$version/git-town_windows_intel_64.zip", arm64 = "https://github.com/git-town/git-town/releases/download/v$version/git-town_windows_arm_64.zip" }

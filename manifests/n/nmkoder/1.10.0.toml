@@ -14,3 +14,4 @@ sha256 = "8a699e4114555be9ed71a39e285f4ef86c74fed72987a3b267a9bd409bb55579"
 
 [autoupdate]
 checkver = { github = "n00mkrad/nmkoder" }
+url_template = "https://github.com/n00mkrad/nmkoder/releases/download/v$version/Nmkoder$majorVersion.$minorVersion.7z"

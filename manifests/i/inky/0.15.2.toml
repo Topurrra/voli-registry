@@ -13,3 +13,4 @@ sha256 = "c6cf8cf567d63ff322e8a41dfda453200b02d94403ef403cbd43778147f8411c"
 
 [autoupdate]
 checkver = { github = "inkle/inky" }
+url_template = { x64 = "https://github.com/inkle/inky/releases/download/$version/Inky_windows_64.zip" }

@@ -11,4 +11,5 @@ url = "https://github.com/aquasecurity/trivy/releases/download/v0.72.0/trivy_0.7
 sha256 = "ed3cf122060f61818fe1f735fd97557954e16e10bc8b058af9852271cf2e91b3"
 
 [autoupdate]
-checkver = "{\"regex\":\"/tree/(?:v|V)([\\\\d.]+)\",\"url\":\"https://github.com/aquasecurity/trivy/releases/latest\"}"
+checkver = { url = "https://github.com/aquasecurity/trivy/releases/latest", regex = "/tree/(?:v|V)([\\d.]+)" }
+url_template = { x64 = "https://github.com/aquasecurity/trivy/releases/download/v$version/trivy_$version_windows-64bit.zip" }

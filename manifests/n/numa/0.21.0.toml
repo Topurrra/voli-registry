@@ -12,3 +12,4 @@ sha256 = "d253e0b2c2e332750cfbedbf8ebddc3f2a085ceb9bd7365591aecf599fbd7c6d"
 
 [autoupdate]
 checkver = { github = "razvandimescu/numa" }
+url_template = { x64 = "https://github.com/razvandimescu/numa/releases/download/v$version/numa-windows-x86_64.zip" }

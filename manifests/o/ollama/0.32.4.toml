@@ -5,23 +5,15 @@ homepage = "https://ollama.com/"
 license = "MIT"
 kind = "app"
 bin = ["ollama.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/ollama/ollama/releases/download/v0.32.4/ollama-windows-amd64.zip"
 sha256 = "4ce7e765dc2bf1bb424a76b96d6631cc0462f5c7507e85f0dc2abf30c564953b"
-extra = []
 
 [source.arm64]
 url = "https://github.com/ollama/ollama/releases/download/v0.32.4/ollama-windows-arm64.zip"
 sha256 = "ebbb546186000b076fe18d0df69eb3738bd23b6dc56d5d8ff058f92d7b62a73e"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "ollama/ollama"
+[autoupdate]
+checkver = { github = "ollama/ollama" }
+url_template = { x64 = "https://github.com/ollama/ollama/releases/download/v$version/ollama-windows-amd64.zip", arm64 = "https://github.com/ollama/ollama/releases/download/v$version/ollama-windows-arm64.zip" }

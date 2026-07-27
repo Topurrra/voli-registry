@@ -17,3 +17,4 @@ sha256 = "0edc12d4b9b66261bbee6d26a210c3bb3bd92308ecf6db2e51c36a4a876bbe3c"
 
 [autoupdate]
 checkver = { github = "libvips/nip4" }
+url_template = { x64 = "https://github.com/libvips/nip4/releases/download/v$version/nip4-x64-$version.zip", arm64 = "https://github.com/libvips/nip4/releases/download/v$version/nip4-arm64-$version.zip" }

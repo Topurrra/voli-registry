@@ -15,3 +15,4 @@ sha256 = "5099b3df2d21f1bb0c1cbf28dfa9fc6fa817e7eea77a0efe4daf93f571aae418"
 
 [autoupdate]
 checkver = { github = "hiddify/hiddify-app" }
+url_template = { x64 = "https://github.com/hiddify/hiddify-app/releases/download/v$version/Hiddify-Windows-Portable-x64.zip" }

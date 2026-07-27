@@ -16,3 +16,4 @@ sha256 = "15715fb650e16aee10a0a2849aec4a96f33a4a2808df562aad28b3fc630c85f6"
 
 [autoupdate]
 checkver = { github = "zaquestion/lab" }
+url_template = { x64 = "https://github.com/zaquestion/lab/releases/download/v$version/lab_$version_windows_amd64.zip", arm64 = "https://github.com/zaquestion/lab/releases/download/v$version/lab_$version_windows_arm64.zip" }

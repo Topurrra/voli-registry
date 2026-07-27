@@ -13,3 +13,4 @@ sha256 = "9debbc715166f038cf86f80cc4602f04efaf10ef173329286a592cf2826f9be3"
 
 [autoupdate]
 checkver = { github = "altsem/gitu" }
+url_template = { x64 = "https://github.com/altsem/gitu/releases/download/v$version/gitu-v$version-x86_64-pc-windows-msvc.zip" }

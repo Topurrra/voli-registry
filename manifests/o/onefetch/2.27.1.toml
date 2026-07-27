@@ -12,3 +12,4 @@ sha256 = "5f63d2e4b0e8e591706a1e7bc8af8fb5f129fb0f55b98abce05555f7669cba5d"
 
 [autoupdate]
 checkver = { github = "o2sh/onefetch" }
+url_template = { x64 = "https://github.com/o2sh/onefetch/releases/download/$version/onefetch-win.tar.gz" }

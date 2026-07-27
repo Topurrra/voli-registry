@@ -14,3 +14,4 @@ sha256 = "f3b3408f12a01d05c5ad360147949e3a15c7df8ed7eefa8d2a408b90b27d14f5"
 
 [autoupdate]
 checkver = { github = "KDE/ghostwriter" }
+url_template = { x64 = "https://github.com/KDE/ghostwriter/releases/download/$version/ghostwriter_$version_win64_portable.zip" }

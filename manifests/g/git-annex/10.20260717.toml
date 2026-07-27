@@ -11,4 +11,4 @@ url = "https://downloads.kitenet.net/git-annex/windows/current/git-annex-install
 sha256 = "4d4ca04dfb7a2faf8c1a43be7bfdda98219833974bbf2678384a1dbaa1feb1f9"
 
 [autoupdate]
-checkver = "{\"regex\":\"distributionVersion = \\\"([\\\\d.]+)\\\"\",\"url\":\"https://downloads.kitenet.net/git-annex/windows/current/git-annex-installer.exe.info\"}"
+checkver = { url = "https://downloads.kitenet.net/git-annex/windows/current/git-annex-installer.exe.info", regex = "distributionVersion = \"([\\d.]+)\"" }

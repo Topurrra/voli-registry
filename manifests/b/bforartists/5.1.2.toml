@@ -13,4 +13,5 @@ url = "https://www.bforartists.de/data/binaries/Bforartists-5.1.2-Windows.zip"
 sha256 = "35d1a6650ee0606e1e4d0cadd08aec1f96ccb8dc42f368c88777ff24d41b98b0"
 
 [autoupdate]
-checkver = "{\"regex\":\"Bforartists-([\\\\w.]+)-Windows\\\\.zip\",\"url\":\"https://www.bforartists.de/download/\"}"
+checkver = { url = "https://www.bforartists.de/download/", regex = "Bforartists-([\\w.]+)-Windows\\.zip" }
+url_template = { x64 = "https://www.bforartists.de/data/binaries/Bforartists-$version-Windows.zip" }

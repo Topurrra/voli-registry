@@ -13,3 +13,4 @@ sha256 = "2732e3e4e7bfdaa3230bae7a9a43744e01e6f3c8c4a9627e52b14ad460f1c000"
 
 [autoupdate]
 checkver = { github = "microsoft/terminal" }
+url_template = "https://github.com/microsoft/terminal/releases/download/$version/colortool.zip"

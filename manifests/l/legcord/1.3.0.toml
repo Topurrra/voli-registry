@@ -1,0 +1,19 @@
+name = "legcord"
+version = "1.3.0"
+description = "A custom client designed to enhance your Discord experience while keeping everything lightweight."
+homepage = "https://legcord.app/"
+license = "OSL-3.0"
+kind = "app"
+shortcuts = [{ target = "Legcord.exe", name = "Legcord" }]
+
+[source.x64]
+url = "https://github.com/Legcord/Legcord/releases/download/v1.3.0/Legcord-1.3.0-win-x64.zip"
+sha256 = "99b52c0ccfdbdb7f264dfce8cebf5343d4190f6f1b8be8a9a86369a8696f1d6a"
+
+[source.arm64]
+url = "https://github.com/Legcord/Legcord/releases/download/v1.3.0/Legcord-1.3.0-win-arm64.zip"
+sha256 = "6cd47f9415265f3fe9a5f7d2c78dab3d3729de35ee89166e4974892f5fb3b6e7"
+
+[autoupdate]
+checkver = { github = "Legcord/Legcord" }
+url_template = { x64 = "https://github.com/Legcord/Legcord/releases/download/v$version/Legcord-$version-win-x64.zip", arm64 = "https://github.com/Legcord/Legcord/releases/download/v$version/Legcord-$version-win-arm64.zip" }

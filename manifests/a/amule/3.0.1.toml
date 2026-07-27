@@ -18,3 +18,4 @@ sha256 = "a40bea03aedd09d16d9f7b135272b86fcbc36c49b6718611100066573a303a6c"
 
 [autoupdate]
 checkver = { github = "amule-org/amule" }
+url_template = { x64 = "https://github.com/amule-org/amule/releases/download/$version/aMule-$version-Windows-x64.zip", arm64 = "https://github.com/amule-org/amule/releases/download/$version/aMule-$version-Windows-arm64.zip" }

@@ -16,3 +16,4 @@ sha256 = "b504eb979099127b9ad5d8be2804b1bcae0d49fd49bbbedd6b96873b28ccf94f"
 
 [autoupdate]
 checkver = { github = "SpatiumPortae/portal" }
+url_template = { x64 = "https://github.com/SpatiumPortae/portal/releases/download/v$version/portal_$version_Windows_x86_64.zip", arm64 = "https://github.com/SpatiumPortae/portal/releases/download/v$version/portal_$version_Windows_arm64.zip" }

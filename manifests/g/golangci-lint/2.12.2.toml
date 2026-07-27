@@ -17,3 +17,4 @@ sha256 = "947b9a5bf762d465710b376c156f0184abb2168378b0826af1899e0ee7183742"
 
 [autoupdate]
 checkver = { github = "golangci/golangci-lint" }
+url_template = { x64 = "https://github.com/golangci/golangci-lint/releases/download/v$version/golangci-lint-$version-windows-amd64.zip", arm64 = "https://github.com/golangci/golangci-lint/releases/download/v$version/golangci-lint-$version-windows-arm64.zip" }

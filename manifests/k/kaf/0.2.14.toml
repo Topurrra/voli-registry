@@ -16,3 +16,4 @@ sha256 = "8489a4e77ad65c394d3dd98974393625bdcc258d204b86a24272104f6729dbd4"
 
 [autoupdate]
 checkver = { github = "birdayz/kaf" }
+url_template = { x64 = "https://github.com/birdayz/kaf/releases/download/v$version/kaf_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/birdayz/kaf/releases/download/v$version/kaf_$version_Windows_arm64.tar.gz" }

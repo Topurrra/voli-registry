@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "ozmartian/vidcutter" }
+url_template = { x64 = "https://github.com/ozmartian/vidcutter/releases/download/$version/VidCutter-$version-setup-win64.exe" }

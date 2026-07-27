@@ -17,3 +17,4 @@ sha256 = "1d015925997e9fedc13119d38c5c264af607070c26a3440f0f019a0d819e65e1"
 
 [autoupdate]
 checkver = { github = "trzsz/tsshd" }
+url_template = { x64 = "https://github.com/trzsz/tsshd/releases/download/v$version/tsshd_$version_windows_x86_64.zip", arm64 = "https://github.com/trzsz/tsshd/releases/download/v$version/tsshd_$version_windows_aarch64.zip" }

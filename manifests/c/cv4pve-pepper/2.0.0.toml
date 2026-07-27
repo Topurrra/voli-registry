@@ -15,3 +15,4 @@ virt-viewer = "*"
 
 [autoupdate]
 checkver = { github = "Corsinvest/cv4pve-pepper" }
+url_template = { x64 = "https://github.com/Corsinvest/cv4pve-pepper/releases/download/v$version/cv4pve-pepper.exe-win-x64.zip" }

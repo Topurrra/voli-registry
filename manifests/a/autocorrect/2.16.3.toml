@@ -12,3 +12,4 @@ sha256 = "64ca1c11b6c002cf9617e672df8dcba091e912994ee80d101289ef7849a533d8"
 
 [autoupdate]
 checkver = { github = "huacnlee/autocorrect" }
+url_template = { x64 = "https://github.com/huacnlee/autocorrect/releases/download/v$version/autocorrect-windows-amd64.zip" }

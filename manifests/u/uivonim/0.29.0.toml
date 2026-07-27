@@ -13,3 +13,4 @@ sha256 = "c5e4d2847cc5f3317e2cb6bc7f49db41cc639e07365768d4caacd6505492bdfc"
 
 [autoupdate]
 checkver = { github = "smolck/uivonim" }
+url_template = { x64 = "https://github.com/smolck/uivonim/releases/download/v$version/uivonim-$version-win.zip" }

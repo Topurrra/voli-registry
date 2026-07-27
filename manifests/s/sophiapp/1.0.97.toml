@@ -14,3 +14,4 @@ sha256 = "621226b572dcaa91d44e36450f82fcf28fce052dff5770d50b3f628987f59291"
 
 [autoupdate]
 checkver = { github = "Sophia-Community/SophiApp" }
+url_template = "https://github.com/Sophia-Community/SophiApp/releases/download/$version/SophiApp.zip"

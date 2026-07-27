@@ -12,3 +12,4 @@ sha256 = "209958a6daa206ec21d22d6286e68bfd61e6d2c56d1a3b2d53c5a070471ad254"
 
 [autoupdate]
 checkver = "Latest version: ([\\d.]+)"
+url_template = "https://www.hibitsoft.ir/HiBitSysynfo/HiBitSysInfo-Portable-$version.zip"

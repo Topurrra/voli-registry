@@ -18,4 +18,5 @@ RABBITMQ_SERVER = "{dir}"
 erlang = "*"
 
 [autoupdate]
-checkver = "{\"regex\":\"> of RabbitMQ is <strong>([\\\\d.]+)</\",\"url\":\"https://www.rabbitmq.com/download.html\"}"
+checkver = { url = "https://www.rabbitmq.com/download.html", regex = "> of RabbitMQ is <strong>([\\d.]+)</" }
+url_template = "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$version/rabbitmq-server-windows-$version.zip"

@@ -12,3 +12,4 @@ sha256 = "871734a2322ea61a0d83ea8373162d3e1ecf0411ba4eb7e6aec423f4b6b95b4f"
 
 [autoupdate]
 checkver = { github = "FlyGoat/RyzenAdj" }
+url_template = { x64 = "https://github.com/FlyGoat/RyzenAdj/releases/download/v$version/ryzenadj-win64.zip" }

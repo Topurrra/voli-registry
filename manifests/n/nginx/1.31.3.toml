@@ -16,4 +16,5 @@ sha256 = "934a8fedd91646a4d7c51079ac9b71397d1caf7a6aeb81ccfd361250c04ace2c"
 NGINX_HOME = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\"Changes with nginx ([\\\\d.]+)\",\"url\":\"https://nginx.org/en/CHANGES\"}"
+checkver = { url = "https://nginx.org/en/CHANGES", regex = "Changes with nginx ([\\d.]+)" }
+url_template = "https://nginx.org/download/nginx-$version.zip"

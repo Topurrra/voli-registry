@@ -14,3 +14,4 @@ sha256 = "f008620cce866522e1f9029236d00f04f08d5b7c0c29a6353366920a62d39f38"
 
 [autoupdate]
 checkver = { github = "sabnzbd/sabnzbd" }
+url_template = { x64 = "https://github.com/sabnzbd/sabnzbd/releases/download/$version/SABnzbd-$version-win64-bin.zip" }

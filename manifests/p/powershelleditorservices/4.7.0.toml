@@ -12,3 +12,4 @@ sha256 = "5084f0326cc88539e9d880b08f6c52ce5be4672bb8ecee8921e35f8895a6b9d7"
 
 [autoupdate]
 checkver = { github = "PowerShell/PowerShellEditorServices" }
+url_template = "https://github.com/PowerShell/PowerShellEditorServices/releases/download/v$version/PowerShellEditorServices.zip"

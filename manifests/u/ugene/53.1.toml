@@ -14,3 +14,4 @@ sha256 = "71be27b6ce4100347c2c7a851e62ace84abdddd1d79bfb0bb8ab89dfbf81e9fe"
 
 [autoupdate]
 checkver = { github = "ugeneunipro/ugene" }
+url_template = { x64 = "https://github.com/ugeneunipro/ugene/releases/download/$version/ugene-$version-win-x86-64.zip" }

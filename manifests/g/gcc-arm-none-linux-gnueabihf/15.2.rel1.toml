@@ -14,4 +14,5 @@ PATH = "{dir}\\bin"
 TL_PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"arm-gnu-toolchain-([\\\\d.]+(rel\\\\d+)?)-mingw-w64-i686-arm-none-linux-gnueabihf.zip\",\"url\":\"https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads\"}"
+checkver = { url = "https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads", regex = "arm-gnu-toolchain-([\\d.]+(rel\\d+)?)-mingw-w64-i686-arm-none-linux-gnueabihf.zip" }
+url_template = "https://developer.arm.com/-/media/Files/downloads/gnu/$version/binrel/arm-gnu-toolchain-$version-mingw-w64-i686-arm-none-linux-gnueabihf.zip"

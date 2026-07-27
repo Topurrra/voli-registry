@@ -13,3 +13,4 @@ sha256 = "32975d1493ee1a975d6bb41e4fb56fe419cb442ded628bb772ba2e614acfacad"
 
 [autoupdate]
 checkver = { github = "lycheeverse/lychee" }
+url_template = { x64 = "https://github.com/lycheeverse/lychee/releases/download/lychee-v$version/lychee-x86_64-pc-windows-msvc.zip" }

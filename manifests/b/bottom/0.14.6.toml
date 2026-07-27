@@ -16,3 +16,4 @@ sha256 = "795f93215cfe26d436d1f78b507b5c28dba93081cbb4fce30e480e94350eddc9"
 
 [autoupdate]
 checkver = { github = "ClementTsang/bottom" }
+url_template = { x64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_aarch64-pc-windows-msvc.zip" }

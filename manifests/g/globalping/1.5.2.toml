@@ -16,3 +16,4 @@ sha256 = "689a9c4428e14c3f9ee289b38ec53ed0527251e9837507c4072a8356f62dbd4c"
 
 [autoupdate]
 checkver = { github = "jsdelivr/globalping-cli" }
+url_template = { x64 = "https://github.com/jsdelivr/globalping-cli/releases/download/v$version/globalping_Windows_x86_64.zip", arm64 = "https://github.com/jsdelivr/globalping-cli/releases/download/v$version/globalping_Windows_arm64.zip" }

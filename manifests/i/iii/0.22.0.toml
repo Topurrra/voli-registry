@@ -16,3 +16,4 @@ sha256 = "2af57e12fc07250cbd5908315b215ea3944a4f89ae1ccb8e50409cf827c92ac4"
 
 [autoupdate]
 checkver = { github = "iii-hq/iii" }
+url_template = { x64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-aarch64-pc-windows-msvc.zip" }

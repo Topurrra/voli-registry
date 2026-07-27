@@ -17,3 +17,4 @@ sha256 = "030d2fd99331a5c3d676ce0a822c077aba50fdb53d259c9e276c65f88b461f92"
 
 [autoupdate]
 checkver = { github = "mattn/goreman" }
+url_template = { x64 = "https://github.com/mattn/goreman/releases/download/v$version/goreman_v$version_windows_amd64.zip", arm64 = "https://github.com/mattn/goreman/releases/download/v$version/goreman_v$version_windows_arm64.zip" }

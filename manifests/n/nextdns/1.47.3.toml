@@ -12,3 +12,4 @@ sha256 = "b9ea2c3b2286d62aff63c48356c06ee75bf9fb775b7d9800b3c0d9febaedcbfc"
 
 [autoupdate]
 checkver = { github = "nextdns/nextdns" }
+url_template = { x64 = "https://github.com/nextdns/nextdns/releases/download/v$version/nextdns_$version_windows_amd64.zip" }

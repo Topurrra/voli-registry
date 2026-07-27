@@ -12,3 +12,4 @@ sha256 = "0adaa5395692d25b90f3e25c942dcdc4f20005c5a77fb047a5e27112a5220f8a"
 
 [autoupdate]
 checkver = { github = "timdp/lwc" }
+url_template = { x64 = "https://github.com/timdp/lwc/releases/download/v$version/lwc-$version-windows-amd64.tar.gz" }

@@ -13,3 +13,4 @@ sha256 = "9aaf4dbc970a4579ca2868bcc98034b53a53da070c092753bb317b38ada13cf5"
 
 [autoupdate]
 checkver = { github = "timberio/vector" }
+url_template = { x64 = "https://packages.timber.io/vector/$version/vector-$version-x86_64-pc-windows-msvc.zip" }

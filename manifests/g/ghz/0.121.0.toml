@@ -12,3 +12,4 @@ sha256 = "80329e20b6fe6ccf1cda7c6fe454b2611d12298d6056d067f2229b57d8b151ca"
 
 [autoupdate]
 checkver = { github = "bojand/ghz" }
+url_template = "https://github.com/bojand/ghz/releases/download/v$version/ghz-windows-x86_64.zip"

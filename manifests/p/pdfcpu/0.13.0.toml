@@ -13,3 +13,4 @@ sha256 = "53add9ba4bd6fa754e0e12a856c7ede6030a17b67d49f634ae1011424d75fced"
 
 [autoupdate]
 checkver = { github = "pdfcpu/pdfcpu" }
+url_template = { x64 = "https://github.com/pdfcpu/pdfcpu/releases/download/v$version/pdfcpu_$version_Windows_x86_64.zip" }

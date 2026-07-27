@@ -12,3 +12,4 @@ sha256 = "890df94a813be82587a53db47ea3e500fa34c758b958ee0bba9491f0ea12b43e"
 
 [autoupdate]
 checkver = { github = "yang991178/fluent-reader" }
+url_template = { x64 = "https://github.com/yang991178/fluent-reader/releases/download/v$version/Fluent.Reader.Unpacked.$matchHead.x64.zip" }

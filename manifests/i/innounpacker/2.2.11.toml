@@ -12,4 +12,4 @@ url = "https://www.rathlev-home.de/tools/download/innounpacker.zip"
 sha256 = "506a1dedaf59ff757cbc09a405a2ce71a5465a465b7abf55bba6c351d5708bc6"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+) \\\\(.+\\\\)\",\"url\":\"https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/changelog.txt\"}"
+checkver = { url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/changelog.txt", regex = "([\\d.]+) \\(.+\\)" }

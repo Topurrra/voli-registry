@@ -16,3 +16,4 @@ sha256 = "76a0b0659813c9077e3695109b497f26e2b2763f7f1478ff2cda6bbf50809210"
 
 [autoupdate]
 checkver = { github = "pamburus/hl" }
+url_template = { x64 = "https://github.com/pamburus/hl/releases/download/v$version/hl-windows.zip", arm64 = "https://github.com/pamburus/hl/releases/download/v$version/hl-windows-arm64.zip" }

@@ -4,6 +4,7 @@ description = "A demand-driven, horizontally threaded image processing library"
 homepage = "https://www.libvips.org/"
 license = "LGPL-2.1-only"
 kind = "app"
+extract_dir = "vips-dev-8.18"
 
 [source.x64]
 url = "https://github.com/libvips/build-win64-mxe/releases/download/v8.18.4/vips-dev-x64-all-8.18.4.zip"
@@ -18,3 +19,4 @@ PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "libvips/build-win64-mxe" }
+url_template = { x64 = "https://github.com/libvips/build-win64-mxe/releases/download/v$version/vips-dev-x64-all-$version.zip", arm64 = "https://github.com/libvips/build-win64-mxe/releases/download/v$version/vips-dev-arm64-all-$version.zip" }

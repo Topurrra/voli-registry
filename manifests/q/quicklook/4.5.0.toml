@@ -14,3 +14,4 @@ sha256 = "852d8bcccd984e416fc8491ccedb848f0c3472e930ee0d292188b2ea3df524e0"
 
 [autoupdate]
 checkver = { github = "QL-Win/QuickLook" }
+url_template = "https://github.com/QL-Win/QuickLook/releases/download/$version/QuickLook-$version.zip"

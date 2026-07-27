@@ -17,3 +17,4 @@ FFMPEG_DIR = "{dir}"
 
 [autoupdate]
 checkver = { github = "GyanD/codexffmpeg" }
+url_template = { x64 = "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-full_build-shared.7z" }

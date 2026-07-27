@@ -12,3 +12,4 @@ sha256 = "68d51916873a3dbdaf7997ddfbbbfd6472b5907ffc62ccc9a88d146bbc0db87d"
 
 [autoupdate]
 checkver = { github = "google/flatbuffers" }
+url_template = { x64 = "https://github.com/google/flatbuffers/releases/download/v$version/Windows.flatc.binary.zip" }

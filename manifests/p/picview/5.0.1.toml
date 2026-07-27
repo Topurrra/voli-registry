@@ -19,3 +19,4 @@ sha256 = "edd0717652e2c29b11ded3fca76363b30e6620db167710660f2b234fe94e5ec1"
 
 [autoupdate]
 checkver = { github = "Ruben2776/PicView" }
+url_template = { x64 = "https://github.com/Ruben2776/PicView/releases/download/$version/PicView-v$version-win-x64.zip", arm64 = "https://github.com/Ruben2776/PicView/releases/download/$version/PicView-v$version-win-arm64.zip" }

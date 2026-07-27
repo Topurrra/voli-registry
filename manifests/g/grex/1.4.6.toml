@@ -12,3 +12,4 @@ sha256 = "7691dbb8e46339a15d8362b79b2456f508266cf00a55fe685ed69a6259577485"
 
 [autoupdate]
 checkver = { github = "pemistahl/grex" }
+url_template = { x64 = "https://github.com/pemistahl/grex/releases/download/v$version/grex-v$version-x86_64-pc-windows-msvc.zip" }

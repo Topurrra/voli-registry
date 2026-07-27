@@ -15,4 +15,5 @@ sha256 = "6c22bd2cf2af0af4365e74dd0f84573d30385a3b6fe0afa8c112fa34ff408d1b"
 r = "*"
 
 [autoupdate]
-checkver = "{\"jsonpath\":\"$.rstudio.open_source.stable.desktop.installer.windows.basename\",\"regex\":\"RStudio-([\\\\d.-]+).exe\",\"url\":\"https://www.rstudio.com/wp-content/downloads.json\"}"
+checkver = { url = "https://www.rstudio.com/wp-content/downloads.json", regex = "RStudio-([\\d.-]+).exe" }
+url_template = { x64 = "https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-$version.exe#/dl.7z" }

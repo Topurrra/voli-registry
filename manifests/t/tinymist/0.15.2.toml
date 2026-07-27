@@ -16,3 +16,4 @@ sha256 = "ed120fc474a07c5614bb8a7ecd17a649360cba26c2d9f1f96b14a8bc7b3afc11"
 
 [autoupdate]
 checkver = { github = "Myriad-Dreamin/tinymist" }
+url_template = { x64 = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v$version/tinymist-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v$version/tinymist-aarch64-pc-windows-msvc.zip" }

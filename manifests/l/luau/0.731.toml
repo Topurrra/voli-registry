@@ -12,3 +12,4 @@ sha256 = "2fab3fca875a41d1be33440bd295c6d1db3c3ab08583d24eef84ccb5a5db9c83"
 
 [autoupdate]
 checkver = { github = "luau-lang/luau" }
+url_template = { x64 = "https://github.com/luau-lang/luau/releases/download/$version/luau-windows.zip" }

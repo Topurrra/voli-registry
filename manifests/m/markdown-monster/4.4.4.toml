@@ -13,4 +13,4 @@ url = "https://github.com/RickStrahl/MarkdownMonsterReleases/raw/master/CurrentR
 sha256 = "ad379230feb1de54fb1dffab01d0cc9854d8f9c771fab05efc04ccc4c3b885ea"
 
 [autoupdate]
-checkver = "{\"regex\":\"<Version>([\\\\d.]+)</Version>\",\"url\":\"https://raw.githubusercontent.com/RickStrahl/MarkdownMonsterReleases/master/CurrentRelease/MarkdownMonster_Version.xml\"}"
+checkver = { url = "https://raw.githubusercontent.com/RickStrahl/MarkdownMonsterReleases/master/CurrentRelease/MarkdownMonster_Version.xml", regex = "<Version>([\\d.]+)</Version>" }

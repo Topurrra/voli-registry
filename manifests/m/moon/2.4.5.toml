@@ -12,3 +12,4 @@ sha256 = "9beec4165ce2c70982188b200a3ef2ff090db4c8118e3b78f1a672a0912bbeab"
 
 [autoupdate]
 checkver = { github = "moonrepo/moon" }
+url_template = { x64 = "https://github.com/moonrepo/moon/releases/download/v$version/moon_cli-x86_64-pc-windows-msvc.zip" }

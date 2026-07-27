@@ -19,3 +19,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/YACReader/yacreader/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"YACReader-v([\\\\d.]+)-winx64-7z\"}"
+url_template = { x64 = "https://github.com/YACReader/yacreader/releases/download/$matchHead/YACReader-v$version-winx64-7z-qt6.exe", arm64 = "https://github.com/YACReader/yacreader/releases/download/$matchHead/YACReader-v$version-winarm64-7z-qt6.exe" }

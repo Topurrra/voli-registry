@@ -16,3 +16,4 @@ sha256 = "99b215e9a44169eb8d786c33484b963055e1c3dd40f68e14fcc47ae1c84e92c1"
 
 [autoupdate]
 checkver = { github = "latex-lsp/texlab" }
+url_template = { x64 = "https://github.com/latex-lsp/texlab/releases/download/v$version/texlab-x86_64-windows.zip", arm64 = "https://github.com/latex-lsp/texlab/releases/download/v$version/texlab-aarch64-windows.zip" }

@@ -14,4 +14,5 @@ sha256 = "fd3a4beee31b07ce6acb67f8b9f46b75daf15b669bd034b7582171743e0436ad"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"yubico-authenticator-([\\\\w.]+)-win64\\\\.msi\",\"url\":\"https://developers.yubico.com/yubioath-flutter/Releases/\"}"
+checkver = { url = "https://developers.yubico.com/yubioath-flutter/Releases/", regex = "yubico-authenticator-([\\w.]+)-win64\\.msi" }
+url_template = { x64 = "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-$version-win64.msi" }

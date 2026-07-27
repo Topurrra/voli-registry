@@ -14,3 +14,4 @@ sha256 = "6168a2e213a032b9e25c789497517b97f6df87414df0adcd3f159c2eb4ca517f"
 
 [autoupdate]
 checkver = { github = "juce-framework/JUCE" }
+url_template = { x64 = "https://github.com/juce-framework/JUCE/releases/download/$version/juce-$version-windows.zip" }

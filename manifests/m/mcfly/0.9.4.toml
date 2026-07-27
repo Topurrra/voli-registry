@@ -12,3 +12,4 @@ sha256 = "a390a094a8dfc324f4e474f8d8eb4eed956386170242adba3eadbe3a298f8193"
 
 [autoupdate]
 checkver = { github = "cantino/mcfly" }
+url_template = { x64 = "https://github.com/cantino/mcfly/releases/download/v$version/mcfly-v$version-x86_64-pc-windows-msvc.zip" }

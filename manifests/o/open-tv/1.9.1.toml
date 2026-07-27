@@ -20,3 +20,4 @@ yt-dlp = "*"
 
 [autoupdate]
 checkver = { github = "Fredolx/open-tv" }
+url_template = { x64 = "https://github.com/Fredolx/open-tv/releases/download/v$version/Fred.TV_$version_x64_en-US.msi" }

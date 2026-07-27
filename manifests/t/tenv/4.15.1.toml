@@ -16,3 +16,4 @@ sha256 = "412990b5ca754578ba6d31c6f66d98109a9ffaabea89b1b0d68e4f226ef3181f"
 
 [autoupdate]
 checkver = { github = "tofuutils/tenv" }
+url_template = { x64 = "https://github.com/tofuutils/tenv/releases/download/v$version/tenv_v$version_Windows_x86_64.zip", arm64 = "https://github.com/tofuutils/tenv/releases/download/v$version/tenv_v$version_Windows_arm64.zip" }

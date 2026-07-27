@@ -13,3 +13,4 @@ sha256 = "c56e8ce22f7e80cb85ad946cc82d198767b056366201d3e1a2b93d865be38154"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/FiloSottile/age/releases\",\"jsonpath\":\"$[*].assets[*].browser_download_url\",\"regex\":\"/age-v([\\\\w.-]+)-windows\"}"
+url_template = { x64 = "https://github.com/FiloSottile/age/releases/download/v$version/age-v$version-windows-amd64.zip" }

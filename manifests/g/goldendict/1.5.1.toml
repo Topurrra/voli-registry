@@ -15,3 +15,4 @@ sha256 = "a8102e777e6aa63b84a1ab4f398536aed90c677b542d4f52b1b2c4fdcbf7dc2c"
 
 [autoupdate]
 checkver = { github = "goldendict/goldendict" }
+url_template = { x64 = "https://github.com/goldendict/goldendict/releases/download/$version/GoldenDict-$version_.QT_$matchBuild.64bit.7z" }

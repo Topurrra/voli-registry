@@ -16,3 +16,4 @@ sha256 = "8dad4e026e6cfc98dfa048d57cd9c552b1479de2e596c7e4240c916662ba581f"
 
 [autoupdate]
 checkver = { github = "supabase/cli" }
+url_template = { x64 = "https://github.com/supabase/cli/releases/download/v$version/supabase_$version_windows_amd64.zip", arm64 = "https://github.com/supabase/cli/releases/download/v$version/supabase_$version_windows_arm64.zip" }

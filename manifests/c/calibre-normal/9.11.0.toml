@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "kovidgoyal/calibre" }
+url_template = { x64 = "https://download.calibre-ebook.com/$version/calibre-64bit-$version.msi" }

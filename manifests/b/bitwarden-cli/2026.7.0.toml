@@ -12,4 +12,5 @@ url = "https://github.com/bitwarden/clients/releases/download/cli-v2026.7.0/bw-o
 sha256 = "747a3d9d59a512507c883bc7fa7e4d65658501197240d2f2b107fd066765f4a2"
 
 [autoupdate]
-checkver = "{\"regex\":\"\\\\/cli-v([\\\\d.]+)<\\\\/id>\",\"url\":\"https://github.com/bitwarden/clients/releases.atom\"}"
+checkver = { url = "https://github.com/bitwarden/clients/releases.atom", regex = "\\/cli-v([\\d.]+)<\\/id>" }
+url_template = { x64 = "https://github.com/bitwarden/clients/releases/download/cli-v$version/bw-oss-windows-$version.zip" }

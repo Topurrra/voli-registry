@@ -12,3 +12,4 @@ sha256 = "151f7344f2c51d112626aed32cda6bac90691b3183d9a7cef0d6e919b9e8548d"
 
 [autoupdate]
 checkver = { github = "apex/up" }
+url_template = { x64 = "https://github.com/apex/up/releases/download/v$version/up_$version_windows_amd64.tar.gz" }

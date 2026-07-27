@@ -13,4 +13,4 @@ url = "https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_23.z
 sha256 = "5725a27ed16586bfdbe3c207cc4f9711e5a3c3bcebafe41b08a1031fbd76a473"
 
 [autoupdate]
-checkver = "{\"regex\":\"Advanced Renamer\\\\s+([\\\\d.]+)\\\\s+-\",\"url\":\"https://www.advancedrenamer.com/versionlog4\"}"
+checkver = { url = "https://www.advancedrenamer.com/versionlog4", regex = "Advanced Renamer\\s+([\\d.]+)\\s+-" }

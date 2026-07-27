@@ -13,3 +13,4 @@ sha256 = "f233160488a62799cc0bbd7d0c8c61d9fe802570ba898592e3d094d8fc2cdde4"
 
 [autoupdate]
 checkver = { github = "domcyrus/rustnet" }
+url_template = { x64 = "https://github.com/domcyrus/rustnet/releases/download/v$version/rustnet-v$version-x86_64-pc-windows-msvc.zip" }

@@ -17,3 +17,4 @@ ARCADEDB_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "ArcadeData/arcadedb" }
+url_template = "https://github.com/ArcadeData/arcadedb/releases/download/$version/arcadedb-$version.tar.gz"

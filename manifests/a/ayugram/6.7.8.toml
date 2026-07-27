@@ -13,3 +13,4 @@ sha256 = "fd1bc60069d0fe78e232c6255d00b96e993c572ced4a2750a7a67c7dda88592b"
 
 [autoupdate]
 checkver = { github = "AyuGram/AyuGramDesktop" }
+url_template = "https://github.com/AyuGram/AyuGramDesktop/releases/download/v$version/AyuGram.zip"

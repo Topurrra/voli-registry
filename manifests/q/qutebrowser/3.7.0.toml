@@ -14,3 +14,4 @@ sha256 = "6620e84015b5948b8e1016b1a29f4822044bf36fd2eff5f763692aee2668a8a0"
 
 [autoupdate]
 checkver = { github = "qutebrowser/qutebrowser" }
+url_template = { x64 = "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone.zip" }

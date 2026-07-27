@@ -13,3 +13,4 @@ sha256 = "ab192d20ed1ff6a88fef856b1a0dcf997e5022437c09a686c28356b43dc5a3e2"
 
 [autoupdate]
 checkver = { github = "ChrisAnd1998/TaskbarX" }
+url_template = { x64 = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/$version/TaskbarX_$version_x64.zip" }

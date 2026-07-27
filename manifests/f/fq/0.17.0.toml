@@ -16,3 +16,4 @@ sha256 = "488346a0935e6519e48a29e655b18d6af2f30412f1faebb0e98c9d27c0ed2b91"
 
 [autoupdate]
 checkver = { github = "wader/fq" }
+url_template = { x64 = "https://github.com/wader/fq/releases/download/v$version/fq_$version_windows_amd64.zip", arm64 = "https://github.com/wader/fq/releases/download/v$version/fq_$version_windows_arm64.zip" }

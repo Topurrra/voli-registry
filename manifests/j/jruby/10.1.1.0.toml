@@ -18,4 +18,5 @@ GEM_PATH = "{dir}\\gems"
 JRUBY_HOME = "{dir}"
 
 [autoupdate]
-checkver = "{\"regex\":\"Current Release:\\\\s+JRuby\\\\s+([\\\\d.]+)\",\"url\":\"https://www.jruby.org/download\"}"
+checkver = { url = "https://www.jruby.org/download", regex = "Current Release:\\s+JRuby\\s+([\\d.]+)" }
+url_template = "https://repo1.maven.org/maven2/org/jruby/jruby-dist/$version/jruby-dist-$version-bin.zip"

@@ -16,3 +16,4 @@ sha256 = "695713e826410831ef06c0205f7792de87754387e5d9e335ac033f2be98440e3"
 
 [autoupdate]
 checkver = { github = "jeessy2/ddns-go" }
+url_template = { x64 = "https://github.com/jeessy2/ddns-go/releases/download/v$version/ddns-go_$version_windows_x86_64.zip", arm64 = "https://github.com/jeessy2/ddns-go/releases/download/v$version/ddns-go_$version_windows_arm64.zip" }

@@ -4,6 +4,7 @@ description = "Sapling SCM is a cross-platform, highly scalable, Git-compatible 
 homepage = "https://sapling-scm.com/"
 license = "GPL-2.0-only"
 kind = "app"
+extract_dir = "Sapling"
 bin = ["sl.exe"]
 
 [source.x64]

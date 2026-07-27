@@ -12,3 +12,4 @@ sha256 = "55fbfe130617f45c90a8b15989c0342fb2caa774663c0dde84fe8f86f22a5688"
 
 [autoupdate]
 checkver = "sejda-desktop_([\\d.]+)_x64_portable"
+url_template = { x64 = "https://downloads.sejda-cdn.com/sejda-desktop_$version_x64_portable.zip" }

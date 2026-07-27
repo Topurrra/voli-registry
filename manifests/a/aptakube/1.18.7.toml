@@ -13,3 +13,4 @@ sha256 = "0e25bded722ffb22aaefafdf42b2d7b17915d183547ed79c61643cc9b21428fd"
 
 [autoupdate]
 checkver = { github = "aptakube/aptakube" }
+url_template = { x64 = "https://github.com/aptakube/aptakube/releases/download/$version/Aptakube_$version_x64.zip" }

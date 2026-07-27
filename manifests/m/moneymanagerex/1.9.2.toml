@@ -13,3 +13,4 @@ sha256 = "cd2c2a8346ac5489b224387c794e15f17f2fb02b042a7af7518f305599ef96b2"
 
 [autoupdate]
 checkver = { github = "moneymanagerex/moneymanagerex" }
+url_template = { x64 = "https://github.com/moneymanagerex/moneymanagerex/releases/download/v$version/mmex-$version-win64-portable.zip" }

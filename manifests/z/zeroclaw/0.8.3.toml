@@ -12,3 +12,4 @@ sha256 = "00da56062ff3f96f7dae20d9cc471e8e63e569dabffea6fda45793f5728a4db5"
 
 [autoupdate]
 checkver = { github = "zeroclaw-labs/zeroclaw" }
+url_template = { x64 = "https://github.com/zeroclaw-labs/zeroclaw/releases/download/v$version/zeroclaw-x86_64-pc-windows-msvc.zip" }

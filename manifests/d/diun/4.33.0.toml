@@ -12,3 +12,4 @@ sha256 = "a24b8d6e80774748bd71f033b8a757ac6249722524e158090549f055b5d75735"
 
 [autoupdate]
 checkver = { github = "crazy-max/diun" }
+url_template = { x64 = "https://github.com/crazy-max/diun/releases/download/v$version/diun_$version_windows_amd64.zip" }

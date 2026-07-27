@@ -12,3 +12,4 @@ sha256 = "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b"
 
 [autoupdate]
 checkver = { github = "LMMS/lmms" }
+url_template = { x64 = "https://github.com/LMMS/lmms/releases/download/v$version/lmms-$version-win64.exe#/dl.7z" }

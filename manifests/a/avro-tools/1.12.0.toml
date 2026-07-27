@@ -12,3 +12,4 @@ sha512 = "f626d59b91d8a7e7d75ba39818e84e7734775e87ddc2c58b1608b2850453e4a5e921af
 
 [autoupdate]
 checkver = { github = "apache/avro" }
+url_template = "https://dlcdn.apache.org/avro/avro-$version/java/avro-tools-$version.jar#/avro-tools.jar"

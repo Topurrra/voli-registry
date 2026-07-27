@@ -13,3 +13,4 @@ sha256 = "309f179853ae066009ad1f0569448c6d9a3509b527edda6bd7b91aa225cb8d72"
 
 [autoupdate]
 checkver = { github = "angr/angr-management" }
+url_template = { x64 = "https://github.com/angr/angr-management/releases/download/v$version/angr-management-v$version-win64-x86_64.zip" }

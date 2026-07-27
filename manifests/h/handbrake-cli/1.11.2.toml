@@ -12,3 +12,4 @@ sha256 = "80bfe8d5f5d11cc3ef76b834add3ed4e82dee6523ffeb435c283f88b1a21f09d"
 
 [autoupdate]
 checkver = { github = "HandBrake/HandBrake" }
+url_template = { x64 = "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrakeCLI-$version-win-x86_64.zip" }

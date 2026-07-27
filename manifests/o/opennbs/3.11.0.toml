@@ -12,3 +12,4 @@ sha256 = "f86e39ac09c61f872175f0e57bc3727d6002c2872dd2c40cfadd6cd81f7971c6"
 
 [autoupdate]
 checkver = { github = "OpenNBS/OpenNoteBlockStudio" }
+url_template = { x64 = "https://github.com/OpenNBS/OpenNoteBlockStudio/releases/download/v$version/Minecraft.Note.Block.Studio.zip" }

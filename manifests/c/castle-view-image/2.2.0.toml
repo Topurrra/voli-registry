@@ -14,3 +14,4 @@ sha256 = "40ce6261c7f288ac5c96ec80634840db074733c04ce89977f496e7bc8376a28d"
 
 [autoupdate]
 checkver = { github = "castle-engine/castle-image-viewer" }
+url_template = { x64 = "https://github.com/castle-engine/castle-image-viewer/releases/download/v$version/castle-image-viewer-$version-win64-x86_64.zip" }

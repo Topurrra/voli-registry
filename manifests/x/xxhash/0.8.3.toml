@@ -12,3 +12,4 @@ sha256 = "a6a6170d07ca37d74151dbea9cd6e1dbb881b5ceea34b9447e01f62b1442d40a"
 
 [autoupdate]
 checkver = { github = "Cyan4973/xxHash" }
+url_template = { x64 = "https://github.com/Cyan4973/xxHash/releases/download/v$version/xxhsum_win64_v$underscoreVersion.zip" }

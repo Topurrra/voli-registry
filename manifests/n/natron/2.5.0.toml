@@ -14,3 +14,4 @@ sha256 = "caed0b649ff2515b963f0b4fc009eb451a41d8ba3d6e5d4260253dd9e104c517"
 
 [autoupdate]
 checkver = { github = "NatronGitHub/Natron" }
+url_template = { x64 = "https://github.com/NatronGitHub/Natron/releases/download/v$version/Natron-$version-Windows-x86_64.zip" }

@@ -15,3 +15,4 @@ sha256 = "c698e8baed23ee1ad9366b475f52436bbbe95baeb3ca022e198a33865835cc99"
 
 [autoupdate]
 checkver = { github = "henrypp/chrlauncher" }
+url_template = { x64 = "https://github.com/henrypp/chrlauncher/releases/download/v.$version/chrlauncher-$version-bin.zip#/dl.7z" }

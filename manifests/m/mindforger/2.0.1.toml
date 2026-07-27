@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "dvorka/mindforger" }
+url_template = { x64 = "https://github.com/dvorka/mindforger/releases/download/$matchTag/windows-installer-mindforger-$version-$match2-qt$matchQt.exe" }

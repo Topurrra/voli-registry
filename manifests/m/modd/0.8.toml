@@ -13,3 +13,4 @@ sha256 = "ff14568d36baa9e83eaa19ca8d42dede97a43f3c9f82146e290d432329c6ef02"
 
 [autoupdate]
 checkver = { github = "cortesi/modd" }
+url_template = { x64 = "https://github.com/cortesi/modd/releases/download/v$version/modd-$version-windows64.zip" }

@@ -12,4 +12,4 @@ sha256 = "dba73a2cbe3cbc3edc3b27cc76c7400e776ca9f0824a2f4652c5fdb49d2ff7b5"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"([\\\\d.]+)\\\\s*\\\\[\\\\w+.*?STABLE\",\"url\":\"https://www.freedownloadmanager.org/board/viewtopic.php?f=1&t=17900\"}"
+checkver = { url = "https://www.freedownloadmanager.org/board/viewtopic.php?f=1&t=17900", regex = "([\\d.]+)\\s*\\[\\w+.*?STABLE" }

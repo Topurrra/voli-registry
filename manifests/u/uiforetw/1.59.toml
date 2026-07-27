@@ -13,3 +13,4 @@ sha256 = "af8b72385dbfb43f7296f276f1d4607e4bd0cb0a7577c4938477f93087247319"
 
 [autoupdate]
 checkver = { github = "google/UIforETW" }
+url_template = "https://github.com/google/UIforETW/releases/download/v$version/etwpackage$version.zip"

@@ -10,4 +10,4 @@ url = "http://www.s3.tgrmn.com/bru/BRC_Unicode_64.zip"
 sha256 = "2e620a0fd6b27e974fe746d6372becf279bad2edf546fdd2ce4a5cf86ef0cdb6"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?s)>Bulk Rename Command<.*?version ([\\\\d.]+)\",\"url\":\"https://www.bulkrenameutility.co.uk/Download.php\"}"
+checkver = { url = "https://www.bulkrenameutility.co.uk/Download.php", regex = "(?s)>Bulk Rename Command<.*?version ([\\d.]+)" }

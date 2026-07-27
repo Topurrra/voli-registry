@@ -12,3 +12,4 @@ sha256 = "3c54fd78d99e2769cf83a0faf12cf6cd4de1cac6ed7bee8d908a2c8fc23f538c"
 
 [autoupdate]
 checkver = { github = "norwoodj/helm-docs" }
+url_template = { x64 = "https://github.com/norwoodj/helm-docs/releases/download/v$version/helm-docs_$version_Windows_x86_64.tar.gz" }

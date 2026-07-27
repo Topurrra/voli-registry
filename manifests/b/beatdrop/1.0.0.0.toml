@@ -13,3 +13,4 @@ sha256 = "0587e1b3cf29b573bbe96cb2f62390e4ac3281e1423d75b24a05801889af8fce"
 
 [autoupdate]
 checkver = { github = "mvsoft74/BeatDrop" }
+url_template = "https://github.com/mvsoft74/BeatDrop/releases/download/v$version/BeatDrop-bin-$version.zip"

@@ -12,3 +12,4 @@ sha256 = "06e5b2345323201ed4c55897651862fee3b43f79ddced799f1236f0f0d1c1c0f"
 
 [autoupdate]
 checkver = { github = "zizmorcore/zizmor" }
+url_template = { x64 = "https://github.com/zizmorcore/zizmor/releases/download/v$version/zizmor-x86_64-pc-windows-msvc.zip" }

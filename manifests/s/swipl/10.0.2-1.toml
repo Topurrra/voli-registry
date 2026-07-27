@@ -12,4 +12,5 @@ url = "https://www.swi-prolog.org/download/stable/bin/swipl-10.0.2-1.x64.exe#/dl
 sha256 = "2ec1f25be0eafb92e559004782b130774c12573fb4b7e8a917e534754a641ad6"
 
 [autoupdate]
-checkver = "{\"regex\":\"swipl-([\\\\d.-]+)\\\\.x64\\\\.exe\",\"url\":\"https://www.swi-prolog.org/download/stable\"}"
+checkver = { url = "https://www.swi-prolog.org/download/stable", regex = "swipl-([\\d.-]+)\\.x64\\.exe" }
+url_template = { x64 = "https://www.swi-prolog.org/download/stable/bin/swipl-$version.x64.exe#/dl.7z" }

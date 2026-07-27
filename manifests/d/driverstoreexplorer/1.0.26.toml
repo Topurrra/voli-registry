@@ -13,3 +13,4 @@ sha256 = "89a5ed17bf7c08c869294af2202f5f9b34050f81c2feeaa6cd694970da8e931f"
 
 [autoupdate]
 checkver = { github = "lostindark/DriverStoreExplorer" }
+url_template = "https://github.com/lostindark/DriverStoreExplorer/releases/download/v$version/DriverStoreExplorer-v$version.zip"

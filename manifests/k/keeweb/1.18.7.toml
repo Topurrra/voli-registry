@@ -13,3 +13,4 @@ sha256 = "8bca3bd04172863f14b649763e7dc0696230e94b11b4ba9ea6158822057b1551"
 
 [autoupdate]
 checkver = { github = "keeweb/keeweb" }
+url_template = { x64 = "https://github.com/keeweb/keeweb/releases/download/v$version/KeeWeb-$version.win.x64.zip" }

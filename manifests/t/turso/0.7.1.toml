@@ -12,3 +12,4 @@ sha256 = "a097b5e631ab0fa1df6a03883995d11592dc24753a089872ac271688a81c841a"
 
 [autoupdate]
 checkver = { github = "tursodatabase/turso" }
+url_template = { x64 = "https://github.com/tursodatabase/turso/releases/download/v$version/turso_cli-x86_64-pc-windows-msvc.zip" }

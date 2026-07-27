@@ -12,3 +12,4 @@ sha256 = "8d64f13f810d5c6fbbd643c03b64601f88ce4a6cc225fb4d6a0808004b5b1c53"
 
 [autoupdate]
 checkver = { github = "hrkfdn/ncspot" }
+url_template = { x64 = "https://github.com/hrkfdn/ncspot/releases/download/v$version/ncspot-v$version-windows-x86_64.zip" }

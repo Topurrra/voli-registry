@@ -12,3 +12,4 @@ sha256 = "a3fa54c49e67b920ee0ac158f59f48cd18b93b2c5f8e829c52d8ce2bcc803b70"
 
 [autoupdate]
 checkver = { github = "Microsoft/ethr" }
+url_template = { x64 = "https://github.com/Microsoft/ethr/releases/download/v$version/ethr_windows.zip" }

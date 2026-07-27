@@ -13,4 +13,4 @@ sha256 = "72a12022c3080bdcbad70a4b569f384656e5482bd695849f16654149d5dbc95c"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"Camo ([\\\\d.]+) released\",\"url\":\"https://reincubate.com/support/camo/release-notes/?platform=windows\"}"
+checkver = { url = "https://reincubate.com/support/camo/release-notes/?platform=windows", regex = "Camo ([\\d.]+) released" }

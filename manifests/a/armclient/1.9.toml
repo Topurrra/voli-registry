@@ -12,3 +12,4 @@ sha256 = "62e5c430c6572052a3d4646f3de3700009d72ea98ffcdad408312e44e4b08ef2"
 
 [autoupdate]
 checkver = { github = "projectkudu/ARMClient" }
+url_template = "https://github.com/projectkudu/ARMClient/releases/download/v$version/ARMClient.zip"

@@ -13,3 +13,4 @@ sha256 = "fd69c4958894e9020bf5d2840096c8dcdfaca747b8ee3634091cdb24e757b3be"
 
 [autoupdate]
 checkver = { github = "dropbox/dbxcli" }
+url_template = { x64 = "https://github.com/dropbox/dbxcli/releases/download/v$version/dbxcli_$version_windows_amd64.zip" }

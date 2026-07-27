@@ -14,4 +14,5 @@ sha256 = "dcca45b2a7596e829f0eda885c746880385176830fe47253a6444330017ba191"
 PATH = "{dir}\\.\\bin\\"
 
 [autoupdate]
-checkver = "{\"regex\":\"dcmtk-([\\\\d\\\\.]+)\\\\.zip\",\"url\":\"https://dicom.offis.de/download/dcmtk/current/\"}"
+checkver = { url = "https://dicom.offis.de/download/dcmtk/current/", regex = "dcmtk-([\\d\\.]+)\\.zip" }
+url_template = { x64 = "https://dicom.offis.de/download/dcmtk/dcmtk$cleanVersion/bin/dcmtk-$version-win64-dynamic.zip" }

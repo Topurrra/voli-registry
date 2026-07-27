@@ -12,3 +12,4 @@ sha256 = "f883c5d09c9beae2efaeabd8513e7d3f57cd1d0864cec3df4f4a7b6ee904351c"
 
 [autoupdate]
 checkver = { github = "mtkennerly/shawl" }
+url_template = { x64 = "https://github.com/mtkennerly/shawl/releases/download/v$version/shawl-v$version-win64.zip" }

@@ -13,3 +13,4 @@ sha256 = "926018699aefc8ce09e6e9b49c3c6bd96801c9ee315fbc41f537a8a91b9f86bd"
 
 [autoupdate]
 checkver = { github = "saucepleez/taskt" }
+url_template = { x64 = "https://github.com/saucepleez/taskt/releases/download/v$version/taskt.v$version.zip" }

@@ -13,3 +13,4 @@ sha256 = "d72ef678f524f3438531353923d33e80b6b52f16b3cb6d73481b4079e21c7474"
 
 [autoupdate]
 checkver = { github = "Maassoft/ColorControl" }
+url_template = { x64 = "https://github.com/Maassoft/ColorControl/releases/download/v$version/ColorControl.zip" }

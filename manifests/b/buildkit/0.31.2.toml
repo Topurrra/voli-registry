@@ -16,3 +16,4 @@ sha256 = "dc370dce464c3d27c87367c381586c65f46ca7e165586afed5b42617f3ab42b7"
 
 [autoupdate]
 checkver = { github = "moby/buildkit" }
+url_template = { x64 = "https://github.com/moby/buildkit/releases/download/v$version/buildkit-v$version.windows-amd64.tar.gz", arm64 = "https://github.com/moby/buildkit/releases/download/v$version/buildkit-v$version.windows-arm64.tar.gz" }

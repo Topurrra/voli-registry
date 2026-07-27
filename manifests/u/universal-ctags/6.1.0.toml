@@ -12,3 +12,4 @@ sha256 = "ed1bdabe977980db2f5bd8f0a0fa11963f14604b5af92f31db26875bf342efd8"
 
 [autoupdate]
 checkver = { github = "universal-ctags/ctags-win32" }
+url_template = { x64 = "https://github.com/universal-ctags/ctags-win32/releases/download/v$version/ctags-v$version-x64.zip" }

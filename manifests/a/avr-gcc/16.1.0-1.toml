@@ -13,3 +13,4 @@ sha256 = "de4aad501ee42b63d5d262e45470924cd2654f6bc437f0299875efa6b8d8d0fe"
 
 [autoupdate]
 checkver = { github = "ZakKemble/avr-gcc-build" }
+url_template = { x64 = "https://github.com/ZakKemble/avr-gcc-build/releases/download/v$version/avr-gcc-$matchHead-x64-windows.zip" }

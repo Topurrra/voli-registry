@@ -17,3 +17,4 @@ HADOOP_HOME = "{dir}"
 
 [autoupdate]
 checkver = { github = "steveloughran/winutils" }
+url_template = "https://github.com/steveloughran/winutils/releases/download/$matchTag/hadoop-$version.zip"

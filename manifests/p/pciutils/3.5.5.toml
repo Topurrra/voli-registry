@@ -13,3 +13,4 @@ sha256 = "af239235f674b2ba1b76e52d4625d94b7fba1a3c004f0e29579439da624785d0"
 
 [autoupdate]
 checkver = "href=\"releases/pciutils-([\\d.]+)"
+url_template = { x64 = "https://eternallybored.org/misc/pciutils/releases/pciutils-$version-win64.zip" }

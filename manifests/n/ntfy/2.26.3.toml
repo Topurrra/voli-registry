@@ -13,3 +13,4 @@ sha256 = "98714f38dd08d7362ad2ea270984ed7effce3f796c96a15161d0b83cb7a35feb"
 
 [autoupdate]
 checkver = { github = "binwiederhier/ntfy" }
+url_template = { x64 = "https://github.com/binwiederhier/ntfy/releases/download/v$version/ntfy_$version_windows_amd64.zip" }

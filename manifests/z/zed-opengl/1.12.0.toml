@@ -13,4 +13,5 @@ url = "https://github.com/deevus/zed-windows-builds/releases/download/v1.12.0/ze
 sha256 = "abe10060ccb000b0f84e7fa41e83580b1c710ec51c9d887e41878ea28c63c106"
 
 [autoupdate]
-checkver = "{\"regex\":\"v(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"url\":\"https://github.com/deevus/zed-windows-builds/releases\"}"
+checkver = { url = "https://github.com/deevus/zed-windows-builds/releases", regex = "v(\\d+\\.\\d+\\.\\d+)" }
+url_template = "https://github.com/deevus/zed-windows-builds/releases/download/v$version/zed-opengl.zip"

@@ -16,3 +16,4 @@ sha256 = "2c85da9b229d24cb351f6e4c9c8e30bf96a321df0a8451fcb001c1e8ea3e79cb"
 
 [autoupdate]
 checkver = { github = "ynqa/sig" }
+url_template = { x64 = "https://github.com/ynqa/sig/releases/download/v$version/sigrs-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ynqa/sig/releases/download/v$version/sigrs-aarch64-pc-windows-msvc.zip" }

@@ -14,3 +14,4 @@ sha256 = "0723cb13be251f99e0e5862904c323f403d5c036e006faff9ac4a230a5f7a79b"
 
 [autoupdate]
 checkver = { github = "Radarr/Radarr" }
+url_template = { x64 = "https://github.com/Radarr/Radarr/releases/download/v$version/Radarr.master.$version.windows-core-x64.zip" }

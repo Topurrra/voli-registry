@@ -4,6 +4,7 @@ description = "Render HTML into PDF"
 homepage = "https://wkhtmltopdf.org/"
 license = "LGPL-3.0-only"
 kind = "app"
+extract_dir = "wkhtmltox\\bin"
 bin = ["wkhtmltoimage.exe", "wkhtmltopdf.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "6ce994c89d5f6018fa158e149a2de8fbbbeb14d8ff5cb656c89893bc556e0557"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/wkhtmltopdf/packaging/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"/wkhtmltox-([\\\\d.-]+)\\\\.mxe-cross-\"}"
+url_template = { x64 = "https://github.com/wkhtmltopdf/packaging/releases/download/$version/wkhtmltox-$version.mxe-cross-win64.7z" }

@@ -12,3 +12,4 @@ sha256 = "a330a86ff8f99cde603d6f3bf6fdd0db4e02892366a7077a9211a0cfa9faed0e"
 
 [autoupdate]
 checkver = { github = "simonmichael/hledger" }
+url_template = { x64 = "https://github.com/simonmichael/hledger/releases/download/$version/hledger-windows-x64.zip" }

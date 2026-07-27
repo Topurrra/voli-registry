@@ -16,3 +16,4 @@ sha256 = "436c5fd1f1b999fedb6ba007c43f73bdfee01549a965420c0cee6a7f6c7f1a44"
 
 [autoupdate]
 checkver = { github = "tree-sitter/tree-sitter" }
+url_template = { x64 = "https://github.com/tree-sitter/tree-sitter/releases/download/v$version/tree-sitter-windows-x64.gz", arm64 = "https://github.com/tree-sitter/tree-sitter/releases/download/v$version/tree-sitter-windows-arm64.gz" }

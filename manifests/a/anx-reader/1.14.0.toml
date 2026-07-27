@@ -12,3 +12,4 @@ sha256 = "052bc63717f912b6962f3b98f11f86eea3337223d54ca9a18b48be7aa0051c86"
 
 [autoupdate]
 checkver = { github = "Anxcye/anx-reader" }
+url_template = { x64 = "https://github.com/Anxcye/anx-reader/releases/download/v$version/Anx-Reader-windows-$version.zip" }

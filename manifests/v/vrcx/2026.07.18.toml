@@ -12,3 +12,4 @@ sha256 = "d075574999e664d687a697994c44653427148545bd6d8cfc5ac6166f30a753cb"
 
 [autoupdate]
 checkver = { github = "vrcx-team/VRCX" }
+url_template = { x64 = "https://github.com/vrcx-team/VRCX/releases/download/v$version/VRCX_$version.zip" }

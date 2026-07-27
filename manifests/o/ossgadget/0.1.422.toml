@@ -13,3 +13,4 @@ sha256 = "7e2bbddbe60a4aff5b9f6ea918c0160c237763d48c1773459bec203a7643adf8"
 
 [autoupdate]
 checkver = { github = "microsoft/OSSGadget" }
+url_template = { x64 = "https://github.com/microsoft/OSSGadget/releases/download/v$version/OSSGadget_win_$version.zip" }

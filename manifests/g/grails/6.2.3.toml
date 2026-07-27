@@ -16,3 +16,4 @@ GRAILS_HOME = "{dir}"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/apache/grails-core/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"/grails-([\\\\d.]+)\\\\.zip\"}"
+url_template = "https://github.com/apache/grails-core/releases/download/v$version/grails-$version.zip"

@@ -12,3 +12,4 @@ sha256 = "d367dacf4f5bd3a82e88ff86e8f3e47edd1648f3b79762cd3f119ab5c1135861"
 
 [autoupdate]
 checkver = { github = "cloudfoundry/cli" }
+url_template = { x64 = "https://github.com/cloudfoundry/cli/releases/download/v$version/cf8-cli_$version_winx64.zip" }

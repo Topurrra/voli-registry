@@ -12,3 +12,4 @@ sha256 = "895335dfa7be74803eeb5acf3ec5d3b06c1e9483fdda3c7622bdef9ad388f32a"
 
 [autoupdate]
 checkver = { github = "fullstorydev/grpcurl" }
+url_template = { x64 = "https://github.com/fullstorydev/grpcurl/releases/download/v$version/grpcurl_$version_windows_x86_64.zip" }

@@ -17,3 +17,4 @@ sha256 = "7c19d6710691b0be6f368ed989b991ce959112228fb787e6aec38df7fbb0bc36"
 
 [autoupdate]
 checkver = { github = "Azure/azure-storage-azcopy" }
+url_template = { x64 = "https://github.com/Azure/azure-storage-azcopy/releases/download/v$version/azcopy_windows_amd64_$version.zip/#dl.zip", arm64 = "https://github.com/Azure/azure-storage-azcopy/releases/download/v$version/azcopy_windows_arm64_$version.zip/#dl.zip" }

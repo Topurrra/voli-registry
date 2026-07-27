@@ -16,3 +16,4 @@ sha256 = "9f7902398d53ee7bb812b1eba795dbb19bd05b5c481b6febac2891027e353e82"
 
 [autoupdate]
 checkver = { github = "vishen/go-chromecast" }
+url_template = { x64 = "https://github.com/vishen/go-chromecast/releases/download/v$version/go-chromecast_Windows_x86_64.zip", arm64 = "https://github.com/vishen/go-chromecast/releases/download/v$version/go-chromecast_Windows_arm64.zip" }

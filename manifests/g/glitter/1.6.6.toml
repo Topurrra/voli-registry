@@ -12,3 +12,4 @@ sha256 = "36a42944751c19c3e2d07ad7ea92f852fc1c4aae606a084a64e9ded986cc9eae"
 
 [autoupdate]
 checkver = { github = "Milo123459/glitter" }
+url_template = { x64 = "https://github.com/Milo123459/glitter/releases/download/v$version/glitter-x86_64-pc-windows-msvc.zip" }

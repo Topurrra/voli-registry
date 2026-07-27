@@ -13,3 +13,4 @@ sha256 = "13c9af5739917dfb62f49d796f254d2864bd9c1200ab3b3811907f926b76a1db"
 
 [autoupdate]
 checkver = { github = "aws-cloudformation/rain" }
+url_template = { x64 = "https://github.com/aws-cloudformation/rain/releases/download/v$version/rain-v$version_windows-amd64.zip" }

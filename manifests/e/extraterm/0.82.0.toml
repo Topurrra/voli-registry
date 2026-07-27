@@ -14,3 +14,4 @@ sha256 = "b2963d1a1f0315d86a2506741a7f1bb76a6f7cad36250aae118cd1ccde74adea"
 
 [autoupdate]
 checkver = { github = "sedwards2009/extraterm" }
+url_template = { x64 = "https://github.com/sedwards2009/extraterm/releases/download/v$version/extratermqt-$version-windows-x64.zip" }

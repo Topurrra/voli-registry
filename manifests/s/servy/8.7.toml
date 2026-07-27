@@ -14,3 +14,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "aelassas/servy" }
+url_template = { x64 = "https://github.com/aelassas/servy/releases/download/v$version/servy-$version-x64-installer.exe" }

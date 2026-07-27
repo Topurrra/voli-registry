@@ -12,3 +12,4 @@ sha256 = "41082661e15baad7fdbf9c750910576cbf9b642d47435fa1dd4fa8d920e439b3"
 
 [autoupdate]
 checkver = { github = "rbsec/sslscan" }
+url_template = { x64 = "https://github.com/rbsec/sslscan/releases/download/$version/sslscan-$version.zip" }

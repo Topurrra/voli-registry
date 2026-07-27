@@ -13,3 +13,4 @@ sha256 = "650575ac95228dd62fd3bb8a42d640daa476c23ae3bc58ac1ba8931e26096aa2"
 
 [autoupdate]
 checkver = { github = "cortesi/devd" }
+url_template = { x64 = "https://github.com/cortesi/devd/releases/download/v$version/devd-$version-windows64.zip" }

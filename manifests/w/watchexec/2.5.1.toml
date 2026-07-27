@@ -13,3 +13,4 @@ sha256 = "aa448c2704ca1a37ce0f1fc75381d9a411946dd293cf6236293f549426a577f7"
 
 [autoupdate]
 checkver = { github = "watchexec/watchexec" }
+url_template = { x64 = "https://github.com/watchexec/watchexec/releases/download/v$version/watchexec-$version-x86_64-pc-windows-msvc.zip" }

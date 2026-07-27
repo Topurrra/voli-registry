@@ -11,4 +11,5 @@ url = "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.14.0/
 sha256 = "24ddc5f6b081de05d65367020a6e89bc98146fb19b2abc8fafcde4d3dc3fc31c"
 
 [autoupdate]
-checkver = "{\"regex\":\"IEDriverServer_x64_([\\\\d.]+)\\\\.zip\",\"url\":\"https://selenium.dev/downloads/\"}"
+checkver = { url = "https://selenium.dev/downloads/", regex = "IEDriverServer_x64_([\\d.]+)\\.zip" }
+url_template = { x64 = "https://github.com/SeleniumHQ/selenium/releases/download/selenium-$majorVersion.$minorVersion.0/IEDriverServer_x64_$version.zip" }

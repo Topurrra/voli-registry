@@ -12,3 +12,4 @@ sha256 = "d0bec190288f3e646dcc760c8869a3ef956bc1354a40e6ce0c8d162c1c11a369"
 
 [autoupdate]
 checkver = { github = "sourcegraph/src-cli" }
+url_template = "https://github.com/sourcegraph/src-cli/releases/download/$version/src-cli_$version_windows_amd64.tar.gz"

@@ -12,3 +12,4 @@ sha256 = "586fba7afad32905e9ab5566768582eed0500f3807386512e991cd53cd2cbf5c"
 
 [autoupdate]
 checkver = { github = "block/goose" }
+url_template = { x64 = "https://github.com/block/goose/releases/download/v$version/Goose-win32-x64.zip" }

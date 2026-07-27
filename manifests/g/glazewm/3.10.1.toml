@@ -20,3 +20,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "glzr-io/glazewm" }
+url_template = { x64 = "https://github.com/glzr-io/glazewm/releases/download/v$version/standalone-glazewm-v$version-x64.msi", arm64 = "https://github.com/glzr-io/glazewm/releases/download/v$version/standalone-glazewm-v$version-arm64.msi" }

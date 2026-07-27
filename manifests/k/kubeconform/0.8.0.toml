@@ -16,3 +16,4 @@ sha256 = "4f3c9889f5f3a1e4aba84f9212f599ad3164d1fb32175fba3a53b505b0fffd0f"
 
 [autoupdate]
 checkver = { github = "yannh/kubeconform" }
+url_template = { x64 = "https://github.com/yannh/kubeconform/releases/download/v$version/kubeconform-windows-amd64.zip", arm64 = "https://github.com/yannh/kubeconform/releases/download/v$version/kubeconform-windows-arm64.zip" }

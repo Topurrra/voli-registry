@@ -12,3 +12,4 @@ sha256 = "faea1b177f4761e4c34e0dab72009a2fdd00f21d61f3f7b7c1fe1ac3f38a05d2"
 
 [autoupdate]
 checkver = { github = "JohnnyMorganz/luau-lsp" }
+url_template = { x64 = "https://github.com/JohnnyMorganz/luau-lsp/releases/download/$version/luau-lsp-win64.zip" }

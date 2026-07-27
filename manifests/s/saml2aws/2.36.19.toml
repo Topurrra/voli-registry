@@ -12,3 +12,4 @@ sha256 = "739bd99db011825521cf7adb15c205e7aac6570f8b74cd0afc5bedbb0804a0eb"
 
 [autoupdate]
 checkver = { github = "Versent/saml2aws" }
+url_template = { x64 = "https://github.com/Versent/saml2aws/releases/download/v$version/saml2aws_$version_windows_amd64.zip" }

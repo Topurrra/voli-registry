@@ -1,0 +1,18 @@
+name = "cppcheck"
+version = "2.21.0"
+description = "Static analysis tool for C/C++ code"
+homepage = "https://cppcheck.sourceforge.io/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "PFiles\\Cppcheck"
+bin = ["cppcheck.exe"]
+shortcuts = [{ target = "cppcheckgui.exe", name = "Cppcheck" }]
+
+[source.x64]
+url = "https://github.com/cppcheck-opensource/cppcheck/releases/download/2.21.0/cppcheck-2.21.0-x64-Setup.msi"
+sha256 = "a86eef1180dc18fde46b08f4e4b12f2a1ead8cfc0dd6c294aac8757748cbbb24"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "cppcheck-opensource/cppcheck" }
+url_template = { x64 = "https://github.com/cppcheck-opensource/cppcheck/releases/download/$version/cppcheck-$version-x64-Setup.msi" }

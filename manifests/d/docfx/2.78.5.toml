@@ -12,3 +12,4 @@ sha256 = "64acd0d0ee66a795b701b9fa117392233db8de9f70a331702e904d90826a6aec"
 
 [autoupdate]
 checkver = { github = "dotnet/docfx" }
+url_template = "https://github.com/dotnet/docfx/releases/download/v$version/docfx-win-x64-v$version.zip"

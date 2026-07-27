@@ -16,3 +16,4 @@ sha256 = "ed12610509bf36c42a1c34d0e0cece1f5120a5381b23751c4d1fa8a44b908d83"
 
 [autoupdate]
 checkver = { github = "tj-actions/auto-doc" }
+url_template = { x64 = "https://github.com/tj-actions/auto-doc/releases/download/v$version/auto-doc_$version_Windows_x86_64.zip", arm64 = "https://github.com/tj-actions/auto-doc/releases/download/v$version/auto-doc_$version_Windows_arm64.zip" }

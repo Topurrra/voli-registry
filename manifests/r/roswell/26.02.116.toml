@@ -4,6 +4,7 @@ description = "Lisp implementation installer/manager and launcher"
 homepage = "https://github.com/roswell/roswell"
 license = "MIT"
 kind = "app"
+extract_dir = "roswell"
 bin = ["ros.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "a630b5d3027ffb9fb3d25ac29bb620991f323505f10bfce18dbbad2d29dc0021"
 
 [autoupdate]
 checkver = { github = "roswell/roswell" }
+url_template = { x64 = "https://github.com/roswell/roswell/releases/download/v$version/roswell_$version_amd64.zip" }

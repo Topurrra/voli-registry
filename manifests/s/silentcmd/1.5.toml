@@ -13,3 +13,4 @@ sha256 = "a9c635d30a701c3d6975acfe03b0753cfe372381a4c9e6aa5a17e73b23b13647"
 
 [autoupdate]
 checkver = { github = "stbrenner/SilentCMD" }
+url_template = "https://github.com/stbrenner/SilentCMD/releases/download/v$version/SilentCMD-$version.zip"

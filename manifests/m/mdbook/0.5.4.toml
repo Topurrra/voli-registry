@@ -12,3 +12,4 @@ sha256 = "8a6b2421aa522de06d746871d2b8fff9c8d71773467e310a4516d2566e7f2de4"
 
 [autoupdate]
 checkver = { github = "rust-lang/mdBook" }
+url_template = { x64 = "https://github.com/rust-lang/mdBook/releases/download/v$version/mdbook-v$version-x86_64-pc-windows-msvc.zip" }

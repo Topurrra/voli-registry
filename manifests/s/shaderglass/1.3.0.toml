@@ -13,3 +13,4 @@ sha256 = "d60c69f1c6cb5c4805cf6a042cc75d6bf7b85f082942fc98e4d7d06ee4388f4c"
 
 [autoupdate]
 checkver = { github = "mausimus/ShaderGlass" }
+url_template = { x64 = "https://github.com/mausimus/ShaderGlass/releases/download/$matchTag/ShaderGlass-$version-win-x64.zip" }

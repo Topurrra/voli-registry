@@ -12,3 +12,4 @@ sha256 = "1d065008ffb06f57224f9adbead2f232ec33fc5f66c72135ed22164c6e2882c7"
 
 [autoupdate]
 checkver = { github = "nyaosorg/nyagos" }
+url_template = { x64 = "https://github.com/nyaosorg/nyagos/releases/download/$version/nyagos-$version-windows-amd64.zip" }

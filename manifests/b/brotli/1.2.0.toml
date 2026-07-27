@@ -12,3 +12,4 @@ sha256 = "3208ab82d4f08e062a25660cf38092db4e8415792aa1e579956d37740f8d8924"
 
 [autoupdate]
 checkver = { github = "google/brotli" }
+url_template = { x64 = "https://github.com/google/brotli/releases/download/v$version/brotli-x64-windows-static.zip" }

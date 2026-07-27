@@ -15,3 +15,4 @@ kind = "installer-archive"
 
 [autoupdate]
 checkver = { github = "mRemoteNG/mRemoteNG" }
+url_template = "https://github.com/mRemoteNG/mRemoteNG/releases/download/v$matchHead/mRemoteNG-Installer-$version.msi"

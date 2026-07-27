@@ -16,3 +16,4 @@ sha256 = "428a26878ca39dcd87f52fe3faea55aa76c9d477c369377f62e047194cdef06b"
 
 [autoupdate]
 checkver = { github = "OrcaSlicer/OrcaSlicer" }
+url_template = { x64 = "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v$version/OrcaSlicer_Windows_V$version_x64_portable.zip", arm64 = "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v$version/OrcaSlicer_Windows_V$version_arm64_portable.zip" }

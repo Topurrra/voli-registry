@@ -13,3 +13,4 @@ sha256 = "83a290b720ef4593985cebf7c2e79277952c55b3a99afaa9eb8acdd85657ad23"
 
 [autoupdate]
 checkver = { github = "drawpile/Drawpile" }
+url_template = { x64 = "https://github.com/drawpile/Drawpile/releases/download/$version/Drawpile-$version-x86_64.zip" }

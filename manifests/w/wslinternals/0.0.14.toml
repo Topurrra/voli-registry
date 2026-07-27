@@ -12,3 +12,4 @@ sha256 = "6e667966954fbf670a340f213970d2cbdffc58061b85a66833f9540dabce8069"
 
 [autoupdate]
 checkver = { github = "sirredbeard/wslinternals" }
+url_template = { x64 = "https://github.com/sirredbeard/wslinternals/releases/download/$version/$version.zip" }

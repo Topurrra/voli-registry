@@ -16,3 +16,4 @@ sha256 = "6582ce142faba27bb8b3ee0295dda209a675653f84fd69403cf54be2eacb9e13"
 
 [autoupdate]
 checkver = { github = "messense/aliyundrive-webdav" }
+url_template = { x64 = "https://github.com/messense/aliyundrive-webdav/releases/download/v$version/aliyundrive-webdav-v$version.x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/messense/aliyundrive-webdav/releases/download/v$version/aliyundrive-webdav-v$version.x86_64-pc-windows-msvc.zip" }

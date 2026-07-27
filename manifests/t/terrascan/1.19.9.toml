@@ -12,3 +12,4 @@ sha256 = "2585e0ae7121bfa28a471175ec3cabe810680fcbeb064eefab93a8c6c475b094"
 
 [autoupdate]
 checkver = { github = "tenable/terrascan" }
+url_template = { x64 = "https://github.com/tenable/terrascan/releases/download/v$version/terrascan_$version_Windows_x86_64.zip" }

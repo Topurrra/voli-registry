@@ -13,4 +13,5 @@ sha256 = "b034c6c11cb2b888733e047ae9df494c8255e3d9ddfd0cbb2a6ccd98b02c79f2"
 kind = "installer-archive"
 
 [autoupdate]
-checkver = "{\"regex\":\"<A HREF=\\\"https://www\\\\.ncftp\\\\.com/(?<url>.*?)Setup NcFTP (?<version>[\\\\d.]+).msi\\\">Microsoft Windows<\",\"url\":\"https://www.ncftp.com/download/\"}"
+checkver = { url = "https://www.ncftp.com/download/", regex = "<A HREF=\"https://www\\.ncftp\\.com/(?<url>.*?)Setup NcFTP (?<version>[\\d.]+).msi\">Microsoft Windows<" }
+url_template = "https://www.ncftp.com/$matchUrlSetup%20NcFTP%20$version.msi"

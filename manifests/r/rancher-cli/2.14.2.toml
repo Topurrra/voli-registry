@@ -4,6 +4,7 @@ description = "Unified tool for interacting with Rancher Server"
 homepage = "https://github.com/rancher/cli"
 license = "Apache-2.0"
 kind = "app"
+extract_dir = "rancher-v2.14.2"
 bin = ["rancher.exe"]
 
 [source.x64]
@@ -12,3 +13,4 @@ sha256 = "7125472dc67ea0e1a825ce5d3afdc10d8e9c71ee49ac3b9da15d05a404bb2be4"
 
 [autoupdate]
 checkver = { github = "rancher/cli" }
+url_template = { x64 = "https://github.com/rancher/cli/releases/download/v$version/rancher-windows-amd64-v$version.zip" }

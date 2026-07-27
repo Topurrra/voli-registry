@@ -12,3 +12,4 @@ sha256 = "01e96c39bdf7ac53b72db8f1e25b7a567e99ad8d60d2f32d2a44df206b73bc5b"
 
 [autoupdate]
 checkver = { github = "anatolyzenkov/IOGraph" }
+url_template = "https://github.com/anatolyzenkov/IOGraph/releases/download/v$version/IOGraph-windows-v$version.zip"

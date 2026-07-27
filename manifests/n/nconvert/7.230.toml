@@ -4,6 +4,7 @@ description = "A command line batch image processor that is compatible with seve
 homepage = "https://www.xnview.com/en/nconvert/"
 license = "Freeware"
 kind = "app"
+extract_dir = "NConvert"
 bin = ["nconvert.exe"]
 
 [source.x64]

@@ -12,6 +12,7 @@ downloads, verifies, and searches offline. **No manifest can execute a script**
 
 ```
 manifests/<first-letter>/<name>/<version>.toml
+manifests/skills/<first-letter>/<name>/<version>.toml
 ```
 
 See [`manifests/README.md`](manifests/README.md) for the full layout contract
@@ -32,6 +33,30 @@ and schema. Example: `manifests/r/ripgrep/14.1.1.toml`.
      7-Zip extraction. Standalone EXEs remain unsupported.
 3. Open a PR. CI validates it (below). Green check required to merge.
 
+## Tier-1 skill catalog
+
+`skill-sources.toml` allowlists exact upstream revisions, license hashes,
+discovery roots, and exclusions. `tools/skill-import.py` validates that policy
+and creates deterministic ZIP archives plus `kind = "skill"` manifests.
+
+Run the importer with Python 3.11 or newer:
+
+```sh
+python tools/skill-import.py --self-test
+python tools/skill-import.py --refresh-pins
+python tools/skill-import.py \
+  --checkouts /tmp/skill-sources \
+  --manifests manifests \
+  --assets /tmp/skill-assets \
+  --report skill-import-report.md
+voli-index-tool validate manifests/
+```
+
+The scheduled `skill-sync.yml` workflow refreshes pins, validates licenses,
+packages the catalog, uploads archives as review artifacts, and opens a PR when
+tracked output changes. Publishing those archives and merging the PR are
+deferred manual actions.
+
 ## How CI works
 
 - **`validate.yml`** (on PR): installs `voli-index-tool` and runs
@@ -40,6 +65,8 @@ and schema. Example: `manifests/r/ripgrep/14.1.1.toml`.
   not just the first.
 - **`publish.yml`** (on push to `main`): rebuilds the signed index and uploads
   the triple to the `index` release tag, replacing the assets in place.
+- **`skill-sync.yml`** (weekly or manual): refreshes the allowlisted Tier-1
+  skill catalog and opens a review PR without publishing or merging it.
 
 Both workflows currently `cargo install --git … voli-index-tool` from source on
 every run. Once the main repo ships prebuilt `voli-index-tool` release binaries,

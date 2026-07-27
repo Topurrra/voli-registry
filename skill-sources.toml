@@ -1,0 +1,121 @@
+release_base = "https://github.com/Topurrra/voli-registry/releases/download/skills"
+
+[[source]]
+id = "google-agents-cli"
+repo = "google/agents-cli"
+revision = "c7a375f7a463d5ade51caabdec56971681aed400"
+version = "2026.7.27"
+license = "Apache-2.0"
+license_file = "LICENSE"
+license_sha256 = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+roots = ["skills"]
+
+[[source]]
+id = "huggingface-skills"
+repo = "huggingface/skills"
+revision = "87f9ee5b670a630b022809a8742606c6da21812c"
+version = "2026.7.27"
+license = "Apache-2.0"
+license_file = "LICENSE"
+license_sha256 = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+roots = ["skills", "hf-mcp/skills"]
+
+[[source]]
+id = "android-skills"
+repo = "android/skills"
+revision = "47e1dff74a5cde5d0128c5d15e74e000323135ea"
+version = "2026.7.27"
+license = "Apache-2.0"
+license_file = "LICENSE.txt"
+license_sha256 = "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e"
+roots = ["."]
+
+[[source]]
+id = "dotnet-skills"
+repo = "dotnet/skills"
+revision = "9b2706630d2acc38728f6b0cb48ab9ffc5a676d0"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
+roots = ["plugins"]
+
+[[source]]
+id = "anthropic-skills"
+repo = "anthropics/skills"
+revision = "b29e7cf65e5cb78a5ac33d582270551bc74a14eb"
+version = "2026.7.27"
+license = "Apache-2.0"
+license_file = "skills/algorithmic-art/LICENSE.txt"
+license_sha256 = "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64"
+roots = ["skills"]
+exclude = [
+  "skills/doc-coauthoring",
+  "skills/docx",
+  "skills/pdf",
+  "skills/pptx",
+  "skills/xlsx",
+]
+allowed_skill_license_sha256 = [
+  "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
+  "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549",
+]
+require_skill_license = true
+
+[[source]]
+id = "obra-superpowers"
+repo = "obra/superpowers"
+revision = "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc"
+roots = ["skills"]
+
+[[source]]
+id = "mattpocock-skills"
+repo = "mattpocock/skills"
+revision = "ed37663cc5fbef691ddfecd080dff42f7e7e350d"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "4981c5f6a90eb3a969dacabb9350f5a75695ff3910b39b6534952908dfdc5ff7"
+roots = ["skills"]
+exclude = ["skills/deprecated", "skills/in-progress"]
+
+[[source]]
+id = "emilkowalski-skills"
+repo = "emilkowalski/skills"
+revision = "e695d13cb298db0f46d5ef05be2ad13fa12908a6"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "d24da413cccbc3d844929a1cc08e5ba79385139c0c47c9d5bd0dd2df24ffe15c"
+roots = ["skills"]
+
+[[source]]
+id = "minimax-skills"
+repo = "MiniMax-AI/skills"
+revision = "60aaae52bb2af8162732751a4332f62a5fef518b"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "a1608c42e98d9d61c5239e15de4975f11399879d59803dbec24f1d5c3ba49af4"
+roots = ["skills"]
+allowed_skill_license_sha256 = [
+  "1eebdec461d4e53c8972ea47351c6a9af3a0b37c706ccfc193b4db65393a1c0e",
+]
+
+[[source]]
+id = "davidondrej-skills"
+repo = "davidondrej/skills"
+revision = "20d6f10de0daa68b83a6a3f8983743d794dec9c4"
+version = "2026.7.27"
+license = "MIT"
+license_file = "LICENSE"
+license_sha256 = "70220d38ce8c3931dd0aec05bea45af7453d415e37fda8f095f8863d66e4265c"
+roots = ["skills"]
+exclude = [
+  "skills/agent-orchestration/handoff",
+  "skills/thinking-and-docs/teach",
+]

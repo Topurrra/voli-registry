@@ -1,0 +1,97 @@
+name: skill-sync
+
+on:
+  schedule:
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: skill-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Test importer
+        run: python tools/skill-import.py --self-test
+
+      - name: Refresh pinned revisions
+        run: python tools/skill-import.py --refresh-pins
+
+      - name: Import skills
+        run: |
+          python tools/skill-import.py \
+            --checkouts /tmp/skill-sources \
+            --manifests manifests \
+            --assets /tmp/skill-assets \
+            --report skill-import-report.md
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: cargo-skill-sync-${{ runner.os }}
+
+      - name: Install voli-index-tool
+        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
+
+      - name: Validate manifests
+        run: voli-index-tool validate manifests/
+
+      - name: Upload generated archives
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-archives-${{ github.run_id }}
+          path: |
+            /tmp/skill-assets/*.zip
+            skill-import-report.md
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Check for catalog changes
+        id: changes
+        shell: bash
+        run: |
+          if [ -n "$(git status --porcelain -- skill-sources.toml manifests/skills skill-import-report.md)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create review PR
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="skill-sync/${DATE}-${GITHUB_RUN_ID}"
+          git config user.name "voli-registry-ci"
+          git config user.email "ci@volibear.dev"
+          git checkout -b "$BRANCH"
+          git add skill-sources.toml manifests/skills skill-import-report.md
+          git commit -m "sync: Tier-1 skill catalog ${DATE}"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "sync: Tier-1 skill catalog ${DATE}" \
+            --body "Pinned Tier-1 skill catalog refresh. Generated archives are attached to workflow run ${GITHUB_RUN_ID} for review. Publishing and merging are deferred." \
+            --base main \
+            --head "$BRANCH"

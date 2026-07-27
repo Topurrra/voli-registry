@@ -7,8 +7,11 @@ the index build; nothing else in the repo affects what users can install.
 
 ```
 manifests/<first-letter>/<name>/<version>.toml
+manifests/skills/<first-letter>/<name>/<version>.toml
 ```
 
+- App manifests keep the original top-level layout. Typed skill manifests use
+  the `skills/` prefix.
 - `<first-letter>` — the first character of `<name>` (lowercase). `ripgrep` →
   `r`, `7zip` → `7`.
 - `<name>` — the package name. **Must equal the `name` field inside the file**,
@@ -29,9 +32,10 @@ manifests/
         └── 10.1.0.toml       # name = "fd", version = "10.1.0"
 ```
 
-`voli-index-tool validate manifests/` enforces all three matches (letter,
-directory, filename ↔ manifest fields) and rejects duplicate `(name, version)`
-pairs. CI runs it on every PR — see the repo root `README.md`.
+`voli-index-tool validate manifests/` enforces all three matches (kind, letter,
+directory, and filename against manifest fields) and rejects duplicate
+`(kind, name, version)` tuples. CI runs it on every PR — see the repo root
+`README.md`.
 
 ## `_examples/` is excluded
 
@@ -53,7 +57,9 @@ rules CI enforces:
   hash-pinned MSI and explicitly identified Inno Setup packages. Voli extracts
   them with 7-Zip and never executes the installer. Standalone EXEs are not
   installer archives and remain unsupported.
-- At least one of `[source.x64]` / `[source.arm64]` must be present.
+- App manifests require at least one of `[source.x64]` / `[source.arm64]`.
+- Skill manifests require exactly one `[source.any]` ZIP, tar.gz, or tgz
+  archive and cannot use app-only fields.
 - `bin` paths must be relative (no absolute paths, no `..`).
 - `[env]` values may only use the `{dir}` template variable.
 
@@ -74,6 +80,21 @@ bin = ["rg.exe"]
 
 [source.x64]
 url = "https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip"
+sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
+```
+
+Minimal skill example:
+
+```toml
+name = "example-skill"
+version = "1.0.0"
+description = "Example Agent Skill"
+homepage = "https://github.com/example/skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://example.com/example-skill.zip"
 sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
 ```
 

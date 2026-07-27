@@ -1,0 +1,16 @@
+name = "jnt"
+version = "0.2.0"
+description = "JNT: an AI-first terminal for Windows."
+homepage = "https://github.com/Topurrra/JNT"
+license = "MIT OR Apache-2.0"
+kind = "app"
+bin = ["jnt.exe"]
+gui = true
+
+[source.x64]
+url = "https://github.com/Topurrra/JNT/releases/download/v0.2.0/jnt-0.2.0-x86_64-pc-windows-msvc.zip"
+sha256 = "53f18df05bbbd897a796921bfec8187d53d9e40723506612a8341943c073b0c3"
+
+[autoupdate]
+checkver = { github = "Topurrra/JNT" }
+url_template = { x64 = "https://github.com/Topurrra/JNT/releases/download/v$version/jnt-$version-x86_64-pc-windows-msvc.zip" }

@@ -1,0 +1,10 @@
+name = "perfetto-sql"
+version = "2026.7.27"
+description = "Translates natural language data intents into syntactically valid Perfetto"
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/profilers/perfetto-sql"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-perfetto-sql.zip"
+sha256 = "3d46844e0745da9d98393b7fe3e055b90d4700dff645001ef3d837daaf55e75c"

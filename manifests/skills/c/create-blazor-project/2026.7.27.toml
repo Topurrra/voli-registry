@@ -1,0 +1,10 @@
+name = "create-blazor-project"
+version = "2026.7.27"
+description = "Create a new ASP.NET Core web application or web site using Blazor. USE FOR: creating a new Blazor web app, scaffolding a new web project, starting a new web site, choosing render modes (Static SSR, Interactive Server, Interactive WebAssembly, Auto), running dotnet new blazor with the right options, setting up initial project structure. DO NOT USE FOR: adding features to existing projects, changing how an existing app renders, or component authoring (use author-component)."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-blazor/skills/create-blazor-project"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-create-blazor-project.zip"
+sha256 = "4ba83076fe8418e65a8d8eddfb3ab0f0fcdf09e4a5adc441cb53a362c339bede"

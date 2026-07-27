@@ -1,0 +1,10 @@
+name = "huggingface-vision-trainer"
+version = "2026.7.27"
+description = "Trains and fine-tunes vision models for object detection (D-FINE, RT-DETR v2, DETR, YOLOS), image classification (timm models — MobileNetV3, MobileViT, ResNet, ViT/DINOv3 — plus any Transformers classifier), and SAM/SAM2 segmentation using Hugging Face Transformers on Hugging Face Jobs cloud GPUs. Covers COCO-format dataset preparation, Albumentations augmentation, mAP/mAR evaluation, accuracy metrics, SAM segmentation with bbox/point prompts, DiceCE loss, hardware selection, cost estimation, Trackio monitoring, and Hub persistence. Use when users mention training object detection, image classification, SAM, SAM2, segmentation, image matting, DETR, D-FINE, RT-DETR, ViT, timm, MobileNet, ResNet, bounding box models, or fine-tuning vision models on Hugging Face Jobs."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/huggingface-vision-trainer"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-vision-trainer.zip"
+sha256 = "967f8fdeb5397f2a23f352d7a0f5c9d49f171c5d3747cef45ea73c2125cb6b8b"

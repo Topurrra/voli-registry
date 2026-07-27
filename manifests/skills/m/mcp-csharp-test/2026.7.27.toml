@@ -1,0 +1,10 @@
+name = "mcp-csharp-test"
+version = "2026.7.27"
+description = "Test C# MCP servers at multiple levels: unit tests for individual tools and integration tests using the MCP client SDK. USE FOR: unit testing MCP tool methods, integration testing with in-memory MCP client/server, end-to-end testing via MCP protocol, testing HTTP MCP servers with WebApplicationFactory, mocking dependencies in tool tests, creating evaluations for MCP servers, writing eval questions, measuring tool quality. DO NOT USE FOR: testing MCP clients (this is server testing only), load or performance testing, testing non-.NET MCP servers."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-ai/skills/mcp-csharp-test"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-mcp-csharp-test.zip"
+sha256 = "d26fb549300490459fd304639719e1ba7e761b556784df46fc1530f3402b80a8"

@@ -1,0 +1,10 @@
+name = "huggingface-local-models"
+version = "2026.7.27"
+description = "Use to select models to run locally with llama.cpp and GGUF on CPU, Mac Metal, CUDA, or ROCm. Covers finding GGUFs, quant selection, running servers, exact GGUF file lookup, conversion, and OpenAI-compatible local serving."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/huggingface-local-models"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-local-models.zip"
+sha256 = "88978d3ce179a3bfd33167afe355395d79c9d6e65ebdc108dfe8d3f478d63b1e"

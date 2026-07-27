@@ -1,0 +1,10 @@
+name = "code-testing-agent"
+version = "2026.7.27"
+description = "MANDATORY ENTRY POINT for generating or writing tests. Invoke this skill before editing files whenever the user asks to generate tests, write/add unit tests, scaffold a test project or pytest/Vitest/Jest suite, create comprehensive tests, improve/achieve coverage, or test an app, API, service, repository, route, module, library, or package. Supports C#/.NET, Python, TypeScript/JavaScript, Go, Rust, Java, and Ruby. For sparse, gutted-looking, synthetic, or incomplete workspaces, test only the source that remains and never restore missing source. DO NOT USE FOR: running existing tests (use run-tests); analyzing coverage reports (use coverage-analysis or crap-score); MSTest-specific test authoring or modernization (use writing-mstest-tests)."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-test/skills/code-testing-agent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-code-testing-agent.zip"
+sha256 = "fa717eeab56440bd3aa1bac7016d456605348072275cac95ec265342ec04255c"

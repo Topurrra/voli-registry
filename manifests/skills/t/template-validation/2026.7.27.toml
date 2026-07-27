@@ -1,0 +1,10 @@
+name = "template-validation"
+version = "2026.7.27"
+description = "Validates custom dotnet new templates for correctness before publishing. Catches missing fields, parameter bugs, shortName conflicts, constraint issues, and common authoring mistakes that cause templates to fail silently. USE FOR: checking template.json files for errors before publishing or testing, diagnosing why a template doesn't appear after installation, reviewing template parameter definitions for type mismatches and missing defaults, finding shortName conflicts with dotnet CLI commands, validating post-action and constraint configuration. DO NOT USE FOR: finding or using existing templates (use template-discovery), creating projects from templates (use template-instantiation), creating templates from existing projects (use template-authoring)."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-template-engine/skills/template-validation"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-template-validation.zip"
+sha256 = "932e319c3287b2c4b20c62e23521ba5d985913425761c9603f0438cb157b2454"

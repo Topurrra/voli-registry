@@ -1,0 +1,10 @@
+name = "minimal-api-file-upload"
+version = "2026.7.27"
+description = "File upload endpoints in ASP.NET minimal APIs (.NET 8+)"
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-aspnetcore/skills/minimal-api-file-upload"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-minimal-api-file-upload.zip"
+sha256 = "ab83f341edb52775b1f2348e668612c7c87ebb82d641ce72a92ad408111c617e"

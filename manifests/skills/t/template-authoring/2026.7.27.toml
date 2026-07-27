@@ -1,0 +1,10 @@
+name = "template-authoring"
+version = "2026.7.27"
+description = "Guides creation and validation of custom dotnet new templates from existing projects. Generates a .template.config/template.json that preserves the source project's conventions. USE FOR: creating a reusable dotnet new template from an existing project, bootstrapping .template.config/template.json with correct identity, shortName, parameters, and post-actions, adding parameters or conditional content to a template you are authoring, validating the template.json you are authoring before publishing, packaging templates as NuGet packages for distribution. DO NOT USE FOR: validating an existing template.json as a standalone task (use template-validation), finding or using existing templates (use template-discovery and template-instantiation), MSBuild project file issues unrelated to template authoring, NuGet package publishing (only template packaging structure)."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-template-engine/skills/template-authoring"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-template-authoring.zip"
+sha256 = "cf76704e5b31c9d4cac16b79fc2e03d822f8576067afd255aaec9eed3ef71709"

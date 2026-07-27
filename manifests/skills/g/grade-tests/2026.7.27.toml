@@ -1,0 +1,10 @@
+name = "grade-tests"
+version = "2026.7.27"
+description = "Grades a specified set of test methods individually and produces a concise table mapping each test (fully-qualified name) to a letter grade (A–F), a score band, and a one-line note — designed to be posted as a PR comment. Use when the caller wants per-test feedback on a curated list of methods (for example, the new or modified tests in a pull request), not a suite-wide audit. Polyglot: .NET, Python, TS/JS, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, C++. Input is a list of test methods (or method bodies / file+line spans); output is a compact markdown table plus a short summary. DO NOT USE FOR: full suite audits (use test-quality-auditor agent or test-anti-patterns), writing new tests (use code-testing-generator agent or writing-mstest-tests), fixing failures, or measuring code coverage."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-test/skills/grade-tests"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-grade-tests.zip"
+sha256 = "cd52846243d6819830aaa5fdb87a42f38fdb2ee263eaa52af14c4d1a8961f2a9"

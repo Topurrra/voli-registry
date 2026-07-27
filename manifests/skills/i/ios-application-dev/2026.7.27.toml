@@ -1,0 +1,10 @@
+name = "ios-application-dev"
+version = "2026.7.27"
+description = "iOS application development guide covering UIKit, SnapKit, and SwiftUI. Includes touch targets, safe areas, navigation patterns, Dynamic Type, Dark Mode, accessibility, collection views, common UI components, and SwiftUI design guidelines. For detailed references on specific topics, see the reference files. Use when: developing iOS apps, implementing UI, reviewing iOS code, working with UIKit/SnapKit/SwiftUI layouts, building iPhone interfaces, Swift mobile development, Apple HIG compliance, iOS accessibility implementation."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/ios-application-dev"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-ios-application-dev.zip"
+sha256 = "d231dd70b3afc0fb0def3982ba5f769120abd76192f899eb02c3ea9c5067159d"

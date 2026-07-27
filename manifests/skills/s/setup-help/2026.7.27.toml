@@ -1,0 +1,10 @@
+name = "setup-help"
+version = "2026.7.27"
+description = "Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working — \"help me set up X\", \"walk me through this\", \"setup-help\". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/ops-and-setup/setup-help"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-setup-help.zip"
+sha256 = "b1a2130bfa2d1772bebe2bd83976aa11a2ccff1cd57b6a5b5aa8b93a56c0b8e6"

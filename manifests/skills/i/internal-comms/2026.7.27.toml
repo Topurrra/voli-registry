@@ -1,0 +1,10 @@
+name = "internal-comms"
+version = "2026.7.27"
+description = "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.)."
+homepage = "https://github.com/anthropics/skills/tree/b29e7cf65e5cb78a5ac33d582270551bc74a14eb/skills/internal-comms"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-internal-comms.zip"
+sha256 = "922c21edf5823893c0a944fad1adbae9a7026ecfcd52e25ef76b01a7cfaa2f2f"

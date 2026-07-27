@@ -1,0 +1,10 @@
+name = "ask-matt"
+version = "2026.7.27"
+description = "Ask which skill or flow fits your situation. A router over the skills in this repo."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/ask-matt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-ask-matt.zip"
+sha256 = "9eb0c939aaccdfe6977f9ba9476691863c8662c822342baffb84112b6e24f1f1"

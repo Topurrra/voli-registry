@@ -1,0 +1,10 @@
+name = "minimax-music-playlist"
+version = "2026.7.27"
+description = "Generate personalized music playlists by analyzing the user's music taste and generation feedback history. Triggers on any request involving playlist generation, music taste profiling, or personalized music recommendations. Supports multilingual triggers — match equivalent phrases in any language."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-music-playlist"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-minimax-music-playlist.zip"
+sha256 = "64e228e4944dc4648a13e3b8883b628cdd99df584726a26232232a5bca29bf59"

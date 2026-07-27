@@ -1,0 +1,10 @@
+name = "mcp-builder"
+version = "2026.7.27"
+description = "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK)."
+homepage = "https://github.com/anthropics/skills/tree/b29e7cf65e5cb78a5ac33d582270551bc74a14eb/skills/mcp-builder"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-mcp-builder.zip"
+sha256 = "5a3266511b5e5af736ede99b15398116559cedab0b0df18f54340802d73bfe30"

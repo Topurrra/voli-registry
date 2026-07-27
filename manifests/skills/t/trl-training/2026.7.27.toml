@@ -1,0 +1,10 @@
+name = "trl-training"
+version = "2026.7.27"
+description = "Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model training via CLI commands."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/trl-training"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-trl-training.zip"
+sha256 = "52ad6265dca08c2f18b977da61b804184fe555712d735fb90bf11f978a6225d2"

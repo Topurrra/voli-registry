@@ -1,0 +1,10 @@
+name = "huggingface-tool-builder"
+version = "2026.7.27"
+description = "Use this skill when the user wants to build tool/scripts or achieve a task where using data from the Hugging Face API would help. This is especially useful when chaining or combining API calls or the task will be repeated/automated. This Skill creates a reusable script to fetch, enrich or process data."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/huggingface-tool-builder"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-tool-builder.zip"
+sha256 = "01c050c99c65d654971fdda27ddd152a94d09c4bf5b764d156f269ccb62f4b62"

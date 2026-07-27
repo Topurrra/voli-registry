@@ -1,0 +1,10 @@
+name = "theme-factory"
+version = "2026.7.27"
+description = "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly."
+homepage = "https://github.com/anthropics/skills/tree/b29e7cf65e5cb78a5ac33d582270551bc74a14eb/skills/theme-factory"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-theme-factory.zip"
+sha256 = "7d04b0ee1fb12d54e07a328fe2b03ef6e8a95a2c9df5b28a2a2a70b795d26372"

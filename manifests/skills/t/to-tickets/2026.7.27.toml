@@ -1,0 +1,10 @@
+name = "to-tickets"
+version = "2026.7.27"
+description = "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/to-tickets"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-to-tickets.zip"
+sha256 = "8539d8ac4cbbba805913a6f15dbc0f8d377b95c70bd8930284b302702d67d702"

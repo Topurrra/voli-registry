@@ -1,0 +1,10 @@
+name = "shader-dev"
+version = "2026.7.27"
+description = "Comprehensive GLSL shader techniques for creating stunning visual effects — ray marching, SDF modeling, fluid simulation, particle systems, procedural generation, lighting, post-processing, and more."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/shader-dev"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-shader-dev.zip"
+sha256 = "e96227e55f080e59c20b7a6db3928c1792683fab43b3631dff8eb5af92984d8c"

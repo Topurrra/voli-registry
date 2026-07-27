@@ -1,0 +1,10 @@
+name = "android-intent-security"
+version = "2026.7.27"
+description = "Best practices for Android Intent security. Use this skill when auditing"
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/security/android-intent-security"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-android-intent-security.zip"
+sha256 = "c994b719c1348cbd16f8f3083059928f050c2a3367704e7237d595d4038434b2"

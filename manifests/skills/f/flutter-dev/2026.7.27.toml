@@ -1,0 +1,10 @@
+name = "flutter-dev"
+version = "2026.7.27"
+description = "Flutter cross-platform development guide covering widget patterns, Riverpod/Bloc state management, GoRouter navigation, performance optimization, and platform-specific implementations. Includes const optimization, responsive layouts, testing strategies, and DevTools profiling. Use when: building Flutter apps, implementing state management (Riverpod/Bloc), setting up GoRouter navigation, creating custom widgets, optimizing performance, writing widget tests, cross-platform development."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/flutter-dev"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-flutter-dev.zip"
+sha256 = "aadb7c5756a31dd40e674c9a7284f72d4c24962b4a1455f62ef6fe120cfcd5bf"

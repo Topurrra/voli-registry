@@ -1,0 +1,10 @@
+name = "scaffold-exercises"
+version = "2026.7.27"
+description = "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/misc/scaffold-exercises"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-scaffold-exercises.zip"
+sha256 = "d502825dfc17428f3d972cfedda3c686fd4c4a6db072456c88eb9390bb248a64"

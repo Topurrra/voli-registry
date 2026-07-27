@@ -1,0 +1,10 @@
+name = "pi-custom-model"
+version = "2026.7.27"
+description = "Register a custom or variant model (e.g. an OpenRouter \":nitro\" / \":floor\" / \":exacto\" slug) in the Pi Agent so it can be set as the global default. Use when Pi silently falls back to a different model (e.g. moonshotai/kimi-k2.6) after setting defaultModel, or when a model slug isn't in Pi's bundled list. Triggers on \"Pi reset my model\", \"Pi won't use this model\", \"add a model to Pi\", \"Pi default keeps reverting\"."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/ops-and-setup/pi-custom-model"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-pi-custom-model.zip"
+sha256 = "e73ae88c4001a857e077aee98e092173d34b3a16c5275c7e35081d11ba5ee9cf"

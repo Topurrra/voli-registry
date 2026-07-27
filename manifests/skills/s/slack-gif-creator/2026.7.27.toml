@@ -1,0 +1,10 @@
+name = "slack-gif-creator"
+version = "2026.7.27"
+description = "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\""
+homepage = "https://github.com/anthropics/skills/tree/b29e7cf65e5cb78a5ac33d582270551bc74a14eb/skills/slack-gif-creator"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-slack-gif-creator.zip"
+sha256 = "e3ff737b3c17f5644a360b0e9651ea6ead4abdc61e3d22fd8bc85d4fb999c571"

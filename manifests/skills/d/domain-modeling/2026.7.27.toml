@@ -1,0 +1,10 @@
+name = "domain-modeling"
+version = "2026.7.27"
+description = "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/domain-modeling"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-domain-modeling.zip"
+sha256 = "2b5d94b5c02b7687e97d7b4e413b217d69441e430f235b5213bd12a53f857515"

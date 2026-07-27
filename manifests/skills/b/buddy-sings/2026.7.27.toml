@@ -1,0 +1,10 @@
+name = "buddy-sings"
+version = "2026.7.27"
+description = "Use when user wants their Claude Code pet (/buddy) to sing a song. Triggers on any request that combines the concept of their Claude Code buddy, pet, or companion with singing or music. Supports multilingual triggers — match equivalent phrases in any language."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/buddy-sings"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-buddy-sings.zip"
+sha256 = "4a17d2c721a609fa9aff275805d26104b2f886bb3f0a631c258192c261ed52f7"

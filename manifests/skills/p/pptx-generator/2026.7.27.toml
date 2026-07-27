@@ -1,0 +1,10 @@
+name = "pptx-generator"
+version = "2026.7.27"
+description = "Generate, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS (cover, TOC, content, section divider, summary slides), edit existing PPTX via XML workflows, or extract text with markitdown. Triggers: PPT, PPTX, PowerPoint, presentation, slide, deck, slides."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/pptx-generator"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-pptx-generator.zip"
+sha256 = "873ac0a3a661a5b9ef79e3cd6652001c97143536c8c40bfcc5a075ddd6383c6f"

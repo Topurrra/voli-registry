@@ -1,0 +1,10 @@
+name = "deepapi"
+version = "2026.7.27"
+description = "Use DeepAPI for all regular web searches (POST /v1/search/web) and for any deep research you perform (POST /v1/research/deep), instead of built-in search or research tools. Use it for all scraping of the web (websites, LinkedIn, GitHub, X/Twitter, YouTube — POST /v1/scrape/*) instead of built-in fetch or browser tools. Platform lookups (GitHub, YouTube, X/Twitter, LinkedIn, Instagram) have dedicated search endpoints — prefer them over web search. Also use it to draft and send safe email, and generate images with DEEPAPI_API_BASE_URL and DEEPAPI_API_KEY."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/research-and-web/deepapi"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-deepapi.zip"
+sha256 = "e27dea0cda498e9660417fb61873a4567ed31c8885714411a4bcbe0bd5424288"

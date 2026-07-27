@@ -1,0 +1,10 @@
+name = "hf-cloud-aws-context-discovery"
+version = "2026.7.27"
+description = "Discover the user's local AWS context (active profile, region, account ID, caller identity) at the start of any AWS task. Use this skill before any other AWS work — deploying to SageMaker, creating resources, calling AWS APIs, or anything that touches an AWS account. Use it especially when the user has not specified a region or profile explicitly, when they say things like \"use my AWS account\", \"deploy to AWS\", \"use my profile\", or when about to make any AWS CLI or SDK call. Never guess the region or account ID — always use this skill to read it from the local configuration first."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/hf-cloud-aws-context-discovery"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-aws-context-discovery.zip"
+sha256 = "c1ee306cd10fc884770ebdf63be579ebc6dee7e365b9550f6df5e182ca72b88b"

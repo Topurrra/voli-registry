@@ -1,0 +1,10 @@
+name = "obsidian-vault"
+version = "2026.7.27"
+description = "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/obsidian-vault"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-obsidian-vault.zip"
+sha256 = "1c650f140b35eb6e334d47440c0c3206b3293f1860a42c1705d7c71c4eaa012b"

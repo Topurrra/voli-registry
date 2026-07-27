@@ -1,0 +1,10 @@
+name = "edge-to-edge"
+version = "2026.7.27"
+description = "Use this skill to migrate your Jetpack Compose app to add adaptive edge-to-edge"
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/system/edge-to-edge"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-edge-to-edge.zip"
+sha256 = "2f5542fee9f9d58584f5b3a38a5da71232f49f4ad8202887233ced209ef165d4"

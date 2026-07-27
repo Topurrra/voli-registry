@@ -1,0 +1,10 @@
+name = "convert-blazor-server-to-webapp"
+version = "2026.7.27"
+description = "Guides conversion of a pre-.NET 8 Blazor Server app into a .NET 8+ Blazor Web App. USE FOR: migrating apps that use AddServerSideBlazor and MapBlazorHub to the AddRazorComponents/MapRazorComponents model, converting _Host.cshtml to an App.razor root component, replacing blazor.server.js with blazor.web.js, migrating CascadingAuthenticationState to a service, adopting new Blazor Web App features like enhanced navigation and streaming rendering. DO NOT USE FOR: apps that are already Blazor Web Apps (already use AddRazorComponents and MapRazorComponents), Blazor WebAssembly or hosted Blazor WebAssembly apps (different migration path), apps that should stay on the Blazor Server hosting model without converting, or apps still targeting .NET Framework."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-aspnetcore/skills/convert-blazor-server-to-webapp"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-convert-blazor-server-to-webapp.zip"
+sha256 = "7f65b71bca29cfc050234b3716e1deba4fc6d168670bb732b3a677c980a72020"

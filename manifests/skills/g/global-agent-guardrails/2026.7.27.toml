@@ -1,0 +1,10 @@
+name = "global-agent-guardrails"
+version = "2026.7.27"
+description = "One shared denylist of catastrophic shell commands (rm -rf on / or ~, dd/mkfs, sudo rm, fork bombs, curl|sh, git push --force, gh repo delete) enforced as a PreToolUse/pre-exec guard across every AI coding agent on the machine — Cursor, Claude Code, Codex, OpenCode, Pi, Hermes, Grok, Droid, Devin. Use when adding or tuning blocked-command patterns, wiring the guard into a new agent or a new machine, debugging why a command was (or was not) blocked, or when the user mentions command guard, guardrails, dangerous command hook, or PreToolUse safety."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/ops-and-setup/global-agent-guardrails"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-global-agent-guardrails.zip"
+sha256 = "b8bbe12b52a6b9d7b9c99e6427acf519de69627be29ccdb64eb2123c8af34232"

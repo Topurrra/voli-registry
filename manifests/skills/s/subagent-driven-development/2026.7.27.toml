@@ -1,0 +1,10 @@
+name = "subagent-driven-development"
+version = "2026.7.27"
+description = "Use when executing implementation plans with independent tasks in the current session"
+homepage = "https://github.com/obra/superpowers/tree/3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9/skills/subagent-driven-development"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/obra-superpowers-2026.7.27-subagent-driven-development.zip"
+sha256 = "f1a8c25a26ecd9b537ef43bf4b6f0e748ecd8eab7739a86c0f831a1904b90845"

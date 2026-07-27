@@ -1,0 +1,10 @@
+name = "mmx-cli"
+version = "2026.7.27"
+description = "Use mmx to generate text, images, video, speech, and music via the MiniMax AI platform. Use when the user wants to create media content, chat with MiniMax models, perform web search, or manage MiniMax API resources from the terminal."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-multimodal-toolkit"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-mmx-cli.zip"
+sha256 = "7bc548638b17eb7c08850d26bb46a2aab2106d21d1d3bb5762ba4a552ab54f37"

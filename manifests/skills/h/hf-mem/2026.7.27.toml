@@ -1,0 +1,10 @@
+name = "hf-mem"
+version = "2026.7.27"
+description = "Hugging Face CLI to estimate the required memory to load Safetensors or GGUF model weights for inference from the Hugging Face Hub"
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/hf-mem"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-mem.zip"
+sha256 = "04305f928d0c72f87bc0817290941b69c849e33c46aa4a007f6e7ce9177816ba"

@@ -1,0 +1,10 @@
+name = "agp-9-upgrade"
+version = "2026.7.27"
+description = "Upgrades, or migrates, an Android project to use Android Gradle Plugin"
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/build/agp/agp-9-upgrade"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-agp-9-upgrade.zip"
+sha256 = "47329a8b335c69f67b74d5bbe699369c1d0c296fa5f685694ae2b5b83aeecb3e"

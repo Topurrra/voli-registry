@@ -1,0 +1,10 @@
+name = "apple-design"
+version = "2026.7.27"
+description = "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces."
+homepage = "https://github.com/emilkowalski/skills/tree/e695d13cb298db0f46d5ef05be2ad13fa12908a6/skills/apple-design"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/emilkowalski-skills-2026.7.27-apple-design.zip"
+sha256 = "989721ace42f80302ea5ba24fbe0751bdd8d2dcbe2d41f1d28f1c13f6c9455d9"

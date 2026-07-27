@@ -1,0 +1,10 @@
+name = "pi-web-search"
+version = "2026.7.27"
+description = "ONLY for Pi Agents — all other agents have their own web tools. How Pi accesses the web via the pi-web-access package — search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/research-and-web/pi-web-search"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-pi-web-search.zip"
+sha256 = "5178381771127b7c032d5b788ab965a58c184aba8df2a914fab027cd2cbe0d96"

@@ -1,0 +1,10 @@
+name = "react-native-dev"
+version = "2026.7.27"
+description = "React Native and Expo development guide covering components, styling, animations, navigation, state management, forms, networking, performance optimization, testing, native capabilities, and engineering (project structure, deployment, SDK upgrades, CI/CD). Use when: building React Native or Expo apps, implementing animations or native UI, managing state, fetching data, writing tests, optimizing performance, deploying to App Store/Play Store, setting up CI/CD, upgrading Expo SDK, or configuring Tailwind/NativeWind."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/react-native-dev"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-react-native-dev.zip"
+sha256 = "8c7fc3b144f3ad5d2d47eec60c6fd8915bb81bc1315ad1b95103255fe40c7dd4"

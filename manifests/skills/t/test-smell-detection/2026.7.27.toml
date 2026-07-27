@@ -1,0 +1,10 @@
+name = "test-smell-detection"
+version = "2026.7.27"
+description = "Deep-dive audit using the full testsmells.org 19-smell academic catalog for tests in any language. Every finding maps to a named, citable smell from the research literature (Assertion Roulette, Duplicate Assert, Mystery Guest, Eager Test, Sensitive Equality, Conditional Test Logic, Sleepy Test, Magic Number Test, etc.) with research-backed severity. Polyglot: .NET (MSTest/xUnit/NUnit/TUnit), Python (pytest/unittest), TS/JS (Jest/Vitest/Mocha/node:test), Java (JUnit/TestNG), Go, Ruby (RSpec/Minitest), Rust, Swift, Kotlin (JUnit/Kotest), PowerShell (Pester), C++ (GoogleTest/Catch2). INVOKE ONLY when explicitly asked for the testsmells.org 19-smell academic catalog or citable smell names from the literature. DO NOT USE FOR: general or pragmatic audits — use test-anti-patterns; writing new tests (use code-testing-agent, or writing-mstest-tests for MSTest); running tests (use run-tests); framework migration."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-test/skills/test-smell-detection"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-test-smell-detection.zip"
+sha256 = "24b42692c764ba4b46b30130a033e6759fa2fee23cca421f9f6d1ceab6d08f33"

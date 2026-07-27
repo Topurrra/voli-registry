@@ -1,0 +1,10 @@
+name = "executing-plans"
+version = "2026.7.27"
+description = "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
+homepage = "https://github.com/obra/superpowers/tree/3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9/skills/executing-plans"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/obra-superpowers-2026.7.27-executing-plans.zip"
+sha256 = "31b281ee0906878eae0417f610fbd500ff977c8634a3d8c35b9ee10a47f98cfe"

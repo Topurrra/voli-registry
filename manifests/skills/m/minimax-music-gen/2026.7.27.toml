@@ -1,0 +1,10 @@
+name = "minimax-music-gen"
+version = "2026.7.27"
+description = "Use when user wants to generate music, songs, or audio tracks. Triggers on any request involving music creation, song writing, lyrics generation, audio production, or covers. Also triggers when user provides lyrics and wants them turned into a song, or describes a mood/scene and wants background music. Supports multilingual triggers — match equivalent phrases in any language. Do NOT use for music playback of existing files, music theory questions, or music recommendation without generation."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/minimax-music-gen"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-minimax-music-gen.zip"
+sha256 = "42552f7e444f019219a76c4a87dedecbb46cd937546ce0a11a698407b5216d58"

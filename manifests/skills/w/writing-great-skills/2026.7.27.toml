@@ -1,0 +1,10 @@
+name = "writing-great-skills"
+version = "2026.7.27"
+description = "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/writing-great-skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-writing-great-skills.zip"
+sha256 = "48f128267904f05c6257b909cb4cc52d99f35072c9b668dfff100dc345aa69e3"

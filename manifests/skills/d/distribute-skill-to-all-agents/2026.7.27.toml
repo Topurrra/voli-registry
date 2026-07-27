@@ -1,0 +1,10 @@
+name = "distribute-skill-to-all-agents"
+version = "2026.7.27"
+description = "Distribute a skill across the 4 agent skill folders (Codex, Claude Code, Pi, Hermes) so all agents see it. Use when the user says \"distribute this skill\", \"sync skills across agents\", or after creating/updating a skill that should be global. Covers the symlink layout and the ~/.pi/agent/skills trap."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/skill-authoring/distribute-skill-to-all-agents"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-distribute-skill-to-all-agents.zip"
+sha256 = "325491cd81700eef3320de7433e33d5ad32ae2912d4782918d1fa45474a3c693"

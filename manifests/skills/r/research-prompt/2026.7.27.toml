@@ -1,0 +1,10 @@
+name = "research-prompt"
+version = "2026.7.27"
+description = "Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a \"deep research prompt\", a one-paragraph task for a researcher, or asks \"what should our researcher look for\". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/research-and-web/research-prompt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-research-prompt.zip"
+sha256 = "2d392858c71137b001b43ba5421ddfc3d79c70c0e784a08e8bf27e3966044013"

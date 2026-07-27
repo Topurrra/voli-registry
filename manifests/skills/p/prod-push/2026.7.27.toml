@@ -1,0 +1,10 @@
+name = "prod-push"
+version = "2026.7.27"
+description = "Push to GitHub main and babysit the change until it is verifiably live in production, fixing CI and deploy failures along the way. Use when the user says \"push\", \"push to github\", \"push to prod\", \"ship it\", or \"deploy\". Differentiator: pushing requires the user's explicit go-ahead; this is the procedure for AFTER he gives it (this repo's CI gate + Vercel promotion)."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/ops-and-setup/prod-push"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-prod-push.zip"
+sha256 = "84e6f4864b48acb0f776586af9deb5ef3e372edb27451ec43a1f882d06706b9b"

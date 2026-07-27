@@ -1,0 +1,10 @@
+name = "migrate-xml-views-to-jetpack-compose"
+version = "2026.7.27"
+description = "Provides a structured workflow for migrating an Android XML View to Jetpack"
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-migrate-xml-views-to-jetpack-compose.zip"
+sha256 = "22e0a5504a7ac8c57f301522ac91f92e26a6b919a691e64997c5f0d335ac7ee6"

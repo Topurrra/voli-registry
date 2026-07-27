@@ -1,0 +1,10 @@
+name = "camerax"
+version = "2026.7.27"
+description = "Provide technical guidance for Android camera development with CameraX."
+homepage = "https://github.com/android/skills/tree/47e1dff74a5cde5d0128c5d15e74e000323135ea/camera/camerax"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.27-camerax.zip"
+sha256 = "f9074fe15aa4b3d8d3456cf2cc4106baaf7e7cb8be5debdeb7ffa24b73810360"

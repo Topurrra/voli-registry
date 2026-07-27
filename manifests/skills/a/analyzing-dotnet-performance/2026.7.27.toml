@@ -1,0 +1,10 @@
+name = "analyzing-dotnet-performance"
+version = "2026.7.27"
+description = "Scans .NET code for ~50 performance anti-patterns across async, memory, strings, collections, LINQ, regex, serialization, and I/O with tiered severity classification. Use when analyzing .NET code for optimization opportunities, reviewing hot paths, or auditing allocation-heavy patterns."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-diag/skills/analyzing-dotnet-performance"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-analyzing-dotnet-performance.zip"
+sha256 = "2e6745f0c86bbab3702e0f85e3b83a198f8a6df4e9c3b847ecbbe4bd17aa774c"

@@ -1,0 +1,10 @@
+name = "hf-cloud-sagemaker-iam-preflight"
+version = "2026.7.27"
+description = "Ensure a usable SageMaker execution role exists before deploying or training. Use this skill whenever about to create a SageMaker endpoint, model, training job, or any resource that requires an execution role. Use it especially when the user has not provided a role ARN explicitly, when scripts are about to call `iam:CreateRole`, or when an AccessDenied error mentions an IAM action. Never blindly call `iam:CreateRole` — always check for existing roles first. This skill prevents the most common SageMaker deployment failure: trying to create IAM resources from an SSO principal that has no IAM write permissions."
+homepage = "https://github.com/huggingface/skills/tree/87f9ee5b670a630b022809a8742606c6da21812c/skills/hf-cloud-sagemaker-iam-preflight"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-sagemaker-iam-preflight.zip"
+sha256 = "7399c9a901e07935f87e6e01f3535c54276d82673d3518c2abc136dc95b43aeb"

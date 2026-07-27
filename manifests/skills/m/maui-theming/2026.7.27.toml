@@ -1,0 +1,10 @@
+name = "maui-theming"
+version = "2026.7.27"
+description = "Guide for theming .NET MAUI apps — light/dark mode via AppThemeBinding, ResourceDictionary theme switching, DynamicResource bindings, system theme detection, and user theme preferences. Use when: \"dark mode\", \"light mode\", \"theming\", \"AppThemeBinding\", \"theme switching\", \"ResourceDictionary theme\", \"dynamic resources\", \"system theme detection\", \"color scheme\", \"app theme\", \"DynamicResource\". Do not use for: localization or language switching (see .NET MAUI localization documentation), accessibility visual adjustments (see .NET MAUI accessibility documentation), app icons or splash screens (see .NET MAUI app icons documentation), or Bootstrap-style class theming (see Plugin.Maui.BootstrapTheme NuGet package)."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-maui/skills/maui-theming"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-maui-theming.zip"
+sha256 = "216e5b1dbdd2b2ade2bee91ffe3a2a2eab6db8d348b1a616fc0b31dd590ffc1d"

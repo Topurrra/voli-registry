@@ -1,0 +1,10 @@
+name = "setup-local-sdk"
+version = "2026.7.27"
+description = "Install a .NET SDK locally for safe preview testing, specific-version pinning, or reproducible team setups — without modifying the system-wide installation. USE FOR: trying .NET previews safely, testing specific SDK versions, installing MAUI or other workloads on a preview, updating or replacing an existing local SDK, creating reproducible team/CI install scripts, configuring global.json paths. DO NOT USE FOR: system-wide SDK installs, .NET hosts older than 10, runtime-only installs, or projects not using SDK-style commands."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet/skills/setup-local-sdk"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-setup-local-sdk.zip"
+sha256 = "4dbf3cde413621994e7e30ea8d833438e3e47d1d3f95956a4f52e42c051104a1"

@@ -1,0 +1,10 @@
+name = "test-tagging"
+version = "2026.7.27"
+description = "Analyzes test suites in any language and tags each test with standardized traits (positive, negative, critical-path, boundary, smoke, regression, integration, performance, security). Use when the user wants to categorize, audit, or label tests with traits. Works across .NET (MSTest/xUnit/NUnit/TUnit), Python (pytest), TS/JS (Jest/Vitest), Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, and C++ — auto-editing when the framework has canonical tag syntax, otherwise report-only. Do not use for writing new tests, running tests, or migrating frameworks."
+homepage = "https://github.com/dotnet/skills/tree/9b2706630d2acc38728f6b0cb48ab9ffc5a676d0/plugins/dotnet-test/skills/test-tagging"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.27-test-tagging.zip"
+sha256 = "d06d616ca218a6597810d7ba1833649c7178e082024722d67bc0ca9aa47b94ea"

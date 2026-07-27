@@ -1,0 +1,10 @@
+name = "research"
+version = "2026.7.27"
+description = "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/research"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-research.zip"
+sha256 = "45d8fd9e6a5e98f2fdd050c708ba0991fcd753737d8ad386a77e29ce066f71c7"

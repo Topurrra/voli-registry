@@ -1,0 +1,10 @@
+name = "android-native-dev"
+version = "2026.7.27"
+description = "Android native application development and UI design guide. Covers Material Design 3, Kotlin/Compose development, project configuration, accessibility, and build troubleshooting. Read this before Android native application development."
+homepage = "https://github.com/MiniMax-AI/skills/tree/60aaae52bb2af8162732751a4332f62a5fef518b/skills/android-native-dev"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-android-native-dev.zip"
+sha256 = "ddcd17caa468b5ee3325fd1d2e307cf7d4e4bfb547a030f4f7a8233923f40a68"

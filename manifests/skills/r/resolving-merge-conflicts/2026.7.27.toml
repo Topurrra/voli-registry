@@ -1,0 +1,10 @@
+name = "resolving-merge-conflicts"
+version = "2026.7.27"
+description = "Use when you need to resolve an in-progress git merge/rebase conflict."
+homepage = "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/resolving-merge-conflicts"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.27-resolving-merge-conflicts.zip"
+sha256 = "046ea13318cb052e2f1d5b4655e7ad7c7f6d7c27b2b38d925a3513b5b42bee30"

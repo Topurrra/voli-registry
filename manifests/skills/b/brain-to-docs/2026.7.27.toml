@@ -1,0 +1,10 @@
+name = "brain-to-docs"
+version = "2026.7.27"
+description = "Use when the user wants to extract project vision, decisions, and preferences from his head into clear documentation (README + ADRs) through a back-and-forth Q&A loop. Triggers on \"brain-to-docs\", \"build out the docs\", \"extract the vision\", \"let's document this project\"."
+homepage = "https://github.com/davidondrej/skills/tree/20d6f10de0daa68b83a6a3f8983743d794dec9c4/skills/thinking-and-docs/brain-to-docs"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.27-brain-to-docs.zip"
+sha256 = "e02e6c7e4ccdd028a9fc903a126a1d746e34fada4fc483c9bd48febe0134e929"

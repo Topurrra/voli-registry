@@ -1,0 +1,18 @@
+name = "vlc"
+version = "3.0.23"
+description = "Media player that plays most multimedia files, DVDs, Audio CDs and streams."
+homepage = "https://www.videolan.org/vlc/"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "vlc-3.0.23"
+gui = true
+bin = [{ name = "vlc", path = "vlc.exe" }]
+shortcuts = [{ target = "vlc.exe", name = "VLC media player" }]
+
+[source.x64]
+url = "https://get.videolan.org/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
+sha256 = "992d19dbd0b8a7cde9167d2f7780b1ef6f92acc8a71acfa736101a21f35181e1"
+
+[autoupdate]
+checkver = { url = "https://get.videolan.org/vlc/last/win64/", regex = "vlc-([\\d.]+)-win64\\.zip" }
+url_template = { x64 = "https://get.videolan.org/vlc/$version/win64/vlc-$version-win64.zip" }

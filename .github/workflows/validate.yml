@@ -35,7 +35,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 1ccb4c3c06aace311ea2d13b952d70703cb02a0a \
+            --rev 6e965a5233e4a0c6d617218afbbccd21d720fe2f \
             voli-index-tool
 
       - name: Validate manifests

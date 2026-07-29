@@ -1,0 +1,14 @@
+name = "7zip"
+version = "26.02"
+description = "7-Zip command-line archiver (7z, zip, tar, gzip, bzip2, xz, wim)."
+homepage = "https://www.7-zip.org/"
+license = "LGPL-2.1-or-later"
+kind = "app"
+bin = [{ name = "7z", path = "x64\\7za.exe" }, { name = "7za", path = "x64\\7za.exe" }]
+
+[source.x64]
+url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-extra.7z"
+sha256 = "081df9e9311dfd9c9e0e98c1c80180b99bb51e4cb24156b5f3057fe3c259d70a"
+
+[autoupdate]
+checkver = { github = "ip7z/7zip" }

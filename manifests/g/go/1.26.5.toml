@@ -1,0 +1,20 @@
+name = "go"
+version = "1.26.5"
+description = "The Go programming language toolchain and standard library."
+homepage = "https://go.dev/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "go"
+bin = ["bin\\go.exe", "bin\\gofmt.exe"]
+
+[source.x64]
+url = "https://go.dev/dl/go1.26.5.windows-amd64.zip"
+sha256 = "97e6b2a833b6d89f9ff17d25419ac0a7e3b482a044e9ab18cdef834bd834fd38"
+
+[source.arm64]
+url = "https://go.dev/dl/go1.26.5.windows-arm64.zip"
+sha256 = "f96ee46396d69f1e231c8d981ec6a70216238a646a1f2cd74aea0d0016bbc017"
+
+[autoupdate]
+checkver = { url = "https://go.dev/dl/?mode=json", regex = "go([\\d.]+)\\.windows-amd64\\.zip" }
+url_template = { x64 = "https://go.dev/dl/go$version.windows-amd64.zip", arm64 = "https://go.dev/dl/go$version.windows-arm64.zip" }

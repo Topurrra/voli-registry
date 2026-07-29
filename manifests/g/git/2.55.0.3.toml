@@ -1,0 +1,19 @@
+name = "git"
+version = "2.55.0.3"
+description = "Distributed version control system (Git for Windows, portable edition)."
+homepage = "https://gitforwindows.org/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["cmd\\git.exe", { name = "git-bash", path = "git-bash.exe" }]
+shortcuts = [{ target = "git-bash.exe", name = "Git Bash" }]
+
+[source.x64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.3/PortableGit-2.55.0.3-64-bit.7z.exe#/dl.7z"
+sha256 = "ab00566336b5472120f9a52d34f2e79c5406535792acb0548001ffd0bd090e5d"
+
+[source.arm64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.3/PortableGit-2.55.0.3-arm64.7z.exe#/dl.7z"
+sha256 = "3bf26b94d9399b16a890776e468334f501742861576cbcdea2d9134643c374bd"
+
+[autoupdate]
+checkver = { github = "git-for-windows/git" }

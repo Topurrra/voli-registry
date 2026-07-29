@@ -1,0 +1,15 @@
+name = "yt-dlp"
+version = "2026.07.04"
+description = "Command-line audio/video downloader for YouTube and thousands of other sites."
+homepage = "https://github.com/yt-dlp/yt-dlp"
+license = "Unlicense"
+kind = "app"
+bin = ["yt-dlp.exe"]
+
+[source.x64]
+url = "https://github.com/yt-dlp/yt-dlp/releases/download/2026.07.04/yt-dlp_win.zip"
+sha256 = "90254845be5282b1f4d843a873abff04f569f857f64250f833fe152b21eec152"
+
+[autoupdate]
+checkver = { github = "yt-dlp/yt-dlp" }
+url_template = { x64 = "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp_win.zip" }

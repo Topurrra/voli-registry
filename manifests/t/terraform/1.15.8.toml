@@ -1,0 +1,19 @@
+name = "terraform"
+version = "1.15.8"
+description = "Infrastructure as code tool for building and versioning cloud infrastructure."
+homepage = "https://www.terraform.io/"
+license = "BUSL-1.1"
+kind = "app"
+bin = ["terraform.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/terraform/1.15.8/terraform_1.15.8_windows_amd64.zip"
+sha256 = "2ff41d2129afb1982733c132c61a8d6ef038f879f3aeede7fc28b8b8b24acf02"
+
+[source.arm64]
+url = "https://releases.hashicorp.com/terraform/1.15.8/terraform_1.15.8_windows_arm64.zip"
+sha256 = "ffd9399a37ee8123263d84ec5c00d09d7704f9997cb345d7c9cac56c3fc1348e"
+
+[autoupdate]
+checkver = { github = "hashicorp/terraform" }
+url_template = { x64 = "https://releases.hashicorp.com/terraform/$version/terraform_${version}_windows_amd64.zip", arm64 = "https://releases.hashicorp.com/terraform/$version/terraform_${version}_windows_arm64.zip" }

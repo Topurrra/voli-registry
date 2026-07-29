@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-pptx-generator.zip"
-sha256 = "873ac0a3a661a5b9ef79e3cd6652001c97143536c8c40bfcc5a075ddd6383c6f"
+sha256 = "d08ae69dcf4d1b47a0a3a0c2aa1d6aec5707ad0155bc4c19fc59487c87995db6"

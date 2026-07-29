@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-vision-analysis.zip"
-sha256 = "823bb239d53480a7c1eb018156a2e236f6627cc91dfcaf968260ca683823b684"
+sha256 = "4e261f0dcdb33f81a6c19d4af9ced239cce34e2cc3e19df18715e1ceb0494c34"

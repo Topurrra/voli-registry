@@ -1,0 +1,10 @@
+name = "folder-specific-claude-and-agents-md"
+version = "2026.7.29"
+description = "Create a specialized CLAUDE.md (+ AGENTS.md symlink) inside a specific folder to give future agents folder-scoped context. Use when the user asks to create a CLAUDE.md for a folder, write folder instructions, or add agent context to a directory."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/skill-authoring/folder-specific-claude-and-agents-md"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-folder-specific-claude-and-agents-md.zip"
+sha256 = "0a4b17aad97937ddd3941b2e2121af1c08f9f6b627bd5babdc5ab96c0a1f56e4"

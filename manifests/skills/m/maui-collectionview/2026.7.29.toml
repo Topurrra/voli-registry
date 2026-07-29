@@ -1,0 +1,10 @@
+name = "maui-collectionview"
+version = "2026.7.29"
+description = "Guidance for implementing CollectionView in .NET MAUI apps — data display, layouts (list & grid), selection, grouping, scrolling, empty views, templates, incremental loading, swipe actions, and pull-to-refresh. USE FOR: \"CollectionView\", \"list view\", \"grid layout\", \"data template\", \"item template\", \"grouping\", \"pull to refresh\", \"incremental loading\", \"swipe actions\", \"empty view\", \"selection mode\", \"scroll to item\", displaying scrollable data, replacing ListView. DO NOT USE FOR: simple static layouts without scrollable data (use Grid or StackLayout), map pin lists (use Microsoft.Maui.Controls.Maps), table-based data entry forms, or non-MAUI list controls."
+homepage = "https://github.com/dotnet/skills/tree/85cd103400e51f5e2f767bfaeee96f22c5277a93/plugins/dotnet-maui/skills/maui-collectionview"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.29-maui-collectionview.zip"
+sha256 = "6e4706f76f699902af15dcac5aa0212dbc69e854d1620a7e083f7e02dd49b393"

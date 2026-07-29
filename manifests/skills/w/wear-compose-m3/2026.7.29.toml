@@ -1,0 +1,10 @@
+name = "wear-compose-m3"
+version = "2026.7.29"
+description = "Expert guidance for working with Wear OS Compose Material3. Use this"
+homepage = "https://github.com/android/skills/tree/23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4/wear/wear-compose-m3"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.29-wear-compose-m3.zip"
+sha256 = "be9fada644f67f9ccefb02600d63db119b55849bcd4c47f2cd1a7912c58de0f3"

@@ -1,0 +1,10 @@
+name = "writing-plans"
+version = "2026.7.29"
+description = "Use when you have a spec or requirements for a multi-step task, before touching code"
+homepage = "https://github.com/obra/superpowers/tree/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/writing-plans"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/obra-superpowers-2026.7.29-writing-plans.zip"
+sha256 = "6efd04c4890045619d66bfd5e64526527c4cb30fe3c062d99dd9bcae4e337485"

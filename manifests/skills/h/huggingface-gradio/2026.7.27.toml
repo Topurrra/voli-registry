@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-gradio.zip"
-sha256 = "5b6d5f68b2253a243013dfcf72b35d817b6a1efb7ac91372f9fb7f06d99bc710"
+sha256 = "6e548ae03c59bf534e53ec24a2b1a9ba9738b6030328d1274d7a2920b647f3a9"

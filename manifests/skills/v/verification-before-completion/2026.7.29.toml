@@ -1,0 +1,10 @@
+name = "verification-before-completion"
+version = "2026.7.29"
+description = "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
+homepage = "https://github.com/obra/superpowers/tree/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/verification-before-completion"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/obra-superpowers-2026.7.29-verification-before-completion.zip"
+sha256 = "ef5f29116d2b68277b61a9527ffdcd1a5dbe34e0a7576f594139050a78041391"

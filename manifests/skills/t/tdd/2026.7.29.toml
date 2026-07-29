@@ -1,0 +1,10 @@
+name = "tdd"
+version = "2026.7.29"
+description = "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests."
+homepage = "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/engineering/tdd"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.29-tdd.zip"
+sha256 = "e6cf29927397fa8680617758ae0b4551dd17c6c2acf37b5abfca8b7210b40d6d"

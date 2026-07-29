@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-python-env-setup.zip"
-sha256 = "4a470fb5e2d20f687bb315ab412b50ca2649907b97ad95d7600a2d57091fd8f9"
+sha256 = "010143699121fdcf45be896069dd1da8f6d7791db00f4e3664be2812ff134b0f"

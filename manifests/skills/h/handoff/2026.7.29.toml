@@ -1,0 +1,10 @@
+name = "handoff"
+version = "2026.7.29"
+description = "Compact the current conversation into a handoff document for another agent to pick up."
+homepage = "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/productivity/handoff"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.29-handoff.zip"
+sha256 = "02a72d8aaed98a0d4e2a34c01ed85986bedfccb2ec75cf121ca469ddff9d5d97"

@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-flutter-dev.zip"
-sha256 = "aadb7c5756a31dd40e674c9a7284f72d4c24962b4a1455f62ef6fe120cfcd5bf"
+sha256 = "c03336a1ed7bc127b94f95bf16fe939aaf31655a0f3a9556ee96db42f8732325"

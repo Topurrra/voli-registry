@@ -1,0 +1,10 @@
+name = "grilling"
+version = "2026.7.29"
+description = "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases."
+homepage = "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/productivity/grilling"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.29-grilling.zip"
+sha256 = "2c14195d0611202c48ac646e93db933b1b68421f7c1347178c0cb5a8f7f6cf29"

@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-gif-sticker-maker.zip"
-sha256 = "c859c101c21c897a3715a1ca5cc6c157890b6af2037c43b145987870726aa54c"
+sha256 = "ffe38e615e0b594d34fe3447a7b8cb921073162993fbc947c0dab9793c0344a1"

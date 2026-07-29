@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-minimax-music-playlist.zip"
-sha256 = "64e228e4944dc4648a13e3b8883b628cdd99df584726a26232232a5bca29bf59"
+sha256 = "4ad522243ebd2107b047d8099cbca1c5284a164d6714b97c264f26d5e41b410e"

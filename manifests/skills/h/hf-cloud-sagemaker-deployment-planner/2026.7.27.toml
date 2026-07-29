@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-sagemaker-deployment-planner.zip"
-sha256 = "a24bb35c6ceaad87d41389ee97cc1815bd07500c4dbe0eddd0212c054280e298"
+sha256 = "0b5a790fdbc134a0a86b430aeb4d3ab8c7c91145e52719d7bb4cca9df89f3baf"

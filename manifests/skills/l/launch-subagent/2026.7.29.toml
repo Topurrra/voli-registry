@@ -1,0 +1,10 @@
+name = "launch-subagent"
+version = "2026.7.29"
+description = "Read this BEFORE launching any subagent (Task tool, background agents, parallel agents, best-of-N, delegating work to another agent). Hard model rules for subagents plus consensus principles for using them well. Triggers: launch a subagent, spawn agents, run agents in parallel, delegate to a subagent."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/agent-orchestration/launch-subagent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-launch-subagent.zip"
+sha256 = "899ffbedeeab507c7626ad23cab1ef63f74aabe2f47fbbdf6a2f9053543eacc9"

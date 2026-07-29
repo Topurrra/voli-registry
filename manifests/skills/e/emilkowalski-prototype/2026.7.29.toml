@@ -1,0 +1,10 @@
+name = "emilkowalski-prototype"
+version = "2026.7.29"
+description = "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own."
+homepage = "https://github.com/emilkowalski/skills/tree/70744e3816f1d93eafb697161a8b880a7384c5ff/skills/prototype"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/emilkowalski-skills-2026.7.29-emilkowalski-prototype.zip"
+sha256 = "91c223d79d51fdad07224d79f6178b61b9927fbe51778f8d419ef9fe98d53255"

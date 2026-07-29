@@ -6,13 +6,29 @@ Generated 267 deterministic skill archives from 10 pinned sources.
 | --- | --- | ---: | --- |
 | `google/agents-cli` | `c7a375f7a463d5ade51caabdec56971681aed400` | 7 | Apache-2.0 |
 | `huggingface/skills` | `87f9ee5b670a630b022809a8742606c6da21812c` | 26 | Apache-2.0 |
-| `android/skills` | `47e1dff74a5cde5d0128c5d15e74e000323135ea` | 20 | Apache-2.0 |
-| `dotnet/skills` | `9b2706630d2acc38728f6b0cb48ab9ffc5a676d0` | 98 | MIT |
+| `android/skills` | `23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4` | 20 | Apache-2.0 |
+| `dotnet/skills` | `85cd103400e51f5e2f767bfaeee96f22c5277a93` | 96 | MIT |
 | `anthropics/skills` | `b29e7cf65e5cb78a5ac33d582270551bc74a14eb` | 12 | Apache-2.0 |
-| `obra/superpowers` | `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9` | 14 | MIT |
-| `mattpocock/skills` | `ed37663cc5fbef691ddfecd080dff42f7e7e350d` | 28 | MIT |
-| `emilkowalski/skills` | `e695d13cb298db0f46d5ef05be2ad13fa12908a6` | 7 | MIT |
+| `obra/superpowers` | `44c9b2d6e889982ac18c27d05a19fefe335194e1` | 14 | MIT |
+| `mattpocock/skills` | `2ab958093e83e0ec752e6c1c5932da465bf23e0c` | 28 | MIT |
+| `emilkowalski/skills` | `70744e3816f1d93eafb697161a8b880a7384c5ff` | 8 | MIT |
 | `MiniMax-AI/skills` | `60aaae52bb2af8162732751a4332f62a5fef518b` | 17 | MIT |
-| `davidondrej/skills` | `20d6f10de0daa68b83a6a3f8983743d794dec9c4` | 38 | MIT |
+| `davidondrej/skills` | `b2a2edce65c7fec6d81066f20e3b89833bbb1b43` | 39 | MIT |
+
+## Name collisions
+
+Two or more sources shipped the same skill name. The bare name stays with
+the first source in `skill-sources.toml` order; every later claimant is
+published under `<prefix>-<name>`.
+
+Renaming is not metadata-only: the client requires the manifest name, the
+archive's top-level directory, and the `name:` field in the archived
+`SKILL.md` to agree. So for each row below the importer rewrites that one
+frontmatter field inside the archive. Every other byte of upstream content
+is copied verbatim.
+
+| Upstream name | Published as | Source | Path |
+| --- | --- | --- | --- |
+| `prototype` | `emilkowalski-prototype` | `emilkowalski/skills` | `skills/prototype` |
 
 Release publishing and PR merging are deferred.

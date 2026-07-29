@@ -1,0 +1,10 @@
+name = "edit-article"
+version = "2026.7.29"
+description = "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft."
+homepage = "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/personal/edit-article"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.29-edit-article.zip"
+sha256 = "d5ee265d10e8438623e5ba598a86989e6a22f4b0ca42cda3628d25e19894f0f8"

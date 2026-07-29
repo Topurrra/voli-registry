@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-serving-image-selection.zip"
-sha256 = "cda825667d239ad5a5db7601df5145f86ed5923b91c9ddc2c86a186c542b164f"
+sha256 = "b17cd032db03a807ba3e1cccb3664cf39b5c703435597798ae97330125852cfd"

@@ -1,0 +1,10 @@
+name = "display-glasses-with-jetpack-compose-glimmer"
+version = "2026.7.29"
+description = "Provides guidelines for developing projected Android XR apps for display"
+homepage = "https://github.com/android/skills/tree/23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4/xr/display-glasses-with-jetpack-compose-glimmer"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.29-display-glasses-with-jetpack-compose-glimmer.zip"
+sha256 = "9a610c48809cebbae2355cef976923f164fbbb991c646986ec1d446dd1d69d75"

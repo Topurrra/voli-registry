@@ -1,0 +1,10 @@
+name = "mtp-hot-reload"
+version = "2026.7.29"
+description = "Suggests using Microsoft Testing Platform (MTP) hot reload to iterate fixes on failing tests without rebuilding. Use when user says \"hot reload tests\", \"iterate on test fix\", \"run tests without rebuilding\", \"speed up test loop\", \"fix test faster\", or needs to set up MTP hot reload to rapidly iterate on test failures. Covers setup (NuGet package, environment variable, launchSettings.json) and the iterative workflow for fixing tests. DO NOT USE FOR: writing test code, diagnosing test failures, running tests normally with dotnet test (use run-tests), applying test filters, producing TRX reports, CI/CD pipeline configuration, or Visual Studio Test Explorer hot reload (which is a different feature)."
+homepage = "https://github.com/dotnet/skills/tree/85cd103400e51f5e2f767bfaeee96f22c5277a93/plugins/dotnet-test/skills/mtp-hot-reload"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.29-mtp-hot-reload.zip"
+sha256 = "3745f5239c0eb44a4272989aad4665556a0614a6bd399b89fcdc0c016ad3fc53"

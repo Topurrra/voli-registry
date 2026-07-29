@@ -1,0 +1,10 @@
+name = "agent-self-scheduling"
+version = "2026.7.29"
+description = "Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/agent-orchestration/agent-self-scheduling"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-agent-self-scheduling.zip"
+sha256 = "ea55ad1af8a0dd3eaa1bff70f22617de080d58914f6792f6955779483be9d61b"

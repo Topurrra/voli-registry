@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-skill-creator.zip"
-sha256 = "b8b45fcee889568c02e48b8288581d5898f1a8e632e0cd405c8d770f4ed80cd7"
+sha256 = "4c25d31ea8acb871dfb64981f85574fc06b709642dab97f8487e472a333ab6eb"

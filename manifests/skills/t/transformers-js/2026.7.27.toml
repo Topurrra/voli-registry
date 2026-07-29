@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-transformers-js.zip"
-sha256 = "c7a92899bfb2276816088c38d59f1288c90b0312dc4f562916a56a6e32532fcc"
+sha256 = "e14454c32f633f3c1df59d25bce64d9298e6a043bf7c8d82facda1ed8ba907e4"

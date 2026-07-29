@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-android-native-dev.zip"
-sha256 = "ddcd17caa468b5ee3325fd1d2e307cf7d4e4bfb547a030f4f7a8233923f40a68"
+sha256 = "37ef9f90124a30b46297bf026ba62a4c6d9effd653b09f8b9dfb85494c36156b"

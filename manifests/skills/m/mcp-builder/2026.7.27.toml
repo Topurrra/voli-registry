@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-mcp-builder.zip"
-sha256 = "5a3266511b5e5af736ede99b15398116559cedab0b0df18f54340802d73bfe30"
+sha256 = "cc043fbac3ce16a405bea6f0de2906afa428fe2b2d1da9098596d1a03af9a481"

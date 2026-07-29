@@ -7,7 +7,7 @@ revision = "c7a375f7a463d5ade51caabdec56971681aed400"
 version = "2026.7.27"
 license = "Apache-2.0"
 license_file = "LICENSE"
-license_sha256 = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+license_sha256 = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
 roots = ["skills"]
 
 [[source]]
@@ -17,7 +17,7 @@ revision = "87f9ee5b670a630b022809a8742606c6da21812c"
 version = "2026.7.27"
 license = "Apache-2.0"
 license_file = "LICENSE"
-license_sha256 = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+license_sha256 = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
 roots = ["skills", "hf-mcp/skills"]
 
 [[source]]
@@ -27,7 +27,7 @@ revision = "47e1dff74a5cde5d0128c5d15e74e000323135ea"
 version = "2026.7.27"
 license = "Apache-2.0"
 license_file = "LICENSE.txt"
-license_sha256 = "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e"
+license_sha256 = "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
 roots = ["."]
 
 [[source]]
@@ -47,7 +47,7 @@ revision = "b29e7cf65e5cb78a5ac33d582270551bc74a14eb"
 version = "2026.7.27"
 license = "Apache-2.0"
 license_file = "skills/algorithmic-art/LICENSE.txt"
-license_sha256 = "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64"
+license_sha256 = "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
 roots = ["skills"]
 exclude = [
   "skills/doc-coauthoring",
@@ -69,7 +69,7 @@ revision = "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
 version = "2026.7.27"
 license = "MIT"
 license_file = "LICENSE"
-license_sha256 = "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc"
+license_sha256 = "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
 roots = ["skills"]
 
 [[source]]
@@ -79,7 +79,7 @@ revision = "ed37663cc5fbef691ddfecd080dff42f7e7e350d"
 version = "2026.7.27"
 license = "MIT"
 license_file = "LICENSE"
-license_sha256 = "4981c5f6a90eb3a969dacabb9350f5a75695ff3910b39b6534952908dfdc5ff7"
+license_sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
 roots = ["skills"]
 exclude = ["skills/deprecated", "skills/in-progress"]
 
@@ -90,7 +90,7 @@ revision = "e695d13cb298db0f46d5ef05be2ad13fa12908a6"
 version = "2026.7.27"
 license = "MIT"
 license_file = "LICENSE"
-license_sha256 = "d24da413cccbc3d844929a1cc08e5ba79385139c0c47c9d5bd0dd2df24ffe15c"
+license_sha256 = "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
 roots = ["skills"]
 
 [[source]]
@@ -100,7 +100,7 @@ revision = "60aaae52bb2af8162732751a4332f62a5fef518b"
 version = "2026.7.27"
 license = "MIT"
 license_file = "LICENSE"
-license_sha256 = "a1608c42e98d9d61c5239e15de4975f11399879d59803dbec24f1d5c3ba49af4"
+license_sha256 = "eed4ccce37c2d24822da3bd9d5bee7bc12d494741de56ada513d0b97f537fcd0"
 roots = ["skills"]
 allowed_skill_license_sha256 = [
   "1eebdec461d4e53c8972ea47351c6a9af3a0b37c706ccfc193b4db65393a1c0e",
@@ -113,7 +113,7 @@ revision = "20d6f10de0daa68b83a6a3f8983743d794dec9c4"
 version = "2026.7.27"
 license = "MIT"
 license_file = "LICENSE"
-license_sha256 = "70220d38ce8c3931dd0aec05bea45af7453d415e37fda8f095f8863d66e4265c"
+license_sha256 = "1bd321a3b9cfa8d4af2105e20edd69d830df0b28e83a1b0255558f888e493981"
 roots = ["skills"]
 exclude = [
   "skills/agent-orchestration/handoff",

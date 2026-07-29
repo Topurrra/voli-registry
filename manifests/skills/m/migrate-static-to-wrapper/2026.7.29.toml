@@ -1,0 +1,10 @@
+name = "migrate-static-to-wrapper"
+version = "2026.7.29"
+description = "Replace existing static dependency call sites with a wrapper or built-in abstraction that already exists or is registered in DI, across a bounded scope (file, project, namespace). USE FOR: replace DateTime.UtcNow/DateTime.Now with TimeProvider and add the constructor parameter, migrate static call sites to a wrapper already in DI, bulk replace File.* with IFileSystem, scoped migration of statics in only certain files, update unit tests to a fake time source, make an existing static or utility class testable by adding an ambient TimeProvider/IFileSystem seam while every current call site keeps compiling, behavior-preserving time refactors that must keep the same DateTimeKind. DO NOT USE FOR: detecting statics (use detect-static-dependencies), designing a brand-new wrapper interface that does not exist yet (use generate-testability-wrappers), migrating between test frameworks."
+homepage = "https://github.com/dotnet/skills/tree/85cd103400e51f5e2f767bfaeee96f22c5277a93/plugins/dotnet-test/skills/migrate-static-to-wrapper"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.29-migrate-static-to-wrapper.zip"
+sha256 = "c50484b1f931d842d2932370fe8f12037dd96c2a5f07461e8d9b73d00f4ad53a"

@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-brand-guidelines.zip"
-sha256 = "f21b6e4cb86181838d15d169d26a6b6f3aeb2550f48d0920d4b6f2ae4372fb48"
+sha256 = "c9dace52d2ed3403803411fb4cbcf29b3c7a600368cc7ab6337f6c12b51b5ff0"

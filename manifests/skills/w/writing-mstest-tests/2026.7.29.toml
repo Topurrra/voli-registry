@@ -1,0 +1,10 @@
+name = "writing-mstest-tests"
+version = "2026.7.29"
+description = "Write, create, modernize, or fix comprehensive MSTest unit tests with MSTest 3.x/4.x APIs. USE FOR: write, create, review, or modernize MSTest tests and assertions, better MSTest assertion than Assert.IsTrue, replace hard cast with IsInstanceOfType, MSTest assertion APIs (Contains, ContainsSingle, HasCount, IsEmpty, IsNotEmpty, DoesNotContain, AreSame, IsNull, StartsWith, EndsWith, MatchesRegex, IsGreaterThan, IsLessThan, IsInRange), swapped/reversed Assert.AreEqual args (Expected/Actual backwards), replace ExpectedException with Assert.Throws, data-driven (DataRow, DynamicData, ValueTuples), lifecycle (TestInitialize, TestCleanup, TestContext), async and cancellation tests, conditional execution/retry/cleanup (OSCondition, Retry), parallelization (Parallelize/DoNotParallelize), MSTest.Sdk setup, MSTESTxxxx analyzer fixes. DO NOT USE FOR: test quality audits (use test-anti-patterns), running tests (use run-tests), MSTest version migration (use migrate-mstest skills), xUnit/NUnit/TUnit, or non-.NET languages."
+homepage = "https://github.com/dotnet/skills/tree/85cd103400e51f5e2f767bfaeee96f22c5277a93/plugins/dotnet-test/skills/writing-mstest-tests"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.29-writing-mstest-tests.zip"
+sha256 = "b313184501324b111fdab0b1942663515333b5ae30a6dafd94b778c9e8c765cf"

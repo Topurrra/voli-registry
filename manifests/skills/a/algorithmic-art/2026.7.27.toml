@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-algorithmic-art.zip"
-sha256 = "f13c4895f8464d53157bce0bf61b0ef65275d221df0eb5347319f4e12e9280b0"
+sha256 = "d741776f736f22d9184322944050264ab78f7f8aa235a6a59b7f48c9c327328a"

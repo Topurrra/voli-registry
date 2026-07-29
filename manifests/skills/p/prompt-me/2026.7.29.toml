@@ -1,0 +1,10 @@
+name = "prompt-me"
+version = "2026.7.29"
+description = "Prompt the user with pointed questions to extract what is in his head about a project — remaining work, what is being avoided, what really matters, what does not. Use when the user says \"prompt me\", \"ask me questions\", or wants the agent to figure out priorities by questioning him."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/thinking-and-docs/prompt-me"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-prompt-me.zip"
+sha256 = "cafc66c0a41630a71a58485fe5d28855c3dc475637cd65def9c09085e5644329"

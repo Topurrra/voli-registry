@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-react-native-dev.zip"
-sha256 = "8c7fc3b144f3ad5d2d47eec60c6fd8915bb81bc1315ad1b95103255fe40c7dd4"
+sha256 = "a692ea0dd158830dbf0260c626778a6ed20d39c53f1c500dd892f935b7a6901a"

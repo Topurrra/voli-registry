@@ -1,0 +1,10 @@
+name = "styles"
+version = "2026.7.29"
+description = "Use this skill to integrate the Jetpack Compose Styles API into an Android"
+homepage = "https://github.com/android/skills/tree/23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4/jetpack-compose/theming/styles"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.29-styles.zip"
+sha256 = "912a306a993b247b865329e221b14548801bf3b53555631971539e2fef033292"

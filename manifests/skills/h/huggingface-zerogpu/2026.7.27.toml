@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-zerogpu.zip"
-sha256 = "cb91c838cf6f2a6f72f1500ceb3ac2738c5ffa36358e23d5315e15b246d17b46"
+sha256 = "5649a141a1f895410efaee994ef76b4b01ad966b577eae071e6da8243bc1b2f2"

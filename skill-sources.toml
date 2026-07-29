@@ -23,8 +23,8 @@ roots = ["skills", "hf-mcp/skills"]
 [[source]]
 id = "android-skills"
 repo = "android/skills"
-revision = "47e1dff74a5cde5d0128c5d15e74e000323135ea"
-version = "2026.7.27"
+revision = "23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4"
+version = "2026.7.29"
 license = "Apache-2.0"
 license_file = "LICENSE.txt"
 license_sha256 = "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
@@ -33,8 +33,8 @@ roots = ["."]
 [[source]]
 id = "dotnet-skills"
 repo = "dotnet/skills"
-revision = "9b2706630d2acc38728f6b0cb48ab9ffc5a676d0"
-version = "2026.7.27"
+revision = "85cd103400e51f5e2f767bfaeee96f22c5277a93"
+version = "2026.7.29"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
@@ -57,16 +57,15 @@ exclude = [
   "skills/xlsx",
 ]
 allowed_skill_license_sha256 = [
-  "52b223c318576d65c32f70cb745f31352730e9f4c2c2c2570a66ce700f4f5a64",
-  "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549",
+  "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
 ]
 require_skill_license = true
 
 [[source]]
 id = "obra-superpowers"
 repo = "obra/superpowers"
-revision = "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
-version = "2026.7.27"
+revision = "44c9b2d6e889982ac18c27d05a19fefe335194e1"
+version = "2026.7.29"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
@@ -75,8 +74,8 @@ roots = ["skills"]
 [[source]]
 id = "mattpocock-skills"
 repo = "mattpocock/skills"
-revision = "ed37663cc5fbef691ddfecd080dff42f7e7e350d"
-version = "2026.7.27"
+revision = "2ab958093e83e0ec752e6c1c5932da465bf23e0c"
+version = "2026.7.29"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
@@ -86,8 +85,8 @@ exclude = ["skills/deprecated", "skills/in-progress"]
 [[source]]
 id = "emilkowalski-skills"
 repo = "emilkowalski/skills"
-revision = "e695d13cb298db0f46d5ef05be2ad13fa12908a6"
-version = "2026.7.27"
+revision = "70744e3816f1d93eafb697161a8b880a7384c5ff"
+version = "2026.7.29"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
@@ -103,14 +102,14 @@ license_file = "LICENSE"
 license_sha256 = "eed4ccce37c2d24822da3bd9d5bee7bc12d494741de56ada513d0b97f537fcd0"
 roots = ["skills"]
 allowed_skill_license_sha256 = [
-  "1eebdec461d4e53c8972ea47351c6a9af3a0b37c706ccfc193b4db65393a1c0e",
+  "8288840186d6d3d6a0b74395e17448c06160b38e796963c7745f579631b47b01",
 ]
 
 [[source]]
 id = "davidondrej-skills"
 repo = "davidondrej/skills"
-revision = "20d6f10de0daa68b83a6a3f8983743d794dec9c4"
-version = "2026.7.27"
+revision = "b2a2edce65c7fec6d81066f20e3b89833bbb1b43"
+version = "2026.7.29"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "1bd321a3b9cfa8d4af2105e20edd69d830df0b28e83a1b0255558f888e493981"

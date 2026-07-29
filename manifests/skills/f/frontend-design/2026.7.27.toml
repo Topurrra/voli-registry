@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-frontend-design.zip"
-sha256 = "087a6b0123e4d49cf2d8f472a117a46527b0b68c2d3b7d83daf8a03f0bccab17"
+sha256 = "df14b535b81e1193fa5de94289b5865a980a23513e91fb02be7cc3e1bbf7f652"

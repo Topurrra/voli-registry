@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-web-artifacts-builder.zip"
-sha256 = "e8fd12ea624f8b6a3372f1caaff99329799ecf1ba701c791e428dd7fedcb098c"
+sha256 = "e164682f5bdab190f16d25fcd5ff05cb40b51218561b0a9e61bc306d0c5a9615"

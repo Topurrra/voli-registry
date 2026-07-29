@@ -1,0 +1,10 @@
+name = "create-readonly-db-role"
+version = "2026.7.29"
+description = "Provision a hardened SELECT-only Postgres role so AI agents can safely read a production database. Works on Supabase and any Postgres. Use when the user wants agents to query prod data, says \"read-only role\", \"safe prod DB access for agents\", or is tired of running SQL by hand for agents. Differentiator: this skill CREATES the role and wiring; day-to-day querying belongs in a project-local skill."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/ops-and-setup/create-readonly-db-role"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-create-readonly-db-role.zip"
+sha256 = "18eacb9bf853a8e411c9f5b72f81981b0c137f1f1feec3e39ffc2e405376b514"

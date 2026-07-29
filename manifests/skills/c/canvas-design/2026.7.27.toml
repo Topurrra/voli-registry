@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-canvas-design.zip"
-sha256 = "f2552a7492a3376d8f1e5373418e451243a25901d32252565b849affc1fa65a4"
+sha256 = "ca9a4e99ae0324d59fa4dbf5a60ab9d2aaef551dc82e44f5489fa5c14842e275"

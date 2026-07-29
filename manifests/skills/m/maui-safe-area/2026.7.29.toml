@@ -1,0 +1,10 @@
+name = "maui-safe-area"
+version = "2026.7.29"
+description = ".NET MAUI safe area and edge-to-edge layout guidance for .NET 10+. Covers the new SafeAreaEdges property, SafeAreaRegions enum, per-edge control, keyboard avoidance, Blazor Hybrid CSS safe areas, migration from legacy iOS-only APIs, and platform-specific behavior for Android, iOS, and Mac Catalyst. USE FOR: \"safe area\", \"edge-to-edge\", \"SafeAreaEdges\", \"SafeAreaRegions\", \"keyboard avoidance\", \"notch insets\", \"status bar overlap\", \"iOS safe area\", \"Android edge-to-edge\", \"content behind status bar\", \"UseSafeArea migration\", \"soft input keyboard\", \"IgnoreSafeArea replacement\". DO NOT USE FOR: general layout or grid design (use Grid and StackLayout), app lifecycle handling (use maui-app-lifecycle), theming or styling (use maui-theming), or Shell navigation structure."
+homepage = "https://github.com/dotnet/skills/tree/85cd103400e51f5e2f767bfaeee96f22c5277a93/plugins/dotnet-maui/skills/maui-safe-area"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.29-maui-safe-area.zip"
+sha256 = "64d7ee9eb0ef42a96fcb87052fa9ba8181e460ce8f0d2b33c4306f0160f8ee05"

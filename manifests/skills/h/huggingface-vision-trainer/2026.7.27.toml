@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-vision-trainer.zip"
-sha256 = "967f8fdeb5397f2a23f352d7a0f5c9d49f171c5d3747cef45ea73c2125cb6b8b"
+sha256 = "14773596b7bce327e3b585545fae12ce1bc9bf4e4c4c6930655f44a6592b4ff3"

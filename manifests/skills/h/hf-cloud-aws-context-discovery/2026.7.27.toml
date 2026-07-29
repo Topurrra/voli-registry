@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-aws-context-discovery.zip"
-sha256 = "c1ee306cd10fc884770ebdf63be579ebc6dee7e365b9550f6df5e182ca72b88b"
+sha256 = "42dae3d15eebe824098dcdd3b55f8cf25ad9b0eff364dcae45dd33948987c398"

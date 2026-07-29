@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-slack-gif-creator.zip"
-sha256 = "e3ff737b3c17f5644a360b0e9651ea6ead4abdc61e3d22fd8bc85d4fb999c571"
+sha256 = "efcc914c97a98cca4b0b30425922e223664f86f290ba49617b8353b1a48ada6d"

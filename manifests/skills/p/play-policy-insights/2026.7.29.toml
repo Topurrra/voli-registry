@@ -1,0 +1,10 @@
+name = "play-policy-insights"
+version = "2026.7.29"
+description = "Automated auditor designed to verify Android applications against Google Play Policy domains. It cross-references static code analysis with Play Store declarations to generate deterministic compliance reports, identifying undeclared data collection, architectural risks, and missing disclosures across Permissions and APIs Hygiene, User Account and Identity, and Data Safety and Privacy domains."
+homepage = "https://github.com/android/skills/tree/23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4/play/play-policy-insights"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.29-play-policy-insights.zip"
+sha256 = "5d8dd64f4f2feb2c7c20f35584c6643246831e2e29da424e89b81c1a346fded4"

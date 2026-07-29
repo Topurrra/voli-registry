@@ -1,0 +1,10 @@
+name = "level-up"
+version = "2026.7.29"
+description = "Gauge the user's technical + product knowledge through 7 adaptive questions, log verbatim answers with honest ratings, and grow a learning plan from the gaps found. Use when the user says \"level up\", \"level-up session\", \"quiz me\", \"gauge my knowledge\", or wants a new assessment round. Differentiator: this finds and maps gaps; the `teach` skill delivers lessons on them."
+homepage = "https://github.com/davidondrej/skills/tree/b2a2edce65c7fec6d81066f20e3b89833bbb1b43/skills/thinking-and-docs/level-up"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.29-level-up.zip"
+sha256 = "1faaf92123dc8489ee895c2a963f69a61a46d6b9374f5f137cf7b07f6e5ec38a"

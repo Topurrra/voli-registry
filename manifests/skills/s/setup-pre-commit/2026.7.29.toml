@@ -1,0 +1,10 @@
+name = "setup-pre-commit"
+version = "2026.7.29"
+description = "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing."
+homepage = "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/misc/setup-pre-commit"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/mattpocock-skills-2026.7.29-setup-pre-commit.zip"
+sha256 = "99174afa3fef51ca5dbb2a1b49d407fb75595c8ce2367276fc137e13aec19dbe"

@@ -1,0 +1,10 @@
+name = "writing-skills"
+version = "2026.7.29"
+description = "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
+homepage = "https://github.com/obra/superpowers/tree/44c9b2d6e889982ac18c27d05a19fefe335194e1/skills/writing-skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/obra-superpowers-2026.7.29-writing-skills.zip"
+sha256 = "648c945af50fd55e50dc8b4fcbe80ad74a57c974d5420ed38984c9fe3b9fb487"

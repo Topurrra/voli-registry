@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/google-agents-cli-2026.7.27-google-agents-cli-scaffold.zip"
-sha256 = "5bfd05245b0516fe82965b0f9b029ec2e35680996a4a62bff75fa9e578a2ea64"
+sha256 = "e00ca6df5f66a9ecf2a851316bc982b52858244b769a599fbea12bdb968c92a7"

@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/anthropic-skills-2026.7.27-theme-factory.zip"
-sha256 = "7d04b0ee1fb12d54e07a328fe2b03ef6e8a95a2c9df5b28a2a2a70b795d26372"
+sha256 = "f535d514d5ab26d873644ac2c08cda130705ec3445c99436dd09d04fc353ba4a"

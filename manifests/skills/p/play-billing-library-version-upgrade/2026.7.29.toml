@@ -1,0 +1,10 @@
+name = "play-billing-library-version-upgrade"
+version = "2026.7.29"
+description = "Use this skill when upgrading or migrating an Android project from any"
+homepage = "https://github.com/android/skills/tree/23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4/play/play-billing-library-version-upgrade"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.7.29-play-billing-library-version-upgrade.zip"
+sha256 = "bde51cb89f7e714fb3aafdd0d99c6176568032c9533f46db66c6359953194209"

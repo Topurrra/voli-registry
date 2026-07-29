@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-huggingface-trackio.zip"
-sha256 = "71a224c7e974cd696c1b019001ddb8d139dea39addca48d347e4df03c1a18a38"
+sha256 = "06bc1a1d7205904a3c7d2ad007abed6ee6e66724dffdc4dae2f771fc7296b5aa"

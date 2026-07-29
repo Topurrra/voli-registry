@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/minimax-skills-2026.7.27-shader-dev.zip"
-sha256 = "e96227e55f080e59c20b7a6db3928c1792683fab43b3631dff8eb5af92984d8c"
+sha256 = "764b31c24999472b32846dace70942690271ec6d3f703e44e7b1271f9b896d01"

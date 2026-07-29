@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-hf-cloud-sagemaker-iam-preflight.zip"
-sha256 = "7399c9a901e07935f87e6e01f3535c54276d82673d3518c2abc136dc95b43aeb"
+sha256 = "9fee5ffd468c7b01dd28cdc5222689e504703d8b610ad2e30828c6341014ed0c"

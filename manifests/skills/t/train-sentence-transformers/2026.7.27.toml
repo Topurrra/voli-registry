@@ -7,4 +7,4 @@ kind = "skill"
 
 [source.any]
 url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.7.27-train-sentence-transformers.zip"
-sha256 = "7ed4cc7454b63431918570d7c7d61561271b109a7513d471dacb5d8ab0d8c957"
+sha256 = "8170b719fd46ab62234849cf7331da4ce91f7b91cb9220e8241401a322b9c171"

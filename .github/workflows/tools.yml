@@ -1,0 +1,48 @@
+name: tools
+
+# The import tooling had no CI of its own: a PR could break skill-import.py or
+# scoop-import and only find out during the weekly sync. Runs both test suites
+# on any PR that touches tools/.
+on:
+  pull_request:
+    paths:
+      - "tools/**"
+      - ".github/workflows/tools.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Test skill importer
+        run: python tools/skill-import.py --self-test
+
+      - name: Install Rust
+        # Pinned: `stable` is a BRANCH ref, not an immutable tag.
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tools/scoop-import/target
+          key: cargo-tools-tests-${{ runner.os }}-${{ hashFiles('tools/scoop-import/Cargo.lock') }}
+
+      # scoop-import has a path dependency on voli-core at ../../../voli, and
+      # its checked-in Cargo.lock records voli-core 0.5.7. The tag below must
+      # match that lock, or `--locked` fails on a version mismatch. Same clone
+      # as scoop-sync.yml — bump both together with the lock.
+      - name: Clone voli for the voli-core path dependency
+        run: git clone --depth 1 --branch v0.5.7 https://github.com/Topurrra/voli ../voli
+
+      - name: Test scoop-import
+        working-directory: tools/scoop-import
+        run: cargo test --locked

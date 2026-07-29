@@ -27,7 +27,9 @@ jobs:
           fetch-depth: 0
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+        # Pinned: `stable` is a BRANCH ref, so the tag would otherwise run
+        # whatever that branch points at today.
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
       - name: Cache cargo
         uses: actions/cache@v4
@@ -40,14 +42,51 @@ jobs:
 
       # NOTE: same source install as validate.yml. Swap for a prebuilt
       # release-binary download once the main repo publishes them.
+      #
+      # PINNED TO A COMMIT, and it must stay pinned. The next step runs this
+      # binary in a step that holds VOLI_INDEX_SIGNING_KEY. Installing from a
+      # branch ref would mean anyone who can land a commit on voli@main gets
+      # code execution next to the production signing key. Bump this SHA
+      # deliberately, as a reviewed change.
       - name: Install voli-index-tool
-        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
+        run: |
+          cargo install --force --locked \
+            --git https://github.com/Topurrra/voli \
+            --rev 073d3d9db88dc4d4a4f301cc5215100f7623ce38 \
+            voli-index-tool
+
+      # Gate the publish on the skill archives actually being downloadable.
+      # Scoped to manifests/skills/ ONLY, deliberately: those URLs are assets on
+      # this repo's own `skills` release, uploaded by skill-sync before the
+      # manifests can merge, so a non-2xx here is a real and actionable bug. The
+      # ~2,700 app manifests point at third-party vendor URLs that are routinely
+      # flaky, rate-limited, 403 to datacentre IPs, or behind redirects — gating
+      # the publish on those would make it a coin flip, so they are not checked.
+      - name: Preflight skill archive URLs
+        run: |
+          grep -rhoE '^url = "[^"]+"' manifests/skills/ \
+            | sed 's/^url = "//; s/"$//' | sort -u > skill-urls.txt
+          echo "checking $(wc -l < skill-urls.txt) skill archive URL(s)"
+          failed=0
+          while read -r url; do
+            code=$(curl -sSIL -o /dev/null -w '%{http_code}' \
+              --retry 3 --retry-delay 2 --max-time 60 "$url" || echo 000)
+            case "$code" in
+              2*) ;;
+              *) echo "::error::HTTP $code for $url"; failed=1 ;;
+            esac
+          done < skill-urls.txt
+          if [ "$failed" -ne 0 ]; then
+            echo "Skill archives are missing from the release. Upload them to the" \
+                 "\`skills\` release (skill-sync does this automatically) before merging."
+            exit 1
+          fi
 
       - name: Build signed index
         env:
           # Ed25519 signing key (hex). Stored as a GitHub Actions secret.
-          # For now this is the dev key from the main repo's
-          # registry-dev/dev-signing-key.hex — ROTATE before public launch.
+          # This is the production key; the rotation away from the main repo's
+          # registry-dev/dev-signing-key.hex is done and the key is held safely.
           VOLI_INDEX_SIGNING_KEY: ${{ secrets.VOLI_INDEX_SIGNING_KEY }}
         run: |
           printf '%s' "$VOLI_INDEX_SIGNING_KEY" > signing-key.hex
@@ -62,7 +101,8 @@ jobs:
       # assets on tag `index` produces exactly those URLs. index.sqlite (the
       # uncompressed db) is intentionally NOT uploaded — the client never fetches it.
       - name: Publish to the `index` release
-        uses: softprops/action-gh-release@v2
+        # Pinned by SHA: this step runs in the job that holds the signing key.
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           tag_name: index
           name: Package index

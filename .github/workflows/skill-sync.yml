@@ -39,7 +39,8 @@ jobs:
             --report skill-import-report.md
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+        # Pinned: `stable` is a BRANCH ref, not an immutable tag.
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
       - name: Cache Cargo
         uses: actions/cache@v4
@@ -50,8 +51,14 @@ jobs:
             ~/.cargo/git
           key: cargo-skill-sync-${{ runner.os }}
 
+      # Pinned to a commit for the same reason as publish.yml: an unpinned
+      # --git install builds and runs whatever is on voli@main right now.
       - name: Install voli-index-tool
-        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
+        run: |
+          cargo install --force --locked \
+            --git https://github.com/Topurrra/voli \
+            --rev 073d3d9db88dc4d4a4f301cc5215100f7623ce38 \
+            voli-index-tool
 
       - name: Validate manifests
         run: voli-index-tool validate manifests/
@@ -65,6 +72,19 @@ jobs:
             skill-import-report.md
           if-no-files-found: error
           retention-days: 14
+
+      # Publish the archives BEFORE the PR exists, so a manifest can never reach
+      # main ahead of the asset it points at. An archive's filename embeds its
+      # source id and version, so a given name always has the same bytes: the
+      # upload is idempotent and --clobber only ever rewrites a file with itself.
+      # (The 14-day artifact above is for reviewers; it is not a download source.
+      # This step retires the manual dist/skills/UPLOAD.md runbook.)
+      - name: Publish archives to the `skills` release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh release upload skills /tmp/skill-assets/*.zip --clobber
 
       - name: Check for catalog changes
         id: changes

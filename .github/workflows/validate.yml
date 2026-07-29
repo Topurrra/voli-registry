@@ -15,7 +15,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+        # Pinned: `stable` is a BRANCH ref, not an immutable tag.
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
       - name: Cache cargo
         uses: actions/cache@v4
@@ -29,8 +30,13 @@ jobs:
       # NOTE: installs the tool from source on every run. Slow (~minutes).
       # TODO: replace with a downloaded prebuilt `voli-index-tool` release
       # binary once the main repo publishes them — cuts CI to seconds.
+      # Pinned to a commit: an unpinned --git install runs voli@main HEAD.
       - name: Install voli-index-tool
-        run: cargo install --force --git https://github.com/Topurrra/voli voli-index-tool --locked
+        run: |
+          cargo install --force --locked \
+            --git https://github.com/Topurrra/voli \
+            --rev 073d3d9db88dc4d4a4f301cc5215100f7623ce38 \
+            voli-index-tool
 
       - name: Validate manifests
         run: voli-index-tool validate manifests/

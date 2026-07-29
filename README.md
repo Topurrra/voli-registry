@@ -53,9 +53,20 @@ voli-index-tool validate manifests/
 ```
 
 The scheduled `skill-sync.yml` workflow refreshes pins, validates licenses,
-packages the catalog, uploads archives as review artifacts, and opens a PR when
-tracked output changes. Publishing those archives and merging the PR are
-deferred manual actions.
+packages the catalog, uploads the archives to the `skills` release, and opens a
+PR when tracked output changes. Merging the PR stays a manual action.
+
+Archives are published *before* the PR is opened, deliberately. An archive's
+filename embeds its source id and version, so a bumped upstream revision renames
+every archive for that source; if the manifests merged first, their download
+URLs would 404 until someone uploaded by hand. `publish.yml` also refuses to
+publish an index while any `manifests/skills/` URL is unreachable.
+
+When two sources ship a skill under the same name, the bare name stays with the
+first source in `skill-sources.toml` order and later claimants are published as
+`<prefix>-<name>` (`prefix` defaults to the source id minus a trailing
+`-skills`, overridable per source). Every rename is listed in
+`skill-import-report.md`; see `ATTRIBUTION.md` for what the importer rewrites.
 
 ## How CI works
 
@@ -66,11 +77,17 @@ deferred manual actions.
 - **`publish.yml`** (on push to `main`): rebuilds the signed index and uploads
   the triple to the `index` release tag, replacing the assets in place.
 - **`skill-sync.yml`** (weekly or manual): refreshes the allowlisted Tier-1
-  skill catalog and opens a review PR without publishing or merging it.
+  skill catalog, uploads the archives to the `skills` release, and opens a
+  review PR without merging it.
+- **`tools.yml`** (on PR touching `tools/**`): runs
+  `python tools/skill-import.py --self-test` and the `scoop-import` Rust tests.
 
-Both workflows currently `cargo install --git … voli-index-tool` from source on
-every run. Once the main repo ships prebuilt `voli-index-tool` release binaries,
-swap that step for a binary download to cut CI from minutes to seconds.
+Every workflow `cargo install --git … voli-index-tool` from source on each run,
+pinned to a full commit SHA. Keep it pinned: `publish.yml` runs that binary in
+the step that holds `VOLI_INDEX_SIGNING_KEY`, so a floating branch ref would
+hand code execution next to the signing key to anyone who can land a commit on
+`voli@main`. Once the main repo ships prebuilt `voli-index-tool` release
+binaries, swap that step for a checksum-verified binary download.
 
 ## Published index
 

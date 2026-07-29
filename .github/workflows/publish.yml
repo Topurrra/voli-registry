@@ -52,7 +52,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 073d3d9db88dc4d4a4f301cc5215100f7623ce38 \
+            --rev 1ccb4c3c06aace311ea2d13b952d70703cb02a0a \
             voli-index-tool
 
       # Gate the publish on the skill archives actually being downloadable.

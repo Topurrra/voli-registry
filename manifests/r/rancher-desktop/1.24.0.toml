@@ -1,0 +1,19 @@
+name = "rancher-desktop"
+version = "1.24.0"
+description = "Kubernates container management tool that can build, push, and pull images and run containers."
+homepage = "https://rancherdesktop.io/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Rancher Desktop"
+
+[source.x64]
+url = "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.24.0/Rancher.Desktop.Setup.1.24.0.msi"
+sha512 = "6428f330cdf8dc9dbbc07bbde270046c9e86fb91e90392c0d25ac764e64eaa8f9d2b3e7faaffed669a48f7fd7445dadda18072dd51c905bf59df4787b70ed77e"
+kind = "installer-archive"
+
+[env]
+PATH = "{dir}\\resources\\resources\\win32\\bin;{dir}\\resources\\resources\\linux\\bin"
+
+[autoupdate]
+checkver = { github = "rancher-sandbox/rancher-desktop" }
+url_template = { x64 = "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v$version/Rancher.Desktop.Setup.$version.msi" }

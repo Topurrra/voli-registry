@@ -1,0 +1,23 @@
+name = "nodejs-lts"
+version = "24.18.1"
+description = "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)"
+homepage = "https://nodejs.org"
+license = "MIT"
+kind = "app"
+extract_dir = "node-v24.18.1-win-x64"
+persist = ["bin", "cache"]
+
+[source.x64]
+url = "https://nodejs.org/dist/v24.18.1/node-v24.18.1-win-x64.7z"
+sha256 = "365ecf84eeefb87a5a4c94f1e54919696cf5581285db4e589e84d46c0e167406"
+
+[source.arm64]
+url = "https://nodejs.org/dist/v24.18.1/node-v24.18.1-win-arm64.7z"
+sha256 = "8aed98bca9260716236be292807dcb2638827750ba2fbcfc684601a9a6b8ab48"
+
+[env]
+PATH = "{dir}\\bin;{dir}"
+
+[autoupdate]
+checkver = { url = "https://nodejs.org/dist/index.json", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z", arm64 = "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z" }

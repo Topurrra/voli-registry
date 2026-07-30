@@ -1,0 +1,15 @@
+name = "google-java-format"
+version = "1.36.0"
+description = "Reformats Java source code to comply with Google Java Style."
+homepage = "https://github.com/google/google-java-format"
+license = "Apache-2.0"
+kind = "app"
+bin = ["google-java-format.jar"]
+
+[source.x64]
+url = "https://github.com/google/google-java-format/releases/download/v1.36.0/google-java-format-1.36.0-all-deps.jar#/google-java-format.jar"
+sha256 = "23696de05dd20d85c1449c8de9f2419030799508f5356570e979f7f96e59d8d6"
+
+[autoupdate]
+checkver = { github = "google/google-java-format" }
+url_template = "https://github.com/google/google-java-format/releases/download/v$version/google-java-format-$version-all-deps.jar#/google-java-format.jar"

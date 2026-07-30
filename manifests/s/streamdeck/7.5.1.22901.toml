@@ -1,0 +1,18 @@
+name = "streamdeck"
+version = "7.5.1.22901"
+description = "Stream Deck lets you take control of your content and focus on what's important: your audience."
+homepage = "https://www.elgato.com/en/gaming/downloads#sd-win"
+license = "Freeware"
+kind = "app"
+extract_dir = "PFiles64\\Elgato\\StreamDeck"
+bin = ["StreamDeck.exe"]
+shortcuts = [{ target = "StreamDeck.exe", name = "StreamDeck" }]
+
+[source.x64]
+url = "https://edge.elgato.com/egc/windows/sd/Stream_Deck_7.5.1.22901.msi"
+sha256 = "65c1c2c1709c6b95aa1ea5671d314feebe03803a1ecdb1386165c5e7c0c08556"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.Manual.Version\",\"url\":\"https://gc-updates.elgato.com/windows/sd-update/final/app-version-check.json\"}"
+url_template = { x64 = "https://edge.elgato.com/egc/windows/sd/Stream_Deck_$version.msi" }

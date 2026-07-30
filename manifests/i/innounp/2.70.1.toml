@@ -8,7 +8,7 @@ bin = ["innounp.exe"]
 
 [source.x64]
 url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/bin/innounp-270.zip"
-sha256 = "c4b499a027fcaaf5682f02919862a47cd2ab9ac25472e254485a03c5704a36f6"
+sha256 = "d5514cac741f12ca94f642eacd30d514d820dce016e4d016325413df472c34ea"
 
 [autoupdate]
 checkver = { url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/docs/innounp.htm", regex = "(?s)What's new/History.*?<b>(\\d+(?:\\.\\d+){2})</b>" }

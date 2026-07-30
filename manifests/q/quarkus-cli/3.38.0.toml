@@ -1,0 +1,16 @@
+name = "quarkus-cli"
+version = "3.38.0"
+description = "A CLI for Quarkus Java framework"
+homepage = "https://quarkus.io/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "quarkus-cli-3.38.0"
+bin = ["bin\\quarkus.bat"]
+
+[source.x64]
+url = "https://github.com/quarkusio/quarkus/releases/download/3.38.0/quarkus-cli-3.38.0.zip"
+sha256 = "ce75e2784d1938e221d86c8e2c61bcf31a081bc0992284cafe54eb43e12ac36e"
+
+[autoupdate]
+checkver = { url = "https://registry.quarkus.io/client/platforms", regex = "([\\d+\\.]+)" }
+url_template = "https://github.com/quarkusio/quarkus/releases/download/$version/quarkus-cli-$version.zip"

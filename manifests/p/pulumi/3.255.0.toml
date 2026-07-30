@@ -1,0 +1,20 @@
+name = "pulumi"
+version = "3.255.0"
+description = "Create, deploy, and manage infrastructure on any cloud using any language."
+homepage = "https://www.pulumi.com"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Pulumi\\bin"
+bin = ["pulumi.exe", "pulumi-language-dotnet.exe", "pulumi-language-go.exe", "pulumi-language-java.exe", "pulumi-language-nodejs.exe", "pulumi-language-python-exec", "pulumi-language-python.exe", "pulumi-language-yaml.exe", "pulumi-resource-pulumi-nodejs.cmd", "pulumi-resource-pulumi-python.cmd", "pulumi-watch.exe"]
+
+[source.x64]
+url = "https://get.pulumi.com/releases/sdk/pulumi-v3.255.0-windows-x64.zip"
+sha512 = "3466e84f2ef742b8e9e7794e6158eea4140a34618f960731edc3b32f1206f34d54ef472fa89ec7234685f632b99f90590b700801f313fc35a8a20aae0adc4a69"
+
+[source.arm64]
+url = "https://get.pulumi.com/releases/sdk/pulumi-v3.255.0-windows-x64.zip"
+sha512 = "3466e84f2ef742b8e9e7794e6158eea4140a34618f960731edc3b32f1206f34d54ef472fa89ec7234685f632b99f90590b700801f313fc35a8a20aae0adc4a69"
+
+[autoupdate]
+checkver = { url = "https://www.pulumi.com/docs/get-started/install/versions", regex = "<strong>([\\d.]+)" }
+url_template = { x64 = "https://get.pulumi.com/releases/sdk/pulumi-v$version-windows-x64.zip", arm64 = "https://get.pulumi.com/releases/sdk/pulumi-v$version-windows-x64.zip" }

@@ -1,0 +1,25 @@
+name = "dagger"
+version = "0.21.8"
+description = "A portable devkit for CI/CD pipelines"
+homepage = "https://dagger.io/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dagger.exe"]
+persist = []
+shortcuts = []
+write_file = []
+
+[source.x64]
+url = "https://github.com/dagger/dagger/releases/download/v0.21.8/dagger_v0.21.8_windows_amd64.zip"
+sha256 = "7452d17f7f6b01d409fe27b8fd1655162b5b4d2cd531c704f2373e62eba512d5"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+github = "dagger/dagger"
+
+[autoupdate.url_template]
+x64 = "https://github.com/dagger/dagger/releases/download/v$version/dagger_v$version_windows_amd64.zip"

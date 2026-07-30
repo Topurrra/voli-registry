@@ -1,0 +1,26 @@
+name = "codeql"
+version = "2.26.2"
+description = "Source code security analyzer from GitHub"
+homepage = "https://github.com/github/codeql-cli-binaries"
+license = "Proprietary"
+kind = "app"
+extract_dir = "codeql"
+bin = ["codeql.exe"]
+persist = []
+shortcuts = []
+write_file = []
+
+[source.x64]
+url = "https://github.com/github/codeql-cli-binaries/releases/download/v2.26.2/codeql-win64.zip"
+sha256 = "1819f712fea2d06557b729f9074d0d987ecca72d4fe2f06ba32f403ad63d0914"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+github = "github/codeql-cli-binaries"
+
+[autoupdate.url_template]
+x64 = "https://github.com/github/codeql-cli-binaries/releases/download/v$version/codeql-win64.zip"

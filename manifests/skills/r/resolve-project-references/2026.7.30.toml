@@ -1,0 +1,10 @@
+name = "resolve-project-references"
+version = "2026.7.30"
+description = "Guide for interpreting ResolveProjectReferences time in MSBuild performance summaries. Activate when ResolveProjectReferences appears as the most expensive target and developers are trying to optimize it directly. Explains that the reported time includes wait time for dependent project builds and is misleading. Guides users to focus on task self-time instead. Do not activate for general build performance -- use build-perf-diagnostics instead."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-msbuild/skills/resolve-project-references"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-resolve-project-references.zip"
+sha256 = "26bbef0ecd01eda687948350695db0e102b161cee24da90097c17f49b3d633b1"

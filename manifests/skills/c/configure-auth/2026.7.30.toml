@@ -1,0 +1,10 @@
+name = "configure-auth"
+version = "2026.7.30"
+description = "Add authentication and authorization to a Blazor Web App, accounting for the app's render mode. USE WHEN the user needs [Authorize] on pages, AuthorizeView, role or policy-based access, login/logout Identity pages, or AuthenticationStateProvider. Also USE WHEN auth state is null after WebAssembly loads, SignInManager throws in an interactive component, <NotAuthorized> content never renders in static SSR, or HttpContext.User is null in an interactive component. DO NOT USE for general component authoring (see author-component), for prerendering concerns unrelated to auth (see support-prerendering), or for managing non-auth cascading state (see coordinate-components)."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-blazor/skills/configure-auth"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-configure-auth.zip"
+sha256 = "28daa595ffd2ed8cf78ac7ac394f0a1cbf1f03d10fdc82f5aa5f43736f78ca51"

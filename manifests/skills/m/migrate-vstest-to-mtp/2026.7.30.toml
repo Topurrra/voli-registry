@@ -1,0 +1,10 @@
+name = "migrate-vstest-to-mtp"
+version = "2026.7.30"
+description = "Migrates .NET test projects from VSTest to Microsoft.Testing.Platform (MTP). Use when user asks to \"migrate to MTP\", \"switch from VSTest\", \"enable Microsoft.Testing.Platform\", \"use MTP runner\", set OutputType=Exe only for test projects in Directory.Build.props, or mentions EnableMSTestRunner, EnableNUnitRunner, or UseMicrosoftTestingPlatformRunner. USE FOR: MTP behavioral differences vs VSTest (exit code 8, zero tests discovered, --ignore-exit-code, TESTINGPLATFORM_EXITCODE_IGNORE); centralizing MTP properties and OutputType=Exe on test projects via MSBuildProjectName, not IsTestProject. Supports MSTest, NUnit, xUnit.net v2 (via YTest.MTP.XUnit2), and xUnit.net v3. Covers runner enablement, CLI argument and filter translation (--filter-class/--filter-trait/--filter-query), global.json config, CI/CD updates, and extension packages. DO NOT USE FOR: migrating between test frameworks (MSTest/xUnit/NUnit), xUnit.net v2 to v3 API migration, MSTest version upgrades, TFM upgrades, or UWP/WinUI test projects."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-test-migration/skills/migrate-vstest-to-mtp"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-migrate-vstest-to-mtp.zip"
+sha256 = "839df0ffcb3bc45c7389b7cbb683322cd34cb7dd81892f712ec1a14b3dc1b714"

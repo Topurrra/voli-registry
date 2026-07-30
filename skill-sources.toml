@@ -33,8 +33,8 @@ roots = ["."]
 [[source]]
 id = "dotnet-skills"
 repo = "dotnet/skills"
-revision = "85cd103400e51f5e2f767bfaeee96f22c5277a93"
-version = "2026.7.29"
+revision = "7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d"
+version = "2026.7.30"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
@@ -108,8 +108,8 @@ allowed_skill_license_sha256 = [
 [[source]]
 id = "davidondrej-skills"
 repo = "davidondrej/skills"
-revision = "b2a2edce65c7fec6d81066f20e3b89833bbb1b43"
-version = "2026.7.29"
+revision = "31755f84d10356637398c735fd10ff43ba38ade4"
+version = "2026.7.30"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "1bd321a3b9cfa8d4af2105e20edd69d830df0b28e83a1b0255558f888e493981"

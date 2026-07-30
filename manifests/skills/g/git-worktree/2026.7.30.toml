@@ -1,0 +1,10 @@
+name = "git-worktree"
+version = "2026.7.30"
+description = "Use git worktrees to run multiple coding agents in parallel on one repo without collisions. Use when starting a task in a shared repo, when the user says \"worktree\", \"parallel agents\", \"one worktree per task\", or when agents keep overwriting each other's changes. Covers creating worktrees, making them as complete as the main checkout (.env files, dependencies, databases, ports), merging back, and cleanup."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/agent-orchestration/git-worktree"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-git-worktree.zip"
+sha256 = "d42afbabf86de651c8d472dc82fac1d5b43a49d7d87e340427b82baaa6dc62af"

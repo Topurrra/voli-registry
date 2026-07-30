@@ -1,19 +1,19 @@
 # Skill import report
 
-Generated 267 deterministic skill archives from 10 pinned sources.
+Generated 268 deterministic skill archives from 10 pinned sources.
 
 | Source | Revision | Skills | License |
 | --- | --- | ---: | --- |
 | `google/agents-cli` | `c7a375f7a463d5ade51caabdec56971681aed400` | 7 | Apache-2.0 |
 | `huggingface/skills` | `87f9ee5b670a630b022809a8742606c6da21812c` | 26 | Apache-2.0 |
 | `android/skills` | `23d9eae21a4bfe0209e5b678f0ebe931e3c7dff4` | 20 | Apache-2.0 |
-| `dotnet/skills` | `85cd103400e51f5e2f767bfaeee96f22c5277a93` | 96 | MIT |
+| `dotnet/skills` | `7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d` | 96 | MIT |
 | `anthropics/skills` | `b29e7cf65e5cb78a5ac33d582270551bc74a14eb` | 12 | Apache-2.0 |
 | `obra/superpowers` | `44c9b2d6e889982ac18c27d05a19fefe335194e1` | 14 | MIT |
 | `mattpocock/skills` | `2ab958093e83e0ec752e6c1c5932da465bf23e0c` | 28 | MIT |
 | `emilkowalski/skills` | `70744e3816f1d93eafb697161a8b880a7384c5ff` | 8 | MIT |
 | `MiniMax-AI/skills` | `60aaae52bb2af8162732751a4332f62a5fef518b` | 17 | MIT |
-| `davidondrej/skills` | `b2a2edce65c7fec6d81066f20e3b89833bbb1b43` | 39 | MIT |
+| `davidondrej/skills` | `31755f84d10356637398c735fd10ff43ba38ade4` | 40 | MIT |
 
 ## Name collisions
 

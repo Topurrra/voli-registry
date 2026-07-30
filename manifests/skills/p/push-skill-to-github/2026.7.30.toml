@@ -1,0 +1,10 @@
+name = "push-skill-to-github"
+version = "2026.7.30"
+description = "Commit and push agent-skill changes to the user's private skills GitHub repo (rooted at ~/.agents). Use after creating or updating any skill, when the user says \"push the skill\", \"push skills to github\", \"save the skill to my repo\", or \"update the skills repo\". Handles staging, committing, and pushing directly in the current shell — works in any agent, no cmux needed."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/skill-authoring/push-skill-to-github"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-push-skill-to-github.zip"
+sha256 = "1083b3022b471976fb1392802e57e35c535127f8616fd5d9d57ca0aec6b8ed6b"

@@ -1,0 +1,10 @@
+name = "vps-server-management"
+version = "2026.7.30"
+description = "Use when the user wants to manage their VPS servers and the AI agents running inside them — connecting, deploying, monitoring, restarting, and operating remote hosts and their agents. Triggers on VPS, server management, remote host, SSH into server, manage my servers, agents on the server."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/ops-and-setup/vps-server-management"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-vps-server-management.zip"
+sha256 = "fcfb93e52429974ecd863974c5857aa71e81ee4445f6f582df1793ad2ab47b44"

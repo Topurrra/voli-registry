@@ -1,0 +1,10 @@
+name = "migrate-nullable-references"
+version = "2026.7.30"
+description = "Enable nullable reference types in a C# project and systematically resolve all warnings. USE FOR: adopting NRTs in existing codebases, file-by-file or project-wide migration, fixing CS8602/CS8618/CS86xx warnings, annotating APIs for nullability, cleaning up null-forgiving operators, upgrading dependencies with new nullable annotations. DO NOT USE FOR: projects already fully migrated with zero warnings (unless auditing suppressions), fixing a handful of nullable warnings in code that already has NRTs enabled, suppressing warnings without fixing them, C# 7.3 or earlier projects. INVOKES: Get-NullableReadiness.ps1 scanner script."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-upgrade/skills/migrate-nullable-references"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-migrate-nullable-references.zip"
+sha256 = "5fb829fddaa03a5aa51a19fd40c19e5eaaa3be109ecef17ed26cb8e945347949"

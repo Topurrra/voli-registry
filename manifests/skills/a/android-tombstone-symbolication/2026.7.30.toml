@@ -1,0 +1,10 @@
+name = "android-tombstone-symbolication"
+version = "2026.7.30"
+description = "Symbolicate the .NET runtime frames in an Android tombstone file. Extracts BuildIds and PC offsets from the native backtrace, downloads debug symbols from the Microsoft symbol server, and runs llvm-symbolizer to produce function names with source file and line numbers. USE FOR triaging a .NET MAUI or Mono Android app crash from a tombstone, resolving native backtrace frames in libmonosgen-2.0.so or libcoreclr.so to .NET runtime source code, or investigating SIGABRT, SIGSEGV, or other native signals originating from the .NET runtime on Android. DO NOT USE FOR pure Java/Kotlin crashes, managed .NET exceptions that are already captured in logcat, or iOS crash logs. INVOKES Symbolicate-Tombstone.ps1 script, llvm-symbolizer, Microsoft symbol server."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-diag/skills/android-tombstone-symbolication"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-android-tombstone-symbolication.zip"
+sha256 = "5f3e3556fad20bff8c48f9a87e2f0509f909f65a567780394e371bfd0856154e"

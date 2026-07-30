@@ -1,0 +1,10 @@
+name = "maui-dependency-injection"
+version = "2026.7.30"
+description = "Guidance for configuring dependency injection in .NET MAUI apps — service registration in MauiProgram.cs, lifetime selection (Singleton / Transient / Scoped), constructor injection, Shell navigation auto-resolution, platform-specific registrations, and testability patterns. USE FOR: \"dependency injection\", \"DI setup\", \"AddSingleton\", \"AddTransient\", \"AddScoped\", \"service registration\", \"constructor injection\", \"IServiceProvider\", \"MauiProgram DI\", \"register services\", \"BindingContext injection\". DO NOT USE FOR: data binding (use maui-data-binding), Shell route configuration (use maui-shell-navigation), unit-test mocking frameworks (use standard xUnit and NSubstitute patterns)."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-maui/skills/maui-dependency-injection"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-maui-dependency-injection.zip"
+sha256 = "d26a8e1fc84b703ee5b03971c0f3b1c58a59646108b526fbb1b0b4c270336a1c"

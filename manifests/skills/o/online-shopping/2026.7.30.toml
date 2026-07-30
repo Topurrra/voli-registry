@@ -1,0 +1,10 @@
+name = "online-shopping"
+version = "2026.7.30"
+description = "Research any online purchase with DeepAPI — fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, \"is this a good price\", \"where can I get X\", or attaches a product photo or listing screenshot. Research only — never places orders."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/research-and-web/online-shopping"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-online-shopping.zip"
+sha256 = "717c6718c8f8a5c8cf65c89fae6e3236145bdb2da0caeca3c2c3e19157e84dca"

@@ -4,6 +4,7 @@ description = "python.org's embeddable distribution: interpreter and standard li
 homepage = "https://www.python.org/"
 license = "PSF-2.0"
 kind = "app"
+aliases = ["python"]
 bin = [{ name = "python-embed", path = "python.exe" }]
 
 [source.x64]

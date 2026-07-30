@@ -1,0 +1,32 @@
+name = "databricks-cli"
+version = "1.10.0"
+description = "CLI for interacting with the Databricks platform."
+homepage = "https://docs.databricks.com/aws/en/dev-tools/cli"
+license = "Proprietary"
+kind = "app"
+bin = ["databricks.exe"]
+persist = []
+shortcuts = []
+write_file = []
+
+[source.x64]
+url = "https://github.com/databricks/cli/releases/download/v1.10.0/databricks_cli_1.10.0_windows_amd64.zip"
+sha256 = "29a6c0fafd1335d54d13c7fb0433c31a5056a672ab6bb619d690a5451b7e1b0b"
+extra = []
+
+[source.arm64]
+url = "https://github.com/databricks/cli/releases/download/v1.10.0/databricks_cli_1.10.0_windows_arm64.zip"
+sha256 = "8a9d177c8a26bf48e5db603090959d0019c6fc7449578c06d57abf6fcbbe980b"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+regex = '/tree/(?:v|V)([\d.]+)'
+url = "https://github.com/databricks/cli/releases/latest"
+
+[autoupdate.url_template]
+arm64 = "https://github.com/databricks/cli/releases/download/v$version/databricks_cli_$version_windows_arm64.zip"
+x64 = "https://github.com/databricks/cli/releases/download/v$version/databricks_cli_$version_windows_amd64.zip"

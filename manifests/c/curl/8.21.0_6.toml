@@ -1,0 +1,33 @@
+name = "curl"
+version = "8.21.0_6"
+description = "Command line tool and library for transferring data with URLs"
+homepage = "https://curl.se/"
+license = "MIT"
+kind = "app"
+extract_dir = "curl-8.21.0_6-win64-mingw"
+bin = ['bin\curl.exe']
+persist = []
+shortcuts = []
+write_file = []
+
+[source.x64]
+url = "https://curl.se/windows/dl-8.21.0_6/curl-8.21.0_6-win64-mingw.tar.xz"
+sha256 = "cb184e900172c0b37d2babe773d3d77463870235db81e2e8c3088fcadbbe25b1"
+extra = []
+
+[source.arm64]
+url = "https://curl.se/windows/dl-8.21.0_6/curl-8.21.0_6-win64a-mingw.tar.xz"
+sha256 = "38a6ab7722a93f26662123c2aec2c8d0b04119bd31bacd90d469b6e73da69079"
+extra = []
+
+[env]
+
+[depends]
+
+[autoupdate.checkver]
+regex = 'Build<\/b>:\s+([\d._]+)'
+url = "https://curl.se/windows/"
+
+[autoupdate.url_template]
+arm64 = "https://curl.se/windows/dl-$version/curl-$version-win64a-mingw.tar.xz"
+x64 = "https://curl.se/windows/dl-$version/curl-$version-win64-mingw.tar.xz"

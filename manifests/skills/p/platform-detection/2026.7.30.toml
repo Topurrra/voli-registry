@@ -1,0 +1,10 @@
+name = "platform-detection"
+version = "2026.7.30"
+description = "Reference data for detecting the test platform (VSTest vs Microsoft.Testing.Platform) and test framework (MSTest, xUnit, NUnit, TUnit) from project files. DO NOT USE directly — loaded by run-tests, mtp-hot-reload, and migrate-vstest-to-mtp when they need detection logic."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-test/skills/platform-detection"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-platform-detection.zip"
+sha256 = "b3e98b541c78069e4c72b00d8b611818ed9181182441f5d674ac9929bc33d3b6"

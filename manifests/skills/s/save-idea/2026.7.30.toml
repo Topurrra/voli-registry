@@ -1,0 +1,10 @@
+name = "save-idea"
+version = "2026.7.30"
+description = "Quickly capture a content idea into ~/code/content from any repo or chat. Video ideas go to VIDEO-IDEAS.md; smaller podcast topics, guest ideas, questions, and AI observations go to TOPICS.md. Every entry gets a source line referencing the chat and repo it came from. Use when the user says \"/save-idea\", \"save this idea\", \"video idea\", \"add a topic\", \"write this down for a video/podcast\". Differentiator: appends to the user's content backlog — not a reminder, task, or general note tool."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/thinking-and-docs/save-idea"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-save-idea.zip"
+sha256 = "c7e258abe78b3c98ccec4f9469ca6eb3e06bfb31c4db8140d4a0503dd9373144"

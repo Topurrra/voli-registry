@@ -1,0 +1,10 @@
+name = "exp-simd-vectorization"
+version = "2026.7.30"
+description = "Optimizes hot-path scalar loops in .NET 8+ with cross-platform Vector128/Vector256/Vector512 SIMD intrinsics, or replaces manual math loops with single TensorPrimitives API calls. Covers byte-range validation, character counting, bulk bitwise ops, cross-type conversion, fused multi-array computations, and float/double math operations."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-experimental/skills/exp-simd-vectorization"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-exp-simd-vectorization.zip"
+sha256 = "367730d5aad409c1a8317952cc4ca882e23c0fdea628d470229fc236da28b842"

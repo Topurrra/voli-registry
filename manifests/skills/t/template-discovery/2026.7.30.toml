@@ -1,0 +1,10 @@
+name = "template-discovery"
+version = "2026.7.30"
+description = "Helps find, inspect, and compare (at a high level) .NET project templates. Resolves natural-language project descriptions to ranked template matches with pre-filled parameters. USE FOR: finding the right dotnet new template for a task, inspecting a template's parameters and constraints, understanding what a template produces before creating a project, resolving intent like \"web API with auth\" to concrete template + parameters. DO NOT USE FOR: actually creating projects (use template-instantiation), authoring custom templates (use template-authoring), producing a detailed side-by-side comparison (use template-comparison), choosing cross-parameter defaults during creation (use template-smart-defaults), MSBuild or build issues (use dotnet-msbuild plugin), NuGet package management unrelated to template packages."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-template-engine/skills/template-discovery"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-template-discovery.zip"
+sha256 = "65822c6ef3001c3c98932caed131e33e245d0d6ec79496feb681236bdb7c3c74"

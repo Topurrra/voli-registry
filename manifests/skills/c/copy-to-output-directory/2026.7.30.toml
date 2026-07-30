@@ -1,0 +1,10 @@
+name = "copy-to-output-directory"
+version = "2026.7.30"
+description = "Choosing an MSBuild CopyToOutputDirectory / CopyToPublishDirectory mode: Never, PreserveNewest, Always, and IfDifferent (MSBuild 17.13+), plus $(SkipUnchangedFilesOnCopyAlways). USE FOR: removing the per-build Always copy perf hit; resetting output files mutated between builds. DO NOT USE FOR: general incremental-build diagnosis (use incremental-build); non-MSBuild build systems."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-msbuild/skills/copy-to-output-directory"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-copy-to-output-directory.zip"
+sha256 = "0cd7389d98041e8a461f30da980bd3f671ee4abcd7e0dcd678872c4b1f0080fd"

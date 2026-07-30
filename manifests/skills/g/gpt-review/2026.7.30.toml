@@ -1,0 +1,10 @@
+name = "gpt-review"
+version = "2026.7.30"
+description = "Launch a GPT 5.6 Sol Max subagent to do a deep, neutral senior-developer review of the current work and report its findings back verbatim. Use when the user says \"/gpt-review\", \"gpt review\", or asks for GPT to review the code. Differentiator: reviewer model is GPT 5.6 Sol Max — for a Fable reviewer use fable-review."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/agent-orchestration/gpt-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-gpt-review.zip"
+sha256 = "1ac5cbbf977d913253a18f17132cd9a55c5df9fb90a8fce85bbe90c9a153e837"

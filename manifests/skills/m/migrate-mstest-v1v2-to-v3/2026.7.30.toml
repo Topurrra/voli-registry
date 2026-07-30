@@ -1,0 +1,10 @@
+name = "migrate-mstest-v1v2-to-v3"
+version = "2026.7.30"
+description = "Migrate MSTest v1 or v2 test projects to MSTest v3. Use when the user asks to upgrade MSTest and the project has QualityTools assembly references, MSTest.TestFramework/TestAdapter 1.x-2.x, .testsettings, or migration errors after changing those packages to 3.x. USE FOR: upgrading from MSTest v1 assembly references (Microsoft.VisualStudio.QualityTools.UnitTestFramework) or MSTest v2 NuGet (MSTest.TestFramework 1.x-2.x) to MSTest v3, fixing assertion overload errors (AreEqual/AreNotEqual), updating DataRow constructors, replacing or migrating .testsettings to .runsettings, timeout behavior changes, target framework compatibility (.NET 5 dropped -- use .NET 6+; .NET Fx older than 4.6.2 dropped), adopting MSTest.Sdk while moving from v1/v2. First step toward MSTest v4 -- after this, use migrate-mstest-v3-to-v4. DO NOT USE FOR: migrating to MSTest v4 (use migrate-mstest-v3-to-v4), projects already on MSTest v3+, migrating between test frameworks, generic test modernization, or .NET upgrades unrelated to MSTest."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-test-migration/skills/migrate-mstest-v1v2-to-v3"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-migrate-mstest-v1v2-to-v3.zip"
+sha256 = "31e701b4ec46bc156a9082bec60473697f7444b0b8364f2a8dd71f27118c9a34"

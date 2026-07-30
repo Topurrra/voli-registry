@@ -1,0 +1,10 @@
+name = "configuring-opentelemetry-dotnet"
+version = "2026.7.30"
+description = "Configure OpenTelemetry distributed tracing, metrics, and logging in ASP.NET Core using the .NET OpenTelemetry SDK. Use when adding observability, setting up OTLP exporters, creating custom metrics/spans, or troubleshooting distributed trace correlation."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-aspnetcore/skills/configuring-opentelemetry-dotnet"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-configuring-opentelemetry-dotnet.zip"
+sha256 = "39066b11d485c2761f39c859e96f85e0b37029917a927c9a63f40b3390077785"

@@ -1,0 +1,10 @@
+name = "read-all-adrs"
+version = "2026.7.30"
+description = "Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/thinking-and-docs/read-all-adrs"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-read-all-adrs.zip"
+sha256 = "70a9e01d6bc482a635e6a0d8dd3c1845089c4d89d1f3995053351dde2f8ac35a"

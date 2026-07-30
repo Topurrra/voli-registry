@@ -1,0 +1,10 @@
+name = "template-smart-defaults"
+version = "2026.7.30"
+description = "Applies cross-parameter default rules when creating .NET projects with dotnet new, filling gaps consistently without overriding values the user set explicitly. USE FOR: choosing which target framework to pair with native AOT, deciding whether to keep HTTPS when authentication is enabled, recognizing that controllers and minimal-API flags are mutually exclusive, filling unset related parameters during project creation, explaining why a default was applied and ensuring an explicit user value is never overridden. DO NOT USE FOR: creating the project itself (use template-instantiation), finding or comparing templates (use template-discovery and template-comparison), authoring or validating custom templates (use template-authoring and template-validation)."
+homepage = "https://github.com/dotnet/skills/tree/7d86b4e5e838e3de5b42fe64f8d4a7b748a1ef5d/plugins/dotnet-template-engine/skills/template-smart-defaults"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.7.30-template-smart-defaults.zip"
+sha256 = "54d52580a952cc66736ac3dfc629ddc6b1f7bcb7517acd80ad4a2679f7b728a9"

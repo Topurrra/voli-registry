@@ -1,0 +1,10 @@
+name = "anti-sleep"
+version = "2026.7.30"
+description = "Keep the user's MacBook awake reliably with macOS caffeinate for a set duration or while a process runs. Use for \"don't let my Mac sleep\", \"keep the screen on\", \"anti-sleep\", \"caffeinate\", overnight work, or long builds. Unlike a normal background job, it survives temporary agent-shell cleanup."
+homepage = "https://github.com/davidondrej/skills/tree/31755f84d10356637398c735fd10ff43ba38ade4/skills/ops-and-setup/anti-sleep"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.7.30-anti-sleep.zip"
+sha256 = "dba9847fe94919dfa00610f4140568f19ea7ee9a3a5050a6f90c12877ea07f27"

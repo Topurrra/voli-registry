@@ -1,0 +1,19 @@
+name = "just-lsp"
+version = "0.5.1"
+description = "A language server for just."
+homepage = "https://terror.github.io/just-lsp/"
+license = "CC0-1.0"
+kind = "app"
+bin = ["just-lsp.exe"]
+
+[source.x64]
+url = "https://github.com/terror/just-lsp/releases/download/0.5.1/just-lsp-0.5.1-x86_64-pc-windows-msvc.zip"
+sha256 = "5deb5eca4049e1cea72866d93078fdbe1fe4a1ffd71e44d4bc63467a0069e4ed"
+
+[source.arm64]
+url = "https://github.com/terror/just-lsp/releases/download/0.5.1/just-lsp-0.5.1-aarch64-pc-windows-msvc.zip"
+sha256 = "b5b9f5f799ad7c14d9fc8d55fe9e2fed6ad2652129480a512ff828aa74f3149f"
+
+[autoupdate]
+checkver = { github = "terror/just-lsp" }
+url_template = { x64 = "https://github.com/terror/just-lsp/releases/download/$version/just-lsp-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/terror/just-lsp/releases/download/$version/just-lsp-$version-aarch64-pc-windows-msvc.zip" }

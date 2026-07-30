@@ -1,0 +1,19 @@
+name = "micronaut"
+version = "5.1.0"
+description = "Micronaut - A modern, JVM-based (Java, Groovy, Kotlin), full-stack framework for building modular and testable microservice and serverless applications"
+homepage = "https://micronaut.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "micronaut-cli-5.1.0"
+bin = ["bin\\mn.bat"]
+
+[source.x64]
+url = "https://github.com/micronaut-projects/micronaut-starter/releases/download/v5.1.0/micronaut-cli-5.1.0.zip"
+sha256 = "60fedaa14daca22a9e4d24498510076923344294ad1f60ed9438fb5572ae23ef"
+
+[env]
+MICRONAUT_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "micronaut-projects/micronaut-starter" }
+url_template = "https://github.com/micronaut-projects/micronaut-starter/releases/download/v$version/micronaut-cli-$version.zip"

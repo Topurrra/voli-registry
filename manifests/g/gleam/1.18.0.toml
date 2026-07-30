@@ -1,0 +1,18 @@
+name = "gleam"
+version = "1.18.0"
+description = "A friendly language for building type-safe, scalable systems"
+homepage = "https://gleam.run/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["gleam.exe"]
+
+[source.x64]
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.18.0/gleam-v1.18.0-x86_64-pc-windows-msvc.zip"
+sha256 = "b98eb7c9d4f0b722128c57bf62400f9f49f78795653e873190d30094f0b8e7b1"
+
+[depends]
+erlang = "*"
+
+[autoupdate]
+checkver = { github = "gleam-lang/gleam" }
+url_template = { x64 = "https://github.com/gleam-lang/gleam/releases/download/v$version/gleam-v$version-x86_64-pc-windows-msvc.zip" }

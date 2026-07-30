@@ -1,0 +1,20 @@
+name = "w64devkit"
+version = "2.9.0"
+description = "Portable C and C++ Development Kit for x64 Windows"
+homepage = "https://github.com/skeeto/w64devkit"
+license = "Unlicense"
+kind = "app"
+extract_dir = "w64devkit"
+bin = ["w64devkit.exe"]
+shortcuts = [{ target = "w64devkit.exe", name = "W64DevKit Command Prompt" }]
+
+[source.x64]
+url = "https://github.com/skeeto/w64devkit/releases/download/v2.9.0/w64devkit-x64-2.9.0.7z.exe#/dl.7z"
+sha256 = "bff1d13fc2718eebd93548cf37f8d0332d925458d5e99506cff8f46eb5a9de5a"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "skeeto/w64devkit" }
+url_template = { x64 = "https://github.com/skeeto/w64devkit/releases/download/v$version/w64devkit-x64-$version.7z.exe#/dl.7z" }

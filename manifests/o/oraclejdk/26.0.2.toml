@@ -10,8 +10,8 @@ url = "https://download.oracle.com/java/26/archive/jdk-26.0.2_windows-x64_bin.zi
 sha256 = "530c20885a96d97c5f982a96e2d9e6aa41956c414b4a7398c49df7fe3192e62d"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"Java SE Development Kit ([\\\\d.]+) downloads\",\"url\":\"https://www.oracle.com/java/technologies/downloads/\",\"useragent\":\"curl/7\"}"

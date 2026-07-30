@@ -12,8 +12,8 @@ url = "https://github.com/steveloughran/winutils/releases/download/tag_2017-08-2
 sha256 = "ff099578a2bf618c3e3df95a76fdd2763d98f0e815560af6e7cfd2c92c04ed57"
 
 [env]
-PATH = "{dir}\\bin"
 HADOOP_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "steveloughran/winutils" }

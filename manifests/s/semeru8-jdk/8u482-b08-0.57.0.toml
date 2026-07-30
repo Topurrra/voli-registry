@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u48
 sha256 = "13daaac92c91dfd3cec3efb3f4e08c417ed6c7cf73ef7588b5240341907e0da3"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru8-binaries" }

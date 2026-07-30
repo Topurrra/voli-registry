@@ -10,8 +10,8 @@ url = "https://github.com/SAP/SapMachine/releases/download//sapmachine-18.0.2.1/
 sha256 = "03db06ccccc69d519367fb1bf8142f7f447c7e955ddf9eba0b76a84c8469585d"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.assets.18.releases[0].jdk.windows-x64\",\"regex\":\"(?<sap>/sapmachine-(?:[\\\\d.]+)(?:\\\\%2B|\\\\+)?(?:[\\\\d]*)/sapmachine-jdk-(?<version>[\\\\d.]+)(?:(?<dash>-)(?<ea>ea)\\\\.(?<build>[\\\\d]+))?_windows-x64_bin).zip\",\"replace\":\"${version}${dash}${build}${dash}${ea}\",\"url\":\"https://sap.github.io/SapMachine/assets/data/sapmachine_releases.json\"}"

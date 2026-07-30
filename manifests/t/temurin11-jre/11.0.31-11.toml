@@ -10,8 +10,8 @@ url = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0
 sha256 = "0af0760609eca44502f05e6ab4701eecbf85290f31278dabc41dceddab7237ab"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"(?<ver>.*?) https://github.com/(?<link>.*?)/tag/(?<tag>.*?) (?<name>(?<prefix>OpenJDK[\\\\dU]*-[dejkr]{3})_x64_(?<suffix>.*))\",\"replace\":\"${ver}\",\"script\":[\"$ver = (json_path $page $..version_data.semver).replace('+', '-')\",\"$link = (json_path $page $..release_link).replace('%2B', '+')\",\"$name = json_path $page $..binaries[0].package.name\",\"Write-Output \\\"$ver $link $name\\\"\"],\"url\":\"https://api.adoptium.net/v3/assets/feature_releases/11/ga?jvm_impl=hotspot&heap_size=normal&os=windows&architecture=x64&image_type=jre&project=jdk&vendor=eclipse&page_size=1&sort_order=DESC\"}"

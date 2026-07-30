@@ -11,8 +11,8 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-17-openjdk-
 sha256 = "7626e7430d86731be97e10c7f2ba60503bb33d96066379acefb75fbd8be24538"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ojdkbuild/ojdkbuild" }

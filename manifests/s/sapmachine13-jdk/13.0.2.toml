@@ -10,5 +10,5 @@ url = "https://github.com/SAP/SapMachine/releases/download//sapmachine-13.0.2/sa
 sha256 = "b92730ec4a0bafa33957a57c5b55ee77ab5a0e09347539a34d94326a142ae863"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

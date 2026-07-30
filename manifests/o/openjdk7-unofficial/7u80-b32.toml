@@ -11,5 +11,5 @@ url = "https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/openj
 sha256 = "1b835601f4ae689b9271040713b01d6bdd186c6a57bb4a7c47e1f7244d5ac928"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

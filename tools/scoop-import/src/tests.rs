@@ -43,6 +43,41 @@ fn simple_single_url_top_level() {
     assert_eq!(m.bin, vec![Bin::Path("tool.exe".into())]);
 }
 
+/// The whole point of routing through `Manifest::to_canonical_toml`: the importer
+/// and `voli-index-tool bump` must emit byte-identical formatting. This fails the
+/// moment anyone re-introduces a local TOML writer.
+#[test]
+fn emitted_toml_is_canonical() {
+    let c = match convert(
+        "kitchen-sink",
+        &json!({
+            "version": "1.0.0",
+            "description": ["Two", "part description"],
+            "homepage": "https://github.com/example/kitchen-sink",
+            "icon": "https://example.com/i.svg",
+            "license": { "identifier": "MIT" },
+            "architecture": {
+                "64bit": { "url": "https://x/a-x64.zip", "hash": "a".repeat(64), "extract_dir": "ks" },
+                "arm64": { "url": "https://x/a-arm64.zip", "hash": format!("sha512:{}", "b".repeat(128)) }
+            },
+            "bin": ["ks.exe", ["sub\\tool.exe", "t", "--flag"]],
+            "shortcuts": [["ks.exe", "Kitchen Sink"]],
+            "persist": ["config", "data"],
+            "depends": ["extras/vcredist2022"],
+            "env_add_path": ["bin"],
+            "env_set": { "KS_HOME": "$dir" },
+            "checkver": "github",
+            "autoupdate": { "url": "https://x/a-$version.zip" }
+        }),
+    ) {
+        Outcome::Ok(c) => c,
+        Outcome::Skip(r) => panic!("skip {r}"),
+    };
+    let m = Manifest::from_toml_str(&c.toml).unwrap();
+    assert_eq!(c.toml, m.to_canonical_toml(), "not canonical:\n{}", c.toml);
+    assert!(m.is_canonical_toml(&c.toml));
+}
+
 #[test]
 fn curated_icon_survives_future_imports() {
     let m = ok(
@@ -74,10 +109,114 @@ fn per_arch_sources() {
             "bin": "rg.exe"
         }),
     );
-    assert_eq!(m.source.x64.unwrap().url, "https://x/rg-x64.zip");
-    assert_eq!(m.source.arm64.unwrap().hash(), "3".repeat(64));
-    // extract_dir prefers x64.
-    assert_eq!(m.extract_dir.as_deref(), Some("rg-x64"));
+    assert_eq!(m.source.x64.as_ref().unwrap().url, "https://x/rg-x64.zip");
+    assert_eq!(m.source.arm64.as_ref().unwrap().hash(), "3".repeat(64));
+    // Differing wrapper names stay with the arch they belong to.
+    assert_eq!(m.extract_dir, None);
+    assert_eq!(m.source.x64.unwrap().extract_dir.as_deref(), Some("rg-x64"));
+    assert_eq!(
+        m.source.arm64.unwrap().extract_dir.as_deref(),
+        Some("rg-arm64")
+    );
+}
+
+/// The 83-manifest bug: the vendor puts the arch token in the wrapper directory
+/// name, so the x64 value is flatly wrong for the arm64 archive. It used to be
+/// emitted as one top-level field taken from x64.
+#[test]
+fn arch_token_in_extract_dir_is_kept_per_arch() {
+    let m = ok(
+        "zig",
+        json!({
+            "version": "0.16.0",
+            "architecture": {
+                "64bit": {
+                    "url": "https://x/zig-x86_64-windows-0.16.0.zip",
+                    "hash": "1".repeat(64),
+                    "extract_dir": "zig-x86_64-windows-0.16.0"
+                },
+                "arm64": {
+                    "url": "https://x/zig-aarch64-windows-0.16.0.zip",
+                    "hash": "2".repeat(64),
+                    "extract_dir": "zig-aarch64-windows-0.16.0"
+                }
+            },
+            "bin": "zig.exe"
+        }),
+    );
+    assert_eq!(m.extract_dir, None);
+    assert_eq!(
+        m.source.x64.unwrap().extract_dir.as_deref(),
+        Some("zig-x86_64-windows-0.16.0")
+    );
+    assert_eq!(
+        m.source.arm64.unwrap().extract_dir.as_deref(),
+        Some("zig-aarch64-windows-0.16.0")
+    );
+}
+
+/// Only one arch wraps its payload. The other must NOT inherit that name — the
+/// same defect, just asymmetric.
+#[test]
+fn extract_dir_on_one_arch_only_does_not_leak_to_the_other() {
+    let m = ok(
+        "yazi",
+        json!({
+            "version": "1.0",
+            "architecture": {
+                "64bit": {
+                    "url": "https://x/yazi-x86_64.zip",
+                    "hash": "1".repeat(64),
+                    "extract_dir": "yazi-x86_64-pc-windows-msvc"
+                },
+                "arm64": { "url": "https://x/yazi-arm64.zip", "hash": "2".repeat(64) }
+            },
+            "bin": "yazi.exe"
+        }),
+    );
+    assert_eq!(m.extract_dir, None);
+    assert_eq!(
+        m.source.x64.unwrap().extract_dir.as_deref(),
+        Some("yazi-x86_64-pc-windows-msvc")
+    );
+    assert_eq!(m.source.arm64.unwrap().extract_dir, None);
+}
+
+/// Agreement stays a single top-level field. Without this, re-importing would
+/// rewrite thousands of manifests to say the same thing twice.
+#[test]
+fn agreeing_extract_dir_stays_top_level() {
+    let shared = json!({
+        "version": "1.0",
+        "architecture": {
+            "64bit": { "url": "https://x/a-x64.zip", "hash": "1".repeat(64) },
+            "arm64": { "url": "https://x/a-arm64.zip", "hash": "2".repeat(64) }
+        },
+        "extract_dir": "app-1.0",
+        "bin": "a.exe"
+    });
+    let explicit = json!({
+        "version": "1.0",
+        "architecture": {
+            "64bit": {
+                "url": "https://x/a-x64.zip",
+                "hash": "1".repeat(64),
+                "extract_dir": "app-1.0"
+            },
+            "arm64": {
+                "url": "https://x/a-arm64.zip",
+                "hash": "2".repeat(64),
+                "extract_dir": "app-1.0"
+            }
+        },
+        "bin": "a.exe"
+    });
+    for (label, json) in [("inherited", shared), ("explicit", explicit)] {
+        let m = ok("app", json);
+        assert_eq!(m.extract_dir.as_deref(), Some("app-1.0"), "{label}");
+        assert_eq!(m.source.x64.unwrap().extract_dir, None, "{label}");
+        assert_eq!(m.source.arm64.unwrap().extract_dir, None, "{label}");
+    }
 }
 
 #[test]

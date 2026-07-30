@@ -6,27 +6,15 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "windows-amd64"
 bin = ["dnsproxy.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/AdguardTeam/dnsproxy/releases/download/v0.83.1/dnsproxy-windows-amd64-v0.83.1.zip"
 sha256 = "c1f765d52dba6350b0c6fcc5c68863a4acca3a2c01c681c9f65a26c032e43fc5"
-extra = []
 
 [source.arm64]
 url = "https://github.com/AdguardTeam/dnsproxy/releases/download/v0.83.1/dnsproxy-windows-arm64-v0.83.1.zip"
 sha256 = "46af72a350c316d05fcad06930d4bd509a2c8bbbdadae151295e58bda9ba94cc"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "AdguardTeam/dnsproxy"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip"
-x64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip"
+[autoupdate]
+checkver = { github = "AdguardTeam/dnsproxy" }
+url_template = { x64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip", arm64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip" }

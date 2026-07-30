@@ -5,33 +5,19 @@ homepage = "https://nodejs.org"
 license = "MIT"
 kind = "app"
 extract_dir = "node-v26.5.0-win-x64"
-bin = []
-persist = [
-    "bin",
-    "cache",
-]
-shortcuts = []
-write_file = []
+persist = ["bin", "cache"]
 
 [source.x64]
 url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-win-x64.7z"
 sha256 = "8385446010721c01b9959d554e365b0494ecc047a1f13cc8af219389ce102db3"
-extra = []
 
 [source.arm64]
 url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-win-arm64.7z"
 sha256 = "9245990322cc93b0dc4ecae502d3a3ad66086de2fd401315e31c40de3a4bdca7"
-extra = []
 
 [env]
-PATH = '{dir}\bin;{dir}'
+PATH = "{dir}\\bin;{dir}"
 
-[depends]
-
-[autoupdate.checkver]
-regex = 'v([\d.]+)'
-url = "https://nodejs.org/dist/index.json"
-
-[autoupdate.url_template]
-arm64 = "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z"
-x64 = "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z"
+[autoupdate]
+checkver = { url = "https://nodejs.org/dist/index.json", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z", arm64 = "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z" }

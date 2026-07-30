@@ -11,8 +11,8 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/9.0.4-1/java-9-o
 sha256 = "1333ab5bccc20e9043f0593b001825cbfa141f0e0c850d877af6b8e2c990cb47"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ojdkbuild/ojdkbuild" }

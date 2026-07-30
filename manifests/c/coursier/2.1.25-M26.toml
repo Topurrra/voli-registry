@@ -12,9 +12,9 @@ url = "https://github.com/coursier/coursier/releases/download/v2.1.25-M26/coursi
 sha256 = "d6fdd69e7337b0cbe8f27deab038775621128d9500e19de1cdb16091985489d2"
 
 [env]
-PATH = "{dir}\\bin"
 COURSIER_BIN_DIR = "{dir}\\bin"
 COURSIER_CACHE = "{dir}\\cache"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "coursier/coursier" }

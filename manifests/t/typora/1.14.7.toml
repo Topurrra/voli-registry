@@ -5,27 +5,13 @@ homepage = "https://typora.io"
 license = "Proprietary"
 kind = "app"
 bin = ["Typora.exe"]
-persist = []
-write_file = []
+shortcuts = [{ target = "Typora.exe", name = "Typora" }]
 
 [source.x64]
 url = "https://download.typora.io/windows/typora-setup-x64-1.14.7.exe"
 sha256 = "0bb89b3df038ca09ec0f1af2d67d4779535481f453859d7d9666e9e2d6cafb72"
-extra = []
 kind = "installer-archive"
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-regex = 'typora-setup-x64-([\d.]+)\.exe'
-url = "https://typora.io/releases/stable"
-
-[autoupdate.url_template]
-arm64 = "https://download.typora.io/windows/typora-setup-arm64-$version.exe"
-x64 = "https://download.typora.io/windows/typora-setup-x64-$version.exe"
-
-[[shortcuts]]
-target = "Typora.exe"
-name = "Typora"
+[autoupdate]
+checkver = { url = "https://typora.io/releases/stable", regex = "typora-setup-x64-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://download.typora.io/windows/typora-setup-x64-$version.exe", arm64 = "https://download.typora.io/windows/typora-setup-arm64-$version.exe" }

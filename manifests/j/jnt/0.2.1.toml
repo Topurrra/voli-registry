@@ -4,8 +4,8 @@ description = "JNT: an AI-first terminal for Windows."
 homepage = "https://github.com/Topurrra/JNT"
 license = "MIT OR Apache-2.0"
 kind = "app"
-bin = ["jnt.exe"]
 gui = true
+bin = ["jnt.exe"]
 
 [source.x64]
 url = "https://github.com/Topurrra/JNT/releases/download/v0.2.1/jnt-0.2.1-x86_64-pc-windows-msvc.zip"

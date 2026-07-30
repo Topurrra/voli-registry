@@ -10,5 +10,5 @@ url = "https://download.java.net/java/GA/jdk9/9.0.4/binaries/openjdk-9.0.4_windo
 sha256 = "d30c3f4357bced30bfa2479a5363cd73325e7bce393f6bff42a91b72cb3d4259"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

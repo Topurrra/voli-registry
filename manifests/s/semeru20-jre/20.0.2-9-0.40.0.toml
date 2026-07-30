@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru20-binaries/releases/download/jdk-20
 sha256 = "85c1e9b0c883ec8302b7def3699d769378ca13164b8a90a48b9ae35caf93201f"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru20-binaries" }

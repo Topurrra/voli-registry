@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c55847602
 sha256 = "b6c17e747ae78cdd6de4d7532b3164b277daee97c007d3eaa2b39cca99882664"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"https://download\\\\.java\\\\.net/java/(?<type>GA)/(?<path>jdk(?<major>21(?:\\\\.[\\\\d]+)*)/[^/]+/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>21(?:\\\\.[\\\\d]+)*)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin\\\\.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/archive/\"}"

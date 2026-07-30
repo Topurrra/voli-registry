@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk25.0.2/b1e0dfa218384cb9959bdcb897162
 sha256 = "74784a0c07258f32d36e9224dd79187c566d831c30d47dc06888d4212087331d"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"https://download\\\\.java\\\\.net/java/(?<type>GA)/(?<path>jdk(?<major>25(?:\\\\.[\\\\d]+)*)/[^/]+/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>25(?:\\\\.[\\\\d]+)*)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin\\\\.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/archive/\"}"

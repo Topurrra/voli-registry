@@ -5,27 +5,15 @@ homepage = "https://schollz.com/software/croc6"
 license = "MIT"
 kind = "app"
 bin = ["croc.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/schollz/croc/releases/download/v10.7.0/croc_v10.7.0_Windows-64bit.zip"
 sha256 = "0eb2755ce9e73c172ec306167f3274c11b6d96de10f71a13abc7c0a2db7cd26a"
-extra = []
 
 [source.arm64]
 url = "https://github.com/schollz/croc/releases/download/v10.7.0/croc_v10.7.0_Windows-ARM64.zip"
 sha256 = "4ab2822fecfb3b4ec57ccab40b9c5546b5b214dbe05dd41242fe26a2ffb73d49"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "schollz/croc"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-ARM64.zip"
-x64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-64bit.zip"
+[autoupdate]
+checkver = { github = "schollz/croc" }
+url_template = { x64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-64bit.zip", arm64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-ARM64.zip" }

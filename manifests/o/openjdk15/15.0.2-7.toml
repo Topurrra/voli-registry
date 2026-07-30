@@ -10,5 +10,5 @@ url = "https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48
 sha256 = "ecbe7f32bc6bff2b6c8e9b68f19cbf4ddf54a492c918ba471f32d645cf1c5cf4"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

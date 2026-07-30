@@ -10,6 +10,6 @@ url = "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.3.3/
 sha256 = "d09f75c5b24d89dfd7e4ccd0a79db77a35f402fdf25589ba8c0a7d7a217d0322"
 
 [env]
-PATH = "{dir}\\bin"
 GRAALVM_HOME = "{dir}"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

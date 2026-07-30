@@ -6,21 +6,11 @@ license = "Apache-2.0"
 kind = "app"
 extract_dir = "balena"
 bin = ["bin/balena.cmd"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/balena-io/balena-cli/releases/download/v25.2.0/balena-cli-v25.2.0-windows-x64-standalone.tar.gz"
 sha256 = "9b256dea97b9aafa75bf79620b585983b020a04881f56f6431f274d78ac964fb"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "balena-io/balena-cli"
-
-[autoupdate.url_template]
-x64 = "https://github.com/balena-io/balena-cli/releases/download/v$version/balena-cli-v$version-windows-x64-standalone.tar.gz"
+[autoupdate]
+checkver = { github = "balena-io/balena-cli" }
+url_template = { x64 = "https://github.com/balena-io/balena-cli/releases/download/v$version/balena-cli-v$version-windows-x64-standalone.tar.gz" }

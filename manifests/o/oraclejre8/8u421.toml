@@ -10,5 +10,5 @@ url = "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=250130_d8aa705
 sha256 = "e8082d390a831b14067a465068fceda45291170e8d155be0991bced9702cbbe7"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

@@ -5,29 +5,13 @@ homepage = "https://activemq.apache.org"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "apache-activemq-6.3.0"
-bin = [
-    'bin\activemq.bat',
-    'bin\activemq-admin.bat',
-]
-persist = [
-    "conf",
-    "data",
-]
-shortcuts = []
-write_file = []
+bin = ["bin\\activemq.bat", "bin\\activemq-admin.bat"]
+persist = ["conf", "data"]
 
 [source.x64]
 url = "https://downloads.apache.org/activemq/6.3.0/apache-activemq-6.3.0-bin.zip"
 sha512 = "55c532ca6c9b38fdf2f12561b5b2d8537ebf20556499f43f4e1628b4eca4d70a4ea7d83d84e41a8919040ca677e1926833ed8ed5ed5af7d071b034b34c0edc36"
-extra = []
-
-[env]
-
-[depends]
 
 [autoupdate]
+checkver = { url = "https://activemq.apache.org/components/classic/download", regex = "apache-activemq-([\\d.]+)-bin\\.zip" }
 url_template = "https://downloads.apache.org/activemq/$version/apache-activemq-$version-bin.zip"
-
-[autoupdate.checkver]
-regex = 'apache-activemq-([\d.]+)-bin\.zip'
-url = "https://activemq.apache.org/components/classic/download"

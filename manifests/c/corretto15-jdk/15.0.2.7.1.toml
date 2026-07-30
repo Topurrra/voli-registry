@@ -10,8 +10,8 @@ url = "https://corretto.aws/downloads/resources/15.0.2.7.1/amazon-corretto-15.0.
 sha256 = "39bf4a60ab2b7335f627d6d3121e44163caf458a0299d0f696fb351a128c2c4f"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.windows.x64.jdk.15.zip.resource\",\"regex\":\"/([\\\\d.]+)/\",\"url\":\"https://github.com/corretto/corretto-downloads/raw/main/latest_links/indexmap_with_checksum.json\"}"

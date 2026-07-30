@@ -11,8 +11,8 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openj
 sha256 = "d23f45fe6c56a604bd9c9ef552c8cc5fa9e03d7c6b84dc00e84b5fb17c6f58cf"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ojdkbuild/ojdkbuild" }

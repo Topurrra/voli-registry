@@ -10,8 +10,8 @@ url = "https://github.com/SAP/SapMachine/releases/download//sapmachine-17.0.20/s
 sha256 = "516b013f68821d87ba85b6d202c054bc590127f71e6fe5bf02bbac3596e8774a"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.assets.17.releases[0].jre.windows-x64\",\"re\":\"(?<sap>/sapmachine-(?:[\\\\d.]+)(?:\\\\%2B|\\\\+)?(?:[\\\\d]*)/sapmachine-jre-(?<version>[\\\\d.]+)(?:(?<dash>-)(?<ea>ea)\\\\.(?<build>[\\\\d]+))?_windows-x64_bin).zip\",\"replace\":\"${version}${dash}${build}${dash}${ea}\",\"url\":\"https://sap.github.io/SapMachine/assets/data/sapmachine_releases.json\"}"

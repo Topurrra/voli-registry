@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21
 sha256 = "7951cd9326c03d6319d8e04cc74d1b13a0f035fb7fe56a774fe8bc19319ab060"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru21-binaries" }

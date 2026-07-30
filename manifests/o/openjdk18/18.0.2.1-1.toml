@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk18.0.2.1/db379da656dc47308e138f21b33
 sha256 = "fc08052175eb2f66cedfcca368ab5d51c55f50d6f440b124e4512499825cb7b1"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"/(?<type>early_access|GA)/(?<path>jdk(?<major>[\\\\d.]+)(?:.*)?/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>[\\\\d.]+)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\"}"

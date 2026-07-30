@@ -10,9 +10,9 @@ url = "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.6/
 sha256 = "115d273158bb62370be65f0052eb76e2a719d42e896ea43c36a08401b3369826"
 
 [env]
-PATH = "{dir}\\bin"
 GRAALVM_HOME = "{dir}"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.[?(@.name =~ /^vm-19[\\\\d.]+$/)].name\",\"regex\":\"vm-([\\\\d.]+)\",\"url\":\"https://api.github.com/repos/graalvm/graalvm-ce-builds/tags?per_page=200&page=1\"}"

@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11
 sha256 = "ae097608c2821a02f268580e0b3041f9c2d66647e93b1c423c344a0e0ff9c01c"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru11-binaries" }

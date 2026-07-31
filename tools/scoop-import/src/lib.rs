@@ -127,6 +127,9 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
     let manifest = Manifest {
         name: name.clone(),
         version: version.clone(),
+        // Scoop has no notion of a former name, and synthesizing one from an
+        // import would let an upstream bucket claim names in this registry.
+        aliases: Vec::new(),
         description: string_or_joined(json.get("description")),
         homepage,
         icon: icon.map(str::to_string),

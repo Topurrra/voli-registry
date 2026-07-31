@@ -57,8 +57,14 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 6e965a5233e4a0c6d617218afbbccd21d720fe2f \
+            --tag v0.10.1 \
             voli-index-tool
+
+      # The Python importer above emits its own TOML. Normalizing it here means
+      # it never has to know the canonical shape -- and since validate now fails
+      # on drift, this is what keeps that from becoming a broken sync.
+      - name: Format manifests
+        run: voli-index-tool fmt manifests/ --write
 
       - name: Validate manifests
         run: voli-index-tool validate manifests/

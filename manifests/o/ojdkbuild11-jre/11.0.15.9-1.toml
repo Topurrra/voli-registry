@@ -11,8 +11,8 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-11-openjdk-
 sha256 = "1c96985af108c8f0fc398552dbc37c4ab4760d27e4045bb7e6e5118242076d14"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ojdkbuild/ojdkbuild" }

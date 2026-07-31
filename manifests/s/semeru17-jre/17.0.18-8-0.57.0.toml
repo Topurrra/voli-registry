@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17
 sha256 = "2eaf4b3b69860bc1b46b67288d2caea56911fe8f4cd331d1d3f87a9a91e0a7a6"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru17-binaries" }

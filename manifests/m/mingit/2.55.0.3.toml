@@ -14,8 +14,8 @@ url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.
 sha256 = "f7748965d5068e81ad93ca1923650db6742d6e22332b1ae7567a841c59f6bde5"
 
 [env]
-PATH = "{dir}\\cmd"
 GIT_INSTALL_ROOT = "{dir}"
+PATH = "{dir}\\cmd"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /MinGit/i)].browser_download_url\",\"regex\":\"(?i)download/(?<tag>v?[\\\\d.]+windows[\\\\d.]+)/MinGit-([\\\\d.]+)\"}"

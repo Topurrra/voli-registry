@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df5783
 sha256 = "9f70eba3f2631674a2d7d3aa01150d697f68be16ad76662ff948d7fe1b4985d8"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"\\\"name\\\":\\\"jdk-(?<version>19\\\\.[\\\\d.]+)\\\\+(?<build>\\\\d+)\\\"\",\"replace\":\"${version}-${build}\",\"url\":\"https://api.github.com/repos/openjdk/jdk19u/tags?per_page=100\"}"

@@ -11,9 +11,9 @@ url = "https://nuwen.net/files/mingw/mingw-20.0.exe#/dl.7z"
 sha256 = "bce8bdaa095848561488d34fd80371a1f36eb0a590202eb534f32e026e5cd8ef"
 
 [env]
-PATH = "{dir}\\bin"
 CPLUS_INCLUDE_PATH = "{dir}\\include;{dir}\\include\\freetype2"
 C_INCLUDE_PATH = "{dir}\\include;{dir}\\include\\freetype2"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"mingw-([\\\\d.]+).exe\"}"

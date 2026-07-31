@@ -10,8 +10,8 @@ url = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0
 sha256 = "2171b4660d3e1056fb4a5f4b7e515fff986b8e7e0cf06c9f3e1f79d435ec7d18"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"(?<ver>.*?) https://github.com/(?<link>.*?)/tag/(?<tag>.*?) (?<name>(?<prefix>OpenJDK[\\\\dU]*-[dejkr]{3})_x64_(?<suffix>.*))\",\"replace\":\"${ver}\",\"script\":[\"$ver = (json_path $page $..version_data.semver).replace('+', '-')\",\"$link = (json_path $page $..release_link).replace('%2B', '+')\",\"$name = json_path $page $..binaries[0].package.name\",\"Write-Output \\\"$ver $link $name\\\"\"],\"url\":\"https://api.adoptium.net/v3/assets/feature_releases/23/ga?jvm_impl=hotspot&heap_size=normal&os=windows&architecture=x64&image_type=jdk&project=jdk&vendor=eclipse&page_size=1&sort_order=DESC\"}"

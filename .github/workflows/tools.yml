@@ -36,12 +36,15 @@ jobs:
             tools/scoop-import/target
           key: cargo-tools-tests-${{ runner.os }}-${{ hashFiles('tools/scoop-import/Cargo.lock') }}
 
-      # scoop-import has a path dependency on voli-core at ../../../voli, and
-      # its checked-in Cargo.lock records voli-core 0.5.7. The tag below must
-      # match that lock, or `--locked` fails on a version mismatch. Same clone
-      # as scoop-sync.yml — bump both together with the lock.
+      # scoop-import has a path dependency on voli-core at ../../../voli, so the
+      # tag below must be the exact voli version recorded in the checked-in
+      # tools/scoop-import/Cargo.lock or `--locked` fails on a version mismatch.
+      # Bumping one without the other is the failure mode: run
+      # `cargo update -p voli-core` against a matching checkout and commit the
+      # lock in the same change. Every voli pin in this repo's workflows moves
+      # together — grep for the tag before changing it.
       - name: Clone voli for the voli-core path dependency
-        run: git clone --depth 1 --branch v0.5.7 https://github.com/Topurrra/voli ../voli
+        run: git clone --depth 1 --branch v0.10.1 https://github.com/Topurrra/voli ../voli
 
       - name: Test scoop-import
         working-directory: tools/scoop-import

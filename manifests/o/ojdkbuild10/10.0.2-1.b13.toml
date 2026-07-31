@@ -11,8 +11,8 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/10.0.2-1/java-10
 sha256 = "39801db76f04b9f1491b0d0a64258535f14e319a3cd08d3e161b18a6af7a842d"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ojdkbuild/ojdkbuild" }

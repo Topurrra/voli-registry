@@ -13,8 +13,8 @@ url = "https://files.nordicsemi.com/artifactory/swtools/external/nrfutil/package
 sha256 = "a0284c4f9f7cd58185c9b6cb184f9456c6de701c27cc63c89a8260b4c649bcce"
 
 [env]
-PATH = "{dir}\\bin"
 NRFUTIL_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { url = "https://files.nordicsemi.com/artifactory/swtools/external/nrfutil/index/bootstrap.json", regex = "windows-msvc-([\\d.]+)\\.tar\\.gz" }

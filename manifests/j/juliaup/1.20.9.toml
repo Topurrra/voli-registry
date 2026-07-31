@@ -4,27 +4,14 @@ description = "Julia installer and version multiplexer"
 homepage = "https://github.com/JuliaLang/juliaup"
 license = "MIT"
 kind = "app"
-extract_dir = 'PFiles64\Julia'
-bin = [
-    "juliaup.exe",
-    "julia.exe",
-]
-persist = []
-shortcuts = []
-write_file = []
+extract_dir = "PFiles64\\Julia"
+bin = ["juliaup.exe", "julia.exe"]
 
 [source.x64]
 url = "https://julialang-s3.julialang.org/juliaup/winmsi/Julia-v1.20.9-x64.msi"
 sha256 = "3e4fedeffb9d6e884dc7e50e7d5d0f4fec9c2056f263f1b1082cf851099d691b"
-extra = []
 kind = "installer-archive"
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "JuliaLang/juliaup"
-
-[autoupdate.url_template]
-x64 = "https://julialang-s3.julialang.org/juliaup/winmsi/Julia-v$version-x64.msi"
+[autoupdate]
+checkver = { github = "JuliaLang/juliaup" }
+url_template = { x64 = "https://julialang-s3.julialang.org/juliaup/winmsi/Julia-v$version-x64.msi" }

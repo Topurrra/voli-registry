@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138e
 sha256 = "b2208206bda47f2e0c971a39e057a5ec32c40b503d71e486790cb728d926b615"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"https://download\\\\.java\\\\.net/java/(?<type>GA)/(?<path>jdk(?<major>17(?:\\\\.[\\\\d]+)*)/[^/]+/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>17(?:\\\\.[\\\\d]+)*)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin\\\\.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/archive/\"}"

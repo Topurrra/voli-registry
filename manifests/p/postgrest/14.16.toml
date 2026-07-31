@@ -5,22 +5,14 @@ homepage = "https://postgrest.org"
 license = "MIT"
 kind = "app"
 bin = ["postgrest.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/PostgREST/postgrest/releases/download/v14.16/postgrest-v14.16-windows-x86-64.zip"
 sha256 = "2f13f2ad54d44bcb9d0ec5c2bde111477349979cf17c70e3b69b25f59ceeb192"
-extra = []
-
-[env]
 
 [depends]
 psqlodbc = "*"
 
-[autoupdate.checkver]
-github = "PostgREST/postgrest"
-
-[autoupdate.url_template]
-x64 = "https://github.com/PostgREST/postgrest/releases/download/v$version/postgrest-v$version-windows-x86-64.zip"
+[autoupdate]
+checkver = { github = "PostgREST/postgrest" }
+url_template = { x64 = "https://github.com/PostgREST/postgrest/releases/download/v$version/postgrest-v$version-windows-x86-64.zip" }

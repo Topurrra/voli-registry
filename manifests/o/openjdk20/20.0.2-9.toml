@@ -10,8 +10,8 @@ url = "https://download.java.net/java/GA/jdk20.0.2/6e380f22cbe7469fa75fb448bd903
 sha256 = "7e5870fd2e19b87cbd1981c4ff7203897384c2eb104977f40ce4951b40ab433e"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"https://download\\\\.java\\\\.net/java/(?<type>GA)/(?<path>jdk(?<major>20(?:\\\\.[\\\\d]+)*)/[^/]+/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>20(?:\\\\.[\\\\d]+)*)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin\\\\.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/archive/\"}"

@@ -5,27 +5,15 @@ homepage = "https://github.com/danielmiessler/fabric"
 license = "MIT"
 kind = "app"
 bin = ["fabric.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/danielmiessler/Fabric/releases/download/v1.4.465/fabric_Windows_x86_64.zip"
 sha256 = "af01741f15de54f59aa0f0071a5631fd3d2c69e98804677d18bd2a14ffa2eda1"
-extra = []
 
 [source.arm64]
 url = "https://github.com/danielmiessler/Fabric/releases/download/v1.4.465/fabric_Windows_arm64.zip"
 sha256 = "f3c807f65b03ae7b0cee4b04b8d34bfad02e751627b0e59fe4a4ef7972acc4a5"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "danielmiessler/fabric"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_arm64.zip"
-x64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_x86_64.zip"
+[autoupdate]
+checkver = { github = "danielmiessler/fabric" }
+url_template = { x64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_x86_64.zip", arm64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_arm64.zip" }

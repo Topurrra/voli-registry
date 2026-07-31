@@ -11,5 +11,5 @@ url = "https://github.com/ojdkbuild/ojdkbuild/releases/download/java-15-openjdk-
 sha256 = "7ff9bed3077830572706c62288ad14a18b7aaca849c36198f4191b40ec44f36d"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

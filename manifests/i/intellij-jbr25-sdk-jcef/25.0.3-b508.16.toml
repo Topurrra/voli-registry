@@ -15,8 +15,8 @@ url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.3-wi
 sha512 = "4af6681517d8fe4f63a7c815aba373510769884968b6d9d1777af4d14cbd2444ae8dc691e9f55a56abf6457753bff42441369cd2100fe0806145e83232a77242"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "JetBrains/JetBrainsRuntime" }

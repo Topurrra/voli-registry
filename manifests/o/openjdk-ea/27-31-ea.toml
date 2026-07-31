@@ -10,8 +10,8 @@ url = "https://download.java.net/java/early_access/jdk27/31/GPL/openjdk-27-ea+31
 sha256 = "a1ffc34836a69587504027c8eef66314cae04e4a3f7891cdef9de6a61115e348"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"re\":\"/(?<type>early_access|GA)/(?<path>jdk(?<major>[\\\\d.]+)(?:.*)?/(?<build>[\\\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>[\\\\d.]+)(?<ea>-ea)?(?:\\\\+[\\\\d]+)?_windows-x64_bin.(zip|tar.gz))\",\"replace\":\"${version}-${build}${ea}\",\"url\":\"https://jdk.java.net/27\"}"

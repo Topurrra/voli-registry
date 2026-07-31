@@ -6,26 +6,13 @@ license = "GPL-3.0-or-later"
 kind = "app"
 extract_dir = "Jami"
 bin = ["Jami.exe"]
-persist = []
-write_file = []
+shortcuts = [{ target = "Jami.exe", name = "Jami" }]
 
 [source.x64]
 url = "https://dl.jami.net/windows/archive/jami_x86_64-202607271335.msi"
 sha256 = "86e4af7d4c11ba68ccd89a9598adea43c8b45a41c90340824a2d85987bf887d6"
-extra = []
 kind = "installer-archive"
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-regex = 'jami_x86_64-(\d+)\.msi'
-url = "https://dl.jami.net/windows/archive/?C=M;O=D"
-
-[autoupdate.url_template]
-x64 = "https://dl.jami.net/windows/archive/jami_x86_64-$version.msi"
-
-[[shortcuts]]
-target = "Jami.exe"
-name = "Jami"
+[autoupdate]
+checkver = { url = "https://dl.jami.net/windows/archive/?C=M;O=D", regex = "jami_x86_64-(\\d+)\\.msi" }
+url_template = { x64 = "https://dl.jami.net/windows/archive/jami_x86_64-$version.msi" }

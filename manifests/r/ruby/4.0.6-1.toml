@@ -16,8 +16,8 @@ url = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstalle
 sha256 = "7d4c80e2251190afb4708f2c840425f16b0c912669a7fc105f889fbe6565cd8c"
 
 [env]
-PATH = "{dir}\\bin;{dir}\\gems\\bin"
 GEM_HOME = "{dir}\\gems"
+PATH = "{dir}\\bin;{dir}\\gems\\bin"
 
 [autoupdate]
 checkver = { url = "https://raw.githubusercontent.com/oneclick/rubyinstaller.org-website/master/_data/downloads.yaml", regex = "Ruby (\\S+)" }

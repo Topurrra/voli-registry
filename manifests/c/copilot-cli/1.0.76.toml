@@ -5,27 +5,15 @@ homepage = "https://github.com/features/copilot/cli"
 license = "GitHub Copilot CLI License"
 kind = "app"
 bin = ["copilot.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.76/copilot-win32-x64.zip"
 sha256 = "ecf6731ef8156fa4a4b4cbeb84bdbafc3f0f816644e267b54c3533e6d601fb12"
-extra = []
 
 [source.arm64]
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.76/copilot-win32-arm64.zip"
 sha256 = "aa6be7795137c39a875471d78a4b193053f6d183cc1556ea78bd53e84ba111d2"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "github/copilot-cli"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-arm64.zip"
-x64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-x64.zip"
+[autoupdate]
+checkver = { github = "github/copilot-cli" }
+url_template = { x64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-x64.zip", arm64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-arm64.zip" }

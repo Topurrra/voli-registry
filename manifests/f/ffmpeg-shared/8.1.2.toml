@@ -12,8 +12,8 @@ url = "https://github.com/GyanD/codexffmpeg/releases/download/8.1.2/ffmpeg-8.1.2
 sha256 = "cba748035c21ce1431d0823c7a3a711f38616f89f87a265dceddf9b7f6749d2d"
 
 [env]
-PATH = "{dir}\\bin"
 FFMPEG_DIR = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "GyanD/codexffmpeg" }

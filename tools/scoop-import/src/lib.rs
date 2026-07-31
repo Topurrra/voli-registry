@@ -1,14 +1,18 @@
 //! Scoop bucket → voli TOML converter (spec §7).
 //!
-//! Pure conversion + manual TOML emission. The driver in `main.rs` handles
-//! cloning, file IO, and the round-trip check against `voli_core::Manifest`.
+//! Pure conversion: parse the Scoop JSON into a `voli_core::manifest::Manifest`
+//! and serialize it with [`Manifest::to_canonical_toml`] — the ONE canonical
+//! emitter, shared with `voli-index-tool bump`. There is deliberately no local
+//! TOML writer: two emitters disagreeing on formatting is what produced a 20-file
+//! merge conflict in a single week.
 //!
-//! Manual emission (not the `toml` crate) is used on purpose: voli's schema
-//! requires every top-level scalar key to appear BEFORE any `[table]` header
-//! (spec §4 — otherwise TOML absorbs the scalar into the last table). Emitting
-//! sections in a fixed sequence makes that ordering guaranteed by construction.
+//! The driver in `main.rs` handles cloning, file IO, and re-parsing every emitted
+//! file through `Manifest::from_toml_str`, which is also what validates it.
+
+use std::collections::BTreeMap;
 
 use serde_json::Value;
+use voli_core::manifest::{Bin, Kind, Manifest, Shortcut, Source, SourceKind, Sources};
 
 /// Outcome of converting one Scoop manifest.
 pub enum Outcome {
@@ -34,34 +38,6 @@ const BLOCKING_SCRIPT_FIELDS: [&str; 5] = [
     "psmodule",
     "pre_uninstall",
 ];
-
-struct SourceParts {
-    url: String,
-    hash: Hash,
-    extract_dir: Option<String>,
-    /// True when Scoop explicitly treats the source as an extractable installer.
-    is_installer_archive: bool,
-}
-
-/// Hash algorithm used by the source.
-enum Hash {
-    Sha256(String),
-    Sha512(String),
-}
-
-enum BinOut {
-    Path(String),
-    Table {
-        name: String,
-        path: String,
-        args: Option<String>,
-    },
-}
-
-struct ShortcutOut {
-    target: String,
-    name: String,
-}
 
 /// Convert one Scoop manifest. `name_stem` is the JSON filename without `.json`.
 pub fn convert(name_stem: &str, json: &Value) -> Outcome {
@@ -93,15 +69,11 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
     }
 
     // 4. sources.
-    let (x64, arm64) = match resolve_sources(json) {
+    let (mut x64, mut arm64) = match resolve_sources(json) {
         Ok(pair) => pair,
         Err(reason) => return Outcome::Skip(reason),
     };
-    // voli has a single extract_dir; prefer x64's, else arm64's.
-    let extract_dir = x64
-        .as_ref()
-        .and_then(|s| s.extract_dir.clone())
-        .or_else(|| arm64.as_ref().and_then(|s| s.extract_dir.clone()));
+    let extract_dir = hoist_extract_dir(&mut x64, &mut arm64);
 
     // 5. persist (skip nested [src, dst] forms).
     let persist = match parse_persist(json.get("persist")) {
@@ -116,7 +88,7 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
     };
 
     // 7. bin.
-    let bins = match parse_bin(json.get("bin")) {
+    let bin = match parse_bin(json.get("bin")) {
         Ok(b) => b,
         Err(reason) => return Outcome::Skip(reason),
     };
@@ -127,15 +99,15 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
         Err(reason) => return Outcome::Skip(reason),
     };
 
-    let has_installer_archive = x64.as_ref().is_some_and(|s| s.is_installer_archive)
-        || arm64.as_ref().is_some_and(|s| s.is_installer_archive);
-    let adds_to_path = env.iter().any(|(key, _)| key == "PATH");
-    if has_installer_archive && bins.is_empty() && shortcuts.is_empty() && !adds_to_path {
+    let has_installer_archive = [&x64, &arm64].into_iter().any(|s| {
+        s.as_ref()
+            .is_some_and(|s| s.kind == SourceKind::InstallerArchive)
+    });
+    if has_installer_archive && bin.is_empty() && shortcuts.is_empty() && !env.contains_key("PATH")
+    {
         return Outcome::Skip("no-launch-entry");
     }
 
-    let depends = parse_depends(json.get("depends"));
-    let description = string_or_joined(json.get("description"));
     let homepage = json
         .get("homepage")
         .and_then(Value::as_str)
@@ -150,31 +122,43 @@ pub fn convert(name_stem: &str, json: &Value) -> Outcome {
             }
             _ => None,
         });
-    let license = parse_license(json.get("license"));
     let autoupdate = build_autoupdate(&name, json, homepage.as_deref());
 
-    let toml = emit_toml(
-        &name,
-        &version,
-        description.as_deref(),
-        homepage.as_deref(),
-        icon,
-        license.as_deref(),
-        extract_dir.as_deref(),
-        &bins,
-        &shortcuts,
-        &persist,
-        x64.as_ref(),
-        arm64.as_ref(),
-        &env,
-        &depends,
-        autoupdate.as_deref(),
-    );
+    let manifest = Manifest {
+        name: name.clone(),
+        version: version.clone(),
+        // Scoop has no notion of a former name, and synthesizing one from an
+        // import would let an upstream bucket claim names in this registry.
+        aliases: Vec::new(),
+        description: string_or_joined(json.get("description")),
+        homepage,
+        icon: icon.map(str::to_string),
+        license: parse_license(json.get("license")),
+        kind: Kind::App,
+        source: Sources {
+            x64,
+            arm64,
+            ..Sources::default()
+        },
+        extract_dir,
+        // Scoop has no equivalent of these: `file_name` needs a binary source
+        // (which is `standalone-binary`, i.e. skipped), Scoop cannot express a
+        // written-out file, and `gui` is voli-only curation.
+        file_name: None,
+        write_file: Vec::new(),
+        gui: None,
+        bin,
+        env,
+        depends: parse_depends(json.get("depends")),
+        autoupdate,
+        persist,
+        shortcuts,
+    };
 
     Outcome::Ok(Converted {
         name,
         version,
-        toml,
+        toml: manifest.to_canonical_toml(),
     })
 }
 
@@ -188,11 +172,32 @@ fn has_script(v: &Value) -> bool {
 
 // --- sources -------------------------------------------------------------
 
-/// Returns (x64, arm64). Errs with a skip reason if a used entry is bad or no
-/// mappable 64-bit/arm64 source exists (voli drops 32-bit).
-fn resolve_sources(
-    json: &Value,
-) -> Result<(Option<SourceParts>, Option<SourceParts>), &'static str> {
+/// voli takes `extract_dir` either once at the top level or per `[source.<arch>]`,
+/// where it wins. Collapse to the top-level field whenever every present arch
+/// agrees — that is nearly all of them, and emitting a per-source copy instead
+/// would rewrite thousands of manifests for no behaviour change.
+///
+/// When the arches disagree the per-source values stay, which is the fix: vendors
+/// put the arch token in the wrapper directory name
+/// (`zig-x86_64-windows-0.16.0`), so the x64 value is simply wrong for the arm64
+/// archive. "One arch has one and the other has none" counts as disagreement for
+/// the same reason.
+fn hoist_extract_dir(x64: &mut Option<Source>, arm64: &mut Option<Source>) -> Option<String> {
+    let x64_dir = x64.as_ref().and_then(|s| s.extract_dir.clone());
+    let arm64_dir = arm64.as_ref().and_then(|s| s.extract_dir.clone());
+    if x64.is_some() && arm64.is_some() && x64_dir != arm64_dir {
+        return None;
+    }
+    for s in [x64.as_mut(), arm64.as_mut()].into_iter().flatten() {
+        s.extract_dir = None;
+    }
+    x64_dir.or(arm64_dir)
+}
+
+/// Returns (x64, arm64), each carrying its own `extract_dir`
+/// ([`hoist_extract_dir`] decides where that lands). Errs with a skip reason if a
+/// used entry is bad or no mappable 64-bit/arm64 source exists (voli drops 32-bit).
+fn resolve_sources(json: &Value) -> Result<(Option<Source>, Option<Source>), &'static str> {
     let arch = json.get("architecture").and_then(Value::as_object);
 
     let (x64_entry, arm64_entry): (Option<&Value>, Option<&Value>) = match arch {
@@ -230,7 +235,7 @@ fn resolve_entry(
     entry: Option<&Value>,
     top_level_innosetup: bool,
     top_level_extract_dir: Option<&str>,
-) -> Result<Option<SourceParts>, &'static str> {
+) -> Result<Option<Source>, &'static str> {
     let Some(entry) = entry else {
         return Ok(None);
     };
@@ -246,8 +251,8 @@ fn resolve_entry(
     };
     let raw_hash = one_string(hash_v).ok_or("multi-url")?;
 
-    let is_installer_archive = match effective_ext(&url).as_deref() {
-        Some("msi") => true,
+    let kind = match effective_ext(&url).as_deref() {
+        Some("msi") => SourceKind::InstallerArchive,
         Some("exe")
             if top_level_innosetup
                 || entry
@@ -255,24 +260,26 @@ fn resolve_entry(
                     .and_then(Value::as_bool)
                     .unwrap_or(false) =>
         {
-            true
+            SourceKind::InstallerArchive
         }
         // A bare PE may be the application itself. Passing it to 7-Zip strips
         // it into sections instead of preserving the executable.
         Some("exe") => return Err("standalone-binary"),
-        _ => false,
+        _ => SourceKind::Archive,
     };
-    let hash = normalize_hash(&raw_hash)?;
+    let (sha256, sha512) = normalize_hash(&raw_hash)?;
     let extract_dir = entry
         .get("extract_dir")
         .and_then(first_string)
         .or_else(|| top_level_extract_dir.map(str::to_string));
 
-    Ok(Some(SourceParts {
+    Ok(Some(Source {
         url,
-        hash,
+        sha256,
+        sha512,
+        extra: Vec::new(),
+        kind,
         extract_dir,
-        is_installer_archive,
     }))
 }
 
@@ -300,23 +307,26 @@ fn first_string(v: &Value) -> Option<String> {
         .map(str::to_string)
 }
 
-/// Normalize a Scoop hash to a [`Hash`], handling `sha256:`/`sha512:` prefixes.
-/// md5/sha1 (by prefix or by length) are still rejected.
-fn normalize_hash(raw: &str) -> Result<Hash, &'static str> {
+type HashPair = (Option<String>, Option<String>);
+
+/// Normalize a Scoop hash into `(sha256, sha512)` — exactly one is `Some`.
+/// Handles `sha256:`/`sha512:` prefixes; md5/sha1 (by prefix or by length) are
+/// still rejected.
+fn normalize_hash(raw: &str) -> Result<HashPair, &'static str> {
     let raw = raw.trim();
     if let Some((prefix, rest)) = raw.split_once(':') {
         return match prefix.to_ascii_lowercase().as_str() {
-            "sha256" => Ok(Hash::Sha256(hex_n(rest, 64)?)),
-            "sha512" => Ok(Hash::Sha512(hex_n(rest, 128)?)),
+            "sha256" => Ok((Some(hex_n(rest, 64)?), None)),
+            "sha512" => Ok((None, Some(hex_n(rest, 128)?))),
             _ => Err("unsupported-hash"), // md5/sha1/unknown
         };
     }
     // Bare hash: determine by length.
-    let s = raw.trim().to_ascii_lowercase();
+    let s = raw.to_ascii_lowercase();
     if s.len() == 64 && s.chars().all(|c| c.is_ascii_hexdigit()) {
-        Ok(Hash::Sha256(s))
+        Ok((Some(s), None))
     } else if s.len() == 128 && s.chars().all(|c| c.is_ascii_hexdigit()) {
-        Ok(Hash::Sha512(s))
+        Ok((None, Some(s)))
     } else {
         Err("unsupported-hash")
     }
@@ -349,7 +359,7 @@ fn effective_ext(url: &str) -> Option<String> {
 
 // --- shortcuts -----------------------------------------------------------
 
-fn parse_shortcuts(v: Option<&Value>) -> Result<Vec<ShortcutOut>, &'static str> {
+fn parse_shortcuts(v: Option<&Value>) -> Result<Vec<Shortcut>, &'static str> {
     let Some(v) = v.filter(|v| !v.is_null()) else {
         return Ok(Vec::new());
     };
@@ -376,7 +386,7 @@ fn parse_shortcuts(v: Option<&Value>) -> Result<Vec<ShortcutOut>, &'static str> 
             return Err("shortcut-malformed");
         }
         check_bin_path(target)?;
-        out.push(ShortcutOut {
+        out.push(Shortcut::Table {
             target: target.to_string(),
             name: name.to_string(),
         });
@@ -386,7 +396,7 @@ fn parse_shortcuts(v: Option<&Value>) -> Result<Vec<ShortcutOut>, &'static str> 
 
 // --- bin -----------------------------------------------------------------
 
-fn parse_bin(v: Option<&Value>) -> Result<Vec<BinOut>, &'static str> {
+fn parse_bin(v: Option<&Value>) -> Result<Vec<Bin>, &'static str> {
     let Some(v) = v.filter(|v| !v.is_null()) else {
         return Ok(Vec::new());
     };
@@ -407,15 +417,15 @@ fn parse_bin(v: Option<&Value>) -> Result<Vec<BinOut>, &'static str> {
     Ok(out)
 }
 
-fn push_bin_path(out: &mut Vec<BinOut>, path: &str) -> Result<(), &'static str> {
+fn push_bin_path(out: &mut Vec<Bin>, path: &str) -> Result<(), &'static str> {
     check_bin_path(path)?;
-    out.push(BinOut::Path(path.to_string()));
+    out.push(Bin::Path(path.to_string()));
     Ok(())
 }
 
 /// Scoop nested bin: `[path]`, `[path, alias]`, or `[path, alias, args]`.
 /// `args` may be a string or an array of strings.
-fn parse_bin_nested(nested: &[Value]) -> Result<BinOut, &'static str> {
+fn parse_bin_nested(nested: &[Value]) -> Result<Bin, &'static str> {
     let path = nested
         .first()
         .and_then(Value::as_str)
@@ -437,24 +447,21 @@ fn parse_bin_nested(nested: &[Value]) -> Result<BinOut, &'static str> {
     };
 
     match (alias, &args) {
-        (None, None) => Ok(BinOut::Path(path.to_string())),
-        _ => Ok(BinOut::Table {
-            name: alias.map(str::to_string).unwrap_or_else(|| stem(path)),
+        (None, None) => Ok(Bin::Path(path.to_string())),
+        // The default shim name is voli's own stem rule, not a local copy of it.
+        _ => Ok(Bin::Table {
+            name: alias
+                .map(str::to_string)
+                .unwrap_or_else(|| Bin::Path(path.to_string()).shim_name()),
             path: path.to_string(),
             args,
         }),
     }
 }
 
-fn stem(path: &str) -> String {
-    let seg = path.rsplit(['/', '\\']).next().unwrap_or(path);
-    seg.rsplit_once('.')
-        .map(|(a, _)| a)
-        .unwrap_or(seg)
-        .to_string()
-}
-
 /// Mirror of voli_core's bin-path rule: relative, no `..`, no drive/root.
+/// Local because a violation has to become a groupable skip reason rather than a
+/// round-trip failure at the end of the pipeline.
 fn check_bin_path(path: &str) -> Result<(), &'static str> {
     let absolute =
         path.starts_with('/') || path.starts_with('\\') || path.chars().nth(1) == Some(':');
@@ -489,8 +496,7 @@ fn parse_persist(v: Option<&Value>) -> Result<Vec<String>, &'static str> {
 }
 
 /// Build [env] from Scoop `env_add_path` (→ PATH) and `env_set` (`$dir`→`{dir}`).
-/// Ordered so PATH (if any) comes first, then env_set keys sorted.
-fn parse_env(json: &Value) -> Result<Vec<(String, String)>, &'static str> {
+fn parse_env(json: &Value) -> Result<BTreeMap<String, String>, &'static str> {
     let mut path_segs: Vec<String> = Vec::new();
 
     if let Some(v) = json.get("env_add_path").filter(|v| !v.is_null()) {
@@ -511,14 +517,13 @@ fn parse_env(json: &Value) -> Result<Vec<(String, String)>, &'static str> {
         }
     }
 
-    let mut out: Vec<(String, String)> = Vec::new();
+    let mut out: BTreeMap<String, String> = BTreeMap::new();
     if !path_segs.is_empty() {
-        out.push(("PATH".to_string(), path_segs.join(";")));
+        out.insert("PATH".to_string(), path_segs.join(";"));
     }
 
     if let Some(set) = json.get("env_set").filter(|v| !v.is_null()) {
         let obj = set.as_object().ok_or("env-unmappable")?;
-        let mut entries: Vec<(String, String)> = Vec::new();
         for (k, val) in obj {
             let s = val.as_str().ok_or("env-unmappable")?;
             let mapped = s.replace("$dir", "{dir}");
@@ -530,20 +535,12 @@ fn parse_env(json: &Value) -> Result<Vec<(String, String)>, &'static str> {
             if !env_template_ok(&mapped) {
                 return Err("env-unmappable");
             }
-            entries.push((k.clone(), mapped));
-        }
-        entries.sort();
-        for (k, v) in entries {
-            if k == "PATH" {
-                // Merge into the PATH we already built.
-                if let Some((_, existing)) = out.iter_mut().find(|(kk, _)| kk == "PATH") {
-                    *existing = format!("{existing};{v}");
-                } else {
-                    out.push((k, v));
-                }
-            } else {
-                out.push((k, v));
-            }
+            // Only PATH can collide (with the env_add_path segments above); append.
+            let merged = match out.get(k) {
+                Some(existing) => format!("{existing};{mapped}"),
+                None => mapped,
+            };
+            out.insert(k.clone(), merged);
         }
     }
 
@@ -569,24 +566,23 @@ fn env_template_ok(val: &str) -> bool {
     !rest.contains('}')
 }
 
-fn parse_depends(v: Option<&Value>) -> Vec<(String, String)> {
+fn parse_depends(v: Option<&Value>) -> BTreeMap<String, String> {
     let Some(v) = v.filter(|v| !v.is_null()) else {
-        return Vec::new();
+        return BTreeMap::new();
     };
     let names: Vec<&str> = match v {
         Value::String(s) => vec![s.as_str()],
         Value::Array(a) => a.iter().filter_map(Value::as_str).collect(),
-        _ => return Vec::new(),
+        _ => return BTreeMap::new(),
     };
-    let mut out: Vec<(String, String)> = Vec::new();
+    let mut out = BTreeMap::new();
     for n in names {
         // Strip a bucket prefix like "extras/foo" → "foo".
         let name = n.rsplit('/').next().unwrap_or(n).to_ascii_lowercase();
-        if !name.is_empty() && !out.iter().any(|(k, _)| *k == name) {
-            out.push((name, "*".to_string()));
+        if !name.is_empty() {
+            out.insert(name, "*".to_string());
         }
     }
-    out.sort();
     out
 }
 
@@ -615,13 +611,26 @@ fn string_or_joined(v: Option<&Value>) -> Option<String> {
     None
 }
 
-/// Best-effort [autoupdate] contents (opaque to the client).
-/// Returns the body to place under `[autoupdate]`, or None if no checkver.
-fn build_autoupdate(name: &str, json: &Value, homepage: Option<&str>) -> Option<String> {
+// --- autoupdate ----------------------------------------------------------
+
+/// A flat `toml` table of string values. Key order is irrelevant: the canonical
+/// serializer imposes its own inside `[autoupdate]`.
+fn str_table(pairs: &[(&str, &str)]) -> toml::Value {
+    toml::Value::Table(
+        pairs
+            .iter()
+            .map(|(k, v)| (k.to_string(), toml::Value::String(v.to_string())))
+            .collect(),
+    )
+}
+
+/// Best-effort `[autoupdate]` value (opaque to the client). `None` if no checkver.
+fn build_autoupdate(name: &str, json: &Value, homepage: Option<&str>) -> Option<toml::Value> {
     let cv = json.get("checkver").filter(|v| !v.is_null())?;
 
+    // The clean-room vendor resolver derives Chrome's URL itself — no template.
     if name == "googlechrome" {
-        return Some(r#"checkver = { vendor = "google-chrome" }"#.to_string());
+        return Some(autoupdate(str_table(&[("vendor", "google-chrome")]), None));
     }
 
     // Prefer an explicit github repo, then a github homepage.
@@ -631,67 +640,60 @@ fn build_autoupdate(name: &str, json: &Value, homepage: Option<&str>) -> Option<
         .and_then(github_repo)
         .or_else(|| homepage.and_then(github_repo));
 
-    if let Some(repo) = repo {
-        return Some(with_url_template(
-            format!("checkver = {{ github = {} }}", esc(&repo)),
-            json,
-        ));
-    }
-    if cv.get("script").is_none()
+    let checkver = if let Some(repo) = repo {
+        str_table(&[("github", &repo)])
+    } else if cv.get("script").is_none()
         && let (Some(url), Some(regex)) = (
             cv.get("url").and_then(Value::as_str),
             cv.get("regex").and_then(Value::as_str),
         )
         && url.starts_with("https://")
     {
-        return Some(with_url_template(
-            format!(
-                "checkver = {{ url = {}, regex = {} }}",
-                esc(url),
-                esc(regex)
-            ),
-            json,
-        ));
-    }
-    // Non-github: store the raw pattern as an opaque string.
-    let raw = match cv {
-        Value::String(s) => s.clone(),
-        other => serde_json::to_string(other).unwrap_or_default(),
+        str_table(&[("url", url), ("regex", regex)])
+    } else {
+        // Non-github: store the raw pattern as an opaque string.
+        toml::Value::String(match cv {
+            Value::String(s) => s.clone(),
+            other => serde_json::to_string(other).unwrap_or_default(),
+        })
     };
-    Some(with_url_template(format!("checkver = {}", esc(&raw)), json))
+
+    Some(autoupdate(checkver, url_template(json)))
 }
 
-fn with_url_template(mut body: String, json: &Value) -> String {
-    let Some(autoupdate) = json.get("autoupdate") else {
-        return body;
-    };
+fn autoupdate(checkver: toml::Value, url_template: Option<toml::Value>) -> toml::Value {
+    let mut t = toml::map::Map::new();
+    t.insert("checkver".to_string(), checkver);
+    if let Some(u) = url_template {
+        t.insert("url_template".to_string(), u);
+    }
+    toml::Value::Table(t)
+}
+
+/// Scoop's `autoupdate.url` / `autoupdate.architecture.*.url` as voli's
+/// `url_template`, keeping only templates voli can actually substitute into.
+fn url_template(json: &Value) -> Option<toml::Value> {
+    let autoupdate = json.get("autoupdate")?;
     if let Some(url) = autoupdate.get("url").and_then(supported_url_template) {
-        body.push_str(&format!("\nurl_template = {}", esc(url)));
-        return body;
+        return Some(toml::Value::String(url.to_string()));
     }
 
-    let Some(architectures) = autoupdate.get("architecture") else {
-        return body;
-    };
-    let x64 = architectures
-        .get("64bit")
-        .and_then(|value| value.get("url"))
-        .and_then(supported_url_template);
-    let arm64 = architectures
-        .get("arm64")
-        .and_then(|value| value.get("url"))
-        .and_then(supported_url_template);
-    let mut templates = Vec::new();
-    if let Some(url) = x64 {
-        templates.push(format!("x64 = {}", esc(url)));
+    let arches = autoupdate.get("architecture")?;
+    let mut t = toml::map::Map::new();
+    for (arch, scoop_arch) in [("x64", "64bit"), ("arm64", "arm64")] {
+        if let Some(url) = arches
+            .get(scoop_arch)
+            .and_then(|value| value.get("url"))
+            .and_then(supported_url_template)
+        {
+            t.insert(arch.to_string(), toml::Value::String(url.to_string()));
+        }
     }
-    if let Some(url) = arm64 {
-        templates.push(format!("arm64 = {}", esc(url)));
+    if t.is_empty() {
+        None
+    } else {
+        Some(toml::Value::Table(t))
     }
-    if !templates.is_empty() {
-        body.push_str(&format!("\nurl_template = {{ {} }}", templates.join(", ")));
-    }
-    body
 }
 
 fn supported_url_template(value: &Value) -> Option<&str> {
@@ -721,159 +723,6 @@ fn github_repo(s: &str) -> Option<String> {
         return None;
     }
     Some(format!("{owner}/{repo}"))
-}
-
-// --- TOML emission -------------------------------------------------------
-
-/// TOML basic-string with correct escaping.
-fn esc(s: &str) -> String {
-    let mut o = String::with_capacity(s.len() + 2);
-    o.push('"');
-    for c in s.chars() {
-        match c {
-            '"' => o.push_str("\\\""),
-            '\\' => o.push_str("\\\\"),
-            '\n' => o.push_str("\\n"),
-            '\r' => o.push_str("\\r"),
-            '\t' => o.push_str("\\t"),
-            c if (c as u32) < 0x20 => o.push_str(&format!("\\u{:04X}", c as u32)),
-            c => o.push(c),
-        }
-    }
-    o.push('"');
-    o
-}
-
-/// A bare key if safe, otherwise a quoted key.
-fn key(k: &str) -> String {
-    if !k.is_empty()
-        && k.chars()
-            .all(|c| c.is_ascii_alphanumeric() || c == '_' || c == '-')
-    {
-        k.to_string()
-    } else {
-        esc(k)
-    }
-}
-
-#[allow(clippy::too_many_arguments)]
-fn emit_toml(
-    name: &str,
-    version: &str,
-    description: Option<&str>,
-    homepage: Option<&str>,
-    icon: Option<&str>,
-    license: Option<&str>,
-    extract_dir: Option<&str>,
-    bins: &[BinOut],
-    shortcuts: &[ShortcutOut],
-    persist: &[String],
-    x64: Option<&SourceParts>,
-    arm64: Option<&SourceParts>,
-    env: &[(String, String)],
-    depends: &[(String, String)],
-    autoupdate: Option<&str>,
-) -> String {
-    let mut o = String::new();
-
-    // --- top-level scalars FIRST (before any [table]) ---
-    o.push_str(&format!("name = {}\n", esc(name)));
-    o.push_str(&format!("version = {}\n", esc(version)));
-    if let Some(d) = description {
-        o.push_str(&format!("description = {}\n", esc(d)));
-    }
-    if let Some(h) = homepage {
-        o.push_str(&format!("homepage = {}\n", esc(h)));
-    }
-    if let Some(i) = icon {
-        o.push_str(&format!("icon = {}\n", esc(i)));
-    }
-    if let Some(l) = license {
-        o.push_str(&format!("license = {}\n", esc(l)));
-    }
-    o.push_str("kind = \"app\"\n");
-    if let Some(e) = extract_dir {
-        o.push_str(&format!("extract_dir = {}\n", esc(e)));
-    }
-    if !bins.is_empty() {
-        o.push_str(&format!("bin = {}\n", emit_bins(bins)));
-    }
-    if !shortcuts.is_empty() {
-        o.push_str(&format!("shortcuts = {}\n", emit_shortcuts(shortcuts)));
-    }
-    if !persist.is_empty() {
-        let items: Vec<String> = persist.iter().map(|p| esc(p)).collect();
-        o.push_str(&format!("persist = [{}]\n", items.join(", ")));
-    }
-
-    // --- tables ---
-    if let Some(s) = x64 {
-        o.push_str("\n[source.x64]\n");
-        o.push_str(&format!("url = {}\n", esc(&s.url)));
-        match &s.hash {
-            Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
-            Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
-        }
-        if s.is_installer_archive {
-            o.push_str("kind = \"installer-archive\"\n");
-        }
-    }
-    if let Some(s) = arm64 {
-        o.push_str("\n[source.arm64]\n");
-        o.push_str(&format!("url = {}\n", esc(&s.url)));
-        match &s.hash {
-            Hash::Sha256(h) => o.push_str(&format!("sha256 = {}\n", esc(h))),
-            Hash::Sha512(h) => o.push_str(&format!("sha512 = {}\n", esc(h))),
-        }
-        if s.is_installer_archive {
-            o.push_str("kind = \"installer-archive\"\n");
-        }
-    }
-    if !env.is_empty() {
-        o.push_str("\n[env]\n");
-        for (k, v) in env {
-            o.push_str(&format!("{} = {}\n", key(k), esc(v)));
-        }
-    }
-    if !depends.is_empty() {
-        o.push_str("\n[depends]\n");
-        for (k, v) in depends {
-            o.push_str(&format!("{} = {}\n", key(k), esc(v)));
-        }
-    }
-    if let Some(au) = autoupdate {
-        o.push_str("\n[autoupdate]\n");
-        o.push_str(au);
-        o.push('\n');
-    }
-
-    o
-}
-
-fn emit_shortcuts(shortcuts: &[ShortcutOut]) -> String {
-    let items: Vec<String> = shortcuts
-        .iter()
-        .map(|s| format!("{{ target = {}, name = {} }}", esc(&s.target), esc(&s.name)))
-        .collect();
-    format!("[{}]", items.join(", "))
-}
-
-fn emit_bins(bins: &[BinOut]) -> String {
-    let items: Vec<String> = bins
-        .iter()
-        .map(|b| match b {
-            BinOut::Path(p) => esc(p),
-            BinOut::Table { name, path, args } => {
-                let mut t = format!("{{ name = {}, path = {}", esc(name), esc(path));
-                if let Some(a) = args {
-                    t.push_str(&format!(", args = {}", esc(a)));
-                }
-                t.push_str(" }");
-                t
-            }
-        })
-        .collect();
-    format!("[{}]", items.join(", "))
 }
 
 #[cfg(test)]

@@ -4,23 +4,12 @@ description = "GitLab CLI"
 homepage = "https://gitlab.com/gitlab-org/cli"
 license = "MIT"
 kind = "app"
-bin = ['bin\glab.exe']
-persist = []
-shortcuts = []
-write_file = []
+bin = ["bin\\glab.exe"]
 
 [source.x64]
 url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.110.0/downloads/glab_1.110.0_windows_amd64.zip"
 sha256 = "b3994fca838dcfdba7550902f04a84d0cae739a25c3d0ef31df25bb536cef146"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-regex = '/tags/v([\d.]+)<'
-url = "https://gitlab.com/gitlab-org/cli/-/tags?format=atom"
-
-[autoupdate.url_template]
-x64 = "https://gitlab.com/gitlab-org/cli/-/releases/v$version/downloads/glab_$version_windows_amd64.zip"
+[autoupdate]
+checkver = { url = "https://gitlab.com/gitlab-org/cli/-/tags?format=atom", regex = "/tags/v([\\d.]+)<" }
+url_template = { x64 = "https://gitlab.com/gitlab-org/cli/-/releases/v$version/downloads/glab_$version_windows_amd64.zip" }

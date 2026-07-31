@@ -10,8 +10,8 @@ url = "https://corretto.aws/downloads/resources/23.0.2.7.1/amazon-corretto-23.0.
 sha256 = "eb3d27969fc0ddf07df6799bd84515312a5b9735f6925b0eead40ae6e71cde95"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.windows.x64.jdk.23.zip.resource\",\"regex\":\"/([\\\\d.]+)/\",\"url\":\"https://github.com/corretto/corretto-downloads/raw/main/latest_links/indexmap_with_checksum.json\"}"

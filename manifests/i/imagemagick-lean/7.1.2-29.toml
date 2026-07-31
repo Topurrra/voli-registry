@@ -5,27 +5,15 @@ homepage = "https://imagemagick.org/"
 license = "ImageMagick"
 kind = "app"
 bin = ["magick.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-29/ImageMagick-7.1.2-29-portable-Q16-HDRI-x64.7z"
 sha256 = "b68e312b21556ae8872704e37df3c69cbdc0ea7100366bf823e7e3a1b69405bc"
-extra = []
 
 [source.arm64]
 url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-29/ImageMagick-7.1.2-29-portable-Q16-HDRI-arm64.7z"
 sha256 = "6d9be309119867001c536c5d21de2cc71a06d1f2fb313d57d8659cad4c72f94f"
-extra = []
-
-[env]
-
-[depends]
 
 [autoupdate]
-checkver = '{"github":"https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest","jsonpath":"$.tag_name"}'
-
-[autoupdate.url_template]
-arm64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-arm64.7z"
-x64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-x64.7z"
+checkver = "{\"github\":\"https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest\",\"jsonpath\":\"$.tag_name\"}"
+url_template = { x64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-x64.7z", arm64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-arm64.7z" }

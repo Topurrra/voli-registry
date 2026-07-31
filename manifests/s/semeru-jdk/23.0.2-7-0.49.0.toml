@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru23-binaries/releases/download/jdk-23
 sha256 = "2e68053449fb303b6f21e1931f8c65fc8f8c247f69eab1a0ba38747472c7e3c8"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru23-binaries" }

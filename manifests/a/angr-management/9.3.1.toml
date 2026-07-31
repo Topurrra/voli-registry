@@ -5,25 +5,12 @@ homepage = "https://angr.io/"
 license = "BSD-2-Clause"
 kind = "app"
 extract_dir = "angr-management"
-bin = []
-persist = []
-write_file = []
+shortcuts = [{ target = "angr-management.exe", name = "angr management" }]
 
 [source.x64]
 url = "https://github.com/angr/angr-management/releases/download/v9.3.1/angr-management-v9.3.1-win64-x86_64.zip"
 sha256 = "69f455d5a92dda732f197a60f6849d7a845d2d83f2342029052f63a747d59faa"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "angr/angr-management"
-
-[autoupdate.url_template]
-x64 = "https://github.com/angr/angr-management/releases/download/v$version/angr-management-v$version-win64-x86_64.zip"
-
-[[shortcuts]]
-target = "angr-management.exe"
-name = "angr management"
+[autoupdate]
+checkver = { github = "angr/angr-management" }
+url_template = { x64 = "https://github.com/angr/angr-management/releases/download/v$version/angr-management-v$version-win64-x86_64.zip" }

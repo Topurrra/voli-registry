@@ -5,21 +5,11 @@ homepage = "https://github.com/aliyun/aliyun-cli"
 license = "Apache-2.0"
 kind = "app"
 bin = ["aliyun.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/aliyun/aliyun-cli/releases/download/v3.4.11/aliyun-cli-windows-3.4.11-amd64.zip"
 sha256 = "e1feb461f68e200255ca0e96081947060f81526a45233b4ded030f8b43b2f188"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "aliyun/aliyun-cli"
-
-[autoupdate.url_template]
-x64 = "https://github.com/aliyun/aliyun-cli/releases/download/v$version/aliyun-cli-windows-$version-amd64.zip"
+[autoupdate]
+checkver = { github = "aliyun/aliyun-cli" }
+url_template = { x64 = "https://github.com/aliyun/aliyun-cli/releases/download/v$version/aliyun-cli-windows-$version-amd64.zip" }

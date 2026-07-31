@@ -5,27 +5,15 @@ homepage = "https://aquaproj.github.io/"
 license = "MIT"
 kind = "app"
 bin = ["aqua.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/aquaproj/aqua/releases/download/v2.62.2/aqua_windows_amd64.zip"
 sha256 = "dee14201acd33028cf8b31d494485cb38c495dad0771e16de603a60d5749e550"
-extra = []
 
 [source.arm64]
 url = "https://github.com/aquaproj/aqua/releases/download/v2.62.2/aqua_windows_arm64.zip"
 sha256 = "0bb21bd21b2051f4fc53f349a833a6107ee37f7886b81bed2b0271376e12fdf8"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "aquaproj/aqua"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/aquaproj/aqua/releases/download/v$version/aqua_windows_arm64.zip"
-x64 = "https://github.com/aquaproj/aqua/releases/download/v$version/aqua_windows_amd64.zip"
+[autoupdate]
+checkver = { github = "aquaproj/aqua" }
+url_template = { x64 = "https://github.com/aquaproj/aqua/releases/download/v$version/aqua_windows_amd64.zip", arm64 = "https://github.com/aquaproj/aqua/releases/download/v$version/aqua_windows_arm64.zip" }

@@ -11,8 +11,8 @@ url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_nomod-11_0_16-
 sha256 = "88213eb14ba1c1f6dee1ebb7bb7221d8940d3168630345929c8a5b9b7a87e9e3"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "JetBrains/JetBrainsRuntime" }

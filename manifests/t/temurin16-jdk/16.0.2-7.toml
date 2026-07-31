@@ -10,8 +10,8 @@ url = "https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0
 sha256 = "40191ffbafd8a6f9559352d8de31e8d22a56822fb41bbcf45f34e3fd3afa5f9e"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"regex\":\"(?<ver>.*?) https://github.com/(?<link>.*?)/tag/(?<tag>.*?) (?<name>(?<prefix>OpenJDK[\\\\dU]*-[dejkr]{3})_x64_(?<suffix>.*))\",\"replace\":\"${ver}\",\"script\":[\"$ver = (json_path $page $..version_data.semver).replace('+', '-')\",\"$link = (json_path $page $..release_link).replace('%2B', '+')\",\"$name = json_path $page $..binaries[0].package.name\",\"Write-Output \\\"$ver $link $name\\\"\"],\"url\":\"https://api.adoptium.net/v3/assets/feature_releases/16/ga?jvm_impl=hotspot&heap_size=normal&os=windows&architecture=x64&image_type=jdk&project=jdk&vendor=eclipse&page_size=1&sort_order=DESC\"}"

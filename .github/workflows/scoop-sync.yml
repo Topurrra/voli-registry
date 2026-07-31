@@ -39,7 +39,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
           git clone --depth 1 https://github.com/ScoopInstaller/Extras /tmp/scoop-extras
-          git clone --depth 1 --branch v0.5.7 https://github.com/Topurrra/voli ../voli
+          git clone --depth 1 --branch v0.10.1 https://github.com/Topurrra/voli ../voli
 
       - name: Build scoop-import
         working-directory: tools/scoop-import
@@ -55,8 +55,14 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 6e965a5233e4a0c6d617218afbbccd21d720fe2f \
+            --tag v0.10.1 \
             voli-index-tool
+
+      # scoop-import already emits canonical TOML via voli-core, so this is a
+      # belt-and-braces pass: it is a no-op when nothing drifted, and it keeps
+      # the sync green if the importer ever falls behind the canonical shape.
+      - name: Format manifests
+        run: voli-index-tool fmt manifests/ --write
 
       - name: Validate
         run: voli-index-tool validate manifests/

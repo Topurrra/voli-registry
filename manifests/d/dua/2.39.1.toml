@@ -6,21 +6,11 @@ license = "MIT"
 kind = "app"
 extract_dir = "dua-v2.39.1-x86_64-pc-windows-msvc"
 bin = ["dua.exe"]
-persist = []
-shortcuts = []
-write_file = []
 
 [source.x64]
 url = "https://github.com/Byron/dua-cli/releases/download/v2.39.1/dua-v2.39.1-x86_64-pc-windows-msvc.zip"
 sha256 = "6c0f7fd6aecfdc15462d816d3bd5054b67c83cd95fc5c6c214f78651b470a114"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "Byron/dua-cli"
-
-[autoupdate.url_template]
-x64 = "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-x86_64-pc-windows-msvc.zip"
+[autoupdate]
+checkver = { github = "Byron/dua-cli" }
+url_template = { x64 = "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-x86_64-pc-windows-msvc.zip" }

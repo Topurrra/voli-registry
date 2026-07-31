@@ -4,34 +4,19 @@ description = "GitHub Copilot, an agent-native desktop development environment."
 homepage = "https://github.com/github/app"
 license = "Proprietary"
 kind = "app"
-extract_dir = 'PFiles\GitHub Copilot'
-bin = []
-persist = []
-write_file = []
+extract_dir = "PFiles\\GitHub Copilot"
+shortcuts = [{ target = "github.exe", name = "GitHub Copilot" }]
 
 [source.x64]
 url = "https://github.com/github/app/releases/download/v1.1.1/GitHub-Copilot-windows-x64.msi"
 sha256 = "66b151a9ecee8b96eff5e16567f13de689068cee44ba23c9ea40dcfba1b6e95a"
-extra = []
 kind = "installer-archive"
 
 [source.arm64]
 url = "https://github.com/github/app/releases/download/v1.1.1/GitHub-Copilot-windows-arm64.msi"
 sha256 = "5c0618f030199c5aa393e076cc9efc897bfb6badd1b257537bfb4d9ca2514bfd"
-extra = []
 kind = "installer-archive"
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "github/app"
-
-[autoupdate.url_template]
-arm64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-arm64.msi"
-x64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-x64.msi"
-
-[[shortcuts]]
-target = "github.exe"
-name = "GitHub Copilot"
+[autoupdate]
+checkver = { github = "github/app" }
+url_template = { x64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-x64.msi", arm64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-arm64.msi" }

@@ -10,5 +10,5 @@ url = "https://download.java.net/java/GA/jdk10/10.0.2/19aef61b38124481863b1413dc
 sha256 = "d6fadd228b195f754d3bb74cb7dce7a7fdbce58963257ba2ab63a923301bc2dd"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"

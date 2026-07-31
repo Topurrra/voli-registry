@@ -10,8 +10,8 @@ url = "https://github.com/ibmruntimes/semeru22-binaries/releases/download/jdk-22
 sha256 = "2441fc58f68a276a68f99a86f2798d25b9fe8216778bddc81928af77d3dfc400"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { github = "ibmruntimes/semeru22-binaries" }

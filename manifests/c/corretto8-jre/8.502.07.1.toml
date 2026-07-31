@@ -10,8 +10,8 @@ url = "https://corretto.aws/downloads/resources/8.502.07.1/amazon-corretto-8.502
 sha256 = "73f0b85854b286c8702cb6116c446644c5e52849cb3c10ac503f39896a8175ee"
 
 [env]
-PATH = "{dir}\\bin"
 JAVA_HOME = "{dir}"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.windows.x64.jre.8.zip.resource\",\"regex\":\"/([\\\\d.]+)/\",\"url\":\"https://github.com/corretto/corretto-downloads/raw/main/latest_links/indexmap_with_checksum.json\"}"

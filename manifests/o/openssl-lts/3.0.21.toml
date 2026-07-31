@@ -16,11 +16,11 @@ sha256 = "041da8f2612e13692666f811169d356b356d65249c56be6e7d825a127aacc1f3"
 kind = "installer-archive"
 
 [env]
-PATH = "{dir}\\bin"
 OPENSSL_CONF = "{dir}\\bin\\cnf\\openssl.cnf"
 OPENSSL_INCLUDE_DIR = "{dir}\\include"
 OPENSSL_LIB_DIR = "{dir}\\lib"
 OPENSSL_MODULES = "{dir}\\bin"
+PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = { url = "https://raw.githubusercontent.com/slproweb/opensslhashes/master/win32_openssl_hashes.json", regex = "(3\\.0\\.([\\d.]+))" }

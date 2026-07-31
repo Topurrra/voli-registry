@@ -4,25 +4,12 @@ description = "A simple screen annotation."
 homepage = "https://github.com/DmytroVasin/DrawPen"
 license = "MIT"
 kind = "app"
-bin = []
-persist = []
-write_file = []
+shortcuts = [{ target = "DrawPen.exe", name = "DrawPen" }]
 
 [source.x64]
 url = "https://github.com/DmytroVasin/DrawPen/releases/download/v0.0.54/DrawPen-win32-x64-0.0.54.zip"
 sha256 = "9d66d25a7d3627d58054490a9f72cac447482ee85ac356da7dea352a340f6c50"
-extra = []
 
-[env]
-
-[depends]
-
-[autoupdate.checkver]
-github = "DmytroVasin/DrawPen"
-
-[autoupdate.url_template]
-x64 = "https://github.com/DmytroVasin/DrawPen/releases/download/v$version/DrawPen-win32-x64-$version.zip"
-
-[[shortcuts]]
-target = "DrawPen.exe"
-name = "DrawPen"
+[autoupdate]
+checkver = { github = "DmytroVasin/DrawPen" }
+url_template = { x64 = "https://github.com/DmytroVasin/DrawPen/releases/download/v$version/DrawPen-win32-x64-$version.zip" }

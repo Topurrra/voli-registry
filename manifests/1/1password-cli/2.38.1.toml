@@ -1,0 +1,17 @@
+name = "1password-cli"
+version = "2.38.1"
+description = "The 1Password command-line tool makes your 1Password account accessible entirely from the command line."
+homepage = "https://developer.1password.com/docs/cli"
+license = "Shareware"
+kind = "app"
+
+[source.x64]
+url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.38.1/op_windows_amd64_v2.38.1.zip"
+sha256 = "33ca7a806bef7ad479c10d8694cfc8798d22acdea8fe237b92fbe1d3e5ecfd2a"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { url = "https://app-updates.agilebits.com/product_history/CLI2", regex = "/op_windows_amd64_v([\\d.]+)\\.zip" }
+url_template = { x64 = "https://cache.agilebits.com/dist/1P/op2/pkg/v$version/op_windows_amd64_v$version.zip" }

@@ -1,0 +1,10 @@
+name = "voli-memory"
+version = "2026.8.1"
+description = "The judgement layer for `voli memory`, an agent's encrypted local store. Use at the start of a task that earlier sessions may already have settled, and whenever the user states a preference or a constraint, settles a decision, corrects something you recorded earlier, or hands you a secret. Covers what earns a note, supersede versus retract, `--private`, and project versus global scope."
+homepage = "https://github.com/Topurrra/voli/tree/493c9d688e56fece75f1edfa2d6d859002f1536b/skills/voli-memory"
+license = "MIT OR Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/voli-skills-2026.8.1-voli-memory.zip"
+sha256 = "a454d9c82868a66ddbc033a761834f9c506ae1584c55d4d9ba6d86a2c3956529"

@@ -4,6 +4,7 @@ description = "Every AI coding limit in your Windows tray. Codex, Claude, Gemini
 homepage = "https://github.com/Topurrra/AgentsBar"
 license = "MIT"
 kind = "app"
+gui = true
 bin = ["agentsbar.exe"]
 
 [source.x64]

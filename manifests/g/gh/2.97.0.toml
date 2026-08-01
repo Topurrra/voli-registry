@@ -1,0 +1,19 @@
+name = "gh"
+version = "2.97.0"
+description = "Official GitHub CLI"
+homepage = "https://cli.github.com"
+license = "MIT"
+kind = "app"
+bin = ["bin\\gh.exe"]
+
+[source.x64]
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_windows_amd64.zip"
+sha256 = "35d7fe05c4dd1411ffda1e73dfc7c6f44b75c936ca51fa6595c657fdc0350cec"
+
+[source.arm64]
+url = "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_windows_arm64.zip"
+sha256 = "3e2d4a166da4ee5020c592737b65eec0e724946d5d5b962f5fe59d99116dc4bf"
+
+[autoupdate]
+checkver = { github = "cli/cli" }
+url_template = { x64 = "https://github.com/cli/cli/releases/download/v$version/gh_$version_windows_amd64.zip", arm64 = "https://github.com/cli/cli/releases/download/v$version/gh_$version_windows_arm64.zip" }

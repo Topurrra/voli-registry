@@ -117,13 +117,37 @@ jobs:
       # raw.githubusercontent.com because GitHub's release-asset endpoint sends
       # no CORS headers (verified 2026-07-24). Root path is outside this
       # workflow's `paths` filter, so this commit cannot retrigger publish.
+      # Rebuilt on whatever main is NOW rather than pushed from the checkout's
+      # base. A publish takes minutes, and any merge landing inside that window
+      # moves main under this job -- the push is then rejected even though the
+      # signed index published fine, leaving the website's copy stale with a red
+      # X as the only clue. `concurrency` above does not cover this: it
+      # serialises publish runs against each other, and the thing that moved
+      # main was a merge, not another run.
+      #
+      # If main moved because new manifests landed, this pushes a packages.json
+      # built from the older set -- briefly. That merge queued its own publish
+      # behind this one, and it regenerates from the newer set. Stale for a few
+      # minutes beats stale until someone notices.
       - name: Commit packages.json for the website
         run: |
-          cp dist/packages.json packages.json
-          if ! git diff --quiet -- packages.json 2>/dev/null || [ -n "$(git status --porcelain packages.json)" ]; then
-            git config user.name "voli-registry-ci"
-            git config user.email "ci@volibear.dev"
+          git config user.name "voli-registry-ci"
+          git config user.email "ci@volibear.dev"
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            cp dist/packages.json packages.json
+            if git diff --quiet -- packages.json; then
+              echo "packages.json already current on main"
+              exit 0
+            fi
             git add packages.json
-            git commit -m "ci: refresh packages.json"
-            git push
-          fi
+            git commit --quiet -m "ci: refresh packages.json"
+            if git push --quiet origin HEAD:main; then
+              echo "packages.json pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "main moved while pushing; rebuilding on the new tip ($attempt/3)"
+          done
+          echo "::error::packages.json could not be pushed after 3 attempts"
+          exit 1

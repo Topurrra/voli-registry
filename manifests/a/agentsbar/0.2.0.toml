@@ -1,0 +1,11 @@
+name = "agentsbar"
+version = "0.2.0"
+description = "Every AI coding limit in your Windows tray. Codex, Claude, Gemini, Copilot, Cursor and 18 more, no logins."
+homepage = "https://github.com/Topurrra/AgentsBar"
+license = "MIT"
+kind = "app"
+bin = ["agentsbar.exe"]
+
+[source.x64]
+url = "https://github.com/Topurrra/AgentsBar/releases/download/v0.2.0/AgentsBar-x64.zip"
+sha256 = "a57610b815b7527655489099eab39aef455d0f91660ffdffd7201db2db53db0a"

@@ -1,0 +1,19 @@
+name = "groovy"
+version = "5.0.8"
+description = "A powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax."
+homepage = "https://www.groovy-lang.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "groovy-5.0.8"
+bin = ["bin\\grape.bat", "bin\\groovy.bat", "bin\\groovyc.bat", "bin\\groovyConsole.bat", "bin\\groovydoc.bat", "bin\\groovysh.bat", "bin\\java2groovy.bat", "bin\\startGroovy.bat"]
+
+[source.x64]
+url = "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-5.0.8.zip"
+sha256 = "3b754e2ba201bcb8d31401a403a8b0a8e41c97de108eb1b49fc1e2b6e96b252b"
+
+[env]
+GROOVY_HOME = "{dir}"
+
+[autoupdate]
+checkver = { url = "https://groovy.apache.org/download.html", regex = "apache-groovy-binary-([\\d.]+)\\.zip" }
+url_template = "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-$version.zip"

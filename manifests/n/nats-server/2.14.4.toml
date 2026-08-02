@@ -1,0 +1,20 @@
+name = "nats-server"
+version = "2.14.4"
+description = "High-Performance server for NATS.io, the cloud and edge native messaging system"
+homepage = "https://github.com/nats-io/nats-server"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "nats-server-v2.14.4-windows-amd64"
+bin = ["nats-server.exe"]
+
+[source.x64]
+url = "https://github.com/nats-io/nats-server/releases/download/v2.14.4/nats-server-v2.14.4-windows-amd64.zip"
+sha256 = "b6755c58ffec1518d0efaa6985284f6e796d22caab7cae4ec90a49a1bf79fa5d"
+
+[source.arm64]
+url = "https://github.com/nats-io/nats-server/releases/download/v2.14.4/nats-server-v2.14.4-windows-arm64.zip"
+sha256 = "4ec7b117a422d3044d0a9a31b17810b420e3cbd3c6c7986b794b80f5c8f13442"
+
+[autoupdate]
+checkver = { github = "nats-io/nats-server" }
+url_template = { x64 = "https://github.com/nats-io/nats-server/releases/download/v$version/nats-server-v$version-windows-amd64.zip", arm64 = "https://github.com/nats-io/nats-server/releases/download/v$version/nats-server-v$version-windows-arm64.zip" }

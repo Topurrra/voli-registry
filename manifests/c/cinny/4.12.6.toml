@@ -1,0 +1,18 @@
+name = "cinny"
+version = "4.12.6"
+description = "A simple, elegant and secure Matrix client protected by e2ee with the power of open source."
+homepage = "https://cinny.in/"
+license = "AGPL-3.0-only"
+kind = "app"
+extract_dir = "PFiles\\Cinny"
+bin = ["Cinny.exe"]
+shortcuts = [{ target = "Cinny.exe", name = "Cinny Desktop" }]
+
+[source.x64]
+url = "https://github.com/cinnyapp/cinny-desktop/releases/download/v4.12.6/Cinny_desktop-x86_64-no_updater.msi"
+sha256 = "d1547fc3e2184799637c07baa6e7c680f5c6232944a1a5af6c18468f54540440"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "cinnyapp/cinny-desktop" }
+url_template = { x64 = "https://github.com/cinnyapp/cinny-desktop/releases/download/v$version/Cinny_desktop-x86_64-no_updater.msi" }

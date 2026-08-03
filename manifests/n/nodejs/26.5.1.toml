@@ -4,16 +4,17 @@ description = "An asynchronous event driven JavaScript runtime designed to build
 homepage = "https://nodejs.org"
 license = "MIT"
 kind = "app"
-extract_dir = "node-v26.5.1-win-x64"
 persist = ["bin", "cache"]
 
 [source.x64]
 url = "https://nodejs.org/dist/v26.5.1/node-v26.5.1-win-x64.7z"
 sha256 = "0c8a1a3604e57400432089cf7e179eac4f25b26445a156aaa98cca5619e50f5c"
+extract_dir = "node-v26.5.1-win-x64"
 
 [source.arm64]
 url = "https://nodejs.org/dist/v26.5.1/node-v26.5.1-win-arm64.7z"
 sha256 = "a6e6cfdb0af6d7d68b50a6f663b8ff321923089309076ea7943a19dbe5eb662a"
+extract_dir = "node-v26.5.1-win-arm64"
 
 [env]
 PATH = "{dir}\\bin;{dir}"

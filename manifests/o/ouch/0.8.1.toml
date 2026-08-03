@@ -4,16 +4,17 @@ description = "Painless compression and decompression for your terminal."
 homepage = "https://github.com/ouch-org/ouch"
 license = "MIT"
 kind = "app"
-extract_dir = "ouch-x86_64-pc-windows-msvc"
 bin = ["ouch.exe"]
 
 [source.x64]
 url = "https://github.com/ouch-org/ouch/releases/download/0.8.1/ouch-x86_64-pc-windows-msvc.zip"
 sha256 = "a958d9db34bbefd9d7f7288ea4989a78085bc48ab2d92d92a1e5b9776f19e0d5"
+extract_dir = "ouch-x86_64-pc-windows-msvc"
 
 [source.arm64]
 url = "https://github.com/ouch-org/ouch/releases/download/0.8.1/ouch-aarch64-pc-windows-msvc.zip"
 sha256 = "1c8edacfd3d557be6b8bccaed8d83ac1a5511882f628182bcf0e6887a7de0dfa"
+extract_dir = "ouch-aarch64-pc-windows-msvc"
 
 [autoupdate]
 checkver = { github = "ouch-org/ouch" }

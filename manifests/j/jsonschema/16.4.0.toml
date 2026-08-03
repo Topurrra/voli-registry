@@ -1,0 +1,16 @@
+name = "jsonschema"
+version = "16.4.0"
+description = "JSON Schema formatting, linting, testing, bundling and more for local development and CI/CD pipelines."
+homepage = "https://github.com/sourcemeta/jsonschema"
+license = "AGPL-3.0-or-later"
+kind = "app"
+extract_dir = "jsonschema-16.4.0-windows-x86_64"
+bin = ["bin\\jsonschema.exe"]
+
+[source.x64]
+url = "https://github.com/sourcemeta/jsonschema/releases/download/v16.4.0/jsonschema-16.4.0-windows-x86_64.zip"
+sha256 = "9a0e24bbfbb06fcc045ae4e205c0bfc8865f8f608884ded8dea3c3998d162ec7"
+
+[autoupdate]
+checkver = { github = "sourcemeta/jsonschema" }
+url_template = { x64 = "https://github.com/sourcemeta/jsonschema/releases/download/v$version/jsonschema-$version-windows-x86_64.zip" }

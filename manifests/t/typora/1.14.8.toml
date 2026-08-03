@@ -1,0 +1,22 @@
+name = "typora"
+version = "1.14.8"
+description = "A minimal Markdown editor and reader"
+homepage = "https://typora.io"
+license = "Proprietary"
+kind = "app"
+bin = ["Typora.exe"]
+shortcuts = [{ target = "Typora.exe", name = "Typora" }]
+
+[source.x64]
+url = "https://download.typora.io/windows/typora-setup-x64-1.14.8.exe"
+sha256 = "79165d7111ec0a3be86239039cf81264f071c1a451acda2eb7b84180ad7f2390"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://download.typora.io/windows/typora-setup-arm64-1.14.8.exe"
+sha256 = "1dda6a6a1437e3813e926b52be9251dd249d3df6c2be15a4bd512539e90e7687"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://typora.io/releases/stable", regex = "typora-setup-x64-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://download.typora.io/windows/typora-setup-x64-$version.exe", arm64 = "https://download.typora.io/windows/typora-setup-arm64-$version.exe" }

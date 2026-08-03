@@ -4,16 +4,17 @@ description = "The NATS Command Line Interface."
 homepage = "https://github.com/nats-io/natscli"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "nats-0.4.0-windows-amd64"
 bin = ["nats.exe"]
 
 [source.x64]
 url = "https://github.com/nats-io/natscli/releases/download/v0.4.0/nats-0.4.0-windows-amd64.zip"
 sha256 = "72f87f901b6026f2b749dbf77b9b2d82590643e7c35f101809fcd5a01486c407"
+extract_dir = "nats-0.4.0-windows-amd64"
 
 [source.arm64]
 url = "https://github.com/nats-io/natscli/releases/download/v0.4.0/nats-0.4.0-windows-arm64.zip"
 sha256 = "6261ad31ee5207034693fa3fe1aea33fc6652284e2d58f3e9932296647e517fe"
+extract_dir = "nats-0.4.0-windows-arm64"
 
 [autoupdate]
 checkver = { github = "nats-io/natscli" }

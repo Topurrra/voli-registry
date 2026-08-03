@@ -4,7 +4,6 @@ description = "Terminal emulator for ssh/telnet/serial connection."
 homepage = "https://teratermproject.github.io/index-en.html"
 license = "BSD-3-Clause"
 kind = "app"
-extract_dir = "teraterm-5.6.2-x64"
 bin = ["ttermpro.exe"]
 shortcuts = [{ target = "ttermpro.exe", name = "Tera Term" }]
 persist = ["cygterm.cfg", "KEYBOARD.CNF", "ttpmenu.ini", "ssh_known_hosts", "TERATERM.INI"]
@@ -12,10 +11,12 @@ persist = ["cygterm.cfg", "KEYBOARD.CNF", "ttpmenu.ini", "ssh_known_hosts", "TER
 [source.x64]
 url = "https://github.com/TeraTermProject/teraterm/releases/download/v5.6.2/teraterm-5.6.2-x64.zip"
 sha256 = "693477bbfcd4b507506b5926f5aca1489b4b0c873ae2417eb9109818ea6982f5"
+extract_dir = "teraterm-5.6.2-x64"
 
 [source.arm64]
 url = "https://github.com/TeraTermProject/teraterm/releases/download/v5.6.2/teraterm-5.6.2-arm64.zip"
 sha256 = "7d8ad4af02cca361099b099009f673d37cdaee152bb53e1c6fcd1c093c6e08c1"
+extract_dir = "teraterm-5.6.2-arm64"
 
 [autoupdate]
 checkver = { github = "TeraTermProject/teraterm" }

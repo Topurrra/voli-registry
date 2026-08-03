@@ -4,17 +4,18 @@ description = "Family of tools designed to build, test and package software"
 homepage = "https://cmake.org"
 license = "BSD-3-Clause"
 kind = "app"
-extract_dir = "cmake-4.4.2-windows-x86_64"
 bin = ["bin\\cmake.exe", "bin\\cmcldeps.exe", "bin\\cpack.exe", "bin\\ctest.exe", "bin\\cmake-gui.exe"]
 shortcuts = [{ target = "bin\\cmake-gui.exe", name = "cmake-gui" }]
 
 [source.x64]
 url = "https://github.com/Kitware/CMake/releases/download/v4.4.2/cmake-4.4.2-windows-x86_64.zip"
 sha256 = "e8139d85b3813bc38833142ae1940472e9a587e9b5d2718ac1804c60f4e57a64"
+extract_dir = "cmake-4.4.2-windows-x86_64"
 
 [source.arm64]
 url = "https://github.com/Kitware/CMake/releases/download/v4.4.2/cmake-4.4.2-windows-arm64.zip"
 sha256 = "8502cf1c5b1984e439d13df154c3c28d080d706efd52db4de1bb3cc7022db521"
+extract_dir = "cmake-4.4.2-windows-arm64"
 
 [autoupdate]
 checkver = { url = "https://cmake.org/download/", regex = "Latest Release \\(([\\d.]+)\\)" }

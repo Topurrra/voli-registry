@@ -1,0 +1,19 @@
+name = "qq-nt"
+version = "9.9.33.260730"
+description = "An instant messaging software service developed by Tencent"
+homepage = "https://im.qq.com/pcqq/index.shtml"
+license = "Proprietary"
+kind = "app"
+extract_dir = "Files"
+shortcuts = [{ target = "QQ.exe", name = "QQ" }]
+
+[source.x64]
+url = "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.33/release/a0ce07ad/QQ_9.9.33_260730_x64_01.exe#/dl.7z"
+sha256 = "7bcc1ad50c19d14c9aad17778a0359aacd84b4d6c54ef1c71d938e0a6e2f2f5d"
+
+[source.arm64]
+url = "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.33/release/a0ce07ad/QQ_9.9.33_260730_arm64_01.exe#/dl.7z"
+sha256 = "3568e15927a0f799fc4bc1b39fd1477185d5ccaa67452c2401fe5144e66c86b7"
+
+[autoupdate]
+checkver = "{\"regex\":\"QQNT/(.*?)/QQ_([\\\\d.]+)_([\\\\d]+)_x86_01.exe\",\"replace\":\"${2}.${3}\",\"script\":[\"# Please keep this script. Using 'cdn-go.cn' may result in receiving expired cache responses.\",\"$url = 'https://cdn-go.cn/qq-web/im.qq.com_new/latest/rainbow/windowsConfig.js'\",\"$hostname = ([Uri]$url).Host\",\"$records = Resolve-DnsName 'cdn-go.cn.cloud.tc.qq.com' -Type A -DnsOnly -ErrorAction Ignore\",\"$ip = $records | Where-Object { $_.QueryType -eq 'A' -and $_.IPAddress } | Select-Object -ExpandProperty IP4Address -First 1\",\"$url = $url -Replace [regex]::Escape($hostname), $ip\",\"Invoke-WebRequest -Uri $url -UseBasicParsing -Headers @{'Host' = $hostname} | Select-Object -ExpandProperty Content\"]}"

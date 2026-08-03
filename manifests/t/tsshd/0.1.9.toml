@@ -4,16 +4,17 @@ description = "A UDP-based SSH server with roaming support."
 homepage = "https://trzsz.github.io/tsshd"
 license = "MIT"
 kind = "app"
-extract_dir = "tsshd_0.1.9_windows_x86_64"
 bin = ["tsshd.exe"]
 
 [source.x64]
 url = "https://github.com/trzsz/tsshd/releases/download/v0.1.9/tsshd_0.1.9_windows_x86_64.zip"
 sha256 = "386f9613682e48951e247b672e66389e90c27b55311183e01bdb033b0acc8ba5"
+extract_dir = "tsshd_0.1.9_windows_x86_64"
 
 [source.arm64]
 url = "https://github.com/trzsz/tsshd/releases/download/v0.1.9/tsshd_0.1.9_windows_aarch64.zip"
 sha256 = "1d015925997e9fedc13119d38c5c264af607070c26a3440f0f019a0d819e65e1"
+extract_dir = "tsshd_0.1.9_windows_aarch64"
 
 [autoupdate]
 checkver = { github = "trzsz/tsshd" }

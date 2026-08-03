@@ -4,16 +4,17 @@ description = "Manage multiple SDK versions with a single CLI tool, extendable v
 homepage = "https://vfox.dev/"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "vfox_1.0.11_windows_x86_64"
 bin = ["vfox.exe"]
 
 [source.x64]
 url = "https://github.com/version-fox/vfox/releases/download/v1.0.11/vfox_1.0.11_windows_x86_64.zip"
 sha256 = "4e92a82f9ad5d441cc90dcf657eb4f32f824b99c3760a5fd2c50bac49bdace56"
+extract_dir = "vfox_1.0.11_windows_x86_64"
 
 [source.arm64]
 url = "https://github.com/version-fox/vfox/releases/download/v1.0.11/vfox_1.0.11_windows_aarch64.zip"
 sha256 = "f3279ff5a45ba79d8f55b427f4b1c80bd1f5ce8953206f5b797a921cc711ad78"
+extract_dir = "vfox_1.0.11_windows_aarch64"
 
 [autoupdate]
 checkver = { github = "version-fox/vfox" }

@@ -1,0 +1,15 @@
+name = "revanced-cli"
+version = "6.0.0"
+description = "Command-line application to use ReVanced Patcher to patch Android apps."
+homepage = "https://revanced.app"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["revanced-cli.jar"]
+
+[source.x64]
+url = "https://github.com/ReVanced/revanced-cli/releases/download/v6.0.0/revanced-cli-6.0.0-all.jar#/revanced-cli.jar"
+sha256 = "c25549bc17d59d2eb94fa5f86e60e9b77a02772ca88f7050f8f1276f923a9958"
+
+[autoupdate]
+checkver = { github = "ReVanced/revanced-cli" }
+url_template = "https://github.com/ReVanced/revanced-cli/releases/download/v$version/revanced-cli-$version-all.jar#/revanced-cli.jar"

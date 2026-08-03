@@ -1,0 +1,21 @@
+name = "dbeaver"
+version = "26.1.4"
+description = "Database tool for developers, SQL programmers, database administrators and analysts"
+homepage = "https://dbeaver.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "dbeaver"
+bin = ["dbeaver.exe", "dbeaverc.exe"]
+shortcuts = [{ target = "dbeaver.exe", name = "DBeaver" }]
+
+[source.x64]
+url = "https://dbeaver.io/files/26.1.4/dbeaver-ce-26.1.4-windows-x86_64.zip"
+sha256 = "27bda23dc227760f9a48beee631d353b1d5b8c8ddb3096c6d66259fa860e0a45"
+
+[source.arm64]
+url = "https://dbeaver.io/files/26.1.4/dbeaver-ce-26.1.4-windows-aarch64.zip"
+sha256 = "3cac00db35ffcffca049fedc5337eb470ca2bf94629b283a7e731050eb06f75b"
+
+[autoupdate]
+checkver = { github = "dbeaver/dbeaver" }
+url_template = { x64 = "https://dbeaver.io/files/$version/dbeaver-ce-$version-windows-x86_64.zip", arm64 = "https://dbeaver.io/files/$version/dbeaver-ce-$version-windows-aarch64.zip" }

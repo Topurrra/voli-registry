@@ -1,0 +1,20 @@
+name = "netbird"
+version = "0.76.1"
+description = "Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls."
+homepage = "https://netbird.io/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["netbird.exe"]
+shortcuts = [{ target = "netbird-ui.exe", name = "netbird" }]
+
+[source.x64]
+url = "https://github.com/netbirdio/netbird/releases/download/v0.76.1/netbird_installer_0.76.1_windows_amd64.exe#/dl.7z"
+sha256 = "c84af607b3d5686a5ce305e251f800413e1a66e58c136e35aa9212f914ab8417"
+
+[source.arm64]
+url = "https://github.com/netbirdio/netbird/releases/download/v0.76.1/netbird_installer_0.76.1_windows_arm64.exe#/dl.7z"
+sha256 = "545b45b574b6b1707f88eb6ebaf874f9098ddbed70166cd987aa17d59592e29c"
+
+[autoupdate]
+checkver = { github = "netbirdio/netbird" }
+url_template = { x64 = "https://github.com/netbirdio/netbird/releases/download/v$version/netbird_installer_$version_windows_amd64.exe#/dl.7z", arm64 = "https://github.com/netbirdio/netbird/releases/download/v$version/netbird_installer_$version_windows_arm64.exe#/dl.7z" }

@@ -1,0 +1,20 @@
+name = "esearch"
+version = "15.3.4"
+description = "Screenshot OCR search translate search for picture paste the picture on the screen screen recorder."
+homepage = "https://github.com/xushengfeng/eSearch"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["e-search.exe"]
+shortcuts = [{ target = "e-search.exe", name = "eSearch" }]
+
+[source.x64]
+url = "https://github.com/xushengfeng/eSearch/releases/download/15.3.4/eSearch-15.3.4-win32-x64.zip"
+sha256 = "d9cfa3d46139811b46c07680279d24f7d416d856c02eae296dad70a62cb2d485"
+
+[source.arm64]
+url = "https://github.com/xushengfeng/eSearch/releases/download/15.3.4/eSearch-15.3.4-win32-arm64.zip"
+sha256 = "56a13bf42cd1b6ddaa5d88214b6769bd91a18b1ceaebb702479cb43093594b23"
+
+[autoupdate]
+checkver = { github = "xushengfeng/eSearch" }
+url_template = { x64 = "https://github.com/xushengfeng/eSearch/releases/download/$version/eSearch-$version-win32-x64.zip", arm64 = "https://github.com/xushengfeng/eSearch/releases/download/$version/eSearch-$version-win32-arm64.zip" }

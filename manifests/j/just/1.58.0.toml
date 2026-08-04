@@ -1,0 +1,15 @@
+name = "just"
+version = "1.58.0"
+description = "A command runner written in rust"
+homepage = "https://just.systems"
+license = "CC0-1.0"
+kind = "app"
+bin = ["just.exe"]
+
+[source.x64]
+url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-pc-windows-msvc.zip"
+sha256 = "759f16fb7aa17c5c8b9594b6d4a8c1a6630dfd042cf2b3ff84841454d3d188dc"
+
+[autoupdate]
+checkver = { github = "casey/just" }
+url_template = { x64 = "https://github.com/casey/just/releases/download/$version/just-$version-x86_64-pc-windows-msvc.zip" }

@@ -1,0 +1,10 @@
+name = "remind"
+version = "2026.8.4"
+description = "Rewrite the last response simpler and shorter in plain English, prefixed with a 3-5 sentence TLDR of the conversation so far. Manual-only, invoked as /remind."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/thinking-and-docs/remind"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-remind.zip"
+sha256 = "6976b08b957cea9adee23bd1c2144e0908152eae518fd864b1a96afcd3671734"

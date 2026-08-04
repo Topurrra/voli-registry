@@ -1,0 +1,10 @@
+name = "support-prerendering"
+version = "2026.8.4"
+description = "Make interactive Blazor components work correctly with prerendering. USE FOR fixing duplicate data loads, UI flicker during prerender-to-interactive handoff, null references during prerender, persisting state across prerender, disabling prerendering, excluding pages from interactive routing, or detecting whether a component is currently prerendering. DO NOT USE for choosing which render mode to use (see create-blazor-project) or general component authoring (see author-component)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-blazor/skills/support-prerendering"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-support-prerendering.zip"
+sha256 = "d3dbfa0c40169eb57bd3c87cfb8da5ead1c0285002f175d9fe1f1acfa70e1219"

@@ -1,0 +1,10 @@
+name = "huggingface-datasets"
+version = "2026.8.4"
+description = "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics."
+homepage = "https://github.com/huggingface/skills/tree/32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda/skills/huggingface-datasets"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.8.4-huggingface-datasets.zip"
+sha256 = "d9440ba158e0ce8394f88799376fd2d199d2d429581d21c0fb2d3941ee117cb4"

@@ -1,0 +1,10 @@
+name = "exp-mock-usage-analysis"
+version = "2026.8.4"
+description = "Audits .NET test mock usage by tracing each mock setup through the production code's execution path to find dead, unreachable, redundant, or replaceable mocks. Use when the user asks to audit mock usage, find unused or unnecessary mock setups, check if mocks are needed, reduce mock duplication or over-mocking, simplify test setup, or review whether mock configurations like ILogger/IOptions should use real implementations instead. Supports Moq, NSubstitute, and FakeItEasy."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-experimental/skills/exp-mock-usage-analysis"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-exp-mock-usage-analysis.zip"
+sha256 = "f0434d816f25650ddd9d66a6e6a3e7f27ea24c0450b4739e6af71b5e2d2c8916"

@@ -1,0 +1,10 @@
+name = "filter-syntax"
+version = "2026.8.4"
+description = "Reference data for test filter syntax across all platform and framework combinations: VSTest --filter expressions, MTP filters for MSTest/NUnit/xUnit v3/TUnit, and VSTest-to-MTP filter translation. DO NOT USE directly — loaded by run-tests, mtp-hot-reload, and migrate-vstest-to-mtp when they need filter syntax."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-test/skills/filter-syntax"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-filter-syntax.zip"
+sha256 = "6011b2a536ec5f1ec6fbd8b47a3cad07d5dd40261d11620fb68541ee49abee54"

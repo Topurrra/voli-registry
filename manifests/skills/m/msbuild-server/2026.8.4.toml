@@ -1,0 +1,10 @@
+name = "msbuild-server"
+version = "2026.8.4"
+description = "Guide for using MSBuild Server to improve CLI build performance. Activate when developers report slow incremental builds from the command line, or when CLI builds are noticeably slower than IDE builds. Covers MSBUILDUSESERVER=1 environment variable for persistent server-based caching. Do not activate for IDE-based builds (Visual Studio already uses a long-lived process)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-msbuild/skills/msbuild-server"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-msbuild-server.zip"
+sha256 = "6d7cc7feb5927c386d944723b2fa821448258ce0c8a07d5b08dc14058fd2d6c3"

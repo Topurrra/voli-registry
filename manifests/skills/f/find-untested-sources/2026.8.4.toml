@@ -1,0 +1,10 @@
+name = "find-untested-sources"
+version = "2026.8.4"
+description = "MANDATORY for static requests to find, identify, or list untested source files or modules, sources without tests, source-to-test pairing, test-gap worklists, or suggested test locations. Invoke even for a tiny package; do not substitute manual globbing. Uses Roslyn for C#/.NET and tree-sitter for Python, TS/JS, Go, Java, Rust, and Ruby. DO NOT USE FOR: line/branch coverage, CRAP risk, or grading existing tests."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-test/skills/find-untested-sources"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-find-untested-sources.zip"
+sha256 = "3ce350a8e1c9ef92f4e1fe2a23ed476c9789df9d37f403bd01f322cb62be54dd"

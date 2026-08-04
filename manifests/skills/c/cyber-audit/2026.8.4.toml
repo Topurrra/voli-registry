@@ -1,0 +1,10 @@
+name = "cyber-audit"
+version = "2026.8.4"
+description = "Read-only exposure audit of the user's MacBook (and ~/Documents/code projects) for a CVE, breach, malicious package, or other security advisory, then write a structured report to ~/Documents/security-audits/. Use when the user shares a breach/CVE/malware/supply-chain advisory and asks if they're affected, says \"scan my system for X\", \"are we affected by Y\", \"check if I'm vulnerable to Z\", or requests any hack/breach/cyber/vulnerability audit on this MacBook. Output matches the existing audit format in ~/Documents/security-audits/."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/ops-and-setup/cyber-audit"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-cyber-audit.zip"
+sha256 = "7b0dc312f8676575db475f06fe80d614dcd73d7ffb5319d9a6f2444659f4e061"

@@ -1,0 +1,10 @@
+name = "huggingface-paper-publisher"
+version = "2026.8.4"
+description = "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles."
+homepage = "https://github.com/huggingface/skills/tree/32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda/skills/huggingface-paper-publisher"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.8.4-huggingface-paper-publisher.zip"
+sha256 = "746db6e0e38da57d4ffa48542c78220242e1df8efba8785662a5ae269317b1b0"

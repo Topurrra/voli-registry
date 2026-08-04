@@ -1,0 +1,10 @@
+name = "run-deep-swe"
+version = "2026.8.4"
+description = "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/agent-orchestration/run-deep-swe"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-run-deep-swe.zip"
+sha256 = "1307bb1fa884e853ed335f73df742547489b0369ae31da1bc768f924501eb602"

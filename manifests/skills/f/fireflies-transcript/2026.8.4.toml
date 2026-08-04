@@ -1,0 +1,10 @@
+name = "fireflies-transcript"
+version = "2026.8.4"
+description = "Pull raw meeting transcripts from the user's Fireflies.ai notetaker via its GraphQL API, using the key saved globally on this MacBook. Use when the user wants a call transcript, meeting notes, \"what was said on the call\", onboarding-call transcripts, or Fireflies data. Differentiator: Fireflies meeting recordings only — for YouTube videos use youtube-transcript."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/research-and-web/fireflies-transcript"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-fireflies-transcript.zip"
+sha256 = "d785fab64352e9e774af3155391800976068fbaf0ad698b2acebb88143f6cd4d"

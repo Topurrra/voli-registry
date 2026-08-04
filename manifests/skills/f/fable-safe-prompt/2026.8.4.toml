@@ -1,0 +1,10 @@
+name = "fable-safe-prompt"
+version = "2026.8.4"
+description = "Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason \"refusal\"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use topics and asks to make it \"Fable-safe\", \"guardrail-safe\", \"won't get flagged/refused/downgraded\", or to rewrite it so Fable 5 won't block it."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/agent-orchestration/fable-safe-prompt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-fable-safe-prompt.zip"
+sha256 = "36aabab5c3ec7a68ff33a9c786476415810c637381ac8108e328becf01db4f1b"

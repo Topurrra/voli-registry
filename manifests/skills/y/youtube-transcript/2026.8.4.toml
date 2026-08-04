@@ -1,0 +1,10 @@
+name = "youtube-transcript"
+version = "2026.8.4"
+description = "Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on \"get the transcript\", \"transcript of this video\", \"pull the captions\", \"download subtitles\", \"what does this YouTube video say\". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/research-and-web/youtube-transcript"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-youtube-transcript.zip"
+sha256 = "899a71ab5e3f61ef15d3c1e5d462d471dadaf60dd826a83caf7e1e024d659948"

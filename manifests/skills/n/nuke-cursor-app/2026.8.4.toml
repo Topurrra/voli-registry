@@ -1,0 +1,10 @@
+name = "nuke-cursor-app"
+version = "2026.8.4"
+description = "Safely quit and kill ALL Cursor IDE processes on the user's MacBook to recover from the known renderer memory leak that makes Cursor lag. Manual-only — run ONLY when the user explicitly invokes it (/nuke-cursor-app, \"nuke cursor\"). Differentiator: kills the Cursor desktop app; cursor-cli sessions are unrelated."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/ops-and-setup/nuke-cursor-app"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-nuke-cursor-app.zip"
+sha256 = "dae5054cbd20a5fccec0429b7ee42bb97907ad81a5c25a20160456d5636f42c3"

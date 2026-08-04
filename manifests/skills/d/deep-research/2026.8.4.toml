@@ -1,0 +1,10 @@
+name = "deep-research"
+version = "2026.8.4"
+description = "Run a deep, source-backed research query via DeepAPI (go to deepapi.co to get an API key) POST /v1/research/deep. Builds a rigorous one-paragraph research prompt (per research-prompt rules), fires it, and saves a cited markdown report. Use when the user asks for \"deep research\", \"deepapi research\", \"perplexity deep research\" (legacy trigger), or any deep source-backed research run. Differentiator vs the deepapi skill: this is the full research workflow (prompt + run + report file), not raw endpoint access."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/research-and-web/deep-research"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-deep-research.zip"
+sha256 = "588b386a51a007a653a077603a95798f8e2187bc7f1c56f08b5a379d6b8c7909"

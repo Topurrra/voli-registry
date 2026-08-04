@@ -1,0 +1,10 @@
+name = "property-patterns"
+version = "2026.8.4"
+description = "MSBuild property definition patterns: conditional defaults, composition/concatenation, path normalization, trailing-slash handling, TFM detection helpers, and evaluation order. USE FOR: diagnosing and fixing property definition issues and shared-property anti-patterns in .props/.csproj; DefineConstants or NoWarn overwritten instead of appended; unconditional assignments that block project-level overrides; unquoted conditions that fail on empty properties; hardcoded paths that break cross-platform builds; setting overridable defaults; property evaluation order and last-write-wins semantics. DO NOT USE FOR: props vs targets placement (use directory-build-organization), item operations (use item-management), target structure (use target-authoring), general anti-patterns (use msbuild-antipatterns), non-MSBuild build systems."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-msbuild/skills/property-patterns"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-property-patterns.zip"
+sha256 = "4be0f2624775a64c4f226e400720df36a2b128593d00ff403fcd89349ea9211a"

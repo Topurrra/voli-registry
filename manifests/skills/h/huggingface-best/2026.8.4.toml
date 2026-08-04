@@ -1,0 +1,10 @@
+name = "huggingface-best"
+version = "2026.8.4"
+description = "Use when the user asks about finding the best, top, or recommended model for a task, wants to know what AI model to use, or wants to compare models by benchmark scores. Triggers on: \"best model for X\", \"what model should I use for\", \"top models for [task]\", \"which model runs on my laptop/machine/device\", \"recommend a model for\", \"what LLM should I use for\", \"compare models for\", \"what's state of the art for\", or any question about choosing an AI model for a specific use case. Always use this skill when the user wants model recommendations or comparisons, even if they don't explicitly mention HuggingFace or benchmarks."
+homepage = "https://github.com/huggingface/skills/tree/32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda/skills/huggingface-best"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.8.4-huggingface-best.zip"
+sha256 = "b7de6f63f915151c0f819e16becbf3a74f72bdeafa46162121062e5592172da2"

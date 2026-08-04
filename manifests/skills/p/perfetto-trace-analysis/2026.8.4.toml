@@ -1,0 +1,10 @@
+name = "perfetto-trace-analysis"
+version = "2026.8.4"
+description = "Analyzes Perfetto traces to find the root cause of latency, memory, or"
+homepage = "https://github.com/android/skills/tree/ba0042c08b7e6ff5cb121b7b87d442f809467324/profilers/perfetto-trace-analysis"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.8.4-perfetto-trace-analysis.zip"
+sha256 = "e4dd402ec31c2b3a87b57b46487fa0182dff8208d15ddd13241fbc782db3aa22"

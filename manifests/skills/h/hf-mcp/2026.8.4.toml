@@ -1,0 +1,10 @@
+name = "hf-mcp"
+version = "2026.8.4"
+description = "Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use Gradio Spaces as AI tools. Available when connected to the HF MCP server."
+homepage = "https://github.com/huggingface/skills/tree/32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda/hf-mcp/skills/hf-mcp"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/huggingface-skills-2026.8.4-hf-mcp.zip"
+sha256 = "0ab170aa5305a7aa59a0b9f5d78415dc8e044c59b7c75a48729bf448b5f3b7a7"

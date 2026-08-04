@@ -1,0 +1,10 @@
+name = "fable-review"
+version = "2026.8.4"
+description = "Launch a Fable 5 Max 1M subagent to do a deep, neutral senior-developer review of the current work and report its findings back verbatim. Use when the user says \"/fable-review\", \"fable review\", or asks for Fable to review the code. Differentiator: reviewer model is Fable 5 Max 1M — for a GPT reviewer use gpt-review."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/agent-orchestration/fable-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-fable-review.zip"
+sha256 = "6818b8b791dd18640ab4bdc7d5a18c1e8364c016dc0932aec076e49082ead0e5"

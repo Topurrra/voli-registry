@@ -1,0 +1,10 @@
+name = "maui-app-lifecycle"
+version = "2026.8.4"
+description = ".NET MAUI app lifecycle guidance — the four app states, cross-platform Window lifecycle events (Created, Activated, Deactivated, Stopped, Resumed, Destroying), platform-specific lifecycle mapping, backgrounding and resume behavior, and state-preservation patterns. USE FOR: \"app lifecycle\", \"window lifecycle events\", \"save state on background\", \"resume app\", \"OnStopped\", \"OnResumed\", \"backgrounding\", \"deactivated event\", \"ConfigureLifecycleEvents\", \"platform lifecycle hooks\". DO NOT USE FOR: navigation events (use maui-shell-navigation), dependency injection setup (use maui-dependency-injection), platform API invocation (use conditional compilation and partial classes)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-maui/skills/maui-app-lifecycle"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-maui-app-lifecycle.zip"
+sha256 = "90e58b6c0be1df188ecec8ca88debb17abd0ddee0aa8b77a244692c68a943592"

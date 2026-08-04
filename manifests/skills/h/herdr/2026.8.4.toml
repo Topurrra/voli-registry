@@ -1,0 +1,10 @@
+name = "herdr"
+version = "2026.8.4"
+description = "Operate and coordinate AI agents running inside Herdr in Ghostty. Use when the user says \"Use the Herdr skill,\" mentions Herdr, or asks to inspect, message, wait for, or coordinate agents in a Herdr workspace. Herdr-specific; do not use for cmux or ordinary terminal sessions."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/agent-orchestration/herdr"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-herdr.zip"
+sha256 = "973736489b2b3087ed1c07a2be3a4553bf4f528819952799e459552296a9161e"

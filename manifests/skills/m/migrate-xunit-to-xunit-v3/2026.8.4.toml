@@ -1,0 +1,10 @@
+name = "migrate-xunit-to-xunit-v3"
+version = "2026.8.4"
+description = "Migrates .NET test projects from xUnit.net v2 to xUnit.net v3. USE FOR: upgrading xunit to xunit.v3. DO NOT USE FOR: migrating between test frameworks (MSTest/NUnit to xUnit.net), migrating from VSTest to Microsoft.Testing.Platform (use migrate-vstest-to-mtp). For xUnit v3 MTP filter syntax (--filter-class, --filter-trait, --filter-query), also load migrate-vstest-to-mtp."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-test-migration/skills/migrate-xunit-to-xunit-v3"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-migrate-xunit-to-xunit-v3.zip"
+sha256 = "372df6ec62c227a4cd8e5432b040065f89fed44441ef97fa41e78cd078508a03"

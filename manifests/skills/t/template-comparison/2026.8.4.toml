@@ -1,0 +1,10 @@
+name = "template-comparison"
+version = "2026.8.4"
+description = "Compares two or more dotnet new templates side by side to help users choose between them based on parameters, feature support, frameworks, and classifications. USE FOR: deciding between similar templates (webapi vs webapp, blazor vs blazorwasm, console vs worker), producing a side-by-side comparison of parameters and feature support, understanding how templates differ before creating a project. DO NOT USE FOR: creating a project from a template (use template-instantiation), authoring or validating custom templates (use template-authoring and template-validation), general single-template discovery (use template-discovery)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-template-engine/skills/template-comparison"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-template-comparison.zip"
+sha256 = "a0f2a4fc0e9fe01bec2eb0bf53c86f85ae94a273e673f682ad9f956d9dff1e98"

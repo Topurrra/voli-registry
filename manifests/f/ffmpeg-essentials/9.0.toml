@@ -1,0 +1,17 @@
+name = "ffmpeg-essentials"
+version = "9.0"
+description = "A complete, cross-platform solution to record, convert and stream audio and video."
+homepage = "https://ffmpeg.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "ffmpeg-9.0-essentials_build"
+bin = ["bin\\ffmpeg.exe", "bin\\ffplay.exe", "bin\\ffprobe.exe"]
+persist = ["fonts"]
+
+[source.x64]
+url = "https://github.com/GyanD/codexffmpeg/releases/download/9.0/ffmpeg-9.0-essentials_build.7z"
+sha256 = "ffb866303866995734849995027533b9756971215e8c55ef408073628cdc27a2"
+
+[autoupdate]
+checkver = { github = "GyanD/codexffmpeg" }
+url_template = { x64 = "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-essentials_build.7z" }

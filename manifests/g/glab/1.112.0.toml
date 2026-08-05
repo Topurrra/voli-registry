@@ -1,0 +1,15 @@
+name = "glab"
+version = "1.112.0"
+description = "GitLab CLI"
+homepage = "https://gitlab.com/gitlab-org/cli"
+license = "MIT"
+kind = "app"
+bin = ["bin\\glab.exe"]
+
+[source.x64]
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.112.0/downloads/glab_1.112.0_windows_amd64.zip"
+sha256 = "783564e2ec5653421cd9fe7ffdce6bf2140d3feed85464009ac21fae720ba5da"
+
+[autoupdate]
+checkver = { url = "https://gitlab.com/gitlab-org/cli/-/tags?format=atom", regex = "/tags/v([\\d.]+)<" }
+url_template = { x64 = "https://gitlab.com/gitlab-org/cli/-/releases/v$version/downloads/glab_$version_windows_amd64.zip" }

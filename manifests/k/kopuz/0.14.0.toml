@@ -1,0 +1,18 @@
+name = "kopuz"
+version = "0.14.0"
+description = "Your next music player"
+homepage = "https://kopuz.temidara.rocks"
+license = "MIT"
+kind = "app"
+extract_dir = "Kopuz"
+bin = ["kopuz.exe"]
+shortcuts = [{ target = "kopuz.exe", name = "Kopuz" }]
+
+[source.x64]
+url = "https://github.com/Kopuz-org/kopuz/releases/download/v0.14.0/Kopuz_0.14.0_x64.msi"
+sha256 = "8ab408aba9480a352b366a99dc8b223e2079aec05ada16678877567bce89cfa5"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Kopuz-org/kopuz" }
+url_template = { x64 = "https://github.com/Kopuz-org/kopuz/releases/download/v$version/Kopuz_$version_x64.msi" }

@@ -1,0 +1,22 @@
+name = "libvips"
+version = "8.18.5"
+description = "A demand-driven, horizontally threaded image processing library"
+homepage = "https://www.libvips.org/"
+license = "LGPL-2.1-only"
+kind = "app"
+extract_dir = "vips-dev-8.18"
+
+[source.x64]
+url = "https://github.com/libvips/build-win64-mxe/releases/download/v8.18.5/vips-dev-x64-all-8.18.5.zip"
+sha256 = "99d3a0f6a3346cef63306e830c7387a8410684ccc3df1922b63994f2dc61443c"
+
+[source.arm64]
+url = "https://github.com/libvips/build-win64-mxe/releases/download/v8.18.5/vips-dev-arm64-all-8.18.5.zip"
+sha256 = "2145961550fb3bf66b8c5f02310fb9e765b937c68c663133e81e65083b6831c8"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "libvips/build-win64-mxe" }
+url_template = { x64 = "https://github.com/libvips/build-win64-mxe/releases/download/v$version/vips-dev-x64-all-$version.zip", arm64 = "https://github.com/libvips/build-win64-mxe/releases/download/v$version/vips-dev-arm64-all-$version.zip" }

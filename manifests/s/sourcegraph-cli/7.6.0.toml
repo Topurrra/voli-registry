@@ -1,0 +1,15 @@
+name = "sourcegraph-cli"
+version = "7.6.0"
+description = "Command line interface to Sourcegraph"
+homepage = "https://github.com/sourcegraph/src-cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["src.exe"]
+
+[source.x64]
+url = "https://github.com/sourcegraph/src-cli/releases/download/7.6.0/src-cli_7.6.0_windows_amd64.tar.gz"
+sha256 = "9ba58cc8f8a9ac1de1d9898ce3a4212efe98ba707f10aacc38dec3ac243ace59"
+
+[autoupdate]
+checkver = { github = "sourcegraph/src-cli" }
+url_template = "https://github.com/sourcegraph/src-cli/releases/download/$version/src-cli_$version_windows_amd64.tar.gz"

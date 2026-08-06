@@ -9,9 +9,9 @@ bin = ["mupdf.exe", "mupdf-gl.exe", "mutool.exe"]
 shortcuts = [{ target = "mupdf.exe", name = "MuPDF" }, { target = "mupdf-gl.exe", name = "MuPDF GL" }]
 
 [source.x64]
-url = "https://casper.mupdf.com/downloads/archive/mupdf-1.28.0-windows.zip"
+url = "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.0/mupdf-1.28.0-windows.zip"
 sha256 = "a0ee869bf38ee66b19cd30c281d04e91215f812f0cb20177cd1f69c74c33eb22"
 
 [autoupdate]
-checkver = { url = "https://mupdf.com/releases?product=MuPDF", regex = "mupdf-([\\d.]+)-windows\\.zip" }
-url_template = { x64 = "https://casper.mupdf.com/downloads/archive/mupdf-$version-windows.zip" }
+checkver = "{\"github\":\"https://api.github.com/repos/ArtifexSoftware/mupdf-downloads/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"mupdf-([\\\\d.]+)-windows\\\\.zip\"}"
+url_template = { x64 = "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/$version/mupdf-$version-windows.zip" }

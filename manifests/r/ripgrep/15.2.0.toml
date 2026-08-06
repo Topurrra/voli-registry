@@ -4,16 +4,17 @@ description = "Recursively searches directories for a regex pattern."
 homepage = "https://github.com/BurntSushi/ripgrep"
 license = "MIT"
 kind = "app"
-extract_dir = "ripgrep-15.2.0-x86_64-pc-windows-msvc"
 bin = ["rg.exe"]
 
 [source.x64]
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-msvc.zip"
 sha256 = "71b2fef860abe467217a538ff31de02f5258807c0129f771846f87bd029aafc5"
+extract_dir = "ripgrep-15.2.0-x86_64-pc-windows-msvc"
 
 [source.arm64]
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-pc-windows-msvc.zip"
 sha256 = "e4abca10c3a64ebea742667dd7009449d49403db5460dd6873e389fa2945360f"
+extract_dir = "ripgrep-15.2.0-aarch64-pc-windows-msvc"
 
 [autoupdate]
 checkver = { github = "BurntSushi/ripgrep" }

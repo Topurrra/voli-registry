@@ -1,0 +1,20 @@
+name = "maxto"
+version = "3.0.1"
+description = "Window manager that snaps windows into custom per-monitor grids via global hotkeys."
+homepage = "https://maxto.net"
+license = "Shareware"
+kind = "app"
+bin = ["MaxTo.exe"]
+shortcuts = [{ target = "MaxTo.exe", name = "MaxTo" }]
+
+[source.x64]
+url = "https://github.com/domino-as/maxto/releases/download/v3.0.1/MaxTo-3.0.1-win-x64.zip"
+sha256 = "729431e513e023442fef5b798072ae6f64c12c0720bccfb3af8582ae7dcf14d2"
+
+[source.arm64]
+url = "https://github.com/domino-as/maxto/releases/download/v3.0.1/MaxTo-3.0.1-win-arm64.zip"
+sha256 = "c0b47f7238c9ff0d3bc6418aff2274c94e6f9bf94642510cd218a9f8d0b3bdd5"
+
+[autoupdate]
+checkver = { github = "domino-as/maxto" }
+url_template = { x64 = "https://github.com/domino-as/maxto/releases/download/v$version/MaxTo-$version-win-x64.zip", arm64 = "https://github.com/domino-as/maxto/releases/download/v$version/MaxTo-$version-win-arm64.zip" }

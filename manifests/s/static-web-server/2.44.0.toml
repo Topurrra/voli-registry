@@ -1,0 +1,21 @@
+name = "static-web-server"
+version = "2.44.0"
+description = "A cross-platform, high-performance and asynchronous web server for static files-serving"
+homepage = "https://static-web-server.net/"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["static-web-server.exe"]
+
+[source.x64]
+url = "https://github.com/static-web-server/static-web-server/releases/download/v2.44.0/static-web-server-v2.44.0-x86_64-pc-windows-msvc.zip"
+sha256 = "473011fa047b59649ff68e10c58fb303adf1255cfb6341273fb101e07c9c9b6d"
+extract_dir = "static-web-server-v2.44.0-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/static-web-server/static-web-server/releases/download/v2.44.0/static-web-server-v2.44.0-aarch64-pc-windows-msvc.zip"
+sha256 = "f082c606fb1f5c611554f64bc206f6e17e165fccba01740c7b9b7f25684ba687"
+extract_dir = "static-web-server-v2.44.0-aarch64-pc-windows-msvc"
+
+[autoupdate]
+checkver = { github = "static-web-server/static-web-server" }
+url_template = { x64 = "https://github.com/static-web-server/static-web-server/releases/download/v$version/static-web-server-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/static-web-server/static-web-server/releases/download/v$version/static-web-server-v$version-aarch64-pc-windows-msvc.zip" }

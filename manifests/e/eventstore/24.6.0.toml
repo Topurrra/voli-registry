@@ -8,9 +8,9 @@ extract_dir = "EventStore-OSS-Windows-2019-v24.6.0"
 bin = [{ name = "eventstore", path = "EventStore.ClusterNode.exe" }, "EventStore.ClusterNode.exe", "EventStore.TestClient.exe"]
 
 [source.x64]
-url = "https://github.com/EventStore/EventStore/releases/download/oss-v24.6.0/EventStore-OSS-Windows-2019-v24.6.0.zip"
+url = "https://github.com/kurrent-io/KurrentDB/releases/download/oss-v24.6.0/EventStore-OSS-Windows-2019-v24.6.0.zip"
 sha256 = "00504c0e03593f9882a7e496b45a399d46e03f89029c369001d29b801c07f11a"
 
 [autoupdate]
 checkver = { url = "https://eventstore.org/downloads", regex = "Latest version: ([\\d.]+)" }
-url_template = { x64 = "https://github.com/EventStore/EventStore/releases/download/oss-v$version/EventStore-OSS-Windows-2019-v$version.zip" }
+url_template = { x64 = "https://github.com/kurrent-io/KurrentDB/releases/download/oss-v$version/EventStore-OSS-Windows-2019-v$version.zip" }

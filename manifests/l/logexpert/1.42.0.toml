@@ -1,0 +1,16 @@
+name = "logexpert"
+version = "1.42.0"
+description = "Windows tail program and log file analyzer."
+homepage = "https://github.com/LogExperts/LogExpert"
+license = "MIT"
+kind = "app"
+bin = ["LogExpert.exe"]
+shortcuts = [{ target = "LogExpert.exe", name = "LogExpert" }]
+
+[source.x64]
+url = "https://github.com/LogExperts/LogExpert/releases/download/v1.42.0/LogExpert.1.42.0.zip"
+sha256 = "1f7c42a8cda86e8362198b53ce18776ed063350ba97a55008bbdb53be995deb0"
+
+[autoupdate]
+checkver = { github = "LogExperts/LogExpert" }
+url_template = { x64 = "https://github.com/LogExperts/LogExpert/releases/download/v$matchTag/LogExpert.$version.zip" }

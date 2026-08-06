@@ -1,0 +1,15 @@
+name = "stripe-cli"
+version = "1.45.0"
+description = "Officially command-line tool for Stripe."
+homepage = "https://stripe.com/docs/stripe-cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["stripe.exe"]
+
+[source.x64]
+url = "https://github.com/stripe/stripe-cli/releases/download/v1.45.0/stripe_1.45.0_windows_x86_64.zip"
+sha256 = "8e734d3c3593126b9396f4f763d6b8a141e0cd859b6f07fea5a425b43c31c883"
+
+[autoupdate]
+checkver = { github = "stripe/stripe-cli" }
+url_template = { x64 = "https://github.com/stripe/stripe-cli/releases/download/v$version/stripe_$version_windows_x86_64.zip" }

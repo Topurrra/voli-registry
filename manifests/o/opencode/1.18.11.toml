@@ -1,0 +1,19 @@
+name = "opencode"
+version = "1.18.11"
+description = "The open source AI coding agent."
+homepage = "https://opencode.ai/"
+license = "MIT"
+kind = "app"
+bin = ["opencode.exe"]
+
+[source.x64]
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-windows-x64.zip"
+sha256 = "f3a5ea814aecc692a4e04259d9005283f364225b38456c90f9a47b7a9d83c0e9"
+
+[source.arm64]
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.11/opencode-windows-arm64.zip"
+sha256 = "4510ccf446284f5492438c4b40b23895dc7ae78cb5eb4e7f51cbe998c1148d58"
+
+[autoupdate]
+checkver = { github = "anomalyco/opencode" }
+url_template = { x64 = "https://github.com/anomalyco/opencode/releases/download/v$version/opencode-windows-x64.zip", arm64 = "https://github.com/anomalyco/opencode/releases/download/v$version/opencode-windows-arm64.zip" }

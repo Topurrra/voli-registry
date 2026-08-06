@@ -1,0 +1,15 @@
+name = "tuicr"
+version = "0.20.0"
+description = "A code review TUI with vim keybindings. Export to GitHub or clipboard."
+homepage = "https://tuicr.dev"
+license = "MIT"
+kind = "app"
+bin = ["tuicr.exe"]
+
+[source.x64]
+url = "https://github.com/agavra/tuicr/releases/download/v0.20.0/tuicr-0.20.0-x86_64-pc-windows-msvc.zip"
+sha256 = "b4f439a79909fc17030a317e3cd9901629240d6fadafcc3af57344ea0a14adb8"
+
+[autoupdate]
+checkver = { github = "agavra/tuicr" }
+url_template = { x64 = "https://github.com/agavra/tuicr/releases/download/v$version/tuicr-$version-x86_64-pc-windows-msvc.zip" }

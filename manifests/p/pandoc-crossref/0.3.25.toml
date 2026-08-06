@@ -1,0 +1,18 @@
+name = "pandoc-crossref"
+version = "0.3.25"
+description = "Pandoc filter for cross-references"
+homepage = "https://hackage.haskell.org/package/pandoc-crossref"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["pandoc-crossref.exe"]
+
+[source.x64]
+url = "https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.25/pandoc-crossref-Windows-X64.7z"
+sha256 = "61ad4ef235bd8b23d2f6ad84bfc74e9bac431de2f86d4b764d3b78dfe08f6cf4"
+
+[depends]
+pandoc = "*"
+
+[autoupdate]
+checkver = { github = "lierdakil/pandoc-crossref" }
+url_template = { x64 = "https://github.com/lierdakil/pandoc-crossref/releases/download/v$version/pandoc-crossref-Windows-X64.7z" }

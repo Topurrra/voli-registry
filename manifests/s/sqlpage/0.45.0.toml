@@ -8,9 +8,9 @@ bin = ["sqlpage.exe"]
 persist = ["sqlpage"]
 
 [source.x64]
-url = "https://github.com/sqlpage/SQLpage/releases/download/v0.45.0/sqlpage-windows.zip"
+url = "https://github.com/sqlpage/SQLPage/releases/download/v0.45.0/sqlpage-windows.zip"
 sha256 = "259b880872f8dc14c89470953f48e57f375501fce18ed7140b8a384054ac80e2"
 
 [autoupdate]
-checkver = { github = "sqlpage/SQLpage" }
-url_template = { x64 = "https://github.com/sqlpage/SQLpage/releases/download/v$version/sqlpage-windows.zip" }
+checkver = { github = "sqlpage/SQLPage" }
+url_template = { x64 = "https://github.com/sqlpage/SQLPage/releases/download/v$version/sqlpage-windows.zip" }

@@ -1,0 +1,15 @@
+name = "ugrep"
+version = "7.8.3"
+description = "A faster, user-friendly and compatible grep replacement"
+homepage = "https://ugrep.com/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["ugrep.exe", "ug.exe"]
+
+[source.x64]
+url = "https://github.com/Genivia/ugrep/releases/download/v7.8.3/ugrep-windows-x64.zip"
+sha256 = "4ff50a5626e4d67057dd6ef38c772e55fde7322b99c4b0ccafb1302951f5dfd9"
+
+[autoupdate]
+checkver = { github = "Genivia/ugrep" }
+url_template = { x64 = "https://github.com/Genivia/ugrep/releases/download/v$version/ugrep-windows-x64.zip" }

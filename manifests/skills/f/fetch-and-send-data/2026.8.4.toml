@@ -1,0 +1,10 @@
+name = "fetch-and-send-data"
+version = "2026.8.4"
+description = "Call APIs, load data into components, and handle the async lifecycle in Blazor. USE FOR fetching data from a backend, submitting data to an API, displaying loading/error states, registering HttpClient, building service abstractions for Auto/WebAssembly render modes. DO NOT USE for form validation (see collect-user-input), prerendering persistence (see support-prerendering), or project scaffolding (see create-blazor-project)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-blazor/skills/fetch-and-send-data"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-fetch-and-send-data.zip"
+sha256 = "41d1b7f7cdb4a67a3622197a45f52e9664d78d3352883bd86f28613b4e7ddaa8"

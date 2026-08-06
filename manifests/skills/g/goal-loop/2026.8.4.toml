@@ -1,0 +1,10 @@
+name = "goal-loop"
+version = "2026.8.4"
+description = "Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/agent-orchestration/goal-loop"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-goal-loop.zip"
+sha256 = "3ddedeffef910e16270fc7ed23acc5a6c98fbca2713da651ac318dc669090fea"

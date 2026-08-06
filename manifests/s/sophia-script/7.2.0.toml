@@ -1,0 +1,21 @@
+name = "sophia-script"
+version = "7.2.0"
+description = "Sophia Script for Windows is the largest PowerShell module on GitHub for Windows 10 and Windows 11 fine-tuning and automating the routine tasks."
+homepage = "https://github.com/farag2/Sophia-Script-for-Windows"
+license = "MIT"
+kind = "app"
+bin = [{ name = "Sophia", path = "Sophia.ps1" }, { name = "SophiaScript", path = "Sophia.ps1" }]
+
+[source.x64]
+url = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/7.2.0/Sophia.Script.for.Windows.11.v7.2.0.zip"
+sha256 = "019897fe31a9fc2308590a6265f841c51731528dd7a0323ad8dff528d202056c"
+extract_dir = "Sophia_Script_for_Windows_11_v7.2.0"
+
+[source.arm64]
+url = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/7.2.0/Sophia.Script.for.Windows.11.Arm.v7.2.0.zip"
+sha256 = "f728fe535f3a61c751209dbe7bbf5c26adc9e30600226a8527b6f6695bb17c69"
+extract_dir = "Sophia_Script_for_Windows_11_Arm_v7.2.0"
+
+[autoupdate]
+checkver = { github = "farag2/Sophia-Script-for-Windows" }
+url_template = { x64 = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.v$version.zip", arm64 = "https://github.com/farag2/Sophia-Script-for-Windows/releases/download/$version/Sophia.Script.for.Windows.11.Arm.v$version.zip" }

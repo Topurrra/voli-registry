@@ -1,0 +1,10 @@
+name = "review-animations"
+version = "2026.8.4"
+description = "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned."
+homepage = "https://github.com/emilkowalski/skills/tree/da80201b64de7d608a6dc5f723797ce6c65b692b/skills/review-animations"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/emilkowalski-skills-2026.8.4-review-animations.zip"
+sha256 = "e996208a49b2949c5673a2c2a0b8eed5d36b922b19cb75dc89d7057d77fb97de"

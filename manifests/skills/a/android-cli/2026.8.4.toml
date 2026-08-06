@@ -1,0 +1,10 @@
+name = "android-cli"
+version = "2026.8.4"
+description = "Provides instructions for installing and using the `android` CLI. The `android` command-line tool is a critical tool for Android development and helps you create new Android projects, run Android apps on devices, manage and interact with Android virtual devices (including screenshots and UI inspection), manage Android SDK components, look up official Android documentation, and discover and install official Android skills."
+homepage = "https://github.com/android/skills/tree/ba0042c08b7e6ff5cb121b7b87d442f809467324/devtools/android-cli"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.8.4-android-cli.zip"
+sha256 = "8418456da15dd2ca5c65f023b2ccaff764eb8317d90994a27d5aa477a9080e56"

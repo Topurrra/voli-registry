@@ -1,0 +1,15 @@
+name = "jenkins-lts"
+version = "2.568.2"
+description = "An automation server which enables developers around the world to reliably build, test, and deploy their software. (Long Term Support)"
+homepage = "https://www.jenkins.io"
+license = "MIT"
+kind = "app"
+bin = ["jenkins.jar"]
+
+[source.x64]
+url = "https://get.jenkins.io/war-stable/2.568.2/jenkins.war#/jenkins.jar"
+sha256 = "9bbb2b329e52730ba7decd1a7a1095987f6250ec761fb21157dbb2cbcd1ef590"
+
+[autoupdate]
+checkver = { url = "https://www.jenkins.io/changelog-stable/rss.xml", regex = "Jenkins ([\\d.]+)" }
+url_template = "https://get.jenkins.io/war-stable/$version/jenkins.war#/jenkins.jar"

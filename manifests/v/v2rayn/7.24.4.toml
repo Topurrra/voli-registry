@@ -1,0 +1,22 @@
+name = "v2rayn"
+version = "7.24.4"
+description = "v2rayN (WPF-based version) is a GUI client for V2Ray, with support for Xray, sing-box, and other compatible cores."
+homepage = "https://github.com/2dust/v2rayN"
+license = "GPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "v2rayN.exe", name = "v2rayN" }]
+persist = ["guiConfigs"]
+
+[source.x64]
+url = "https://github.com/2dust/v2rayN/releases/download/7.24.4/v2rayN-windows-64.zip"
+sha256 = "20fc30526fe5a0164ae7b9a1f8b807bf724e87759ad0fb642bd008276a4239e7"
+extract_dir = "v2rayN-windows-64"
+
+[source.arm64]
+url = "https://github.com/2dust/v2rayN/releases/download/7.24.4/v2rayN-windows-arm64.zip"
+sha256 = "075cf40437ca9617496201ae35ea8ff4e5835c07b0f29dae7aa01415064f35a0"
+extract_dir = "v2rayN-windows-arm64"
+
+[autoupdate]
+checkver = { github = "2dust/v2rayN" }
+url_template = { x64 = "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-64.zip", arm64 = "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-arm64.zip" }

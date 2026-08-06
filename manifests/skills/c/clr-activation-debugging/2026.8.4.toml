@@ -1,0 +1,10 @@
+name = "clr-activation-debugging"
+version = "2026.8.4"
+description = "Diagnoses .NET Framework CLR activation issues using CLR activation logs (CLRLoad logs) produced by mscoree.dll. Use when: the shim picks the wrong runtime, fails to load any runtime, shows unexpected .NET 3.5 Feature-on-Demand (FOD) dialogs, unexpectedly does NOT show FOD dialogs, loads both v2 and v4 into the same process causing failures, or any time someone is wondering \"what is happening with .NET Framework activation?\""
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-diag/skills/clr-activation-debugging"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-clr-activation-debugging.zip"
+sha256 = "530b2be7d75088354e4d8cc6c757c046da0059aa065bac95b963f175bf1b4bfc"

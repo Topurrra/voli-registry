@@ -1,0 +1,10 @@
+name = "csharp-scripts"
+version = "2026.8.4"
+description = "Run file-based C# apps with the .NET CLI when the user explicitly wants C#/.NET code without creating a project. Use for C# language/API experiments, one-file C# apps, small multi-file C# apps composed with `#:include`/`#:exclude`, or C# file-based apps linked with `#:ref`. Do not use for language-agnostic throwaway scripts, generic computations, Python/PowerShell-style automation, full projects, or existing app integration."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-advanced/skills/csharp-scripts"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-csharp-scripts.zip"
+sha256 = "b2eb06c061c49c807ec435bebbaa2eb73499e6a5b99d5b254bf8861f1b3ad6cf"

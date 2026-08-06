@@ -9,7 +9,7 @@ persist = ["eac3to.ini", "error.wav", "success.wav"]
 
 [source.x64]
 url = "https://www.videohelp.com/download/eac3to_3.64.rar"
-sha256 = "419312f37ba77af4a811dc04402e1f72be1e806d95f65577464332c046cbb8e7"
+sha256 = "70550cff48e82bf14a478ebfdb66f6496e92b4e4af5839b9ed1048ad672953c7"
 
 [autoupdate]
 checkver = { url = "https://www.videohelp.com/software/eac3to", regex = "eac3to_([\\d.]+).rar" }

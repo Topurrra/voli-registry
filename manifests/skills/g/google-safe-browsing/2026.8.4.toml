@@ -1,0 +1,10 @@
+name = "google-safe-browsing"
+version = "2026.8.4"
+description = "Prevent and fix Google Safe Browsing \"Dangerous site\" flags. Use when launching a public web app, buying/picking a domain, building a login or signup page, or when any site shows a red \"Dangerous site\" / \"Deceptive site\" warning in Chrome, Brave, Safari, Firefox, or Edge. Triggers on \"dangerous site\", \"deceptive site\", \"site blocked\", \"safe browsing\", \"phishing flag\", \"red warning screen\"."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/ops-and-setup/google-safe-browsing"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-google-safe-browsing.zip"
+sha256 = "7f70e14c399d14d2a892018e98a0b1db60e7770763ed06681904228854f6e524"

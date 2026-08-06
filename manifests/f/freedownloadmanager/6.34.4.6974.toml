@@ -1,0 +1,15 @@
+name = "freedownloadmanager"
+version = "6.34.4.6974"
+description = "A powerful download manager"
+homepage = "https://www.freedownloadmanager.org"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "fdm.exe", name = "Free Download Manager" }]
+
+[source.x64]
+url = "https://files2.freedownloadmanager.org/6/latest/fdm_x64_setup.exe"
+sha256 = "9369644303b2200c902fe89e7613be831c7b5b3e34cb832639cdeeadef993ebb"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.freedownloadmanager.org/board/viewtopic.php?f=1&t=17900", regex = "([\\d.]+)\\s*\\[\\w+.*?STABLE" }

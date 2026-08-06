@@ -1,0 +1,10 @@
+name = "msbuild-antipatterns"
+version = "2026.8.4"
+description = "Detect and fix MSBuild anti-patterns in project and build files. USE WHEN asked to review, audit, lint, clean up, or code-review a .csproj/.vbproj/.fsproj/.props/.targets/.proj (or Directory.Build.props/.targets) file, when asked 'is this project file correct?' or 'what's wrong with my build file?', or when hunting subtle build bugs caused by how a project is authored. Each anti-pattern has a symptom and a concrete BAD→GOOD fix. DO NOT USE FOR: non-MSBuild build systems (npm, Maven, CMake), or migrating a project to SDK-style (use msbuild-modernization)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-msbuild/skills/msbuild-antipatterns"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-msbuild-antipatterns.zip"
+sha256 = "7a81eebfbb83879cd3c50e1d826c50ef3319760c0a9680dd1a0a3868f04f7fb2"

@@ -1,0 +1,10 @@
+name = "appfunctions"
+version = "2026.8.4"
+description = "Analyzes Android apps to identify key user workflows for AppFunctions"
+homepage = "https://github.com/android/skills/tree/ba0042c08b7e6ff5cb121b7b87d442f809467324/device-ai/appfunctions"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.8.4-appfunctions.zip"
+sha256 = "d88c591a680c774f42d2bd6f56e0ee8d8827eee0ec884f03e5ff4c915575d414"

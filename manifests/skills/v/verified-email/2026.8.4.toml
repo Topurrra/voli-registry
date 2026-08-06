@@ -1,0 +1,10 @@
+name = "verified-email"
+version = "2026.8.4"
+description = "Provides a complete workflow for implementing verified email retrieval"
+homepage = "https://github.com/android/skills/tree/ba0042c08b7e6ff5cb121b7b87d442f809467324/identity/verified-email"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/android-skills-2026.8.4-verified-email.zip"
+sha256 = "54e245e71c563f232e167dc4a92fe17246a05999aba35438bc9869ff91984c20"

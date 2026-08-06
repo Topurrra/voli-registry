@@ -1,0 +1,14 @@
+name = "hwmonitor"
+version = "1.67"
+description = "A hardware monitoring program that reads PC systems main health sensors : voltages, temperatures, fans speed."
+homepage = "https://www.cpuid.com/softwares/hwmonitor.html"
+license = "Unknown"
+kind = "app"
+
+[source.x64]
+url = "https://download.cpuid.com/hwmonitor/hwmonitor_1.67.zip"
+sha256 = "e6affec5466bba650cfdac7e98857e17b966f670a3a3e1f1cb869d84d5217090"
+
+[autoupdate]
+checkver = "Version ([\\d.]+) for windows"
+url_template = { x64 = "https://download.cpuid.com/hwmonitor/hwmonitor_$version.zip" }

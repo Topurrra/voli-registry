@@ -1,0 +1,10 @@
+name = "optimizing-ef-core-queries"
+version = "2026.8.4"
+description = "Optimize Entity Framework Core queries by fixing N+1 problems, choosing correct tracking modes, using compiled queries, and avoiding common performance traps. Use when EF Core queries are slow, generating excessive SQL, or causing high database load."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-data/skills/optimizing-ef-core-queries"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-optimizing-ef-core-queries.zip"
+sha256 = "ca742aff79fd55ca85dfb87d4ff8f5add7a350b19478c4fb1c163388345d043f"

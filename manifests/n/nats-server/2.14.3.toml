@@ -4,16 +4,17 @@ description = "High-Performance server for NATS.io, the cloud and edge native me
 homepage = "https://github.com/nats-io/nats-server"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "nats-server-v2.14.3-windows-amd64"
 bin = ["nats-server.exe"]
 
 [source.x64]
 url = "https://github.com/nats-io/nats-server/releases/download/v2.14.3/nats-server-v2.14.3-windows-amd64.zip"
 sha256 = "94e338d742761272e31eab1efb1f767eac3a2e56e4c05a7933c65a73fe95a27b"
+extract_dir = "nats-server-v2.14.3-windows-amd64"
 
 [source.arm64]
 url = "https://github.com/nats-io/nats-server/releases/download/v2.14.3/nats-server-v2.14.3-windows-arm64.zip"
 sha256 = "62e8a913149dd0f9e8c4aa36553045dc2e0ab94bc18d5a06e38fe7789755165d"
+extract_dir = "nats-server-v2.14.3-windows-arm64"
 
 [autoupdate]
 checkver = { github = "nats-io/nats-server" }

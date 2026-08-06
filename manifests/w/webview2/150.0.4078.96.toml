@@ -4,15 +4,16 @@ description = "Microsoft Edge WebView2 Runtime. Embed web content (HTML, CSS, an
 homepage = "https://developer.microsoft.com/en-us/microsoft-edge/webview2"
 license = "Proprietary"
 kind = "app"
-extract_dir = "Microsoft.WebView2.FixedVersionRuntime.150.0.4078.96.x64"
 
 [source.x64]
 url = "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8d0fa723-083d-4a3c-b90c-bbb0f6f6572b/Microsoft.WebView2.FixedVersionRuntime.150.0.4078.96.x64.cab#/dl.7z"
 sha256 = "8575c8493edc3ffaf82b4df6bce7d756b57a80a074f34c1d9d938716b5453ecf"
+extract_dir = "Microsoft.WebView2.FixedVersionRuntime.150.0.4078.96.x64"
 
 [source.arm64]
 url = "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/f07f9c63-2f52-4c3e-9f68-c961d8686815/Microsoft.WebView2.FixedVersionRuntime.150.0.4078.96.arm64.cab#/dl.7z"
 sha256 = "3b9ec0a094044f0e29b6394beb719465cda75a8e083cb7d8247ae85be8c916c0"
+extract_dir = "Microsoft.WebView2.FixedVersionRuntime.150.0.4078.96.arm64"
 
 [env]
 WEBVIEW2_BROWSER_EXECUTABLE_FOLDER = "{dir}"

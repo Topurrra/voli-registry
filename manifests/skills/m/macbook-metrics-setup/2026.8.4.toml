@@ -1,0 +1,10 @@
+name = "macbook-metrics-setup"
+version = "2026.8.4"
+description = "Replicate the macbook-metrics setup on any Mac — a local, always-on system-metrics collector (CPU, GPU, RAM, disk, network, battery, thermals) built as a Swift CLI, run by launchd every 60s, stored in SQLite, and backed up to a private GitHub repo. Use when someone wants long-term Mac performance tracking, asks how macbook-metrics works, or wants to set up the same monitoring on a new machine. Differentiator: covers the full architecture and setup ideology, not day-to-day querying of an existing install."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/ops-and-setup/macbook-metrics-setup"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-macbook-metrics-setup.zip"
+sha256 = "79923e584c9016aa8f2d55ee98779f9263ecff5fe59b4c3a4f0467330c151c5a"

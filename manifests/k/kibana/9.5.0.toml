@@ -1,0 +1,17 @@
+name = "kibana"
+version = "9.5.0"
+description = "An open source analytics and visualization platform designed to work with Elasticsearch."
+homepage = "https://www.elastic.co/products/kibana"
+license = "Freeware|Apache-2.0"
+kind = "app"
+extract_dir = "kibana-9.5.0"
+bin = ["bin\\kibana.bat", "bin\\kibana-plugin.bat"]
+persist = ["config", "data", "plugins"]
+
+[source.x64]
+url = "https://artifacts.elastic.co/downloads/kibana/kibana-9.5.0-windows-x86_64.zip"
+sha512 = "7d408d12940965dbde5b402ea7041764a7e852f885292f5caf0fb69d532f4550b9ee9ff9e371b43f3fd4ad8ebd848da95c7ae49303217f6a67a68a30e53fb97b"
+
+[autoupdate]
+checkver = { url = "https://www.elastic.co/downloads/kibana", regex = "kibana-([\\d.]+)-windows-x86_64\\.zip" }
+url_template = { x64 = "https://artifacts.elastic.co/downloads/kibana/kibana-$version-windows-x86_64.zip" }

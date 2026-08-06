@@ -1,0 +1,10 @@
+name = "short"
+version = "2026.8.4"
+description = "Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says \"short\", \"shorter\", \"simpler\", \"too long\", \"tl;dr\", or wants a more concise version of the previous response."
+homepage = "https://github.com/davidondrej/skills/tree/6e5545081c888b89576a620d9b2e54e9a6590f68/skills/thinking-and-docs/short"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/davidondrej-skills-2026.8.4-short.zip"
+sha256 = "ecbdeb37be25f5e89728a4c31294b9166f593301558229eef34c10fbf49bf311"

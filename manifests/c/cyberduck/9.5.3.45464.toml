@@ -1,0 +1,17 @@
+name = "cyberduck"
+version = "9.5.3.45464"
+description = "Libre file transfer client supporting multiple protocols."
+homepage = "https://cyberduck.io"
+license = "Freeware"
+kind = "app"
+extract_dir = "PFiles64\\Cyberduck"
+shortcuts = [{ target = "Cyberduck.exe", name = "Cyberduck" }]
+
+[source.x64]
+url = "https://update.cyberduck.io/windows/Cyberduck-Installer-9.5.3.45464.msi"
+sha256 = "47672b8b2a8bbd31487775e5d3ac7a46ae1513ec3f6b0d88238ee6a7423f690b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://cyberduck.io/download/", regex = "Cyberduck-Installer-([\\d.]+)\\.exe" }
+url_template = { x64 = "https://update.cyberduck.io/windows/Cyberduck-Installer-$version.msi" }

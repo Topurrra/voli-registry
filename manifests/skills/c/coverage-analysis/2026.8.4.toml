@@ -1,0 +1,10 @@
+name = "coverage-analysis"
+version = "2026.8.4"
+description = "Project-wide code coverage and CRAP (Change Risk Anti-Patterns) score analysis for .NET projects. Calculates CRAP scores per method and surfaces risk hotspots — complex code with low coverage that is dangerous to modify. Use to diagnose why coverage is stuck or plateaued, identify what methods block improvement, or get project-wide coverage analysis with risk ranking. USE FOR: coverage stuck, coverage plateau, can't increase coverage, what's blocking coverage, coverage gap, CRAP scores, risk hotspots, where to add tests, coverage analysis, coverage report. DO NOT USE FOR: targeted single-method CRAP analysis (use crap-score); auditing test code for coverage-touching or other anti-patterns (use test-anti-patterns); writing tests; running tests (use run-tests). Requires or produces coverage (Cobertura) and CRAP metrics."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-test/skills/coverage-analysis"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-coverage-analysis.zip"
+sha256 = "a4c2b237da1a84e222997f16a06ebef5d1cf5d6a604c43081e6473b309b6ed60"

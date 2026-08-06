@@ -1,0 +1,10 @@
+name = "including-generated-files"
+version = "2026.8.4"
+description = "Fix MSBuild targets that generate files during the build but those files are missing from compilation or output. USE FOR: generated source files not compiling (CS0246 for a type that should exist), custom build tasks that create files but they are invisible to subsequent targets, globs not capturing build-generated files because they expand at evaluation time before execution creates them, ensuring generated files are cleaned by the Clean target. Covers correct BeforeTargets timing (CoreCompile, BeforeBuild, AssignTargetPaths), adding to Compile/FileWrites item groups, using $(IntermediateOutputPath) instead of hardcoded obj/ paths. DO NOT USE FOR: C# source generators that already work via the Roslyn pipeline, T4 design-time generation that runs in Visual Studio, non-MSBuild build systems."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-msbuild/skills/including-generated-files"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-including-generated-files.zip"
+sha256 = "f86e224ab58ec352088ac8aa4bb32d424120b92844d7cdcfc72f4109b7ee6e65"

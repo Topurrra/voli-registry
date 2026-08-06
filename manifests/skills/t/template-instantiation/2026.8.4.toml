@@ -1,0 +1,10 @@
+name = "template-instantiation"
+version = "2026.8.4"
+description = "Creates .NET projects from templates with validated parameters, smart defaults, Central Package Management adaptation, and latest NuGet version resolution. USE FOR: creating new dotnet projects, scaffolding solutions with multiple projects, installing or uninstalling template packages, creating projects that respect Directory.Packages.props (CPM), composing multi-project solutions (API + tests + library), getting latest NuGet package versions in newly created projects. DO NOT USE FOR: finding templates (use template-discovery), producing a detailed side-by-side comparison of templates (use template-comparison), authoring custom templates (use template-authoring), deciding cross-parameter defaults such as which framework to pair with native AOT or whether to keep HTTPS when auth is enabled (use template-smart-defaults), modifying existing projects or adding NuGet packages to existing projects."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-template-engine/skills/template-instantiation"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-template-instantiation.zip"
+sha256 = "8b73b64b13df0f67130b540df6492e7b68cbb6acd7eb6983b47c29fa2d0eabb7"

@@ -1,0 +1,16 @@
+name = "ente-auth"
+version = "4.4.25"
+description = "Free, open source, cross-platform 2FA authenticator, with end-to-end encrypted backups."
+homepage = "https://ente.io/auth/"
+license = "AGPL-3.0-only"
+kind = "app"
+extract_dir = "ente-auth-v4.4.25-windows"
+shortcuts = [{ target = "auth.exe", name = "Ente Auth" }]
+
+[source.x64]
+url = "https://github.com/ente-io/ente/releases/download/auth-v4.4.25/ente-auth-v4.4.25-windows.zip"
+sha256 = "fa4e12ad782807cd51b283e987032ff07be2e64545292bbf04b574bc49005a90"
+
+[autoupdate]
+checkver = { url = "https://github.com/ente-io/ente/releases?q=auth", regex = "/releases/tag/(?:auth-v)?([\\d.]+)\"" }
+url_template = "https://github.com/ente-io/ente/releases/download/auth-v$version/ente-auth-v$version-windows.zip"

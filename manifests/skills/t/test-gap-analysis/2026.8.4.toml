@@ -1,0 +1,10 @@
+name = "test-gap-analysis"
+version = "2026.8.4"
+description = "Performs pseudo-mutation analysis on production code in any language to find gaps in existing tests. Use when the user asks to find weak or shallow tests, discover untested edge cases, or check whether tests would catch a bug — e.g. \"would my tests catch it if someone changed the code\", \"would a subtle logic or boundary change slip past the current tests\", \"are my tests strong enough to catch a subtle bug\". Evaluates test effectiveness through mutation-style reasoning: analyzes mutation points (boundaries, boolean flips, null returns, exception removal, arithmetic changes) and checks whether tests would detect each. Polyglot: .NET, Python, TS/JS, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, C++. DO NOT USE FOR: writing new tests (use code-testing-agent, or writing-mstest-tests for MSTest), detecting anti-patterns (use test-anti-patterns), measuring assertion diversity (use assertion-quality), or running actual mutation testing tools (Stryker, mutmut, PIT, cargo-mutants)."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-test/skills/test-gap-analysis"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-test-gap-analysis.zip"
+sha256 = "c09b578811e2d2201cf602764929ecf780799a7decfc70a50d8b1307e25fe9e6"

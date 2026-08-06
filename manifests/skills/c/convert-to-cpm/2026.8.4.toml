@@ -1,0 +1,10 @@
+name = "convert-to-cpm"
+version = "2026.8.4"
+description = "Convert .NET projects and solutions (.sln, .slnx) to NuGet Central Package Management (CPM) using Directory.Packages.props. USE FOR: converting to CPM, centralizing or aligning NuGet package versions across multiple projects, inlining MSBuild version properties from Directory.Build.props into Directory.Packages.props, resolving version conflicts or mismatches across a solution or repository, updating or bumping or syncing package versions across projects. Also activate when packages are out of sync, drifting, or inconsistent -- even without the user mentioning CPM. Provides baseline build capture, version conflict resolution, build validation with binlog comparison, and a structured post-conversion report. DO NOT USE FOR: packages.config projects (must migrate to PackageReference first) or repositories that already have CPM fully enabled."
+homepage = "https://github.com/dotnet/skills/tree/6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc/plugins/dotnet-nuget/skills/convert-to-cpm"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills/dotnet-skills-2026.8.4-convert-to-cpm.zip"
+sha256 = "9e767799081f58c7525a4f4d5363da543f7985b0095db6431eafbca988aa7834"

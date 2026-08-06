@@ -1,0 +1,15 @@
+name = "conftest"
+version = "0.69.0"
+description = "Test utility for structured configuration files"
+homepage = "https://www.conftest.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["conftest.exe"]
+
+[source.x64]
+url = "https://github.com/open-policy-agent/conftest/releases/download/v0.69.0/conftest_0.69.0_Windows_x86_64.zip"
+sha256 = "be95f90cd22d00e709a7ad37bdac357c103b4f81d92dc51ca75a60e5f3905cf5"
+
+[autoupdate]
+checkver = { github = "open-policy-agent/conftest" }
+url_template = { x64 = "https://github.com/open-policy-agent/conftest/releases/download/v$version/conftest_$version_Windows_x86_64.zip" }

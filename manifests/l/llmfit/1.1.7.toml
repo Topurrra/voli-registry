@@ -4,16 +4,17 @@ description = "A terminal tool that right-sizes LLM models to your system's RAM,
 homepage = "https://github.com/AlexsJones/llmfit"
 license = "MIT"
 kind = "app"
-extract_dir = "llmfit-v1.1.7-x86_64-pc-windows-msvc"
 bin = ["llmfit.exe"]
 
 [source.x64]
 url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.7/llmfit-v1.1.7-x86_64-pc-windows-msvc.zip"
 sha256 = "d988d8209dac108e8622b2b4d44c67830d849a07741d9399be2d2708b3337e50"
+extract_dir = "llmfit-v1.1.7-x86_64-pc-windows-msvc"
 
 [source.arm64]
 url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.7/llmfit-v1.1.7-aarch64-pc-windows-msvc.zip"
 sha256 = "ebe751dec641685fef0a63466c746ec2af397600573c8f3e4499ac0d5ae83468"
+extract_dir = "llmfit-v1.1.7-aarch64-pc-windows-msvc"
 
 [autoupdate]
 checkver = { github = "AlexsJones/llmfit" }

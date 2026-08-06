@@ -4,16 +4,17 @@ description = "AI for the command line, built for pipelines."
 homepage = "https://github.com/charmbracelet/mods"
 license = "MIT"
 kind = "app"
-extract_dir = "mods_1.8.1_Windows_x86_64"
 bin = ["mods.exe"]
 
 [source.x64]
 url = "https://github.com/charmbracelet/mods/releases/download/v1.8.1/mods_1.8.1_Windows_x86_64.zip"
 sha256 = "ecad2f4d526bcb853b91136c2b40a123b0127edaca20945378986ceb6d89a52a"
+extract_dir = "mods_1.8.1_Windows_x86_64"
 
 [source.arm64]
 url = "https://github.com/charmbracelet/mods/releases/download/v1.8.1/mods_1.8.1_Windows_arm64.zip"
 sha256 = "6b409c753dfe9d5d35c4bf3ff7fba8d34508dbe2f8e38b092c6d7539abe0910d"
+extract_dir = "mods_1.8.1_Windows_arm64"
 
 [autoupdate]
 checkver = { github = "charmbracelet/mods" }

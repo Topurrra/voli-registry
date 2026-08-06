@@ -4,16 +4,17 @@ description = "Command-line utility to download/upload blobs and files from Micr
 homepage = "https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"
 license = "MIT"
 kind = "app"
-extract_dir = "azcopy_windows_amd64_10.32.6"
 bin = ["azcopy.exe"]
 
 [source.x64]
 url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.32.6/azcopy_windows_amd64_10.32.6.zip/#dl.zip"
 sha256 = "b768783a377b68b883aceb4f256e8f1a9dee32fd1d3022a5741360b0c9fd0ed5"
+extract_dir = "azcopy_windows_amd64_10.32.6"
 
 [source.arm64]
 url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.32.6/azcopy_windows_arm64_10.32.6.zip/#dl.zip"
 sha256 = "7c19d6710691b0be6f368ed989b991ce959112228fb787e6aec38df7fbb0bc36"
+extract_dir = "azcopy_windows_arm64_10.32.6"
 
 [autoupdate]
 checkver = { github = "Azure/azure-storage-azcopy" }

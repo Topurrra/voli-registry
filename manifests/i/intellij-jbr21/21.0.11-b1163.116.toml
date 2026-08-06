@@ -4,15 +4,16 @@ description = "A fork of OpenJDK that includes a number enhancements in font ren
 homepage = "https://github.com/JetBrains/JetBrainsRuntime"
 license = "GPL-2.0"
 kind = "app"
-extract_dir = "jbr-21.0.11-windows-x64-b1163.116"
 
 [source.x64]
 url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-windows-x64-b1163.116.tar.gz"
 sha512 = "1b5a3b602bf8096263a87d60a524fdd422696a0ff4af288e554dde8b11a3178c99f5a8d9161e9cc6b318790330fa75fdaa597d23551cbfc6a9387afbc4f51626"
+extract_dir = "jbr-21.0.11-windows-x64-b1163.116"
 
 [source.arm64]
 url = "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-windows-aarch64-b1163.116.tar.gz"
 sha512 = "ec1d49c6b3cddb7c508d0fa0ab2cdbfd689f6f7b30865bde53f33ddbab546246547bf85dbc4c5cbb8c474df2eb5b3b50b360d80a8d87358b7c2eb5a1f7f8091e"
+extract_dir = "jbr-21.0.11-windows-aarch64-b1163.116"
 
 [env]
 JAVA_HOME = "{dir}"

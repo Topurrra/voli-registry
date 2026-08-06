@@ -4,16 +4,17 @@ description = "As an asynchronous event driven JavaScript runtime, Node is desig
 homepage = "https://nodejs.org"
 license = "MIT"
 kind = "app"
-extract_dir = "node-v24.18.1-win-x64"
 persist = ["bin", "cache"]
 
 [source.x64]
 url = "https://nodejs.org/dist/v24.18.1/node-v24.18.1-win-x64.7z"
 sha256 = "365ecf84eeefb87a5a4c94f1e54919696cf5581285db4e589e84d46c0e167406"
+extract_dir = "node-v24.18.1-win-x64"
 
 [source.arm64]
 url = "https://nodejs.org/dist/v24.18.1/node-v24.18.1-win-arm64.7z"
 sha256 = "8aed98bca9260716236be292807dcb2638827750ba2fbcfc684601a9a6b8ab48"
+extract_dir = "node-v24.18.1-win-arm64"
 
 [env]
 PATH = "{dir}\\bin;{dir}"

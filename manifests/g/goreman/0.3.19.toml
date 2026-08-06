@@ -4,16 +4,17 @@ description = "Manage Procfile-based applications"
 homepage = "https://github.com/mattn/goreman"
 license = "MIT"
 kind = "app"
-extract_dir = "goreman_v0.3.19_windows_amd64"
 bin = ["goreman.exe"]
 
 [source.x64]
 url = "https://github.com/mattn/goreman/releases/download/v0.3.19/goreman_v0.3.19_windows_amd64.zip"
 sha256 = "59efb8a30769e40cc597f2c3bfebf364750acc142396ab9e9e763840a3ab3052"
+extract_dir = "goreman_v0.3.19_windows_amd64"
 
 [source.arm64]
 url = "https://github.com/mattn/goreman/releases/download/v0.3.19/goreman_v0.3.19_windows_arm64.zip"
 sha256 = "030d2fd99331a5c3d676ce0a822c077aba50fdb53d259c9e276c65f88b461f92"
+extract_dir = "goreman_v0.3.19_windows_arm64"
 
 [autoupdate]
 checkver = { github = "mattn/goreman" }

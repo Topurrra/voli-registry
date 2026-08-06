@@ -4,16 +4,17 @@ description = " Open source (GPLv2) anti-virus toolkit"
 homepage = "https://www.clamav.net"
 license = "GPL-2.0-only"
 kind = "app"
-extract_dir = "clamav-1.5.3.win.x64"
 bin = ["clambc.exe", "clamconf.exe", "clamd.exe", "clamdscan.exe", "clamdtop.exe", "clamscan.exe", "clamsubmit.exe", "freshclam.exe", "sigtool.exe"]
 
 [source.x64]
 url = "https://github.com/Cisco-Talos/clamav/releases/download/clamav-1.5.3/clamav-1.5.3.win.x64.zip"
 sha256 = "e998b3b98c2812726ca7f4db06bf89c4b52a7eb7160ab93403c3ec790a9be6b6"
+extract_dir = "clamav-1.5.3.win.x64"
 
 [source.arm64]
 url = "https://github.com/Cisco-Talos/clamav/releases/download/clamav-1.5.3/clamav-1.5.3.win.arm64.zip"
 sha256 = "ea290c562e175dc0497ad7ac4fa7e106f857e247c9c1ce6e89750dedaae3547c"
+extract_dir = "clamav-1.5.3.win.arm64"
 
 [autoupdate]
 checkver = { github = "Cisco-Talos/clamav" }

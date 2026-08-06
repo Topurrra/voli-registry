@@ -4,17 +4,18 @@ description = "The Chromium-based web browser made for people, with love. Best p
 homepage = "https://helium.computer"
 license = "BSD-3-Clause, GPL-3.0-or-later"
 kind = "app"
-extract_dir = "helium_0.14.8.2_x64-windows"
 bin = [{ name = "helium", path = "chrome.exe", args = "--user-data-dir=\"$persist_dir\\User Data\"" }]
 persist = ["User Data"]
 
 [source.x64]
 url = "https://github.com/imputnet/helium-windows/releases/download/0.14.8.2/helium_0.14.8.2_x64-windows.zip"
 sha256 = "ff2cf9d3f882fb63140d085943ad6285a9a40ef8136dfd723cde9221e175a887"
+extract_dir = "helium_0.14.8.2_x64-windows"
 
 [source.arm64]
 url = "https://github.com/imputnet/helium-windows/releases/download/0.14.8.2/helium_0.14.8.2_arm64-windows.zip"
 sha256 = "e220d5bb89bd9b55e66b6d8bb38c253c46fd5ff9988d66bdefef3b009548b8ef"
+extract_dir = "helium_0.14.8.2_arm64-windows"
 
 [autoupdate]
 checkver = { github = "imputnet/helium-windows" }

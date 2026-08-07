@@ -1,0 +1,19 @@
+name = "allure"
+version = "2.45.0"
+description = "A flexible lightweight multi-language test report tool"
+homepage = "https://github.com/allure-framework/allure2"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "allure-2.45.0"
+bin = ["bin\\allure.bat"]
+
+[source.x64]
+url = "https://github.com/allure-framework/allure2/releases/download/2.45.0/allure-2.45.0.zip"
+sha256 = "a0a840979b6d212e9eee031563d669985eb353cfde60557343b2903bf08570a6"
+
+[env]
+ALLURE_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "allure-framework/allure2" }
+url_template = "https://github.com/allure-framework/allure2/releases/download/$version/allure-$version.zip"

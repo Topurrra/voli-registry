@@ -1,0 +1,15 @@
+name = "drawpen"
+version = "0.0.55"
+description = "A simple screen annotation."
+homepage = "https://github.com/DmytroVasin/DrawPen"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "DrawPen.exe", name = "DrawPen" }]
+
+[source.x64]
+url = "https://github.com/DmytroVasin/DrawPen/releases/download/v0.0.55/DrawPen-win32-x64-0.0.55.zip"
+sha256 = "22a1e1b692500fb0e803631cac2d395dc4504c56c7307d17cfc39dfec2d5d5c8"
+
+[autoupdate]
+checkver = { github = "DmytroVasin/DrawPen" }
+url_template = { x64 = "https://github.com/DmytroVasin/DrawPen/releases/download/v$version/DrawPen-win32-x64-$version.zip" }

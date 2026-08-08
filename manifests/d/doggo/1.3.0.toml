@@ -1,0 +1,15 @@
+name = "doggo"
+version = "1.3.0"
+description = "Command-line DNS Client for Humans"
+homepage = "https://doggo.mrkaran.dev/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["doggo.exe"]
+
+[source.x64]
+url = "https://github.com/mr-karan/doggo/releases/download/v1.3.0/doggo-windows-x86_64.zip"
+sha256 = "5668bbc6a627930ce0c9262724cb21c180ac15e4f6d2ad841a1eaa2144f9a093"
+
+[autoupdate]
+checkver = { github = "mr-karan/doggo" }
+url_template = { x64 = "https://github.com/mr-karan/doggo/releases/download/v$version/doggo-windows-x86_64.zip" }

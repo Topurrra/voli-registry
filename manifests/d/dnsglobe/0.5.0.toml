@@ -1,0 +1,15 @@
+name = "dnsglobe"
+version = "0.5.0"
+description = "Global DNS propagation checker TUI — watch a DNS record propagate across 34 public resolvers worldwide, on a world map in terminal."
+homepage = "https://github.com/514-labs/dnsglobe"
+license = "MIT"
+kind = "app"
+bin = ["dnsglobe.exe"]
+
+[source.x64]
+url = "https://github.com/514-labs/dnsglobe/releases/download/v0.5.0/dnsglobe-x86_64-pc-windows-msvc.zip"
+sha256 = "8efc384e88f1aab3883c522cd23c3c6c2482c9ded14fadadfb04275a363bb0ba"
+
+[autoupdate]
+checkver = { github = "514-labs/dnsglobe" }
+url_template = { x64 = "https://github.com/514-labs/dnsglobe/releases/download/v$version/dnsglobe-x86_64-pc-windows-msvc.zip" }

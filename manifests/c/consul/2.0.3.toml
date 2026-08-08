@@ -1,0 +1,15 @@
+name = "consul"
+version = "2.0.3"
+description = "Service Discovery and Configuration"
+homepage = "https://www.consul.io"
+license = "MPL-2.0"
+kind = "app"
+bin = ["consul.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/consul/2.0.3/consul_2.0.3_windows_amd64.zip"
+sha256 = "b7c642e81fd2724f207e4cf2aec3d145302556be31b0b24bd17d3d5507033bca"
+
+[autoupdate]
+checkver = { url = "https://releases.hashicorp.com/consul/", regex = "consul_([\\d.]+)</a>" }
+url_template = { x64 = "https://releases.hashicorp.com/consul/$version/consul_$version_windows_amd64.zip" }

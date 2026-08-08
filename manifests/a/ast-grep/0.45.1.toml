@@ -1,0 +1,19 @@
+name = "ast-grep"
+version = "0.45.1"
+description = "A fast and polyglot tool for code searching, linting, rewriting at large scale."
+homepage = "https://ast-grep.github.io"
+license = "MIT"
+kind = "app"
+bin = ["ast-grep.exe", "sg.exe"]
+
+[source.x64]
+url = "https://github.com/ast-grep/ast-grep/releases/download/0.45.1/app-x86_64-pc-windows-msvc.zip"
+sha256 = "b816b375df6a30f8e5d91d706dccae6127346e68970788cf8c2decee54bcaa31"
+
+[source.arm64]
+url = "https://github.com/ast-grep/ast-grep/releases/download/0.45.1/app-aarch64-pc-windows-msvc.zip"
+sha256 = "88c27b45a70a279b987bf3949c1d289cbc0484513f87c4bdd07ad313bd1bec91"
+
+[autoupdate]
+checkver = { github = "ast-grep/ast-grep" }
+url_template = { x64 = "https://github.com/ast-grep/ast-grep/releases/download/$version/app-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ast-grep/ast-grep/releases/download/$version/app-aarch64-pc-windows-msvc.zip" }

@@ -1,0 +1,17 @@
+name = "lunatranslator"
+version = "10.16.2.13"
+description = "A Visual Novel translation tool, with HOOK / OCR / clipboard support"
+homepage = "https://github.com/HIllya51/LunaTranslator"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "LunaTranslator_x64"
+shortcuts = [{ target = "LunaTranslator.exe", name = "LunaTranslator" }, { target = "LunaTranslator_admin.exe", name = "LunaTranslator (admin)" }, { target = "LunaTranslator_debug.bat", name = "LunaTranslator (debug)" }]
+persist = ["cache", "userconfig", "translation_record"]
+
+[source.x64]
+url = "https://github.com/HIllya51/LunaTranslator/releases/download/v10.16.2.13/LunaTranslator_x64.zip"
+sha256 = "359888e997c7ffb80df21b34f7ede4e532e43447077704e3ec1b02891ac1c1c4"
+
+[autoupdate]
+checkver = { github = "HIllya51/LunaTranslator" }
+url_template = { x64 = "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/LunaTranslator_x64.zip" }

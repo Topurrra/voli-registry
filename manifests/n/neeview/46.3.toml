@@ -1,0 +1,18 @@
+name = "neeview"
+version = "46.3"
+description = "An image viewer that allows you to browse images in folders and compressed files like a book. Powerful customization is available."
+homepage = "https://neelabo.github.io/NeeView"
+license = "MIT"
+kind = "app"
+extract_dir = "NeeView46.3"
+bin = ["NeeView.exe"]
+shortcuts = [{ target = "NeeView.exe", name = "NeeView" }]
+persist = ["Profile"]
+
+[source.x64]
+url = "https://github.com/neelabo/NeeView/releases/download/46.3/NeeView46.3.zip"
+sha256 = "db690747c06c8e2f4873f58335d47a325b97273e734365fdbd06922d5fe0ba72"
+
+[autoupdate]
+checkver = { github = "neelabo/NeeView" }
+url_template = { x64 = "https://github.com/neelabo/NeeView/releases/download/$version/NeeView$version.zip" }

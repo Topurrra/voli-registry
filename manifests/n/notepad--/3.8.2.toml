@@ -1,0 +1,17 @@
+name = "notepad--"
+version = "3.8.2"
+description = "A cross-platform text editor aiming to replace Notepad++."
+homepage = "https://github.com/cxasm/notepad--"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Notepad--v3.8.2-win10-portable"
+bin = ["Notepad--.exe"]
+shortcuts = [{ target = "Notepad--.exe", name = "Notepad--" }]
+
+[source.x64]
+url = "https://github.com/cxasm/notepad--/releases/download/notepad-v3.8.2/Notepad--v3.8.2-win10-portable.zip"
+sha256 = "bd646bffd7c66739a4c1cde593f40bbaa618aca0dadb62450ae06d8094ad166d"
+
+[autoupdate]
+checkver = { github = "cxasm/notepad--" }
+url_template = { x64 = "https://github.com/cxasm/notepad--/releases/download/notepad-v$version/Notepad--v$matchShort-win10-portable.zip" }

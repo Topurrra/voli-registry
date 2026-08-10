@@ -1,0 +1,17 @@
+name = "gradle"
+version = "9.7.0"
+description = "An open-source build automation tool focused on flexibility and performance. (Source code and documentation bundled)"
+homepage = "https://gradle.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "gradle-9.7.0"
+bin = ["bin\\gradle.bat"]
+persist = [".gradle"]
+
+[source.x64]
+url = "https://services.gradle.org/distributions/gradle-9.7.0-all.zip"
+sha256 = "a9ecb5ac5c2ca40691e6527724d11d0b43b8c0a52825b77c09899f2a72d2d2bf"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://services.gradle.org/versions/current\"}"
+url_template = "https://services.gradle.org/distributions/gradle-$version-all.zip"

@@ -1,0 +1,16 @@
+name = "s3browser"
+version = "13.5.5"
+description = "S3 Browser is a freeware Windows client for Amazon S3 and Amazon CloudFront."
+homepage = "https://s3browser.com/"
+license = "Freeware"
+kind = "app"
+extract_dir = "CS Browser"
+bin = ["s3browser-cli.exe"]
+shortcuts = [{ target = "s3browser-ui.exe", name = "S3Browser" }]
+
+[source.x64]
+url = "https://s3browser.com/download/s3browser-13-5-5.zip"
+sha256 = "ebcd9a69efeca0eb2bd8ff0d9b12c9e210b7546f1bb4460c5c0708154de41828"
+
+[autoupdate]
+checkver = { url = "https://s3browser.com/download.aspx", regex = "CS Browser Version (?<version>[\\d\\.]+)" }

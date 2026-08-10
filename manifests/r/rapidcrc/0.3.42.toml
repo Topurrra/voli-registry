@@ -1,0 +1,14 @@
+name = "rapidcrc"
+version = "0.3.42"
+description = "Hash calculator with unicode support"
+homepage = "https://ov2.eu/programs/rapidcrc-unicode"
+license = "GPL-2.0-only"
+kind = "app"
+shortcuts = [{ target = "RapidCRC.exe", name = "RapidCRC" }]
+
+[source.x64]
+url = "http://dl.ov2.eu/programs/rapidcrc-unicode/rapidcrc_0.3.42_x64.zip"
+sha256 = "9969065f3e688279e98f9b73056719e0b5c4648dc3407a04b2777873eefb4e61"
+
+[autoupdate]
+checkver = ">v([\\d.]+)</"

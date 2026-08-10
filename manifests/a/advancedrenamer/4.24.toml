@@ -1,0 +1,16 @@
+name = "advancedrenamer"
+version = "4.24"
+description = "Batch file renaming utility for Windows"
+homepage = "https://www.advancedrenamer.com"
+license = "Freeware"
+kind = "app"
+bin = ["arenc.exe"]
+shortcuts = [{ target = "ARen.exe", name = "Advanced Renamer" }]
+persist = ["BatchMethods", "AdvData"]
+
+[source.x64]
+url = "https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_24.zip"
+sha256 = "1ae1e293f44cf939f5d22f40a7f4e18a1af1bd30cb23dc21935555718703f570"
+
+[autoupdate]
+checkver = { url = "https://www.advancedrenamer.com/versionlog4", regex = "Advanced Renamer\\s+([\\d.]+)\\s+-" }

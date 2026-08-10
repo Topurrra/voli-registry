@@ -9,7 +9,7 @@ bin = ["nconvert.exe"]
 
 [source.x64]
 url = "https://download.xnview.com/NConvert-win64.zip"
-sha256 = "d4b4c438b7c73f4f2976ae9c4c97d45d47836366351b57801331514ea3271e57"
+sha256 = "2a0d5aa8d6a1d5d41a48d4506e414db8df94518002657d8b33775023526a84b5"
 
 [autoupdate]
 checkver = "Version\\s([\\d.]+)</span>"

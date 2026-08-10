@@ -1,0 +1,15 @@
+name = "pack"
+version = "0.40.9"
+description = "Buildpack CLI"
+homepage = "https://github.com/buildpacks/pack"
+license = "Apache-2.0"
+kind = "app"
+bin = ["pack.exe"]
+
+[source.x64]
+url = "https://github.com/buildpacks/pack/releases/download/v0.40.9/pack-v0.40.9-windows.zip"
+sha256 = "28fcea50ff795f608e1003823411db419eaa47cc7f161763f99dca3f9949c32b"
+
+[autoupdate]
+checkver = { github = "buildpacks/pack" }
+url_template = { x64 = "https://github.com/buildpacks/pack/releases/download/v$version/pack-v$version-windows.zip" }

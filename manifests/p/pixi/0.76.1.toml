@@ -1,0 +1,19 @@
+name = "pixi"
+version = "0.76.1"
+description = "Package management made easy"
+homepage = "https://pixi.sh"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["pixi.exe"]
+
+[source.x64]
+url = "https://github.com/prefix-dev/pixi/releases/download/v0.76.1/pixi-x86_64-pc-windows-msvc.zip"
+sha256 = "ca64d56112cbebd96b4ec76ff220d59436ad5b6428a0e97242b3e549d65a39be"
+
+[source.arm64]
+url = "https://github.com/prefix-dev/pixi/releases/download/v0.76.1/pixi-aarch64-pc-windows-msvc.zip"
+sha256 = "8464b16326562b720157162c50f706598ba75634c5c73375be687b810cc81135"
+
+[autoupdate]
+checkver = { github = "prefix-dev/pixi" }
+url_template = { x64 = "https://github.com/prefix-dev/pixi/releases/download/v$version/pixi-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/prefix-dev/pixi/releases/download/v$version/pixi-aarch64-pc-windows-msvc.zip" }

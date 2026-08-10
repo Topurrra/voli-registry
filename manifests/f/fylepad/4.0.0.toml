@@ -1,0 +1,17 @@
+name = "fylepad"
+version = "4.0.0"
+description = "Notepad for effortless note-taking — featuring rich text editing, multiple tabs, cloud sync, and built-in support for Mermaid/PlantUML diagrams, tables, code blocks, and more."
+homepage = "https://fylepad.vercel.app"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\fylepad-zen"
+shortcuts = [{ target = "fylepad-zen.exe", name = "fylepad" }]
+
+[source.x64]
+url = "https://github.com/imrofayel/fylepad/releases/download/app-v4.0.0/fylepad-zen_4.0.0_x64_en-US.msi"
+sha256 = "0df380c75db693fd528ceca5a60afea1112e677d9fe43f7d59a23ae2ee800a20"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "imrofayel/fylepad" }
+url_template = { x64 = "https://github.com/imrofayel/fylepad/releases/download/app-v$version/fylepad-zen_$version_x64_en-US.msi" }

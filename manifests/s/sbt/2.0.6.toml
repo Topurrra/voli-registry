@@ -1,0 +1,20 @@
+name = "sbt"
+version = "2.0.6"
+description = "A build tool for Scala, Java, and more"
+homepage = "https://www.scala-sbt.org"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "sbt"
+bin = ["bin\\sbt.bat"]
+persist = ["conf"]
+
+[source.x64]
+url = "https://github.com/sbt/sbt/releases/download/v2.0.6/sbt-2.0.6.zip"
+sha256 = "5ed304a007159ac37e002111e364366fa1518a75d8023309443ad320ed306266"
+
+[env]
+SBT_HOME = "{dir}"
+
+[autoupdate]
+checkver = { url = "https://www.scala-sbt.org/download/", regex = "/sbt-([\\d.]+)\\.zip" }
+url_template = "https://github.com/sbt/sbt/releases/download/v$version/sbt-$version.zip"

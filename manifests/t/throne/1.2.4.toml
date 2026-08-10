@@ -1,0 +1,21 @@
+name = "throne"
+version = "1.2.4"
+description = "Cross-platform GUI proxy utility (Empowered by sing-box)"
+homepage = "https://github.com/throneproj/throne"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "Throne"
+shortcuts = [{ target = "Throne.exe", name = "Throne" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/throneproj/throne/releases/download/1.2.4/Throne-1.2.4-windows64.zip"
+sha256 = "89d32f3a557849641b466d3c2f0ac69dfc02ec8309a129289290e8fcca4b7b32"
+
+[source.arm64]
+url = "https://github.com/throneproj/throne/releases/download/1.2.4/Throne-1.2.4-windows-arm64.zip"
+sha256 = "b533e4a152ba994883d9fb2c8b5556a91b2ac68805ecdeb5fc2c8f5c2814de8a"
+
+[autoupdate]
+checkver = { github = "throneproj/throne" }
+url_template = { x64 = "https://github.com/throneproj/throne/releases/download/$version/Throne-$version-windows64.zip", arm64 = "https://github.com/throneproj/throne/releases/download/$version/Throne-$version-windows-arm64.zip" }

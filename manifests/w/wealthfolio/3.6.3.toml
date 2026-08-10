@@ -1,0 +1,19 @@
+name = "wealthfolio"
+version = "3.6.3"
+description = "A wealth management tool designed to help users track and manage their financial portfolios."
+homepage = "https://wealthfolio.app/"
+license = "LGPL-3.0"
+kind = "app"
+shortcuts = [{ target = "Wealthfolio.exe", name = "Wealthfolio" }]
+
+[source.x64]
+url = "https://github.com/wealthfolio/wealthfolio/releases/download/v3.6.3/Wealthfolio_3.6.3_x64-setup.exe#/dl.7z"
+sha256 = "332a948bb80caa585f17ce1fcea05ea1d5ad2b3622d7c523663d24bce49198dd"
+
+[source.arm64]
+url = "https://github.com/wealthfolio/wealthfolio/releases/download/v3.6.3/Wealthfolio_3.6.3_arm64-setup.exe#/dl.7z"
+sha256 = "7ef3ac15be3eb867388a51ad30517ef12ebcddaac7450a3e9a833a459a8f21b6"
+
+[autoupdate]
+checkver = { github = "wealthfolio/wealthfolio" }
+url_template = { x64 = "https://github.com/wealthfolio/wealthfolio/releases/download/v$version/Wealthfolio_$version_x64-setup.exe#/dl.7z", arm64 = "https://github.com/wealthfolio/wealthfolio/releases/download/v$version/Wealthfolio_$version_arm64-setup.exe#/dl.7z" }

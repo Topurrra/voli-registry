@@ -1,0 +1,16 @@
+name = "libresprite"
+version = "1.1"
+description = "Animated sprite editor & pixel art tool"
+homepage = "https://libresprite.github.io"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["libresprite.exe"]
+shortcuts = [{ target = "libresprite.exe", name = "LibreSprite" }]
+
+[source.x64]
+url = "https://github.com/LibreSprite/LibreSprite/releases/download/v1.1/libresprite-development-windows-x86_64.zip"
+sha256 = "b6b078a8342a20277b16cae4aa6b880ffced7db1f1b8bd5d0387193a7c3fe43d"
+
+[autoupdate]
+checkver = { github = "LibreSprite/LibreSprite" }
+url_template = { x64 = "https://github.com/LibreSprite/LibreSprite/releases/download/v$version/libresprite-development-windows-x86_64.zip" }

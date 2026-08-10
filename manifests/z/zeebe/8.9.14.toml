@@ -1,0 +1,16 @@
+name = "zeebe"
+version = "8.9.14"
+description = "Distributed Workflow Engine for Microservices Orchestration"
+homepage = "https://camunda.com/products/cloud/workflow-engine/"
+license = "Zeebe Community License v1.0"
+kind = "app"
+extract_dir = "camunda-zeebe-8.9.14"
+bin = [{ name = "zeebe-broker", path = "bin\\broker.bat" }, { name = "zeebe-gateway", path = "bin\\gateway.bat" }]
+
+[source.x64]
+url = "https://github.com/camunda/camunda/releases/download/8.9.14/camunda-zeebe-8.9.14.zip"
+sha256 = "b0aea762e805bae9bca8be5063ad38f1acb25d578a8a4f857c508bd34b5af621"
+
+[autoupdate]
+checkver = { github = "camunda/camunda" }
+url_template = { x64 = "https://github.com/camunda/camunda/releases/download/$version/camunda-zeebe-$version.zip" }

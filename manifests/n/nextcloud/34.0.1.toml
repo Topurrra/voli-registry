@@ -1,0 +1,18 @@
+name = "nextcloud"
+version = "34.0.1"
+description = "Desktop sync client for Nextcloud, a self-hosted productivity platform"
+homepage = "https://nextcloud.com/"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "PFiles\\Nextcloud"
+bin = ["nextcloudcmd.exe", { name = "nextcloud", path = "nextcloudcmd.exe" }]
+shortcuts = [{ target = "nextcloud.exe", name = "Nextcloud" }]
+
+[source.x64]
+url = "https://github.com/nextcloud-releases/desktop/releases/download/v34.0.1/Nextcloud-34.0.1-x64.msi"
+sha256 = "e81c052832383508c67136395b9304bfdd8bf7a4dbdd9b86a1bd4dd22272b485"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://nextcloud.com/install/", regex = "Nextcloud-([\\d.]+)-x64.msi" }
+url_template = { x64 = "https://github.com/nextcloud-releases/desktop/releases/download/v$version/Nextcloud-$version-x64.msi" }

@@ -1,0 +1,16 @@
+name = "whisper-cpp"
+version = "1.9.2"
+description = "High-performance inference of OpenAI's Whisper automatic speech recognition (ASR) model"
+homepage = "https://github.com/ggml-org/whisper.cpp"
+license = "MIT"
+kind = "app"
+extract_dir = "Release"
+bin = ["whisper-bench.exe", "whisper-cli.exe", "whisper-command.exe", "whisper-lsp.exe", "whisper-quantize.exe", "whisper-server.exe", "whisper-stream.exe", "whisper-talk-llama.exe", "whisper-vad-speech-segments.exe"]
+
+[source.x64]
+url = "https://github.com/ggml-org/whisper.cpp/releases/download/v1.9.2/whisper-bin-x64.zip"
+sha256 = "49dcc16de826f20bd53d44f947a1ae49dfa81f86cad67a64d80820cb192d674a"
+
+[autoupdate]
+checkver = { github = "ggml-org/whisper.cpp" }
+url_template = { x64 = "https://github.com/ggml-org/whisper.cpp/releases/download/v$version/whisper-bin-x64.zip" }

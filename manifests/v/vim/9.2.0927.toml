@@ -1,0 +1,21 @@
+name = "vim"
+version = "9.2.0927"
+description = "A highly configurable text editor"
+homepage = "https://www.vim.org"
+license = "Vim"
+kind = "app"
+extract_dir = "vim/vim92"
+bin = ["vim.exe", { name = "vi", path = "vim.exe" }, { name = "ex", path = "vim.exe", args = "-e" }, { name = "view", path = "vim.exe", args = "-R" }, { name = "rvim", path = "vim.exe", args = "-Z" }, { name = "rview", path = "vim.exe", args = "-RZ" }, { name = "vimdiff", path = "vim.exe", args = "-d" }, "gvim.exe", { name = "gview", path = "gvim.exe", args = "-R" }, { name = "evim", path = "gvim.exe", args = "-y" }, { name = "eview", path = "gvim.exe", args = "-Ry" }, { name = "rgvim", path = "gvim.exe", args = "-Z" }, { name = "rgview", path = "gvim.exe", args = "-RZ" }, { name = "gvimdiff", path = "gvim.exe", args = "-d" }, "xxd.exe"]
+shortcuts = [{ target = "gvim.exe", name = "gVim" }]
+
+[source.x64]
+url = "https://github.com/vim/vim-win32-installer/releases/download/v9.2.0927/gvim_9.2.0927_x64_signed.zip"
+sha256 = "e31698bb3201571866a0e6a8844470ef0010f46b81a96899ee90894b538bb5b6"
+
+[source.arm64]
+url = "https://github.com/vim/vim-win32-installer/releases/download/v9.2.0927/gvim_9.2.0927_arm64_signed.zip"
+sha256 = "8286202e018f789a924a8917b3ee585a9732d69220663e0def95af925066aebb"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/vim/vim-win32-installer/releases?per_page=45\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /signed\\\\.zip/i)].browser_download_url\",\"regex\":\"(?i)download/(?<tag>[^/]+)/gvim_([\\\\d.]+)_(?:x|arm)\"}"
+url_template = { x64 = "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x64_signed.zip", arm64 = "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_arm64_signed.zip" }

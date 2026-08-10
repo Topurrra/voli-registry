@@ -1,0 +1,19 @@
+name = "iii"
+version = "0.22.1"
+description = "Effortlessly compose, extend, and observe every service in real-time."
+homepage = "https://iii.dev"
+license = "Apache-2.0|Elastic-2.0"
+kind = "app"
+bin = ["iii.exe"]
+
+[source.x64]
+url = "https://github.com/iii-hq/iii/releases/download/iii/v0.22.1/iii-x86_64-pc-windows-msvc.zip"
+sha256 = "d862bf7cf1e864f3290c8a6fc17c308c6ecac097cb2666e4a739efc0040aae96"
+
+[source.arm64]
+url = "https://github.com/iii-hq/iii/releases/download/iii/v0.22.1/iii-aarch64-pc-windows-msvc.zip"
+sha256 = "4777a48cee3fc1a742daee929e3d943df09e4ddd3357d27a33d31c9dc9e520ac"
+
+[autoupdate]
+checkver = { github = "iii-hq/iii" }
+url_template = { x64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-aarch64-pc-windows-msvc.zip" }

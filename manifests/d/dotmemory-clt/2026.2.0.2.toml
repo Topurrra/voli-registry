@@ -1,0 +1,15 @@
+name = "dotmemory-clt"
+version = "2026.2.0.2"
+description = "JetBrains dotMemory Command Line Tools for profiling .NET memory usage from the command line."
+homepage = "https://www.jetbrains.com/dotmemory/download/#section=commandline"
+license = "Freeware"
+kind = "app"
+bin = ["dotMemory.exe"]
+
+[source.x64]
+url = "https://download.jetbrains.com/resharper/dotUltimate.2026.2.0.2/JetBrains.dotMemory.Console.windows-x64.2026.2.0.2.zip"
+sha256 = "7d0cf5944d57dbe59de824a95912ee7a8ad637369273e9f0b0f632847dcc38f8"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&platform=zip&type=release\"}"
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotMemory.Console.windows-x64.$version.zip" }

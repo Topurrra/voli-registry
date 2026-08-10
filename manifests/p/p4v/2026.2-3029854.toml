@@ -1,0 +1,17 @@
+name = "p4v"
+version = "2026.2-3029854"
+description = "Provides access to versioned files in Helix Core through a graphical interface."
+homepage = "https://www.perforce.com/products/helix-core-apps/helix-visual-client-p4v"
+license = "Proprietary"
+kind = "app"
+extract_dir = "Perforce"
+bin = ["p4.exe", "p4admin.exe", "p4merge.exe", "p4v.exe"]
+shortcuts = [{ target = "p4v.exe", name = "P4V" }, { target = "p4merge.exe", name = "P4Merge" }, { target = "p4admin.exe", name = "P4Admin" }]
+
+[source.x64]
+url = "https://cdist2.perforce.com/perforce/r26.2/bin.ntx64/p4vinst64.msi"
+sha256 = "e68d0917656e1549cc72ea94031f897795ca4e64b0af25d3f1fd1b17f5c345ee"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://help.perforce.com/helix-core/release-notes/current/p4vnotes.txt", regex = "\\d{4}\\.\\d Update \\d+ \\((?<yyyy>\\d{2}(?<yy>\\d{2}))\\.(?<release>\\d)/(?<build>\\d+)\\)" }

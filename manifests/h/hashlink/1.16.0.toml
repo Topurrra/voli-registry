@@ -1,0 +1,19 @@
+name = "hashlink"
+version = "1.16.0"
+description = "HashLink is a virtual machine for Haxe"
+homepage = "https://hashlink.haxe.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "hashlink-1.16.0-win"
+bin = ["hl.exe"]
+
+[source.x64]
+url = "https://github.com/HaxeFoundation/hashlink/releases/download/1.16/hashlink-1.16.0-win.zip"
+sha256 = "ec80b5bfbe93ae497ff43cd72d5bb4d906de3c6398839ba692fa28c47b54aa0f"
+
+[env]
+HASHLINKPATH = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/HaxeFoundation/hashlink/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"([\\\\d.]+)-win\"}"
+url_template = "https://github.com/HaxeFoundation/hashlink/releases/download/$majorVersion.$minorVersion/hashlink-$version-win.zip"

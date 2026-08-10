@@ -4,7 +4,7 @@ description = "A Microsoft-maintained build of uutils/coreutils, uutils/findutil
 homepage = "https://github.com/microsoft/coreutils"
 license = "MIT"
 kind = "app"
-bin = ["coreutils.exe", { name = "uutils", path = "coreutils.exe" }]
+bin = ["coreutils.exe", { name = "microsoft-coreutils", path = "coreutils.exe" }]
 
 [source.x64]
 url = "https://github.com/microsoft/coreutils/releases/download/v2026.6.16/coreutils-2026.6.16-x64.exe"

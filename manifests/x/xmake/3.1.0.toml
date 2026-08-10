@@ -1,0 +1,16 @@
+name = "xmake"
+version = "3.1.0"
+description = "A cross-platform build utility based on Lua"
+homepage = "https://xmake.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "xmake"
+bin = ["xmake.exe", "xrepo.bat"]
+
+[source.x64]
+url = "https://github.com/xmake-io/xmake/releases/download/v3.1.0/xmake-v3.1.0.win64.zip"
+sha256 = "92c320923a0ba52d21934d107ae7fa4cbf03ea5ce972177e7abc2fb7905bd8bd"
+
+[autoupdate]
+checkver = { github = "xmake-io/xmake" }
+url_template = { x64 = "https://github.com/xmake-io/xmake/releases/download/v$version/xmake-v$version.win64.zip" }

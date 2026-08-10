@@ -1,0 +1,17 @@
+name = "mingw-winlibs"
+version = "16.2.0-14.0.0-r1"
+description = "GNU Compiler Collection (WinLibs build)"
+homepage = "https://winlibs.com"
+license = "GPL-3.0-or-later,ZPL-2.1,BSD-2-Clause,..."
+kind = "app"
+extract_dir = "mingw64"
+
+[source.x64]
+url = "https://github.com/brechtsanders/winlibs_mingw/releases/download/16.2.0posix-14.0.0-ucrt-r1/winlibs-x86_64-posix-seh-gcc-16.2.0-mingw-w64ucrt-14.0.0-r1.7z"
+sha256 = "9714f9e55905000ec2a066ae033abdfe8c93083a925e3fe015d3c7cc4bb1c918"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?<gcc>[\\\\d.]+)posix(?<llvm>-[\\\\d.]+)?-(?<mingw>[\\\\d.]+)-ucrt-r(?<release>\\\\d+)\",\"replace\":\"${gcc}-${mingw}-r${release}\"}"

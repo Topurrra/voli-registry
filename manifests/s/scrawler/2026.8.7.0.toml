@@ -1,0 +1,16 @@
+name = "scrawler"
+version = "2026.8.7.0"
+description = "A program to download photos and videos from any site (e.g. Reddit, Twitter, Instagram, TikTok, RedGifs, PornHub, XHamster, XVIDEOS, LPSG)."
+homepage = "https://github.com/AAndyProgram/SCrawler"
+license = "GPL-3.0"
+kind = "app"
+shortcuts = [{ target = "SCrawler.exe", name = "SCrawler" }]
+persist = ["Data", "Settings", "Plugins"]
+
+[source.x64]
+url = "https://github.com/AAndyProgram/SCrawler/releases/download/2026.8.7.0/SCrawler_2026.8.7.0_x64.zip"
+sha256 = "c3f892a430c1ddda511b749b711f9588f330fb1c001015f2e61a1293277540aa"
+
+[autoupdate]
+checkver = { github = "AAndyProgram/SCrawler" }
+url_template = { x64 = "https://github.com/AAndyProgram/SCrawler/releases/download/$version/SCrawler_$version_x64.zip" }

@@ -1,0 +1,22 @@
+name = "sonic-pi"
+version = "5.0.0"
+description = "A code-based music creation and performance tool."
+homepage = "https://sonic-pi.net/"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles64\\Sonic Pi"
+shortcuts = [{ target = "app\\gui\\build\\Release\\sonic-pi.exe", name = "Sonic Pi" }]
+
+[source.x64]
+url = "https://sonic-pi.net/files/releases/v5.0.0/Sonic-Pi-for-Win-x64-v5.0.0.msi"
+sha256 = "58c12ba5f66894dfdde3f62ca12649530b6fe80a6cc4f15af70b9349d76fdb48"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://sonic-pi.net/files/releases/v5.0.0/Sonic-Pi-for-Win-arm64-v5.0.0.msi"
+sha256 = "256e0281567f9f8dc4c187ce739d35866ab76e3439df20f74e645b899edf90bf"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "sonic-pi-net/sonic-pi" }
+url_template = { x64 = "https://sonic-pi.net/files/releases/v$version/Sonic-Pi-for-Win-x64-v$version.msi", arm64 = "https://sonic-pi.net/files/releases/v$version/Sonic-Pi-for-Win-arm64-v$version.msi" }

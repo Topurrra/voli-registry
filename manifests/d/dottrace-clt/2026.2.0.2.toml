@@ -1,0 +1,15 @@
+name = "dottrace-clt"
+version = "2026.2.0.2"
+description = "JetBrains dotTrace Command Line Tools that enable analyzing performance of .NET applications outside of Visual Studio."
+homepage = "https://www.jetbrains.com/profiler/download/#section=commandline"
+license = "Freeware"
+kind = "app"
+bin = ["ConsoleProfiler.exe"]
+
+[source.x64]
+url = "https://download.jetbrains.com/resharper/dotUltimate.2026.2.0.2/JetBrains.dotTrace.CommandLineTools.windows-x64.2026.2.0.2.zip"
+sha256 = "9e5bc6e71d776f5aaf770eb5d99b18b6d50d8d3f5bbc205f9b94c0d24a59557c"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&platform=zip&type=release\"}"
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotTrace.CommandLineTools.windows-x64.$version.zip" }

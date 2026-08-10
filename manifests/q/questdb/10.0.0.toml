@@ -1,0 +1,17 @@
+name = "questdb"
+version = "10.0.0"
+description = "An open source SQL database designed to process time series data, faster."
+homepage = "https://questdb.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "questdb-10.0.0-no-jre-bin"
+bin = ["questdb.exe"]
+persist = ["conf", "db", "log"]
+
+[source.x64]
+url = "https://github.com/questdb/questdb/releases/download/10.0.0/questdb-10.0.0-no-jre-bin.tar.gz"
+sha256 = "ff9665953227b522c3bad26245ee9fdbb6e58eccc6d8489722f7c04c200c52ab"
+
+[autoupdate]
+checkver = { github = "questdb/questdb" }
+url_template = { x64 = "https://github.com/questdb/questdb/releases/download/$version/questdb-$version-no-jre-bin.tar.gz" }

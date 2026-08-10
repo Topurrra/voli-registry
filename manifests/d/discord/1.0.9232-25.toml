@@ -1,7 +1,7 @@
 name = "discord"
 version = "1.0.9232-25"
 description = "Free Voice and Text Chat"
-homepage = "https://discord.com/"
+homepage = "https://discord.com"
 license = "Freeware"
 kind = "app"
 shortcuts = [{ target = "discord-portable.exe", name = "Discord" }]
@@ -12,5 +12,5 @@ url = "https://github.com/portapps/discord-portable/releases/download/1.0.9232-2
 sha256 = "f3b9a07a76433f0b00bc185dbad4970150b2f6a44a3ac0c907a36e8c252e0b8d"
 
 [autoupdate]
-checkver = { url = "https://github.com/portapps/discord-portable", regex = "/releases/tag/(?:v|V)?([\\d.-]+)" }
+checkver = { github = "portapps/discord-portable" }
 url_template = { x64 = "https://github.com/portapps/discord-portable/releases/download/$version/discord-portable-win64-$version.7z" }

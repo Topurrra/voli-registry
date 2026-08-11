@@ -1,0 +1,16 @@
+name = "miller"
+version = "6.21.0"
+description = "Like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed."
+homepage = "https://miller.readthedocs.io"
+license = "BSD-2-Clause"
+kind = "app"
+extract_dir = "miller-6.21.0-windows-amd64"
+bin = ["mlr.exe"]
+
+[source.x64]
+url = "https://github.com/johnkerl/miller/releases/download/v6.21.0/miller-6.21.0-windows-amd64.zip"
+sha256 = "e4730fafce659db22c619c0fde51eba050edc584a0804fd2c8b2883c8f8d8250"
+
+[autoupdate]
+checkver = { github = "johnkerl/miller" }
+url_template = { x64 = "https://github.com/johnkerl/miller/releases/download/v$version/miller-$version-windows-amd64.zip" }

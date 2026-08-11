@@ -1,0 +1,19 @@
+name = "langsmith-cli"
+version = "0.2.47"
+description = "A coding agent-first CLI for interacting with LangSmith."
+homepage = "https://github.com/langchain-ai/langsmith-cli"
+license = "MIT"
+kind = "app"
+bin = ["langsmith.exe"]
+
+[source.x64]
+url = "https://github.com/langchain-ai/langsmith-cli/releases/download/v0.2.47/langsmith_windows_amd64.zip"
+sha256 = "f95cb8f46c5865e7996fbff26548bba59da112687b837f245018c5b57326ac7f"
+
+[source.arm64]
+url = "https://github.com/langchain-ai/langsmith-cli/releases/download/v0.2.47/langsmith_windows_arm64.zip"
+sha256 = "6f2c1163e5f4b878fe41939c6a2a490266c2b2c5a91849185f11f66274d0c4d2"
+
+[autoupdate]
+checkver = { github = "langchain-ai/langsmith-cli" }
+url_template = { x64 = "https://github.com/langchain-ai/langsmith-cli/releases/download/v$version/langsmith_windows_amd64.zip", arm64 = "https://github.com/langchain-ai/langsmith-cli/releases/download/v$version/langsmith_windows_arm64.zip" }

@@ -1,0 +1,17 @@
+name = "localsend"
+version = "1.18.0"
+description = "Share files to nearby devices. An open source cross-platform alternative to AirDrop."
+homepage = "https://localsend.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["localsend_app.exe", { name = "localsend", path = "localsend_app.exe" }]
+shortcuts = [{ target = "localsend_app.exe", name = "LocalSend" }]
+persist = ["settings.json"]
+
+[source.x64]
+url = "https://github.com/localsend/localsend/releases/download/v1.18.0/LocalSend-1.18.0-windows-x86-64.zip"
+sha256 = "e047713603325ee96c1a9bdf433c8e4683ff58260585456a8a8deacd536c22b2"
+
+[autoupdate]
+checkver = { github = "localsend/localsend" }
+url_template = { x64 = "https://github.com/localsend/localsend/releases/download/v$version/LocalSend-$version-windows-x86-64.zip" }

@@ -1,0 +1,15 @@
+name = "influxdb"
+version = "3.11.1"
+description = "Scalable datastore for metrics, events, and real-time analytics."
+homepage = "https://www.influxdata.com/"
+license = "MIT"
+kind = "app"
+bin = ["influxdb3.exe"]
+
+[source.x64]
+url = "https://dl.influxdata.com/influxdb/releases/influxdb3-core-3.11.1-windows_amd64.zip"
+sha256 = "5860b138e4b8f5c48b2899345ec34fe11470362e345aa9d4ca38f9e43d826ff9"
+
+[autoupdate]
+checkver = { url = "https://docs.influxdata.com/influxdb3/core/release-notes/", regex = ">v([\\d.]+)<" }
+url_template = { x64 = "https://dl.influxdata.com/influxdb/releases/influxdb3-core-$version-windows_amd64.zip" }

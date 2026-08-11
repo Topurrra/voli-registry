@@ -1,0 +1,16 @@
+name = "k6"
+version = "2.2.0"
+description = "Load and performance regression testing tool for cloud native backend infrastructure"
+homepage = "https://k6.io"
+license = "AGPL-3.0"
+kind = "app"
+extract_dir = "k6-v2.2.0-windows-amd64"
+bin = ["k6.exe"]
+
+[source.x64]
+url = "https://github.com/grafana/k6/releases/download/v2.2.0/k6-v2.2.0-windows-amd64.zip"
+sha256 = "ceb2b1e1cf9dbe1303c6c33ec83ffda86dda5c610b4def92064d3c7ebae8d9f4"
+
+[autoupdate]
+checkver = { github = "grafana/k6" }
+url_template = { x64 = "https://github.com/grafana/k6/releases/download/v$version/k6-v$version-windows-amd64.zip" }

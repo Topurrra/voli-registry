@@ -1,0 +1,17 @@
+name = "juce"
+version = "9.0.1"
+description = "C++ audio application framework"
+homepage = "https://juce.com"
+license = "Proprietary"
+kind = "app"
+extract_dir = "JUCE"
+bin = ["Projucer.exe"]
+shortcuts = [{ target = "Projucer.exe", name = "Projucer" }]
+
+[source.x64]
+url = "https://github.com/juce-framework/JUCE/releases/download/9.0.1/juce-9.0.1-windows.zip"
+sha256 = "de0256584416764d82ef5794d26a34b06a68bc65326f24e0d91301abd74704c1"
+
+[autoupdate]
+checkver = { github = "juce-framework/JUCE" }
+url_template = { x64 = "https://github.com/juce-framework/JUCE/releases/download/$version/juce-$version-windows.zip" }

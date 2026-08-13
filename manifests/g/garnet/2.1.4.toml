@@ -1,0 +1,21 @@
+name = "garnet"
+version = "2.1.4"
+description = "A high-performance cache-store from Microsoft Research."
+homepage = "https://microsoft.github.io/garnet"
+license = "MIT"
+kind = "app"
+extract_dir = "net10.0"
+bin = ["GarnetServer.exe"]
+persist = ["garnet.conf", "config"]
+
+[source.x64]
+url = "https://github.com/microsoft/garnet/releases/download/v2.1.4/win-x64-based-readytorun.zip"
+sha256 = "2c429b145638224823cd55bf900dc932dcddebda690728665051dcc17901c412"
+
+[source.arm64]
+url = "https://github.com/microsoft/garnet/releases/download/v2.1.4/win-arm64-based-readytorun.zip"
+sha256 = "44688225ba2a30fa247ebf881953e32a59470158a0395dcd81526fec9bcd08aa"
+
+[autoupdate]
+checkver = { github = "microsoft/garnet" }
+url_template = { x64 = "https://github.com/microsoft/garnet/releases/download/v$version/win-x64-based-readytorun.zip", arm64 = "https://github.com/microsoft/garnet/releases/download/v$version/win-arm64-based-readytorun.zip" }

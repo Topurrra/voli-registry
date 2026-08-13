@@ -1,0 +1,16 @@
+name = "balena-cli"
+version = "25.2.3"
+description = "Official balena CLI for interacting with balenaCloud and balena API."
+homepage = "https://github.com/balena-io/balena-cli"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "balena"
+bin = ["bin/balena.cmd"]
+
+[source.x64]
+url = "https://github.com/balena-io/balena-cli/releases/download/v25.2.3/balena-cli-v25.2.3-windows-x64-standalone.tar.gz"
+sha256 = "da48fe005562571c897b2468995ec8736a0e6cdcfe8936a3edf6f3e302f0519c"
+
+[autoupdate]
+checkver = { github = "balena-io/balena-cli" }
+url_template = { x64 = "https://github.com/balena-io/balena-cli/releases/download/v$version/balena-cli-v$version-windows-x64-standalone.tar.gz" }

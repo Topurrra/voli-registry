@@ -1,0 +1,20 @@
+name = "ffmpeg-shared"
+version = "9.0.1"
+description = "A complete, cross-platform solution to record, convert and stream audio and video."
+homepage = "https://ffmpeg.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "ffmpeg-9.0.1-full_build-shared"
+persist = ["fonts"]
+
+[source.x64]
+url = "https://github.com/GyanD/codexffmpeg/releases/download/9.0.1/ffmpeg-9.0.1-full_build-shared.7z"
+sha256 = "cb4d5e8db6a3353bffdb2100d3eb4b76733457fa443215e236f57c99f9ffdca4"
+
+[env]
+FFMPEG_DIR = "{dir}"
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "GyanD/codexffmpeg" }
+url_template = { x64 = "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-full_build-shared.7z" }

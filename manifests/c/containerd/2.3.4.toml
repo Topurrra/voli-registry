@@ -1,0 +1,15 @@
+name = "containerd"
+version = "2.3.4"
+description = "An open and reliable container runtime"
+homepage = "https://containerd.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\containerd.exe", "bin\\containerd-shim-runhcs-v1.exe", "bin\\ctr.exe"]
+
+[source.x64]
+url = "https://github.com/containerd/containerd/releases/download/v2.3.4/containerd-2.3.4-windows-amd64.tar.gz"
+sha256 = "5a61f42abd362cf21a9af6dff03edf1df2261e6fe6f3c2e45d132d12b99fdf49"
+
+[autoupdate]
+checkver = { github = "containerd/containerd" }
+url_template = { x64 = "https://github.com/containerd/containerd/releases/download/v$version/containerd-$version-windows-amd64.tar.gz" }

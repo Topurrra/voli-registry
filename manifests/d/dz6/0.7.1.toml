@@ -1,0 +1,15 @@
+name = "dz6"
+version = "0.7.1"
+description = "Fast Vim-inspired TUI hex editor"
+homepage = "https://dz6.dev.br"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["dz6.exe"]
+
+[source.x64]
+url = "https://github.com/mentebinaria/dz6/releases/download/v0.7.1/dz6-x86_64-pc-windows-msvc.zip"
+sha256 = "d7e9ae24adcf056c2cc0431a5763427a504508c14e3acc0eddd3f54892bd253e"
+
+[autoupdate]
+checkver = { github = "mentebinaria/dz6" }
+url_template = { x64 = "https://github.com/mentebinaria/dz6/releases/download/v$version/dz6-x86_64-pc-windows-msvc.zip" }

@@ -1,0 +1,21 @@
+name = "auto-dark-mode"
+version = "11.1.0.23"
+description = "Automatically switches between the dark and light theme of Windows 10 and Windows 11."
+homepage = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "adm-app"
+bin = ["core\\AutoDarkModeShell.exe"]
+shortcuts = [{ target = "ui\\AutoDarkModeApp.exe", name = "Auto Dark Mode" }]
+
+[source.x64]
+url = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.0.23/AutoDarkMode_11.1.0.23_x64.zip"
+sha256 = "cbef08084763c1ba7f03a14dc02c10d0faa8d5bc60e48d8bd735f7216df9036a"
+
+[source.arm64]
+url = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.0.23/AutoDarkMode_11.1.0.23_ARM64.zip"
+sha256 = "57e6520c812ff699e4b3984c45b8c15b1c25697063471103fef15b1f0af2a887"
+
+[autoupdate]
+checkver = { github = "AutoDarkMode/Windows-Auto-Night-Mode" }
+url_template = { x64 = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_x64.zip", arm64 = "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_ARM64.zip" }

@@ -1,0 +1,19 @@
+name = "git-pkgs"
+version = "0.19.0"
+description = "Git subcommand for tracking package dependencies across git history. Analyzes your repository to show when dependencies were added, modified, or removed, who made those changes, and why."
+homepage = "https://git-pkgs.dev/"
+license = "MIT"
+kind = "app"
+bin = ["git-pkgs.exe"]
+
+[source.x64]
+url = "https://github.com/git-pkgs/git-pkgs/releases/download/v0.19.0/git-pkgs_0.19.0_windows_amd64.tar.gz"
+sha256 = "2a5c36a1addc00708f4648d03129efd2936acf4f08b5307ff6a6012fc71cc688"
+
+[source.arm64]
+url = "https://github.com/git-pkgs/git-pkgs/releases/download/v0.19.0/git-pkgs_0.19.0_windows_arm64.tar.gz"
+sha256 = "293acc79cbf1c71012ec189a83eeaa809bda9a8e24455a9344f1b3123e9dec60"
+
+[autoupdate]
+checkver = { github = "git-pkgs/git-pkgs" }
+url_template = { x64 = "https://github.com/git-pkgs/git-pkgs/releases/download/v$version/git-pkgs_$version_windows_amd64.tar.gz", arm64 = "https://github.com/git-pkgs/git-pkgs/releases/download/v$version/git-pkgs_$version_windows_arm64.tar.gz" }

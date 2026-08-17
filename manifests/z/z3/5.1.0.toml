@@ -1,0 +1,16 @@
+name = "z3"
+version = "5.1.0"
+description = "Theorem prover from Microsoft Research."
+homepage = "https://github.com/Z3Prover/z3"
+license = "MIT"
+kind = "app"
+extract_dir = "z3-5.1.0-x64-win"
+bin = ["bin\\z3.exe"]
+
+[source.x64]
+url = "https://github.com/Z3Prover/z3/releases/download/z3-5.1.0/z3-5.1.0-x64-win.zip"
+sha256 = "6ff368eaa2f9dc18acf244e736a074df877026bfc83abede6f327ebb95680535"
+
+[autoupdate]
+checkver = { github = "Z3Prover/z3" }
+url_template = { x64 = "https://github.com/Z3Prover/z3/releases/download/z3-$version/z3-$version-x64-win.zip" }

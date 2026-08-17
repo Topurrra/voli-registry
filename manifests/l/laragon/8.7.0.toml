@@ -1,0 +1,17 @@
+name = "laragon"
+version = "8.7.0"
+description = "Universal development environment for PHP, Node.js, Python, Java, Go, Ruby"
+homepage = "https://laragon.org/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "laragon.exe", name = "Laragon" }]
+persist = ["etc", "tmp", "usr", "www"]
+
+[source.x64]
+url = "https://github.com/leokhoa/laragon/releases/download/8.7.0/laragon-wamp.exe"
+sha256 = "92e2eb7bd2f0de4c458d9ddf53bb957aed98d21f679c3e35c7eed7bbf03a42a3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "leokhoa/laragon" }
+url_template = "https://github.com/leokhoa/laragon/releases/download/$version/laragon-wamp.exe"

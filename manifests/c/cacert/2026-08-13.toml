@@ -1,0 +1,14 @@
+name = "cacert"
+version = "2026-08-13"
+description = "CA certificates extracted from the Mozilla CA certificate store, in PEM format"
+homepage = "https://curl.se/docs/caextract.html"
+license = "MPL-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://curl.se/ca/cacert-2026-08-13.pem#/cacert.pem"
+sha256 = "f66dff1bdf8f96060b8177976f8b7d9254bc89bc4db933d769f7384d28480bc9"
+
+[autoupdate]
+checkver = "cacert-([\\d-]+)\\.pem"
+url_template = "https://curl.se/ca/cacert-$version.pem#/cacert.pem"

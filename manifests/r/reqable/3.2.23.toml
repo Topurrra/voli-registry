@@ -1,0 +1,15 @@
+name = "reqable"
+version = "3.2.23"
+description = "Advanced API Debugging Proxy"
+homepage = "https://reqable.com/"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "Reqable.exe", name = "Reqable" }]
+
+[source.x64]
+url = "https://github.com/reqable/reqable-app/releases/download/3.2.23/reqable-app-windows-x86_64.zip"
+sha256 = "0305ee6effd1ef537509837a2e3f8705e8c771ba386875f6dd14e3966d0a90af"
+
+[autoupdate]
+checkver = { github = "reqable/reqable-app" }
+url_template = { x64 = "https://github.com/reqable/reqable-app/releases/download/$version/reqable-app-windows-x86_64.zip" }

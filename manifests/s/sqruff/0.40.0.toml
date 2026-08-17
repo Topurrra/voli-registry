@@ -1,0 +1,15 @@
+name = "sqruff"
+version = "0.40.0"
+description = "Fast SQL formatter/linter"
+homepage = "https://github.com/quarylabs/sqruff"
+license = "Apache-2.0"
+kind = "app"
+bin = ["sqruff.exe"]
+
+[source.x64]
+url = "https://github.com/quarylabs/sqruff/releases/download/v0.40.0/sqruff-windows-x86_64.zip"
+sha256 = "f60f5d2f98c6b170d319cda71e53379653bc4dfa2ef5ded1551e57fe918782fa"
+
+[autoupdate]
+checkver = { github = "quarylabs/sqruff" }
+url_template = { x64 = "https://github.com/quarylabs/sqruff/releases/download/v$version/sqruff-windows-x86_64.zip" }

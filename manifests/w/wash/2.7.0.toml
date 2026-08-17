@@ -1,0 +1,15 @@
+name = "wash"
+version = "2.7.0"
+description = "Wasm Shell (wash) is the comprehensive command-line tool for developing, building, and publishing WebAssembly components."
+homepage = "https://wasmcloud.com/docs/wash"
+license = "Apache-2.0"
+kind = "app"
+bin = ["wash.exe"]
+
+[source.x64]
+url = "https://github.com/wasmCloud/wasmCloud/releases/download/v2.7.0/wash-x86_64-pc-windows-msvc.zip"
+sha256 = "f76a3d0ac0c1d280f49564bde94104f24f4f5b61d7ac1f5da0504d9733d8994c"
+
+[autoupdate]
+checkver = { github = "wasmCloud/wasmCloud" }
+url_template = { x64 = "https://github.com/wasmCloud/wasmCloud/releases/download/v$version/wash-x86_64-pc-windows-msvc.zip" }

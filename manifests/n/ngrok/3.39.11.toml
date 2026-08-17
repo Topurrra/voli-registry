@@ -1,0 +1,15 @@
+name = "ngrok"
+version = "3.39.11"
+description = "ngrok is your app's front door. ngrok is a globally distributed reverse proxy that secures, protects and accelerates your applications and network services, no matter where you run them. ngrok supports delivering HTTP, TLS or TCP-based applications."
+homepage = "https://ngrok.com/"
+license = "Freeware"
+kind = "app"
+bin = ["ngrok.exe"]
+
+[source.x64]
+url = "https://bin.ngrok.com/a/P2eJimSQ97/ngrok-v3-3.39.11-windows-amd64.zip"
+sha256 = "699bbf1932ec43a573b764bd03e6568efa2c4e45955eb3cc2089c19bb4be4464"
+
+[autoupdate]
+checkver = { url = "https://ngrok.com/download/archive/ngrok/ngrok-v3/stable/ngrok_archive", regex = "/a/(?<hash64bit>\\w+)/ngrok-v[\\d.]+-([\\d.]+)-windows-amd64.zip(?:.|\\n)+?/a/(?<hash32bit>\\w+)/ngrok-v[\\d.]+-([\\d.]+)-windows-386.zip" }
+url_template = { x64 = "https://bin.ngrok.com/a/$matchHash64bit/ngrok-v$majorVersion-$version-windows-amd64.zip" }

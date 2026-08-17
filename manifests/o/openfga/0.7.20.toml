@@ -1,0 +1,19 @@
+name = "openfga"
+version = "0.7.20"
+description = "Relationship-based access control made fast, scalable, and easy to use"
+homepage = "https://openfga.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["fga.exe"]
+
+[source.x64]
+url = "https://github.com/openfga/cli/releases/download/v0.7.20/fga_0.7.20_windows_amd64.tar.gz"
+sha256 = "525eaa1b1a6870f217a8b8ef2dfddff8560dac8582e392838381a65411496030"
+
+[source.arm64]
+url = "https://github.com/openfga/cli/releases/download/v0.7.20/fga_0.7.20_windows_arm64.tar.gz"
+sha256 = "931d98b4dca951fa19164abbbe463704adc1fbfc9c3d308225b7bfe1f14f76ae"
+
+[autoupdate]
+checkver = { github = "openfga/cli" }
+url_template = { x64 = "https://github.com/openfga/cli/releases/download/v$version/fga_$version_windows_amd64.tar.gz", arm64 = "https://github.com/openfga/cli/releases/download/v$version/fga_$version_windows_arm64.tar.gz" }

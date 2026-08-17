@@ -1,0 +1,15 @@
+name = "typespec"
+version = "1.15.0"
+description = "Compiler CLI for TypeSpec, a language for defining cloud service APIs and shapes."
+homepage = "https://typespec.io"
+license = "MIT"
+kind = "app"
+bin = ["tsp.exe"]
+
+[source.x64]
+url = "https://typespec.blob.core.windows.net/dist/1.15.0/tsp-windows-x64.zip"
+sha256 = "f2c264f1abb16f6f83b4705c8715aa5c07f55fe60232cf3faaa2ac337d9aecaa"
+
+[autoupdate]
+checkver = { url = "https://typespec.blob.core.windows.net/dist/latest.txt", regex = "([\\d.]+)" }
+url_template = { x64 = "https://typespec.blob.core.windows.net/dist/$version/tsp-windows-x64.zip" }

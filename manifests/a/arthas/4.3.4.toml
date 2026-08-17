@@ -1,0 +1,15 @@
+name = "arthas"
+version = "4.3.4"
+description = "Arthas is a Java Diagnostic tool open sourced by Alibaba."
+homepage = "https://github.com/alibaba/arthas"
+license = "Apache-2.0"
+kind = "app"
+bin = ["arthas-boot.jar"]
+
+[source.x64]
+url = "https://github.com/alibaba/arthas/releases/download/arthas-all-4.3.4/arthas-bin.zip"
+sha256 = "8a645a0663607b44d59c7126a4477cd172ca50bdcced865a00d34c22cef10693"
+
+[autoupdate]
+checkver = { github = "alibaba/arthas" }
+url_template = "https://github.com/alibaba/arthas/releases/download/arthas-all-$version/arthas-bin.zip"

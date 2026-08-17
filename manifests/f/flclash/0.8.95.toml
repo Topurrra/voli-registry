@@ -4,7 +4,7 @@ description = "A multi-platform proxy client based on ClashMeta, simple and easy
 homepage = "https://github.com/chen08209/FlClash"
 license = "GPL-3.0-only"
 kind = "app"
-shortcuts = [{ target = "FlClash.exe", name = "FlClash" }]
+shortcuts = [{ target = "app\\FlClash.exe", name = "FlClash" }]
 
 [source.x64]
 url = "https://github.com/chen08209/FlClash/releases/download/v0.8.95/FlClash-0.8.95-windows-amd64.zip"

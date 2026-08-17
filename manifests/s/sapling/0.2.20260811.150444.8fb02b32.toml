@@ -1,0 +1,15 @@
+name = "sapling"
+version = "0.2.20260811.150444.8fb02b32"
+description = "Sapling SCM is a cross-platform, highly scalable, Git-compatible source control system."
+homepage = "https://sapling-scm.com/"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "Sapling"
+bin = ["sl.exe"]
+
+[source.x64]
+url = "https://github.com/facebook/sapling/releases/download/0.2.20260811-150444+8fb02b32/sapling-0.2.20260811-150444+8fb02b32-windows-x64.zip"
+sha256 = "fe427cea48504aaa4a06e00717523a3ef4b79f885051712e858480b3ad6d7682"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/facebook/sapling/releases/latest\",\"jsonpath\":\"$.tag_name\",\"regex\":\"(?<tag>(?<ver>[\\\\d.]+)\\\\.(?<date>[\\\\d]{8})-(?<time>[\\\\d]{6})\\\\+(?<hash>[\\\\da-f]{8}))\",\"replace\":\"${ver}.${date}.${time}.${hash}\"}"

@@ -11,5 +11,5 @@ url = "https://constexpr.org/innoextract/files/innoextract-1.9/innoextract-1.9-w
 sha512 = "eea751bc021b8cb9a979875d7df5ef0438a8ec6157f75fa9d34b0471bb359daf15cf9cee51a21f9115cb8410bdb836a57f1cd6b2198c634cf108e6785f902488"
 
 [autoupdate]
-checkver = { url = "https://constexpr.org/innoextract/files/?C=M&O=D", regex = "innoextract-([\\d.]+)" }
+checkver = { url = "https://constexpr.org/innoextract/files", regex = "innoextract-([\\d.]+)" }
 url_template = "https://constexpr.org/innoextract/files/innoextract-$version/innoextract-$version-windows.zip"

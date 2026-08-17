@@ -1,0 +1,16 @@
+name = "rimage"
+version = "0.13.0"
+description = "A powerful Rust image optimization CLI tool"
+homepage = "https://github.com/SalOne22/rimage"
+license = "Apache-2.0|MIT"
+kind = "app"
+extract_dir = "rimage-0.13.0-x86_64-pc-windows-msvc"
+bin = ["rimage.exe"]
+
+[source.x64]
+url = "https://github.com/SalOne22/rimage/releases/download/v0.13.0/rimage-0.13.0-x86_64-pc-windows-msvc.zip"
+sha256 = "760c7d9d39ed44413cf44046a38d152f140311f18e070f02ae0e17d5d3ad6a43"
+
+[autoupdate]
+checkver = { github = "SalOne22/rimage" }
+url_template = { x64 = "https://github.com/SalOne22/rimage/releases/download/v$version/rimage-$version-x86_64-pc-windows-msvc.zip" }

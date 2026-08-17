@@ -1,0 +1,20 @@
+name = "putty"
+version = "0.85"
+description = "A free implementation of SSH and Telnet, along with an xterm terminal emulator."
+homepage = "https://www.chiark.greenend.org.uk/~sgtatham/putty/"
+license = "MIT"
+kind = "app"
+bin = ["putty.exe", "puttygen.exe", "pscp.exe", "pageant.exe", "psftp.exe", "plink.exe"]
+shortcuts = [{ target = "putty.exe", name = "PuTTY" }, { target = "pageant.exe", name = "Pageant (PuTTY authentication agent)" }, { target = "psftp.exe", name = "PSFTP" }, { target = "puttygen.exe", name = "PuTTYgen (PuTTY Key Generator)" }]
+
+[source.x64]
+url = "https://the.earth.li/~sgtatham/putty/0.85/w64/putty.zip"
+sha512 = "af4bc4fb0455983f5d286f6fe8b267b44ac6e31fa3ca1253267803703a5aa1c05c5de75f4f62f03062ba46cec9501eb77a26026fe890a4cb7e700c1f81561891"
+
+[source.arm64]
+url = "https://the.earth.li/~sgtatham/putty/0.85/wa64/putty.zip"
+sha512 = "66b5c033c795d33b4ed69ab5441cf0c7949f88e29c274a2f02d4d1fe8e620257c2cff555a40ed60baa6022a28811032f86957208d29d0e6d20c49152136f309d"
+
+[autoupdate]
+checkver = "The latest version is ([\\d.]+)\\."
+url_template = { x64 = "https://the.earth.li/~sgtatham/putty/$version/w64/putty.zip", arm64 = "https://the.earth.li/~sgtatham/putty/$version/wa64/putty.zip" }

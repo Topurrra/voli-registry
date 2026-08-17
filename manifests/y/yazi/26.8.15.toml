@@ -1,0 +1,21 @@
+name = "yazi"
+version = "26.8.15"
+description = "⚡️ Blazing fast terminal file manager written in Rust, based on async I/O."
+homepage = "https://github.com/sxyazi/yazi"
+license = "MIT"
+kind = "app"
+bin = ["ya.exe", "yazi.exe"]
+
+[source.x64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.8.15/yazi-x86_64-pc-windows-msvc.zip"
+sha256 = "451f6770999fa8f9b08e6c9f94a688c263b6d3007b0944c4407f1ae335eace30"
+extract_dir = "yazi-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.8.15/yazi-aarch64-pc-windows-msvc.zip"
+sha256 = "e20be1bf57a3c06f444b46aac76c1aaa6d2e2fceb1da393d94b959ba8a2458ff"
+extract_dir = "yazi-aarch64-pc-windows-msvc"
+
+[autoupdate]
+checkver = { github = "sxyazi/yazi" }
+url_template = { x64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-aarch64-pc-windows-msvc.zip" }

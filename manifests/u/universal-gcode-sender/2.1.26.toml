@@ -1,0 +1,15 @@
+name = "universal-gcode-sender"
+version = "2.1.26"
+description = "Full featured gcode platform used for interfacing with advanced CNC controllers."
+homepage = "https://winder.github.io/ugs_website/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "ugsplatform-win"
+
+[source.x64]
+url = "https://github.com/winder/Universal-G-Code-Sender/releases/download/v2.1.26/win64-ugs-platform-app-2.1.26.zip"
+sha256 = "0e697116c98741534a1d0d7bc239d84779d7dfb5a9caf62e9bdf64bd564b1cda"
+
+[autoupdate]
+checkver = { github = "winder/Universal-G-Code-Sender" }
+url_template = { x64 = "https://github.com/winder/Universal-G-Code-Sender/releases/download/v$version/win64-ugs-platform-app-$version.zip" }

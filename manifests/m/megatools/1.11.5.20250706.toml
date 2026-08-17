@@ -13,5 +13,5 @@ url = "https://xff.cz/megatools/builds/builds/megatools-1.11.5.20250706-win64.zi
 sha256 = "bd1269e50d9c45e369c14e287c1754c9506e1b11efcc0cd4bb95d460c9d782b5"
 
 [autoupdate]
-checkver = { url = "https://xff.cz/megatools/builds/LATEST", regex = "megatools-([\\d.]+)" }
+checkver = { url = "https://xff.cz/megatools/builds/builds/", regex = "megatools-([\\d.]+)-win64\\.zip" }
 url_template = { x64 = "https://xff.cz/megatools/builds/builds/megatools-$version-win64.zip" }

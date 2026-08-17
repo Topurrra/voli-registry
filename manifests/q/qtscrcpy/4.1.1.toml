@@ -1,0 +1,17 @@
+name = "qtscrcpy"
+version = "4.1.1"
+description = "Display and control Android device via TCP/IP or USB."
+homepage = "https://github.com/barry-ran/QtScrcpy"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "QtScrcpy-win-x64-v4.1.1"
+shortcuts = [{ target = "QtScrcpy.exe", name = "QtScrcpy" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/barry-ran/QtScrcpy/releases/download/v4.1.1/QtScrcpy-win-x64-v4.1.1.zip"
+sha256 = "d42bf7b1382b1ba1e59b9fff486dda164ef942d1f4ffb8e183970369f0cfff98"
+
+[autoupdate]
+checkver = { github = "barry-ran/QtScrcpy" }
+url_template = { x64 = "https://github.com/barry-ran/QtScrcpy/releases/download/v$version/QtScrcpy-win-x64-v$version.zip" }

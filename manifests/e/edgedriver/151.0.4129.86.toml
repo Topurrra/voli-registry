@@ -1,0 +1,19 @@
+name = "edgedriver"
+version = "151.0.4129.86"
+description = "Close the loop on your developer cycle by automating testing of your website in Microsoft Edge (Chromium)."
+homepage = "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver"
+license = "Freeware"
+kind = "app"
+bin = ["msedgedriver.exe"]
+
+[source.x64]
+url = "https://msedgedriver.microsoft.com/151.0.4129.86/edgedriver_win64.zip"
+sha256 = "e3408fc15fae8f8a02a0c6034335a66a556085b144e00d1cad1e42a49491763b"
+
+[source.arm64]
+url = "https://msedgedriver.microsoft.com/151.0.4129.86/edgedriver_arm64.zip"
+sha256 = "969adb11ec380628f849a0a48850a845b17941c76f63bed07c90bbe586c34b5e"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)\",\"script\":\"Write-Output $([System.Text.Encoding]::Unicode.GetString((Invoke-WebRequest -URI https://msedgedriver.microsoft.com/LATEST_STABLE).Content))\"}"
+url_template = { x64 = "https://msedgedriver.microsoft.com/$version/edgedriver_win64.zip", arm64 = "https://msedgedriver.microsoft.com/$version/edgedriver_arm64.zip" }

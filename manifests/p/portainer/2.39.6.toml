@@ -1,0 +1,16 @@
+name = "portainer"
+version = "2.39.6"
+description = "Making Docker and Kubernetes management easy."
+homepage = "https://portainer.io/"
+license = "Zlib"
+kind = "app"
+extract_dir = "portainer"
+bin = ["portainer.exe"]
+
+[source.x64]
+url = "https://github.com/portainer/portainer/releases/download/2.39.6/portainer-2.39.6-windows1809-amd64.tar.gz"
+sha256 = "f8fa21309b926b758f30a8bc61e0b52dc8a05fef4656cb9a4ae9b15eae73d1a9"
+
+[autoupdate]
+checkver = { github = "portainer/portainer" }
+url_template = { x64 = "https://github.com/portainer/portainer/releases/download/$version/portainer-$version-windows1809-amd64.tar.gz" }

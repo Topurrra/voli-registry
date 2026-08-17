@@ -1,0 +1,15 @@
+name = "mold"
+version = "2.42.0"
+description = "mold: A Modern Linker 🦠"
+homepage = "https://github.com/rui314/mold"
+license = "MIT"
+kind = "app"
+bin = ["bin/mold.exe"]
+
+[source.x64]
+url = "https://github.com/rui314/mold/releases/download/v2.42.0/mold-2.42.0-x86_64-windows.zip"
+sha256 = "9808a898ac5965ce879a273dae6c5c6f193bb473c591e37b42849f5bb2880faf"
+
+[autoupdate]
+checkver = { github = "rui314/mold" }
+url_template = { x64 = "https://github.com/rui314/mold/releases/download/v$version/mold-$version-x86_64-windows.zip" }

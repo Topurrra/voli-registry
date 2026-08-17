@@ -1,0 +1,14 @@
+name = "netwatch"
+version = "0.29.2"
+description = "Real-time network diagnostics TUI — like htop for your network. Built with Rust + ratatui."
+homepage = "https://github.com/matthart1983/netwatch"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.29.2/netwatch-windows-x86_64.exe.zip"
+sha256 = "be99d58b8e17e4695dbe6c533170c646e63bac591ac338de0cb775cdd755ce8b"
+
+[autoupdate]
+checkver = { github = "matthart1983/netwatch" }
+url_template = { x64 = "https://github.com/matthart1983/netwatch/releases/download/v$version/netwatch-windows-x86_64.exe.zip" }

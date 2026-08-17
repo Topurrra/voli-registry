@@ -1,0 +1,16 @@
+name = "sqlcl"
+version = "26.2.1.222.1617"
+description = "Oracle SQL Developer Command Line (SQLcl)"
+homepage = "https://www.oracle.com/database/sqldeveloper/technologies/sqlcl"
+license = "Oracle Free Use License"
+kind = "app"
+extract_dir = "sqlcl"
+bin = ["bin\\sql.exe"]
+
+[source.x64]
+url = "https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-26.2.1.222.1617.zip"
+sha256 = "ff810954993927836b3049eb7c6404d3da72eb539b2a3f725504f72973672fa3"
+
+[autoupdate]
+checkver = { url = "https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/download/", regex = "sqlcl-([\\d.]+)\\.zip" }
+url_template = "https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-$version.zip"

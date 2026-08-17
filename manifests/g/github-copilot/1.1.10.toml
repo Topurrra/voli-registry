@@ -1,0 +1,22 @@
+name = "github-copilot"
+version = "1.1.10"
+description = "GitHub Copilot, an agent-native desktop development environment."
+homepage = "https://github.com/github/app"
+license = "Proprietary"
+kind = "app"
+extract_dir = "PFiles\\GitHub Copilot"
+shortcuts = [{ target = "github.exe", name = "GitHub Copilot" }]
+
+[source.x64]
+url = "https://github.com/github/app/releases/download/v1.1.10/GitHub-Copilot-windows-x64.msi"
+sha256 = "9c837d6939efd0210eb550a8304e73027ef52c1a0d2fe2fb40a92310d4ed8e43"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/github/app/releases/download/v1.1.10/GitHub-Copilot-windows-arm64.msi"
+sha256 = "8d02c426da34e0d2aace3432ffd6c30b63a958bb5ec12e8bbb688a348b794df7"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "github/app" }
+url_template = { x64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-x64.msi", arm64 = "https://github.com/github/app/releases/download/v$version/GitHub-Copilot-windows-arm64.msi" }

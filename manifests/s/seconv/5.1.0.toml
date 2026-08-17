@@ -1,0 +1,19 @@
+name = "seconv"
+version = "5.1.0"
+description = "Subtitle Edit's headless command-line converter"
+homepage = "https://www.nikse.dk/subtitleedit/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["seconv.exe"]
+
+[source.x64]
+url = "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.1.0/SeConv-Windows-x64.zip"
+sha256 = "ce081a6c6844d44cb1373ee501a963c9e37c788bf757c2fa0b39821ef9969839"
+
+[source.arm64]
+url = "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.1.0/SeConv-Windows-ARM64.zip"
+sha256 = "26466399a00d54ec8d41e26d98dcdd4a286aa19a337fd393a2eda800eba8eef0"
+
+[autoupdate]
+checkver = { github = "SubtitleEdit/subtitleedit" }
+url_template = { x64 = "https://github.com/SubtitleEdit/subtitleedit/releases/download/v$version/SeConv-Windows-x64.zip", arm64 = "https://github.com/SubtitleEdit/subtitleedit/releases/download/v$version/SeConv-Windows-ARM64.zip" }

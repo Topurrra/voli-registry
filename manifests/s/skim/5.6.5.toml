@@ -1,0 +1,15 @@
+name = "skim"
+version = "5.6.5"
+description = "Fuzzy Finder in rust!"
+homepage = "https://github.com/skim-rs/skim"
+license = "MIT"
+kind = "app"
+bin = ["sk.exe"]
+
+[source.x64]
+url = "https://github.com/skim-rs/skim/releases/download/v5.6.5/skim-x86_64-pc-windows-msvc.zip"
+sha256 = "21388461dd73205bfc8cf55482d9c0ea99dcac0dde80e8933510996a935c0f50"
+
+[autoupdate]
+checkver = { github = "skim-rs/skim" }
+url_template = { x64 = "https://github.com/skim-rs/skim/releases/download/v$version/skim-x86_64-pc-windows-msvc.zip" }

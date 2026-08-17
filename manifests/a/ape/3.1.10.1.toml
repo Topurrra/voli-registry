@@ -1,0 +1,14 @@
+name = "ape"
+version = "3.1.10.1"
+description = "ApE (A plasmid Editor), tool for analyzing DNA plasmid sequences. Supports DNA Strider, Fasta, Genbank and EMBL data formats."
+homepage = "https://jorgensen.biology.utah.edu/wayned/ape/"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "ApE.exe", name = "ApE" }]
+
+[source.x64]
+url = "https://jorgensen.biology.utah.edu/wayned/ape/Download/Windows/ApE_win_current.zip"
+sha256 = "ad01979e07de7b2aa1a4e73a2d93606fe6e477e534940c83fd8fe47a9e3cbdb2"
+
+[autoupdate]
+checkver = { url = "https://jorgensen.biology.utah.edu/wayned/ape/", regex = "latest ApE \\(v([\\d.]+)," }

@@ -1,0 +1,17 @@
+name = "scooper"
+version = "1.2.4"
+description = "A Graphical User Interface to manage Scoop apps."
+homepage = "https://github.com/windedge/Scooper"
+license = "MIT"
+kind = "app"
+extract_dir = "Scooper"
+shortcuts = [{ target = "Scooper.exe", name = "Scooper" }]
+
+[source.x64]
+url = "https://github.com/windedge/Scooper/releases/download/v1.2.4/Scooper-1.2.4.msi"
+sha256 = "e9aa55494a3101302cc56a27ada559cea9af4e8fbeef8630e005912b30b40cbd"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "windedge/Scooper" }
+url_template = "https://github.com/windedge/Scooper/releases/download/v$version/Scooper-$version.msi"

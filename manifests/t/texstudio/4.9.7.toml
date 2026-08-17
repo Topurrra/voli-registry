@@ -1,0 +1,17 @@
+name = "texstudio"
+version = "4.9.7"
+description = "An integrated writing environment for creating LaTeX documents."
+homepage = "https://www.texstudio.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["texstudio.exe"]
+shortcuts = [{ target = "texstudio.exe", name = "TeXstudio" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/texstudio-org/texstudio/releases/download/4.9.7/texstudio-4.9.7-win-portable-qt6.zip"
+sha256 = "078d93f576236acf6964768147dfa8c3803e14cb4fad9c0ccf547b5f3d1dd1a7"
+
+[autoupdate]
+checkver = "<span class=\"currentVersion\">([\\d.]+)</span>"
+url_template = { x64 = "https://github.com/texstudio-org/texstudio/releases/download/$version/texstudio-$version-win-portable-qt6.zip" }

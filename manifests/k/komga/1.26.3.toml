@@ -1,0 +1,16 @@
+name = "komga"
+version = "1.26.3"
+description = "Media server for comics/mangas/BDs with API and OPDS support"
+homepage = "https://komga.org/"
+license = "MIT"
+kind = "app"
+bin = [{ name = "komga", path = "komga.jar", args = "--komga.config-dir=\"$dir\\config\"" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/gotson/komga/releases/download/1.26.3/komga-1.26.3.jar#/komga.jar"
+sha256 = "163cb1c1453cc70b8d7cb1444b6d1a5515886e1cf493bb127ef67e54d6f37927"
+
+[autoupdate]
+checkver = { github = "gotson/komga" }
+url_template = "https://github.com/gotson/komga/releases/download/$version/komga-$version.jar#/komga.jar"

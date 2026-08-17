@@ -1,0 +1,17 @@
+name = "firefoxpwa"
+version = "2.19.0"
+description = "A tool to install, manage and use Progressive Web Apps (PWAs) in Mozilla Firefox (native component)"
+homepage = "https://pwasforfirefox.filips.si/"
+license = "MPL-2.0"
+kind = "app"
+extract_dir = "PFiles\\FirefoxPWA"
+bin = ["firefoxpwa.exe"]
+
+[source.x64]
+url = "https://github.com/filips123/PWAsForFirefox/releases/download/v2.19.0/firefoxpwa-2.19.0-x86_64.msi"
+sha256 = "3613f052477a5c7e617a3b9671c93e3e8b0b027e74dd786b97200419cb2dfb81"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "filips123/PWAsForFirefox" }
+url_template = { x64 = "https://github.com/filips123/PWAsForFirefox/releases/download/v$version/firefoxpwa-$version-x86_64.msi" }

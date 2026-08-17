@@ -1,0 +1,19 @@
+name = "helmfile"
+version = "1.7.4"
+description = "Command line interface to deploy Kubernetes Helm Charts."
+homepage = "https://github.com/helmfile/helmfile"
+license = "MIT"
+kind = "app"
+bin = ["helmfile.exe"]
+
+[source.x64]
+url = "https://github.com/helmfile/helmfile/releases/download/v1.7.4/helmfile_1.7.4_windows_amd64.tar.gz"
+sha256 = "f1637850f5d5c311bbadea2f99afec9ab6d4999eeba225c1d787b09ae077bd73"
+
+[source.arm64]
+url = "https://github.com/helmfile/helmfile/releases/download/v1.7.4/helmfile_1.7.4_windows_arm64.tar.gz"
+sha256 = "3b5dbd5508e248a78bf530f3df0f2da5f3d61e87eb049f389c8eb121157a0642"
+
+[autoupdate]
+checkver = { github = "helmfile/helmfile" }
+url_template = { x64 = "https://github.com/helmfile/helmfile/releases/download/v$version/helmfile_$version_windows_amd64.tar.gz", arm64 = "https://github.com/helmfile/helmfile/releases/download/v$version/helmfile_$version_windows_arm64.tar.gz" }

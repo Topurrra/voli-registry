@@ -1,0 +1,15 @@
+name = "lobster"
+version = "2026.5"
+description = "The Lobster Programming Language"
+homepage = "https://github.com/aardappel/lobster"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\lobster.exe"]
+
+[source.x64]
+url = "https://github.com/aardappel/lobster/releases/download/v2026.5/lobster_windows_release.zip"
+sha256 = "fc88e5bd9d3c141d02edf5bdf5471999cdb17136f5edf371b8aefca6c2121d08"
+
+[autoupdate]
+checkver = { github = "aardappel/lobster" }
+url_template = { x64 = "https://github.com/aardappel/lobster/releases/download/v$version/lobster_windows_release.zip" }

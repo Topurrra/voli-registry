@@ -1,0 +1,15 @@
+name = "librespeed-cli"
+version = "1.0.14"
+description = "Command line client for LibreSpeed.org, a speedtest website"
+homepage = "https://github.com/librespeed/speedtest-cli"
+license = "LGPL-3.0"
+kind = "app"
+bin = ["librespeed-cli.exe"]
+
+[source.x64]
+url = "https://github.com/librespeed/speedtest-cli/releases/download/v1.0.14/librespeed-cli_1.0.14_windows_amd64.zip"
+sha256 = "324f9bc16f3b9bb6bfa6af89bad1e3e5183ae8c91464b3cb3fc2db8df1d6b503"
+
+[autoupdate]
+checkver = { github = "librespeed/speedtest-cli" }
+url_template = { x64 = "https://github.com/librespeed/speedtest-cli/releases/download/v$version/librespeed-cli_$version_windows_amd64.zip" }

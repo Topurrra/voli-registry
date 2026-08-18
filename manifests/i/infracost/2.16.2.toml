@@ -1,0 +1,19 @@
+name = "infracost"
+version = "2.16.2"
+description = "A CLI tool that estimates cloud costs from infrastructure as code such as Terraform, Terragrunt, and CloudFormation."
+homepage = "https://www.infracost.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["infracost.exe"]
+
+[source.x64]
+url = "https://github.com/infracost/cli/releases/download/v2.16.2/infracost-windows-amd64.zip"
+sha256 = "9229f345df3678e6bc74aa18e3ac73da122a9a556281098f30c95c1e088a85f7"
+
+[source.arm64]
+url = "https://github.com/infracost/cli/releases/download/v2.16.2/infracost-windows-arm64.zip"
+sha256 = "bfedbbe73c5aa920af956834de8c9937410cec70abaae6e99cab792adb86a20a"
+
+[autoupdate]
+checkver = { github = "infracost/cli" }
+url_template = { x64 = "https://github.com/infracost/cli/releases/download/v$version/infracost-windows-amd64.zip", arm64 = "https://github.com/infracost/cli/releases/download/v$version/infracost-windows-arm64.zip" }

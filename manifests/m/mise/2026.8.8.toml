@@ -1,0 +1,20 @@
+name = "mise"
+version = "2026.8.8"
+description = "Polyglot tool version manager and task runner"
+homepage = "https://mise.jdx.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "mise"
+bin = ["bin/mise.exe"]
+
+[source.x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.8.8/mise-v2026.8.8-windows-x64.zip"
+sha256 = "bbd30ceb118db40a21371a0767d61b24cb41a26a91fdd49b411ccce1e38e350d"
+
+[source.arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.8.8/mise-v2026.8.8-windows-arm64.zip"
+sha256 = "d66f9489e7dbbd5831b3d66cc90eb84690d1d21f5cbbb82a72996257f2398451"
+
+[autoupdate]
+checkver = { github = "jdx/mise" }
+url_template = { x64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-x64.zip", arm64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-arm64.zip" }

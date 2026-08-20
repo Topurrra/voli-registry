@@ -1,0 +1,21 @@
+name = "golangci-lint"
+version = "2.13.0"
+description = "Go language linters aggregator"
+homepage = "https://golangci-lint.run/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["golangci-lint.exe"]
+
+[source.x64]
+url = "https://github.com/golangci/golangci-lint/releases/download/v2.13.0/golangci-lint-2.13.0-windows-amd64.zip"
+sha256 = "472631b96f042a596d0f11bf0b7e162545b39178f9b13f72ef6d12808f831518"
+extract_dir = "golangci-lint-2.12.2-windows-amd64"
+
+[source.arm64]
+url = "https://github.com/golangci/golangci-lint/releases/download/v2.13.0/golangci-lint-2.13.0-windows-arm64.zip"
+sha256 = "b495b8bc92349287ac441dda34db662af0146941e40ae3d5a2a5a320e9954782"
+extract_dir = "golangci-lint-2.12.2-windows-arm64"
+
+[autoupdate]
+checkver = { github = "golangci/golangci-lint" }
+url_template = { x64 = "https://github.com/golangci/golangci-lint/releases/download/v$version/golangci-lint-$version-windows-amd64.zip", arm64 = "https://github.com/golangci/golangci-lint/releases/download/v$version/golangci-lint-$version-windows-arm64.zip" }

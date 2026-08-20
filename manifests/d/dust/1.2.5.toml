@@ -1,0 +1,16 @@
+name = "dust"
+version = "1.2.5"
+description = "du(1) - File space usage analyzer"
+homepage = "https://github.com/bootandy/dust"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "dust-v1.2.5-x86_64-pc-windows-msvc"
+bin = ["dust.exe"]
+
+[source.x64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.5/dust-v1.2.5-x86_64-pc-windows-msvc.zip"
+sha256 = "b2731d92066d5787a106c0c835b96c6a4ba186d81abc0ead0a906f75d5f09aee"
+
+[autoupdate]
+checkver = { github = "bootandy/dust" }
+url_template = { x64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-x86_64-pc-windows-msvc.zip" }

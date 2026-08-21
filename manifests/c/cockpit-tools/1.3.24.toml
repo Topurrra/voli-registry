@@ -1,0 +1,17 @@
+name = "cockpit-tools"
+version = "1.3.24"
+description = "A universal AI IDE account management tool."
+homepage = "https://github.com/jlcodes99/cockpit-tools"
+license = "CC-BY-NC-SA-4.0"
+kind = "app"
+extract_dir = "PFiles\\Cockpit Tools"
+shortcuts = [{ target = "cockpit-tools.exe", name = "Cockpit Tools" }]
+
+[source.x64]
+url = "https://github.com/jlcodes99/cockpit-tools/releases/download/v1.3.24/Cockpit.Tools_1.3.24_x64_en-US.msi"
+sha256 = "3f590accfacf7ab6e17459c69d655f6ef42bc019086b52c8a83723b8b889cf03"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "jlcodes99/cockpit-tools" }
+url_template = { x64 = "https://github.com/jlcodes99/cockpit-tools/releases/download/v$version/Cockpit.Tools_$version_x64_en-US.msi" }

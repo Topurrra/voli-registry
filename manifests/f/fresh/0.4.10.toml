@@ -1,0 +1,19 @@
+name = "fresh"
+version = "0.4.10"
+description = "Easy, powerful and fast text editor for your terminal."
+homepage = "https://getfresh.dev"
+license = "GPL-2.0-only"
+kind = "app"
+bin = ["fresh.exe"]
+
+[source.x64]
+url = "https://github.com/sinelaw/fresh/releases/download/v0.4.10/fresh-editor-x86_64-pc-windows-msvc.zip"
+sha256 = "30abbfce00901b92ce55ef364af1f2d4fdf25e36f36449d3c7cb7d35573f3a8b"
+
+[source.arm64]
+url = "https://github.com/sinelaw/fresh/releases/download/v0.4.10/fresh-editor-aarch64-pc-windows-msvc.zip"
+sha256 = "8f22e30b7cd831edfde97e23183d9d59a8696786f230656f41bcf8b4cee9473e"
+
+[autoupdate]
+checkver = { github = "sinelaw/fresh" }
+url_template = { x64 = "https://github.com/sinelaw/fresh/releases/download/v$version/fresh-editor-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sinelaw/fresh/releases/download/v$version/fresh-editor-aarch64-pc-windows-msvc.zip" }

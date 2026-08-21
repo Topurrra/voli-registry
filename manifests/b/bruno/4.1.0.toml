@@ -1,0 +1,15 @@
+name = "bruno"
+version = "4.1.0"
+description = "Open source IDE for exploring and testing APIs (lightweight alternative to Postman/Insomnia)"
+homepage = "https://www.usebruno.com/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "Bruno.exe", name = "Bruno" }]
+
+[source.x64]
+url = "https://github.com/usebruno/bruno/releases/download/v4.1.0/bruno_4.1.0_x64_win.zip"
+sha256 = "707e5b67c5ce14ea053396469ed7fb6771fbfc88b584073ca040165055ddecf5"
+
+[autoupdate]
+checkver = { github = "usebruno/bruno" }
+url_template = { x64 = "https://github.com/usebruno/bruno/releases/download/v$version/bruno_$version_x64_win.zip" }

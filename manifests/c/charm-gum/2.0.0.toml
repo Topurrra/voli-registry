@@ -1,0 +1,16 @@
+name = "charm-gum"
+version = "2.0.0"
+description = "A tool for glamorous shell scripts 🎀."
+homepage = "https://github.com/charmbracelet/gum"
+license = "MIT"
+kind = "app"
+extract_dir = "gum_2.0.0_Windows_x86_64"
+bin = ["gum.exe"]
+
+[source.x64]
+url = "https://github.com/charmbracelet/gum/releases/download/v2.0.0/gum_2.0.0_Windows_x86_64.zip"
+sha256 = "eb78a29bf9bb365016c85a285ba8387611e8fe10e50c8e8358537bfa2eabf4f8"
+
+[autoupdate]
+checkver = { github = "charmbracelet/gum" }
+url_template = { x64 = "https://github.com/charmbracelet/gum/releases/download/v$version/gum_$version_Windows_x86_64.zip" }

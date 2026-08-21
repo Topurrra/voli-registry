@@ -1,0 +1,16 @@
+name = "bitwarden-cli"
+version = "2026.8.0"
+description = "The powerful command-line tool (CLI) to write and execute scripts on your Bitwarden vault."
+homepage = "https://bitwarden.com/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["bw.exe"]
+persist = ["bw-data"]
+
+[source.x64]
+url = "https://github.com/bitwarden/clients/releases/download/cli-v2026.8.0/bw-oss-windows-2026.8.0.zip"
+sha256 = "9aff8a76039efef658dba9945c92b2c1a6ef935f162d6dd25e9ee05a529b83ed"
+
+[autoupdate]
+checkver = { url = "https://github.com/bitwarden/clients/releases.atom", regex = "\\/cli-v([\\d.]+)<\\/id>" }
+url_template = { x64 = "https://github.com/bitwarden/clients/releases/download/cli-v$version/bw-oss-windows-$version.zip" }

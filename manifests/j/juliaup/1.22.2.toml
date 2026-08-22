@@ -1,0 +1,17 @@
+name = "juliaup"
+version = "1.22.2"
+description = "Julia installer and version multiplexer"
+homepage = "https://github.com/JuliaLang/juliaup"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles64\\Julia"
+bin = ["juliaup.exe", "julia.exe"]
+
+[source.x64]
+url = "https://julialang-s3.julialang.org/juliaup/winmsi/Julia-v1.22.2-x64.msi"
+sha256 = "ae80a4204af6329d37f1225801830472e2f9ff29b9988cbbcb05ba807d938fed"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "JuliaLang/juliaup" }
+url_template = { x64 = "https://julialang-s3.julialang.org/juliaup/winmsi/Julia-v$version-x64.msi" }

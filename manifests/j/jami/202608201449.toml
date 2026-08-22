@@ -1,0 +1,18 @@
+name = "jami"
+version = "202608201449"
+description = "A free and universal communication platform which preserves the user's privacy and freedoms."
+homepage = "https://jami.net/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Jami"
+bin = ["Jami.exe"]
+shortcuts = [{ target = "Jami.exe", name = "Jami" }]
+
+[source.x64]
+url = "https://dl.jami.net/windows/archive/jami_x86_64-202608201449.msi"
+sha256 = "11ec863d3c96bf06d92bc7a55c3c47748e2521dbc1a57378f4cbf91f50e07ec0"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://dl.jami.net/windows/archive/?C=M;O=D", regex = "jami_x86_64-(\\d+)\\.msi" }
+url_template = { x64 = "https://dl.jami.net/windows/archive/jami_x86_64-$version.msi" }

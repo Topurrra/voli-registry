@@ -1,0 +1,20 @@
+name = "kubectl"
+version = "1.36.4"
+description = "Control the Kubernetes cluster manager."
+homepage = "https://kubernetes.io/docs/reference/kubectl/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kubernetes\\client"
+bin = ["bin\\kubectl.exe", "bin\\kubectl-convert.exe"]
+
+[source.x64]
+url = "https://dl.k8s.io/release/v1.36.4/kubernetes-client-windows-amd64.tar.gz"
+sha256 = "c9541043e19ee7384777c97eb8adb2acb3d121c1702b913b49754bd6f9810056"
+
+[source.arm64]
+url = "https://dl.k8s.io/release/v1.36.4/kubernetes-client-windows-arm64.tar.gz"
+sha256 = "107f7b392380463d31a84ebc50c5c5f5e730cd96a25c356ad7a4ce4435b33fe8"
+
+[autoupdate]
+checkver = { url = "https://dl.k8s.io/release/stable.txt", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://dl.k8s.io/release/v$version/kubernetes-client-windows-amd64.tar.gz", arm64 = "https://dl.k8s.io/release/v$version/kubernetes-client-windows-arm64.tar.gz" }

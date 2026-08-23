@@ -1,0 +1,15 @@
+name = "fedify"
+version = "2.3.5"
+description = "CLI toolchain for Fedify and debugging ActivityPub"
+homepage = "https://fedify.dev/cli"
+license = "MIT"
+kind = "app"
+bin = ["fedify.exe"]
+
+[source.x64]
+url = "https://github.com/fedify-dev/fedify/releases/download/2.3.5/fedify-cli-2.3.5-windows-x86_64.zip"
+sha256 = "2ad82c9f83f780dc2830b7140d53f6c906a311e7236b275609c657f8535b9950"
+
+[autoupdate]
+checkver = { github = "fedify-dev/fedify" }
+url_template = { x64 = "https://github.com/fedify-dev/fedify/releases/download/$version/fedify-cli-$version-windows-x86_64.zip" }

@@ -1,0 +1,19 @@
+name = "hjson"
+version = "4.7.0"
+description = "A user interface for JSON"
+homepage = "https://hjson.github.io/"
+license = "MIT"
+kind = "app"
+bin = ["hjson.exe", { name = "hjson-cli", path = "hjson.exe" }]
+
+[source.x64]
+url = "https://github.com/hjson/hjson-go/releases/download/v4.7.0/hjson_v4.7.0_windows_amd64.zip"
+sha256 = "a4363cef8bad521a72277909ef313f446be1e5887655b83aa3e99de1390539e1"
+
+[source.arm64]
+url = "https://github.com/hjson/hjson-go/releases/download/v4.7.0/hjson_v4.7.0_windows_arm64.zip"
+sha256 = "5fa84b2e0ffb2632caeff7eb839143ae681ad17a24cb17c31f7e8050da8d201c"
+
+[autoupdate]
+checkver = { github = "hjson/hjson-go" }
+url_template = { x64 = "https://github.com/hjson/hjson-go/releases/download/v$version/hjson_v$version_windows_amd64.zip", arm64 = "https://github.com/hjson/hjson-go/releases/download/v$version/hjson_v$version_windows_arm64.zip" }

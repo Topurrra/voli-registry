@@ -1,0 +1,17 @@
+name = "gisto"
+version = "2.14.0"
+description = "Cross-platform gist snippets management desktop application to share code snippets fast and easily"
+homepage = "https://gisto.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\Gisto"
+shortcuts = [{ target = "Gisto.exe", name = "Gisto" }]
+
+[source.x64]
+url = "https://github.com/Gisto/Gisto/releases/download/v2.14.0/Gisto_2.14.0_x64_en-US.msi"
+sha256 = "4eb8d4c0dbd7d9866e1df2d1ab0812e12f85c65c975f62706747a26727613726"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Gisto/Gisto" }
+url_template = { x64 = "https://github.com/Gisto/Gisto/releases/download/v$version/Gisto_$version_x64_en-US.msi" }

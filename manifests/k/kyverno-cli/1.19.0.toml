@@ -1,0 +1,15 @@
+name = "kyverno-cli"
+version = "1.19.0"
+description = "Kyverno CLI to manage Kubernetes policies"
+homepage = "https://kyverno.io/docs/kyverno-cli/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["kyverno.exe"]
+
+[source.x64]
+url = "https://github.com/kyverno/kyverno/releases/download/v1.19.0/kyverno-cli_v1.19.0_windows_x86_64.zip"
+sha256 = "6d0a48876f168f4e508c4d6040999ae68518d7502d6f83b7f4e7113f0be04c50"
+
+[autoupdate]
+checkver = { github = "kyverno/kyverno" }
+url_template = { x64 = "https://github.com/kyverno/kyverno/releases/download/v$version/kyverno-cli_v$version_windows_x86_64.zip" }

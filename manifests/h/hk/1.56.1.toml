@@ -1,0 +1,19 @@
+name = "hk"
+version = "1.56.1"
+description = "A git hook manager and project linting tool with an emphasis on performance."
+homepage = "https://hk.jdx.dev"
+license = "MIT"
+kind = "app"
+bin = ["hk.exe"]
+
+[source.x64]
+url = "https://github.com/jdx/hk/releases/download/v1.56.1/hk-x86_64-pc-windows-msvc.zip"
+sha256 = "4ccf353e484997dd4975361b6433f3b2661f5db614f2b382cddcac7eaa74a604"
+
+[source.arm64]
+url = "https://github.com/jdx/hk/releases/download/v1.56.1/hk-aarch64-pc-windows-msvc.zip"
+sha256 = "63ab9a48cc561f2ced5f99f30f999f88522478170797a4823688a7ed4f6ffae6"
+
+[autoupdate]
+checkver = { github = "jdx/hk" }
+url_template = { x64 = "https://github.com/jdx/hk/releases/download/v$version/hk-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/jdx/hk/releases/download/v$version/hk-aarch64-pc-windows-msvc.zip" }

@@ -1,0 +1,20 @@
+name = "v2ray"
+version = "5.53.0"
+description = "A platform for building proxies to bypass network restrictions."
+homepage = "https://www.v2fly.org/en_US/"
+license = "MIT"
+kind = "app"
+bin = ["v2ray.exe"]
+persist = ["config.json"]
+
+[source.x64]
+url = "https://github.com/v2fly/v2ray-core/releases/download/v5.53.0/v2ray-windows-64.zip"
+sha256 = "46ee170d031ea3be79cc583e61e6335a612e4c87925deed2a7179b0a5fb79f60"
+
+[source.arm64]
+url = "https://github.com/v2fly/v2ray-core/releases/download/v5.53.0/v2ray-windows-arm64-v8a.zip"
+sha256 = "163da0c80166f313fd73a36bc4faf16f43f4c25efe4625ce2bb55388d99fd36e"
+
+[autoupdate]
+checkver = { github = "v2fly/v2ray-core" }
+url_template = { x64 = "https://github.com/v2fly/v2ray-core/releases/download/v$version/v2ray-windows-64.zip", arm64 = "https://github.com/v2fly/v2ray-core/releases/download/v$version/v2ray-windows-arm64-v8a.zip" }

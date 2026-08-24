@@ -7,8 +7,9 @@ kind = "app"
 bin = ["doxygen.exe", "doxyindexer.exe", "doxysearch.cgi.exe"]
 
 [source.x64]
-url = "http://doxygen.nl/files/doxygen-1.18.0.windows.x64.bin.zip"
+url = "https://github.com/doxygen/doxygen/releases/download/Release_1_18_0/doxygen-1.18.0.windows.x64.bin.zip"
 sha256 = "e84f54cfd49ef06b0b16536056dbec0c496323de28abcce53a4269463de35eaf"
 
 [autoupdate]
-checkver = "{\"regex\":\"doxygen-([\\\\d.]+).windows\",\"url\":\"http://www.doxygen.nl/download.html\"}"
+checkver = "{\"github\":\"https://api.github.com/repos/doxygen/doxygen/releases/latest\",\"jsonpath\":\"$.assets[*].name\",\"regex\":\"doxygen-([\\\\d.]+)\\\\.windows\"}"
+url_template = { x64 = "https://github.com/doxygen/doxygen/releases/download/Release_$underscoreVersion/doxygen-$version.windows.x64.bin.zip" }

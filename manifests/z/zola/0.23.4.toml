@@ -1,0 +1,15 @@
+name = "zola"
+version = "0.23.4"
+description = "A fast static site generator in a single binary with everything built-in"
+homepage = "https://www.getzola.org"
+license = "MIT"
+kind = "app"
+bin = ["zola.exe"]
+
+[source.x64]
+url = "https://github.com/getzola/zola/releases/download/v0.23.4/zola-v0.23.4-x86_64-pc-windows-msvc.zip"
+sha256 = "dc839498e27b631f60fd5e1527935198b7f002eb09b8446a1e2913a8fa386925"
+
+[autoupdate]
+checkver = { github = "getzola/zola" }
+url_template = { x64 = "https://github.com/getzola/zola/releases/download/v$version/zola-v$version-x86_64-pc-windows-msvc.zip" }

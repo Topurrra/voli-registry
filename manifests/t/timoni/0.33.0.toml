@@ -1,0 +1,18 @@
+name = "timoni"
+version = "0.33.0"
+description = "The package manager for Kubernetes"
+homepage = "https://timoni.sh"
+license = "Apache-2.0"
+kind = "app"
+bin = ["timoni.exe"]
+
+[source.x64]
+url = "https://github.com/stefanprodan/timoni/releases/download/v0.33.0/timoni_0.33.0_windows_amd64.zip"
+sha256 = "be295167e1b85c18b3fc027ec064e2646b60526b244e1533e2c13ba95479a16e"
+
+[depends]
+cue = "*"
+
+[autoupdate]
+checkver = { github = "stefanprodan/timoni" }
+url_template = { x64 = "https://github.com/stefanprodan/timoni/releases/download/v$version/timoni_$version_windows_amd64.zip" }

@@ -1,0 +1,17 @@
+name = "chuck"
+version = "1.5.5.8"
+description = "Strongly-timed, Concurrent, and On-the-fly Music Programming Language."
+homepage = "https://chuck.stanford.edu"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "PFiles\\ChucK"
+bin = ["chuck.exe", "miniAudicle.exe"]
+
+[source.x64]
+url = "https://chuck.stanford.edu/release/files/exe/chuck-1.5.5.8.msi"
+sha256 = "2cf3112493ac002f39455778ee9c6838c77abbf59515502303dc482ec9a00d82"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://chuck.stanford.edu/release/VERSIONS", regex = "ChucK\\s*([\\d.]+)" }
+url_template = { x64 = "https://chuck.stanford.edu/release/files/exe/chuck-$version.msi" }

@@ -1,0 +1,15 @@
+name = "kelivo"
+version = "1.2.3"
+description = "A Flutter LLM Chat Client."
+homepage = "https://kelivo.psycheas.top/"
+license = "AGPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "kelivo.exe", name = "Kelivo" }]
+
+[source.x64]
+url = "https://github.com/Chevey339/kelivo/releases/download/v1.2.3/Kelivo_windows_1.2.3%2B67.zip"
+sha256 = "9ef765b66d6428770b2bb7b162edd272377d0dcee029347e91d97e91417658c6"
+
+[autoupdate]
+checkver = { github = "Chevey339/kelivo" }
+url_template = { x64 = "https://github.com/Chevey339/kelivo/releases/download/v$version/Kelivo_windows_$version%2B$matchBuild.zip" }

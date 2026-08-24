@@ -1,0 +1,15 @@
+name = "usbtree"
+version = "0.1.1"
+description = "A cross-platform TUI for inspecting USB devices."
+homepage = "https://gnomeria.github.io/usbtree"
+license = "MIT"
+kind = "app"
+bin = ["usbtree.exe"]
+
+[source.x64]
+url = "https://github.com/gnomeria/usbtree/releases/download/v0.1.1/usbtree_0.1.1_windows-amd64.zip"
+sha256 = "2d315b069fc3bf51a11911a2d4b44be0f4f48e3b5f9e10f47c7109a45b182e4d"
+
+[autoupdate]
+checkver = { github = "gnomeria/usbtree" }
+url_template = { x64 = "https://github.com/gnomeria/usbtree/releases/download/v$version/usbtree_$version_windows-amd64.zip" }

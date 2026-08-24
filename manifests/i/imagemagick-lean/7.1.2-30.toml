@@ -1,0 +1,19 @@
+name = "imagemagick-lean"
+version = "7.1.2-30"
+description = "Create, edit, compose, and convert 200+ of bitmap images formats."
+homepage = "https://imagemagick.org/"
+license = "ImageMagick"
+kind = "app"
+bin = ["magick.exe"]
+
+[source.x64]
+url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-30/ImageMagick-7.1.2-30-portable-Q16-HDRI-x64.7z"
+sha256 = "d98471f5ec9d87e222c69c8c28c98fe6665dab76cd3ef752c5e4de785be553be"
+
+[source.arm64]
+url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-30/ImageMagick-7.1.2-30-portable-Q16-HDRI-arm64.7z"
+sha256 = "271623618153c9435be8004c7bfe9c1d89936a899a6483c7b043c49faec0a8e4"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest\",\"jsonpath\":\"$.tag_name\"}"
+url_template = { x64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-x64.7z", arm64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-portable-Q16-HDRI-arm64.7z" }

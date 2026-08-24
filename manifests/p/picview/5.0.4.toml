@@ -1,0 +1,23 @@
+name = "picview"
+version = "5.0.4"
+description = "A fast, free and fully customizable image viewer for Windows 10 and 11"
+homepage = "https://picview.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["PicView.exe"]
+shortcuts = [{ target = "PicView.exe", name = "PicView" }]
+persist = ["Config"]
+
+[source.x64]
+url = "https://github.com/Ruben2776/PicView/releases/download/5.0.4/PicView-v5.0.4-win-x64.zip"
+sha256 = "fa36810b92eba0614997188fd7f97c533813ab918b312968bd081a1283490f90"
+extract_dir = "PicView-v5.0.4-win-x64"
+
+[source.arm64]
+url = "https://github.com/Ruben2776/PicView/releases/download/5.0.4/PicView-v5.0.4-win-arm64.zip"
+sha256 = "8a324607650d7984c2c29d2e4f7229f47d9f34a78362543d3d676ca13a5cb4bf"
+extract_dir = "PicView-v5.0.4-win-arm64"
+
+[autoupdate]
+checkver = { github = "Ruben2776/PicView" }
+url_template = { x64 = "https://github.com/Ruben2776/PicView/releases/download/$version/PicView-v$version-win-x64.zip", arm64 = "https://github.com/Ruben2776/PicView/releases/download/$version/PicView-v$version-win-arm64.zip" }

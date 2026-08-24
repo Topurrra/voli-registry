@@ -1,0 +1,19 @@
+name = "ollama"
+version = "0.32.15"
+description = "Get up and running with large language models locally."
+homepage = "https://ollama.com/"
+license = "MIT"
+kind = "app"
+bin = ["ollama.exe"]
+
+[source.x64]
+url = "https://github.com/ollama/ollama/releases/download/v0.32.15/ollama-windows-amd64.zip"
+sha256 = "a1d11d46a944f9c7521f5e9a3a5db51cd3365401da627d96c204698fc6914ff9"
+
+[source.arm64]
+url = "https://github.com/ollama/ollama/releases/download/v0.32.15/ollama-windows-arm64.zip"
+sha256 = "51655f2700236bdff09c8cfb174b0855d354ec40775e66069d9b63f32a666937"
+
+[autoupdate]
+checkver = { github = "ollama/ollama" }
+url_template = { x64 = "https://github.com/ollama/ollama/releases/download/v$version/ollama-windows-amd64.zip", arm64 = "https://github.com/ollama/ollama/releases/download/v$version/ollama-windows-arm64.zip" }

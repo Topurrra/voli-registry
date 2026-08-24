@@ -1,0 +1,15 @@
+name = "geekuninstaller"
+version = "1.5.4.180"
+description = "Basic uninstaller though powerful and lightning fast."
+homepage = "https://geekuninstaller.com/"
+license = "Shareware"
+kind = "app"
+bin = ["geek.exe"]
+shortcuts = [{ target = "geek.exe", name = "Geek Uninstaller" }]
+
+[source.x64]
+url = "https://geekuninstaller.com/geek.7z"
+sha256 = "23341c1d1f0867570571fc269cc56cb4e35ef6cd2baef1818fc7a1b9634378bd"
+
+[autoupdate]
+checkver = { url = "https://geekuninstaller.com/download", regex = "<b>([\\d.]+)" }

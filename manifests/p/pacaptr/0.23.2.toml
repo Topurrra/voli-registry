@@ -1,0 +1,19 @@
+name = "pacaptr"
+version = "0.23.2"
+description = "A wrapper for many package managers with pacman-style command syntax"
+homepage = "https://github.com/rami3l/pacaptr"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["pacaptr.exe"]
+
+[source.x64]
+url = "https://github.com/rami3l/pacaptr/releases/download/v0.23.2/pacaptr-windows-amd64.zip"
+sha256 = "fc01bfb7b0c8a6de9f8f24fb61eb5b08de09c6c5ee5a5761e45b3a8ef28710b2"
+
+[source.arm64]
+url = "https://github.com/rami3l/pacaptr/releases/download/v0.23.2/pacaptr-windows-arm64.zip"
+sha256 = "1a6eca57d80cc37bcc0d1d7bdec562d4af512356985ceda990afb0eeb9c595b0"
+
+[autoupdate]
+checkver = { github = "rami3l/pacaptr" }
+url_template = { x64 = "https://github.com/rami3l/pacaptr/releases/download/v$version/pacaptr-windows-amd64.zip", arm64 = "https://github.com/rami3l/pacaptr/releases/download/v$version/pacaptr-windows-arm64.zip" }

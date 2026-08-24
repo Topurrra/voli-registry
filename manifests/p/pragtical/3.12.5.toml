@@ -1,0 +1,17 @@
+name = "pragtical"
+version = "3.12.5"
+description = "The practical and pragmatic code editor."
+homepage = "https://pragtical.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "pragtical"
+bin = ["pragtical.exe"]
+shortcuts = [{ target = "pragtical.exe", name = "Pragtical" }]
+
+[source.x64]
+url = "https://github.com/pragtical/pragtical/releases/download/v3.12.5/pragtical-v3.12.5-windows-x86_64.zip"
+sha256 = "45557cfcc8be15c62a2a009575a1047b26c4660cdd37032ed8a33f68220c7398"
+
+[autoupdate]
+checkver = { github = "pragtical/pragtical" }
+url_template = { x64 = "https://github.com/pragtical/pragtical/releases/download/v$version/pragtical-v$version-windows-x86_64.zip" }

@@ -1,0 +1,15 @@
+name = "uninstall-tool"
+version = "3.8.2"
+description = "Fast and Powerful Uninstaller for Complete Removal of Programs."
+homepage = "https://crystalidea.com/uninstall-tool"
+license = "Shareware"
+kind = "app"
+shortcuts = [{ target = "UninstallToolPortable.exe", name = "Uninstall Tool" }]
+
+[source.x64]
+url = "https://github.com/crystalidea/uninstall-tool/releases/download/v3.8.2/uninstalltool_portable.zip"
+sha256 = "bf12f8e56988a260dca9266905ec7aea260d5ed531eb51169facb3cdb6662bc8"
+
+[autoupdate]
+checkver = { github = "crystalidea/uninstall-tool" }
+url_template = "https://github.com/crystalidea/uninstall-tool/releases/download/v$version/uninstalltool_portable.zip"

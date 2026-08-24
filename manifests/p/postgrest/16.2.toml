@@ -1,0 +1,18 @@
+name = "postgrest"
+version = "16.2"
+description = "REST API for any Postgres database"
+homepage = "https://postgrest.org"
+license = "MIT"
+kind = "app"
+bin = ["postgrest.exe"]
+
+[source.x64]
+url = "https://github.com/PostgREST/postgrest/releases/download/v16.2/postgrest-v16.2-windows-x86-64.zip"
+sha256 = "f27c3fd12bb6f3a2ff6f7b3283d4fe63ef2a74f718c030cdd387f768ceb15ab9"
+
+[depends]
+psqlodbc = "*"
+
+[autoupdate]
+checkver = { github = "PostgREST/postgrest" }
+url_template = { x64 = "https://github.com/PostgREST/postgrest/releases/download/v$version/postgrest-v$version-windows-x86-64.zip" }

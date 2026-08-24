@@ -1,0 +1,19 @@
+name = "goreleaser"
+version = "2.18.0"
+description = "Release automation tool for Go projects."
+homepage = "https://goreleaser.com"
+license = "MIT"
+kind = "app"
+bin = ["goreleaser.exe"]
+
+[source.x64]
+url = "https://github.com/goreleaser/goreleaser/releases/download/v2.18.0/goreleaser_Windows_x86_64.zip"
+sha256 = "cbd0aeab833806b6c07e2d156c2c9baaffa6e3d1fb870071bf3efc9d9e5b4777"
+
+[source.arm64]
+url = "https://github.com/goreleaser/goreleaser/releases/download/v2.18.0/goreleaser_Windows_arm64.zip"
+sha256 = "43647ce4e0fbc624d39dd095e0ed5bf55a11978ea58a74a91630fb26eea88511"
+
+[autoupdate]
+checkver = { github = "goreleaser/goreleaser" }
+url_template = { x64 = "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_x86_64.zip", arm64 = "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_arm64.zip" }

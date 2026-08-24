@@ -1,0 +1,18 @@
+name = "vnote"
+version = "4.5.0"
+description = "A pleasant note-taking platform"
+homepage = "https://docs.vnote.fun"
+license = "LGPL-3.0-only"
+kind = "app"
+extract_dir = "VNote-4.5.0-win64"
+bin = ["app\\vnote.exe"]
+shortcuts = [{ target = "app\\vnote.exe", name = "VNote" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/vnotex/vnote/releases/download/v4.5.0/VNote-4.5.0-win64.zip"
+sha256 = "9eda6f71fdf32c7afef7fd7f2b59e19a13f61822c6ba16598ea2fb19011d1e24"
+
+[autoupdate]
+checkver = { github = "vnotex/vnote" }
+url_template = { x64 = "https://github.com/vnotex/vnote/releases/download/v$version/VNote-$version-win64.zip" }

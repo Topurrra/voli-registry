@@ -1,0 +1,17 @@
+name = "logstash"
+version = "9.5.2"
+description = "A data processing pipeline that ingests data from a multitude of sources simultaneously, transforms it, and then sends it to your favorite \"stash\"."
+homepage = "https://www.elastic.co/logstash"
+license = "Freeware|Apache-2.0"
+kind = "app"
+extract_dir = "logstash-9.5.2"
+bin = [{ name = "logstash", path = "bin\\logstash.bat" }, { name = "logstash-plugin", path = "bin\\logstash-plugin.bat" }]
+persist = ["config", "data"]
+
+[source.x64]
+url = "https://artifacts.elastic.co/downloads/logstash/logstash-9.5.2-windows-x86_64.zip"
+sha512 = "38a3d2cf87cb12e9a10005ce5c3197e9b20afc1781bf13c27eb19072410df711055fb37a50af022175e204b75287bcbc67ad1d918a528caa4dcda44a533ba614"
+
+[autoupdate]
+checkver = { url = "https://www.elastic.co/downloads/logstash", regex = "logstash-([\\d.]+)-windows-x86_64\\.zip" }
+url_template = { x64 = "https://artifacts.elastic.co/downloads/logstash/logstash-$version-windows-x86_64.zip" }

@@ -1,0 +1,19 @@
+name = "speedtest-go"
+version = "1.8.0"
+description = "Full-featured Command Line Interface to Test Internet Speed using speedtest.net."
+homepage = "https://github.com/showwin/speedtest-go"
+license = "MIT"
+kind = "app"
+bin = ["speedtest-go.exe"]
+
+[source.x64]
+url = "https://github.com/showwin/speedtest-go/releases/download/v1.8.0/speedtest-go_1.8.0_Windows_x86_64.tar.gz"
+sha256 = "3ba0a6af9afd9e43bda2bda983865cf7906dbd1194d3e0a4013acfba1f750df1"
+
+[source.arm64]
+url = "https://github.com/showwin/speedtest-go/releases/download/v1.8.0/speedtest-go_1.8.0_Windows_arm64.tar.gz"
+sha256 = "cdbc6f03353a0448e49ffa95635f108dc260541ac0c7f5c79dc2b37072022cb7"
+
+[autoupdate]
+checkver = { github = "showwin/speedtest-go" }
+url_template = { x64 = "https://github.com/showwin/speedtest-go/releases/download/v$version/speedtest-go_$version_Windows_x86_64.tar.gz", arm64 = "https://github.com/showwin/speedtest-go/releases/download/v$version/speedtest-go_$version_Windows_arm64.tar.gz" }

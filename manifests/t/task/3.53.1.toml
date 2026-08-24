@@ -1,0 +1,15 @@
+name = "task"
+version = "3.53.1"
+description = "A task runner / simpler Make alternative written in Go"
+homepage = "https://taskfile.dev/"
+license = "MIT"
+kind = "app"
+bin = ["task.exe"]
+
+[source.x64]
+url = "https://github.com/go-task/task/releases/download/v3.53.1/task_windows_amd64.zip"
+sha256 = "27c0cd248c12cba03d8958d954a3df981c900be885ec9ce5f6a3cdc4e9a19316"
+
+[autoupdate]
+checkver = { github = "go-task/task" }
+url_template = { x64 = "https://github.com/go-task/task/releases/download/v$version/task_windows_amd64.zip" }

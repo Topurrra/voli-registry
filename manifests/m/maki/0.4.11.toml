@@ -1,0 +1,15 @@
+name = "maki"
+version = "0.4.11"
+description = "An efficient AI coding agent extendable by neovim like Lua plugins."
+homepage = "https://maki.sh"
+license = "MIT"
+kind = "app"
+bin = ["maki.exe"]
+
+[source.x64]
+url = "https://github.com/tontinton/maki/releases/download/v0.4.11/maki-v0.4.11-x86_64-pc-windows-msvc.zip"
+sha256 = "8472af6b1a2bc506d4fa1ef5bd2f34876600b4aa87e53117651d91fdc47bbf3a"
+
+[autoupdate]
+checkver = { github = "tontinton/maki" }
+url_template = { x64 = "https://github.com/tontinton/maki/releases/download/v$version/maki-v$version-x86_64-pc-windows-msvc.zip" }

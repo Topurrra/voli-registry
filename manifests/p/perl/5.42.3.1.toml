@@ -1,0 +1,17 @@
+name = "perl"
+version = "5.42.3.1"
+description = "A programming language suitable for writing simple scripts as well as complex applications."
+homepage = "https://strawberryperl.com"
+license = "GPL-1.0-or-later|Artistic-1.0-Perl"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_54231_64bit/strawberry-perl-5.42.3.1-64bit-portable.zip"
+sha256 = "6a081a811781c30aca51dbc036afd93092af91e3297901f02c17043795a10690"
+
+[env]
+PATH = "{dir}\\perl\\site\\bin;{dir}\\perl\\bin"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/StrawberryPerl/Perl-Dist-Strawberry/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"releases/download/(?<tag>\\\\w+)/strawberry-perl-([\\\\d.]+)-64bit-portable\\\\.zip\\\"\"}"
+url_template = { x64 = "https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/$matchTag/strawberry-perl-$version-64bit-portable.zip" }

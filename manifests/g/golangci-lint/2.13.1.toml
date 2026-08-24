@@ -9,12 +9,12 @@ bin = ["golangci-lint.exe"]
 [source.x64]
 url = "https://github.com/golangci/golangci-lint/releases/download/v2.13.1/golangci-lint-2.13.1-windows-amd64.zip"
 sha256 = "cc119bdd57d2b35ce36fbc174b54949e1a1e45f2cadaf64372cc799cabaf88a9"
-extract_dir = "golangci-lint-2.12.2-windows-amd64"
+extract_dir = "golangci-lint-2.13.1-windows-amd64"
 
 [source.arm64]
 url = "https://github.com/golangci/golangci-lint/releases/download/v2.13.1/golangci-lint-2.13.1-windows-arm64.zip"
 sha256 = "88ee9636ab1eeaff9384a8894b377fb8c2f4a820310ffa2ff5bafb1173dc87ce"
-extract_dir = "golangci-lint-2.12.2-windows-arm64"
+extract_dir = "golangci-lint-2.13.1-windows-arm64"
 
 [autoupdate]
 checkver = { github = "golangci/golangci-lint" }

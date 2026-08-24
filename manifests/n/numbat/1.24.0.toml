@@ -1,0 +1,16 @@
+name = "numbat"
+version = "1.24.0"
+description = "A statically typed programming language for scientific computations with first class support for physical dimensions and units"
+homepage = "https://numbat.dev/"
+license = "Apache-2.0, MIT"
+kind = "app"
+extract_dir = "numbat-v1.24.0-x86_64-pc-windows-msvc"
+bin = ["numbat.exe"]
+
+[source.x64]
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-x86_64-pc-windows-msvc.zip"
+sha256 = "450027111a5df0dd3ee4ce97a557c4847fc76b05851fccb9e26e875433084049"
+
+[autoupdate]
+checkver = { github = "sharkdp/numbat" }
+url_template = { x64 = "https://github.com/sharkdp/numbat/releases/download/v$version/numbat-v$version-x86_64-pc-windows-msvc.zip" }

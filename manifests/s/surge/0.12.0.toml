@@ -1,0 +1,19 @@
+name = "surge"
+version = "0.12.0"
+description = "Blazing fast TUI download manager built in Go for power users"
+homepage = "https://github.com/SurgeDM/Surge"
+license = "MIT"
+kind = "app"
+bin = ["surge.exe"]
+
+[source.x64]
+url = "https://github.com/SurgeDM/Surge/releases/download/v0.12.0/Surge_0.12.0_windows_amd64.zip"
+sha256 = "c3e2efa63dee1f97e3c5a59ebbe163fcbceb976f177ce0fdc217f7d2eab055d1"
+
+[source.arm64]
+url = "https://github.com/SurgeDM/Surge/releases/download/v0.12.0/Surge_0.12.0_windows_arm64.zip"
+sha256 = "2e0b3c1175ef95d780d72b1302ebf83257d77c7285d138ed554acab205f8505d"
+
+[autoupdate]
+checkver = { github = "SurgeDM/Surge" }
+url_template = { x64 = "https://github.com/SurgeDM/Surge/releases/download/v$version/Surge_$version_windows_amd64.zip", arm64 = "https://github.com/SurgeDM/Surge/releases/download/v$version/Surge_$version_windows_arm64.zip" }

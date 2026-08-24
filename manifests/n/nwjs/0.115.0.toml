@@ -1,0 +1,16 @@
+name = "nwjs"
+version = "0.115.0"
+description = "An app runtime based on Chromium and NodeJS"
+homepage = "https://nwjs.io"
+license = "MIT"
+kind = "app"
+extract_dir = "nwjs-v0.115.0-win-x64"
+bin = ["nwjs\\nw.exe"]
+
+[source.x64]
+url = "https://dl.nwjs.io/v0.115.0/nwjs-v0.115.0-win-x64.zip"
+sha256 = "e4c4fdf59a581d33e3363dddc18638740f0f6a3d34a266f1c709bb7b561b22b5"
+
+[autoupdate]
+checkver = { url = "https://nwjs.io/versions.json", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://dl.nwjs.io/v$version/nwjs-v$version-win-x64.zip" }

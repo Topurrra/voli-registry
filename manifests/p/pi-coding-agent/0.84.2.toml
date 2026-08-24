@@ -10,6 +10,10 @@ bin = ["pi.exe"]
 url = "https://github.com/earendil-works/pi/releases/download/v0.84.2/pi-windows-x64.zip"
 sha256 = "741fc1ae1afecb573ac2888e011188ff446b3940f4aabe1583f60bf55be8a3d0"
 
+[source.arm64]
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.2/pi-windows-arm64.zip"
+sha256 = "092e2b276e0066efcb3d860465591c2e32ea48ee90395d34ceda0d84d8ff4470"
+
 [autoupdate]
 checkver = { github = "earendil-works/pi" }
-url_template = { x64 = "https://github.com/earendil-works/pi/releases/download/v$version/pi-windows-x64.zip" }
+url_template = { x64 = "https://github.com/earendil-works/pi/releases/download/v$version/pi-windows-x64.zip", arm64 = "https://github.com/earendil-works/pi/releases/download/v$version/pi-windows-arm64.zip" }

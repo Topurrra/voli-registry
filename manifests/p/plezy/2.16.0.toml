@@ -1,0 +1,19 @@
+name = "plezy"
+version = "2.16.0"
+description = "Modern Plex client built with Flutter."
+homepage = "https://plezy.app"
+license = "GPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "plezy.exe", name = "Plezy" }]
+
+[source.x64]
+url = "https://github.com/edde746/plezy/releases/download/2.16.0/plezy-windows-x64-portable.7z"
+sha256 = "2b01650e1df5a2f09a5fdd79097d6e1d4bd7ce85e8747fa5b0c2b527e39edcfe"
+
+[source.arm64]
+url = "https://github.com/edde746/plezy/releases/download/2.16.0/plezy-windows-arm64-portable.7z"
+sha256 = "13328ddb851c85ba882fe1d4ed649af077c0b6ed7be41e7c6d87a78a5c06fa5b"
+
+[autoupdate]
+checkver = { github = "edde746/plezy" }
+url_template = { x64 = "https://github.com/edde746/plezy/releases/download/$version/plezy-windows-x64-portable.7z", arm64 = "https://github.com/edde746/plezy/releases/download/$version/plezy-windows-arm64-portable.7z" }

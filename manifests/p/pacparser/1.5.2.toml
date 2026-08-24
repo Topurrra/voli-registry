@@ -1,0 +1,16 @@
+name = "pacparser"
+version = "1.5.2"
+description = "A library to parse proxy auto-config (PAC) files"
+homepage = "https://github.com/manugarg/pacparser"
+license = "LGPL-3.0-or-later"
+kind = "app"
+extract_dir = "pacparser-v1.5.2-windows-x86_64"
+bin = ["pactester.exe"]
+
+[source.x64]
+url = "https://github.com/manugarg/pacparser/releases/download/v1.5.2/pacparser-v1.5.2-windows-x86_64.zip"
+sha256 = "5a179ec3cfae15741a1c6b25e14f444e5c66a05dcf45d324f1e52666472be2dc"
+
+[autoupdate]
+checkver = { github = "manugarg/pacparser" }
+url_template = { x64 = "https://github.com/manugarg/pacparser/releases/download/v$version/pacparser-v$version-windows-x86_64.zip" }

@@ -1,0 +1,19 @@
+name = "wait4x"
+version = "3.7.1"
+description = "Wait4X allows you to wait for a port or a service to enter the requested state"
+homepage = "https://wait4x.dev/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["wait4x.exe"]
+
+[source.x64]
+url = "https://github.com/wait4x/wait4x/releases/download/v3.7.1/wait4x-windows-amd64.tar.gz"
+sha256 = "0fdcd82c59ce35f2ee5f5b7e6b71d96aedffd8ddfc8483ca0f3f2269aba05d12"
+
+[source.arm64]
+url = "https://github.com/wait4x/wait4x/releases/download/v3.7.1/wait4x-windows-arm64.tar.gz"
+sha256 = "dfb5cc372d46923e9e0298f81c83d5217b7017f6cdd63650dbcc52c1157511c1"
+
+[autoupdate]
+checkver = { github = "wait4x/wait4x" }
+url_template = { x64 = "https://github.com/wait4x/wait4x/releases/download/v$version/wait4x-windows-amd64.tar.gz", arm64 = "https://github.com/wait4x/wait4x/releases/download/v$version/wait4x-windows-arm64.tar.gz" }

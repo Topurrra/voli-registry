@@ -1,0 +1,20 @@
+name = "sass"
+version = "1.103.1"
+description = "The primary implementation of Sass, written in Dart."
+homepage = "https://sass-lang.com/dart-sass"
+license = "MIT"
+kind = "app"
+extract_dir = "dart-sass"
+bin = ["sass.bat", { name = "dart-sass", path = "sass.bat" }]
+
+[source.x64]
+url = "https://github.com/sass/dart-sass/releases/download/1.103.1/dart-sass-1.103.1-windows-x64.zip"
+sha256 = "c11bd2792015bf0fb514640ccfff8b3a469eed4506ccc29cec545f88ac7a2a55"
+
+[source.arm64]
+url = "https://github.com/sass/dart-sass/releases/download/1.103.1/dart-sass-1.103.1-windows-arm64.zip"
+sha256 = "cf4cc7be47faf0360e099ad8bb0f22e525055fa31fa3483e450b16a93f87dbd5"
+
+[autoupdate]
+checkver = { github = "sass/dart-sass" }
+url_template = { x64 = "https://github.com/sass/dart-sass/releases/download/$version/dart-sass-$version-windows-x64.zip", arm64 = "https://github.com/sass/dart-sass/releases/download/$version/dart-sass-$version-windows-arm64.zip" }

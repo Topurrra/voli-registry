@@ -1,0 +1,22 @@
+name = "oxideterm"
+version = "2.0.23"
+description = "AI-native workspace for local shells and remote machines."
+homepage = "https://oxideterm.app"
+license = "GPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "oxideterm-native.exe", name = "OxideTerm" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.23/OxideTerm_2.0.23_windows_x64_portable.zip"
+sha256 = "c8073bb79941b9aebe9894c5e843f22e9842d4894974512be8853737c2ba1f9a"
+extract_dir = "OxideTerm_2.0.23_windows_x64_portable"
+
+[source.arm64]
+url = "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.23/OxideTerm_2.0.23_windows_arm64_portable.zip"
+sha256 = "ec8a8adee04086ee275933b2ab8580ff2d0acb00aef942ed715272a502291356"
+extract_dir = "OxideTerm_2.0.23_windows_arm64_portable"
+
+[autoupdate]
+checkver = { github = "AnalyseDeCircuit/oxideterm" }
+url_template = { x64 = "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_x64_portable.zip", arm64 = "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_arm64_portable.zip" }

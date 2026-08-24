@@ -1,0 +1,18 @@
+name = "zsh-patina"
+version = "1.10.0"
+description = "A blazingly fast Zsh plugin performing syntax highlighting of your command line while you type."
+homepage = "https://github.com/michel-kraemer/zsh-patina"
+license = "MIT"
+kind = "app"
+extract_dir = "zsh-patina-v1.10.0-x86_64-pc-cygwin"
+
+[source.x64]
+url = "https://github.com/michel-kraemer/zsh-patina/releases/download/1.10.0/zsh-patina-v1.10.0-x86_64-pc-cygwin.zip"
+sha256 = "81dec3ae0b6526a289103f846ce539980a67cfc6e192ba4b0ebd1b467ac653ad"
+
+[env]
+PATH = "{dir}"
+
+[autoupdate]
+checkver = { github = "michel-kraemer/zsh-patina" }
+url_template = { x64 = "https://github.com/michel-kraemer/zsh-patina/releases/download/$version/zsh-patina-v$version-x86_64-pc-cygwin.zip" }

@@ -1,0 +1,18 @@
+name = "spotbugs"
+version = "4.10.4"
+description = "Static analysis tool for Java"
+homepage = "https://spotbugs.github.io/"
+license = "LGPL-2.1-only"
+kind = "app"
+extract_dir = "spotbugs-4.10.4"
+bin = ["bin\\spotbugs.bat"]
+shortcuts = [{ target = "bin\\spotbugs.bat", name = "SpotBugs" }]
+persist = ["plugin"]
+
+[source.x64]
+url = "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/4.10.4/spotbugs-4.10.4.zip"
+sha256 = "771c8702beb2b4b6aa20df87ea85f22fda7280c7ce36fce4077b7b3c076d1e14"
+
+[autoupdate]
+checkver = { url = "https://spotbugs.readthedocs.io/en/stable/installing.html", regex = "spotbugs ([\\d.]+) documentation" }
+url_template = "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/$version/spotbugs-$version.zip"

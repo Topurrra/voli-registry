@@ -1,0 +1,14 @@
+name = "innounp"
+version = "2.71.0"
+description = "Inno Setup Unpacker (Unicode)"
+homepage = "https://www.rathlev-home.de/tools/prog-e.html#unpack"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["innounp.exe"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/bin/innounp-2.zip"
+sha256 = "4d2bb638510218ddfcb83a730dfa3fbc4c2db7a811a63a1db3133474dc9768e7"
+
+[autoupdate]
+checkver = { url = "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/refs/heads/master/innounp-2/docs/innounp.htm", regex = "(?s)What's new/History.*?<b>(\\d+(?:\\.\\d+){2})</b>" }

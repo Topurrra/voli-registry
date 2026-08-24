@@ -1,0 +1,21 @@
+name = "min"
+version = "1.35.7"
+description = "A fast, minimal browser that protects your privacy"
+homepage = "https://minbrowser.org/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Min-v1.35.7"
+bin = ["Min.exe"]
+shortcuts = [{ target = "Min.exe", name = "Min" }]
+
+[source.x64]
+url = "https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip"
+sha256 = "6659766134e4d45bd75ac385390b02cea8284a58b37a9f60af2e193a9e04b3d5"
+
+[source.arm64]
+url = "https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows-arm64.zip"
+sha256 = "2604b28370b15575710304bf3ea8836ad9ee7ff16791996e83c5a31e2d3e64ae"
+
+[autoupdate]
+checkver = { github = "minbrowser/min" }
+url_template = { x64 = "https://github.com/minbrowser/min/releases/download/v$version/Min-v$version-windows.zip", arm64 = "https://github.com/minbrowser/min/releases/download/v$version/Min-v$version-windows-arm64.zip" }

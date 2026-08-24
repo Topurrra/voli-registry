@@ -1,0 +1,22 @@
+name = "mingit"
+version = "2.55.0.5"
+description = "Minimal Git for Windows (MinGit) is a lightweight distribution intended primarily for application-integration scenarios (such as integrated development environments and graphical visualization tools) where full interactive console capabilities, including colorization and pagination, are not required."
+homepage = "https://gitforwindows.org"
+license = "GPL-2.0-only"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/MinGit-2.55.0.5-64-bit.zip"
+sha256 = "56d7b226b7693196cfc71fef26568f536c4a021ab6c37ff2db4287bed908e96e"
+
+[source.arm64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/MinGit-2.55.0.5-arm64.zip"
+sha256 = "05843f9d6e60306c3ab886799e2c67200caab921571f10512df3493049179ddb"
+
+[env]
+GIT_INSTALL_ROOT = "{dir}"
+PATH = "{dir}\\cmd"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$.assets[?(@.name =~ /MinGit/i)].browser_download_url\",\"regex\":\"(?i)download/(?<tag>v?[\\\\d.]+windows[\\\\d.]+)/MinGit-([\\\\d.]+)\"}"
+url_template = { x64 = "https://github.com/git-for-windows/git/releases/download/$matchTag/MinGit-$version-64-bit.zip", arm64 = "https://github.com/git-for-windows/git/releases/download/$matchTag/MinGit-$version-arm64.zip" }

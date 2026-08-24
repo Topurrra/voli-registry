@@ -1,0 +1,15 @@
+name = "ncspot"
+version = "1.4.0"
+description = "ncurses Spotify client written in Rust"
+homepage = "https://github.com/hrkfdn/ncspot"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["ncspot.exe"]
+
+[source.x64]
+url = "https://github.com/hrkfdn/ncspot/releases/download/v1.4.0/ncspot-v1.4.0-windows-x86_64.zip"
+sha256 = "0a7f99e5f59fb6c553ad81e3e65dc816cc087da8cd7b3b809b058fb79443042c"
+
+[autoupdate]
+checkver = { github = "hrkfdn/ncspot" }
+url_template = { x64 = "https://github.com/hrkfdn/ncspot/releases/download/v$version/ncspot-v$version-windows-x86_64.zip" }

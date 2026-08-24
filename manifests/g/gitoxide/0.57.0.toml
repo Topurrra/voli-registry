@@ -9,12 +9,12 @@ bin = ["gix.exe", "ein.exe"]
 [source.x64]
 url = "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.57.0/gitoxide-max-v0.57.0-x86_64-pc-windows-msvc.zip"
 sha256 = "b08e8a9e8a7b1c4ebe6b6e9fab3d7738f39351ceb6682c90e0f19e6b53d883c3"
-extract_dir = "gitoxide-max-v0.56.0-x86_64-pc-windows-msvc"
+extract_dir = "gitoxide-max-v0.57.0-x86_64-pc-windows-msvc"
 
 [source.arm64]
 url = "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.57.0/gitoxide-max-v0.57.0-aarch64-pc-windows-msvc.zip"
 sha256 = "acb9795429b8b97c60c047ce9bebd7e0648618f59f1570555f6042bdd426a892"
-extract_dir = "gitoxide-max-v0.56.0-aarch64-pc-windows-msvc"
+extract_dir = "gitoxide-max-v0.57.0-aarch64-pc-windows-msvc"
 
 [autoupdate]
 checkver = { github = "GitoxideLabs/gitoxide" }

@@ -1,0 +1,21 @@
+name = "zephyr"
+version = "2.4.4"
+description = "A modern, lightweight Mihomo GUI client built with Rust and Tauri v2"
+homepage = "https://github.com/Juwan-Hwang/Zephyr"
+license = "MIT"
+kind = "app"
+bin = ["Zephyr.exe"]
+shortcuts = [{ target = "Zephyr.exe", name = "Zephyr" }]
+persist = ["core", "profiles", "prism"]
+
+[source.x64]
+url = "https://github.com/Juwan-Hwang/Zephyr/releases/download/v2.4.4/Zephyr_x64-portable.zip"
+sha256 = "b853bb68b093f47f1c95e8791ed8109eff50657e77466ca53352c316313fab37"
+
+[source.arm64]
+url = "https://github.com/Juwan-Hwang/Zephyr/releases/download/v2.4.4/Zephyr_arm64-portable.zip"
+sha256 = "915975538a0c778da7db2752c1804aa78b9b79585c559ac1d636dc88f7ab974f"
+
+[autoupdate]
+checkver = { github = "Juwan-Hwang/Zephyr" }
+url_template = { x64 = "https://github.com/Juwan-Hwang/Zephyr/releases/download/v$version/Zephyr_x64-portable.zip", arm64 = "https://github.com/Juwan-Hwang/Zephyr/releases/download/v$version/Zephyr_arm64-portable.zip" }

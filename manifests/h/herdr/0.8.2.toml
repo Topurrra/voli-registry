@@ -1,0 +1,15 @@
+name = "herdr"
+version = "0.8.2"
+description = "agent multiplexer that lives in your terminal."
+homepage = "https://herdr.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["herdr.exe"]
+
+[source.x64]
+url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-windows-x86_64.zip"
+sha256 = "0ab3d0fe1434d55757997542b978c771d642987bb15a7130f4160f0db38821d5"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://herdr.dev/latest.json\"}"
+url_template = { x64 = "https://github.com/herdrdev/herdr/releases/download/v$version/herdr-windows-x86_64.zip" }

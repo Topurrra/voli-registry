@@ -12,6 +12,10 @@ persist = ["Data"]
 url = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.zip"
 sha256 = "22375e275ec42d96de1d3b8e9ea4ed86d2a3505c4d0ffcbd1af67aa4003e5e4d"
 
+[source.arm64]
+url = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-arm64.zip"
+sha256 = "f758bc14f49589b37250039c07d52ac93e8452948adbfe853f28d55a22a0ad35"
+
 [autoupdate]
-checkver = { github = "sqlitebrowser/sqlitebrowser" }
-url_template = { x64 = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v$version/DB.Browser.for.SQLite-v$version-win64.zip" }
+checkver = "{\"github\":\"https://api.github.com/repos/sqlitebrowser/sqlitebrowser/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"SQLite-v([\\\\d.]+)-win64\\\\.zip\"}"
+url_template = { x64 = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v$version/DB.Browser.for.SQLite-v$version-win64.zip", arm64 = "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v$version/DB.Browser.for.SQLite-v$version-arm64.zip" }

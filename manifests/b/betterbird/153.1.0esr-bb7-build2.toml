@@ -1,0 +1,17 @@
+name = "betterbird"
+version = "153.1.0esr-bb7-build2"
+description = "A fine-tuned version of Mozilla Thunderbird with new features, bug fixes and telemetry turned off"
+homepage = "https://www.betterbird.eu"
+license = "MPL-2.0"
+kind = "app"
+bin = [{ name = "Betterbird", path = "BetterbirdLauncher.exe" }]
+shortcuts = [{ target = "BetterbirdLauncher.exe", name = "Betterbird" }]
+persist = ["profile"]
+
+[source.x64]
+url = "https://www.betterbird.eu/downloads/WindowsPortable/BetterbirdPortable-153.1.0esr-bb7-build2.en-US.win64.zip"
+sha256 = "e17988239ec3db8138d215c6221a3ee2911cfe65fbe51e57f58aa5e9f22e6ce6"
+
+[autoupdate]
+checkver = "{\"regex\":\"BetterbirdPortable-([\\\\d.]+.+).en-US.win64.zip\",\"script\":[\"$url = 'https://www.betterbird.eu/downloads/get.php?os=win&lang=en-US&version=release&portable=true'\",\"$location = (Invoke-WebRequest -Uri $url -MaximumRedirection 0 -SkipHttpErrorCheck -ErrorAction SilentlyContinue).Headers.Location\",\"Write-Output $location\"]}"
+url_template = { x64 = "https://www.betterbird.eu/downloads/WindowsPortable/BetterbirdPortable-$version.en-US.win64.zip" }

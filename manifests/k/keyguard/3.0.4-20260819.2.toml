@@ -1,0 +1,16 @@
+name = "keyguard"
+version = "3.0.4-20260819.2"
+description = "Keyguard is an alternative client for the Bitwarden® platform, created to provide the best user experience possible"
+homepage = "https://keyguard.dev"
+license = "Proprietary"
+kind = "app"
+bin = ["Keyguard\\Keyguard.exe"]
+shortcuts = [{ target = "Keyguard\\Keyguard.exe", name = "Keyguard" }]
+
+[source.x64]
+url = "https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4.msi"
+sha256 = "bb1f318bf007a7b1602e61f940d8a3a04811d8d34092ad5ffaa83f8ea0b9071f"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "AChep/keyguard-app" }

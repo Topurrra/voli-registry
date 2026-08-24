@@ -1,0 +1,17 @@
+name = "prometheus"
+version = "3.14.0"
+description = "Systems monitoring and alerting toolkit"
+homepage = "https://prometheus.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "prometheus-3.14.0.windows-amd64"
+bin = [{ name = "prometheus", path = "prometheus.exe", args = "--config.file \"$persist_dir\\prometheus.yml\"" }, "promtool.exe"]
+persist = ["data", "prometheus.yml"]
+
+[source.x64]
+url = "https://github.com/prometheus/prometheus/releases/download/v3.14.0/prometheus-3.14.0.windows-amd64.tar.gz"
+sha256 = "272bcdd15d9327c7b1e08fe916ea48633819f82f2ea0bf354e6b8c0350c156ba"
+
+[autoupdate]
+checkver = { github = "prometheus/prometheus" }
+url_template = { x64 = "https://github.com/prometheus/prometheus/releases/download/v$version/prometheus-$version.windows-amd64.tar.gz" }

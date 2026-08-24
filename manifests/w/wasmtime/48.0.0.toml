@@ -1,0 +1,16 @@
+name = "wasmtime"
+version = "48.0.0"
+description = "Standalone JIT-style runtime for WebAssembly, using Cranelift"
+homepage = "https://wasmtime.dev"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "wasmtime-v48.0.0-x86_64-windows"
+bin = ["wasmtime.exe"]
+
+[source.x64]
+url = "https://github.com/bytecodealliance/wasmtime/releases/download/v48.0.0/wasmtime-v48.0.0-x86_64-windows.zip"
+sha256 = "d6cc742660e9edf35c92b47179808802f01eca3bf60ab4b0ac723c167592131f"
+
+[autoupdate]
+checkver = { github = "bytecodealliance/wasmtime" }
+url_template = { x64 = "https://github.com/bytecodealliance/wasmtime/releases/download/v$version/wasmtime-v$version-x86_64-windows.zip" }

@@ -9,7 +9,7 @@ shortcuts = [{ target = "CamoStudio.exe", name = "Camo Studio" }]
 
 [source.x64]
 url = "https://reincubate.com/res/labs/camo/camo-windows-latest.msi"
-sha256 = "72a12022c3080bdcbad70a4b569f384656e5482bd695849f16654149d5dbc95c"
+sha256 = "b988f4e932dc865636739228b605837038d1f3d16d1961a5f41e6557c188a178"
 kind = "installer-archive"
 
 [autoupdate]

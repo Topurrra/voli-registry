@@ -1,0 +1,15 @@
+name = "md-tui"
+version = "0.10.3"
+description = "Markdown renderer in the terminal."
+homepage = "https://github.com/henriklovhaug/md-tui"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["mdt.exe"]
+
+[source.x64]
+url = "https://github.com/henriklovhaug/md-tui/releases/download/v0.10.3/md-tui-x86_64-pc-windows-msvc.zip"
+sha256 = "8a94c0ae21b3d89d069725b49f391c90d73b92dacca5658ba94f2a70e5c0de50"
+
+[autoupdate]
+checkver = { github = "henriklovhaug/md-tui" }
+url_template = { x64 = "https://github.com/henriklovhaug/md-tui/releases/download/v$version/md-tui-x86_64-pc-windows-msvc.zip" }

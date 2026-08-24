@@ -1,0 +1,21 @@
+name = "neovim"
+version = "0.12.5"
+description = "Vim-fork focused on extensibility and usability"
+homepage = "https://neovim.io/"
+license = "Apache-2.0,Vim"
+kind = "app"
+bin = ["bin\\nvim.exe", "bin\\xxd.exe"]
+
+[source.x64]
+url = "https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-win64.zip"
+sha256 = "de8625ba8cf65ebf40eb80a388ba1ec8e9c15b30218821e2c639119b05920de1"
+extract_dir = "nvim-win64"
+
+[source.arm64]
+url = "https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-win-arm64.zip"
+sha256 = "f5a2f7ee4603e0185ed5c3e6dc9db762499426baf1c6613a487da5b5e126ae55"
+extract_dir = "nvim-win-arm64"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/neovim/neovim/releases/latest\",\"jsonpath\":\"$.body\",\"regex\":\"NVIM v(?<majorVersion>[\\\\w.-]+)\\\\.(?<minorVersion>[\\\\w.-]+)\\\\.(?<patchVersion>[\\\\w.-]+)\",\"replace\":\"${majorVersion}.${minorVersion}.${patchVersion}\"}"
+url_template = { x64 = "https://github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip", arm64 = "https://github.com/neovim/neovim/releases/download/v$version/nvim-win-arm64.zip" }

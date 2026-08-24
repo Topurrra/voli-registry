@@ -1,0 +1,15 @@
+name = "tracy"
+version = "0.14.1"
+description = "A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications"
+homepage = "https://github.com/wolfpld/tracy"
+license = "BSD-3-Clause"
+kind = "app"
+shortcuts = [{ target = "tracy-profiler.exe", name = "Tracy" }]
+
+[source.x64]
+url = "https://github.com/wolfpld/tracy/releases/download/v0.14.1/windows-0.14.1.zip"
+sha256 = "f7499d74914aa3ba94a2c1ce72f36477d7b61d9d0f7c9790e05274c258c97fb5"
+
+[autoupdate]
+checkver = { github = "wolfpld/tracy" }
+url_template = { x64 = "https://github.com/wolfpld/tracy/releases/download/v$version/windows-$version.zip" }

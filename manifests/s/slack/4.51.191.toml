@@ -1,0 +1,21 @@
+name = "slack"
+version = "4.51.191"
+description = "Collaboration software"
+homepage = "https://slack.com"
+license = "Freeware"
+kind = "app"
+extract_dir = "app"
+bin = ["slack.exe"]
+shortcuts = [{ target = "slack.exe", name = "Slack" }]
+
+[source.x64]
+url = "https://downloads.slack-edge.com/desktop-releases/windows/x64/4.51.191/Slack.msix#/dl.zip"
+sha256 = "0b267d78189561bb44d7a8bba923e8f3524a388903677c18c64adcd76e160557"
+
+[source.arm64]
+url = "https://downloads.slack-edge.com/desktop-releases/windows/arm64/4.51.191/Slack.msix#/dl.zip"
+sha256 = "b23779dee9a6dfbc8f22ab4905d5b32e466b8de0d33613a4615425665355292a"
+
+[autoupdate]
+checkver = { url = "https://slack.com/release-notes/windows", regex = "<h2 .+?>Slack ([\\d.]+)" }
+url_template = { x64 = "https://downloads.slack-edge.com/desktop-releases/windows/x64/$version/Slack.msix#/dl.zip", arm64 = "https://downloads.slack-edge.com/desktop-releases/windows/arm64/$version/Slack.msix#/dl.zip" }

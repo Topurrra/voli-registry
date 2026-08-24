@@ -1,0 +1,28 @@
+name = "winsshterm"
+version = "2.43.0"
+description = "A tabbed SSH solution for Windows, combining PuTTY, WinSCP and VcXsrv"
+homepage = "https://winsshterm.blogspot.com/"
+license = "Freeware"
+kind = "app"
+extract_dir = "WinSSHTerm"
+bin = ["WinSSHTerm.exe"]
+shortcuts = [{ target = "WinSSHTerm.exe", name = "WinSSHTerm" }]
+persist = ["config", "tools"]
+
+[source.x64]
+url = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.43.0/WinSSHTerm-2.43.0-x64.zip"
+sha256 = "7141ca7c3da7a5bf4c5648d65002ba502b0a0ebabe78d7b311c59193a27cff67"
+
+[source.arm64]
+url = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.43.0/WinSSHTerm-2.43.0-arm64.zip"
+sha256 = "28d85014dc79cf2f818d3857fbaa74b3c39f3b481ba510974fc0d2a646d4ab50"
+
+[env]
+WINSSHTERM_EXE_DISALLOW_AUTO_UPDATE = "TRUE"
+
+[depends]
+putty = "*"
+
+[autoupdate]
+checkver = { github = "WinSSHTerm/WinSSHTerm" }
+url_template = { x64 = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-x64.zip", arm64 = "https://github.com/WinSSHTerm/WinSSHTerm/releases/download/$version/WinSSHTerm-$version-arm64.zip" }

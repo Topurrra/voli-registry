@@ -1,0 +1,16 @@
+name = "tts-voice-wizard"
+version = "1.8.0.2"
+description = "Speech to Text to Speech"
+homepage = "https://ttsvoicewizard.com/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "TTSVoiceWizard.exe", name = "TTS Voice Wizard" }]
+persist = ["Assets", "Output"]
+
+[source.x64]
+url = "https://github.com/VRCWizard/TTS-Voice-Wizard/releases/download/v1.8.0.2/TTSVoiceWizard-v1.8.0.2-x64.zip"
+sha256 = "54a39d4760f1653c1b3fac2e43b045952cc4a13c1bde246b9e4951ec2fd8f5a6"
+
+[autoupdate]
+checkver = { github = "VRCWizard/TTS-Voice-Wizard" }
+url_template = { x64 = "https://github.com/VRCWizard/TTS-Voice-Wizard/releases/download/v$version/TTSVoiceWizard-v$version-x64.zip" }

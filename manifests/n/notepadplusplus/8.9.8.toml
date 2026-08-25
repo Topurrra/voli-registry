@@ -1,0 +1,17 @@
+name = "notepadplusplus"
+version = "8.9.8"
+description = "Free source code editor and Notepad replacement with syntax highlighting."
+homepage = "https://notepad-plus-plus.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+gui = true
+bin = [{ name = "notepad++", path = "notepad++.exe" }]
+shortcuts = [{ target = "notepad++.exe", name = "Notepad++" }]
+
+[source.x64]
+url = "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8/npp.8.9.8.portable.x64.7z"
+sha256 = "b13d98c81253fc6c05563f82af651b8a18fd47d9f4430f325dc2c2a576b7ddc2"
+
+[autoupdate]
+checkver = { github = "notepad-plus-plus/notepad-plus-plus" }
+url_template = { x64 = "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$version/npp.$version.portable.x64.7z" }

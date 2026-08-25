@@ -1,0 +1,17 @@
+name = "obs-studio"
+version = "32.2.2"
+description = "Live streaming and screen recording studio."
+homepage = "https://obsproject.com/"
+license = "GPL-2.0-or-later"
+kind = "app"
+gui = true
+bin = [{ name = "obs", path = "bin\\64bit\\obs64.exe" }]
+shortcuts = [{ target = "bin\\64bit\\obs64.exe", name = "OBS Studio" }]
+
+[source.x64]
+url = "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64.zip"
+sha256 = "4d6e40e3ab155f56b30de517380566a206d74b63cdf5ad49aa596924768f97e1"
+
+[autoupdate]
+checkver = { github = "obsproject/obs-studio" }
+url_template = { x64 = "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-x64.zip" }

@@ -1,0 +1,19 @@
+name = "croc"
+version = "11.3.2"
+description = "Easily and securely send things from one computer to another."
+homepage = "https://schollz.com/software/croc6"
+license = "MIT"
+kind = "app"
+bin = ["croc.exe"]
+
+[source.x64]
+url = "https://github.com/schollz/croc/releases/download/v11.3.2/croc_v11.3.2_Windows-64bit.zip"
+sha256 = "ece869a021e0e02edcbe9843f5c4e10cbd6e71e7513cf26bb52bc47d132e04b4"
+
+[source.arm64]
+url = "https://github.com/schollz/croc/releases/download/v11.3.2/croc_v11.3.2_Windows-ARM64.zip"
+sha256 = "b165b602586a594873c0a11453f6ef248f3f24687d559e1493e8c05e27d77f52"
+
+[autoupdate]
+checkver = { github = "schollz/croc" }
+url_template = { x64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-64bit.zip", arm64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-ARM64.zip" }

@@ -1,0 +1,16 @@
+name = "camunda-modeler"
+version = "5.51.0"
+description = "Made for developers, edit your BPMN process diagrams and DMN decision tables."
+homepage = "https://camunda.org/download/modeler/"
+license = "MIT"
+kind = "app"
+bin = ["Camunda Modeler.exe"]
+shortcuts = [{ target = "Camunda Modeler.exe", name = "Camunda Modeler" }]
+
+[source.x64]
+url = "https://github.com/camunda/camunda-modeler/releases/download/v5.51.0/camunda-modeler-5.51.0-win-x64.zip"
+sha256 = "c78589c2bf27c629f1728badd7755b2b7dce1ca8fcb4ef0dfbb171dc241ac38f"
+
+[autoupdate]
+checkver = { github = "camunda/camunda-modeler" }
+url_template = { x64 = "https://github.com/camunda/camunda-modeler/releases/download/v$version/camunda-modeler-$version-win-x64.zip" }

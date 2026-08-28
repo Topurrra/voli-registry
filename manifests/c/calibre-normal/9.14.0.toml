@@ -1,0 +1,18 @@
+name = "calibre-normal"
+version = "9.14.0"
+description = "Powerful and easy to use e-book manager"
+homepage = "https://calibre-ebook.com"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "PFiles64\\Calibre2"
+bin = ["calibre.exe", "calibre-complete.exe", "calibre-customize.exe", "calibredb.exe", "calibre-debug.exe", "calibre-parallel.exe", "calibre-server.exe", "calibre-smtp.exe", "ebook-convert.exe", "ebook-device.exe", "ebook-edit.exe", "ebook-meta.exe", "ebook-polish.exe", "ebook-viewer.exe", "fetch-ebook-metadata.exe", "lrf2lrs.exe", "lrs2lrf.exe", "lrfviewer.exe", "markdown-calibre.exe", "web2disk.exe"]
+shortcuts = [{ target = "calibre.exe", name = "Calibre" }, { target = "ebook-edit.exe", name = "Calibre E-Book Editor" }, { target = "ebook-viewer.exe", name = "Calibre E-Book Viewer" }, { target = "lrfviewer.exe", name = "Calibre LRF Viewer" }]
+
+[source.x64]
+url = "https://download.calibre-ebook.com/9.14.0/calibre-64bit-9.14.0.msi"
+sha512 = "e2c1417ee4801fff87a1e10f4014e6e20a0b4efa1169417d1942b4352d4901fcb410bfab4a55bfb7f22737b64ff8956d508898a7fa7734e08f9d8a96391bc8d1"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "kovidgoyal/calibre" }
+url_template = { x64 = "https://download.calibre-ebook.com/$version/calibre-64bit-$version.msi" }

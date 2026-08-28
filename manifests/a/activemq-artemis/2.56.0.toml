@@ -1,0 +1,16 @@
+name = "activemq-artemis"
+version = "2.56.0"
+description = "Flexible & Powerful Open Source Multi-Protocol Messaging"
+homepage = "https://artemis.apache.org/components/artemis/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "apache-artemis-2.56.0"
+bin = ["bin\\artemis.cmd"]
+
+[source.x64]
+url = "https://dlcdn.apache.org/artemis/artemis/2.56.0/apache-artemis-2.56.0-bin.zip"
+sha512 = "289f1022b39c88cd132076dc3189ffc7f829ce5ae05a89668cbaf9ed02001c9b243c3837339f41654956b6f2ea355b6031b44e9aaf1b90ae2486d9bd3299700a"
+
+[autoupdate]
+checkver = { url = "https://artemis.apache.org/components/artemis/download/", regex = "Apache Artemis ([\\d.]+)" }
+url_template = "https://dlcdn.apache.org/artemis/artemis/$version/apache-artemis-$version-bin.zip"

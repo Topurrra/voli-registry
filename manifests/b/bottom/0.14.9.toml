@@ -1,0 +1,19 @@
+name = "bottom"
+version = "0.14.9"
+description = "Graphical process/system monitor"
+homepage = "https://clementtsang.github.io/bottom/"
+license = "MIT"
+kind = "app"
+bin = ["btm.exe"]
+
+[source.x64]
+url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_x86_64-pc-windows-msvc.zip"
+sha256 = "01660721b0fdc72b191f2b27b78dc9a3087aeb7b3fad4a890c53870089d6b500"
+
+[source.arm64]
+url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_aarch64-pc-windows-msvc.zip"
+sha256 = "fabe9fc4850d12917150295900119eaa5455724658d1d709e013cacdc0390349"
+
+[autoupdate]
+checkver = { github = "ClementTsang/bottom" }
+url_template = { x64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_aarch64-pc-windows-msvc.zip" }

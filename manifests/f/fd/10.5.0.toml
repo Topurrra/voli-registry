@@ -1,0 +1,21 @@
+name = "fd"
+version = "10.5.0"
+description = "A simple, fast and user-friendly alternative to 'find'."
+homepage = "https://github.com/sharkdp/fd"
+license = "MIT"
+kind = "app"
+bin = ["fd.exe"]
+
+[source.x64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-pc-windows-msvc.zip"
+sha256 = "a227701b8551c35a9931d9f6da75503cf86d88e182d71fb849a70864c5d57cd7"
+extract_dir = "fd-v10.4.2-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-aarch64-pc-windows-msvc.zip"
+sha256 = "a2bcddcfd259b05357a77bbc6cd671fdb30f63fd266a0e748305890a8c5ceaa6"
+extract_dir = "fd-v10.4.2-aarch64-pc-windows-msvc"
+
+[autoupdate]
+checkver = { github = "sharkdp/fd" }
+url_template = { x64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-aarch64-pc-windows-msvc.zip" }

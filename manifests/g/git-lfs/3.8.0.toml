@@ -1,0 +1,16 @@
+name = "git-lfs"
+version = "3.8.0"
+description = "Git extension for versioning large files."
+homepage = "https://git-lfs.com"
+license = "MIT"
+kind = "app"
+extract_dir = "git-lfs-3.8.0"
+bin = ["git-lfs.exe"]
+
+[source.x64]
+url = "https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-windows-amd64-v3.8.0.zip"
+sha256 = "b62e7b8ceddee635f691233d77de8eaa4b213e9209e0173811d8cfa77f7882c1"
+
+[autoupdate]
+checkver = { github = "git-lfs/git-lfs" }
+url_template = { x64 = "https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-windows-amd64-v$version.zip" }

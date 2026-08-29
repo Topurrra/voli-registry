@@ -1,0 +1,15 @@
+name = "geode-sdk-cli"
+version = "3.9.0"
+description = "Command line application for Geode SDK, the Geometry Dash modding framework."
+homepage = "https://github.com/geode-sdk/cli"
+license = "BSL-1.0"
+kind = "app"
+bin = ["geode.exe"]
+
+[source.x64]
+url = "https://github.com/geode-sdk/cli/releases/download/v3.9.0/geode-cli-v3.9.0-win.zip"
+sha256 = "ce7eaaa6766ae350a33d6cc1371c20644dfc489cd32a6cd33b4d15c673e1c858"
+
+[autoupdate]
+checkver = { github = "geode-sdk/cli" }
+url_template = { x64 = "https://github.com/geode-sdk/cli/releases/download/v$version/geode-cli-v$version-win.zip" }

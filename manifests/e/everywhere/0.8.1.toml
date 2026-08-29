@@ -1,0 +1,15 @@
+name = "everywhere"
+version = "0.8.1"
+description = "A context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools."
+homepage = "https://everywhere.sylinko.com/"
+license = "Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "Everywhere.exe", name = "Everywhere" }]
+
+[source.x64]
+url = "https://github.com/DearVa/Everywhere/releases/download/v0.8.1/Everywhere-Windows-x64-v0.8.1.zip"
+sha256 = "03bfea00a675199bd581ad8c14fac5a10f8fb6da4b135dd9f9ec3d78377f388c"
+
+[autoupdate]
+checkver = { github = "DearVa/Everywhere" }
+url_template = { x64 = "https://github.com/DearVa/Everywhere/releases/download/v$version/Everywhere-Windows-x64-v$version.zip" }

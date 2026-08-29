@@ -1,0 +1,15 @@
+name = "cloudfoundry-cli"
+version = "8.19.0"
+description = "The official command line client for Cloud Foundry"
+homepage = "https://github.com/cloudfoundry/cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["cf.exe"]
+
+[source.x64]
+url = "https://github.com/cloudfoundry/cli/releases/download/v8.19.0/cf8-cli_8.19.0_winx64.zip"
+sha256 = "79e19edd666854eecede1e420b2ccca25d64b615759b48f582c02a7860aa235f"
+
+[autoupdate]
+checkver = { github = "cloudfoundry/cli" }
+url_template = { x64 = "https://github.com/cloudfoundry/cli/releases/download/v$version/cf8-cli_$version_winx64.zip" }

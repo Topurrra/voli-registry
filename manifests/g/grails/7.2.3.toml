@@ -1,0 +1,19 @@
+name = "grails"
+version = "7.2.3"
+description = "A powerful Groovy-based web application framework for the JVM built on top of Spring Boot."
+homepage = "https://grails.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "apache-grails-7.2.3-bin"
+bin = ["bin\\grails.bat"]
+
+[source.x64]
+url = "https://github.com/apache/grails-core/releases/download/v7.2.3/apache-grails-7.2.3-bin.zip"
+sha512 = "4692a6228271d54ebcedd258a810b16b0b41a4cc0b5484a9d30cd17d5325b8e3dae7a018ceddd16c766bbac80c929bf412d6778ab1dada02f894ea73e3c3485f"
+
+[env]
+GRAILS_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/apache/grails-core/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /apache-grails-[\\\\d.]+-bin/i)].browser_download_url\",\"regex\":\"apache-grails-([\\\\d.]+)-bin\\\\.zip\"}"
+url_template = "https://github.com/apache/grails-core/releases/download/v$version/apache-grails-$version-bin.zip"

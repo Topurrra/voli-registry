@@ -1,0 +1,21 @@
+name = "helium"
+version = "0.16.2.1"
+description = "The Chromium-based web browser made for people, with love. Best privacy by default, unbiased ad-blocking, no bloat and no noise."
+homepage = "https://helium.computer"
+license = "BSD-3-Clause, GPL-3.0-or-later"
+kind = "app"
+bin = [{ name = "helium", path = "chrome.exe", args = "--user-data-dir=\"$persist_dir\\User Data\"" }]
+persist = ["User Data"]
+
+[source.x64]
+url = "https://github.com/imputnet/helium-windows/releases/download/0.16.2.1/helium_0.16.2.1_x64-windows.zip"
+sha256 = "1d5b9ab5e0e112e0791930c54d086778cfbfb1c1fd0483b348a2ee2f3b473797"
+extract_dir = "helium_0.15.1.1_x64-windows"
+
+[source.arm64]
+url = "https://github.com/imputnet/helium-windows/releases/download/0.16.2.1/helium_0.16.2.1_arm64-windows.zip"
+sha256 = "1621068defd25387fe5c6b50c7b051b4f3d322c824230b8ae06a2913b65dedf9"
+extract_dir = "helium_0.15.1.1_arm64-windows"
+
+[autoupdate]
+checkver = { github = "imputnet/helium-windows" }

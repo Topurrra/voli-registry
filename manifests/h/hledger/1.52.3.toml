@@ -1,0 +1,15 @@
+name = "hledger"
+version = "1.52.3"
+description = "Lightweight, portable and dependable accounting tools"
+homepage = "https://hledger.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["hledger.exe", "hledger-web.exe", "hledger-ui.exe"]
+
+[source.x64]
+url = "https://github.com/simonmichael/hledger/releases/download/1.52.3/hledger-windows-x64.zip"
+sha256 = "ae16e1f6a311f7cae6e09d4ef1d0fc0c214fb4041d9100d0ac29bade1219fc09"
+
+[autoupdate]
+checkver = { github = "simonmichael/hledger" }
+url_template = { x64 = "https://github.com/simonmichael/hledger/releases/download/$version/hledger-windows-x64.zip" }

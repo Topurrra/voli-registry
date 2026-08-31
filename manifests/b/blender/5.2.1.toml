@@ -1,0 +1,23 @@
+name = "blender"
+version = "5.2.1"
+description = "3D creation suite"
+homepage = "https://www.blender.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["blender-launcher.exe", "blender.exe"]
+shortcuts = [{ target = "blender-launcher.exe", name = "Blender" }]
+persist = ["portable"]
+
+[source.x64]
+url = "https://download.blender.org/release/Blender5.2/blender-5.2.1-windows-x64.zip"
+sha256 = "0e631dad7d0cad6d5d18abdd2e2550f6c0213215334eda00ddbd3d22b96ecb2c"
+extract_dir = "blender-5.2.1-windows-x64"
+
+[source.arm64]
+url = "https://download.blender.org/release/Blender5.2/blender-5.2.1-windows-arm64.zip"
+sha256 = "62047464d21ea954b997db94bf5518eac9240b900d98bb324bc02416ad892860"
+extract_dir = "blender-5.2.1-windows-arm64"
+
+[autoupdate]
+checkver = "{\"regex\":\"(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"script\":[\"try {\",\"    $baseVersion = [regex]::Matches($page, 'href=\\\"Blender(?<version>\\\\d+\\\\.\\\\d+)/\\\"') | ForEach-Object {\",\"        [version]\\\"$($_.Groups['version'].Value)\\\"\",\"    } | Sort-Object -Descending | Select-Object -First 1\",\"    if (-not $baseVersion) { throw 'No base version found' }\",\"    $latestVersion = (Invoke-WebRequest -Uri \\\"https://download.blender.org/release/Blender$($baseVersion.Major).$($baseVersion.Minor)/\\\" -UseBasicParsing).Links | ForEach-Object {\",\"        if ($_.href -match '^blender-(?<version>\\\\d+\\\\.\\\\d+\\\\.\\\\d+)-windows-x64\\\\.zip$') {\",\"            [version]$Matches['version']\",\"        }\",\"    } | Sort-Object -Descending | Select-Object -First 1\",\"    Write-Output $latestVersion\",\"}\",\"catch {\",\"    Write-Output ''\",\"}\"],\"url\":\"https://download.blender.org/release/\"}"
+url_template = { x64 = "https://download.blender.org/release/Blender$majorVersion.$minorVersion/blender-$version-windows-x64.zip", arm64 = "https://download.blender.org/release/Blender$majorVersion.$minorVersion/blender-$version-windows-arm64.zip" }

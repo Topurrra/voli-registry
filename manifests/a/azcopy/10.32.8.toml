@@ -9,12 +9,12 @@ bin = ["azcopy.exe"]
 [source.x64]
 url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.32.8/azcopy_windows_amd64_10.32.8.zip/#dl.zip"
 sha256 = "99fa0387e91250b0aa4f3e6186e3ea07ec21b62e95e42a58da10144ad5bbf38d"
-extract_dir = "azcopy_windows_amd64_10.32.7"
+extract_dir = "azcopy_windows_amd64_10.32.8"
 
 [source.arm64]
 url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.32.8/azcopy_windows_arm64_10.32.8.zip/#dl.zip"
 sha256 = "938ba0db363f1a9e1df9f953c4eebf0a3206f7332278f706a10776f5be582c2d"
-extract_dir = "azcopy_windows_arm64_10.32.7"
+extract_dir = "azcopy_windows_arm64_10.32.8"
 
 [autoupdate]
 checkver = { github = "Azure/azure-storage-azcopy" }

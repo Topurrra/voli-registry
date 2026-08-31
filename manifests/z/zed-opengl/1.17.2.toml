@@ -1,0 +1,17 @@
+name = "zed-opengl"
+version = "1.17.2"
+description = "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. It's also open source."
+homepage = "https://zed.dev/"
+license = "AGPL-3.0, Apache-2.0, GPL-3.0"
+kind = "app"
+extract_dir = "zed"
+bin = ["bin\\zed.exe"]
+shortcuts = [{ target = "zed.exe", name = "Zed" }]
+
+[source.x64]
+url = "https://github.com/deevus/zed-windows-builds/releases/download/v1.17.2/zed-opengl.zip"
+sha256 = "10c5af991a02d9ffd5690f37486f989d1771d3ce422c829af274b14839c36b99"
+
+[autoupdate]
+checkver = { url = "https://github.com/deevus/zed-windows-builds/releases", regex = "v(\\d+\\.\\d+\\.\\d+)" }
+url_template = "https://github.com/deevus/zed-windows-builds/releases/download/v$version/zed-opengl.zip"

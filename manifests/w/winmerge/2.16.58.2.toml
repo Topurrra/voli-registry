@@ -1,0 +1,21 @@
+name = "winmerge"
+version = "2.16.58.2"
+description = "Differencing and merging tool, that compares both folders and files, presenting differences in a visual text format that is easy to understand and handle."
+homepage = "https://winmerge.org"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "WinMerge"
+bin = ["WinMergeU.exe"]
+shortcuts = [{ target = "WinMergeU.exe", name = "WinMerge" }]
+
+[source.x64]
+url = "https://github.com/WinMerge/winmerge/releases/download/v2.16.58.2/winmerge-2.16.58.2-x64-exe.zip"
+sha256 = "5732474add39283f44bd20c66e57503d26f435e695feabc4140ba2f91d2e7804"
+
+[source.arm64]
+url = "https://github.com/WinMerge/winmerge/releases/download/v2.16.58.2/winmerge-2.16.58.2-ARM64-exe.zip"
+sha256 = "af194f407361ea9dc8112cfcae434e40be5a4020aeb29f056bf440b028103089"
+
+[autoupdate]
+checkver = { github = "WinMerge/winmerge" }
+url_template = { x64 = "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-x64-exe.zip", arm64 = "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-ARM64-exe.zip" }

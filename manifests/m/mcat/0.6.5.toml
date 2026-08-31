@@ -1,0 +1,16 @@
+name = "mcat"
+version = "0.6.5"
+description = "Terminal image, video, and Markdown viewer."
+homepage = "https://github.com/Skardyy/mcat"
+license = "MIT"
+kind = "app"
+extract_dir = "mcat-v0.6.5-x86_64-pc-windows-msvc"
+bin = ["mcat.exe"]
+
+[source.x64]
+url = "https://github.com/Skardyy/mcat/releases/download/v0.6.5/mcat-v0.6.5-x86_64-pc-windows-msvc.zip"
+sha256 = "51a8bfda59f5dbc5a5b286cfbb94c5919d484ea8db00a35fab15fc863423e15c"
+
+[autoupdate]
+checkver = { github = "Skardyy/mcat" }
+url_template = { x64 = "https://github.com/Skardyy/mcat/releases/download/v$version/mcat-v$version-x86_64-pc-windows-msvc.zip" }

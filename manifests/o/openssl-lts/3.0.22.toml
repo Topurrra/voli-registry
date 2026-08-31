@@ -1,0 +1,26 @@
+name = "openssl-lts"
+version = "3.0.22"
+description = "TLS/SSL toolkit (3.0.X LTS)"
+homepage = "https://slproweb.com/products/Win32OpenSSL.html"
+license = "Apache-2.0"
+kind = "app"
+
+[source.x64]
+url = "https://slproweb.com/download/Win64OpenSSL-3_0_22.exe"
+sha256 = "08a48026a3b862167832b38e50d7c8594ac63ab933cf678b77002e5c3a81e8ec"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://slproweb.com/download/Win64ARMOpenSSL-3_0_22.exe"
+sha256 = "822bd75e7af254d63e589a7ecbb399199d7844caaeb909f63c7c0f12b7db2bad"
+kind = "installer-archive"
+
+[env]
+OPENSSL_CONF = "{dir}\\bin\\cnf\\openssl.cnf"
+OPENSSL_INCLUDE_DIR = "{dir}\\include"
+OPENSSL_LIB_DIR = "{dir}\\lib"
+OPENSSL_MODULES = "{dir}\\bin"
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { url = "https://raw.githubusercontent.com/slproweb/opensslhashes/master/win32_openssl_hashes.json", regex = "(3\\.0\\.([\\d.]+))" }

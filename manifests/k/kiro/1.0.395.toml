@@ -1,0 +1,16 @@
+name = "kiro"
+version = "1.0.395"
+description = "An agentic IDE developed by AWS for structured, spec-driven AI development from prototype to production."
+homepage = "https://kiro.dev"
+license = "Proprietary"
+kind = "app"
+bin = [{ name = "kiro", path = "bin\\kiro.cmd" }]
+shortcuts = [{ target = "Kiro.exe", name = "Kiro" }]
+
+[source.x64]
+url = "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/1.0.395/kiro-ide-1.0.395-stable-win32-x64.zip"
+sha256 = "51fc308a5a043aa73dd491325c57c03fe847a323142c1deaa106b09243b6ea41"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.currentRelease\",\"url\":\"https://prod.download.desktop.kiro.dev/stable/metadata-win32-x64-user-stable.json\"}"
+url_template = { x64 = "https://prod.download.desktop.kiro.dev/releases/stable/win32-x64/signed/$version/kiro-ide-$version-stable-win32-x64.zip" }

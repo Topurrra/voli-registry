@@ -1,0 +1,19 @@
+name = "vacuum"
+version = "0.30.1"
+description = "The worlds fastest OpenAPI 3, OpenAPI 2 / Swagger linter and quality analysis tool."
+homepage = "https://quobix.com/vacuum/"
+license = "MIT"
+kind = "app"
+bin = ["vacuum.exe"]
+
+[source.x64]
+url = "https://github.com/daveshanley/vacuum/releases/download/v0.30.1/vacuum_0.30.1_windows_x86_64.tar.gz"
+sha256 = "cafeaaf18fd9a84111c849dbb0b7329d99eeec6f6fe9a407bf35c1de7621f585"
+
+[source.arm64]
+url = "https://github.com/daveshanley/vacuum/releases/download/v0.30.1/vacuum_0.30.1_windows_arm64.tar.gz"
+sha256 = "cbddf83e340c6b3886e186cf7fc1ea271b40c4a1f41e208d50f30d878713d13b"
+
+[autoupdate]
+checkver = { github = "daveshanley/vacuum" }
+url_template = { x64 = "https://github.com/daveshanley/vacuum/releases/download/v$version/vacuum_$version_windows_x86_64.tar.gz", arm64 = "https://github.com/daveshanley/vacuum/releases/download/v$version/vacuum_$version_windows_arm64.tar.gz" }

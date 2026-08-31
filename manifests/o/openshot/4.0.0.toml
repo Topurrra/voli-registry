@@ -1,0 +1,16 @@
+name = "openshot"
+version = "4.0.0"
+description = "Easy to use video editor"
+homepage = "https://www.openshot.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "openshot-qt.exe", name = "OpenShot Video Editor" }]
+
+[source.x64]
+url = "https://github.com/OpenShot/openshot-qt/releases/download/v4.0.0/OpenShot-v4.0.0-x86_64.exe"
+sha256 = "fcecfcfd616447797d46edcca6d8fe5ca70ea19b387ae257ec24f11811f715ef"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "OpenShot/openshot-qt" }
+url_template = { x64 = "https://github.com/OpenShot/openshot-qt/releases/download/v$version/OpenShot-v$version-x86_64.exe" }

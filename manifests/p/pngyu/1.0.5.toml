@@ -1,0 +1,15 @@
+name = "pngyu"
+version = "1.0.5"
+description = "Simple PNG image file compression tool."
+homepage = "https://github.com/nukesaq88/Pngyu"
+license = "BSD-3-Clause"
+kind = "app"
+shortcuts = [{ target = "Pngyu.exe", name = "Pngyu" }]
+
+[source.x64]
+url = "https://github.com/nukesaq88/Pngyu/releases/download/v1.0.5/Pngyu-win-1.0.5.zip"
+sha256 = "c767d14925709952d002228b8d02703bd0f47533498334f1c75b1583acd1c5b4"
+
+[autoupdate]
+checkver = { github = "nukesaq88/Pngyu" }
+url_template = "https://github.com/nukesaq88/Pngyu/releases/download/v$version/Pngyu-win-$version.zip"

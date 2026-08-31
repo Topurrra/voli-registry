@@ -1,0 +1,20 @@
+name = "praat"
+version = "7.0.02"
+description = "The scientific analysis of speech in phonetics"
+homepage = "https://praat.org/"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["Praat.exe"]
+shortcuts = [{ target = "Praat.exe", name = "Praat" }]
+
+[source.x64]
+url = "https://github.com/praat/praat.github.io/releases/download/v7.0.02/praat7002_win-x64v3.zip"
+sha256 = "9d1a8e3d0e5232275b697cd3c4076b3c964a086eed062271b637c0a84ff1a76e"
+
+[source.arm64]
+url = "https://github.com/praat/praat.github.io/releases/download/v7.0.02/praat7002_win-arm64.zip"
+sha256 = "0322bb7546eb2fdd0b3b0b8821adda39eea27125303bd79c640d96b5767f8509"
+
+[autoupdate]
+checkver = { github = "praat/praat.github.io" }
+url_template = { x64 = "https://github.com/praat/praat.github.io/releases/download/v$version/praat$cleanVersion_win-x64v3.zip", arm64 = "https://github.com/praat/praat.github.io/releases/download/v$version/praat$cleanVersion_win-arm64.zip" }

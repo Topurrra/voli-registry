@@ -1,0 +1,24 @@
+name = "pnpm"
+version = "12.1.0"
+description = "A fast and disk space efficient Node package manager."
+homepage = "https://pnpm.io/"
+license = "MIT"
+kind = "app"
+bin = ["pnpm.exe", { name = "pn", path = "pnpm.exe" }, { name = "pnpx", path = "pnpm.exe", args = "dlx" }, { name = "pnx", path = "pnpm.exe", args = "dlx" }]
+persist = ["bin", "global", "store", "cache", "state"]
+
+[source.x64]
+url = "https://github.com/pnpm/pnpm/releases/download/v12.1.0/pnpm-win32-x64.zip"
+sha256 = "69c0d1d46cdc12bbefad653e859636179927aed292f9af286460a0d38d1d99d2"
+
+[source.arm64]
+url = "https://github.com/pnpm/pnpm/releases/download/v12.1.0/pnpm-win32-arm64.zip"
+sha256 = "84769c7cbe683b9fa36d4734e0c66169478e623c014a446d71c62e8b6d6c0c11"
+
+[env]
+PATH = "{dir}\\bin"
+PNPM_HOME = "{dir}"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)\",\"script\":[\"# Using checkver script to check through all release tags\",\"$auth = Get-GitHubToken\",\"$head = @{}\",\"if($auth) { $head.add('authorization', \\\"Bearer $auth\\\") }\",\"$url = 'https://api.github.com/repos/pnpm/pnpm/releases'\",\"$latest_ver = [Version]::new(0,0,0,0) # note: Powershell 5 does not support casting 'int' or 'float' to 'System.Version'\",\"$releases = $(Invoke-WebRequest -Headers $head $url).Content | ConvertFrom-Json\",\"$releases | ForEach-Object {\",\"    if (!($_.tag_name -match '([\\\\d.]+)')) { return }\",\"    if ($_.prerelease) { return }\",\"    $ver = [Version]::new($matches[1])\",\"    if ($ver -gt $latest_ver) { $latest_ver = $ver }\",\"}\",\"if ($latest_ver -eq [Version]::new(0,0,0,0)) { error \\\"Could not match version string in '$url'\\\"; continue }\",\"Write-Output $latest_ver\"]}"
+url_template = { x64 = "https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win32-x64.zip", arm64 = "https://github.com/pnpm/pnpm/releases/download/v$version/pnpm-win32-arm64.zip" }

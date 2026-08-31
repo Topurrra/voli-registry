@@ -1,0 +1,16 @@
+name = "leopardwm"
+version = "0.2.8"
+description = "Scroll-first tiling window manager for Windows, inspired by niri."
+homepage = "https://github.com/jcardama/LeopardWM"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "LeopardWM-0.2.8-x86_64-windows"
+bin = ["leopardwm.exe", "leopardwm-cli.exe", "lwm.exe"]
+
+[source.x64]
+url = "https://github.com/jcardama/LeopardWM/releases/download/v0.2.8/LeopardWM-0.2.8-x86_64-windows.zip"
+sha256 = "71ffaf586654b8f706d6b9a3f18f1a2f39e48b115b927d68872a7c00ea9f9a26"
+
+[autoupdate]
+checkver = { github = "jcardama/LeopardWM" }
+url_template = { x64 = "https://github.com/jcardama/LeopardWM/releases/download/v$version/LeopardWM-$version-x86_64-windows.zip" }

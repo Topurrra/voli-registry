@@ -1,0 +1,15 @@
+name = "selenium"
+version = "4.48.0"
+description = "A smart proxy server that allows Selenium tests to route commands to remote web browser instances"
+homepage = "https://selenium.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["selenium.jar"]
+
+[source.x64]
+url = "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.48.0/selenium-server-4.48.0.jar#/selenium.jar"
+sha256 = "c3119218bcd07b221622ffd57874519891718029358c85a2dccf506e17815cd7"
+
+[autoupdate]
+checkver = { github = "SeleniumHQ/selenium" }
+url_template = "https://github.com/SeleniumHQ/selenium/releases/download/selenium-$version/selenium-server-$version.jar#/selenium.jar"

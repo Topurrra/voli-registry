@@ -10,12 +10,12 @@ shortcuts = [{ target = "bin\\cmake-gui.exe", name = "cmake-gui" }]
 [source.x64]
 url = "https://github.com/Kitware/CMake/releases/download/v4.4.3/cmake-4.4.3-windows-x86_64.zip"
 sha256 = "4d52ebab7193a698651639ed80d8d04fd903358843572cf44c7fd234cb7c26ab"
-extract_dir = "cmake-4.4.2-windows-x86_64"
+extract_dir = "cmake-4.4.3-windows-x86_64"
 
 [source.arm64]
 url = "https://github.com/Kitware/CMake/releases/download/v4.4.3/cmake-4.4.3-windows-arm64.zip"
 sha256 = "7b410ddd00e24c7250eec7452da2348a4a70437aa87e9cda0a20d6a85662fcff"
-extract_dir = "cmake-4.4.2-windows-arm64"
+extract_dir = "cmake-4.4.3-windows-arm64"
 
 [autoupdate]
 checkver = { url = "https://cmake.org/download/", regex = "Latest Release \\(([\\d.]+)\\)" }

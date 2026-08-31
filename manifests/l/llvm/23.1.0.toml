@@ -1,0 +1,21 @@
+name = "llvm"
+version = "23.1.0"
+description = "Collection of modular and reusable compiler and toolchain technologies."
+homepage = "https://www.llvm.org"
+license = "NCSA"
+kind = "app"
+extract_dir = "LLVM"
+
+[source.x64]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.0/LLVM-23.1.0-win64.msi"
+sha256 = "95602d03944a7db534899adc5203988b63921ad0db71fe15748a3fe3d340416f"
+kind = "installer-archive"
+
+[env]
+LIBCLANG_PATH = "{dir}\\bin"
+LLVM_LIB_DIR = "{dir}\\lib"
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "llvm/llvm-project" }
+url_template = { x64 = "https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/LLVM-$version-win64.msi" }

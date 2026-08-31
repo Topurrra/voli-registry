@@ -1,0 +1,22 @@
+name = "sourcegit"
+version = "2026.19"
+description = "Open-source GUI client for git users."
+homepage = "https://github.com/sourcegit-scm/sourcegit"
+license = "MIT"
+kind = "app"
+extract_dir = "SourceGit"
+bin = ["SourceGit.exe"]
+shortcuts = [{ target = "SourceGit.exe", name = "SourceGit" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.19/sourcegit_2026.19.win-x64.zip"
+sha256 = "66e12ca936a286136e05a80caaed97c177096ebfe714cf613dc6dac7fcb7f43f"
+
+[source.arm64]
+url = "https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.19/sourcegit_2026.19.win-arm64.zip"
+sha256 = "c52dd77cfe28e3cb5947e1f83b291bd868630ce525560e80c6e5887e3d430021"
+
+[autoupdate]
+checkver = { github = "sourcegit-scm/sourcegit" }
+url_template = { x64 = "https://github.com/sourcegit-scm/sourcegit/releases/download/v$version/sourcegit_$version.win-x64.zip", arm64 = "https://github.com/sourcegit-scm/sourcegit/releases/download/v$version/sourcegit_$version.win-arm64.zip" }

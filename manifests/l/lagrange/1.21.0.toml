@@ -1,0 +1,17 @@
+name = "lagrange"
+version = "1.21.0"
+description = "A Beautiful Gemini Client"
+homepage = "https://gmi.skyjake.fi/lagrange"
+license = "BSD-2-Clause"
+kind = "app"
+bin = ["lagrange.exe"]
+shortcuts = [{ target = "lagrange.exe", name = "Lagrange" }]
+persist = ["userdata"]
+
+[source.x64]
+url = "https://github.com/skyjake/lagrange/releases/download/v1.21.0/lagrange_v1.21.0_windows-x64_portable.zip"
+sha256 = "2a83066f2b3dc14308e0faad0669a92c0ed04cecf401f535685c3099ffdc5f66"
+
+[autoupdate]
+checkver = { github = "skyjake/lagrange" }
+url_template = { x64 = "https://github.com/skyjake/lagrange/releases/download/v$version/lagrange_v$version_windows-x64_portable.zip" }

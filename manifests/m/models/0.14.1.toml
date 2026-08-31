@@ -1,0 +1,15 @@
+name = "models"
+version = "0.14.1"
+description = "Fast CLI and TUI for browsing AI models, benchmarks, and coding agents"
+homepage = "https://github.com/arimxyer/models"
+license = "MIT"
+kind = "app"
+bin = ["models.exe"]
+
+[source.x64]
+url = "https://github.com/arimxyer/models/releases/download/v0.14.1/models-x86_64-pc-windows-msvc.zip"
+sha256 = "c48129a2c8c59bc5e0468b4db830b556b8f8c15ae38b0db03a63e66f028b5862"
+
+[autoupdate]
+checkver = { github = "arimxyer/models" }
+url_template = { x64 = "https://github.com/arimxyer/models/releases/download/v$version/models-x86_64-pc-windows-msvc.zip" }

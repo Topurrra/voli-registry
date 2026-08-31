@@ -1,0 +1,15 @@
+name = "yara-x"
+version = "1.20.0"
+description = "A malware samples pattern matching tool, re-incarnation of YARA."
+homepage = "https://virustotal.github.io/yara-x/"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["yr.exe"]
+
+[source.x64]
+url = "https://github.com/VirusTotal/yara-x/releases/download/v1.20.0/yara-x-v1.20.0-x86_64-pc-windows-msvc.zip"
+sha256 = "b1e2840bac593aea353d2b2b341f5a862c9d61c0c406d9abbbad9e1fa35163a1"
+
+[autoupdate]
+checkver = { github = "VirusTotal/yara-x" }
+url_template = { x64 = "https://github.com/VirusTotal/yara-x/releases/download/v$version/yara-x-v$version-x86_64-pc-windows-msvc.zip" }

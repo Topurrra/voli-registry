@@ -1,0 +1,15 @@
+name = "yaak"
+version = "2026.7.0"
+description = "A fast, privacy-first API client for REST, GraphQL, SSE, WebSocket, and gRPC."
+homepage = "https://yaak.app/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "yaak-app-client.exe", name = "Yaak" }]
+
+[source.x64]
+url = "https://github.com/mountain-loop/yaak/releases/download/v2026.7.0/Yaak_2026.7.0_x64-setup.exe#/dl.7z"
+sha256 = "8cd4c0c5c170bb42ceebfd33966607dd7ac1e1d79a8725e9647518c63aea64fb"
+
+[autoupdate]
+checkver = { github = "mountain-loop/yaak" }
+url_template = { x64 = "https://github.com/mountain-loop/yaak/releases/download/v$version/Yaak_$version_x64-setup.exe#/dl.7z" }

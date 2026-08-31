@@ -1,0 +1,16 @@
+name = "jsongrep"
+version = "0.10.0"
+description = "JSONPath-inspired query language for JSON, YAML, TOML, and other serialization formats."
+homepage = "https://github.com/micahkepe/jsongrep"
+license = "MIT"
+kind = "app"
+extract_dir = "jsongrep-0.10.0-x86_64-pc-windows-msvc"
+bin = ["jg.exe"]
+
+[source.x64]
+url = "https://github.com/micahkepe/jsongrep/releases/download/v0.10.0/jsongrep-0.10.0-x86_64-pc-windows-msvc.zip"
+sha256 = "5a906a6e2a0db04a83507a97282ca9419aa656ebca8e9804139f4c80df95b896"
+
+[autoupdate]
+checkver = { github = "micahkepe/jsongrep" }
+url_template = { x64 = "https://github.com/micahkepe/jsongrep/releases/download/v$version/jsongrep-$version-x86_64-pc-windows-msvc.zip" }

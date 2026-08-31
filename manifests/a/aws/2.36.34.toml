@@ -1,0 +1,17 @@
+name = "aws"
+version = "2.36.34"
+description = "Unified tool to manage AWS services"
+homepage = "https://aws.amazon.com/cli/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "Amazon\\AWSCLIV2"
+bin = ["aws.exe", "aws_completer.exe"]
+
+[source.x64]
+url = "https://awscli.amazonaws.com/AWSCLIV2-2.36.34.msi"
+sha256 = "c5457cd21580402c137d9ba452d20fd82cab33ef1457538620a425f8f043a672"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/aws/aws-cli/tags\",\"jsonpath\":\"$[0].name\"}"
+url_template = { x64 = "https://awscli.amazonaws.com/AWSCLIV2-$version.msi" }

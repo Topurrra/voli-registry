@@ -1,0 +1,16 @@
+name = "rancher-cli"
+version = "2.15.1"
+description = "Unified tool for interacting with Rancher Server"
+homepage = "https://github.com/rancher/cli"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "rancher-v2.15.1"
+bin = ["rancher.exe"]
+
+[source.x64]
+url = "https://github.com/rancher/cli/releases/download/v2.15.1/rancher-windows-amd64-v2.15.1.zip"
+sha256 = "b3a594c6367b229aedae2eb9c29187e7ae8a32ab011ea15dafaebb46062d648f"
+
+[autoupdate]
+checkver = { github = "rancher/cli" }
+url_template = { x64 = "https://github.com/rancher/cli/releases/download/v$version/rancher-windows-amd64-v$version.zip" }

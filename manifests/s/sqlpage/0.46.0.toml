@@ -1,0 +1,16 @@
+name = "sqlpage"
+version = "0.46.0"
+description = "SQL-only webapp builder, empowering data analysts to build websites and applications quickly"
+homepage = "https://sql-page.com"
+license = "MIT"
+kind = "app"
+bin = ["sqlpage.exe"]
+persist = ["sqlpage"]
+
+[source.x64]
+url = "https://github.com/sqlpage/SQLPage/releases/download/v0.46.0/sqlpage-windows.zip"
+sha256 = "f6903dccd0fb0712641eb558fdaf22c8692f5e5b82289d5798e59fc6cf2fab91"
+
+[autoupdate]
+checkver = { github = "sqlpage/SQLPage" }
+url_template = { x64 = "https://github.com/sqlpage/SQLPage/releases/download/v$version/sqlpage-windows.zip" }

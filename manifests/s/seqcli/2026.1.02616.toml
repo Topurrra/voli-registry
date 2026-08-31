@@ -1,0 +1,16 @@
+name = "seqcli"
+version = "2026.1.02616"
+description = "Seq command-line client"
+homepage = "https://github.com/datalust/seqcli"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "seqcli-2026.1.02616-win-x64"
+bin = ["seqcli.exe"]
+
+[source.x64]
+url = "https://github.com/datalust/seqcli/releases/download/v2026.1.02616/seqcli-2026.1.02616-win-x64.zip"
+sha256 = "f73bdc099019c6f649e872480fd0f13d4c1ae8a487645287a4e75ed07629f0e8"
+
+[autoupdate]
+checkver = { github = "datalust/seqcli" }
+url_template = { x64 = "https://github.com/datalust/seqcli/releases/download/v$version/seqcli-$version-win-x64.zip" }

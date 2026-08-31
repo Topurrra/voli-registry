@@ -1,0 +1,19 @@
+name = "slang"
+version = "2026.16.1"
+description = "A new language and compiler for shader development."
+homepage = "https://shader-slang.com/"
+license = "MIT"
+kind = "app"
+bin = ["bin/slangc.exe", "bin/slangd.exe"]
+
+[source.x64]
+url = "https://github.com/shader-slang/slang/releases/download/v2026.16.1/slang-2026.16.1-windows-x86_64.zip"
+sha256 = "0fd3e6a9a5d05ed4cdd000d467f1ffb5d9701b827e83bfb428902a45c37ef8a5"
+
+[source.arm64]
+url = "https://github.com/shader-slang/slang/releases/download/v2026.16.1/slang-2026.16.1-windows-aarch64.zip"
+sha256 = "315a18a2ee56803bf558778d91481b47cefb51df14207342afdc9a4d9166c588"
+
+[autoupdate]
+checkver = { github = "shader-slang/slang" }
+url_template = { x64 = "https://github.com/shader-slang/slang/releases/download/v$version/slang-$version-windows-x86_64.zip", arm64 = "https://github.com/shader-slang/slang/releases/download/v$version/slang-$version-windows-aarch64.zip" }

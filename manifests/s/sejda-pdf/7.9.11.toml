@@ -1,0 +1,15 @@
+name = "sejda-pdf"
+version = "7.9.11"
+description = "PDF Editor"
+homepage = "https://www.sejda.com/desktop"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "Sejda PDF Desktop.exe", name = "Sejda PDF" }]
+
+[source.x64]
+url = "https://downloads.sejda-cdn.com/sejda-desktop_7.9.11_x64_portable.zip"
+sha256 = "4f5fcc4e75dcfb05c37244f3ef4c2c2adea9c31de477988e23361c51d6127b78"
+
+[autoupdate]
+checkver = "sejda-desktop_([\\d.]+)_x64_portable"
+url_template = { x64 = "https://downloads.sejda-cdn.com/sejda-desktop_$version_x64_portable.zip" }

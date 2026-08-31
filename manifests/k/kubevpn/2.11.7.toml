@@ -1,0 +1,21 @@
+name = "kubevpn"
+version = "2.11.7"
+description = "KubeVPN offers a Cloud Native Dev Environment that connects to kubernetes cluster network."
+homepage = "https://www.kubevpn.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "bin"
+bin = ["kubevpn.exe"]
+shortcuts = [{ target = "kubevpn.exe", name = "kubevpn" }]
+
+[source.x64]
+url = "https://github.com/kubenetworks/kubevpn/releases/download/v2.11.7/kubevpn_v2.11.7_windows_amd64.zip"
+sha256 = "cb480d4752555948aaa918d96b7c009ebb93908fa53b6a7905e96ab3ecb190f8"
+
+[source.arm64]
+url = "https://github.com/kubenetworks/kubevpn/releases/download/v2.11.7/kubevpn_v2.11.7_windows_arm64.zip"
+sha256 = "618122dbc515679d4adc8129f3ce259d7c30ef3700f8cc8c058a804539c789bf"
+
+[autoupdate]
+checkver = { github = "kubenetworks/kubevpn" }
+url_template = { x64 = "https://github.com/kubenetworks/kubevpn/releases/download/v$version/kubevpn_v$version_windows_amd64.zip", arm64 = "https://github.com/kubenetworks/kubevpn/releases/download/v$version/kubevpn_v$version_windows_arm64.zip" }

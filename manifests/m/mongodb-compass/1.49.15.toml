@@ -1,0 +1,15 @@
+name = "mongodb-compass"
+version = "1.49.15"
+description = "An interactive tool for querying, optimizing, and analyzing MongoDB data"
+homepage = "https://www.mongodb.com/products/compass"
+license = "SSPL-1.0"
+kind = "app"
+shortcuts = [{ target = "MongoDBCompass.exe", name = "MongoDB Compass" }]
+
+[source.x64]
+url = "https://downloads.mongodb.com/compass/mongodb-compass-1.49.15-win32-x64.zip"
+sha256 = "2e234d106232144a936ae6496fe224b945ef7af535f441e59d6017c8bddcfdd4"
+
+[autoupdate]
+checkver = { url = "https://www.mongodb.com/try/download/compass", regex = "mongodb-compass-([\\d.]+)-win32-x64.zip" }
+url_template = { x64 = "https://downloads.mongodb.com/compass/mongodb-compass-$version-win32-x64.zip" }

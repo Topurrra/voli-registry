@@ -1,0 +1,19 @@
+name = "passbolt-cli"
+version = "0.5.2"
+description = "CLI for the open source password manager for teams"
+homepage = "https://www.passbolt.com/"
+license = "MIT License"
+kind = "app"
+bin = ["passbolt.exe"]
+
+[source.x64]
+url = "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.5.2/go-passbolt-cli_0.5.2_windows_amd64.zip"
+sha256 = "a9741299e262080ece0a3d87adbb3f8f3ef31fad131cfd8985f605ce0cea2d2e"
+
+[source.arm64]
+url = "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.5.2/go-passbolt-cli_0.5.2_windows_arm64.zip"
+sha256 = "bc452246b27f3bc18d200378406f5fafa2f2bc39f066bf17d6b054a30fb14ab2"
+
+[autoupdate]
+checkver = { github = "passbolt/go-passbolt-cli" }
+url_template = { x64 = "https://github.com/passbolt/go-passbolt-cli/releases/download/v$version/go-passbolt-cli_$version_windows_amd64.zip", arm64 = "https://github.com/passbolt/go-passbolt-cli/releases/download/v$version/go-passbolt-cli_$version_windows_arm64.zip" }

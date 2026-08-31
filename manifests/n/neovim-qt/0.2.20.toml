@@ -1,0 +1,16 @@
+name = "neovim-qt"
+version = "0.2.20"
+description = "Neovim client library and GUI, in Qt5"
+homepage = "https://github.com/equalsraf/neovim-qt"
+license = "ISC"
+kind = "app"
+bin = ["bin\\nvim-qt.exe"]
+shortcuts = [{ target = "bin\\nvim-qt.exe", name = "Neovim Qt" }]
+
+[source.x64]
+url = "https://github.com/equalsraf/neovim-qt/releases/download/v0.2.20/neovim-qt.zip"
+sha256 = "3fc2da4306b6292141a808e3a716f5975ad9a767d220afc19c3176e311cbef0d"
+
+[autoupdate]
+checkver = { github = "equalsraf/neovim-qt" }
+url_template = "https://github.com/equalsraf/neovim-qt/releases/download/v$version/neovim-qt.zip"

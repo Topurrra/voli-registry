@@ -1,0 +1,15 @@
+name = "ktunnel"
+version = "2.3.0"
+description = "CLI tool to expose your local resources to Kubernetes."
+homepage = "https://github.com/omrikiei/ktunnel"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["ktunnel.exe"]
+
+[source.x64]
+url = "https://github.com/omrikiei/ktunnel/releases/download/v2.3.0/ktunnel_2.3.0_Windows_x86_64.tar.gz"
+sha256 = "9ee147e3675f04f5796bf5153a8e74c59c0a04fcfcb53fd27e4de53d544cc90c"
+
+[autoupdate]
+checkver = { github = "omrikiei/ktunnel" }
+url_template = { x64 = "https://github.com/omrikiei/ktunnel/releases/download/v$version/ktunnel_$version_Windows_x86_64.tar.gz" }

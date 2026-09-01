@@ -1,0 +1,15 @@
+name = "halo"
+version = "2.26.1"
+description = "A modern personal independent blog system."
+homepage = "https://halo.run"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["halo.jar"]
+
+[source.x64]
+url = "https://github.com/halo-dev/halo/releases/download/v2.26.1/halo-2.26.1.jar#/halo.jar"
+sha256 = "7a1d6ea0800e8940672aab99a7328b7bd9520e297677169594328004a41991bc"
+
+[autoupdate]
+checkver = { github = "halo-dev/halo" }
+url_template = "https://github.com/halo-dev/halo/releases/download/v$version/halo-$version.jar#/halo.jar"

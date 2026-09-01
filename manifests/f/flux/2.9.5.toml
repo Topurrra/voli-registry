@@ -1,0 +1,19 @@
+name = "flux"
+version = "2.9.5"
+description = "Open and extensible continuous delivery solution for Kubernetes."
+homepage = "https://fluxcd.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["flux.exe"]
+
+[source.x64]
+url = "https://github.com/fluxcd/flux2/releases/download/v2.9.5/flux_2.9.5_windows_amd64.zip"
+sha256 = "1a23053bf9abbedbdac07237f5c6ae9b0da0bcb77ddbd103faa99839c6a7f562"
+
+[source.arm64]
+url = "https://github.com/fluxcd/flux2/releases/download/v2.9.5/flux_2.9.5_windows_arm64.zip"
+sha256 = "9f90bba4f9a3c3621985da495053418ad339042226dd32af068a17f1d79bc91a"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/fluxcd/flux2/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"flux_([\\\\d.]+)_windows_amd64.zip\"}"
+url_template = { x64 = "https://github.com/fluxcd/flux2/releases/download/v$version/flux_$version_windows_amd64.zip", arm64 = "https://github.com/fluxcd/flux2/releases/download/v$version/flux_$version_windows_arm64.zip" }

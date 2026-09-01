@@ -1,0 +1,19 @@
+name = "dingtalk-workspace-cli"
+version = "1.0.61"
+description = "Officially CLI tool from DingTalk, designed for both human users and AI agent scenarios."
+homepage = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dws.exe"]
+
+[source.x64]
+url = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v1.0.61/dws-windows-amd64.zip"
+sha256 = "defdcf217bddfb74254c6eeaff408f8b23dddb44729cd997b6d85aa6ce7727a0"
+
+[source.arm64]
+url = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v1.0.61/dws-windows-arm64.zip"
+sha256 = "217beef7abd8f860ff68a8f1166103adef64758235ad17c38bab2c9eac1d1acf"
+
+[autoupdate]
+checkver = { github = "DingTalk-Real-AI/dingtalk-workspace-cli" }
+url_template = { x64 = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v$version/dws-windows-amd64.zip", arm64 = "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v$version/dws-windows-arm64.zip" }

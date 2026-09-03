@@ -1,0 +1,16 @@
+name = "angr-management"
+version = "9.3.4"
+description = "The official GUI for angr, an open-source binary analysis platform for Python"
+homepage = "https://angr.io/"
+license = "BSD-2-Clause"
+kind = "app"
+extract_dir = "angr-management"
+shortcuts = [{ target = "angr-management.exe", name = "angr management" }]
+
+[source.x64]
+url = "https://github.com/angr/angr-management/releases/download/v9.3.4/angr-management-v9.3.4-win64-x86_64.zip"
+sha256 = "88e0d784a9af8aeaf61afadd2bb561fcd2fc67980d2d9665de766597fc7ec039"
+
+[autoupdate]
+checkver = { github = "angr/angr-management" }
+url_template = { x64 = "https://github.com/angr/angr-management/releases/download/v$version/angr-management-v$version-win64-x86_64.zip" }

@@ -1,0 +1,19 @@
+name = "gogcli"
+version = "0.38.3"
+description = "Fast, script-friendly CLI for Gmail, Drive, Calendar, and other Google Workspace apps."
+homepage = "https://gogcli.sh"
+license = "MIT"
+kind = "app"
+bin = ["gog.exe"]
+
+[source.x64]
+url = "https://github.com/openclaw/gogcli/releases/download/v0.38.3/gogcli_0.38.3_windows_amd64.zip"
+sha256 = "9e871a1fd1d51ff2f22781d89862305e9bd757cb4ed6a8c335298aa60c1fb4b0"
+
+[source.arm64]
+url = "https://github.com/openclaw/gogcli/releases/download/v0.38.3/gogcli_0.38.3_windows_arm64.zip"
+sha256 = "38ce4bd7049596edc8dcced66e7512004eec7c68daffbf63f894bbe93761b8b2"
+
+[autoupdate]
+checkver = { github = "openclaw/gogcli" }
+url_template = { x64 = "https://github.com/openclaw/gogcli/releases/download/v$version/gogcli_$version_windows_amd64.zip", arm64 = "https://github.com/openclaw/gogcli/releases/download/v$version/gogcli_$version_windows_arm64.zip" }

@@ -1,0 +1,20 @@
+name = "gtoolkit"
+version = "1.1.573"
+description = "A moldable development environment."
+homepage = "https://gtoolkit.com"
+license = "MIT"
+kind = "app"
+bin = ["bin\\GlamorousToolkit-cli.exe"]
+shortcuts = [{ target = "bin\\GlamorousToolkit.exe", name = "GlamorousToolkit" }]
+
+[source.x64]
+url = "https://github.com/feenkcom/gtoolkit/releases/download/v1.1.573/GlamorousToolkit-Windows-x86_64-v1.1.573.zip"
+sha256 = "a08a525b42601460a784440935a450223098080851b8e8c04c22040bdd62764a"
+
+[source.arm64]
+url = "https://github.com/feenkcom/gtoolkit/releases/download/v1.1.573/GlamorousToolkit-Windows-aarch64-v1.1.573.zip"
+sha256 = "f08b936cd8dc6143e9c700b7f09466a1b05431963e95726682e6255c06a3e6c9"
+
+[autoupdate]
+checkver = { github = "feenkcom/gtoolkit" }
+url_template = { x64 = "https://github.com/feenkcom/gtoolkit/releases/download/v$version/GlamorousToolkit-Windows-x86_64-v$version.zip", arm64 = "https://github.com/feenkcom/gtoolkit/releases/download/v$version/GlamorousToolkit-Windows-aarch64-v$version.zip" }

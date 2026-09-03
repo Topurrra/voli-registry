@@ -1,0 +1,19 @@
+name = "fnox"
+version = "1.35.0"
+description = "Encrypted/remote secret manager."
+homepage = "https://fnox.jdx.dev"
+license = "MIT"
+kind = "app"
+bin = ["fnox.exe"]
+
+[source.x64]
+url = "https://github.com/jdx/fnox/releases/download/v1.35.0/fnox-x86_64-pc-windows-msvc.zip"
+sha256 = "e98a4076f49df270bf3d6f1041917c6515996e8c8df7f67e2ab6a598754b4de5"
+
+[source.arm64]
+url = "https://github.com/jdx/fnox/releases/download/v1.35.0/fnox-aarch64-pc-windows-msvc.zip"
+sha256 = "00f7518289f8d87704167e6eafa6eff6412329d2863bc217a2894da0a89f21bf"
+
+[autoupdate]
+checkver = { github = "jdx/fnox" }
+url_template = { x64 = "https://github.com/jdx/fnox/releases/download/v$version/fnox-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/jdx/fnox/releases/download/v$version/fnox-aarch64-pc-windows-msvc.zip" }

@@ -1,0 +1,19 @@
+name = "go-containerregistry"
+version = "0.22.1"
+description = "CLIs for working with container registries"
+homepage = "https://github.com/google/go-containerregistry"
+license = "Apache-2.0"
+kind = "app"
+bin = ["crane.exe", "gcrane.exe", "krane.exe"]
+
+[source.x64]
+url = "https://github.com/google/go-containerregistry/releases/download/v0.22.1/go-containerregistry_Windows_x86_64.tar.gz"
+sha256 = "0e073ea8192c3b8442ec8aaf44d53c1050a09084669fae3a6ceb0f2026cf8b21"
+
+[source.arm64]
+url = "https://github.com/google/go-containerregistry/releases/download/v0.22.1/go-containerregistry_Windows_arm64.tar.gz"
+sha256 = "bec68b29b18d3f0fb1938739e241006960168c748166d0370111bdc730979584"
+
+[autoupdate]
+checkver = { github = "google/go-containerregistry" }
+url_template = { x64 = "https://github.com/google/go-containerregistry/releases/download/v$version/go-containerregistry_Windows_x86_64.tar.gz", arm64 = "https://github.com/google/go-containerregistry/releases/download/v$version/go-containerregistry_Windows_arm64.tar.gz" }

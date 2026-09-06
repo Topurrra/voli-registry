@@ -1,0 +1,16 @@
+name = "gmic-qt"
+version = "4.0.5"
+description = "A full-featured open-source framework for digital image processing."
+homepage = "https://gmic.eu"
+license = "CECILL-2.1"
+kind = "app"
+extract_dir = "gmic-4.0.5-qt-win64"
+shortcuts = [{ target = "gmic_qt.exe", name = "G'MIC-Qt" }]
+
+[source.x64]
+url = "https://gmic.eu/get_file.php?file=windows/gmic_4.0.5_qt_win64.zip"
+sha256 = "e44ef16ba9c8ca5ce60265cd98c9ef0132e1398a117ffddccb1adaeb67060925"
+
+[autoupdate]
+checkver = { url = "https://gmic.eu/download.html", regex = "file=windows/gmic_([\\d.]+)_qt_win64.zip" }
+url_template = { x64 = "https://gmic.eu/get_file.php?file=windows/gmic_$version_qt_win64.zip" }

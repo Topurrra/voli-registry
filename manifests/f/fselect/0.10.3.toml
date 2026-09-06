@@ -1,0 +1,15 @@
+name = "fselect"
+version = "0.10.3"
+description = "Find files with SQL-like queries"
+homepage = "https://github.com/jhspetersson/fselect"
+license = "Apache-2.0|MIT"
+kind = "app"
+bin = ["fselect.exe"]
+
+[source.x64]
+url = "https://github.com/jhspetersson/fselect/releases/download/0.10.3/fselect-x86_64-win.zip"
+sha256 = "b96f46a8cde6c3671db71d4be3b82fe6b0c44cd25c4581f0fad3ec6f07ad9d8a"
+
+[autoupdate]
+checkver = { github = "jhspetersson/fselect" }
+url_template = { x64 = "https://github.com/jhspetersson/fselect/releases/download/$version/fselect-x86_64-win.zip" }

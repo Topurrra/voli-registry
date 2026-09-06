@@ -1,0 +1,16 @@
+name = "broot"
+version = "1.60.0"
+description = "A new way to see and navigate directory trees"
+homepage = "https://dystroy.org/broot/"
+license = "MIT"
+kind = "app"
+extract_dir = "x86_64-pc-windows-gnu"
+bin = ["broot.exe"]
+
+[source.x64]
+url = "https://github.com/Canop/broot/releases/download/v1.60.0/broot_1.60.0.zip"
+sha256 = "097ed2e86616d8cd5df10ed6d1ff2c69efa6667a96e8e8b2c19242cda950b955"
+
+[autoupdate]
+checkver = { github = "Canop/broot" }
+url_template = { x64 = "https://github.com/Canop/broot/releases/download/v$version/broot_$version.zip" }

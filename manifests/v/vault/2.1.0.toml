@@ -1,0 +1,15 @@
+name = "vault"
+version = "2.1.0"
+description = "Secure, store, and tightly control access to tokens, passwords, certificates, API keys, and other secrets in modern computing."
+homepage = "https://www.vaultproject.io"
+license = "MPL-2.0"
+kind = "app"
+bin = ["vault.exe"]
+
+[source.x64]
+url = "https://releases.hashicorp.com/vault/2.1.0/vault_2.1.0_windows_amd64.zip"
+sha256 = "a05bc197946951c131c907aa553829746b5d7fc8598879d3e3a9770b9488ebfc"
+
+[autoupdate]
+checkver = { url = "https://releases.hashicorp.com/vault/", regex = "vault_([\\d.]+)</a>" }
+url_template = { x64 = "https://releases.hashicorp.com/vault/$version/vault_$version_windows_amd64.zip" }

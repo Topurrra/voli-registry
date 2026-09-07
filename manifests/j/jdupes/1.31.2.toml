@@ -1,0 +1,16 @@
+name = "jdupes"
+version = "1.31.2"
+description = "A powerful duplicate file finder"
+homepage = "https://codeberg.org/jbruchon/jdupes"
+license = "MIT"
+kind = "app"
+extract_dir = "jdupes-1.31.2-win64"
+bin = ["jdupes.exe"]
+
+[source.x64]
+url = "https://codeberg.org/jbruchon/jdupes/releases/download/v1.31.2/jdupes-1.31.2-win64.zip"
+sha256 = "742b4e5cd624e8b60338b82a0f00bc72ef6e207c1da3d3d1d0ea6cd4b38c69ea"
+
+[autoupdate]
+checkver = { url = "https://codeberg.org/api/v1/repos/jbruchon/jdupes/releases/latest", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://codeberg.org/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win64.zip" }

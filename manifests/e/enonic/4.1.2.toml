@@ -1,0 +1,15 @@
+name = "enonic"
+version = "4.1.2"
+description = "Project and instances manager for Enonic XP."
+homepage = "https://developer.enonic.com/docs/enonic-cli/master"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["enonic.exe"]
+
+[source.x64]
+url = "https://repo.enonic.com/public/com/enonic/cli/enonic/4.1.2/enonic_4.1.2_Windows_64-bit.zip"
+sha256 = "4683ec38c94ef307d3b10e42b2f7d8a4220f567ed23b5420ff4d66b4ba776abe"
+
+[autoupdate]
+checkver = { url = "https://repo.enonic.com/service/rest/repository/browse/public/com/enonic/cli/enonic/", regex = "<a[^>]+>([\\d.]+)</a>" }
+url_template = { x64 = "https://repo.enonic.com/public/com/enonic/cli/enonic/$version/enonic_$version_Windows_64-bit.zip" }

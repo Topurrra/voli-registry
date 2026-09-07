@@ -1,0 +1,15 @@
+name = "yoke"
+version = "0.21.1"
+description = "A Helm-inspired infrastructure-as-code (IaC) package deployer"
+homepage = "https://github.com/yokecd/yoke"
+license = "MIT"
+kind = "app"
+bin = ["yoke.exe"]
+
+[source.x64]
+url = "https://github.com/yokecd/yoke/releases/download/v0.21.1/yoke_v0.21.1_windows_amd64.exe.gz#/yoke.exe.gz"
+sha256 = "1778b71cfa92547dc51dac160de2e2f5d9c339fba314f687d589ae1735cc6358"
+
+[autoupdate]
+checkver = { github = "yokecd/yoke" }
+url_template = { x64 = "https://github.com/yokecd/yoke/releases/download/v$version/yoke_v$version_windows_amd64.exe.gz#/yoke.exe.gz" }

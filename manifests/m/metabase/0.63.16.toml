@@ -1,0 +1,15 @@
+name = "metabase"
+version = "0.63.16"
+description = "The simplest, fastest way to get business intelligence and analytics to everyone in your company"
+homepage = "https://www.metabase.com"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["metabase.jar"]
+
+[source.x64]
+url = "https://downloads.metabase.com/v0.63.16/metabase.jar"
+sha256 = "2e171aa7d03f10b57d92775428442203e2c5e70ecdcf781f53368e5d8f59af87"
+
+[autoupdate]
+checkver = { github = "metabase/metabase" }
+url_template = "https://downloads.metabase.com/v$version/metabase.jar"

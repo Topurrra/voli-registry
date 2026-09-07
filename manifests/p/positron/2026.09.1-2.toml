@@ -1,0 +1,23 @@
+name = "positron"
+version = "2026.09.1-2"
+description = "A next-generation data science IDE"
+homepage = "https://positron.posit.co"
+license = "Elastic-2.0"
+kind = "app"
+extract_dir = "{code_GetDestDir}"
+bin = ["bin/positron.cmd"]
+shortcuts = [{ target = "Positron.exe", name = "Positron" }]
+
+[source.x64]
+url = "https://cdn.posit.co/positron/releases/win/x86_64/Positron-2026.09.1-2-UserSetup-x64.exe"
+sha256 = "2b64cf59071b76c6c0657e4a3a23374febce3c8cc2b5fa6626aa1cca61c9d173"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://cdn.posit.co/positron/releases/win/arm64/Positron-2026.09.1-2-UserSetup-arm64.exe"
+sha256 = "e947bba163497ca65917cfa0eaacfc510e4cd34ab8ea62e48bf0a8f3178c65c7"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://cdn.posit.co/positron/releases/win/x86_64/user-releases.json\"}"
+url_template = { x64 = "https://cdn.posit.co/positron/releases/win/x86_64/Positron-$version-UserSetup-x64.exe", arm64 = "https://cdn.posit.co/positron/releases/win/arm64/Positron-$version-UserSetup-arm64.exe" }

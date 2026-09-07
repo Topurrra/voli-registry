@@ -1,0 +1,15 @@
+name = "protobuf"
+version = "36.1"
+description = "Protocol compiler used to compile .proto files."
+homepage = "https://github.com/protocolbuffers/protobuf"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["bin\\protoc.exe"]
+
+[source.x64]
+url = "https://github.com/protocolbuffers/protobuf/releases/download/v36.1/protoc-36.1-win64.zip"
+sha256 = "390e515cb456e6a978553bdb57baf087b054885077fd6da7f7ff0160279c07d6"
+
+[autoupdate]
+checkver = { github = "protocolbuffers/protobuf" }
+url_template = { x64 = "https://github.com/protocolbuffers/protobuf/releases/download/v$version/protoc-$version-win64.zip" }

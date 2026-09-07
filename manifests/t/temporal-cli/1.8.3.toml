@@ -1,0 +1,19 @@
+name = "temporal-cli"
+version = "1.8.3"
+description = "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal"
+homepage = "https://docs.temporal.io/cli"
+license = "MIT"
+kind = "app"
+bin = ["temporal.exe"]
+
+[source.x64]
+url = "https://github.com/temporalio/cli/releases/download/v1.8.3/temporal_cli_1.8.3_windows_amd64.zip"
+sha256 = "b29a65ba26ae519dc1f3c450addbf77e4676899530ac4061f851427da8d37b05"
+
+[source.arm64]
+url = "https://github.com/temporalio/cli/releases/download/v1.8.3/temporal_cli_1.8.3_windows_arm64.zip"
+sha256 = "540d284962080ca4b7919e84b7f3ac75e778aedf5fa6025cb3ad1ced3b9467b5"
+
+[autoupdate]
+checkver = { github = "temporalio/cli" }
+url_template = { x64 = "https://github.com/temporalio/cli/releases/download/v$version/temporal_cli_$version_windows_amd64.zip", arm64 = "https://github.com/temporalio/cli/releases/download/v$version/temporal_cli_$version_windows_arm64.zip" }

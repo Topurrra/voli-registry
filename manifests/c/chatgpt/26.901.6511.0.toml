@@ -1,0 +1,20 @@
+name = "chatgpt"
+version = "26.901.6511.0"
+description = "Desktop application for ChatGPT"
+homepage = "https://chatgpt.com/"
+license = "Proprietary"
+kind = "app"
+extract_dir = "app"
+shortcuts = [{ target = "ChatGPT.exe", name = "ChatGPT" }]
+
+[source.x64]
+url = "https://persistent.oaistatic.com/codex-app-prod/releases/26.901.6511.0/ChatGPT-x64.msix#/dl.zip"
+sha256 = "fd9ae9eeeeaf11577191ce5a39d0b8f95fa73d591aa3a94f688b84d294d1fa85"
+
+[source.arm64]
+url = "https://persistent.oaistatic.com/codex-app-prod/releases/26.901.6511.0/ChatGPT-arm64.msix#/dl.zip"
+sha256 = "cd03d24e4b5ee30fd5d24f5d48b4f3e6c5fd610c13ca204d717d50c3333ab3d4"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.buildVersion\",\"url\":\"https://persistent.oaistatic.com/codex-app-prod/windows-store-update.json\"}"
+url_template = { x64 = "https://persistent.oaistatic.com/codex-app-prod/releases/$version/ChatGPT-x64.msix#/dl.zip", arm64 = "https://persistent.oaistatic.com/codex-app-prod/releases/$version/ChatGPT-arm64.msix#/dl.zip" }

@@ -1,0 +1,17 @@
+name = "kiro-cli"
+version = "2.21.1"
+description = "A CLI utility developed by Amazon that allows you to interact with Kiro's AI agents directly from your terminal."
+homepage = "https://kiro.dev/cli/"
+license = "Proprietary"
+kind = "app"
+extract_dir = "LocalApp\\Kiro-Cli"
+bin = ["kiro-cli.exe"]
+
+[source.x64]
+url = "https://prod.download.cli.kiro.dev/stable/2.21.1/kiro-cli-x86_64-pc-windows-msvc.msi"
+sha256 = "03023ff784db05fab665e7ca5a4bc2bcee02f70e5c562865efbb9bf244298c3a"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://prod.download.cli.kiro.dev/stable/latest/manifest.json\"}"
+url_template = { x64 = "https://prod.download.cli.kiro.dev/stable/$version/kiro-cli-x86_64-pc-windows-msvc.msi" }

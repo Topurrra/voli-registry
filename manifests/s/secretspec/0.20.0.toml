@@ -1,0 +1,19 @@
+name = "secretspec"
+version = "0.20.0"
+description = "A declarative interface for every secret provider."
+homepage = "https://secretspec.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["secretspec.exe"]
+
+[source.x64]
+url = "https://github.com/cachix/secretspec/releases/download/v0.20.0/secretspec-x86_64-pc-windows-msvc.zip"
+sha256 = "6a515021b79654aa1150c436c75a92d0b08ee6f2cd08c489c66bbbb9c498c7fa"
+
+[source.arm64]
+url = "https://github.com/cachix/secretspec/releases/download/v0.20.0/secretspec-aarch64-pc-windows-msvc.zip"
+sha256 = "629b8cef41c1c98767f642dd3b132e5986d24688dbf54a371a44fd735261ad92"
+
+[autoupdate]
+checkver = { github = "cachix/secretspec" }
+url_template = { x64 = "https://github.com/cachix/secretspec/releases/download/v$version/secretspec-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/cachix/secretspec/releases/download/v$version/secretspec-aarch64-pc-windows-msvc.zip" }

@@ -1,0 +1,15 @@
+name = "wsl2-distro-manager"
+version = "2.0.0"
+description = "A quick way to manage your WSL instances with a GUI."
+homepage = "https://github.com/bostrot/wsl2-distro-manager"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "wsl2distromanager.exe", name = "WSL Manager" }]
+
+[source.x64]
+url = "https://github.com/bostrot/wsl2-distro-manager/releases/download/v2.0.0/wsl2-distro-manager-v2.0.0.zip"
+sha256 = "5804da401397dc05972cfa1f464976d6c68ad04eda002e0272a096bf53055635"
+
+[autoupdate]
+checkver = { github = "bostrot/wsl2-distro-manager" }
+url_template = { x64 = "https://github.com/bostrot/wsl2-distro-manager/releases/download/v$version/wsl2-distro-manager-v$version.zip" }

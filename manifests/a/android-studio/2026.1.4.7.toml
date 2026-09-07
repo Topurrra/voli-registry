@@ -1,0 +1,15 @@
+name = "android-studio"
+version = "2026.1.4.7"
+description = "The official IDE for Android development, which includes everything you need to build Android apps."
+homepage = "https://developer.android.com/studio"
+license = "Freeware"
+kind = "app"
+extract_dir = "android-studio"
+
+[source.x64]
+url = "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.4.7/android-studio-quail4-windows.zip"
+sha256 = "fabc885015bd67182f4f49da8e3efbb3b60038b2dfda632cf2d29363ffb1e04e"
+
+[autoupdate]
+checkver = "/ide-zips/(?<version>[\\d.]+)/(?<filename>android-studio.*windows\\.zip)"
+url_template = { x64 = "https://edgedl.me.gvt1.com/android/studio/ide-zips/$version/$matchFilename" }

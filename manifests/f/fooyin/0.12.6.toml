@@ -1,0 +1,22 @@
+name = "fooyin"
+version = "0.12.6"
+description = "A customisable desktop music player."
+homepage = "https://fooyin.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = [{ name = "fooyin", path = "fooyin.exe" }]
+shortcuts = [{ target = "fooyin.exe", name = "fooyin" }]
+
+[source.x64]
+url = "https://github.com/fooyin/fooyin/releases/download/v0.12.6/fooyin-0.12.6-windows-x64-portable.zip"
+sha256 = "e458024146b23655db30a4372e1c815def03b8a7d4662327b7b8ac44a9ff9f64"
+extract_dir = "fooyin-0.12.6-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/fooyin/fooyin/releases/download/v0.12.6/fooyin-0.12.6-windows-arm64-portable.zip"
+sha256 = "3359e68a114fa2ed41b0b296aca017b74872f61f11042dbdb53e172592a4d65f"
+extract_dir = "fooyin-0.12.6-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "fooyin/fooyin" }
+url_template = { x64 = "https://github.com/fooyin/fooyin/releases/download/v$version/fooyin-$version-windows-x64-portable.zip", arm64 = "https://github.com/fooyin/fooyin/releases/download/v$version/fooyin-$version-windows-arm64-portable.zip" }

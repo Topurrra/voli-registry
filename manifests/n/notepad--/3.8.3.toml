@@ -10,7 +10,7 @@ shortcuts = [{ target = "Notepad--.exe", name = "Notepad--" }]
 
 [source.x64]
 url = "https://github.com/cxasm/notepad--/releases/download/notepad-v3.8.3/Notepad--v3.8.3-win10-portable.zip"
-sha256 = "0ca2ee898c05c112e35569235d9465fcee40664c0fa7d8228b5ac1b8624e757e"
+sha256 = "a24af4cd6f8b97fcc7313fd861386387903d452a20c8c539c251a3eef5287ff7"
 
 [autoupdate]
 checkver = { github = "cxasm/notepad--" }

@@ -1,0 +1,16 @@
+name = "oci-cli"
+version = "3.92.0"
+description = "Command line interface for Oracle Cloud Infrastructure"
+homepage = "https://github.com/oracle/oci-cli"
+license = "UPL-1.0"
+kind = "app"
+bin = ["oci.exe"]
+
+[source.x64]
+url = "https://github.com/oracle/oci-cli/releases/download/v3.92.0/oci-cli-3.92.0-Windows-Server-Installer.msi"
+sha256 = "91034942d8229b1487471252fb3eae2b5ab09ad576be73014f3a0cbf72c270fe"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "oracle/oci-cli" }
+url_template = { x64 = "https://github.com/oracle/oci-cli/releases/download/v$version/oci-cli-$version-Windows-Server-Installer.msi" }

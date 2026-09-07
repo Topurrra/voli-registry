@@ -1,0 +1,16 @@
+name = "moneymanagerex"
+version = "1.9.4"
+description = "A free, cross-platform personal finance software"
+homepage = "https://moneymanagerex.org/"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "mmex-1.9.4-win64"
+shortcuts = [{ target = "bin\\mmex.exe", name = "Money Manager Ex" }]
+
+[source.x64]
+url = "https://github.com/moneymanagerex/moneymanagerex/releases/download/v1.9.4/mmex-1.9.4-win64-portable.zip"
+sha256 = "f43c52390d7d8fc98a9552ac438b92fd7569324a2b5f7817ae80c040320b221d"
+
+[autoupdate]
+checkver = { github = "moneymanagerex/moneymanagerex" }
+url_template = { x64 = "https://github.com/moneymanagerex/moneymanagerex/releases/download/v$version/mmex-$version-win64-portable.zip" }

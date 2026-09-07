@@ -1,0 +1,17 @@
+name = "tahoma2d"
+version = "1.6.3"
+description = "Tahoma2D is a 2D and stop motion animation software."
+homepage = "https://tahoma2d.org/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "Tahoma2D"
+shortcuts = [{ target = "Tahoma2D.exe", name = "Tahoma2D" }]
+persist = ["tahomastuff/profiles/users", "tahomastuff/sandbox"]
+
+[source.x64]
+url = "https://github.com/tahoma2d/tahoma2d/releases/download/v1.6.3/Tahoma2D-portable-win.zip"
+sha256 = "50dafb36ba12535239a447e10bc6939aff477a071e56c958a401c8ca6c22b05a"
+
+[autoupdate]
+checkver = { github = "tahoma2d/tahoma2d" }
+url_template = { x64 = "https://github.com/tahoma2d/tahoma2d/releases/download/v$version/Tahoma2D-portable-win.zip" }

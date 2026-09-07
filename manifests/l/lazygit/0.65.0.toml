@@ -1,0 +1,19 @@
+name = "lazygit"
+version = "0.65.0"
+description = "A simple terminal UI for git commands"
+homepage = "https://github.com/jesseduffield/lazygit"
+license = "MIT"
+kind = "app"
+bin = ["lazygit.exe"]
+
+[source.x64]
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_Windows_x86_64.zip"
+sha256 = "20a597e8f29d4ed295e28fb4b869b31a41d20dc69dc15829c4744263141be2ee"
+
+[source.arm64]
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_Windows_arm64.zip"
+sha256 = "c0200d1481586b56996269d874be464c3c6e7c2ca47a283dd37316cffe6ece83"
+
+[autoupdate]
+checkver = { github = "jesseduffield/lazygit" }
+url_template = { x64 = "https://github.com/jesseduffield/lazygit/releases/download/v$version/lazygit_$version_Windows_x86_64.zip", arm64 = "https://github.com/jesseduffield/lazygit/releases/download/v$version/lazygit_$version_Windows_arm64.zip" }

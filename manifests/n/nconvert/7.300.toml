@@ -1,0 +1,15 @@
+name = "nconvert"
+version = "7.300"
+description = "A command line batch image processor that is compatible with several image formats."
+homepage = "https://www.xnview.com/en/nconvert/"
+license = "Freeware"
+kind = "app"
+extract_dir = "NConvert"
+bin = ["nconvert.exe"]
+
+[source.x64]
+url = "https://download.xnview.com/NConvert-win64.zip"
+sha256 = "5eb578f57f03ed223c8b0a1dd39fd587a5090290db94d0d90e6f07f76fb16ff4"
+
+[autoupdate]
+checkver = "Version\\s([\\d.]+)</span>"

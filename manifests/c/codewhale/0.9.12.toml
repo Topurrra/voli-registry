@@ -1,0 +1,21 @@
+name = "codewhale"
+version = "0.9.12"
+description = "Open-source coding agent for your terminal (Formerly known as DeepSeek-TUI)."
+homepage = "https://codewhale.net/en"
+license = "MIT"
+kind = "app"
+bin = ["codew.exe", "codewhale.exe"]
+
+[source.x64]
+url = "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.12/codewhale-windows-x64-portable.zip"
+sha256 = "ffd37a23df92c997570df53926161f0672bff4ec2f54a6778130a716a977f2ae"
+extract_dir = "codewhale-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.12/codewhale-windows-arm64-portable.zip"
+sha256 = "b4fd5a421cff395f72a87c3362d66db4981a770ca5f193847f2b31e46a1c8216"
+extract_dir = "codewhale-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "Hmbown/CodeWhale" }
+url_template = { x64 = "https://github.com/Hmbown/CodeWhale/releases/download/v$version/codewhale-windows-x64-portable.zip", arm64 = "https://github.com/Hmbown/CodeWhale/releases/download/v$version/codewhale-windows-arm64-portable.zip" }

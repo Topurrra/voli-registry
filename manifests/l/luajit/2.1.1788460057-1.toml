@@ -1,0 +1,21 @@
+name = "luajit"
+version = "2.1.1788460057-1"
+description = "Just-In-Time Compiler (JIT) for the Lua programming language."
+homepage = "https://luajit.org/luajit.html"
+license = "MIT"
+kind = "app"
+bin = ["bin\\luajit.exe"]
+
+[source.x64]
+url = "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-2.1.1788460057-1-any.pkg.tar.zst"
+sha256 = "811ec2591c6330ca6b498bb102854b75c16a75cf0aa67aac29a0a059099bfc5a"
+extract_dir = "mingw64"
+
+[source.arm64]
+url = "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-luajit-2.1.1788460057-1-any.pkg.tar.zst"
+sha256 = "14f5a51294411294c337697a688411f42ed8908a20cc036c42bd02c8a71f4d7e"
+extract_dir = "clangarm64"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.results.exact.version\",\"url\":\"https://packages.msys2.org/api/search?query=mingw-w64-x86_64-luajit&qtype=binpkg\"}"
+url_template = { x64 = "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-luajit-$version-any.pkg.tar.zst", arm64 = "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-luajit-$version-any.pkg.tar.zst" }

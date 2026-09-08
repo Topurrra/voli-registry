@@ -1,0 +1,16 @@
+name = "cliamp"
+version = "2.1.0"
+description = "A retro terminal music player inspired by Winamp."
+homepage = "https://www.cliamp.stream"
+license = "MIT"
+kind = "app"
+extract_dir = "cliamp-windows-amd64"
+bin = ["cliamp.exe"]
+
+[source.x64]
+url = "https://github.com/bjarneo/cliamp/releases/download/v2.1.0/cliamp-windows-amd64.zip"
+sha256 = "109e4431494b0fe65325b8794010eff323c0a92d33aec31daf109c84bd26f3ae"
+
+[autoupdate]
+checkver = { github = "bjarneo/cliamp" }
+url_template = { x64 = "https://github.com/bjarneo/cliamp/releases/download/v$version/cliamp-windows-amd64.zip" }

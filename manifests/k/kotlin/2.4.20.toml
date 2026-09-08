@@ -1,0 +1,19 @@
+name = "kotlin"
+version = "2.4.20"
+description = "A cross-platform, statically typed, general-purpose programming language with type inference."
+homepage = "https://kotlinlang.org/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kotlinc"
+bin = ["bin\\kapt.bat", "bin\\kotlin.bat", "bin\\kotlinc.bat", "bin\\kotlinc-js.bat", "bin\\kotlinc-jvm.bat"]
+
+[source.x64]
+url = "https://github.com/JetBrains/kotlin/releases/download/v2.4.20/kotlin-compiler-2.4.20.zip"
+sha256 = "59e9ca74c7904ef2c122b12114937673ccce68de820a663f0ed66ccf8799e0b7"
+
+[env]
+KOTLIN_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "JetBrains/kotlin" }
+url_template = "https://github.com/JetBrains/kotlin/releases/download/v$version/kotlin-compiler-$version.zip"

@@ -1,0 +1,18 @@
+name = "gg"
+version = "0.41.0"
+description = "A GUI for Jujutsu, a Git-compatible DVCS"
+homepage = "https://github.com/gulbanana/gg"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "PFiles\\gg"
+bin = ["gg.exe"]
+shortcuts = [{ target = "gg.exe", name = "GG" }]
+
+[source.x64]
+url = "https://github.com/gulbanana/gg/releases/download/v0.41.0/gg_0.41.0_x64_en-US.msi"
+sha256 = "909526d16c4be4927e7af99421c4da882850aa7bfa5a596805405238facbf385"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "gulbanana/gg" }
+url_template = { x64 = "https://github.com/gulbanana/gg/releases/download/v$version/gg_$version_x64_en-US.msi" }

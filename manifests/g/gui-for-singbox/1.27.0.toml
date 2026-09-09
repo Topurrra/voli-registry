@@ -1,0 +1,20 @@
+name = "gui-for-singbox"
+version = "1.27.0"
+description = "A GUI program for SingBox developed by vue3 + wails."
+homepage = "https://github.com/GUI-for-Cores/GUI.for.SingBox"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "GUI.for.SingBox.exe", name = "GUI.for.SingBox" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-amd64.zip"
+sha256 = "1bea584344fdbff398a369acb0dc4a28d81329c99660c7716d0e0b5f9b0c7d03"
+
+[source.arm64]
+url = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.27.0/GUI.for.SingBox-windows-arm64.zip"
+sha256 = "63ad5b3e51660887c82e35f7893d955d18081f34fa3c292767b87f493641d8d5"
+
+[autoupdate]
+checkver = { github = "GUI-for-Cores/GUI.for.SingBox" }
+url_template = { x64 = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v$version/GUI.for.SingBox-windows-amd64.zip", arm64 = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v$version/GUI.for.SingBox-windows-arm64.zip" }

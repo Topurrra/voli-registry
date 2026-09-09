@@ -1,0 +1,15 @@
+name = "camel-k"
+version = "2.11.0"
+description = "A lightweight integration platform, born on Kubernetes, with serverless superpowers"
+homepage = "https://camel.apache.org/camel-k"
+license = "Apache-2.0"
+kind = "app"
+bin = ["kamel.exe"]
+
+[source.x64]
+url = "https://github.com/apache/camel-k/releases/download/v2.11.0/camel-k-client-2.11.0-windows-amd64.tar.gz"
+sha256 = "2e20d801ba24483cc8815d35cdd55a74d6dccb15e17a5908c6f1df92b05e2af5"
+
+[autoupdate]
+checkver = { github = "apache/camel-k" }
+url_template = { x64 = "https://github.com/apache/camel-k/releases/download/v$version/camel-k-client-$version-windows-amd64.tar.gz" }

@@ -1,0 +1,15 @@
+name = "fossa"
+version = "3.18.3"
+description = "Dependency analysis tool. Supports license & vulnerability scanning. Language-agnostic; integrates with 20+ build systems."
+homepage = "https://github.com/fossas/fossa-cli"
+license = "MPL-2.0"
+kind = "app"
+bin = ["fossa.exe"]
+
+[source.x64]
+url = "https://github.com/fossas/fossa-cli/releases/download/v3.18.3/fossa_3.18.3_windows_amd64.zip"
+sha256 = "6760ccd837da3407bd3246c1d10f9d0257d42de3c54268851deb2ebaaba4de33"
+
+[autoupdate]
+checkver = { github = "fossas/fossa-cli" }
+url_template = { x64 = "https://github.com/fossas/fossa-cli/releases/download/v$version/fossa_$version_windows_amd64.zip" }

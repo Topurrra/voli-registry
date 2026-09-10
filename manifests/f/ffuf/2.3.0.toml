@@ -1,0 +1,19 @@
+name = "ffuf"
+version = "2.3.0"
+description = "Fast web fuzzer written in Go"
+homepage = "https://github.com/ffuf/ffuf"
+license = "MIT"
+kind = "app"
+bin = ["ffuf.exe"]
+
+[source.x64]
+url = "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_windows_amd64.zip"
+sha256 = "091c8a22d0c7fbe07d343b3ae2c213dbd37b38a8a2ed40631fcd3128ea1764fb"
+
+[source.arm64]
+url = "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_windows_arm64.zip"
+sha256 = "8b119b5ba25c8ac0a8c029fbf62f9e92ed3ec80d4ecb8275703892c8574ce15c"
+
+[autoupdate]
+checkver = { github = "ffuf/ffuf" }
+url_template = { x64 = "https://github.com/ffuf/ffuf/releases/download/v$version/ffuf_$version_windows_amd64.zip", arm64 = "https://github.com/ffuf/ffuf/releases/download/v$version/ffuf_$version_windows_arm64.zip" }

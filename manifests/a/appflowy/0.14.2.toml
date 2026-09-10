@@ -1,0 +1,16 @@
+name = "appflowy"
+version = "0.14.2"
+description = "An open-source alternative to Notion. You are in charge of your data and customizations."
+homepage = "https://www.appflowy.io/"
+license = "AGPL-3.0"
+kind = "app"
+extract_dir = "AppFlowy"
+shortcuts = [{ target = "AppFlowy.exe", name = "AppFlowy" }]
+
+[source.x64]
+url = "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.2/AppFlowy-0.14.2-windows-x86_64.zip"
+sha256 = "d378d77e55eed7165dc35220bc77b707e2f90e1b5665f7214ef3ea82f19e0dae"
+
+[autoupdate]
+checkver = { github = "AppFlowy-IO/AppFlowy" }
+url_template = { x64 = "https://github.com/AppFlowy-IO/AppFlowy/releases/download/$version/AppFlowy-$version-windows-x86_64.zip" }

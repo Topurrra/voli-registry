@@ -1,0 +1,21 @@
+name = "helm"
+version = "4.3.0"
+description = "The package manager for Kubernetes."
+homepage = "https://helm.sh"
+license = "Apache-2.0"
+kind = "app"
+bin = ["helm.exe"]
+
+[source.x64]
+url = "https://get.helm.sh/helm-v4.3.0-windows-amd64.zip"
+sha256 = "304ea163cce4d9ad14e189c01846c6a34de9cfdfe48536ae54b2e8ba7884e67c"
+extract_dir = "windows-amd64"
+
+[source.arm64]
+url = "https://get.helm.sh/helm-v4.3.0-windows-arm64.zip"
+sha256 = "4a9eefa30d26eb73900a9a0f16e97eae678582172204db60cbd454c68acea246"
+extract_dir = "windows-arm64"
+
+[autoupdate]
+checkver = { github = "helm/helm" }
+url_template = { x64 = "https://get.helm.sh/helm-v$version-windows-amd64.zip", arm64 = "https://get.helm.sh/helm-v$version-windows-arm64.zip" }

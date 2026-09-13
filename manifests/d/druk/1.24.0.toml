@@ -1,0 +1,15 @@
+name = "druk"
+version = "1.24.0"
+description = "Terminal code editor with a file tree, tabs, search, git integration and syntax highlighting."
+homepage = "https://github.com/letstri/druk"
+license = "MIT"
+kind = "app"
+bin = ["druk.exe"]
+
+[source.x64]
+url = "https://github.com/letstri/druk/releases/download/v1.24.0/druk-windows-x64.zip"
+sha256 = "37f64ceeadb35a4f1b846d8a1e5924a686e0b6fc0e10be1707d6262918cc3899"
+
+[autoupdate]
+checkver = { github = "letstri/druk" }
+url_template = { x64 = "https://github.com/letstri/druk/releases/download/v$version/druk-windows-x64.zip" }

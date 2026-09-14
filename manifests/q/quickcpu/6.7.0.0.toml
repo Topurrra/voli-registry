@@ -1,0 +1,16 @@
+name = "quickcpu"
+version = "6.7.0.0"
+description = "Fine-tune and monitor important CPU and System parameters such as CPU Temperature (Package and Core Temp), CPU Performance, Power, Voltage, Current, Core Parking, Frequency Scaling, System Memory, Turbo Boost, C-States, Speed Shift FIVR Control as well as making other adjustments."
+homepage = "https://coderbag.com/product/quickcpu"
+license = "Public Domain"
+kind = "app"
+extract_dir = "QuickCPU"
+shortcuts = [{ target = "QuickCPU.exe", name = "Quick CPU" }]
+
+[source.x64]
+url = "https://coderbag.com/assets/downloads/cpm/currentversion/QuickCpuSetup.msi"
+sha256 = "a307ec6b34023b36b5db6b34cffb0e341911db38d2a6c53b6a6d25d3dc500355"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "Latest Version: ([\\d.]+)"

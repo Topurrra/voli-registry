@@ -1,0 +1,19 @@
+name = "ty"
+version = "0.0.80"
+description = "An extremely fast Python type checker and language server, written in Rust."
+homepage = "https://github.com/astral-sh/ty"
+license = "MIT"
+kind = "app"
+bin = ["ty.exe"]
+
+[source.x64]
+url = "https://github.com/astral-sh/ty/releases/download/0.0.80/ty-x86_64-pc-windows-msvc.zip"
+sha256 = "f1adb0237d61295bd14b2f9e9095301174246d48f6c2772f15d141b7d91946e2"
+
+[source.arm64]
+url = "https://github.com/astral-sh/ty/releases/download/0.0.80/ty-aarch64-pc-windows-msvc.zip"
+sha256 = "d9b4ae287d5763ca0f7f4cbf7e7f504e68ed88490c8aff57934497fb19fcd6d9"
+
+[autoupdate]
+checkver = { github = "astral-sh/ty" }
+url_template = { x64 = "https://github.com/astral-sh/ty/releases/download/$version/ty-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/astral-sh/ty/releases/download/$version/ty-aarch64-pc-windows-msvc.zip" }

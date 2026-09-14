@@ -1,0 +1,15 @@
+name = "vale"
+version = "3.21.0"
+description = "A syntax-aware linter for prose"
+homepage = "https://vale.sh"
+license = "MIT"
+kind = "app"
+bin = ["vale.exe"]
+
+[source.x64]
+url = "https://github.com/vale-cli/vale/releases/download/v3.21.0/vale_3.21.0_Windows_64-bit.zip"
+sha256 = "c6f371c22c44eb00d0d0990c7da4ca990666be5e79ca7ebf54747c1a83668c2c"
+
+[autoupdate]
+checkver = { github = "vale-cli/vale" }
+url_template = { x64 = "https://github.com/vale-cli/vale/releases/download/v$version/vale_$version_Windows_64-bit.zip" }

@@ -1,0 +1,15 @@
+name = "eclipse-committers"
+version = "2026-09"
+description = "Eclipse IDE for Eclipse Committers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse IDE for Eclipse Committers" }]
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-committers-2026-09-R-win32-x86_64.zip"
+sha512 = "031903d648fc14a0d5ad8c85a1ee180a336476983e24c593fa8ad9c1fe525463f39bb618f97e904931f3dbd0682000a4b884ddc8b3b870e81030cc176f2bbf68"
+
+[autoupdate]
+checkver = { url = "https://download.eclipse.org/technology/epp/downloads/release/release.xml", regex = "([\\d-]+)" }

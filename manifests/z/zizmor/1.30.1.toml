@@ -1,0 +1,15 @@
+name = "zizmor"
+version = "1.30.1"
+description = "A static analysis tool for GitHub Actions that finds common security issues such as template injection, credential leakage, excessive permissions, and impostor commits."
+homepage = "https://docs.zizmor.sh/"
+license = "MIT"
+kind = "app"
+bin = ["zizmor.exe"]
+
+[source.x64]
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-pc-windows-msvc.zip"
+sha256 = "b183b1e996eddfab9659f1e9b46e059f1ef1cf984a1f14e5da09f7876a4b3a1c"
+
+[autoupdate]
+checkver = { github = "zizmorcore/zizmor" }
+url_template = { x64 = "https://github.com/zizmorcore/zizmor/releases/download/v$version/zizmor-x86_64-pc-windows-msvc.zip" }

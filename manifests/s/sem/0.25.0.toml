@@ -1,0 +1,15 @@
+name = "sem"
+version = "0.25.0"
+description = "A semantic version control tool that works on top of Git, using tree-sitter to diff code at the entity level (functions, classes, and methods) instead of by lines."
+homepage = "https://ataraxy-labs.github.io/sem/"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["sem.exe"]
+
+[source.x64]
+url = "https://github.com/Ataraxy-Labs/sem/releases/download/v0.25.0/sem-windows-x86_64.zip"
+sha256 = "6d6d9cf93a81c3f5318247cb199ecb8e2fbc44d59493e7d8a7fa8ad026d8949f"
+
+[autoupdate]
+checkver = { github = "Ataraxy-Labs/sem" }
+url_template = { x64 = "https://github.com/Ataraxy-Labs/sem/releases/download/v$version/sem-windows-x86_64.zip" }

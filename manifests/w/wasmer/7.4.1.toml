@@ -1,0 +1,19 @@
+name = "wasmer"
+version = "7.4.1"
+description = "The leading WebAssembly Runtime supporting WASI and Emscripten"
+homepage = "https://wasmer.io/"
+license = "MIT"
+kind = "app"
+bin = ["bin\\wasmer.exe"]
+
+[source.x64]
+url = "https://github.com/wasmerio/wasmer/releases/download/v7.4.1/wasmer-windows-amd64.tar.gz"
+sha256 = "59ea42769d5db0070977266c14429061ea3f1d66625fcab0a4795187483331a7"
+
+[env]
+WASMER_CACHE_DIR = "{dir}\\cache"
+WASMER_DIR = "{dir}"
+
+[autoupdate]
+checkver = { github = "wasmerio/wasmer" }
+url_template = { x64 = "https://github.com/wasmerio/wasmer/releases/download/v$version/wasmer-windows-amd64.tar.gz" }

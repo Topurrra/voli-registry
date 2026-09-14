@@ -1,0 +1,15 @@
+name = "spicetify-cli"
+version = "2.45.0"
+description = "Tool for customizing the Spotify client."
+homepage = "https://spicetify.app/"
+license = "LGPL-2.1-only"
+kind = "app"
+bin = ["spicetify.exe"]
+
+[source.x64]
+url = "https://github.com/spicetify/cli/releases/download/v2.45.0/spicetify-2.45.0-windows-x64.zip"
+sha256 = "eac783be8564b41fea953c43d87ec9fc925e419be46d708146fce1fedbe250f8"
+
+[autoupdate]
+checkver = { github = "spicetify/cli" }
+url_template = { x64 = "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x64.zip" }

@@ -1,0 +1,22 @@
+name = "servy"
+version = "10.0"
+description = "Servy lets you run any app as a native Windows service with full control over the working directory, startup type, process priority, CPU affinity, logging, health checks, environment variables, dependencies, pre-launch and post-launch hooks, pre-stop and post-stop hooks, and parameters."
+homepage = "https://servy-win.github.io"
+license = "MIT"
+kind = "app"
+bin = ["servy-cli.exe"]
+shortcuts = [{ target = "Servy.exe", name = "Servy" }, { target = "Servy.Manager.exe", name = "Servy Manager" }]
+
+[source.x64]
+url = "https://github.com/aelassas/servy/releases/download/v10.0/servy-10.0-x64-portable.7z"
+sha256 = "f8ce5671f95dd832974b6c4942c1577d789f4e075f50eb09f2b99d5e9c1378ed"
+extract_dir = "servy-10.0-x64-portable"
+
+[source.arm64]
+url = "https://github.com/aelassas/servy/releases/download/v10.0/servy-10.0-arm64-portable.7z"
+sha256 = "130fa91581cbad221e0664c6a6f6cc509eccb8e8f6d49cf93285156840beabcd"
+extract_dir = "servy-10.0-arm64-portable"
+
+[autoupdate]
+checkver = { github = "aelassas/servy" }
+url_template = { x64 = "https://github.com/aelassas/servy/releases/download/v$version/servy-$version-x64-portable.7z", arm64 = "https://github.com/aelassas/servy/releases/download/v$version/servy-$version-arm64-portable.7z" }

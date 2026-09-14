@@ -1,0 +1,21 @@
+name = "smoothcsv"
+version = "3.25.0"
+description = "A powerful and intuitive tool for editing CSV files."
+homepage = "https://smoothcsv.com/"
+license = "Freeware"
+kind = "app"
+bin = ["bin\\smoothcsv.exe"]
+shortcuts = [{ target = "SmoothCSV.exe", name = "SmoothCSV" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/kohii/smoothcsv3/releases/download/v3.25.0/SmoothCSV_3.25.0_x64_portable.zip"
+sha256 = "301e78c0ebb91b5fb803eb80f149f803cbf176f6c7c5be40b72a2b701db0fd11"
+
+[source.arm64]
+url = "https://github.com/kohii/smoothcsv3/releases/download/v3.25.0/SmoothCSV_3.25.0_arm64_portable.zip"
+sha256 = "b4d06a04eb3a92fd29d5d99bf0b9b9fad3f0cc985d92b1b530af8febaecd86f9"
+
+[autoupdate]
+checkver = { github = "kohii/smoothcsv3" }
+url_template = { x64 = "https://github.com/kohii/smoothcsv3/releases/download/v$version/SmoothCSV_$version_x64_portable.zip", arm64 = "https://github.com/kohii/smoothcsv3/releases/download/v$version/SmoothCSV_$version_arm64_portable.zip" }

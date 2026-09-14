@@ -1,0 +1,16 @@
+name = "navop"
+version = "0.17.0"
+description = "A native, all-in-one workspace for databases, SSH, SFTP, terminals, remote desktop, monitoring, and AI."
+homepage = "https://navop.dev"
+license = "Apache-2.0,Navop"
+kind = "app"
+shortcuts = [{ target = "navop.exe", name = "Navop" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/feigeCode/navop/releases/download/v0.17.0/navop-0.17.0-windows-x64-portable.zip"
+sha256 = "b291a2fa0f0cf01149252d4080874c57a3ec36e829993fe5c91c47bb41172f59"
+
+[autoupdate]
+checkver = { github = "feigeCode/navop" }
+url_template = { x64 = "https://github.com/feigeCode/navop/releases/download/v$version/navop-$version-windows-x64-portable.zip" }

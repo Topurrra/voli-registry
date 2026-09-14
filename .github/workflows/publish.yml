@@ -48,11 +48,15 @@ jobs:
       # branch ref would mean anyone who can land a commit on voli@main gets
       # code execution next to the production signing key. Bump this SHA
       # deliberately, as a reviewed change.
+      # PLACEHOLDER (unix schema): set to the first voli tag carrying
+      # [source.linux-*]/[source.macos-*] (ships with the linux/mac port) —
+      # the old tool would silently drop unix sources from the published
+      # index. See "Unix sources" in README.md for the pin+lock checklist.
       - name: Install voli-index-tool
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --tag v0.10.1 \
+            --tag v0.13.0 \
             voli-index-tool
 
       # Gate the publish on the skill archives actually being downloadable.

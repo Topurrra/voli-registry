@@ -57,7 +57,11 @@ rules CI enforces:
   hash-pinned MSI and explicitly identified Inno Setup packages. Voli extracts
   them with 7-Zip and never executes the installer. Standalone EXEs are not
   installer archives and remain unsupported.
-- App manifests require at least one of `[source.x64]` / `[source.arm64]`.
+- App manifests require at least one app source block: `[source.x64]` /
+  `[source.arm64]` (Windows) or `[source.linux-x64]`, `[source.linux-arm64]`,
+  `[source.macos-x64]`, `[source.macos-arm64]`. See "Unix sources" in the repo
+  root README for the unix rules (per-source `extract_dir`, musl preference,
+  no `installer-archive` in unix blocks).
 - Skill manifests require exactly one `[source.any]` ZIP, tar.gz, or tgz
   archive and cannot use app-only fields.
 - `bin` paths must be relative (no absolute paths, no `..`).

@@ -33,6 +33,69 @@ and schema. Example: `manifests/r/ripgrep/14.1.1.toml`.
      7-Zip extraction. Standalone EXEs remain unsupported.
 3. Open a PR. CI validates it (below). Green check required to merge.
 
+## Unix sources (Linux / macOS)
+
+App manifests may carry unix blocks alongside the Windows ones:
+
+```toml
+[source.linux-x64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "…"
+extract_dir = "ripgrep-15.2.0-x86_64-unknown-linux-musl"
+
+[source.macos-arm64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-apple-darwin.tar.gz"
+sha256 = "…"
+extract_dir = "ripgrep-15.2.0-aarch64-apple-darwin"
+```
+
+Rules (enforced by `voli-index-tool validate` and by the importer):
+
+- Keys are `linux-x64`, `linux-arm64`, `macos-x64`, `macos-arm64`. `x64`/`arm64`
+  keep meaning Windows. Selection never crosses OS lines: a Linux client only
+  considers `linux-*`, and a Windows-only manifest yields a clear "no source
+  for linux-x64" instead of installing foreign binaries.
+- The top-level `extract_dir` belongs to the Windows archive and is **never
+  inherited** by unix blocks. Unix payloads with a wrapper dir set a
+  per-source `extract_dir`; flat archives (binary at the root) omit it.
+- The shared `bin` list resolves `.exe`-tolerantly on unix: `bin = ["rg.exe"]`
+  finds an extensionless `rg` in a unix payload (exact matches always win).
+- Prefer musl-static Linux assets where upstream ships them; they run on any
+  distro. `installer-archive` (EXE/MSI payloads) is Windows-only and
+  meaningless in a unix block.
+- Skills (`[source.any]`) are OS-independent already — nothing per-OS needed.
+
+Payloads come from **upstream release assets, never Homebrew bottles**: a
+bottle's ELF INTERP is `@@HOMEBREW_PREFIX@@/lib/ld.so`, so the kernel refuses
+to exec it without Homebrew (proven by direct experiment). Homebrew's formulae
+API is the recommended *discovery* source (version, SPDX license,
+`executables` list) — see `tools/brew-sources.toml`.
+
+`tools/brew-import` automates all of it: given the allowlist it resolves each
+release, downloads every platform asset, runs static linkage gates (no
+package-manager prefix references) plus a live `--version` smoke run for every
+binary the host can execute, and merges verified blocks into the registry
+(canonical TOML, round-trip validated). macOS/arm64 payloads a Linux run
+cannot execute are hash-verified and marked UNVERIFIED; the `verify-unix` CI
+job (`tools.yml`, ubuntu + macos legs) runs `brew-import --verify-only` over
+them, which downloads, re-hashes, and executes each host payload.
+
+### Coordinating the voli schema tag
+
+Everything unix-shaped depends on a voli client/index-tool that understands
+the new source keys. Until the cutover, every voli pin in
+`.github/workflows/` carries a `PLACEHOLDER (unix schema)` comment pointing
+here. To cut over, in ONE reviewed change:
+
+1. Set every `VOLI_TAG` / `--tag` / `--branch` placeholder to the first voli
+   tag carrying the schema (grep for `PLACEHOLDER` — validate, publish, bump,
+   scoop-sync ×2, tools ×2). skill-sync stays: skills are unaffected.
+2. Regenerate the importer locks against matching checkouts:
+   `cargo update -p voli-core` in `tools/scoop-import` and
+   `tools/brew-import`, commit both `Cargo.lock` files.
+3. Merge a pilot manifest change and watch `validate`, `verify-unix`, and
+   `publish` go green before anything else lands.
+
 ## Tier-1 skill catalog
 
 `skill-sources.toml` allowlists exact upstream revisions, license hashes,

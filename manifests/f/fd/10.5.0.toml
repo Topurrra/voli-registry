@@ -16,6 +16,26 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-aarch6
 sha256 = "a2bcddcfd259b05357a77bbc6cd671fdb30f63fd266a0e748305890a8c5ceaa6"
 extract_dir = "fd-v10.5.0-aarch64-pc-windows-msvc"
 
+[source.linux-x64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "761c72dc8e120d85b22292063be8a796e2eeb20eb3e4f38b8fa2343ccf3514a7"
+extract_dir = "fd-v10.5.0-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "d76c4317f7d5dba69f8a2a15856c90c777e7f0dd4e85f0de8c76de6992c374d4"
+extract_dir = "fd-v10.5.0-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-apple-darwin.tar.gz"
+sha256 = "7e31028c62c6955877735d0406807aa484c2a5e6f86235a59e26c29c301da590"
+extract_dir = "fd-v10.5.0-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-aarch64-apple-darwin.tar.gz"
+sha256 = "b67e1836c468e42e411984b56e52fa7abec08c2bd22c867398e7cc134aac5e12"
+extract_dir = "fd-v10.5.0-aarch64-apple-darwin"
+
 [autoupdate]
 checkver = { github = "sharkdp/fd" }
 url_template = { x64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sharkdp/fd/releases/download/v$version/fd-v$version-aarch64-pc-windows-msvc.zip" }

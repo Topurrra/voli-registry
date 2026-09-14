@@ -35,11 +35,15 @@ jobs:
           key: cargo-voli-index-tool-${{ runner.os }}
 
       # Pinned to a commit: an unpinned --git install runs voli@main HEAD.
+      # PLACEHOLDER (unix schema): set to the first voli tag carrying
+      # [source.linux-*]/[source.macos-*] — the old tool errors on unix
+      # manifests at parse time, which would break every bump run once unix
+      # blocks exist. See "Unix sources" in README.md for the pin+lock checklist.
       - name: Install voli-index-tool
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --tag v0.10.1 \
+            --tag v0.13.0 \
             voli-index-tool
 
       - name: Run bump

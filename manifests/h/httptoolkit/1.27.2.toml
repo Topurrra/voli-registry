@@ -1,0 +1,15 @@
+name = "httptoolkit"
+version = "1.27.2"
+description = "HTTP(S) debugging proxy, analyzer and client"
+homepage = "https://httptoolkit.com"
+license = "AGPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "HTTP Toolkit.exe", name = "HTTP Toolkit" }]
+
+[source.x64]
+url = "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.27.2/HttpToolkit-1.27.2-win-x64.zip"
+sha256 = "c405e2dda355fab8b51fb8922739da9eaa50ab28f7c01f556eb4d2ecd4fcce07"
+
+[autoupdate]
+checkver = { github = "httptoolkit/httptoolkit-desktop" }
+url_template = { x64 = "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v$version/HttpToolkit-$version-win-x64.zip" }

@@ -1,0 +1,15 @@
+name = "eclipse-modeling"
+version = "2026-09"
+description = "Eclipse Modeling Tools"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse Modeling Tools" }]
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-modeling-2026-09-R-win32-x86_64.zip"
+sha512 = "0fce50604679aa668f66a28c1be0cfa56263d83157389ad5fac39c905470dcb0f277d160afa8ab3217563c98aa87d726a7d328bbd864a313ddfee0f13e6b8cf9"
+
+[autoupdate]
+checkver = { url = "https://download.eclipse.org/technology/epp/downloads/release/release.xml", regex = "([\\d-]+)" }

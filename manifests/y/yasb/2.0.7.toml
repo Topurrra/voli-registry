@@ -1,0 +1,22 @@
+name = "yasb"
+version = "2.0.7"
+description = "A highly configurable Windows status bar written in Python"
+homepage = "https://github.com/amnweb/yasb"
+license = "MIT"
+kind = "app"
+bin = ["yasb.exe", "yasbc.exe", "yasb_themes.exe"]
+shortcuts = [{ target = "yasb.exe", name = "YASB" }]
+
+[source.x64]
+url = "https://github.com/amnweb/yasb/releases/download/v2.0.7/yasb-2.0.7-x64.msi"
+sha256 = "c93b3eb24fceb64b8baefe694a947fecd31a7e58f0939ba61296048124edbe8b"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/amnweb/yasb/releases/download/v2.0.7/yasb-2.0.7-aarch64.msi"
+sha256 = "9e9e2c49781a00187316177d2dabcc4b4a253c0bf3a241eda5fa443c149f5f0b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "amnweb/yasb" }
+url_template = { x64 = "https://github.com/amnweb/yasb/releases/download/v$version/yasb-$version-x64.msi", arm64 = "https://github.com/amnweb/yasb/releases/download/v$version/yasb-$version-aarch64.msi" }

@@ -1,0 +1,19 @@
+name = "railway"
+version = "5.54.1"
+description = "The command line interface for Railway. Use it to connect your code to Railways infrastructure."
+homepage = "https://github.com/railwayapp/cli"
+license = "MIT"
+kind = "app"
+bin = ["railway.exe"]
+
+[source.x64]
+url = "https://github.com/railwayapp/cli/releases/download/v5.54.1/railway-v5.54.1-x86_64-pc-windows-msvc.zip"
+sha256 = "fada14b434dc8f13a9023925588eeeff96c4e5158e3d862cc07198a0f7d1bad6"
+
+[source.arm64]
+url = "https://github.com/railwayapp/cli/releases/download/v5.54.1/railway-v5.54.1-aarch64-pc-windows-msvc.zip"
+sha256 = "6fcb1fec35c0c7c952e109926f08996dd78135fa1ca3026d2deec3f7e612eadf"
+
+[autoupdate]
+checkver = { github = "railwayapp/cli" }
+url_template = { x64 = "https://github.com/railwayapp/cli/releases/download/v$version/railway-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/railwayapp/cli/releases/download/v$version/railway-v$version-aarch64-pc-windows-msvc.zip" }

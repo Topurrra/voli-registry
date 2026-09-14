@@ -1,0 +1,15 @@
+name = "eclipse-php"
+version = "2026-09"
+description = "Eclipse IDE for PHP Developers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for PHP Developers" }]
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-php-2026-09-R-win32-x86_64.zip"
+sha512 = "822ecced73d255eb86f1fbf682f0be4665efbc7534f478dca3c2bd8d508c8267ba7316dfc8bfde7edc263adebe692ec94d93c1663028584ae89747ebdcda23d9"
+
+[autoupdate]
+checkver = { url = "https://download.eclipse.org/technology/epp/downloads/release/release.xml", regex = "([\\d-]+)" }

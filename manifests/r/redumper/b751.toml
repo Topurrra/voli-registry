@@ -1,0 +1,21 @@
+name = "redumper"
+version = "b751"
+description = "Command-line tool for creating accurate optical disc dumps."
+homepage = "https://github.com/superg/redumper"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["redumper.exe"]
+
+[source.x64]
+url = "https://github.com/superg/redumper/releases/download/b751/redumper-b751-windows-x64.zip"
+sha256 = "34166ecc5b60a5a0e588d1879db173ffefcd3f888d60f56fc7dc6adc16753f34"
+extract_dir = "redumper-b751-windows-x64\\bin"
+
+[source.arm64]
+url = "https://github.com/superg/redumper/releases/download/b751/redumper-b751-windows-arm64.zip"
+sha256 = "1ca82a40324ef37e51affff850dec36b497aa20b51c25486431a73a8fd077fdd"
+extract_dir = "redumper-b751-windows-arm64\\bin"
+
+[autoupdate]
+checkver = { github = "superg/redumper" }
+url_template = { x64 = "https://github.com/superg/redumper/releases/download/$version/redumper-$version-windows-x64.zip", arm64 = "https://github.com/superg/redumper/releases/download/$version/redumper-$version-windows-arm64.zip" }

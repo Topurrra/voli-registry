@@ -1,0 +1,17 @@
+name = "aimp"
+version = "5.40.2727"
+description = "Audio player"
+homepage = "https://www.aimp.ru"
+license = "Freeware"
+kind = "app"
+extract_dir = "AIMP"
+bin = ["AIMP.exe", "AIMPac.exe", "AIMPate.exe"]
+shortcuts = [{ target = "AIMP.exe", name = "AIMP" }, { target = "AIMPac.exe", name = "AIMP Audio Converter" }, { target = "AIMPate.exe", name = "AIMP Advanced Tag Editor" }]
+persist = ["Icons", "Skins", "Plugins", "Profile"]
+
+[source.x64]
+url = "https://www.aimp.ru/?do=download.file&id=31#/dl.zip"
+sha256 = "7a11b2d502ed1163868f41e96511da989bc9cf7d55282f7997453bafcfe5ff2a"
+
+[autoupdate]
+checkver = { url = "https://www.aimp.ru/?do=download&os=windows", regex = ">AIMP v([\\d.]+)<" }

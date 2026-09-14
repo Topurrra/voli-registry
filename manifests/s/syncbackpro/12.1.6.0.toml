@@ -1,0 +1,15 @@
+name = "syncbackpro"
+version = "12.1.6.0"
+description = "Backup up and synchronize files to several resources, including an internal or external drive, to different media (USB thumb drive, CD, DVD), to a remote server (NAS, FTP, Windows server) and to a cloud storage provider."
+homepage = "https://www.2brightsparks.com/syncback/sbpro.html"
+license = "Shareware"
+kind = "app"
+shortcuts = [{ target = "SyncBackPro.exe", name = "SyncBackPro" }]
+persist = ["settings"]
+
+[source.x64]
+url = "https://www.2brightsparks.com/assets/software/SyncBackPro64_Setup_NI.zip"
+sha256 = "9c127c78248b9bc8866c2ee13405be397ca1fd3aa923b6cfb41f63a5f27432e2"
+
+[autoupdate]
+checkver = { url = "https://www.2brightsparks.com/download-syncbackpro.html", regex = "(?sm)SyncBackPro.*?Version.*?([\\d.]+)" }

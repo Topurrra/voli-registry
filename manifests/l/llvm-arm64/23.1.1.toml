@@ -1,0 +1,21 @@
+name = "llvm-arm64"
+version = "23.1.1"
+description = "Collection of modular and reusable compiler and toolchain technologies. (arm64/aarch64 only)"
+homepage = "https://www.llvm.org"
+license = "NCSA"
+kind = "app"
+extract_dir = "LLVM"
+
+[source.arm64]
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.1/LLVM-23.1.1-woa64.msi"
+sha256 = "aeb4415a5fcfd488dc0ef69ccb2c85a81163c11960b63b6b295c6c3df5a6317e"
+kind = "installer-archive"
+
+[env]
+LIBCLANG_PATH = "{dir}\\bin"
+LLVM_LIB_DIR = "{dir}\\lib"
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "llvm/llvm-project" }
+url_template = { arm64 = "https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/LLVM-$version-woa64.msi" }

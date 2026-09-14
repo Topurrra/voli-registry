@@ -1,0 +1,16 @@
+name = "psysonic"
+version = "1.53.0"
+description = "A lean desktop music player for Subsonic-compatible servers."
+homepage = "https://www.psysonic.de/"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "psysonic.exe", name = "Psysonic" }]
+
+[source.x64]
+url = "https://github.com/Psysonic/psysonic/releases/download/app-v1.53.0/Psysonic_1.53.0_x64-setup.exe"
+sha256 = "df39ecba286d364fc31ad762f46a20e21f3c19655287bbdc1db56b789d67c8de"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Psysonic/psysonic" }
+url_template = "https://github.com/Psysonic/psysonic/releases/download/app-v$version/Psysonic_$version_x64-setup.exe"

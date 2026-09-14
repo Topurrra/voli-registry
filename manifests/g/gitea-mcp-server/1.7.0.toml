@@ -1,0 +1,19 @@
+name = "gitea-mcp-server"
+version = "1.7.0"
+description = "Gitea Model Context Protocol (MCP) Server."
+homepage = "https://gitea.com/gitea/gitea-mcp"
+license = "MIT"
+kind = "app"
+bin = ["gitea-mcp.exe", { name = "gitea-mcp-server", path = "gitea-mcp.exe" }]
+
+[source.x64]
+url = "https://gitea.com/gitea/gitea-mcp/releases/download/v1.7.0/gitea-mcp_Windows_x86_64.zip"
+sha256 = "9698fdd23d684d34c31cd87ec37290563ebb230d279efeac8d3a296927bc55c8"
+
+[source.arm64]
+url = "https://gitea.com/gitea/gitea-mcp/releases/download/v1.7.0/gitea-mcp_Windows_arm64.zip"
+sha256 = "8a47c97c1ee1ebce0425117949142adf3e97c708101bf4703bf7c996e19bfd64"
+
+[autoupdate]
+checkver = { url = "https://gitea.com/gitea/gitea-mcp/releases/latest", regex = "/releases/tag/v([\\d.]+)" }
+url_template = { x64 = "https://gitea.com/gitea/gitea-mcp/releases/download/v$version/gitea-mcp_Windows_x86_64.zip", arm64 = "https://gitea.com/gitea/gitea-mcp/releases/download/v$version/gitea-mcp_Windows_arm64.zip" }

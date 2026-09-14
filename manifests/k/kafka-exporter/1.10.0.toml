@@ -1,0 +1,16 @@
+name = "kafka-exporter"
+version = "1.10.0"
+description = "Kafka exporter for Prometheus"
+homepage = "https://github.com/danielqsj/kafka_exporter"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "kafka_exporter-1.10.0.windows-amd64"
+bin = ["kafka_exporter.exe"]
+
+[source.x64]
+url = "https://github.com/danielqsj/kafka_exporter/releases/download/v1.10.0/kafka_exporter-1.10.0.windows-amd64.tar.gz"
+sha256 = "33ba503cf6ca3e209e1dcef108b9a0865d8ece227c10a058f04c728cdf6c66b5"
+
+[autoupdate]
+checkver = { github = "danielqsj/kafka_exporter" }
+url_template = { x64 = "https://github.com/danielqsj/kafka_exporter/releases/download/v$version/kafka_exporter-$version.windows-amd64.tar.gz" }

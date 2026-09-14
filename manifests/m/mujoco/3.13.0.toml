@@ -1,0 +1,16 @@
+name = "mujoco"
+version = "3.13.0"
+description = "Multi-Joint dynamics with Contact. A general purpose physics simulator."
+homepage = "https://mujoco.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\simulate.exe"]
+shortcuts = [{ target = "bin\\simulate.exe", name = "MuJoCo Simulate" }]
+
+[source.x64]
+url = "https://github.com/google-deepmind/mujoco/releases/download/3.13.0/mujoco-3.13.0-windows-x86_64.zip"
+sha256 = "333cc18cd471aa58442f27c347637540e5382b1970c4db1cab3e9283cf37f40a"
+
+[autoupdate]
+checkver = { github = "google-deepmind/mujoco" }
+url_template = { x64 = "https://github.com/google-deepmind/mujoco/releases/download/$version/mujoco-$version-windows-x86_64.zip" }

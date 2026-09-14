@@ -1,0 +1,15 @@
+name = "spotify-player"
+version = "0.25.1"
+description = "A Spotify player in the terminal with full feature parity"
+homepage = "https://github.com/aome510/spotify-player"
+license = "MIT"
+kind = "app"
+bin = ["spotify_player.exe"]
+
+[source.x64]
+url = "https://github.com/aome510/spotify-player/releases/download/v0.25.1/spotify_player-x86_64-pc-windows-msvc.zip"
+sha256 = "946dfe069f3cd530548e07a86bbf71928a7983f30933e202b179a4ef3e5e16cb"
+
+[autoupdate]
+checkver = { github = "aome510/spotify-player" }
+url_template = { x64 = "https://github.com/aome510/spotify-player/releases/download/v$version/spotify_player-x86_64-pc-windows-msvc.zip" }

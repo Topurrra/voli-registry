@@ -1,0 +1,16 @@
+name = "ghostscript"
+version = "10.08.0"
+description = "An interpreter for the PostScript language and for PDF"
+homepage = "https://www.ghostscript.com"
+license = "AGPL-3.0-or-later|Freeware"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/gs10080w64.exe#/dl.7z"
+sha512 = "cb3ecc798508851ba28b05e3fb914ddefe78168190726376d8581546ce61d5b216ffa3359e6f829072786bc12350501c7b6f99110d578696b87213d157774269"
+
+[env]
+PATH = "{dir}\\lib"
+
+[autoupdate]
+checkver = { url = "https://www.ghostscript.com/releases/index.html", regex = "latest release is Ghostscript ([\\d.]+)" }

@@ -1,0 +1,15 @@
+name = "audiowaveform"
+version = "1.11.0"
+description = "A CLI tool to generate waveform data and render waveform images from audio files."
+homepage = "https://codeberg.org/chrisn/audiowaveform"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["audiowaveform.exe"]
+
+[source.x64]
+url = "https://codeberg.org/chrisn/audiowaveform/releases/download/1.11.0/audiowaveform-1.11.0-win64.zip"
+sha256 = "4a86e8eecc33ad6a2a2fc06c7ae42e6e57b7bc41e747f039ef595c6f50484c4b"
+
+[autoupdate]
+checkver = { url = "https://codeberg.org/api/v1/repos/chrisn/audiowaveform/releases", regex = "audiowaveform-(?<version>[\\d.]+)-win64\\.zip" }
+url_template = { x64 = "https://codeberg.org/chrisn/audiowaveform/releases/download/$version/audiowaveform-$version-win64.zip" }

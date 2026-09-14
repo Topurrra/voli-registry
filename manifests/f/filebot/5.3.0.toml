@@ -1,0 +1,17 @@
+name = "filebot"
+version = "5.3.0"
+description = "Movies, TV Shows and Anime files organizer and renamer"
+homepage = "https://www.filebot.net/"
+license = "Proprietary"
+kind = "app"
+bin = ["filebot.exe"]
+shortcuts = [{ target = "filebot.launcher.exe", name = "FileBot" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://get.filebot.net/filebot/FileBot_5.3.0/FileBot_5.3.0-portable.zip"
+sha256 = "a1c7e39f9c60bf32700aa30379f03531306a5471dab6f0f4c403b20dcdf544df"
+
+[autoupdate]
+checkver = { url = "https://app.filebot.net/update.xml", regex = "([\\d.]+)" }
+url_template = "https://get.filebot.net/filebot/FileBot_$version/FileBot_$version-portable.zip"

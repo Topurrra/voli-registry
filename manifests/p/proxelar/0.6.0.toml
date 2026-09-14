@@ -1,0 +1,15 @@
+name = "proxelar"
+version = "0.6.0"
+description = "Scriptable local traffic workbench (MITM proxy) to inspect, intercept, replay, and rewrite HTTP/HTTPS and WebSocket traffic."
+homepage = "https://github.com/emanuele-em/proxelar"
+license = "MIT"
+kind = "app"
+bin = ["proxelar.exe"]
+
+[source.x64]
+url = "https://github.com/emanuele-em/proxelar/releases/download/v0.6.0/proxelar-v0.6.0-x86_64-pc-windows-msvc.zip"
+sha256 = "53a6bab18f06e3d7075f7e037cf4e387bd4fc9a2a4691bf277f2f7b93e663acf"
+
+[autoupdate]
+checkver = { github = "emanuele-em/proxelar" }
+url_template = { x64 = "https://github.com/emanuele-em/proxelar/releases/download/v$version/proxelar-v$version-x86_64-pc-windows-msvc.zip" }

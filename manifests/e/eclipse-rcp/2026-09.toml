@@ -1,0 +1,15 @@
+name = "eclipse-rcp"
+version = "2026-09"
+description = "Eclipse IDE for RCP and RAP Developers"
+homepage = "https://www.eclipse.org"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "eclipse"
+shortcuts = [{ target = "eclipse.exe", name = "Eclipse for RCP and RAP Developers" }]
+
+[source.x64]
+url = "http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-rcp-2026-09-R-win32-x86_64.zip"
+sha512 = "24af50884d1341ba5d30070f0f877bb1a405a613dd50fdf759e380011aa7289e0b891d79c95ffd2f5a7e77aa279023acad72f72f0fdc4438043f20417ae46eaa"
+
+[autoupdate]
+checkver = { url = "https://download.eclipse.org/technology/epp/downloads/release/release.xml", regex = "([\\d-]+)" }

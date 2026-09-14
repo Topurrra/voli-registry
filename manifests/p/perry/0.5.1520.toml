@@ -1,0 +1,18 @@
+name = "perry"
+version = "0.5.1520"
+description = "Native TypeScript compiler — compiles .ts directly to native executables via LLVM."
+homepage = "https://www.perryts.com"
+license = "MIT"
+kind = "app"
+bin = ["perry.exe"]
+
+[source.x64]
+url = "https://github.com/PerryTS/perry/releases/download/v0.5.1520/perry-windows-x86_64.zip"
+sha256 = "6d8f56035be8aee8e009c9f8f9cd6a00388c9542b52a8ae6acca1938958273a9"
+
+[depends]
+llvm = "*"
+
+[autoupdate]
+checkver = { github = "PerryTS/perry" }
+url_template = { x64 = "https://github.com/PerryTS/perry/releases/download/v$version/perry-windows-x86_64.zip" }

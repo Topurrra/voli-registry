@@ -15,6 +15,26 @@ sha256 = "caa1ca158f04d91f42dc2cd99bb1f69f6b5bfa0d0772d485150120aad9778685"
 url = "https://github.com/jdx/mise/releases/download/v2026.9.7/mise-v2026.9.7-windows-arm64.zip"
 sha256 = "cbc4b8aa13aae990acf723aa76dc6a7cb23fc17cfe9a3c2abdad60dde974668c"
 
+[source.linux-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.7/mise-v2026.9.7-linux-x64.tar.gz"
+sha256 = "6cc34785ae10c38061e569b64b290fc8ac26e94d12c3f1aeb721790fa8f09196"
+extract_dir = "mise"
+
+[source.linux-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.7/mise-v2026.9.7-linux-arm64.tar.gz"
+sha256 = "d8d38909537af5864822f3ad545d48f1cefae15db266b20052a32da7f834fd50"
+extract_dir = "mise"
+
+[source.macos-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.7/mise-v2026.9.7-macos-x64.tar.gz"
+sha256 = "98d6fa19fbf6022558ffbbf259800fc7f3dd696fdc950b922d7f3f53e75ef36b"
+extract_dir = "mise"
+
+[source.macos-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.7/mise-v2026.9.7-macos-arm64.tar.gz"
+sha256 = "f6810aa1609a475ce7f3fdc83eb1e090ace6231d3b1b5aaead944663c4b4b7f1"
+extract_dir = "mise"
+
 [autoupdate]
 checkver = { github = "jdx/mise" }
 url_template = { x64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-x64.zip", arm64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-arm64.zip" }

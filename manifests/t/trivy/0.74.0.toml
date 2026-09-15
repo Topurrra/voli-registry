@@ -10,6 +10,22 @@ bin = ["trivy.exe"]
 url = "https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_windows-64bit.zip"
 sha256 = "94c40e0696e4b907a74b7b2e1438d5d72ebaca83115817407f568a002d520842"
 
+[source.linux-x64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_Linux-64bit.tar.gz"
+sha256 = "2ae6fe3ee734b7fdf11335663e18c75ea12dccc76062f09f164a3b0f8be4371a"
+
+[source.linux-arm64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_Linux-ARM64.tar.gz"
+sha256 = "b94ce1976bbf3c15b514b605ee88be7c6d94a29be2302847ff01cb794d47aad5"
+
+[source.macos-x64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_macOS-64bit.tar.gz"
+sha256 = "472816f6888dda689d075c30254d4210b4d1035acf365aa72332f584c2f60485"
+
+[source.macos-arm64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.74.0/trivy_0.74.0_macOS-ARM64.tar.gz"
+sha256 = "1caada5e0e2091909357c7525d3aa76f4b660b13821bc143b190c7483e31cc11"
+
 [autoupdate]
 checkver = { url = "https://github.com/aquasecurity/trivy/releases/latest", regex = "/tree/(?:v|V)([\\d.]+)" }
 url_template = { x64 = "https://github.com/aquasecurity/trivy/releases/download/v$version/trivy_$version_windows-64bit.zip" }

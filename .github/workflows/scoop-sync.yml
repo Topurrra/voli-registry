@@ -35,10 +35,10 @@ jobs:
             ~/.cargo/git
           key: cargo-scoop-sync-${{ runner.os }}
 
-      # PLACEHOLDER (unix schema): the voli clone and the index-tool install
-      # below must be the first tag carrying [source.linux-*]/[source.macos-*]
-      # — old voli-core rejects unix manifests at parse, which would fail this
-      # sync on the first pilot file it refreshes. When the tag moves, regen
+      # The voli clone and index-tool install below must understand
+      # [source.linux-*]/[source.macos-*] (voli v0.13.2+): old voli-core
+      # rejects unix manifests at parse, which would fail this sync on the
+      # first pilot file it refreshes. When the tag moves, regen
       # tools/scoop-import/Cargo.lock against the new checkout (`cargo update
       # -p voli-core`) and commit it in the same change. See "Unix sources" in
       # README.md for the full checklist.
@@ -46,7 +46,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
           git clone --depth 1 https://github.com/ScoopInstaller/Extras /tmp/scoop-extras
-          git clone --depth 1 --branch v0.13.0 https://github.com/Topurrra/voli ../voli
+          git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli
 
       - name: Build scoop-import
         working-directory: tools/scoop-import
@@ -62,7 +62,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --tag v0.13.0 \
+            --tag v0.13.2 \
             voli-index-tool
 
       # scoop-import already emits canonical TOML via voli-core, so this is a

@@ -70,15 +70,14 @@ jobs:
 
       # brew-import's voli-core path dependency (tools/brew-import/../../../voli,
       # i.e. a sibling of this checkout) must understand
-      # [source.linux-*]/[source.macos-*]. PLACEHOLDER TAG: set VOLI_TAG to the
-      # first voli tag carrying the unix manifest schema (shipped with the
-      # linux/mac port), then re-run `cargo update -p voli-core` inside
-      # tools/brew-import against a matching checkout and commit the lock in
-      # the same change — same discipline as the scoop-import pin above.
+      # [source.linux-*]/[source.macos-*] (voli v0.13.2+). When that pin moves,
+      # re-run `cargo update -p voli-core` inside tools/brew-import against a
+      # matching checkout and commit the lock in the same change — same
+      # discipline as the scoop-import pin above.
       # Every VOLI_TAG in this file moves together — grep for it.
       - name: Clone voli for the voli-core path dependency
         env:
-          VOLI_TAG: v0.13.0
+          VOLI_TAG: v0.13.2
         run: git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
 
       - name: Test brew-import
@@ -102,9 +101,9 @@ jobs:
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
       - name: Clone voli for the voli-core path dependency
-        # Same PLACEHOLDER TAG as above — keep the two in sync (grep VOLI_TAG).
+        # Same voli tag as above — keep the two in sync (grep VOLI_TAG).
         env:
-          VOLI_TAG: v0.13.0
+          VOLI_TAG: v0.13.2
         run: git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
 
       - name: Verify unix payloads from brew-sources.toml

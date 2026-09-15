@@ -1,7 +1,7 @@
 # voli-registry
 
 The package catalog for **[Voli](https://github.com/Topurrra/voli)** — a fast,
-honest, no-admin package manager for Windows.
+honest, no-admin package manager for Windows, Linux, and macOS.
 
 Each package version is a single declarative TOML manifest. CI compiles every
 manifest into a signed SQLite snapshot (`index.sqlite`) that the `voli` client
@@ -80,21 +80,19 @@ cannot execute are hash-verified and marked UNVERIFIED; the `verify-unix` CI
 job (`tools.yml`, ubuntu + macos legs) runs `brew-import --verify-only` over
 them, which downloads, re-hashes, and executes each host payload.
 
-### Coordinating the voli schema tag
+### Unix tooling pins
 
 Everything unix-shaped depends on a voli client/index-tool that understands
-the new source keys. Until the cutover, every voli pin in
-`.github/workflows/` carries a `PLACEHOLDER (unix schema)` comment pointing
-here. To cut over, in ONE reviewed change:
+the new source keys (voli **v0.13.2+**). The pins live in
+`.github/workflows/` (validate, publish, bump, scoop-sync ×2, tools ×2);
+skill-sync stays on its own pin since skills are unaffected. When the voli pin
+moves, regenerate the importer locks against a matching checkout
+(`cargo update -p voli-core` in `tools/scoop-import` and
+`tools/brew-import`) and commit both `Cargo.lock` files in the same change.
 
-1. Set every `VOLI_TAG` / `--tag` / `--branch` placeholder to the first voli
-   tag carrying the schema (grep for `PLACEHOLDER` — validate, publish, bump,
-   scoop-sync ×2, tools ×2). skill-sync stays: skills are unaffected.
-2. Regenerate the importer locks against matching checkouts:
-   `cargo update -p voli-core` in `tools/scoop-import` and
-   `tools/brew-import`, commit both `Cargo.lock` files.
-3. Merge a pilot manifest change and watch `validate`, `verify-unix`, and
-   `publish` go green before anything else lands.
+Pilot set (all with unix blocks, all executed end to end on Linux):
+ripgrep, fd, fzf, zoxide, eza (Linux-only — upstream ships no macOS
+tarballs), bat, starship, lazygit. Add more via `tools/brew-sources.toml`.
 
 ## Tier-1 skill catalog
 

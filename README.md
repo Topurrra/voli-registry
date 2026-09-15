@@ -84,15 +84,34 @@ them, which downloads, re-hashes, and executes each host payload.
 
 Everything unix-shaped depends on a voli client/index-tool that understands
 the new source keys (voli **v0.13.2+**). The pins live in
-`.github/workflows/` (validate, publish, bump, scoop-sync ×2, tools ×2);
-skill-sync stays on its own pin since skills are unaffected. When the voli pin
-moves, regenerate the importer locks against a matching checkout
+`.github/workflows/` (validate, publish, bump, scoop-sync, skill-sync, tools ×2).
+skill-sync is NOT exempt, though it only writes `manifests/skills`: its `fmt`
+and `validate` steps run over all of `manifests/`, so a tools-side unix block
+fails it on a stale pin. It sat on v0.10.1 and did exactly that — every run
+from 2026-09-15 died with `unknown field 'linux-x64'`. The scoop-import lock
+still pins voli-core 0.10.1 and moves on its own; every other pin moves
+together. When the voli pin moves, regenerate the importer locks against a
+matching checkout
 (`cargo update -p voli-core` in `tools/scoop-import` and
 `tools/brew-import`) and commit both `Cargo.lock` files in the same change.
 
-Pilot set (all with unix blocks, all executed end to end on Linux):
-ripgrep, fd, fzf, zoxide, eza (Linux-only — upstream ships no macOS
-tarballs), bat, starship, lazygit. Add more via `tools/brew-sources.toml`.
+Covered so far (all with unix blocks, every Linux payload executed end to end):
+act, age, atuin, bat, bottom, croc, delta, difftastic, dive, dua, duf, dust,
+eza, fastfetch, fd, fzf, gh, gitleaks, glow, gping, grex, grype, hexyl,
+hyperfine, jq, just, lazydocker, lazygit, mise, mprocs, ouch, pandoc, procs,
+ripgrep, sd, starship, syft, trivy, xsv, yazi, zellij, zoxide — 42 packages.
+Add more via `tools/brew-sources.toml`.
+
+Not every one is all four platforms; upstream decides. Linux-only: eza, mprocs.
+No macOS x64: delta. Linux x64 + macOS x64 only: xsv. `pandoc` and `fastfetch`
+keep their binary below the archive root, so their blocks pin a nested
+`extract_dir` (`pandoc-3.11/bin`, `fastfetch-linux-amd64/usr/bin`) rather than
+relying on wrapper-dir detection.
+
+`jq` and `gping` are pinned in their manifests but deliberately absent from
+`brew-sources.toml`: brew-import derives the manifest version as
+`strip_v(tag)`, and their `jq-<version>` / `gping-v<version>` tags would
+resolve to a non-version string. Bump those two by hand.
 
 ## Tier-1 skill catalog
 

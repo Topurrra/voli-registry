@@ -177,3 +177,682 @@ file = "lazygit_{version}_darwin_x86_64.tar.gz"
 
 [source.assets.macos-arm64]
 file = "lazygit_{version}_darwin_arm64.tar.gz"
+
+# ---------------------------------------------------------------------------
+# Batch 2: unix sources for CLI tools already carried as Windows-only manifests.
+# Asset names below were each verified against the pinned release and the
+# payload's bin path checked against the manifest's `bin` (voli strips a
+# trailing `.exe` when resolving on unix, so one `bin = ["rg.exe"]` serves
+# both). pandoc and fastfetch keep their binary below the archive root, so
+# their assets pin `extract_dir` explicitly instead of relying on detection.
+#
+# NOT here on purpose: jq (tag is `jq-<version>`) and gping (tag is `gping-v<version>`).
+# brew-import derives the manifest version as strip_v(tag), which those two
+# tag schemes would resolve to a non-version string. Their unix sources are
+# pinned directly in the manifests; bump them by hand.
+# ---------------------------------------------------------------------------
+
+[[source]]
+name = "act"
+repo = "nektos/act"
+description = "Local Github actions runner."
+homepage = "https://github.com/nektos/act/"
+license = "MIT"
+bin = ["act"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "act_Linux_x86_64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "act_Linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "act_Darwin_x86_64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "act_Darwin_arm64.tar.gz"
+
+[[source]]
+name = "age"
+repo = "FiloSottile/age"
+description = "A simple, modern and secure encryption tool with small explicit keys, no config options, and UNIX-style composability."
+homepage = "https://age-encryption.org/"
+license = "BSD-3-Clause"
+bin = ["age", "age-inspect", "age-keygen", "age-plugin-batchpass"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "age-v{version}-linux-amd64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "age-v{version}-linux-arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "age-v{version}-darwin-amd64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "age-v{version}-darwin-arm64.tar.gz"
+
+[[source]]
+name = "atuin"
+repo = "atuinsh/atuin"
+description = "Shell history tool featuring advanced context-aware search, along with secure sync and backup."
+homepage = "https://atuin.sh"
+license = "MIT"
+bin = ["atuin"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "atuin-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "atuin-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "atuin-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "atuin-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "bottom"
+repo = "ClementTsang/bottom"
+description = "Graphical process/system monitor"
+homepage = "https://clementtsang.github.io/bottom/"
+license = "MIT"
+bin = ["btm"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "bottom_x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "bottom_aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "bottom_x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "bottom_aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "croc"
+repo = "schollz/croc"
+description = "Easily and securely send things from one computer to another."
+homepage = "https://schollz.com/software/croc6"
+license = "MIT"
+bin = ["croc"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "croc_v{version}_Linux-64bit.tar.gz"
+
+[source.assets.linux-arm64]
+file = "croc_v{version}_Linux-ARM64.tar.gz"
+
+[source.assets.macos-x64]
+file = "croc_v{version}_macOS-64bit.tar.gz"
+
+[source.assets.macos-arm64]
+file = "croc_v{version}_macOS-ARM64.tar.gz"
+
+[[source]]
+name = "delta"
+repo = "dandavison/delta"
+description = "A syntax-highlighter for git and diff output"
+homepage = "https://github.com/dandavison/delta"
+license = "MIT"
+bin = ["delta"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "delta-{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "delta-{version}-aarch64-unknown-linux-gnu.tar.gz"
+
+[source.assets.macos-arm64]
+file = "delta-{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "difftastic"
+repo = "Wilfred/difftastic"
+description = "A structural diff that understands syntax"
+homepage = "https://difftastic.wilfred.me.uk"
+license = "MIT"
+bin = ["difft"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "difft-x86_64-unknown-linux-gnu.tar.gz"
+
+[source.assets.linux-arm64]
+file = "difft-aarch64-unknown-linux-gnu.tar.gz"
+
+[source.assets.macos-x64]
+file = "difft-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "difft-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "dive"
+repo = "wagoodman/dive"
+description = "A tool for exploring each layer in a docker image."
+homepage = "https://github.com/wagoodman/dive/"
+license = "MIT"
+bin = ["dive"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "dive_{version}_linux_amd64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "dive_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "dive_{version}_darwin_amd64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "dive_{version}_darwin_arm64.tar.gz"
+
+[[source]]
+name = "dua"
+repo = "Byron/dua-cli"
+description = "Disk Usage Analyzer"
+homepage = "https://github.com/Byron/dua-cli"
+license = "MIT"
+bin = ["dua"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "dua-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "dua-v{version}-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "dua-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "dua-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "duf"
+repo = "muesli/duf"
+description = "Disk Usage/Free Utility - a better 'df' alternative"
+homepage = "https://github.com/muesli/duf"
+license = "MIT"
+bin = ["duf"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "duf_{version}_linux_x86_64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "duf_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "duf_{version}_Darwin_x86_64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "duf_{version}_Darwin_arm64.tar.gz"
+
+[[source]]
+name = "dust"
+repo = "bootandy/dust"
+description = "du(1) - File space usage analyzer"
+homepage = "https://github.com/bootandy/dust"
+license = "Apache-2.0"
+bin = ["dust"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "dust-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "dust-v{version}-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "dust-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "dust-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "fastfetch"
+repo = "fastfetch-cli/fastfetch"
+description = "A maintained, feature-rich and performance oriented, neofetch like system information tool"
+homepage = "https://github.com/fastfetch-cli/fastfetch"
+license = "MIT"
+bin = ["fastfetch", "flashfetch"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "fastfetch-linux-amd64.tar.gz"
+extract_dir = "fastfetch-linux-amd64/usr/bin"
+
+[source.assets.linux-arm64]
+file = "fastfetch-linux-aarch64.tar.gz"
+extract_dir = "fastfetch-linux-aarch64/usr/bin"
+
+[source.assets.macos-x64]
+file = "fastfetch-macos-amd64.tar.gz"
+extract_dir = "fastfetch-macos-amd64/usr/bin"
+
+[source.assets.macos-arm64]
+file = "fastfetch-macos-aarch64.tar.gz"
+extract_dir = "fastfetch-macos-aarch64/usr/bin"
+
+[[source]]
+name = "gh"
+repo = "cli/cli"
+description = "Official GitHub CLI"
+homepage = "https://cli.github.com"
+license = "MIT"
+bin = ["bin/gh"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "gh_{version}_linux_amd64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "gh_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "gh_{version}_macOS_amd64.zip"
+
+[source.assets.macos-arm64]
+file = "gh_{version}_macOS_arm64.zip"
+
+[[source]]
+name = "gitleaks"
+repo = "gitleaks/gitleaks"
+description = "SAST tool for detecting and preventing hardcoded secrets like passwords, api keys, and tokens in git repos"
+homepage = "https://gitleaks.io"
+license = "MIT"
+bin = ["gitleaks"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "gitleaks_{version}_linux_x64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "gitleaks_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "gitleaks_{version}_darwin_x64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "gitleaks_{version}_darwin_arm64.tar.gz"
+
+[[source]]
+name = "glow"
+repo = "charmbracelet/glow"
+description = "Markdown reader for the terminal with a TUI and encrypted cloud stash"
+homepage = "https://github.com/charmbracelet/glow"
+license = "MIT"
+bin = ["glow"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "glow_{version}_Linux_x86_64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "glow_{version}_Linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "glow_{version}_Darwin_x86_64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "glow_{version}_Darwin_arm64.tar.gz"
+
+[[source]]
+name = "grex"
+repo = "pemistahl/grex"
+description = "A regular expression generator"
+homepage = "https://github.com/pemistahl/grex"
+license = "Apache-2.0"
+bin = ["grex"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "grex-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "grex-v{version}-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "grex-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "grex-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "grype"
+repo = "anchore/grype"
+description = "A vulnerability scanner for container images and filesystems."
+homepage = "https://github.com/anchore/grype"
+license = "Apache-2.0"
+bin = ["grype"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "grype_{version}_linux_amd64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "grype_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "grype_{version}_darwin_amd64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "grype_{version}_darwin_arm64.tar.gz"
+
+[[source]]
+name = "hexyl"
+repo = "sharkdp/hexyl"
+description = "Hex viewer, which uses colored output to distinguish different categories of bytes."
+homepage = "https://github.com/sharkdp/hexyl"
+license = "Apache-2.0"
+bin = ["hexyl"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "hexyl-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "hexyl-v{version}-aarch64-unknown-linux-gnu.tar.gz"
+
+[source.assets.macos-x64]
+file = "hexyl-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "hexyl-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "hyperfine"
+repo = "sharkdp/hyperfine"
+description = "A command-line benchmarking tool"
+homepage = "https://github.com/sharkdp/hyperfine"
+license = "Apache-2.0|MIT"
+bin = ["hyperfine"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "hyperfine-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "hyperfine-v{version}-aarch64-unknown-linux-gnu.tar.gz"
+
+[source.assets.macos-x64]
+file = "hyperfine-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "hyperfine-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "just"
+repo = "casey/just"
+description = "A command runner written in rust"
+homepage = "https://just.systems"
+license = "CC0-1.0"
+bin = ["just"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "just-{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "just-{version}-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "just-{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "just-{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "lazydocker"
+repo = "jesseduffield/lazydocker"
+description = "Terminal UI for both docker and docker-compose"
+homepage = "https://github.com/jesseduffield/lazydocker"
+license = "MIT"
+bin = ["lazydocker"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "lazydocker_{version}_Linux_x86_64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "lazydocker_{version}_Linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "lazydocker_{version}_Darwin_x86_64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "lazydocker_{version}_Darwin_arm64.tar.gz"
+
+[[source]]
+name = "mise"
+repo = "jdx/mise"
+description = "Polyglot tool version manager and task runner"
+homepage = "https://mise.jdx.dev/"
+license = "MIT"
+bin = ["bin/mise"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "mise-v{version}-linux-x64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "mise-v{version}-linux-arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "mise-v{version}-macos-x64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "mise-v{version}-macos-arm64.tar.gz"
+
+[[source]]
+name = "mprocs"
+repo = "pvolok/mprocs"
+description = "Run multiple commands in parallel"
+homepage = "https://github.com/pvolok/dekit"
+license = "MIT"
+bin = ["mprocs"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "mprocs-{version}-linux-x86_64-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "mprocs-{version}-linux-aarch64-musl.tar.gz"
+
+[[source]]
+name = "ouch"
+repo = "ouch-org/ouch"
+description = "Painless compression and decompression for your terminal."
+homepage = "https://github.com/ouch-org/ouch"
+license = "MIT"
+bin = ["ouch"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "ouch-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "ouch-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "ouch-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "ouch-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "pandoc"
+repo = "jgm/pandoc"
+description = "Universal markup converter"
+homepage = "https://pandoc.org"
+license = "GPL-2.0-or-later"
+bin = ["pandoc"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "pandoc-{version}-linux-amd64.tar.gz"
+extract_dir = "pandoc-{version}/bin"
+
+[source.assets.linux-arm64]
+file = "pandoc-{version}-linux-arm64.tar.gz"
+extract_dir = "pandoc-{version}/bin"
+
+[source.assets.macos-x64]
+file = "pandoc-{version}-x86_64-macOS.zip"
+extract_dir = "pandoc-{version}-x86_64/bin"
+
+[source.assets.macos-arm64]
+file = "pandoc-{version}-arm64-macOS.zip"
+extract_dir = "pandoc-{version}-arm64/bin"
+
+[[source]]
+name = "procs"
+repo = "dalance/procs"
+description = "A modern replacement for ps(1)"
+homepage = "https://github.com/dalance/procs"
+license = "MIT"
+bin = ["procs"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "procs-v{version}-x86_64-linux.zip"
+
+[source.assets.linux-arm64]
+file = "procs-v{version}-aarch64-linux.zip"
+
+[source.assets.macos-x64]
+file = "procs-v{version}-x86_64-mac.zip"
+
+[source.assets.macos-arm64]
+file = "procs-v{version}-aarch64-mac.zip"
+
+[[source]]
+name = "sd"
+repo = "chmln/sd"
+description = "Intuitive find & replace CLI (sed alternative)"
+homepage = "https://github.com/chmln/sd"
+license = "MIT"
+bin = ["sd"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "sd-v{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "sd-v{version}-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "sd-v{version}-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "sd-v{version}-aarch64-apple-darwin.tar.gz"
+
+[[source]]
+name = "syft"
+repo = "anchore/syft"
+description = "A CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems."
+homepage = "https://github.com/anchore/syft"
+license = "Apache-2.0"
+bin = ["syft"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "syft_{version}_linux_amd64.tar.gz"
+
+[source.assets.linux-arm64]
+file = "syft_{version}_linux_arm64.tar.gz"
+
+[source.assets.macos-x64]
+file = "syft_{version}_darwin_amd64.tar.gz"
+
+[source.assets.macos-arm64]
+file = "syft_{version}_darwin_arm64.tar.gz"
+
+[[source]]
+name = "trivy"
+repo = "aquasecurity/trivy"
+description = "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+homepage = "https://trivy.dev"
+license = "Apache-2.0"
+bin = ["trivy"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "trivy_{version}_Linux-64bit.tar.gz"
+
+[source.assets.linux-arm64]
+file = "trivy_{version}_Linux-ARM64.tar.gz"
+
+[source.assets.macos-x64]
+file = "trivy_{version}_macOS-64bit.tar.gz"
+
+[source.assets.macos-arm64]
+file = "trivy_{version}_macOS-ARM64.tar.gz"
+
+[[source]]
+name = "xsv"
+repo = "BurntSushi/xsv"
+description = "A fast CSV command line toolkit written in Rust"
+homepage = "https://github.com/BurntSushi/xsv"
+license = "Unlicense"
+bin = ["xsv"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "xsv-{version}-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "xsv-{version}-x86_64-apple-darwin.tar.gz"
+
+[[source]]
+name = "yazi"
+repo = "sxyazi/yazi"
+description = "⚡️ Blazing fast terminal file manager written in Rust, based on async I/O."
+homepage = "https://github.com/sxyazi/yazi"
+license = "MIT"
+bin = ["ya", "yazi"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "yazi-x86_64-unknown-linux-musl.zip"
+
+[source.assets.linux-arm64]
+file = "yazi-aarch64-unknown-linux-musl.zip"
+
+[source.assets.macos-x64]
+file = "yazi-x86_64-apple-darwin.zip"
+
+[source.assets.macos-arm64]
+file = "yazi-aarch64-apple-darwin.zip"
+
+[[source]]
+name = "zellij"
+repo = "zellij-org/zellij"
+description = "A terminal workspace with batteries included"
+homepage = "https://zellij.dev/"
+license = "MIT"
+bin = ["zellij"]
+smoke_args = ["--version"]
+
+[source.assets.linux-x64]
+file = "zellij-x86_64-unknown-linux-musl.tar.gz"
+
+[source.assets.linux-arm64]
+file = "zellij-aarch64-unknown-linux-musl.tar.gz"
+
+[source.assets.macos-x64]
+file = "zellij-x86_64-apple-darwin.tar.gz"
+
+[source.assets.macos-arm64]
+file = "zellij-aarch64-apple-darwin.tar.gz"

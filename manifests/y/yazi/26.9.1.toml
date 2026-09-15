@@ -16,6 +16,26 @@ url = "https://github.com/sxyazi/yazi/releases/download/v26.9.1/yazi-aarch64-pc-
 sha256 = "4d50878132db344dc208f84d8db0799f00905aa36dec30f63beb826f7c760b12"
 extract_dir = "yazi-aarch64-pc-windows-msvc"
 
+[source.linux-x64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.9.1/yazi-x86_64-unknown-linux-musl.zip"
+sha256 = "9b9c39decccf8cb0ff53a7d637d38f8a79d93bbd0099f4ea9c619ef6bb392f5d"
+extract_dir = "yazi-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.9.1/yazi-aarch64-unknown-linux-musl.zip"
+sha256 = "dd569daecaae914185f295634109295ccd25c1b42b02eb89a74f651970024f2e"
+extract_dir = "yazi-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.9.1/yazi-x86_64-apple-darwin.zip"
+sha256 = "36e09036fcc446488d876d139a5e303f2443b82cfb6ac7dfcb43892d6fe6fa20"
+extract_dir = "yazi-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/sxyazi/yazi/releases/download/v26.9.1/yazi-aarch64-apple-darwin.zip"
+sha256 = "3921182a21cceb0a505e5dac578e1487d48104caa5f114e9f8adf40b5a7289a9"
+extract_dir = "yazi-aarch64-apple-darwin"
+
 [autoupdate]
 checkver = { github = "sxyazi/yazi" }
 url_template = { x64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sxyazi/yazi/releases/download/v$version/yazi-aarch64-pc-windows-msvc.zip" }

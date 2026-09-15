@@ -14,6 +14,26 @@ sha256 = "4e308550d9b4b6766cf90c7911b59063e5cc78c9da236a32e56d8882a71c2070"
 url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.68.1/fastfetch-windows-aarch64.7z"
 sha256 = "a2b81a6d29f484e0ce8faff4a172d140fa572006248cf28774b0c8be468480e3"
 
+[source.linux-x64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.68.1/fastfetch-linux-amd64.tar.gz"
+sha256 = "0c51ef6fa3e976eb5038fe0afda38629d3ca07947740bb0e3354c7c4f1238c0c"
+extract_dir = "fastfetch-linux-amd64/usr/bin"
+
+[source.linux-arm64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.68.1/fastfetch-linux-aarch64.tar.gz"
+sha256 = "d3369aa9c1bc77fd8bd7ba3be2ae2cdcece4a137620c48a9de58026779fdb7d4"
+extract_dir = "fastfetch-linux-aarch64/usr/bin"
+
+[source.macos-x64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.68.1/fastfetch-macos-amd64.tar.gz"
+sha256 = "1e9a6ba7474a41b3cc2bb1b923afcf40c749c25bd17dc1e62b64464e7445a534"
+extract_dir = "fastfetch-macos-amd64/usr/bin"
+
+[source.macos-arm64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.68.1/fastfetch-macos-aarch64.tar.gz"
+sha256 = "22426608dca945e0531af37054e21a2727aa7bb30179efaf44de7f59163be5fe"
+extract_dir = "fastfetch-macos-aarch64/usr/bin"
+
 [autoupdate]
 checkver = { github = "fastfetch-cli/fastfetch" }
 url_template = { x64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-amd64.7z", arm64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-aarch64.7z" }

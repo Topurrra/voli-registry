@@ -10,6 +10,22 @@ bin = ["syft.exe"]
 url = "https://github.com/anchore/syft/releases/download/v1.51.1/syft_1.51.1_windows_amd64.zip"
 sha256 = "5e4bc3e6b6344b4625de0f7aa5351aaa72856d11d78462972de0a101ee2c1c8f"
 
+[source.linux-x64]
+url = "https://github.com/anchore/syft/releases/download/v1.51.1/syft_1.51.1_linux_amd64.tar.gz"
+sha256 = "8fcb33017a0dc1058298c923c436d19dfa68ae93968e0b423248542e3afb9fc3"
+
+[source.linux-arm64]
+url = "https://github.com/anchore/syft/releases/download/v1.51.1/syft_1.51.1_linux_arm64.tar.gz"
+sha256 = "a7fd2b784e6664acd44719270574f6cd8c6864fc2b1700bf9099bd1cccda7d7f"
+
+[source.macos-x64]
+url = "https://github.com/anchore/syft/releases/download/v1.51.1/syft_1.51.1_darwin_amd64.tar.gz"
+sha256 = "0e186ce1d4351ec276126851ca3ff258ed070e93e73574ed64858d4fc2339867"
+
+[source.macos-arm64]
+url = "https://github.com/anchore/syft/releases/download/v1.51.1/syft_1.51.1_darwin_arm64.tar.gz"
+sha256 = "ac063af3b9874769deb7ea1e6d76841e68f9e3bb50cd654226fc977de65532c1"
+
 [autoupdate]
 checkver = { github = "anchore/syft" }
 url_template = { x64 = "https://github.com/anchore/syft/releases/download/v$version/syft_$version_windows_amd64.zip" }

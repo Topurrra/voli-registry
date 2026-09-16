@@ -1,0 +1,19 @@
+name = "copilot-cli"
+version = "1.0.85"
+description = "Brings the power of Copilot coding agent directly to your terminal"
+homepage = "https://github.com/features/copilot/cli"
+license = "GitHub Copilot CLI License"
+kind = "app"
+bin = ["copilot.exe"]
+
+[source.x64]
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-win32-x64.zip"
+sha256 = "07d1d258fa8fe806d24215b21f1978f9da3043b4e95ed935bf4629108d3eda18"
+
+[source.arm64]
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-win32-arm64.zip"
+sha256 = "7bec113635aad9caceaaab6b4d1486e6b4d66d8d2b823125f5af3415a904e746"
+
+[autoupdate]
+checkver = { github = "github/copilot-cli" }
+url_template = { x64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-x64.zip", arm64 = "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-arm64.zip" }

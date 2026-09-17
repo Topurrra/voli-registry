@@ -1,0 +1,15 @@
+name = "aws-nuke"
+version = "3.67.0"
+description = "Allows deleting all resources of an AWS account."
+homepage = "https://aws-nuke.ekristen.dev/"
+license = "MIT"
+kind = "app"
+bin = ["aws-nuke.exe"]
+
+[source.x64]
+url = "https://github.com/ekristen/aws-nuke/releases/download/v3.67.0/aws-nuke-v3.67.0-windows-amd64.zip"
+sha256 = "c1ede528b849e5968b5cc68335e06b7bfa188ba81478b52f0d1dcc3c459d3be7"
+
+[autoupdate]
+checkver = { github = "ekristen/aws-nuke" }
+url_template = { x64 = "https://github.com/ekristen/aws-nuke/releases/download/v$version/aws-nuke-v$version-windows-amd64.zip" }

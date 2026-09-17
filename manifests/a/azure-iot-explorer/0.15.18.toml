@@ -1,0 +1,17 @@
+name = "azure-iot-explorer"
+version = "0.15.18"
+description = "Azure IoT devices manager"
+homepage = "https://github.com/Azure/azure-iot-explorer"
+license = "MIT"
+kind = "app"
+extract_dir = "azure-iot-explorer"
+shortcuts = [{ target = "Azure IoT Explorer Preview.exe", name = "Azure IoT explorer Preview" }]
+
+[source.x64]
+url = "https://github.com/Azure/azure-iot-explorer/releases/download/v0.15.18/Azure.IoT.Explorer.preview.0.15.18.msi"
+sha256 = "b1e10adda08e8263ad71ff8002ccd4b79190cedc1f00c70a15b7ec3777838358"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "Azure/azure-iot-explorer" }
+url_template = { x64 = "https://github.com/Azure/azure-iot-explorer/releases/download/v$version/Azure.IoT.Explorer.preview.$version.msi" }

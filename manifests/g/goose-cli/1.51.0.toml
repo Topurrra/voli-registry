@@ -1,0 +1,16 @@
+name = "goose-cli"
+version = "1.51.0"
+description = "An open-source, extensible AI agent that goes beyond code suggestions."
+homepage = "https://block.github.io/goose/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "goose-package"
+bin = ["goose.exe"]
+
+[source.x64]
+url = "https://github.com/aaif-goose/goose/releases/download/v1.51.0/goose-x86_64-pc-windows-msvc.zip"
+sha256 = "55af3e3c574e2de4d306626d0e71fcf6f730b02e53ffee497a9dba6df5357c4f"
+
+[autoupdate]
+checkver = { github = "aaif-goose/goose" }
+url_template = { x64 = "https://github.com/aaif-goose/goose/releases/download/v$version/goose-x86_64-pc-windows-msvc.zip" }

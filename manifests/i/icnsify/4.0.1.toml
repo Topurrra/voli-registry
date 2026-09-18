@@ -1,0 +1,19 @@
+name = "icnsify"
+version = "4.0.1"
+description = "CLI to easily convert .jpg and .png to .icns and vice versa"
+homepage = "https://github.com/JackMordaunt/icns"
+license = "MIT"
+kind = "app"
+bin = ["icnsify.exe"]
+
+[source.x64]
+url = "https://github.com/JackMordaunt/icns/releases/download/v4.0.1/icns_4.0.1_Windows_amd64.zip"
+sha256 = "8102277ecbcbc6e26e9508fe880334a33b2a69d6bec0a3606a4fd6b304db445c"
+
+[source.arm64]
+url = "https://github.com/JackMordaunt/icns/releases/download/v4.0.1/icns_4.0.1_Windows_arm64.zip"
+sha256 = "34f3ce26db0e6abe9b16b98004103b21df3bed1635eb2c33ea7444f8d5cfc866"
+
+[autoupdate]
+checkver = { github = "JackMordaunt/icns" }
+url_template = { x64 = "https://github.com/JackMordaunt/icns/releases/download/v$version/icns_$version_Windows_amd64.zip", arm64 = "https://github.com/JackMordaunt/icns/releases/download/v$version/icns_$version_Windows_arm64.zip" }

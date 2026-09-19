@@ -1,0 +1,19 @@
+name = "auth0"
+version = "1.36.0"
+description = "Build, manage and test your Auth0 integrations from the command-line."
+homepage = "https://auth0.github.io/auth0-cli"
+license = "MIT"
+kind = "app"
+bin = ["auth0.exe"]
+
+[source.x64]
+url = "https://github.com/auth0/auth0-cli/releases/download/v1.36.0/auth0-cli_1.36.0_Windows_x86_64.zip"
+sha256 = "aa430586d6c42607722238016fd7c4dbe631b402394b0aa78edbd19e2016c24b"
+
+[source.arm64]
+url = "https://github.com/auth0/auth0-cli/releases/download/v1.36.0/auth0-cli_1.36.0_Windows_arm64.zip"
+sha256 = "339f74bbd4bf1e1fc0d754eba64c520ee513fb5523c0dc58e5e7e5b4908b5ba1"
+
+[autoupdate]
+checkver = { github = "auth0/auth0-cli" }
+url_template = { x64 = "https://github.com/auth0/auth0-cli/releases/download/v$version/auth0-cli_$version_Windows_x86_64.zip", arm64 = "https://github.com/auth0/auth0-cli/releases/download/v$version/auth0-cli_$version_Windows_arm64.zip" }

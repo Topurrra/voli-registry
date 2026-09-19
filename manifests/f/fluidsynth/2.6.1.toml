@@ -1,0 +1,17 @@
+name = "fluidsynth"
+version = "2.6.1"
+description = "Software synthesizer based on the SoundFont 2 specifications."
+homepage = "https://www.fluidsynth.org"
+license = "LGPL-2.1-only"
+kind = "app"
+extract_dir = "fluidsynth-v2.6.1-win10-x64-cpp11"
+
+[source.x64]
+url = "https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.1/fluidsynth-v2.6.1-win10-x64-cpp11.zip"
+sha256 = "fab7a2e4b85675b66970f97a39bbc239729c5e0f237198b5922a6a73cbc8677c"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/FluidSynth/fluidsynth/releases\",\"jsonpath\":\"$..assets[?(@.name =~ /win(?!.+glib).+\\\\.zip$/i)].browser_download_url\",\"regex\":\"(?i)download/(?<tag>v?([\\\\d.]+))/(?<prefix>[^\\\"]+)-x(?:64|86)(?<suffix>-[^\\\"]+)?\\\\.zip\"}"

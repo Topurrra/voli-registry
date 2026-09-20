@@ -1,0 +1,19 @@
+name = "lego"
+version = "5.5.1"
+description = "Let's Encrypt/ACME client and library written in Go"
+homepage = "https://github.com/go-acme/lego"
+license = "MIT"
+kind = "app"
+bin = ["lego.exe"]
+
+[source.x64]
+url = "https://github.com/go-acme/lego/releases/download/v5.5.1/lego_v5.5.1_windows_amd64.zip"
+sha256 = "20a9758f9f09898031fa4ea6d950d7f7e4659ccd3ab816046ee95334ed826e28"
+
+[source.arm64]
+url = "https://github.com/go-acme/lego/releases/download/v5.5.1/lego_v5.5.1_windows_arm64.zip"
+sha256 = "e33646515bff3abb354033cbbeb13cedeb1082aa31c6ae7a4d9b9e470ac61473"
+
+[autoupdate]
+checkver = { github = "go-acme/lego" }
+url_template = { x64 = "https://github.com/go-acme/lego/releases/download/v$version/lego_v$version_windows_amd64.zip", arm64 = "https://github.com/go-acme/lego/releases/download/v$version/lego_v$version_windows_arm64.zip" }

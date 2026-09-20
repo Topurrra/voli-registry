@@ -1,0 +1,19 @@
+name = "kubecolor"
+version = "0.8.0"
+description = "Wraps kubectl with colorful output"
+homepage = "https://github.com/kubecolor/kubecolor"
+license = "MIT"
+kind = "app"
+bin = ["kubecolor.exe"]
+
+[source.x64]
+url = "https://github.com/kubecolor/kubecolor/releases/download/v0.8.0/kubecolor_0.8.0_windows_amd64.zip"
+sha256 = "64e1b12fc56662bf4bb67a760a396b0d7306c30774a52714e26c9ac075cef20b"
+
+[source.arm64]
+url = "https://github.com/kubecolor/kubecolor/releases/download/v0.8.0/kubecolor_0.8.0_windows_arm64.zip"
+sha256 = "f702c67dea523461619cbf5e61e413d62a2f4416f019dcc234433c32a332187a"
+
+[autoupdate]
+checkver = { github = "kubecolor/kubecolor" }
+url_template = { x64 = "https://github.com/kubecolor/kubecolor/releases/download/v$version/kubecolor_$version_windows_amd64.zip", arm64 = "https://github.com/kubecolor/kubecolor/releases/download/v$version/kubecolor_$version_windows_arm64.zip" }

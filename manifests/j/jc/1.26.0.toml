@@ -1,0 +1,16 @@
+name = "jc"
+version = "1.26.0"
+description = "Convert the output of CLI, file-types, and common strings to JSON, YAML, or Dictionaries"
+homepage = "https://kellyjonbrazil.github.io/jc/"
+license = "MIT"
+kind = "app"
+extract_dir = "jc-1.26.0-windows"
+bin = ["jc.exe"]
+
+[source.x64]
+url = "https://github.com/kellyjonbrazil/jc/releases/download/v1.26.0/jc-1.26.0-windows.zip"
+sha256 = "ac973ce376e8bba151701ebc04713dd3f3542814055fdea8b2485aef0775d6c4"
+
+[autoupdate]
+checkver = { github = "kellyjonbrazil/jc" }
+url_template = { x64 = "https://github.com/kellyjonbrazil/jc/releases/download/v$version/jc-$version-windows.zip" }

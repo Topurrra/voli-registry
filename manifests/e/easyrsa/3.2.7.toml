@@ -1,0 +1,17 @@
+name = "easyrsa"
+version = "3.2.7"
+description = "A CLI utility to build and manage a PKI CA"
+homepage = "https://openvpn.net/easyrsa.html"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "EasyRSA-3.2.7"
+bin = [{ name = "easyrsa", path = "bin\\sh.exe", args = "$dir\\easyrsa-wrapper.sh" }]
+persist = ["keys"]
+
+[source.x64]
+url = "https://github.com/OpenVPN/easy-rsa/releases/download/v3.2.7/EasyRSA-3.2.7-win64.zip"
+sha256 = "2f20c7523fe37df91c578c35e7fe83301f3687792bb9bd1000d0e407ef70d368"
+
+[autoupdate]
+checkver = { github = "OpenVPN/easy-rsa" }
+url_template = { x64 = "https://github.com/OpenVPN/easy-rsa/releases/download/v$version/EasyRSA-$version-win64.zip" }

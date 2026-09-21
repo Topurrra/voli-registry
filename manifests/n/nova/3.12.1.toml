@@ -1,0 +1,15 @@
+name = "nova"
+version = "3.12.1"
+description = "Utility to scan your Kubernetes cluster for installed Helm charts, then cross-checks them against all known Helm repositories. If it finds an updated version of the chart you're using, or notices your current version is deprecated, it will let you know."
+homepage = "https://nova.docs.fairwinds.com/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["nova.exe"]
+
+[source.x64]
+url = "https://github.com/FairwindsOps/nova/releases/download/v3.12.1/nova_3.12.1_windows_amd64.tar.gz"
+sha256 = "349057f5556f8c2fc041e5771e24f5c04d5c80a08e88007624524c42878c954a"
+
+[autoupdate]
+checkver = { github = "FairwindsOps/nova" }
+url_template = { x64 = "https://github.com/FairwindsOps/nova/releases/download/v$version/nova_$version_windows_amd64.tar.gz" }

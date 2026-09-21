@@ -14,22 +14,6 @@ sha256 = "b563ae76e22ce28c7080a8b628cfabf6fa86f9ee114a0f5697bc2ca26f9ce1d7"
 url = "https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-aarch64-pc-windows-msvc.zip"
 sha256 = "a1e0004804cef829e282fff1b5590ac26f2b63df5cba2633d7325a15a7200c6d"
 
-[source.linux-x64]
-url = "https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-x86_64-unknown-linux-gnu.tar.gz"
-sha256 = "2997d2bbe620534edbd79b0049f00ce84eef3fedb15c7822456d58e38d8b05c9"
-
-[source.linux-arm64]
-url = "https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-aarch64-unknown-linux-gnu.tar.gz"
-sha256 = "e729684907d67d1a1727a08f443877e19e40eeb2efebcd95c1b8f7fee4284e8e"
-
-[source.macos-x64]
-url = "https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-x86_64-apple-darwin.tar.gz"
-sha256 = "c180541ef7963aad4f75d4ef99aed2bf7f5c132d25a3b8152b20309be1fba82f"
-
-[source.macos-arm64]
-url = "https://github.com/Wilfred/difftastic/releases/download/0.70.0/difft-aarch64-apple-darwin.tar.gz"
-sha256 = "1921267221fcb5779d30c4dcc0b3b4620abbe851ffd5596a4715576581518f51"
-
 [autoupdate]
 checkver = { github = "Wilfred/difftastic" }
 url_template = { x64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-aarch64-pc-windows-msvc.zip" }

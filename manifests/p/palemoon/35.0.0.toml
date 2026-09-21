@@ -1,0 +1,17 @@
+name = "palemoon"
+version = "35.0.0"
+description = "Mozilla-derived web browser focusing on efficiency and customization"
+homepage = "https://www.palemoon.org"
+license = "MPL-2.0"
+kind = "app"
+bin = [{ name = "palemoon", path = "Palemoon-Portable.exe" }]
+shortcuts = [{ target = "Palemoon-Portable.exe", name = "Pale Moon" }]
+persist = ["Backups", "Downloads", "User"]
+
+[source.x64]
+url = "https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.0.win64.exe#/palemoon.7z"
+sha256 = "0aac2d7d0c6617df58cbf2d2b81aed832794b8420caaa1be76a657e6d6b2550e"
+
+[autoupdate]
+checkver = { url = "https://www.palemoon.org/download.shtml", regex = "Hashes for release ([\\d.]+)" }
+url_template = { x64 = "https://rm-eu.palemoon.org/release/Palemoon-Portable-$version.win64.exe#/palemoon.7z" }

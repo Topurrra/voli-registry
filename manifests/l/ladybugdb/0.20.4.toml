@@ -10,6 +10,13 @@ bin = ["lbug.exe"]
 url = "https://github.com/LadybugDB/ladybug/releases/download/v0.20.4/lbug_cli-windows-x86_64.zip"
 sha256 = "09ac3289ba1590686cab35ff12680a06e75ec74240bf90bd3215abe54e4b37d1"
 
+[source.arm64]
+url = "https://github.com/LadybugDB/ladybug/releases/download/v0.20.4/lbug_cli-windows-arm64.zip"
+sha256 = "945c978dec6f60d51eea5fc8d31dfd24710a598a5c09fcc523975d8b9f677bbd"
+
+[depends]
+openssl-lts = "*"
+
 [autoupdate]
 checkver = { github = "LadybugDB/ladybug" }
-url_template = { x64 = "https://github.com/LadybugDB/ladybug/releases/download/v$version/lbug_cli-windows-x86_64.zip" }
+url_template = { x64 = "https://github.com/LadybugDB/ladybug/releases/download/v$version/lbug_cli-windows-x86_64.zip", arm64 = "https://github.com/LadybugDB/ladybug/releases/download/v$version/lbug_cli-windows-arm64.zip" }

@@ -1,0 +1,15 @@
+name = "vals"
+version = "0.47.0"
+description = "Helm-like configuration values loader with support for various sources"
+homepage = "https://github.com/helmfile/vals"
+license = "Apache-2.0"
+kind = "app"
+bin = ["vals.exe"]
+
+[source.x64]
+url = "https://github.com/helmfile/vals/releases/download/v0.47.0/vals_0.47.0_windows_amd64.tar.gz"
+sha256 = "bdb7e5e08d73637ccb57083f42961b4385e4a3270891f812dc53f8d1807847c8"
+
+[autoupdate]
+checkver = { github = "helmfile/vals" }
+url_template = { x64 = "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz" }

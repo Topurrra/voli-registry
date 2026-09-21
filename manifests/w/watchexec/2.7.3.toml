@@ -1,0 +1,16 @@
+name = "watchexec"
+version = "2.7.3"
+description = "Execute commands in response to file modifications"
+homepage = "https://github.com/watchexec/watchexec"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "watchexec-2.7.3-x86_64-pc-windows-msvc"
+bin = ["watchexec.exe"]
+
+[source.x64]
+url = "https://github.com/watchexec/watchexec/releases/download/v2.7.3/watchexec-2.7.3-x86_64-pc-windows-msvc.zip"
+sha256 = "c20d195ffe0a9f90bc3067db2cc0d991c33aaf1591b20531f4aa8999a20bce67"
+
+[autoupdate]
+checkver = { github = "watchexec/watchexec" }
+url_template = { x64 = "https://github.com/watchexec/watchexec/releases/download/v$version/watchexec-$version-x86_64-pc-windows-msvc.zip" }

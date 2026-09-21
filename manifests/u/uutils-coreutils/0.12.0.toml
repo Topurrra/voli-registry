@@ -1,0 +1,20 @@
+name = "uutils-coreutils"
+version = "0.12.0"
+description = "A cross-platform Rust reimplementation of GNU coreutils (binaries compiled with MSVC), with some options or behaviors potentially differing from GNU coreutils."
+homepage = "https://uutils.github.io/coreutils/"
+license = "MIT"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/uutils/coreutils/releases/download/0.12.0/coreutils-0.12.0-x86_64-pc-windows-msvc.zip"
+sha256 = "45d6760c136ef42cdba1e2dbb492b0858be98099d6c7fb3e300a3adcfbc54cfe"
+extract_dir = "coreutils-0.12.0-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/uutils/coreutils/releases/download/0.12.0/coreutils-0.12.0-aarch64-pc-windows-msvc.zip"
+sha256 = "3ee5621c16ccb290ac3a419613afc14879f1e81db7cdb21a0034e32c71eec565"
+extract_dir = "coreutils-0.12.0-aarch64-pc-windows-msvc"
+
+[autoupdate]
+checkver = { github = "uutils/coreutils" }
+url_template = { x64 = "https://github.com/uutils/coreutils/releases/download/$version/coreutils-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/uutils/coreutils/releases/download/$version/coreutils-$version-aarch64-pc-windows-msvc.zip" }

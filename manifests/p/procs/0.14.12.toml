@@ -10,22 +10,6 @@ bin = ["procs.exe"]
 url = "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-x86_64-windows.zip"
 sha256 = "4928c399ae78ee82f99139a5629077b8d90a58599d834584dd4e613cb60c83d0"
 
-[source.linux-x64]
-url = "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-x86_64-linux.zip"
-sha256 = "81964faf9d5cd0e9f399d5d0954fb6fe4d4d9f7d3cbec4507633df5a45b11713"
-
-[source.linux-arm64]
-url = "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-aarch64-linux.zip"
-sha256 = "74b4f82acc6fe553cbd5af20ba0baac420b42bef9bb0cbb38fef14b8317d9f91"
-
-[source.macos-x64]
-url = "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-x86_64-mac.zip"
-sha256 = "2c276f40c99051984942a5b135b74ce4bc9184984a1543dddfcf275bde71d8d4"
-
-[source.macos-arm64]
-url = "https://github.com/dalance/procs/releases/download/v0.14.12/procs-v0.14.12-aarch64-mac.zip"
-sha256 = "20c7a33426ed7a43c3e13a48f2d1866ecc979a8ad46733f86ddc78ab7f12d49c"
-
 [autoupdate]
 checkver = { github = "dalance/procs" }
 url_template = { x64 = "https://github.com/dalance/procs/releases/download/v$version/procs-v$version-x86_64-windows.zip" }

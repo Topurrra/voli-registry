@@ -1,0 +1,16 @@
+name = "workrave"
+version = "1.11.1"
+description = "Recovery and prevention of Repetitive Strain Injury (RSI)"
+homepage = "https://workrave.org/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "Workrave"
+shortcuts = [{ target = "bin\\workrave.exe", name = "Workrave" }]
+
+[source.x64]
+url = "https://github.com/rcaelers/workrave/releases/download/v1_11_1/workrave-windows-1.11.1-portable.zip"
+sha256 = "5c3c96eb722b96a1abc8ea1c87aea0df3cb2bfcbeabf53be9af8eabf1ab2d402"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/rcaelers/workrave/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"workrave-windows-([\\\\d.]+)-portable\\\\.zip\"}"
+url_template = { x64 = "https://github.com/rcaelers/workrave/releases/download/v$underscoreVersion/workrave-windows-$version-portable.zip" }

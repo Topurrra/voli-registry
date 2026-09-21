@@ -14,22 +14,6 @@ sha256 = "503934be81f847d9ddb1b739834217480633435ad16515dd199e372c0b2e1afc"
 url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_Windows_arm64.zip"
 sha256 = "6aa91380c7bd5ba935bab38bb826680255a0d9569614de7b0d149cea471ccf4b"
 
-[source.linux-x64]
-url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_x86_64.tar.gz"
-sha256 = "5add851e7062c5e56939abb664705e4d14fa2d06289490aff31d51f153832de7"
-
-[source.linux-arm64]
-url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_arm64.tar.gz"
-sha256 = "22ea0ad29f6610bf443aa351e600de97e47a9b380ef58316606a84bb8f595216"
-
-[source.macos-x64]
-url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_Darwin_x86_64.tar.gz"
-sha256 = "e3384519b0055c904b7352b55cd81bd101f5dd94dab1195a72880bddca7c2aaf"
-
-[source.macos-arm64]
-url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_Darwin_arm64.tar.gz"
-sha256 = "512ba0ff3585bb8c65841de557a4c4b8712332db005dc952fa98d373a05d01df"
-
 [autoupdate]
 checkver = { github = "muesli/duf" }
 url_template = { x64 = "https://github.com/muesli/duf/releases/download/v$version/duf_$version_Windows_x86_64.zip", arm64 = "https://github.com/muesli/duf/releases/download/v$version/duf_$version_Windows_arm64.zip" }

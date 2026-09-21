@@ -1,0 +1,16 @@
+name = "winbox"
+version = "4.4"
+description = "A small utility that allows administration of MikroTik RouterOS using a fast and simple GUI."
+homepage = "https://mikrotik.com/winbox"
+license = "Freeware"
+kind = "app"
+bin = [{ name = "winbox", path = "WinBox.exe" }]
+shortcuts = [{ target = "WinBox.exe", name = "RouterOS WinBox" }]
+
+[source.x64]
+url = "https://download.mikrotik.com/routeros/winbox/4.4/WinBox_Windows.zip"
+sha256 = "dcbd052c4c90808ea8eb416a40352930e1fd19a17d0e5e87ef27419c42844353"
+
+[autoupdate]
+checkver = { url = "https://mikrotik.com/download/winbox", regex = ">v([\\d.]+)<" }
+url_template = { x64 = "https://download.mikrotik.com/routeros/winbox/$version/WinBox_Windows.zip" }

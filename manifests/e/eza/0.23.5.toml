@@ -10,14 +10,6 @@ bin = ["eza.exe", { name = "exa", path = "eza.exe" }]
 url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x86_64-pc-windows-gnu.zip"
 sha256 = "c830638c844a5b89d39ba662b5549903a71fa539018e813880f5b8afa77bac2e"
 
-[source.linux-x64]
-url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza_x86_64-unknown-linux-musl.tar.gz"
-sha256 = "e06eebab74b73d6b7d51a796a353824b001bea82df077706382e100815d28904"
-
-[source.linux-arm64]
-url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza_aarch64-unknown-linux-gnu.tar.gz"
-sha256 = "40b87ae8628aa2ff0f0d2dc24ab52f689631366385c3da630bae745671fd71ec"
-
 [autoupdate]
 checkver = { github = "eza-community/eza" }
 url_template = { x64 = "https://github.com/eza-community/eza/releases/download/v$version/eza.exe_x86_64-pc-windows-gnu.zip" }

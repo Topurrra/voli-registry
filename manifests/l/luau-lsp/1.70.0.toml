@@ -1,0 +1,15 @@
+name = "luau-lsp"
+version = "1.70.0"
+description = "Language Server Implementation for Luau"
+homepage = "https://github.com/JohnnyMorganz/luau-lsp"
+license = "MIT"
+kind = "app"
+bin = ["luau-lsp.exe"]
+
+[source.x64]
+url = "https://github.com/JohnnyMorganz/luau-lsp/releases/download/1.70.0/luau-lsp-win64.zip"
+sha256 = "26e6d32069cb5dd74f06bbdc2f3033d3ba66da76d3dbdfc3dcc2b085ddaa274a"
+
+[autoupdate]
+checkver = { github = "JohnnyMorganz/luau-lsp" }
+url_template = { x64 = "https://github.com/JohnnyMorganz/luau-lsp/releases/download/$version/luau-lsp-win64.zip" }

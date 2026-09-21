@@ -1,0 +1,15 @@
+name = "fontcreator"
+version = "16.0.0.3082"
+description = "the most popular font editor"
+homepage = "https://www.high-logic.com/font-editor/fontcreator"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "FontCreator.exe", name = "FontCreator" }]
+
+[source.x64]
+url = "https://www.high-logic.com/FontCreatorSetup-x64.exe"
+sha256 = "8f71ffcaf2edfe5d3c050d74d056edcf5995ca6d0f868871e11801ccf46adaca"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.high-logic.com/font-editor/fontcreator/changelog", regex = "FontCreator ([\\d.]+) (?!\\[expected soon\\])" }

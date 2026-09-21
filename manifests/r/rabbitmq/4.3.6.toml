@@ -1,0 +1,22 @@
+name = "rabbitmq"
+version = "4.3.6"
+description = "Message-broker"
+homepage = "https://www.rabbitmq.com"
+license = "MPL-2.0"
+kind = "app"
+extract_dir = "rabbitmq_server-4.3.6"
+bin = ["sbin\\rabbitmqctl.bat", "sbin\\rabbitmq-defaults.bat", "sbin\\rabbitmq-diagnostics.bat", "sbin\\rabbitmq-env.bat", "sbin\\rabbitmq-plugins.bat", "sbin\\rabbitmq-queues.bat", "sbin\\rabbitmq-server.bat", "sbin\\rabbitmq-service.bat", "sbin\\rabbitmq-upgrade.bat"]
+
+[source.x64]
+url = "https://github.com/rabbitmq/rabbitmq-server/releases/download/v4.3.6/rabbitmq-server-windows-4.3.6.zip"
+sha256 = "48161b084f1257edc112b24fccda378cc3e83c8e4b94984801cd6651817981f1"
+
+[env]
+RABBITMQ_SERVER = "{dir}"
+
+[depends]
+erlang = "*"
+
+[autoupdate]
+checkver = { url = "https://www.rabbitmq.com/download.html", regex = "> of RabbitMQ is <strong>([\\d.]+)</" }
+url_template = "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$version/rabbitmq-server-windows-$version.zip"

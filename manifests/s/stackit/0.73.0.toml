@@ -1,0 +1,19 @@
+name = "stackit"
+version = "0.73.0"
+description = "STACKIT Command Line Interface (CLI) to manage STACKIT resources."
+homepage = "https://stackit.com/en"
+license = "Apache-2.0"
+kind = "app"
+bin = ["stackit.exe"]
+
+[source.x64]
+url = "https://github.com/stackitcloud/stackit-cli/releases/download/v0.73.0/stackit-cli_0.73.0_windows_amd64.zip"
+sha256 = "ba3b911226700b9feb44a3955247b70caa0c45d4ea4a5b7fca33378413e04753"
+
+[source.arm64]
+url = "https://github.com/stackitcloud/stackit-cli/releases/download/v0.73.0/stackit-cli_0.73.0_windows_arm64.zip"
+sha256 = "3a63b446f1278c0a7f47f40f354b97d7fe8d94c387d05cffaad8ef23b7803cd8"
+
+[autoupdate]
+checkver = { github = "stackitcloud/stackit-cli" }
+url_template = { x64 = "https://github.com/stackitcloud/stackit-cli/releases/download/v$version/stackit-cli_$version_windows_amd64.zip", arm64 = "https://github.com/stackitcloud/stackit-cli/releases/download/v$version/stackit-cli_$version_windows_arm64.zip" }

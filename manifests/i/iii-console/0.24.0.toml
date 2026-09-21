@@ -1,0 +1,19 @@
+name = "iii-console"
+version = "0.24.0"
+description = "Effortlessly compose, extend, and observe every service in real-time. (Console)"
+homepage = "https://iii.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["iii-console.exe"]
+
+[source.x64]
+url = "https://github.com/iii-hq/iii/releases/download/iii/v0.24.0/iii-console-x86_64-pc-windows-msvc.zip"
+sha256 = "11feb4f73ef451d18d626aa847e4cb98726a0c05367974c055612c2eaec844b6"
+
+[source.arm64]
+url = "https://github.com/iii-hq/iii/releases/download/iii/v0.24.0/iii-console-aarch64-pc-windows-msvc.zip"
+sha256 = "9a0daec0314c9c46dd56668d8af505743db82b51f733242077553b7d19eed709"
+
+[autoupdate]
+checkver = { github = "iii-hq/iii" }
+url_template = { x64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-console-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/iii-hq/iii/releases/download/iii/v$version/iii-console-aarch64-pc-windows-msvc.zip" }

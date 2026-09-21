@@ -1,0 +1,15 @@
+name = "hatch"
+version = "1.18.1"
+description = "A modern, extensible Python project manager."
+homepage = "https://hatch.pypa.io"
+license = "MIT"
+kind = "app"
+bin = ["hatch.exe"]
+
+[source.x64]
+url = "https://github.com/pypa/hatch/releases/download/hatch-v1.18.1/hatch-x86_64-pc-windows-msvc.zip"
+sha256 = "c4b2a3bd8d01a59e09502f6f1156f56824cfc12b3e49700a1855a02be918089c"
+
+[autoupdate]
+checkver = { github = "pypa/hatch" }
+url_template = { x64 = "https://github.com/pypa/hatch/releases/download/hatch-v$version/hatch-x86_64-pc-windows-msvc.zip" }

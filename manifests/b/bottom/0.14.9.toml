@@ -14,22 +14,6 @@ sha256 = "01660721b0fdc72b191f2b27b78dc9a3087aeb7b3fad4a890c53870089d6b500"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_aarch64-pc-windows-msvc.zip"
 sha256 = "fabe9fc4850d12917150295900119eaa5455724658d1d709e013cacdc0390349"
 
-[source.linux-x64]
-url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_x86_64-unknown-linux-musl.tar.gz"
-sha256 = "b4bee5b193e7d3f6e090ac14f0ca15acec2e7fe4ef64988e0bfc492e16c28c9a"
-
-[source.linux-arm64]
-url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_aarch64-unknown-linux-musl.tar.gz"
-sha256 = "7b6d532f6a6af356970f4e8d7d3a792590485aa4a53ebf038e10d20366125533"
-
-[source.macos-x64]
-url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_x86_64-apple-darwin.tar.gz"
-sha256 = "d0b1d446963ee3c4dfbfe2efd9614cfdc77f39e8268bf8cc2e0b5b6cea982774"
-
-[source.macos-arm64]
-url = "https://github.com/ClementTsang/bottom/releases/download/0.14.9/bottom_aarch64-apple-darwin.tar.gz"
-sha256 = "28358e19a3d62b3778fc0d1778b0028a682059145c9ac38ac5076bf124d77714"
-
 [autoupdate]
 checkver = { github = "ClementTsang/bottom" }
 url_template = { x64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/ClementTsang/bottom/releases/download/$version/bottom_aarch64-pc-windows-msvc.zip" }

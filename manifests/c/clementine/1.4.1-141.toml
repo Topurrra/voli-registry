@@ -1,0 +1,15 @@
+name = "clementine"
+version = "1.4.1-141"
+description = "A modern music player and library organizer."
+homepage = "https://www.clementine-player.org/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["clementine.exe"]
+shortcuts = [{ target = "clementine.exe", name = "Clementine" }]
+
+[source.x64]
+url = "https://github.com/clementine-player/Clementine/releases/download/1.4.1-141-g02b0d960b/ClementineSetup-1.4.1-141-g02b0d960b.exe#/dl.7z"
+sha256 = "607959b7132ed4db7346eb27d6d1e390de2115d31b9dc1eeccb6f3073ef70d20"
+
+[autoupdate]
+checkver = { github = "clementine-player/Clementine" }

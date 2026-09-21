@@ -1,0 +1,15 @@
+name = "sslscan"
+version = "2.2.3"
+description = "Tests SSL/TLS enabled services to discover supported cipher suites"
+homepage = "https://github.com/rbsec/sslscan"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["sslscan.exe"]
+
+[source.x64]
+url = "https://github.com/rbsec/sslscan/releases/download/2.2.3/sslscan-2.2.3.zip"
+sha256 = "5b34352fd4ece318a37701b9867d9c948e374cdde2bbea13b9f9926b2163eeb5"
+
+[autoupdate]
+checkver = { github = "rbsec/sslscan" }
+url_template = { x64 = "https://github.com/rbsec/sslscan/releases/download/$version/sslscan-$version.zip" }

@@ -9,7 +9,7 @@ bin = ["chronoctl.exe", "chronograf.exe"]
 
 [source.x64]
 url = "https://dl.influxdata.com/chronograf/releases/chronograf-1.11.5_windows_amd64.zip"
-sha256 = "18c3978439327f7c5e287a3254f48d7a4c918d60eca42479eb5206239c584633"
+sha256 = "df5a9ed6d07886b288313798e9e2e874a29e77742a532459806ade61cc1683d7"
 
 [autoupdate]
 checkver = { url = "https://portal.influxdata.com/downloads", regex = ">Chronograf v([\\d.]+)<" }

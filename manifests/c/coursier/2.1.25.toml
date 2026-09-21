@@ -1,0 +1,21 @@
+name = "coursier"
+version = "2.1.25"
+description = "Pure Scala Artifact Fetching"
+homepage = "https://github.com/coursier/coursier"
+license = "Apache-2.0"
+kind = "app"
+bin = ["coursier.jar"]
+persist = ["cache", "bin"]
+
+[source.x64]
+url = "https://github.com/coursier/coursier/releases/download/v2.1.25/coursier#/coursier.jar"
+sha256 = "8be36418507c94f652a8631a8f79712b4a88f99c974fdb0046c911a7d131e719"
+
+[env]
+COURSIER_BIN_DIR = "{dir}\\bin"
+COURSIER_CACHE = "{dir}\\cache"
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "coursier/coursier" }
+url_template = "https://github.com/coursier/coursier/releases/download/v$version/coursier#/coursier.jar"

@@ -1,0 +1,15 @@
+name = "vrcx"
+version = "2026.09.16"
+description = "Friendship management tool for VRChat"
+homepage = "https://github.com/vrcx-team/VRCX"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "VRCX.exe", name = "VRCX" }]
+
+[source.x64]
+url = "https://github.com/vrcx-team/VRCX/releases/download/v2026.09.16/VRCX_2026.09.16.zip"
+sha256 = "aa57534030a53d861c24febd7a9c1ed8bab30eb500d29ccb1ee32e4cd01f7cec"
+
+[autoupdate]
+checkver = { github = "vrcx-team/VRCX" }
+url_template = { x64 = "https://github.com/vrcx-team/VRCX/releases/download/v$version/VRCX_$version.zip" }

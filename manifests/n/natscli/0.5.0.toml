@@ -1,0 +1,21 @@
+name = "natscli"
+version = "0.5.0"
+description = "The NATS Command Line Interface."
+homepage = "https://github.com/nats-io/natscli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["nats.exe"]
+
+[source.x64]
+url = "https://github.com/nats-io/natscli/releases/download/v0.5.0/nats-0.5.0-windows-amd64.zip"
+sha256 = "1f1ea2b5ff1acf97e0e1c486b1695edc64256233c70c4e888cce2370fd549025"
+extract_dir = "nats-0.5.0-windows-amd64"
+
+[source.arm64]
+url = "https://github.com/nats-io/natscli/releases/download/v0.5.0/nats-0.5.0-windows-arm64.zip"
+sha256 = "2ad2d4443a1e4d8f4f16c1a1ead16ce88bc5a2a14a94163a87f434e1b9d49ec3"
+extract_dir = "nats-0.5.0-windows-arm64"
+
+[autoupdate]
+checkver = { github = "nats-io/natscli" }
+url_template = { x64 = "https://github.com/nats-io/natscli/releases/download/v$version/nats-$version-windows-amd64.zip", arm64 = "https://github.com/nats-io/natscli/releases/download/v$version/nats-$version-windows-arm64.zip" }

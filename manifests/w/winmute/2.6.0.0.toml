@@ -1,0 +1,15 @@
+name = "winmute"
+version = "2.6.0.0"
+description = "A small and simple tool, that automatically mutes (and unmutes) your workstation based on triggers."
+homepage = "https://github.com/lx-s/WinMute"
+license = "BSD-3-Clause"
+kind = "app"
+shortcuts = [{ target = "WinMute.exe", name = "WinMute" }]
+
+[source.x64]
+url = "https://github.com/lx-s/WinMute/releases/download/2.6.0.0/WinMute-2.6.0.0.zip"
+sha256 = "1006b81d979a9f43f7804907f65962e596ff4b72165beb7cb44d95bb66dfe366"
+
+[autoupdate]
+checkver = { github = "lx-s/WinMute" }
+url_template = { x64 = "https://github.com/lx-s/WinMute/releases/download/$version/WinMute-$matchShort.zip" }

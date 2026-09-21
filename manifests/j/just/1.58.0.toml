@@ -10,22 +10,6 @@ bin = ["just.exe"]
 url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-pc-windows-msvc.zip"
 sha256 = "759f16fb7aa17c5c8b9594b6d4a8c1a6630dfd042cf2b3ff84841454d3d188dc"
 
-[source.linux-x64]
-url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-unknown-linux-musl.tar.gz"
-sha256 = "4a5cc2f53e6f0f8c59092a6cc38291eb729d46a7dd95d3ae582008881b84931d"
-
-[source.linux-arm64]
-url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-aarch64-unknown-linux-musl.tar.gz"
-sha256 = "748237128c4c40cbdabc65e841d05ceba13cc23a91eaba395495894c1d9764df"
-
-[source.macos-x64]
-url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-apple-darwin.tar.gz"
-sha256 = "9a09cfef66aaa79da58203970103a0684307716caaabd3e9844cacc4dc0f4023"
-
-[source.macos-arm64]
-url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-aarch64-apple-darwin.tar.gz"
-sha256 = "50ae3e996c974a0bf32ea7d10f495070df33f1b43e0616b2769e3d4821ed8f48"
-
 [autoupdate]
 checkver = { github = "casey/just" }
 url_template = { x64 = "https://github.com/casey/just/releases/download/$version/just-$version-x86_64-pc-windows-msvc.zip" }

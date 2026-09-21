@@ -1,0 +1,16 @@
+name = "servicebusexplorer"
+version = "6.3.1"
+description = "Connect to a Service Bus namespace and efficiently administer messaging entities."
+homepage = "https://github.com/paolosalvatori/ServiceBusExplorer"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ServiceBusExplorer.exe"]
+shortcuts = [{ target = "ServiceBusExplorer.exe", name = "Service Bus Explorer" }]
+
+[source.x64]
+url = "https://github.com/paolosalvatori/ServiceBusExplorer/releases/download/6.3.1/ServiceBusExplorer-6.3.1.zip"
+sha256 = "a4952e84d009afac0828b0569a3481b4f7b443cf0037d42d7c48fe1d68cd3110"
+
+[autoupdate]
+checkver = { github = "paolosalvatori/ServiceBusExplorer" }
+url_template = "https://github.com/paolosalvatori/ServiceBusExplorer/releases/download/$version/ServiceBusExplorer-$version.zip"

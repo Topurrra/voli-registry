@@ -1,0 +1,18 @@
+name = "psqlodbc"
+version = "18.00.0004"
+description = "The official PostgreSQL ODBC Driver"
+homepage = "https://odbc.postgresql.org/"
+license = "LGPL-2.0-or-later"
+kind = "app"
+extract_dir = "PFiles64\\psqlODBC\\1800"
+
+[source.x64]
+url = "https://ftp.postgresql.org/pub/odbc/releases/REL-18_00_0004/psqlodbc_x64.msi"
+sha256 = "2439f7e0fcf6488ef536d36e546629639b6f0ae9b3175682717745ad3bde93c1"
+kind = "installer-archive"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { url = "https://www.postgresql.org/ftp/odbc/releases/", regex = "REL-(?<major>\\d+)_(?<minor>\\d+)_(?<patch>\\d+)" }

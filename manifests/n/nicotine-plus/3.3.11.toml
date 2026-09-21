@@ -1,0 +1,16 @@
+name = "nicotine-plus"
+version = "3.3.11"
+description = "Graphical client for the Soulseek file sharing network"
+homepage = "https://nicotine-plus.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Nicotine+"
+shortcuts = [{ target = "Nicotine+.exe", name = "Nicotine+" }]
+
+[source.x64]
+url = "https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.11/windows-x86_64-package.zip"
+sha256 = "4924f9f60c6b1a60e9fe62f5e94a4289058c6826cc7ee33f26ca43dea8ca8608"
+
+[autoupdate]
+checkver = { github = "nicotine-plus/nicotine-plus" }
+url_template = { x64 = "https://github.com/nicotine-plus/nicotine-plus/releases/download/$version/windows-x86_64-package.zip" }

@@ -1,0 +1,16 @@
+name = "mongosh"
+version = "2.12.0"
+description = "JavaScript and Node.js 14.x REPL environment for interacting with MongoDB"
+homepage = "https://docs.mongodb.com/mongodb-shell"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "mongosh-2.12.0-win32-x64"
+bin = ["bin\\mongosh.exe"]
+
+[source.x64]
+url = "https://downloads.mongodb.com/compass/mongosh-2.12.0-win32-x64.zip"
+sha256 = "d9dfc366a8a6b6771fcb05fe582d4b1bfe567f7a1ed7a72194dcf5b8202e9db3"
+
+[autoupdate]
+checkver = { url = "https://www.mongodb.com/try/download/shell", regex = "mongosh-([\\d.]+)-win" }
+url_template = { x64 = "https://downloads.mongodb.com/compass/mongosh-$version-win32-x64.zip" }

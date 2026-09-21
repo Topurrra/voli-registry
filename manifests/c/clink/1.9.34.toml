@@ -1,0 +1,18 @@
+name = "clink"
+version = "1.9.34"
+description = "Powerful Bash-style command line editing for cmd.exe"
+homepage = "https://chrisant996.github.io/clink/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["clink.bat"]
+
+[source.x64]
+url = "https://github.com/chrisant996/clink/releases/download/v1.9.34/clink.1.9.34.4e8ae4.zip"
+sha256 = "50f6ee0474e3bd02b48ce8c8f63ed933a14aee5127fc7072cb976ce10a43ce23"
+
+[env]
+CLINK_DIR = "{dir}"
+
+[autoupdate]
+checkver = { github = "chrisant996/clink" }
+url_template = "https://github.com/chrisant996/clink/releases/download/v$matchTag/clink.$version.$matchCommit.zip"

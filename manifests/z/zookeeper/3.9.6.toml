@@ -1,0 +1,17 @@
+name = "zookeeper"
+version = "3.9.6"
+description = "High-performance coordination service for distributed applications"
+homepage = "https://zookeeper.apache.org/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "apache-zookeeper-3.9.6-bin"
+bin = ["bin\\zkServer.cmd", "bin\\zkCli.cmd"]
+persist = ["data"]
+
+[source.x64]
+url = "https://downloads.apache.org/zookeeper/zookeeper-3.9.6/apache-zookeeper-3.9.6-bin.tar.gz"
+sha512 = "e999626df06de30dc8bb53bb51da9bb786b1658406adafc6b92f104d72ca25e869f70a57c83a726f8b9558cc0fb519fc20f201aa5d6da09884bc4be5fe6dd3b0"
+
+[autoupdate]
+checkver = { url = "https://downloads.apache.org/zookeeper/", regex = "zookeeper-([\\d.]+)/" }
+url_template = "https://downloads.apache.org/zookeeper/zookeeper-$version/apache-zookeeper-$version-bin.tar.gz"

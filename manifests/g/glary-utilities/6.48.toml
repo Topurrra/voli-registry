@@ -1,0 +1,15 @@
+name = "glary-utilities"
+version = "6.48"
+description = "All-in-one utility for cleaning your PC"
+homepage = "https://www.glarysoft.com/"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "Integrator_Portable.exe", name = "Glary Utilities" }]
+persist = ["Portable\\data", "Portable\\skins"]
+
+[source.x64]
+url = "https://download.glarysoft.com/guportable.zip"
+sha256 = "b0304ecf4d5b9e5de1387bc1314ad403e6c8f8c7f0bb9066e365038929e4d2c9"
+
+[autoupdate]
+checkver = "([\\d.-]+)</span> for Windows"

@@ -1,0 +1,19 @@
+name = "less"
+version = "710"
+description = "A terminal pager program used to view (but not change) the contents of a text file one screen at a time, similar to the 'more' command."
+homepage = "https://www.greenwoodsoftware.com/less/"
+license = "GPL-3.0-only|BSD-3-Clause"
+kind = "app"
+bin = ["less.exe"]
+
+[source.x64]
+url = "https://github.com/jftuga/less-Windows/releases/download/less-v710/less-x64.zip"
+sha256 = "0c1c7a70085d1306b4a834ee2b52dd66706942c0297b3de51606417fcc727d26"
+
+[source.arm64]
+url = "https://github.com/jftuga/less-Windows/releases/download/less-v710/less-arm64.zip"
+sha256 = "54800ab6c068e74a760f557bbedac02a28ff4c09cc1b58af795b0681a89e7c52"
+
+[autoupdate]
+checkver = { github = "jftuga/less-Windows" }
+url_template = { x64 = "https://github.com/jftuga/less-Windows/releases/download/less-v$version/less-x64.zip", arm64 = "https://github.com/jftuga/less-Windows/releases/download/less-v$version/less-arm64.zip" }

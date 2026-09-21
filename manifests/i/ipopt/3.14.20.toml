@@ -1,0 +1,19 @@
+name = "ipopt"
+version = "3.14.20"
+description = "Software package for large-scale nonlinear optimization"
+homepage = "https://coin-or.github.io/Ipopt/"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "Ipopt-3.14.20-win64-msvs2022-md"
+bin = ["bin\\ipopt.exe"]
+
+[source.x64]
+url = "https://github.com/coin-or/Ipopt/releases/download/releases/3.14.20/Ipopt-3.14.20-win64-msvs2022-md.zip"
+sha256 = "1fd1de97d3e8e48c298f6ccf5ac91cbfc417b42c61262c08d193fd14117e9098"
+
+[env]
+IPOPTWINDIR = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/coin-or/Ipopt/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /win64/i)].browser_download_url\",\"regex\":\"Ipopt-(?<version>[\\\\d.]+)-win64-(?<vs>msvs\\\\d+)-md.zip\"}"
+url_template = { x64 = "https://github.com/coin-or/Ipopt/releases/download/releases/$version/Ipopt-$version-win64-$matchVs-md.zip" }

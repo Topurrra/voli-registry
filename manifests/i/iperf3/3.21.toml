@@ -4,13 +4,12 @@ description = "Tool for measuring the maximum achievable bandwidth on IP network
 homepage = "https://iperf.fr/"
 license = "BSD-3-Clause"
 kind = "app"
-extract_dir = "iperf3.21"
 bin = ["iperf3.exe"]
 
 [source.x64]
-url = "https://files.budman.pw/iperf3.21_64.zip"
-sha256 = "3dcc2ed47b59fb709f4d5a9da132afcf28d503ab5e2fdce270e8b7989745d986"
+url = "https://github.com/ar51an/iperf3-win-builds/releases/download/3.21/iperf-3.21-win64.zip"
+sha256 = "9b73b7e0e0326347b5f4ac4f6a1fc34fe60a5966e5fd172c7bfcd0e1cc93e709"
 
 [autoupdate]
-checkver = { url = "https://files.budman.pw/", regex = "iperf([\\d.]+)" }
-url_template = { x64 = "https://files.budman.pw/iperf$version_64.zip" }
+checkver = { github = "ar51an/iperf3-win-builds" }
+url_template = { x64 = "https://github.com/ar51an/iperf3-win-builds/releases/download/$version/iperf-$version-win64.zip" }

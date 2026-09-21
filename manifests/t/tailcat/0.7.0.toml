@@ -1,0 +1,19 @@
+name = "tailcat"
+version = "0.7.0"
+description = "Tailscale's netcat-like tool over its open-source data plane, without the control plane."
+homepage = "https://tailscale.com/tailcat"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["tailcat.exe"]
+
+[source.x64]
+url = "https://github.com/tailscale/tailcat/releases/download/v0.7.0/tailcat_0.7.0_windows_amd64.zip"
+sha256 = "f04cac07e3bf6c700b0b543df0d3315a3b312cd5a05ee76714e1cc848e9b2dff"
+
+[source.arm64]
+url = "https://github.com/tailscale/tailcat/releases/download/v0.7.0/tailcat_0.7.0_windows_arm64.zip"
+sha256 = "1c2d081375ade2365402f9fcf611e89dbb2c5c5ee06936aaff2b205dbe427578"
+
+[autoupdate]
+checkver = { github = "tailscale/tailcat" }
+url_template = { x64 = "https://github.com/tailscale/tailcat/releases/download/v$version/tailcat_$version_windows_amd64.zip", arm64 = "https://github.com/tailscale/tailcat/releases/download/v$version/tailcat_$version_windows_arm64.zip" }

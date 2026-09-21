@@ -1,0 +1,21 @@
+name = "sccache"
+version = "0.18.0"
+description = "Shared compilation cache used as a compiler wrapper to avoid compilation when possible, storing a cache in a remote storage."
+homepage = "https://github.com/mozilla/sccache"
+license = "Apache-2.0"
+kind = "app"
+bin = ["sccache.exe"]
+
+[source.x64]
+url = "https://github.com/mozilla/sccache/releases/download/v0.18.0/sccache-v0.18.0-x86_64-pc-windows-msvc.tar.gz"
+sha256 = "1a63c1be2beab3f04d27e4cc145443e092e02d3dd83a51030989829d7023091b"
+extract_dir = "sccache-v0.18.0-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/mozilla/sccache/releases/download/v0.18.0/sccache-v0.18.0-aarch64-pc-windows-msvc.tar.gz"
+sha256 = "9c1f3ecaeeae2e69171ff704867aa99813d2d68ae4d172dd34b11a07037ddd27"
+extract_dir = "sccache-v0.18.0-aarch64-pc-windows-msvc"
+
+[autoupdate]
+checkver = { github = "mozilla/sccache" }
+url_template = { x64 = "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-x86_64-pc-windows-msvc.tar.gz", arm64 = "https://github.com/mozilla/sccache/releases/download/v$version/sccache-v$version-aarch64-pc-windows-msvc.tar.gz" }

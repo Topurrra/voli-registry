@@ -1,0 +1,19 @@
+name = "gonavi-cli"
+version = "0.9.9"
+description = "A modern lightweight database client built with Wails and React. (CLI)"
+homepage = "https://gonavi.org"
+license = "Apache-2.0"
+kind = "app"
+bin = ["gonavi.exe"]
+
+[source.x64]
+url = "https://github.com/Syngnat/GoNavi/releases/download/v0.9.9/gonavi-cli_0.9.9_windows_amd64.zip"
+sha256 = "2d753fb5d31441b9b2ab63c7174f90615bfe92f44bc1f6198ce355b1a2dd49ba"
+
+[source.arm64]
+url = "https://github.com/Syngnat/GoNavi/releases/download/v0.9.9/gonavi-cli_0.9.9_windows_arm64.zip"
+sha256 = "461f31236c02ac21aa490d99d08a8bc304c6c9747fab592e61139fe5612c80e7"
+
+[autoupdate]
+checkver = { github = "Syngnat/GoNavi" }
+url_template = { x64 = "https://github.com/Syngnat/GoNavi/releases/download/v$version/gonavi-cli_$version_windows_amd64.zip", arm64 = "https://github.com/Syngnat/GoNavi/releases/download/v$version/gonavi-cli_$version_windows_arm64.zip" }

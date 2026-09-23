@@ -1,0 +1,21 @@
+name = "circleci-cli"
+version = "1.0.50961"
+description = "Set of CircleCI’s advanced and powerful tools."
+homepage = "https://circleci-public.github.io/circleci-cli/"
+license = "MIT"
+kind = "app"
+bin = ["circleci.exe"]
+
+[source.x64]
+url = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v1.0.50961/circleci-cli_1.0.50961_windows_amd64.zip"
+sha256 = "585127ac8a75b82f975b7fd56aba8227e0315b814cafc30d75e3a12f23176df5"
+extract_dir = "circleci-cli_1.0.49592_windows_amd64"
+
+[source.arm64]
+url = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v1.0.50961/circleci-cli_1.0.50961_windows_arm64.zip"
+sha256 = "b156eb157c1fe5d32a1a8b49ed4b7a69ded36e12d6383a9948677eec1748b083"
+extract_dir = "circleci-cli_1.0.49592_windows_arm64"
+
+[autoupdate]
+checkver = { github = "CircleCI-Public/circleci-cli" }
+url_template = { x64 = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v$version/circleci-cli_$version_windows_amd64.zip", arm64 = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v$version/circleci-cli_$version_windows_arm64.zip" }

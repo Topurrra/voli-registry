@@ -1,0 +1,16 @@
+name = "eilmeldung"
+version = "1.9.0"
+description = "eilmeldung is a TUI RSS reader based on the awesome news-flash library."
+homepage = "https://github.com/christo-auer/eilmeldung"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "eilmeldung"
+bin = ["eilmeldung.exe"]
+
+[source.x64]
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.9.0/eilmeldung-x86_64-pc-windows-msvc-1.9.0.tar.gz"
+sha256 = "3eb9039e8dc29b8e9ae75ba52f2fcabfcd86d1d6d6a2ec3c40d1cb8ab951d884"
+
+[autoupdate]
+checkver = { github = "christo-auer/eilmeldung" }
+url_template = { x64 = "https://github.com/christo-auer/eilmeldung/releases/download/$version/eilmeldung-x86_64-pc-windows-msvc-$version.tar.gz" }

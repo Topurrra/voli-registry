@@ -1,0 +1,19 @@
+name = "doctl"
+version = "1.173.0"
+description = "A command line tool for DigitalOcean services"
+homepage = "https://github.com/digitalocean/doctl"
+license = "Apache-2.0"
+kind = "app"
+bin = ["doctl.exe"]
+
+[source.x64]
+url = "https://github.com/digitalocean/doctl/releases/download/v1.173.0/doctl-1.173.0-windows-amd64.zip"
+sha256 = "64901b9f5a9999ae03c14c606ce87277b18b1895ba1d80f612faa5a1d0b94e9f"
+
+[source.arm64]
+url = "https://github.com/digitalocean/doctl/releases/download/v1.173.0/doctl-1.173.0-windows-arm64.zip"
+sha256 = "b7657a1154db1f6e0f96c0419da461882019085405ea673fd0bc0ce6b0d247ab"
+
+[autoupdate]
+checkver = { github = "digitalocean/doctl" }
+url_template = { x64 = "https://github.com/digitalocean/doctl/releases/download/v$version/doctl-$version-windows-amd64.zip", arm64 = "https://github.com/digitalocean/doctl/releases/download/v$version/doctl-$version-windows-arm64.zip" }

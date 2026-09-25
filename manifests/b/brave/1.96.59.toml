@@ -1,0 +1,19 @@
+name = "brave"
+version = "1.96.59"
+description = "Secure, Fast & Private Web Browser with Adblocker"
+homepage = "https://brave.com"
+license = "Freeware,BSD-3-Clause,GPL-3.0-only,..."
+kind = "app"
+bin = [{ name = "brave", path = "brave.exe", args = "--user-data-dir=\"$dir\\User Data\"" }]
+persist = ["User Data"]
+
+[source.x64]
+url = "https://github.com/brave/brave-browser/releases/download/v1.96.59/brave-v1.96.59-win32-x64.zip"
+sha256 = "f2d439484d89e634792d8ce93a6a8e920ab01e70889f455d5511b78af831ed09"
+
+[source.arm64]
+url = "https://github.com/brave/brave-browser/releases/download/v1.96.59/brave-v1.96.59-win32-arm64.zip"
+sha256 = "1077334ceb4901c115ebbd42e19d76fcd39f91ca20e56fb4bc216b9a59188a75"
+
+[autoupdate]
+checkver = { url = "https://brave-browser-downloads.s3.brave.com/latest/release-windows-x64.version", regex = "([\\d.]+)" }

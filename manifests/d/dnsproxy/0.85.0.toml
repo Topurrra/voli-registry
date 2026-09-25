@@ -1,0 +1,21 @@
+name = "dnsproxy"
+version = "0.85.0"
+description = "Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support"
+homepage = "https://github.com/AdguardTeam/dnsproxy"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dnsproxy.exe"]
+
+[source.x64]
+url = "https://github.com/AdguardTeam/dnsproxy/releases/download/v0.85.0/dnsproxy-windows-amd64-v0.85.0.zip"
+sha256 = "5b7b57b77169f6748618ed2bc2a35060f774fe2bac14a0e54352b1d502fe61eb"
+extract_dir = "windows-amd64"
+
+[source.arm64]
+url = "https://github.com/AdguardTeam/dnsproxy/releases/download/v0.85.0/dnsproxy-windows-arm64-v0.85.0.zip"
+sha256 = "44cc95bdb1c8032ce857a657def7468f40504f58c478131fa8c13b2c890ba8a4"
+extract_dir = "windows-arm64"
+
+[autoupdate]
+checkver = { github = "AdguardTeam/dnsproxy" }
+url_template = { x64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-amd64-v$version.zip", arm64 = "https://github.com/AdguardTeam/dnsproxy/releases/download/v$version/dnsproxy-windows-arm64-v$version.zip" }

@@ -1,0 +1,15 @@
+name = "floorp"
+version = "12.18.1"
+description = "A Browser build for keeping the Open, Private and Sustainable Web alive. Based on Mozilla Firefox."
+homepage = "https://github.com/Floorp-Projects"
+license = "MPL-2.0"
+kind = "app"
+bin = ["floorp-portable.exe", "app\\floorp.exe"]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/Floorp-Projects/Floorp-Portable-v2/releases/download/v12.18.1/floorp-windows-x86_64.portable.7z"
+sha256 = "a117a8972f86cf2759d9d5b62e330b6911de3193a821f3051ff097ef108430d3"
+
+[autoupdate]
+checkver = { github = "Floorp-Projects/Floorp-Portable-v2" }

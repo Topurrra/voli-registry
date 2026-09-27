@@ -1,0 +1,14 @@
+name = "crystal"
+version = "1.21.1"
+description = "The Crystal Programming Language"
+homepage = "https://www.crystal-lang.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["crystal.exe", "shards.exe"]
+
+[source.x64]
+url = "https://github.com/crystal-lang/crystal/releases/download/1.21.1/crystal-1.21.1-windows-x86_64-msvc-unsupported.zip"
+sha256 = "696db553299ca120100c0d81682e2aa78d6d230a1e176623e8f2b43d7149163d"
+
+[autoupdate]
+checkver = { github = "crystal-lang/crystal" }

@@ -1,0 +1,19 @@
+name = "goshs"
+version = "2.1.7"
+description = "A single-binary file server built for pentesters and CTF players. HTTP/S, WebDAV, SFTP, SMB, LDAP/S, NTLM hash capture, DNS/SMTP callbacks."
+homepage = "https://goshs.de"
+license = "MIT"
+kind = "app"
+bin = [{ name = "goshs", path = "goshs.exe" }]
+
+[source.x64]
+url = "https://github.com/goshs-labs/goshs/releases/download/v2.1.7/goshs_v2.1.7_windows_x86_64.zip"
+sha256 = "9f6a2ee1ce481af10031b518a194f46e4bc38bca295096fe6807be6b2159ae62"
+
+[source.arm64]
+url = "https://github.com/goshs-labs/goshs/releases/download/v2.1.7/goshs_v2.1.7_windows_arm64.zip"
+sha256 = "4a072762a3951a6ba059859a1b7c4594d459be5b159bf35510e12c11cdab2f0e"
+
+[autoupdate]
+checkver = { github = "goshs-labs/goshs" }
+url_template = { x64 = "https://github.com/goshs-labs/goshs/releases/download/v$version/goshs_v$version_windows_x86_64.zip", arm64 = "https://github.com/goshs-labs/goshs/releases/download/v$version/goshs_v$version_windows_arm64.zip" }

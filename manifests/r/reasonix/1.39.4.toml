@@ -1,0 +1,19 @@
+name = "reasonix"
+version = "1.39.4"
+description = "Reasonix CLI, official CLI for Reasonix, a DeepSeek-native AI coding agent built to reduce API costs through aggressive context caching."
+homepage = "https://reasonix.io"
+license = "MIT"
+kind = "app"
+bin = ["reasonix.exe"]
+
+[source.x64]
+url = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.39.4/reasonix-windows-amd64.zip"
+sha256 = "16dc9acadbbb06047f52f795725c965aefdd65a1d00dba4c00be0b1dde0b5059"
+
+[source.arm64]
+url = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v1.39.4/reasonix-windows-arm64.zip"
+sha256 = "38c87b3aeba3ed8aca300d412dd123c8b0e1d23079183d3f6bfcdd354123be4d"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/esengine/DeepSeek-Reasonix/releases\",\"jsonpath\":\"$[*].tag_name\",\"regex\":\"\\\"v([\\\\d.]+)\\\"\"}"
+url_template = { x64 = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-amd64.zip", arm64 = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/v$version/reasonix-windows-arm64.zip" }

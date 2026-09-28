@@ -4,15 +4,18 @@ description = "Minimal Git for Windows (MinGit) is a reduced sized package desig
 homepage = "https://git-for-windows.github.io/"
 license = "GPL-2.0-only"
 kind = "app"
-bin = ["cmd\\git.exe", "mingw64\\bin\\busybox.exe"]
 
 [source.x64]
 url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/MinGit-2.55.0.5-busybox-64-bit.zip"
 sha256 = "a0287b54d3ead0c5abd0d15094f5b4c909867aae6bf8b9f2aee7109d24fa0081"
+
+[source.arm64]
+url = "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/MinGit-2.55.0.5-busybox-arm64.zip"
+sha256 = "5adf5203ba3b4706c21687ea1bcd871c727917d913773a41b0af69b86c997d6f"
 
 [env]
 GIT_INSTALL_ROOT = "{dir}"
 
 [autoupdate]
 checkver = "{\"github\":\"https://api.github.com/repos/git-for-windows/git/releases/latest\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"download/v(?<tag>[\\\\d.]+windows\\\\.\\\\d)/MinGit-([\\\\d.]+)-busybox-64\"}"
-url_template = { x64 = "https://github.com/git-for-windows/git/releases/download/v$matchTag/MinGit-$version-busybox-64-bit.zip" }
+url_template = { x64 = "https://github.com/git-for-windows/git/releases/download/v$matchTag/MinGit-$version-busybox-64-bit.zip", arm64 = "https://github.com/git-for-windows/git/releases/download/v$matchTag/MinGit-$version-busybox-arm64.zip" }

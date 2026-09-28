@@ -1,0 +1,18 @@
+name = "msys2"
+version = "2026-09-27"
+description = "A software distro and building platform for Windows."
+homepage = "http://www.msys2.org/"
+license = "GPL-2.0-only|BSD-3-Clause"
+kind = "app"
+extract_dir = "msys64"
+bin = [{ name = "msys2", path = "msys2_shell.cmd", args = "-msys2 -defterm -here -no-start" }, { name = "mingw", path = "msys2_shell.cmd", args = "-mingw -defterm -here -full-path -no-start" }, { name = "mingw32", path = "msys2_shell.cmd", args = "-mingw32 -defterm -here -full-path -no-start" }, { name = "mingw64", path = "msys2_shell.cmd", args = "-mingw64 -defterm -here -full-path -no-start" }, { name = "clang64", path = "msys2_shell.cmd", args = "-clang64 -defterm -here -full-path -no-start" }, { name = "clangarm64", path = "msys2_shell.cmd", args = "-clangarm64 -defterm -here -full-path -no-start" }, { name = "ucrt64", path = "msys2_shell.cmd", args = "-ucrt64 -defterm -here -full-path -no-start" }]
+shortcuts = [{ target = "msys2.exe", name = "MSYS2" }, { target = "mingw32.exe", name = "MinGW32" }, { target = "mingw64.exe", name = "MinGW64" }, { target = "clang64.exe", name = "Clang64" }, { target = "clangarm64.exe", name = "ClangArm64" }, { target = "ucrt64.exe", name = "UCRT64" }]
+persist = ["home"]
+
+[source.x64]
+url = "https://github.com/msys2/msys2-installer/releases/download/2026-09-27/msys2-base-x86_64-20260927.tar.xz"
+sha256 = "ea2f31a0b6ade63914ce441ffb022f0f6aa96982bfefa2326460a26d5fb01322"
+
+[autoupdate]
+checkver = { url = "https://github.com/msys2/msys2-installer/releases", regex = "/releases/tag/(?<version>(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2}))" }
+url_template = { x64 = "https://github.com/msys2/msys2-installer/releases/download/$version/msys2-base-x86_64-$matchYear$matchMonth$matchDay.tar.xz" }

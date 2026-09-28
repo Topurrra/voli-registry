@@ -4,13 +4,18 @@ description = "A small build system with a focus on speed (Kitware fork with job
 homepage = "https://github.com/Kitware/ninja"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "ninja-1.11.1.g95dee.kitware.jobserver-1_x86_64-pc-windows-msvc"
 bin = ["ninja.exe"]
 
 [source.x64]
 url = "https://github.com/Kitware/ninja/releases/download/v1.11.1.g95dee.kitware.jobserver-1/ninja-1.11.1.g95dee.kitware.jobserver-1_x86_64-pc-windows-msvc.zip"
 sha256 = "b4bfde704f7ca90891cad0bddacdb8289eb9775cec29704705b7ec7311901003"
+extract_dir = "ninja-1.11.1.g95dee.kitware.jobserver-1_x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/Kitware/ninja/releases/download/v1.11.1.g95dee.kitware.jobserver-1/ninja-1.11.1.g95dee.kitware.jobserver-1_arm64-pc-windows-msvc.zip"
+sha256 = "ebd25bd02299ae67ffd624f181e0b873f074817dffbd371ad70a5c9fc5b1fe56"
+extract_dir = "ninja-1.11.1.g95dee.kitware.jobserver-1_arm64-pc-windows-msvc"
 
 [autoupdate]
 checkver = { github = "Kitware/ninja" }
-url_template = { x64 = "https://github.com/Kitware/ninja/releases/download/v$version/ninja-$version_x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/Kitware/ninja/releases/download/v$version/ninja-$version_x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Kitware/ninja/releases/download/v$version/ninja-$version_arm64-pc-windows-msvc.zip" }

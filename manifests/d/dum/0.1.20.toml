@@ -10,6 +10,10 @@ bin = ["dum.exe"]
 url = "https://github.com/egoist/dum/releases/download/v0.1.20/dum-x86_64-pc-windows-msvc.zip"
 sha256 = "3759d385ca4559ac62f63542aa6955a16c9fd9b8978e7854925a7bea5d5bf32c"
 
+[source.arm64]
+url = "https://github.com/egoist/dum/releases/download/v0.1.20/dum-aarch64-pc-windows-msvc.zip"
+sha256 = "93b1405add5dc86e861f4d76fc202ffd8d13a9ca911caf9bed1e2e96ff7bb87d"
+
 [autoupdate]
 checkver = { github = "egoist/dum" }
-url_template = { x64 = "https://github.com/egoist/dum/releases/download/v$version/dum-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/egoist/dum/releases/download/v$version/dum-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/egoist/dum/releases/download/v$version/dum-aarch64-pc-windows-msvc.zip" }

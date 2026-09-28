@@ -1,0 +1,15 @@
+name = "notepadnext"
+version = "0.15"
+description = "A cross-platform reimplementation of Notepad++"
+homepage = "https://github.com/dail8859/NotepadNext"
+license = "GPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "NotepadNext.exe", name = "Notepad Next" }]
+
+[source.x64]
+url = "https://github.com/dail8859/NotepadNext/releases/download/v0.15/NotepadNext-v0.15-win64.zip"
+sha256 = "148aa88d706bb67a7c1f3727953ed686204be52876336971634b0223e6ed2148"
+
+[autoupdate]
+checkver = { github = "dail8859/NotepadNext" }
+url_template = { x64 = "https://github.com/dail8859/NotepadNext/releases/download/v$version/NotepadNext-v$version-win64.zip" }

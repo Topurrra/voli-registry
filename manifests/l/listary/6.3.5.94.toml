@@ -1,0 +1,16 @@
+name = "listary"
+version = "6.3.5.94"
+description = "A revolutionary search utility."
+homepage = "https://www.listary.com"
+license = "Shareware"
+kind = "app"
+shortcuts = [{ target = "Listary.exe", name = "Listary" }]
+
+[source.x64]
+url = "https://www.listary.com/download/Listary.exe?version=6.3.5.94#/dl.exe"
+sha256 = "c62249e0d4d49bd3f062d55635cf6a3ab089ea8ee7f6c03947f6febfafaa0288"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://dl.listary.com/auto_update_v2.xml", regex = "(?i)<version>\\s*(\\d+(?:\\.\\d+)+)\\s*</version>" }
+url_template = "https://www.listary.com/download/Listary.exe?version=$version#/dl.exe"

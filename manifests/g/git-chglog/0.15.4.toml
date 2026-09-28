@@ -10,6 +10,10 @@ bin = ["git-chglog.exe"]
 url = "https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_windows_amd64.zip"
 sha256 = "0e7e9421565714f56885f068ae434416a6a3177b6ff65f350afe580e201289a6"
 
+[source.arm64]
+url = "https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_windows_arm64.zip"
+sha256 = "0ac870086033b186bb8e68104492753249f85cdd438274d380dc1f772908b06b"
+
 [autoupdate]
 checkver = { github = "git-chglog/git-chglog" }
-url_template = { x64 = "https://github.com/git-chglog/git-chglog/releases/download/v$version/git-chglog_$version_windows_amd64.zip" }
+url_template = { x64 = "https://github.com/git-chglog/git-chglog/releases/download/v$version/git-chglog_$version_windows_amd64.zip", arm64 = "https://github.com/git-chglog/git-chglog/releases/download/v$version/git-chglog_$version_windows_arm64.zip" }

@@ -1,0 +1,22 @@
+name = "no-mistakes"
+version = "1.84.0"
+description = "A local Git proxy that AI-validates your code before push, forwarding only clean commits upstream."
+homepage = "https://kunchenguid.github.io/no-mistakes"
+license = "MIT"
+kind = "app"
+bin = ["no-mistakes.exe"]
+
+[source.x64]
+url = "https://github.com/kunchenguid/no-mistakes/releases/download/v1.84.0/no-mistakes-v1.84.0-windows-amd64.zip"
+sha256 = "c379c9f1129a0d7e0569516cebfa62e7ed43b28ddaa9a3fa69b884cc3d75ea02"
+
+[source.arm64]
+url = "https://github.com/kunchenguid/no-mistakes/releases/download/v1.84.0/no-mistakes-v1.84.0-windows-arm64.zip"
+sha256 = "7f9d03b42db52f9300fe41cf903bb450013f5ba4d5491d54a4328216cf7b0142"
+
+[env]
+NO_MISTAKES_NO_UPDATE_CHECK = "1"
+
+[autoupdate]
+checkver = { github = "kunchenguid/no-mistakes" }
+url_template = { x64 = "https://github.com/kunchenguid/no-mistakes/releases/download/v$version/no-mistakes-v$version-windows-amd64.zip", arm64 = "https://github.com/kunchenguid/no-mistakes/releases/download/v$version/no-mistakes-v$version-windows-arm64.zip" }

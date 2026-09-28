@@ -11,6 +11,10 @@ bin = ["micro.exe"]
 url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win64.zip"
 sha256 = "90635c53c11aa2a0d997f5e3ed43528877740725500207640b29551cef18479b"
 
+[source.arm64]
+url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win-arm64.zip"
+sha256 = "c3d5acd5fc05afd65b7dcad3a18e0c08148e4885b4044be8d19e22a8efbf670b"
+
 [autoupdate]
 checkver = { github = "micro-editor/micro" }
-url_template = { x64 = "https://github.com/micro-editor/micro/releases/download/v$version/micro-$version-win64.zip" }
+url_template = { x64 = "https://github.com/micro-editor/micro/releases/download/v$version/micro-$version-win64.zip", arm64 = "https://github.com/micro-editor/micro/releases/download/v$version/micro-$version-win-arm64.zip" }

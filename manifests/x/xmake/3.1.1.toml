@@ -11,6 +11,10 @@ bin = ["xmake.exe", "xrepo.bat"]
 url = "https://github.com/xmake-io/xmake/releases/download/v3.1.1/xmake-v3.1.1.win64.zip"
 sha256 = "33fdf2f34a0e45fa731c000d59590d27b13dec7011f69cbf575004ed9279b4a2"
 
+[source.arm64]
+url = "https://github.com/xmake-io/xmake/releases/download/v3.1.1/xmake-v3.1.1.arm64.zip"
+sha256 = "95df181a36761b97f677f12a67e817e98c8d89c9ad9f266e7892ce674d005e0a"
+
 [autoupdate]
 checkver = { github = "xmake-io/xmake" }
-url_template = { x64 = "https://github.com/xmake-io/xmake/releases/download/v$version/xmake-v$version.win64.zip" }
+url_template = { x64 = "https://github.com/xmake-io/xmake/releases/download/v$version/xmake-v$version.win64.zip", arm64 = "https://github.com/xmake-io/xmake/releases/download/v$version/xmake-v$version.arm64.zip" }

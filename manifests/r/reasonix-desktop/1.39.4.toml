@@ -1,0 +1,19 @@
+name = "reasonix-desktop"
+version = "1.39.4"
+description = "Reasonix Desktop, official GUI for Reasonix, a DeepSeek-native AI coding agent built to reduce API costs through aggressive context caching."
+homepage = "https://reasonix.io"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "Reasonix.exe", name = "Reasonix Desktop" }]
+
+[source.x64]
+url = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v1.39.4/Reasonix-windows-amd64.zip"
+sha256 = "d4d5e0095f29f7f3c6073a34c6c55e4f7cf770b2a34b688bb359ef71a58c2588"
+
+[source.arm64]
+url = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v1.39.4/Reasonix-windows-arm64.zip"
+sha256 = "88b8795c3db68451f1a305d8df4738ea6e9c0b9f31776dd1e7ee3ac3331711ef"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/esengine/DeepSeek-Reasonix/releases\",\"jsonpath\":\"$[*].tag_name\",\"regex\":\"\\\"desktop-v([\\\\d.]+)\\\"\"}"
+url_template = { x64 = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v$version/Reasonix-windows-amd64.zip", arm64 = "https://github.com/esengine/DeepSeek-Reasonix/releases/download/desktop-v$version/Reasonix-windows-arm64.zip" }

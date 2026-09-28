@@ -10,6 +10,10 @@ bin = ["grex.exe"]
 url = "https://github.com/pemistahl/grex/releases/download/v1.4.6/grex-v1.4.6-x86_64-pc-windows-msvc.zip"
 sha256 = "7691dbb8e46339a15d8362b79b2456f508266cf00a55fe685ed69a6259577485"
 
+[source.arm64]
+url = "https://github.com/pemistahl/grex/releases/download/v1.4.6/grex-v1.4.6-aarch64-pc-windows-msvc.zip"
+sha256 = "bd25274005cc1e84abb2f7dd4d4ec251a267ec6fcf53b40de59ee71c26c5b1b7"
+
 [autoupdate]
 checkver = { github = "pemistahl/grex" }
-url_template = { x64 = "https://github.com/pemistahl/grex/releases/download/v$version/grex-v$version-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/pemistahl/grex/releases/download/v$version/grex-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/pemistahl/grex/releases/download/v$version/grex-v$version-aarch64-pc-windows-msvc.zip" }

@@ -10,6 +10,10 @@ bin = ["task.exe"]
 url = "https://github.com/go-task/task/releases/download/v3.53.1/task_windows_amd64.zip"
 sha256 = "27c0cd248c12cba03d8958d954a3df981c900be885ec9ce5f6a3cdc4e9a19316"
 
+[source.arm64]
+url = "https://github.com/go-task/task/releases/download/v3.53.1/task_windows_arm64.zip"
+sha256 = "4f7c32c0b5a09aabfd860bcf4ff5649f0483339c1f7f90ad5ee55692da7237b6"
+
 [autoupdate]
 checkver = { github = "go-task/task" }
-url_template = { x64 = "https://github.com/go-task/task/releases/download/v$version/task_windows_amd64.zip" }
+url_template = { x64 = "https://github.com/go-task/task/releases/download/v$version/task_windows_amd64.zip", arm64 = "https://github.com/go-task/task/releases/download/v$version/task_windows_arm64.zip" }

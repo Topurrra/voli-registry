@@ -11,6 +11,10 @@ bin = ["c3c.exe"]
 url = "https://github.com/c3lang/c3c/releases/download/v0.8.4/c3-windows.zip"
 sha256 = "9da56ed7b9302ce21737f6562a32dbcf28fb527507c0babcd37234526b5ac0d5"
 
+[source.arm64]
+url = "https://github.com/c3lang/c3c/releases/download/v0.8.4/c3-windows-aarch64.zip"
+sha256 = "d5673f1bb708f4bba696f1ad8dd321c16572bed58e890b5f048241aa841dc1c8"
+
 [autoupdate]
 checkver = { github = "c3lang/c3c" }
-url_template = { x64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows.zip" }
+url_template = { x64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows.zip", arm64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows-aarch64.zip" }

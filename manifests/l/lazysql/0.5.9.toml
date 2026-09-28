@@ -1,0 +1,19 @@
+name = "lazysql"
+version = "0.5.9"
+description = "A cross-platform TUI database management tool written in Go."
+homepage = "https://github.com/jorgerojas26/lazysql"
+license = "MIT"
+kind = "app"
+bin = ["lazysql.exe"]
+
+[source.x64]
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.5.9/lazysql_Windows_x86_64.zip"
+sha256 = "2b267ca83954199dc2531fba2d2e1e168555370d64176a139e19c77c8b94237e"
+
+[source.arm64]
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.5.9/lazysql_Windows_arm64.zip"
+sha256 = "f7c2e3e4b88ded11d5769715153791e2c7d9067a1dcf232de4fc67b62c0debfb"
+
+[autoupdate]
+checkver = { github = "jorgerojas26/lazysql" }
+url_template = { x64 = "https://github.com/jorgerojas26/lazysql/releases/download/v$version/lazysql_Windows_x86_64.zip", arm64 = "https://github.com/jorgerojas26/lazysql/releases/download/v$version/lazysql_Windows_arm64.zip" }

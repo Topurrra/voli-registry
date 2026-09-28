@@ -1,0 +1,15 @@
+name = "mergiraf"
+version = "0.20.0"
+description = "A syntax-aware git merge driver"
+homepage = "https://mergiraf.org"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["mergiraf.exe"]
+
+[source.x64]
+url = "https://codeberg.org/mergiraf/mergiraf/releases/download/v0.20.0/mergiraf_x86_64-pc-windows-gnu.zip"
+sha256 = "4f5e77e973febda3cacd2b52f0c0b2756854e2bff1377af69159cf0aa4051397"
+
+[autoupdate]
+checkver = { url = "https://codeberg.org/api/v1/repos/mergiraf/mergiraf/releases/latest", regex = "v([\\d.]+)" }
+url_template = { x64 = "https://codeberg.org/mergiraf/mergiraf/releases/download/v$version/mergiraf_x86_64-pc-windows-gnu.zip" }

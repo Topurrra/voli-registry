@@ -24,6 +24,9 @@ jobs:
       - name: Test skill importer
         run: python tools/skill-import.py --self-test
 
+      - name: Test archive publisher
+        run: python -m unittest discover -s tools -p test_skill_publish.py -v
+
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -45,7 +48,7 @@ jobs:
       # lock in the same change. Every voli pin in this repo's workflows moves
       # together — grep for the tag before changing it.
       - name: Clone voli for the voli-core path dependency
-        run: git clone --depth 1 --branch v0.10.1 https://github.com/Topurrra/voli ../voli
+        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli
 
       - name: Test scoop-import
         working-directory: tools/scoop-import

@@ -1,4 +1,6 @@
 release_base = "https://github.com/Topurrra/voli-registry/releases/download/skills"
+# New versions use separate source/version releases; existing manifests keep their URLs.
+release_by_source = true
 
 [[source]]
 id = "google-agents-cli"

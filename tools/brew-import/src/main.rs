@@ -423,6 +423,27 @@ fn with_bin(e: Error, bin: &str) -> Error {
 
 // ---- verify-only ------------------------------------------------------------------
 
+/// Some packages expose PATH instead of declaring shims. Their allowlist
+/// still names binaries for the smoke gate; never report an empty gate green.
+fn verification_bins<'a>(
+    manifest: &'a Manifest,
+    spec: Option<&'a SourceSpec>,
+) -> Result<Vec<&'a str>> {
+    let bins: Vec<&str> = if manifest.bin.is_empty() {
+        spec.map(|spec| spec.bin.iter().map(String::as_str).collect())
+            .unwrap_or_default()
+    } else {
+        manifest.bin.iter().map(|bin| bin.path()).collect()
+    };
+    if bins.is_empty() {
+        return Err(Error::Config(format!(
+            "{} {} has no binaries to verify (set bin in the manifest or allowlist)",
+            manifest.name, manifest.version
+        )));
+    }
+    Ok(bins)
+}
+
 /// Download each named manifest's HOST-platform payload and run the gates over
 /// it. No writes. CI runs this on ubuntu + macos legs so every emitted block
 /// is executed somewhere.
@@ -438,10 +459,20 @@ fn verify_only_mode(manifests_dir: &Path, names: &[String], specs: &[SourceSpec]
         let Some((version, manifest)) = registry_latest(manifests_dir, name)? else {
             return Err(Error::Config(format!("no manifests for '{name}'")));
         };
-        let source = manifest
-            .source
-            .for_platform(host)
-            .ok_or_else(|| Error::Config(format!("{name} {version} has no [{key}] block")))?;
+        let spec = specs.iter().find(|s| &s.name == name);
+        let source = match manifest.source.for_platform(host) {
+            Some(source) => source,
+            None if spec.is_some_and(|spec| !spec.assets.contains_key(&key)) => {
+                println!("{name} {version} [{key}]: not supported by the allowlist; skipped");
+                continue;
+            }
+            None => {
+                return Err(Error::Config(format!(
+                    "{name} {version} has no [{key}] block"
+                )));
+            }
+        };
+        let bins = verification_bins(&manifest, spec)?;
         println!("{name} {version} [{key}]: {}", source.url);
         let asset_name = source.url.rsplit('/').next().unwrap_or("payload");
         let (archive, sha) = download_hashed(&source.url, None, asset_name)?;
@@ -457,23 +488,21 @@ fn verify_only_mode(manifests_dir: &Path, names: &[String], specs: &[SourceSpec]
             Some(d) => dest.join(d),
             None => dest.clone(),
         };
-        let smoke_args = specs
-            .iter()
-            .find(|s| &s.name == name)
+        let smoke_args = spec
             .map(|s| s.smoke_args.clone())
             .unwrap_or_else(|| vec!["--version".to_string()]);
-        for b in &manifest.bin {
+        for bin in bins {
             // Same resolution the install engine uses (unix payloads are
             // extensionless where Windows-first manifests name `.exe`).
-            let path = voli_core::resolve_bin_target(&root, b.path());
+            let path = voli_core::resolve_bin_target(&root, bin);
             if !path.is_file() {
                 return Err(Error::Config(format!(
                     "bin '{}' resolves to {}, which is not a file",
-                    b.path(),
+                    bin,
                     path.display()
                 )));
             }
-            match gate_binary(&path, b.path(), &smoke_args, cfg!(target_os = "macos"))? {
+            match gate_binary(&path, bin, &smoke_args, cfg!(target_os = "macos"))? {
                 GateOutcome::Verified => {}
                 GateOutcome::StaticOnly(reason) => {
                     return Err(Error::Config(format!(
@@ -486,4 +515,114 @@ fn verify_only_mode(manifests_dir: &Path, names: &[String], specs: &[SourceSpec]
         println!("  {name}: host payload verified");
     }
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use brew_import::AssetSpec;
+
+    fn windows_only_registry() -> tempfile::TempDir {
+        let dir = tempfile::tempdir().unwrap();
+        let path = manifest_path(dir.path(), "tool", "1.0.0");
+        std::fs::create_dir_all(path.parent().unwrap()).unwrap();
+        std::fs::write(path, format!(
+            "name = \"tool\"\nversion = \"1.0.0\"\nkind = \"app\"\nbin = [\"tool\"]\n\n[source.x64]\nurl = \"https://example.com/tool.zip\"\nsha256 = \"{}\"\n",
+            "a".repeat(64)
+        )).unwrap();
+        dir
+    }
+
+    fn spec(platform: &str) -> SourceSpec {
+        SourceSpec {
+            name: "tool".to_string(),
+            repo: "example/tool".to_string(),
+            tag: None,
+            description: String::new(),
+            homepage: String::new(),
+            license: "MIT".to_string(),
+            bin: vec!["tool".to_string()],
+            smoke_args: vec!["--version".to_string()],
+            assets: BTreeMap::from([(
+                platform.to_string(),
+                AssetSpec {
+                    file: "tool.tar.gz".to_string(),
+                    extract_dir: None,
+                },
+            )]),
+        }
+    }
+
+    #[test]
+    fn verify_uses_allowlist_binaries_when_manifest_has_none() {
+        let dir = windows_only_registry();
+        let (_, mut manifest) = registry_latest(dir.path(), "tool").unwrap().unwrap();
+        manifest.bin.clear();
+        let spec = spec("linux-x64");
+        assert_eq!(
+            verification_bins(&manifest, Some(&spec)).unwrap(),
+            vec!["tool"]
+        );
+    }
+
+    #[test]
+    fn verify_rejects_empty_binary_lists() {
+        let dir = windows_only_registry();
+        let (_, mut manifest) = registry_latest(dir.path(), "tool").unwrap().unwrap();
+        manifest.bin.clear();
+        assert!(matches!(
+            verification_bins(&manifest, None),
+            Err(Error::Config(_))
+        ));
+        let mut spec = spec("linux-x64");
+        spec.bin.clear();
+        assert!(matches!(
+            verification_bins(&manifest, Some(&spec)),
+            Err(Error::Config(_))
+        ));
+    }
+
+    #[test]
+    fn verify_keeps_manifest_binary_targets_when_present() {
+        let dir = windows_only_registry();
+        let (_, manifest) = registry_latest(dir.path(), "tool").unwrap().unwrap();
+        let mut spec = spec("linux-x64");
+        spec.bin = vec!["different-allowlist-tool".to_string()];
+        assert_eq!(
+            verification_bins(&manifest, Some(&spec)).unwrap(),
+            vec!["tool"]
+        );
+    }
+
+    #[test]
+    fn verify_skips_only_explicitly_unsupported_host_platform() {
+        let dir = windows_only_registry();
+        let host = voli_core::manifest::Platform::host().to_string();
+        let unsupported = if host == "linux-x64" {
+            "macos-arm64"
+        } else {
+            "linux-x64"
+        };
+        verify_only_mode(dir.path(), &["tool".to_string()], &[spec(unsupported)]).unwrap();
+    }
+
+    #[test]
+    fn verify_rejects_declared_but_missing_host_platform() {
+        let dir = windows_only_registry();
+        let host = voli_core::manifest::Platform::host().to_string();
+        let err = verify_only_mode(dir.path(), &["tool".to_string()], &[spec(&host)]).unwrap_err();
+        assert!(
+            matches!(err, Error::Config(message) if message.contains(&format!("has no [{host}] block")))
+        );
+    }
+
+    #[test]
+    fn verify_without_allowlist_still_rejects_missing_host_platform() {
+        let dir = windows_only_registry();
+        let host = voli_core::manifest::Platform::host().to_string();
+        let err = verify_only_mode(dir.path(), &["tool".to_string()], &[]).unwrap_err();
+        assert!(
+            matches!(err, Error::Config(message) if message.contains(&format!("has no [{host}] block")))
+        );
+    }
 }

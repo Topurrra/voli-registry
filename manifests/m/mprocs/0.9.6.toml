@@ -10,6 +10,14 @@ bin = ["mprocs.exe"]
 url = "https://github.com/pvolok/dekit/releases/download/v0.9.6/mprocs-0.9.6-windows-x86_64.zip"
 sha256 = "9dc6e49ef47c7aa2e6a2844503d6cfa34e51a4d15dd78abef6e6de2fc10e5765"
 
+[source.linux-x64]
+url = "https://github.com/pvolok/mprocs/releases/download/v0.9.6/mprocs-0.9.6-linux-x86_64-musl.tar.gz"
+sha256 = "52591a9aab797a5e164fa37a5f81b516fa3c25f125b59a60724e38ae98bfe77b"
+
+[source.linux-arm64]
+url = "https://github.com/pvolok/mprocs/releases/download/v0.9.6/mprocs-0.9.6-linux-aarch64-musl.tar.gz"
+sha256 = "ebe73f04e02e2134df463c8f0a0e1c293aa3b41dd7909180687529b21780adb0"
+
 [autoupdate]
 checkver = { github = "pvolok/dekit" }
 url_template = { x64 = "https://github.com/pvolok/dekit/releases/download/v$version/mprocs-$version-windows-x86_64.zip" }

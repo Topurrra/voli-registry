@@ -394,10 +394,10 @@ file = "duf_{version}_linux_x86_64.tar.gz"
 file = "duf_{version}_linux_arm64.tar.gz"
 
 [source.assets.macos-x64]
-file = "duf_{version}_Darwin_x86_64.tar.gz"
+file = "duf_{version}_darwin_x86_64.tar.gz"
 
 [source.assets.macos-arm64]
-file = "duf_{version}_Darwin_arm64.tar.gz"
+file = "duf_{version}_darwin_arm64.tar.gz"
 
 [[source]]
 name = "dust"
@@ -657,7 +657,7 @@ file = "mise-v{version}-macos-arm64.tar.gz"
 
 [[source]]
 name = "mprocs"
-repo = "pvolok/mprocs"
+repo = "pvolok/dekit"
 description = "Run multiple commands in parallel"
 homepage = "https://github.com/pvolok/dekit"
 license = "MIT"

@@ -10,6 +10,26 @@ bin = ["atuin.exe"]
 url = "https://github.com/atuinsh/atuin/releases/download/v18.23.0/atuin-x86_64-pc-windows-msvc.zip"
 sha256 = "3e1c1282da39039a7ceb8e53c6b624dfb86200823559bbe80c0ace3d0baf09ae"
 
+[source.linux-x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.23.0/atuin-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "d1b40dd6e7cd3d823867ffe22b39a025bc420f7875926ae9ca974155378da14d"
+extract_dir = "atuin-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.23.0/atuin-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "faf91adc71e6b661b21ed4f486babbd7af9d17363d4276da4a0251f83c72498d"
+extract_dir = "atuin-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.23.0/atuin-x86_64-apple-darwin.tar.gz"
+sha256 = "f87ff4bef3f818f81474713dfc964008793a77ade12f8076f9a82237695a587a"
+extract_dir = "atuin-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.23.0/atuin-aarch64-apple-darwin.tar.gz"
+sha256 = "c988be1cde19cd7295ce64bc8b955d42fb1855e5227cb640c87fc09c8408c3fc"
+extract_dir = "atuin-aarch64-apple-darwin"
+
 [autoupdate]
 checkver = { github = "atuinsh/atuin" }
 url_template = { x64 = "https://github.com/atuinsh/atuin/releases/download/v$version/atuin-x86_64-pc-windows-msvc.zip" }

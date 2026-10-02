@@ -1,0 +1,15 @@
+name = "topgrade"
+version = "17.12.2"
+description = "Upgrade everything, keep your system up to date by detecting which tools you use and run their appropriate package managers."
+homepage = "https://github.com/topgrade-rs/topgrade"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["topgrade.exe"]
+
+[source.x64]
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.12.2/topgrade-v17.12.2-x86_64-pc-windows-msvc.zip"
+sha256 = "af1149da267ad9d5f7521ea6ebfc63fc3a9fee6784d25f5b3dd9b63cfb4713ca"
+
+[autoupdate]
+checkver = { github = "topgrade-rs/topgrade" }
+url_template = { x64 = "https://github.com/topgrade-rs/topgrade/releases/download/v$version/topgrade-v$version-x86_64-pc-windows-msvc.zip" }

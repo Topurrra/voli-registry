@@ -10,6 +10,10 @@ bin = ["brotli.exe"]
 url = "https://github.com/google/brotli/releases/download/v1.2.0/brotli-x64-windows-static.zip"
 sha256 = "3208ab82d4f08e062a25660cf38092db4e8415792aa1e579956d37740f8d8924"
 
+[source.arm64]
+url = "https://github.com/google/brotli/releases/download/v1.2.0/brotli-arm64-windows-static.zip"
+sha256 = "6b79ffee25fec9d9cfc7d2b7c67351231506228bb99b461f037b201ef510d432"
+
 [autoupdate]
 checkver = { github = "google/brotli" }
-url_template = { x64 = "https://github.com/google/brotli/releases/download/v$version/brotli-x64-windows-static.zip" }
+url_template = { x64 = "https://github.com/google/brotli/releases/download/v$version/brotli-x64-windows-static.zip", arm64 = "https://github.com/google/brotli/releases/download/v$version/brotli-arm64-windows-static.zip" }

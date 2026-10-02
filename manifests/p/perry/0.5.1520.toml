@@ -10,9 +10,13 @@ bin = ["perry.exe"]
 url = "https://github.com/PerryTS/perry/releases/download/v0.5.1520/perry-windows-x86_64.zip"
 sha256 = "6d8f56035be8aee8e009c9f8f9cd6a00388c9542b52a8ae6acca1938958273a9"
 
+[source.arm64]
+url = "https://github.com/PerryTS/perry/releases/download/v0.5.1520/perry-windows-aarch64.zip"
+sha256 = "8e747448f28a29730c2db9faa8324038d35cceb4d94db8ef10609ca1a948bd9f"
+
 [depends]
 llvm = "*"
 
 [autoupdate]
 checkver = { github = "PerryTS/perry" }
-url_template = { x64 = "https://github.com/PerryTS/perry/releases/download/v$version/perry-windows-x86_64.zip" }
+url_template = { x64 = "https://github.com/PerryTS/perry/releases/download/v$version/perry-windows-x86_64.zip", arm64 = "https://github.com/PerryTS/perry/releases/download/v$version/perry-windows-aarch64.zip" }

@@ -10,5 +10,9 @@ bin = ["yedit.exe"]
 url = "http://www.malsmith.net/download/?obj=yori/2.0/yori-typical-amd64.cab#/dl.7z"
 sha256 = "d3757a4ab8f1a8e01d1f710df387555bc31a7bff55776ba7c2ba366140c8ca03"
 
+[source.arm64]
+url = "http://www.malsmith.net/download/?obj=yori/2.0/yori-typical-arm64.cab#/dl.7z"
+sha256 = "0c125d39431c2d128b91daaa00c76d733a9effddf19040c24325e8cb8cf79439"
+
 [autoupdate]
 checkver = { github = "malxau/yori" }

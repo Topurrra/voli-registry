@@ -10,6 +10,10 @@ bin = ["mage.exe"]
 url = "https://github.com/magefile/mage/releases/download/v1.17.2/mage_1.17.2_Windows-64bit.zip"
 sha256 = "970bc6efa76d6dc7285098a7033f4e6c83c18dc02f80548ae8de8dc5586e0445"
 
+[source.arm64]
+url = "https://github.com/magefile/mage/releases/download/v1.17.2/mage_1.17.2_Windows-arm64.zip"
+sha256 = "eb58be3a8d0ed96303b4f0f1ec921697fb3f4fae5c4aa4242911254e8ba4f7b0"
+
 [autoupdate]
 checkver = { github = "magefile/mage" }
-url_template = { x64 = "https://github.com/magefile/mage/releases/download/v$version/mage_$version_Windows-64bit.zip" }
+url_template = { x64 = "https://github.com/magefile/mage/releases/download/v$version/mage_$version_Windows-64bit.zip", arm64 = "https://github.com/magefile/mage/releases/download/v$version/mage_$version_Windows-arm64.zip" }

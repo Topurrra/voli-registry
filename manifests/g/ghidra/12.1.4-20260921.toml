@@ -1,0 +1,20 @@
+name = "ghidra"
+version = "12.1.4-20260921"
+description = "a software reverse engineering (SRE) framework"
+homepage = "https://ghidra-sre.org"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "ghidra_12.1.4_PUBLIC"
+bin = ["ghidraRun.bat"]
+shortcuts = [{ target = "ghidraRun.bat", name = "ghidra" }]
+persist = ["Ghidra/Configurations"]
+
+[source.x64]
+url = "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip"
+sha256 = "ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db"
+
+[env]
+GHIDRA_INSTALL_DIR = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"ghidra_([\\\\d.]+)_PUBLIC_(?<releasedate>\\\\d+)\\\\.zip\",\"replace\":\"${1}-${2}\"}"

@@ -1,0 +1,15 @@
+name = "usql"
+version = "0.21.6"
+description = "Universal command-line interface for SQL databases"
+homepage = "https://github.com/xo/usql"
+license = "MIT"
+kind = "app"
+bin = ["usql.exe"]
+
+[source.x64]
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-windows-amd64.zip"
+sha256 = "9b5dd191fc13d2619e7cefd9f619093bf151381bc7eb4f01dce88d03bea02a99"
+
+[autoupdate]
+checkver = { github = "xo/usql" }
+url_template = { x64 = "https://github.com/xo/usql/releases/download/v$version/usql-$version-windows-amd64.zip" }

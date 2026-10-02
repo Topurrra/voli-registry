@@ -1,0 +1,17 @@
+name = "fio"
+version = "3.43"
+description = "Flexible I/O Tester"
+homepage = "https://github.com/axboe/fio"
+license = "GPL-2.0-only"
+kind = "app"
+extract_dir = "fio"
+bin = ["fio.exe"]
+
+[source.x64]
+url = "https://github.com/axboe/fio/releases/download/fio-3.43/fio-3.43-x64.msi"
+sha256 = "8299e6e6fbc024d3b74aa1ce62fb94ef6960b45629fbfa678b720834b6eb34aa"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "axboe/fio" }
+url_template = { x64 = "https://github.com/axboe/fio/releases/download/fio-$version/fio-$version-x64.msi" }

@@ -4,13 +4,18 @@ description = "UNIX-like reverse engineering framework and command-line toolset"
 homepage = "https://www.radare.org/n/radare2.html"
 license = "LGPL-3.0-only"
 kind = "app"
-extract_dir = "radare2-6.2.2-w64"
 bin = [{ name = "r2", path = "bin\\radare2.exe" }, "bin\\r2agent.exe", "bin\\rabin2.exe", "bin\\radare2.exe", "bin\\radiff2.exe", "bin\\rafind2.exe", "bin\\ragg2.exe", "bin\\rahash2.exe", "bin\\rarun2.exe", "bin\\rasign2.exe", "bin\\rasm2.exe", "bin\\ravc2.exe", "bin\\rax2.exe"]
 
 [source.x64]
 url = "https://github.com/radareorg/radare2/releases/download/6.2.2/radare2-6.2.2-w64.zip"
 sha256 = "913e7d95e7458226a5e783240877f2c1d405398ab38ba176ce9b12e046e31f34"
+extract_dir = "radare2-6.2.2-w64"
+
+[source.arm64]
+url = "https://github.com/radareorg/radare2/releases/download/6.2.2/radare2-6.2.2-w64-arm64.zip"
+sha256 = "80800fa65310f34d1066841b6b84135470007776b5ef16e8849d331d9f3092f3"
+extract_dir = "radare2-6.2.2-w64-arm64"
 
 [autoupdate]
 checkver = { github = "radareorg/radare2" }
-url_template = { x64 = "https://github.com/radareorg/radare2/releases/download/$version/radare2-$version-w64.zip" }
+url_template = { x64 = "https://github.com/radareorg/radare2/releases/download/$version/radare2-$version-w64.zip", arm64 = "https://github.com/radareorg/radare2/releases/download/$version/radare2-$version-w64-arm64.zip" }

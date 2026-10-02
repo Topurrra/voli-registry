@@ -1,0 +1,17 @@
+name = "staxrip"
+version = "2.52.6"
+description = "Video encoding GUI for Windows."
+homepage = "https://github.com/staxrip/staxrip"
+license = "MIT"
+kind = "app"
+extract_dir = "StaxRip-v2.52.6-x64"
+shortcuts = [{ target = "StaxRip.exe", name = "StaxRip" }]
+persist = ["Settings"]
+
+[source.x64]
+url = "https://github.com/staxrip/staxrip/releases/download/v2.52.6/StaxRip-v2.52.6-x64.7z"
+sha256 = "0167edaaa3d460768938c61d496fe909b6347cf57bfc7217408642ee2cc233a7"
+
+[autoupdate]
+checkver = { github = "staxrip/staxrip" }
+url_template = { x64 = "https://github.com/staxrip/staxrip/releases/download/v$version/StaxRip-v$version-x64.7z" }

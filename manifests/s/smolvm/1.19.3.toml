@@ -1,0 +1,16 @@
+name = "smolvm"
+version = "1.19.3"
+description = "Manage and run custom Linux virtual machines locally by using a portable, lightweight, self-contained virtual machine."
+homepage = "https://smolmachines.com"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "smolvm-1.19.3-windows-x86_64"
+bin = ["smolvm.exe"]
+
+[source.x64]
+url = "https://github.com/smol-machines/smolvm/releases/download/v1.19.3/smolvm-1.19.3-windows-x86_64.zip"
+sha256 = "3c69f378332c2f9447d259e9d378e0e6c1c313cc141a6c075b530f7789dd9c60"
+
+[autoupdate]
+checkver = { github = "smol-machines/smolvm" }
+url_template = { x64 = "https://github.com/smol-machines/smolvm/releases/download/v$version/smolvm-$version-windows-x86_64.zip" }

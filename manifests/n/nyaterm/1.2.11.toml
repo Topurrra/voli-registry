@@ -1,0 +1,21 @@
+name = "nyaterm"
+version = "1.2.11"
+description = "A modern remote terminal workspace"
+homepage = "https://nyaterm.app"
+license = "MIT"
+kind = "app"
+extract_dir = "NyaTerm-portable"
+shortcuts = [{ target = "NyaTerm.exe", name = "NyaTerm" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/nyakang/nyaterm/releases/download/v1.2.11/NyaTerm_1.2.11_windows_x64_portable.zip"
+sha256 = "92e5880a854fe3abc0f77c8e71b3470b80dcc74c930a5c462b95f05bd7293448"
+
+[source.arm64]
+url = "https://github.com/nyakang/nyaterm/releases/download/v1.2.11/NyaTerm_1.2.11_windows_arm64_portable.zip"
+sha256 = "8b04b504cae5d761cf9628c4417acecf76b300a62aa24a01770e3fe8931a52c3"
+
+[autoupdate]
+checkver = { github = "nyakang/nyaterm" }
+url_template = { x64 = "https://github.com/nyakang/nyaterm/releases/download/v$version/NyaTerm_$version_windows_x64_portable.zip", arm64 = "https://github.com/nyakang/nyaterm/releases/download/v$version/NyaTerm_$version_windows_arm64_portable.zip" }

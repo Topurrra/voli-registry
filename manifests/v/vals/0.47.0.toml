@@ -10,6 +10,10 @@ bin = ["vals.exe"]
 url = "https://github.com/helmfile/vals/releases/download/v0.47.0/vals_0.47.0_windows_amd64.tar.gz"
 sha256 = "bdb7e5e08d73637ccb57083f42961b4385e4a3270891f812dc53f8d1807847c8"
 
+[source.arm64]
+url = "https://github.com/helmfile/vals/releases/download/v0.47.0/vals_0.47.0_windows_arm64.tar.gz"
+sha256 = "9a93a732108c8be26f369d5bc171e2d2b29d6d07765b54d34cfdcb389af31315"
+
 [autoupdate]
 checkver = { github = "helmfile/vals" }
-url_template = { x64 = "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz" }
+url_template = { x64 = "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_amd64.tar.gz", arm64 = "https://github.com/helmfile/vals/releases/download/v$version/vals_$version_windows_arm64.tar.gz" }

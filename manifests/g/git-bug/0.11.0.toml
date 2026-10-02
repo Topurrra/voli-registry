@@ -1,0 +1,21 @@
+name = "git-bug"
+version = "0.11.0"
+description = "Distributed, offline-first bug tracker embedded in git, with bridges"
+homepage = "https://github.com/git-bug/git-bug"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["git-bug.exe"]
+
+[source.x64]
+url = "https://github.com/git-bug/git-bug/releases/download/v0.11.0/git-bug_0.11.0_windows_amd64.zip"
+sha256 = "6160ac777134d579ad5f8097dc3e4e70f1aab02fd8f4cb3b21bdf90c7e52843a"
+extract_dir = "git-bug_0.11.0_windows_amd64"
+
+[source.arm64]
+url = "https://github.com/git-bug/git-bug/releases/download/v0.11.0/git-bug_0.11.0_windows_arm64.zip"
+sha256 = "bb481aa8a0d07ef79be62b5eaf9e8eec219d25856f383148e43f7aeac6b187bb"
+extract_dir = "git-bug_0.11.0_windows_arm64"
+
+[autoupdate]
+checkver = { github = "git-bug/git-bug" }
+url_template = { x64 = "https://github.com/git-bug/git-bug/releases/download/v$version/git-bug_$version_windows_amd64.zip", arm64 = "https://github.com/git-bug/git-bug/releases/download/v$version/git-bug_$version_windows_arm64.zip" }

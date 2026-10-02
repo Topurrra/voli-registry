@@ -4,12 +4,16 @@ description = "Open Source Computer Vision Library"
 homepage = "https://opencv.org/"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "opencv\\build"
 
 [source.x64]
 url = "https://github.com/opencv/opencv/releases/download/5.0.0/opencv-5.0.0-windows.exe#/dl.7z"
 sha256 = "9c6c1fcea58acdf06edba13148b2246e00c2658143fa51e61ecd370db8c39f63"
+extract_dir = "opencv\\build"
+
+[source.arm64]
+url = "https://github.com/opencv/opencv/releases/download/5.0.0/opencv-5.0.0-windows-arm64.exe#/dl.7z"
+sha256 = "087bd5cc1f2d6d44f71ec941babbc49e0426fb81c4ecd59ab7721890c852b8a6"
 
 [autoupdate]
 checkver = { github = "opencv/opencv" }
-url_template = { x64 = "https://github.com/opencv/opencv/releases/download/$version/opencv-$version-windows.exe#/dl.7z" }
+url_template = { x64 = "https://github.com/opencv/opencv/releases/download/$version/opencv-$version-windows.exe#/dl.7z", arm64 = "https://github.com/opencv/opencv/releases/download/$version/opencv-$version-windows-arm64.exe#/dl.7z" }

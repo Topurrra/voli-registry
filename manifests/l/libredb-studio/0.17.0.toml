@@ -1,0 +1,15 @@
+name = "libredb-studio"
+version = "0.17.0"
+description = "Self-hosted, browser-based SQL IDE for cloud-native teams, covering sixteen database engines with AI-assisted query writing and ER diagrams."
+homepage = "https://libredb.org"
+license = "MIT"
+kind = "app"
+bin = ["libredb-studio.exe"]
+
+[source.x64]
+url = "https://github.com/libredb/libredb-studio/releases/download/0.17.0/libredb-studio-standalone-0.17.0-win32-x64.zip"
+sha256 = "5bbe01b13eeb38a6df514a583d96977e89b7449626f5ae3ec7df0b9474fe1427"
+
+[autoupdate]
+checkver = { url = "https://github.com/libredb/libredb-studio/releases.atom", regex = "releases/tag/([\\d.]+)\"" }
+url_template = { x64 = "https://github.com/libredb/libredb-studio/releases/download/$version/libredb-studio-standalone-$version-win32-x64.zip" }

@@ -11,6 +11,10 @@ bin = ["figurine.exe"]
 url = "https://github.com/arsham/figurine/releases/download/v2.1.1/figurine_windows_amd64_v2.1.1.zip"
 sha256 = "9eae6503eb28673cfd0a4398e7e1a71faa0224515472a22f4678ec455f41cfba"
 
+[source.arm64]
+url = "https://github.com/arsham/figurine/releases/download/v2.1.1/figurine_windows_arm64_v2.1.1.zip"
+sha256 = "bc75a6324b7e88d05437738bd776b6b75aa1c0d501bd7e7e3b7049d32bd79614"
+
 [autoupdate]
 checkver = { github = "arsham/figurine" }
-url_template = { x64 = "https://github.com/arsham/figurine/releases/download/v$version/figurine_windows_amd64_v$version.zip" }
+url_template = { x64 = "https://github.com/arsham/figurine/releases/download/v$version/figurine_windows_amd64_v$version.zip", arm64 = "https://github.com/arsham/figurine/releases/download/v$version/figurine_windows_arm64_v$version.zip" }

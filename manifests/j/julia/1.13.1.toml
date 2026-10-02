@@ -1,0 +1,17 @@
+name = "julia"
+version = "1.13.1"
+description = "The Julia programming language"
+homepage = "https://julialang.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "julia-1.13.1"
+bin = ["bin\\julia.exe"]
+shortcuts = [{ target = "bin\\julia.exe", name = "Julia" }]
+
+[source.x64]
+url = "https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.1-win64.zip"
+sha256 = "648e39c58158c5c8dde08bb0df0b5bce51d517be1396a37a539bb61bc241c8b4"
+
+[autoupdate]
+checkver = { url = "https://github.com/JuliaLang/www.julialang.org/raw/main/config.md", regex = "(?m:^stable_release *= *\"([0-9.]+)\"$)" }
+url_template = { x64 = "https://julialang-s3.julialang.org/bin/winnt/x64/$majorVersion.$minorVersion/julia-$version-win64.zip" }

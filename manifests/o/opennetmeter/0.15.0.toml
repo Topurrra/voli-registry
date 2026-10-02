@@ -4,7 +4,7 @@ description = "A simple program to monitor your network/data usage."
 homepage = "https://github.com/Ashfaaq18/OpenNetMeter"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "PFiles64\\OpenNetMeter"
+extract_dir = "PFiles\\OpenNetMeter"
 shortcuts = [{ target = "OpenNetMeter.exe", name = "OpenNetMeter" }]
 
 [source.x64]

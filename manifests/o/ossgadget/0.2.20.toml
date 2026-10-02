@@ -1,0 +1,16 @@
+name = "ossgadget"
+version = "0.2.20"
+description = "Collection of tools for analyzing open source packages."
+homepage = "https://github.com/microsoft/OSSGadget"
+license = "MIT"
+kind = "app"
+extract_dir = "oss-gadget-cli_win_0.2.20"
+bin = ["ossgadget.exe"]
+
+[source.x64]
+url = "https://github.com/microsoft/OSSGadget/releases/download/v0.2.20/oss-gadget-cli_win_0.2.20.zip"
+sha256 = "5a68df92098f8a334a5bfe34f6fd00c550f9f1eea984ecd41bd99677d9ca44a5"
+
+[autoupdate]
+checkver = { github = "microsoft/OSSGadget" }
+url_template = { x64 = "https://github.com/microsoft/OSSGadget/releases/download/v$version/oss-gadget-cli_win_$version.zip" }

@@ -10,6 +10,10 @@ bin = ["ddev.exe", "ddev-hostname.exe"]
 url = "https://github.com/ddev/ddev/releases/download/v1.25.4/ddev_windows-amd64.v1.25.4.zip"
 sha256 = "93193fffbdca7e73675a87d681b44112fd85cf6659d62feb0a517714083cbce8"
 
+[source.arm64]
+url = "https://github.com/ddev/ddev/releases/download/v1.25.4/ddev_windows-arm64.v1.25.4.zip"
+sha256 = "ddfe08b3d3af8357de7374fbb2147f864f51b1e5ea3db1504a18d3bb070b72d1"
+
 [autoupdate]
 checkver = { github = "ddev/ddev" }
-url_template = { x64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip" }
+url_template = { x64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip", arm64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-arm64.v$version.zip" }

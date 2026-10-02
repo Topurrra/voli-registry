@@ -10,6 +10,10 @@ bin = ["buffalo.exe"]
 url = "https://github.com/gobuffalo/cli/releases/download/v0.18.14/buffalo_0.18.14_windows_x86_64.tar.gz"
 sha256 = "1717c5e7e79df8ef46f740e7d89d6035845cbbb5e2103d55acf55589cb6d7440"
 
+[source.arm64]
+url = "https://github.com/gobuffalo/cli/releases/download/v0.18.14/buffalo_0.18.14_windows_arm64.tar.gz"
+sha256 = "d67dc1ffc8f8505d10e3de1a19dcfe2fc9f9050a4ae114da955e8dd92ac91621"
+
 [autoupdate]
 checkver = { github = "gobuffalo/cli" }
-url_template = { x64 = "https://github.com/gobuffalo/cli/releases/download/v$version/buffalo_$version_windows_x86_64.tar.gz" }
+url_template = { x64 = "https://github.com/gobuffalo/cli/releases/download/v$version/buffalo_$version_windows_x86_64.tar.gz", arm64 = "https://github.com/gobuffalo/cli/releases/download/v$version/buffalo_$version_windows_arm64.tar.gz" }

@@ -1,0 +1,21 @@
+name = "shotcut"
+version = "26.9.27"
+description = "Video editor"
+homepage = "https://www.shotcut.org"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Shotcut"
+bin = ["shotcut.exe"]
+shortcuts = [{ target = "shotcut.exe", name = "Shotcut" }]
+
+[source.x64]
+url = "https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-win64-26.9.27.zip"
+sha256 = "1f8c50ce7b125a2f0dcb60777b358e86baf03b8515982612b6adae10a83d93a5"
+
+[source.arm64]
+url = "https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-win_ARM-26.9.27.zip"
+sha256 = "ba0e586ddf540cdcd9fdc6b7bda3dff6b4c97386cdde96fdb3fe3f4bc0f3e05c"
+
+[autoupdate]
+checkver = { github = "mltframework/shotcut" }
+url_template = { x64 = "https://github.com/mltframework/shotcut/releases/download/v$version/shotcut-win64-$version.zip", arm64 = "https://github.com/mltframework/shotcut/releases/download/v$version/shotcut-win_ARM-$version.zip" }

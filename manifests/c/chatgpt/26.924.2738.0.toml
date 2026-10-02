@@ -1,0 +1,24 @@
+name = "chatgpt"
+version = "26.924.2738.0"
+description = "Desktop application for ChatGPT"
+homepage = "https://chatgpt.com/"
+license = "Proprietary"
+kind = "app"
+extract_dir = "app"
+shortcuts = [{ target = "ChatGPT.exe", name = "ChatGPT" }]
+
+[source.x64]
+url = "https://persistent.oaistatic.com/codex-app-prod/releases/26.924.2738.0/ChatGPT-x64.msix#/dl.zip"
+sha256 = "132431a26fe4de44d1fa3c6e148506dbb4c8d806dad40cfd48e3ed554f2755a2"
+
+[source.arm64]
+url = "https://persistent.oaistatic.com/codex-app-prod/releases/26.924.2738.0/ChatGPT-arm64.msix#/dl.zip"
+sha256 = "e32058c1b8336047a02d457f72081e86c91ef28282ae2e4da77176dfd453e366"
+
+[env]
+CODEX_CLI_PATH = "{dir}\\resources\\codex.exe"
+CODEX_SPARKLE_ENABLED = "false"
+
+[autoupdate]
+checkver = "{\"regex\":\"([\\\\d.]+)\",\"script\":\"(Invoke-WebRequest 'https://persistent.oaistatic.com/codex-app-prod/ChatGPT-x64.msix' -Method Head -UseBasicParsing).Headers['x-ms-meta-package_version']\",\"url\":\"https://persistent.oaistatic.com/codex-app-prod/windows-store-update.json\"}"
+url_template = { x64 = "https://persistent.oaistatic.com/codex-app-prod/releases/$version/ChatGPT-x64.msix#/dl.zip", arm64 = "https://persistent.oaistatic.com/codex-app-prod/releases/$version/ChatGPT-arm64.msix#/dl.zip" }

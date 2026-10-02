@@ -10,6 +10,10 @@ bin = ["aichat.exe"]
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"
 sha256 = "89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f"
 
+[source.arm64]
+url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-pc-windows-msvc.zip"
+sha256 = "2f381e70ddaf0831df7e0181a1d25d700bb0d7e53287393a47fd435c253d6091"
+
 [autoupdate]
 checkver = { github = "sigoden/aichat" }
-url_template = { x64 = "https://github.com/sigoden/aichat/releases/download/v$version/aichat-v$version-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/sigoden/aichat/releases/download/v$version/aichat-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/sigoden/aichat/releases/download/v$version/aichat-v$version-aarch64-pc-windows-msvc.zip" }

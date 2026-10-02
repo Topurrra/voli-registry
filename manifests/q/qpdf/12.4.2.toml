@@ -1,0 +1,21 @@
+name = "qpdf"
+version = "12.4.2"
+description = "A command-line program that does structural, content-preserving transformations on PDF files."
+homepage = "https://qpdf.sourceforge.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\qpdf.exe", "bin\\fix-qdf.exe"]
+
+[source.x64]
+url = "https://github.com/qpdf/qpdf/releases/download/v12.4.2/qpdf-12.4.2-msvc64.zip"
+sha256 = "db87077e683630c1217e0e8f9a20a9749d952ab676e881c3689187763a5de25d"
+extract_dir = "qpdf-12.4.2-msvc64"
+
+[source.arm64]
+url = "https://github.com/qpdf/qpdf/releases/download/v12.4.2/qpdf-12.4.2-msvc-arm64.zip"
+sha256 = "2b5d7740a2513d8a841116692dc2cf7efe83f35262386ebab18bed35fbf15ab1"
+extract_dir = "qpdf-12.4.2-msvc-arm64"
+
+[autoupdate]
+checkver = { github = "qpdf/qpdf" }
+url_template = { x64 = "https://github.com/qpdf/qpdf/releases/download/v$version/qpdf-$version-msvc64.zip", arm64 = "https://github.com/qpdf/qpdf/releases/download/v$version/qpdf-$version-msvc-arm64.zip" }

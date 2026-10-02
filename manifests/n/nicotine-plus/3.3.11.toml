@@ -11,6 +11,10 @@ shortcuts = [{ target = "Nicotine+.exe", name = "Nicotine+" }]
 url = "https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.11/windows-x86_64-package.zip"
 sha256 = "4924f9f60c6b1a60e9fe62f5e94a4289058c6826cc7ee33f26ca43dea8ca8608"
 
+[source.arm64]
+url = "https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.11/windows-arm64-package.zip"
+sha256 = "033a9810431354e697dfe146449198c885fcef5d5d507c8070a535e018644ddb"
+
 [autoupdate]
 checkver = { github = "nicotine-plus/nicotine-plus" }
-url_template = { x64 = "https://github.com/nicotine-plus/nicotine-plus/releases/download/$version/windows-x86_64-package.zip" }
+url_template = { x64 = "https://github.com/nicotine-plus/nicotine-plus/releases/download/$version/windows-x86_64-package.zip", arm64 = "https://github.com/nicotine-plus/nicotine-plus/releases/download/$version/windows-arm64-package.zip" }

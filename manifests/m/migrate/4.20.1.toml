@@ -10,6 +10,10 @@ bin = ["migrate.exe"]
 url = "https://github.com/golang-migrate/migrate/releases/download/v4.20.1/migrate.windows-amd64.zip"
 sha256 = "bf68e2fdd1c8efd3cac59c6cb4cddca51546c402e3fc616172329d7686875ce8"
 
+[source.arm64]
+url = "https://github.com/golang-migrate/migrate/releases/download/v4.20.1/migrate.windows-arm64.zip"
+sha256 = "7e7bf6db821e35831f4a36a57a8b64dd8f897a2a5e9d5c7921355fff3676032f"
+
 [autoupdate]
 checkver = { github = "golang-migrate/migrate" }
-url_template = { x64 = "https://github.com/golang-migrate/migrate/releases/download/v$version/migrate.windows-amd64.zip" }
+url_template = { x64 = "https://github.com/golang-migrate/migrate/releases/download/v$version/migrate.windows-amd64.zip", arm64 = "https://github.com/golang-migrate/migrate/releases/download/v$version/migrate.windows-arm64.zip" }

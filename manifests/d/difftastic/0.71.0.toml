@@ -1,0 +1,19 @@
+name = "difftastic"
+version = "0.71.0"
+description = "A structural diff that understands syntax"
+homepage = "https://difftastic.wilfred.me.uk"
+license = "MIT"
+kind = "app"
+bin = ["difft.exe"]
+
+[source.x64]
+url = "https://github.com/Wilfred/difftastic/releases/download/0.71.0/difft-0.71.0-x86_64-pc-windows-msvc.zip"
+sha256 = "9a979f9d96d739625a0fe69317f3197cc7bcef663a6d7195197d6c9bf96ed6f5"
+
+[source.arm64]
+url = "https://github.com/Wilfred/difftastic/releases/download/0.71.0/difft-0.71.0-aarch64-pc-windows-msvc.zip"
+sha256 = "fbf0497f654271f9c96dfc52f06aad2163ac391ee4050f9dab7b88cba2bd9e77"
+
+[autoupdate]
+checkver = { github = "Wilfred/difftastic" }
+url_template = { x64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Wilfred/difftastic/releases/download/$version/difft-$version-aarch64-pc-windows-msvc.zip" }

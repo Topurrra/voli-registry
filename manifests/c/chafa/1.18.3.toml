@@ -1,0 +1,16 @@
+name = "chafa"
+version = "1.18.3"
+description = "Terminal graphics for the 21st century."
+homepage = "https://hpjansson.org/chafa/"
+license = "LGPL-3.0-or-later"
+kind = "app"
+extract_dir = "chafa-1.18.3-1-x86_64-win"
+bin = ["chafa.exe"]
+
+[source.x64]
+url = "https://hpjansson.org/chafa/releases/static/chafa-1.18.3-1-x86_64-windows.zip"
+sha256 = "3d7b43cab1c9d9116024ab48664db8910e3eabf0912720828d5e7ad1b80194fa"
+
+[autoupdate]
+checkver = { url = "https://hpjansson.org/chafa/download/", regex = "releases/static/chafa-([\\d.]+)-(?<rel>\\d)-x86_64-windows.zip" }
+url_template = { x64 = "https://hpjansson.org/chafa/releases/static/chafa-$version-$matchRel-x86_64-windows.zip" }

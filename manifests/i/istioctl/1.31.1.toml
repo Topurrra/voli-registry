@@ -1,0 +1,15 @@
+name = "istioctl"
+version = "1.31.1"
+description = "Configuration command line utility for service operators to debug and diagnose their Istio mesh."
+homepage = "https://istio.io/latest/docs/reference/commands/istioctl/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["istioctl.exe"]
+
+[source.x64]
+url = "https://github.com/istio/istio/releases/download/1.31.1/istioctl-1.31.1-win.zip"
+sha256 = "e77f2c192b54aab2ed480745bedc081b3cedecf177e357a4ea9e739634818f9f"
+
+[autoupdate]
+checkver = { github = "istio/istio" }
+url_template = { x64 = "https://github.com/istio/istio/releases/download/$version/istioctl-$version-win.zip" }

@@ -1,0 +1,16 @@
+name = "komf"
+version = "2.1.0"
+description = "Komga and Kavita metadata fetcher."
+homepage = "https://github.com/Snd-R/komf"
+license = "MIT"
+kind = "app"
+bin = [{ name = "komf", path = "komf.jar", args = "\"$dir\\config\"" }]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/Snd-R/komf/releases/download/2.1.0/komf-2.1.0.jar#/komf.jar"
+sha256 = "276022b45578d933e8047be63bfdd4123c80979ded8b2f0986507fdaf0840093"
+
+[autoupdate]
+checkver = { github = "Snd-R/komf" }
+url_template = "https://github.com/Snd-R/komf/releases/download/$version/komf-$version.jar#/komf.jar"

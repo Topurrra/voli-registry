@@ -1,0 +1,19 @@
+name = "mailpit"
+version = "1.31.3"
+description = "An email and SMTP testing tool with API for developers"
+homepage = "https://mailpit.axllent.org"
+license = "MIT"
+kind = "app"
+bin = ["mailpit.exe"]
+
+[source.x64]
+url = "https://github.com/axllent/mailpit/releases/download/v1.31.3/mailpit-windows-amd64.zip"
+sha256 = "863e9502d4e0f14a78c0f91c5091797b1c7b7b7e3fc7e5eab62e5770ce44b76e"
+
+[source.arm64]
+url = "https://github.com/axllent/mailpit/releases/download/v1.31.3/mailpit-windows-arm64.zip"
+sha256 = "b97d373441f56564a081f8bb0bd23ccca2368fe2067704fd94c529cc31dbfb19"
+
+[autoupdate]
+checkver = { github = "axllent/mailpit" }
+url_template = { x64 = "https://github.com/axllent/mailpit/releases/download/v$version/mailpit-windows-amd64.zip", arm64 = "https://github.com/axllent/mailpit/releases/download/v$version/mailpit-windows-arm64.zip" }

@@ -10,6 +10,10 @@ bin = ["kiota.exe"]
 url = "https://github.com/microsoft/kiota/releases/download/v1.35.0/win-x64.zip"
 sha256 = "66b5547b948f7be724fa5e0ddddebda8f7b662574ae58eb9d3b8c51c609c6271"
 
+[source.arm64]
+url = "https://github.com/microsoft/kiota/releases/download/v1.35.0/win-arm64.zip"
+sha256 = "b7b117c5cca14115b6581f4ecb4f5b41f1d860ee1a067a2c24287d1992bb9191"
+
 [autoupdate]
 checkver = { github = "microsoft/kiota" }
-url_template = { x64 = "https://github.com/microsoft/kiota/releases/download/v$version/win-x64.zip" }
+url_template = { x64 = "https://github.com/microsoft/kiota/releases/download/v$version/win-x64.zip", arm64 = "https://github.com/microsoft/kiota/releases/download/v$version/win-arm64.zip" }

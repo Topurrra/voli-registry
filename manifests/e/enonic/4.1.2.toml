@@ -10,6 +10,10 @@ bin = ["enonic.exe"]
 url = "https://repo.enonic.com/public/com/enonic/cli/enonic/4.1.2/enonic_4.1.2_Windows_64-bit.zip"
 sha256 = "4683ec38c94ef307d3b10e42b2f7d8a4220f567ed23b5420ff4d66b4ba776abe"
 
+[source.arm64]
+url = "https://repo.enonic.com/public/com/enonic/cli/enonic/4.1.2/enonic_4.1.2_Windows_arm64.zip"
+sha256 = "a7b5941210e16d506ecee95ecfba1a40019d53faa237e247dd17288d2c84a61a"
+
 [autoupdate]
 checkver = { url = "https://repo.enonic.com/service/rest/repository/browse/public/com/enonic/cli/enonic/", regex = "<a[^>]+>([\\d.]+)</a>" }
-url_template = { x64 = "https://repo.enonic.com/public/com/enonic/cli/enonic/$version/enonic_$version_Windows_64-bit.zip" }
+url_template = { x64 = "https://repo.enonic.com/public/com/enonic/cli/enonic/$version/enonic_$version_Windows_64-bit.zip", arm64 = "https://repo.enonic.com/public/com/enonic/cli/enonic/$version/enonic_$version_Windows_arm64.zip" }

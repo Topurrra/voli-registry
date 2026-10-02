@@ -1,0 +1,14 @@
+name = "lame"
+version = "4.0-q4-patched"
+description = "High quality MPEG Audio Layer III (MP3) encoder"
+homepage = "https://lame.sourceforge.io/"
+license = "LGPL-2.0-only"
+kind = "app"
+bin = ["lame.exe"]
+
+[source.x64]
+url = "http://www.rarewares.org/files/mp3/lame-4.0-x64-q4-patched.zip"
+sha256 = "c900843218ae13b1ddfc334c705298be4503d8a1e9db6bb3d03458dd1c1f1157"
+
+[autoupdate]
+checkver = "{\"regex\":\"(?<version>[\\\\d.]+)(?<patch>-[-\\\\w]+)?\",\"replace\":\"${version}${patch}\",\"script\":[\"$versions = [regex]::Matches(\",\"    $page,\",\"    '/files/mp3/lame-(?<version>[\\\\d.]+)-x64(?<patch>-[-\\\\w]+)?\\\\.zip',\",\"    [System.Text.RegularExpressions.RegexOptions]::IgnoreCase\",\") | ForEach-Object {\",\"    $version = $_.Groups['version'].Value\",\"    $patch   = $_.Groups['patch'].Value\",\"\",\"    [PSCustomObject]@{\",\"        Version     = [version]$version\",\"        Patch       = $patch\",\"        FullVersion = \\\"${version}${patch}\\\"\",\"        Url         = \\\"https://www.rarewares.org$($_.Value)\\\"\",\"    }\",\"} | Sort-Object -Property `\",\"    @{ Expression = 'Version'; Descending = $true },\",\"    @{ Expression = { -not [string]::IsNullOrEmpty($_.Patch) }; Descending = $true },\",\"    @{ Expression = 'Patch'; Descending = $true } `\",\"  | Select-Object -First 1\",\"\",\"$versions.FullVersion\"],\"url\":\"http://www.rarewares.org/mp3-lame-bundle.php\"}"

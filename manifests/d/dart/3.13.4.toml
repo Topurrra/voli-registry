@@ -10,9 +10,13 @@ extract_dir = "dart-sdk"
 url = "https://storage.googleapis.com/dart-archive/channels/stable/release/3.13.4/sdk/dartsdk-windows-x64-release.zip"
 sha256 = "c38bcecee16b348694d4acc72b3781e5fa0e8766a4d0d1576182c7204ab3d763"
 
+[source.arm64]
+url = "https://storage.googleapis.com/dart-archive/channels/stable/release/3.13.4/sdk/dartsdk-windows-arm64-release.zip"
+sha256 = "aee02003919d00bb9395ffb93772891bf84d2742be160fa40e6e49ce157d9c54"
+
 [env]
 PATH = "{dir}\\bin"
 
 [autoupdate]
 checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://storage.googleapis.com/dart-archive/channels/stable/release/latest/VERSION\"}"
-url_template = { x64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-x64-release.zip" }
+url_template = { x64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-x64-release.zip", arm64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-arm64-release.zip" }

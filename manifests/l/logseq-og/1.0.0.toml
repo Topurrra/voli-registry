@@ -1,0 +1,15 @@
+name = "logseq-og"
+version = "1.0.0"
+description = "A privacy-first platform for knowledge sharing and management (OG, file-based)"
+homepage = "https://logseq.com"
+license = "AGPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "Logseq-OG.exe", name = "Logseq OG" }]
+
+[source.x64]
+url = "https://github.com/logseq/og/releases/download/1.0.0/Logseq-OG-win-x64-1.0.0.zip"
+sha256 = "7274779b15438b1572f84a756b5d9db75a7564abed2ed519107a7d55b5411cb6"
+
+[autoupdate]
+checkver = { github = "logseq/og" }
+url_template = { x64 = "https://github.com/logseq/og/releases/download/$version/Logseq-OG-win-x64-$version.zip" }

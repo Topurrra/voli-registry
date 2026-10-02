@@ -1,0 +1,17 @@
+name = "r3dfox"
+version = "153.0.3"
+description = "Firefox-based web browser for Windows 7"
+homepage = "https://eclipse.cx/projects/r3dfox"
+license = "MPL-2.0"
+kind = "app"
+bin = ["r3dfox.exe"]
+shortcuts = [{ target = "r3dfox.exe", name = "r3dfox" }]
+persist = ["Profile"]
+
+[source.x64]
+url = "https://github.com/Eclipse-Community/r3dfox/releases/download/v153.0.3/r3dfox-v153.0.3.win64.portable.7z"
+sha256 = "2bb87b9f5fdfe8d6d7d05e29a459b15b6ba709364122a432df4afb1be1717882"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Eclipse-Community/r3dfox/releases?per_page=15\",\"jsonpath\":\"$[?(@.target_commitish =~ /win/i)].assets[?(@.name =~ /win64\\\\.portable\\\\.7z/i)].browser_download_url\",\"regex\":\"download/v([\\\\w.-]+)/r3dfox-v(?<short>[\\\\d.]+)\\\\.win64\\\\.portable\\\\.7z\"}"
+url_template = { x64 = "https://github.com/Eclipse-Community/r3dfox/releases/download/v$version/r3dfox-v$matchShort.win64.portable.7z" }

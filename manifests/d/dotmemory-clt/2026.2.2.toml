@@ -10,6 +10,10 @@ bin = ["dotMemory.exe"]
 url = "https://download.jetbrains.com/resharper/dotUltimate.2026.2.2/JetBrains.dotMemory.Console.windows-x64.2026.2.2.zip"
 sha256 = "4048d2342d1e89a7c122f9595a50a9dd5c8aa2649feef0ef2c06b3acbf0296dd"
 
+[source.arm64]
+url = "https://download.jetbrains.com/resharper/dotUltimate.2026.2.2/JetBrains.dotMemory.Console.windows-arm64.2026.2.2.zip"
+sha256 = "bdad8a0c3ab83545c6ed94c751fe1d08622f82e197c69c516099f54b87e775a0"
+
 [autoupdate]
 checkver = "{\"jsonpath\":\"$..version\",\"url\":\"https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&platform=zip&type=release\"}"
-url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotMemory.Console.windows-x64.$version.zip" }
+url_template = { x64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotMemory.Console.windows-x64.$version.zip", arm64 = "https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotMemory.Console.windows-arm64.$version.zip" }

@@ -10,6 +10,10 @@ bin = ["src.exe"]
 url = "https://github.com/sourcegraph/src-cli/releases/download/8.0.0/src-cli_8.0.0_windows_amd64.tar.gz"
 sha256 = "7b73556dbf10fd0022718b4962913854c4e256bd629052d63d262c694f809c79"
 
+[source.arm64]
+url = "https://github.com/sourcegraph/src-cli/releases/download/8.0.0/src-cli_8.0.0_windows_arm64.tar.gz"
+sha256 = "9cc3ae0bc08eee0c5c84fc4b25bf573c70470887e137daff611ff7dfa2393d34"
+
 [autoupdate]
 checkver = { github = "sourcegraph/src-cli" }
-url_template = "https://github.com/sourcegraph/src-cli/releases/download/$version/src-cli_$version_windows_amd64.tar.gz"
+url_template = { x64 = "https://github.com/sourcegraph/src-cli/releases/download/$version/src-cli_$version_windows_amd64.tar.gz", arm64 = "https://github.com/sourcegraph/src-cli/releases/download/$version/src-cli_$version_windows_arm64.tar.gz" }

@@ -10,6 +10,10 @@ bin = ["nixpacks.exe"]
 url = "https://github.com/railwayapp/nixpacks/releases/download/v1.39.0/nixpacks-v1.39.0-x86_64-pc-windows-msvc.zip"
 sha256 = "a857a34fc945f8936927bc36a0f5183b9fa3138205258692017033c8a71d8c63"
 
+[source.arm64]
+url = "https://github.com/railwayapp/nixpacks/releases/download/v1.39.0/nixpacks-v1.39.0-aarch64-pc-windows-msvc.zip"
+sha256 = "c4bbc59de8f8f2ca170fa6fafcfaf1994c661f29dfdb824b0ea1a4cce4f80769"
+
 [autoupdate]
 checkver = { github = "railwayapp/nixpacks" }
-url_template = { x64 = "https://github.com/railwayapp/nixpacks/releases/download/v$version/nixpacks-v$version-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/railwayapp/nixpacks/releases/download/v$version/nixpacks-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/railwayapp/nixpacks/releases/download/v$version/nixpacks-v$version-aarch64-pc-windows-msvc.zip" }

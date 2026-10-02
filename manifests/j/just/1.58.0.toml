@@ -10,6 +10,10 @@ bin = ["just.exe"]
 url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-pc-windows-msvc.zip"
 sha256 = "759f16fb7aa17c5c8b9594b6d4a8c1a6630dfd042cf2b3ff84841454d3d188dc"
 
+[source.arm64]
+url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-aarch64-pc-windows-msvc.zip"
+sha256 = "3a39ed629eb67678976c811a4da46f7985a2c22f4dbabe017b8b2eb5ceb5d01c"
+
 [source.linux-x64]
 url = "https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-unknown-linux-musl.tar.gz"
 sha256 = "4a5cc2f53e6f0f8c59092a6cc38291eb729d46a7dd95d3ae582008881b84931d"
@@ -28,4 +32,4 @@ sha256 = "50ae3e996c974a0bf32ea7d10f495070df33f1b43e0616b2769e3d4821ed8f48"
 
 [autoupdate]
 checkver = { github = "casey/just" }
-url_template = { x64 = "https://github.com/casey/just/releases/download/$version/just-$version-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/casey/just/releases/download/$version/just-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/casey/just/releases/download/$version/just-$version-aarch64-pc-windows-msvc.zip" }

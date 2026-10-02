@@ -1,0 +1,17 @@
+name = "mupdf"
+version = "1.28.5"
+description = "A lightweight PDF, XPS, and E-book viewer"
+homepage = "https://mupdf.com"
+license = "AGPL-3.0-only"
+kind = "app"
+extract_dir = "mupdf-1.28.5-windows"
+bin = ["mupdf.exe", "mupdf-gl.exe", "mutool.exe"]
+shortcuts = [{ target = "mupdf.exe", name = "MuPDF" }, { target = "mupdf-gl.exe", name = "MuPDF GL" }]
+
+[source.x64]
+url = "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.5/mupdf-1.28.5-windows.zip"
+sha256 = "13476a53e84f5527983158acb6442c7853b3cdc022f3b24880780dcfba1fcc99"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/ArtifexSoftware/mupdf-downloads/releases\",\"jsonpath\":\"$..browser_download_url\",\"regex\":\"mupdf-([\\\\d.]+)-windows\\\\.zip\"}"
+url_template = { x64 = "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/$version/mupdf-$version-windows.zip" }

@@ -1,0 +1,15 @@
+name = "iwck"
+version = "3.12"
+description = "Block the keyboard input while you were eating instant noodles on your laptop keyboard."
+homepage = "https://github.com/Nigh/I-wanna-clean-keyboard"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "iwck.exe", name = "iwck" }]
+
+[source.x64]
+url = "https://github.com/Nigh/I-wanna-clean-keyboard/releases/download/v3.12/iwck.zip"
+sha256 = "1769991f536b2fcde58369fd7cd71fb857fd914f6a8819280a0c054738bc4af6"
+
+[autoupdate]
+checkver = { github = "Nigh/I-wanna-clean-keyboard" }
+url_template = { x64 = "https://github.com/Nigh/I-wanna-clean-keyboard/releases/download/v$version/iwck.zip" }

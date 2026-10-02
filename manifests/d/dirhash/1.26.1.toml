@@ -10,6 +10,10 @@ bin = ["DirHash.exe"]
 url = "https://github.com/idrassi/DirHash/releases/download/DirHash_1.26.1/DirHash-1.26.1-x64.zip"
 sha256 = "16a2c2ef448c02ae16aae7e4ef6dc8e2a9f8f280ea7ebf27ba6525ae15071367"
 
+[source.arm64]
+url = "https://github.com/idrassi/DirHash/releases/download/DirHash_1.26.1/DirHash-1.26.1-arm64.zip"
+sha256 = "1337223613a64437488315b2d758d66ce83413834dbf90cb4fb6852d04c5dac8"
+
 [autoupdate]
 checkver = { github = "idrassi/DirHash" }
-url_template = { x64 = "https://github.com/idrassi/DirHash/releases/download/DirHash_$version/DirHash-$version-x64.zip" }
+url_template = { x64 = "https://github.com/idrassi/DirHash/releases/download/DirHash_$version/DirHash-$version-x64.zip", arm64 = "https://github.com/idrassi/DirHash/releases/download/DirHash_$version/DirHash-$version-arm64.zip" }

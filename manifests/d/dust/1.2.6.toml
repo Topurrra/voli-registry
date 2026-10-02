@@ -4,12 +4,17 @@ description = "du(1) - File space usage analyzer"
 homepage = "https://github.com/bootandy/dust"
 license = "Apache-2.0"
 kind = "app"
-extract_dir = "dust-v1.2.6-x86_64-pc-windows-msvc"
 bin = ["dust.exe"]
 
 [source.x64]
 url = "https://github.com/bootandy/dust/releases/download/v1.2.6/dust-v1.2.6-x86_64-pc-windows-msvc.zip"
 sha256 = "6a73222902d6960ce7183cd833a5d3ea99a3e3ff3cfb33720c1939a41cb7744d"
+extract_dir = "dust-v1.2.6-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.6/dust-v1.2.6-aarch64-pc-windows-msvc.zip"
+sha256 = "43b14b97245452e8dd5506ab5fdc996ddd51c2f820c936d45210d3253b613062"
+extract_dir = "dust-v1.2.6-aarch64-pc-windows-msvc"
 
 [source.linux-x64]
 url = "https://github.com/bootandy/dust/releases/download/v1.2.6/dust-v1.2.6-x86_64-unknown-linux-musl.tar.gz"
@@ -33,4 +38,4 @@ extract_dir = "dust-v1.2.6-aarch64-apple-darwin"
 
 [autoupdate]
 checkver = { github = "bootandy/dust" }
-url_template = { x64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-x86_64-pc-windows-msvc.zip" }
+url_template = { x64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-aarch64-pc-windows-msvc.zip" }

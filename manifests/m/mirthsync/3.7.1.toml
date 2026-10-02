@@ -1,0 +1,16 @@
+name = "mirthsync"
+version = "3.7.1"
+description = "Command-line tool that pulls and pushes Mirth Connect / Open Integration Engine channels, code templates and configuration to a Git repository"
+homepage = "https://saga-it.com/products/mirthsync"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "mirthsync-3.7.1"
+bin = ["bin\\mirthsync.bat"]
+
+[source.x64]
+url = "https://github.com/SagaHealthcareIT/mirthsync/releases/download/3.7.1/mirthsync-3.7.1.zip"
+sha256 = "d84165bf1de0268a14de97e979bcfd4e74e231587c1515869539c9541aa79f53"
+
+[autoupdate]
+checkver = { github = "SagaHealthcareIT/mirthsync" }
+url_template = "https://github.com/SagaHealthcareIT/mirthsync/releases/download/$version/mirthsync-$version.zip"

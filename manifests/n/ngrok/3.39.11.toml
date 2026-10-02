@@ -10,6 +10,10 @@ bin = ["ngrok.exe"]
 url = "https://bin.ngrok.com/a/P2eJimSQ97/ngrok-v3-3.39.11-windows-amd64.zip"
 sha256 = "699bbf1932ec43a573b764bd03e6568efa2c4e45955eb3cc2089c19bb4be4464"
 
+[source.arm64]
+url = "https://bin.ngrok.com/a/4uyc5zNuNLF/ngrok-v3-3.39.11-windows-arm64.zip"
+sha256 = "493b7ea95a04e92488e9316f4728790bdeda8e00a3c2c688f8ac78a307627718"
+
 [autoupdate]
-checkver = { url = "https://ngrok.com/download/archive/ngrok/ngrok-v3/stable/ngrok_archive", regex = "/a/(?<hash64bit>\\w+)/ngrok-v[\\d.]+-([\\d.]+)-windows-amd64.zip(?:.|\\n)+?/a/(?<hash32bit>\\w+)/ngrok-v[\\d.]+-([\\d.]+)-windows-386.zip" }
-url_template = { x64 = "https://bin.ngrok.com/a/$matchHash64bit/ngrok-v$majorVersion-$version-windows-amd64.zip" }
+checkver = { url = "https://ngrok.com/download/archive/ngrok/ngrok-v3/stable/ngrok_archive", regex = "/a/(?<hash64bit>\\w+)/ngrok-v[\\d.]+-([\\d.]+)-windows-amd64.zip(?:.|\\n)+?/a/(?<hashArm64>\\w+)/ngrok-v[\\d.]+-[\\d.]+-windows-arm64.zip(?:.|\\n)+?/a/(?<hash32bit>\\w+)/ngrok-v[\\d.]+-[\\d.]+-windows-386.zip" }
+url_template = { x64 = "https://bin.ngrok.com/a/$matchHash64bit/ngrok-v$majorVersion-$version-windows-amd64.zip", arm64 = "https://bin.ngrok.com/a/$matchHasharm64/ngrok-v$majorVersion-$version-windows-arm64.zip" }

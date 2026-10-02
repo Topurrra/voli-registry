@@ -1,0 +1,16 @@
+name = "aptakube"
+version = "1.21.1"
+description = "Modern, lightweight and multi-cluster Kubernetes GUI"
+homepage = "https://aptakube.com/"
+license = "Proprietary"
+kind = "app"
+bin = [{ name = "aptakube", path = "Aptakube.exe" }]
+shortcuts = [{ target = "Aptakube.exe", name = "Aptakube" }]
+
+[source.x64]
+url = "https://github.com/aptakube/aptakube/releases/download/1.21.1/Aptakube_1.21.1_x64.zip"
+sha256 = "d61905372a3f8d8038a22058131363e11eebd1e7fbd72d608f73ca87218d6a5c"
+
+[autoupdate]
+checkver = { github = "aptakube/aptakube" }
+url_template = { x64 = "https://github.com/aptakube/aptakube/releases/download/$version/Aptakube_$version_x64.zip" }

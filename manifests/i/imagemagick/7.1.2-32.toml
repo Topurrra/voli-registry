@@ -1,0 +1,26 @@
+name = "imagemagick"
+version = "7.1.2-32"
+description = "Create, edit, compose, and convert 200+ bitmap image formats."
+homepage = "https://imagemagick.org/"
+license = "ImageMagick"
+kind = "app"
+
+[source.x64]
+url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-32/ImageMagick-7.1.2-32-Q16-HDRI-x64-dll.exe"
+sha256 = "646486fcdfac4eb57a07eb69817a0f63ef505711109775b0c7a573119600ad4e"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-32/ImageMagick-7.1.2-32-Q16-HDRI-arm64-dll.exe"
+sha256 = "12b716e51fde779ef0f59a0c201310adb43e2fb47285ade0c8307e3ba4e3273e"
+kind = "installer-archive"
+
+[env]
+MAGICK_CODER_MODULE_PATH = "{dir}\\modules\\coders"
+MAGICK_CONFIGURE_PATH = "{dir}"
+MAGICK_HOME = "{dir}"
+PATH = "{dir}"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest\",\"jsonpath\":\"$.tag_name\"}"
+url_template = { x64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-Q16-HDRI-x64-dll.exe", arm64 = "https://github.com/ImageMagick/ImageMagick/releases/download/$version/ImageMagick-$version-Q16-HDRI-arm64-dll.exe" }

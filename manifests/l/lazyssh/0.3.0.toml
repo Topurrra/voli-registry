@@ -1,7 +1,7 @@
 name = "lazyssh"
 version = "0.3.0"
 description = "A terminal-based SSH manager."
-homepage = "https://github.com/adembc/lazyssh"
+homepage = "https://github.com/Adembc/lazyssh"
 license = "Apache-2.0"
 kind = "app"
 bin = ["lazyssh.exe"]
@@ -15,5 +15,5 @@ url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Window
 sha256 = "dfba8c1b8b58cba68228511cec0419965689da48feb96f571351d83b696c86b3"
 
 [autoupdate]
-checkver = { github = "adembc/lazyssh" }
+checkver = { github = "Adembc/lazyssh" }
 url_template = { x64 = "https://github.com/Adembc/lazyssh/releases/download/v$version/lazyssh_Windows_x86_64.zip", arm64 = "https://github.com/Adembc/lazyssh/releases/download/v$version/lazyssh_Windows_arm64.zip" }

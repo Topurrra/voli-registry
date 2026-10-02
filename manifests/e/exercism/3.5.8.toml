@@ -10,6 +10,10 @@ bin = ["exercism.exe"]
 url = "https://github.com/exercism/cli/releases/download/v3.5.8/exercism-3.5.8-windows-x86_64.zip#/dl.7z"
 sha256 = "5c8990828ff50406891140b53e300e11e9d9ce8cdad25b95545b7bae6e83563b"
 
+[source.arm64]
+url = "https://github.com/exercism/cli/releases/download/v3.5.8/exercism-3.5.8-windows-arm64.zip#/dl.7z"
+sha256 = "1d72e130714a9ed00fb114ecca9cfa6695156ad48c5cb1cd7dbfd8ccf77988cf"
+
 [autoupdate]
 checkver = { github = "exercism/cli" }
-url_template = { x64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-x86_64.zip#/dl.7z" }
+url_template = { x64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-x86_64.zip#/dl.7z", arm64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-arm64.zip#/dl.7z" }

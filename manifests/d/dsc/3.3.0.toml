@@ -1,7 +1,7 @@
 name = "dsc"
 version = "3.3.0"
 description = "DSC since v3 is an open source command line application that abstracts the management of software components declaratively and idempotently."
-homepage = "https://github.com/PowerShell/dsc"
+homepage = "https://github.com/PowerShell/DSC"
 license = "MIT"
 kind = "app"
 bin = ["dsc.exe"]
@@ -15,5 +15,5 @@ url = "https://github.com/PowerShell/DSC/releases/download/v3.3.0/DSC-3.3.0-aarc
 sha256 = "4e4297429489893309d8b8061c3c1628c173debd6ea1812343d738d8135a997e"
 
 [autoupdate]
-checkver = { github = "PowerShell/dsc" }
+checkver = { github = "PowerShell/DSC" }
 url_template = { x64 = "https://github.com/PowerShell/DSC/releases/download/v$version/DSC-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/PowerShell/DSC/releases/download/v$version/DSC-$version-aarch64-pc-windows-msvc.zip" }

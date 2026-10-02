@@ -1,0 +1,19 @@
+name = "supabase"
+version = "2.118.0"
+description = "Supabase CLI."
+homepage = "https://supabase.com"
+license = "MIT"
+kind = "app"
+bin = ["supabase.exe"]
+
+[source.x64]
+url = "https://github.com/supabase/cli/releases/download/v2.118.0/supabase_2.118.0_windows_amd64.zip"
+sha256 = "e8eb5871b2a9e9b496d19f3fca4851d0c2a1bb8059613692d8906b5dc5fc2aad"
+
+[source.arm64]
+url = "https://github.com/supabase/cli/releases/download/v2.118.0/supabase_2.118.0_windows_arm64.zip"
+sha256 = "daf1245477c3d75abbdaee8b5821ce861cc7bb1f407f9f3b33a16b846ddc5715"
+
+[autoupdate]
+checkver = { github = "supabase/cli" }
+url_template = { x64 = "https://github.com/supabase/cli/releases/download/v$version/supabase_$version_windows_amd64.zip", arm64 = "https://github.com/supabase/cli/releases/download/v$version/supabase_$version_windows_arm64.zip" }

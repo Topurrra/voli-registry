@@ -1,7 +1,7 @@
 name = "vuplayer"
 version = "4.24"
-description = "Audio player"
-homepage = "http://www.vuplayer.com"
+description = "An open-source multi-format audio player."
+homepage = "https://github.com/jfchapman/VUPlayer"
 license = "MIT"
 kind = "app"
 bin = ["VUPlayer.exe"]

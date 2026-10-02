@@ -10,6 +10,10 @@ bin = ["HandBrakeCLI.exe"]
 url = "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrakeCLI-1.11.2-win-x86_64.zip"
 sha256 = "80bfe8d5f5d11cc3ef76b834add3ed4e82dee6523ffeb435c283f88b1a21f09d"
 
+[source.arm64]
+url = "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrakeCLI-1.11.2-win-aarch64.zip"
+sha256 = "708ac040bf1ca41d46dbe5f355b588863d60366a67072a974e6829c314ac060d"
+
 [autoupdate]
 checkver = { github = "HandBrake/HandBrake" }
-url_template = { x64 = "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrakeCLI-$version-win-x86_64.zip" }
+url_template = { x64 = "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrakeCLI-$version-win-x86_64.zip", arm64 = "https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrakeCLI-$version-win-aarch64.zip" }

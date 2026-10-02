@@ -1,0 +1,16 @@
+name = "discord"
+version = "1.0.9259-28"
+description = "Free Voice and Text Chat"
+homepage = "https://discord.com"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "discord-portable.exe", name = "Discord" }]
+persist = ["data", "log"]
+
+[source.x64]
+url = "https://github.com/portapps/discord-portable/releases/download/1.0.9259-28/discord-portable-win64-1.0.9259-28.7z"
+sha256 = "b6dd79ea0a99c87366e43bbef73eb139eae36459ade233288404fa8e0488cd84"
+
+[autoupdate]
+checkver = { github = "portapps/discord-portable" }
+url_template = { x64 = "https://github.com/portapps/discord-portable/releases/download/$version/discord-portable-win64-$version.7z" }

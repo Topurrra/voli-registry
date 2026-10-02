@@ -1,0 +1,16 @@
+name = "mindwtr"
+version = "1.3.2"
+description = "A free GTD to-do app."
+homepage = "https://mindwtr.app"
+license = "AGPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "mindwtr.exe", name = "Mindwtr" }]
+persist = ["profile"]
+
+[source.x64]
+url = "https://github.com/dongdongbh/Mindwtr/releases/download/v1.3.2/mindwtr_1.3.2_windows_x64_portable.zip"
+sha256 = "7f4c1545ec1fee5cf41e639971e7bd7a57dd57e746e41d8c2660bea49fcfa61e"
+
+[autoupdate]
+checkver = { github = "dongdongbh/Mindwtr" }
+url_template = { x64 = "https://github.com/dongdongbh/Mindwtr/releases/download/v$version/mindwtr_$version_windows_x64_portable.zip" }

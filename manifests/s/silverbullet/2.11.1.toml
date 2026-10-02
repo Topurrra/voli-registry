@@ -1,0 +1,15 @@
+name = "silverbullet"
+version = "2.11.1"
+description = "A Programmable, Private, Browser-based, Open Source, Self Hosted, Personal Knowledge Management Platform"
+homepage = "https://silverbullet.md"
+license = "MIT"
+kind = "app"
+bin = ["silverbullet.exe"]
+
+[source.x64]
+url = "https://github.com/silverbulletmd/silverbullet/releases/download/2.11.1/silverbullet-server-windows-x86_64.zip"
+sha256 = "d3dd96db88f8ca190a473ef427af1642562383b759a6df5b7d7f78ac7ddc8eed"
+
+[autoupdate]
+checkver = { github = "silverbulletmd/silverbullet" }
+url_template = { x64 = "https://github.com/silverbulletmd/silverbullet/releases/download/$version/silverbullet-server-windows-x86_64.zip" }

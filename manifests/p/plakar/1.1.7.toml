@@ -1,0 +1,19 @@
+name = "plakar"
+version = "1.1.7"
+description = "Backup solution powered by Kloset and ptar"
+homepage = "https://github.com/PlakarKorp/plakar"
+license = "ISC"
+kind = "app"
+bin = ["plakar.exe"]
+
+[source.x64]
+url = "https://github.com/PlakarKorp/plakar/releases/download/v1.1.7/plakar_1.1.7_windows_amd64.tar.gz"
+sha256 = "21a0f339f3cdb762c18672150f3b4e98e06bc27fbb4abd5f28217d0dda3569f6"
+
+[source.arm64]
+url = "https://github.com/PlakarKorp/plakar/releases/download/v1.1.7/plakar_1.1.7_windows_arm64.tar.gz"
+sha256 = "f3dc470b718d2b73721532bf2d6c105ea5d1bc55707cfbb6590b683353fe1686"
+
+[autoupdate]
+checkver = { github = "PlakarKorp/plakar" }
+url_template = { x64 = "https://github.com/PlakarKorp/plakar/releases/download/v$version/plakar_$version_windows_amd64.tar.gz", arm64 = "https://github.com/PlakarKorp/plakar/releases/download/v$version/plakar_$version_windows_arm64.tar.gz" }

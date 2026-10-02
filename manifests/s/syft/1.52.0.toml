@@ -10,6 +10,10 @@ bin = ["syft.exe"]
 url = "https://github.com/anchore/syft/releases/download/v1.52.0/syft_1.52.0_windows_amd64.zip"
 sha256 = "de787a374cf961c56fd7b206b2e183295abba32d0af3cb44d9aef2357ca9eda2"
 
+[source.arm64]
+url = "https://github.com/anchore/syft/releases/download/v1.52.0/syft_1.52.0_windows_arm64.zip"
+sha256 = "f9c0596d79d0e99eacb3f1e3ffca37ca22e7cdc809b1463cdfec77798939bd09"
+
 [source.linux-x64]
 url = "https://github.com/anchore/syft/releases/download/v1.52.0/syft_1.52.0_linux_amd64.tar.gz"
 sha256 = "caeedb81fb0491615f1ebd1761e4145d41ee86dd2cc7bf80669f9f5ad9d6133d"
@@ -28,4 +32,4 @@ sha256 = "014d561b6d13059124155f74a6c5a9a99501f5e209313638dd884f39eb418ee6"
 
 [autoupdate]
 checkver = { github = "anchore/syft" }
-url_template = { x64 = "https://github.com/anchore/syft/releases/download/v$version/syft_$version_windows_amd64.zip" }
+url_template = { x64 = "https://github.com/anchore/syft/releases/download/v$version/syft_$version_windows_amd64.zip", arm64 = "https://github.com/anchore/syft/releases/download/v$version/syft_$version_windows_arm64.zip" }

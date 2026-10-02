@@ -1,0 +1,17 @@
+name = "github"
+version = "3.6.6"
+description = "Extend your GitHub workflow beyond your browser."
+homepage = "https://desktop.github.com/"
+license = "MIT"
+kind = "app"
+extract_dir = "lib\\net45"
+bin = ["GitHubDesktop.exe"]
+shortcuts = [{ target = "GitHubDesktop.exe", name = "GitHub Desktop" }]
+
+[source.x64]
+url = "https://github.com/desktop/desktop/releases/download/release-3.6.6/GitHubDesktop-3.6.6-x64-full.nupkg"
+sha256 = "ce9603ac7bd5b282a95df0346aace00a0e0ee9047fc800ef24a9c7dbbc894b9a"
+
+[autoupdate]
+checkver = { github = "desktop/desktop" }
+url_template = { x64 = "https://github.com/desktop/desktop/releases/download/release-$version/GitHubDesktop-$version-x64-full.nupkg" }

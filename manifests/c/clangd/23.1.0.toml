@@ -1,0 +1,16 @@
+name = "clangd"
+version = "23.1.0"
+description = "Language server for C/C++, by the LLVM project"
+homepage = "https://clangd.llvm.org/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "clangd_23.1.0"
+bin = ["bin\\clangd.exe"]
+
+[source.x64]
+url = "https://github.com/clangd/clangd/releases/download/23.1.0/clangd-windows-23.1.0.zip"
+sha256 = "23412a240756a162e7b98a282f36aa2a23a88db5ce16a0cbc4fef7253768c810"
+
+[autoupdate]
+checkver = { github = "clangd/clangd" }
+url_template = { x64 = "https://github.com/clangd/clangd/releases/download/$version/clangd-windows-$version.zip" }

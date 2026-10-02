@@ -1,0 +1,15 @@
+name = "chipmunk"
+version = "4.4.0"
+description = "Fast logfile viewer with support for huge logfiles (>10 GB)"
+homepage = "https://github.com/esrlabs/chipmunk"
+license = "Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "chipmunk.exe", name = "chipmunk" }]
+
+[source.x64]
+url = "https://github.com/esrlabs/chipmunk/releases/download/4.4.0/chipmunk@4.4.0-win64-portable.tgz"
+sha256 = "a0c1da98c67088eb7b04a043eca28a824e4a5864fe2bbaf6caa651778af8713b"
+
+[autoupdate]
+checkver = { github = "esrlabs/chipmunk" }
+url_template = { x64 = "https://github.com/esrlabs/chipmunk/releases/download/$version/chipmunk@$version-win64-portable.tgz" }

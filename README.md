@@ -88,10 +88,9 @@ the new source keys (voli **v0.13.2+**). The pins live in
 skill-sync is NOT exempt, though it only writes `manifests/skills`: its `fmt`
 and `validate` steps run over all of `manifests/`, so a tools-side unix block
 fails it on a stale pin. It sat on v0.10.1 and did exactly that — every run
-from 2026-09-15 died with `unknown field 'linux-x64'`. The scoop-import lock
-still pins voli-core 0.10.1 and moves on its own; every other pin moves
-together. When the voli pin moves, regenerate the importer locks against a
-matching checkout
+from 2026-09-15 died with `unknown field 'linux-x64'`. Both importer locks pin
+voli-core 0.13.2, and their workflow dependency checkouts must match. When the
+voli pin moves, regenerate the importer locks against a matching checkout
 (`cargo update -p voli-core` in `tools/scoop-import` and
 `tools/brew-import`) and commit both `Cargo.lock` files in the same change.
 
@@ -133,14 +132,28 @@ voli-index-tool validate manifests/
 ```
 
 The scheduled `skill-sync.yml` workflow refreshes pins, validates licenses,
-packages the catalog, uploads the archives to the `skills` release, and opens a
-PR when tracked output changes. Merging the PR stays a manual action.
+packages the catalog, uploads new archives to `skills-<source>-v<version>`
+releases, and opens a PR when tracked output changes. Separate source/version
+releases avoid GitHub's 1,000-assets-per-release limit. Existing manifest URLs
+and assets on the legacy `skills` release are retained. Merging the PR stays a
+manual action.
 
 Archives are published *before* the PR is opened, deliberately. An archive's
 filename embeds its source id and version, so a bumped upstream revision renames
 every archive for that source; if the manifests merged first, their download
 URLs would 404 until someone uploaded by hand. `publish.yml` also refuses to
 publish an index while any `manifests/skills/` URL is unreachable.
+
+The importer writes `release-plan.json` alongside the archives. The publisher
+checks local SHA-256 values, skips matching remote assets on retry, and refuses
+to overwrite a conflicting or unknown remote digest. It never deletes old
+assets or marks archive releases as the latest application release. Reusing a
+skill version for different archive bytes is rejected; bump the source version
+instead. Test the upload boundary offline with:
+
+```sh
+python -m unittest discover -s tools -p test_skill_publish.py -v
+```
 
 When two sources ship a skill under the same name, the bare name stays with the
 first source in `skill-sources.toml` order and later claimants are published as

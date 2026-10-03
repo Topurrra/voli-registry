@@ -10,6 +10,22 @@ bin = ["grype.exe"]
 url = "https://github.com/anchore/grype/releases/download/v0.119.0/grype_0.119.0_windows_amd64.zip"
 sha256 = "1db5c23b8ba0038a04acebed9c17945e1ade68d9f83e2fe1c101e4fb1feb9a48"
 
+[source.linux-x64]
+url = "https://github.com/anchore/grype/releases/download/v0.119.0/grype_0.119.0_linux_amd64.tar.gz"
+sha256 = "3fa2dc4b924621ab65404cf08d0b8438d896d80ab949c9d5a4ca283c36004c9b"
+
+[source.linux-arm64]
+url = "https://github.com/anchore/grype/releases/download/v0.119.0/grype_0.119.0_linux_arm64.tar.gz"
+sha256 = "29f0ec7c549ddb0e2b6a0ca714851f7399438afc399b80c12808e065edc9a8f8"
+
+[source.macos-x64]
+url = "https://github.com/anchore/grype/releases/download/v0.119.0/grype_0.119.0_darwin_amd64.tar.gz"
+sha256 = "ea106d3ab9573d654871ad9e3e89be2237506ff3f8c170e5aeacb59da4def2b8"
+
+[source.macos-arm64]
+url = "https://github.com/anchore/grype/releases/download/v0.119.0/grype_0.119.0_darwin_arm64.tar.gz"
+sha256 = "500c9b2b6c089d21481815f57a553fabbd441ec7d1e79d95e3aaf40c3bfc7e36"
+
 [autoupdate]
 checkver = { github = "anchore/grype" }
 url_template = { x64 = "https://github.com/anchore/grype/releases/download/v$version/grype_$version_windows_amd64.zip" }

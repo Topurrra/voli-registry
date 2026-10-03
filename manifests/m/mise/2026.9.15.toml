@@ -15,6 +15,26 @@ sha256 = "730165047e36a2989fb955cf52f668917bfb7ae3ab8296b9bc81f92c0bf64c39"
 url = "https://github.com/jdx/mise/releases/download/v2026.9.15/mise-v2026.9.15-windows-arm64.zip"
 sha256 = "3db4b7aeea8cf97af4111746d11d5aa6c036bb3e58e5c9da675e4e1024a581a1"
 
+[source.linux-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.15/mise-v2026.9.15-linux-x64.tar.gz"
+sha256 = "2148d2485d1e6e48eb918729d86af4ecd438f9b5b63be360fb26005c85f0d853"
+extract_dir = "mise"
+
+[source.linux-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.15/mise-v2026.9.15-linux-arm64.tar.gz"
+sha256 = "254f60912e73c9420f03be8bab90ac80c0056db6826814b1a91cb4a0f872c1db"
+extract_dir = "mise"
+
+[source.macos-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.15/mise-v2026.9.15-macos-x64.tar.gz"
+sha256 = "8dadf477c1cfd6a235e926f6de867cf0dfacedeb0b7d30ad9c4583b5311989a1"
+extract_dir = "mise"
+
+[source.macos-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.9.15/mise-v2026.9.15-macos-arm64.tar.gz"
+sha256 = "18407dc1ee5c2efdb808ac5272c989692c4ecc951933e84eb44cf5ac554ac2f9"
+extract_dir = "mise"
+
 [autoupdate]
 checkver = { github = "jdx/mise" }
 url_template = { x64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-x64.zip", arm64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-arm64.zip" }

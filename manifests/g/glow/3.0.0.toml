@@ -11,6 +11,26 @@ bin = ["glow.exe"]
 url = "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Windows_x86_64.zip"
 sha256 = "d8907e07436ecbb6738bc0e3bbf8aa6159e351f95082e9db3c3fc4200086f809"
 
+[source.linux-x64]
+url = "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Linux_x86_64.tar.gz"
+sha256 = "13e05e4b2acc18d2aee44291aefe6325b077ec321b631a0cfa780e8e3bc33f78"
+extract_dir = "glow_3.0.0_Linux_x86_64"
+
+[source.linux-arm64]
+url = "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Linux_arm64.tar.gz"
+sha256 = "810c39f4691feb75e675a5f5f54b9fa091354e7599d9cf9c9fc9b97e47a99759"
+extract_dir = "glow_3.0.0_Linux_arm64"
+
+[source.macos-x64]
+url = "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Darwin_x86_64.tar.gz"
+sha256 = "b911b90622e686d44bc072112898584a601ed8353276b735835d8cdbcc27f660"
+extract_dir = "glow_3.0.0_Darwin_x86_64"
+
+[source.macos-arm64]
+url = "https://github.com/charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Darwin_arm64.tar.gz"
+sha256 = "4b8a9a32412c0525e4c239e65171706fc5beb6d423608d99fe16788d47b345d3"
+extract_dir = "glow_3.0.0_Darwin_arm64"
+
 [autoupdate]
 checkver = { github = "charmbracelet/glow" }
 url_template = { x64 = "https://github.com/charmbracelet/glow/releases/download/v$version/glow_$version_Windows_x86_64.zip" }

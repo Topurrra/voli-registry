@@ -22,6 +22,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -52,6 +57,10 @@ jobs:
         working-directory: tools/scoop-import
         run: cargo build --release --locked
 
+      - name: Build brew-import
+        working-directory: tools/brew-import
+        run: cargo build --release --locked
+
       - name: Run importer
         run: |
           tools/scoop-import/target/release/scoop-import /tmp/scoop-main manifests/
@@ -64,6 +73,13 @@ jobs:
             --git https://github.com/Topurrra/voli \
             --tag v0.13.2 \
             voli-index-tool
+
+      # Windows generation may omit or carry forward old Unix blocks. Resolve
+      # only the changed allowlisted packages, at their exact registry version.
+      - name: Enrich changed packages with exact-version Unix sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/enrich-changed-packages.py
 
       # scoop-import already emits canonical TOML via voli-core, so this is a
       # belt-and-braces pass: it is a no-op when nothing drifted, and it keeps

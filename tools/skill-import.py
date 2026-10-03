@@ -419,6 +419,18 @@ def toml_string(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+def source_release_base(config: dict[str, Any], source: dict[str, Any]) -> str:
+    """Keep legacy configs readable; shard new archives by source and version."""
+    base = required_string(config, "release_base").rstrip("/")
+    if not config.get("release_by_source", False):
+        return base
+    source_id = required_string(source, "id")
+    version = required_string(source, "version")
+    if not NAME_RE.fullmatch(source_id) or not re.fullmatch(r"[0-9]+(?:\.[0-9]+)*", version):
+        raise ImportFailure("release source id/version must be safe, unambiguous tag components")
+    return f"{base}-{source_id}-v{version}"
+
+
 def write_manifest(skill: Skill, sha256: str, release_base: str, output: Path) -> None:
     source = skill.source
     source_id = required_string(source, "id")
@@ -590,7 +602,6 @@ def import_catalog(
     report: Path,
     offline: bool,
 ) -> tuple[int, int]:
-    release_base = required_string(config, "release_base")
     sources = config.get("source")
     if not isinstance(sources, list) or not sources:
         raise ImportFailure("configuration has no sources")
@@ -615,14 +626,39 @@ def import_catalog(
     # relative path (discover_skills), so precedence is deterministic.
     all_skills, renamed = resolve_names(all_skills)
 
+    releases: dict[str, list[dict[str, str]]] = {}
     for skill in sorted(all_skills, key=lambda item: item.name):
         source_id = required_string(skill.source, "id")
         version = required_string(skill.source, "version")
+        release_base = source_release_base(config, skill.source)
         archive_name = f"{source_id}-{version}-{skill.name}.zip"
         digest = write_archive(skill, checkouts_by_id[source_id], assets / archive_name)
         manifest = manifests / "skills" / skill.name[0] / skill.name / f"{version}.toml"
-        write_manifest(skill, digest, release_base, manifest)
+        url = f"{release_base}/{archive_name}"
+        if manifest.exists():
+            previous = tomllib.loads(manifest.read_text(encoding="utf-8"))
+            if previous.get("source", {}).get("any", {}).get("sha256") != digest:
+                raise ImportFailure(
+                    f"{manifest} already references a different archive; bump the source version"
+                )
+            # Legacy manifests retain their exact bytes/URL. Sharded ones stay
+            # in the plan so a retry after a partial upload can finish; the
+            # publisher checks and retains identical remote assets.
+            if previous["source"]["any"].get("url") != url:
+                continue
+        else:
+            write_manifest(skill, digest, release_base, manifest)
+        tag = release_base.rsplit("/", 1)[-1]
+        releases.setdefault(tag, []).append({"path": archive_name, "sha256": digest})
+        if len(releases[tag]) > 1000:
+            raise ImportFailure(f"release {tag} exceeds GitHub's 1000-asset limit")
 
+    assets.mkdir(parents=True, exist_ok=True)
+    (assets / "release-plan.json").write_text(
+        json.dumps({"releases": [{"tag": tag, "assets": entries}
+                                  for tag, entries in sorted(releases.items())]}, indent=2) + "\n",
+        encoding="utf-8",
+    )
     report.parent.mkdir(parents=True, exist_ok=True)
     lines = [
         "# Skill import report",
@@ -899,6 +935,63 @@ def self_test() -> None:
                 ]
         if hashes[0] != hashes[1]:
             raise ImportFailure("self-test archives are not deterministic")
+        # Existing manifests keep their already-published download URL. New
+        # versions move to source/version releases instead of the full legacy
+        # release. Repeated imports retain the same recoverable upload plan.
+        sharded = dict(config, release_by_source=True)
+        manifests = root / "one" / "manifests"
+        assets = root / "sharded" / "assets"
+        existing = manifests / "skills/e/example-skill/1.0.0.toml"
+        previous = existing.read_bytes()
+        import_catalog(sharded, root / "checkouts", manifests, assets,
+                       root / "sharded/report.md", offline=True)
+        assert existing.read_bytes() == previous
+        plan = json.loads((assets / "release-plan.json").read_text())
+        assert plan == {"releases": []}, plan
+
+        sharded["source"] = [dict(config["source"][0], version="1.0.1")]
+        import_catalog(sharded, root / "checkouts", manifests, assets,
+                       root / "sharded/report.md", offline=True)
+        created = manifests / "skills/e/example-skill/1.0.1.toml"
+        expected_tag = "skills-test-skills-v1.0.1"
+        expected_name = "test-skills-1.0.1-example-skill.zip"
+        new_manifest = tomllib.loads(created.read_text())
+        assert new_manifest["source"]["any"]["url"] == (
+            f"https://example.com/releases/download/{expected_tag}/{expected_name}"
+        ), new_manifest
+        plan = json.loads((assets / "release-plan.json").read_text())
+        assert plan == {"releases": [{"tag": expected_tag, "assets": [{
+            "path": expected_name,
+            "sha256": new_manifest["source"]["any"]["sha256"],
+        }]}]}, plan
+        assert sha256_file(assets / expected_name) == hashes[0]
+        assert existing.read_bytes() == previous
+        import_catalog(sharded, root / "checkouts", manifests, assets,
+                       root / "sharded/report.md", offline=True)
+        assert json.loads((assets / "release-plan.json").read_text()) == plan
+
+        # Never reuse a published version for different archive bytes.
+        created.write_text(created.read_text().replace(
+            new_manifest["source"]["any"]["sha256"], "0" * 64))
+        try:
+            import_catalog(sharded, root / "checkouts", manifests, assets,
+                           root / "sharded/report.md", offline=True)
+        except ImportFailure as error:
+            assert "different archive" in str(error), error
+        else:
+            raise AssertionError("existing manifest hash conflict was not rejected")
+
+        # Reject unsafe source/version tag parts instead of sanitizing two
+        # distinct inputs to the same destination.
+        for source_id, version in [("../escape", "1.0.0"), ("ok", "1/2"),
+                                   ("ok", "1.0+metadata")]:
+            invalid = dict(config["source"][0], id=source_id, version=version)
+            try:
+                source_release_base(sharded, invalid)
+            except ImportFailure:
+                pass
+            else:
+                raise AssertionError("unsafe release tag was not rejected")
         sample = (
             'release_base = "https://example.com"\n\n'
             "[[source]]\n"

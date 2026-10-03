@@ -9,12 +9,20 @@ on:
       - "tools/**"
       - "manifests/**"
       - ".github/workflows/tools.yml"
+      - ".github/workflows/bump.yml"
+      - ".github/workflows/scoop-sync.yml"
+
+# Upstream payloads execute only in these read-only verification/test jobs.
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -23,6 +31,12 @@ jobs:
 
       - name: Test skill importer
         run: python tools/skill-import.py --self-test
+
+      - name: Test changed-package enrichment
+        run: python -m unittest discover -s tools -p test_enrich_changed_packages.py -v
+
+      - name: Test archive publisher
+        run: python -m unittest discover -s tools -p test_skill_publish.py -v
 
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
@@ -45,7 +59,7 @@ jobs:
       # lock in the same change. Every voli pin in this repo's workflows moves
       # together — grep for the tag before changing it.
       - name: Clone voli for the voli-core path dependency
-        run: git clone --depth 1 --branch v0.10.1 https://github.com/Topurrra/voli ../voli
+        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli
 
       - name: Test scoop-import
         working-directory: tools/scoop-import
@@ -55,6 +69,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -87,7 +103,8 @@ jobs:
   # Prove every emitted unix block executes somewhere: ubuntu legs gate the
   # linux payloads, macos legs the mac ones. Read-only (`--verify-only`
   # downloads and gates, writes nothing). Runs when the importer, its
-  # allowlist, or any manifest changes.
+  # allowlist, or any manifest changes. Bot-token-created PRs still need an
+  # authorized trigger before these PR checks run; generation is static-only.
   verify-unix:
     strategy:
       fail-fast: false
@@ -96,6 +113,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -114,4 +133,12 @@ jobs:
           with open('../brew-sources.toml','rb') as f:
               print(' '.join(s['name'] for s in tomllib.load(f)['source']))
           ")
-          cargo run --locked -- --verify-only --sources ../brew-sources.toml --manifests ../../manifests $names
+          cargo build --locked
+          failed=0
+          for name in $names; do
+            if ! target/debug/brew-import --verify-only --sources ../brew-sources.toml --manifests ../../manifests "$name"; then
+              echo "::error::Unix verification failed for $name on $RUNNER_OS"
+              failed=1
+            fi
+          done
+          exit "$failed"

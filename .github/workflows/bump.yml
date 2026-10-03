@@ -21,6 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -44,10 +49,28 @@ jobs:
             --tag v0.13.2 \
             voli-index-tool
 
+      - name: Clone voli for brew-import
+        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli
+
+      - name: Build brew-import
+        working-directory: tools/brew-import
+        run: cargo build --release --locked
+
       - name: Run bump
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: voli-index-tool bump manifests/ --limit 20 | tee bump-summary.txt
+
+      # Windows generation may omit or carry forward old Unix blocks. Resolve
+      # only the changed allowlisted packages, at their exact registry version.
+      - name: Enrich changed packages with exact-version Unix sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/enrich-changed-packages.py
+
+      - name: Validate
+        run: voli-index-tool validate manifests/
 
       - name: Create PR if changed
         env:

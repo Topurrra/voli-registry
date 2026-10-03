@@ -325,16 +325,16 @@ bin = ["difft"]
 smoke_args = ["--version"]
 
 [source.assets.linux-x64]
-file = "difft-x86_64-unknown-linux-gnu.tar.gz"
+file = "difft-{version}-x86_64-unknown-linux-musl.tar.gz"
 
 [source.assets.linux-arm64]
-file = "difft-aarch64-unknown-linux-gnu.tar.gz"
+file = "difft-{version}-aarch64-unknown-linux-gnu.tar.gz"
 
 [source.assets.macos-x64]
-file = "difft-x86_64-apple-darwin.tar.gz"
+file = "difft-{version}-x86_64-apple-darwin.tar.gz"
 
 [source.assets.macos-arm64]
-file = "difft-aarch64-apple-darwin.tar.gz"
+file = "difft-{version}-aarch64-apple-darwin.tar.gz"
 
 [[source]]
 name = "dive"
@@ -394,10 +394,10 @@ file = "duf_{version}_linux_x86_64.tar.gz"
 file = "duf_{version}_linux_arm64.tar.gz"
 
 [source.assets.macos-x64]
-file = "duf_{version}_Darwin_x86_64.tar.gz"
+file = "duf_{version}_darwin_x86_64.tar.gz"
 
 [source.assets.macos-arm64]
-file = "duf_{version}_Darwin_arm64.tar.gz"
+file = "duf_{version}_darwin_arm64.tar.gz"
 
 [[source]]
 name = "dust"
@@ -657,7 +657,7 @@ file = "mise-v{version}-macos-arm64.tar.gz"
 
 [[source]]
 name = "mprocs"
-repo = "pvolok/mprocs"
+repo = "pvolok/dekit"
 description = "Run multiple commands in parallel"
 homepage = "https://github.com/pvolok/dekit"
 license = "MIT"

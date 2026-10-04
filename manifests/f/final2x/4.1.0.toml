@@ -1,0 +1,15 @@
+name = "final2x"
+version = "4.1.0"
+description = "A cross-platform image super-resolution tool."
+homepage = "https://github.com/EutropicAI/Final2x"
+license = "BSD-3-Clause"
+kind = "app"
+shortcuts = [{ target = "Final2x.exe", name = "Final2x" }]
+
+[source.x64]
+url = "https://github.com/EutropicAI/Final2x/releases/download/v4.1.0/Final2x-windows-x64-unpacked.7z"
+sha256 = "dd198f3df1c7f34d5694696f56b111bcff1e21c7359597a2c26a62959191352c"
+
+[autoupdate]
+checkver = { github = "EutropicAI/Final2x" }
+url_template = { x64 = "https://github.com/EutropicAI/Final2x/releases/download/v$version/Final2x-windows-x64-unpacked.7z", arm64 = "https://github.com/EutropicAI/Final2x/releases/download/v$version/Final2x-windows-arm64-unpacked.7z" }

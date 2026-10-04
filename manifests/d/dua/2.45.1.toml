@@ -1,0 +1,41 @@
+name = "dua"
+version = "2.45.1"
+description = "Disk Usage Analyzer"
+homepage = "https://github.com/Byron/dua-cli"
+license = "MIT"
+kind = "app"
+bin = ["dua.exe"]
+
+[source.x64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-x86_64-pc-windows-msvc.zip"
+sha256 = "48c245f987c5359df0302202e6338e3235e4a4724db58d7d66138b096e8b2015"
+extract_dir = "dua-v2.45.1-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-aarch64-pc-windows-msvc.zip"
+sha256 = "292cc9a9cb46e7156c440b9ce9ec5acd975752db9d3673ffb7eb6173bab517f3"
+extract_dir = "dua-v2.45.1-aarch64-pc-windows-msvc"
+
+[source.linux-x64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "e9279f02bbbf22611c1602c4d5b526c9b99962d3d828016d48a0ee5b27252805"
+extract_dir = "dua-v2.45.1-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "8549719a92187491c1a6956aefddbd815ee5b3217491f2a3d98f2cc388bcb5ef"
+extract_dir = "dua-v2.45.1-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-x86_64-apple-darwin.tar.gz"
+sha256 = "cb2aa38c12e4b6a3b4b405a02d9a22dd1967b3b3559869e91ebfb41397f5d67d"
+extract_dir = "dua-v2.45.1-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/Byron/dua-cli/releases/download/v2.45.1/dua-v2.45.1-aarch64-apple-darwin.tar.gz"
+sha256 = "fdc3149dd99287f007f67ad81b2c75cfa23fed653007f1cb9a83f5a333e683e1"
+extract_dir = "dua-v2.45.1-aarch64-apple-darwin"
+
+[autoupdate]
+checkver = { github = "Byron/dua-cli" }
+url_template = { x64 = "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/Byron/dua-cli/releases/download/v$version/dua-v$version-aarch64-pc-windows-msvc.zip" }

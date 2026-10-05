@@ -1,0 +1,23 @@
+name = "deskflow"
+version = "1.27.0"
+description = "Share a single keyboard and mouse between multiple computers."
+homepage = "https://deskflow.org"
+license = "GPL-2.0"
+kind = "app"
+bin = ["deskflow-core.exe"]
+shortcuts = [{ target = "deskflow.exe", name = "Deskflow" }]
+persist = ["settings"]
+
+[source.x64]
+url = "https://github.com/deskflow/deskflow/releases/download/v1.27.0/deskflow-1.27.0-win-x64-portable.zip"
+sha256 = "8d19004cc3625623489d96580c1b58fd13ee78185689907fd4478595f93fab9a"
+extract_dir = "deskflow-1.27.0-win-x64-portable"
+
+[source.arm64]
+url = "https://github.com/deskflow/deskflow/releases/download/v1.27.0/deskflow-1.27.0-win-arm64-portable.zip"
+sha256 = "86d9a02f9f2f747023de7f9808065bf4d7f922ffde67c7308061a5865d367ac2"
+extract_dir = "deskflow-1.27.0-win-arm64-portable"
+
+[autoupdate]
+checkver = { github = "deskflow/deskflow" }
+url_template = { x64 = "https://github.com/deskflow/deskflow/releases/download/v$version/deskflow-$version-win-x64-portable.zip", arm64 = "https://github.com/deskflow/deskflow/releases/download/v$version/deskflow-$version-win-arm64-portable.zip" }

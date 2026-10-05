@@ -1,0 +1,16 @@
+name = "svtplay-dl"
+version = "4.199"
+description = "Video downloader from various sites"
+homepage = "https://svtplay-dl.se"
+license = "MIT"
+kind = "app"
+extract_dir = "svtplay-dl"
+bin = ["svtplay-dl.exe"]
+
+[source.x64]
+url = "https://svtplay-dl.se/download/4.199/svtplay-dl-amd64.zip"
+sha256 = "24908fbfe4b09cf73004223710763238e9543e5b7e5f9f47f3eb3ecf1612f0f0"
+
+[autoupdate]
+checkver = ">Currently v([\\d.]+)\\s+\\("
+url_template = { x64 = "https://svtplay-dl.se/download/$version/svtplay-dl-amd64.zip" }

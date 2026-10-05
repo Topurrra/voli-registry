@@ -1,0 +1,16 @@
+name = "executor"
+version = "2.4.1"
+description = "Multipurpose launcher and more advanced and customizable freeware Windows run replacement and more."
+homepage = "https://executor.dk/"
+license = "MIT"
+kind = "app"
+extract_dir = "Executor64bit"
+bin = ["Executor.exe"]
+
+[source.x64]
+url = "https://github.com/executordk/executor-community/releases/download/v2.4.1/Executor_v2.4.1_64bit.zip"
+sha256 = "d95ac27d675b4de7a13749bc4ad51c00f46bde30ab63a0443bc754926c5b2d54"
+
+[autoupdate]
+checkver = { github = "executordk/executor-community" }
+url_template = { x64 = "https://github.com/executordk/executor-community/releases/download/v$version/Executor_v$version_64bit.zip" }

@@ -1,0 +1,15 @@
+name = "himalaya"
+version = "2.2.1"
+description = "Minimalist CLI email client, written in Rust"
+homepage = "https://github.com/pimalaya/himalaya"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["himalaya.exe"]
+
+[source.x64]
+url = "https://github.com/pimalaya/himalaya/releases/download/v2.2.1/himalaya.x86_64-windows.tgz"
+sha256 = "abea8ecbca5fbd566860941bbab91e40f1dde57e737091a451208b8c61b99523"
+
+[autoupdate]
+checkver = { github = "pimalaya/himalaya" }
+url_template = { x64 = "https://github.com/pimalaya/himalaya/releases/download/v$version/himalaya.x86_64-windows.tgz" }

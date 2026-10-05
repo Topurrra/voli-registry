@@ -1,0 +1,15 @@
+name = "symfony-cli"
+version = "5.21.0"
+description = "Helps Symfony developers manage projects, from local code to remote infrastructure"
+homepage = "https://symfony.com"
+license = "AGPL-3.0"
+kind = "app"
+bin = ["symfony.exe"]
+
+[source.x64]
+url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.21.0/symfony-cli_windows_amd64.zip"
+sha256 = "01674b0f4e67ff909a1ac7f97e3fad00e754455e5f8f175a48bfba70c0e37795"
+
+[autoupdate]
+checkver = { github = "symfony-cli/symfony-cli" }
+url_template = { x64 = "https://github.com/symfony-cli/symfony-cli/releases/download/v$version/symfony-cli_windows_amd64.zip" }

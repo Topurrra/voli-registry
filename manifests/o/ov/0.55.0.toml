@@ -1,0 +1,19 @@
+name = "ov"
+version = "0.55.0"
+description = "Feature-rich terminal-based text viewer"
+homepage = "https://noborus.github.io/ov"
+license = "MIT"
+kind = "app"
+bin = ["ov.exe"]
+
+[source.x64]
+url = "https://github.com/noborus/ov/releases/download/v0.55.0/ov_0.55.0_windows_amd64.zip"
+sha256 = "505dec78254094f8a5612b8fa7e6a6a42bdf4dc37c42a0d4dbd16bd62a57a8a4"
+
+[source.arm64]
+url = "https://github.com/noborus/ov/releases/download/v0.55.0/ov_0.55.0_windows_arm64.zip"
+sha256 = "d01e637fef5b67940e23f385dce3359eda9b5d9477d2188bec1271c7d8742d41"
+
+[autoupdate]
+checkver = { github = "noborus/ov" }
+url_template = { x64 = "https://github.com/noborus/ov/releases/download/v$version/ov_$version_windows_amd64.zip", arm64 = "https://github.com/noborus/ov/releases/download/v$version/ov_$version_windows_arm64.zip" }

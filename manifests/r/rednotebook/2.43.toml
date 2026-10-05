@@ -1,0 +1,17 @@
+name = "rednotebook"
+version = "2.43"
+description = "Graphical diary and journal"
+homepage = "https://rednotebook.sourceforge.io/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["rednotebook.exe"]
+shortcuts = [{ target = "rednotebook.exe", name = "RedNotebook" }]
+
+[source.x64]
+url = "https://github.com/jendrikseipp/rednotebook/releases/download/v2.43/rednotebook-2.43.exe"
+sha256 = "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "jendrikseipp/rednotebook" }
+url_template = "https://github.com/jendrikseipp/rednotebook/releases/download/v$version/rednotebook-$version.exe"

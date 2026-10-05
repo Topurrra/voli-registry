@@ -1,0 +1,19 @@
+name = "github-mcp-server"
+version = "1.14.0"
+description = "GitHub's official MCP Server"
+homepage = "https://github.com/github/github-mcp-server"
+license = "MIT"
+kind = "app"
+bin = ["github-mcp-server.exe"]
+
+[source.x64]
+url = "https://github.com/github/github-mcp-server/releases/download/v1.14.0/github-mcp-server_Windows_x86_64.zip"
+sha256 = "0277e5fca965ae7fa31c7193954eae948ddc13997bc4b835858be858ac55cabe"
+
+[source.arm64]
+url = "https://github.com/github/github-mcp-server/releases/download/v1.14.0/github-mcp-server_Windows_arm64.zip"
+sha256 = "c87a15210f0e4284f26968d563767e1895dd457b83faaddd96e24c9c99b0dbf7"
+
+[autoupdate]
+checkver = { github = "github/github-mcp-server" }
+url_template = { x64 = "https://github.com/github/github-mcp-server/releases/download/v$version/github-mcp-server_Windows_x86_64.zip", arm64 = "https://github.com/github/github-mcp-server/releases/download/v$version/github-mcp-server_Windows_arm64.zip" }

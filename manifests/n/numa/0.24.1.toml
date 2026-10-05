@@ -1,0 +1,15 @@
+name = "numa"
+version = "0.24.1"
+description = "A portable DNS resolver in a single binary."
+homepage = "https://numa.rs"
+license = "MIT"
+kind = "app"
+bin = ["numa.exe"]
+
+[source.x64]
+url = "https://github.com/razvandimescu/numa/releases/download/v0.24.1/numa-windows-x86_64.zip"
+sha256 = "2a67ada28ea6f3d858af81f0885986ea2da0708f69e8836fef257ce3f0a6c9f8"
+
+[autoupdate]
+checkver = { github = "razvandimescu/numa" }
+url_template = { x64 = "https://github.com/razvandimescu/numa/releases/download/v$version/numa-windows-x86_64.zip" }

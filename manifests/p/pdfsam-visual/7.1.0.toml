@@ -1,0 +1,15 @@
+name = "pdfsam-visual"
+version = "7.1.0"
+description = "A visual PDF tool to compose, combine, delete pages, crop and much more"
+homepage = "https://pdfsam.org/pdfsam-visual/"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "PDFsam Visual.exe", name = "PDFsam Visual" }]
+
+[source.x64]
+url = "https://github.com/torakiki/pdfsam-visual-public/releases/download/v7.1.0/pdfsam-visual-7.1.0-windows-x64.zip"
+sha256 = "5a81f8ae72058ad35d25721fea6b054daefd8b35b35f0924b39ab6f538dbf003"
+
+[autoupdate]
+checkver = { github = "torakiki/pdfsam-visual-public" }
+url_template = { x64 = "https://github.com/torakiki/pdfsam-visual-public/releases/download/v$version/pdfsam-visual-$version-windows-x64.zip" }

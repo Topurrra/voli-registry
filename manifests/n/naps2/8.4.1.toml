@@ -1,0 +1,17 @@
+name = "naps2"
+version = "8.4.1"
+description = "Scan documents to PDF and more, as simply as possible"
+homepage = "https://www.naps2.com/"
+license = "GPL-2.0-only"
+kind = "app"
+bin = [{ name = "NAPS2", path = "App\\NAPS2.Console.exe" }]
+shortcuts = [{ target = "App\\NAPS2.exe", name = "NAPS2" }]
+persist = ["Data"]
+
+[source.x64]
+url = "https://github.com/cyanfish/naps2/releases/download/v8.4.1/naps2-8.4.1-win-x64.zip"
+sha256 = "a1143afee06ccc271ce3212732d6ea924e028d94177289344995375c8c50cf74"
+
+[autoupdate]
+checkver = { github = "cyanfish/naps2" }
+url_template = { x64 = "https://github.com/cyanfish/naps2/releases/download/v$version/naps2-$version-win-x64.zip" }

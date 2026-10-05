@@ -1,0 +1,15 @@
+name = "rip"
+version = "0.9.7"
+description = "A safe and ergonomic alternative to rm."
+homepage = "https://github.com/MilesCranmer/rip2"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["rip.exe"]
+
+[source.x64]
+url = "https://github.com/MilesCranmer/rip2/releases/download/v0.9.7/rip-Windows-x86_64.zip"
+sha256 = "f38b7a7c9ecd6a23cf014841fe0da7c1866c9ba6255e6c3ea5e8c8df88063806"
+
+[autoupdate]
+checkver = { github = "MilesCranmer/rip2" }
+url_template = { x64 = "https://github.com/MilesCranmer/rip2/releases/download/v$version/rip-Windows-x86_64.zip" }

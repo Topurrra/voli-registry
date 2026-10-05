@@ -1,0 +1,17 @@
+name = "bili23-downloader"
+version = "2.20.0"
+description = "Open source, cross-platform Bilibili video downloader."
+homepage = "https://bili23.scott-sloan.cn"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "Bili23-Downloader"
+bin = ["Bili23.exe"]
+shortcuts = [{ target = "Bili23.exe", name = "Bili23 Downloader" }]
+
+[source.x64]
+url = "https://github.com/ScottSloan/Bili23-Downloader/releases/download/v2.20.0/Bili23-Downloader_2.20.0_windows_x64_portable.zip"
+sha256 = "a6275f0e5d5d990374ffb8179bb1f8ea74690591f805c407dc8675283e72fdaf"
+
+[autoupdate]
+checkver = { github = "ScottSloan/Bili23-Downloader" }
+url_template = { x64 = "https://github.com/ScottSloan/Bili23-Downloader/releases/download/v$version/Bili23-Downloader_$version_windows_x64_portable.zip" }

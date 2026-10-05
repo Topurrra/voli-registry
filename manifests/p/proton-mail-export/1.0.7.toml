@@ -1,0 +1,15 @@
+name = "proton-mail-export"
+version = "1.0.7"
+description = "Command-line tool that allows you to export all your emails as EML files, and their metadata as JSON files."
+homepage = "https://proton.me/support/proton-mail-export-tool"
+license = "GPL-3.0"
+kind = "app"
+bin = ["proton-mail-export-cli.exe"]
+
+[source.x64]
+url = "https://github.com/ProtonMail/proton-mail-export/releases/download/v1.0.7/proton-mail-export-cli-windows_x86_64.zip"
+sha256 = "a9a22d1d5d8755cabe904e9645515c35a88aabe54a0b59eac399a3eef04ce139"
+
+[autoupdate]
+checkver = { github = "ProtonMail/proton-mail-export" }
+url_template = { x64 = "https://github.com/ProtonMail/proton-mail-export/releases/download/v$version/proton-mail-export-cli-windows_x86_64.zip" }

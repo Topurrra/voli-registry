@@ -1,0 +1,24 @@
+name = "googlechrome"
+version = "154.0.8037.98"
+description = "Fast, secure, and free web browser, built for the modern web."
+homepage = "https://www.google.com/chrome/"
+icon = "https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+license = "Freeware"
+kind = "app"
+extract_dir = "Chrome-bin"
+bin = [{ name = "chrome", path = "chrome.exe" }]
+shortcuts = [{ target = "chrome.exe", name = "Google Chrome" }]
+
+[source.x64]
+url = "https://dl.google.com/release2/chrome/ac3stf7x6z62hvwmphhro6dpbhpq_154.0.8037.98/154.0.8037.98_chrome_installer_uncompressed.exe#/dl.7z"
+sha256 = "2d5f2073185cdf8e72bd70b19970bcb2e1ade19a85d68b6be2a3fe672816941d"
+
+[source.arm64]
+url = "https://dl.google.com/release2/chrome/acywoj3yjdggwoxnkmqxkimevloq_154.0.8037.98/154.0.8037.98_chrome_installer_uncompressed.exe#/dl.7z"
+sha256 = "d3a01842d9d7bd56c5ea8323558df1f61b7b87018d0624dabf2ffdf32b2d7549"
+
+[env]
+CHROME_EXECUTABLE = "{dir}\\chrome.exe"
+
+[autoupdate]
+checkver = { vendor = "google-chrome" }

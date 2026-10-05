@@ -1,0 +1,15 @@
+name = "octopustools"
+version = "9.1.7"
+description = "Command line manager of Octopus environments, deployments, channels, projects, and workers"
+homepage = "https://octopus.com/docs/octopus-rest-api/octopus-cli"
+license = "Apache-2.0"
+kind = "app"
+bin = ["octo.exe"]
+
+[source.x64]
+url = "https://github.com/OctopusDeploy/OctopusCLI/releases/download/v9.1.7/OctopusTools.9.1.7.win-x64.zip"
+sha256 = "7549a9dad2125fce1588c016b70947c420d80761f4c3c74e1f9ddd5c0abf0edd"
+
+[autoupdate]
+checkver = { github = "OctopusDeploy/OctopusCLI" }
+url_template = { x64 = "https://github.com/OctopusDeploy/OctopusCLI/releases/download/v$version/OctopusTools.$version.win-x64.zip" }

@@ -1,0 +1,15 @@
+name = "sacad"
+version = "3.0.3"
+description = "A command line tool to download album covers without manual intervention."
+homepage = "https://github.com/desbma/sacad"
+license = "MPL-2.0"
+kind = "app"
+bin = ["sacad.exe", "sacad_r.exe"]
+
+[source.x64]
+url = "https://github.com/desbma/sacad/releases/download/3.0.3/sacad_3.0.3_windows_x86_64.zip"
+sha256 = "15644063276b7ea210bc8688af91924cd9e779c0783d92e7eabc2394af647bec"
+
+[autoupdate]
+checkver = { github = "desbma/sacad" }
+url_template = { x64 = "https://github.com/desbma/sacad/releases/download/$version/sacad_$version_windows_x86_64.zip" }

@@ -1,0 +1,16 @@
+name = "phraseexpress"
+version = "18.0.83"
+description = "Autotext and Text Autocompletion in any application."
+homepage = "https://www.phraseexpress.com"
+license = "Freeware"
+kind = "app"
+extract_dir = "PhraseExpress"
+bin = ["PhraseExpress.exe"]
+shortcuts = [{ target = "PhraseExpress.exe", name = "PhraseExpress" }]
+
+[source.x64]
+url = "https://www.phraseexpress.com/PhraseExpress_USB.zip"
+sha256 = "3c8fd01987e47ef6e4d210970c1fcbc08222665eb3c2b66043ea3a68e9aef024"
+
+[autoupdate]
+checkver = { url = "https://www.phraseexpress.com/download/", regex = ">([\\d.]+)</" }

@@ -1,0 +1,16 @@
+name = "stlink"
+version = "1.9.0"
+description = "Open source STM32 MCU programming toolset"
+homepage = "https://github.com/stlink-org/stlink"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "stlink-1.9.0-x86_64-w64-mingw32"
+bin = ["bin/st-flash.exe", "bin/st-info.exe", "bin/st-server.exe", "bin/st-trace.exe", "bin/st-util.exe"]
+
+[source.x64]
+url = "https://github.com/stlink-org/stlink/releases/download/v1.9.0/stlink-1.9.0-x86_64-w64-mingw32.zip"
+sha256 = "655d952a523a5d7730a3309920c320b23c8a7770fda55065764b55028a465d0c"
+
+[autoupdate]
+checkver = { github = "stlink-org/stlink" }
+url_template = { x64 = "https://github.com/stlink-org/stlink/releases/download/v$version/stlink-$version-x86_64-w64-mingw32.zip" }

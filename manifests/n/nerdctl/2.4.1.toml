@@ -1,0 +1,15 @@
+name = "nerdctl"
+version = "2.4.1"
+description = "Docker-compatible CLI for containerd"
+homepage = "https://github.com/containerd/nerdctl"
+license = "Apache-2.0"
+kind = "app"
+bin = ["nerdctl.exe"]
+
+[source.x64]
+url = "https://github.com/containerd/nerdctl/releases/download/v2.4.1/nerdctl-2.4.1-windows-amd64.tar.gz"
+sha256 = "0b1685c5936dedfff98403028d920b7f3b0e68c0487c4c7fe0469f136cc15163"
+
+[autoupdate]
+checkver = { github = "containerd/nerdctl" }
+url_template = { x64 = "https://github.com/containerd/nerdctl/releases/download/v$version/nerdctl-$version-windows-amd64.tar.gz" }

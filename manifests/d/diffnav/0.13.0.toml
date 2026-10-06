@@ -1,0 +1,19 @@
+name = "diffnav"
+version = "0.13.0"
+description = "A git diff pager based on delta but with a file tree."
+homepage = "https://github.com/dlvhdr/diffnav"
+license = "MIT"
+kind = "app"
+bin = ["diffnav.exe"]
+
+[source.x64]
+url = "https://github.com/dlvhdr/diffnav/releases/download/v0.13.0/diffnav_Windows_x86_64.zip"
+sha256 = "2d9fd97556008580f881300a44976d79e90af7ae998c752d7fccbe1dc96afb56"
+
+[source.arm64]
+url = "https://github.com/dlvhdr/diffnav/releases/download/v0.13.0/diffnav_Windows_arm64.zip"
+sha256 = "87ec17b41bf4231e6fce1edae97b21c387c20a434101e8a233c1850919dc1c71"
+
+[autoupdate]
+checkver = { github = "dlvhdr/diffnav" }
+url_template = { x64 = "https://github.com/dlvhdr/diffnav/releases/download/v$version/diffnav_Windows_x86_64.zip", arm64 = "https://github.com/dlvhdr/diffnav/releases/download/v$version/diffnav_Windows_arm64.zip" }

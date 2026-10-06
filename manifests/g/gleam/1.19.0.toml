@@ -1,0 +1,22 @@
+name = "gleam"
+version = "1.19.0"
+description = "A friendly language for building type-safe, scalable systems"
+homepage = "https://gleam.run/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["gleam.exe"]
+
+[source.x64]
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.19.0/gleam-v1.19.0-x86_64-pc-windows-msvc.zip"
+sha256 = "47cc9eed05ec44526ee610c40f3103d48a4b558a442b5c5e085d21386ab8bb23"
+
+[source.arm64]
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.19.0/gleam-v1.19.0-aarch64-pc-windows-msvc.zip"
+sha256 = "d2600f780cb807f83ef473f68cf1039813bad6528c55f50395072516dcf63bb0"
+
+[depends]
+erlang = "*"
+
+[autoupdate]
+checkver = { github = "gleam-lang/gleam" }
+url_template = { x64 = "https://github.com/gleam-lang/gleam/releases/download/v$version/gleam-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/gleam-lang/gleam/releases/download/v$version/gleam-v$version-aarch64-pc-windows-msvc.zip" }

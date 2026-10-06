@@ -1,0 +1,10 @@
+name = "vectorization"
+version = "2026.10.6"
+description = "Design, implement, optimize, and review SIMD code in .NET. USE FOR: vectorizing scalar loops with TensorPrimitives, Vector64/128/256/512, or platform hardware intrinsics; reviewing existing SIMD code, including the generic Vector type, for contract equivalence, tail handling, memory safety, portability, fallbacks, and measured performance. DO NOT USE FOR: performance work unrelated to SIMD or vectorization."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-advanced/skills/vectorization"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-vectorization.zip"
+sha256 = "d3977a3d823e6c334e4395a42a9e3434f2264cc18ffc0457cc3daa666562d5a8"

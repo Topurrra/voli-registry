@@ -1,0 +1,10 @@
+name = "diagnosing-bugs"
+version = "2026.10.6"
+description = "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/diagnosing-bugs"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-diagnosing-bugs.zip"
+sha256 = "73eef0117e3de93d7de8785fe0c2dc9902dd9ec68988089859b736a0a847a412"

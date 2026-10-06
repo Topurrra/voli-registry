@@ -1,0 +1,10 @@
+name = "optimizing-ef-core-queries"
+version = "2026.10.6"
+description = "Optimize and improve the performance of slow Entity Framework Core (EF Core) queries: make them generate less SQL, make fewer database round-trips, and return results faster. Use whenever an EF Core or DbContext query or data-access path is slow or should be made faster — whether or not EF Core owns the database schema. For EF Core, not Dapper or raw ADO.NET."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-data/skills/optimizing-ef-core-queries"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-optimizing-ef-core-queries.zip"
+sha256 = "660d1fd79b2d0ac751ea4dfb6cf06c23885d5181b09a7523c01e55949ff9e26e"

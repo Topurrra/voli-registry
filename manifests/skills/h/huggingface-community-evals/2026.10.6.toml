@@ -1,0 +1,10 @@
+name = "huggingface-community-evals"
+version = "2026.10.6"
+description = "Run evaluations for Hugging Face Hub models using inspect-ai and lighteval on local hardware. Use for backend selection, local GPU evals, and choosing between vLLM / Transformers / accelerate. Not for HF Jobs orchestration, model-card PRs, .eval_results publication, or community-evals automation."
+homepage = "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/huggingface-community-evals"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-huggingface-skills-v2026.10.6/huggingface-skills-2026.10.6-huggingface-community-evals.zip"
+sha256 = "2c70f7b8d89a8bddebaf1f4ddd531acea708849163c42f887bb5dabb855473a7"

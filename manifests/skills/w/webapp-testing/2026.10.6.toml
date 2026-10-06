@@ -1,0 +1,10 @@
+name = "webapp-testing"
+version = "2026.10.6"
+description = "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/webapp-testing"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-webapp-testing.zip"
+sha256 = "a2fc74a154197bcfb50a43df1b445da1183b016a9f5102446a3bbe628ae99b8c"

@@ -1,0 +1,10 @@
+name = "frontend-design"
+version = "2026.10.6"
+description = "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/frontend-design"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-frontend-design.zip"
+sha256 = "947e2f4b6b3969dc118a4297e670598134b0cc4db7da60ad76179344ed66318f"

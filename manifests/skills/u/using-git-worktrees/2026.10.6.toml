@@ -1,0 +1,10 @@
+name = "using-git-worktrees"
+version = "2026.10.6"
+description = "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback"
+homepage = "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/using-git-worktrees"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.6/obra-superpowers-2026.10.6-using-git-worktrees.zip"
+sha256 = "1493902adfadc359050c74639735ac82f1ba70aeeba9121dc43d766198802dd8"

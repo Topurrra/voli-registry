@@ -1,0 +1,10 @@
+name = "ml-kit-genai-prompt-api"
+version = "2026.10.6"
+description = "Analyzes Android codebases to implement ML Kit GenAI Prompt API. Use"
+homepage = "https://github.com/android/skills/tree/42dc2270e96032bd860bb94511e440aa00a43125/device-ai/ml-kit-genai-prompt-api"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.6/android-skills-2026.10.6-ml-kit-genai-prompt-api.zip"
+sha256 = "8731752de071efca1f9d1ee366b6f4093596bb3b1898300f0c605e04a4882d9f"

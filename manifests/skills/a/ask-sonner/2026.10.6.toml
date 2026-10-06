@@ -1,0 +1,10 @@
+name = "ask-sonner"
+version = "2026.10.6"
+description = "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode."
+homepage = "https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/ask-sonner"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.10.6/emilkowalski-skills-2026.10.6-ask-sonner.zip"
+sha256 = "7e3780d9735b6df869bebf57c1b4004337be1c37bdcad64d72fc0147755bc3bd"

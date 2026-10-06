@@ -1,0 +1,10 @@
+name = "testability-obstacle"
+version = "2026.10.6"
+description = "MUST USE for C#/.NET deterministic tests that require the smallest production seam for DateTime/Task.Delay/File/Environment/Guid/Random, static API preservation, nested/parallel overrides, or no real I/O. USE ONLY when the target workspace contains C# source plus a .csproj or .sln. DO NOT USE for audits, bulk migration, code that already has an injectable seam, or an explicit migration to a user-named existing abstraction (migrate-static-to-wrapper). Use instead of general test generation when the requested test is impossible without a production edit and seam selection is still open."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/testability-obstacle"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-testability-obstacle.zip"
+sha256 = "7bd416cf9e5f3456ae475783f314f60e87cab262b0e02c22d07856f0b797e10e"

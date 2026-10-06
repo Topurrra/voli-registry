@@ -1,0 +1,10 @@
+name = "build-parallelism"
+version = "2026.10.6"
+description = "Analyze an MSBuild solution, solution filter, or Build.proj that schedules multiple project files. USE FOR: measured idle worker nodes, `-m` that does not scale, a serial ProjectReference critical path, graph builds, or an MSBuild task that builds a Projects list. Requires at least two distinct project files whose scheduling or throughput must be analyzed. DO NOT USE for non-MSBuild build systems."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-msbuild/skills/build-parallelism"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-build-parallelism.zip"
+sha256 = "2a247aa374e66ad98335b1d30bc49b6b7454867a4eac0871c0a6c0f8a10b5d30"

@@ -1,0 +1,10 @@
+name = "skill-creator"
+version = "2026.10.6"
+description = "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/skill-creator"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-skill-creator.zip"
+sha256 = "4c25d31ea8acb871dfb64981f85574fc06b709642dab97f8487e472a333ab6eb"

@@ -1,0 +1,10 @@
+name = "pick-ui-library"
+version = "2026.10.6"
+description = "Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own."
+homepage = "https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/pick-ui-library"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.10.6/emilkowalski-skills-2026.10.6-pick-ui-library.zip"
+sha256 = "3695f417655f4c28b86dc9663aba2914d3b37da69f4cc7385dc13456f03e200a"

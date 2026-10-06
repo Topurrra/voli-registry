@@ -1,0 +1,10 @@
+name = "file-tree"
+version = "2026.10.6"
+description = "Manually-invoked skill that prints a nice file tree of the current topic in a code block. Use when the user says \"file-tree\" or \"file tree\"."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/thinking-and-docs/file-tree"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-file-tree.zip"
+sha256 = "4783e7f78fba68595834ae151ba2ddd0fd86cee64c1990eef62a3304d22f7340"

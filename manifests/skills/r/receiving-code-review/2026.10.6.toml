@@ -1,0 +1,10 @@
+name = "receiving-code-review"
+version = "2026.10.6"
+description = "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
+homepage = "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/receiving-code-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.6/obra-superpowers-2026.10.6-receiving-code-review.zip"
+sha256 = "f9041d977c7d62900e427ce6e86a5df54c364fafac3e00015d1994697ab7f1c1"

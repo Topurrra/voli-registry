@@ -1,19 +1,19 @@
 # Skill import report
 
-Generated 271 deterministic skill archives from 10 pinned sources.
+Generated 304 deterministic skill archives from 10 pinned sources.
 
 | Source | Revision | Skills | License |
 | --- | --- | ---: | --- |
-| `google/agents-cli` | `c7a375f7a463d5ade51caabdec56971681aed400` | 7 | Apache-2.0 |
-| `huggingface/skills` | `32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda` | 26 | Apache-2.0 |
-| `android/skills` | `ba0042c08b7e6ff5cb121b7b87d442f809467324` | 20 | Apache-2.0 |
-| `dotnet/skills` | `6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc` | 96 | MIT |
-| `anthropics/skills` | `b29e7cf65e5cb78a5ac33d582270551bc74a14eb` | 12 | Apache-2.0 |
-| `obra/superpowers` | `44c9b2d6e889982ac18c27d05a19fefe335194e1` | 14 | MIT |
-| `mattpocock/skills` | `2ab958093e83e0ec752e6c1c5932da465bf23e0c` | 28 | MIT |
-| `emilkowalski/skills` | `da80201b64de7d608a6dc5f723797ce6c65b692b` | 8 | MIT |
+| `google/agents-cli` | `2c3945901e8e5cc933fa94fa44d1d4aaf644b596` | 7 | Apache-2.0 |
+| `huggingface/skills` | `ca0325bb20b2d0a1b2efa893670c4c72f79e707b` | 26 | Apache-2.0 |
+| `android/skills` | `42dc2270e96032bd860bb94511e440aa00a43125` | 25 | Apache-2.0 |
+| `dotnet/skills` | `0dcd43ceb15e15a2c45dd54075fbcf3a30632154` | 100 | MIT |
+| `anthropics/skills` | `683bc88e56f3e09ba94f7055977f3d3aa499f202` | 14 | Apache-2.0 |
+| `obra/superpowers` | `8ca22dba9a94f28898bbce59f2537ff4d87c747d` | 15 | MIT |
+| `mattpocock/skills` | `c665c5559e8be56a12271a620ae44aa1ada535ed` | 31 | MIT |
+| `emilkowalski/skills` | `e8a175de22ae1e49370fc144c1f3bb9aeedf988d` | 14 | MIT |
 | `MiniMax-AI/skills` | `60aaae52bb2af8162732751a4332f62a5fef518b` | 17 | MIT |
-| `davidondrej/skills` | `6e5545081c888b89576a620d9b2e54e9a6590f68` | 43 | MIT |
+| `davidondrej/skills` | `f025cb43cbbfe5810b130a207c4353c8555af7cb` | 55 | MIT |
 
 ## Name collisions
 

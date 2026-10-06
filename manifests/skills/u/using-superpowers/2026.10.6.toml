@@ -1,0 +1,10 @@
+name = "using-superpowers"
+version = "2026.10.6"
+description = "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions"
+homepage = "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/using-superpowers"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.6/obra-superpowers-2026.10.6-using-superpowers.zip"
+sha256 = "ad996c68e2dfa5f80b68290e530e84d3e437c2499305df5773113cf304dbca94"

@@ -1,0 +1,10 @@
+name = "codebase-design"
+version = "2026.10.6"
+description = "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/codebase-design"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-codebase-design.zip"
+sha256 = "dbf78abbe362610cb72af30d162c8189c2cf5ff484839132846a78e28277e956"

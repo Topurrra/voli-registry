@@ -1,0 +1,10 @@
+name = "run-tests"
+version = "2026.10.6"
+description = "ALWAYS USE before running .NET tests or answering with a test command or flags. Trigger on \"run the tests\", \"exact dotnet test command\", one test/class/category/trait/target framework, combined filters, `--filter-query`, `--no-build`, `--diag`, diagnostic logs, TRX, coverage collection, crash/hang dumps, filter errors, or unrecognized options. Chooses repository-compatible classic, VSTest, bridged MTP, or native MTP syntax for MSTest/xUnit/NUnit/TUnit. DO NOT USE for platform identification alone (platform-detection), writing or debugging test code, interpreting an existing coverage report, CI investigation, migration, or a persistent hot reload/watch loop."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/run-tests"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-run-tests.zip"
+sha256 = "a832d2589511779c1ca326f84315d51fdea6b72b8afff909324f18734a80cb75"

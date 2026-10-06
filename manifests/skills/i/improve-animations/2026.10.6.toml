@@ -1,0 +1,10 @@
+name = "improve-animations"
+version = "2026.10.6"
+description = "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff."
+homepage = "https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/improve-animations"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.10.6/emilkowalski-skills-2026.10.6-improve-animations.zip"
+sha256 = "5740eb81d88eaec7c6e56545bd7bcc2d7a60c9dcf308174da2bdf03cda6108ac"

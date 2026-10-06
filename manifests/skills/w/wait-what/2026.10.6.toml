@@ -1,0 +1,10 @@
+name = "wait-what"
+version = "2026.10.6"
+description = "Stop. That last message did not land: re-pitch it."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/productivity/wait-what"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-wait-what.zip"
+sha256 = "2cfff047d5ad06ce63af4ac332c642318f53c2ce8fa94153e2c4389f9f0d1e58"

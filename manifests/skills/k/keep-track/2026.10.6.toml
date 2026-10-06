@@ -1,0 +1,10 @@
+name = "keep-track"
+version = "2026.10.6"
+description = "Keep track of open topics and decisions. Use when the user says \"keep-track\" or asks to keep a running list of remaining items."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/thinking-and-docs/keep-track"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-keep-track.zip"
+sha256 = "a345a00af677fa7ea44ab8a2f4b21dd5daa47b5d9c1786a49d833f0ed466ce5f"

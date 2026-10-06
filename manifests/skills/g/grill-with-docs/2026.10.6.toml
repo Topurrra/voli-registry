@@ -1,0 +1,10 @@
+name = "grill-with-docs"
+version = "2026.10.6"
+description = "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/grill-with-docs"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-grill-with-docs.zip"
+sha256 = "f4ec41d8b56a6b2103d8f6d2d81b6364256a07cc3dbeea62108576597be94c7a"

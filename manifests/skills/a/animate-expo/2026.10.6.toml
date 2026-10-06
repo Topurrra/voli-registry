@@ -1,0 +1,10 @@
+name = "animate-expo"
+version = "2026.10.6"
+description = "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`."
+homepage = "https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/animate-expo"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.10.6/emilkowalski-skills-2026.10.6-animate-expo.zip"
+sha256 = "47bce3812aba8d7bf20b8de7b7cfd7cfbcd0f8e7fab34141e6a2423182c52f7c"

@@ -1,0 +1,10 @@
+name = "android-cli"
+version = "2026.10.6"
+description = "Provides instructions for installing and using the `android` CLI. The"
+homepage = "https://github.com/android/skills/tree/42dc2270e96032bd860bb94511e440aa00a43125/devtools/android-cli"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.6/android-skills-2026.10.6-android-cli.zip"
+sha256 = "80e736f843fd252d9bc48753b0ed4e789273611942cc81aa9cc9285b0ad70a44"

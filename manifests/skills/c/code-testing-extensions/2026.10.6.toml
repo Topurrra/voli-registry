@@ -1,0 +1,10 @@
+name = "code-testing-extensions"
+version = "2026.10.6"
+description = "Provides file paths to language-specific extension files for the code-testing pipeline. Call this skill to discover available extension guidance files (e.g., dotnet.md for .NET, cpp.md for C++). Do not use directly — invoked by code-testing agents and skills that need language-specific references."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/code-testing-extensions"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-code-testing-extensions.zip"
+sha256 = "d602901bfe1a02fed537b4e405dfdfeefd0c06f70c2c67e37c0ae58db49a2b4d"

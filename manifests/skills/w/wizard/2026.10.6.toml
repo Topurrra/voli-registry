@@ -1,0 +1,10 @@
+name = "wizard"
+version = "2026.10.6"
+description = "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/wizard"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-wizard.zip"
+sha256 = "d5a237e16dec5a6e35ec0b8097e5f66b1c8058cf104d22df010dbc160ba0d715"

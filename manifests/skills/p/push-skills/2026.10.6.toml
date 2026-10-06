@@ -1,0 +1,10 @@
+name = "push-skills"
+version = "2026.10.6"
+description = "Push skills and global AGENTS.md to the private repo and verify the public mirror. Use only when the user explicitly invokes /push-skills."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/skill-authoring/push-skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-push-skills.zip"
+sha256 = "b46a8255cd879b8f2287ef761dccadfe117d7b3fdb90c8577238158cc4c134de"

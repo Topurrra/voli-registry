@@ -1,0 +1,10 @@
+name = "to-questionnaire"
+version = "2026.10.6"
+description = "Turn a decision you can't fully answer into a questionnaire for someone else to fill in."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/productivity/to-questionnaire"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-to-questionnaire.zip"
+sha256 = "daf771ebb4a0211edef6ac50a5ca1d912a9d1f83a6d5ac228b490bfb2ee6e1d0"

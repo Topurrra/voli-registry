@@ -1,0 +1,10 @@
+name = "google-agents-cli-scaffold"
+version = "2026.10.6"
+description = "This skill should be used when the user wants to \"create an agent project\", \"start a new ADK project\", \"build me a new agent\", \"add CI/CD to my project\", \"add deployment\", \"enhance my project\", or \"upgrade my project\". Part of the agents-cli skills suite. Covers `agents-cli scaffold create`, `scaffold enhance`, and `scaffold upgrade` commands, template options, deployment targets, and the prototype-first workflow. Do NOT use for writing agent code (ADK projects: use google-agents-cli-adk-code) or deployment operations (use google-agents-cli-deploy)."
+homepage = "https://github.com/google/agents-cli/tree/2c3945901e8e5cc933fa94fa44d1d4aaf644b596/skills/google-agents-cli-scaffold"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.6/google-agents-cli-2026.10.6-google-agents-cli-scaffold.zip"
+sha256 = "aac5f278c6af8134827cfb8a37670c757ba41ec31d12533ffcc2b9c5ec899cce"

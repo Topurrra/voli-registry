@@ -1,0 +1,10 @@
+name = "test-driven-development"
+version = "2026.10.6"
+description = "Use when implementing any feature or bugfix, before writing implementation code"
+homepage = "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/test-driven-development"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.6/obra-superpowers-2026.10.6-test-driven-development.zip"
+sha256 = "0dff7283154b61148da5e69206eac5aaaa971418b84579676e4ee8ba622d27d6"

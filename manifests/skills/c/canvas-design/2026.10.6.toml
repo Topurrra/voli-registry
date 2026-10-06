@@ -1,0 +1,10 @@
+name = "canvas-design"
+version = "2026.10.6"
+description = "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/canvas-design"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-canvas-design.zip"
+sha256 = "ca9a4e99ae0324d59fa4dbf5a60ab9d2aaef551dc82e44f5489fa5c14842e275"

@@ -1,0 +1,10 @@
+name = "train-sentence-transformers"
+version = "2026.10.6"
+description = "Train or fine-tune sentence-transformers models across `SentenceTransformer` (bi-encoder, dense or static embedding model for retrieval, similarity, clustering, classification, paraphrase mining, dedup, multimodal), `CrossEncoder` (reranker, pair scoring for two-stage retrieval / pair classification), `SparseEncoder` (SPLADE, sparse embedding model for learned-sparse retrieval), and `MultiVectorEncoder` (ColBERT / late-interaction, per-token embeddings scored with MaxSim). Covers loss selection, hard-negative mining, evaluators, distillation, LoRA, Matryoshka, and Hugging Face Hub publishing. Use for any sentence-transformers training task."
+homepage = "https://github.com/huggingface/skills/tree/ca0325bb20b2d0a1b2efa893670c4c72f79e707b/skills/train-sentence-transformers"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-huggingface-skills-v2026.10.6/huggingface-skills-2026.10.6-train-sentence-transformers.zip"
+sha256 = "71d28bfe3de7f9978004e4694a6416adfa365ebd6883df00e4204c3a5660fd2c"

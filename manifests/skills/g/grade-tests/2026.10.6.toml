@@ -1,0 +1,10 @@
+name = "grade-tests"
+version = "2026.10.6"
+description = "Assess a curated list of tests and produce a PR-ready table with a primary Pass, Failed, Uncertain, or Not applicable result plus A-F quality detail for every resolved test; Uncertain and Not applicable omit the grade. USE FOR new or modified tests supplied as methods, bodies, file spans, or a bounded PR diff. Polyglot: .NET, Python, TS/JS, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, C++. DO NOT USE FOR: suite-wide audits (use test-quality-auditor or test-anti-patterns), writing or fixing tests, or measuring coverage."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/grade-tests"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-grade-tests.zip"
+sha256 = "307d30e9a4a05817e3ffa54cb97b5cf47c3374bc08b745d59e5c5a2052faa49e"

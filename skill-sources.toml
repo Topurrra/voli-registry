@@ -5,8 +5,8 @@ release_by_source = true
 [[source]]
 id = "google-agents-cli"
 repo = "google/agents-cli"
-revision = "c7a375f7a463d5ade51caabdec56971681aed400"
-version = "2026.7.27"
+revision = "2c3945901e8e5cc933fa94fa44d1d4aaf644b596"
+version = "2026.10.6"
 license = "Apache-2.0"
 license_file = "LICENSE"
 license_sha256 = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
@@ -15,8 +15,8 @@ roots = ["skills"]
 [[source]]
 id = "huggingface-skills"
 repo = "huggingface/skills"
-revision = "32f8bb0928e95fc9d47ca9fbf69cbfbaf2bc2bda"
-version = "2026.8.4"
+revision = "ca0325bb20b2d0a1b2efa893670c4c72f79e707b"
+version = "2026.10.6"
 license = "Apache-2.0"
 license_file = "LICENSE"
 license_sha256 = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
@@ -25,8 +25,8 @@ roots = ["skills", "hf-mcp/skills"]
 [[source]]
 id = "android-skills"
 repo = "android/skills"
-revision = "ba0042c08b7e6ff5cb121b7b87d442f809467324"
-version = "2026.8.4"
+revision = "42dc2270e96032bd860bb94511e440aa00a43125"
+version = "2026.10.6"
 license = "Apache-2.0"
 license_file = "LICENSE.txt"
 license_sha256 = "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
@@ -35,8 +35,8 @@ roots = ["."]
 [[source]]
 id = "dotnet-skills"
 repo = "dotnet/skills"
-revision = "6fce087f5e72ce493ee1d44ceb0ecce6acc1e4dc"
-version = "2026.8.4"
+revision = "0dcd43ceb15e15a2c45dd54075fbcf3a30632154"
+version = "2026.10.6"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
@@ -45,8 +45,8 @@ roots = ["plugins"]
 [[source]]
 id = "anthropic-skills"
 repo = "anthropics/skills"
-revision = "b29e7cf65e5cb78a5ac33d582270551bc74a14eb"
-version = "2026.7.27"
+revision = "683bc88e56f3e09ba94f7055977f3d3aa499f202"
+version = "2026.10.6"
 license = "Apache-2.0"
 license_file = "skills/algorithmic-art/LICENSE.txt"
 license_sha256 = "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
@@ -66,8 +66,8 @@ require_skill_license = true
 [[source]]
 id = "obra-superpowers"
 repo = "obra/superpowers"
-revision = "44c9b2d6e889982ac18c27d05a19fefe335194e1"
-version = "2026.7.29"
+revision = "8ca22dba9a94f28898bbce59f2537ff4d87c747d"
+version = "2026.10.6"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
@@ -76,8 +76,8 @@ roots = ["skills"]
 [[source]]
 id = "mattpocock-skills"
 repo = "mattpocock/skills"
-revision = "2ab958093e83e0ec752e6c1c5932da465bf23e0c"
-version = "2026.7.29"
+revision = "c665c5559e8be56a12271a620ae44aa1ada535ed"
+version = "2026.10.6"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
@@ -87,8 +87,8 @@ exclude = ["skills/deprecated", "skills/in-progress"]
 [[source]]
 id = "emilkowalski-skills"
 repo = "emilkowalski/skills"
-revision = "da80201b64de7d608a6dc5f723797ce6c65b692b"
-version = "2026.8.4"
+revision = "e8a175de22ae1e49370fc144c1f3bb9aeedf988d"
+version = "2026.10.6"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
@@ -110,11 +110,14 @@ allowed_skill_license_sha256 = [
 [[source]]
 id = "davidondrej-skills"
 repo = "davidondrej/skills"
-revision = "6e5545081c888b89576a620d9b2e54e9a6590f68"
-version = "2026.8.4"
+revision = "f025cb43cbbfe5810b130a207c4353c8555af7cb"
+version = "2026.10.6"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "1bd321a3b9cfa8d4af2105e20edd69d830df0b28e83a1b0255558f888e493981"
+allowed_skill_license_sha256 = [
+  "135c57671b0ee957669b05a0ca00cc06f645496d351e2e732832c6e276da9a5e",
+]
 roots = ["skills"]
 exclude = [
   "skills/agent-orchestration/handoff",

@@ -1,0 +1,10 @@
+name = "new-grok-bot"
+version = "2026.10.6"
+description = "Design a Grok Bot role and create its setup prompt. Use only when the user explicitly invokes /new-grok-bot."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/agent-orchestration/new-grok-bot"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-new-grok-bot.zip"
+sha256 = "9e7bc0bc432440d286719c82eb06681ddf5854cc854f2e55c3a334be0d2b92de"

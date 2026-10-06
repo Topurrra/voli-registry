@@ -1,0 +1,10 @@
+name = "migrate-to-shoehorn"
+version = "2026.10.6"
+description = "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/misc/migrate-to-shoehorn"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-migrate-to-shoehorn.zip"
+sha256 = "8e6c35cb79ec7f71a44b73dd9d49777b429594f521b242616eb344ef57d6bba2"

@@ -1,0 +1,10 @@
+name = "scaffold-dotnet-test-project"
+version = "2026.10.6"
+description = "MUST USE when an existing .NET test project was excluded from a .slnf/CI solution filter, disappeared from .sln/.slnx discovery, or lost its production ProjectReference; also for requests to set up, create, reuse, add, register, include, or repair a test project. Handles \"tests pass directly but CI discovers zero\", exact solution wiring, xUnit/NUnit/MSTest, and central packages. DO NOT USE to only author tests in an already-wired project (code-testing-agent), run tests, migrate, or correct MSTest syntax/configuration without changing project or CI files (writing-mstest-tests)."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/scaffold-dotnet-test-project"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-scaffold-dotnet-test-project.zip"
+sha256 = "4cc53b5872f028799ffb9930589cb7b4815c33fe6966c89e5da5912cf86dc94c"

@@ -1,0 +1,10 @@
+name = "system-text-json-net11"
+version = "2026.10.6"
+description = "Imperative guidance for the System.Text.Json APIs added in .NET 11: the built-in `JsonNamingPolicy.PascalCase` naming policy, and the strongly-typed generic `JsonSerializerOptions.GetTypeInfo` and `JsonSerializerOptions.TryGetTypeInfo` metadata accessors (generic overloads that return a typed `JsonTypeInfo`). USE ONLY when the user is targeting net11.0 or later and needs PascalCase JSON property or dictionary-key names without writing a custom naming policy, a strongly-typed generic `JsonTypeInfo` instead of the non-generic `JsonTypeInfo`, or a no-throw way to probe whether a type's serialization metadata is resolved. DO NOT USE when the target is earlier than net11.0, the requested behavior uses an established pre-net11 naming policy, or the user explicitly selected another JSON library."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet11/skills/system-text-json-net11"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-system-text-json-net11.zip"
+sha256 = "34416a4bb9c77d911b6b6a649a96d447e62c130b93b6f7fefb27be96d36fb660"

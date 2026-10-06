@@ -1,0 +1,10 @@
+name = "codex-subagent"
+version = "2026.10.6"
+description = "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/agent-orchestration/codex-subagent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-codex-subagent.zip"
+sha256 = "edb7e30443b35d3f9b33ac6dfcd1a2921edd68639013ce1a99d062ce2ab19a3a"

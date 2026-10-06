@@ -1,0 +1,10 @@
+name = "setup-matt-pocock-skills"
+version = "2026.10.6"
+description = "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/setup-matt-pocock-skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-setup-matt-pocock-skills.zip"
+sha256 = "e31314c8cdd9c7f41233feb0c2486492bbbefb9f2a40055d905f3a8914eb038f"

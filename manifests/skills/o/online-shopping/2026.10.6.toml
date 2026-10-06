@@ -1,0 +1,10 @@
+name = "online-shopping"
+version = "2026.10.6"
+description = "Research online purchases, prices, and shop trust. Use for buying advice, subscriptions, or shopping photos, links, and checkout screens."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/research-and-web/online-shopping"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-online-shopping.zip"
+sha256 = "c89a3f0c1555699e1be54b72ac7c1808058e355627c60d186a8db0a91159edbc"

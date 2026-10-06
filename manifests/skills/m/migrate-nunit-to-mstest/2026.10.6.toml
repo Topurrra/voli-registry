@@ -1,0 +1,10 @@
+name = "migrate-nunit-to-mstest"
+version = "2026.10.6"
+description = "Convert .NET tests from NUnit 3/4 to MSTest v4 while preserving VSTest or MTP. Use for replacing NUnit/NUnit3TestAdapter packages, Test/TestCase/ TestCaseSource/Values attributes, constraint assertions, SetUp/TearDown, OneTimeSetUp, SetUpFixture, FixtureLifeCycle, TestContext, categories, retries, timeouts, and NUnit parallelization. Also use when a \"convert NUnit to MSTest\" request may already be migrated: inspect and report the no-op. Do not use for NUnit version upgrades, xUnit/TUnit conversion, MSTest upgrades, or runner-only VSTest-to-MTP migration."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test-migration/skills/migrate-nunit-to-mstest"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-migrate-nunit-to-mstest.zip"
+sha256 = "0a8b7488adfb30f4c3fa376c2d3a4e57e5898c76b1fd54677bbc75fea32f57ee"

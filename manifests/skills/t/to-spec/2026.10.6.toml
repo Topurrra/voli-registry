@@ -1,0 +1,10 @@
+name = "to-spec"
+version = "2026.10.6"
+description = "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/to-spec"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-to-spec.zip"
+sha256 = "52d841f0fd9bb25c80512c7981ccb8180ef3f13ad097914aad6b6cb515a5c40b"

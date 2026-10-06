@@ -1,0 +1,10 @@
+name = "triage"
+version = "2026.10.6"
+description = "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/triage"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-triage.zip"
+sha256 = "4a743d1180052d491d59472a0018601450ba99d6f5b10e40522b461a0843205f"

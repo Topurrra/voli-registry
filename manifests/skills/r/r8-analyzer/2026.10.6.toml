@@ -1,0 +1,10 @@
+name = "r8-analyzer"
+version = "2026.10.6"
+description = "Analyzes Android build files and R8 keep rules to identify redundancies,"
+homepage = "https://github.com/android/skills/tree/42dc2270e96032bd860bb94511e440aa00a43125/performance/r8-analyzer"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.6/android-skills-2026.10.6-r8-analyzer.zip"
+sha256 = "6e9912c62eb777f42f4f43b22cc403080cf5f171e8e0e9e8b4f585e7d6426fa3"

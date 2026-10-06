@@ -1,0 +1,10 @@
+name = "retro"
+version = "2026.10.6"
+description = "Conduct a retrospective on a coding session."
+homepage = "https://github.com/mattpocock/skills/tree/c665c5559e8be56a12271a620ae44aa1ada535ed/skills/engineering/retro"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.6/mattpocock-skills-2026.10.6-retro.zip"
+sha256 = "3e62d27c1c12a7a9024d809c43293543beddcc8041c8f50e8af4efc2b4b03d27"

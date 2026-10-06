@@ -1,0 +1,10 @@
+name = "fable-safe-prompt"
+version = "2026.10.6"
+description = "Make minimal prompt edits to reduce false-positive refusals from Fable. Use only when the user explicitly invokes /fable-safe-prompt."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/agent-orchestration/fable-safe-prompt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-fable-safe-prompt.zip"
+sha256 = "01331671511ea6c8ccd3ae48d44eee1f2c3172ebca9593de51ad8e33354eaf0e"

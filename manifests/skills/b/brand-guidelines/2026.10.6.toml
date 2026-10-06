@@ -1,0 +1,10 @@
+name = "brand-guidelines"
+version = "2026.10.6"
+description = "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/brand-guidelines"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-brand-guidelines.zip"
+sha256 = "c9dace52d2ed3403803411fb4cbcf29b3c7a600368cc7ab6337f6c12b51b5ff0"

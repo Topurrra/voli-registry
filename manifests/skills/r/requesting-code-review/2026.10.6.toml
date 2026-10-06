@@ -1,0 +1,10 @@
+name = "requesting-code-review"
+version = "2026.10.6"
+description = "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
+homepage = "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/requesting-code-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.6/obra-superpowers-2026.10.6-requesting-code-review.zip"
+sha256 = "657b6b10d2fda3844b1fa91e85feba532f69b03bc1d5326b483e1526b1fec782"

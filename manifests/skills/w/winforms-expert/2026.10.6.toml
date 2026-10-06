@@ -1,0 +1,10 @@
+name = "winforms-expert"
+version = "2026.10.6"
+description = "Create, modify, debug, or review Windows Forms applications only when the request contains a concrete Windows Forms marker. USE FOR: WinForms, Windows Forms, System.Windows.Forms, WinForms Form or UserControl designer files (*.Designer.cs or *.Designer.vb), Visual Studio WinForms Designer, TableLayoutPanel, BindingSource, DataGridView, Control.InvokeAsync, component-tray ownership, or custom control serialization. DO NOT USE FOR: WPF or WPF XAML, including Window.InputBindings, KeyBinding, commands, or DataContext; .NET MAUI; Avalonia; or any request where none of the listed Windows Forms markers is present."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-winforms/skills/winforms-expert"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-winforms-expert.zip"
+sha256 = "ee48717e9aa253c97a3c975418600aa52d0460ac5db7b9e6fd76aeadd096a6c8"

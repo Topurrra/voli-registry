@@ -1,0 +1,10 @@
+name = "risky-changes"
+version = "2026.10.6"
+description = "Verify assumptions before implementing large or risky changes to APIs, provider data, billing, pricing, quotas, or defaults. Use when a mistake could affect customers or the user asks if a change is safe to ship. Checks real-world impact beyond passing tests."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/ops-and-setup/risky-changes"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-risky-changes.zip"
+sha256 = "4aba66baf1b762401c6bb53cbdf1e73edfae296f52324d545b5aaf7c9f9f2275"

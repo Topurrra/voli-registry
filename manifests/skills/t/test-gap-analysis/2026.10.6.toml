@@ -1,0 +1,10 @@
+name = "test-gap-analysis"
+version = "2026.10.6"
+description = "Pseudo-mutation analysis ONLY: answer whether tests would catch a bug if production code changed, which meaningful changes would still pass, or which caller-visible mutations existing assertions would miss; verify candidates when requested, then optionally close verified gaps. Activate for behavioral blind spots or missing edge cases tied to production behavior. Polyglot. DO NOT USE FOR: suite organization, taxonomy, metadata, or distribution reports (test-tagging); .NET line-vs-branch or Cobertura interpretation, arithmetic, plateaus, project-wide coverage gaps, or coverage-backed test/CRAP priorities (coverage-analysis; use native coverage tooling outside .NET); named-target CRAP (crap-score); new suites (code-testing-agent); assertion/smell audits; or mutation tools."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/test-gap-analysis"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-test-gap-analysis.zip"
+sha256 = "e7deba1b8a89d267ef74b7a1bc64824897e57be2861963a0ac769de55fbeb38e"

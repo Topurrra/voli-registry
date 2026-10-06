@@ -1,0 +1,10 @@
+name = "dotnet-trace-collect"
+version = "2026.10.6"
+description = "Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when the user needs help choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments (Windows/Linux, .NET Framework/modern .NET, container/non-container)."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-diag/skills/dotnet-trace-collect"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-dotnet-trace-collect.zip"
+sha256 = "2333d5c12b6f30912eb8b9b9e2dad995deff77333589d3671af982c1cb1755e7"

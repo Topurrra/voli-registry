@@ -1,0 +1,10 @@
+name = "find-animation-opportunities"
+version = "2026.10.6"
+description = "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead."
+homepage = "https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/find-animation-opportunities"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.10.6/emilkowalski-skills-2026.10.6-find-animation-opportunities.zip"
+sha256 = "774b4d58b571b1387fa7e8726300b9cf0f5e6f1826be51e937d5e920a409e38b"

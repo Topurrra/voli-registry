@@ -1,0 +1,10 @@
+name = "algorithmic-art"
+version = "2026.10.6"
+description = "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
+homepage = "https://github.com/anthropics/skills/tree/683bc88e56f3e09ba94f7055977f3d3aa499f202/skills/algorithmic-art"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-anthropic-skills-v2026.10.6/anthropic-skills-2026.10.6-algorithmic-art.zip"
+sha256 = "d741776f736f22d9184322944050264ab78f7f8aa235a6a59b7f48c9c327328a"

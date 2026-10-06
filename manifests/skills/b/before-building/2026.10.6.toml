@@ -1,0 +1,10 @@
+name = "before-building"
+version = "2026.10.6"
+description = "Fire the moment the user proposes a build. Instantly surface the 1-3 consequential choices hidden in their idea. Can also be invoked with /before-building."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/thinking-and-docs/before-building"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-before-building.zip"
+sha256 = "3a371b237a11e61a1f8954318d14e25293bb86c61f05d83eca3efb20447d2b24"

@@ -1,0 +1,10 @@
+name = "code-testing-agent"
+version = "2026.10.6"
+description = "ALWAYS USE whenever asked to write, add, or generate unit tests for existing code in xUnit, MSTest, NUnit, pytest, Vitest/Jest, Go, or another framework, including \"tests only for\" one helper, function, class, or missing regression case as well as project-wide suites. Also use for \"cover this untested method\", scaffolding tests where none exist, sparse workspaces, classic packages.config MSTest, and extending healthy suites. Focused requests use a proportional direct workflow; broad requests use the full pipeline. DO NOT USE for only running/diagnosing tests, coverage/audits, a test blocked on a missing production seam (testability-obstacle), or correcting supplied MSTest assertions, attributes, lifecycle, or configuration without designing new cases (writing-mstest-tests)."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/code-testing-agent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-code-testing-agent.zip"
+sha256 = "4766a8146240dcb146c3871ffb7aa4e14979429179dc80b8cd70df7c7403503c"

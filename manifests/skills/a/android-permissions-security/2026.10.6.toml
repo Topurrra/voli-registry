@@ -1,0 +1,10 @@
+name = "android-permissions-security"
+version = "2026.10.6"
+description = "Audits, detects gaps, and remediates Android permissions and IPC component"
+homepage = "https://github.com/android/skills/tree/42dc2270e96032bd860bb94511e440aa00a43125/security/android-permissions-security"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.6/android-skills-2026.10.6-android-permissions-security.zip"
+sha256 = "ecc524b69aae2069bc73951588cc4a49fbd784324e2618c79ccd423e257bdea3"

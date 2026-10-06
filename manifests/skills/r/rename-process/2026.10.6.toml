@@ -1,0 +1,10 @@
+name = "rename-process"
+version = "2026.10.6"
+description = "Coordinate project or repository renames and moves involving Git, BB, services, or multiple machines. Preserve work and history while updating operational paths. Excludes ordinary file, code-symbol, and thread-title renames."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/ops-and-setup/rename-process"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-rename-process.zip"
+sha256 = "5c25f5a4b43232ed0f6df3ff8eba256b2f97e3b99ed8ceeda39a9dc7fdad7c3a"

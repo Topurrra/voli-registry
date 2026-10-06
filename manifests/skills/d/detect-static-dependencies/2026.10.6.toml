@@ -1,0 +1,10 @@
+name = "detect-static-dependencies"
+version = "2026.10.6"
+description = "ACTIVATION PREREQUISITE: the request or discovered target must explicitly identify C#, .NET, `.cs`, or `.csproj`; otherwise stay dormant without invoking this skill. USE FOR: locating System.DateTime.Now/UtcNow, System.IO.File/Directory, System.Environment, HttpClient, Console, or Process usage in C#; auditing C# code for hard-to-test framework dependencies; or verifying those C# calls are already abstracted. DO NOT USE FOR: any target lacking the activation prerequisite; generating wrappers (use generate-testability-wrappers); migrating code (use migrate-static-to-wrapper); or general code review."
+homepage = "https://github.com/dotnet/skills/tree/0dcd43ceb15e15a2c45dd54075fbcf3a30632154/plugins/dotnet-test/skills/detect-static-dependencies"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.6/dotnet-skills-2026.10.6-detect-static-dependencies.zip"
+sha256 = "ef5b9e329732de2ed8552f55828db02b3acc72bb38206998074f6d73030f6fb1"

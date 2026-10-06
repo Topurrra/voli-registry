@@ -1,0 +1,10 @@
+name = "google-agents-cli-workflow"
+version = "2026.10.6"
+description = "This skill should be used when the user wants to \"develop an agent\", \"build an agent using ADK\", \"run the agent locally\", \"debug agent code\", \"test an agent\", \"deploy an agent\", \"publish an agent\", \"monitor an agent\", or needs the ADK (Agent Development Kit) development lifecycle and coding guidelines. Entrypoint for building ADK agents. Always active — provides the full workflow (scaffold, build, evaluate, deploy, publish, observe), code preservation rules, model selection guidance, and troubleshooting steps for ADK or any agent development."
+homepage = "https://github.com/google/agents-cli/tree/2c3945901e8e5cc933fa94fa44d1d4aaf644b596/skills/google-agents-cli-workflow"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.6/google-agents-cli-2026.10.6-google-agents-cli-workflow.zip"
+sha256 = "bdddf6f2af5ed7fdcca27c19db623c8f48386e0d58c4f8c6baa2dcc2f4670637"

@@ -1,0 +1,10 @@
+name = "google-agents-cli-deploy"
+version = "2026.10.6"
+description = "This skill should be used when the user wants to \"deploy an agent\", \"deploy my ADK agent\", \"set up CI/CD\", \"configure secrets\", \"troubleshoot a deployment\", or needs guidance on Agent Runtime, Cloud Run, or GKE deployment targets, or binding an agent to an Agent Gateway. Covers deployment workflows, service accounts, rollback, and production infrastructure. Applies to any framework agents-cli deploys (ADK, LangChain, ...). Part of the agents-cli skills suite. Do NOT use for agent API code patterns (ADK: use google-agents-cli-adk-code), evaluation (use google-agents-cli-eval), or project scaffolding (use google-agents-cli-scaffold)."
+homepage = "https://github.com/google/agents-cli/tree/2c3945901e8e5cc933fa94fa44d1d4aaf644b596/skills/google-agents-cli-deploy"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.6/google-agents-cli-2026.10.6-google-agents-cli-deploy.zip"
+sha256 = "6800562c683b0be1939ff580fc2dff886fd2b359418504eb3693cc1cf224974f"

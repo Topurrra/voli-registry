@@ -1,0 +1,10 @@
+name = "deep-scrape"
+version = "2026.10.6"
+description = "Build sourced JSON dossiers on people, companies, or topics with DeepAPI. Use for profiles, prospects, vendor due diligence, or customer research across sources; use deep-research for recommendations."
+homepage = "https://github.com/davidondrej/skills/tree/f025cb43cbbfe5810b130a207c4353c8555af7cb/skills/research-and-web/deep-scrape"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.6/davidondrej-skills-2026.10.6-deep-scrape.zip"
+sha256 = "7f3bbb098b02e1234c974f177b4e6d5ace3c1b7a1409d5163cab15168100a0f5"

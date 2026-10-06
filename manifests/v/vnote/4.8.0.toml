@@ -5,8 +5,8 @@ homepage = "https://docs.vnote.fun"
 license = "LGPL-3.0-only"
 kind = "app"
 extract_dir = "VNote-4.8.0-win64"
-bin = ["app\\vnote.exe"]
-shortcuts = [{ target = "app\\vnote.exe", name = "VNote" }]
+bin = ["vnote.exe"]
+shortcuts = [{ target = "vnote.exe", name = "VNote" }]
 persist = ["config"]
 
 [source.x64]

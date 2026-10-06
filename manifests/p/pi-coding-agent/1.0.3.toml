@@ -1,0 +1,19 @@
+name = "pi-coding-agent"
+version = "1.0.3"
+description = "Minimal terminal coding harness"
+homepage = "https://pi.dev"
+license = "MIT"
+kind = "app"
+bin = ["pi.exe"]
+
+[source.x64]
+url = "https://github.com/earendil-works/pi/releases/download/v1.0.3/pi-windows-x64.zip"
+sha256 = "6cddc3d11210539faa7ba0188504813f2f3ae6d8f93a161d4145cc61a8bdd5de"
+
+[source.arm64]
+url = "https://github.com/earendil-works/pi/releases/download/v1.0.3/pi-windows-arm64.zip"
+sha256 = "ac29f24c02342886fa2d3c1c4629ae4e40d530357535b6a60b5c8ecaf803a11f"
+
+[autoupdate]
+checkver = { github = "earendil-works/pi" }
+url_template = { x64 = "https://github.com/earendil-works/pi/releases/download/v$version/pi-windows-x64.zip", arm64 = "https://github.com/earendil-works/pi/releases/download/v$version/pi-windows-arm64.zip" }

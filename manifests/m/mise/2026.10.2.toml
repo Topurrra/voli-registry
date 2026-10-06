@@ -1,0 +1,40 @@
+name = "mise"
+version = "2026.10.2"
+description = "Polyglot tool version manager and task runner"
+homepage = "https://mise.jdx.dev/"
+license = "MIT"
+kind = "app"
+extract_dir = "mise"
+bin = ["bin/mise.exe"]
+
+[source.x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-windows-x64.zip"
+sha256 = "6ce4281dc65a4dc22de2aed42db5e8859293a467964763b43fcc33fa0e6c4214"
+
+[source.arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-windows-arm64.zip"
+sha256 = "9c4abb29dc88d956f5d6f2e468bade7843c9e3242690a9dbb22b2bbac4d007be"
+
+[source.linux-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-linux-x64.tar.gz"
+sha256 = "79a2bf0ffc9b8a9a6391344e875b3c3679c15053fda3e8728ddf1790d63db788"
+extract_dir = "mise"
+
+[source.linux-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-linux-arm64.tar.gz"
+sha256 = "5d3368679ce0cc37fb222511a04c61426cded69f0cda0f8248d03970dc34f303"
+extract_dir = "mise"
+
+[source.macos-x64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-macos-x64.tar.gz"
+sha256 = "cc1497f6c370580d81d386004578f97d36b08031f6534818e0fd2756d54d0aca"
+extract_dir = "mise"
+
+[source.macos-arm64]
+url = "https://github.com/jdx/mise/releases/download/v2026.10.2/mise-v2026.10.2-macos-arm64.tar.gz"
+sha256 = "a3f67ff009f1436013eee37864c1c1855d9d9a9e4982a660b6495589635384e7"
+extract_dir = "mise"
+
+[autoupdate]
+checkver = { github = "jdx/mise" }
+url_template = { x64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-x64.zip", arm64 = "https://github.com/jdx/mise/releases/download/v$version/mise-v$version-windows-arm64.zip" }

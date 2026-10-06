@@ -1,0 +1,31 @@
+name = "grype"
+version = "0.120.0"
+description = "A vulnerability scanner for container images and filesystems."
+homepage = "https://github.com/anchore/grype"
+license = "Apache-2.0"
+kind = "app"
+bin = ["grype.exe"]
+
+[source.x64]
+url = "https://github.com/anchore/grype/releases/download/v0.120.0/grype_0.120.0_windows_amd64.zip"
+sha256 = "024927f5caefdc05aa4f98453e269a40e9a82978a142dacaf18c67fcab378810"
+
+[source.linux-x64]
+url = "https://github.com/anchore/grype/releases/download/v0.120.0/grype_0.120.0_linux_amd64.tar.gz"
+sha256 = "a5a1218dce63acdac152a6b3b5bb366e7267e36f4069848cf455543b3fa5700e"
+
+[source.linux-arm64]
+url = "https://github.com/anchore/grype/releases/download/v0.120.0/grype_0.120.0_linux_arm64.tar.gz"
+sha256 = "bc0e52b1a0de37e2ff021c4924d689dce7dcff2e7d74b39aea16c0453e69be18"
+
+[source.macos-x64]
+url = "https://github.com/anchore/grype/releases/download/v0.120.0/grype_0.120.0_darwin_amd64.tar.gz"
+sha256 = "e77ed0159ba2c291a7319c2c345cbae79bcd93dee901f77d29472ce1908e5ed0"
+
+[source.macos-arm64]
+url = "https://github.com/anchore/grype/releases/download/v0.120.0/grype_0.120.0_darwin_arm64.tar.gz"
+sha256 = "d27d39ba25ba2d2a1d1568219ff159310d2cb54f3cdd5293e5820c5c784f7f11"
+
+[autoupdate]
+checkver = { github = "anchore/grype" }
+url_template = { x64 = "https://github.com/anchore/grype/releases/download/v$version/grype_$version_windows_amd64.zip" }

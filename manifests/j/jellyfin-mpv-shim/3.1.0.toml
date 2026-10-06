@@ -1,0 +1,21 @@
+name = "jellyfin-mpv-shim"
+version = "3.1.0"
+description = "A fully featured, cross-platform desktop and cast client for Jellyfin"
+homepage = "https://github.com/jellyfin/jellyfin-mpv-shim"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "run.exe", name = "Jellyfin MPV Shim" }]
+
+[source.x64]
+url = "https://github.com/jellyfin/jellyfin-mpv-shim/releases/download/v3.1.0/jellyfin-mpv-shim_3.1.0_installer.exe"
+sha256 = "4fbdfadcf028bcbb67375f808f5c8fe557635f4377a46e84550de32b9e002b5e"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/jellyfin/jellyfin-mpv-shim/releases/download/v3.1.0/jellyfin-mpv-shim_3.1.0_ARM64_installer.exe"
+sha256 = "865f6a66e9ae2cf3b90ff9ac2662b20eed3903f1321b70a90acfad23888d696d"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "jellyfin/jellyfin-mpv-shim" }
+url_template = { x64 = "https://github.com/jellyfin/jellyfin-mpv-shim/releases/download/v$version/jellyfin-mpv-shim_$version_installer.exe", arm64 = "https://github.com/jellyfin/jellyfin-mpv-shim/releases/download/v$version/jellyfin-mpv-shim_$version_ARM64_installer.exe" }

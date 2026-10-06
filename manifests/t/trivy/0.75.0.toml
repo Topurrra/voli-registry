@@ -1,0 +1,31 @@
+name = "trivy"
+version = "0.75.0"
+description = "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+homepage = "https://trivy.dev"
+license = "Apache-2.0"
+kind = "app"
+bin = ["trivy.exe"]
+
+[source.x64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.75.0/trivy_0.75.0_windows-64bit.zip"
+sha256 = "4e43bd71a30f51aee39525f60f2b47043af77eb8df8fe082aae4372b69c6660f"
+
+[source.linux-x64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.75.0/trivy_0.75.0_Linux-64bit.tar.gz"
+sha256 = "c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f"
+
+[source.linux-arm64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.75.0/trivy_0.75.0_Linux-ARM64.tar.gz"
+sha256 = "a1ee9f6ffb7d112b64ff726a2a0717c21175c1114361391f4a132956751a13b3"
+
+[source.macos-x64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.75.0/trivy_0.75.0_macOS-64bit.tar.gz"
+sha256 = "291edaa9778acbe4693d067b5ad60ee11570e5ac68296e85595417528ca641e4"
+
+[source.macos-arm64]
+url = "https://github.com/aquasecurity/trivy/releases/download/v0.75.0/trivy_0.75.0_macOS-ARM64.tar.gz"
+sha256 = "4a77108cccf8e55c8d6823e1e759939a622277e66cd0daa3c1fc621ed69e4568"
+
+[autoupdate]
+checkver = { url = "https://github.com/aquasecurity/trivy/releases/latest", regex = "/tree/(?:v|V)([\\d.]+)" }
+url_template = { x64 = "https://github.com/aquasecurity/trivy/releases/download/v$version/trivy_$version_windows-64bit.zip" }

@@ -1,0 +1,15 @@
+name = "wasmedge"
+version = "0.18.0"
+description = "A lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices."
+homepage = "https://wasmedge.org/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["bin\\wasmedge.exe", "bin\\wasmedgec.exe"]
+
+[source.x64]
+url = "https://github.com/WasmEdge/WasmEdge/releases/download/0.18.0/WasmEdge-0.18.0-windows-msvc.zip"
+sha256 = "b0c44e9b679da5655129ec96a0394401e241dbb76febeb432661542afb90ed6e"
+
+[autoupdate]
+checkver = { github = "WasmEdge/WasmEdge" }
+url_template = "https://github.com/WasmEdge/WasmEdge/releases/download/$version/WasmEdge-$version-windows-msvc.zip"

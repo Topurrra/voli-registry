@@ -1,0 +1,16 @@
+name = "pdfcpu"
+version = "0.16.1"
+description = "A PDF processor written in Go, supporting encryption."
+homepage = "https://pdfcpu.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "pdfcpu_0.16.1_Windows_x86_64"
+bin = ["pdfcpu.exe"]
+
+[source.x64]
+url = "https://github.com/pdfcpu/pdfcpu/releases/download/v0.16.1/pdfcpu_0.16.1_Windows_x86_64.zip"
+sha256 = "bc796772a32b7cd8b532b18da268e65f67344a3dabf466c5c940b73d81f3e815"
+
+[autoupdate]
+checkver = { github = "pdfcpu/pdfcpu" }
+url_template = { x64 = "https://github.com/pdfcpu/pdfcpu/releases/download/v$version/pdfcpu_$version_Windows_x86_64.zip" }

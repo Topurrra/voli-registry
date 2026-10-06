@@ -1,0 +1,21 @@
+name = "grafana"
+version = "13.2.3"
+description = "Open platform for analytics and data monitoring"
+homepage = "https://grafana.com/"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "grafana-13.2.3"
+bin = ["bin\\grafana.exe", { name = "grafana-cli", path = "bin\\grafana.exe", args = "cli" }, { name = "grafana-server", path = "bin\\grafana.exe", args = "server -homepath \"$dir\"" }]
+persist = ["conf", "data"]
+
+[source.x64]
+url = "https://dl.grafana.com/oss/release/grafana-13.2.3.windows-amd64.zip"
+sha256 = "a208dc3a0a1c237f275490cc9b9219c89c22bc3a0e62ba0fe5642b6e93cb6b7f"
+
+[source.arm64]
+url = "https://dl.grafana.com/oss/release/grafana-13.2.3.windows-arm64.zip"
+sha256 = "8371ea030fb1b650e4144b0980ffe00b655cb3ab24a0df431693abdcb5f0e6cb"
+
+[autoupdate]
+checkver = { url = "https://grafana.com/grafana/download?edition=oss&platform=windows", regex = "grafana_([\\d.]+(?:\\+security-\\d+)?)_(?<stamp>[\\d]+)_windows" }
+url_template = { x64 = "https://dl.grafana.com/oss/release/grafana-$version.windows-amd64.zip", arm64 = "https://dl.grafana.com/oss/release/grafana-$version.windows-arm64.zip" }

@@ -1,0 +1,22 @@
+name = "dart"
+version = "3.13.5"
+description = "SDK for the Dart programming language"
+homepage = "https://dart.dev/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "dart-sdk"
+
+[source.x64]
+url = "https://storage.googleapis.com/dart-archive/channels/stable/release/3.13.5/sdk/dartsdk-windows-x64-release.zip"
+sha256 = "aed8e4a8932ce8fa18ea32f990e43b4a1c9390a4c73777ab6fdf77fc9f4524d1"
+
+[source.arm64]
+url = "https://storage.googleapis.com/dart-archive/channels/stable/release/3.13.5/sdk/dartsdk-windows-arm64-release.zip"
+sha256 = "e7df6db651743440194df9e90005f70700da171bcfb8852dd7cc26303792a09b"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.version\",\"url\":\"https://storage.googleapis.com/dart-archive/channels/stable/release/latest/VERSION\"}"
+url_template = { x64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-x64-release.zip", arm64 = "https://storage.googleapis.com/dart-archive/channels/stable/release/$version/sdk/dartsdk-windows-arm64-release.zip" }

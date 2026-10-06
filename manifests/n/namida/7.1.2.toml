@@ -1,0 +1,16 @@
+name = "namida"
+version = "7.1.2"
+description = "Multiplatform desktop and mobile media player with YouTube support."
+homepage = "https://github.com/namidaco/namida"
+license = "Proprietary"
+kind = "app"
+bin = ["namida.exe"]
+shortcuts = [{ target = "namida.exe", name = "Namida" }]
+
+[source.x64]
+url = "https://github.com/namidaco/namida/releases/download/v7.1.2/Namida-x86_64-7.1.2-Portable.zip"
+sha256 = "01811fd4eff15a3d0c680312d69fb3b8588dde1e9910273455c769c1003db431"
+
+[autoupdate]
+checkver = { github = "namidaco/namida" }
+url_template = { x64 = "https://github.com/namidaco/namida/releases/download/v$version/Namida-x86_64-$version-Portable.zip" }

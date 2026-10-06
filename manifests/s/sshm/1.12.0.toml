@@ -1,0 +1,15 @@
+name = "sshm"
+version = "1.12.0"
+description = "SSHM is a beautiful command-line tool that transforms how you manage and connect to your SSH hosts."
+homepage = "https://github.com/Gu1llaum-3/sshm"
+license = "MIT"
+kind = "app"
+bin = ["sshm.exe"]
+
+[source.x64]
+url = "https://github.com/Gu1llaum-3/sshm/releases/download/v1.12.0/sshm_Windows_x86_64.zip"
+sha256 = "415171ee7495f2814d235eceea2eea9c21291a1d470aa0b6b0e032c2a3debed0"
+
+[autoupdate]
+checkver = { github = "Gu1llaum-3/sshm" }
+url_template = { x64 = "https://github.com/Gu1llaum-3/sshm/releases/download/v$version/sshm_Windows_x86_64.zip" }

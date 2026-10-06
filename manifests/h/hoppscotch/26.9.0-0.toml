@@ -1,0 +1,17 @@
+name = "hoppscotch"
+version = "26.9.0-0"
+description = "A cross-platform desktop application that helps you create and manage API requests"
+homepage = "https://hoppscotch.com/"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles\\Hoppscotch"
+shortcuts = [{ target = "hoppscotch-desktop.exe", name = "Hoppscotch" }]
+
+[source.x64]
+url = "https://github.com/hoppscotch/releases/releases/download/v26.9.0-0/Hoppscotch_win_x64.msi"
+sha256 = "6a9e2c2c92ae37d033d1d6cb948d6f1c4c4e14951adfc9b3fa5431cbdd3c915a"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/hoppscotch/releases/releases/latest\",\"jsonpath\":\"$.tag_name\",\"regex\":\"v(?<version>[\\\\d.]+-\\\\d+)\"}"
+url_template = { x64 = "https://github.com/hoppscotch/releases/releases/download/v$version/Hoppscotch_win_x64.msi" }

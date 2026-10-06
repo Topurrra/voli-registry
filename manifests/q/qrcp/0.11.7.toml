@@ -1,0 +1,19 @@
+name = "qrcp"
+version = "0.11.7"
+description = "Transfers files over wifi from computer to mobile device by scanning a QR code without leaving the terminal."
+homepage = "https://qrcp.sh/"
+license = "MIT"
+kind = "app"
+bin = ["qrcp.exe"]
+
+[source.x64]
+url = "https://github.com/claudiodangelis/qrcp/releases/download/v0.11.7/qrcp_0.11.7_windows_amd64.tar.gz"
+sha256 = "072082e1bace619f3fedba2b3189d3f6420d32a2dbb87d5831c9b883b95f47f7"
+
+[source.arm64]
+url = "https://github.com/claudiodangelis/qrcp/releases/download/v0.11.7/qrcp_0.11.7_windows_arm64.tar.gz"
+sha256 = "d683af433cd6e1419339d4def868ad1cef9526244feed4319e52cfd298c0ed35"
+
+[autoupdate]
+checkver = { github = "claudiodangelis/qrcp" }
+url_template = { x64 = "https://github.com/claudiodangelis/qrcp/releases/download/v$version/qrcp_$version_windows_amd64.tar.gz", arm64 = "https://github.com/claudiodangelis/qrcp/releases/download/v$version/qrcp_$version_windows_arm64.tar.gz" }

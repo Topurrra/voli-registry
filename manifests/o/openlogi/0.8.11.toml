@@ -1,0 +1,20 @@
+name = "openlogi"
+version = "0.8.11"
+description = "A local-first alternative to Logitech Options+, written in Rust. Remap buttons, drive DPI and SmartShift over HID++. No account, no telemetry."
+homepage = "https://openlogi.org"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = [{ name = "openlogi", path = "bin\\openlogi.exe" }]
+shortcuts = [{ target = "OpenLogi.exe", name = "OpenLogi" }]
+
+[source.x64]
+url = "https://github.com/AprilNEA/OpenLogi/releases/download/v0.8.11/OpenLogi-v0.8.11-windows-x86_64.zip"
+sha256 = "615a878812bf873aaa16a515e1538d2ea253f2aa9cbbb24c1a72e58840be117c"
+
+[source.arm64]
+url = "https://github.com/AprilNEA/OpenLogi/releases/download/v0.8.11/OpenLogi-v0.8.11-windows-arm64.zip"
+sha256 = "f7989f7b3bd34081b35325a288a6e662301f5ed824474bf0fc31a213c2f75341"
+
+[autoupdate]
+checkver = { github = "AprilNEA/OpenLogi" }
+url_template = { x64 = "https://github.com/AprilNEA/OpenLogi/releases/download/v$version/OpenLogi-v$version-windows-x86_64.zip", arm64 = "https://github.com/AprilNEA/OpenLogi/releases/download/v$version/OpenLogi-v$version-windows-arm64.zip" }

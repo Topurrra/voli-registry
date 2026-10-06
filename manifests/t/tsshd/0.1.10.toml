@@ -1,0 +1,21 @@
+name = "tsshd"
+version = "0.1.10"
+description = "A UDP-based SSH server with roaming support."
+homepage = "https://trzsz.github.io/tsshd"
+license = "MIT"
+kind = "app"
+bin = ["tsshd.exe"]
+
+[source.x64]
+url = "https://github.com/trzsz/tsshd/releases/download/v0.1.10/tsshd_0.1.10_windows_x86_64.zip"
+sha256 = "5e666b209226d77fc7d02ea0a9dc6131c62dda5fc5947f05d138f0eddd626ec6"
+extract_dir = "tsshd_0.1.10_windows_x86_64"
+
+[source.arm64]
+url = "https://github.com/trzsz/tsshd/releases/download/v0.1.10/tsshd_0.1.10_windows_aarch64.zip"
+sha256 = "af03df106f5183bf7a3de6672b19e6dbe35622a63aff3b3b7ba45e4b3a8df680"
+extract_dir = "tsshd_0.1.10_windows_aarch64"
+
+[autoupdate]
+checkver = { github = "trzsz/tsshd" }
+url_template = { x64 = "https://github.com/trzsz/tsshd/releases/download/v$version/tsshd_$version_windows_x86_64.zip", arm64 = "https://github.com/trzsz/tsshd/releases/download/v$version/tsshd_$version_windows_aarch64.zip" }

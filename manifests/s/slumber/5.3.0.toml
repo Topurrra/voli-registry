@@ -1,0 +1,19 @@
+name = "slumber"
+version = "5.3.0"
+description = "Terminal-based HTTP/REST client."
+homepage = "https://slumber.lucaspickering.me"
+license = "MIT"
+kind = "app"
+bin = ["slumber.exe"]
+
+[source.x64]
+url = "https://github.com/LucasPickering/slumber/releases/download/v5.3.0/slumber-x86_64-pc-windows-msvc.zip"
+sha256 = "cab824b2fff0cc206b1f9c59560b9330daf6babd0e22914420de5c48a0ecf9b0"
+
+[source.arm64]
+url = "https://github.com/LucasPickering/slumber/releases/download/v5.3.0/slumber-aarch64-pc-windows-msvc.zip"
+sha256 = "443c4b2fb2966f276fcf79829821468e299fff078245c55ad0663c1ad241d93e"
+
+[autoupdate]
+checkver = { github = "LucasPickering/slumber" }
+url_template = { x64 = "https://github.com/LucasPickering/slumber/releases/download/v$version/slumber-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/LucasPickering/slumber/releases/download/v$version/slumber-aarch64-pc-windows-msvc.zip" }

@@ -1,0 +1,15 @@
+name = "vigolium"
+version = "0.5.2"
+description = "Web vulnerability scanner and traffic analysis CLI"
+homepage = "https://vigolium.com"
+license = "MIT"
+kind = "app"
+bin = ["vigolium.exe"]
+
+[source.x64]
+url = "https://github.com/vigolium/vigolium/releases/download/v0.5.2/vigolium_0.5.2_windows_amd64.zip"
+sha256 = "2faadd2bf754638a1c2eb6c6399ee3365526d93d8d2f3b78fac896738795ed67"
+
+[autoupdate]
+checkver = { github = "vigolium/vigolium" }
+url_template = { x64 = "https://github.com/vigolium/vigolium/releases/download/v$version/vigolium_$version_windows_amd64.zip" }

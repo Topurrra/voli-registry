@@ -1,0 +1,19 @@
+name = "vale-ls"
+version = "0.6.0"
+description = "The Vale Language Server (vale-ls) is an implementation of the Language Server Protocol (LSP) for Vale."
+homepage = "https://github.com/vale-cli/vale-ls"
+license = "MIT"
+kind = "app"
+bin = ["vale-ls.exe"]
+
+[source.x64]
+url = "https://github.com/vale-cli/vale-ls/releases/download/v0.6.0/vale-ls-x86_64-pc-windows-gnu.zip"
+sha256 = "1489bd362333b8a26b1442fb2709da9ef5e998c116ccad06dc45f3e89030f20c"
+
+[source.arm64]
+url = "https://github.com/vale-cli/vale-ls/releases/download/v0.6.0/vale-ls-aarch64-pc-windows-msvc.zip"
+sha256 = "113ffc80b115e4463ec970906b7674810480f4157ff5c963a14624bf40a3866b"
+
+[autoupdate]
+checkver = { github = "vale-cli/vale-ls" }
+url_template = { x64 = "https://github.com/vale-cli/vale-ls/releases/download/v$version/vale-ls-x86_64-pc-windows-gnu.zip", arm64 = "https://github.com/vale-cli/vale-ls/releases/download/v$version/vale-ls-aarch64-pc-windows-msvc.zip" }

@@ -10,6 +10,10 @@ bin = ["conan.exe"]
 url = "https://github.com/conan-io/conan/releases/download/2.33.0/conan-2.33.0-windows-x86_64.zip"
 sha256 = "39aa6b6d1bf8d92cb40e0f9afcaa7ad7a7467e729c6f8e76cf621f140516d2c5"
 
+[source.arm64]
+url = "https://github.com/conan-io/conan/releases/download/2.33.0/conan-2.33.0-windows-arm64.zip"
+sha256 = "6ed82b39c317ca043f45f9a0967f3ebdec669532930c5f12b201c4c3211e6640"
+
 [autoupdate]
 checkver = { github = "conan-io/conan" }
-url_template = { x64 = "https://github.com/conan-io/conan/releases/download/$version/conan-$version-windows-x86_64.zip" }
+url_template = { x64 = "https://github.com/conan-io/conan/releases/download/$version/conan-$version-windows-x86_64.zip", arm64 = "https://github.com/conan-io/conan/releases/download/$version/conan-$version-windows-arm64.zip" }

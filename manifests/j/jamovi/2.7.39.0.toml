@@ -1,0 +1,16 @@
+name = "jamovi"
+version = "2.7.39.0"
+description = "Statistical spreadsheet"
+homepage = "https://www.jamovi.org"
+license = "AGPL-3.0-only"
+kind = "app"
+extract_dir = "jamovi"
+shortcuts = [{ target = "bin\\jamovi.exe", name = "Jamovi" }]
+
+[source.x64]
+url = "https://www.jamovi.org/downloads/jamovi-2.7.39.0-win-x64.zip"
+sha256 = "0a4e7615b3de827eb9785a7e033759817f7c9c3d4d71d33250bd27dab6837224"
+
+[autoupdate]
+checkver = { url = "https://www.jamovi.org/download.html", regex = "jamovi-([\\d.]+)-win" }
+url_template = { x64 = "https://www.jamovi.org/downloads/jamovi-$version-win-x64.zip" }

@@ -1,0 +1,20 @@
+name = "arcadedb"
+version = "26.10.1"
+description = "Multi-model database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis"
+homepage = "https://arcadedb.com"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "arcadedb-26.10.1"
+bin = [{ name = "arcadedb-console", path = "bin\\console.bat" }, { name = "arcadedb-server", path = "bin\\server.bat" }]
+persist = ["config", "databases", "log"]
+
+[source.x64]
+url = "https://github.com/ArcadeData/arcadedb/releases/download/26.10.1/arcadedb-26.10.1.tar.gz"
+sha256 = "5ca1e7ffe2e239e080095eeb6e97531f3ff85ca58fbabe4f44bdcb630da156b4"
+
+[env]
+ARCADEDB_HOME = "{dir}"
+
+[autoupdate]
+checkver = { github = "ArcadeData/arcadedb" }
+url_template = "https://github.com/ArcadeData/arcadedb/releases/download/$version/arcadedb-$version.tar.gz"

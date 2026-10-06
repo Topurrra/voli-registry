@@ -1,0 +1,23 @@
+name = "coder"
+version = "2.36.7"
+description = "Creates remote development machines so your team can develop from anywhere."
+homepage = "https://coder.com/"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = ["coder.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/coder/coder/releases/download/v2.36.7/coder_2.36.7_windows_amd64.zip"
+sha256 = "dc8b2f3a86a60768a7d4b60a89cf8797b21749ddb45761219514cef0f6a6ffef"
+
+[source.arm64]
+url = "https://github.com/coder/coder/releases/download/v2.36.7/coder_2.36.7_windows_arm64.zip"
+sha256 = "e41d92811cc3a3ed2a7ab70ed726f1e0c15f51c0af97d80876c4dba97c21a352"
+
+[env]
+CODER_CONFIG_DIR = "{dir}\\config"
+
+[autoupdate]
+checkver = { github = "coder/coder" }
+url_template = { x64 = "https://github.com/coder/coder/releases/download/v$version/coder_$version_windows_amd64.zip", arm64 = "https://github.com/coder/coder/releases/download/v$version/coder_$version_windows_arm64.zip" }

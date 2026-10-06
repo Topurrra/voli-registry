@@ -1,0 +1,17 @@
+name = "buildcache"
+version = "0.33.2"
+description = "An advanced compiler accelerator that caches and reuses build results to avoid unnecessary re-compilations, and thereby speeding up the build process."
+homepage = "https://gitlab.com/bits-n-bites/buildcache"
+license = "Zlib"
+kind = "app"
+extract_dir = "buildcache"
+bin = ["bin/buildcache.exe"]
+shortcuts = [{ target = "bin/buildcache.exe", name = "buildcache" }]
+
+[source.x64]
+url = "https://gitlab.com/bits-n-bites/buildcache/-/releases/v0.33.2/downloads/buildcache-windows.zip"
+sha256 = "8418ccb80ca3a11bdce6ef4bcd2015fca49afcf2d953829f0e48afa42a0059bf"
+
+[autoupdate]
+checkver = { url = "https://gitlab.com/api/v4/projects/49153623/releases/permalink/latest", regex = "([\\d.]+)" }
+url_template = { x64 = "https://gitlab.com/bits-n-bites/buildcache/-/releases/v$version/downloads/buildcache-windows.zip" }

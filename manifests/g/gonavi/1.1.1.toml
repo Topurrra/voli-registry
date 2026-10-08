@@ -1,0 +1,24 @@
+name = "gonavi"
+version = "1.1.1"
+description = "A modern lightweight database client built with Wails and React."
+homepage = "https://gonavi.org"
+license = "Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "GoNavi.exe", name = "GoNavi" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/Syngnat/GoNavi/releases/download/v1.1.1/GoNavi-1.1.1-Windows-Amd64-Portable.zip"
+sha256 = "34a19985465c0457158dd54501ee2194069141f93161740b54c85d627b735a36"
+
+[source.arm64]
+url = "https://github.com/Syngnat/GoNavi/releases/download/v1.1.1/GoNavi-1.1.1-Windows-Arm64-Portable.zip"
+sha256 = "67e56dfa4cca43fd1cd83f06b34683468348374ff387f630f2d605b1ee1e2549"
+
+[env]
+GONAVI_DATA_ROOT = "{dir}\\data"
+GONAVI_LOG_DIR = "{dir}\\data\\logs"
+
+[autoupdate]
+checkver = { github = "Syngnat/GoNavi" }
+url_template = { x64 = "https://github.com/Syngnat/GoNavi/releases/download/v$version/GoNavi-$version-Windows-Amd64-Portable.zip", arm64 = "https://github.com/Syngnat/GoNavi/releases/download/v$version/GoNavi-$version-Windows-Arm64-Portable.zip" }

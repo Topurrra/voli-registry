@@ -1,0 +1,15 @@
+name = "dekit"
+version = "0.10.1"
+description = "Process manager for dev and prod."
+homepage = "https://dekit.run"
+license = "MIT"
+kind = "app"
+bin = ["dekit.exe"]
+
+[source.x64]
+url = "https://github.com/pvolok/dekit/releases/download/v0.10.1/dekit-x86_64-pc-windows-msvc.zip"
+sha256 = "60059e4085c0377282ff11f66b0e03ae12c8c26f6229f7582a286d3eafa5eef9"
+
+[autoupdate]
+checkver = { github = "pvolok/dekit" }
+url_template = { x64 = "https://github.com/pvolok/dekit/releases/download/v$version/dekit-x86_64-pc-windows-msvc.zip" }

@@ -1,0 +1,15 @@
+name = "diy-layout-creator"
+version = "6.7.0"
+description = "Multi platform circuit layout and schematic drawing tool."
+homepage = "https://bancika.github.io/diy-layout-creator/"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "diylc.exe", name = "DIY Layout Creator" }]
+
+[source.x64]
+url = "https://github.com/bancika/diy-layout-creator/releases/download/v6.7.0/diylc-6.7.0-win64.zip"
+sha256 = "cc285b632fe66261f7b9257b2edda7847624a4520864bebba8c44c0028f8b653"
+
+[autoupdate]
+checkver = { github = "bancika/diy-layout-creator" }
+url_template = { x64 = "https://github.com/bancika/diy-layout-creator/releases/download/v$version/diylc-$version-win64.zip" }

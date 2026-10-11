@@ -1,0 +1,19 @@
+name = "gopass"
+version = "1.17.4"
+description = "The slightly more awesome standard unix password manager for teams"
+homepage = "https://www.gopass.pw/"
+license = "MIT"
+kind = "app"
+bin = ["gopass.exe"]
+
+[source.x64]
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.4/gopass-1.17.4-windows-amd64.zip"
+sha256 = "8965ee29f9ede2acfde2de6f5564ecc98de9965a612b675acb453c784d847eaa"
+
+[source.arm64]
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.4/gopass-1.17.4-windows-arm64.zip"
+sha256 = "f110f9dfde85db79e12d7e087df2aa9b08e8b7c1eaf0f43702d0f789bb00fc27"
+
+[autoupdate]
+checkver = { github = "gopasspw/gopass" }
+url_template = { x64 = "https://github.com/gopasspw/gopass/releases/download/v$version/gopass-$version-windows-amd64.zip", arm64 = "https://github.com/gopasspw/gopass/releases/download/v$version/gopass-$version-windows-arm64.zip" }

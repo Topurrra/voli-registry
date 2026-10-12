@@ -1,7 +1,7 @@
 name = "fabric-ai"
 version = "1.4.518"
 description = "An open-source framework for augmenting humans using AI."
-homepage = "https://danielmiessler.com/p/fabric-origin-story"
+homepage = "https://github.com/danielmiessler/fabric"
 license = "MIT"
 kind = "app"
 bin = ["fabric.exe"]
@@ -15,5 +15,5 @@ url = "https://github.com/danielmiessler/Fabric/releases/download/v1.4.518/fabri
 sha256 = "81918486f379c6d20a199773e2a83175d73a65617a14f7d0c822b62fd136d1df"
 
 [autoupdate]
-checkver = { github = "danielmiessler/Fabric" }
+checkver = { github = "danielmiessler/fabric" }
 url_template = { x64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_x86_64.zip", arm64 = "https://github.com/danielmiessler/Fabric/releases/download/v$version/fabric_Windows_arm64.zip" }

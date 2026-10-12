@@ -1,0 +1,16 @@
+name = "driverstoreexplorer"
+version = "1.0.36"
+description = "A GUI tool to manage Windows driver store"
+homepage = "https://github.com/lostindark/DriverStoreExplorer"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["Rapr.exe"]
+shortcuts = [{ target = "Rapr.exe", name = "DriverStore Explorer" }]
+
+[source.x64]
+url = "https://github.com/lostindark/DriverStoreExplorer/releases/download/v1.0.36/DriverStoreExplorer-v1.0.36.zip"
+sha256 = "0e64eafa2790bb45911f8ce0fb3f923b4d87c7f0e93d05a2004a3059b0ffac38"
+
+[autoupdate]
+checkver = { github = "lostindark/DriverStoreExplorer" }
+url_template = "https://github.com/lostindark/DriverStoreExplorer/releases/download/v$version/DriverStoreExplorer-v$version.zip"

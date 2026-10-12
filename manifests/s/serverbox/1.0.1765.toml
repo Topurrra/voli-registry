@@ -1,0 +1,15 @@
+name = "serverbox"
+version = "1.0.1765"
+description = "ServerBox - server status & toolbox"
+homepage = "https://serverbox.lpkt.cn/"
+license = "AGPL-3.0"
+kind = "app"
+shortcuts = [{ target = "ServerBox.exe", name = "ServerBox" }]
+
+[source.x64]
+url = "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1765/ServerBox_v1.0.1765_windows_amd64.zip"
+sha256 = "f46c667b0ea29d15b51a74bd3b4e6a922bc09758f54e150cb86d25762758e5e2"
+
+[autoupdate]
+checkver = { github = "lollipopkit/flutter_server_box" }
+url_template = "https://github.com/lollipopkit/flutter_server_box/releases/download/v$version/ServerBox_v$version_windows_amd64.zip"

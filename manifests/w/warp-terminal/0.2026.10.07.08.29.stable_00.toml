@@ -1,0 +1,21 @@
+name = "warp-terminal"
+version = "0.2026.10.07.08.29.stable_00"
+description = "Modern, Rust-based terminal with AI built in so you and your team can build great software, faster."
+homepage = "https://www.warp.dev/"
+license = "Proprietary"
+kind = "app"
+shortcuts = [{ target = "warp.exe", name = "Warp" }]
+
+[source.x64]
+url = "https://releases.warp.dev/stable/v0.2026.10.07.08.29.stable_00/WarpSetup.exe"
+sha256 = "36b23e598203f8daabed63c770aa705d5cb4bdb8235a84909f0c96a3a2a7e8ff"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://releases.warp.dev/stable/v0.2026.10.07.08.29.stable_00/WarpSetup-arm64.exe"
+sha256 = "ee2bf715f911c3e08268f66273b0ab5b405d325265c42cbbbedcacd0670c392b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"regex\":\"/v([\\\\d.]+stable_\\\\d+)\",\"script\":\"[System.Net.HttpWebRequest]::Create('https://app.warp.dev/download?package=exe_x86_64').GetResponse().ResponseUri.AbsoluteUri\"}"
+url_template = { x64 = "https://releases.warp.dev/stable/v$version/WarpSetup.exe", arm64 = "https://releases.warp.dev/stable/v$version/WarpSetup-arm64.exe" }

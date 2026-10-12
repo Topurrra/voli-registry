@@ -1,7 +1,7 @@
 name = "oidn"
 version = "2.5.1"
 description = "Intel Open Image Denoise library"
-homepage = "https://github.com/RenderKit/oidn"
+homepage = "https://www.openimagedenoise.org/"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "oidn-2.5.1.x64.windows\\bin"

@@ -1,0 +1,15 @@
+name = "mill"
+version = "1.3.0"
+description = "Build tool aiming for Java and Scala."
+homepage = "https://mill-build.org"
+license = "MIT"
+kind = "app"
+bin = ["mill.bat"]
+
+[source.x64]
+url = "https://repo1.maven.org/maven2/com/lihaoyi/mill-dist/1.3.0/mill-dist-1.3.0-mill.bat#/mill.bat"
+sha256 = "403b19dba2d46a7092424ea4e90b22c494c8464f61e06b94b79c7d3b9d49e264"
+
+[autoupdate]
+checkver = { github = "com-lihaoyi/mill" }
+url_template = "https://repo1.maven.org/maven2/com/lihaoyi/mill-dist/$version/mill-dist-$version-mill.bat#/mill.bat"

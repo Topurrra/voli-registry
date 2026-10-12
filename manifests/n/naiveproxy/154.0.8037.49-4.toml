@@ -1,0 +1,22 @@
+name = "naiveproxy"
+version = "154.0.8037.49-4"
+description = "A proxy using Chrome's network stack to camouflage traffic with strong censorship resistence and low detectablility."
+homepage = "https://github.com/klzgrad/naiveproxy"
+license = "BSD-3-Clause"
+kind = "app"
+bin = ["naive.exe"]
+persist = ["config.json"]
+
+[source.x64]
+url = "https://github.com/klzgrad/naiveproxy/releases/download/v154.0.8037.49-4/naiveproxy-v154.0.8037.49-4-win-x64.zip"
+sha256 = "120b99474848d2f737515c1043249b0998e235fda750f61893d774b317bf1870"
+extract_dir = "naiveproxy-v154.0.8037.49-4-win-x64"
+
+[source.arm64]
+url = "https://github.com/klzgrad/naiveproxy/releases/download/v154.0.8037.49-4/naiveproxy-v154.0.8037.49-4-win-arm64.zip"
+sha256 = "8503a207ea0a75788e7c10f61a0acbfebca52f9db6e0fb7a3b657d2bde097fbb"
+extract_dir = "naiveproxy-v154.0.8037.49-4-win-arm64"
+
+[autoupdate]
+checkver = { github = "klzgrad/naiveproxy" }
+url_template = { x64 = "https://github.com/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-x64.zip", arm64 = "https://github.com/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-arm64.zip" }

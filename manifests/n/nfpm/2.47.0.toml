@@ -1,7 +1,7 @@
 name = "nfpm"
 version = "2.47.0"
 description = "nFPM is Not FPM - a simple deb, rpm, apk, ipk, and arch linux packager written in Go"
-homepage = "https://github.com/goreleaser/nfpm"
+homepage = "https://nfpm.goreleaser.com/"
 license = "MIT"
 kind = "app"
 bin = ["nfpm.exe"]

@@ -1,7 +1,7 @@
 name = "nixpacks"
 version = "1.39.0"
 description = "Generate an OCI compliant image based off app source."
-homepage = "https://github.com/railwayapp/nixpacks"
+homepage = "https://nixpacks.com"
 license = "MIT"
 kind = "app"
 bin = ["nixpacks.exe"]
@@ -15,5 +15,5 @@ url = "https://github.com/railwayapp/nixpacks/releases/download/v1.39.0/nixpacks
 sha256 = "c4bbc59de8f8f2ca170fa6fafcfaf1994c661f29dfdb824b0ea1a4cce4f80769"
 
 [autoupdate]
-checkver = { github = "railwayapp/nixpacks" }
+checkver = "{\"github\":\"https://api.github.com/repos/railwayapp/nixpacks/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].assets[?(@.name =~ /^nixpacks-v[\\\\d.]+-x86_64-pc-windows-msvc\\\\.zip$/)].browser_download_url\",\"regex\":\"download/v([\\\\d.]+)/\"}"
 url_template = { x64 = "https://github.com/railwayapp/nixpacks/releases/download/v$version/nixpacks-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/railwayapp/nixpacks/releases/download/v$version/nixpacks-v$version-aarch64-pc-windows-msvc.zip" }

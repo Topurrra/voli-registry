@@ -1,0 +1,14 @@
+name = "chkcpu"
+version = "2.15"
+description = "Checks CPU Vendor, Model, Internal speed, and L1 cache mode settings."
+homepage = "http://www.steunebrink.info/chkcpu.htm"
+license = "Freeware"
+kind = "app"
+bin = ["chkcpu32.exe", { name = "chkcpu", path = "chkcpu32.exe" }]
+
+[source.x64]
+url = "http://www.steunebrink.info/ckcpu215.zip"
+sha256 = "f896e42cfef67bbac90c4c51eb9791401455ad9b02edbf65de05f84a96d88897"
+
+[autoupdate]
+checkver = "CHKCPU32 v(\\d+(?:\\.\\d+)+)"

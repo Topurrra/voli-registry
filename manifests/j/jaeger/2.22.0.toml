@@ -1,0 +1,16 @@
+name = "jaeger"
+version = "2.22.0"
+description = "Open source, distributed tracing platform."
+homepage = "https://www.jaegertracing.io"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "jaeger-2.22.0-windows-amd64"
+bin = ["jaeger.exe"]
+
+[source.x64]
+url = "https://github.com/jaegertracing/jaeger/releases/download/v2.22.0/jaeger-2.22.0-windows-amd64.tar.gz"
+sha256 = "44585b4c7fbd9f1c529ba80da0ba0c902bb7cf345258eb04db7d92f972b8d1a5"
+
+[autoupdate]
+checkver = { github = "jaegertracing/jaeger" }
+url_template = { x64 = "https://github.com/jaegertracing/jaeger/releases/download/v$version/jaeger-$version-windows-amd64.tar.gz" }

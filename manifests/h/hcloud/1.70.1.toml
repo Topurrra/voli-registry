@@ -1,0 +1,19 @@
+name = "hcloud"
+version = "1.70.1"
+description = "Command-line interface for Hetzner Cloud"
+homepage = "https://github.com/hetznercloud/cli"
+license = "MIT"
+kind = "app"
+bin = ["hcloud.exe"]
+
+[source.x64]
+url = "https://github.com/hetznercloud/cli/releases/download/v1.70.1/hcloud-windows-amd64.zip"
+sha256 = "a8c7325062f14aa882260d23d00d0d222d61cf4096471deaa507409bc455782a"
+
+[source.arm64]
+url = "https://github.com/hetznercloud/cli/releases/download/v1.70.1/hcloud-windows-arm64.zip"
+sha256 = "ca092514b564a37360097c9417822a5175b157ad4b192c9060ee2c3991255a12"
+
+[autoupdate]
+checkver = { github = "hetznercloud/cli" }
+url_template = { x64 = "https://github.com/hetznercloud/cli/releases/download/v$version/hcloud-windows-amd64.zip", arm64 = "https://github.com/hetznercloud/cli/releases/download/v$version/hcloud-windows-arm64.zip" }

@@ -1,7 +1,7 @@
 name = "jcli"
 version = "0.0.47"
 description = "Multiple Jenkins servers manager"
-homepage = "https://jenkins-zh.github.io/jcli-docs/"
+homepage = "https://github.com/jenkins-zh/jenkins-cli"
 license = "MIT"
 kind = "app"
 bin = ["jcli.exe"]

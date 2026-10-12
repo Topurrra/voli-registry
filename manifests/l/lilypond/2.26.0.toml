@@ -12,5 +12,5 @@ url = "https://gitlab.com/lilypond/lilypond/-/releases/v2.26.0/downloads/lilypon
 sha256 = "14ddddc233b469ef60d4ffc1c7f35520f15ac6b58e38cab458c60bdcc3af650c"
 
 [autoupdate]
-checkver = "{\"regex\":\"lilypond-([\\\\d.-]+)-mingw\",\"url\":\"http://lilypond.org/download.html\"}"
+checkver = { url = "https://lilypond.org/download.html", regex = "lilypond-([\\d.-]+)-mingw" }
 url_template = { x64 = "https://gitlab.com/lilypond/lilypond/-/releases/v$version/downloads/lilypond-$version-mingw-x86_64.zip" }

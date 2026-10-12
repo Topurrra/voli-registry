@@ -1,0 +1,19 @@
+name = "tgrep"
+version = "1.2.0"
+description = "Trigram-indexed grep with a client/server architecture for fast regex search in large codebases locally"
+homepage = "https://github.com/microsoft/tgrep"
+license = "MIT"
+kind = "app"
+bin = ["tgrep.exe"]
+
+[source.x64]
+url = "https://github.com/microsoft/tgrep/releases/download/v1.2.0/tgrep-v1.2.0-x86_64-pc-windows-msvc.zip"
+sha256 = "271484f8c835f75b30221446cbb31ff337fa3ca90ee9bf06f6cc2429d7f52013"
+
+[source.arm64]
+url = "https://github.com/microsoft/tgrep/releases/download/v1.2.0/tgrep-v1.2.0-aarch64-pc-windows-msvc.zip"
+sha256 = "f4be87f5710e10c500e59b2078c01efb156e04eefcbd9a42714f6003c98714af"
+
+[autoupdate]
+checkver = { github = "microsoft/tgrep" }
+url_template = { x64 = "https://github.com/microsoft/tgrep/releases/download/v$version/tgrep-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/microsoft/tgrep/releases/download/v$version/tgrep-v$version-aarch64-pc-windows-msvc.zip" }

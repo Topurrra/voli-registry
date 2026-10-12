@@ -1,7 +1,7 @@
 name = "armclient"
 version = "1.9"
 description = "A simple command line tool to invoke the Azure Resource Manager API"
-homepage = "https://github.com/projectkudu/ARMClient"
+homepage = "https://blog.davidebbo.com/2015/01/azure-resource-manager-client.html"
 license = "Apache-2.0"
 kind = "app"
 bin = ["ARMClient.exe", "AADClient.exe"]

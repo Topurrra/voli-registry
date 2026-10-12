@@ -15,5 +15,5 @@ kind = "installer-archive"
 PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = "{\"regex\":\"(?<short>[\\\\d.]+)/windows-installer/(?<file>mono-(?<version>[\\\\d.]+).*win32.*)\\\\.msi\",\"url\":\"http://www.mono-project.com/download/stable/\"}"
+checkver = { url = "https://www.mono-project.com/download/stable/", regex = "(?<short>[\\d.]+)/windows-installer/(?<file>mono-(?<version>[\\d.]+).*win32.*)\\.msi" }
 url_template = { x64 = "https://download.mono-project.com/archive/$matchShort/windows-installer/mono-$version-x64-0.msi" }

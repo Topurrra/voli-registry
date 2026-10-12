@@ -1,0 +1,16 @@
+name = "liquidsoap"
+version = "2.4.6"
+description = "Icecast-compatible streamer for streaming audio and video"
+homepage = "https://www.liquidsoap.info"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "liquidsoap-2.4.6-win64"
+bin = ["liquidsoap.exe"]
+
+[source.x64]
+url = "https://github.com/savonet/liquidsoap/releases/download/v2.4.6/liquidsoap-2.4.6-win64.zip"
+sha256 = "4b22149c7acadbc286ed595190b6785c078f91353c60ca387efa499a75398e8a"
+
+[autoupdate]
+checkver = { github = "savonet/liquidsoap" }
+url_template = { x64 = "https://github.com/savonet/liquidsoap/releases/download/v$version/liquidsoap-$version-win64.zip" }

@@ -1,0 +1,15 @@
+name = "tauon"
+version = "13.0.0"
+description = "Tauon Music Box is a free, open-source, lightweight music player for Windows built with Electron"
+homepage = "https://github.com/Taiko2k/Tauon"
+license = "GPL-3.0-or-later"
+kind = "app"
+shortcuts = [{ target = "Tauon Music Box.exe", name = "Tauon Music Box" }]
+
+[source.x64]
+url = "https://github.com/Taiko2k/Tauon/releases/download/v13.0.0/TauonMusicBox-windows.7z"
+sha256 = "d04582e00ca75d85179f0e5ab03583d4714cf3419b4e7044339b92a17c22ca5e"
+
+[autoupdate]
+checkver = { github = "Taiko2k/Tauon" }
+url_template = { x64 = "https://github.com/Taiko2k/Tauon/releases/download/v$version/TauonMusicBox-windows.7z" }

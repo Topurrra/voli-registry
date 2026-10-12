@@ -1,7 +1,7 @@
 name = "pack"
 version = "0.40.9"
 description = "Buildpack CLI"
-homepage = "https://github.com/buildpacks/pack"
+homepage = "https://buildpacks.io"
 license = "Apache-2.0"
 kind = "app"
 bin = ["pack.exe"]

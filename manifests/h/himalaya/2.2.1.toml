@@ -1,7 +1,7 @@
 name = "himalaya"
 version = "2.2.1"
 description = "Minimalist CLI email client, written in Rust"
-homepage = "https://github.com/pimalaya/himalaya"
+homepage = "https://pimalaya.org"
 license = "BSD-3-Clause"
 kind = "app"
 bin = ["himalaya.exe"]

@@ -1,7 +1,7 @@
 name = "zls"
 version = "0.16.0"
 description = "Zig language LSP server"
-homepage = "https://github.com/zigtools/zls"
+homepage = "https://zigtools.org/zls/install/"
 license = "MIT"
 kind = "app"
 bin = ["zls.exe"]

@@ -1,7 +1,7 @@
 name = "austin"
 version = "4.0.0"
 description = "Python frame stack sampler for CPython"
-homepage = "https://github.com/P403n1x87/austin"
+homepage = "https://pypi.org/project/austin-dist/"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["austin.exe"]

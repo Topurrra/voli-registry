@@ -1,0 +1,17 @@
+name = "raspberry-pi-imager"
+version = "2.0.12"
+description = "Tool for writing an Raspberry Pi OS images to SD cards."
+homepage = "https://www.raspberrypi.org/software"
+license = "Apache-2.0"
+kind = "app"
+bin = ["rpi-imager.exe"]
+shortcuts = [{ target = "rpi-imager.exe", name = "Raspberry PI Imager" }]
+
+[source.x64]
+url = "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.12/imager-v2.0.12.exe"
+sha256 = "98bff90afe23339d0768915f6f68d35ac254740ec1eac2082ebeaa9ba41bc8e3"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "raspberrypi/rpi-imager" }
+url_template = { x64 = "https://github.com/raspberrypi/rpi-imager/releases/download/v$version/imager-v$version.exe" }

@@ -1,0 +1,15 @@
+name = "fake"
+version = "6.2.0"
+description = "F# Make, build automation tool for .NET with similar capabilities to make and rake"
+homepage = "https://fake.build"
+license = "MIT"
+kind = "app"
+bin = ["fake.exe"]
+
+[source.x64]
+url = "https://github.com/fsprojects/FAKE/releases/download/6.2.0/fake-dotnetcore-win-x64.zip"
+sha256 = "196ca882c70393fc126d3e224956591d93bbf90a3f2d763104ca5020089f7b63"
+
+[autoupdate]
+checkver = { github = "fsprojects/FAKE" }
+url_template = { x64 = "https://github.com/fsprojects/FAKE/releases/download/$version/fake-dotnetcore-win-x64.zip" }

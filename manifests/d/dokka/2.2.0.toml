@@ -1,7 +1,7 @@
 name = "dokka"
 version = "2.2.0"
 description = "Documentation Engine for Kotlin."
-homepage = "https://github.com/Kotlin/dokka/"
+homepage = "https://kotl.in/dokka"
 license = "Apache-2.0"
 kind = "app"
 bin = ["dokka.jar"]

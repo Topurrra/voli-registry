@@ -1,0 +1,23 @@
+name = "photocraft"
+version = "0.7.0"
+description = "Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust"
+homepage = "https://getartcraft.com/apps/photocraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["photocraft-cli.exe"]
+shortcuts = [{ target = "photocraft.exe", name = "PhotoCraft" }]
+persist = ["PhotoCraftData"]
+
+[source.x64]
+url = "https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-x64-portable.zip"
+sha256 = "331e3111ed068b3f41df7d44401c3b51a312abde393e5829a4f24df2c9405b87"
+extract_dir = "photocraft-0.7.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-arm64-portable.zip"
+sha256 = "776b6c89173ae32c73de206bea0879c0a6a58f5f1cf33bb61a11a06eeb2492b3"
+extract_dir = "photocraft-0.7.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/photocraft" }
+url_template = { x64 = "https://github.com/storytold/photocraft/releases/download/v$version/photocraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/photocraft/releases/download/v$version/photocraft-$version-windows-arm64-portable.zip" }

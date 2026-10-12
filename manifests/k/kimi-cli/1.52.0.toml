@@ -1,7 +1,7 @@
 name = "kimi-cli"
 version = "1.52.0"
 description = "Kimi CLI is your next CLI agent."
-homepage = "https://github.com/MoonshotAI/kimi-cli/"
+homepage = "https://moonshotai.github.io/kimi-code/en/guides/migration"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "kimi"

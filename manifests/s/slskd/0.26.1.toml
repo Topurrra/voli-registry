@@ -1,0 +1,20 @@
+name = "slskd"
+version = "0.26.1"
+description = "A modern client-server application for the Soulseek file sharing network."
+homepage = "https://github.com/slskd/slskd"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["slskd.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://github.com/slskd/slskd/releases/download/0.26.1/slskd-0.26.1-win-x64.zip"
+sha256 = "14928215e6931f291dbc489cbeeccffba6d1aa0d5b94d4262705a596407d50d3"
+
+[source.arm64]
+url = "https://github.com/slskd/slskd/releases/download/0.26.1/slskd-0.26.1-win-arm64.zip"
+sha256 = "bf0c4fcbfab58350a6684925c0e744c940aa4b6a0a282ddbefb8a2b619ff09ed"
+
+[autoupdate]
+checkver = { github = "slskd/slskd" }
+url_template = { x64 = "https://github.com/slskd/slskd/releases/download/$version/slskd-$version-win-x64.zip", arm64 = "https://github.com/slskd/slskd/releases/download/$version/slskd-$version-win-arm64.zip" }

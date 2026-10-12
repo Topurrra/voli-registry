@@ -1,7 +1,7 @@
 name = "act"
 version = "0.2.89"
 description = "Local Github actions runner."
-homepage = "https://github.com/nektos/act/"
+homepage = "https://nektosact.com"
 license = "MIT"
 kind = "app"
 bin = ["act.exe"]

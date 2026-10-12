@@ -1,7 +1,7 @@
 name = "sourcegraph-cli"
 version = "8.0.0"
 description = "Command line interface to Sourcegraph"
-homepage = "https://github.com/sourcegraph/src-cli"
+homepage = "https://sourcegraph.com"
 license = "Apache-2.0"
 kind = "app"
 bin = ["src.exe"]

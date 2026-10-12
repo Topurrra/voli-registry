@@ -1,0 +1,16 @@
+name = "chromedriver"
+version = "155.0.8059.39"
+description = "An open source tool for automated testing of webapps across many browsers"
+homepage = "https://chromedriver.chromium.org/"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "chromedriver-win64"
+bin = ["chromedriver.exe"]
+
+[source.x64]
+url = "https://storage.googleapis.com/chrome-for-testing-public/155.0.8059.39/win64/chromedriver-win64.zip"
+sha256 = "2c08ba237981b72b824ac8063927f545c4cdf7f59b49f5eaeaa3a5d4e1a20eaf"
+
+[autoupdate]
+checkver = { url = "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json", regex = "([\\d.]+)" }
+url_template = { x64 = "https://storage.googleapis.com/chrome-for-testing-public/$version/win64/chromedriver-win64.zip" }

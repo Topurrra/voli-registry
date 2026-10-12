@@ -1,0 +1,15 @@
+name = "mole"
+version = "1.32.0"
+description = "Deep clean, uninstall apps, optimize, analyze disk, and monitor Windows from the terminal."
+homepage = "https://github.com/tw93/Mole/tree/windows"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["mo.exe", { name = "mole", path = "mo.exe" }]
+
+[source.x64]
+url = "https://github.com/tw93/Mole/releases/download/V1.32.0-windows/mole-1.32.0-x64.zip"
+sha256 = "81daaee1eb71f085565ee48e0ca8641d5e34bb86773fba793d0dd3f7285deda8"
+
+[autoupdate]
+checkver = { github = "tw93/Mole" }
+url_template = { x64 = "https://github.com/tw93/Mole/releases/download/V$version-windows/mole-$version-x64.zip" }

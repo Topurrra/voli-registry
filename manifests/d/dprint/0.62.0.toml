@@ -1,0 +1,19 @@
+name = "dprint"
+version = "0.62.0"
+description = "Pluggable and configurable code formatting platform written in Rust."
+homepage = "https://dprint.dev"
+license = "MIT"
+kind = "app"
+bin = ["dprint.exe"]
+
+[source.x64]
+url = "https://github.com/dprint/dprint/releases/download/0.62.0/dprint-x86_64-pc-windows-msvc.zip"
+sha256 = "322e47e188bba6ff3784ef1be0c5f569fc270467eeac4dd10015030599d9466d"
+
+[source.arm64]
+url = "https://github.com/dprint/dprint/releases/download/0.62.0/dprint-aarch64-pc-windows-msvc.zip"
+sha256 = "39c70a48172840d7b40f1133ff4f944b2b5775e5b58cecd170fdcd43884ac415"
+
+[autoupdate]
+checkver = { github = "dprint/dprint" }
+url_template = { x64 = "https://github.com/dprint/dprint/releases/download/$version/dprint-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/dprint/dprint/releases/download/$version/dprint-aarch64-pc-windows-msvc.zip" }

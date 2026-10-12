@@ -1,0 +1,20 @@
+name = "ibmcloud-cli"
+version = "2.48.0"
+description = "The command line client for IBM Cloud"
+homepage = "https://cloud.ibm.com/docs/cli"
+license = "Apache-2.0"
+kind = "app"
+extract_dir = "IBM_Cloud_CLI"
+bin = ["ibmcloud.exe"]
+persist = ["config"]
+
+[source.x64]
+url = "https://download.clis.cloud.ibm.com/ibm-cloud-cli-dn/2.48.0/binaries/IBM_Cloud_CLI_2.48.0_windows_amd64.zip"
+sha256 = "085011f53ca4c1d4338dcfe411c87f27d18cea16d5558e90ddbac80a14c9e5b4"
+
+[env]
+IBMCLOUD_HOME = "{dir}\\config"
+
+[autoupdate]
+checkver = "{\"jsonpath\":\"$.latest_version\",\"url\":\"https://download.clis.cloud.ibm.com/ibm-cloud-cli-metadata/info.json\"}"
+url_template = { x64 = "https://download.clis.cloud.ibm.com/ibm-cloud-cli-dn/$version/binaries/IBM_Cloud_CLI_$version_windows_amd64.zip" }

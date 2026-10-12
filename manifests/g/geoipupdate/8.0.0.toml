@@ -1,7 +1,7 @@
 name = "geoipupdate"
 version = "8.0.0"
 description = "GeoIP Update program to perform automatic updates of GeoIP2 and GeoIP Legacy binary databases."
-homepage = "https://dev.maxmind.com/geoip/geoipupdate/"
+homepage = "https://github.com/maxmind/geoipupdate"
 license = "Apache-2.0|MIT"
 kind = "app"
 extract_dir = "geoipupdate_8.0.0_windows_amd64"

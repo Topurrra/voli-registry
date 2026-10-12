@@ -8,11 +8,11 @@ bin = ["racket.exe", "raco.exe"]
 
 [source.x64]
 url = "https://mirror.racket-lang.org/installers/9.3/racket-minimal-9.3-x86_64-win32.exe#/dl.7z"
-sha256 = "216c049681598452b5692c01ce8c2ec43659fd74f6e536ce5346815f8902f036"
+sha256 = "7f8212273192bcfd412c6cc16e7312b0a681d0ec547c52e71b40b4fc0257f210"
 
 [source.arm64]
 url = "https://mirror.racket-lang.org/installers/9.3/racket-minimal-9.3-arm64-win32.exe#/dl.7z"
-sha256 = "90512e34495809b71411a3afa94edd8491aa39a8a69ac5170f3c526122aa61f5"
+sha256 = "38e86cb8597191d14fbfbbac35b457188a55318bdccb862a1ba3b7cc2a402e1d"
 
 [autoupdate]
 checkver = { url = "https://download.racket-lang.org/", regex = "Version ([\\d.]+)" }

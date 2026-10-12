@@ -1,0 +1,19 @@
+name = "helm-chart-testing"
+version = "3.15.0"
+description = "Tool for testing Helm charts. It is meant to be used for linting and testing pull requests. It automatically detects charts changed against the target branch."
+homepage = "https://github.com/helm/chart-testing/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ct.exe"]
+
+[source.x64]
+url = "https://github.com/helm/chart-testing/releases/download/v3.15.0/chart-testing_3.15.0_windows_amd64.zip"
+sha256 = "6499089288d39d818cc0d49b22593b1167a04d5ee25321940f2b7b4d8903a6d7"
+
+[source.arm64]
+url = "https://github.com/helm/chart-testing/releases/download/v3.15.0/chart-testing_3.15.0_windows_arm64.zip"
+sha256 = "315d370847775a6c28473ee3cc713ab4769b86730b204d23cfcfb1de217c4e23"
+
+[autoupdate]
+checkver = { github = "helm/chart-testing" }
+url_template = { x64 = "https://github.com/helm/chart-testing/releases/download/v$version/chart-testing_$version_windows_amd64.zip", arm64 = "https://github.com/helm/chart-testing/releases/download/v$version/chart-testing_$version_windows_arm64.zip" }

@@ -1,0 +1,15 @@
+name = "onefetch"
+version = "3.0.0"
+description = "Git repository summary on terminal"
+homepage = "https://github.com/o2sh/onefetch"
+license = "MIT"
+kind = "app"
+bin = ["onefetch.exe"]
+
+[source.x64]
+url = "https://github.com/o2sh/onefetch/releases/download/3.0.0/onefetch-win.tar.gz"
+sha256 = "b17143631ccd4381705c9e118dd675b209e40ceda4ab6de196a9d7edf558e714"
+
+[autoupdate]
+checkver = { github = "o2sh/onefetch" }
+url_template = { x64 = "https://github.com/o2sh/onefetch/releases/download/$version/onefetch-win.tar.gz" }

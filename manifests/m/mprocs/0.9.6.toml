@@ -1,7 +1,7 @@
 name = "mprocs"
 version = "0.9.6"
 description = "Run multiple commands in parallel (Deprecated, please use `main/dekit` instead)."
-homepage = "https://github.com/pvolok/dekit"
+homepage = "https://dekit.run/"
 license = "MIT"
 kind = "app"
 bin = ["mprocs.exe"]

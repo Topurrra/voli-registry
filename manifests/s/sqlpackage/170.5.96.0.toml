@@ -1,0 +1,15 @@
+name = "sqlpackage"
+version = "170.5.96.0"
+description = "Command-line utility that automates database development tasks by exposing Data-Tier Application Framework (DacFx) APIs"
+homepage = "https://learn.microsoft.com/sql/tools/sqlpackage/sqlpackage"
+license = "Freeware"
+kind = "app"
+bin = ["sqlpackage.exe"]
+
+[source.x64]
+url = "https://go.microsoft.com/fwlink/?linkid=2379708#/sqlpackage-win-x64-en-170.5.96.0.zip"
+sha256 = "8ce1afea3a7b0d552b9d3aaf1f24a3211a6e7e1fc60de00b625ad952cb8b895a"
+
+[autoupdate]
+checkver = { url = "https://learn.microsoft.com/en-us/sql/tools/sqlpackage/release-notes-sqlpackage?view=sql-server-ver17", regex = "(?s)--version (\\d+(?:\\.\\d+)+).*?Windows \\.NET \\d+.*?href=\"https://go\\.microsoft\\.com/fwlink/\\?linkid=(?<linkid>[\\d]+)\"" }
+url_template = { x64 = "https://go.microsoft.com/fwlink/?linkid=$matchLinkid#/sqlpackage-win-x64-en-$version.zip" }

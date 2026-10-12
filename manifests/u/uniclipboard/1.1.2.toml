@@ -1,0 +1,21 @@
+name = "uniclipboard"
+version = "1.1.2"
+description = "Encrypted peer-to-peer clipboard sync between your devices"
+homepage = "https://uniclipboard.app"
+license = "AGPL-3.0-only"
+kind = "app"
+bin = ["UniClipboard.exe"]
+shortcuts = [{ target = "UniClipboard.exe", name = "UniClipboard" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/UniClipboard/UniClipboard/releases/download/v1.1.2/UniClipboard_1.1.2_x64-portable.zip"
+sha256 = "3f2ecf50fceca3cf90a6000499e81a4ba52a98ad80f9b2573d268fa32f9da891"
+
+[source.arm64]
+url = "https://github.com/UniClipboard/UniClipboard/releases/download/v1.1.2/UniClipboard_1.1.2_arm64-portable.zip"
+sha256 = "ff095c98b0b6ad47ecf52669a0635e3a98e9dd7e698fa18f159efd93ad67768f"
+
+[autoupdate]
+checkver = { github = "UniClipboard/UniClipboard" }
+url_template = { x64 = "https://github.com/UniClipboard/UniClipboard/releases/download/v$version/UniClipboard_$version_x64-portable.zip", arm64 = "https://github.com/UniClipboard/UniClipboard/releases/download/v$version/UniClipboard_$version_arm64-portable.zip" }

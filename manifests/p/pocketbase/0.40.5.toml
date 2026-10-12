@@ -1,0 +1,20 @@
+name = "pocketbase"
+version = "0.40.5"
+description = "Open Source realtime backend in 1 file"
+homepage = "https://pocketbase.io"
+license = "MIT"
+kind = "app"
+bin = ["pocketbase.exe"]
+persist = ["pb_data", "pb_migrations"]
+
+[source.x64]
+url = "https://github.com/pocketbase/pocketbase/releases/download/v0.40.5/pocketbase_0.40.5_windows_amd64.zip"
+sha256 = "d0980d1f3a8097ff4c03a876e8c98f3008a83c0d42cc03b636bc92b2d4788d1c"
+
+[source.arm64]
+url = "https://github.com/pocketbase/pocketbase/releases/download/v0.40.5/pocketbase_0.40.5_windows_arm64.zip"
+sha256 = "7dd0d7c500812cac571e450525595b93556527161b1eb86493dabdfc31974ef5"
+
+[autoupdate]
+checkver = { github = "pocketbase/pocketbase" }
+url_template = { x64 = "https://github.com/pocketbase/pocketbase/releases/download/v$version/pocketbase_$version_windows_amd64.zip", arm64 = "https://github.com/pocketbase/pocketbase/releases/download/v$version/pocketbase_$version_windows_arm64.zip" }

@@ -1,7 +1,7 @@
 name = "helmfile"
 version = "1.8.1"
 description = "Command line interface to deploy Kubernetes Helm Charts."
-homepage = "https://github.com/helmfile/helmfile"
+homepage = "https://helmfile.readthedocs.io"
 license = "MIT"
 kind = "app"
 bin = ["helmfile.exe"]

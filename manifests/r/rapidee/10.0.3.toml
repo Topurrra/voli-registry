@@ -1,0 +1,15 @@
+name = "rapidee"
+version = "10.0.3"
+description = "Environment variables editor."
+homepage = "https://www.rapidee.com/en/about"
+license = "Freeware"
+kind = "app"
+shortcuts = [{ target = "rapidee.exe", name = "RapidEE" }]
+
+[source.x64]
+url = "https://gitlab.com/olegd/rapidee/-/releases/v10.0.3/downloads/RapidEE.zip"
+sha256 = "91413b2f20fb053bd0a6f1e3f155363ec7a37c81e0f8c7898d9898b74a7b1bf4"
+
+[autoupdate]
+checkver = { url = "https://gitlab.com/api/v4/projects/olegd%2Frapidee/releases", regex = "(?i)^v?([\\d.]+)$" }
+url_template = { x64 = "https://gitlab.com/olegd/rapidee/-/releases/v$version/downloads/RapidEE.zip" }

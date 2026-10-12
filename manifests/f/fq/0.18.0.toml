@@ -1,7 +1,7 @@
 name = "fq"
 version = "0.18.0"
 description = "Tool, language and decoders for working with binary data."
-homepage = "https://github.com/wader/fq"
+homepage = "https://wader.github.io/fq/"
 license = "MIT"
 kind = "app"
 bin = ["fq.exe"]

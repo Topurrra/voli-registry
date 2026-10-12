@@ -1,0 +1,15 @@
+name = "scooter"
+version = "0.10.0"
+description = "An interactive TUI tool for finding and replacing text."
+homepage = "https://github.com/thomasschafer/scooter"
+license = "MIT"
+kind = "app"
+bin = ["scooter.exe"]
+
+[source.x64]
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.10.0/scooter-v0.10.0-x86_64-pc-windows-msvc.zip"
+sha256 = "a721360286ddbe045bbe4efdf73f40a1d1f25d35bad26bf2cc49080d53a9f505"
+
+[autoupdate]
+checkver = { github = "thomasschafer/scooter" }
+url_template = { x64 = "https://github.com/thomasschafer/scooter/releases/download/v$version/scooter-v$version-x86_64-pc-windows-msvc.zip" }

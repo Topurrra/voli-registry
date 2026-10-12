@@ -1,0 +1,22 @@
+name = "gridcraft"
+version = "0.5.0"
+description = "Spreadsheets and data; an open-source, clean-room reimplementation of Microsoft Excel, rebuilt in pure Rust"
+homepage = "https://github.com/storytold/gridcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["gridcraft-cli.exe"]
+shortcuts = [{ target = "gridcraft.exe", name = "GridCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/gridcraft/releases/download/v0.5.0/gridcraft-0.5.0-windows-x64-portable.zip"
+sha256 = "0d34cdd117c3a96ce8467de0f90b5ea64ca0bbe497f9b0116c95685c4251d3fd"
+extract_dir = "gridcraft-0.5.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/gridcraft/releases/download/v0.5.0/gridcraft-0.5.0-windows-arm64-portable.zip"
+sha256 = "76fa5ab9d7e9690e998ea30b859b87c63897952d80013496ff44e0f87d78723e"
+extract_dir = "gridcraft-0.5.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/gridcraft" }
+url_template = { x64 = "https://github.com/storytold/gridcraft/releases/download/v$version/gridcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/gridcraft/releases/download/v$version/gridcraft-$version-windows-arm64-portable.zip" }

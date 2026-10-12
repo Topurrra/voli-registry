@@ -1,7 +1,7 @@
 name = "arthas"
 version = "4.3.5"
 description = "Arthas is a Java Diagnostic tool open sourced by Alibaba."
-homepage = "https://github.com/alibaba/arthas"
+homepage = "https://arthas.aliyun.com/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["arthas-boot.jar"]

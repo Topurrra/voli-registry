@@ -1,7 +1,7 @@
 name = "kubefwd"
 version = "1.25.16"
 description = "Bulk port forwarding Kubernetes services for local development"
-homepage = "https://github.com/txn2/kubefwd"
+homepage = "https://kubefwd.com/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["kubefwd.exe"]

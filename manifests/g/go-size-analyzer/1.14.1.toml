@@ -1,7 +1,7 @@
 name = "go-size-analyzer"
 version = "1.14.1"
 description = "A tool for analyzing the dependencies in compiled Golang binaries."
-homepage = "https://github.com/Zxilly/go-size-analyzer"
+homepage = "https://gsa.zxilly.dev/"
 license = "AGPL-3.0-only"
 kind = "app"
 bin = ["gsa.exe"]

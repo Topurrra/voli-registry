@@ -1,0 +1,15 @@
+name = "zbar"
+version = "0.23.95"
+description = "Application and library for reading bar codes from various sources"
+homepage = "https://github.com/mchehab/zbar"
+license = "LGPL-2.1-or-later"
+kind = "app"
+bin = ["bin\\zbarimg.exe", "bin\\zbarcam.exe"]
+
+[source.x64]
+url = "https://github.com/mchehab/zbar/releases/download/0.23.95/zbar-win_x86_64-DShow.zip"
+sha256 = "4351ec5abee3a38bb5cc062a37ca324ae5f6ea190d9f948d8c91700e5129490c"
+
+[autoupdate]
+checkver = { github = "mchehab/zbar" }
+url_template = { x64 = "https://github.com/mchehab/zbar/releases/download/$version/zbar-win_x86_64-DShow.zip" }

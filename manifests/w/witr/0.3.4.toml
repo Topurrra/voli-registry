@@ -1,7 +1,7 @@
 name = "witr"
 version = "0.3.4"
 description = "witr ('Why Is This Running') is a tool that explains the causal chain behind running processes with additional insights."
-homepage = "https://github.com/pranshuparmar/witr"
+homepage = "https://pranshuparmar.github.io/witr/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["witr.exe"]

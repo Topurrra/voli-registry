@@ -1,7 +1,7 @@
 name = "coursier"
 version = "2.1.26"
 description = "Pure Scala Artifact Fetching"
-homepage = "https://github.com/coursier/coursier"
+homepage = "https://get-coursier.io"
 license = "Apache-2.0"
 kind = "app"
 bin = ["coursier.jar"]
@@ -17,5 +17,5 @@ COURSIER_CACHE = "{dir}\\cache"
 PATH = "{dir}\\bin"
 
 [autoupdate]
-checkver = { github = "coursier/coursier" }
+checkver = { url = "https://github.com/coursier/coursier/releases", regex = "tag/v([\\w\\.-]+)" }
 url_template = "https://github.com/coursier/coursier/releases/download/v$version/coursier#/coursier.jar"

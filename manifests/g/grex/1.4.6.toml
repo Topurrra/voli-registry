@@ -1,7 +1,7 @@
 name = "grex"
 version = "1.4.6"
 description = "A regular expression generator"
-homepage = "https://github.com/pemistahl/grex"
+homepage = "https://pemistahl.github.io/grex-js/"
 license = "Apache-2.0"
 kind = "app"
 bin = ["grex.exe"]

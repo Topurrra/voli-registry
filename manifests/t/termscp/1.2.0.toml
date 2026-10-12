@@ -1,7 +1,7 @@
 name = "termscp"
 version = "1.2.0"
 description = "Terminal UI file explorer with SCP/SFTP/FTP support"
-homepage = "https://github.com/veeso/termscp"
+homepage = "https://termscp.rs"
 license = "MIT"
 kind = "app"
 bin = ["termscp.exe"]

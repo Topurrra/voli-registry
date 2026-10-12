@@ -1,7 +1,7 @@
 name = "fselect"
 version = "0.10.3"
 description = "Find files with SQL-like queries"
-homepage = "https://github.com/jhspetersson/fselect"
+homepage = "https://fselect.rocks"
 license = "Apache-2.0|MIT"
 kind = "app"
 bin = ["fselect.exe"]

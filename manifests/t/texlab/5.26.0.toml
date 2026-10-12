@@ -1,7 +1,7 @@
 name = "texlab"
 version = "5.26.0"
 description = "Language Server Protocol for LaTeX"
-homepage = "https://texlab.netlify.com"
+homepage = "https://github.com/latex-lsp/texlab"
 license = "GPL-3.0-only"
 kind = "app"
 bin = ["texlab.exe"]

@@ -1,0 +1,22 @@
+name = "yacreader"
+version = "10.4.0.261009428"
+description = "A comic reader and manager"
+homepage = "https://www.yacreader.com"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["YACReader.exe", "YACReaderLibrary.exe", "YACReaderLibraryServer.exe"]
+shortcuts = [{ target = "YACReader.exe", name = "YACReader" }, { target = "YACReaderLibrary.exe", name = "YACReader Library" }]
+
+[source.x64]
+url = "https://github.com/YACReader/yacreader/releases/download/10.4.0/YACReader-v10.4.0.261009428-winx64-7z-qt6.exe"
+sha256 = "676ceb05712591e33c2d2eb833203d15e016de01acd1426ecb8758f0ef63b778"
+kind = "installer-archive"
+
+[source.arm64]
+url = "https://github.com/YACReader/yacreader/releases/download/10.4.0/YACReader-v10.4.0.261009428-winarm64-7z-qt6.exe"
+sha256 = "b775f8b71ee7198b4069ea052d48a628135eb540f790dba89b342090c69f05ef"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/YACReader/yacreader/releases/latest\",\"jsonpath\":\"$.assets[*].browser_download_url\",\"regex\":\"YACReader-v([\\\\d.]+)-winx64-7z\"}"
+url_template = { x64 = "https://github.com/YACReader/yacreader/releases/download/$matchHead/YACReader-v$version-winx64-7z-qt6.exe", arm64 = "https://github.com/YACReader/yacreader/releases/download/$matchHead/YACReader-v$version-winarm64-7z-qt6.exe" }

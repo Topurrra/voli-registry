@@ -1,7 +1,7 @@
 name = "delta"
 version = "0.20.1"
 description = "A syntax-highlighter for git and diff output"
-homepage = "https://github.com/dandavison/delta"
+homepage = "https://dandavison.github.io/delta/"
 license = "MIT"
 kind = "app"
 extract_dir = "delta-0.20.1-x86_64-pc-windows-msvc"

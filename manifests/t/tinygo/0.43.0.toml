@@ -1,0 +1,16 @@
+name = "tinygo"
+version = "0.43.0"
+description = "A Go compiler for small places"
+homepage = "https://tinygo.org"
+license = "BSD-3-Clause"
+kind = "app"
+extract_dir = "tinygo"
+bin = ["bin\\tinygo.exe"]
+
+[source.x64]
+url = "https://github.com/tinygo-org/tinygo/releases/download/v0.43.0/tinygo0.43.0.windows-amd64.zip"
+sha256 = "6239718f1a6a6abebc8a3e28aa4e639ef57e90c232dccf3a6aa0433492378c1a"
+
+[autoupdate]
+checkver = { github = "tinygo-org/tinygo" }
+url_template = { x64 = "https://github.com/tinygo-org/tinygo/releases/download/v$version/tinygo$version.windows-amd64.zip" }

@@ -1,0 +1,15 @@
+name = "merman-cli"
+version = "0.8.0"
+description = "Headless Mermaid-compatible diagram renderer for SVG, PNG, JPEG, PDF, ASCII, and Unicode output."
+homepage = "https://frankorz.com/merman/"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["merman-cli.exe"]
+
+[source.x64]
+url = "https://github.com/Latias94/merman/releases/download/v0.8.0/merman-cli-x86_64-pc-windows-msvc.zip"
+sha256 = "55ed5d0edc5e2c5f543e7722493416ba850b38cf0072b6637184b0aa38daace6"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Latias94/merman/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].tag_name\",\"regex\":\"\\\"v?(\\\\d+(?:\\\\.\\\\d+)+)\\\"\"}"
+url_template = { x64 = "https://github.com/Latias94/merman/releases/download/v$version/merman-cli-x86_64-pc-windows-msvc.zip" }

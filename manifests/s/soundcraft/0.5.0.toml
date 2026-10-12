@@ -1,0 +1,22 @@
+name = "soundcraft"
+version = "0.5.0"
+description = "Recording, editing and mixing audio; an open-source, clean-room reimplementation of Avid Pro Tools, rebuilt in pure Rust"
+homepage = "https://github.com/storytold/soundcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["soundcraft-cli.exe"]
+shortcuts = [{ target = "soundcraft.exe", name = "SoundCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/soundcraft/releases/download/v0.5.0/soundcraft-0.5.0-windows-x64-portable.zip"
+sha256 = "36fc94327e2351ffd674b95919bff06dfa3c448d02b5b93ee818d3c6ebe2d2ab"
+extract_dir = "soundcraft-0.5.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/soundcraft/releases/download/v0.5.0/soundcraft-0.5.0-windows-arm64-portable.zip"
+sha256 = "69dd2b0bdbaa47e6df43ed9cedf29782543fa5fd52ca86d17779b0a6032d9315"
+extract_dir = "soundcraft-0.5.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/soundcraft" }
+url_template = { x64 = "https://github.com/storytold/soundcraft/releases/download/v$version/soundcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/soundcraft/releases/download/v$version/soundcraft-$version-windows-arm64-portable.zip" }

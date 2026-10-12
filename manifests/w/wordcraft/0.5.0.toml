@@ -1,0 +1,22 @@
+name = "wordcraft"
+version = "0.5.0"
+description = "Writing and document design; an open-source, clean-room reimplementation of Microsoft Word, rebuilt in pure Rust"
+homepage = "https://github.com/storytold/wordcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["wordcraft-cli.exe"]
+shortcuts = [{ target = "wordcraft.exe", name = "WordCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/wordcraft/releases/download/v0.5.0/wordcraft-0.5.0-windows-x64-portable.zip"
+sha256 = "caf202e3e3604cf1083f283cbf8b69e4e8df822e86ba9f6f6e8c2db65d483bdf"
+extract_dir = "wordcraft-0.5.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/wordcraft/releases/download/v0.5.0/wordcraft-0.5.0-windows-arm64-portable.zip"
+sha256 = "2a2c00bc6d0da122f665ca9f4dfb51219a69ff06656184c89f3048c0e44aa690"
+extract_dir = "wordcraft-0.5.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/wordcraft" }
+url_template = { x64 = "https://github.com/storytold/wordcraft/releases/download/v$version/wordcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/wordcraft/releases/download/v$version/wordcraft-$version-windows-arm64-portable.zip" }

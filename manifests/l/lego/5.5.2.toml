@@ -1,7 +1,7 @@
 name = "lego"
 version = "5.5.2"
 description = "Let's Encrypt/ACME client and library written in Go"
-homepage = "https://github.com/go-acme/lego"
+homepage = "https://go-acme.github.io/lego/"
 license = "MIT"
 kind = "app"
 bin = ["lego.exe"]

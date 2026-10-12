@@ -1,7 +1,7 @@
 name = "dolt"
 version = "2.4.2"
 description = "Dolt is a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository."
-homepage = "https://github.com/dolthub/dolt"
+homepage = "https://www.dolthub.com"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "dolt-windows-amd64"

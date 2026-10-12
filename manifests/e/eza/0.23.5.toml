@@ -1,7 +1,7 @@
 name = "eza"
 version = "0.23.5"
 description = "A modern, maintained replacement for ls, built on exa."
-homepage = "https://github.com/eza-community/eza"
+homepage = "https://eza.rocks"
 license = "MIT"
 kind = "app"
 bin = ["eza.exe", { name = "exa", path = "eza.exe" }]

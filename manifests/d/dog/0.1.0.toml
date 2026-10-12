@@ -1,7 +1,7 @@
 name = "dog"
 version = "0.1.0"
 description = "Command-line DNS client"
-homepage = "https://dns.lookup.dog"
+homepage = "https://github.com/ogham/dog"
 license = "EUPL-1.2"
 kind = "app"
 bin = ["bin\\dog.exe"]

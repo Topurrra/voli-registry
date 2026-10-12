@@ -1,0 +1,17 @@
+name = "mingw-mstorsjo-llvm-msvcrt"
+version = "23.1.3-20261006"
+description = "LLVM toolchain based on mingw-w64. (MSVCRT, mstorsjo build)"
+homepage = "https://github.com/mstorsjo/llvm-mingw/"
+license = "GPL-3.0-or-later,ZPL-2.1,Apache-2.0 WITH LLVM-exception,ISC"
+kind = "app"
+extract_dir = "llvm-mingw-20261006-msvcrt-x86_64"
+
+[source.x64]
+url = "https://github.com/mstorsjo/llvm-mingw/releases/download/20261006/llvm-mingw-20261006-msvcrt-x86_64.zip"
+sha256 = "24847b37a951c8583c3f7ec061de2eb87f6394215c8ef3fdc4565ed0835396e1"
+
+[env]
+PATH = "{dir}\\bin"
+
+[autoupdate]
+checkver = { github = "mstorsjo/llvm-mingw" }

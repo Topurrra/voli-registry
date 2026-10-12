@@ -1,0 +1,15 @@
+name = "jenkins"
+version = "2.585"
+description = "An automation server which enables developers around the world to reliably build, test, and deploy their software."
+homepage = "https://www.jenkins.io"
+license = "MIT"
+kind = "app"
+bin = ["jenkins.jar"]
+
+[source.x64]
+url = "https://get.jenkins.io/war/2.585/jenkins.war#/jenkins.jar"
+sha256 = "0beb1d55020dd99650adf60a40a57a83d84299fa983795174499bb264f204ad5"
+
+[autoupdate]
+checkver = { url = "https://www.jenkins.io/changelog/rss.xml", regex = "Jenkins ([\\d.]+)" }
+url_template = "https://get.jenkins.io/war/$version/jenkins.war#/jenkins.jar"

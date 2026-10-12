@@ -1,7 +1,7 @@
 name = "kubecolor"
 version = "0.8.0"
 description = "Wraps kubectl with colorful output"
-homepage = "https://github.com/kubecolor/kubecolor"
+homepage = "https://kubecolor.github.io"
 license = "MIT"
 kind = "app"
 bin = ["kubecolor.exe"]

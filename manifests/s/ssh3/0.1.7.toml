@@ -1,7 +1,7 @@
 name = "ssh3"
 version = "0.1.7"
 description = "SSH3: faster and rich secure shell using HTTP/3"
-homepage = "https://github.com/francoismichel/ssh3"
+homepage = "https://arxiv.org/abs/2312.08396"
 license = "Apache-2.0"
 kind = "app"
 bin = ["ssh3.exe"]
@@ -15,5 +15,5 @@ url = "https://github.com/francoismichel/ssh3/releases/download/v0.1.7/ssh3_0.1.
 sha256 = "d74092cc418e355086243c125aeeed8d70a5ffa2627d7f7ac6491fd92a26e961"
 
 [autoupdate]
-checkver = { github = "francoismichel/ssh3" }
+checkver = "{\"github\":\"https://api.github.com/repos/francoismichel/ssh3/releases\",\"jsonpath\":\"$[0].tag_name\",\"regex\":\"v([\\\\d.]+(?:-[^-]+)?)\"}"
 url_template = { x64 = "https://github.com/francoismichel/ssh3/releases/download/v$version/ssh3_$version_clientonly_windows_x86_64.zip", arm64 = "https://github.com/francoismichel/ssh3/releases/download/v$version/ssh3_$version_clientonly_windows_arm64.zip" }

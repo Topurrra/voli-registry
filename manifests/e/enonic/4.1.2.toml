@@ -1,7 +1,7 @@
 name = "enonic"
 version = "4.1.2"
 description = "Project and instances manager for Enonic XP."
-homepage = "https://developer.enonic.com/docs/enonic-cli/master"
+homepage = "https://developer.enonic.com/docs/enonic-cli/stable"
 license = "GPL-3.0-or-later"
 kind = "app"
 bin = ["enonic.exe"]

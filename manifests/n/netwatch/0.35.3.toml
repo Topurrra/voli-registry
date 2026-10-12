@@ -1,7 +1,7 @@
 name = "netwatch"
 version = "0.35.3"
 description = "Real-time network diagnostics TUI — like htop for your network. Built with Rust + ratatui."
-homepage = "https://github.com/matthart1983/netwatch"
+homepage = "https://netwatchlabs.com"
 license = "MIT"
 kind = "app"
 

@@ -1,0 +1,36 @@
+name = "pandoc"
+version = "3.12.1"
+description = "Universal markup converter"
+homepage = "https://pandoc.org"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "pandoc-3.12.1"
+bin = ["pandoc.exe"]
+
+[source.x64]
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-windows-x86_64.zip"
+sha256 = "6ef431cb20b2c24a0371fc19200dc49d452be54b1b5c9239f3462841ef53e587"
+
+[source.linux-x64]
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-amd64.tar.gz"
+sha256 = "d0c90410e90204c9ca83b8539fac5c7aed01fd537207e4585849f8abc5df20b8"
+extract_dir = "pandoc-3.12.1/bin"
+
+[source.linux-arm64]
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-linux-arm64.tar.gz"
+sha256 = "445d96fd08801fe636cab1158b4f017ee320ac3b7446328b4fe2f902117b19b9"
+extract_dir = "pandoc-3.12.1/bin"
+
+[source.macos-x64]
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-x86_64-macOS.zip"
+sha256 = "81ed3e2cfecf096df15d407152f89a684fd65221082b919963f738e977fad3bc"
+extract_dir = "pandoc-3.12.1-x86_64/bin"
+
+[source.macos-arm64]
+url = "https://github.com/jgm/pandoc/releases/download/3.12.1/pandoc-3.12.1-arm64-macOS.zip"
+sha256 = "c2146cf33a583f3ac93eccddf1bb662371d5cfcce1aad1c87ad860cca1435d46"
+extract_dir = "pandoc-3.12.1-arm64/bin"
+
+[autoupdate]
+checkver = { github = "jgm/pandoc" }
+url_template = { x64 = "https://github.com/jgm/pandoc/releases/download/$version/pandoc-$version-windows-x86_64.zip" }

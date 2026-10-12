@@ -1,0 +1,19 @@
+name = "ruff"
+version = "0.17.0"
+description = "An extremely fast Python linter and code formatter, written in Rust."
+homepage = "https://docs.astral.sh/ruff"
+license = "MIT"
+kind = "app"
+bin = ["ruff.exe"]
+
+[source.x64]
+url = "https://github.com/astral-sh/ruff/releases/download/0.17.0/ruff-x86_64-pc-windows-msvc.zip"
+sha256 = "bc831eaa01912323099d7bc185981bf6bb1960931350bd3ad6a82f7a59a46c3b"
+
+[source.arm64]
+url = "https://github.com/astral-sh/ruff/releases/download/0.17.0/ruff-aarch64-pc-windows-msvc.zip"
+sha256 = "6b61a2a0c59f77e6b87d0c7979558161b29a0be6ed621cf5ff4fd8f2db40d116"
+
+[autoupdate]
+checkver = { github = "astral-sh/ruff" }
+url_template = { x64 = "https://github.com/astral-sh/ruff/releases/download/$version/ruff-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/astral-sh/ruff/releases/download/$version/ruff-aarch64-pc-windows-msvc.zip" }

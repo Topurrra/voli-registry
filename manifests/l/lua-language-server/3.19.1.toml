@@ -1,7 +1,7 @@
 name = "lua-language-server"
 version = "3.19.1"
 description = "A language server written in Lua that offers Lua language support."
-homepage = "https://github.com/LuaLS/lua-language-server"
+homepage = "https://luals.github.io"
 license = "MIT"
 kind = "app"
 bin = ["bin\\lua-language-server.exe"]

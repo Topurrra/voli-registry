@@ -1,0 +1,15 @@
+name = "merman-lsp"
+version = "0.8.0"
+description = "Local Mermaid language intelligence for .mmd, .mermaid, Markdown, and MDX documents."
+homepage = "https://frankorz.com/merman/"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["merman-lsp.exe"]
+
+[source.x64]
+url = "https://github.com/Latias94/merman/releases/download/v0.8.0/merman-lsp-x86_64-pc-windows-msvc.zip"
+sha256 = "b53d986ec1c75a719464d835aba8efe63b1a03dbe221050c66f77555cf51012e"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/Latias94/merman/releases\",\"jsonpath\":\"$[?(@.prerelease == false)].tag_name\",\"regex\":\"\\\"v?(\\\\d+(?:\\\\.\\\\d+)+)\\\"\"}"
+url_template = { x64 = "https://github.com/Latias94/merman/releases/download/v$version/merman-lsp-x86_64-pc-windows-msvc.zip" }

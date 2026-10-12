@@ -1,7 +1,7 @@
 name = "azure-kubelogin"
 version = "0.2.21"
 description = "A client-go credential (exec) plugin implementing Azure authentication."
-homepage = "https://github.com/Azure/kubelogin/"
+homepage = "https://azure.github.io/kubelogin/"
 license = "MIT"
 kind = "app"
 

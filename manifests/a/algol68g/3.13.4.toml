@@ -1,0 +1,16 @@
+name = "algol68g"
+version = "3.13.4"
+description = "Algol 68 compiler-interpreter"
+homepage = "https://algol68genie.nl/en/algol-68-genie/"
+license = "GPL-3.0-only"
+kind = "app"
+extract_dir = "algol68g-3.13.4"
+bin = ["bin/a68g.exe"]
+
+[source.x64]
+url = "https://algol68genie.nl/algol68g-3.13.4.win64.zip"
+sha256 = "99490131fb347e714df529361fe19b5a6241143665bdb167135c9f413614c29b"
+
+[autoupdate]
+checkver = "algol68g-([\\d.]+)\\.win64\\.zip"
+url_template = { x64 = "https://algol68genie.nl/algol68g-$version.win64.zip" }

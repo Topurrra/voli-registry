@@ -1,7 +1,7 @@
 name = "unzip"
 version = "6.00"
 description = "Unzip compression utility"
-homepage = "http://www.info-zip.org/"
+homepage = "https://infozip.sourceforge.net"
 license = "Info-ZIP"
 kind = "app"
 bin = ["SFXWiz32.exe", "unzipsfx.exe", "unzip.exe", "funzip.exe", { name = "zipinfo", path = "unzip.exe", args = "-Z" }]

@@ -1,0 +1,15 @@
+name = "sendme"
+version = "0.36.1"
+description = "A command-line tool that sends files and directories over the internet, built on iroh."
+homepage = "https://github.com/n0-computer/sendme"
+license = "Apache-2.0|MIT"
+kind = "app"
+bin = ["sendme.exe"]
+
+[source.x64]
+url = "https://github.com/n0-computer/sendme/releases/download/v0.36.1/sendme-v0.36.1-windows-x86_64.zip"
+sha256 = "c5b4c30813c65df51ebc3276d9f4f0cd9a7b1a371b081d80b12587eb558acbcb"
+
+[autoupdate]
+checkver = { github = "n0-computer/sendme" }
+url_template = { x64 = "https://github.com/n0-computer/sendme/releases/download/v$version/sendme-v$version-windows-x86_64.zip" }

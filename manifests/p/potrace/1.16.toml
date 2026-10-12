@@ -1,0 +1,16 @@
+name = "potrace"
+version = "1.16"
+description = "Transforming bitmaps into vector graphics."
+homepage = "https://potrace.sourceforge.net/"
+license = "GPL-2.0-or-later"
+kind = "app"
+extract_dir = "potrace-1.16.win64"
+bin = ["potrace.exe", "mkbitmap.exe"]
+
+[source.x64]
+url = "https://potrace.sourceforge.net/download/1.16/potrace-1.16.win64.zip"
+sha256 = "63699f9885b5ed053977fd94452a7bdbb77ee62b77bf28a3f17b2f14b9b9c65d"
+
+[autoupdate]
+checkver = "Release ([\\d.]+)\\."
+url_template = { x64 = "https://potrace.sourceforge.net/download/$version/potrace-$version.win64.zip" }

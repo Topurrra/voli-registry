@@ -1,7 +1,7 @@
 name = "surge"
 version = "0.12.2"
 description = "Blazing fast TUI download manager built in Go for power users"
-homepage = "https://github.com/SurgeDM/Surge"
+homepage = "https://surgedm.github.io"
 license = "MIT"
 kind = "app"
 bin = ["surge.exe"]

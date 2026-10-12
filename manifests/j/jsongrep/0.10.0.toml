@@ -1,7 +1,7 @@
 name = "jsongrep"
 version = "0.10.0"
 description = "JSONPath-inspired query language for JSON, YAML, TOML, and other serialization formats."
-homepage = "https://github.com/micahkepe/jsongrep"
+homepage = "https://micahkepe.com/jsongrep/playground"
 license = "MIT"
 kind = "app"
 extract_dir = "jsongrep-0.10.0-x86_64-pc-windows-msvc"

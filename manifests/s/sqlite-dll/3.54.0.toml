@@ -1,0 +1,17 @@
+name = "sqlite-dll"
+version = "3.54.0"
+description = "Precompiled DLLs for SQLite, a small, fast, self-contained, high-reliability and full-featured SQL database engine"
+homepage = "https://www.sqlite.org/"
+license = "Public Domain"
+kind = "app"
+
+[source.x64]
+url = "https://www.sqlite.org/2026/sqlite-dll-win-x64-3540000.zip"
+sha256 = "a548a9b5d8f695e669f71bcc4669fdc8b3e1eb79995761c81a9128262126f71c"
+
+[source.arm64]
+url = "https://www.sqlite.org/2026/sqlite-dll-win-arm64-3540000.zip"
+sha256 = "f6a3b5b0c88208da4343e2ac8f7a822d94d6ce12edd5f1682f4ce46a27dccd88"
+
+[autoupdate]
+checkver = { url = "https://www.sqlite.org/download.html", regex = "PRODUCT,([\\d.]+),(?<year>\\d+)/sqlite-dll-win-x64-(?<clean>\\d+)\\.zip" }

@@ -1,7 +1,7 @@
 name = "aztfexport"
 version = "0.20.0"
 description = "A tool to bring your existing Azure resources under the management of Terraform."
-homepage = "https://github.com/Azure/aztfexport"
+homepage = "https://azure.github.io/aztfexport/"
 license = "MIT"
 kind = "app"
 bin = ["aztfexport.exe"]

@@ -1,0 +1,20 @@
+name = "c3"
+version = "0.8.5"
+description = "The Ergonomic, Safe and Familiar Evolution of C"
+homepage = "https://c3-lang.org"
+license = "LGPL-3.0-or-later,MIT"
+kind = "app"
+extract_dir = "c3"
+bin = ["c3c.exe"]
+
+[source.x64]
+url = "https://github.com/c3lang/c3c/releases/download/v0.8.5/c3-windows.zip"
+sha256 = "8bb28adcd3702d7cc2bcde013718a100cbf5925c7ebcea08bcb45dc6dbf1a161"
+
+[source.arm64]
+url = "https://github.com/c3lang/c3c/releases/download/v0.8.5/c3-windows-aarch64.zip"
+sha256 = "223ba5f0f385f92971300b73090aecad171a952b9622061c615df0657576c3bc"
+
+[autoupdate]
+checkver = { github = "c3lang/c3c" }
+url_template = { x64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows.zip", arm64 = "https://github.com/c3lang/c3c/releases/download/v$version/c3-windows-aarch64.zip" }

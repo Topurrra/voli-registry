@@ -1,7 +1,7 @@
 name = "presenterm"
 version = "0.16.1"
 description = "Terminal-based slideshow tool"
-homepage = "https://github.com/mfontanini/presenterm"
+homepage = "https://mfontanini.github.io/presenterm/"
 license = "BSD-2-Clause"
 kind = "app"
 extract_dir = "presenterm-0.16.1"

@@ -1,7 +1,7 @@
 name = "hygen"
 version = "6.2.11"
 description = "The scalable code generator that saves you time"
-homepage = "https://www.hygen.io/"
+homepage = "https://www.hygen.io"
 license = "MIT"
 kind = "app"
 bin = ["hygen.exe"]

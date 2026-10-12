@@ -1,0 +1,17 @@
+name = "openliberty"
+version = "26.0.0.10"
+description = "Server runtime available to JavaTM developers"
+homepage = "https://openliberty.io/"
+license = "EPL-1.0"
+kind = "app"
+extract_dir = "wlp"
+bin = ["bin\\binaryLog.bat", { name = "wlp-client", path = "bin\\client.bat" }, "bin\\ddlGen.bat", "bin\\pluginUtility.bat", "bin\\productInfo.bat", "bin\\securityUtility.bat", { name = "wlp", path = "bin\\server.bat" }, "bin\\serverSchemaGen.bat", "bin\\springBootUtility.bat"]
+persist = ["usr"]
+
+[source.x64]
+url = "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.10/openliberty-26.0.0.10.zip"
+sha256 = "b90cd90d27787f5f81f90761b721547c29e0b7f3f8428700c7fe1b55693d5473"
+
+[autoupdate]
+checkver = { url = "https://openliberty.io/api/builds/data", regex = "openliberty-([\\d.]+)\\.zip" }
+url_template = "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/$version/openliberty-$version.zip"

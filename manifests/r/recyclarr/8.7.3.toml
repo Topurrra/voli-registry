@@ -1,0 +1,19 @@
+name = "recyclarr"
+version = "8.7.3"
+description = "A command-line application that will automatically synchronize recommended settings from the TRaSH guides to your Sonarr/Radarr instances."
+homepage = "https://recyclarr.dev/"
+license = "MIT"
+kind = "app"
+bin = ["recyclarr.exe"]
+
+[source.x64]
+url = "https://github.com/recyclarr/recyclarr/releases/download/v8.7.3/recyclarr-win-x64.zip"
+sha256 = "162bfccb4f5b71baed662e6bb383aa8180135eeda2c8a70f4ab48633fd9b03e9"
+
+[source.arm64]
+url = "https://github.com/recyclarr/recyclarr/releases/download/v8.7.3/recyclarr-win-arm64.zip"
+sha256 = "68ac478ea3bc12dae4e8dcd7f0befcb9219bb97999edca7aa1fe3480965d1e5f"
+
+[autoupdate]
+checkver = { github = "recyclarr/recyclarr" }
+url_template = { x64 = "https://github.com/recyclarr/recyclarr/releases/download/v$version/recyclarr-win-x64.zip", arm64 = "https://github.com/recyclarr/recyclarr/releases/download/v$version/recyclarr-win-arm64.zip" }

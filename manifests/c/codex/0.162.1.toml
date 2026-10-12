@@ -1,0 +1,19 @@
+name = "codex"
+version = "0.162.1"
+description = "OpenAI's Codex AI coding assistant"
+homepage = "https://github.com/openai/codex"
+license = "Apache-2.0"
+kind = "app"
+bin = [{ name = "codex", path = "bin\\codex.exe" }]
+
+[source.x64]
+url = "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-x86_64-pc-windows-msvc.tar.gz"
+sha256 = "3e993a82ff393f4530558dcaadb36bb4f0fd1ea7243e621348e40b469f900f6a"
+
+[source.arm64]
+url = "https://github.com/openai/codex/releases/download/rust-v0.162.1/codex-package-aarch64-pc-windows-msvc.tar.gz"
+sha256 = "513db87ad85a52acb76e552e97caed87813e8ca3b861a1d69c9d5b1638bdb74b"
+
+[autoupdate]
+checkver = { github = "openai/codex" }
+url_template = { x64 = "https://github.com/openai/codex/releases/download/rust-v$version/codex-package-x86_64-pc-windows-msvc.tar.gz", arm64 = "https://github.com/openai/codex/releases/download/rust-v$version/codex-package-aarch64-pc-windows-msvc.tar.gz" }

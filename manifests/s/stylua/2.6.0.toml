@@ -1,0 +1,15 @@
+name = "stylua"
+version = "2.6.0"
+description = "An opinionated Lua code formatter"
+homepage = "https://github.com/JohnnyMorganz/StyLua"
+license = "MPL-2.0"
+kind = "app"
+bin = ["stylua.exe"]
+
+[source.x64]
+url = "https://github.com/JohnnyMorganz/StyLua/releases/download/v2.6.0/stylua-windows-x86_64.zip"
+sha256 = "fd13b4014e3b779c244bbc03f2c282e357f15bc526de6a6fa5ecbc447538313c"
+
+[autoupdate]
+checkver = { github = "JohnnyMorganz/StyLua" }
+url_template = { x64 = "https://github.com/JohnnyMorganz/StyLua/releases/download/v$version/stylua-windows-x86_64.zip" }

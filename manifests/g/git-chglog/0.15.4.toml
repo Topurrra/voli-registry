@@ -1,7 +1,7 @@
 name = "git-chglog"
 version = "0.15.4"
 description = "Changelog generator implemented in Go (Golang)"
-homepage = "https://github.com/git-chglog/git-chglog"
+homepage = "https://git-cliff.org/"
 license = "MIT"
 kind = "app"
 bin = ["git-chglog.exe"]

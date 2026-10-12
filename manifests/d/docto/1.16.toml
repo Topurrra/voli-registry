@@ -1,7 +1,7 @@
 name = "docto"
 version = "1.16"
 description = "Simple command line utility for converting .doc & .xls files to any supported format."
-homepage = "https://github.com/tobya/DocTo"
+homepage = "https://tobya.github.io/DocTo"
 license = "MIT"
 kind = "app"
 bin = ["docto.exe"]

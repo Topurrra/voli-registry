@@ -1,0 +1,15 @@
+name = "lean-ctx"
+version = "3.11.4"
+description = "Context intelligence layer for AI agents."
+homepage = "https://leanctx.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["lean-ctx.exe"]
+
+[source.x64]
+url = "https://github.com/yvgude/lean-ctx/releases/download/v3.11.4/lean-ctx-x86_64-pc-windows-msvc.zip"
+sha256 = "306cd503af93572ab8d1b27f7d4a851e54a2336897b1db98f46aa479b8d554f7"
+
+[autoupdate]
+checkver = { github = "yvgude/lean-ctx" }
+url_template = { x64 = "https://github.com/yvgude/lean-ctx/releases/download/v$version/lean-ctx-x86_64-pc-windows-msvc.zip" }

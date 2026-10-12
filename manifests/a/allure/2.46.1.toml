@@ -1,7 +1,7 @@
 name = "allure"
 version = "2.46.1"
 description = "A flexible lightweight multi-language test report tool"
-homepage = "https://github.com/allure-framework/allure2"
+homepage = "https://allurereport.org/"
 license = "Apache-2.0"
 kind = "app"
 extract_dir = "allure-2.46.1"

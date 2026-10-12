@@ -1,7 +1,7 @@
 name = "seqcli"
 version = "2026.1.02650"
 description = "Seq command-line client"
-homepage = "https://github.com/datalust/seqcli"
+homepage = "https://datalust.co/seq"
 license = "Apache-2.0"
 kind = "app"
 bin = ["seqcli.exe"]

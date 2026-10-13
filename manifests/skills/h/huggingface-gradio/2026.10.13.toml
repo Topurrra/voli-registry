@@ -1,0 +1,10 @@
+name = "huggingface-gradio"
+version = "2026.10.13"
+description = "Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots."
+homepage = "https://github.com/huggingface/skills/tree/c3ff942be3e07116b475253f0a8fc4f54682c1a8/skills/huggingface-gradio"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-huggingface-skills-v2026.10.13/huggingface-skills-2026.10.13-huggingface-gradio.zip"
+sha256 = "6e548ae03c59bf534e53ec24a2b1a9ba9738b6030328d1274d7a2920b647f3a9"

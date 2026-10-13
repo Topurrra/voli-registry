@@ -1,0 +1,10 @@
+name = "effective-agent-skills"
+version = "2026.10.13"
+description = "Write, review, and debug agent skills. Use when creating or editing SKILL.md files, improving skill structure, or diagnosing invocation and execution problems."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/skill-authoring/effective-agent-skills"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-effective-agent-skills.zip"
+sha256 = "4d7a0a909842ccd16b6bfdcdb26a94009d6f405266e1c3115cd53bcc83cfe53a"

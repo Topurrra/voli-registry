@@ -1,0 +1,10 @@
+name = "teach"
+version = "2026.10.13"
+description = "Teach the user a new skill or concept, within this workspace."
+homepage = "https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.13/mattpocock-skills-2026.10.13-teach.zip"
+sha256 = "ff54e84ae2f5bddd9edd77727e114c5fba6b1083182cafab853b1fb91e330039"

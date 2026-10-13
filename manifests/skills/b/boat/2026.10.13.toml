@@ -1,0 +1,10 @@
+name = "boat"
+version = "2026.10.13"
+description = "Manage Boat (boat.dev, formerly Box by Ascii) cloud sandboxes via API, CLI, and SSH. Use for provisioning, environments, secrets, templates, snapshots, stop/resume/fork, or running BB and coding agents on Boat."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/ops-and-setup/boat"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-boat.zip"
+sha256 = "334fb1d56aeea44b301488d3604e20bd4057ebac8b1de9e973b543e1b00f7c75"

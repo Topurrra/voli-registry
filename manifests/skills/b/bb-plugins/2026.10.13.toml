@@ -1,0 +1,10 @@
+name = "bb-plugins"
+version = "2026.10.13"
+description = "Build, install, and debug bb plugins. Use when the user wants a bb plugin, a sidebar panel, a bb CLI subcommand, an agent tool, a theme, a provider, or to extend bb itself. For running threads and the core bb CLI, use bb-cli instead."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/agent-orchestration/bb-plugins"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-bb-plugins.zip"
+sha256 = "8e1ae140dd609cbe79531c92162ed7f790808a211ef2420bc882336d35cfd7ea"

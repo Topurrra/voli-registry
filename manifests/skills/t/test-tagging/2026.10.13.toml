@@ -1,0 +1,10 @@
+name = "test-tagging"
+version = "2026.10.13"
+description = "Classifies existing tests by standard traits and reports their distribution. USE FOR: tagging all tests with category attributes, categorizing/tagging/ labeling each test, compare happy vs error paths, audit the test mix, describe coverage shape by test type, or tag then verify the project builds. Read bodies when names mislead. Apply canonical attributes; otherwise report only. DO NOT USE FOR: requests owned by test-anti-patterns, coverage-analysis, crap-score, test-gap-analysis, code-testing, or migration skills."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet-test/skills/test-tagging"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-test-tagging.zip"
+sha256 = "12e4df7e500d0d9325d40c52a953a40dff1ffee122042af7f702f1a89e34a264"

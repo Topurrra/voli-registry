@@ -1,0 +1,10 @@
+name = "herdr"
+version = "2026.10.13"
+description = "Operate and coordinate AI agents in Herdr workspaces in Ghostty. Use when the user mentions Herdr or asks to inspect, message, wait for, or coordinate its agents. Excludes cmux and ordinary terminal sessions."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/agent-orchestration/herdr"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-herdr.zip"
+sha256 = "2bcec31d724f1540b04f06a39ff6acbc049f14c96962f902fe2bbd0beebaffd1"

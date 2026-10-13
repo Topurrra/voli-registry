@@ -1,0 +1,10 @@
+name = "browser-use"
+version = "2026.10.13"
+description = "Direct browser control via CDP for web interaction: automation, scraping, testing, screenshots, and site/app work."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/research-and-web/browser-use"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-browser-use.zip"
+sha256 = "084d65ab5d70e2b37965f4417312b29563345b538001993fb85c1f429305e0ec"

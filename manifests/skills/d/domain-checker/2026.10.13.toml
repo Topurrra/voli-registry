@@ -1,0 +1,10 @@
+name = "domain-checker"
+version = "2026.10.13"
+description = "Check domain registration in batches using public RDAP APIs, without keys or login. Use only when the user explicitly invokes /domain-checker."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/research-and-web/domain-checker"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-domain-checker.zip"
+sha256 = "285ba6f57b3b73ef7269373229a55bac18dff5361663381acae057fa82ded4c0"

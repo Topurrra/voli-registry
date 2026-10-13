@@ -1,0 +1,10 @@
+name = "prototype"
+version = "2026.10.13"
+description = "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like."
+homepage = "https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.13/mattpocock-skills-2026.10.13-prototype.zip"
+sha256 = "2057625748a461681bf378d34f854e36d1275bcb9f6881d1c563936d858abba3"

@@ -1,0 +1,10 @@
+name = "build-perf-baseline"
+version = "2026.10.13"
+description = "Establish MSBuild/.NET build performance baselines before optimizing. USE FOR: a .NET build or solution that is slow or has build-performance concerns; cold, warm, incremental, or no-op measurements; before/after comparisons; CI build output caching; static graph build decisions; artifacts output; and dependency graph trimming. Start here before build-perf-diagnostics, incremental-build, or build-parallelism. DO NOT USE for webpack, npm, JavaScript bundlers, or other non-MSBuild build systems. For detailed target/task/analyzer bottleneck analysis after baselining, use build-perf-diagnostics."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet-msbuild/skills/build-perf-baseline"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-build-perf-baseline.zip"
+sha256 = "01372839a96f62dddf8a01d319a390004d31bfd9fc4e1811c1b5e573612e554e"

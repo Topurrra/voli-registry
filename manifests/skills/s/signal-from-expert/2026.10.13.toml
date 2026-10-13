@@ -1,0 +1,10 @@
+name = "signal-from-expert"
+version = "2026.10.13"
+description = "Compare the user's notes with an expert's work on a topic. Return relevant exact quotes, source locations, and at least one gap in the user's thinking. Use only when /signal-from-expert is explicitly invoked."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/thinking-and-docs/signal-from-expert"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-signal-from-expert.zip"
+sha256 = "8aff38894097dec05828000b23db82ef683cb05adac8464741ebe9ad4e4b4a8c"

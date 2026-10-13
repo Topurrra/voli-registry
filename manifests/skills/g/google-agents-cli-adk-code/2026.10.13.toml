@@ -1,0 +1,10 @@
+name = "google-agents-cli-adk-code"
+version = "2026.10.13"
+description = "This skill should be used when the user wants to \"write agent code\", \"build an agent with ADK\", \"add a tool\", \"create a callback\", \"define an agent\", \"use state management\" — in a project that needs ADK (Agent Development Kit) API patterns and code examples. It provides a quick reference for agent types, tool definitions, orchestration patterns, callbacks, state management, the graph Workflow API, and reference recipes to study. Do NOT use for scaffolding (use google-agents-cli-scaffold) or deployment (use google-agents-cli-deploy)."
+homepage = "https://github.com/google/agents-cli/tree/d445570c61fd446487ea6623c5635b23aded237f/skills/google-agents-cli-adk-code"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.13/google-agents-cli-2026.10.13-google-agents-cli-adk-code.zip"
+sha256 = "488557a36f7664841540a6cf452f3d8e75aab81144b1a45bdaec72e819a5b2fe"

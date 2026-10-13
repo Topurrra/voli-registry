@@ -1,0 +1,10 @@
+name = "implement"
+version = "2026.10.13"
+description = "Implement a piece of work based on a spec or set of tickets."
+homepage = "https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.13/mattpocock-skills-2026.10.13-implement.zip"
+sha256 = "9d462e7a7fda941686afd685e05c9eab5a3808ad4ad3915eac3795c236115e53"

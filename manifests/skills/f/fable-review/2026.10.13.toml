@@ -1,0 +1,10 @@
+name = "fable-review"
+version = "2026.10.13"
+description = "Launch an independent Fable code review and return it verbatim. Use only when the user explicitly invokes /fable-review."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/agent-orchestration/fable-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-fable-review.zip"
+sha256 = "8e2e8523563fa21a434103420995c358e8fffa62d9a766299004dd36072ca64f"

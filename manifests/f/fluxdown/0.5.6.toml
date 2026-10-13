@@ -1,0 +1,20 @@
+name = "fluxdown"
+version = "0.5.6"
+description = "A Rust-powered download manager with HTTP, FTP, BitTorrent and HLS/DASH streaming support."
+homepage = "https://fluxdown.zerx.dev"
+license = "AGPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "flux_down.exe", name = "FluxDown" }]
+persist = ["portable_data"]
+
+[source.x64]
+url = "https://github.com/zerx-lab/FluxDown/releases/download/v0.5.6/FluxDown-0.5.6-windows-x64-portable.zip"
+sha256 = "f3f84f422a22faf91b801890e73093500fa18a9eeccd1225f352b26029943d91"
+
+[source.arm64]
+url = "https://github.com/zerx-lab/FluxDown/releases/download/v0.5.6/FluxDown-0.5.6-windows-arm64-portable.zip"
+sha256 = "eb9631779d5859df5ef7458db3ab7483b12d88198adc1d73132578425b91f3ba"
+
+[autoupdate]
+checkver = { github = "zerx-lab/FluxDown" }
+url_template = { x64 = "https://github.com/zerx-lab/FluxDown/releases/download/v$version/FluxDown-$version-windows-x64-portable.zip", arm64 = "https://github.com/zerx-lab/FluxDown/releases/download/v$version/FluxDown-$version-windows-arm64-portable.zip" }

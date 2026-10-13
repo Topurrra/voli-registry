@@ -1,0 +1,22 @@
+name = "designcraft"
+version = "0.7.1"
+description = "Page layout and publishing; an open-source, clean-room reimplementation of Adobe InDesign, rebuilt in pure Rust"
+homepage = "https://getartcraft.com/apps/designcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["designcraft-cli.exe"]
+shortcuts = [{ target = "designcraft.exe", name = "DesignCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/designcraft/releases/download/v0.7.1/designcraft-0.7.1-windows-x64-portable.zip"
+sha256 = "b3db17ac0fc6e1db54d60c5491b5c1d6874459e2867495eaa74b5a8c56e59077"
+extract_dir = "designcraft-0.7.1-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/designcraft/releases/download/v0.7.1/designcraft-0.7.1-windows-arm64-portable.zip"
+sha256 = "ae6d0a1d0ebed74ea74f4a20d8137b2749f5a0635c5766a97908ca081cd6820d"
+extract_dir = "designcraft-0.7.1-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/designcraft" }
+url_template = { x64 = "https://github.com/storytold/designcraft/releases/download/v$version/designcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/designcraft/releases/download/v$version/designcraft-$version-windows-arm64-portable.zip" }

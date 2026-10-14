@@ -1,0 +1,17 @@
+name = "archisteamfarm"
+version = "6.3.10.6"
+description = "C# Farming Steam cards from multiple accounts simultaneously."
+homepage = "https://github.com/JustArchiNET/ArchiSteamFarm"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ArchiSteamFarm.exe"]
+shortcuts = [{ target = "ArchiSteamFarm.exe", name = "ArchiSteamFarm" }]
+persist = ["config", "plugins"]
+
+[source.x64]
+url = "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/6.3.10.6/ASF-win-x64.zip"
+sha256 = "2f620f48a8a0fd35f16f0b190be4f03e1b8a46cb7a81a463a6156762fabc6295"
+
+[autoupdate]
+checkver = { github = "JustArchiNET/ArchiSteamFarm" }
+url_template = { x64 = "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/$version/ASF-win-x64.zip" }

@@ -1,0 +1,22 @@
+name = "filmcraft"
+version = "0.7.2"
+description = "Video editing, color and sound; an open-source, clean-room reimplementation of Adobe Premiere Pro, rebuilt in pure Rust"
+homepage = "https://getartcraft.com/apps/filmcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["filmcraft-cli.exe"]
+shortcuts = [{ target = "filmcraft.exe", name = "FilmCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-0.7.2-windows-x64-portable.zip"
+sha256 = "8e22fabdf2f802573d3af4ad9993c05212dead5e933efda0fa290e825313cde7"
+extract_dir = "filmcraft-0.7.2-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/filmcraft/releases/download/v0.7.2/filmcraft-0.7.2-windows-arm64-portable.zip"
+sha256 = "82e6f95fec0cdc44b06f41b98a6bb1e9b538ee4f8c3cd412f89ddfdd464b93c2"
+extract_dir = "filmcraft-0.7.2-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/filmcraft" }
+url_template = { x64 = "https://github.com/storytold/filmcraft/releases/download/v$version/filmcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/filmcraft/releases/download/v$version/filmcraft-$version-windows-arm64-portable.zip" }

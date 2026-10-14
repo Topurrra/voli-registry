@@ -1,0 +1,10 @@
+name = "git-guardrails-claude-code"
+version = "2026.10.13"
+description = "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code."
+homepage = "https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.13/mattpocock-skills-2026.10.13-git-guardrails-claude-code.zip"
+sha256 = "e3d446f2f8b3d5c1cc7cf7491b14e25659c22116ccfa8eff52a05bbcf61a434d"

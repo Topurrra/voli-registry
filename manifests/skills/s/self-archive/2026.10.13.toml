@@ -1,0 +1,10 @@
+name = "self-archive"
+version = "2026.10.13"
+description = "Archive the current thread and release its runtime. Use when the user explicitly asks to \"self-archive\", \"archive yourself\", or \"archive this thread\"."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/agent-orchestration/self-archive"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-self-archive.zip"
+sha256 = "4af41d800ed21c805d227344ff9364aca3874fc4451e8b7a56583b068d6d564a"

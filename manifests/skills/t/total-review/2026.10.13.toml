@@ -1,0 +1,10 @@
+name = "total-review"
+version = "2026.10.13"
+description = "Run four independent Max-effort reviews (Fable 5.1, Opus 5.5, GPT-6 Astra, GPT-6.1 Sol), merge their findings, and fix only what the user approves. Manual only: run when a human types /total-review; agents must never invoke it on their own."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/agent-orchestration/total-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-total-review.zip"
+sha256 = "ad73bce7efd951d318b1d7f24a248753158d7330d65f2258f4e64cabf353d2c3"

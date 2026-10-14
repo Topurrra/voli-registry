@@ -1,0 +1,10 @@
+name = "leanback-to-compose-tv-migration"
+version = "2026.10.13"
+description = "Provides instructions and architectural patterns for migrating Android"
+homepage = "https://github.com/android/skills/tree/2ee8c61ff64f29a19213f116807c79740749dccf/tv/leanback-to-compose-tv-migration"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.13/android-skills-2026.10.13-leanback-to-compose-tv-migration.zip"
+sha256 = "70a4df92e982fa305d19a01ae047cda32e22c70a8231d918e1f892151fafc81f"

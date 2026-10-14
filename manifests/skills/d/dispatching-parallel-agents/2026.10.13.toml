@@ -1,0 +1,10 @@
+name = "dispatching-parallel-agents"
+version = "2026.10.13"
+description = "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
+homepage = "https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/dispatching-parallel-agents"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.13/obra-superpowers-2026.10.13-dispatching-parallel-agents.zip"
+sha256 = "7add46676defa39ac38deba73bb1fdd0f14eb7860401bacdad6d589430e2734f"

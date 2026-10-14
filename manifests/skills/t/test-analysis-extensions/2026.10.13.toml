@@ -1,0 +1,10 @@
+name = "test-analysis-extensions"
+version = "2026.10.13"
+description = "Provides file paths to language-specific reference files for the test ANALYSIS skills (assertion-quality, test-anti-patterns, test-gap-analysis, test-smell-detection, test-tagging). Read this catalog to discover available extension files (e.g., dotnet.md for .NET/MSTest/xUnit/NUnit/TUnit, python.md for pytest/unittest, typescript.md for Jest/Vitest/Mocha, java.md for JUnit/TestNG, etc.). Do not invoke this reference-only skill — its bundled files are read by the quality agent and analysis skills needing framework-specific lookup tables (test markers, assertion APIs, skip annotations, sleep patterns, mystery guest indicators, integration markers, setup/teardown, tag-support capability)."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet-test/skills/test-analysis-extensions"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-test-analysis-extensions.zip"
+sha256 = "2825cf28695abe05451572841d11ab0cab0e1e132ed20bd1b91af53c3c47da04"

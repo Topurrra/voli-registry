@@ -1,0 +1,10 @@
+name = "save-idea"
+version = "2026.10.13"
+description = "Save ideas, observations, content topics, projects, and convictions in <ideas-repo>. Use when the user asks to capture an idea or insight. Adds to idea backlogs, not reminders or tasks."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/thinking-and-docs/save-idea"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-save-idea.zip"
+sha256 = "726d05b92800cd32b43bb01c6488bf2b8e43dc8b9cb2bb4bfd38fc1763025e17"

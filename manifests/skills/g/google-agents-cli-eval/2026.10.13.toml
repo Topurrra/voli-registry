@@ -1,0 +1,10 @@
+name = "google-agents-cli-eval"
+version = "2026.10.13"
+description = "This skill should be used when the user wants to \"run an evaluation\", \"evaluate my agent\", \"evaluate my ADK agent\", \"write an eval dataset\", \"analyze eval failures\", \"compare eval results\", \"optimize agent\", or needs guidance on the Gemini platform eval methodology and the Quality Flywheel. Covers eval metrics, dataset schema, LLM-as-judge scoring, and common failure causes. Applies to any agents-cli project, whatever framework the agent is written in. Do NOT use for agent API code patterns (ADK: use google-agents-cli-adk-code), deployment (use google-agents-cli-deploy), or project scaffolding (use google-agents-cli-scaffold)."
+homepage = "https://github.com/google/agents-cli/tree/d445570c61fd446487ea6623c5635b23aded237f/skills/google-agents-cli-eval"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.13/google-agents-cli-2026.10.13-google-agents-cli-eval.zip"
+sha256 = "dc37c06dafb4617204d3c91001b66a670e0fe763b2f1357ed1ddcc4ca7589b0e"

@@ -1,0 +1,10 @@
+name = "brainstorming"
+version = "2026.10.13"
+description = "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation)."
+homepage = "https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/brainstorming"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.13/obra-superpowers-2026.10.13-brainstorming.zip"
+sha256 = "74125bfb94a7ad5d2118542469a8bab1eeb70ff597ea4bdbc3de7463123e9005"

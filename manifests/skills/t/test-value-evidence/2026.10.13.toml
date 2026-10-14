@@ -1,0 +1,10 @@
+name = "test-value-evidence"
+version = "2026.10.13"
+description = "Assess tests for an identified code or test change, feature, PR or commit. USE FOR: review changed behavior or regression tests, prove pre-fix/missing behavior is detected, revision-bound red-green evidence. Polyglot. DO NOT USE without an identified change: hypothetical mutations or general suite blind spots (test-gap-analysis). Also exclude per-test readiness/A-F grades (grade-tests), coverage (coverage-analysis), new suites (code-testing), or mutation engines."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet-test/skills/test-value-evidence"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-test-value-evidence.zip"
+sha256 = "4824bfea5e54ce8f2e3437961f84df4d77fe5033b071e7594d8009a2ee0e383c"

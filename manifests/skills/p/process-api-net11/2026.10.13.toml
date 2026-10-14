@@ -1,0 +1,10 @@
+name = "process-api-net11"
+version = "2026.10.13"
+description = "Provides guidance on the new System.Diagnostics.Process APIs introduced in .NET 11: Process.Run, Process.RunAndCaptureText, Process.StartAndForget, Process.ReadAllText/Bytes/Lines, KillOnParentExit, InheritedHandles, and StartDetached. USE FOR: starting, orchestrating, or capturing output from external processes in applications targeting net11.0 or later. DO NOT USE FOR: applications targeting .NET 10 or earlier, or basic pre-.NET 11 Process.Start usage without new APIs."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet11/skills/process-api-net11"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-process-api-net11.zip"
+sha256 = "29b7894a27ea4a41ab0e973058cbb7005206cfbdb9cf05d6bdfc493d3fedc9c1"

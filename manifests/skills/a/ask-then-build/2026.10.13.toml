@@ -1,0 +1,10 @@
+name = "ask-then-build"
+version = "2026.10.13"
+description = "Clarify a feature, change, or refactor through questions, then write a build prompt for another agent. Use for /ask-then-build or requests to ask questions before producing an implementation prompt."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/thinking-and-docs/ask-then-build"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-ask-then-build.zip"
+sha256 = "5dca09274c3ee2ca20bcc8b53eb6cedd676afd5e0b89ce4ecbc3105ac57585fd"

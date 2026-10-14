@@ -1,0 +1,10 @@
+name = "code-testing-agent"
+version = "2026.10.13"
+description = "Legacy compatibility alias for the code-testing skill. Do not self-activate for user requests and do not treat this name as a custom agent. When invoked explicitly by older instructions, load code-testing and follow it instead."
+homepage = "https://github.com/dotnet/skills/tree/3b4ec85cfe6dddc62564db6783593ca1cc293cd0/plugins/dotnet-test/skills/code-testing-agent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.13/dotnet-skills-2026.10.13-code-testing-agent.zip"
+sha256 = "64ba84c1ec74fa4313ecfccec20dad3275d137dfa5beeb1b1c8926a75aa693f5"

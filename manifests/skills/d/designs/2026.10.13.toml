@@ -1,0 +1,10 @@
+name = "designs"
+version = "2026.10.13"
+description = "Show 4 better, new design options as separate real image renders. Use for \"designs\" or when the user asks for new design ideas."
+homepage = "https://github.com/davidondrej/skills/tree/e5754e9b8c27026ccb6bac35aa4423171d3c7871/skills/thinking-and-docs/designs"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.13/davidondrej-skills-2026.10.13-designs.zip"
+sha256 = "e197f87e14a91f9220bfc5a202c5db57187020049ebc69c057ba7e1c6c3b721b"

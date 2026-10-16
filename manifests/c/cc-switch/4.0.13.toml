@@ -1,0 +1,19 @@
+name = "cc-switch"
+version = "4.0.13"
+description = "A desktop all-in-one assistant tool for AI coding agents."
+homepage = "https://ccswitch.io"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "cc-switch.exe", name = "CC-Switch" }]
+
+[source.x64]
+url = "https://github.com/farion1231/cc-switch/releases/download/v4.0.13/CC-Switch-v4.0.13-Windows-Portable.zip"
+sha256 = "b4381c718ec958df47a5406840eec73da09cf07bacdd6868ee321f09fe172829"
+
+[source.arm64]
+url = "https://github.com/farion1231/cc-switch/releases/download/v4.0.13/CC-Switch-v4.0.13-Windows-arm64-Portable.zip"
+sha256 = "532554ae8da8074f309da79e6bb44cc0b5ca3d2c7e5f529ba993af67eb590000"
+
+[autoupdate]
+checkver = { github = "farion1231/cc-switch" }
+url_template = { x64 = "https://github.com/farion1231/cc-switch/releases/download/v$version/CC-Switch-v$version-Windows-Portable.zip", arm64 = "https://github.com/farion1231/cc-switch/releases/download/v$version/CC-Switch-v$version-Windows-arm64-Portable.zip" }

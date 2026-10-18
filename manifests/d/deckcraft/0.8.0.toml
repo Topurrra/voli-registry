@@ -1,0 +1,22 @@
+name = "deckcraft"
+version = "0.8.0"
+description = "Presentations and slide shows; an open-source, clean-room reimplementation of Microsoft PowerPoint, rebuilt in pure Rust"
+homepage = "https://github.com/storytold/deckcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["deckcraft-cli.exe"]
+shortcuts = [{ target = "deckcraft.exe", name = "DeckCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/deckcraft/releases/download/v0.8.0/deckcraft-0.8.0-windows-x64-portable.zip"
+sha256 = "5fbcf18b6cd7e95c3c371049ae0bb77d2c6e62b0ac1b8f009fe8228d9aed9b17"
+extract_dir = "deckcraft-0.8.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/deckcraft/releases/download/v0.8.0/deckcraft-0.8.0-windows-arm64-portable.zip"
+sha256 = "0a0f7922204ec14b7dd63f423205a631cd8137269bf9492db322a42612055423"
+extract_dir = "deckcraft-0.8.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/deckcraft" }
+url_template = { x64 = "https://github.com/storytold/deckcraft/releases/download/v$version/deckcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/deckcraft/releases/download/v$version/deckcraft-$version-windows-arm64-portable.zip" }

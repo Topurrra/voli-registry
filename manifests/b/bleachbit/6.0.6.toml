@@ -1,0 +1,18 @@
+name = "bleachbit"
+version = "6.0.6"
+description = "Disk space cleaner, privacy manager, and computer system optimizer."
+homepage = "https://www.bleachbit.org/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "BleachBit-portable"
+bin = ["bleachbit_console.exe", { name = "bleachbit", path = "bleachbit_console.exe" }]
+shortcuts = [{ target = "bleachbit.exe", name = "BleachBit" }]
+persist = ["cleaners", "BleachBit.ini"]
+
+[source.x64]
+url = "https://download.bleachbit.org/BleachBit-6.0.6-portable.zip"
+sha256 = "285a53c01f95cf859250c1b612f27c2ff1247c5af53eb8e8c6744b374f1ed19e"
+
+[autoupdate]
+checkver = { url = "https://www.bleachbit.org/download/windows", regex = "BleachBit ([\\d.]+)" }
+url_template = "https://download.bleachbit.org/BleachBit-$version-portable.zip"

@@ -1,0 +1,19 @@
+name = "deja-vu"
+version = "0.22.2"
+description = "Persistent memory for coding agents"
+homepage = "https://vshulcz.github.io/deja-vu/"
+license = "MIT"
+kind = "app"
+bin = ["deja.exe"]
+
+[source.x64]
+url = "https://github.com/vshulcz/deja-vu/releases/download/v0.22.2/deja-vu_0.22.2_windows_amd64.zip"
+sha256 = "9ca83198c051a23cc38c6ea14e4cfc8f42584e9aa435d0b3bbcd59b89f7382d5"
+
+[source.arm64]
+url = "https://github.com/vshulcz/deja-vu/releases/download/v0.22.2/deja-vu_0.22.2_windows_arm64.zip"
+sha256 = "f1d7b06d0e4c737fc228ab88b804cc03129140aecfc44c8620fa1a88c1461f63"
+
+[autoupdate]
+checkver = { github = "vshulcz/deja-vu" }
+url_template = { x64 = "https://github.com/vshulcz/deja-vu/releases/download/v$version/deja-vu_$version_windows_amd64.zip", arm64 = "https://github.com/vshulcz/deja-vu/releases/download/v$version/deja-vu_$version_windows_arm64.zip" }

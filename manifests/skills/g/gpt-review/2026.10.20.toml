@@ -1,0 +1,10 @@
+name = "gpt-review"
+version = "2026.10.20"
+description = "Launch an independent GPT-6.1-Sol Max code review and return it verbatim. Use only when the user explicitly invokes /gpt-review."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/agent-orchestration/gpt-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-gpt-review.zip"
+sha256 = "65644702c513ed31b0bd07b2f64ceb40099aa0d8bbc7c703af4a6614ffe7ee49"

@@ -1,0 +1,10 @@
+name = "mtp-hot-reload"
+version = "2026.10.20"
+description = "Set up or recover MTP hot reload for a long-lived console-host edit/re-run loop in a Microsoft Testing Platform project. Use for explicit MTP console requests such as \"enable hot reload\", \"dotnet run to rerun on edit\", or unsupported/rude edits. Covers setup, run/watch, restarts, filters, and the VSTest no-mutation fallback. For one-time runs, exact commands, filter errors, TRX/dumps, or merely a failing test, use run-tests. Do not use when Test Explorer or an IDE should rerun tests without an MTP console host. Excludes editor integration, CI, and writing/debugging tests."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-test/skills/mtp-hot-reload"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-mtp-hot-reload.zip"
+sha256 = "9400c487f6c92bbdbf9df457fc06b7d246d78d4368daced2e505f6df13defb07"

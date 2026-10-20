@@ -1,0 +1,10 @@
+name = "better-prompt"
+version = "2026.10.20"
+description = "Rewrite a prompt into a deeper version of the same task, the way a top professional would approach it. Use only when explicitly invoked with /better-prompt."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/thinking-and-docs/better-prompt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-better-prompt.zip"
+sha256 = "eaa39902fbb58951a49913f16388df84b4af2377c9de53ef39c7ad3d4398ec3d"

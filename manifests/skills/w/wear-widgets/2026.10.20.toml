@@ -1,0 +1,10 @@
+name = "wear-widgets"
+version = "2026.10.20"
+description = "Create, migrate, update, and verify Wear OS widgets using Glance Wear"
+homepage = "https://github.com/android/skills/tree/ed0a2728ff531174383f910c649694de1eaebcd6/wear/wear-widgets"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.20/android-skills-2026.10.20-wear-widgets.zip"
+sha256 = "3c6b170d9ca019bffed3b97b5e73a7c5bf3b0f983e0d930d2ba24286d65d8170"

@@ -1,0 +1,10 @@
+name = "jetpack-compose-performance"
+version = "2026.10.20"
+description = "Diagnose and optimize Android Jetpack Compose UI code. Use this skill"
+homepage = "https://github.com/android/skills/tree/ed0a2728ff531174383f910c649694de1eaebcd6/jetpack-compose/jetpack-compose-performance"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.20/android-skills-2026.10.20-jetpack-compose-performance.zip"
+sha256 = "8b649c624c70dae355a76066980034618a896d98ead052bb75e14bc92dac8bde"

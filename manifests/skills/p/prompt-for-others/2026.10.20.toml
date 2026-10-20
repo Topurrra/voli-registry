@@ -1,0 +1,10 @@
+name = "prompt-for-others"
+version = "2026.10.20"
+description = "Write a prompt teammates can give their AI agents to apply a fix, upgrade, or setup change. Use only when the user explicitly invokes /prompt-for-others."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/ops-and-setup/prompt-for-others"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-prompt-for-others.zip"
+sha256 = "fe30b02c5e2fc390a68b51ff03fe8acfa20314947c9f0c83ef21384a67d8d1c2"

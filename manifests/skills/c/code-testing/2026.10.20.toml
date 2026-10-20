@@ -1,0 +1,10 @@
+name = "code-testing"
+version = "2026.10.20"
+description = "ALWAYS USE for test work that requires changes: write, add, generate, repair, or strengthen tests for existing code in xUnit, MSTest, NUnit, pytest, Vitest/Jest, Go, or another framework. Includes regression cases, failing or flaky tests, coverage-driven additions, and audit-then-fix requests. Focused work stays direct; broad or multi-stage work invokes test-engineer. DO NOT USE for only running tests, analysis-only audits, framework/platform migrations, a test blocked on a missing production seam (testability-obstacle), or MSTest API/configuration corrections that do not design new cases (writing-mstest-tests). Within an active test-engineer pipeline, reuse supplied guidance and do not re-enter this skill."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-test/skills/code-testing"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-code-testing.zip"
+sha256 = "4a2024709c613ae88fd61601ea5e5ea8f6cf9caa69b9c2342f6f78a79317845a"

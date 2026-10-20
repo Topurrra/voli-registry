@@ -1,0 +1,10 @@
+name = "navigation-3"
+version = "2026.10.20"
+description = "Learn how to install and migrate to Jetpack Navigation 3, and how to"
+homepage = "https://github.com/android/skills/tree/ed0a2728ff531174383f910c649694de1eaebcd6/navigation/navigation-3"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.20/android-skills-2026.10.20-navigation-3.zip"
+sha256 = "69170cf7efed403f1d0b9c833c23e17487ba750364e68f9f85f28c087260e923"

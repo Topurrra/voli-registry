@@ -1,0 +1,10 @@
+name = "decisions"
+version = "2026.10.20"
+description = "Ask the agent to list all choices it made during the current work that it is not confident of. Manual-only; the user must ask for it by name."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/thinking-and-docs/decisions"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-decisions.zip"
+sha256 = "64a0c8944be75a378d9b9688113e5dc5282a09feee14b1796c9980da553f4dd6"

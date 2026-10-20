@@ -1,0 +1,10 @@
+name = "build-perf-diagnostics"
+version = "2026.10.20"
+description = "Diagnose MSBuild bottlenecks from binlog timelines and Target/Task Performance Summaries after build-perf-baseline establishes measurements. USE FOR: unknown build slowness, RAR >5s, analyzers >30% of Csc, one target >50% of build time, node utilization <80%, excessive Copy tasks, finding restore overhead. DO NOT USE FOR: known repeated-restore fixes (use eliminate-redundant-restores), initial baselines (use build-perf-baseline), incremental rebuilds (use incremental-build), parallelism tuning (use build-parallelism), non-MSBuild builds."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-msbuild/skills/build-perf-diagnostics"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-build-perf-diagnostics.zip"
+sha256 = "196d2a37bd3f1ca5e3096cabc2aa158eceb35e08af467db2bf10e0ac3f69ae84"

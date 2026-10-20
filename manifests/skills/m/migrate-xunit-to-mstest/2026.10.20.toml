@@ -1,0 +1,10 @@
+name = "migrate-xunit-to-mstest"
+version = "2026.10.20"
+description = "Convert .NET tests from xUnit.net v2/v3 to MSTest v4 while preserving VSTest or MTP. Use for replacing xunit packages, Fact/Theory/InlineData/MemberData, assertions, IClassFixture/ICollectionFixture, ITestOutputHelper, TestContext cancellation, traits/Owner, skips, timeouts, and xUnit parallelization. Also use when a \"convert xUnit to MSTest\" request may already be migrated: inspect and report the no-op. Do not use for xUnit v2-to-v3, MSTest upgrades, NUnit/TUnit conversion, or runner-only VSTest-to-MTP migration."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-test-migration/skills/migrate-xunit-to-mstest"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-migrate-xunit-to-mstest.zip"
+sha256 = "0ea76e4060898ea6e1ee7b6277727e16d885b2109e5aa2be96d35f773e8036f1"

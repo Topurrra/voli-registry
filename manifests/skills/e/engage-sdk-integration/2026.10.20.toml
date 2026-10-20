@@ -1,0 +1,10 @@
+name = "engage-sdk-integration"
+version = "2026.10.20"
+description = "Helps developers integrate, debug, and resolve Play Engage SDK implementation"
+homepage = "https://github.com/android/skills/tree/ed0a2728ff531174383f910c649694de1eaebcd6/play/engage-sdk-integration"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.20/android-skills-2026.10.20-engage-sdk-integration.zip"
+sha256 = "5e28f3233a036e4405ad140ed349689fe48b876e9ac4ef74e804201db5b95a90"

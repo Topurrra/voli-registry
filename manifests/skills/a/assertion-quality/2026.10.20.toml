@@ -1,0 +1,10 @@
+name = "assertion-quality"
+version = "2026.10.20"
+description = "Analyze assertion quality, depth, variety, and false confidence in existing tests. ALWAYS USE when asked about weak, shallow, trivial, always-true, self-referential, assertion-free, presence/truthiness-only, or insufficiently diverse assertions, including MSTest, Jest, pytest, and Go. DO NOT USE for direct fixes: writing-mstest-tests owns supplied MSTest assertions; code-testing owns new cases. Use test-gap-analysis when asked whether tests would catch a production change, and test-anti-patterns for general severity-ranked audits."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-test/skills/assertion-quality"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-assertion-quality.zip"
+sha256 = "f0b08668a02390180ea2f5c0c4aad529df8cf05b364afbe0727832fabf49b21f"

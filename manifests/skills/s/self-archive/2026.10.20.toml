@@ -1,0 +1,10 @@
+name = "self-archive"
+version = "2026.10.20"
+description = "Archive the current Cloudroom thread and release its runtime. Use only when the user explicitly asks to self-archive, archive yourself, or archive this thread."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/agent-orchestration/self-archive"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-self-archive.zip"
+sha256 = "2b21868e7bfe2b8b565ef85ecd2ee48490bc687444112aa71a5b29136585c4fd"

@@ -1,0 +1,10 @@
+name = "eliminate-redundant-restores"
+version = "2026.10.20"
+description = "Remove repeated NuGet restores from multi-step .NET builds safely. USE FOR: build/test/publish steps that each restore, Directory.Build.rsp with -restore, safe restore suppression, NETSDK1004/NETSDK1047 after --no-restore. DO NOT USE FOR: slow first restore, only one restore, version or lock errors, unranked build slowness (use build-perf-baseline)."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-msbuild/skills/eliminate-redundant-restores"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-eliminate-redundant-restores.zip"
+sha256 = "9dd49b38625b3a2f38ad7350c3e987ac91e68ea53d79b04e2d12b3360c451b9b"

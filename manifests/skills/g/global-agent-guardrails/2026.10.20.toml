@@ -1,0 +1,10 @@
+name = "global-agent-guardrails"
+version = "2026.10.20"
+description = "Configure the shared guard against catastrophic shell commands in local AI agents. Use when changing block patterns, adding an agent or machine, or investigating why a command was or wasn't blocked."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/ops-and-setup/global-agent-guardrails"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-global-agent-guardrails.zip"
+sha256 = "a8f5c5a48c390032bc99d66d40d415dae471527d3e35614cdff95e1c3603fd84"

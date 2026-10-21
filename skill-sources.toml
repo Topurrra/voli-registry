@@ -25,8 +25,8 @@ roots = ["skills", "hf-mcp/skills"]
 [[source]]
 id = "android-skills"
 repo = "android/skills"
-revision = "2ee8c61ff64f29a19213f116807c79740749dccf"
-version = "2026.10.13"
+revision = "ed0a2728ff531174383f910c649694de1eaebcd6"
+version = "2026.10.20"
 license = "Apache-2.0"
 license_file = "LICENSE.txt"
 license_sha256 = "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
@@ -35,8 +35,8 @@ roots = ["."]
 [[source]]
 id = "dotnet-skills"
 repo = "dotnet/skills"
-revision = "3b4ec85cfe6dddc62564db6783593ca1cc293cd0"
-version = "2026.10.13"
+revision = "9386ed7c1148a7bef970aa0502371c982effa01c"
+version = "2026.10.20"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
@@ -76,8 +76,8 @@ roots = ["skills"]
 [[source]]
 id = "mattpocock-skills"
 repo = "mattpocock/skills"
-revision = "49dd158d1076134a641b33efb035946536778336"
-version = "2026.10.13"
+revision = "5beb35b040e3de97e54fa9e386d7e42d15c295c2"
+version = "2026.10.20"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
@@ -110,8 +110,8 @@ allowed_skill_license_sha256 = [
 [[source]]
 id = "davidondrej-skills"
 repo = "davidondrej/skills"
-revision = "e5754e9b8c27026ccb6bac35aa4423171d3c7871"
-version = "2026.10.13"
+revision = "979beb7077585445b13139f3182551cc30434749"
+version = "2026.10.20"
 license = "MIT"
 license_file = "LICENSE"
 license_sha256 = "1bd321a3b9cfa8d4af2105e20edd69d830df0b28e83a1b0255558f888e493981"

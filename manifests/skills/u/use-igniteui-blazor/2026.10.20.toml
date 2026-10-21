@@ -1,0 +1,10 @@
+name = "use-igniteui-blazor"
+version = "2026.10.20"
+description = "Add, configure, or review Ignite UI for Blazor Lite component support in Blazor applications. USE FOR: installing IgniteUI.Blazor.Lite or IgniteUI.Blazor.GridLite, registering AddIgniteUIBlazor() in Blazor Server, WASM, Hybrid, or split Blazor Web App projects, adding @using IgniteUI.Blazor.Controls, wiring the theme stylesheet, picking the right host page, locating the GridLite stylesheet path, explaining single-project vs split Server/Client Web App setup differences, and checking where an interactive render mode is needed for Ignite UI components to work. DO NOT USE FOR: general Blazor component authoring without Ignite UI, choosing app architecture or render mode from scratch (see create-blazor-project), JavaScript interop (see use-js-interop), authentication (see configure-auth), prerendering (see support-prerendering), or layout/component design questions that need no Ignite UI setup."
+homepage = "https://github.com/dotnet/skills/tree/9386ed7c1148a7bef970aa0502371c982effa01c/plugins/dotnet-blazor/skills/use-igniteui-blazor"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.20/dotnet-skills-2026.10.20-use-igniteui-blazor.zip"
+sha256 = "64437e9ea015ec117ce78fe3e8ae444105a768e1d70dabf0c0f96694a4f68f22"

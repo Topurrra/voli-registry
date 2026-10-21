@@ -1,0 +1,10 @@
+name = "stop-overthinking"
+version = "2026.10.20"
+description = "Manually-invoked skill that stops overthinking and forces a short, practical decision. Use only when the user explicitly invokes stop-overthinking."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/thinking-and-docs/stop-overthinking"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-stop-overthinking.zip"
+sha256 = "a195dd6d6c83c677da34fd5896d4233441ee4bbdd549dc201421af8395adc6b3"

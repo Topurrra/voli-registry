@@ -1,0 +1,10 @@
+name = "adaptive"
+version = "2026.10.20"
+description = "Instructions to make or update an app's UI so that it adapts to different"
+homepage = "https://github.com/android/skills/tree/ed0a2728ff531174383f910c649694de1eaebcd6/jetpack-compose/adaptive"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.20/android-skills-2026.10.20-adaptive.zip"
+sha256 = "cee95742eea69bb215da6a28b013fd9bf22560ccdf7ed3979b867d660b7b6ea3"

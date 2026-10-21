@@ -1,0 +1,10 @@
+name = "anti-sleep"
+version = "2026.10.20"
+description = "Keep a Mac awake for a set duration or while a process runs. Use only when the user explicitly invokes /anti-sleep."
+homepage = "https://github.com/davidondrej/skills/tree/979beb7077585445b13139f3182551cc30434749/skills/ops-and-setup/anti-sleep"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.20/davidondrej-skills-2026.10.20-anti-sleep.zip"
+sha256 = "3fa7b90457fab590c31b6d3fbfd9d63b9adfaa7200ed28e509cb28949dd291b2"

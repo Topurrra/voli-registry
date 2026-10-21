@@ -1,0 +1,15 @@
+name = "coredns"
+version = "1.15.0"
+description = "A DNS server/forwarder, that chains plugins."
+homepage = "https://coredns.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["coredns.exe"]
+
+[source.x64]
+url = "https://github.com/coredns/coredns/releases/download/v1.15.0/coredns_1.15.0_windows_amd64.tgz"
+sha256 = "94d21843a17d13d32e8eb122b4410ef5c68c549a623cf9340896759252f940bd"
+
+[autoupdate]
+checkver = { github = "coredns/coredns" }
+url_template = { x64 = "https://github.com/coredns/coredns/releases/download/v$version/coredns_$version_windows_amd64.tgz" }

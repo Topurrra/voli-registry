@@ -1,0 +1,19 @@
+name = "chezmoi"
+version = "2.73.3"
+description = "Manage your dotfiles across multiple diverse machines, securely."
+homepage = "https://chezmoi.io"
+license = "MIT"
+kind = "app"
+bin = ["chezmoi.exe"]
+
+[source.x64]
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi_2.73.3_windows_amd64.zip"
+sha256 = "e74f9948a9ac6a5d8b0c0896a9ea129a766d92e38b50b70ee1fa1dc077755d6e"
+
+[source.arm64]
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi_2.73.3_windows_arm64.zip"
+sha256 = "b49732852bb2f387dcb9379d742c3a6c3a908173a59e7981fd4da1572ca5ae7b"
+
+[autoupdate]
+checkver = { github = "twpayne/chezmoi" }
+url_template = { x64 = "https://github.com/twpayne/chezmoi/releases/download/v$version/chezmoi_$version_windows_amd64.zip", arm64 = "https://github.com/twpayne/chezmoi/releases/download/v$version/chezmoi_$version_windows_arm64.zip" }

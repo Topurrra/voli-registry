@@ -1,0 +1,20 @@
+name = "clash-party"
+version = "2.0.4"
+description = "Another Mihomo GUI."
+homepage = "https://clashparty.org/"
+license = "GPL-3.0"
+kind = "app"
+shortcuts = [{ target = "Clash Party.exe", name = "Clash Party" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z"
+sha256 = "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157"
+
+[source.arm64]
+url = "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z"
+sha256 = "c3c702bc77523611330a5a6c9e5424bdcfa662ca18ce7234826a9aaa676addb6"
+
+[autoupdate]
+checkver = { github = "mihomo-party-org/clash-party" }
+url_template = { x64 = "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-x64-portable.7z", arm64 = "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-arm64-portable.7z" }

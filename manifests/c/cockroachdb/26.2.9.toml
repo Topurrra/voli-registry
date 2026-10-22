@@ -1,0 +1,16 @@
+name = "cockroachdb"
+version = "26.2.9"
+description = "The SQL database for global cloud services"
+homepage = "https://www.cockroachlabs.com/"
+license = "Freeware,BSL-1.1,MIT,..."
+kind = "app"
+extract_dir = "cockroach-v26.2.9.windows-6.2-amd64"
+bin = ["cockroach.exe"]
+
+[source.x64]
+url = "https://binaries.cockroachdb.com/cockroach-v26.2.9.windows-6.2-amd64.zip"
+sha256 = "1aa21745374701f70aa6008a576f481b19a820ab4f9a687ff04620f91d799df8"
+
+[autoupdate]
+checkver = { url = "https://github.com/cockroachdb/cockroach/tags", regex = "releases/tag/v([\\d.]+)" }
+url_template = { x64 = "https://binaries.cockroachdb.com/cockroach-v$version.windows-6.2-amd64.zip" }

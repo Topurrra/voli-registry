@@ -1,0 +1,19 @@
+name = "brotli"
+version = "1.2.1"
+description = "Lossless compression algorithm"
+homepage = "https://brotli.org/"
+license = "MIT"
+kind = "app"
+bin = ["brotli.exe"]
+
+[source.x64]
+url = "https://github.com/google/brotli/releases/download/v1.2.1/brotli-x64-windows-static.zip"
+sha256 = "9556acc3223662402cbc5b1a3fa3c4328badf231a7ed1be7128fc6750207188e"
+
+[source.arm64]
+url = "https://github.com/google/brotli/releases/download/v1.2.1/brotli-arm64-windows-static.zip"
+sha256 = "ec9344034b04ac76e1ef3bad0b344f6f3f187110cf49c027fe0e399f5448dd4f"
+
+[autoupdate]
+checkver = { github = "google/brotli" }
+url_template = { x64 = "https://github.com/google/brotli/releases/download/v$version/brotli-x64-windows-static.zip", arm64 = "https://github.com/google/brotli/releases/download/v$version/brotli-arm64-windows-static.zip" }

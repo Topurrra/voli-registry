@@ -1,0 +1,16 @@
+name = "blender-launcher"
+version = "2.8.0"
+description = "Standalone client for managing official builds of Blender 3D"
+homepage = "https://github.com/Victor-IX/Blender-Launcher"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = [{ name = "blender-launcher", path = "Blender Launcher.exe" }]
+shortcuts = [{ target = "Blender Launcher.exe", name = "Blender Launcher" }]
+
+[source.x64]
+url = "https://github.com/Victor-IX/Blender-Launcher/releases/download/v2.8.0/Blender_Launcher_v2.8.0_Windows_x64.zip"
+sha256 = "6a3ca6b97bd8f494208f2f382eeec7a19947a2835bdf78c23819fbf7a478b630"
+
+[autoupdate]
+checkver = { github = "Victor-IX/Blender-Launcher" }
+url_template = { x64 = "https://github.com/Victor-IX/Blender-Launcher/releases/download/v$version/Blender_Launcher_v$version_Windows_x64.zip" }

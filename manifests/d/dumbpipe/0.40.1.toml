@@ -1,0 +1,15 @@
+name = "dumbpipe"
+version = "0.40.1"
+description = "A netcat-inspired command-line tool that creates an encrypted pipe between two machines, built on iroh."
+homepage = "https://dumbpipe.dev"
+license = "Apache-2.0|MIT"
+kind = "app"
+bin = ["dumbpipe.exe"]
+
+[source.x64]
+url = "https://github.com/n0-computer/dumbpipe/releases/download/v0.40.1/dumbpipe-v0.40.1-windows-x86_64.zip"
+sha256 = "ffee0f811526e486992a12d3255ed26a84e932c76743009c50858ef15e4b046a"
+
+[autoupdate]
+checkver = { github = "n0-computer/dumbpipe" }
+url_template = { x64 = "https://github.com/n0-computer/dumbpipe/releases/download/v$version/dumbpipe-v$version-windows-x86_64.zip" }

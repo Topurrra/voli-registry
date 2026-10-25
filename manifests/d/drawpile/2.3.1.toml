@@ -1,0 +1,16 @@
+name = "drawpile"
+version = "2.3.1"
+description = "A drawing program that lets you draw, paint and animate together with others on the same canvas"
+homepage = "https://drawpile.net/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Drawpile-2.3.1-x86_64"
+shortcuts = [{ target = "drawpile.exe", name = "Drawpile" }]
+
+[source.x64]
+url = "https://github.com/drawpile/Drawpile/releases/download/2.3.1/Drawpile-2.3.1-x86_64.zip"
+sha256 = "74a8f2974a6f0fa2aa370dd7237ef3fe4c877895446d253289edff0f455b4ea0"
+
+[autoupdate]
+checkver = { github = "drawpile/Drawpile" }
+url_template = { x64 = "https://github.com/drawpile/Drawpile/releases/download/$version/Drawpile-$version-x86_64.zip" }

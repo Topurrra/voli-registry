@@ -1,0 +1,10 @@
+name = "troubleshoot-binlog-mcp"
+version = "2026.10.27"
+description = "Diagnose dotnet-msbuild binlog MCP startup failures. USE FOR: CONNECTION_CLOSED, binlog server won't connect, missing binlog tools, Microsoft.AITools.BinlogMcp not found, dnx launch errors. Checks workspace SDK, feeds, and source mapping without bypassing policy. DO NOT USE FOR: errors inside a binlog (use binlog-failure-analysis), capturing binlogs (use binlog-generation), unrelated MCP servers."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-msbuild/skills/troubleshoot-binlog-mcp"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-troubleshoot-binlog-mcp.zip"
+sha256 = "cc75039a1b0bffe29446270bc9ca49e536598495f08b826db9f41ec5784f39fb"

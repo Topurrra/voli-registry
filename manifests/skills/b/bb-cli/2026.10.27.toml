@@ -1,0 +1,10 @@
+name = "bb-cli"
+version = "2026.10.27"
+description = "Use this when controlling bb. The bb CLI inspects and manages threads, environments, projects, machines, providers, skills, plugins, settings, terminals, and other BB services."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/agent-orchestration/bb-cli"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-bb-cli.zip"
+sha256 = "a509775438e1d8f236f55e487df56a8e97d60fbf0138583b85eba512296bd97e"

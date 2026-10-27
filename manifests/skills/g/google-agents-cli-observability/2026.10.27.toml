@@ -1,0 +1,10 @@
+name = "google-agents-cli-observability"
+version = "2026.10.27"
+description = "This skill should be used when the user wants to \"set up tracing\", \"monitor my agent\", \"configure logging\", \"add observability\", \"debug production traffic\", or needs guidance on monitoring deployed agents, including ADK (Agent Development Kit) agents. Covers Cloud Trace, prompt-response logging, BigQuery Agent Analytics, third-party integrations (AgentOps, Phoenix, MLflow, etc.), and troubleshooting. Part of the agents-cli skills suite. Do NOT use for deployment setup (use google-agents-cli-deploy) or API code patterns (use google-agents-cli-adk-code)."
+homepage = "https://github.com/google/agents-cli/tree/f4e994044164ff6617f0799900dba0fc091ef0e3/skills/google-agents-cli-observability"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.27/google-agents-cli-2026.10.27-google-agents-cli-observability.zip"
+sha256 = "a2e220959baefd492a475fdc52a8866aa83f098c6890f4993b29ce00f943c1e2"

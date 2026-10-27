@@ -1,0 +1,10 @@
+name = "rename"
+version = "2026.10.27"
+description = "Manually-invoked skill that renames the current thread or session to 2-5 lowercase descriptive words. Use when the user says \"rename\", \"rename this\", \"rename thread\", or \"rename session\"."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/thinking-and-docs/rename"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-rename.zip"
+sha256 = "6d7632149867158769f1c771c545ece8916ff3c4d25317a824fe1cc75664defc"

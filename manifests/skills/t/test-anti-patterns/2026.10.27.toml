@@ -1,0 +1,10 @@
+name = "test-anti-patterns"
+version = "2026.10.27"
+description = "Audit a test file or suite; produce a severity-ranked diagnostic report. ALWAYS USE for tests that verify nothing, missing/tautological assertions, swallowed/broad exceptions, flaky/order-dependent tests, duplication, or magic values. Polyglot. DO NOT USE for direct edits: writing-mstest-tests owns supplied MSTest assertions/attributes/lifecycle; code-testing owns new tests. Exclude running tests, migration, assertion metrics (assertion-quality), raw .NET coverage collection (run-tests), non-.NET coverage collection/analysis (native tooling), project-wide .NET coverage/CRAP (coverage-analysis), named-target .NET CRAP (crap-score), behavioral/pseudo-mutation gaps (test-gap-analysis), test-mix/ happy-vs-error classification and trait distributions (test-tagging), or the testsmells.org catalog (test-smell-detection)."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-test/skills/test-anti-patterns"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-test-anti-patterns.zip"
+sha256 = "a179dc7424f44a9708f683e34a4ee7112df4b8b20beea42f927f5f169a7fb7de"

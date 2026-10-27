@@ -1,0 +1,10 @@
+name = "ink-app-builder"
+version = "2026.10.27"
+description = "Adds inking and freehand drawing capabilities to an Android app using"
+homepage = "https://github.com/android/skills/tree/45fd1739a4dbca5452c3e936570797f7f6261cd7/jetpack-compose/ink/ink-app-builder"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.27/android-skills-2026.10.27-ink-app-builder.zip"
+sha256 = "40622bf921baaa22b28879933ce1bfc79dadbb49975006f08ff4da29cd23a762"

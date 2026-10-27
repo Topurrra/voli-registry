@@ -1,0 +1,10 @@
+name = "git-worktree"
+version = "2026.10.27"
+description = "Use Git worktrees to isolate parallel coding tasks. Use when setting up a task checkout, working in a shared repo, or managing existing worktrees."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/agent-orchestration/git-worktree"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-git-worktree.zip"
+sha256 = "f0e8682b123906ecf7862bd21ddca6da75ec10b439ede93f73cacd2d6eb7a73c"

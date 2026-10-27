@@ -1,0 +1,10 @@
+name = "csharp-expert"
+version = "2026.10.27"
+description = "Route C# and .NET requests to the exact installed specialist or smallest dotnet/skills marketplace plugin. USE FOR: \"which specialist should own this\" or \"how do I add the skill\" requests involving ASP.NET Core endpoints, Blazor, MAUI binding, Windows Forms specialist selection or installation, EF Core queries, test or framework migration, runtime CPU/allocation evidence, file-based C#, editor/compiler defects, a surviving MSBuild `.binlog`, or a plugin missing from `/skills`; also use for C# semantics when no narrower specialist exists. DO NOT USE FOR: requests that already name the exact installed specialist to invoke, or work unrelated to C# or .NET."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet/skills/csharp-expert"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-csharp-expert.zip"
+sha256 = "9cd0e7a61c113117c4c726b7aae9952260f983b5efce17ee1d55755390f7b0ba"

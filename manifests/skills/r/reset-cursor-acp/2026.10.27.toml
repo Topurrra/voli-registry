@@ -1,0 +1,10 @@
+name = "reset-cursor-acp"
+version = "2026.10.27"
+description = "Reset a stuck Cursor ACP thread in your chat app and reload its configuration. Use only when the user explicitly invokes /reset-cursor-acp."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/agent-orchestration/reset-cursor-acp"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-reset-cursor-acp.zip"
+sha256 = "31161656d3fc3d14c5f5b0b132c73e0bac15b55e583fd08f237d8e8f8283b6ae"

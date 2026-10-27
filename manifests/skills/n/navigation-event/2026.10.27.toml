@@ -1,0 +1,10 @@
+name = "navigation-event"
+version = "2026.10.27"
+description = "Intercept back gestures and run Predictive Back animations using the"
+homepage = "https://github.com/android/skills/tree/45fd1739a4dbca5452c3e936570797f7f6261cd7/navigation/navigation-event"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.27/android-skills-2026.10.27-navigation-event.zip"
+sha256 = "0f67044b2e522d2ea30ce2182f122970d234e0431ca2e52021bd6592a347677c"

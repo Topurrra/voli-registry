@@ -1,0 +1,10 @@
+name = "github-outside-sandbox"
+version = "2026.10.27"
+description = "Run Git and GitHub CLI commands on the host when sandboxing blocks Keychain auth, network access, or .git writes. Use for gh auth, repo/PR operations, index.lock, or permission errors; covers execution context only."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/ops-and-setup/github-outside-sandbox"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-github-outside-sandbox.zip"
+sha256 = "3fea1de23f7808acf54a9812688b960650f322ac221dc9aa1e87fcb19c7c8a21"

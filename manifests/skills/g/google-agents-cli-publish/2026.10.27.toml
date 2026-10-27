@@ -1,0 +1,10 @@
+name = "google-agents-cli-publish"
+version = "2026.10.27"
+description = "This skill should be used when the user wants to \"publish an agent\", \"publish my ADK agent\", \"register an agent with Gemini\", \"publish to Gemini\" (formerly Gemini Enterprise), or needs guidance on the agents-cli publish gemini command. Also use when the user wants to \"manage agents in Agent Registry\", \"list/update/delete registered agents\", or \"register an MCP server\". Covers ADK vs A2A registration modes, programmatic and interactive usage, flag reference, auto-detection from deployment metadata, Agent Registry fleet management, and troubleshooting. Part of the agents-cli skills suite. Do NOT use for deployment (use google-agents-cli-deploy)."
+homepage = "https://github.com/google/agents-cli/tree/f4e994044164ff6617f0799900dba0fc091ef0e3/skills/google-agents-cli-publish"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-google-agents-cli-v2026.10.27/google-agents-cli-2026.10.27-google-agents-cli-publish.zip"
+sha256 = "07c381186056e5989971fa2c91025eef9eec9edfba2fb1013b3e88565fe890b0"

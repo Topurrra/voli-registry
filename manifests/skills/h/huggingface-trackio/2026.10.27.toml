@@ -1,0 +1,10 @@
+name = "huggingface-trackio"
+version = "2026.10.27"
+description = "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and JSON output for automation."
+homepage = "https://github.com/huggingface/skills/tree/fabc634a893f62ad5c2039830397efa35fa62715/skills/huggingface-trackio"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-huggingface-skills-v2026.10.27/huggingface-skills-2026.10.27-huggingface-trackio.zip"
+sha256 = "06bc1a1d7205904a3c7d2ad007abed6ee6e66724dffdc4dae2f771fc7296b5aa"

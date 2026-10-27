@@ -1,0 +1,10 @@
+name = "crap-score"
+version = "2026.10.27"
+description = "Calculates CRAP (Change Risk Anti-Patterns) for a named .NET method, class, or file. USE FOR: explicit CRAP calculation or coverage-and-complexity risk within that named target, including which tests to prioritize. DO NOT USE FOR: project-wide coverage/CRAP, plateaus, or project-wide blockers/priorities (coverage-analysis); behavioral/pseudo-mutation gaps (test-gap-analysis); writing tests; test runs without CRAP context."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-test/skills/crap-score"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-crap-score.zip"
+sha256 = "1a361626c48392018411239d312e0d7dce4d84f9d2c79e6369cc41918fdf0671"

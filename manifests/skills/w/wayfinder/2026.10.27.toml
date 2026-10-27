@@ -1,0 +1,10 @@
+name = "wayfinder"
+version = "2026.10.27"
+description = "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear."
+homepage = "https://github.com/mattpocock/skills/tree/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/wayfinder"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.27/mattpocock-skills-2026.10.27-wayfinder.zip"
+sha256 = "5605d0b7e4aea6b2c88e3eb9530cd5fef8e66fba140283763210fbd358153e6d"

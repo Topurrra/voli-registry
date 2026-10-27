@@ -1,0 +1,10 @@
+name = "writing-mstest-tests"
+version = "2026.10.27"
+description = "ALWAYS USE when asked to fix, rewrite, update, improve, modernize, show corrected code for, or explain existing MSTest tests or MSTest-specific configuration. Use for \"review\" when corrected code or edits are wanted, even for one pasted assertion or passing tests with bad failure output. Covers expected/actual labels; generic Boolean, collection, string, numeric, null, identity, exception, hard-cast, and object[] checks; TestContext/lifecycle; timeout/cancellation; OS/CI conditions, retry, cleanup, parallelization, MSTest.Sdk project setup, and MSTESTxxxx. Honor the installed MSTest version. DO NOT USE to design new test cases (code-testing), perform report-only audits, create project files rather than explain MSTest setup, run tests, migrate frameworks, or handle non-MSTest/non-.NET code."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-test/skills/writing-mstest-tests"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-writing-mstest-tests.zip"
+sha256 = "fa4ed37f9b788705f837c48c88149447aa0e8cfc541194b9ce75b83d61a2922d"

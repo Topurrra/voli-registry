@@ -1,0 +1,10 @@
+name = "test-smell-detection"
+version = "2026.10.27"
+description = "Audits existing tests in any language using formal, research-backed test smell names and the testsmells.org 19-smell academic taxonomy. Use when the caller asks for an academic or citable test-smell review, named smell categories, or a formal severity-ranked smell assessment. Covers Assertion Roulette, Conditional Test Logic, Mystery Guest, Eager Test, Sleepy Test, Unknown Test, Sensitive Equality, and the rest of the catalog across .NET, Python, JavaScript/TypeScript, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, and C++. DO NOT USE FOR a quick pragmatic test review (use test-anti-patterns), writing or running tests, framework migration, coverage, or assertion-diversity metrics."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-test/skills/test-smell-detection"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-test-smell-detection.zip"
+sha256 = "d04fb8eeb674a93fcd168ffc77ec2ceab940df807534a537ded5ebf2da694ceb"

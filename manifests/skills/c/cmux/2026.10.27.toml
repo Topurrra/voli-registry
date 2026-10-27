@@ -1,0 +1,10 @@
+name = "cmux"
+version = "2026.10.27"
+description = "Control the cmux macOS terminal app: workspaces, panes, surfaces, browsers, notifications, settings, and hooks. Use only when the user explicitly names cmux. Read before running any cmux command."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/agent-orchestration/cmux"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-cmux.zip"
+sha256 = "43c65acb70e87049496defd4baa9d8837309ae20a39e050fa6365ded05255e22"

@@ -1,0 +1,10 @@
+name = "image-prompt"
+version = "2026.10.27"
+description = "Write four distinct prompts for AI image models. Use for image, thumbnail, banner, logo, or illustration prompts. Produces prompt text only."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/thinking-and-docs/image-prompt"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-image-prompt.zip"
+sha256 = "cd01a952a6659dda4ac959d4dcc2b4c2ea88127cb32aa9262b6f7b53f89ae4a8"

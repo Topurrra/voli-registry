@@ -1,0 +1,10 @@
+name = "test-gap-analysis"
+version = "2026.10.27"
+description = "Find caller-visible production changes existing tests would miss through pseudo-mutation analysis; verify candidates or close gaps only when requested. Includes read-only per-test composition for grading. Polyglot. USE FOR: would tests catch a bug, behavioral blind spots, surviving mutations. DO NOT USE FOR: concrete fix/feature revision proof (test-value-evidence); suite taxonomy (test-tagging); .NET coverage, Cobertura, plateaus or coverage-backed priorities (coverage-analysis); named CRAP (crap-score); new suites (code-testing); assertion/smell audits; mutation tools."
+homepage = "https://github.com/dotnet/skills/tree/cf03b2d2ee17ad2800763108698d869f5b997774/plugins/dotnet-test/skills/test-gap-analysis"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.10.27/dotnet-skills-2026.10.27-test-gap-analysis.zip"
+sha256 = "87959e763d2a51f3da30c1b3c4ec82e098f6ecd56a1d48db62606acde4a58ae9"

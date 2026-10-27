@@ -1,0 +1,10 @@
+name = "glance-appwidget-updates-and-memory"
+version = "2026.10.27"
+description = "Manages Android AppWidget state updates, background syncs, and RemoteViews"
+homepage = "https://github.com/android/skills/tree/45fd1739a4dbca5452c3e936570797f7f6261cd7/system/glance-appwidget-updates-and-memory"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.27/android-skills-2026.10.27-glance-appwidget-updates-and-memory.zip"
+sha256 = "e1afb5d686f667264392345b1b6b77f635514c5092606c6f43169230244a2f3e"

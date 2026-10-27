@@ -1,0 +1,10 @@
+name = "finishing-a-development-branch"
+version = "2026.10.27"
+description = "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work"
+homepage = "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/finishing-a-development-branch"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.10.27/obra-superpowers-2026.10.27-finishing-a-development-branch.zip"
+sha256 = "12cf8cdf7f6567b265404c16f6a6298b13f2b5e754eb1ae3fdd6ea026c930de7"

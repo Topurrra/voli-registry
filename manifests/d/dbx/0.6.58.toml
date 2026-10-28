@@ -1,0 +1,23 @@
+name = "dbx"
+version = "0.6.58"
+description = "Lightweight, cross-platform database client"
+homepage = "https://dbxio.com"
+license = "Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "DBX.exe", name = "DBX" }]
+persist = ["data"]
+
+[source.x64]
+url = "https://github.com/t8y2/dbx/releases/download/v0.6.58/DBX_0.6.58_x64-portable.zip"
+sha256 = "ea21e6344ebb6d673b3921dde9a8b8c09e0a622a00e7bfdbc41a77a93216659c"
+
+[source.arm64]
+url = "https://github.com/t8y2/dbx/releases/download/v0.6.58/DBX_0.6.58_arm64-portable.zip"
+sha256 = "fc0afd249f3ad87a3108392a771c0a86dfe7c07c228301f2de57506049de3e6a"
+
+[env]
+DBX_DATA_DIR = "{dir}\\data"
+
+[autoupdate]
+checkver = { github = "t8y2/dbx" }
+url_template = { x64 = "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_x64-portable.zip", arm64 = "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_arm64-portable.zip" }

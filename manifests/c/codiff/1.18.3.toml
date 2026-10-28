@@ -1,0 +1,16 @@
+name = "codiff"
+version = "1.18.3"
+description = "A fast local diff viewer."
+homepage = "https://github.com/nkzw-tech/codiff"
+license = "MIT"
+kind = "app"
+bin = ["codiff.exe"]
+shortcuts = [{ target = "codiff.exe", name = "Codiff" }]
+
+[source.x64]
+url = "https://github.com/nkzw-tech/codiff/releases/download/v1.18.3/Codiff-win32-x64-1.18.3.zip"
+sha256 = "627f6f13c5e645280a440ffdeedb34cfeabdadc5c2696d241285cabfff2059d9"
+
+[autoupdate]
+checkver = { github = "nkzw-tech/codiff" }
+url_template = { x64 = "https://github.com/nkzw-tech/codiff/releases/download/v$version/Codiff-win32-x64-$version.zip" }

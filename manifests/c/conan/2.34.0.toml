@@ -1,0 +1,19 @@
+name = "conan"
+version = "2.34.0"
+description = "The open-source, decentralized C/C++ package manager"
+homepage = "https://conan.io"
+license = "MIT"
+kind = "app"
+bin = ["conan.exe"]
+
+[source.x64]
+url = "https://github.com/conan-io/conan/releases/download/2.34.0/conan-2.34.0-windows-x86_64.zip"
+sha256 = "4e8c75dfb5f9913fe3eec6c0c982986f13041eae6e8c3b116268489b21951232"
+
+[source.arm64]
+url = "https://github.com/conan-io/conan/releases/download/2.34.0/conan-2.34.0-windows-arm64.zip"
+sha256 = "4d55a8aec484eba2d1f005cd23347c28353b620cd601ed15fa3f39a1b3a2d9d7"
+
+[autoupdate]
+checkver = { github = "conan-io/conan" }
+url_template = { x64 = "https://github.com/conan-io/conan/releases/download/$version/conan-$version-windows-x86_64.zip", arm64 = "https://github.com/conan-io/conan/releases/download/$version/conan-$version-windows-arm64.zip" }

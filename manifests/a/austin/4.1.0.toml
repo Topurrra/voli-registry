@@ -1,0 +1,15 @@
+name = "austin"
+version = "4.1.0"
+description = "Python frame stack sampler for CPython"
+homepage = "https://pypi.org/project/austin-dist/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["austin.exe"]
+
+[source.x64]
+url = "https://github.com/P403n1x87/austin/releases/download/v4.1.0/austin-4.1.0-win64.zip"
+sha256 = "6be050efc9ef0e0a7659da5752fc118449a81d95ee813e7a3366135d6b9efc34"
+
+[autoupdate]
+checkver = { github = "P403n1x87/austin" }
+url_template = { x64 = "https://github.com/P403n1x87/austin/releases/download/v$version/austin-$version-win64.zip" }

@@ -1,0 +1,10 @@
+name = "testing-setup"
+version = "2026.10.27"
+description = "Analyze and create a testing strategy for Android apps - install testing"
+homepage = "https://github.com/android/skills/tree/45fd1739a4dbca5452c3e936570797f7f6261cd7/testing/testing-setup"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.27/android-skills-2026.10.27-testing-setup.zip"
+sha256 = "691d00d2875b17f57bb3e9f267eb33cdf3ca946e852c5f7bce104d71da128822"

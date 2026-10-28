@@ -1,0 +1,10 @@
+name = "who-is-this"
+version = "2026.10.27"
+description = "Research a person's public track record and give a short credibility assessment. Use only when the user explicitly invokes /who-is-this."
+homepage = "https://github.com/davidondrej/skills/tree/9170142cfa1a57e2609d42fc7598a4788a8adbd7/skills/research-and-web/who-is-this"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.10.27/davidondrej-skills-2026.10.27-who-is-this.zip"
+sha256 = "d0bad710e372b97e53bba6177fe0c5e0cb48097361a9dca10e45699eaa178f06"

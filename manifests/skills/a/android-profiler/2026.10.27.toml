@@ -1,0 +1,10 @@
+name = "android-profiler"
+version = "2026.10.27"
+description = "'Records and analyzes Android performance data and diagnoses performance"
+homepage = "https://github.com/android/skills/tree/45fd1739a4dbca5452c3e936570797f7f6261cd7/profilers/android-profiler"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.10.27/android-skills-2026.10.27-android-profiler.zip"
+sha256 = "6827cbd64fc3223afbb050f39c6c4c93b32a36b7ed7b50f0ba426853727fc053"

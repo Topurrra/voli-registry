@@ -1,0 +1,10 @@
+name = "code-review"
+version = "2026.10.27"
+description = "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\"."
+homepage = "https://github.com/mattpocock/skills/tree/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/code-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.27/mattpocock-skills-2026.10.27-code-review.zip"
+sha256 = "78b9a53b4d7cd3b9f662c276e4e5fc3b7a4dc07baed63fc56ba5f98df7840761"

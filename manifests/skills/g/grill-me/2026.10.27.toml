@@ -1,0 +1,10 @@
+name = "grill-me"
+version = "2026.10.27"
+description = "A relentless interview to sharpen a plan or design."
+homepage = "https://github.com/mattpocock/skills/tree/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/productivity/grill-me"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.10.27/mattpocock-skills-2026.10.27-grill-me.zip"
+sha256 = "7c00906a692dc05a8f7b653a0932fcacbe436702f790f84571d6ea3b86464864"

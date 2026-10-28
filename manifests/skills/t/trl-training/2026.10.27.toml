@@ -1,0 +1,10 @@
+name = "trl-training"
+version = "2026.10.27"
+description = "Post-train LLMs with TRL (Transformers Reinforcement Learning) — SFT, DPO, GRPO, KTO, and reward-model training. Use when writing or debugging training code with the TRL Python API or the trl CLI."
+homepage = "https://github.com/huggingface/skills/tree/fabc634a893f62ad5c2039830397efa35fa62715/skills/trl-training"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-huggingface-skills-v2026.10.27/huggingface-skills-2026.10.27-trl-training.zip"
+sha256 = "2de48fdb0514eb5d2208324a205e068f75ea682222b029ca146dcfffd861cbe9"

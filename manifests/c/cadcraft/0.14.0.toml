@@ -1,0 +1,22 @@
+name = "cadcraft"
+version = "0.14.0"
+description = "Computer-aided design and drafting; an open-source, clean-room reimplementation of Autodesk AutoCAD, rebuilt in pure Rust"
+homepage = "https://github.com/storytold/cadcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["cadcraft-cli.exe"]
+shortcuts = [{ target = "cadcraft.exe", name = "CADCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-x64-portable.zip"
+sha256 = "f6f2b874358f3062dfbaf354b706be334c6a7a3eff49c38861c79c8a8efbea7c"
+extract_dir = "cadcraft-0.14.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-arm64-portable.zip"
+sha256 = "f2e97d1e42dc9ce521ec3ca9ed38e0a04ca730b07634ffb61e3e1ebca98821d2"
+extract_dir = "cadcraft-0.14.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/cadcraft" }
+url_template = { x64 = "https://github.com/storytold/cadcraft/releases/download/v$version/cadcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/cadcraft/releases/download/v$version/cadcraft-$version-windows-arm64-portable.zip" }

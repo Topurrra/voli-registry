@@ -1,0 +1,19 @@
+name = "exercism"
+version = "3.5.9"
+description = "A Go based command line tool for exercism.io"
+homepage = "https://exercism.org/"
+license = "MIT"
+kind = "app"
+bin = ["exercism.exe"]
+
+[source.x64]
+url = "https://github.com/exercism/cli/releases/download/v3.5.9/exercism-3.5.9-windows-x86_64.zip#/dl.7z"
+sha256 = "6fd71c48b2b5b7404bda45811d14809204bf7f1dda54ae9be7639cdcd6c31edf"
+
+[source.arm64]
+url = "https://github.com/exercism/cli/releases/download/v3.5.9/exercism-3.5.9-windows-arm64.zip#/dl.7z"
+sha256 = "5430f3a423e6cb35d67c31eeae4e14d00f90c92190e807a3b250e21dfe04af27"
+
+[autoupdate]
+checkver = { github = "exercism/cli" }
+url_template = { x64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-x86_64.zip#/dl.7z", arm64 = "https://github.com/exercism/cli/releases/download/v$version/exercism-$version-windows-arm64.zip#/dl.7z" }

@@ -1,0 +1,15 @@
+name = "bob"
+version = "4.3.0"
+description = "A version manager for neovim."
+homepage = "https://github.com/MordechaiHadad/bob"
+license = "MIT"
+kind = "app"
+bin = ["bob.exe"]
+
+[source.x64]
+url = "https://github.com/MordechaiHadad/bob/releases/download/v4.3.0/bob-windows-x86_64.zip"
+sha256 = "d029679c0df0a175192a7b79e6a28169515880c44674b1aa174339e5ce01e772"
+
+[autoupdate]
+checkver = { github = "MordechaiHadad/bob" }
+url_template = { x64 = "https://github.com/MordechaiHadad/bob/releases/download/v$version/bob-windows-x86_64.zip" }

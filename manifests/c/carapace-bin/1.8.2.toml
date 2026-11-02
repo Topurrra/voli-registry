@@ -1,0 +1,19 @@
+name = "carapace-bin"
+version = "1.8.2"
+description = "Multi-shell multi-command argument completer."
+homepage = "https://carapace.sh/"
+license = "MIT"
+kind = "app"
+bin = ["carapace.exe"]
+
+[source.x64]
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.8.2/carapace-bin_1.8.2_windows_amd64.zip"
+sha256 = "44ac5d1f16bf38df559259783680925fe9625e467e020b180ea1e8d7c721d4e5"
+
+[source.arm64]
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.8.2/carapace-bin_1.8.2_windows_arm64.zip"
+sha256 = "67319d3951317ed46a6a44f4fee2e19f0ddfc31dfcb0b8fc4329d12d18d7869c"
+
+[autoupdate]
+checkver = { github = "carapace-sh/carapace-bin" }
+url_template = { x64 = "https://github.com/carapace-sh/carapace-bin/releases/download/v$version/carapace-bin_$version_windows_amd64.zip", arm64 = "https://github.com/carapace-sh/carapace-bin/releases/download/v$version/carapace-bin_$version_windows_arm64.zip" }

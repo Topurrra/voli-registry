@@ -1,0 +1,10 @@
+name = "create-readonly-db-role"
+version = "2026.11.3"
+description = "Set up read-only PostgreSQL access for agents. Use only when the user explicitly invokes /create-readonly-db-role."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/ops-and-setup/create-readonly-db-role"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-create-readonly-db-role.zip"
+sha256 = "6b7553d586aa1ef17f590bef190cee5f88187949aa3e5ab30acb85ec167ae793"

@@ -1,0 +1,10 @@
+name = "goal-loop"
+version = "2026.11.3"
+description = "Draft /goal prompts and explain persistent agent loops. Use for goal or Ralph loops, autonomous run setup, monitoring, and troubleshooting."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/agent-orchestration/goal-loop"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-goal-loop.zip"
+sha256 = "d8ca9b8b840573255f9e5fe801c5ccef2a90af691255d1a2361f50052731c75c"

@@ -1,0 +1,10 @@
+name = "media3-cast-integration"
+version = "2026.11.3"
+description = "Implements Google Cast support in Android apps using Jetpack Media3."
+homepage = "https://github.com/android/skills/tree/6daa53ef27fa2aa87827d183a85c06cedceca833/media/media3-cast-integration"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.3/android-skills-2026.11.3-media3-cast-integration.zip"
+sha256 = "39905f5cccd08ad48f194b620d53a8f64592ba84c828a073608bd4de3ad7e7ec"

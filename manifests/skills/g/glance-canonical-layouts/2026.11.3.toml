@@ -1,0 +1,10 @@
+name = "glance-canonical-layouts"
+version = "2026.11.3"
+description = "Use this skill to create home screen widgets using Jetpack Glance Canonical"
+homepage = "https://github.com/android/skills/tree/6daa53ef27fa2aa87827d183a85c06cedceca833/system/glance-canonical-layouts"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.3/android-skills-2026.11.3-glance-canonical-layouts.zip"
+sha256 = "1ad1231362c6c6efa70db551c45d169ff744f00d6420411497c37684fa612c78"

@@ -1,0 +1,10 @@
+name = "kimi-review"
+version = "2026.11.3"
+description = "Launch an independent Kimi K3.1 Pro Max code review and return it verbatim, falling back across harnesses and routes until one works. Use only when the user explicitly invokes /kimi-review."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/agent-orchestration/kimi-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-kimi-review.zip"
+sha256 = "2d047bbdcb4778daa3eda81584e25099d1e39f50db4bfc67b8f0039550850214"

@@ -1,0 +1,10 @@
+name = "pr"
+version = "2026.11.3"
+description = "Use when writing a PR body."
+homepage = "https://github.com/mattpocock/skills/tree/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/pr"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.11.3/mattpocock-skills-2026.11.3-pr.zip"
+sha256 = "904c49403bb9b9fe5a309dda457ecc622a745a059e6a035e16a24f6c531112b1"

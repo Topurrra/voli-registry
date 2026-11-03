@@ -1,0 +1,10 @@
+name = "implement-spec"
+version = "2026.11.3"
+description = "Implement the result of /to-spec and /to-tickets in code."
+homepage = "https://github.com/mattpocock/skills/tree/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement-spec"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-mattpocock-skills-v2026.11.3/mattpocock-skills-2026.11.3-implement-spec.zip"
+sha256 = "98d74edc689dcded0347f902e0ad9f1eae4514e6971eafdda8c3199d9f4677d3"

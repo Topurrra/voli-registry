@@ -1,0 +1,10 @@
+name = "deep-research"
+version = "2026.11.3"
+description = "Run deep research through DeepAPI and save a report with sources. Use when asked for deep research, DeepAPI research, or Perplexity deep research."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/research-and-web/deep-research"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-deep-research.zip"
+sha256 = "53ced263b3e45267eb4c150091cd4b28e410f4446e91b7ea52c69d62c3049fa0"

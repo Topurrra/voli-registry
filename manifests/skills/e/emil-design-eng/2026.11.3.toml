@@ -1,0 +1,10 @@
+name = "emil-design-eng"
+version = "2026.11.3"
+description = "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great."
+homepage = "https://github.com/emilkowalski/skills/tree/f1090bec277140d02ed202440185ad9d02ac1490/skills/emil-design-eng"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.11.3/emilkowalski-skills-2026.11.3-emil-design-eng.zip"
+sha256 = "c02a77bfa816a8867e548f55dbbedf8fd784b8ae36d8e8e6bd39154fa00b1f33"

@@ -1,0 +1,10 @@
+name = "litert-lm"
+version = "2026.11.3"
+description = "Builds an Android app that runs an open text LLM on the device, on the"
+homepage = "https://github.com/android/skills/tree/6daa53ef27fa2aa87827d183a85c06cedceca833/device-ai/litert/litert-lm"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.3/android-skills-2026.11.3-litert-lm.zip"
+sha256 = "c365a6ccb8a522f937ff548ba2eb808362e6b73cb935fdd5b71022df8e59703e"

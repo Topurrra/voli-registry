@@ -1,0 +1,10 @@
+name = "fireflies-transcript"
+version = "2026.11.3"
+description = "Fetch raw Fireflies.ai meeting transcripts. Use only when the user explicitly invokes /fireflies-transcript; for YouTube, use youtube-transcript."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/research-and-web/fireflies-transcript"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-fireflies-transcript.zip"
+sha256 = "5f0612f95dbb5e4ff2ea96be311227bc188ac8c530e4e28a8a7d4b2f17fe0c6f"

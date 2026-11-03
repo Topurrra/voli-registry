@@ -1,0 +1,10 @@
+name = "larp-detector"
+version = "2026.11.3"
+description = "Skeptical review of outside contributions to public repos. Use when reviewing, ranking, or replying to public GitHub pull requests or issues from outside contributors, or when the user says \"larp-detector\"."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/agent-orchestration/larp-detector"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-larp-detector.zip"
+sha256 = "18e350d20deea81f701611083f796113c87a903d58c1bd30d7f398480110ea47"

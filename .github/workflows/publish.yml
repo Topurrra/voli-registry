@@ -3,6 +3,12 @@ name: publish
 # On merge to main: recompile the signed index and publish the triple
 # (index.sqlite.zst, index.sig, index.json) to the `index` release tag, always
 # replacing the assets in place so the client's index_url is stable.
+#
+# Supply-chain review item 3: the signing job is dedicated — it holds
+# VOLI_INDEX_SIGNING_KEY and NOTHING else, has no other secrets, no extra
+# permissions, and its cargo cache key is used by no other workflow, so a
+# cache written by the bump or validate jobs is never restored next to the
+# signing key.
 on:
   workflow_dispatch:
   push:
@@ -12,17 +18,18 @@ on:
       - ".github/workflows/publish.yml"
 
 permissions:
-  contents: write # required to create/update the release and its assets
+  contents: read # default for every job; the publish job overrides with write
 
 concurrency:
   group: publish-index
   cancel-in-progress: false
 
 jobs:
-  publish:
+  # Build + sign. This is the ONLY job that touches VOLI_INDEX_SIGNING_KEY.
+  sign:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
 
@@ -31,18 +38,20 @@ jobs:
         # whatever that branch points at today.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
+      # Cache key is deliberately unique to this workflow (review item 3):
+      # bump.yml and validate.yml cache under cargo-voli-index-tool-*, and a
+      # cache written by those jobs must never be restored into the job that
+      # holds the signing key — cargo does not re-verify already-extracted
+      # sources under ~/.cargo/registry/src.
       - name: Cache cargo
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: |
             ~/.cargo/bin
             ~/.cargo/registry
             ~/.cargo/git
-          key: cargo-voli-index-tool-${{ runner.os }}
+          key: cargo-voli-publish-signing-${{ runner.os }}
 
-      # NOTE: same source install as validate.yml. Swap for a prebuilt
-      # release-binary download once the main repo publishes them.
-      #
       # PINNED TO A COMMIT, and it must stay pinned. The next step runs this
       # binary in a step that holds VOLI_INDEX_SIGNING_KEY. Installing from a
       # branch ref would mean anyone who can land a commit on voli@main gets
@@ -87,13 +96,38 @@ jobs:
       - name: Build signed index
         env:
           # Ed25519 signing key (hex). Stored as a GitHub Actions secret.
-          # This is the production key; the rotation away from the main repo's
-          # registry-dev/dev-signing-key.hex is done and the key is held safely.
+          # This key is ONLINE (CI holds it) — see README "Signing key".
+          # The client only ever sees the public half, embedded in the binary.
           VOLI_INDEX_SIGNING_KEY: ${{ secrets.VOLI_INDEX_SIGNING_KEY }}
         run: |
           printf '%s' "$VOLI_INDEX_SIGNING_KEY" > signing-key.hex
           voli-index-tool build manifests/ --out dist/ --key signing-key.hex
           rm -f signing-key.hex
+
+      - name: Upload dist for the publish job
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: signed-index-${{ github.run_id }}
+          path: dist/
+          retention-days: 1
+
+  # Publish the signed artifacts. NO secrets live in this job; it only moves
+  # files the sign job produced onto the release and main.
+  publish:
+    needs: sign
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # required to create/update the release and push to main
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Download signed index
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: signed-index-${{ github.run_id }}
+          path: dist/
 
       # The client (voli-core index::net) fetches, from the release's asset URL:
       #   <index_url>/index.json
@@ -103,7 +137,7 @@ jobs:
       # assets on tag `index` produces exactly those URLs. index.sqlite (the
       # uncompressed db) is intentionally NOT uploaded — the client never fetches it.
       - name: Publish to the `index` release
-        # Pinned by SHA: this step runs in the job that holds the signing key.
+        # Pinned by SHA.
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           tag_name: index

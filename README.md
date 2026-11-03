@@ -209,10 +209,14 @@ That base URL resolves to the three release assets above
 
 ## Signing key
 
-The index is signed with an offline Ed25519 key, supplied to `publish.yml` via
-the GitHub Actions secret **`VOLI_INDEX_SIGNING_KEY`** (hex-encoded 32-byte
-secret). The client verifies against the public key embedded in the `voli`
-binary.
+The index is signed with an Ed25519 key held by this repository's CI as the
+GitHub Actions secret **`VOLI_INDEX_SIGNING_KEY`** (hex-encoded 32-byte
+secret) — it is an **online** key: CI holds it and applies it to whatever
+lands on `main` after review. That is exactly why `main` requires reviewed
+pull requests and why the signing job shares no caches with the other
+workflows. The client only ever sees the public half, embedded in the `voli`
+binary, so a compromised key cannot retroactively change what installed
+clients already trust — rotation is a new release plus a client update.
 
 ## License
 

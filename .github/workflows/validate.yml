@@ -12,14 +12,14 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
 
       - name: Cache cargo
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: |
             ~/.cargo/bin
@@ -41,3 +41,13 @@ jobs:
 
       - name: Validate manifests
         run: voli-index-tool validate manifests/
+
+      # Supply-chain review item 2.4: no PR may ADD a reserved shim name
+      # (sudo, ssh, git, ...) to a package that did not already have it — a
+      # voli shim shadows the same-named system command for every user. The
+      # install client still asks at install time; this keeps such names out
+      # of the registry in the first place.
+      - name: Reject reserved shim names
+        run: |
+          git fetch --quiet origin main
+          python tools/check_reserved_shims.py --base origin/main --manifests manifests/

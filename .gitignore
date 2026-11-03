@@ -3,3 +3,4 @@
 /manifests/_import-report.md
 signing-key.hex
 tools/*/target/
+__pycache__/

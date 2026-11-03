@@ -1,0 +1,35 @@
+name = "atuin"
+version = "18.24.4"
+description = "Shell history tool featuring advanced context-aware search, along with secure sync and backup."
+homepage = "https://atuin.sh"
+license = "MIT"
+kind = "app"
+bin = ["atuin.exe"]
+
+[source.x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.24.4/atuin-x86_64-pc-windows-msvc.zip"
+sha256 = "773cb6a6538ac1f6d563abfe69c9a75e7e0455b5210d9ff071ef2b3f28368f3e"
+
+[source.linux-x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.24.4/atuin-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "788cff5b3903ca7f1f5bdff3e4b4975c38b3c20385176a49b01ad1bea5b37636"
+extract_dir = "atuin-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.24.4/atuin-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "7698bd70195bde165bb37ea3133aa6663dd48ff7d6a23042cda2c7be4c22ba78"
+extract_dir = "atuin-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.24.4/atuin-x86_64-apple-darwin.tar.gz"
+sha256 = "aeeb67d1f3277e8bd92f2773ae383cad43ac49161a08aa4b9142122c99e1305e"
+extract_dir = "atuin-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/atuinsh/atuin/releases/download/v18.24.4/atuin-aarch64-apple-darwin.tar.gz"
+sha256 = "edd06294377599bf4d85ca3337abc802256a991262260bdd980d1b649583553d"
+extract_dir = "atuin-aarch64-apple-darwin"
+
+[autoupdate]
+checkver = { github = "atuinsh/atuin" }
+url_template = { x64 = "https://github.com/atuinsh/atuin/releases/download/v$version/atuin-x86_64-pc-windows-msvc.zip" }

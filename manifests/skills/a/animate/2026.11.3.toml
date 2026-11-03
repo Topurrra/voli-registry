@@ -1,0 +1,10 @@
+name = "animate"
+version = "2026.11.3"
+description = "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations."
+homepage = "https://github.com/emilkowalski/skills/tree/f1090bec277140d02ed202440185ad9d02ac1490/skills/animate"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-emilkowalski-skills-v2026.11.3/emilkowalski-skills-2026.11.3-animate.zip"
+sha256 = "0fe81b7b10921596757e447b6a5ef2d09f3a6218ad0a8b5cb0710da5ec384b91"

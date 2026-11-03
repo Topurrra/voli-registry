@@ -1,0 +1,10 @@
+name = "repo-sync"
+version = "2026.11.3"
+description = "Manage automatic Git syncing on macOS with repo-sync. Use only when the user explicitly invokes /repo-sync."
+homepage = "https://github.com/davidondrej/skills/tree/8aa01cf45110ae378bdf5c319cd41ac8fdbdf448/skills/ops-and-setup/repo-sync"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.3/davidondrej-skills-2026.11.3-repo-sync.zip"
+sha256 = "e3441309cd5a8c66a0bd14fdf25305e3a1adaa3da9897db1f4b6d8ca30c6592b"

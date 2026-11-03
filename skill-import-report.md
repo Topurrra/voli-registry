@@ -1,19 +1,19 @@
 # Skill import report
 
-Generated 327 deterministic skill archives from 10 pinned sources.
+Generated 328 deterministic skill archives from 10 pinned sources.
 
 | Source | Revision | Skills | License |
 | --- | --- | ---: | --- |
 | `google/agents-cli` | `f4e994044164ff6617f0799900dba0fc091ef0e3` | 7 | Apache-2.0 |
-| `huggingface/skills` | `fabc634a893f62ad5c2039830397efa35fa62715` | 26 | Apache-2.0 |
-| `android/skills` | `45fd1739a4dbca5452c3e936570797f7f6261cd7` | 36 | Apache-2.0 |
-| `dotnet/skills` | `cf03b2d2ee17ad2800763108698d869f5b997774` | 106 | MIT |
-| `anthropics/skills` | `dbd4588f9e1033efb41dad4bef2f7947c8993d44` | 14 | Apache-2.0 |
+| `huggingface/skills` | `25910b3d0ba31a2ba102f901cdc9e008c278a69c` | 26 | Apache-2.0 |
+| `android/skills` | `6daa53ef27fa2aa87827d183a85c06cedceca833` | 36 | Apache-2.0 |
+| `dotnet/skills` | `95e7d0cb7994d47b5789baa68e13f7a2f348b956` | 106 | MIT |
+| `anthropics/skills` | `ca45fc496a3436251f191354091d557da31c15b5` | 14 | Apache-2.0 |
 | `obra/superpowers` | `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b` | 15 | MIT |
-| `mattpocock/skills` | `59db609eb1e18aaf59b63284d0e52255aff0c63c` | 31 | MIT |
-| `emilkowalski/skills` | `2d228630ba1446365f614a108cb8252f1feda202` | 15 | MIT |
+| `mattpocock/skills` | `4ae2317ddb22b046e26455e4f9c9b3aaaf62212d` | 31 | MIT |
+| `emilkowalski/skills` | `f1090bec277140d02ed202440185ad9d02ac1490` | 16 | MIT |
 | `MiniMax-AI/skills` | `60aaae52bb2af8162732751a4332f62a5fef518b` | 17 | MIT |
-| `davidondrej/skills` | `9170142cfa1a57e2609d42fc7598a4788a8adbd7` | 60 | MIT |
+| `davidondrej/skills` | `8aa01cf45110ae378bdf5c319cd41ac8fdbdf448` | 60 | MIT |
 
 ## Name collisions
 

@@ -1,0 +1,10 @@
+name = "litert-runtime"
+version = "2026.11.3"
+description = "Configures and implements LiteRT (.tflite) on-device inference on Android"
+homepage = "https://github.com/android/skills/tree/6daa53ef27fa2aa87827d183a85c06cedceca833/device-ai/litert/litert-runtime"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.3/android-skills-2026.11.3-litert-runtime.zip"
+sha256 = "eed44eda063abbe8a032a114f3f3b1d8787ddc6930e9a869d8b58cee8b7b99a4"

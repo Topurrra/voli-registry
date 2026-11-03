@@ -1,0 +1,10 @@
+name = "restore-credentials"
+version = "2026.11.3"
+description = "Provides knowledge and workflows to implement Android's Restore Credentials"
+homepage = "https://github.com/android/skills/tree/6daa53ef27fa2aa87827d183a85c06cedceca833/identity/restore-credentials"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.3/android-skills-2026.11.3-restore-credentials.zip"
+sha256 = "876ffeda9f0e5bb1d9295d4e614847dae0675db006f35542ae8465554d57bc48"

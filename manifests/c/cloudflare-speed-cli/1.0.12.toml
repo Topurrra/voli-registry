@@ -1,0 +1,15 @@
+name = "cloudflare-speed-cli"
+version = "1.0.12"
+description = "CLI for internet speed test via Cloudflare, with a TUI interface"
+homepage = "https://github.com/kavehtehrani/cloudflare-speed-cli"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["cloudflare-speed-cli.exe"]
+
+[source.x64]
+url = "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/download/v1.0.12/cloudflare-speed-cli-x86_64-pc-windows-msvc.zip"
+sha256 = "ee4bf8a53d04b8bfa8668d660bab8a124e9398d9a382da534db4ee89f497843b"
+
+[autoupdate]
+checkver = { github = "kavehtehrani/cloudflare-speed-cli" }
+url_template = { x64 = "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/download/v$version/cloudflare-speed-cli-x86_64-pc-windows-msvc.zip" }

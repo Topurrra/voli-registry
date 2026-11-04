@@ -1,0 +1,35 @@
+name = "croc"
+version = "11.6.3"
+description = "Easily and securely send things from one computer to another."
+homepage = "https://schollz.com/software/croc6"
+license = "MIT"
+kind = "app"
+bin = ["croc.exe"]
+
+[source.x64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Windows-64bit.zip"
+sha256 = "47b6c51aa4b4ae0370296926a33a0818338448ada38eb76519ad067932c61330"
+
+[source.arm64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Windows-ARM64.zip"
+sha256 = "c96224a81156c29a8625ffb64a8ae7088aede4242be17062c64c25d35f49b2e0"
+
+[source.linux-x64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Linux-64bit.tar.gz"
+sha256 = "4cd137020b4edad390b8a5b271a740d8605999d9e0a11927e1f6581ce2ab5675"
+
+[source.linux-arm64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_Linux-ARM64.tar.gz"
+sha256 = "5d87a8a270b13cd2496c0264c137e59deda1cf558c604b596f806a33667359a9"
+
+[source.macos-x64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_macOS-64bit.tar.gz"
+sha256 = "260b55d0b356354b0c1e448d0ed09d041cd8be09a2e921b53b9c02eec5ca7abb"
+
+[source.macos-arm64]
+url = "https://github.com/schollz/croc/releases/download/v11.6.3/croc_v11.6.3_macOS-ARM64.tar.gz"
+sha256 = "803efdfa227ed06ca9b74f71df5707890b83d9fdbe39a1a498c23192cd9c785a"
+
+[autoupdate]
+checkver = { github = "schollz/croc" }
+url_template = { x64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-64bit.zip", arm64 = "https://github.com/schollz/croc/releases/download/v$version/croc_v$version_Windows-ARM64.zip" }

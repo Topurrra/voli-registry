@@ -1,0 +1,35 @@
+name = "act"
+version = "0.2.96"
+description = "Local Github actions runner."
+homepage = "https://nektosact.com"
+license = "MIT"
+kind = "app"
+bin = ["act.exe"]
+
+[source.x64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Windows_x86_64.zip"
+sha256 = "610f19f3935d7321d62dcc5fb073ba245fab8f93f0154e46a675b4d9f56d9b0a"
+
+[source.arm64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Windows_arm64.zip"
+sha256 = "01f63f08cd7977176222d70f141df2fc5dc073d06046de723b699cbcd9fae751"
+
+[source.linux-x64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Linux_x86_64.tar.gz"
+sha256 = "b861e901c9062d841c6e8ecd36cdf27e0ce39ea0124cfd93de6efcebea0e16e7"
+
+[source.linux-arm64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Linux_arm64.tar.gz"
+sha256 = "158a16eee7394c266ee87dee9f15ca5f219d47193f7a1df9bad9093774e340c4"
+
+[source.macos-x64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Darwin_x86_64.tar.gz"
+sha256 = "84a95ddc407e66a5bb84e8debfe27b50fb83f009487a4be84e17f90a82b05992"
+
+[source.macos-arm64]
+url = "https://github.com/nektos/act/releases/download/v0.2.96/act_Darwin_arm64.tar.gz"
+sha256 = "fba2638fb6e1def14fbbb704b27888c7b697d041da5b08cac7d06d055ef9d690"
+
+[autoupdate]
+checkver = { github = "nektos/act" }
+url_template = { x64 = "https://github.com/nektos/act/releases/download/v$version/act_Windows_x86_64.zip", arm64 = "https://github.com/nektos/act/releases/download/v$version/act_Windows_arm64.zip" }

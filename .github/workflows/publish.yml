@@ -80,10 +80,27 @@ jobs:
           echo "checking $(wc -l < skill-urls.txt) skill archive URL(s)"
           failed=0
           while read -r url; do
+            # 5xx from the release CDN is transient GitHub flakiness — retry
+            # with backoff until it answers: failing the whole index publish
+            # because one HEAD request hiccuped is worse than the risk.
             code=$(curl -sSIL -o /dev/null -w '%{http_code}' \
-              --retry 3 --retry-delay 2 --max-time 60 "$url" || echo 000)
+              --retry 5 --retry-delay 5 --retry-max-time 90 --max-time 60 "$url" || echo 000)
             case "$code" in
               2*) ;;
+              5*|000)
+                # One more explicit pass after the backoff window; still-broken
+                # means the CDN is having a real bad day for this asset.
+                sleep 20
+                code=$(curl -sSIL -o /dev/null -w '%{http_code}' \
+                  --retry 3 --retry-delay 10 --max-time 60 "$url" || echo 000)
+                case "$code" in
+                  2*) ;;
+                  *) echo "::error::HTTP $code for $url"; failed=1 ;;
+                esac
+                ;;
+              4*)
+                echo "::error::HTTP $code for $url (asset missing from the release — upload via skill-sync)"
+                failed=1 ;;
               *) echo "::error::HTTP $code for $url"; failed=1 ;;
             esac
           done < skill-urls.txt

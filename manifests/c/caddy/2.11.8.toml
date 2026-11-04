@@ -1,0 +1,19 @@
+name = "caddy"
+version = "2.11.8"
+description = "HTTP/2 web server with automatic HTTPS"
+homepage = "https://caddyserver.com"
+license = "Apache-2.0"
+kind = "app"
+bin = ["caddy.exe"]
+
+[source.x64]
+url = "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_amd64.zip"
+sha512 = "fff45b117b9d9ea5cc3f824f3c18de89630bcb43a0b759ca5e7163b7a3c1fb39ec7dae7f3147012d602213c950a46c8b0ef8095c77109e807ebf90132deeb759"
+
+[source.arm64]
+url = "https://github.com/caddyserver/caddy/releases/download/v2.11.8/caddy_2.11.8_windows_arm64.zip"
+sha512 = "7e650d020997cff6761caad667ea91cbb803cbccc358de83dd6fce332ce5fd13ec5d0c6e434803dca2f5877dc5a4243d9516395e51211e3fe204f963de70134d"
+
+[autoupdate]
+checkver = { github = "caddyserver/caddy" }
+url_template = { x64 = "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_amd64.zip", arm64 = "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_arm64.zip" }

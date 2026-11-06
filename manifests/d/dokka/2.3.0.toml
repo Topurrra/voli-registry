@@ -1,0 +1,15 @@
+name = "dokka"
+version = "2.3.0"
+description = "Documentation Engine for Kotlin."
+homepage = "https://kotl.in/dokka"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dokka.jar"]
+
+[source.x64]
+url = "https://repo1.maven.org/maven2/org/jetbrains/dokka/dokka-cli/2.3.0/dokka-cli-2.3.0.jar#/dokka.jar"
+sha256 = "9c9e05b3cf19e8f794064e8290180f709721189317821ec0a7968598b8f3b422"
+
+[autoupdate]
+checkver = { github = "Kotlin/dokka" }
+url_template = "https://repo1.maven.org/maven2/org/jetbrains/dokka/dokka-cli/$version/dokka-cli-$version.jar#/dokka.jar"

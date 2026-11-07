@@ -1,0 +1,22 @@
+name = "artcraft-launcher"
+version = "0.16.0"
+description = "One place to install, update and open every app in the Craft App Suite"
+homepage = "https://github.com/storytold/craft-launcher"
+license = "MIT|Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "artcraft-launcher.exe", name = "ArtCraft Launcher" }]
+persist = ["ArtCraftLauncherData"]
+
+[source.x64]
+url = "https://github.com/storytold/craft-launcher/releases/download/v0.16.0/artcraft-launcher-0.16.0-windows-x64-portable.zip"
+sha256 = "a215efd12aac98c6b1ce32af1b6dfd536e5da4f9a814a4f8ba0364c9ed973eae"
+extract_dir = "artcraft-launcher-0.16.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/craft-launcher/releases/download/v0.16.0/artcraft-launcher-0.16.0-windows-arm64-portable.zip"
+sha256 = "9e0377bc1f6bd37af74e9c41efbee3d0b24c380d76d03384eb4ff739e5940876"
+extract_dir = "artcraft-launcher-0.16.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/craft-launcher" }
+url_template = { x64 = "https://github.com/storytold/craft-launcher/releases/download/v$version/artcraft-launcher-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/craft-launcher/releases/download/v$version/artcraft-launcher-$version-windows-arm64-portable.zip" }

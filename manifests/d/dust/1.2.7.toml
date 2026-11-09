@@ -1,0 +1,41 @@
+name = "dust"
+version = "1.2.7"
+description = "du(1) - File space usage analyzer"
+homepage = "https://github.com/bootandy/dust"
+license = "Apache-2.0"
+kind = "app"
+bin = ["dust.exe"]
+
+[source.x64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-pc-windows-msvc.zip"
+sha256 = "d07a41521958895e701ad55f342302b7362799d6a328c843e8e2208ba0564c30"
+extract_dir = "dust-v1.2.7-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-aarch64-pc-windows-msvc.zip"
+sha256 = "4d8cce667fbfb39b9f6f1d81b4ffc70dc51744e9d1e5a654d96dd1eee59d1695"
+extract_dir = "dust-v1.2.7-aarch64-pc-windows-msvc"
+
+[source.linux-x64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "2f1a1106f1f14c0b684b2f0a5f4482c6d53e07a871df4afc11e3b91ade300b55"
+extract_dir = "dust-v1.2.7-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "4c8ebaf224179bfd42db45d8a50fd5304bbd89532eda94db684d309c7b734ed6"
+extract_dir = "dust-v1.2.7-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-x86_64-apple-darwin.tar.gz"
+sha256 = "5eef77d18dfd2d1d56d1b3c415bc2d41b5b793bc63b5c7f706005d058a48a363"
+extract_dir = "dust-v1.2.7-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/bootandy/dust/releases/download/v1.2.7/dust-v1.2.7-aarch64-apple-darwin.tar.gz"
+sha256 = "38e1b3b4e5e6a5cdb044b5fdb32ea45f18dc78276711796214806f20f7705a99"
+extract_dir = "dust-v1.2.7-aarch64-apple-darwin"
+
+[autoupdate]
+checkver = { github = "bootandy/dust" }
+url_template = { x64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/bootandy/dust/releases/download/v$version/dust-v$version-aarch64-pc-windows-msvc.zip" }

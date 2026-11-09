@@ -1,0 +1,22 @@
+name = "effectcraft"
+version = "0.23.0"
+description = "Motion graphics and visual effects; an open-source, clean-room reimplementation of Adobe After Effects, rebuilt in pure Rust"
+homepage = "https://getartcraft.com/apps/effectcraft"
+license = "MIT|Apache-2.0"
+kind = "app"
+bin = ["effectcraft-cli.exe"]
+shortcuts = [{ target = "effectcraft.exe", name = "EffectCraft" }]
+
+[source.x64]
+url = "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-x64-portable.zip"
+sha256 = "421d0c1975488054de29f776bef1eb458a3359023f96f48110862833d6d05c3b"
+extract_dir = "effectcraft-0.23.0-windows-x64-portable"
+
+[source.arm64]
+url = "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-arm64-portable.zip"
+sha256 = "0172a713d9011bb77c6067cae56f710c028dc40167d7c19275243d636c9bd800"
+extract_dir = "effectcraft-0.23.0-windows-arm64-portable"
+
+[autoupdate]
+checkver = { github = "storytold/effectcraft" }
+url_template = { x64 = "https://github.com/storytold/effectcraft/releases/download/v$version/effectcraft-$version-windows-x64-portable.zip", arm64 = "https://github.com/storytold/effectcraft/releases/download/v$version/effectcraft-$version-windows-arm64-portable.zip" }

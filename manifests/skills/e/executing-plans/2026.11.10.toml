@@ -1,0 +1,10 @@
+name = "executing-plans"
+version = "2026.11.10"
+description = "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available"
+homepage = "https://github.com/obra/superpowers/tree/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.11.10/obra-superpowers-2026.11.10-executing-plans.zip"
+sha256 = "bf7e69cdc938c6151e73604fbcc1f67f0776c1df2293559f35be2498a1791d06"

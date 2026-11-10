@@ -1,0 +1,10 @@
+name = "anr-audit-and-fix"
+version = "2026.11.10"
+description = "Audits Android codebases for ANR risks and diagnoses ANR stack dumps."
+homepage = "https://github.com/android/skills/tree/5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d/performance/anr-audit-and-fix"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.10/android-skills-2026.11.10-anr-audit-and-fix.zip"
+sha256 = "d81720b8f9fb6c098d3ea0c357e3255f9e9db94efadf7625580ff219bc266aff"

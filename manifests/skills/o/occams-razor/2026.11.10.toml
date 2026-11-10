@@ -1,0 +1,10 @@
+name = "occams-razor"
+version = "2026.11.10"
+description = "Stop overthinking and answer with what we actually know for sure, how you know, and a confidence %. Use for \"occams-razor\", or when the user asks what we actually know, whether something is really true, or tells you to stop overthinking."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/occams-razor"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-occams-razor.zip"
+sha256 = "838ece6adb5f7a0ce0713c5715d6c81d0b81bb418be3249338127237a02eec46"

@@ -1,0 +1,10 @@
+name = "ink-custom-brush-builder"
+version = "2026.11.10"
+description = "Creates custom BrushFamily definitions for an Android app using Jetpack"
+homepage = "https://github.com/android/skills/tree/5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d/jetpack-compose/ink/ink-custom-brush-builder"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.10/android-skills-2026.11.10-ink-custom-brush-builder.zip"
+sha256 = "e31c5bdbe3e96e2c094d79d1ae07144eda633e64edfed23316759672adce05ff"

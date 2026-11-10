@@ -1,0 +1,10 @@
+name = "systematic-debugging"
+version = "2026.11.10"
+description = "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+homepage = "https://github.com/obra/superpowers/tree/22f0b463e7a5e579904dd6211a520321035526f7/skills/systematic-debugging"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.11.10/obra-superpowers-2026.11.10-systematic-debugging.zip"
+sha256 = "c572c4d3c1f932733778b6954adaf9b015e3d435ef175758a3aeb1f1be5e9ffd"

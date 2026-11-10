@@ -1,0 +1,10 @@
+name = "muse-review"
+version = "2026.11.10"
+description = "Launch an independent Meta Muse Wonder Max code review through Pi and OpenRouter, and return it verbatim. Use only when the user explicitly invokes /muse-review."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/muse-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-muse-review.zip"
+sha256 = "759aa4ddcf5db5a523400b061188dfca781974bc3bbec330a74715ad9936f9b7"

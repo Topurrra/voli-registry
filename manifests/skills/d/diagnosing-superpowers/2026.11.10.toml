@@ -1,0 +1,10 @@
+name = "diagnosing-superpowers"
+version = "2026.11.10"
+description = "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness."
+homepage = "https://github.com/obra/superpowers/tree/22f0b463e7a5e579904dd6211a520321035526f7/skills/diagnosing-superpowers"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-obra-superpowers-v2026.11.10/obra-superpowers-2026.11.10-diagnosing-superpowers.zip"
+sha256 = "d78150b5e0a1597b7dab750eb1222a5e70d0c7ad3b6122764ff461621326a597"

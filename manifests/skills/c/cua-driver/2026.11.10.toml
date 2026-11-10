@@ -1,0 +1,10 @@
+name = "cua-driver"
+version = "2026.11.10"
+description = "Use Cua Driver for desktop or browser tasks that are awkward or unavailable through Bash/APIs, or when the user explicitly wants GUI interaction: app testing, visual bug reproduction, form filling, calendar entry, screenshots, and demo recording. Also covers Cua setup; not OpenAI Codex Computer Use or web research."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/cua-driver"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-cua-driver.zip"
+sha256 = "bca41a2d10138aa4b5cc9da05e6802df81925e50c1267cb51de0314f8b52f73e"

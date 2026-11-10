@@ -1,0 +1,10 @@
+name = "setup-help"
+version = "2026.11.10"
+description = "Guide setup one step at a time and show what remains. Use only when the user explicitly asks for it by name."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/setup-help"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-setup-help.zip"
+sha256 = "0112c03377edb09d81313073e15bbfdbad792c188903341c79a614f5c7234ca3"

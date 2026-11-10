@@ -1,0 +1,10 @@
+name = "openrouter"
+version = "2026.11.10"
+description = "Design, build, debug, and optimize OpenRouter API integrations. Use for any OpenRouter API work, including models, reasoning, routing, media, tools, structured output, cost, or performance."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/openrouter"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-openrouter.zip"
+sha256 = "16a24957efc0152f322cb4b439ece1f053eea331c5d6cc723c6878d46c099828"

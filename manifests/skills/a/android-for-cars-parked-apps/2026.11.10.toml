@@ -1,0 +1,10 @@
+name = "android-for-cars-parked-apps"
+version = "2026.11.10"
+description = "Adapt existing Android video streaming apps, games, and web browsers"
+homepage = "https://github.com/android/skills/tree/5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d/cars/android-for-cars-parked-apps"
+license = "Apache-2.0"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-android-skills-v2026.11.10/android-skills-2026.11.10-android-for-cars-parked-apps.zip"
+sha256 = "d02fea9bddbb619be26ad60fb7e7e8133d8e8a847f19965f849ef24fcf8d5cf8"

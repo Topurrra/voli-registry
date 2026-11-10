@@ -1,0 +1,10 @@
+name = "davidondrej-handoff"
+version = "2026.11.10"
+description = "Capture session context for a fresh agent. Use for handoffs, context limits, switching focus, ending sessions, or splitting work across sessions."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/handoff"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-davidondrej-handoff.zip"
+sha256 = "5c8782e96bafd68f869c2f7838c517d10fc47260d53139f1aa33c2f185badc3b"

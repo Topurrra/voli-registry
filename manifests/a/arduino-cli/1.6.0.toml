@@ -1,0 +1,15 @@
+name = "arduino-cli"
+version = "1.6.0"
+description = "Arduino command line interface"
+homepage = "https://arduino.github.io/arduino-cli/latest/"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["arduino-cli.exe"]
+
+[source.x64]
+url = "https://github.com/arduino/arduino-cli/releases/download/v1.6.0/arduino-cli_1.6.0_Windows_64bit.zip"
+sha256 = "2769b9b282ce597db9679d8ec14d726d57004ca4205ef4d7a795bf36b6cdc9d8"
+
+[autoupdate]
+checkver = { github = "arduino/arduino-cli" }
+url_template = { x64 = "https://github.com/arduino/arduino-cli/releases/download/v$version/arduino-cli_$version_Windows_64bit.zip" }

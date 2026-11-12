@@ -1,0 +1,15 @@
+name = "cni-plugins"
+version = "1.10.0"
+description = "Reference CNI (Container Network Interface) network plugins, maintained by the containernetworking team."
+homepage = "https://www.cni.dev/plugins/current/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["host-local.exe", "win-bridge.exe", "win-overlay.exe"]
+
+[source.x64]
+url = "https://github.com/containernetworking/plugins/releases/download/v1.10.0/cni-plugins-windows-amd64-v1.10.0.tgz"
+sha256 = "df2664a53c722e29257136ef25151d4237f0e948c2a02a2e45bd6b5b225814b0"
+
+[autoupdate]
+checkver = { github = "containernetworking/plugins" }
+url_template = { x64 = "https://github.com/containernetworking/plugins/releases/download/v$version/cni-plugins-windows-amd64-v$version.tgz" }

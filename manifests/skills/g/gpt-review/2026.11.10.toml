@@ -1,0 +1,10 @@
+name = "gpt-review"
+version = "2026.11.10"
+description = "Launch an independent GPT-6-Astra code review and return it verbatim. Use only when the user explicitly invokes /gpt-review."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/gpt-review"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-gpt-review.zip"
+sha256 = "f72396a1c20f9013565667bcc762d4cc69ce75e422e091899a4dde43dbbda102"

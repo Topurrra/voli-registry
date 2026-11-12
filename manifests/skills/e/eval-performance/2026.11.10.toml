@@ -1,0 +1,10 @@
+name = "eval-performance"
+version = "2026.11.10"
+description = "Diagnose measured MSBuild evaluation cost before targets run. USE FOR: evaluation-only repeats under global-property variants, expensive node_modules/.git/bin/obj globs, import depth >20, /pp >10K lines, file-I/O property functions, five-phase evaluation. DO NOT USE FOR: duplicate executions (find-repeated-work-within-one-build), execution bottlenecks (build-perf-diagnostics), incremental rebuilds (incremental-build), non-MSBuild systems."
+homepage = "https://github.com/dotnet/skills/tree/96c3d68dad2855e3ab5178aa1a262789d86a1466/plugins/dotnet-msbuild/skills/eval-performance"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.11.10/dotnet-skills-2026.11.10-eval-performance.zip"
+sha256 = "742d6e81ecaafcd8ae81b0b3ca516f829d6b02e50e50b6c293aa2f04a51e6b62"

@@ -1,0 +1,10 @@
+name = "distribute-skill-to-all-agents"
+version = "2026.11.10"
+description = "Distribute global skills across Codex, Claude Code, Pi, Hermes, and Cursor. Use for \"distribute this skill\", \"sync skills across agents\", or after creating or updating a global skill."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/distribute-skill-to-all-agents"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-distribute-skill-to-all-agents.zip"
+sha256 = "4f660fa274952534269ad051383f64ce4005e94f36629a6e91c5290868369d00"

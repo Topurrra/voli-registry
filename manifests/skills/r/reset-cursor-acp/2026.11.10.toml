@@ -1,0 +1,10 @@
+name = "reset-cursor-acp"
+version = "2026.11.10"
+description = "Reset a stuck Cursor ACP thread in bb and reload its configuration. Use only when the user explicitly invokes /reset-cursor-acp."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/reset-cursor-acp"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-reset-cursor-acp.zip"
+sha256 = "10130adf432cf630b8f58f58c5ee8113a02384941ad1f0a6364f86648378a30c"

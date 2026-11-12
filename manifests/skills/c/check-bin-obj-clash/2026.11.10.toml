@@ -1,0 +1,10 @@
+name = "check-bin-obj-clash"
+version = "2026.11.10"
+description = "Find OutputPath/IntermediateOutputPath collisions between distinct projects or required property/TFM variants. USE FOR: missing/overwritten bin/obj or project.assets.json, parallel 'Cannot create a file when that file already exists' or 'file is being used by another process', shared paths, missing AppendTargetFrameworkToOutputPath, PublishReadyToRun, SetTargetFramework on single-target references. DO NOT USE FOR: duplicates or invariant-generation races (find-repeated-work-within-one-build), OS locking, single-instance builds, non-MSBuild systems."
+homepage = "https://github.com/dotnet/skills/tree/96c3d68dad2855e3ab5178aa1a262789d86a1466/plugins/dotnet-msbuild/skills/check-bin-obj-clash"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.11.10/dotnet-skills-2026.11.10-check-bin-obj-clash.zip"
+sha256 = "9c356d95041a0d9bf63ac8fd4f62e7befddf21dc8de26494fa87f7cc7a6a2588"

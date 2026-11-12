@@ -1,0 +1,10 @@
+name = "davidondrej-teach"
+version = "2026.11.10"
+description = "Teach the user a new skill or concept, within this workspace."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/teach"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-davidondrej-teach.zip"
+sha256 = "b6a8b6144574b1fe50ad805381dd81746db7570220a8723c733c5a30b86aaabb"

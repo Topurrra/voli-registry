@@ -1,0 +1,10 @@
+name = "build-perf-baseline"
+version = "2026.11.10"
+description = "Establish MSBuild/.NET baselines before optimizing. USE FOR: unranked slow builds; cold/warm/incremental/no-op measurements; before/after comparisons; CI caching; static graph, artifacts output, dependency graph trimming. DO NOT USE FOR: measured bottlenecks (build-perf-diagnostics), known repeated restores (eliminate-redundant-restores), within-build duplicate calls (find-repeated-work-within-one-build), non-MSBuild builds."
+homepage = "https://github.com/dotnet/skills/tree/96c3d68dad2855e3ab5178aa1a262789d86a1466/plugins/dotnet-msbuild/skills/build-perf-baseline"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.11.10/dotnet-skills-2026.11.10-build-perf-baseline.zip"
+sha256 = "2472e3c462e987dbf3d321d90a6fb9f66b18258358589b017cb3908d30a3334a"

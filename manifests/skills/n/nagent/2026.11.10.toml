@@ -1,0 +1,10 @@
+name = "nagent"
+version = "2026.11.10"
+description = "Launch a new bb worker thread with the right project, model, worktree, and task brief. Use for nagent, launching a bb session, or a standalone bb agent. Covers thread creation; use bb-cli for managing existing threads."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/nagent"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-nagent.zip"
+sha256 = "5d30a1b1773d1654920db5df0a9d3b57ec74b3e0e078ddd24846570af7d7e80b"

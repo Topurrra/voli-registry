@@ -1,0 +1,10 @@
+name = "browser-harness"
+version = "2026.11.10"
+description = "Direct browser control via CDP. Use when the user wants to automate, scrape, test, or interact with web pages. Connects to the user's already-running Chrome."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/browser-harness"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-browser-harness.zip"
+sha256 = "00287881ac23fcc6fa65281b43053dc8e516848ef5dbe75dae5ddfbb3396b247"

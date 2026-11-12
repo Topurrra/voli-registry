@@ -1,0 +1,10 @@
+name = "adr-verbatim"
+version = "2026.11.10"
+description = "Record concise ADRs that preserve the user's decisions without conversational noise. Use for \"adr-verbatim\", \"new ADR\", \"document that as an ADR\", \"record this decision\", or supplied ADR wording."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/adr-verbatim"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-adr-verbatim.zip"
+sha256 = "d0b728418febd2a30d7856da23b6253f2ffbdd9867e673eae781c20ea5c538cc"

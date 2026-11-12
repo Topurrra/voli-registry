@@ -1,0 +1,10 @@
+name = "state"
+version = "2026.11.10"
+description = "Manually-invoked skill that recaps what the current thread is doing and how far along it is. Use when the user says \"state\", \"where are we\", or \"what % are we done\"."
+homepage = "https://github.com/davidondrej/skills/tree/cf0b20e4254fbeca1d4535a32cd735ecc49ec325/skills/state"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-davidondrej-skills-v2026.11.10/davidondrej-skills-2026.11.10-state.zip"
+sha256 = "053ecb48592eaf22c24f811da4d6b288bf6db7c289c7a4d19436cc7fc87a11e5"

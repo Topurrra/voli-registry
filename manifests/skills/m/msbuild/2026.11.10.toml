@@ -1,0 +1,10 @@
+name = "msbuild"
+version = "2026.11.10"
+description = "Use before MSBuild custom-target or incremental-generation repairs, XML/import/hook review, .binlog capture/replay, or assessing supported/unsupported build-speedup claims and controlled timings, even without a checkout. For MSBuild authoring itself, activate before reviewing/editing .proj/.props/.targets/.csproj/.fsproj/.vbproj or Directory.Build files, including no-change import reviews. Framework/API/.NET/ASP.NET upgrade plans and working non-SDK-to-SDK/packages.config conversions are migrations, even if they mention .csproj/NuGet: DO NOT activate. A failing assertion after a successful build is code/test debugging: DO NOT activate. Check Import/Exists, required and NuGet build/buildTransitive/nuspec imports, conditions, Inputs/Outputs, stale outputs and incorrect skips. Build checks use copies; source inputs stay read-only. Diagnose failed dotnet build/restore/pack/publish or slow evaluation/compilation/copying. Exclude SDK installation alone, C# refactoring, runtime CPU profiling and non-MSBuild builds."
+homepage = "https://github.com/dotnet/skills/tree/96c3d68dad2855e3ab5178aa1a262789d86a1466/plugins/dotnet/skills/msbuild"
+license = "MIT"
+kind = "skill"
+
+[source.any]
+url = "https://github.com/Topurrra/voli-registry/releases/download/skills-dotnet-skills-v2026.11.10/dotnet-skills-2026.11.10-msbuild.zip"
+sha256 = "5484b1a5f7b6d6043a4dcfe4fb82442006e070ab8f4930cb250cfd9f335d4882"

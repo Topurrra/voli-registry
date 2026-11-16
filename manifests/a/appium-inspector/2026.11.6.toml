@@ -1,0 +1,19 @@
+name = "appium-inspector"
+version = "2026.11.6"
+description = "A GUI inspector for mobile apps and more, powered by a (separately installed) Appium server"
+homepage = "https://github.com/appium/appium-inspector"
+license = "Apache-2.0"
+kind = "app"
+shortcuts = [{ target = "Appium Inspector.exe", name = "Appium Inspector" }]
+
+[source.x64]
+url = "https://github.com/appium/appium-inspector/releases/download/v2026.11.6/Appium-Inspector-2026.11.6-win-x64.zip"
+sha256 = "6b584a81ad2f1201a4fce5b8bff57675cb9db339a70d31f82c9ecef5f5c4aa25"
+
+[source.arm64]
+url = "https://github.com/appium/appium-inspector/releases/download/v2026.11.6/Appium-Inspector-2026.11.6-win-arm64.zip"
+sha256 = "b78e492b8654e60b935ddc9e8292f9d3284f2504cd07186b35b3ede7e8c4f527"
+
+[autoupdate]
+checkver = { github = "appium/appium-inspector" }
+url_template = { x64 = "https://github.com/appium/appium-inspector/releases/download/v$version/Appium-Inspector-$version-win-x64.zip", arm64 = "https://github.com/appium/appium-inspector/releases/download/v$version/Appium-Inspector-$version-win-arm64.zip" }

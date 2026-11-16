@@ -1,0 +1,16 @@
+name = "arduino"
+version = "2.3.11"
+description = "Arduino IDE"
+homepage = "https://www.arduino.cc"
+license = "AGPL-3.0-or-later"
+kind = "app"
+bin = [{ name = "arduino", path = "Arduino IDE.exe" }]
+shortcuts = [{ target = "Arduino IDE.exe", name = "Arduino IDE" }]
+
+[source.x64]
+url = "https://github.com/arduino/arduino-ide/releases/download/2.3.11/arduino-ide_2.3.11_Windows_64bit.zip"
+sha256 = "c52f6bb6ae8ca511875d28b76d552c835a2f8c4dc0ef823614e0a107021a0544"
+
+[autoupdate]
+checkver = { github = "arduino/arduino-ide" }
+url_template = { x64 = "https://github.com/arduino/arduino-ide/releases/download/$version/arduino-ide_$version_Windows_64bit.zip" }

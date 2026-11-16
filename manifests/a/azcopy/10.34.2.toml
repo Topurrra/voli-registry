@@ -1,0 +1,21 @@
+name = "azcopy"
+version = "10.34.2"
+description = "Command-line utility to download/upload blobs and files from Microsoft Azure storage accounts"
+homepage = "https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"
+license = "MIT"
+kind = "app"
+bin = ["azcopy.exe"]
+
+[source.x64]
+url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.34.2/azcopy_windows_amd64_10.34.2.zip/#dl.zip"
+sha256 = "7102d4451319f73cdc2722f3ba1d2b151003ab674fac39baa73116a15d7bf5ba"
+extract_dir = "azcopy_windows_amd64_10.34.2"
+
+[source.arm64]
+url = "https://github.com/Azure/azure-storage-azcopy/releases/download/v10.34.2/azcopy_windows_arm64_10.34.2.zip/#dl.zip"
+sha256 = "faa356c03ac8996d977037fbcca9d81b4e859c695e26017117ac4f0b86e1f930"
+extract_dir = "azcopy_windows_arm64_10.34.2"
+
+[autoupdate]
+checkver = { github = "Azure/azure-storage-azcopy" }
+url_template = { x64 = "https://github.com/Azure/azure-storage-azcopy/releases/download/v$version/azcopy_windows_amd64_$version.zip/#dl.zip", arm64 = "https://github.com/Azure/azure-storage-azcopy/releases/download/v$version/azcopy_windows_arm64_$version.zip/#dl.zip" }

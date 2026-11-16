@@ -1,0 +1,19 @@
+name = "azure-functions-core-tools"
+version = "4.16.1"
+description = "Command line tools for Azure Functions"
+homepage = "https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local"
+license = "MIT"
+kind = "app"
+bin = ["func.exe"]
+
+[source.x64]
+url = "https://github.com/Azure/azure-functions-core-tools/releases/download/4.16.1/Azure.Functions.Cli.win-x64.4.16.1.zip#/dl.7z"
+sha256 = "55ef135f0783f3a673d9dfc8d982cc03e46678cc60b5123978680d2be4c9677d"
+
+[source.arm64]
+url = "https://github.com/Azure/azure-functions-core-tools/releases/download/4.16.1/Azure.Functions.Cli.win-arm64.4.16.1.zip#/dl.7z"
+sha256 = "951333b5e510994df03cefd5fe153ac4689e53789ccc8123afeb1c740ad4c077"
+
+[autoupdate]
+checkver = { github = "Azure/azure-functions-core-tools" }
+url_template = { x64 = "https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-x64.$version.zip#/dl.7z", arm64 = "https://github.com/Azure/azure-functions-core-tools/releases/download/$version/Azure.Functions.Cli.win-arm64.$version.zip#/dl.7z" }

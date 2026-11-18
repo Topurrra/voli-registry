@@ -1,0 +1,16 @@
+name = "cake-wallet"
+version = "6.5.4"
+description = "An open-source, non-custodial, and private multi-currency crypto wallet."
+homepage = "https://cakewallet.com/"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "CakeWallet.exe", name = "Cake Wallet" }]
+
+[source.x64]
+url = "https://github.com/cake-tech/cake_wallet/releases/download/v6.5.4/Cake_Wallet_v6.5.4_Windows.exe"
+sha256 = "4e51c97430d1cf3401298870b0725b90d52267b021dd244928af35f09347e52b"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = "{\"github\":\"https://api.github.com/repos/cake-tech/cake_wallet/releases\",\"jsonpath\":\"$[*].assets[*].browser_download_url\",\"regex\":\"Cake_Wallet_v([\\\\d.]+)_Windows\\\\.exe\"}"
+url_template = { x64 = "https://github.com/cake-tech/cake_wallet/releases/download/v$version/Cake_Wallet_v$version_Windows.exe" }

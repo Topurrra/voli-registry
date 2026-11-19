@@ -1,0 +1,15 @@
+name = "aliyun"
+version = "3.5.4"
+description = "Manage and use Alibaba Cloud resources."
+homepage = "https://help.aliyun.com/zh/cli/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["aliyun.exe"]
+
+[source.x64]
+url = "https://github.com/aliyun/aliyun-cli/releases/download/v3.5.4/aliyun-cli-windows-3.5.4-amd64.zip"
+sha256 = "aa863bfe9092c01b6c3ab9b544615d40820f78c359499b0be93706aa62ee97db"
+
+[autoupdate]
+checkver = { github = "aliyun/aliyun-cli" }
+url_template = { x64 = "https://github.com/aliyun/aliyun-cli/releases/download/v$version/aliyun-cli-windows-$version-amd64.zip" }

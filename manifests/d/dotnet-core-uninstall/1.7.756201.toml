@@ -1,0 +1,17 @@
+name = "dotnet-core-uninstall"
+version = "1.7.756201"
+description = "The .NET uninstall tool (dotnet-core-uninstall) lets you remove .NET SDKs and runtimes from a system."
+homepage = "https://learn.microsoft.com/en-us/dotnet/core/additional-tools/uninstall-tool"
+license = "MIT"
+kind = "app"
+extract_dir = "PFiles/dotnet-core-uninstall"
+bin = ["dotnet-core-uninstall.exe"]
+
+[source.x64]
+url = "https://github.com/dotnet/cli-lab/releases/download/1.7.756201/dotnet-core-uninstall.msi"
+sha256 = "0b4944f3beabae25578f01ae38c60662b69c03584ab088dbff04705f65083d4c"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { github = "dotnet/cli-lab" }
+url_template = "https://github.com/dotnet/cli-lab/releases/download/$version/dotnet-core-uninstall.msi"

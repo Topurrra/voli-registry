@@ -1,0 +1,16 @@
+name = "apm"
+version = "0.37.0"
+description = "The package manager for AI-Native Development."
+homepage = "https://microsoft.github.io/apm/"
+license = "MIT"
+kind = "app"
+extract_dir = "apm-windows-x86_64"
+bin = ["apm.exe"]
+
+[source.x64]
+url = "https://github.com/microsoft/apm/releases/download/v0.37.0/apm-windows-x86_64.zip"
+sha256 = "422e575a4b60a7532afbfbc655e7e8d85e802dc3651bb9dedd0c131490d3be90"
+
+[autoupdate]
+checkver = { github = "microsoft/apm" }
+url_template = { x64 = "https://github.com/microsoft/apm/releases/download/v$version/apm-windows-x86_64.zip" }

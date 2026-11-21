@@ -1,0 +1,19 @@
+name = "ddev"
+version = "1.25.6"
+description = "An open source tool that makes it simple to get local PHP development environments up and running in minutes"
+homepage = "https://ddev.readthedocs.io/en/latest/"
+license = "Apache-2.0"
+kind = "app"
+bin = ["ddev.exe", "ddev-hostname.exe"]
+
+[source.x64]
+url = "https://github.com/ddev/ddev/releases/download/v1.25.6/ddev_windows-amd64.v1.25.6.zip"
+sha256 = "5c10a7b84059cc0c40dec6b0992864324b3710def08833c671f0d0e109c9f462"
+
+[source.arm64]
+url = "https://github.com/ddev/ddev/releases/download/v1.25.6/ddev_windows-arm64.v1.25.6.zip"
+sha256 = "1140e7baff4cac84381fde17839a6b2fa974cc5e7b626b539044b43a113854a7"
+
+[autoupdate]
+checkver = { github = "ddev/ddev" }
+url_template = { x64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-amd64.v$version.zip", arm64 = "https://github.com/ddev/ddev/releases/download/v$version/ddev_windows-arm64.v$version.zip" }

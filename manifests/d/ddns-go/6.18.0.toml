@@ -1,0 +1,19 @@
+name = "ddns-go"
+version = "6.18.0"
+description = "Simple and easy to use DDNS. Support Aliyun, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, Namecheap, NameSilo, Dynadot"
+homepage = "https://github.com/jeessy2/ddns-go"
+license = "MIT"
+kind = "app"
+bin = ["ddns-go.exe"]
+
+[source.x64]
+url = "https://github.com/jeessy2/ddns-go/releases/download/v6.18.0/ddns-go_6.18.0_windows_x86_64.zip"
+sha256 = "871ebbb85c8ef0f8ce0fbd285c76a73eea3757b52759ce696e44d0cf08af715d"
+
+[source.arm64]
+url = "https://github.com/jeessy2/ddns-go/releases/download/v6.18.0/ddns-go_6.18.0_windows_arm64.zip"
+sha256 = "e88c40a3e337951c82894eabb6b79165b5cf8ff5182baef1432003de39598a9a"
+
+[autoupdate]
+checkver = { github = "jeessy2/ddns-go" }
+url_template = { x64 = "https://github.com/jeessy2/ddns-go/releases/download/v$version/ddns-go_$version_windows_x86_64.zip", arm64 = "https://github.com/jeessy2/ddns-go/releases/download/v$version/ddns-go_$version_windows_arm64.zip" }

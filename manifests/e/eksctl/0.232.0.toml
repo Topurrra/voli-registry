@@ -1,0 +1,19 @@
+name = "eksctl"
+version = "0.232.0"
+description = "A simple CLI tool for creating clusters on EKS - Amazon’s new managed Kubernetes service for EC2."
+homepage = "https://eksctl.io"
+license = "Apache-2.0"
+kind = "app"
+bin = ["eksctl.exe"]
+
+[source.x64]
+url = "https://github.com/eksctl-io/eksctl/releases/download/v0.232.0/eksctl_Windows_amd64.zip"
+sha256 = "21d82375d3e7bc5d8f27d3f0a425e9b8a351635bc0ff3f2a79104ae765f3c5fd"
+
+[source.arm64]
+url = "https://github.com/eksctl-io/eksctl/releases/download/v0.232.0/eksctl_Windows_arm64.zip"
+sha256 = "d7456398a14371ac0d9c172aaa22461fc83b9c3e4d80a27bb5b47fa685f61121"
+
+[autoupdate]
+checkver = { github = "eksctl-io/eksctl" }
+url_template = { x64 = "https://github.com/eksctl-io/eksctl/releases/download/v$version/eksctl_Windows_amd64.zip", arm64 = "https://github.com/eksctl-io/eksctl/releases/download/v$version/eksctl_Windows_arm64.zip" }

@@ -1,0 +1,16 @@
+name = "bttf"
+version = "0.2.0"
+description = "A command line tool for datetime arithmetic, parsing, formatting and more."
+homepage = "https://github.com/BurntSushi/bttf"
+license = "Unlicense|MIT"
+kind = "app"
+extract_dir = "bttf-0.2.0-x86_64-pc-windows-msvc"
+bin = ["bttf.exe"]
+
+[source.x64]
+url = "https://github.com/BurntSushi/bttf/releases/download/0.2.0/bttf-0.2.0-x86_64-pc-windows-msvc.zip"
+sha256 = "88cb91e562f35946269423ce50b353f39e9506d611d4abbb6fcd5a28ebcea18a"
+
+[autoupdate]
+checkver = { github = "BurntSushi/bttf" }
+url_template = { x64 = "https://github.com/BurntSushi/bttf/releases/download/$version/bttf-$version-x86_64-pc-windows-msvc.zip" }

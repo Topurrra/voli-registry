@@ -1,0 +1,19 @@
+name = "agentsview"
+version = "0.48.0"
+description = "Local-first session search, analytics, insights, and token use statistics for coding agents."
+homepage = "https://agentsview.io"
+license = "MIT"
+kind = "app"
+bin = ["agentsview.exe"]
+
+[source.x64]
+url = "https://github.com/kenn-io/agentsview/releases/download/v0.48.0/agentsview_0.48.0_windows_amd64.zip"
+sha256 = "de4e7eaeb88686bd5cf19293bffee731c9ddd89f28705f0017651bb35bcc4366"
+
+[source.arm64]
+url = "https://github.com/kenn-io/agentsview/releases/download/v0.48.0/agentsview_0.48.0_windows_arm64.zip"
+sha256 = "14aeffdcd6a0eba1a09f905375de8e7a3f0e6efd78afb5fe4e152360d2cbb43b"
+
+[autoupdate]
+checkver = { github = "kenn-io/agentsview" }
+url_template = { x64 = "https://github.com/kenn-io/agentsview/releases/download/v$version/agentsview_$version_windows_amd64.zip", arm64 = "https://github.com/kenn-io/agentsview/releases/download/v$version/agentsview_$version_windows_arm64.zip" }

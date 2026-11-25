@@ -1,0 +1,19 @@
+name = "cue"
+version = "0.18.0"
+description = "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
+homepage = "https://cuelang.org"
+license = "Apache-2.0"
+kind = "app"
+bin = ["cue.exe"]
+
+[source.x64]
+url = "https://github.com/cue-lang/cue/releases/download/v0.18.0/cue_v0.18.0_windows_amd64.zip"
+sha256 = "c2b17fc673b1395704cf4db657327c5f9da831edab5164531ec315ba05bb95b4"
+
+[source.arm64]
+url = "https://github.com/cue-lang/cue/releases/download/v0.18.0/cue_v0.18.0_windows_arm64.zip"
+sha256 = "77e3ec0cb46bfbbf76967bd1bbdb94769084ddf489d77504f0c6a26e51d5ac82"
+
+[autoupdate]
+checkver = { github = "cue-lang/cue" }
+url_template = { x64 = "https://github.com/cue-lang/cue/releases/download/v$version/cue_v$version_windows_amd64.zip", arm64 = "https://github.com/cue-lang/cue/releases/download/v$version/cue_v$version_windows_arm64.zip" }

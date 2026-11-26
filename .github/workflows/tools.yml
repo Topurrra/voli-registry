@@ -109,7 +109,10 @@ jobs:
       - name: Clone voli for the voli-core path dependency
         env:
           VOLI_TAG: v0.13.2
-        run: git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
+          VOLI_REV: c00dfd46e1141742ca282eb5e8129a3dbcd12da0 # v0.13.2; a moved tag fails here
+        run: |
+          git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
+          test "$(git -C "$GITHUB_WORKSPACE/../voli" rev-parse HEAD)" = "$VOLI_REV"
 
       - name: Test brew-import
         working-directory: tools/brew-import
@@ -139,7 +142,10 @@ jobs:
         # Same voli tag as above — keep the two in sync (grep VOLI_TAG).
         env:
           VOLI_TAG: v0.13.2
-        run: git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
+          VOLI_REV: c00dfd46e1141742ca282eb5e8129a3dbcd12da0 # v0.13.2; a moved tag fails here
+        run: |
+          git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
+          test "$(git -C "$GITHUB_WORKSPACE/../voli" rev-parse HEAD)" = "$VOLI_REV"
 
       - name: Verify unix payloads from brew-sources.toml
         working-directory: tools/brew-import

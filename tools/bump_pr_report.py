@@ -155,7 +155,11 @@ def main() -> int:
         runner = unittest.TextTestRunner(verbosity=2)
         return 0 if runner.run(suite()).wasSuccessful() else 1
 
-    sections, failed = collect_rows(args.base, Path(args.manifests), default_fetch)
+    try:
+        sections, failed = collect_rows(args.base, Path(args.manifests), default_fetch)
+    except manifest_history.HistoryError as e:
+        print(f"::error::{e}")
+        return 1
     with open(args.out, "w", encoding="utf-8") as f:
         f.write("## Vendor provenance report\n\n")
         f.write("Review the download hosts and vendor checksums before merging. ")

@@ -143,7 +143,11 @@ def main() -> int:
     if args.self_test:
         return self_test()
 
-    problems = check_pr(args.base, Path(args.manifests))
+    try:
+        problems = check_pr(args.base, Path(args.manifests))
+    except manifest_history.HistoryError as e:
+        print(f"::error::{e}")
+        return 1
     if problems:
         for path, names in problems:
             for name in names:

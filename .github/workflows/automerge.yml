@@ -11,6 +11,8 @@ name: automerge
 # Anything else (new packages, other field changes, scoop-sync, skill-sync,
 # workflow or tool changes, PRs from people) still waits for the owner.
 #
+# Report-only until the repo variable AUTOMERGE_ENABLED is "true".
+#
 # Rules (tools/automerge_gate.py has the code and tests):
 #   * author app/github-actions, branch auto-bump/*, not a fork, base main,
 #     every commit by voli-registry-ci, no `hold` label, open >= 24 h;
@@ -151,9 +153,14 @@ jobs:
           path: verdict/
           retention-days: 7
 
+  # Report-only until the owner turns it on:
+  #   gh variable set AUTOMERGE_ENABLED -R Topurrra/voli-registry --body true
+  # Until then the gate still runs and its summary says what WOULD merge.
   merge:
     needs: [candidates, gate]
-    if: always() && needs.candidates.outputs.prs != '[]' && needs.candidates.outputs.prs != ''
+    if: >-
+      always() && vars.AUTOMERGE_ENABLED == 'true' &&
+      needs.candidates.outputs.prs != '[]' && needs.candidates.outputs.prs != ''
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

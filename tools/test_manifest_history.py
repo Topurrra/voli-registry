@@ -114,6 +114,53 @@ class ReservedShimGateOnBumps(BumpRepo):
         self.assertEqual(problems, [("manifests/f/fakegit/1.0.0.toml", ["git"])])
 
 
+class PullRequestCheckout(BumpRepo):
+    """What validate.yml sees: actions/checkout of the PR's merge commit."""
+
+    def setUp(self):
+        super().setUp()
+        run("git", "add", ".", cwd=self.repo)
+        run("git", "commit", "-q", "-m", "bump", cwd=self.repo)
+        run("git", "checkout", "-q", "main", cwd=self.repo)
+        # main moves on after the PR opens, so the merge is a real merge.
+        (self.repo / "README.md").write_text("x\n", encoding="utf-8")
+        run("git", "add", ".", cwd=self.repo)
+        run("git", "commit", "-q", "-m", "main moves", cwd=self.repo)
+        run("git", "checkout", "-q", "-b", "pr-merge", cwd=self.repo)
+        run("git", "merge", "-q", "--no-ff", "-m", "merge", "auto-bump/x", cwd=self.repo)
+        self._clone_tmp = tempfile.TemporaryDirectory()
+        self.clone = Path(self._clone_tmp.name) / "c"
+
+    def tearDown(self):
+        super().tearDown()
+        self._clone_tmp.cleanup()
+
+    def checkout(self, depth):
+        url = self.repo.as_uri()
+        extra = ["--depth", str(depth)] if depth else []
+        run("git", "clone", "-q", *extra, "--branch", "pr-merge", url, str(self.clone),
+            cwd=self.repo)
+        # the validate step's own `git fetch --quiet origin main`
+        run("git", "fetch", "-q", *extra, "origin", "main:refs/remotes/origin/main",
+            cwd=self.clone)
+        os.chdir(self.clone)
+
+    def test_shallow_checkout_names_the_cause(self):
+        # Before the fix this was a bare CalledProcessError from merge-base.
+        self.checkout(depth=1)
+        with self.assertRaises(mh.HistoryError) as cm:
+            check_reserved_shims.check_pr("origin/main", Path("manifests"))
+        self.assertIn("fetch-depth: 0", str(cm.exception))
+
+    def test_full_history_checkout_passes_the_gate(self):
+        # fetch-depth: 0, as validate.yml now uses.
+        self.checkout(depth=0)
+        self.assertEqual(check_reserved_shims.check_pr("origin/main", Path("manifests")), [])
+        fork = mh.git_merge_base("origin/main")
+        self.assertEqual(mh.git_changed_manifests(fork, "manifests"),
+                         ["manifests/g/git/2.1.0.toml"])
+
+
 class ProvenanceReportOnBumps(BumpRepo):
     def test_report_covers_an_uncommitted_new_version_file(self):
         # bump.yml runs the report before committing. Before the fix the new

@@ -94,13 +94,28 @@ def git_baseline(ref: str, path: str) -> tuple:
     return None, ""
 
 
+class HistoryError(RuntimeError):
+    """The checkout lacks the history a gate needs; the message says why."""
+
+
 def git_merge_base(base: str) -> str:
     """The commit this branch forked from `base` at.
 
     Baselines come from here, not from `base` itself: when main moves on
     after a PR opens, main's newer files must not look like PR changes.
+    Needs the history back to the fork point, so a CI checkout must use
+    `fetch-depth: 0` (a depth-1 PR merge commit has no parents to walk).
     """
-    return _git("merge-base", base, "HEAD").stdout.strip()
+    out = _git("merge-base", base, "HEAD", check=False)
+    fork = out.stdout.strip()
+    if out.returncode == 0 and fork:
+        return fork
+    shallow = _git("rev-parse", "--is-shallow-repository",
+                   check=False).stdout.strip() == "true"
+    hint = (" The checkout is shallow: use `fetch-depth: 0` with "
+            "actions/checkout, or run `git fetch --unshallow`."
+            if shallow else "")
+    raise HistoryError(f"cannot find where HEAD forked from {base}.{hint}")
 
 
 def git_changed_manifests(fork_point: str, manifests_dir: str) -> list:

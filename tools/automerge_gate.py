@@ -336,8 +336,12 @@ def main() -> int:
     r = sub.add_parser("rehash")
     r.add_argument("gate")
     args = ap.parse_args()
-    return {"candidates": cmd_candidates, "classify": cmd_classify,
-            "rehash": cmd_rehash}[args.cmd](args)
+    try:
+        return {"candidates": cmd_candidates, "classify": cmd_classify,
+                "rehash": cmd_rehash}[args.cmd](args)
+    except mh.HistoryError as e:
+        print(f"::error::{e}")
+        return 1
 
 
 if __name__ == "__main__":

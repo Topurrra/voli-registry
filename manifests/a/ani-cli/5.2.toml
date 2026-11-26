@@ -1,0 +1,19 @@
+name = "ani-cli"
+version = "5.2"
+description = "A cli to browse and watch anime (alone AND with friends). This tool scrapes the site allanime."
+homepage = "https://github.com/pystardust/ani-cli"
+license = "GPL-3.0-or-later"
+kind = "app"
+bin = ["ani-cli"]
+
+[source.x64]
+url = "https://raw.githubusercontent.com/pystardust/ani-cli/refs/tags/v5.2/ani-cli"
+sha256 = "60f10c12f2397811d137a76156555803d0913985fe73499dafda1a84771fe917"
+
+[depends]
+fzf = "*"
+mpv = "*"
+
+[autoupdate]
+checkver = { github = "pystardust/ani-cli" }
+url_template = "https://raw.githubusercontent.com/pystardust/ani-cli/refs/tags/v$version/ani-cli"

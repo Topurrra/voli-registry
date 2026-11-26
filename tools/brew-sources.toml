@@ -437,13 +437,13 @@ extract_dir = "fastfetch-linux-amd64/usr/bin"
 file = "fastfetch-linux-aarch64.tar.gz"
 extract_dir = "fastfetch-linux-aarch64/usr/bin"
 
-[source.assets.macos-x64]
-file = "fastfetch-macos-amd64.tar.gz"
-extract_dir = "fastfetch-macos-amd64/usr/bin"
-
-[source.assets.macos-arm64]
-file = "fastfetch-macos-aarch64.tar.gz"
-extract_dir = "fastfetch-macos-aarch64/usr/bin"
+# No macOS assets: upstream stopped shipping per-arch macOS builds (2.71.0 has
+# only fastfetch-macos-universal.*), and that universal binary carries a
+# /opt/homebrew/lib reference, which the linkage gate rightly refuses. The
+# old fastfetch-macos-{amd64,aarch64} names 404ed and failed scoop-sync, bump
+# and verify-unix on every run. Re-add macos-x64/macos-arm64 pointing at
+# fastfetch-macos-universal.tar.gz (extract_dir
+# fastfetch-macos-universal/usr/bin) once upstream drops the Homebrew path.
 
 [[source]]
 name = "gh"

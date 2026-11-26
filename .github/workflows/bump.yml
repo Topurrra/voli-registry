@@ -40,7 +40,7 @@ jobs:
             ~/.cargo/git
           key: cargo-voli-index-tool-${{ runner.os }}
 
-      # Pinned to a commit (v0.13.2 = c00dfd46): an unpinned --git install
+      # Pinned to a commit (v0.14.0 = 883a388e): an unpinned --git install
       # runs voli@main HEAD, and a tag can be moved.
       # Must understand [source.linux-*]/[source.macos-*] (voli v0.13.2+) —
       # the old tool errors on unix manifests at parse time.
@@ -48,11 +48,11 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev c00dfd46e1141742ca282eb5e8129a3dbcd12da0 \
+            --rev 883a388e09c6b997dc0c1249d83074d2807850a7 \
             voli-index-tool
 
       - name: Clone voli for brew-import
-        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = c00dfd46e1141742ca282eb5e8129a3dbcd12da0 # v0.13.2; a moved tag fails here
+        run: git clone --depth 1 --branch v0.14.0 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = 883a388e09c6b997dc0c1249d83074d2807850a7 # v0.14.0; a moved tag fails here
 
       - name: Build brew-import
         working-directory: tools/brew-import
@@ -62,7 +62,7 @@ jobs:
         shell: bash
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: voli-index-tool bump manifests/ --limit 20 | tee bump-summary.txt
+        run: voli-index-tool bump manifests/ --limit 20 --rotate-by-day | tee bump-summary.txt
 
       # Windows generation may omit or carry forward old Unix blocks. Resolve
       # only the changed allowlisted packages, at their exact registry version.

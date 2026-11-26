@@ -73,7 +73,7 @@ jobs:
       # lock in the same change. Every voli pin in this repo's workflows moves
       # together — grep for the tag before changing it.
       - name: Clone voli for the voli-core path dependency
-        run: git clone --depth 1 --branch v0.14.0 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = 883a388e09c6b997dc0c1249d83074d2807850a7 # v0.14.0; a moved tag fails here
+        run: git clone --depth 1 --branch v0.15.0 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 # v0.15.0; a moved tag fails here
 
       - name: Test scoop-import
         working-directory: tools/scoop-import
@@ -108,8 +108,8 @@ jobs:
       # Every VOLI_TAG in this file moves together — grep for it.
       - name: Clone voli for the voli-core path dependency
         env:
-          VOLI_TAG: v0.14.0
-          VOLI_REV: 883a388e09c6b997dc0c1249d83074d2807850a7 # v0.14.0; a moved tag fails here
+          VOLI_TAG: v0.15.0
+          VOLI_REV: ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 # v0.15.0; a moved tag fails here
         run: |
           git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
           test "$(git -C "$GITHUB_WORKSPACE/../voli" rev-parse HEAD)" = "$VOLI_REV"
@@ -141,8 +141,8 @@ jobs:
       - name: Clone voli for the voli-core path dependency
         # Same voli tag as above — keep the two in sync (grep VOLI_TAG).
         env:
-          VOLI_TAG: v0.14.0
-          VOLI_REV: 883a388e09c6b997dc0c1249d83074d2807850a7 # v0.14.0; a moved tag fails here
+          VOLI_TAG: v0.15.0
+          VOLI_REV: ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 # v0.15.0; a moved tag fails here
         run: |
           git clone --depth 1 --branch "$VOLI_TAG" https://github.com/Topurrra/voli "$GITHUB_WORKSPACE/../voli"
           test "$(git -C "$GITHUB_WORKSPACE/../voli" rev-parse HEAD)" = "$VOLI_REV"

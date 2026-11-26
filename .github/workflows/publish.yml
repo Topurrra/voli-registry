@@ -53,7 +53,7 @@ jobs:
             ~/.cargo/git
           key: cargo-voli-publish-signing-${{ runner.os }}
 
-      # PINNED TO A COMMIT (v0.14.0 = 883a388e), and it must stay pinned. The next step runs this
+      # PINNED TO A COMMIT (v0.15.0 = ef2c517b), and it must stay pinned. The next step runs this
       # binary in a step that holds VOLI_INDEX_SIGNING_KEY. Installing from a
       # branch ref would mean anyone who can land a commit on voli@main gets
       # code execution next to the production signing key. Bump this SHA
@@ -64,7 +64,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 883a388e09c6b997dc0c1249d83074d2807850a7 \
+            --rev ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 \
             voli-index-tool
 
       # Gate the publish on the skill archives actually being downloadable.

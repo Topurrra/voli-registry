@@ -189,7 +189,8 @@ first source in `skill-sources.toml` order and later claimants are published as
   never from the PR, and the merge is pinned to the verified commit. New
   packages, scoop-sync and skill-sync PRs, changes to any other field, and
   workflow or tool changes always wait for the owner. Label a bump PR `hold`
-  to keep it from merging.
+  to keep it from merging. It only reports (job summary) until the repository
+  variable `AUTOMERGE_ENABLED` is `true`.
 
 Bot PRs are opened with `GITHUB_TOKEN`, so GitHub does not start `validate` or
 `tools` on them by itself. `automerge.yml` runs those checks for the PRs it

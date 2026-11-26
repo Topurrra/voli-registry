@@ -22,11 +22,16 @@ import argparse
 
 
 import subprocess
+import os
 import sys
 import tomllib
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlsplit
+
+# Sibling module; also found under `python -I`, which drops the script dir.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import manifest_history  # noqa: E402
 
 # Candidate suffixes for a vendor-published checksum next to the asset.
 CHECKSUM_SUFFIXES = (".sha256", ".sha256sum", ".txt", ".sig", ".asc")
@@ -108,21 +113,15 @@ def render_package(name: str, version: str, hosts: list, host_changed: bool,
 
 def collect_rows(base: str, manifests_dir: Path, fetch) -> tuple:
     """(sections, failed) for every manifest changed against base."""
-    changed = [
-        line.strip()
-        for line in subprocess.run(
-            ["git", "diff", "--name-only", f"{base}...", "--", str(manifests_dir)],
-            check=True, capture_output=True, text=True,
-        ).stdout.splitlines()
-        if line.strip().endswith(".toml")
-    ]
+    # A bump ADDS <name>/<new>.toml and is reported before it is committed:
+    # compare against the package's previous version, and see untracked files.
+    fork = manifest_history.git_merge_base(base)
+    changed = manifest_history.git_changed_manifests(fork, str(manifests_dir))
     sections, failed = [], False
     for path in changed:
-        try:
-            old = subprocess.run(["git", "show", f"{base}:{path}"], check=True,
-                                 capture_output=True, text=True).stdout
-        except subprocess.CalledProcessError:
-            continue  # new manifest, nothing to compare hosts against
+        if not Path(path).is_file():
+            continue  # deleted
+        _, old = manifest_history.git_baseline(fork, path)
         new = Path(path).read_text(encoding="utf-8")
         old_src, new_src = manifest_sources(old), manifest_sources(new)
         if not new_src:

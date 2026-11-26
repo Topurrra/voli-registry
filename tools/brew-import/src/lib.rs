@@ -237,6 +237,16 @@ fn u16le(b: &[u8], off: usize) -> Result<u16> {
         })
 }
 
+fn u32be(b: &[u8], off: usize) -> Result<u32> {
+    b.get(off..off + 4)
+        .and_then(|s| <[u8; 4]>::try_from(s).ok())
+        .map(u32::from_be_bytes)
+        .ok_or_else(|| Error::Linkage {
+            bin: String::new(),
+            reason: "truncated binary".to_string(),
+        })
+}
+
 fn u32le(b: &[u8], off: usize) -> Result<u32> {
     b.get(off..off + 4)
         .and_then(|s| <[u8; 4]>::try_from(s).ok())
@@ -393,6 +403,41 @@ pub fn elf_dependency_refs(bytes: &[u8]) -> Result<Vec<String>> {
 /// Linked-library / rpath references of a 64-bit Mach-O: every LC_LOAD_DYLIB
 /// (plus weak/re-export/upward variants) name and every LC_RPATH path.
 pub fn macho_dependency_refs(bytes: &[u8]) -> Result<Vec<String>> {
+    // Universal ("fat") binary: big-endian 0xcafebabe header, then one
+    // 20-byte entry per slice (cputype, cpusubtype, offset, size, align).
+    // Every slice is checked, so a Homebrew reference in any one is caught.
+    if bytes.len() >= 8 && u32be(bytes, 0)? == 0xcafe_babe {
+        let bad = |reason: &str| Error::Linkage {
+            bin: String::new(),
+            reason: reason.to_string(),
+        };
+        let nfat = u32be(bytes, 4)? as usize;
+        // Java class files share the magic; their "count" is the class
+        // version (45+). Real universal binaries carry a handful of slices.
+        if nfat == 0 || nfat > 8 {
+            return Err(bad("not a universal Mach-O"));
+        }
+        let mut refs: Vec<String> = Vec::new();
+        for i in 0..nfat {
+            let e = 8 + 20 * i;
+            let off = u32be(bytes, e + 8)? as usize;
+            let size = u32be(bytes, e + 12)? as usize;
+            let slice = off
+                .checked_add(size)
+                .and_then(|end| bytes.get(off..end))
+                .ok_or_else(|| bad("universal slice out of bounds"))?;
+            for r in macho_dependency_refs_thin(slice)? {
+                if !refs.contains(&r) {
+                    refs.push(r);
+                }
+            }
+        }
+        return Ok(refs);
+    }
+    macho_dependency_refs_thin(bytes)
+}
+
+fn macho_dependency_refs_thin(bytes: &[u8]) -> Result<Vec<String>> {
     if bytes.len() < 32 {
         return Err(Error::Linkage {
             bin: String::new(),

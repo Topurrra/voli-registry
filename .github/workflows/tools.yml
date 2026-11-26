@@ -11,6 +11,7 @@ on:
       - ".github/workflows/tools.yml"
       - ".github/workflows/bump.yml"
       - ".github/workflows/scoop-sync.yml"
+      - ".github/workflows/automerge.yml"
 
 # Upstream payloads execute only in these read-only verification/test jobs.
 permissions:
@@ -19,6 +20,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -44,6 +46,12 @@ jobs:
       - name: Test bump provenance report
         run: python -m unittest discover -s tools -p test_bump_pr_report.py -v
 
+      - name: Test manifest baselines (bump vs previous version)
+        run: python -m unittest discover -s tools -p test_manifest_history.py -v
+
+      - name: Test auto-merge gate
+        run: python -m unittest discover -s tools -p test_automerge_gate.py -v
+
       - name: Install Rust
         # Pinned: `stable` is a BRANCH ref, not an immutable tag.
         uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable
@@ -65,7 +73,7 @@ jobs:
       # lock in the same change. Every voli pin in this repo's workflows moves
       # together — grep for the tag before changing it.
       - name: Clone voli for the voli-core path dependency
-        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli
+        run: git clone --depth 1 --branch v0.13.2 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = c00dfd46e1141742ca282eb5e8129a3dbcd12da0 # v0.13.2; a moved tag fails here
 
       - name: Test scoop-import
         working-directory: tools/scoop-import
@@ -73,6 +81,7 @@ jobs:
 
   test-brew-import:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -117,6 +126,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:

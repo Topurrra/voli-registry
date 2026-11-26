@@ -16,9 +16,14 @@ Usage:
 
 import argparse
 import subprocess
+import os
 import sys
 import tomllib
 from pathlib import Path
+
+# Sibling module; also found under `python -I`, which drops the script dir.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import manifest_history  # noqa: E402
 
 # Keep in sync with RESERVED_NAMES in voli's crates/voli-core/src/shims.rs.
 RESERVED_NAMES = {
@@ -68,21 +73,18 @@ def git(*args: str) -> str:
 
 
 def check_pr(base: str, manifests_dir: Path) -> list:
-    """Changed manifest files that GAIN a reserved shim name."""
+    """Changed manifest files that GAIN a reserved shim name.
+
+    A bump adds `<name>/<new>.toml` beside `<name>/<old>.toml`; the baseline
+    is the package's previous version, so a package keeps the reserved names
+    it already had. Only a genuinely new package starts from nothing.
+    """
     problems = []
-    changed = [
-        line.strip()
-        for line in git("diff", "--name-only", f"{base}...", "--", str(manifests_dir)).splitlines()
-        if line.strip().endswith(".toml")
-    ]
-    for path in changed:
-        try:
-            old = subprocess.run(
-                ["git", "show", f"{base}:{path}"],
-                capture_output=True, text=True, check=True,
-            ).stdout
-        except subprocess.CalledProcessError:
-            old = ""  # new file: every name is "added"
+    fork = manifest_history.git_merge_base(base)
+    for path in manifest_history.git_changed_manifests(fork, str(manifests_dir)):
+        if not Path(path).is_file():
+            continue  # deleted: nothing can be gained
+        _, old = manifest_history.git_baseline(fork, path)
         new = Path(path).read_text(encoding="utf-8")
         gained = added_reserved_names(old, new) & RESERVED_NAMES
         if gained:

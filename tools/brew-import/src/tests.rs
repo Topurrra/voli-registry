@@ -245,6 +245,61 @@ fn macho_parser_reads_dylibs_and_rpaths() {
     assert_eq!(bad.len(), 1);
 }
 
+/// Fat (universal) Mach-O: big-endian header, then one entry per slice.
+fn fat_fixture(slices: &[Vec<u8>]) -> Vec<u8> {
+    let header = 8 + 20 * slices.len();
+    let mut out = vec![0u8; header];
+    out[0..4].copy_from_slice(&0xcafe_babeu32.to_be_bytes());
+    out[4..8].copy_from_slice(&(slices.len() as u32).to_be_bytes());
+    let mut off = header.div_ceil(16) * 16;
+    out.resize(off, 0);
+    for (i, s) in slices.iter().enumerate() {
+        let e = 8 + 20 * i;
+        out[e..e + 4].copy_from_slice(&0x0100_0007u32.to_be_bytes()); // x86_64
+        out[e + 8..e + 12].copy_from_slice(&(off as u32).to_be_bytes());
+        out[e + 12..e + 16].copy_from_slice(&(s.len() as u32).to_be_bytes());
+        out.extend_from_slice(s);
+        off += s.len();
+    }
+    out
+}
+
+/// fastfetch 2.71 ships only `fastfetch-macos-universal.tar.gz`. The gate
+/// rejected it ("only 64-bit little-endian Mach-O"), which failed
+/// scoop-sync, bump and verify-unix for weeks. Every slice is checked, so a
+/// Homebrew path in any one of them is still caught.
+#[test]
+fn macho_parser_reads_every_slice_of_a_universal_binary() {
+    let fat = fat_fixture(&[
+        macho_fixture("/usr/lib/libSystem.B.dylib", "/usr/lib"),
+        macho_fixture("/opt/homebrew/lib/libintl.8.dylib", "/usr/lib"),
+    ]);
+    let refs = macho_dependency_refs(&fat).unwrap();
+    assert!(
+        refs.contains(&"/usr/lib/libSystem.B.dylib".to_string()),
+        "{refs:?}"
+    );
+    assert!(
+        refs.contains(&"/opt/homebrew/lib/libintl.8.dylib".to_string()),
+        "{refs:?}"
+    );
+    assert_eq!(has_brew_refs(&refs).len(), 1);
+}
+
+#[test]
+fn macho_parser_rejects_a_broken_universal_header() {
+    // A slice that points past the end of the file.
+    let mut fat = fat_fixture(&[macho_fixture("/usr/lib/libSystem.B.dylib", "/usr/lib")]);
+    fat[8 + 12..8 + 16].copy_from_slice(&0x00ff_ffffu32.to_be_bytes());
+    assert!(macho_dependency_refs(&fat).is_err());
+    // A Java class file shares the 0xcafebabe magic; its "slice count" is
+    // the class version, far above any real universal binary.
+    let mut class = vec![0u8; 64];
+    class[0..4].copy_from_slice(&0xcafe_babeu32.to_be_bytes());
+    class[4..8].copy_from_slice(&0x0000_0041u32.to_be_bytes());
+    assert!(macho_dependency_refs(&class).is_err());
+}
+
 #[test]
 fn macho_parser_rejects_garbage() {
     assert!(macho_dependency_refs(b"short").is_err());

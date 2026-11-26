@@ -174,6 +174,28 @@ first source in `skill-sources.toml` order and later claimants are published as
   review PR without merging it.
 - **`tools.yml`** (on PR touching `tools/**`): runs
   `python tools/skill-import.py --self-test` and the `scoop-import` Rust tests.
+- **`automerge.yml`** (every 6 h or manual): merges an auto-bump PR by itself
+  only when all of this holds, and otherwise leaves it for the owner:
+  - it comes from `bump.yml` (author `app/github-actions`, branch
+    `auto-bump/*`, every commit by `voli-registry-ci`, not a fork), has been
+    open for 24 h, and has no `hold` label;
+  - every file is a new `<version>.toml` of a package that already exists,
+    equal to the previous version except for the version string and hashes:
+    same bins, env, depends, source blocks and URL hosts, https only;
+  - `voli-index-tool validate` and the reserved-shim gate pass;
+  - CI downloads every URL itself and reproduces every sha256/sha512.
+
+  The deciding code (`tools/automerge_gate.py`) is checked out from `main`,
+  never from the PR, and the merge is pinned to the verified commit. New
+  packages, scoop-sync and skill-sync PRs, changes to any other field, and
+  workflow or tool changes always wait for the owner. Label a bump PR `hold`
+  to keep it from merging. It only reports (job summary) until the repository
+  variable `AUTOMERGE_ENABLED` is `true`.
+
+Bot PRs are opened with `GITHUB_TOKEN`, so GitHub does not start `validate` or
+`tools` on them by itself. `automerge.yml` runs those checks for the PRs it
+merges; for any other bot PR, run `validate` on its branch from the Actions
+tab before merging.
 
 Every workflow `cargo install --git … voli-index-tool` from source on each run,
 pinned to a full commit SHA. Keep it pinned: `publish.yml` runs that binary in
@@ -212,9 +234,10 @@ That base URL resolves to the three release assets above
 The index is signed with an Ed25519 key held by this repository's CI as the
 GitHub Actions secret **`VOLI_INDEX_SIGNING_KEY`** (hex-encoded 32-byte
 secret) — it is an **online** key: CI holds it and applies it to whatever
-lands on `main` after review. That is exactly why `main` requires reviewed
-pull requests and why the signing job shares no caches with the other
-workflows. The client only ever sees the public half, embedded in the `voli`
+lands on `main`. That is exactly why changes reach `main` only through pull
+requests (reviewed by the owner, or the narrow re-verified version bumps
+`automerge.yml` merges) and why the signing job shares no caches with the
+other workflows. The client only ever sees the public half, embedded in the `voli`
 binary, so a compromised key cannot retroactively change what installed
 clients already trust — rotation is a new release plus a client update.
 

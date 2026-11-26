@@ -7,10 +7,18 @@ on:
     paths:
       - "manifests/**"
       - ".github/workflows/validate.yml"
+  # Bot PRs (opened with GITHUB_TOKEN) never start this on their own; run it
+  # on the PR branch from the Actions tab. automerge.yml runs the same checks
+  # itself for the PRs it merges.
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
@@ -30,13 +38,14 @@ jobs:
       # NOTE: installs the tool from source on every run. Slow (~minutes).
       # TODO: replace with a downloaded prebuilt `voli-index-tool` release
       # binary once the main repo publishes them — cuts CI to seconds.
-      # Pinned to a commit: an unpinned --git install runs voli@main HEAD.
+      # Pinned to a commit (v0.13.2 = c00dfd46): an unpinned --git install
+      # runs voli@main HEAD, and a tag can be moved.
       # Must understand [source.linux-*]/[source.macos-*] (voli v0.13.2+).
       - name: Install voli-index-tool
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --tag v0.13.2 \
+            --rev c00dfd46e1141742ca282eb5e8129a3dbcd12da0 \
             voli-index-tool
 
       - name: Validate manifests

@@ -52,7 +52,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/ScoopInstaller/Main /tmp/scoop-main
           git clone --depth 1 https://github.com/ScoopInstaller/Extras /tmp/scoop-extras
-          git clone --depth 1 --branch v0.14.0 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = 883a388e09c6b997dc0c1249d83074d2807850a7 # v0.14.0; a moved tag fails here
+          git clone --depth 1 --branch v0.15.0 https://github.com/Topurrra/voli ../voli && test "$(git -C ../voli rev-parse HEAD)" = ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 # v0.15.0; a moved tag fails here
 
       - name: Build scoop-import
         working-directory: tools/scoop-import
@@ -67,13 +67,13 @@ jobs:
           tools/scoop-import/target/release/scoop-import /tmp/scoop-main manifests/
           tools/scoop-import/target/release/scoop-import /tmp/scoop-extras manifests/
 
-      # Pinned to a commit (v0.14.0 = 883a388e): an unpinned --git install
+      # Pinned to a commit (v0.15.0 = ef2c517b): an unpinned --git install
       # runs voli@main HEAD, and a tag can be moved.
       - name: Install voli-index-tool
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 883a388e09c6b997dc0c1249d83074d2807850a7 \
+            --rev ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 \
             voli-index-tool
 
       # Windows generation may omit or carry forward old Unix blocks. Resolve

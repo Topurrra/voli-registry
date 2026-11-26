@@ -89,7 +89,7 @@ skill-sync is NOT exempt, though it only writes `manifests/skills`: its `fmt`
 and `validate` steps run over all of `manifests/`, so a tools-side unix block
 fails it on a stale pin. It sat on v0.10.1 and did exactly that — every run
 from 2026-09-15 died with `unknown field 'linux-x64'`. Both importer locks pin
-voli-core 0.14.0, and their workflow dependency checkouts must match. When the
+voli-core 0.15.0, and their workflow dependency checkouts must match. When the
 voli pin moves, regenerate the importer locks against a matching checkout
 (`cargo update -p voli-core` in `tools/scoop-import` and
 `tools/brew-import`) and commit both `Cargo.lock` files in the same change.

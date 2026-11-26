@@ -42,14 +42,14 @@ jobs:
       # NOTE: installs the tool from source on every run. Slow (~minutes).
       # TODO: replace with a downloaded prebuilt `voli-index-tool` release
       # binary once the main repo publishes them — cuts CI to seconds.
-      # Pinned to a commit (v0.14.0 = 883a388e): an unpinned --git install
+      # Pinned to a commit (v0.15.0 = ef2c517b): an unpinned --git install
       # runs voli@main HEAD, and a tag can be moved.
       # Must understand [source.linux-*]/[source.macos-*] (voli v0.13.2+).
       - name: Install voli-index-tool
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 883a388e09c6b997dc0c1249d83074d2807850a7 \
+            --rev ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 \
             voli-index-tool
 
       - name: Validate manifests

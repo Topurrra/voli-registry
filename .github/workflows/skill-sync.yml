@@ -61,7 +61,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --rev 883a388e09c6b997dc0c1249d83074d2807850a7 \
+            --rev ef2c517b2d4242c1e3a189a95013e9faa91eb6d4 \
             voli-index-tool
 
       # The Python importer above emits its own TOML. Normalizing it here means

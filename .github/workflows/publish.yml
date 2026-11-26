@@ -28,6 +28,7 @@ jobs:
   # Build + sign. This is the ONLY job that touches VOLI_INDEX_SIGNING_KEY.
   sign:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -52,7 +53,7 @@ jobs:
             ~/.cargo/git
           key: cargo-voli-publish-signing-${{ runner.os }}
 
-      # PINNED TO A COMMIT, and it must stay pinned. The next step runs this
+      # PINNED TO A COMMIT (v0.13.2 = c00dfd46), and it must stay pinned. The next step runs this
       # binary in a step that holds VOLI_INDEX_SIGNING_KEY. Installing from a
       # branch ref would mean anyone who can land a commit on voli@main gets
       # code execution next to the production signing key. Bump this SHA
@@ -63,7 +64,7 @@ jobs:
         run: |
           cargo install --force --locked \
             --git https://github.com/Topurrra/voli \
-            --tag v0.13.2 \
+            --rev c00dfd46e1141742ca282eb5e8129a3dbcd12da0 \
             voli-index-tool
 
       # Gate the publish on the skill archives actually being downloadable.
@@ -133,6 +134,7 @@ jobs:
   publish:
     needs: sign
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     permissions:
       contents: write # required to create/update the release and push to main
     steps:

@@ -16,11 +16,14 @@ Usage:
 
 import argparse
 import subprocess
+import os
 import sys
 import tomllib
 from pathlib import Path
 
-import manifest_history
+# Sibling module; also found under `python -I`, which drops the script dir.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import manifest_history  # noqa: E402
 
 # Keep in sync with RESERVED_NAMES in voli's crates/voli-core/src/shims.rs.
 RESERVED_NAMES = {

@@ -22,13 +22,16 @@ import argparse
 
 
 import subprocess
+import os
 import sys
 import tomllib
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlsplit
 
-import manifest_history
+# Sibling module; also found under `python -I`, which drops the script dir.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import manifest_history  # noqa: E402
 
 # Candidate suffixes for a vendor-published checksum next to the asset.
 CHECKSUM_SUFFIXES = (".sha256", ".sha256sum", ".txt", ".sig", ".asc")

@@ -1,0 +1,29 @@
+name = "fastfetch"
+version = "2.71.0"
+description = "A maintained, feature-rich and performance oriented, neofetch like system information tool"
+homepage = "https://github.com/fastfetch-cli/fastfetch"
+license = "MIT"
+kind = "app"
+bin = ["fastfetch.exe", "flashfetch.exe"]
+
+[source.x64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.71.0/fastfetch-windows-amd64.7z"
+sha256 = "9d39487241282a33c3eab506eed54dfb03f284834e043cc2423c40acb4415e26"
+
+[source.arm64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.71.0/fastfetch-windows-aarch64.7z"
+sha256 = "e412cb3a646c51333744256acb6c07c81f04966d61bf6401aff5c63d7efc4ae3"
+
+[source.linux-x64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.71.0/fastfetch-linux-amd64.tar.gz"
+sha256 = "abf5c99a3702cce8d3c7fa2cccd3ac205076ae0f2e45bced24a42a68821702d6"
+extract_dir = "fastfetch-linux-amd64/usr/bin"
+
+[source.linux-arm64]
+url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.71.0/fastfetch-linux-aarch64.tar.gz"
+sha256 = "458248f2b3abab9c5e0a5b9df12cdcd1a966b355ddd5f3244a5eb47d17d33412"
+extract_dir = "fastfetch-linux-aarch64/usr/bin"
+
+[autoupdate]
+checkver = { github = "fastfetch-cli/fastfetch" }
+url_template = { x64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-amd64.7z", arm64 = "https://github.com/fastfetch-cli/fastfetch/releases/download/$version/fastfetch-windows-aarch64.7z" }

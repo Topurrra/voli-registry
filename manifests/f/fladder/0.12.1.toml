@@ -1,0 +1,16 @@
+name = "fladder"
+version = "0.12.1"
+description = "A simple Jellyfin frontend built on top of Flutter."
+homepage = "https://github.com/DonutWare/Fladder"
+license = "GPL-3.0-only"
+kind = "app"
+shortcuts = [{ target = "fladder.exe", name = "Fladder" }]
+persist = ["data", ".config"]
+
+[source.x64]
+url = "https://github.com/DonutWare/Fladder/releases/download/v0.12.1/Fladder-Windows-0.12.1.zip"
+sha256 = "e2e9ac89603c886a41894d1cc92143b58f8f864010a3db1ff9402373e39158ae"
+
+[autoupdate]
+checkver = { github = "DonutWare/Fladder" }
+url_template = { x64 = "https://github.com/DonutWare/Fladder/releases/download/v$version/Fladder-Windows-$version.zip" }

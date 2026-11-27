@@ -1,0 +1,17 @@
+name = "bforartists"
+version = "5.3.0"
+description = "Bforartists is a fork of the popular 3D software Blender, with the goal to improve the UI."
+homepage = "https://www.bforartists.de/"
+license = "GPL-3.0-or-later"
+kind = "app"
+extract_dir = "Bforartists-5.3.0-Windows"
+bin = ["bforartists.exe"]
+shortcuts = [{ target = "bforartists.exe", name = "Bforartists" }]
+
+[source.x64]
+url = "https://www.bforartists.de/data/binaries/Bforartists-5.3.0-Windows.zip"
+sha256 = "ba938299f7162cba7f080cb577adac179448a24f718b6a562e27725ac2f85c04"
+
+[autoupdate]
+checkver = { url = "https://www.bforartists.de/download/", regex = "Bforartists-([\\w.]+)-Windows\\.zip" }
+url_template = { x64 = "https://www.bforartists.de/data/binaries/Bforartists-$version-Windows.zip" }

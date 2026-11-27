@@ -1,0 +1,15 @@
+name = "ffmpegthumbnailer"
+version = "2.4.2"
+description = "Lightweight video thumbnailer that can be used by file managers to create thumbnails for video files."
+homepage = "https://github.com/dirkvdb/ffmpegthumbnailer"
+license = "GPL-2.0-or-later"
+kind = "app"
+bin = ["ffmpegthumbnailer.exe"]
+
+[source.x64]
+url = "https://github.com/dirkvdb/ffmpegthumbnailer/releases/download/v2.4.2/ffmpegthumbnailer-windows-mingw64.zip"
+sha256 = "989e3a812dfe9f8001384a52c300fc66f0b37baf9882413a101fe8254ece7c94"
+
+[autoupdate]
+checkver = { github = "dirkvdb/ffmpegthumbnailer" }
+url_template = { x64 = "https://github.com/dirkvdb/ffmpegthumbnailer/releases/download/v$version/ffmpegthumbnailer-windows-mingw64.zip" }

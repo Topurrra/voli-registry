@@ -1,0 +1,20 @@
+name = "d2"
+version = "0.10.0"
+description = "A modern diagram scripting language that turns text to diagrams."
+homepage = "https://d2lang.com"
+license = "MPL-2.0"
+kind = "app"
+extract_dir = "d2-v0.10.0"
+bin = ["bin\\d2.exe"]
+
+[source.x64]
+url = "https://github.com/d2lang/d2/releases/download/v0.10.0/d2-v0.10.0-windows-amd64.tar.gz"
+sha256 = "cf82cb391dc88acd670efe41f468a6807b01296906f1f92ec6c9c1c6da797435"
+
+[source.arm64]
+url = "https://github.com/d2lang/d2/releases/download/v0.10.0/d2-v0.10.0-windows-arm64.tar.gz"
+sha256 = "d4d992af47246b3d3c893a9027c5042006ad4814bf8cf60d7e4cc2b425b070ec"
+
+[autoupdate]
+checkver = { github = "d2lang/d2" }
+url_template = { x64 = "https://github.com/d2lang/d2/releases/download/v$version/d2-v$version-windows-amd64.tar.gz", arm64 = "https://github.com/d2lang/d2/releases/download/v$version/d2-v$version-windows-arm64.tar.gz" }

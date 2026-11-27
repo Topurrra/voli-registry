@@ -1,0 +1,15 @@
+name = "feroxbuster"
+version = "2.14.0"
+description = "A fast, simple, recursive content discovery tool written in Rust."
+homepage = "https://epi052.github.io/feroxbuster-docs/"
+license = "MIT"
+kind = "app"
+bin = ["feroxbuster.exe"]
+
+[source.x64]
+url = "https://github.com/epi052/feroxbuster/releases/download/v2.14.0/x86_64-windows-feroxbuster.exe.zip"
+sha256 = "a0619feef7de06e25bde4c67ae85227c16afb4d4df43bb57230205219536120a"
+
+[autoupdate]
+checkver = { github = "epi052/feroxbuster" }
+url_template = { x64 = "https://github.com/epi052/feroxbuster/releases/download/v$version/x86_64-windows-feroxbuster.exe.zip" }

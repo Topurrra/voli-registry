@@ -1,0 +1,15 @@
+name = "ropy"
+version = "0.7.2"
+description = "A clipboard manager built with Rust and GPUI"
+homepage = "https://github.com/StudentWeis/ropy"
+license = "MIT"
+kind = "app"
+shortcuts = [{ target = "ropy.exe", name = "Ropy" }]
+
+[source.x64]
+url = "https://github.com/StudentWeis/ropy/releases/download/0.7.2/ropy-x86_64-pc-windows-msvc.zip"
+sha256 = "32428eac72b3900f01fa5bd83e30e7f196f20a1af68c593abb91b634a869fca4"
+
+[autoupdate]
+checkver = { github = "StudentWeis/ropy" }
+url_template = { x64 = "https://github.com/StudentWeis/ropy/releases/download/$version/ropy-x86_64-pc-windows-msvc.zip" }

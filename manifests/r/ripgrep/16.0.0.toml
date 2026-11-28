@@ -1,0 +1,41 @@
+name = "ripgrep"
+version = "16.0.0"
+description = "Recursively searches directories for a regex pattern."
+homepage = "https://github.com/BurntSushi/ripgrep"
+license = "MIT"
+kind = "app"
+bin = ["rg.exe"]
+
+[source.x64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-x86_64-pc-windows-msvc.zip"
+sha256 = "f418ae83e63046a94a7b5f3a44bf3a169f66e689164856ecee02547131c73931"
+extract_dir = "ripgrep-16.0.0-x86_64-pc-windows-msvc"
+
+[source.arm64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-aarch64-pc-windows-msvc.zip"
+sha256 = "3302ede09745d33ca2b287bf3c6434c54cb35c3b408a7d3a265939961add5a1a"
+extract_dir = "ripgrep-16.0.0-aarch64-pc-windows-msvc"
+
+[source.linux-x64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-x86_64-unknown-linux-musl.tar.gz"
+sha256 = "54268ab4643c00a290a29b0086066d64b3f56236dd805ec64629a86f9bd29fd0"
+extract_dir = "ripgrep-16.0.0-x86_64-unknown-linux-musl"
+
+[source.linux-arm64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-aarch64-unknown-linux-musl.tar.gz"
+sha256 = "374f1886be881e8e8683d7107278f7af1b6017fda75eb97de71f5783f42b0110"
+extract_dir = "ripgrep-16.0.0-aarch64-unknown-linux-musl"
+
+[source.macos-x64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-x86_64-apple-darwin.tar.gz"
+sha256 = "aa9183b0e0bfac03c5818895ad18b75001c402d230063898abfe5a58cd413caa"
+extract_dir = "ripgrep-16.0.0-x86_64-apple-darwin"
+
+[source.macos-arm64]
+url = "https://github.com/BurntSushi/ripgrep/releases/download/16.0.0/ripgrep-16.0.0-aarch64-apple-darwin.tar.gz"
+sha256 = "5a145656d5067144001bfce6648767fd3254599aa736f1ffdb7fb907760b8ca1"
+extract_dir = "ripgrep-16.0.0-aarch64-apple-darwin"
+
+[autoupdate]
+checkver = { github = "BurntSushi/ripgrep" }
+url_template = { x64 = "https://github.com/BurntSushi/ripgrep/releases/download/$version/ripgrep-$version-x86_64-pc-windows-msvc.zip", arm64 = "https://github.com/BurntSushi/ripgrep/releases/download/$version/ripgrep-$version-aarch64-pc-windows-msvc.zip" }

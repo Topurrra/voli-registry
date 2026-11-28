@@ -1,0 +1,19 @@
+name = "resticprofile"
+version = "0.35.0"
+description = "Configuration profiles manager and scheduler for restic backup"
+homepage = "https://creativeprojects.github.io/resticprofile/"
+license = "GPL-3.0-only"
+kind = "app"
+bin = ["resticprofile.exe"]
+
+[source.x64]
+url = "https://github.com/creativeprojects/resticprofile/releases/download/v0.35.0/resticprofile_no_self_update_0.35.0_windows_amd64.tar.gz"
+sha256 = "d217cb1a89ca281c0f2317e9bd2fb2e2ccf67fb70c8ee79782f4ff7a281a204c"
+
+[source.arm64]
+url = "https://github.com/creativeprojects/resticprofile/releases/download/v0.35.0/resticprofile_no_self_update_0.35.0_windows_arm64.tar.gz"
+sha256 = "10eac721c5dd3ba5dd8184cecb7683ff7eb95609fd8db4d3587b8cab44e6acc2"
+
+[autoupdate]
+checkver = { github = "creativeprojects/resticprofile" }
+url_template = { x64 = "https://github.com/creativeprojects/resticprofile/releases/download/v$version/resticprofile_no_self_update_$version_windows_amd64.tar.gz", arm64 = "https://github.com/creativeprojects/resticprofile/releases/download/v$version/resticprofile_no_self_update_$version_windows_arm64.tar.gz" }

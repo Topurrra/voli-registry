@@ -1,0 +1,17 @@
+name = "rust-gnu"
+version = "1.100.1"
+description = "A language empowering everyone to build reliable and efficient software. (GNU toolchain)"
+homepage = "https://www.rust-lang.org"
+license = "MIT|Apache-2.0"
+kind = "app"
+extract_dir = "Rust"
+bin = ["bin\\rustc.exe", "bin\\rustdoc.exe", "bin\\cargo.exe"]
+
+[source.x64]
+url = "https://static.rust-lang.org/dist/rust-1.100.1-x86_64-pc-windows-gnu.msi"
+sha256 = "9b19bf96eecf04cb109baa662abf0617efe5f7ec30b0438c4d8b67bd72d90b8d"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.rust-lang.org/", regex = "Version ([\\d.]+)" }
+url_template = { x64 = "https://static.rust-lang.org/dist/rust-$version-x86_64-pc-windows-gnu.msi" }

@@ -1,0 +1,17 @@
+name = "renpy"
+version = "8.6.2"
+description = "Popular open source visual novel engine that uses Python for scripting"
+homepage = "https://www.renpy.org/"
+license = "MIT"
+kind = "app"
+extract_dir = "renpy-8.6.2-sdk"
+bin = ["renpy.exe"]
+shortcuts = [{ target = "renpy.exe", name = "RenPy" }]
+
+[source.x64]
+url = "https://www.renpy.org/dl/8.6.2/renpy-8.6.2-sdk.7z.exe#/dl.7z"
+sha256 = "de385e41016491c80e00c905b88d36cd9619530bd5c3698a701754efa7db6c92"
+
+[autoupdate]
+checkver = { url = "https://www.renpy.org/release_list.html", regex = "Ren'Py ([\\d.]+)" }
+url_template = "https://www.renpy.org/dl/$version/renpy-$version-sdk.7z.exe#/dl.7z"

@@ -1,0 +1,17 @@
+name = "rescuetime"
+version = "3.4.2.5"
+description = "Automatic application time-tracking and productive advisor"
+homepage = "https://www.rescuetime.com"
+license = "Proprietary"
+kind = "app"
+bin = ["RescueTime.exe"]
+shortcuts = [{ target = "RescueTime.exe", name = "RescueTime" }]
+
+[source.x64]
+url = "https://www.rescuetime.com/installers/RescueTimeInstaller_3.4.2.5.exe"
+sha256 = "934de2ffb6614b2291a4e1767352786ffd3325b85d32383e193456eb0315fa3e"
+kind = "installer-archive"
+
+[autoupdate]
+checkver = { url = "https://www.rescuetime.com/release-notes/windows/rtx", regex = "<strong>([\\d.]+)</strong> - <span>[^<]*\\(Release\\)" }
+url_template = { x64 = "https://www.rescuetime.com/installers/RescueTimeInstaller_$version.exe" }

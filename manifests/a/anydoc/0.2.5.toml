@@ -1,0 +1,17 @@
+name = "anydoc"
+version = "0.2.5"
+description = "Prints Word, PowerPoint, Excel, EPUB, PDF and other documents as GitHub-Flavored Markdown."
+homepage = "https://github.com/firecrawl/anydoc"
+license = "MIT"
+kind = "app"
+file_name = "anydoc.exe"
+bin = ["anydoc.exe"]
+
+# Firecrawl publishes anydoc only as a library (Rust crate, Node add-on,
+# Python module), not as a program. This exe is a small command line over
+# the anydoc 0.2.5 crate, built and released from
+# https://github.com/Topurrra/justanormal/tree/main/tools/anydoc-cli
+[source.x64]
+url = "https://github.com/Topurrra/justanormal/releases/download/anydoc-v0.2.5/anydoc.exe"
+sha256 = "2c1c7bad16b52ad34bbd7e0f308c3ea27b84927fd550343b7077b070c330217c"
+kind = "binary"
